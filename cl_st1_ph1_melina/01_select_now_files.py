@@ -7,7 +7,9 @@ text files for lines that contain any configured search term as a whole word,
 case-insensitive.
 
 Usage:
-    python 01_select_now_files.py --input INPUT_DIR --output OUTPUT_DIR
+    python 01_select_now_files.py \
+        --input INPUT_DIR \
+        --output OUTPUT_DIR
 
 The script keeps original zip files, extracts tar files first, extracts zip
 files into the input directory root, flattens archived paths into the first
@@ -27,7 +29,9 @@ from pathlib import Path
 from typing import Iterable
 
 
-SEARCH_TERMS = ["gaza"]
+SEARCH_TERMS = [
+    "gaza"
+]
 
 
 def configure_logging(log_path: Path) -> logging.Logger:
