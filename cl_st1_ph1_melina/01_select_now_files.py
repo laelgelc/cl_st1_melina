@@ -21,7 +21,6 @@ from __future__ import annotations
 
 import argparse
 import logging
-import os
 import re
 import tarfile
 import zipfile
@@ -30,7 +29,7 @@ from typing import Iterable
 
 
 SEARCH_TERMS = [
-    "gaza"
+    "gaza",
 ]
 
 
@@ -89,8 +88,8 @@ def extract_tar_archives(input_dir: Path, logger: logging.Logger) -> None:
         logger.info("Extracting tar archive: %s", tar_path.name)
         try:
             with tarfile.open(tar_path, "r:*") as tf:
-                tf.extractall(path=input_dir)
-        except (tarfile.TarError, OSError) as exc:
+                tf.extractall(path=input_dir, filter="data")
+        except (tarfile.TarError, OSError, ValueError) as exc:
             logger.error("Failed to extract tar archive %s: %s", tar_path.name, exc)
 
 
@@ -172,9 +171,10 @@ def main() -> int:
     args = parse_args()
     input_dir = Path(args.input).expanduser().resolve()
     output_dir = Path(args.output).expanduser().resolve()
+    script_dir = Path(__file__).resolve().parent
 
     ensure_directory(output_dir)
-    logger = configure_logging(output_dir / "01_select_now_files.log")
+    logger = configure_logging(script_dir / "01_select_now_files.log")
 
     if not input_dir.exists() or not input_dir.is_dir():
         logger.error("Input directory does not exist or is not a directory: %s", input_dir)

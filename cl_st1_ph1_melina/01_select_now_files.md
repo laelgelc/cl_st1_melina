@@ -19,7 +19,7 @@ Accept the following command-line arguments:
 
 - Create the output directory if it does not exist.
 - Use clear, robust code with basic error handling.
-- Create a log file named `01_select_now_files.log`.
+- Create a log file named `01_select_now_files.log` in the same directory where `01_select_now_files.py` is located.
 - Log to both the console and the log file.
 - Use standard log levels such as `INFO`, `WARNING`, and `ERROR`.
 
