@@ -1,0 +1,19 @@
+| Area             | Corpus   | Code | Country       | Details                                                                                                                                        |
+|------------------|----------|------|---------------|------------------------------------------------------------------------------------------------------------------------------------------------|
+| Global North     | Now      | gb   | Great Britain |                                                                                                                                                |
+| Global North     | Now      | us   | United States |                                                                                                                                                |
+| Global North     | Internet |      | Israel        | [Haaretz](https://www.haaretz.com/)                                                                                                            |
+|                  |          |      |               | [The Jerusalem Post](https://www.jpost.com/)                                                                                                   |
+|                  |          |      |               | [The Times of Israel](https://www.timesofisrael.com/)                                                                                          |
+| Global South     | Internet |      | China         | [People's Daily Online](https://en.people.cn/)<br>[Global Times](https://www.globaltimes.cn/)<br>[China Daily](https://www.chinadaily.com.cn/) |
+| Global South     | Internet |      | Russia        | [The Moscow Times](https://www.themoscowtimes.com/)<br>[TASS Russian News Agency](https://tass.com/)<br>[Meduza](https://meduza.io/en)         |
+| Global South     | Internet |      | Doha - Quatar | [Al Jazeera](https://www.aljazeera.com/)                                                                                                       |
+| Global South     | Now      | pk   | Pakistan      |                                                                                                                                                |
+| Global South     | Now      | ke   | South Africa  |                                                                                                                                                |
+| Global South     | Now      | ng   | Nigeria       |                                                                                                                                                |
+| Depois da Guerra |          |      |               |                                                                                                                                                |
+| Global South     | Internet |      | Irã           | [Tehran Times](https://www.tehrantimes.com/)                                                                                                   |
+|                  |          |      |               | [Ettela'at](https://www.ettelaat.com/)                                                                                                         |
+|                  |          |      |               | [Financial Tribune](https://financialtribune.com/)                                                                                             |
+|                  |          |      |               | [Iran Daily](https://newspaper.irandaily.ir/)                                                                                                  |
+|                  |          |      |               | [Mehr News Agency](https://en.mehrnews.com/)                                                                                                   |
