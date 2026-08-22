@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import csv
+import gzip
 import logging
 import time
 import xml.etree.ElementTree as ET
@@ -8,7 +9,6 @@ from pathlib import Path
 from urllib.parse import urlparse
 
 import requests
-
 
 SOURCE_ID = "the_jerusalem_post"
 BASE_DIR = Path(__file__).resolve().parent
@@ -104,10 +104,10 @@ def local_path_for_sitemap(url: str) -> Path:
     return SITEMAPS_DIR / filename_from_url(url)
 
 
-def fetch_url(url: str) -> tuple[int | None, str | None, str | None]:
+def fetch_url(url: str) -> tuple[int | None, bytes | None, str | None]:
     try:
         response = requests.get(url, headers=HEADERS, timeout=30)
-        return response.status_code, response.text, None
+        return response.status_code, response.content, None
     except requests.RequestException as exc:
         return None, None, str(exc)
 
@@ -128,7 +128,7 @@ def fetch_and_save_sitemap(url: str) -> dict[str, str]:
         row["fetch_status"] = "already_exists"
         return row
 
-    status_code, text, error_message = fetch_url(url)
+    status_code, content, error_message = fetch_url(url)
 
     if status_code is not None:
         row["http_status"] = str(status_code)
@@ -138,12 +138,12 @@ def fetch_and_save_sitemap(url: str) -> dict[str, str]:
         row["error_message"] = error_message
         return row
 
-    if status_code != 200 or text is None:
+    if status_code != 200 or content is None:
         row["fetch_status"] = "failed"
         row["error_message"] = f"HTTP {status_code}"
         return row
 
-    local_path.write_text(text, encoding="utf-8")
+    local_path.write_bytes(content)
     row["fetch_status"] = "saved"
 
     return row
@@ -151,7 +151,14 @@ def fetch_and_save_sitemap(url: str) -> dict[str, str]:
 
 def parse_sitemap_index_file(path: Path) -> list[dict[str, str]]:
     try:
-        root = ET.parse(path).getroot()
+        with path.open("rb") as f:
+            magic = f.read(2)
+
+        if magic == b"\x1f\x8b":
+            with gzip.open(path, "rb") as f:
+                root = ET.parse(f).getroot()
+        else:
+            root = ET.parse(path).getroot()
     except ET.ParseError:
         return []
 
