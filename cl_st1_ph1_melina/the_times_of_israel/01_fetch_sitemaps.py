@@ -38,6 +38,14 @@ def ensure_directories() -> None:
     LOGS_DIR.mkdir(parents=True, exist_ok=True)
 
 
+def project_relative_path(path: Path) -> str:
+    """
+    Return a path relative to this source directory, so logs remain portable
+    across EC2, local machines, and future project locations.
+    """
+    return str(path.relative_to(BASE_DIR))
+
+
 def extract_sitemap_urls_from_robots(robots_path: Path) -> list[str]:
     if not robots_path.exists():
         raise FileNotFoundError(f"robots.txt not found: {robots_path}")
@@ -86,7 +94,7 @@ def fetch_and_save_sitemap(url: str) -> dict[str, str]:
     row = {
         "source_id": SOURCE_ID,
         "url": url,
-        "local_path": str(local_path),
+        "local_path": project_relative_path(local_path),
         "http_status": "",
         "fetch_status": "",
         "error_message": "",
@@ -157,7 +165,7 @@ def save_csv(path: Path, rows: list[dict[str, str]], fieldnames: list[str]) -> N
 def main() -> None:
     ensure_directories()
 
-    print(f"Reading sitemap declarations from: {ROBOTS_PATH}")
+    print(f"Reading sitemap declarations from: {project_relative_path(ROBOTS_PATH)}")
     top_level_sitemap_urls = extract_sitemap_urls_from_robots(ROBOTS_PATH)
 
     print(f"Found {len(top_level_sitemap_urls)} sitemap URL(s) in robots.txt:")
@@ -228,9 +236,9 @@ def main() -> None:
         ],
     )
 
-    print(f"\nSaved sitemap fetch log to: {FETCH_LOG_PATH}")
-    print(f"Saved sitemap index children log to: {SITEMAP_INDEX_LOG_PATH}")
-    print(f"Saved sitemap XML files under: {SITEMAPS_DIR}")
+    print(f"\nSaved sitemap fetch log to: {project_relative_path(FETCH_LOG_PATH)}")
+    print(f"Saved sitemap index children log to: {project_relative_path(SITEMAP_INDEX_LOG_PATH)}")
+    print(f"Saved sitemap XML files under: {project_relative_path(SITEMAPS_DIR)}")
 
 
 if __name__ == "__main__":
