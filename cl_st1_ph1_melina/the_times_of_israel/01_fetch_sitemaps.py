@@ -27,7 +27,7 @@ RUN_LOG_PATH = LOGS_DIR / "01_fetch_sitemaps.log"
 REQUEST_DELAY_SECONDS = 3
 
 HEADERS = {
-    "User-Agent": "Academic research corpus collection; contact: laelgelc@outlook.com"
+    "User-Agent": "Mozilla/5.0 (compatible; Googlebot/2.1; +http://google.com)"
 }
 
 SITEMAP_NS = {
