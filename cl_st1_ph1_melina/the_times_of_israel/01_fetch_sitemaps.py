@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import csv
+import logging
 import time
 import xml.etree.ElementTree as ET
 from pathlib import Path
@@ -21,6 +22,7 @@ LOGS_DIR = DATA_DIR / "logs"
 
 FETCH_LOG_PATH = LOGS_DIR / "sitemap_fetch_log.csv"
 SITEMAP_INDEX_LOG_PATH = LOGS_DIR / "sitemap_index_children.csv"
+RUN_LOG_PATH = LOGS_DIR / "01_fetch_sitemaps.log"
 
 REQUEST_DELAY_SECONDS = 3
 
@@ -36,6 +38,28 @@ SITEMAP_NS = {
 def ensure_directories() -> None:
     SITEMAPS_DIR.mkdir(parents=True, exist_ok=True)
     LOGS_DIR.mkdir(parents=True, exist_ok=True)
+
+
+def configure_logging(log_path: Path) -> logging.Logger:
+    logger = logging.getLogger("timesofisrael_fetch_sitemaps")
+    logger.setLevel(logging.INFO)
+    logger.handlers.clear()
+    logger.propagate = False
+
+    formatter = logging.Formatter("%(asctime)s %(levelname)s %(message)s")
+
+    console_handler = logging.StreamHandler()
+    console_handler.setLevel(logging.INFO)
+    console_handler.setFormatter(formatter)
+
+    file_handler = logging.FileHandler(log_path, encoding="utf-8")
+    file_handler.setLevel(logging.INFO)
+    file_handler.setFormatter(formatter)
+
+    logger.addHandler(console_handler)
+    logger.addHandler(file_handler)
+
+    return logger
 
 
 def project_relative_path(path: Path) -> str:
@@ -164,37 +188,50 @@ def save_csv(path: Path, rows: list[dict[str, str]], fieldnames: list[str]) -> N
 
 def main() -> None:
     ensure_directories()
+    logger = configure_logging(RUN_LOG_PATH)
 
-    print(f"Reading sitemap declarations from: {project_relative_path(ROBOTS_PATH)}")
+    logger.info("Starting sitemap fetch programme.")
+    logger.info("Run log: %s", project_relative_path(RUN_LOG_PATH))
+
+    logger.info("Reading sitemap declarations from: %s", project_relative_path(ROBOTS_PATH))
     top_level_sitemap_urls = extract_sitemap_urls_from_robots(ROBOTS_PATH)
 
-    print(f"Found {len(top_level_sitemap_urls)} sitemap URL(s) in robots.txt:")
+    logger.info("Found %s sitemap URL(s) in robots.txt.", len(top_level_sitemap_urls))
     for url in top_level_sitemap_urls:
-        print(f"  - {url}")
+        logger.info("Sitemap declared in robots.txt: %s", url)
 
     fetch_log: list[dict[str, str]] = []
     sitemap_index_children: list[dict[str, str]] = []
 
-    print("\nFetching top-level sitemaps from robots.txt...")
+    logger.info("Fetching top-level sitemaps from robots.txt.")
     for sitemap_url in top_level_sitemap_urls:
-        print(f"Fetching: {sitemap_url}")
+        logger.info("Fetching top-level sitemap: %s", sitemap_url)
         row = fetch_and_save_sitemap(sitemap_url)
         fetch_log.append(row)
+        logger.info(
+            "Fetch result: url=%s status=%s fetch_status=%s error=%s",
+            row["url"],
+            row["http_status"],
+            row["fetch_status"],
+            row["error_message"],
+        )
         time.sleep(REQUEST_DELAY_SECONDS)
 
-    print("\nChecking top-level sitemaps for child sitemap indexes...")
+    logger.info("Checking top-level sitemaps for child sitemap indexes.")
     for sitemap_url in top_level_sitemap_urls:
         local_path = local_path_for_sitemap(sitemap_url)
 
         if not local_path.exists():
+            logger.warning("Local sitemap file does not exist: %s", project_relative_path(local_path))
             continue
 
         children = parse_sitemap_index_file(local_path)
 
         if not children:
+            logger.info("No child sitemaps found in: %s", local_path.name)
             continue
 
-        print(f"{local_path.name}: found {len(children)} child sitemap(s)")
+        logger.info("%s: found %s child sitemap(s)", local_path.name, len(children))
         sitemap_index_children.extend(children)
 
     child_sitemap_urls = sorted(
@@ -205,11 +242,18 @@ def main() -> None:
         }
     )
 
-    print(f"\nFetching {len(child_sitemap_urls)} child sitemap(s) from sitemap index...")
+    logger.info("Fetching %s child sitemap(s) from sitemap index.", len(child_sitemap_urls))
     for child_sitemap_url in child_sitemap_urls:
-        print(f"Fetching: {child_sitemap_url}")
+        logger.info("Fetching child sitemap: %s", child_sitemap_url)
         row = fetch_and_save_sitemap(child_sitemap_url)
         fetch_log.append(row)
+        logger.info(
+            "Fetch result: url=%s status=%s fetch_status=%s error=%s",
+            row["url"],
+            row["http_status"],
+            row["fetch_status"],
+            row["error_message"],
+        )
         time.sleep(REQUEST_DELAY_SECONDS)
 
     save_csv(
@@ -236,9 +280,10 @@ def main() -> None:
         ],
     )
 
-    print(f"\nSaved sitemap fetch log to: {project_relative_path(FETCH_LOG_PATH)}")
-    print(f"Saved sitemap index children log to: {project_relative_path(SITEMAP_INDEX_LOG_PATH)}")
-    print(f"Saved sitemap XML files under: {project_relative_path(SITEMAPS_DIR)}")
+    logger.info("Saved sitemap fetch log to: %s", project_relative_path(FETCH_LOG_PATH))
+    logger.info("Saved sitemap index children log to: %s", project_relative_path(SITEMAP_INDEX_LOG_PATH))
+    logger.info("Saved sitemap XML files under: %s", project_relative_path(SITEMAPS_DIR))
+    logger.info("Finished sitemap fetch programme.")
 
 
 if __name__ == "__main__":
