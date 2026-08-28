@@ -1,6 +1,6 @@
-# `01_select_now_files_deprecated.py` Programme
+# Development Specification: `01_select_now_files.py`
 
-Write a Python programme named `01_select_now_files_deprecated.py` that processes a dataset directory and writes filtered outputs to another directory.
+Write a Python programme named `01_select_now_files.py` that processes a dataset directory and writes filtered outputs to another directory.
 
 ## Purpose
 
