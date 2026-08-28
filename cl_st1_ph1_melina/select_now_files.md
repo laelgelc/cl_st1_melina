@@ -1,6 +1,6 @@
-# Development Specification: `01_select_now_files.py`
+# Development Specification: `select_now_files.py`
 
-Write a Python programme named `01_select_now_files.py` that processes a dataset directory and writes filtered outputs to another directory.
+Write a Python programme named `select_now_files.py` that processes a dataset directory and writes filtered outputs to another directory.
 
 ## Purpose
 
@@ -19,7 +19,7 @@ Accept the following command-line arguments:
 
 - Create the output directory if it does not exist.
 - Use clear, robust code with basic error handling.
-- Create a log file named `01_select_now_files.log` in the same directory where `01_select_now_files_deprecated.py` is located.
+- Create a log file named `select_now_files.log` in the same directory where `select_now_files_deprecated.py` is located.
 - Log to both the console and the log file.
 - Use standard log levels such as `INFO`, `WARNING`, and `ERROR`.
 

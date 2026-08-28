@@ -1,13 +1,13 @@
 #!/usr/bin/env python3
 """
-01_select_now_files.py
+select_now_files.py
 
 Process a dataset directory by extracting supported archives, then filtering all
 text files for lines that contain any configured search term as a whole word,
 case-insensitive.
 
 Usage:
-    python 01_select_now_files.py \
+    python select_now_files.py \
         --input INPUT_DIR \
         --output OUTPUT_DIR
 
@@ -174,7 +174,7 @@ def main() -> int:
     script_dir = Path(__file__).resolve().parent
 
     ensure_directory(output_dir)
-    logger = configure_logging(script_dir / "01_select_now_files.log")
+    logger = configure_logging(script_dir / "select_now_files.log")
 
     if not input_dir.exists() or not input_dir.is_dir():
         logger.error("Input directory does not exist or is not a directory: %s", input_dir)
