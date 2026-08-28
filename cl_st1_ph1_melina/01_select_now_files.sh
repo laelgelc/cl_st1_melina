@@ -1,8 +1,3 @@
 python 01_select_now_files.py \
-    --input corpus/01_now_dataset_raw_1_test \
-    --output corpus/01_now_dataset_1_test
-
-python 01_select_now_files.py \
-    --input corpus/01_now_dataset_raw_1 \
-    --output corpus/01_now_dataset_1
-
+    --input corpus/01_now_dataset_raw/02_now_text_raw \
+    --output corpus/01_now_dataset_raw/02_now_text_raw
