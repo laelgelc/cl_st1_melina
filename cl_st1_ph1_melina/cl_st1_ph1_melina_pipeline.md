@@ -1,0 +1,26 @@
+# Corpus Linguistics - Study 1 - Phase 1 - Melina
+
+Run the commands from the project phase directory, e.g.:
+
+```text
+cl_st1_ph1_melina/
+```
+
+## 1. Select NOW news articles the contain the `gaza` seed term
+
+```shell script
+python select_now_files.py \
+    --input corpus/01_now_dataset_raw/02_now_text_raw \
+    --output corpus/01_now_dataset/02_now_text
+```
+
+## 2. Find NOW sources and news articles matches
+
+```shell script
+python find_now_sources_text_matches.py \
+    --initial-date 2020-01-01 \
+    --final-date 2020-12-31 \
+    --input-sources corpus/01_now_dataset_raw/01_now_sources_raw \
+    --input-articles corpus/01_now_dataset/02_now_text \
+    --match corpus/01_now_dataset/01_now_matched_sources
+```
