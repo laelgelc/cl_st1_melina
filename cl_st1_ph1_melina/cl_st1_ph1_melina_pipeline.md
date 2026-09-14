@@ -22,5 +22,14 @@ python find_now_sources_text_matches.py \
     --final-date 2020-12-31 \
     --input-sources corpus/01_now_dataset_raw/01_now_sources_raw \
     --input-articles corpus/01_now_dataset/02_now_text \
-    --match corpus/01_now_dataset/01_now_matched_sources
+    --match corpus/01_now_dataset/01_now_matched_sources_2020
+```
+
+```shell script
+python find_now_sources_text_matches.py \
+    --initial-date 2023-09-01 \
+    --final-date 2026-09-14 \
+    --input-sources corpus/01_now_dataset_raw/01_now_sources_raw \
+    --input-articles corpus/01_now_dataset/02_now_text \
+    --match corpus/01_now_dataset/01_now_matched_sources_2023_2026
 ```
