@@ -44,3 +44,55 @@ python organise_now_articles.py \
     --input-articles corpus/01_now_dataset/02_now_text \
     --output-articles corpus/02_now_organised
 ```
+
+## LLM Screening
+
+### Dry run
+
+```shell
+python llm_screening.py \
+    --manifest corpus/palestine_now.ndjson \
+    --output corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna \
+    --prompt llm_screening_prompts/llm_screening_v2.md \
+    --model gpt-5.6-luna \
+    --limit 10 \
+    --dry-run
+```
+
+
+### Test run
+
+```shell
+python llm_screening.py \
+    --manifest corpus/palestine_now.ndjson \
+    --output corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna \
+    --prompt llm_screening_prompts/llm_screening_v2.md \
+    --model gpt-5.6-luna \
+    --limit 10 \
+    --resume
+```
+
+### Full run
+
+```shell
+python llm_screening.py \
+    --manifest corpus/palestine_now.ndjson \
+    --output corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna \
+    --prompt llm_screening_prompts/llm_screening_v2.md \
+    --model gpt-5.6-luna \
+    --workers 10 \
+    --resume
+```
+
+### Production mode on an EC2 instance
+
+```shell
+bash run_python_ec2.sh \
+    llm_screening.py \
+    --manifest corpus/palestine_now.ndjson \
+    --output corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna \
+    --prompt llm_screening_prompts/llm_screening_v2.md \
+    --model gpt-5.6-luna \
+    --workers 10 \
+    --resume
+```
