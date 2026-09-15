@@ -22,12 +22,13 @@ The programme will:
 
 1. Recursively scan the selected article text directory.
 2. Extract all selected article IDs from lines beginning with `@@`.
-3. Recursively scan the raw NOW source metadata directory.
-4. Match metadata rows whose article ID appears in the selected article ID set.
-5. Filter matches by publication date using `--initial-date` and `--final-date`.
-6. Write a consolidated matched metadata file.
-7. Write diagnostic files for unmatched and duplicate article IDs.
-8. Produce a log file summarising the process.
+3. Record malformed selected article lines in a diagnostic file.
+4. Recursively scan the raw NOW source metadata directory.
+5. Match metadata rows whose article ID appears in the selected article ID set.
+6. Filter matches by publication date using `--initial-date` and `--final-date`.
+7. Write a consolidated matched metadata file.
+8. Write diagnostic files for unmatched article IDs, duplicate article IDs, malformed selected article lines, and duplicate metadata matches.
+9. Produce a log file summarising the process.
 
 The programme must be designed for large source metadata files and therefore must process metadata files **line by line**, without loading them fully into memory.
 
@@ -49,13 +50,13 @@ python find_now_sources_text_matches.py \
 
 ### 2.1 Required arguments
 
-| Argument | Required | Description |
-|---|---:|---|
-| `--initial-date` | Yes | First publication date to include, in ISO format: `YYYY-MM-DD`. |
-| `--final-date` | Yes | Final publication date to include, in ISO format: `YYYY-MM-DD`. |
-| `--input-sources` | Yes | Directory containing raw NOW source metadata files. |
-| `--input-articles` | Yes | Directory containing selected NOW article text files. |
-| `--match` | Yes | Output directory where matched metadata and diagnostic files will be written. |
+| Argument           | Required | Description                                                                   |
+|--------------------|---------:|-------------------------------------------------------------------------------|
+| `--initial-date`   |      Yes | First publication date to include, in ISO format: `YYYY-MM-DD`.               |
+| `--final-date`     |      Yes | Final publication date to include, in ISO format: `YYYY-MM-DD`.               |
+| `--input-sources`  |      Yes | Directory containing raw NOW source metadata files.                           |
+| `--input-articles` |      Yes | Directory containing selected NOW article text files.                         |
+| `--match`          |      Yes | Output directory where matched metadata and diagnostic files will be written. |
 
 ### 2.2 Date range semantics
 
@@ -126,13 +127,26 @@ This means:
 - the article ID must consist of one or more digits;
 - the article ID must appear at the beginning of the article line after optional whitespace.
 
-### 3.1.2 Malformed article lines
+### 3.1.2 Malformed selected article lines
 
-A non-empty line in a selected article file that does not contain a valid `@@` article ID at the start must be counted as a malformed article line.
+A non-empty line in a selected article file that does not contain a valid `@@` article ID at the start must be counted as a malformed selected article line.
 
-Malformed article lines should not stop the programme.
+Malformed selected article lines should not stop the programme.
 
-The programme should log a warning summary, not every malformed line individually unless the number is small.
+Each malformed selected article line must be recorded in:
+
+```plain text
+malformed_selected_article_lines.tsv
+```
+
+
+The diagnostic record must include:
+
+- the selected article file path relative to `--input-articles`;
+- the line number;
+- a short preview of the malformed line.
+
+The line preview should be truncated to avoid creating extremely large diagnostic rows.
 
 ---
 
@@ -156,15 +170,15 @@ Example:
 
 ### 3.2.1 Metadata field interpretation
 
-| Column | Output field name | Description |
-|---:|---|---|
-| 1 | `article_id` | NOW article ID. This is the join key. |
-| 2 | `now_field_2` | Unknown or opaque NOW field. Preserve unchanged. |
-| 3 | `date_original` | Original NOW date string, expected as `YY-MM-DD`. |
-| 4 | `country_code` | NOW country code. Preserve as uppercase or as found. |
-| 5 | `source_name` | Publication, vehicle, or source name. |
-| 6 | `url` | Article URL. |
-| 7 | `title` | Article title. |
+| Column | Output field name | Description                                          |
+|-------:|-------------------|------------------------------------------------------|
+|      1 | `article_id`      | NOW article ID. This is the join key.                |
+|      2 | `now_field_2`     | Unknown or opaque NOW field. Preserve unchanged.     |
+|      3 | `date_original`   | Original NOW date string, expected as `YY-MM-DD`.    |
+|      4 | `country_code`    | NOW country code. Preserve as uppercase or as found. |
+|      5 | `source_name`     | Publication, vehicle, or source name.                |
+|      6 | `url`             | Article URL.                                         |
+|      7 | `title`           | Article title.                                       |
 
 The second column must not be interpreted or transformed at this stage. It must be preserved under the output name `now_field_2`.
 
@@ -267,6 +281,7 @@ The programme must use a two-pass streaming strategy:
    - Recursively scan selected article text files.
    - Extract article IDs from article lines.
    - Store the selected article IDs in memory.
+   - Record malformed selected article lines with file path, line number, and line preview.
 
 2. **Pass 2: source metadata files**
    - Recursively scan source metadata files.
@@ -287,6 +302,7 @@ The programme may keep the following in memory:
 - selected article ID to article location mapping;
 - matched article IDs;
 - duplicate article ID information;
+- malformed selected article line records;
 - counters and summary statistics.
 
 Article IDs should be stored as strings, not integers.
@@ -308,9 +324,7 @@ If the same selected article ID appears in more than one metadata row within the
 
 - write all matched metadata rows to the main matched output;
 - count metadata duplicate matches;
-- optionally record them in a metadata duplicate diagnostic file if implemented.
-
-For the first version, duplicate selected article IDs are mandatory diagnostics. Duplicate metadata diagnostics are optional but recommended.
+- record them in a metadata duplicate diagnostic file.
 
 ---
 
@@ -320,20 +334,15 @@ The `--match` argument must be treated as an output directory.
 
 The programme must create this directory if it does not exist.
 
-The recommended output files are:
+The required output files are:
 
 ```plain text
 matched_sources.tsv
 unmatched_article_ids.tsv
 duplicate_article_ids.tsv
-find_now_sources_text_matches.log
-```
-
-
-Optionally:
-
-```plain text
+malformed_selected_article_lines.tsv
 duplicate_metadata_matches.tsv
+find_now_sources_text_matches.log
 ```
 
 
@@ -462,9 +471,83 @@ Where:
 - `count` is the number of occurrences found in selected article files;
 - `article_files` is a semicolon-separated list of relative article file paths.
 
+If no duplicate article IDs are found, the file should still be created with only the header row.
+
 ---
 
-## 6.4 `find_now_sources_text_matches.log`
+## 6.4 `malformed_selected_article_lines.tsv`
+
+This diagnostic file must contain selected article lines that could not be parsed as valid article lines.
+
+A selected article line is malformed when it is non-empty but does not begin with a valid article ID introduced by `@@`.
+
+### 6.4.1 Required columns
+
+```plain text
+article_file
+line_number
+line_preview
+```
+
+
+Recommended header:
+
+```plain text
+article_file	line_number	line_preview
+```
+
+
+Where:
+
+- `article_file` is the path of the selected article file relative to `--input-articles`;
+- `line_number` is the 1-based line number in that selected article file;
+- `line_preview` is a short, tab-safe preview of the malformed line.
+
+### 6.4.2 Line preview handling
+
+The line preview should:
+
+- strip leading and trailing whitespace;
+- replace tab characters with spaces;
+- be truncated to a reasonable maximum length, e.g. 250 characters.
+
+If no malformed selected article lines are found, the file should still be created with only the header row.
+
+---
+
+## 6.5 `duplicate_metadata_matches.tsv`
+
+This diagnostic file must contain selected article IDs that matched more than one metadata row inside the requested date range.
+
+### 6.5.1 Required columns
+
+```plain text
+article_id
+match_count
+source_files
+article_files
+```
+
+
+Recommended header:
+
+```plain text
+article_id	match_count	source_files	article_files
+```
+
+
+Where:
+
+- `article_id` is the selected NOW article ID;
+- `match_count` is the number of matched metadata rows for that article ID;
+- `source_files` is a semicolon-separated list of metadata source files in which the article ID was matched;
+- `article_files` is a semicolon-separated list of selected article files in which the article ID was found.
+
+If no duplicate metadata matches are found, the file should still be created with only the header row.
+
+---
+
+## 6.6 `find_now_sources_text_matches.log`
 
 The programme must write a log file named:
 
@@ -476,24 +559,6 @@ find_now_sources_text_matches.log
 The log file should be written inside the `--match` output directory.
 
 The programme should also log to the console.
-
----
-
-## 6.5 Optional `duplicate_metadata_matches.tsv`
-
-If implemented, this file should contain selected article IDs that matched more than one metadata row inside the requested date range.
-
-Recommended columns:
-
-```plain text
-article_id
-match_count
-source_files
-article_files
-```
-
-
-This file is optional for the first implementation but useful for corpus auditing.
 
 ---
 
@@ -514,19 +579,28 @@ The log must include:
 - resolved input and output paths;
 - initial date;
 - final date;
+- path to `matched_sources.tsv`;
+- path to `unmatched_article_ids.tsv`;
+- path to `duplicate_article_ids.tsv`;
+- path to `malformed_selected_article_lines.tsv`;
+- path to `duplicate_metadata_matches.tsv`;
+- path to `find_now_sources_text_matches.log`;
 - number of selected article files found;
 - number of selected article lines scanned;
 - number of selected article IDs found;
 - number of unique selected article IDs;
 - number of duplicate selected article IDs;
+- number of duplicate selected article IDs written;
 - number of malformed selected article lines;
+- number of malformed selected article lines written;
+- number of unreadable selected article files;
 - number of source metadata files found;
 - number of source metadata lines scanned;
 - number of matched metadata rows inside date range;
 - number of selected article IDs unmatched inside date range;
+- number of duplicate metadata matches written;
 - number of malformed metadata lines;
-- number of source files that could not be read, if any;
-- output file paths.
+- number of unreadable source metadata files.
 
 ## 7.2 Logging volume
 
@@ -565,6 +639,8 @@ For each metadata line:
 ```
 
 
+The programme may store malformed selected article line records in memory because the selected article dataset is already a reduced subset. If malformed selected article lines become numerous in a future dataset, this can be changed to streaming diagnostic writes.
+
 ---
 
 ## 9. Error Handling
@@ -573,13 +649,15 @@ For each metadata line:
 
 The programme should continue after recoverable errors such as:
 
-- an unreadable individual file;
-- a malformed article line;
+- an unreadable individual selected article file;
+- an unreadable individual source metadata file;
+- a malformed selected article line;
 - a malformed metadata line;
 - an invalid metadata date;
-- an output diagnostic issue that does not affect the main output, if safely recoverable.
+- a duplicate selected article ID;
+- a duplicate metadata match.
 
-Recoverable errors must be logged.
+Recoverable errors must be logged or written to diagnostic files where applicable.
 
 ## 9.2 Fatal errors
 
@@ -589,7 +667,8 @@ The programme should terminate with non-zero exit code for fatal errors such as:
 - missing input directories;
 - unreadable output directory;
 - inability to create the output directory;
-- inability to create the main matched output file.
+- inability to create the main matched output file;
+- inability to write required diagnostic output files.
 
 ---
 
@@ -621,7 +700,7 @@ Output files must be:
 
 The first implementation should preserve the NOW country code as found in the metadata.
 
-Country codes may later be enriched using the project’s country classification table, but that is not required for the first matching programme.
+Country codes may later be enriched using a country classification table, but that is not required for the first matching programme.
 
 The matching programme should therefore not depend on Global North/South classification.
 
@@ -648,21 +727,29 @@ The implementation should be modular and readable.
 
 Recommended functions:
 
-| Function | Responsibility |
-|---|---|
-| `parse_args()` | Parse command-line arguments. |
-| `configure_logging()` | Set up console and file logging. |
-| `ensure_directory()` | Create output directory if needed. |
-| `parse_iso_date()` | Parse CLI dates. |
-| `parse_now_date()` | Convert NOW `YY-MM-DD` dates to ISO date objects/strings. |
-| `iter_text_files()` | Recursively yield `.txt` files from an input directory. |
-| `collect_article_ids()` | Scan selected article files and collect article IDs. |
-| `extract_article_id_from_article_line()` | Extract article ID from `@@` article line. |
-| `scan_source_metadata()` | Stream source metadata files and write matched rows. |
-| `parse_source_metadata_line()` | Parse one tab-separated metadata row. |
-| `write_unmatched_article_ids()` | Write unmatched diagnostic file. |
-| `write_duplicate_article_ids()` | Write duplicate selected article ID diagnostic file. |
-| `main()` | Coordinate the complete programme. |
+| Function                                   | Responsibility                                                                                 |
+|--------------------------------------------|------------------------------------------------------------------------------------------------|
+| `parse_args()`                             | Parse command-line arguments.                                                                  |
+| `configure_logging()`                      | Set up console and file logging.                                                               |
+| `ensure_directory()`                       | Create output directory if needed.                                                             |
+| `parse_iso_date()`                         | Parse CLI dates.                                                                               |
+| `parse_now_date()`                         | Convert NOW `YY-MM-DD` dates to ISO date objects/strings.                                      |
+| `validate_input_directory()`               | Validate that required input paths exist and are directories.                                  |
+| `iter_text_files()`                        | Recursively collect `.txt` files from an input directory.                                      |
+| `relative_posix_path()`                    | Convert paths to relative POSIX-style paths for stable TSV output.                             |
+| `extract_article_id_from_article_line()`   | Extract article ID from `@@` article line.                                                     |
+| `make_line_preview()`                      | Produce a short, tab-safe preview of malformed selected article lines.                         |
+| `collect_article_ids()`                    | Scan selected article files, collect article IDs, and record malformed selected article lines. |
+| `extract_metadata_article_id_fast()`       | Quickly extract metadata article ID before full row parsing.                                   |
+| `parse_source_metadata_line()`             | Parse one tab-separated metadata row.                                                          |
+| `write_matched_sources_header()`           | Write the header for the primary matched metadata file.                                        |
+| `scan_source_metadata()`                   | Stream source metadata files and write matched rows.                                           |
+| `write_unmatched_article_ids()`            | Write unmatched article ID diagnostic file.                                                    |
+| `write_duplicate_article_ids()`            | Write duplicate selected article ID diagnostic file.                                           |
+| `write_malformed_selected_article_lines()` | Write malformed selected article line diagnostic file.                                         |
+| `write_duplicate_metadata_matches()`       | Write duplicate metadata match diagnostic file.                                                |
+| `log_output_paths()`                       | Log paths of all output files.                                                                 |
+| `main()`                                   | Coordinate the complete programme.                                                             |
 
 ---
 
@@ -692,11 +779,30 @@ matched_ids: set[str]
 Tracks selected article IDs that produced at least one matched metadata row inside the requested date range.
 
 ```python
-metadata_match_counts: dict[str, int]
+metadata_match_counts: Counter[str]
 ```
 
 
-Optional. Counts how many in-range metadata rows matched each selected article ID.
+Counts how many in-range metadata rows matched each selected article ID.
+
+```python
+metadata_match_source_files: dict[str, set[str]]
+```
+
+
+Maps article IDs to source metadata files where in-range matches were found.
+
+```python
+malformed_selected_article_line_records: list[tuple[str, int, str]]
+```
+
+
+Stores malformed selected article line diagnostics as:
+
+```plain text
+article_file, line_number, line_preview
+```
+
 
 ---
 
@@ -719,35 +825,63 @@ Create match output directory.
 
 Configure logging.
 
+Define output paths:
+    matched_sources.tsv
+    unmatched_article_ids.tsv
+    duplicate_article_ids.tsv
+    malformed_selected_article_lines.tsv
+    duplicate_metadata_matches.tsv
+    find_now_sources_text_matches.log
+
+Log output paths.
+
 Collect selected article IDs:
     for each .txt file under input articles:
-        for each line:
+        for each line with 1-based line number:
+            skip blank lines
             extract @@ article ID
-            store article ID and relative file path
-            count malformed lines
+            if article ID is valid:
+                store article ID and relative file path
+            otherwise:
+                count malformed selected article line
+                record:
+                    article_file
+                    line_number
+                    line_preview
 
 Open matched_sources.tsv for writing.
 
 Scan source metadata:
     for each .txt file under input sources:
-        for each line:
+        for each non-blank line:
             quickly extract article ID before first tab
+            if article ID is missing:
+                count malformed metadata line
+                continue
             if article ID not in selected IDs:
                 continue
 
             parse full metadata row
             parse NOW date
+            if row or date is malformed:
+                count malformed metadata line
+                continue
+
             if date is outside date range:
                 continue
 
             write matched metadata row
             add article ID to matched IDs
+            increment metadata match count
+            record source metadata file for the matched article ID
 
 Write unmatched_article_ids.tsv.
 
 Write duplicate_article_ids.tsv.
 
-Optionally write duplicate_metadata_matches.tsv.
+Write malformed_selected_article_lines.tsv.
+
+Write duplicate_metadata_matches.tsv.
 
 Log summary.
 
@@ -801,7 +935,7 @@ unmatched_article_ids.tsv
 
 with selected article IDs that did not produce in-range metadata matches.
 
-### 15.5 Duplicate diagnostics
+### 15.5 Duplicate selected article diagnostics
 
 The programme must create:
 
@@ -814,7 +948,33 @@ containing duplicate article IDs from the selected article text files.
 
 If no duplicate article IDs are found, the file should still be created with only the header row.
 
-### 15.6 Log file
+### 15.6 Malformed selected article line diagnostics
+
+The programme must create:
+
+```plain text
+malformed_selected_article_lines.tsv
+```
+
+
+containing malformed selected article lines.
+
+If no malformed selected article lines are found, the file should still be created with only the header row.
+
+### 15.7 Duplicate metadata diagnostics
+
+The programme must create:
+
+```plain text
+duplicate_metadata_matches.tsv
+```
+
+
+containing selected article IDs that matched more than one in-range metadata row.
+
+If no duplicate metadata matches are found, the file should still be created with only the header row.
+
+### 15.8 Log file
 
 The programme must create:
 
@@ -825,15 +985,15 @@ find_now_sources_text_matches.log
 
 inside the output directory.
 
-### 15.7 Large-file safety
+### 15.9 Large-file safety
 
 The programme must process source metadata files line by line and must not read a complete source metadata file into memory.
 
-### 15.8 Date filtering
+### 15.10 Date filtering
 
 The programme must use `--initial-date` and `--final-date` as an inclusive date range.
 
-### 15.9 Robustness
+### 15.11 Robustness
 
 Malformed lines must be counted and skipped without stopping the whole programme.
 
@@ -855,7 +1015,7 @@ These can be added later if needed.
 
 ---
 
-## 17. Recommended Output Example
+## 17. Recommended Output Examples
 
 Example `matched_sources.tsv`:
 
@@ -881,10 +1041,26 @@ article_id	count	article_files
 ```
 
 
+Example `malformed_selected_article_lines.tsv`:
+
+```plain text
+article_file	line_number	line_preview
+text-11-02/11-02-au.txt	2	This line does not begin with an article ID...
+```
+
+
+Example `duplicate_metadata_matches.tsv`:
+
+```plain text
+article_id	match_count	source_files	article_files
+83060635	2	now-sources-2020.txt;sources-20-01.txt	text-20-01/20_01-gb.txt
+```
+
+
 ---
 
 ## 18. Summary
 
-`find_now_sources_text_matches.py` should be a streaming metadata matcher for selected NOW corpus articles. Its main design principle is to keep the small selected article ID set in memory while scanning the very large metadata files line by line.
+`find_now_sources_text_matches.py` is a streaming metadata matcher for selected NOW corpus articles. Its main design principle is to keep the smaller selected article ID set in memory while scanning the much larger metadata files line by line.
 
-The required CLI should use `--final-date`, not `--end-date`, and the programme should produce a consolidated matched metadata table plus diagnostic files for unmatched and duplicate article IDs.
+The programme uses `--final-date`, not `--end-date`, and produces a consolidated matched metadata table plus diagnostic files for unmatched article IDs, duplicate selected article IDs, malformed selected article lines, and duplicate metadata matches.
