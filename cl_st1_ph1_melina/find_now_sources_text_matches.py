@@ -38,12 +38,14 @@ MATCHED_SOURCES_FILENAME = "matched_sources.tsv"
 UNMATCHED_ARTICLE_IDS_FILENAME = "unmatched_article_ids.tsv"
 DUPLICATE_ARTICLE_IDS_FILENAME = "duplicate_article_ids.tsv"
 DUPLICATE_METADATA_MATCHES_FILENAME = "duplicate_metadata_matches.tsv"
+MALFORMED_SELECTED_ARTICLE_LINES_FILENAME = "malformed_selected_article_lines.tsv"
 LOG_FILENAME = "find_now_sources_text_matches.log"
 
 
 @dataclass
 class ArticleIdCollectionResult:
     selected_article_locations: dict[str, list[str]] = field(default_factory=dict)
+    malformed_selected_article_line_records: list[tuple[str, int, str]] = field(default_factory=list)
     article_files_found: int = 0
     article_lines_scanned: int = 0
     article_ids_found: int = 0
@@ -181,6 +183,13 @@ def extract_article_id_from_article_line(line: str) -> str | None:
     return match.group(1)
 
 
+def make_line_preview(line: str, max_length: int = 250) -> str:
+    normalized = line.replace("\t", " ").strip()
+    if len(normalized) <= max_length:
+        return normalized
+    return normalized[:max_length] + "..."
+
+
 def collect_article_ids(input_articles: Path, logger: logging.Logger) -> ArticleIdCollectionResult:
     result = ArticleIdCollectionResult()
     article_locations: dict[str, list[str]] = defaultdict(list)
@@ -194,7 +203,7 @@ def collect_article_ids(input_articles: Path, logger: logging.Logger) -> Article
 
         try:
             with article_file.open("r", encoding="utf-8", errors="replace", newline="") as handle:
-                for line in handle:
+                for line_number, line in enumerate(handle, start=1):
                     line = line.rstrip("\r\n")
 
                     if not line:
@@ -205,6 +214,13 @@ def collect_article_ids(input_articles: Path, logger: logging.Logger) -> Article
 
                     if article_id is None:
                         result.malformed_article_lines += 1
+                        result.malformed_selected_article_line_records.append(
+                            (
+                                relative_article_file,
+                                line_number,
+                                make_line_preview(line),
+                            )
+                        )
                         continue
 
                     result.article_ids_found += 1
@@ -423,6 +439,23 @@ def write_duplicate_article_ids(
     return duplicate_count
 
 
+def write_malformed_selected_article_lines(
+    output_path: Path,
+    malformed_records: Iterable[tuple[str, int, str]],
+) -> int:
+    malformed_count = 0
+
+    with output_path.open("w", encoding="utf-8", newline="") as handle:
+        writer = csv.writer(handle, delimiter="\t", lineterminator="\n")
+        writer.writerow(["article_file", "line_number", "line_preview"])
+
+        for article_file, line_number, line_preview in malformed_records:
+            writer.writerow([article_file, line_number, line_preview])
+            malformed_count += 1
+
+    return malformed_count
+
+
 def write_duplicate_metadata_matches(
     output_path: Path,
     metadata_match_counts: Counter[str],
@@ -453,6 +486,10 @@ def log_output_paths(match_dir: Path, logger: logging.Logger) -> None:
     logger.info("Unmatched article IDs output: %s", match_dir / UNMATCHED_ARTICLE_IDS_FILENAME)
     logger.info("Duplicate article IDs output: %s", match_dir / DUPLICATE_ARTICLE_IDS_FILENAME)
     logger.info("Duplicate metadata matches output: %s", match_dir / DUPLICATE_METADATA_MATCHES_FILENAME)
+    logger.info(
+        "Malformed selected article lines output: %s",
+        match_dir / MALFORMED_SELECTED_ARTICLE_LINES_FILENAME,
+    )
     logger.info("Log output: %s", match_dir / LOG_FILENAME)
 
 
@@ -494,6 +531,7 @@ def main() -> int:
     unmatched_article_ids_path = match_dir / UNMATCHED_ARTICLE_IDS_FILENAME
     duplicate_article_ids_path = match_dir / DUPLICATE_ARTICLE_IDS_FILENAME
     duplicate_metadata_matches_path = match_dir / DUPLICATE_METADATA_MATCHES_FILENAME
+    malformed_selected_article_lines_path = match_dir / MALFORMED_SELECTED_ARTICLE_LINES_FILENAME
 
     log_output_paths(match_dir, logger)
 
@@ -520,6 +558,11 @@ def main() -> int:
             article_result.selected_article_locations,
         )
 
+        malformed_selected_article_lines_count = write_malformed_selected_article_lines(
+            malformed_selected_article_lines_path,
+            article_result.malformed_selected_article_line_records,
+        )
+
         duplicate_metadata_count = write_duplicate_metadata_matches(
             duplicate_metadata_matches_path,
             metadata_result.metadata_match_counts,
@@ -537,6 +580,7 @@ def main() -> int:
     logger.info("Unique selected article IDs: %d", len(article_result.selected_article_locations))
     logger.info("Duplicate selected article IDs written: %d", duplicate_article_count)
     logger.info("Malformed selected article lines: %d", article_result.malformed_article_lines)
+    logger.info("Malformed selected article lines written: %d", malformed_selected_article_lines_count)
     logger.info("Unreadable selected article files: %d", article_result.unreadable_article_files)
 
     logger.info("Source metadata files found: %d", metadata_result.source_files_found)
