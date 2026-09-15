@@ -40,7 +40,7 @@ MALFORMED_ARTICLE_FILENAMES_FILENAME = "malformed_article_filenames.tsv"
 LOG_FILENAME = "organise_now_articles.log"
 
 ARTICLE_LINE_PATTERN = re.compile(r"^\s*@@(\d+)\b\s*(.*)$")
-ARTICLE_FILENAME_PATTERN = re.compile(r"^\d{2}-\d{2}-([a-z]{2})(?:\d+)?\.txt$")
+ARTICLE_FILENAME_PATTERN = re.compile(r"^\d{2}[-_]\d{2}-([a-z]{2})(?:\d+)?\.txt$")
 MONTH_DIR_PATTERN_SUFFIX = re.compile(r"^(\d{2})-(\d{2})-text$")
 MONTH_DIR_PATTERN_PREFIX = re.compile(r"^text-(\d{2})-(\d{2})$")
 

@@ -249,16 +249,19 @@ Article filenames are expected to contain:
 3. a country code;
 4. optional numeric suffixes for split files.
 
-Examples:
+The separator between the two-digit year and two-digit month may be either a hyphen (`-`) or an underscore (`_`).
 
-```plain text
+Examples:
+```
+plain text
 23-09-gb.txt
 23-09-ph.txt
+25_06-au.txt
+25_06-bd.txt
 21-07-us1.txt
 21-07-us2.txt
 22-06-ca.txt
 ```
-
 ---
 
 ## 3.5 Country code extraction from filenames
@@ -266,15 +269,16 @@ Examples:
 The country code must be extracted from the selected article filename.
 
 The conceptual filename pattern is:
-
-```plain text
-^\d{2}-\d{2}-([a-z]{2})(?:\d+)?\.txt$
 ```
-
+plain text
+^\d{2}[-_]\d{2}-([a-z]{2})(?:\d+)?\.txt$
+```
 This means:
 
 - `23-09-gb.txt` captures `gb`;
 - `23-09-ph.txt` captures `ph`;
+- `25_06-au.txt` captures `au`;
+- `25_06-bd.txt` captures `bd`;
 - `21-07-us1.txt` captures `us`;
 - `21-07-us2.txt` captures `us`;
 - `22-06-ca.txt` captures `ca`.
@@ -959,7 +963,7 @@ Recommended regular expression constants:
 
 ```python
 ARTICLE_LINE_PATTERN = re.compile(r"^\s*@@(\d+)\b\s*(.*)$")
-ARTICLE_FILENAME_PATTERN = re.compile(r"^\d{2}-\d{2}-([a-z]{2})(?:\d+)?\.txt$")
+ARTICLE_FILENAME_PATTERN = re.compile(r"^\d{2}[-_]\d{2}-([a-z]{2})(?:\d+)?\.txt$")
 MONTH_DIR_PATTERN_SUFFIX = re.compile(r"^(\d{2})-(\d{2})-text$")
 MONTH_DIR_PATTERN_PREFIX = re.compile(r"^text-(\d{2})-(\d{2})$")
 ```
@@ -1202,6 +1206,8 @@ Output file content:
 |-----------------|------------------------|
 | `23-09-gb.txt`  | `gb`                   |
 | `23-09-ph.txt`  | `ph`                   |
+| `25_06-au.txt`  | `au`                   |
+| `25_06-bd.txt`  | `bd`                   |
 | `21-07-us1.txt` | `us`                   |
 | `21-07-us2.txt` | `us`                   |
 | `22-06-ca.txt`  | `ca`                   |
@@ -1314,10 +1320,11 @@ and infer the same kind of `YYYY-MM` value from both.
 ## 17.5 Country code extraction
 
 The programme must correctly extract:
-
 ```plain text
 gb
 ph
+au
+bd
 us
 ```
 
@@ -1326,6 +1333,8 @@ from filenames such as:
 ```plain text
 23-09-gb.txt
 23-09-ph.txt
+25_06-au.txt
+25_06-bd.txt
 21-07-us1.txt
 21-07-us2.txt
 ```
