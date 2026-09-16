@@ -23,5 +23,5 @@ python keylemmas.py \
   --cutoff 3
 ```
 
-# Output: `corpus/06_keylemmas/<group>.tsv`
+Output: `corpus/06_keylemmas/<group>.tsv`
 
