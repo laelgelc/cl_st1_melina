@@ -137,7 +137,7 @@ Screening outputs are stored under:
 corpus/03_now_screened/
 ```
 
-A current screening run directory is:
+A completed screening run directory is:
 
 ```text
 corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/
@@ -152,8 +152,33 @@ llm_screening_failures.ndjson
 llm_screening_invalid_responses.ndjson
 llm_screening_manifest.json
 llm_screening_summary.json
-palestine_now_screened.ndjson
+palestine_now_screened.ndjson.gz
 ```
+
+The full production screening run completed successfully on 2026-09-16 using model `gpt-5.6-luna`. The final run was:
+
+```text
+run_id=20260916T015024Z_0e1ea2f1
+```
+
+Final run status:
+
+| Metric                                  |   Count |
+|-----------------------------------------|--------:|
+| Manifest rows                           | 117,519 |
+| Newly succeeded articles                | 117,219 |
+| Previously completed / skipped articles |     300 |
+| Failed articles                         |       0 |
+| Invalid responses                       |       0 |
+| Total successfully screened articles    | 117,519 |
+
+The final consolidated screened output is stored as a compressed NDJSON file:
+
+```text
+corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/palestine_now_screened.ndjson.gz
+```
+
+The uncompressed NDJSON output exceeded GitHub's standard file-size limit, so the repository stores the compressed `.ndjson.gz` version instead.
 
 #### Dry Run
 
