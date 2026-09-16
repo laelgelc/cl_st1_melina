@@ -107,7 +107,7 @@ This answers:
 
 This is what you already created: recommended articles within the word-count IQR. You mentioned this gives **35,781 articles**, which is a reasonable size for exploratory multidimensional work.
 
-> corpus/palestine_now_main_iqr.tsv
+> corpus/palestine_now_main.tsv (filtered by the `within_word_count_iqr` column)
 
 Use this as your **primary LMDA-ready corpus**, because it controls for extreme article length while preserving much of the natural distribution.
 
@@ -118,6 +118,8 @@ This answers:
 ### 3. Balanced/capped robustness corpus
 
 Create an additional version capped by relevant strata, not necessarily by `group` alone.
+
+> corpus/palestine_now_main.tsv (filtered by the `within_word_count_iqr_cap` column)
 
 I would not simply impose one global cap on `group` without thinking about what `group` encodes. If `group` combines geopolitical category and time period, then it may be a useful stratum. But if your core comparison is Global North vs Global South over time, I would balance by something like:
 
