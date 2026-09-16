@@ -16,3 +16,12 @@ Output: `corpus/05_tagged/<group>/`
 
 ## Extract key lemmas by group
 
+```shell
+python keylemmas.py \
+  --input corpus/05_tagged \
+  --output corpus/06_keylemmas \
+  --cutoff 3
+```
+
+# Output: `corpus/06_keylemmas/<group>.tsv`
+
