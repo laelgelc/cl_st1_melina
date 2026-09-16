@@ -32,30 +32,45 @@ def tag_file(task):
 # ---------------------------------------------------------
 def main():
 
-    INPUT_BASE = Path("corpus/commercial_verbal")
-    OUTPUT_BASE = Path("corpus/07_tagged")
+    INPUT_BASE = Path("corpus/04_now_screened_iqr_cap")
+    OUTPUT_BASE = Path("corpus/05_tagged")
     OUTPUT_BASE.mkdir(parents=True, exist_ok=True)
 
-    # Gather decade folders under corpus/commercial_verbal/
-    folders = sorted(
+    if not INPUT_BASE.exists():
+        print(f"Input directory does not exist: {INPUT_BASE}. Exiting.")
+        return
+
+    if not INPUT_BASE.is_dir():
+        print(f"Input path is not a directory: {INPUT_BASE}. Exiting.")
+        return
+
+    # Gather group folders under corpus/04_now_screened_iqr_cap/
+    group_folders = sorted(
         folder for folder in INPUT_BASE.iterdir()
         if folder.is_dir()
     )
 
-    if not folders:
-        print(f"No decade folders found under {INPUT_BASE}. Exiting.")
+    if not group_folders:
+        print(f"No group folders found under {INPUT_BASE}. Exiting.")
         return
 
     tasks = []
 
-    # Collect files and preserve decade subfolder structure in output
-    for folder in folders:
-        decade = folder.name
-        out_subfolder = OUTPUT_BASE / decade
+    # Collect files from corpus/04_now_screened_iqr_cap/<group>/<country_code>/
+    # and write to corpus/05_tagged/<group>/<article_id>.txt
+    for group_folder in group_folders:
+        group = group_folder.name
+        out_subfolder = OUTPUT_BASE / group
 
-        for infile in sorted(folder.glob("*.txt")):
-            outfile = out_subfolder / infile.name
-            tasks.append((str(infile), str(outfile)))
+        country_code_folders = sorted(
+            folder for folder in group_folder.iterdir()
+            if folder.is_dir()
+        )
+
+        for country_code_folder in country_code_folders:
+            for infile in sorted(country_code_folder.glob("*.txt")):
+                outfile = out_subfolder / infile.name
+                tasks.append((str(infile), str(outfile)))
 
     total = len(tasks)
     if total == 0:
