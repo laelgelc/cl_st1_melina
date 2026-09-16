@@ -1,0 +1,65 @@
+{
+  "article_id": "102820076",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_10/au/102820076.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_10/au/102820076.json"
+  },
+  "manifest_row": {
+    "article_id": "102820076",
+    "group": "global_north_2023_10",
+    "country_code": "au",
+    "filepath": "corpus/02_now_organised/global_north_2023_10/au/102820076.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.97,
+    "gaza_role": "background",
+    "main_topic": "A child’s cancer diagnosis, treatment, and family experience",
+    "conflict_relevance": "The main article is unrelated to Gaza, but an appended news snippet contains meaningful reporting on Israel’s strikes in Gaza, the humanitarian situation, Hamas’s attack, and fears of regional escalation.",
+    "reason": "The article is primarily a human-interest story about a child undergoing cancer treatment. The Gaza-related material appears as a separate, embedded news item rather than as part of the main article, making it peripheral to conflict discourse analysis.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "7beac9348bb1084cd3a638e864b1f20ad20dd25cbebe5a77c145fd4b6793d4bf",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "13d37155bd1ec6cebecbba9e6242a9f6840fe926d9db123ab10f68862c75ab87",
+    "raw_response_text_sha256": "abc2a1dbf412598d828f63bd1c47ebc6a43678bc693f26d829dec16e8bf2c1a4"
+  },
+  "api_metadata": {
+    "id": "resp_00cd832a84f306dd006aa9f5e81f8487d29218ba98664ecab2",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789523432.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1504,
+      "input_tokens_details": {
+        "cache_write_tokens": 1501,
+        "cached_tokens": 0
+      },
+      "output_tokens": 342,
+      "output_tokens_details": {
+        "reasoning_tokens": 174
+      },
+      "total_tokens": 1846
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.97,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"A child’s cancer diagnosis, treatment, and family experience\",\n  \"conflict_relevance\": \"The main article is unrelated to Gaza, but an appended news snippet contains meaningful reporting on Israel’s strikes in Gaza, the humanitarian situation, Hamas’s attack, and fears of regional escalation.\",\n  \"reason\": \"The article is primarily a human-interest story about a child undergoing cancer treatment. The Gaza-related material appears as a separate, embedded news item rather than as part of the main article, making it peripheral to conflict discourse analysis.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T01:50:37Z",
+  "duration_seconds": 5.33,
+  "error": null
+}

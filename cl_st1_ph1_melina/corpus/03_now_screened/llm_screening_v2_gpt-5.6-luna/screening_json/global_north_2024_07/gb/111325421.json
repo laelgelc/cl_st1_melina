@@ -1,0 +1,65 @@
+{
+  "article_id": "111325421",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_07/gb/111325421.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_07/gb/111325421.json"
+  },
+  "manifest_row": {
+    "article_id": "111325421",
+    "group": "global_north_2024_07",
+    "country_code": "gb",
+    "filepath": "corpus/02_now_organised/global_north_2024_07/gb/111325421.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.93,
+    "gaza_role": "substantial",
+    "main_topic": "UK Sunday political talk-show coverage, especially Labour's economic and governance agenda",
+    "conflict_relevance": "The roundup includes a substantial segment on Gaza, Palestinian governance, Hamas, Israeli policy, Netanyahu, hostages, a proposed deal, and the prospects for rebuilding Gaza.",
+    "reason": "The article is primarily a roundup of UK domestic political interviews and controversies, but its extended interview with Husam Zomlot contains meaningful discourse directly related to Gaza and the Israel-Palestine conflict. It is therefore useful as peripheral rather than core conflict coverage.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "864d3aeea2839ba846498ef3217a376b71a06404ad93caf6c8d5b6325b0ead50",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "fe636c96a9cc302a3dec252983eccbc45b60bcc4dbc218b65a7e6284381ebad7",
+    "raw_response_text_sha256": "4eb828147986d8d201bd228e9cd3760f35856ea872f9a791aeaec3eab1ee9a1c"
+  },
+  "api_metadata": {
+    "id": "resp_0c7c8792629e9722006aaa125b56e887d2996ce2800640422f",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789530715.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1465,
+      "input_tokens_details": {
+        "cache_write_tokens": 1462,
+        "cached_tokens": 0
+      },
+      "output_tokens": 417,
+      "output_tokens_details": {
+        "reasoning_tokens": 241
+      },
+      "total_tokens": 1882
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.93,\n  \"gaza_role\": \"substantial\",\n  \"main_topic\": \"UK Sunday political talk-show coverage, especially Labour's economic and governance agenda\",\n  \"conflict_relevance\": \"The roundup includes a substantial segment on Gaza, Palestinian governance, Hamas, Israeli policy, Netanyahu, hostages, a proposed deal, and the prospects for rebuilding Gaza.\",\n  \"reason\": \"The article is primarily a roundup of UK domestic political interviews and controversies, but its extended interview with Husam Zomlot contains meaningful discourse directly related to Gaza and the Israel-Palestine conflict. It is therefore useful as peripheral rather than core conflict coverage.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:52:01Z",
+  "duration_seconds": 6.3,
+  "error": null
+}

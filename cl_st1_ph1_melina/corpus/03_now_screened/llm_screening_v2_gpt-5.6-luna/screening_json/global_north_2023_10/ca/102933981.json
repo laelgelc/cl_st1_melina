@@ -1,0 +1,65 @@
+{
+  "article_id": "102933981",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_10/ca/102933981.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_10/ca/102933981.json"
+  },
+  "manifest_row": {
+    "article_id": "102933981",
+    "group": "global_north_2023_10",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2023_10/ca/102933981.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.97,
+    "gaza_role": "passing",
+    "main_topic": "A northern Ontario town's proposal to sell residential land cheaply and waive property taxes to encourage housing and population growth",
+    "conflict_relevance": "The main article is unrelated to Gaza or the Israel-Palestine conflict, but a substantial embedded CTVNews.ca top-stories snippet briefly discusses humanitarian pauses in Gaza and diplomatic proposals involving Hamas, Israel, and international actors.",
+    "reason": "The Gaza material appears only as an embedded news roundup item rather than part of the main housing story. It contains meaningful conflict-related discourse, so the article is peripheral rather than excluded.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "d6137b54dadcafc39849ab3a00a31c07acac57b7e30004c4ef73317a71199bd1",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "a2e53ccc42e7270f68f5f1557753f414cbf552139d0bbddbf1d746d4084dc187",
+    "raw_response_text_sha256": "fad399cbeb10eb7d4f0418e1a59685260a96bfd7cf60e9f03c4132bc9cfec864"
+  },
+  "api_metadata": {
+    "id": "resp_01973fd4749c2690006aa9f69f354c87d298468977b09a4e9e",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789523615.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1865,
+      "input_tokens_details": {
+        "cache_write_tokens": 1862,
+        "cached_tokens": 0
+      },
+      "output_tokens": 355,
+      "output_tokens_details": {
+        "reasoning_tokens": 176
+      },
+      "total_tokens": 2220
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.97,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"A northern Ontario town's proposal to sell residential land cheaply and waive property taxes to encourage housing and population growth\",\n  \"conflict_relevance\": \"The main article is unrelated to Gaza or the Israel-Palestine conflict, but a substantial embedded CTVNews.ca top-stories snippet briefly discusses humanitarian pauses in Gaza and diplomatic proposals involving Hamas, Israel, and international actors.\",\n  \"reason\": \"The Gaza material appears only as an embedded news roundup item rather than part of the main housing story. It contains meaningful conflict-related discourse, so the article is peripheral rather than excluded.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T01:53:39Z",
+  "duration_seconds": 4.4,
+  "error": null
+}

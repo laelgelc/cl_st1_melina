@@ -1,0 +1,65 @@
+{
+  "article_id": "102526532",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_south_2023_10/in/102526532.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_south_2023_10/in/102526532.json"
+  },
+  "manifest_row": {
+    "article_id": "102526532",
+    "group": "global_south_2023_10",
+    "country_code": "in",
+    "filepath": "corpus/02_now_organised/global_south_2023_10/in/102526532.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.9,
+    "gaza_role": "background",
+    "main_topic": "Mixed news roundup containing items on Gaza, financial markets, and artificial intelligence",
+    "conflict_relevance": "Includes a substantive brief report on Israel's emergency unity government, military actions in Gaza, and clashes involving Hamas, but the overall text is not focused on the conflict.",
+    "reason": "The Gaza-related item is meaningful and directly connected to the Israel-Hamas war, but it appears alongside unrelated market and technology snippets and Reuters boilerplate. It is therefore useful only as peripheral conflict discourse rather than core coverage.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "7c4be09edaa43d38cced7996102965ad4402b879083f9a3528d42e29f645356c",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "a705ba15f2831d7a6951d4ab1765bc5ea5b63662a735844febda21d5ec992acb",
+    "raw_response_text_sha256": "50f45cef1271e346988e5f6bde28b4c256be759fe872eee703674a89f80f853d"
+  },
+  "api_metadata": {
+    "id": "resp_05aec5f7f3f9356a006aaa3244628487d1a9a5feeb4e4161c8",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789538884.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 807,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 543,
+      "output_tokens_details": {
+        "reasoning_tokens": 376
+      },
+      "total_tokens": 1350
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.9,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Mixed news roundup containing items on Gaza, financial markets, and artificial intelligence\",\n  \"conflict_relevance\": \"Includes a substantive brief report on Israel's emergency unity government, military actions in Gaza, and clashes involving Hamas, but the overall text is not focused on the conflict.\",\n  \"reason\": \"The Gaza-related item is meaningful and directly connected to the Israel-Hamas war, but it appears alongside unrelated market and technology snippets and Reuters boilerplate. It is therefore useful only as peripheral conflict discourse rather than core coverage.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T06:08:11Z",
+  "duration_seconds": 7.76,
+  "error": null
+}

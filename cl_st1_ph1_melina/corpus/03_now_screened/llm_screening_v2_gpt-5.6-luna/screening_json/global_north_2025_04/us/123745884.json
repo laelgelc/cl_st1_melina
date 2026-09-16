@@ -1,0 +1,65 @@
+{
+  "article_id": "123745884",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_04/us/123745884.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_04/us/123745884.json"
+  },
+  "manifest_row": {
+    "article_id": "123745884",
+    "group": "global_north_2025_04",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2025_04/us/123745884.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.93,
+    "gaza_role": "substantial",
+    "main_topic": "US visa revocations, deportation threats, and immigration enforcement targeting international students and scholars",
+    "conflict_relevance": "The article substantially discusses pro-Palestinian students and activists targeted for deportation, alleged support for Hamas, Palestinian-rights advocacy, and the relationship between US immigration enforcement and public activism concerning the Gaza war.",
+    "reason": "Although the article's primary focus is the broader US crackdown on international student visas, a significant portion examines cases linked to pro-Palestinian activism and responses to the Israel-Hamas war. It is therefore useful for studying the conflict's intersection with immigration policy, protest, and political repression, but it is not primarily a Gaza or Israel-Palestine article.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "32f5e4c4e9b37d904191c90c6187ec2fb2910b84d1df5b177d79ae37659c38d0",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "ba379daccf9d13b8147f213d05193d3dfbf794f6f4f084c9406fdb252e3b9d0c",
+    "raw_response_text_sha256": "02007d280ceb060b255526c04e484123932e2003d275c851aece30daa0fdec3b"
+  },
+  "api_metadata": {
+    "id": "resp_0dfbc5d0a90fa077006aaa2a6ea1b487d1b446bc699f2e1ecd",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789536878.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 3177,
+      "input_tokens_details": {
+        "cache_write_tokens": 3174,
+        "cached_tokens": 0
+      },
+      "output_tokens": 382,
+      "output_tokens_details": {
+        "reasoning_tokens": 173
+      },
+      "total_tokens": 3559
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.93,\n  \"gaza_role\": \"substantial\",\n  \"main_topic\": \"US visa revocations, deportation threats, and immigration enforcement targeting international students and scholars\",\n  \"conflict_relevance\": \"The article substantially discusses pro-Palestinian students and activists targeted for deportation, alleged support for Hamas, Palestinian-rights advocacy, and the relationship between US immigration enforcement and public activism concerning the Gaza war.\",\n  \"reason\": \"Although the article's primary focus is the broader US crackdown on international student visas, a significant portion examines cases linked to pro-Palestinian activism and responses to the Israel-Hamas war. It is therefore useful for studying the conflict's intersection with immigration policy, protest, and political repression, but it is not primarily a Gaza or Israel-Palestine article.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T05:34:43Z",
+  "duration_seconds": 5.24,
+  "error": null
+}

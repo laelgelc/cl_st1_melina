@@ -1,0 +1,65 @@
+{
+  "article_id": "105117734",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_01/nz/105117734.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_01/nz/105117734.json"
+  },
+  "manifest_row": {
+    "article_id": "105117734",
+    "group": "global_north_2024_01",
+    "country_code": "nz",
+    "filepath": "corpus/02_now_organised/global_north_2024_01/nz/105117734.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "gaza_role": "boilerplate_or_unrelated",
+    "main_topic": "Barnardos 0800 What's Up counselling and helpline service for children and young people",
+    "conflict_relevance": "The main article is about a New Zealand youth mental-health helpline and has no substantive connection to Gaza or the Israel-Palestine conflict.",
+    "reason": "The Gaza-related text appears as an unrelated appended snippet after the article's paywall material rather than as part of the main article.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "f8229dca644576f55549e395c4f62330ab56286edcbfc751ac9e495a0aeab594",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "d8e9c2f73439d47dc6e8f1febbabe797000fb06c5d78b4c592cdbfdbe49be7fc",
+    "raw_response_text_sha256": "44ec27df437aad6993ad262d85bc3078f5f4786a9983a87a830836a913b95a1a"
+  },
+  "api_metadata": {
+    "id": "resp_094c3321ac94b543006aaa046564e087d28e7c6fe726248cf9",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789527141.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1385,
+      "input_tokens_details": {
+        "cache_write_tokens": 1382,
+        "cached_tokens": 0
+      },
+      "output_tokens": 246,
+      "output_tokens_details": {
+        "reasoning_tokens": 93
+      },
+      "total_tokens": 1631
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"gaza_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Barnardos 0800 What's Up counselling and helpline service for children and young people\",\n  \"conflict_relevance\": \"The main article is about a New Zealand youth mental-health helpline and has no substantive connection to Gaza or the Israel-Palestine conflict.\",\n  \"reason\": \"The Gaza-related text appears as an unrelated appended snippet after the article's paywall material rather than as part of the main article.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:52:24Z",
+  "duration_seconds": 3.149,
+  "error": null
+}

@@ -1,0 +1,65 @@
+{
+  "article_id": "200270124",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_03/us/200270124.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_03/us/200270124.json"
+  },
+  "manifest_row": {
+    "article_id": "200270124",
+    "group": "global_north_2024_03",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2024_03/us/200270124.txt"
+  },
+  "screening": {
+    "category": "CORE",
+    "confidence": 1.0,
+    "gaza_role": "central",
+    "main_topic": "Live coverage of the Israel-Hamas war, including cease-fire negotiations, humanitarian conditions in Gaza, Israeli and Palestinian political responses, military actions, and regional escalation",
+    "conflict_relevance": "The article is entirely focused on the Gaza war and directly related issues, including hostage negotiations, aid access, famine and malnutrition, hospital conditions, airstrikes, Israeli military raids, international diplomacy, alleged violations of international law, and regional spillover.",
+    "reason": "Gaza and the Israel-Hamas war are the central subject of the headline, article framing, and nearly every individual update. The live-blog format contains multiple conflict-related reports, all substantively relevant to discourse analysis of the war and its humanitarian, diplomatic, legal, and military dimensions.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": true
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "939b09cc74a71794d27718ade94d4341ab055395cff488d0d0f9ac566d20a90e",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "7369ecca09d1f14448f71e4a1070d9e16d6df5d7c795b5e3a9513b65420ea5be",
+    "raw_response_text_sha256": "cd94025cdf93b793b89f07ff8dbf2a091b88a73b4ea5526543c056ba8927eaaa"
+  },
+  "api_metadata": {
+    "id": "resp_0b2fe273f1abbb98006aaa0a1a8b0487d2b33ea20e9368ca9c",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789528602.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 4420,
+      "input_tokens_details": {
+        "cache_write_tokens": 4417,
+        "cached_tokens": 0
+      },
+      "output_tokens": 211,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 4631
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"CORE\",\n  \"confidence\": 1.0,\n  \"gaza_role\": \"central\",\n  \"main_topic\": \"Live coverage of the Israel-Hamas war, including cease-fire negotiations, humanitarian conditions in Gaza, Israeli and Palestinian political responses, military actions, and regional escalation\",\n  \"conflict_relevance\": \"The article is entirely focused on the Gaza war and directly related issues, including hostage negotiations, aid access, famine and malnutrition, hospital conditions, airstrikes, Israeli military raids, international diplomacy, alleged violations of international law, and regional spillover.\",\n  \"reason\": \"Gaza and the Israel-Hamas war are the central subject of the headline, article framing, and nearly every individual update. The live-blog format contains multiple conflict-related reports, all substantively relevant to discourse analysis of the war and its humanitarian, diplomatic, legal, and military dimensions.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": true\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:16:45Z",
+  "duration_seconds": 3.09,
+  "error": null
+}

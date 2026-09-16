@@ -1,0 +1,65 @@
+{
+  "article_id": "104545492",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_south_2023_12/in/104545492.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_south_2023_12/in/104545492.json"
+  },
+  "manifest_row": {
+    "article_id": "104545492",
+    "group": "global_south_2023_12",
+    "country_code": "in",
+    "filepath": "corpus/02_now_organised/global_south_2023_12/in/104545492.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.97,
+    "gaza_role": "passing",
+    "main_topic": "2023 timeline of the Russia-Ukraine War",
+    "conflict_relevance": "The article is focused almost entirely on the Russia-Ukraine War and contains only one passing reference to the Israel-Gaza conflict.",
+    "reason": "The Gaza reference appears incidentally within a discussion of Vladimir Putin's statements about Middle East tensions and is not developed into substantive coverage or analysis.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "f26c9e6d658d8f95014a37ac12f1568e29fa220c2044ad54529de6fffd01264c",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "34b0efa54d213b745881d4189c85c150346ff335e580689d1c205a0e4e8e6e48",
+    "raw_response_text_sha256": "c8e0b982d7b30b6b1d59a5b96b54e1740d4b30e43102993fc44b319914849b7a"
+  },
+  "api_metadata": {
+    "id": "resp_0f48478c818e92e8006aaa36d4b00487d18b199c19e0d2fae7",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789540052.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1454,
+      "input_tokens_details": {
+        "cache_write_tokens": 1451,
+        "cached_tokens": 0
+      },
+      "output_tokens": 260,
+      "output_tokens_details": {
+        "reasoning_tokens": 123
+      },
+      "total_tokens": 1714
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.97,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"2023 timeline of the Russia-Ukraine War\",\n  \"conflict_relevance\": \"The article is focused almost entirely on the Russia-Ukraine War and contains only one passing reference to the Israel-Gaza conflict.\",\n  \"reason\": \"The Gaza reference appears incidentally within a discussion of Vladimir Putin's statements about Middle East tensions and is not developed into substantive coverage or analysis.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T06:27:36Z",
+  "duration_seconds": 3.535,
+  "error": null
+}

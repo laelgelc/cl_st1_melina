@@ -1,0 +1,65 @@
+{
+  "article_id": "102708818",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_10/ca/102708818.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_10/ca/102708818.json"
+  },
+  "manifest_row": {
+    "article_id": "102708818",
+    "group": "global_north_2023_10",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2023_10/ca/102708818.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "background",
+    "main_topic": "Review of Bad Bunny's album and its themes of fame, Puerto Rican identity, and artistic reinvention",
+    "conflict_relevance": "The primary article is unrelated to Gaza, but the text includes several substantive embedded news passages about the Israel-Hamas war, humanitarian aid into Gaza, Israeli and Palestinian casualties, U.S. support for Israel, and related regional events.",
+    "reason": "The headline and main article concern a music album review. However, the document contains meaningful conflict-related news snippets, including discussion of Gaza humanitarian aid and the Israel-Hamas war. These embedded passages make it useful for peripheral discourse analysis but not as core conflict coverage.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "0fee99655363fdd3c34efafb34a97007d931d963344be241767d04dd56b41df6",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "9e961249fa65fe20c75b3848cc7a1d098f8dd3a86e309b90944b6eb37a72dc74",
+    "raw_response_text_sha256": "d9fae26d16aed180c27686ce3e023de5f1b902de09fa6e9222819f3b07ee77ac"
+  },
+  "api_metadata": {
+    "id": "resp_0dced5c6d75ff63c006aa9f6559cb887d28b2087a12e954618",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789523541.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2629,
+      "input_tokens_details": {
+        "cache_write_tokens": 2626,
+        "cached_tokens": 0
+      },
+      "output_tokens": 315,
+      "output_tokens_details": {
+        "reasoning_tokens": 121
+      },
+      "total_tokens": 2944
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Review of Bad Bunny's album and its themes of fame, Puerto Rican identity, and artistic reinvention\",\n  \"conflict_relevance\": \"The primary article is unrelated to Gaza, but the text includes several substantive embedded news passages about the Israel-Hamas war, humanitarian aid into Gaza, Israeli and Palestinian casualties, U.S. support for Israel, and related regional events.\",\n  \"reason\": \"The headline and main article concern a music album review. However, the document contains meaningful conflict-related news snippets, including discussion of Gaza humanitarian aid and the Israel-Hamas war. These embedded passages make it useful for peripheral discourse analysis but not as core conflict coverage.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T01:52:25Z",
+  "duration_seconds": 3.571,
+  "error": null
+}

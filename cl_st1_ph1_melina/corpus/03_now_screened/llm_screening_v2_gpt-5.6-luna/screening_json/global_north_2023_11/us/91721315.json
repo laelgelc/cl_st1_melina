@@ -1,0 +1,65 @@
+{
+  "article_id": "91721315",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_11/us/91721315.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_11/us/91721315.json"
+  },
+  "manifest_row": {
+    "article_id": "91721315",
+    "group": "global_north_2023_11",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2023_11/us/91721315.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.97,
+    "gaza_role": "background",
+    "main_topic": "U.S. Senate military promotions and the dispute over Pentagon abortion-related travel policy",
+    "conflict_relevance": "The main article is unrelated to Gaza or the Israel-Palestine conflict, but a substantial recommended-story snippet discusses Gaza's humanitarian crisis, Israeli military action, the blockade, and risks to journalists.",
+    "reason": "The headline article concerns a Senate blockade of military promotions over abortion policy. Gaza-related material appears only in an appended recommended-story item, but that item contains meaningful conflict discourse and therefore warrants peripheral classification.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "14023edcd1469cd2c3fc744df2cbc340ed7f7102a0b7971dfb4ace0932abb36b",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "37bc5065017ee69fed2914a6dea9d51faf79d2f2add666bf00f21976e17cb8de",
+    "raw_response_text_sha256": "ac5279276af8de27b5f14ca961de07fb6410bbbfe3d50a42f995afb8cb3b64d9"
+  },
+  "api_metadata": {
+    "id": "resp_0d3137cea394baeb006aa9ffcb151487d2b6c5eddff5c79ead",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789525963.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1391,
+      "input_tokens_details": {
+        "cache_write_tokens": 1388,
+        "cached_tokens": 0
+      },
+      "output_tokens": 326,
+      "output_tokens_details": {
+        "reasoning_tokens": 156
+      },
+      "total_tokens": 1717
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.97,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"U.S. Senate military promotions and the dispute over Pentagon abortion-related travel policy\",\n  \"conflict_relevance\": \"The main article is unrelated to Gaza or the Israel-Palestine conflict, but a substantial recommended-story snippet discusses Gaza's humanitarian crisis, Israeli military action, the blockade, and risks to journalists.\",\n  \"reason\": \"The headline article concerns a Senate blockade of military promotions over abortion policy. Gaza-related material appears only in an appended recommended-story item, but that item contains meaningful conflict discourse and therefore warrants peripheral classification.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:32:46Z",
+  "duration_seconds": 4.201,
+  "error": null
+}

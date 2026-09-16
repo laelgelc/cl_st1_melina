@@ -1,0 +1,65 @@
+{
+  "article_id": "124288605",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_05/us/124288605.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_05/us/124288605.json"
+  },
+  "manifest_row": {
+    "article_id": "124288605",
+    "group": "global_north_2025_05",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2025_05/us/124288605.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.96,
+    "gaza_role": "background",
+    "main_topic": "Pope Francis's interfaith diplomacy and efforts to improve relations between Christianity and Islam",
+    "conflict_relevance": "The main article briefly connects Pope Francis's peace advocacy to the wars in Palestine and Muslim suffering, while the text also contains separate embedded opinion pieces substantially discussing Hamas and Palestinian camps in Lebanon.",
+    "reason": "The headline article is primarily about Pope Francis, Catholic reform, and Christian-Muslim dialogue rather than Gaza or the Israel-Palestine conflict. Its reference to Palestine is meaningful but brief. The article also includes multiple unrelated snippets, including a substantial piece on Hamas in Lebanon, but these do not define the main article.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "8dfda3426b60cfdaccfe0579a05f0d1f72c1ba013c1279d0621ca4f7b1e66df3",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "ec6d167c5c06c76299d81c7707bc60945715a2627f94d74e04c3dde1c87dcdd2",
+    "raw_response_text_sha256": "38df1abc4149e26ca6610e56e473661ead124487d495b2f14f567e77a14425a7"
+  },
+  "api_metadata": {
+    "id": "resp_02162217ea5b4dd6006aaa2d00420087d1a60c14b72ad682d3",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789537536.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 3619,
+      "input_tokens_details": {
+        "cache_write_tokens": 3616,
+        "cached_tokens": 0
+      },
+      "output_tokens": 378,
+      "output_tokens_details": {
+        "reasoning_tokens": 185
+      },
+      "total_tokens": 3997
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.96,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Pope Francis's interfaith diplomacy and efforts to improve relations between Christianity and Islam\",\n  \"conflict_relevance\": \"The main article briefly connects Pope Francis's peace advocacy to the wars in Palestine and Muslim suffering, while the text also contains separate embedded opinion pieces substantially discussing Hamas and Palestinian camps in Lebanon.\",\n  \"reason\": \"The headline article is primarily about Pope Francis, Catholic reform, and Christian-Muslim dialogue rather than Gaza or the Israel-Palestine conflict. Its reference to Palestine is meaningful but brief. The article also includes multiple unrelated snippets, including a substantial piece on Hamas in Lebanon, but these do not define the main article.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T05:45:41Z",
+  "duration_seconds": 5.577,
+  "error": null
+}

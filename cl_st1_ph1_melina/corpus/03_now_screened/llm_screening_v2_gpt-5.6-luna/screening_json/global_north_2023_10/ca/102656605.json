@@ -1,0 +1,65 @@
+{
+  "article_id": "102656605",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_10/ca/102656605.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_10/ca/102656605.json"
+  },
+  "manifest_row": {
+    "article_id": "102656605",
+    "group": "global_north_2023_10",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2023_10/ca/102656605.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "gaza_role": "boilerplate_or_unrelated",
+    "main_topic": "Grandparent scam prevention and Canadian banks' fraud responses",
+    "conflict_relevance": "The article is unrelated to Gaza or the Israel-Palestine conflict; Gaza and the Israel-Hamas war appear only in incidental roundup-style snippets appended to the article.",
+    "reason": "The main article concerns financial scams targeting seniors and bank safeguards. The conflict-related text is not integrated into the article's topic or discourse.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "1cb886d4fdc5e865d8859881a94c1f10edff060e5e5effd8ab0907d6baf862ce",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "32c2d63ed23bddd97a48c564dfe1fc553db63ad9d3263bc022d465f99de59adf",
+    "raw_response_text_sha256": "d33ca048d6f0aa72cd52af05b2b0ec48c5ceae5d6328f8d0be4429fbd31e55df"
+  },
+  "api_metadata": {
+    "id": "resp_047b46aa62608afe006aa9f64addbc87d28d706a9c2cb305b8",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789523530.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2616,
+      "input_tokens_details": {
+        "cache_write_tokens": 2613,
+        "cached_tokens": 0
+      },
+      "output_tokens": 218,
+      "output_tokens_details": {
+        "reasoning_tokens": 67
+      },
+      "total_tokens": 2834
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"gaza_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Grandparent scam prevention and Canadian banks' fraud responses\",\n  \"conflict_relevance\": \"The article is unrelated to Gaza or the Israel-Palestine conflict; Gaza and the Israel-Hamas war appear only in incidental roundup-style snippets appended to the article.\",\n  \"reason\": \"The main article concerns financial scams targeting seniors and bank safeguards. The conflict-related text is not integrated into the article's topic or discourse.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T01:52:13Z",
+  "duration_seconds": 2.909,
+  "error": null
+}

@@ -1,0 +1,65 @@
+{
+  "article_id": "107931344",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_south_2024_05/in/107931344.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_south_2024_05/in/107931344.json"
+  },
+  "manifest_row": {
+    "article_id": "107931344",
+    "group": "global_south_2024_05",
+    "country_code": "in",
+    "filepath": "corpus/02_now_organised/global_south_2024_05/in/107931344.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "background",
+    "main_topic": "Mixed general-news roundup covering Indian politics, sports, health, entertainment, science, and international affairs",
+    "conflict_relevance": "The roundup includes substantive snippets about pro-Palestinian university protests in France, Turkey suspending trade with Israel over Gaza, and Air India flights to Tel Aviv being affected by regional tensions.",
+    "reason": "The text is predominantly an unrelated multi-item news aggregation rather than coverage centered on Gaza or Israel/Palestine. However, several embedded items contain meaningful conflict-related discourse, so it is more relevant than an incidental passing mention but not suitable as core conflict coverage.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "7870711c1decc4f4d0f6b0649f37d39441ca738d55cfaabcfa65e8692d8842bc",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "dbc64991fd27f97817648aa1e0d4028cab429e8440e24031ddc1d8cda08fb906",
+    "raw_response_text_sha256": "e8d77772bf835acdce59c706ea876cc821173588c3ca6a310cce7afb4879e960"
+  },
+  "api_metadata": {
+    "id": "resp_0b8469ece55ac22f006aaa3b04514c87d1a6cbb9f3cb28cea0",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789541124.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 3938,
+      "input_tokens_details": {
+        "cache_write_tokens": 3935,
+        "cached_tokens": 0
+      },
+      "output_tokens": 396,
+      "output_tokens_details": {
+        "reasoning_tokens": 211
+      },
+      "total_tokens": 4334
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Mixed general-news roundup covering Indian politics, sports, health, entertainment, science, and international affairs\",\n  \"conflict_relevance\": \"The roundup includes substantive snippets about pro-Palestinian university protests in France, Turkey suspending trade with Israel over Gaza, and Air India flights to Tel Aviv being affected by regional tensions.\",\n  \"reason\": \"The text is predominantly an unrelated multi-item news aggregation rather than coverage centered on Gaza or Israel/Palestine. However, several embedded items contain meaningful conflict-related discourse, so it is more relevant than an incidental passing mention but not suitable as core conflict coverage.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T06:45:30Z",
+  "duration_seconds": 5.962,
+  "error": null
+}

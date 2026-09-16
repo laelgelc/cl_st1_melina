@@ -1,0 +1,65 @@
+{
+  "article_id": "200062879",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_12/us/200062879.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_12/us/200062879.json"
+  },
+  "manifest_row": {
+    "article_id": "200062879",
+    "group": "global_north_2023_12",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2023_12/us/200062879.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.97,
+    "gaza_role": "background",
+    "main_topic": "Arrest of a teenager accused of planning a mass shooting at a synagogue",
+    "conflict_relevance": "The article links increased antisemitic incidents and threats against Jewish institutions to the Israel-Hamas war and includes a pro-Palestinian slogan in a related incident.",
+    "reason": "The central subject is a domestic synagogue threat and alleged mass-shooting plan, not Gaza or the Israel-Palestine conflict itself. However, it contains meaningful discussion connecting antisemitism to the Gaza war and Palestine-related political expression.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "f501fe3c3565d447918effb66fff551ec4f875ddc9b303dc84f662702556148a",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "3df43c8d5acf1cfb3d6fbca6600b922d5d8a1f7d04596b9a82bee9d54529e909",
+    "raw_response_text_sha256": "06e5ae308646f062a65877aa14df4b74aa5a2afccac4a0874f022c5dd33ca582"
+  },
+  "api_metadata": {
+    "id": "resp_0e37276bc3256f3d006aaa02f5086087d29227920e776fee38",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789526773.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 849,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 248,
+      "output_tokens_details": {
+        "reasoning_tokens": 77
+      },
+      "total_tokens": 1097
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.97,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Arrest of a teenager accused of planning a mass shooting at a synagogue\",\n  \"conflict_relevance\": \"The article links increased antisemitic incidents and threats against Jewish institutions to the Israel-Hamas war and includes a pro-Palestinian slogan in a related incident.\",\n  \"reason\": \"The central subject is a domestic synagogue threat and alleged mass-shooting plan, not Gaza or the Israel-Palestine conflict itself. However, it contains meaningful discussion connecting antisemitism to the Gaza war and Palestine-related political expression.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:46:17Z",
+  "duration_seconds": 4.144,
+  "error": null
+}

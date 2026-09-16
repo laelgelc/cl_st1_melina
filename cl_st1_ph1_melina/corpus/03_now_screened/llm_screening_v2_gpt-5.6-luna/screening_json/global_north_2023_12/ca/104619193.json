@@ -1,0 +1,65 @@
+{
+  "article_id": "104619193",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_12/ca/104619193.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_12/ca/104619193.json"
+  },
+  "manifest_row": {
+    "article_id": "104619193",
+    "group": "global_north_2023_12",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2023_12/ca/104619193.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "background",
+    "main_topic": "Royal fashion and shopping recommendations for Sorel boots",
+    "conflict_relevance": "The main article is unrelated to the Israel-Palestine conflict, but it includes a substantive embedded news snippet describing Israel's ground offensive in Gaza and the displacement of Palestinian families.",
+    "reason": "The headline and primary content concern Kate Middleton's footwear and Boxing Week shopping. However, the included Gaza news passage contains meaningful conflict-related discourse, warranting peripheral classification rather than exclusion.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "586ce5727914cd88d6d7bf81e6ec863d5aa9ce184adf4d33c7b11074863fc47b",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "ea6e071412861227f038e0af7de28055d1edb8280f37c25ad4db2229a3e0cffa",
+    "raw_response_text_sha256": "57e309032d8488b6de8cad05a13ce5bd0fbda16eaae65f9e50299f2c2114f746"
+  },
+  "api_metadata": {
+    "id": "resp_05351c62bfc30b20006aaa0099a35487d2a7bdc221763a6233",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789526169.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1579,
+      "input_tokens_details": {
+        "cache_write_tokens": 1576,
+        "cached_tokens": 0
+      },
+      "output_tokens": 317,
+      "output_tokens_details": {
+        "reasoning_tokens": 160
+      },
+      "total_tokens": 1896
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Royal fashion and shopping recommendations for Sorel boots\",\n  \"conflict_relevance\": \"The main article is unrelated to the Israel-Palestine conflict, but it includes a substantive embedded news snippet describing Israel's ground offensive in Gaza and the displacement of Palestinian families.\",\n  \"reason\": \"The headline and primary content concern Kate Middleton's footwear and Boxing Week shopping. However, the included Gaza news passage contains meaningful conflict-related discourse, warranting peripheral classification rather than exclusion.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:36:15Z",
+  "duration_seconds": 5.533,
+  "error": null
+}

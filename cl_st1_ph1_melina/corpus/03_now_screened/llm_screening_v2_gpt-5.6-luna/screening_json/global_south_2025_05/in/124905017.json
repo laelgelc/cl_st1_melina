@@ -1,0 +1,65 @@
+{
+  "article_id": "124905017",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_south_2025_05/in/124905017.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_south_2025_05/in/124905017.json"
+  },
+  "manifest_row": {
+    "article_id": "124905017",
+    "group": "global_south_2025_05",
+    "country_code": "in",
+    "filepath": "corpus/02_now_organised/global_south_2025_05/in/124905017.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "gaza_role": "boilerplate_or_unrelated",
+    "main_topic": "India's e-Zero FIR initiative for cyber financial crimes",
+    "conflict_relevance": "No meaningful relevance to Gaza or the Israel-Palestine conflict; Gaza appears only in an unrelated embedded snippet about digital misinformation.",
+    "reason": "The main article concerns Indian cybercrime reporting and law-enforcement procedures. The isolated reference to Gaza is part of a separate, unrelated item and does not contribute substantive conflict discourse.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "4e4e73527a09dbda687ab8c3f7a6bd0ac66b25fb54f5db4cb7406b11364fbc9e",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "5513f157a2c527d13d0004e3b5c8d51c16c2308be08f16bc6233e5cde4671ac9",
+    "raw_response_text_sha256": "a810da56bda4e6ed09ebc6ea7cc24c5540cef7a032f9fda6fac2de1311e98897"
+  },
+  "api_metadata": {
+    "id": "resp_0cdd10ce1a0e200e006aaa48c9cf2087d1a0fb86bcfa1ba063",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789544649.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1454,
+      "input_tokens_details": {
+        "cache_write_tokens": 1451,
+        "cached_tokens": 0
+      },
+      "output_tokens": 270,
+      "output_tokens_details": {
+        "reasoning_tokens": 118
+      },
+      "total_tokens": 1724
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"India's e-Zero FIR initiative for cyber financial crimes\",\n  \"conflict_relevance\": \"No meaningful relevance to Gaza or the Israel-Palestine conflict; Gaza appears only in an unrelated embedded snippet about digital misinformation.\",\n  \"reason\": \"The main article concerns Indian cybercrime reporting and law-enforcement procedures. The isolated reference to Gaza is part of a separate, unrelated item and does not contribute substantive conflict discourse.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T07:44:13Z",
+  "duration_seconds": 3.824,
+  "error": null
+}

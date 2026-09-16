@@ -1,0 +1,65 @@
+{
+  "article_id": "119859413",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_01/nz/119859413.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_01/nz/119859413.json"
+  },
+  "manifest_row": {
+    "article_id": "119859413",
+    "group": "global_north_2025_01",
+    "country_code": "nz",
+    "filepath": "corpus/02_now_organised/global_north_2025_01/nz/119859413.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "gaza_role": "passing",
+    "main_topic": "Interview with actor Isabella Rossellini about her career, Catholicism, and the film Conclave",
+    "conflict_relevance": "Gaza is mentioned only briefly as an example of topics covered in Italian newspapers when reporting the Pope's opinions; the article contains no substantive discussion of Gaza or the Israel-Palestine conflict.",
+    "reason": "The article is primarily a career and film interview. Its sole Gaza reference is incidental and does not contribute meaningful conflict-related discourse analysis.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "a00afb9a613780964be2a5fcf4652c08454cde3412a812d359f22ecdf791605a",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "6010a88d103149ad3d5a33c90c3354c37fdfb9da724ef02cd3330bda5d99c0ce",
+    "raw_response_text_sha256": "375b40dd0ea79c3db241936e913b1d52f2e736b1489c0085d751e36250195373"
+  },
+  "api_metadata": {
+    "id": "resp_0c1648c73d399c7c006aaa207b378487d2b4a977136760ed21",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789534331.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 4047,
+      "input_tokens_details": {
+        "cache_write_tokens": 4044,
+        "cached_tokens": 0
+      },
+      "output_tokens": 223,
+      "output_tokens_details": {
+        "reasoning_tokens": 64
+      },
+      "total_tokens": 4270
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Interview with actor Isabella Rossellini about her career, Catholicism, and the film Conclave\",\n  \"conflict_relevance\": \"Gaza is mentioned only briefly as an example of topics covered in Italian newspapers when reporting the Pope's opinions; the article contains no substantive discussion of Gaza or the Israel-Palestine conflict.\",\n  \"reason\": \"The article is primarily a career and film interview. Its sole Gaza reference is incidental and does not contribute meaningful conflict-related discourse analysis.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T04:52:14Z",
+  "duration_seconds": 3.311,
+  "error": null
+}

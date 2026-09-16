@@ -1,0 +1,65 @@
+{
+  "article_id": "104520566",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_south_2023_12/in/104520566.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_south_2023_12/in/104520566.json"
+  },
+  "manifest_row": {
+    "article_id": "104520566",
+    "group": "global_south_2023_12",
+    "country_code": "in",
+    "filepath": "corpus/02_now_organised/global_south_2023_12/in/104520566.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "background",
+    "main_topic": "Drone attack on an Israel-affiliated merchant vessel in the Arabian Sea",
+    "conflict_relevance": "The article primarily reports a maritime security incident but connects the attack to heightened regional tensions and Houthi attacks carried out in claimed support of Palestinians in Gaza.",
+    "reason": "Gaza and the Israel-related regional conflict appear as meaningful contextual framing, but the article is mainly about the tanker incident, rescue response, and maritime security.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "9b537774f798115b1e40e94a04c3b8a5443b21d7b9ede9e99a2d0ed70f34ff1b",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "ca2347b6ccfe5fc6d83810fc8b7fec5ac4f17b9ceab49737695281dc07d165ef",
+    "raw_response_text_sha256": "111eb287de7248a2b5f96d6c75fa5bac32c44c254249f3115793e6d52a756732"
+  },
+  "api_metadata": {
+    "id": "resp_001c24ea732ce35d006aaa36d1462487d1a46345342e219984",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789540049.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1103,
+      "input_tokens_details": {
+        "cache_write_tokens": 1100,
+        "cached_tokens": 0
+      },
+      "output_tokens": 223,
+      "output_tokens_details": {
+        "reasoning_tokens": 72
+      },
+      "total_tokens": 1326
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Drone attack on an Israel-affiliated merchant vessel in the Arabian Sea\",\n  \"conflict_relevance\": \"The article primarily reports a maritime security incident but connects the attack to heightened regional tensions and Houthi attacks carried out in claimed support of Palestinians in Gaza.\",\n  \"reason\": \"Gaza and the Israel-related regional conflict appear as meaningful contextual framing, but the article is mainly about the tanker incident, rescue response, and maritime security.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T06:27:33Z",
+  "duration_seconds": 4.039,
+  "error": null
+}

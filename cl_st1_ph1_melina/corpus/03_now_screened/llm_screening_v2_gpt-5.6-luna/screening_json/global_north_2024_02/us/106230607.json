@@ -1,0 +1,65 @@
+{
+  "article_id": "106230607",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_02/us/106230607.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_02/us/106230607.json"
+  },
+  "manifest_row": {
+    "article_id": "106230607",
+    "group": "global_north_2024_02",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2024_02/us/106230607.txt"
+  },
+  "screening": {
+    "category": "CORE",
+    "confidence": 0.99,
+    "gaza_role": "central",
+    "main_topic": "Progressive Minnesota voters and officials urging Democrats to vote uncommitted in the presidential primary to pressure President Biden to support a cease-fire in Gaza",
+    "conflict_relevance": "The article directly concerns Gaza, the Israel-Hamas war, cease-fire advocacy, hostages, U.S. policy, and electoral protest movements such as Abandon Biden.",
+    "reason": "Gaza-related political activism and debate over Biden's response to the conflict constitute the central subject of the main article, despite unrelated news snippets appearing afterward.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": true
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "ff9c79167a459828b7afcd3dc3006bff595c010852e588341d0fc08bbb3042f0",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "282c522daa75927694f5e57fea78216ff3b04bd725d9c9f7b411e6ca3a7f1ce1",
+    "raw_response_text_sha256": "88785d182cd939fdf20fa8dd4d7b2fa65b967cdeafc95f70d50deb2382a04f2f"
+  },
+  "api_metadata": {
+    "id": "resp_0b90a168546a06a7006aaa076b16bc87d29f6c07c6b2d52ec0",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789527915.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1605,
+      "input_tokens_details": {
+        "cache_write_tokens": 1602,
+        "cached_tokens": 0
+      },
+      "output_tokens": 217,
+      "output_tokens_details": {
+        "reasoning_tokens": 51
+      },
+      "total_tokens": 1822
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"CORE\",\n  \"confidence\": 0.99,\n  \"gaza_role\": \"central\",\n  \"main_topic\": \"Progressive Minnesota voters and officials urging Democrats to vote uncommitted in the presidential primary to pressure President Biden to support a cease-fire in Gaza\",\n  \"conflict_relevance\": \"The article directly concerns Gaza, the Israel-Hamas war, cease-fire advocacy, hostages, U.S. policy, and electoral protest movements such as Abandon Biden.\",\n  \"reason\": \"Gaza-related political activism and debate over Biden's response to the conflict constitute the central subject of the main article, despite unrelated news snippets appearing afterward.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": true\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:05:17Z",
+  "duration_seconds": 2.98,
+  "error": null
+}

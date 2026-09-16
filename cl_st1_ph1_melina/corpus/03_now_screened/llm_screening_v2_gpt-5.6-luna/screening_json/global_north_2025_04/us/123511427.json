@@ -1,0 +1,65 @@
+{
+  "article_id": "123511427",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_04/us/123511427.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_04/us/123511427.json"
+  },
+  "manifest_row": {
+    "article_id": "123511427",
+    "group": "global_north_2025_04",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2025_04/us/123511427.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.94,
+    "gaza_role": "background",
+    "main_topic": "US-Iran negotiations and Netanyahu's response to proposed talks over Iran's nuclear program",
+    "conflict_relevance": "The article discusses Netanyahu, Israel's security relationship with Iran, recognition of Israel, and Iranian attacks on Israel, while mentioning Gaza and hostages only in the opening context.",
+    "reason": "The article is primarily an opinion piece advocating confrontation with Iran rather than an analysis of Gaza, Palestine, or the Israel-Hamas war. Its sustained discussion of Israel, Netanyahu, Iranian hostility toward Israel, and regional conflict makes it meaningfully relevant to broader Israel-related discourse, but not core Gaza or Palestine coverage.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "3d7696bbe88cc3775f68a11d39aeb66316efebec30d03b9a98b80d7839c52b0b",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "2d6c6a4520f66112a443fcbed3dd640022972693e171648ff70a73370fbcf120",
+    "raw_response_text_sha256": "18dd1ffa7ba3b20eebc2e283cd1592540e03cabc72b8d73243c365528059954c"
+  },
+  "api_metadata": {
+    "id": "resp_099a65c445b18b90006aaa2a368d8087d1ab0770c7cf3153d8",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789536822.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1916,
+      "input_tokens_details": {
+        "cache_write_tokens": 1913,
+        "cached_tokens": 0
+      },
+      "output_tokens": 360,
+      "output_tokens_details": {
+        "reasoning_tokens": 172
+      },
+      "total_tokens": 2276
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.94,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"US-Iran negotiations and Netanyahu's response to proposed talks over Iran's nuclear program\",\n  \"conflict_relevance\": \"The article discusses Netanyahu, Israel's security relationship with Iran, recognition of Israel, and Iranian attacks on Israel, while mentioning Gaza and hostages only in the opening context.\",\n  \"reason\": \"The article is primarily an opinion piece advocating confrontation with Iran rather than an analysis of Gaza, Palestine, or the Israel-Hamas war. Its sustained discussion of Israel, Netanyahu, Iranian hostility toward Israel, and regional conflict makes it meaningfully relevant to broader Israel-related discourse, but not core Gaza or Palestine coverage.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T05:33:46Z",
+  "duration_seconds": 4.42,
+  "error": null
+}

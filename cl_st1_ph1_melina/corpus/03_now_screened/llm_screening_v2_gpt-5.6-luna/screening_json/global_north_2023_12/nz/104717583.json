@@ -1,0 +1,65 @@
+{
+  "article_id": "104717583",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_12/nz/104717583.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_12/nz/104717583.json"
+  },
+  "manifest_row": {
+    "article_id": "104717583",
+    "group": "global_north_2023_12",
+    "country_code": "nz",
+    "filepath": "corpus/02_now_organised/global_north_2023_12/nz/104717583.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.94,
+    "gaza_role": "background",
+    "main_topic": "Christmas and Christian symbolism, alongside unrelated political and economic snippets",
+    "conflict_relevance": "The text invokes Israeli bombing and Gaza in a Christian reflection about the birth of Jesus, framing Christ as a brown-skinned Middle Eastern child born in Gaza. This provides some discourse relevant to representations of Gaza and the conflict, but it is not the article's central subject.",
+    "reason": "The Gaza-related passage contains meaningful interpretive discourse, but the surrounding content is primarily a paywall notice, Christmas quotation, and unrelated New Zealand political and economic material.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "eb1e070b7975008655ef5eef45f61773d01cc90c63e95c2e7dea4f6a6398dea5",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "277453986803bfd436b6a3b8e3db019b040dada5c70a2f85ab3b5078ce48ce53",
+    "raw_response_text_sha256": "e485fec8e664ed64448a67495c91ee3af9e3e35a0ce1e4226ff3e98d106ee70a"
+  },
+  "api_metadata": {
+    "id": "resp_0653eb6169a19270006aaa019fbc0c87d2aa396c1226542037",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789526431.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 940,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 277,
+      "output_tokens_details": {
+        "reasoning_tokens": 103
+      },
+      "total_tokens": 1217
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.94,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Christmas and Christian symbolism, alongside unrelated political and economic snippets\",\n  \"conflict_relevance\": \"The text invokes Israeli bombing and Gaza in a Christian reflection about the birth of Jesus, framing Christ as a brown-skinned Middle Eastern child born in Gaza. This provides some discourse relevant to representations of Gaza and the conflict, but it is not the article's central subject.\",\n  \"reason\": \"The Gaza-related passage contains meaningful interpretive discourse, but the surrounding content is primarily a paywall notice, Christmas quotation, and unrelated New Zealand political and economic material.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:40:36Z",
+  "duration_seconds": 4.589,
+  "error": null
+}

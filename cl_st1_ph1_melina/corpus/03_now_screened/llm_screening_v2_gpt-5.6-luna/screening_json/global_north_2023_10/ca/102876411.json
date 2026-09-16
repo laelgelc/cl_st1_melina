@@ -1,0 +1,65 @@
+{
+  "article_id": "102876411",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_10/ca/102876411.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_10/ca/102876411.json"
+  },
+  "manifest_row": {
+    "article_id": "102876411",
+    "group": "global_north_2023_10",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2023_10/ca/102876411.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.93,
+    "gaza_role": "background",
+    "main_topic": "NHL policy allowing players to use stick tape to represent social causes, particularly LGBTQ+ solidarity",
+    "conflict_relevance": "The primary article is unrelated to Gaza or Israel/Palestine, but the text includes substantial embedded snippets about Israel's bombardment of Gaza, humanitarian conditions, and an Israeli hostage released from Gaza.",
+    "reason": "The headline and opening article concern NHL policy and LGBTQ+ advocacy. Gaza-related material appears as separate embedded news snippets rather than as part of the main article, but those snippets contain meaningful conflict discourse, warranting peripheral rather than exclusion classification.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "de385d2fe986c10e8804c85f3e043029873550193ebecbff5e16cb27d6528101",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "d03326a02930cd4e26ea0252399ed73ecc0b818668f1c0460c5b211627ed6302",
+    "raw_response_text_sha256": "a03e6d11587ff85bd2e989b70d4e18fe55d9a32318c7848b48eac0592cab3c6d"
+  },
+  "api_metadata": {
+    "id": "resp_096e9c970b084d13006aa9f68c977c87d2a6ea28e2004d7f86",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789523596.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1916,
+      "input_tokens_details": {
+        "cache_write_tokens": 1913,
+        "cached_tokens": 0
+      },
+      "output_tokens": 346,
+      "output_tokens_details": {
+        "reasoning_tokens": 165
+      },
+      "total_tokens": 2262
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.93,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"NHL policy allowing players to use stick tape to represent social causes, particularly LGBTQ+ solidarity\",\n  \"conflict_relevance\": \"The primary article is unrelated to Gaza or Israel/Palestine, but the text includes substantial embedded snippets about Israel's bombardment of Gaza, humanitarian conditions, and an Israeli hostage released from Gaza.\",\n  \"reason\": \"The headline and opening article concern NHL policy and LGBTQ+ advocacy. Gaza-related material appears as separate embedded news snippets rather than as part of the main article, but those snippets contain meaningful conflict discourse, warranting peripheral rather than exclusion classification.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T01:53:21Z",
+  "duration_seconds": 4.905,
+  "error": null
+}

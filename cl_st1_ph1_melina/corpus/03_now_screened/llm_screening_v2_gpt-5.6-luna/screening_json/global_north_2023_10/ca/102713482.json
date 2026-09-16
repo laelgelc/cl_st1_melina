@@ -1,0 +1,65 @@
+{
+  "article_id": "102713482",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_10/ca/102713482.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_10/ca/102713482.json"
+  },
+  "manifest_row": {
+    "article_id": "102713482",
+    "group": "global_north_2023_10",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2023_10/ca/102713482.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "background",
+    "main_topic": "Parole decision for a British Columbia man convicted of murdering his pregnant wife",
+    "conflict_relevance": "The main article is unrelated to Gaza or the Israel-Palestine conflict, but the text includes several substantive embedded news snippets about Biden's wartime visit to Israel, humanitarian aid to Gaza, Hamas, and the impact of the war on Israelis and Palestinians.",
+    "reason": "The headline and primary article concern a domestic murder case and parole. However, the appended snippets contain meaningful conflict-related discourse, making the item peripheral rather than excludable.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "a873155b143b238e313331f5b6cf086ecada0434d6b586f589b8513ff73c52d8",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "4fd39602bf505d697b26b5008776f22dbb2df65bab7bfa0a736df92c4019b6e5",
+    "raw_response_text_sha256": "ddac3d98b7f2c7dd0aac5a355df9e5cda15137c7fe444e1186b4adf11cfc11e1"
+  },
+  "api_metadata": {
+    "id": "resp_06a6db989f271668006aa9f659ad1487d2a1bda2e53ab56fee",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789523545.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1580,
+      "input_tokens_details": {
+        "cache_write_tokens": 1577,
+        "cached_tokens": 0
+      },
+      "output_tokens": 248,
+      "output_tokens_details": {
+        "reasoning_tokens": 72
+      },
+      "total_tokens": 1828
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Parole decision for a British Columbia man convicted of murdering his pregnant wife\",\n  \"conflict_relevance\": \"The main article is unrelated to Gaza or the Israel-Palestine conflict, but the text includes several substantive embedded news snippets about Biden's wartime visit to Israel, humanitarian aid to Gaza, Hamas, and the impact of the war on Israelis and Palestinians.\",\n  \"reason\": \"The headline and primary article concern a domestic murder case and parole. However, the appended snippets contain meaningful conflict-related discourse, making the item peripheral rather than excludable.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T01:52:28Z",
+  "duration_seconds": 3.024,
+  "error": null
+}

@@ -1,0 +1,65 @@
+{
+  "article_id": "104288709",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_south_2023_12/ph/104288709.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_south_2023_12/ph/104288709.json"
+  },
+  "manifest_row": {
+    "article_id": "104288709",
+    "group": "global_south_2023_12",
+    "country_code": "ph",
+    "filepath": "corpus/02_now_organised/global_south_2023_12/ph/104288709.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "gaza_role": "boilerplate_or_unrelated",
+    "main_topic": "Philippine irrigation infrastructure, water recycling, drought, and rice production",
+    "conflict_relevance": "The article is an editorial about agricultural water management in the Philippines; the Gaza ceasefire text is an unrelated inserted news snippet.",
+    "reason": "Gaza appears only in a duplicated, unrelated embedded sentence and is not part of the article's main subject or argument.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "895de7615d67c3377f9291b0f6e9b2042e217c6ff9f7fbb3ca52830e9babfc6d",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "1cf6e45d61cceaef5e07435abcb72e9985301b2ba2dbe3afb0c699f6d4787ee8",
+    "raw_response_text_sha256": "1b36c86e2f12156155e1f7ea901b251b84a69ccc65fde503f4498ce39ed35c39"
+  },
+  "api_metadata": {
+    "id": "resp_0b322186f4bbd258006aaa373f395087d1b26f71da25b17904",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789540159.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1285,
+      "input_tokens_details": {
+        "cache_write_tokens": 1282,
+        "cached_tokens": 0
+      },
+      "output_tokens": 287,
+      "output_tokens_details": {
+        "reasoning_tokens": 144
+      },
+      "total_tokens": 1572
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Philippine irrigation infrastructure, water recycling, drought, and rice production\",\n  \"conflict_relevance\": \"The article is an editorial about agricultural water management in the Philippines; the Gaza ceasefire text is an unrelated inserted news snippet.\",\n  \"reason\": \"Gaza appears only in a duplicated, unrelated embedded sentence and is not part of the article's main subject or argument.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T06:29:22Z",
+  "duration_seconds": 3.764,
+  "error": null
+}

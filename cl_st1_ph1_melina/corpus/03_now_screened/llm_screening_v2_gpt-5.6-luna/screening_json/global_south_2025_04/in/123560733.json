@@ -1,0 +1,65 @@
+{
+  "article_id": "123560733",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_south_2025_04/in/123560733.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_south_2025_04/in/123560733.json"
+  },
+  "manifest_row": {
+    "article_id": "123560733",
+    "group": "global_south_2025_04",
+    "country_code": "in",
+    "filepath": "corpus/02_now_organised/global_south_2025_04/in/123560733.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.93,
+    "gaza_role": "passing",
+    "main_topic": "A live breaking-news roundup focused primarily on unrelated events in India and worldwide",
+    "conflict_relevance": "Includes a brief update reporting that Hamas is reviewing and will respond to a Gaza ceasefire proposal.",
+    "reason": "The article is not centered on Gaza or the Israel-Hamas war, but the embedded ceasefire update provides a meaningful, conflict-related news item.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "8e1554a5eb6edc3351c867be2c064ce184ac7754752453368dc0ad9f10be0ac9",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "49ea04db93de1ff88a203d3c9ab54897541a8ca420a19ec70a051ee913ef1783",
+    "raw_response_text_sha256": "9520fd268a22fb508f2392b25281bd215f4de487bb4f2425bda5050d25e6b6ed"
+  },
+  "api_metadata": {
+    "id": "resp_01fa3ee159b7c3da006aaa478af71c87d1a94902f8d4234598",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789544331.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1171,
+      "input_tokens_details": {
+        "cache_write_tokens": 1168,
+        "cached_tokens": 0
+      },
+      "output_tokens": 314,
+      "output_tokens_details": {
+        "reasoning_tokens": 176
+      },
+      "total_tokens": 1485
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.93,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"A live breaking-news roundup focused primarily on unrelated events in India and worldwide\",\n  \"conflict_relevance\": \"Includes a brief update reporting that Hamas is reviewing and will respond to a Gaza ceasefire proposal.\",\n  \"reason\": \"The article is not centered on Gaza or the Israel-Hamas war, but the embedded ceasefire update provides a meaningful, conflict-related news item.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T07:38:55Z",
+  "duration_seconds": 4.638,
+  "error": null
+}

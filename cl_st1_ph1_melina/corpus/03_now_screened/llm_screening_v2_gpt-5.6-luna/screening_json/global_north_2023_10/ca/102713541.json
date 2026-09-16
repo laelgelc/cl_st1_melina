@@ -1,0 +1,65 @@
+{
+  "article_id": "102713541",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_10/ca/102713541.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_10/ca/102713541.json"
+  },
+  "manifest_row": {
+    "article_id": "102713541",
+    "group": "global_north_2023_10",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2023_10/ca/102713541.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.96,
+    "gaza_role": "passing",
+    "main_topic": "Officer-involved shooting and police investigation in Seaforth and Clinton, Ontario",
+    "conflict_relevance": "The main article is unrelated to the Israel-Palestine conflict, but it contains embedded news snippets about Biden's wartime visit to Israel, Hamas's attack, humanitarian aid to Gaza, and Israeli-Palestinian relations.",
+    "reason": "The conflict-related material is substantive but appears as unrelated embedded snippets within an article mainly about a Canadian police shooting and manhunt. It is therefore relevant only to broader discourse analysis, not to the main conflict corpus.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "f653e5e0ecb17d69b8bb724fba7d211da946b08fa9a5d691d0b8c38f6582b3fb",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "88e0bd4c5ba713f2ecd68efe7069b2512c7239e7bc423c3e160b7729f3e02e2c",
+    "raw_response_text_sha256": "5939e366af4a931aa07b37a0f7a96ad48c64f3f503e1b2eab04a8e4493a34c97"
+  },
+  "api_metadata": {
+    "id": "resp_00186acc3a581eac006aa9f65bfd0c87d28905edd339e3fa15",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789523548.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1701,
+      "input_tokens_details": {
+        "cache_write_tokens": 1698,
+        "cached_tokens": 0
+      },
+      "output_tokens": 350,
+      "output_tokens_details": {
+        "reasoning_tokens": 171
+      },
+      "total_tokens": 2051
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.96,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Officer-involved shooting and police investigation in Seaforth and Clinton, Ontario\",\n  \"conflict_relevance\": \"The main article is unrelated to the Israel-Palestine conflict, but it contains embedded news snippets about Biden's wartime visit to Israel, Hamas's attack, humanitarian aid to Gaza, and Israeli-Palestinian relations.\",\n  \"reason\": \"The conflict-related material is substantive but appears as unrelated embedded snippets within an article mainly about a Canadian police shooting and manhunt. It is therefore relevant only to broader discourse analysis, not to the main conflict corpus.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T01:52:31Z",
+  "duration_seconds": 3.724,
+  "error": null
+}

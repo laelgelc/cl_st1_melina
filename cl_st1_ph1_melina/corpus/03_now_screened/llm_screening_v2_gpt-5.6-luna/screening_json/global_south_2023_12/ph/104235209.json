@@ -1,0 +1,65 @@
+{
+  "article_id": "104235209",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_south_2023_12/ph/104235209.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_south_2023_12/ph/104235209.json"
+  },
+  "manifest_row": {
+    "article_id": "104235209",
+    "group": "global_south_2023_12",
+    "country_code": "ph",
+    "filepath": "corpus/02_now_organised/global_south_2023_12/ph/104235209.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "background",
+    "main_topic": "Philippine jeepney modernization policy and a related public transport strike",
+    "conflict_relevance": "The main article is unrelated to Gaza, but it includes a substantive embedded news item about humanitarian conditions, the collapsing health system, hostages, and humanitarian access in Gaza.",
+    "reason": "The article primarily concerns Philippine transport regulation, jeepney consolidation, and labor protests. The Gaza material appears as a separate, meaningful news snippet rather than boilerplate or a passing mention, making the item peripheral rather than core.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "ed1cc8c66f5dab989e640e7a2fdaf02305ff5778ce9d50d11760d4960ac1e69f",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "29033e5fb7499a1e143db60cb6261b467a6b1855fa562cbd35852363117fa43d",
+    "raw_response_text_sha256": "238a7fa07bad6c81a2ccdf92bbaa9f022b9e7f7dcfd76a747cf9605e2a073f74"
+  },
+  "api_metadata": {
+    "id": "resp_07a455a38016546a006aaa37331a4887d1be9f8d7892775767",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789540147.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1231,
+      "input_tokens_details": {
+        "cache_write_tokens": 1228,
+        "cached_tokens": 0
+      },
+      "output_tokens": 321,
+      "output_tokens_details": {
+        "reasoning_tokens": 154
+      },
+      "total_tokens": 1552
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Philippine jeepney modernization policy and a related public transport strike\",\n  \"conflict_relevance\": \"The main article is unrelated to Gaza, but it includes a substantive embedded news item about humanitarian conditions, the collapsing health system, hostages, and humanitarian access in Gaza.\",\n  \"reason\": \"The article primarily concerns Philippine transport regulation, jeepney consolidation, and labor protests. The Gaza material appears as a separate, meaningful news snippet rather than boilerplate or a passing mention, making the item peripheral rather than core.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T06:29:11Z",
+  "duration_seconds": 4.744,
+  "error": null
+}

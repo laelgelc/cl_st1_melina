@@ -1,0 +1,65 @@
+{
+  "article_id": "111949886",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_08/us/111949886.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_08/us/111949886.json"
+  },
+  "manifest_row": {
+    "article_id": "111949886",
+    "group": "global_north_2024_08",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2024_08/us/111949886.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "gaza_role": "passing",
+    "main_topic": "Joe Biden's political career, presidency, and decision to withdraw from the 2024 presidential race",
+    "conflict_relevance": "The Gaza War is mentioned only once in a list of international crises during Biden's presidency, without discussion or analysis.",
+    "reason": "The article is centrally about Biden's biography and political decline. Its sole reference to the Gaza War is a brief passing mention alongside Russia's invasion of Ukraine and other crises, so it does not provide meaningful conflict discourse.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "d02268152d353616f73d9cd5072674d8e6808aebfa227471a584b99ccac8fcc8",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "d0b3c7ea7bd67fa8ff5886600e7cdac55b6627935a235460dbf242f9f3e610fb",
+    "raw_response_text_sha256": "e95209c8536673543787ec7174941ee9e6bf651500dffdf6cef920c050ed78b9"
+  },
+  "api_metadata": {
+    "id": "resp_0d44a69aed809cf3006aaa14c9a3a487d2946d586f9591810d",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789531337.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 21065,
+      "input_tokens_details": {
+        "cache_write_tokens": 21062,
+        "cached_tokens": 0
+      },
+      "output_tokens": 259,
+      "output_tokens_details": {
+        "reasoning_tokens": 99
+      },
+      "total_tokens": 21324
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Joe Biden's political career, presidency, and decision to withdraw from the 2024 presidential race\",\n  \"conflict_relevance\": \"The Gaza War is mentioned only once in a list of international crises during Biden's presidency, without discussion or analysis.\",\n  \"reason\": \"The article is centrally about Biden's biography and political decline. Its sole reference to the Gaza War is a brief passing mention alongside Russia's invasion of Ukraine and other crises, so it does not provide meaningful conflict discourse.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T04:02:21Z",
+  "duration_seconds": 3.939,
+  "error": null
+}

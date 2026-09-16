@@ -1,0 +1,65 @@
+{
+  "article_id": "121342726",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_02/gb/121342726.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_02/gb/121342726.json"
+  },
+  "manifest_row": {
+    "article_id": "121342726",
+    "group": "global_north_2025_02",
+    "country_code": "gb",
+    "filepath": "corpus/02_now_organised/global_north_2025_02/gb/121342726.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "background",
+    "main_topic": "European and US security guarantees and possible peacekeeping deployments in Ukraine",
+    "conflict_relevance": "The main article concerns the Russia-Ukraine war, but an embedded latest-stories section includes a meaningful reference to negotiations over the future of war-torn Gaza and a separate item about Israeli troop withdrawals in Lebanon.",
+    "reason": "The headline-associated article is about Ukraine and European security policy rather than Gaza or Israel/Palestine. However, the embedded Gaza and Israel-related news items provide limited but meaningful conflict discourse, making the article peripheral rather than excludable.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "ca3ee6eedd0bc9dca3ed3e366314a003ea00c27f4bac5fc8f55f6baccd0f1fc1",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "d896189ebd328402cdbf37ba1628934901fb3c52986effb838a1cd6f220d8a6c",
+    "raw_response_text_sha256": "64ddd9dc8ba54420ff8471fb3d80ce695a3d89f5b223cae042c96511f1523b0b"
+  },
+  "api_metadata": {
+    "id": "resp_0635727b6606278e006aaa22fbd93887d2a36cec5a0b222b7f",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789534971.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2555,
+      "input_tokens_details": {
+        "cache_write_tokens": 2552,
+        "cached_tokens": 0
+      },
+      "output_tokens": 290,
+      "output_tokens_details": {
+        "reasoning_tokens": 112
+      },
+      "total_tokens": 2845
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"European and US security guarantees and possible peacekeeping deployments in Ukraine\",\n  \"conflict_relevance\": \"The main article concerns the Russia-Ukraine war, but an embedded latest-stories section includes a meaningful reference to negotiations over the future of war-torn Gaza and a separate item about Israeli troop withdrawals in Lebanon.\",\n  \"reason\": \"The headline-associated article is about Ukraine and European security policy rather than Gaza or Israel/Palestine. However, the embedded Gaza and Israel-related news items provide limited but meaningful conflict discourse, making the article peripheral rather than excludable.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T05:02:56Z",
+  "duration_seconds": 4.951,
+  "error": null
+}

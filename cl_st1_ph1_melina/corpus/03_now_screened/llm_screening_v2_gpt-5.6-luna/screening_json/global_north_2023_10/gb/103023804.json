@@ -1,0 +1,65 @@
+{
+  "article_id": "103023804",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_10/gb/103023804.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_10/gb/103023804.json"
+  },
+  "manifest_row": {
+    "article_id": "103023804",
+    "group": "global_north_2023_10",
+    "country_code": "gb",
+    "filepath": "corpus/02_now_organised/global_north_2023_10/gb/103023804.txt"
+  },
+  "screening": {
+    "category": "CORE",
+    "confidence": 0.96,
+    "gaza_role": "substantial",
+    "main_topic": "Israel-Gaza war, Israeli military operations, Hamas attacks, and related UK political controversy",
+    "conflict_relevance": "The text contains substantial direct coverage of Israeli airstrikes, artillery and tank attacks, civilian evacuation warnings, the ground invasion of Gaza, Hamas rocket fire, and UK-based reactions to Hamas attacks.",
+    "reason": "Although the supplied text is a compilation of otherwise unrelated news snippets, two substantial passages directly concern the Israel-Gaza conflict and Hamas, making it relevant to the main corpus.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": true
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "9414798d0910c0779660b393ea213821bf120be0db2495d39b12c37741b19601",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "190cdfb1d87452a552861c9937efb914042bc784fe86f343942169e960deb3b1",
+    "raw_response_text_sha256": "218ebed9393b98e4e34f610f9565898fee9ba06824b7f68d96b381e8c99192e2"
+  },
+  "api_metadata": {
+    "id": "resp_05d43651ff7f1aa8006aa9f7d62d2487d294d55dc5d087892a",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789523926.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2171,
+      "input_tokens_details": {
+        "cache_write_tokens": 2168,
+        "cached_tokens": 0
+      },
+      "output_tokens": 357,
+      "output_tokens_details": {
+        "reasoning_tokens": 192
+      },
+      "total_tokens": 2528
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"CORE\",\n  \"confidence\": 0.96,\n  \"gaza_role\": \"substantial\",\n  \"main_topic\": \"Israel-Gaza war, Israeli military operations, Hamas attacks, and related UK political controversy\",\n  \"conflict_relevance\": \"The text contains substantial direct coverage of Israeli airstrikes, artillery and tank attacks, civilian evacuation warnings, the ground invasion of Gaza, Hamas rocket fire, and UK-based reactions to Hamas attacks.\",\n  \"reason\": \"Although the supplied text is a compilation of otherwise unrelated news snippets, two substantial passages directly concern the Israel-Gaza conflict and Hamas, making it relevant to the main corpus.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": true\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T01:58:50Z",
+  "duration_seconds": 4.52,
+  "error": null
+}

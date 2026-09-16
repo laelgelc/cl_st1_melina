@@ -1,0 +1,65 @@
+{
+  "article_id": "120059284",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_01/us/120059284.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_01/us/120059284.json"
+  },
+  "manifest_row": {
+    "article_id": "120059284",
+    "group": "global_north_2025_01",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2025_01/us/120059284.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "gaza_role": "passing",
+    "main_topic": "A bottlenose dolphin pregnancy and the anticipated birth of a calf at Brookfield Zoo",
+    "conflict_relevance": "The article is unrelated to the Gaza conflict; it contains only an apparent embedded or corrupted snippet mentioning hostages, displaced people in Gaza, and humanitarian aid.",
+    "reason": "The main article concerns zoo dolphins. The Gaza-related material appears as an incidental, unrelated fragment at the end and does not form part of the article's substantive discourse.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "1572da776f38f8e09e8552a5b1803d485625dd3c64cc4516f3aafa8a124188b7",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "765886629c074a458a9b17561d2ad8e534563834a9e7cf72416d54c0fe9ef908",
+    "raw_response_text_sha256": "8a9786c8f73fcacbd1134de16badf8525f6f1b2ecba6bb3a997d37c488c686bf"
+  },
+  "api_metadata": {
+    "id": "resp_00606e9eeb5dfcb7006aaa2126d01887d2ae2e9e2687a8b200",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789534502.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1324,
+      "input_tokens_details": {
+        "cache_write_tokens": 1321,
+        "cached_tokens": 0
+      },
+      "output_tokens": 281,
+      "output_tokens_details": {
+        "reasoning_tokens": 125
+      },
+      "total_tokens": 1605
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"A bottlenose dolphin pregnancy and the anticipated birth of a calf at Brookfield Zoo\",\n  \"conflict_relevance\": \"The article is unrelated to the Gaza conflict; it contains only an apparent embedded or corrupted snippet mentioning hostages, displaced people in Gaza, and humanitarian aid.\",\n  \"reason\": \"The main article concerns zoo dolphins. The Gaza-related material appears as an incidental, unrelated fragment at the end and does not form part of the article's substantive discourse.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T04:55:06Z",
+  "duration_seconds": 3.909,
+  "error": null
+}

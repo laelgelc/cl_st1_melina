@@ -1,0 +1,65 @@
+{
+  "article_id": "106020373",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_02/nz/106020373.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_02/nz/106020373.json"
+  },
+  "manifest_row": {
+    "article_id": "106020373",
+    "group": "global_north_2024_02",
+    "country_code": "nz",
+    "filepath": "corpus/02_now_organised/global_north_2024_02/nz/106020373.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "gaza_role": "passing",
+    "main_topic": "A surf-lifeguard rescue response to a drowning incident at Piha Beach, New Zealand",
+    "conflict_relevance": "The article's main subject is unrelated to Gaza or the Israel-Palestine conflict; Gaza appears only in an embedded, truncated unrelated news snippet.",
+    "reason": "The main article concerns surf safety and emergency response in New Zealand. The only Gaza-related material is a brief passing reference in a separate embedded item about humanitarian aid and the Israel-Hamas conflict, which is not substantively developed.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "6221a5a102fd16a7862291cc8ab6e0d60bfdad4396f48dc1d3b373b6c13cccd4",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "69952c19e4295baad19c9d3fe75ab0673b9db931e0eeaedf25079e5c1e43dc5b",
+    "raw_response_text_sha256": "96b81f14c78b11c2426f2911cd4c8796cb590f5bacff9bb759ad2135ceda02ba"
+  },
+  "api_metadata": {
+    "id": "resp_0b676580c3fe68f4006aaa06c4cd9487d2a0fec5700f32cd84",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789527748.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1400,
+      "input_tokens_details": {
+        "cache_write_tokens": 1397,
+        "cached_tokens": 0
+      },
+      "output_tokens": 260,
+      "output_tokens_details": {
+        "reasoning_tokens": 91
+      },
+      "total_tokens": 1660
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"A surf-lifeguard rescue response to a drowning incident at Piha Beach, New Zealand\",\n  \"conflict_relevance\": \"The article's main subject is unrelated to Gaza or the Israel-Palestine conflict; Gaza appears only in an embedded, truncated unrelated news snippet.\",\n  \"reason\": \"The main article concerns surf safety and emergency response in New Zealand. The only Gaza-related material is a brief passing reference in a separate embedded item about humanitarian aid and the Israel-Hamas conflict, which is not substantively developed.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:02:32Z",
+  "duration_seconds": 4.169,
+  "error": null
+}

@@ -1,0 +1,65 @@
+{
+  "article_id": "123365282",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_south_2025_04/in/123365282.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_south_2025_04/in/123365282.json"
+  },
+  "manifest_row": {
+    "article_id": "123365282",
+    "group": "global_south_2025_04",
+    "country_code": "in",
+    "filepath": "corpus/02_now_organised/global_south_2025_04/in/123365282.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "background",
+    "main_topic": "India live news updates covering domestic politics, crime, security, and international developments",
+    "conflict_relevance": "The live blog includes a substantive report about an Israeli military strike in Gaza that reportedly killed at least 20 people, but Gaza is not the main subject of the article.",
+    "reason": "The article is primarily a collection of unrelated Indian news updates and includes one meaningful embedded item concerning Israeli military action and deaths in Gaza. This makes it relevant as peripheral discourse material rather than core conflict coverage.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "5457aa319458cac22854feed01ab908a12265ae94de6b564b25e8fd8e744aeae",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "392073543538b18f45b756a086d244340732f19267c951fd37ec05af9637956c",
+    "raw_response_text_sha256": "37ef9db359aeb193e2bb48c3aa0db0e0f12a34be2ea42b68def7fb66ce58c89f"
+  },
+  "api_metadata": {
+    "id": "resp_0f295e9e4b434380006aaa4777fe9887d1a6fe67483a79414e",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789544312.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1599,
+      "input_tokens_details": {
+        "cache_write_tokens": 1596,
+        "cached_tokens": 0
+      },
+      "output_tokens": 230,
+      "output_tokens_details": {
+        "reasoning_tokens": 65
+      },
+      "total_tokens": 1829
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"India live news updates covering domestic politics, crime, security, and international developments\",\n  \"conflict_relevance\": \"The live blog includes a substantive report about an Israeli military strike in Gaza that reportedly killed at least 20 people, but Gaza is not the main subject of the article.\",\n  \"reason\": \"The article is primarily a collection of unrelated Indian news updates and includes one meaningful embedded item concerning Israeli military action and deaths in Gaza. This makes it relevant as peripheral discourse material rather than core conflict coverage.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T07:38:36Z",
+  "duration_seconds": 4.264,
+  "error": null
+}

@@ -1,0 +1,65 @@
+{
+  "article_id": "102531400",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_10/nz/102531400.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_10/nz/102531400.json"
+  },
+  "manifest_row": {
+    "article_id": "102531400",
+    "group": "global_north_2023_10",
+    "country_code": "nz",
+    "filepath": "corpus/02_now_organised/global_north_2023_10/nz/102531400.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.93,
+    "gaza_role": "background",
+    "main_topic": "Myanmar junta attacks on civilians, international humanitarian law, and calls for a global arms embargo",
+    "conflict_relevance": "The main article concerns the Myanmar conflict. Gaza and Israel-Palestine appear in a witness's passing reference and in several appended news snippets describing the 2023 escalation, civilian casualties, and humanitarian concerns.",
+    "reason": "The article is not about Gaza or Israel-Palestine, but it includes meaningful Gaza-related material in embedded or appended items. This makes it potentially useful for broader discourse analysis, though it should not be treated as core conflict coverage.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "e7c7862f6dd0a775e51f21a8bbc3625fa86e3363ce5f52a4c8c48d0f8fd24469",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "2f54dcb23b74d42517da0b8ca90376670c4e4ff6bf61136d28185598b3a9be77",
+    "raw_response_text_sha256": "5073687e0ddf027310eeb178d6086ff799ce578824ab160c584ae2849e07aeb0"
+  },
+  "api_metadata": {
+    "id": "resp_06d1fcd83b7460ad006aa9f8194c9487d284106da65dbaffb8",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789523993.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2988,
+      "input_tokens_details": {
+        "cache_write_tokens": 2985,
+        "cached_tokens": 0
+      },
+      "output_tokens": 349,
+      "output_tokens_details": {
+        "reasoning_tokens": 167
+      },
+      "total_tokens": 3337
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.93,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Myanmar junta attacks on civilians, international humanitarian law, and calls for a global arms embargo\",\n  \"conflict_relevance\": \"The main article concerns the Myanmar conflict. Gaza and Israel-Palestine appear in a witness's passing reference and in several appended news snippets describing the 2023 escalation, civilian casualties, and humanitarian concerns.\",\n  \"reason\": \"The article is not about Gaza or Israel-Palestine, but it includes meaningful Gaza-related material in embedded or appended items. This makes it potentially useful for broader discourse analysis, though it should not be treated as core conflict coverage.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T01:59:57Z",
+  "duration_seconds": 4.043,
+  "error": null
+}

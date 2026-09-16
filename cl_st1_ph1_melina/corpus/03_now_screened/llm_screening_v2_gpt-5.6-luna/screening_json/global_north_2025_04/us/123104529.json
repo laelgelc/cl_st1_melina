@@ -1,0 +1,65 @@
+{
+  "article_id": "123104529",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_04/us/123104529.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_04/us/123104529.json"
+  },
+  "manifest_row": {
+    "article_id": "123104529",
+    "group": "global_north_2025_04",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2025_04/us/123104529.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "background",
+    "main_topic": "Lawsuits challenging the cancellation and reduction of federal public health and biomedical research grants",
+    "conflict_relevance": "The article briefly connects cuts to Columbia University funding with the administration's stated response to alleged antisemitism and pro-Palestinian demonstrations following the Gaza war.",
+    "reason": "The article is primarily about NIH and HHS grant cancellations, scientific research funding, and political interference in public health. Its Gaza-related content is limited to a meaningful but secondary reference to pro-Palestinian campus protests and antisemitism.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "ff8264d411985cab176457779fd9815807fe3949aa93f794e0a43184a4408e89",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "2b64fed7e93eaed4c3b4f1679f39044a4157c604d697863138647acedc9fce62",
+    "raw_response_text_sha256": "0d0c489f87f64bd2c701fe9a82fe749e670aab97336323d67f1f8133c0cf911c"
+  },
+  "api_metadata": {
+    "id": "resp_0f12bfda6e37dfe5006aaa29d52df087d19e16f3469923aae3",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789536725.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2034,
+      "input_tokens_details": {
+        "cache_write_tokens": 2031,
+        "cached_tokens": 0
+      },
+      "output_tokens": 220,
+      "output_tokens_details": {
+        "reasoning_tokens": 48
+      },
+      "total_tokens": 2254
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Lawsuits challenging the cancellation and reduction of federal public health and biomedical research grants\",\n  \"conflict_relevance\": \"The article briefly connects cuts to Columbia University funding with the administration's stated response to alleged antisemitism and pro-Palestinian demonstrations following the Gaza war.\",\n  \"reason\": \"The article is primarily about NIH and HHS grant cancellations, scientific research funding, and political interference in public health. Its Gaza-related content is limited to a meaningful but secondary reference to pro-Palestinian campus protests and antisemitism.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T05:32:08Z",
+  "duration_seconds": 3.627,
+  "error": null
+}

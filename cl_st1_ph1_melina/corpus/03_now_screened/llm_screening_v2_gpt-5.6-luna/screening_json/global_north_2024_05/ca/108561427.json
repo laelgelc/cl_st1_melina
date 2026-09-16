@@ -1,0 +1,65 @@
+{
+  "article_id": "108561427",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_05/ca/108561427.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_05/ca/108561427.json"
+  },
+  "manifest_row": {
+    "article_id": "108561427",
+    "group": "global_north_2024_05",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2024_05/ca/108561427.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.96,
+    "gaza_role": "passing",
+    "main_topic": "Recovery and rebuilding of a New Brunswick potato-chip factory after a fire",
+    "conflict_relevance": "A separate item in the embedded CTVNews.ca Top Stories roundup mentions protests condemning violence in Gaza and Canada's arms trade with Israel.",
+    "reason": "The main article is unrelated to the Gaza conflict, but the accompanying roundup contains a meaningful sentence about Gaza-related protests and Canada's arms trade with Israel, making it peripheral rather than wholly irrelevant.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "de725b9f1275b55e71a30179c7851296a1c2d331230bfb2196de0963b1c30b8f",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "2da29f7a65761cb54c46f6e43aac45b7b7af35acb0a87e653cebb358dec6c4ce",
+    "raw_response_text_sha256": "18cf8c7970a459bf376f6c54d3bc8f8167ab69373fc7e0cb46f8b23ac54ae9bf"
+  },
+  "api_metadata": {
+    "id": "resp_06dda4341aa56daf006aaa0dba396887d2b78a6ddc93f2fc83",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789529530.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1668,
+      "input_tokens_details": {
+        "cache_write_tokens": 1665,
+        "cached_tokens": 0
+      },
+      "output_tokens": 261,
+      "output_tokens_details": {
+        "reasoning_tokens": 108
+      },
+      "total_tokens": 1929
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.96,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Recovery and rebuilding of a New Brunswick potato-chip factory after a fire\",\n  \"conflict_relevance\": \"A separate item in the embedded CTVNews.ca Top Stories roundup mentions protests condemning violence in Gaza and Canada's arms trade with Israel.\",\n  \"reason\": \"The main article is unrelated to the Gaza conflict, but the accompanying roundup contains a meaningful sentence about Gaza-related protests and Canada's arms trade with Israel, making it peripheral rather than wholly irrelevant.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:32:14Z",
+  "duration_seconds": 4.468,
+  "error": null
+}

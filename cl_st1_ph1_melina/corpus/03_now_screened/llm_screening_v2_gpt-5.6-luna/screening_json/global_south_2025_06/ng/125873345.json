@@ -1,0 +1,65 @@
+{
+  "article_id": "125873345",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_south_2025_06/ng/125873345.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_south_2025_06/ng/125873345.json"
+  },
+  "manifest_row": {
+    "article_id": "125873345",
+    "group": "global_south_2025_06",
+    "country_code": "ng",
+    "filepath": "corpus/02_now_organised/global_south_2025_06/ng/125873345.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.93,
+    "gaza_role": "passing",
+    "main_topic": "Iran-Israel missile strikes and the effectiveness of Israel's Iron Dome defense system",
+    "conflict_relevance": "The article focuses on the Iran-Israel military confrontation and missile defense, with Gaza appearing only in a file-photo caption.",
+    "reason": "Although the article discusses Israel's military capabilities and briefly mentions rockets launched from Gaza, it does not substantively address Gaza, Palestine, or the Israeli-Palestinian conflict.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "c371082c6e7dc1f19fc73abb8eaefc64d5943e70ed86c88c98f90cdbb589b7d1",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "8f40ac2b9fdaebb87fea57c5ba06c769880bd5701467bcdaf545b3d69cbd38fb",
+    "raw_response_text_sha256": "774632e9d4608f005fc4bb75dbc410baa5d4e6b46f2fd88f8d7b30c4a562ddf5"
+  },
+  "api_metadata": {
+    "id": "resp_02db99341ddd349a006aaa4aa1494c87d1925d91f64cb74901",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789545121.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1344,
+      "input_tokens_details": {
+        "cache_write_tokens": 1341,
+        "cached_tokens": 0
+      },
+      "output_tokens": 423,
+      "output_tokens_details": {
+        "reasoning_tokens": 274
+      },
+      "total_tokens": 1767
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.93,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Iran-Israel missile strikes and the effectiveness of Israel's Iron Dome defense system\",\n  \"conflict_relevance\": \"The article focuses on the Iran-Israel military confrontation and missile defense, with Gaza appearing only in a file-photo caption.\",\n  \"reason\": \"Although the article discusses Israel's military capabilities and briefly mentions rockets launched from Gaza, it does not substantively address Gaza, Palestine, or the Israeli-Palestinian conflict.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T07:52:06Z",
+  "duration_seconds": 5.699,
+  "error": null
+}

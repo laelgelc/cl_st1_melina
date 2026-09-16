@@ -1,0 +1,65 @@
+{
+  "article_id": "119630481",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_01/us/119630481.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_01/us/119630481.json"
+  },
+  "manifest_row": {
+    "article_id": "119630481",
+    "group": "global_north_2025_01",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2025_01/us/119630481.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "gaza_role": "boilerplate_or_unrelated",
+    "main_topic": "A Washington Post cartoonist's resignation after an editor rejected her cartoon criticizing media executives' relationship with Donald Trump",
+    "conflict_relevance": "The main article is unrelated to Gaza or the Israel-Palestine conflict; Gaza appears only in a separate news snippet about a weapons sale to Israel.",
+    "reason": "The headline-associated article concerns editorial independence, media censorship, and political pressure in the United States. The only Gaza-related material is an unrelated, truncated roundup item.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "7dc7bcd32e751cd067c8928a1964aa3209358ad7f80e74f41ad84c0f7793c1b5",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "a3bc6046f4f4e42390ebd56d26c4cecf30a99098fed16b49d59e5eb3c70456a8",
+    "raw_response_text_sha256": "c61bb59017cfff2bfee2e8df418358fdf551e96c2015996634e71d89af927293"
+  },
+  "api_metadata": {
+    "id": "resp_0b7c8b682b91fc55006aaa20c8694c87d28de3dbfb10916210",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789534408.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1538,
+      "input_tokens_details": {
+        "cache_write_tokens": 1535,
+        "cached_tokens": 0
+      },
+      "output_tokens": 216,
+      "output_tokens_details": {
+        "reasoning_tokens": 52
+      },
+      "total_tokens": 1754
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"gaza_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"A Washington Post cartoonist's resignation after an editor rejected her cartoon criticizing media executives' relationship with Donald Trump\",\n  \"conflict_relevance\": \"The main article is unrelated to Gaza or the Israel-Palestine conflict; Gaza appears only in a separate news snippet about a weapons sale to Israel.\",\n  \"reason\": \"The headline-associated article concerns editorial independence, media censorship, and political pressure in the United States. The only Gaza-related material is an unrelated, truncated roundup item.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T04:53:30Z",
+  "duration_seconds": 2.69,
+  "error": null
+}

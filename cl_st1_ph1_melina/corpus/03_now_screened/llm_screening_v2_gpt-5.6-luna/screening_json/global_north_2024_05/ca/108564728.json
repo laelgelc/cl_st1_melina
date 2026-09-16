@@ -1,0 +1,65 @@
+{
+  "article_id": "108564728",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_05/ca/108564728.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_05/ca/108564728.json"
+  },
+  "manifest_row": {
+    "article_id": "108564728",
+    "group": "global_north_2024_05",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2024_05/ca/108564728.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "gaza_role": "boilerplate_or_unrelated",
+    "main_topic": "Rescue and rehabilitation of harbour seal pups in Vancouver",
+    "conflict_relevance": "The main article is unrelated to Gaza or the Israel-Palestine conflict; Gaza appears only in an unrelated CTVNews.ca Top Stories roundup item about protests and Canada's arms trade with Israel.",
+    "reason": "The article's substantive content concerns rescued seal pups. The Gaza-related sentence is an embedded headline-style snippet in a navigation or roundup section rather than part of the main article.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "4f6a160b086cf124fe627b99f303d1f277b49e357b357fc643802cf0eb0d1b7f",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "debcce0d3984a8ae6dd3123443de982eeb6768cdba9bcdd79d6b1ecddceaadde",
+    "raw_response_text_sha256": "4e41dec7ea7b5bf7b7b589c61a3e470985a20274cf3acc8bf00f78cf7883be9c"
+  },
+  "api_metadata": {
+    "id": "resp_09df06133720eabe006aaa0dbed56487d2b59b529c4689a62e",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789529534.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1525,
+      "input_tokens_details": {
+        "cache_write_tokens": 1522,
+        "cached_tokens": 0
+      },
+      "output_tokens": 267,
+      "output_tokens_details": {
+        "reasoning_tokens": 104
+      },
+      "total_tokens": 1792
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"gaza_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Rescue and rehabilitation of harbour seal pups in Vancouver\",\n  \"conflict_relevance\": \"The main article is unrelated to Gaza or the Israel-Palestine conflict; Gaza appears only in an unrelated CTVNews.ca Top Stories roundup item about protests and Canada's arms trade with Israel.\",\n  \"reason\": \"The article's substantive content concerns rescued seal pups. The Gaza-related sentence is an embedded headline-style snippet in a navigation or roundup section rather than part of the main article.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:32:18Z",
+  "duration_seconds": 3.4,
+  "error": null
+}

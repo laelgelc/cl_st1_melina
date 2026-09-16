@@ -1,0 +1,65 @@
+{
+  "article_id": "116065822",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_10/ca/116065822.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_10/ca/116065822.json"
+  },
+  "manifest_row": {
+    "article_id": "116065822",
+    "group": "global_north_2024_10",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2024_10/ca/116065822.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "gaza_role": "passing",
+    "main_topic": "A transnational drug trafficking organization and alleged murders in Ontario",
+    "conflict_relevance": "The main article is unrelated to Gaza or the Israel-Palestine conflict; Gaza appears only in a brief item within a generic top-stories roundup.",
+    "reason": "The article focuses on organized crime, drug trafficking, and homicide. The sole Gaza-related content is an incidental headline-style snippet about the killing of Hamas leader Yahya Sinwar, not substantive coverage in the main article.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "0672e2e27c60b3ac7ff2f92580056b7ea3cd238f41daaead41412fe95fe3ee8e",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "8fe59467f8df731e7a6be8d3e5234d3e654ea6425cb53f1136e6c8228d7926e5",
+    "raw_response_text_sha256": "c97b0d237da7eb881be0b279e906ba2d5d6c7746cd3dd736f0cb1a0be15caac1"
+  },
+  "api_metadata": {
+    "id": "resp_0951d055a781e2db006aaa1805b2b087d29b116526f7f367f0",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789532165.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2828,
+      "input_tokens_details": {
+        "cache_write_tokens": 2825,
+        "cached_tokens": 0
+      },
+      "output_tokens": 229,
+      "output_tokens_details": {
+        "reasoning_tokens": 69
+      },
+      "total_tokens": 3057
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"A transnational drug trafficking organization and alleged murders in Ontario\",\n  \"conflict_relevance\": \"The main article is unrelated to Gaza or the Israel-Palestine conflict; Gaza appears only in a brief item within a generic top-stories roundup.\",\n  \"reason\": \"The article focuses on organized crime, drug trafficking, and homicide. The sole Gaza-related content is an incidental headline-style snippet about the killing of Hamas leader Yahya Sinwar, not substantive coverage in the main article.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T04:16:08Z",
+  "duration_seconds": 3.21,
+  "error": null
+}

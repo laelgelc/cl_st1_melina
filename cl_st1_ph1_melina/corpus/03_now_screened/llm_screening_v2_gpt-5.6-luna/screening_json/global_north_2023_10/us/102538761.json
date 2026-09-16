@@ -1,0 +1,65 @@
+{
+  "article_id": "102538761",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_10/us/102538761.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_10/us/102538761.json"
+  },
+  "manifest_row": {
+    "article_id": "102538761",
+    "group": "global_north_2023_10",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2023_10/us/102538761.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "passing",
+    "main_topic": "Chicago Bears wide receiver DJ Moore winning NFC Offensive Player of the Week",
+    "conflict_relevance": "The article is primarily a sports report but includes a separate substantive paragraph about deaths in Israel and Gaza and Hamas's stated rationale for its attack.",
+    "reason": "The Gaza-related content is embedded and unrelated to the main sports article, but it contains meaningful conflict information rather than a merely incidental keyword.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "f157dc142982581e558237a86e4fdb8c7f1bedb8c47ce66f17512aa3b2dfe0f3",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "e9cee52a0776b6a69b40a3c5bf1fd83bf081f3635cf2f3fcfe5510d9eea6539e",
+    "raw_response_text_sha256": "6257ebdb649c04ec7cb13513a57bcbb59ecfff607396e87ea0c3f0cb7dc9f75a"
+  },
+  "api_metadata": {
+    "id": "resp_07dfaa528df83954006aa9f899128087d2810db13dacd9478b",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789524121.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 995,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 215,
+      "output_tokens_details": {
+        "reasoning_tokens": 71
+      },
+      "total_tokens": 1210
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Chicago Bears wide receiver DJ Moore winning NFC Offensive Player of the Week\",\n  \"conflict_relevance\": \"The article is primarily a sports report but includes a separate substantive paragraph about deaths in Israel and Gaza and Hamas's stated rationale for its attack.\",\n  \"reason\": \"The Gaza-related content is embedded and unrelated to the main sports article, but it contains meaningful conflict information rather than a merely incidental keyword.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:02:03Z",
+  "duration_seconds": 2.57,
+  "error": null
+}

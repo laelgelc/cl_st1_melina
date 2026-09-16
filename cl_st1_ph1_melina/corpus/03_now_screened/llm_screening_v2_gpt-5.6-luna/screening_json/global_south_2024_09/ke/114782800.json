@@ -1,0 +1,65 @@
+{
+  "article_id": "114782800",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_south_2024_09/ke/114782800.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_south_2024_09/ke/114782800.json"
+  },
+  "manifest_row": {
+    "article_id": "114782800",
+    "group": "global_south_2024_09",
+    "country_code": "ke",
+    "filepath": "corpus/02_now_organised/global_south_2024_09/ke/114782800.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.96,
+    "gaza_role": "background",
+    "main_topic": "Israeli strikes on Beirut and escalating Israel-Hezbollah hostilities in Lebanon",
+    "conflict_relevance": "The article focuses on the Lebanon-Israel conflict but explicitly situates the cross-border fighting in the context of the Gaza war.",
+    "reason": "The Gaza war is meaningful contextual background for the reported Israel-Hezbollah escalation, but the article is not substantially about Gaza, Palestinians, or the Israel-Hamas war itself.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "d6fbbc863a83811b3f369008c0d4ac3bcf4bb934bd993eaf204f48eb115db63b",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "ff546fa09aa6bc767f0343954c178a41ee3c2d074e42dc07895c9c7299a12a3c",
+    "raw_response_text_sha256": "4e7e8a4131008e4b2cc9236e6c0be0f6ec754e11b68777860f8cf968ea49feab"
+  },
+  "api_metadata": {
+    "id": "resp_054746621a45f2ad006aaa3f6a116487d1bd5d459387c419ed",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789542250.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1057,
+      "input_tokens_details": {
+        "cache_write_tokens": 1054,
+        "cached_tokens": 0
+      },
+      "output_tokens": 225,
+      "output_tokens_details": {
+        "reasoning_tokens": 76
+      },
+      "total_tokens": 1282
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.96,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Israeli strikes on Beirut and escalating Israel-Hezbollah hostilities in Lebanon\",\n  \"conflict_relevance\": \"The article focuses on the Lebanon-Israel conflict but explicitly situates the cross-border fighting in the context of the Gaza war.\",\n  \"reason\": \"The Gaza war is meaningful contextual background for the reported Israel-Hezbollah escalation, but the article is not substantially about Gaza, Palestinians, or the Israel-Hamas war itself.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T07:04:13Z",
+  "duration_seconds": 3.333,
+  "error": null
+}

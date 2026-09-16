@@ -1,0 +1,65 @@
+{
+  "article_id": "123982009",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_04/us/123982009.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_04/us/123982009.json"
+  },
+  "manifest_row": {
+    "article_id": "123982009",
+    "group": "global_north_2025_04",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2025_04/us/123982009.txt"
+  },
+  "screening": {
+    "category": "CORE",
+    "confidence": 0.95,
+    "gaza_role": "background",
+    "main_topic": "Regional Middle East opinion articles on Hezbollah, Lebanon, Sudan, and US-Gulf deals involving Palestine and Gaza",
+    "conflict_relevance": "The compilation contains substantial discussion of Hezbollah's armed role, its conflict with Israel, the Israeli occupation, Hamas, Gaza, Palestinian statehood, Iranian proxy networks, and proposed political concessions involving the Palestinian cause.",
+    "reason": "Although the text is a multi-article regional opinion compilation and includes an unrelated article on Sudan, several substantial sections directly address Hezbollah-Israel tensions and Palestine/Gaza-related diplomacy, warfare, and regional politics.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": true
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "3644cf910a10c0256d20c0cca311cdbb95c32a88d30bb38bff76cea26892d928",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "c46b5b60e64491c0f7710a3b8c1cf85dab890515ca6904a9bdb1af9078151f97",
+    "raw_response_text_sha256": "7a60028cf6e3426eb18fc61493f12f061e1da5654a60834f19ddfeef477394f9"
+  },
+  "api_metadata": {
+    "id": "resp_00b4d2565d86dfdf006aaa2ab149f087d1a42d81fa9d3b1275",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789536945.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 3964,
+      "input_tokens_details": {
+        "cache_write_tokens": 3961,
+        "cached_tokens": 0
+      },
+      "output_tokens": 496,
+      "output_tokens_details": {
+        "reasoning_tokens": 319
+      },
+      "total_tokens": 4460
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"CORE\",\n  \"confidence\": 0.95,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Regional Middle East opinion articles on Hezbollah, Lebanon, Sudan, and US-Gulf deals involving Palestine and Gaza\",\n  \"conflict_relevance\": \"The compilation contains substantial discussion of Hezbollah's armed role, its conflict with Israel, the Israeli occupation, Hamas, Gaza, Palestinian statehood, Iranian proxy networks, and proposed political concessions involving the Palestinian cause.\",\n  \"reason\": \"Although the text is a multi-article regional opinion compilation and includes an unrelated article on Sudan, several substantial sections directly address Hezbollah-Israel tensions and Palestine/Gaza-related diplomacy, warfare, and regional politics.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": true\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T05:35:50Z",
+  "duration_seconds": 5.268,
+  "error": null
+}

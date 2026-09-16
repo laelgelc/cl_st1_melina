@@ -1,0 +1,65 @@
+{
+  "article_id": "107188109",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_04/ca/107188109.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_04/ca/107188109.json"
+  },
+  "manifest_row": {
+    "article_id": "107188109",
+    "group": "global_north_2024_04",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2024_04/ca/107188109.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.96,
+    "gaza_role": "passing",
+    "main_topic": "Pakistani flight attendants disappearing in Canada and seeking asylum",
+    "conflict_relevance": "The main article concerns asylum claims by Pakistani flight attendants and is unrelated to Gaza or the Israel-Palestine conflict. However, the appended news roundup contains substantive passing items about an Israeli airstrike in Gaza that killed aid worker Jacob Flickinger and criticism of Israel's defence of attacks on aid workers.",
+    "reason": "The Gaza-related material appears only in unrelated embedded roundup snippets rather than in the main article, but it includes meaningful sentences about Israeli military action and attacks on aid workers, making the item marginally useful for broader discourse analysis.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "67ce1f760691b60189f2ebc914fa3252f2544381da865df277ba84651790be22",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "fdaf9fb06e3490d431b089b74c0a0b87497617575aad08b1ec743e00d091eac3",
+    "raw_response_text_sha256": "be8fad088ccd6fc7dbeb5a42ef21bd7f5a32189e4ad0300588410191111b1072"
+  },
+  "api_metadata": {
+    "id": "resp_0e9c7d998247bf2a006aaa0aef402c87d28c0145298cfc6c87",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789528815.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2979,
+      "input_tokens_details": {
+        "cache_write_tokens": 2976,
+        "cached_tokens": 0
+      },
+      "output_tokens": 324,
+      "output_tokens_details": {
+        "reasoning_tokens": 134
+      },
+      "total_tokens": 3303
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.96,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Pakistani flight attendants disappearing in Canada and seeking asylum\",\n  \"conflict_relevance\": \"The main article concerns asylum claims by Pakistani flight attendants and is unrelated to Gaza or the Israel-Palestine conflict. However, the appended news roundup contains substantive passing items about an Israeli airstrike in Gaza that killed aid worker Jacob Flickinger and criticism of Israel's defence of attacks on aid workers.\",\n  \"reason\": \"The Gaza-related material appears only in unrelated embedded roundup snippets rather than in the main article, but it includes meaningful sentences about Israeli military action and attacks on aid workers, making the item marginally useful for broader discourse analysis.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:20:19Z",
+  "duration_seconds": 4.759,
+  "error": null
+}

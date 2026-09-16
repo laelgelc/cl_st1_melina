@@ -1,0 +1,65 @@
+{
+  "article_id": "120886745",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_02/gb/120886745.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_02/gb/120886745.json"
+  },
+  "manifest_row": {
+    "article_id": "120886745",
+    "group": "global_north_2025_02",
+    "country_code": "gb",
+    "filepath": "corpus/02_now_organised/global_north_2025_02/gb/120886745.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "gaza_role": "passing",
+    "main_topic": "Failures in the UK Prevent counterterrorism programme and the Southport murders",
+    "conflict_relevance": "The war in Gaza is mentioned only as one of several subjects the perpetrator researched; the article contains no substantive discussion of Gaza, Palestine, or the Israel-Palestine conflict.",
+    "reason": "The article is centrally about the Southport attack, the perpetrator's violent behaviour, and institutional failures in Prevent. Gaza appears only in an incidental list of topics he looked up and does not contribute meaningful conflict-related discourse.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "cea15156715ba55a4f355131b52acddc83a88d5376563f27e18d212d18378323",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "0482c31372a5f18957570e3fbe1a1c47874e500652cd11bceb3871afdc828896",
+    "raw_response_text_sha256": "ff83a2652bfc55fa1f6ca21d9cb90828ac96ec5a1f1083440654007fe963c2cd"
+  },
+  "api_metadata": {
+    "id": "resp_066e33f02a27e6cd006aaa227db28c87d282df970d704294da",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789534845.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 3541,
+      "input_tokens_details": {
+        "cache_write_tokens": 3538,
+        "cached_tokens": 0
+      },
+      "output_tokens": 230,
+      "output_tokens_details": {
+        "reasoning_tokens": 60
+      },
+      "total_tokens": 3771
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Failures in the UK Prevent counterterrorism programme and the Southport murders\",\n  \"conflict_relevance\": \"The war in Gaza is mentioned only as one of several subjects the perpetrator researched; the article contains no substantive discussion of Gaza, Palestine, or the Israel-Palestine conflict.\",\n  \"reason\": \"The article is centrally about the Southport attack, the perpetrator's violent behaviour, and institutional failures in Prevent. Gaza appears only in an incidental list of topics he looked up and does not contribute meaningful conflict-related discourse.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T05:00:48Z",
+  "duration_seconds": 2.923,
+  "error": null
+}

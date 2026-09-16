@@ -1,0 +1,65 @@
+{
+  "article_id": "108368281",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_05/us/108368281.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_05/us/108368281.json"
+  },
+  "manifest_row": {
+    "article_id": "108368281",
+    "group": "global_north_2024_05",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2024_05/us/108368281.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "background",
+    "main_topic": "Colombian guerrilla attacks and related international news snippets",
+    "conflict_relevance": "The main article concerns violence by Colombian rebels, but the text includes substantive embedded items about the Israel-Hamas war, Gaza, Hamas commander Mohammed Deif, Israeli leaders, hostages, and International Criminal Court arrest-warrant requests.",
+    "reason": "The Gaza-related material is meaningful but appears as unrelated embedded news content rather than the subject of the headline article.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "91263bef0cf76cd1af426bec4b3580f056d4ace71ca1edfcfc4d7f13d05e5ad5",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "ae232fa6e40e7c540a5612444060ee1e4cf073226124ae863dc84d1c4f750b31",
+    "raw_response_text_sha256": "9d2bac7551e53e0c109355bc1abdb63afa83434eff5159d2e7b122315863f23e"
+  },
+  "api_metadata": {
+    "id": "resp_051840f265479a0d006aaa0efdf9c487d29deb858946609169",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789529854.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1907,
+      "input_tokens_details": {
+        "cache_write_tokens": 1904,
+        "cached_tokens": 0
+      },
+      "output_tokens": 327,
+      "output_tokens_details": {
+        "reasoning_tokens": 172
+      },
+      "total_tokens": 2234
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Colombian guerrilla attacks and related international news snippets\",\n  \"conflict_relevance\": \"The main article concerns violence by Colombian rebels, but the text includes substantive embedded items about the Israel-Hamas war, Gaza, Hamas commander Mohammed Deif, Israeli leaders, hostages, and International Criminal Court arrest-warrant requests.\",\n  \"reason\": \"The Gaza-related material is meaningful but appears as unrelated embedded news content rather than the subject of the headline article.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:37:38Z",
+  "duration_seconds": 4.918,
+  "error": null
+}

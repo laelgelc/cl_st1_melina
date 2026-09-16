@@ -1,0 +1,65 @@
+{
+  "article_id": "105505840",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_01/us/105505840.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_01/us/105505840.json"
+  },
+  "manifest_row": {
+    "article_id": "105505840",
+    "group": "global_north_2024_01",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2024_01/us/105505840.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.96,
+    "gaza_role": "passing",
+    "main_topic": "Daily horoscope and unrelated local business news",
+    "conflict_relevance": "A final sentence mentions a proposed Gaza cease-fire resolution in the context of Chicago city politics.",
+    "reason": "The article is primarily a horoscope and includes unrelated news snippets. Gaza appears only in one meaningful but incidental reference to a local debate over a Gaza cease-fire resolution, making it peripheral rather than core.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "a4abc5a3d18007ba7f60f5b12b2c105a10d19dfb0a493b356309e9aabaa38015",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "4581bec29d6be0ebe971c595d5679a0c8a85325eb63e4abd239d141d57d25669",
+    "raw_response_text_sha256": "b679497a15abb8f7f1a270a9edbbfbeda9b52440925fff91fba8a951125dc756"
+  },
+  "api_metadata": {
+    "id": "resp_08ca4bb8b2b90fc6006aaa0521544887d29538c9651525cae7",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789527329.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1666,
+      "input_tokens_details": {
+        "cache_write_tokens": 1663,
+        "cached_tokens": 0
+      },
+      "output_tokens": 309,
+      "output_tokens_details": {
+        "reasoning_tokens": 169
+      },
+      "total_tokens": 1975
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.96,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Daily horoscope and unrelated local business news\",\n  \"conflict_relevance\": \"A final sentence mentions a proposed Gaza cease-fire resolution in the context of Chicago city politics.\",\n  \"reason\": \"The article is primarily a horoscope and includes unrelated news snippets. Gaza appears only in one meaningful but incidental reference to a local debate over a Gaza cease-fire resolution, making it peripheral rather than core.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:55:33Z",
+  "duration_seconds": 4.875,
+  "error": null
+}

@@ -1,0 +1,65 @@
+{
+  "article_id": "102874257",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_10/ca/102874257.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_10/ca/102874257.json"
+  },
+  "manifest_row": {
+    "article_id": "102874257",
+    "group": "global_north_2023_10",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2023_10/ca/102874257.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.94,
+    "gaza_role": "background",
+    "main_topic": "Nova Scotia coastal protection legislation and climate-related storm damage",
+    "conflict_relevance": "The main article is unrelated to Gaza, but an embedded CTVNews.ca roundup contains meaningful brief items about humanitarian pauses, the Israel-Hamas war, bombardment of Gaza, and a university statement concerning Palestinian resistance and Israel.",
+    "reason": "The primary article concerns coastal environmental policy in Nova Scotia. However, the embedded top-stories section includes several substantive conflict-related news items, making the text potentially useful for broader discourse analysis but not suitable for the main conflict corpus.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "e1342f668d97ebe59bde7a86417cc918feb9d45b240ea27f0b20dced202feee8",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "729272db6bc128dc5b0456991abcd690a6199b3f3e199770b70f44e8261719f6",
+    "raw_response_text_sha256": "146f35d89fc6c7eae8150e54dda19c88359f0dd6532f9b2fee31a883d2f1edd8"
+  },
+  "api_metadata": {
+    "id": "resp_0f3fc24eb766de6f006aa9f68be21887d2afa4a1c526d2c90e",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789523595.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1879,
+      "input_tokens_details": {
+        "cache_write_tokens": 1876,
+        "cached_tokens": 0
+      },
+      "output_tokens": 464,
+      "output_tokens_details": {
+        "reasoning_tokens": 288
+      },
+      "total_tokens": 2343
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.94,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Nova Scotia coastal protection legislation and climate-related storm damage\",\n  \"conflict_relevance\": \"The main article is unrelated to Gaza, but an embedded CTVNews.ca roundup contains meaningful brief items about humanitarian pauses, the Israel-Hamas war, bombardment of Gaza, and a university statement concerning Palestinian resistance and Israel.\",\n  \"reason\": \"The primary article concerns coastal environmental policy in Nova Scotia. However, the embedded top-stories section includes several substantive conflict-related news items, making the text potentially useful for broader discourse analysis but not suitable for the main conflict corpus.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T01:53:22Z",
+  "duration_seconds": 6.611,
+  "error": null
+}

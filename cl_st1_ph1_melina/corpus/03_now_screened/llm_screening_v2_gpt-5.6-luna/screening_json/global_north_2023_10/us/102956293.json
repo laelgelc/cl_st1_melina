@@ -1,0 +1,65 @@
+{
+  "article_id": "102956293",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_10/us/102956293.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_10/us/102956293.json"
+  },
+  "manifest_row": {
+    "article_id": "102956293",
+    "group": "global_north_2023_10",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2023_10/us/102956293.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.9,
+    "gaza_role": "passing",
+    "main_topic": "U.S. Representative Michelle Fischbach's bid for a House Republican leadership position",
+    "conflict_relevance": "The article contains a brief embedded item about Ron DeSantis sending drones and supporting Israel after the Hamas attack and Gaza incursion, but the main article is unrelated to the conflict.",
+    "reason": "The Gaza-related material is limited to a passing snippet within a collection of otherwise unrelated political and crime news items. It provides some meaningful conflict-related discourse but is not substantive enough for the main corpus.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "08ae60e35df6de2dca56ce21792586463eaec61c6a5fd4a125ca91a44b3ae91f",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "f109457d31eef4e5ad235d2906ff3842ae11594edd09a352cc2138b830cc2c77",
+    "raw_response_text_sha256": "8eddd9f37dbf46c669c06c49247ef79f97e33c75b077a32befe37b52d6960361"
+  },
+  "api_metadata": {
+    "id": "resp_094958d169062b21006aa9f9972f4c87d288c611bfdbf1cd59",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789524375.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1193,
+      "input_tokens_details": {
+        "cache_write_tokens": 1190,
+        "cached_tokens": 0
+      },
+      "output_tokens": 377,
+      "output_tokens_details": {
+        "reasoning_tokens": 211
+      },
+      "total_tokens": 1570
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.9,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"U.S. Representative Michelle Fischbach's bid for a House Republican leadership position\",\n  \"conflict_relevance\": \"The article contains a brief embedded item about Ron DeSantis sending drones and supporting Israel after the Hamas attack and Gaza incursion, but the main article is unrelated to the conflict.\",\n  \"reason\": \"The Gaza-related material is limited to a passing snippet within a collection of otherwise unrelated political and crime news items. It provides some meaningful conflict-related discourse but is not substantive enough for the main corpus.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:06:20Z",
+  "duration_seconds": 5.04,
+  "error": null
+}

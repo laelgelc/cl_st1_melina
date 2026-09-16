@@ -1,0 +1,65 @@
+{
+  "article_id": "104460977",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_12/gb/104460977.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_12/gb/104460977.json"
+  },
+  "manifest_row": {
+    "article_id": "104460977",
+    "group": "global_north_2023_12",
+    "country_code": "gb",
+    "filepath": "corpus/02_now_organised/global_north_2023_12/gb/104460977.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.97,
+    "gaza_role": "passing",
+    "main_topic": "Travel safety risks and climate-related hazards",
+    "conflict_relevance": "Gaza is mentioned only as one of several locations with evolving conflicts in a holiday travel risk assessment.",
+    "reason": "The article is primarily about tourist destinations, security ratings, and climate-related dangers. Its brief mention of Gaza provides no substantive discussion of the conflict or related discourse.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "1fa23857257b1000086ff030e2378d8e9a9b2846240201a36b24df0259dc51fd",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "89390427f7254bf6cd83ab3cbcff3a5f8c4851b1635e60e897ae4ac6a3e13fa9",
+    "raw_response_text_sha256": "fb4d7fc60e46b3c782baa157f6db1b1631d76150b861f0d244de854840a3489b"
+  },
+  "api_metadata": {
+    "id": "resp_0f77006be6ef745f006aaa012605c487d2b93506d73abfd459",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789526310.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1168,
+      "input_tokens_details": {
+        "cache_write_tokens": 1165,
+        "cached_tokens": 0
+      },
+      "output_tokens": 196,
+      "output_tokens_details": {
+        "reasoning_tokens": 62
+      },
+      "total_tokens": 1364
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.97,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Travel safety risks and climate-related hazards\",\n  \"conflict_relevance\": \"Gaza is mentioned only as one of several locations with evolving conflicts in a holiday travel risk assessment.\",\n  \"reason\": \"The article is primarily about tourist destinations, security ratings, and climate-related dangers. Its brief mention of Gaza provides no substantive discussion of the conflict or related discourse.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:38:32Z",
+  "duration_seconds": 2.92,
+  "error": null
+}

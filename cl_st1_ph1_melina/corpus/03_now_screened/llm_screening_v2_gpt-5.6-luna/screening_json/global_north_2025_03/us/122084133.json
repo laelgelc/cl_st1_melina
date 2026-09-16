@@ -1,0 +1,65 @@
+{
+  "article_id": "122084133",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_03/us/122084133.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_03/us/122084133.json"
+  },
+  "manifest_row": {
+    "article_id": "122084133",
+    "group": "global_north_2025_03",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2025_03/us/122084133.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "background",
+    "main_topic": "Pope Francis's hospitalization, recovery, and public communications",
+    "conflict_relevance": "The article briefly reports that Pope Francis called the Catholic parish and its priest in Gaza while recovering, linking his activities to peace and religious support in Gaza.",
+    "reason": "The article is primarily about Pope Francis's health and hospitalization. Its Gaza reference is meaningful but brief and incidental to the main topic, so it is peripheral rather than core conflict coverage.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "3b97be191a85547ddb098ae90c17230d47104857f703a6ef45688862ccb71a84",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "42b389179a4cdb14220e0527700d05a32554a4f685f9c8b83cd659b7d9b9dc84",
+    "raw_response_text_sha256": "2124f2ef152651420f3dd42a711f43d1e330d0734acad30fc8a6202e89c8bff4"
+  },
+  "api_metadata": {
+    "id": "resp_09aaca8829d5b5d8006aaa2749b1cc87d1b757841d2676240d",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789536073.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1298,
+      "input_tokens_details": {
+        "cache_write_tokens": 1295,
+        "cached_tokens": 0
+      },
+      "output_tokens": 238,
+      "output_tokens_details": {
+        "reasoning_tokens": 85
+      },
+      "total_tokens": 1536
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Pope Francis's hospitalization, recovery, and public communications\",\n  \"conflict_relevance\": \"The article briefly reports that Pope Francis called the Catholic parish and its priest in Gaza while recovering, linking his activities to peace and religious support in Gaza.\",\n  \"reason\": \"The article is primarily about Pope Francis's health and hospitalization. Its Gaza reference is meaningful but brief and incidental to the main topic, so it is peripheral rather than core conflict coverage.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T05:21:17Z",
+  "duration_seconds": 3.688,
+  "error": null
+}

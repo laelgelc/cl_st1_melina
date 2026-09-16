@@ -1,0 +1,65 @@
+{
+  "article_id": "108938628",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_06/ca/108938628.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_06/ca/108938628.json"
+  },
+  "manifest_row": {
+    "article_id": "108938628",
+    "group": "global_north_2024_06",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2024_06/ca/108938628.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.96,
+    "gaza_role": "boilerplate_or_unrelated",
+    "main_topic": "Aggregated latest-news roundup covering unrelated international and U.S. political stories",
+    "conflict_relevance": "The page includes several substantive Gaza-related snippets, but they are separate items within a mixed news aggregation rather than a coherent article focused on the conflict.",
+    "reason": "This is a multi-item roundup/navigation-style page with unrelated stories. Although several embedded snippets concern Gaza, hostages, Israeli military action, and Palestinians, there is no single main article or sustained discourse to analyze.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "f2103c352d537e4f5dbd2fccc36b36d208008b861c3af45bd0bd690c90da2bcb",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "d72ac5769e20e918610828e654ddcca50c40cea23edfadaf13fd1a1f67ae0853",
+    "raw_response_text_sha256": "a0df2d49eb2dbdcc9f49dafb537a772609839545e6e662220783c4aeb46b2686"
+  },
+  "api_metadata": {
+    "id": "resp_03ad442d359a8286006aaa102cbf1487d28d777829419517a0",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789530156.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1705,
+      "input_tokens_details": {
+        "cache_write_tokens": 1702,
+        "cached_tokens": 0
+      },
+      "output_tokens": 340,
+      "output_tokens_details": {
+        "reasoning_tokens": 175
+      },
+      "total_tokens": 2045
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.96,\n  \"gaza_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Aggregated latest-news roundup covering unrelated international and U.S. political stories\",\n  \"conflict_relevance\": \"The page includes several substantive Gaza-related snippets, but they are separate items within a mixed news aggregation rather than a coherent article focused on the conflict.\",\n  \"reason\": \"This is a multi-item roundup/navigation-style page with unrelated stories. Although several embedded snippets concern Gaza, hostages, Israeli military action, and Palestinians, there is no single main article or sustained discourse to analyze.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:42:41Z",
+  "duration_seconds": 4.849,
+  "error": null
+}

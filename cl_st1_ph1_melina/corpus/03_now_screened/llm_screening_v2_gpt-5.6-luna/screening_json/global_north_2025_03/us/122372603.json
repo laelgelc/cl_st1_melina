@@ -1,0 +1,65 @@
+{
+  "article_id": "122372603",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_03/us/122372603.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_03/us/122372603.json"
+  },
+  "manifest_row": {
+    "article_id": "122372603",
+    "group": "global_north_2025_03",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2025_03/us/122372603.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "background",
+    "main_topic": "A collection of Nebraska letters to the editor addressing U.S. politics, government policy, and local concerns",
+    "conflict_relevance": "One letter discusses Trump's proposal to seize Gaza, establish a resort area, and expel the approximately two million Palestinians living there, but the collection is otherwise focused on unrelated domestic and international political issues.",
+    "reason": "The article is a multi-letter opinion roundup rather than coverage centered on Gaza or the Israel-Palestine conflict. Its Gaza reference is substantively worded but brief and embedded within a broader critique of Trump's administration, making it useful for peripheral discourse analysis rather than the main conflict corpus.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "358a92c6aea6f688a57f6f6ba60099cb0984892d630ad8d1dc98eeb309acac15",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "792fa38307ca06b875f18f1d54cfb1222f18031f3345a152dd668893bf4b7c02",
+    "raw_response_text_sha256": "b154c9379ceecf7f38ece40f2c5a1ddb6d21c16385f6aa73a080860461dd7292"
+  },
+  "api_metadata": {
+    "id": "resp_0c46b392eb73983e006aaa278d98d487d1ba0694c44b4db1ed",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789536141.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 13488,
+      "input_tokens_details": {
+        "cache_write_tokens": 13485,
+        "cached_tokens": 0
+      },
+      "output_tokens": 373,
+      "output_tokens_details": {
+        "reasoning_tokens": 181
+      },
+      "total_tokens": 13861
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"A collection of Nebraska letters to the editor addressing U.S. politics, government policy, and local concerns\",\n  \"conflict_relevance\": \"One letter discusses Trump's proposal to seize Gaza, establish a resort area, and expel the approximately two million Palestinians living there, but the collection is otherwise focused on unrelated domestic and international political issues.\",\n  \"reason\": \"The article is a multi-letter opinion roundup rather than coverage centered on Gaza or the Israel-Palestine conflict. Its Gaza reference is substantively worded but brief and embedded within a broader critique of Trump's administration, making it useful for peripheral discourse analysis rather than the main conflict corpus.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T05:22:27Z",
+  "duration_seconds": 5.851,
+  "error": null
+}

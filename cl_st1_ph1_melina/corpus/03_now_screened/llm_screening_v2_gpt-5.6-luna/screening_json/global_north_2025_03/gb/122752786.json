@@ -1,0 +1,65 @@
+{
+  "article_id": "122752786",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_03/gb/122752786.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_03/gb/122752786.json"
+  },
+  "manifest_row": {
+    "article_id": "122752786",
+    "group": "global_north_2025_03",
+    "country_code": "gb",
+    "filepath": "corpus/02_now_organised/global_north_2025_03/gb/122752786.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "background",
+    "main_topic": "Music album reviews",
+    "conflict_relevance": "One album review discusses the tragedy of Gaza, the killing of Hind Rajab by Israeli forces, and music produced in response to the conflict.",
+    "reason": "The article is primarily a collection of music reviews, but the review of Anouar Brahem's album contains meaningful discourse about Gaza and an Israeli military killing. This makes it relevant as peripheral material rather than core conflict coverage.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "a6fc8f53521fb0bbe2b7686ea7faa9b966ca5a7512a73e4d4daee8d6855ba05f",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "2c6fc04b7226225c7c4392f9e6ed0767b5774802dd0921d53d1c582cc0f68ab2",
+    "raw_response_text_sha256": "75379348160d1eacb982eb6d03f2dae182be854150bcf358a8fe768625b26d25"
+  },
+  "api_metadata": {
+    "id": "resp_0b41c1f5dfca5f14006aaa265b825487d1bbb898e2587e9529",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789535835.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1198,
+      "input_tokens_details": {
+        "cache_write_tokens": 1195,
+        "cached_tokens": 0
+      },
+      "output_tokens": 235,
+      "output_tokens_details": {
+        "reasoning_tokens": 83
+      },
+      "total_tokens": 1433
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Music album reviews\",\n  \"conflict_relevance\": \"One album review discusses the tragedy of Gaza, the killing of Hind Rajab by Israeli forces, and music produced in response to the conflict.\",\n  \"reason\": \"The article is primarily a collection of music reviews, but the review of Anouar Brahem's album contains meaningful discourse about Gaza and an Israeli military killing. This makes it relevant as peripheral material rather than core conflict coverage.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T05:17:19Z",
+  "duration_seconds": 4.512,
+  "error": null
+}

@@ -1,0 +1,65 @@
+{
+  "article_id": "102574516",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_10/ca/102574516.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_10/ca/102574516.json"
+  },
+  "manifest_row": {
+    "article_id": "102574516",
+    "group": "global_north_2023_10",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2023_10/ca/102574516.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "background",
+    "main_topic": "A roundup of letters to the editor on Winnipeg politics, social issues, and public affairs",
+    "conflict_relevance": "One letter substantially discusses the Winnipeg Free Press's coverage of the Hamas attacks on Israel and an Israeli airstrike in Rafah, including accusations of biased media framing and references to terrorism, hostages, and Israel's right to self-defence.",
+    "reason": "The article is a multi-letter roundup dominated by unrelated local political and social topics. Although the opening letter contains meaningful discourse about Gaza, Israel, Hamas, and media representation, the conflict is not the main subject of the overall item.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "d24d8d2a4e3125183beaf2796d287dbd7ee032466bdfb1f868e1e06be02115b9",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "0d9eb88bf8dcb9e069df45bf496a488fe3b0cdfe955044936d6fee7e50ee7639",
+    "raw_response_text_sha256": "64efedb8b8112e8b138e5364d7f8bab60a426737276b2b8cac479769ab22a805"
+  },
+  "api_metadata": {
+    "id": "resp_06a90d874ed2f006006aa9f631de8087d28af30bb2b276b937",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789523505.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 3741,
+      "input_tokens_details": {
+        "cache_write_tokens": 3738,
+        "cached_tokens": 0
+      },
+      "output_tokens": 351,
+      "output_tokens_details": {
+        "reasoning_tokens": 164
+      },
+      "total_tokens": 4092
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"A roundup of letters to the editor on Winnipeg politics, social issues, and public affairs\",\n  \"conflict_relevance\": \"One letter substantially discusses the Winnipeg Free Press's coverage of the Hamas attacks on Israel and an Israeli airstrike in Rafah, including accusations of biased media framing and references to terrorism, hostages, and Israel's right to self-defence.\",\n  \"reason\": \"The article is a multi-letter roundup dominated by unrelated local political and social topics. Although the opening letter contains meaningful discourse about Gaza, Israel, Hamas, and media representation, the conflict is not the main subject of the overall item.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T01:51:49Z",
+  "duration_seconds": 4.127,
+  "error": null
+}

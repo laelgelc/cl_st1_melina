@@ -1,0 +1,65 @@
+{
+  "article_id": "117828764",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_11/ie/117828764.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_11/ie/117828764.json"
+  },
+  "manifest_row": {
+    "article_id": "117828764",
+    "group": "global_north_2024_11",
+    "country_code": "ie",
+    "filepath": "corpus/02_now_organised/global_north_2024_11/ie/117828764.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.93,
+    "gaza_role": "passing",
+    "main_topic": "Police repression of an opposition protest camp and political crisis in Georgia",
+    "conflict_relevance": "The main article is unrelated to Gaza, but an embedded news snippet reports on Qatar, Hamas leaders, and Gaza ceasefire negotiations.",
+    "reason": "The headline article centrally concerns protests and police violence in Tbilisi, not the Israel-Palestine conflict. However, the included Hamas and Gaza ceasefire item provides a meaningful, though very brief, conflict-related reference, making the page peripheral rather than excludable.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "4d6cc381d0656a63944467c41886e2bfe7d6d0c2338390c4558b8c2f1cd5fcfb",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "56f06bd1861a783fca93bdb1f5e3aed6a7ee53283981180e7d34e4ae15eb0005",
+    "raw_response_text_sha256": "b858a13308de5ee3b7763b0546623066af511f35916065c2b1a7ec989a593f40"
+  },
+  "api_metadata": {
+    "id": "resp_0e6bd4b0bd7dd7f3006aaa1b6e136c87d2b5c6933e1f21bdbb",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789533038.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1978,
+      "input_tokens_details": {
+        "cache_write_tokens": 1975,
+        "cached_tokens": 0
+      },
+      "output_tokens": 328,
+      "output_tokens_details": {
+        "reasoning_tokens": 159
+      },
+      "total_tokens": 2306
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.93,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Police repression of an opposition protest camp and political crisis in Georgia\",\n  \"conflict_relevance\": \"The main article is unrelated to Gaza, but an embedded news snippet reports on Qatar, Hamas leaders, and Gaza ceasefire negotiations.\",\n  \"reason\": \"The headline article centrally concerns protests and police violence in Tbilisi, not the Israel-Palestine conflict. However, the included Hamas and Gaza ceasefire item provides a meaningful, though very brief, conflict-related reference, making the page peripheral rather than excludable.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T04:30:41Z",
+  "duration_seconds": 3.906,
+  "error": null
+}

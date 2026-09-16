@@ -1,0 +1,65 @@
+{
+  "article_id": "118349515",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_12/ca/118349515.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_12/ca/118349515.json"
+  },
+  "manifest_row": {
+    "article_id": "118349515",
+    "group": "global_north_2024_12",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2024_12/ca/118349515.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.97,
+    "gaza_role": "passing",
+    "main_topic": "Western Hockey League player trade",
+    "conflict_relevance": "An unrelated news snippet reports Donald Trump's demand for the release of Israeli hostages held in Gaza.",
+    "reason": "The main article concerns a hockey trade and contains no substantive conflict coverage, but an embedded news item includes a meaningful sentence about Gaza hostages and Trump’s threat. This is peripheral rather than core relevance.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "0cee2640e208b2d0e4144957af3c24e5dbfbd61ae6db42fdcb69154373259615",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "cc6cb9b14ed40b49e729b50f21923d04b499813281e31a3a71e1ab720921b787",
+    "raw_response_text_sha256": "8997a5911c8bfa230a85785f0e4e4e39f5fc8674259c82bf237d11e27960430c"
+  },
+  "api_metadata": {
+    "id": "resp_06079f1f0a6f09e2006aaa1cff105887d2aa2404cbd855319c",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789533439.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1702,
+      "input_tokens_details": {
+        "cache_write_tokens": 1699,
+        "cached_tokens": 0
+      },
+      "output_tokens": 246,
+      "output_tokens_details": {
+        "reasoning_tokens": 106
+      },
+      "total_tokens": 1948
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.97,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Western Hockey League player trade\",\n  \"conflict_relevance\": \"An unrelated news snippet reports Donald Trump's demand for the release of Israeli hostages held in Gaza.\",\n  \"reason\": \"The main article concerns a hockey trade and contains no substantive conflict coverage, but an embedded news item includes a meaningful sentence about Gaza hostages and Trump’s threat. This is peripheral rather than core relevance.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T04:37:21Z",
+  "duration_seconds": 3.036,
+  "error": null
+}

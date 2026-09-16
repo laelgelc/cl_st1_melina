@@ -1,0 +1,65 @@
+{
+  "article_id": "106879578",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_03/nz/106879578.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_03/nz/106879578.json"
+  },
+  "manifest_row": {
+    "article_id": "106879578",
+    "group": "global_north_2024_03",
+    "country_code": "nz",
+    "filepath": "corpus/02_now_organised/global_north_2024_03/nz/106879578.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.96,
+    "gaza_role": "passing",
+    "main_topic": "Police investigation into severe injuries suffered by two children in Lower Hutt, New Zealand",
+    "conflict_relevance": "The main article is unrelated to the Gaza conflict, but an embedded roundup item briefly discusses humanitarian need in Gaza and the West Bank and civilian suffering in the Israel-Hamas conflict.",
+    "reason": "The headline article concerns a New Zealand child-abuse investigation. Gaza appears only in a separate 'ALSO' news snippet, which contains a meaningful but very brief reference to humanitarian conditions and the Israel-Hamas conflict.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "bc5966f29c0a4c26239e7fed3a944908806ad9405456c98294b2f7dad27a9a44",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "c2b117c75b1b4cf2c1315bce3b7e388a13ab31fb163a0415715f6253be8ccff7",
+    "raw_response_text_sha256": "b36b761eeeab935351b7e3c9807dd85d2fad3e2a96e5acaa3fbef95b5c952f2c"
+  },
+  "api_metadata": {
+    "id": "resp_0c1ad2f613bbcee8006aaa0942d5c487d289162bcf4002f2e3",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789528386.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1354,
+      "input_tokens_details": {
+        "cache_write_tokens": 1351,
+        "cached_tokens": 0
+      },
+      "output_tokens": 276,
+      "output_tokens_details": {
+        "reasoning_tokens": 106
+      },
+      "total_tokens": 1630
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.96,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Police investigation into severe injuries suffered by two children in Lower Hutt, New Zealand\",\n  \"conflict_relevance\": \"The main article is unrelated to the Gaza conflict, but an embedded roundup item briefly discusses humanitarian need in Gaza and the West Bank and civilian suffering in the Israel-Hamas conflict.\",\n  \"reason\": \"The headline article concerns a New Zealand child-abuse investigation. Gaza appears only in a separate 'ALSO' news snippet, which contains a meaningful but very brief reference to humanitarian conditions and the Israel-Hamas conflict.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:13:10Z",
+  "duration_seconds": 3.538,
+  "error": null
+}

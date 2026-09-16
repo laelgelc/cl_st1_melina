@@ -1,0 +1,65 @@
+{
+  "article_id": "119997327",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_01/gb/119997327.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_01/gb/119997327.json"
+  },
+  "manifest_row": {
+    "article_id": "119997327",
+    "group": "global_north_2025_01",
+    "country_code": "gb",
+    "filepath": "corpus/02_now_organised/global_north_2025_01/gb/119997327.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.96,
+    "gaza_role": "passing",
+    "main_topic": "Sean Penn's discussion of the Los Angeles wildfires and relief efforts",
+    "conflict_relevance": "The article uses Gaza as an analogy for the scale of destruction caused by the Los Angeles fires, but does not substantively discuss Gaza or the Israel-Hamas conflict.",
+    "reason": "Gaza appears in a quoted comparison describing the devastation in Pacific Palisades. This is meaningful for studying broader media framing and analogies involving Gaza, but the article's main subject is the Los Angeles wildfires.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "6e13b59dcade309ef825349ddc27bb2f87a8400204b06522fc3743a12155cba6",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "f44700b521daaa3e60fc2fa3d1bd4fd5383591b226449864d6b29b7b3c21f493",
+    "raw_response_text_sha256": "1d9b8d1c7dcbd8ce1c643b6c38a7f349a95faf9c3f7790bcb55410dbc95b9cc1"
+  },
+  "api_metadata": {
+    "id": "resp_0c291fb4fed979f6006aaa1f81eae087d2b7d9914e14f7861d",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789534081.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1726,
+      "input_tokens_details": {
+        "cache_write_tokens": 1723,
+        "cached_tokens": 0
+      },
+      "output_tokens": 253,
+      "output_tokens_details": {
+        "reasoning_tokens": 88
+      },
+      "total_tokens": 1979
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.96,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Sean Penn's discussion of the Los Angeles wildfires and relief efforts\",\n  \"conflict_relevance\": \"The article uses Gaza as an analogy for the scale of destruction caused by the Los Angeles fires, but does not substantively discuss Gaza or the Israel-Hamas conflict.\",\n  \"reason\": \"Gaza appears in a quoted comparison describing the devastation in Pacific Palisades. This is meaningful for studying broader media framing and analogies involving Gaza, but the article's main subject is the Los Angeles wildfires.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T04:48:06Z",
+  "duration_seconds": 4.431,
+  "error": null
+}

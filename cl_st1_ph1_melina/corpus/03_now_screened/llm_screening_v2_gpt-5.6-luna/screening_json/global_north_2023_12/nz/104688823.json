@@ -1,0 +1,65 @@
+{
+  "article_id": "104688823",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_12/nz/104688823.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_12/nz/104688823.json"
+  },
+  "manifest_row": {
+    "article_id": "104688823",
+    "group": "global_north_2023_12",
+    "country_code": "nz",
+    "filepath": "corpus/02_now_organised/global_north_2023_12/nz/104688823.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.97,
+    "gaza_role": "passing",
+    "main_topic": "Cancellation of Tauranga New Year's Eve community celebrations due to severe weather",
+    "conflict_relevance": "The main article is unrelated to Gaza, but an embedded commentary references Israeli bombing and frames Gaza through Christian Christmas symbolism.",
+    "reason": "The primary content concerns local event cancellations and weather. Gaza appears in a separate embedded snippet with meaningful but brief conflict-related discourse, making the item peripheral rather than core.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "4c0fbd43f8f3ff071b318e777ed2a9fac1fd3932b538acb6fa55cf7a8d880735",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "6154afbf2ef3be15b755a9de822b9e0e80345bb2631046a9a00e8ce3d1f991ce",
+    "raw_response_text_sha256": "9adbe6e93144c932c97d72e90d5f0a1d846d0424c7de5e179ed3e4524cca6280"
+  },
+  "api_metadata": {
+    "id": "resp_05e0d37cf2f328e7006aaa019e51bc87d294febb6ec97c18dc",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789526430.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1210,
+      "input_tokens_details": {
+        "cache_write_tokens": 1207,
+        "cached_tokens": 0
+      },
+      "output_tokens": 270,
+      "output_tokens_details": {
+        "reasoning_tokens": 125
+      },
+      "total_tokens": 1480
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.97,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Cancellation of Tauranga New Year's Eve community celebrations due to severe weather\",\n  \"conflict_relevance\": \"The main article is unrelated to Gaza, but an embedded commentary references Israeli bombing and frames Gaza through Christian Christmas symbolism.\",\n  \"reason\": \"The primary content concerns local event cancellations and weather. Gaza appears in a separate embedded snippet with meaningful but brief conflict-related discourse, making the item peripheral rather than core.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:40:34Z",
+  "duration_seconds": 3.971,
+  "error": null
+}

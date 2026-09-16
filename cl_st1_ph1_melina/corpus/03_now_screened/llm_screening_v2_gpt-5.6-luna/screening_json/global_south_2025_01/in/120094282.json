@@ -1,0 +1,65 @@
+{
+  "article_id": "120094282",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_south_2025_01/in/120094282.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_south_2025_01/in/120094282.json"
+  },
+  "manifest_row": {
+    "article_id": "120094282",
+    "group": "global_south_2025_01",
+    "country_code": "in",
+    "filepath": "corpus/02_now_organised/global_south_2025_01/in/120094282.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "gaza_role": "passing",
+    "main_topic": "World Health Organization global funding appeal",
+    "conflict_relevance": "Gaza is mentioned only as one of many regions facing health crises, without substantive discussion of the conflict or conditions there.",
+    "reason": "The article focuses on WHO funding needs and global health emergencies; the sole reference to Gaza is an incidental example in a list of affected regions.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "edf306039648a289b525c64244fd9aee7dc767f0f275643e24b70776bab407ed",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "4e6776e96bbbafa0f46c475059a32aa74ec0d75c659fd1ca5485cc4af59d345d",
+    "raw_response_text_sha256": "bafa53def0fddca6236fbb5a84b3da1a2b994d5f8abd5b97c9c3a189b10f7738"
+  },
+  "api_metadata": {
+    "id": "resp_09b4d5ce8db0822b006aaa440d65ac87d1a033d777434fae0e",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789543437.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 859,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 206,
+      "output_tokens_details": {
+        "reasoning_tokens": 73
+      },
+      "total_tokens": 1065
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"World Health Organization global funding appeal\",\n  \"conflict_relevance\": \"Gaza is mentioned only as one of many regions facing health crises, without substantive discussion of the conflict or conditions there.\",\n  \"reason\": \"The article focuses on WHO funding needs and global health emergencies; the sole reference to Gaza is an incidental example in a list of affected regions.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T07:24:00Z",
+  "duration_seconds": 3.115,
+  "error": null
+}

@@ -1,0 +1,65 @@
+{
+  "article_id": "200067730",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_12/us/200067730.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_12/us/200067730.json"
+  },
+  "manifest_row": {
+    "article_id": "200067730",
+    "group": "global_north_2023_12",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2023_12/us/200067730.txt"
+  },
+  "screening": {
+    "category": "CORE",
+    "confidence": 0.98,
+    "gaza_role": "central",
+    "main_topic": "News roundup led by the Israeli military's accidental killing of three hostages held in Gaza",
+    "conflict_relevance": "The lead story directly concerns Gaza, Israeli military action, and hostages in the Israel-Hamas war.",
+    "reason": "Although the text is a roundup containing unrelated economic and U.S. policing items, its headline and opening story centrally address the Gaza conflict and hostage deaths.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": true
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "0062384b15c69a2571979bc3625959fd9618e2d4bda3f2c1c888aaa2dcd1cc69",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "1d424deea317f20126d1415e921f2d052019e4ceb5006a78fefb8ac3c281eee4",
+    "raw_response_text_sha256": "7ca5ef6225a9edc3c1f5c2eeb082f36a1007f8ad2d91fa3d54e2f41668f34ebf"
+  },
+  "api_metadata": {
+    "id": "resp_054727ed22d670c1006aaa02ffc2c087d289d3f0938aa3d596",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789526783.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 788,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 246,
+      "output_tokens_details": {
+        "reasoning_tokens": 104
+      },
+      "total_tokens": 1034
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"CORE\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"central\",\n  \"main_topic\": \"News roundup led by the Israeli military's accidental killing of three hostages held in Gaza\",\n  \"conflict_relevance\": \"The lead story directly concerns Gaza, Israeli military action, and hostages in the Israel-Hamas war.\",\n  \"reason\": \"Although the text is a roundup containing unrelated economic and U.S. policing items, its headline and opening story centrally address the Gaza conflict and hostage deaths.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": true\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:46:26Z",
+  "duration_seconds": 2.601,
+  "error": null
+}

@@ -1,0 +1,65 @@
+{
+  "article_id": "116028465",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_10/us/116028465.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_10/us/116028465.json"
+  },
+  "manifest_row": {
+    "article_id": "116028465",
+    "group": "global_north_2024_10",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2024_10/us/116028465.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "gaza_role": "boilerplate_or_unrelated",
+    "main_topic": "Related-story listings and funding information",
+    "conflict_relevance": "The text consists of brief related-story descriptions mentioning the Israel-Hamas war, Gaza, hostages, and campus protests, but contains no substantive standalone article content.",
+    "reason": "This is navigational/metadata content comprising related-story snippets and institutional funding boilerplate rather than an article suitable for discourse analysis.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "94488c9e5bf918f769959a0c46322a2721f3536c144ebdd13a0c94c82b2cb496",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "0681852439794d7b6b195c135f8d914416e506d48a0477f6f82108b792174658",
+    "raw_response_text_sha256": "498ecc9c251a7978e1108a20db176aafc4cb0b6cf9648ad4e13ccb024541a171"
+  },
+  "api_metadata": {
+    "id": "resp_0868d5988b44b506006aaa195b31a487d2b8eab491d0c81ded",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789532507.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 785,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 289,
+      "output_tokens_details": {
+        "reasoning_tokens": 146
+      },
+      "total_tokens": 1074
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Related-story listings and funding information\",\n  \"conflict_relevance\": \"The text consists of brief related-story descriptions mentioning the Israel-Hamas war, Gaza, hostages, and campus protests, but contains no substantive standalone article content.\",\n  \"reason\": \"This is navigational/metadata content comprising related-story snippets and institutional funding boilerplate rather than an article suitable for discourse analysis.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T04:21:50Z",
+  "duration_seconds": 3.893,
+  "error": null
+}

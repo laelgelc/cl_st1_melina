@@ -1,0 +1,65 @@
+{
+  "article_id": "108001926",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_05/ca/108001926.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_05/ca/108001926.json"
+  },
+  "manifest_row": {
+    "article_id": "108001926",
+    "group": "global_north_2024_05",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2024_05/ca/108001926.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "background",
+    "main_topic": "Severe weather and tornado threats in the central United States",
+    "conflict_relevance": "The main article is unrelated to Gaza, but appended news roundup items include meaningful references to antisemitism in Canada in the context of the Israel-Gaza war and Biden's opposition to a potential Israeli offensive in Rafah.",
+    "reason": "The headline and principal article concern tornadoes, hail, flooding, and severe weather. However, the text also contains substantive embedded news items related to antisemitism connected to the Israel-Gaza war and the proposed Rafah offensive, making it peripheral rather than excludable.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "07e63bb850f5e3c06288adc70670abdba98935a30b2f109df71d4396b33fd8e0",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "e24a2ff96b5273b24041edd31ee6dd36cd71b47db22c083f467533593e52fb28",
+    "raw_response_text_sha256": "002c9979c56ac262a05cb088d598038da4bfad3f60097b7121eb2aa647ea60ff"
+  },
+  "api_metadata": {
+    "id": "resp_0ee5a2a8b22713c9006aaa0d80b51c87d2ba39ee7fa33af70a",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789529472.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 3544,
+      "input_tokens_details": {
+        "cache_write_tokens": 3541,
+        "cached_tokens": 0
+      },
+      "output_tokens": 348,
+      "output_tokens_details": {
+        "reasoning_tokens": 162
+      },
+      "total_tokens": 3892
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Severe weather and tornado threats in the central United States\",\n  \"conflict_relevance\": \"The main article is unrelated to Gaza, but appended news roundup items include meaningful references to antisemitism in Canada in the context of the Israel-Gaza war and Biden's opposition to a potential Israeli offensive in Rafah.\",\n  \"reason\": \"The headline and principal article concern tornadoes, hail, flooding, and severe weather. However, the text also contains substantive embedded news items related to antisemitism connected to the Israel-Gaza war and the proposed Rafah offensive, making it peripheral rather than excludable.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:31:18Z",
+  "duration_seconds": 5.665,
+  "error": null
+}

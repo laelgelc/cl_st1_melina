@@ -1,0 +1,65 @@
+{
+  "article_id": "120998425",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_02/us/120998425.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_02/us/120998425.json"
+  },
+  "manifest_row": {
+    "article_id": "120998425",
+    "group": "global_north_2025_02",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2025_02/us/120998425.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.93,
+    "gaza_role": "substantial",
+    "main_topic": "Live coverage of Trump administration actions, US domestic politics, foreign policy, and international affairs",
+    "conflict_relevance": "The article includes substantive updates on Trump's proposed US role in Gaza, potential Palestinian resettlement, Israeli security involvement, Netanyahu's support for the administration, ICC sanctions concerning Israeli officials, and Rubio's planned Middle East diplomacy.",
+    "reason": "This is a broad live-news roundup dominated by unrelated US political, administrative, economic, and international stories. However, several embedded sections contain meaningful discourse about Gaza, Palestinians, Israel, the ICC, humanitarian policy, and Middle East diplomacy. Because the conflict coverage is substantial but not the main organizing topic of the overall article, it is best classified as PERIPHERAL.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "ac9be9939c2874fcd5bf270a7bb3f40fb23d6601d51cc5960f459018b4149a70",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "e26339bbc7a5d4c2348fd8355f4f2561f0d8310b5be7ad2242673cb965b3d7b7",
+    "raw_response_text_sha256": "68788f5d5477216b3e95a8d3ac533fd4e0ed1860cab5ed97e958005631118fa8"
+  },
+  "api_metadata": {
+    "id": "resp_000a1d0be5a34114006aaa246894ec87d19576bb89fbde6472",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789535336.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 18437,
+      "input_tokens_details": {
+        "cache_write_tokens": 18434,
+        "cached_tokens": 0
+      },
+      "output_tokens": 498,
+      "output_tokens_details": {
+        "reasoning_tokens": 287
+      },
+      "total_tokens": 18935
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.93,\n  \"gaza_role\": \"substantial\",\n  \"main_topic\": \"Live coverage of Trump administration actions, US domestic politics, foreign policy, and international affairs\",\n  \"conflict_relevance\": \"The article includes substantive updates on Trump's proposed US role in Gaza, potential Palestinian resettlement, Israeli security involvement, Netanyahu's support for the administration, ICC sanctions concerning Israeli officials, and Rubio's planned Middle East diplomacy.\",\n  \"reason\": \"This is a broad live-news roundup dominated by unrelated US political, administrative, economic, and international stories. However, several embedded sections contain meaningful discourse about Gaza, Palestinians, Israel, the ICC, humanitarian policy, and Middle East diplomacy. Because the conflict coverage is substantial but not the main organizing topic of the overall article, it is best classified as PERIPHERAL.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T05:09:03Z",
+  "duration_seconds": 6.943,
+  "error": null
+}

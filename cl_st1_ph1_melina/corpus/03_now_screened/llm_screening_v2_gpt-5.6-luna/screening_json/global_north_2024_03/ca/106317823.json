@@ -1,0 +1,65 @@
+{
+  "article_id": "106317823",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_03/ca/106317823.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_03/ca/106317823.json"
+  },
+  "manifest_row": {
+    "article_id": "106317823",
+    "group": "global_north_2024_03",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2024_03/ca/106317823.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "passing",
+    "main_topic": "Ontario auto insurance premiums and anti-theft tracking devices",
+    "conflict_relevance": "The article's main topic is unrelated to Gaza, but it contains a substantive embedded news sentence about injuries at a Gaza City hospital and alleged Israeli gunfire during an aid convoy incident.",
+    "reason": "The Gaza-related content is a meaningful but isolated sentence within a compilation of unrelated news items, so the article is peripheral rather than core.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "a53594e5a881b4e68d75a01ce13ea9bd5d8f8995cb97cb1d64f148d5b8f9eeb9",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "fb57f50ee78e86c40b66eb774585edde1e80e843c1a3901799e4972b4a708ca0",
+    "raw_response_text_sha256": "589256af601287de61b3d5867d131f46c88bd7bea9b7565283f4f6c9e0416ac7"
+  },
+  "api_metadata": {
+    "id": "resp_0014ac47590b1e16006aaa084538c087d2a9c67f4f76328d01",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789528133.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1685,
+      "input_tokens_details": {
+        "cache_write_tokens": 1682,
+        "cached_tokens": 0
+      },
+      "output_tokens": 195,
+      "output_tokens_details": {
+        "reasoning_tokens": 46
+      },
+      "total_tokens": 1880
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Ontario auto insurance premiums and anti-theft tracking devices\",\n  \"conflict_relevance\": \"The article's main topic is unrelated to Gaza, but it contains a substantive embedded news sentence about injuries at a Gaza City hospital and alleged Israeli gunfire during an aid convoy incident.\",\n  \"reason\": \"The Gaza-related content is a meaningful but isolated sentence within a compilation of unrelated news items, so the article is peripheral rather than core.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:08:55Z",
+  "duration_seconds": 2.683,
+  "error": null
+}

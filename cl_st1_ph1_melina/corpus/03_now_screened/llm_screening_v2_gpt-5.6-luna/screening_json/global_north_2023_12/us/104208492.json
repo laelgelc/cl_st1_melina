@@ -1,0 +1,65 @@
+{
+  "article_id": "104208492",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_12/us/104208492.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_12/us/104208492.json"
+  },
+  "manifest_row": {
+    "article_id": "104208492",
+    "group": "global_north_2023_12",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2023_12/us/104208492.txt"
+  },
+  "screening": {
+    "category": "CORE",
+    "confidence": 0.99,
+    "gaza_role": "central",
+    "main_topic": "Humanitarian crisis and aid-system collapse in Gaza amid ongoing fighting",
+    "conflict_relevance": "The lead article focuses on food and water shortages, displacement, humanitarian access, hostilities, hostage negotiations, and U.S. arms sales to Israel.",
+    "reason": "Gaza is the central subject of the newsletter's main headline and opening substantive article, which provides detailed reporting on civilian suffering, aid delivery difficulties, and related diplomatic and military developments.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": true
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "c784d56c1384231f28fd88599e82c249a35349e74b8bf335bd23ab7013c15711",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "73d9312b801ba918be93b620094695152b063a8ec7cc0999b18d4961fbb900de",
+    "raw_response_text_sha256": "da7ee9ff5179e54cf7fcd6fce940aa034ef7701243f23b49cf878b2e47a23b39"
+  },
+  "api_metadata": {
+    "id": "resp_04f60f85d2a9d36a006aaa01faf44887d2a515ae901cdb5003",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789526522.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1821,
+      "input_tokens_details": {
+        "cache_write_tokens": 1818,
+        "cached_tokens": 0
+      },
+      "output_tokens": 252,
+      "output_tokens_details": {
+        "reasoning_tokens": 100
+      },
+      "total_tokens": 2073
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"CORE\",\n  \"confidence\": 0.99,\n  \"gaza_role\": \"central\",\n  \"main_topic\": \"Humanitarian crisis and aid-system collapse in Gaza amid ongoing fighting\",\n  \"conflict_relevance\": \"The lead article focuses on food and water shortages, displacement, humanitarian access, hostilities, hostage negotiations, and U.S. arms sales to Israel.\",\n  \"reason\": \"Gaza is the central subject of the newsletter's main headline and opening substantive article, which provides detailed reporting on civilian suffering, aid delivery difficulties, and related diplomatic and military developments.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": true\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:42:06Z",
+  "duration_seconds": 3.392,
+  "error": null
+}

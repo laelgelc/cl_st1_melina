@@ -1,0 +1,65 @@
+{
+  "article_id": "103555826",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_11/us/103555826.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_11/us/103555826.json"
+  },
+  "manifest_row": {
+    "article_id": "103555826",
+    "group": "global_north_2023_11",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2023_11/us/103555826.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "background",
+    "main_topic": "Republican presidential primary polling in New Hampshire",
+    "conflict_relevance": "The article reports Republican voters' views on the Israel-Gaza war and support for additional military aid to Israel, providing relevant material on U.S. political discourse and public opinion, but the conflict is not the article's main subject.",
+    "reason": "The article is primarily about Donald Trump's lead and other candidates' prospects in the 2024 Republican primary. Gaza and Israel appear in polling questions about issue importance and military aid, including a substantive paragraph on voter support for arming Israel, making it meaningful peripheral material rather than an incidental mention.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "6d6dd1fe6f3116d09406c6ddb678c30419867b6d78a2e5130ec1dfffbe100ded",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "bb3fa13d5e4c8ba38250fc3764296ecc514d67aeef0bd199255036578294d014",
+    "raw_response_text_sha256": "148ac9613b355184d8300b633458418b1fb156148ce308b8669e22ee7eccfc6b"
+  },
+  "api_metadata": {
+    "id": "resp_0e3aaa93e5f86d48006aa9fe9b9be087d2afc130c33f452ba2",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789525659.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2327,
+      "input_tokens_details": {
+        "cache_write_tokens": 2324,
+        "cached_tokens": 0
+      },
+      "output_tokens": 234,
+      "output_tokens_details": {
+        "reasoning_tokens": 46
+      },
+      "total_tokens": 2561
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Republican presidential primary polling in New Hampshire\",\n  \"conflict_relevance\": \"The article reports Republican voters' views on the Israel-Gaza war and support for additional military aid to Israel, providing relevant material on U.S. political discourse and public opinion, but the conflict is not the article's main subject.\",\n  \"reason\": \"The article is primarily about Donald Trump's lead and other candidates' prospects in the 2024 Republican primary. Gaza and Israel appear in polling questions about issue importance and military aid, including a substantive paragraph on voter support for arming Israel, making it meaningful peripheral material rather than an incidental mention.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:27:45Z",
+  "duration_seconds": 6.334,
+  "error": null
+}

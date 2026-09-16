@@ -1,0 +1,65 @@
+{
+  "article_id": "118394459",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_12/gb/118394459.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_12/gb/118394459.json"
+  },
+  "manifest_row": {
+    "article_id": "118394459",
+    "group": "global_north_2024_12",
+    "country_code": "gb",
+    "filepath": "corpus/02_now_organised/global_north_2024_12/gb/118394459.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.96,
+    "gaza_role": "passing",
+    "main_topic": "Problems and delayed implementation of the UK's eVisa immigration system",
+    "conflict_relevance": "The article includes a substantive but unrelated news paragraph about Donald Trump's demand for the release of Israeli hostages held in Gaza and possible U.S. involvement in the war.",
+    "reason": "The main article concerns UK immigration administration and the risk of a new Windrush-style scandal. Gaza appears only in a separate embedded news item, but that item contains meaningful conflict-related discourse about hostages, Hamas, Israel's military campaign, and U.S. threats.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "a71d48338a31b07560a2f3e61430fc280b617cde8b16341a3ddf23d977e15429",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "67bcf92e8b386d46b4640f9b9b6a0e2d7cddba17fa59055070b77850b958ba41",
+    "raw_response_text_sha256": "b651b2a843759affbf03c5e344a265157cbb8aac194ee1222c99af8ee837d775"
+  },
+  "api_metadata": {
+    "id": "resp_030faa728e8dcf7b006aaa1d3f708087d2aeb1ff9af00db47d",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789533503.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1917,
+      "input_tokens_details": {
+        "cache_write_tokens": 1914,
+        "cached_tokens": 0
+      },
+      "output_tokens": 280,
+      "output_tokens_details": {
+        "reasoning_tokens": 107
+      },
+      "total_tokens": 2197
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.96,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Problems and delayed implementation of the UK's eVisa immigration system\",\n  \"conflict_relevance\": \"The article includes a substantive but unrelated news paragraph about Donald Trump's demand for the release of Israeli hostages held in Gaza and possible U.S. involvement in the war.\",\n  \"reason\": \"The main article concerns UK immigration administration and the risk of a new Windrush-style scandal. Gaza appears only in a separate embedded news item, but that item contains meaningful conflict-related discourse about hostages, Hamas, Israel's military campaign, and U.S. threats.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T04:38:26Z",
+  "duration_seconds": 3.348,
+  "error": null
+}

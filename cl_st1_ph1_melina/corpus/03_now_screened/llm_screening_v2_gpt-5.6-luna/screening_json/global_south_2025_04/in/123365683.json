@@ -1,0 +1,65 @@
+{
+  "article_id": "123365683",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_south_2025_04/in/123365683.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_south_2025_04/in/123365683.json"
+  },
+  "manifest_row": {
+    "article_id": "123365683",
+    "group": "global_south_2025_04",
+    "country_code": "in",
+    "filepath": "corpus/02_now_organised/global_south_2025_04/in/123365683.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.97,
+    "gaza_role": "background",
+    "main_topic": "Iran's nuclear programme, US-Iran negotiations, and regional tensions",
+    "conflict_relevance": "The article primarily covers Iran's nuclear history and regional activities, but includes meaningful background on the October 7 Hamas attack from Gaza, Iran's support for Hamas, the ensuing Israel-Hamas war, and subsequent regional escalation.",
+    "reason": "Gaza and the Israel-Hamas conflict appear as a substantive element in the timeline explaining Iran's regional role, but they are not the article's central subject.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "020181d0a4b809a4d452c6c33d152978de2a85470318c191b798aeed5874f911",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "7717b11b77d6ca290b5ef63bcaf30ee1d2a21e67412fcf874cf73fbabf985bd2",
+    "raw_response_text_sha256": "e0b54157532c35b8cd719fbe13a4262f61498a23be4740affe12a700e399eff6"
+  },
+  "api_metadata": {
+    "id": "resp_0f3776daccff1c8b006aaa477899c087d1989877fa29ffa1fb",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789544312.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1572,
+      "input_tokens_details": {
+        "cache_write_tokens": 1569,
+        "cached_tokens": 0
+      },
+      "output_tokens": 254,
+      "output_tokens_details": {
+        "reasoning_tokens": 89
+      },
+      "total_tokens": 1826
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.97,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Iran's nuclear programme, US-Iran negotiations, and regional tensions\",\n  \"conflict_relevance\": \"The article primarily covers Iran's nuclear history and regional activities, but includes meaningful background on the October 7 Hamas attack from Gaza, Iran's support for Hamas, the ensuing Israel-Hamas war, and subsequent regional escalation.\",\n  \"reason\": \"Gaza and the Israel-Hamas conflict appear as a substantive element in the timeline explaining Iran's regional role, but they are not the article's central subject.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T07:38:36Z",
+  "duration_seconds": 3.975,
+  "error": null
+}

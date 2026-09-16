@@ -1,0 +1,65 @@
+{
+  "article_id": "105117728",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_01/nz/105117728.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_01/nz/105117728.json"
+  },
+  "manifest_row": {
+    "article_id": "105117728",
+    "group": "global_north_2024_01",
+    "country_code": "nz",
+    "filepath": "corpus/02_now_organised/global_north_2024_01/nz/105117728.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.93,
+    "gaza_role": "passing",
+    "main_topic": "Tributes to Paul Hunt and his work as New Zealand Chief Human Rights Commissioner",
+    "conflict_relevance": "The main article is about New Zealand human rights institutions and Te Tiriti o Waitangi, but it ends with a substantive yet apparently unrelated passage about the International Court of Justice, genocide law, and alleged genocide in Gaza.",
+    "reason": "The Gaza-related material is not part of the article's central subject and appears to be an appended or embedded snippet, but it contains meaningful discourse about international law and the Gaza conflict rather than a mere passing keyword.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "5599b167d161725a5c095f2a85d81a5eb6cf0feb2fe549e5f28e7e9debc2306c",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "629f3cc64c42256c20fc76a2765028415738e78e5b8e8fbf0567b120706cc6c8",
+    "raw_response_text_sha256": "554a4e58ffb8b04f51934523565f10c6a0d6dea9957e3e7762bcdb680b95f837"
+  },
+  "api_metadata": {
+    "id": "resp_0a8b3e7229459dcd006aaa0464ef8487d2a2300a5dff5c04f9",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789527140.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2401,
+      "input_tokens_details": {
+        "cache_write_tokens": 2398,
+        "cached_tokens": 0
+      },
+      "output_tokens": 404,
+      "output_tokens_details": {
+        "reasoning_tokens": 227
+      },
+      "total_tokens": 2805
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.93,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Tributes to Paul Hunt and his work as New Zealand Chief Human Rights Commissioner\",\n  \"conflict_relevance\": \"The main article is about New Zealand human rights institutions and Te Tiriti o Waitangi, but it ends with a substantive yet apparently unrelated passage about the International Court of Justice, genocide law, and alleged genocide in Gaza.\",\n  \"reason\": \"The Gaza-related material is not part of the article's central subject and appears to be an appended or embedded snippet, but it contains meaningful discourse about international law and the Gaza conflict rather than a mere passing keyword.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:52:25Z",
+  "duration_seconds": 4.449,
+  "error": null
+}

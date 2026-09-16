@@ -1,0 +1,65 @@
+{
+  "article_id": "117968601",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_south_2024_11/ng/117968601.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_south_2024_11/ng/117968601.json"
+  },
+  "manifest_row": {
+    "article_id": "117968601",
+    "group": "global_south_2024_11",
+    "country_code": "ng",
+    "filepath": "corpus/02_now_organised/global_south_2024_11/ng/117968601.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.97,
+    "gaza_role": "passing",
+    "main_topic": "Nigerian public-sector projects, education, law enforcement, and local governance",
+    "conflict_relevance": "The text includes a substantive but embedded news item about fuel shortages in war-devastated Gaza, UN aid-delivery problems, and ICC arrest warrants involving Israeli officials.",
+    "reason": "The apparent main content concerns Nigerian domestic affairs, while the Gaza-related material appears as one item among several unrelated news snippets. It is meaningful enough for peripheral discourse analysis but not central to the article.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "6d6710e61ac0f3077e6f6206ace42b0b007a311af70fa0699801ca438ffaa5d5",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "c6d0ea2a6e40e4521128e9cdc4295ea5db39dbddce5b8cf8bec2c242864dfa35",
+    "raw_response_text_sha256": "eeb583525272e311aef13f6b0576a8b3273982c2f6fb2b001aad5cc32efa1015"
+  },
+  "api_metadata": {
+    "id": "resp_054c3f67403deb10006aaa424dd2a487d1a17d7f09506de478",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789542989.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1302,
+      "input_tokens_details": {
+        "cache_write_tokens": 1299,
+        "cached_tokens": 0
+      },
+      "output_tokens": 290,
+      "output_tokens_details": {
+        "reasoning_tokens": 127
+      },
+      "total_tokens": 1592
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.97,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Nigerian public-sector projects, education, law enforcement, and local governance\",\n  \"conflict_relevance\": \"The text includes a substantive but embedded news item about fuel shortages in war-devastated Gaza, UN aid-delivery problems, and ICC arrest warrants involving Israeli officials.\",\n  \"reason\": \"The apparent main content concerns Nigerian domestic affairs, while the Gaza-related material appears as one item among several unrelated news snippets. It is meaningful enough for peripheral discourse analysis but not central to the article.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T07:16:35Z",
+  "duration_seconds": 5.335,
+  "error": null
+}

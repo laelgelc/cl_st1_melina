@@ -1,0 +1,65 @@
+{
+  "article_id": "108078155",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_05/us/108078155.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_05/us/108078155.json"
+  },
+  "manifest_row": {
+    "article_id": "108078155",
+    "group": "global_north_2024_05",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2024_05/us/108078155.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "background",
+    "main_topic": "Flooding and climate-related disaster in southern Brazil",
+    "conflict_relevance": "The article contains an embedded, substantive news item about President Biden's warning that U.S. weapons shipments to Israel could be halted over a potential Rafah invasion and civilian deaths in Gaza.",
+    "reason": "The headline and main article concern catastrophic flooding in Rio Grande do Sul, Brazil. However, the text also includes a meaningful but unrelated report about U.S.-Israel arms policy and the Gaza conflict, making it relevant for broader discourse analysis but not suitable as core conflict coverage.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "7162e7c28d26f96bfdb685d6383f3080b24e127e53b462e0edfa0d8da664839e",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "17eb7fee62525d516bdf6d2b4067cdd4dcf1d1369e037f05df24c5b07e887f59",
+    "raw_response_text_sha256": "47b55132d9c410af27e9f0765f6ffd5846a6a8be5744900ff627ded24ca19c14"
+  },
+  "api_metadata": {
+    "id": "resp_08108d989690fc7d006aaa0eb5a9d087d2a22f41d16e0e868f",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789529781.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2198,
+      "input_tokens_details": {
+        "cache_write_tokens": 2195,
+        "cached_tokens": 0
+      },
+      "output_tokens": 322,
+      "output_tokens_details": {
+        "reasoning_tokens": 146
+      },
+      "total_tokens": 2520
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Flooding and climate-related disaster in southern Brazil\",\n  \"conflict_relevance\": \"The article contains an embedded, substantive news item about President Biden's warning that U.S. weapons shipments to Israel could be halted over a potential Rafah invasion and civilian deaths in Gaza.\",\n  \"reason\": \"The headline and main article concern catastrophic flooding in Rio Grande do Sul, Brazil. However, the text also includes a meaningful but unrelated report about U.S.-Israel arms policy and the Gaza conflict, making it relevant for broader discourse analysis but not suitable as core conflict coverage.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:36:26Z",
+  "duration_seconds": 4.522,
+  "error": null
+}

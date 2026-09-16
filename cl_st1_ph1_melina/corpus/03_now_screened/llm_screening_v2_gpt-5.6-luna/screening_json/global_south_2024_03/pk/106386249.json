@@ -1,0 +1,65 @@
+{
+  "article_id": "106386249",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_south_2024_03/pk/106386249.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_south_2024_03/pk/106386249.json"
+  },
+  "manifest_row": {
+    "article_id": "106386249",
+    "group": "global_south_2024_03",
+    "country_code": "pk",
+    "filepath": "corpus/02_now_organised/global_south_2024_03/pk/106386249.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "background",
+    "main_topic": "Swiss pension and retirement-age referendum",
+    "conflict_relevance": "The main article concerns Swiss domestic pension policy, but the text includes a separate substantive news item about Gaza ceasefire talks, Israeli and Hamas positions, humanitarian aid, bombardment, famine, and hostages.",
+    "reason": "The Gaza material is meaningful and conflict-related but appears as an unrelated appended article rather than being connected to the headline topic.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "e7b569edd4626ba85d281abebdf399a3e3fb34a523e508da6cf5ac2bc454dd94",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "5c8322efb4d8861794b8367c2d1bc4d40fc88e122ab01e4d85b4d432bf38fbad",
+    "raw_response_text_sha256": "3a28652191009f887e601ae96895f639d530e27217c37ac69f07131ada1cd703"
+  },
+  "api_metadata": {
+    "id": "resp_0646dc3cddb0219b006aaa39be9f7087d1aca4d7caac2600ac",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789540798.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1877,
+      "input_tokens_details": {
+        "cache_write_tokens": 1874,
+        "cached_tokens": 0
+      },
+      "output_tokens": 369,
+      "output_tokens_details": {
+        "reasoning_tokens": 222
+      },
+      "total_tokens": 2246
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Swiss pension and retirement-age referendum\",\n  \"conflict_relevance\": \"The main article concerns Swiss domestic pension policy, but the text includes a separate substantive news item about Gaza ceasefire talks, Israeli and Hamas positions, humanitarian aid, bombardment, famine, and hostages.\",\n  \"reason\": \"The Gaza material is meaningful and conflict-related but appears as an unrelated appended article rather than being connected to the headline topic.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T06:40:03Z",
+  "duration_seconds": 4.72,
+  "error": null
+}

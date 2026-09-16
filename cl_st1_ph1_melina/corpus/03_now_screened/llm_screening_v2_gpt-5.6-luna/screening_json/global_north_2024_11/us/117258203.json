@@ -1,0 +1,65 @@
+{
+  "article_id": "117258203",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_11/us/117258203.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_11/us/117258203.json"
+  },
+  "manifest_row": {
+    "article_id": "117258203",
+    "group": "global_north_2024_11",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2024_11/us/117258203.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "gaza_role": "passing",
+    "main_topic": "Jake Sullivan's technology and national security strategy toward China",
+    "conflict_relevance": "Gaza is mentioned only briefly in a list of major Biden administration crises, alongside Ukraine and other issues; there is no substantive discussion of Gaza, Palestine, Israel, or the conflict.",
+    "reason": "The article is centrally about US-China technology competition, semiconductor export controls, and Jake Sullivan's foreign policy. Its references to Gaza and Middle East peace are incidental and do not provide meaningful conflict discourse.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "cc0bbf61feb65e1cfea382266070be57ae12e339ca1fec924241e60eb87b6bd3",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "c355827e950bbf2588fd740889ff7783b8f6affaa47fbe6934f37c214606696b",
+    "raw_response_text_sha256": "dc4cceb8dbd44d629bce4645defc366bc9412538cdd8a5ab08b3d72ed1059b99"
+  },
+  "api_metadata": {
+    "id": "resp_0408bff38ca96526006aaa1bdf62d087d29a57c3b672c2a48f",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789533151.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 8393,
+      "input_tokens_details": {
+        "cache_write_tokens": 8390,
+        "cached_tokens": 0
+      },
+      "output_tokens": 324,
+      "output_tokens_details": {
+        "reasoning_tokens": 163
+      },
+      "total_tokens": 8717
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Jake Sullivan's technology and national security strategy toward China\",\n  \"conflict_relevance\": \"Gaza is mentioned only briefly in a list of major Biden administration crises, alongside Ukraine and other issues; there is no substantive discussion of Gaza, Palestine, Israel, or the conflict.\",\n  \"reason\": \"The article is centrally about US-China technology competition, semiconductor export controls, and Jake Sullivan's foreign policy. Its references to Gaza and Middle East peace are incidental and do not provide meaningful conflict discourse.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T04:32:35Z",
+  "duration_seconds": 3.795,
+  "error": null
+}

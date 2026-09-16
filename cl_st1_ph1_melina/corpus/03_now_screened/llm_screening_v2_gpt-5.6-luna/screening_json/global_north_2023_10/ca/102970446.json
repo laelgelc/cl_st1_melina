@@ -1,0 +1,65 @@
+{
+  "article_id": "102970446",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_10/ca/102970446.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_10/ca/102970446.json"
+  },
+  "manifest_row": {
+    "article_id": "102970446",
+    "group": "global_north_2023_10",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2023_10/ca/102970446.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "background",
+    "main_topic": "Healthcare workers' labor negotiations and wage agreement at Grand River Hospital",
+    "conflict_relevance": "The main article is unrelated to the Gaza conflict, but a repeated CTVNews.ca top-story snippet reports communications outages and intensified Israeli bombardment in Gaza.",
+    "reason": "The Gaza content appears only as an embedded news-roundup item rather than as part of the main article. It provides meaningful conflict-related discourse but is not central to the article.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "69d63dfda0520f6752f8c720688621097efc7cc1d8def060f72c5b0db22c3251",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "1a403811a20b3ff8f718a68687bc08a660162c2a923a15089cf0751c00233b16",
+    "raw_response_text_sha256": "629cf41d4de76fdc1cd10ed1527f57b5c5494786cbd3f2459f5eb35e79e10e6a"
+  },
+  "api_metadata": {
+    "id": "resp_0a70022be2dc03a1006aa9f6aeed6c87d29930a881fb1b204b",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789523630.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1207,
+      "input_tokens_details": {
+        "cache_write_tokens": 1204,
+        "cached_tokens": 0
+      },
+      "output_tokens": 236,
+      "output_tokens_details": {
+        "reasoning_tokens": 82
+      },
+      "total_tokens": 1443
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Healthcare workers' labor negotiations and wage agreement at Grand River Hospital\",\n  \"conflict_relevance\": \"The main article is unrelated to the Gaza conflict, but a repeated CTVNews.ca top-story snippet reports communications outages and intensified Israeli bombardment in Gaza.\",\n  \"reason\": \"The Gaza content appears only as an embedded news-roundup item rather than as part of the main article. It provides meaningful conflict-related discourse but is not central to the article.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T01:53:54Z",
+  "duration_seconds": 3.319,
+  "error": null
+}

@@ -1,0 +1,65 @@
+{
+  "article_id": "122681638",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_03/us/122681638.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_03/us/122681638.json"
+  },
+  "manifest_row": {
+    "article_id": "122681638",
+    "group": "global_north_2025_03",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2025_03/us/122681638.txt"
+  },
+  "screening": {
+    "category": "CORE",
+    "confidence": 0.99,
+    "gaza_role": "central",
+    "main_topic": "Israel-Gaza war, hostage negotiations, Israeli military operations, and related regional escalation",
+    "conflict_relevance": "The text is entirely composed of news items about the Israel-Hamas war, Gaza operations and migration plans, hostages, Hamas negotiations, and connected Houthi and Hezbollah activity.",
+    "reason": "This is a multi-item conflict news compilation, but every substantive item directly concerns Gaza, Israel, Hamas, hostages, or the broader regional military conflict, making it highly relevant to the main corpus.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": true
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "005328fceba24d137ecaca554e95182ea22fc4a175eb4c9b0687e06e5cb58399",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "1f9e06a498d6f267e132486314e51f2959264085a84067f933a99892bb4f6634",
+    "raw_response_text_sha256": "91adfbf01c7349d0dda6a16ad4e61171ec34ce264c15839eb5565162a2caaa4a"
+  },
+  "api_metadata": {
+    "id": "resp_0744ef5b6b72e05c006aaa27f40c0087d1844c94cfe0df7b58",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789536244.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1725,
+      "input_tokens_details": {
+        "cache_write_tokens": 1722,
+        "cached_tokens": 0
+      },
+      "output_tokens": 296,
+      "output_tokens_details": {
+        "reasoning_tokens": 130
+      },
+      "total_tokens": 2021
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"CORE\",\n  \"confidence\": 0.99,\n  \"gaza_role\": \"central\",\n  \"main_topic\": \"Israel-Gaza war, hostage negotiations, Israeli military operations, and related regional escalation\",\n  \"conflict_relevance\": \"The text is entirely composed of news items about the Israel-Hamas war, Gaza operations and migration plans, hostages, Hamas negotiations, and connected Houthi and Hezbollah activity.\",\n  \"reason\": \"This is a multi-item conflict news compilation, but every substantive item directly concerns Gaza, Israel, Hamas, hostages, or the broader regional military conflict, making it highly relevant to the main corpus.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": true\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T05:24:08Z",
+  "duration_seconds": 4.778,
+  "error": null
+}

@@ -1,0 +1,65 @@
+{
+  "article_id": "122809984",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_03/gb/122809984.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_03/gb/122809984.json"
+  },
+  "manifest_row": {
+    "article_id": "122809984",
+    "group": "global_north_2025_03",
+    "country_code": "gb",
+    "filepath": "corpus/02_now_organised/global_north_2025_03/gb/122809984.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.91,
+    "gaza_role": "background",
+    "main_topic": "UK Chancellor Rachel Reeves's Spring Statement and Labour government spending plans",
+    "conflict_relevance": "The main article concerns UK fiscal policy, but an embedded 'Read next' teaser contains substantive commentary about Hamas, Gaza, Israel, antisemitism, Palestinians, and British activism.",
+    "reason": "The conflict-related material is confined to an unrelated embedded recommendation rather than the main article, but it contains meaningful discourse relevant to representations of Gaza, Israel, antisemitism, and pro-Palestinian activism.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "f3c5e15ae11fe7ab5bb7615d1474fc86f5af72be356295507a0e76b4c2089c79",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "ea150a20966f3d46ce610f9cd127c93d1b799d2843dc47e2f581306db8ff17ac",
+    "raw_response_text_sha256": "cd114ed760bb28d1c792d20164bc5c9604201669b05b72cf0a193e403cc145de"
+  },
+  "api_metadata": {
+    "id": "resp_02f8aa44d7d7016d006aaa2668966887d1bfb567ef4acab3bb",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789535848.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 955,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 344,
+      "output_tokens_details": {
+        "reasoning_tokens": 178
+      },
+      "total_tokens": 1299
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.91,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"UK Chancellor Rachel Reeves's Spring Statement and Labour government spending plans\",\n  \"conflict_relevance\": \"The main article concerns UK fiscal policy, but an embedded 'Read next' teaser contains substantive commentary about Hamas, Gaza, Israel, antisemitism, Palestinians, and British activism.\",\n  \"reason\": \"The conflict-related material is confined to an unrelated embedded recommendation rather than the main article, but it contains meaningful discourse relevant to representations of Gaza, Israel, antisemitism, and pro-Palestinian activism.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T05:17:32Z",
+  "duration_seconds": 3.879,
+  "error": null
+}

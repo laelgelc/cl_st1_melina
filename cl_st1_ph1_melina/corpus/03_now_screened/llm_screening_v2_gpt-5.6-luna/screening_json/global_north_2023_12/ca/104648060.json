@@ -1,0 +1,65 @@
+{
+  "article_id": "104648060",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_12/ca/104648060.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_12/ca/104648060.json"
+  },
+  "manifest_row": {
+    "article_id": "104648060",
+    "group": "global_north_2023_12",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2023_12/ca/104648060.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.97,
+    "gaza_role": "background",
+    "main_topic": "Canadian consumer spending and New Year's Eve celebrations amid inflation and economic uncertainty",
+    "conflict_relevance": "The article briefly discusses the Israel-Hamas war as a source of global anxiety affecting consumer psychology, while additional Gaza-related items appear as unrelated embedded news snippets.",
+    "reason": "The headline article is primarily about holiday spending, inflation, and consumer behaviour rather than Gaza or the Israel-Palestine conflict. However, it contains meaningful contextual discussion of the Israel-Hamas war and several substantive Gaza-related snippets, making it relevant to broader discourse analysis but not suitable for the main conflict corpus.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "e4e2a0b8537665bc17484be133809f88939052f22dca1875b5e33c7628a476b1",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "228dea11271f2b357cc16fb19ab46b168c71a018ded22824c761250f923f6267",
+    "raw_response_text_sha256": "e33499760781549eef79bb3a6e0005d9d2cad0f7140aaa02f4fe242aafb5c664"
+  },
+  "api_metadata": {
+    "id": "resp_02d1cf4bdc04c2e6006aaa009d4d5887d2a9be6dc7aad2973d",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789526173.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2290,
+      "input_tokens_details": {
+        "cache_write_tokens": 2287,
+        "cached_tokens": 0
+      },
+      "output_tokens": 301,
+      "output_tokens_details": {
+        "reasoning_tokens": 119
+      },
+      "total_tokens": 2591
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.97,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Canadian consumer spending and New Year's Eve celebrations amid inflation and economic uncertainty\",\n  \"conflict_relevance\": \"The article briefly discusses the Israel-Hamas war as a source of global anxiety affecting consumer psychology, while additional Gaza-related items appear as unrelated embedded news snippets.\",\n  \"reason\": \"The headline article is primarily about holiday spending, inflation, and consumer behaviour rather than Gaza or the Israel-Palestine conflict. However, it contains meaningful contextual discussion of the Israel-Hamas war and several substantive Gaza-related snippets, making it relevant to broader discourse analysis but not suitable for the main conflict corpus.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:36:18Z",
+  "duration_seconds": 5.308,
+  "error": null
+}

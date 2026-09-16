@@ -1,0 +1,65 @@
+{
+  "article_id": "105307158",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_south_2024_01/in/105307158.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_south_2024_01/in/105307158.json"
+  },
+  "manifest_row": {
+    "article_id": "105307158",
+    "group": "global_south_2024_01",
+    "country_code": "in",
+    "filepath": "corpus/02_now_organised/global_south_2024_01/in/105307158.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.86,
+    "gaza_role": "passing",
+    "main_topic": "Miscellaneous Indian news and current-affairs snippets",
+    "conflict_relevance": "Contains an isolated mention of demands for an immediate ceasefire in Gaza and justice for Palestinians, but the overall text is a collection of unrelated news items.",
+    "reason": "The Gaza reference constitutes meaningful conflict-related discourse, but it is only a brief, fragmentary item within a multi-topic compilation and is not the focus of the article.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "3657a725a76803c7600c182a44dffdc871f83fe6fcec82962f72a32a4a074154",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "f87f531167c6d8b9b95d58630c047e843e7fd55f9e1e269063255cd9d44b6779",
+    "raw_response_text_sha256": "a9bc8ab92c417f50b92cfab2fc723923298f80868ece0b7af0954edd315422bb"
+  },
+  "api_metadata": {
+    "id": "resp_0f5cf7bd479b80e2006aaa37f9da1c87d1837e6ee5a1db688f",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789540345.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 924,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 340,
+      "output_tokens_details": {
+        "reasoning_tokens": 192
+      },
+      "total_tokens": 1264
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.86,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Miscellaneous Indian news and current-affairs snippets\",\n  \"conflict_relevance\": \"Contains an isolated mention of demands for an immediate ceasefire in Gaza and justice for Palestinians, but the overall text is a collection of unrelated news items.\",\n  \"reason\": \"The Gaza reference constitutes meaningful conflict-related discourse, but it is only a brief, fragmentary item within a multi-topic compilation and is not the focus of the article.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T06:32:31Z",
+  "duration_seconds": 5.723,
+  "error": null
+}

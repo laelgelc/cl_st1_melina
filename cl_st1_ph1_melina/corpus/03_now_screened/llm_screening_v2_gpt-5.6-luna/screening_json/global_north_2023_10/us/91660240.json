@@ -1,0 +1,65 @@
+{
+  "article_id": "91660240",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_10/us/91660240.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_10/us/91660240.json"
+  },
+  "manifest_row": {
+    "article_id": "91660240",
+    "group": "global_north_2023_10",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2023_10/us/91660240.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.99,
+    "gaza_role": "background",
+    "main_topic": "Police certification forfeiture following mishandling of homicide evidence",
+    "conflict_relevance": "A recommended-story snippet contains substantive discussion of the Geneva Conventions, Hamas's attack, Israeli bombings in Gaza, war crimes, and the challenges of military response.",
+    "reason": "The main article concerns a former Phoenix homicide detective and is unrelated to the Israel-Palestine conflict. However, an embedded recommended story includes meaningful conflict-related discourse, making the item peripheral rather than excludable.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "192bfac27575ba7b6b7c56689fdad287e2a8863f3991d1f7c37eeeda836c1033",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "0b37a9d9bbf36edcfa90fa0749f8296ff2141c6732d3bcddb1b8b16476f8c74d",
+    "raw_response_text_sha256": "f700e77bef647f483c80dac8d662e7c7f8a75624b137f34d1624deaf70b9caca"
+  },
+  "api_metadata": {
+    "id": "resp_022dfa87d7659fad006aa9fabc212c87d2b28ae5f897201cd8",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789524668.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 939,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 236,
+      "output_tokens_details": {
+        "reasoning_tokens": 73
+      },
+      "total_tokens": 1175
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.99,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Police certification forfeiture following mishandling of homicide evidence\",\n  \"conflict_relevance\": \"A recommended-story snippet contains substantive discussion of the Geneva Conventions, Hamas's attack, Israeli bombings in Gaza, war crimes, and the challenges of military response.\",\n  \"reason\": \"The main article concerns a former Phoenix homicide detective and is unrelated to the Israel-Palestine conflict. However, an embedded recommended story includes meaningful conflict-related discourse, making the item peripheral rather than excludable.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:11:11Z",
+  "duration_seconds": 3.391,
+  "error": null
+}

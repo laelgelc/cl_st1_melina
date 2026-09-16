@@ -1,0 +1,65 @@
+{
+  "article_id": "103246996",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_11/nz/103246996.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_11/nz/103246996.json"
+  },
+  "manifest_row": {
+    "article_id": "103246996",
+    "group": "global_north_2023_11",
+    "country_code": "nz",
+    "filepath": "corpus/02_now_organised/global_north_2023_11/nz/103246996.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "background",
+    "main_topic": "Oxfam's call for New Zealand and Australia to support a fossil-fuel-free, climate-just transition in the Pacific",
+    "conflict_relevance": "The article includes substantial embedded updates on Israeli hostages, the forced displacement order in northern Gaza, humanitarian risks, communications infrastructure damage, and alleged violations of international humanitarian law, but these are separate from the main Pacific climate-change article.",
+    "reason": "The headline and primary article concern Pacific climate policy and fossil fuels. However, the text contains meaningful Gaza-related humanitarian and conflict discourse in appended news snippets, making it useful for broader discourse analysis but not as core conflict coverage.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "563bd27179a2b1baddf88769ac9aa11f5329a4d623466c84b86f6e8c3dbdc172",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "c199ebb76e20d69e1033f0ad2e059c7de7d08e774cea9517f120da87ab69989c",
+    "raw_response_text_sha256": "19ada31a6ac69f4e2148b7f8b7fe1e0a1c7b9c5a869237dac25e3215e93aa63d"
+  },
+  "api_metadata": {
+    "id": "resp_0512f584cf96642e006aa9fda8cd2887d28d5167fd90e353b4",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789525416.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1904,
+      "input_tokens_details": {
+        "cache_write_tokens": 1901,
+        "cached_tokens": 0
+      },
+      "output_tokens": 312,
+      "output_tokens_details": {
+        "reasoning_tokens": 121
+      },
+      "total_tokens": 2216
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Oxfam's call for New Zealand and Australia to support a fossil-fuel-free, climate-just transition in the Pacific\",\n  \"conflict_relevance\": \"The article includes substantial embedded updates on Israeli hostages, the forced displacement order in northern Gaza, humanitarian risks, communications infrastructure damage, and alleged violations of international humanitarian law, but these are separate from the main Pacific climate-change article.\",\n  \"reason\": \"The headline and primary article concern Pacific climate policy and fossil fuels. However, the text contains meaningful Gaza-related humanitarian and conflict discourse in appended news snippets, making it useful for broader discourse analysis but not as core conflict coverage.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:23:40Z",
+  "duration_seconds": 4.201,
+  "error": null
+}

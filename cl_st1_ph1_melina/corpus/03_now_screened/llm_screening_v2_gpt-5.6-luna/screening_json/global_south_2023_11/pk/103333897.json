@@ -1,0 +1,65 @@
+{
+  "article_id": "103333897",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_south_2023_11/pk/103333897.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_south_2023_11/pk/103333897.json"
+  },
+  "manifest_row": {
+    "article_id": "103333897",
+    "group": "global_south_2023_11",
+    "country_code": "pk",
+    "filepath": "corpus/02_now_organised/global_south_2023_11/pk/103333897.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.96,
+    "gaza_role": "background",
+    "main_topic": "US-South Korea relations and North Korean arms transfers to Russia",
+    "conflict_relevance": "The article is primarily about North Korea's support for Russia's war in Ukraine, but it briefly references South Korean humanitarian assistance to Gaza and US discussions concerning the Israel-Hamas war.",
+    "reason": "Gaza and the Israel-Hamas war appear in meaningful but limited background references within an article focused on other geopolitical conflicts.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "690e709492122209baa6adf13e5112eca74cc83f620283cc78c8808526fd7e5d",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "e023eedc52c93ad25cb89829cec1bb197c3e12c14d02879da37c65e2719ddb10",
+    "raw_response_text_sha256": "b7d4085e399a609281ba919493fdde4d4ff59ef5e39516e458de42e160006872"
+  },
+  "api_metadata": {
+    "id": "resp_0b3b28804a1f0083006aaa360dd52087d18decdeda6e2e5563",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789539853.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1350,
+      "input_tokens_details": {
+        "cache_write_tokens": 1347,
+        "cached_tokens": 0
+      },
+      "output_tokens": 204,
+      "output_tokens_details": {
+        "reasoning_tokens": 56
+      },
+      "total_tokens": 1554
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.96,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"US-South Korea relations and North Korean arms transfers to Russia\",\n  \"conflict_relevance\": \"The article is primarily about North Korea's support for Russia's war in Ukraine, but it briefly references South Korean humanitarian assistance to Gaza and US discussions concerning the Israel-Hamas war.\",\n  \"reason\": \"Gaza and the Israel-Hamas war appear in meaningful but limited background references within an article focused on other geopolitical conflicts.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T06:24:16Z",
+  "duration_seconds": 2.748,
+  "error": null
+}

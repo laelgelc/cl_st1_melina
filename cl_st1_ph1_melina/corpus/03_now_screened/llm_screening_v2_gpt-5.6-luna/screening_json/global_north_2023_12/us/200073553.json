@@ -1,0 +1,65 @@
+{
+  "article_id": "200073553",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_12/us/200073553.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_12/us/200073553.json"
+  },
+  "manifest_row": {
+    "article_id": "200073553",
+    "group": "global_north_2023_12",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2023_12/us/200073553.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.96,
+    "gaza_role": "background",
+    "main_topic": "Climate conference criticism and miscellaneous current-affairs news roundup",
+    "conflict_relevance": "The article includes a substantive Middle East update concerning Houthi attacks linked to the Israel-Hamas war, the expired Gaza ceasefire, anticipated Israeli military expansion into southern Gaza, and mass civilian evacuations.",
+    "reason": "The main focus is the COP28 climate conference, private-jet travel, methane emissions, and unrelated news items. However, the Gaza and regional-war section contains meaningful conflict discourse, making the article useful as peripheral rather than core coverage.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "acc8dfb9eec462406e8f056a2cfa1a53c1e6696f3f072936d444045a45f0a97a",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "6b84bd4871b82b80fffe4bacbd7df797e9236dadf70237fecc9c0562c0ab8afa",
+    "raw_response_text_sha256": "99f70946e807cd25e5a81919977f6813b4b2f115633069950e07e892f008fd55"
+  },
+  "api_metadata": {
+    "id": "resp_037499ec6a85878d006aaa030dbee887d2ac22495639f4e2ed",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789526797.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1862,
+      "input_tokens_details": {
+        "cache_write_tokens": 1859,
+        "cached_tokens": 0
+      },
+      "output_tokens": 258,
+      "output_tokens_details": {
+        "reasoning_tokens": 84
+      },
+      "total_tokens": 2120
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.96,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Climate conference criticism and miscellaneous current-affairs news roundup\",\n  \"conflict_relevance\": \"The article includes a substantive Middle East update concerning Houthi attacks linked to the Israel-Hamas war, the expired Gaza ceasefire, anticipated Israeli military expansion into southern Gaza, and mass civilian evacuations.\",\n  \"reason\": \"The main focus is the COP28 climate conference, private-jet travel, methane emissions, and unrelated news items. However, the Gaza and regional-war section contains meaningful conflict discourse, making the article useful as peripheral rather than core coverage.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:46:42Z",
+  "duration_seconds": 4.514,
+  "error": null
+}

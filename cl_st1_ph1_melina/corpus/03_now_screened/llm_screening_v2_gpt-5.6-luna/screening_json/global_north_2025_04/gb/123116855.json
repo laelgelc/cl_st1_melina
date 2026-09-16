@@ -1,0 +1,65 @@
+{
+  "article_id": "123116855",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_04/gb/123116855.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_04/gb/123116855.json"
+  },
+  "manifest_row": {
+    "article_id": "123116855",
+    "group": "global_north_2025_04",
+    "country_code": "gb",
+    "filepath": "corpus/02_now_organised/global_north_2025_04/gb/123116855.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.92,
+    "gaza_role": "background",
+    "main_topic": "European counter-terrorism arrests involving alleged Hezbollah-linked suspects and threats to Israeli interests",
+    "conflict_relevance": "The article discusses Hezbollah, Hamas, Iran-linked activity, attacks targeting Israelis, and explicitly connects heightened threats to the ongoing fighting in Gaza, but its primary focus is European security operations rather than the Gaza conflict itself.",
+    "reason": "The conflict-related material is meaningful and contextualizes the reported arrests, yet Gaza and the Israel-Palestine conflict are not the article's central subject.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "04d5aa4afbb6f040477ba991864dda8d558814a2b64da5d047424eaef4e7879c",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "ea5e43b6c75e9ff1fc3eca4468270eaf6ab15172e0318cf6f8a28ccd84eb5f8a",
+    "raw_response_text_sha256": "f2609fd2e8d491c46d3865c7e86f963ec01b24cc898ac631ccf8bfbee8af97db"
+  },
+  "api_metadata": {
+    "id": "resp_0fe7022136e4e5e0006aaa28ad33cc87d18ce8c11c35659648",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789536429.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 973,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 290,
+      "output_tokens_details": {
+        "reasoning_tokens": 125
+      },
+      "total_tokens": 1263
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.92,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"European counter-terrorism arrests involving alleged Hezbollah-linked suspects and threats to Israeli interests\",\n  \"conflict_relevance\": \"The article discusses Hezbollah, Hamas, Iran-linked activity, attacks targeting Israelis, and explicitly connects heightened threats to the ongoing fighting in Gaza, but its primary focus is European security operations rather than the Gaza conflict itself.\",\n  \"reason\": \"The conflict-related material is meaningful and contextualizes the reported arrests, yet Gaza and the Israel-Palestine conflict are not the article's central subject.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T05:27:12Z",
+  "duration_seconds": 3.504,
+  "error": null
+}

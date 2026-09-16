@@ -1,0 +1,65 @@
+{
+  "article_id": "102877579",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_10/ca/102877579.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_10/ca/102877579.json"
+  },
+  "manifest_row": {
+    "article_id": "102877579",
+    "group": "global_north_2023_10",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2023_10/ca/102877579.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.96,
+    "gaza_role": "background",
+    "main_topic": "A coroner's inquest into the deaths of two Quebec girls and their father, focusing on police search failures and recommendations",
+    "conflict_relevance": "The main article is unrelated to Gaza, but embedded CTVNews.ca top-story snippets contain meaningful references to the Israel-Hamas war, humanitarian pauses, the Gaza death toll, and a university dispute over Palestinian resistance and Israel's existence.",
+    "reason": "The conflict-related material appears only in an unrelated news sidebar or roundup rather than in the main article, making it useful only for peripheral analysis of media presentation and adjacent public discourse.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "b59a555e924d6b48ad2e105c8db7fc5b433de8991cb3f96cf8623fa2df6dfd22",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "a79dfafdd81f79205f8b053c7fd14ff3937db52b6f3ade1f9ef2addb6b65f9b0",
+    "raw_response_text_sha256": "822e46c144771545c4ffecb7dc7df87a84583b388f26eb42ad73ca3d7b53ed01"
+  },
+  "api_metadata": {
+    "id": "resp_023ac2b3aa77ac02006aa9f68fd64487d29670eab681017d74",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789523599.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1914,
+      "input_tokens_details": {
+        "cache_write_tokens": 1911,
+        "cached_tokens": 0
+      },
+      "output_tokens": 416,
+      "output_tokens_details": {
+        "reasoning_tokens": 234
+      },
+      "total_tokens": 2330
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.96,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"A coroner's inquest into the deaths of two Quebec girls and their father, focusing on police search failures and recommendations\",\n  \"conflict_relevance\": \"The main article is unrelated to Gaza, but embedded CTVNews.ca top-story snippets contain meaningful references to the Israel-Hamas war, humanitarian pauses, the Gaza death toll, and a university dispute over Palestinian resistance and Israel's existence.\",\n  \"reason\": \"The conflict-related material appears only in an unrelated news sidebar or roundup rather than in the main article, making it useful only for peripheral analysis of media presentation and adjacent public discourse.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T01:53:23Z",
+  "duration_seconds": 3.88,
+  "error": null
+}

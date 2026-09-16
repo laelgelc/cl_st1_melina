@@ -1,0 +1,65 @@
+{
+  "article_id": "103954456",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_12/gb/103954456.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_12/gb/103954456.json"
+  },
+  "manifest_row": {
+    "article_id": "103954456",
+    "group": "global_north_2023_12",
+    "country_code": "gb",
+    "filepath": "corpus/02_now_organised/global_north_2023_12/gb/103954456.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.93,
+    "gaza_role": "background",
+    "main_topic": "Strictly Come Dancing contestant withdrawal and competition format",
+    "conflict_relevance": "The article is primarily entertainment coverage but includes an unrelated embedded news passage about Israel's right to self-defense, humanitarian and international law, Palestinian casualties, Gaza, and Muslim American voting concerns.",
+    "reason": "The main article concerns a television dance competition. However, the embedded passage contains multiple meaningful sentences directly addressing Gaza, Palestinians, Israel, humanitarian law, and U.S. Muslim political responses, making it peripheral rather than wholly excludable.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "2060e01db13477228b41c9a13e2a997f5db58431a5858d61ea16be5058d90bb6",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "b8ff0b3c8bfa5ddbb9126b1a67c67e79689a47e768df92c504baa07a0c4255b1",
+    "raw_response_text_sha256": "d58e74dc7c5dea273bef9cf4e0a8f8c5752441d44c9aa3b3f4eb188dc81cc9b7"
+  },
+  "api_metadata": {
+    "id": "resp_070a202c0bca0468006aaa00c0882487d2af89e9d871ccf40b",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789526208.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1158,
+      "input_tokens_details": {
+        "cache_write_tokens": 1155,
+        "cached_tokens": 0
+      },
+      "output_tokens": 261,
+      "output_tokens_details": {
+        "reasoning_tokens": 92
+      },
+      "total_tokens": 1419
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.93,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Strictly Come Dancing contestant withdrawal and competition format\",\n  \"conflict_relevance\": \"The article is primarily entertainment coverage but includes an unrelated embedded news passage about Israel's right to self-defense, humanitarian and international law, Palestinian casualties, Gaza, and Muslim American voting concerns.\",\n  \"reason\": \"The main article concerns a television dance competition. However, the embedded passage contains multiple meaningful sentences directly addressing Gaza, Palestinians, Israel, humanitarian law, and U.S. Muslim political responses, making it peripheral rather than wholly excludable.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:36:52Z",
+  "duration_seconds": 3.685,
+  "error": null
+}

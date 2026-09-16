@@ -1,0 +1,65 @@
+{
+  "article_id": "91665193",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_10/us/91665193.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_10/us/91665193.json"
+  },
+  "manifest_row": {
+    "article_id": "91665193",
+    "group": "global_north_2023_10",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2023_10/us/91665193.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "background",
+    "main_topic": "A congressman's vote for Jim Jordan as House Speaker and the resulting partisan political criticism",
+    "conflict_relevance": "The article briefly discusses congressional funding for the Israel-Gaza crisis and quotes the congressman saying that Israel is under attack, but the conflict is not the main subject.",
+    "reason": "The article primarily concerns House leadership, Republican factional conflict, and a political action committee. Its references to Gaza and Israel are meaningful but limited to the congressional agenda and political statements.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "ef1e47253b90988b7b79fc00d74d7bb13ee069851dad320caf979ad7db8b47f7",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "727c81e6d08e343863fcdb696591b53dee6e7314c81858ce715d02ef13f37935",
+    "raw_response_text_sha256": "d960d07d6c85408c52d5f8954ce752034bf7c0528fafb8adf6e2a93d49d4b98c"
+  },
+  "api_metadata": {
+    "id": "resp_013f727a037ed50f006aa9facb10d887d2815f99eac8cd4769",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789524683.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1675,
+      "input_tokens_details": {
+        "cache_write_tokens": 1672,
+        "cached_tokens": 0
+      },
+      "output_tokens": 241,
+      "output_tokens_details": {
+        "reasoning_tokens": 80
+      },
+      "total_tokens": 1916
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"A congressman's vote for Jim Jordan as House Speaker and the resulting partisan political criticism\",\n  \"conflict_relevance\": \"The article briefly discusses congressional funding for the Israel-Gaza crisis and quotes the congressman saying that Israel is under attack, but the conflict is not the main subject.\",\n  \"reason\": \"The article primarily concerns House leadership, Republican factional conflict, and a political action committee. Its references to Gaza and Israel are meaningful but limited to the congressional agenda and political statements.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:11:25Z",
+  "duration_seconds": 2.985,
+  "error": null
+}

@@ -1,0 +1,65 @@
+{
+  "article_id": "124951410",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_05/sg/124951410.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_05/sg/124951410.json"
+  },
+  "manifest_row": {
+    "article_id": "124951410",
+    "group": "global_north_2025_05",
+    "country_code": "sg",
+    "filepath": "corpus/02_now_organised/global_north_2025_05/sg/124951410.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.96,
+    "gaza_role": "background",
+    "main_topic": "A global news photography roundup",
+    "conflict_relevance": "The roundup includes several meaningful photographs related to Gaza, Palestinian refugees, and the Israel-Gaza border, including a malnourished child from Gaza receiving medical treatment.",
+    "reason": "Although the article is primarily a general collection of international photographs rather than conflict coverage, multiple featured images directly concern Gaza and Palestinians, making it relevant for broader discourse analysis but unsuitable as core conflict reporting.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "9fd98321d9d45d7042744a8d608626f1e3731a2b8d9ea4cde23e63a0ae9d4cc4",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "4a215883aaa73785144cc2b1fe1370ca1cce01ccb06e800f9cb96285e76728b7",
+    "raw_response_text_sha256": "da0a3ddb81e23051308b35c6ce87a09675aa515861f23c337de114925c28b6e5"
+  },
+  "api_metadata": {
+    "id": "resp_08767a03db129b83006aaa2cdb8be087d195b950acc00af767",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789537499.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1016,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 319,
+      "output_tokens_details": {
+        "reasoning_tokens": 166
+      },
+      "total_tokens": 1335
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.96,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"A global news photography roundup\",\n  \"conflict_relevance\": \"The roundup includes several meaningful photographs related to Gaza, Palestinian refugees, and the Israel-Gaza border, including a malnourished child from Gaza receiving medical treatment.\",\n  \"reason\": \"Although the article is primarily a general collection of international photographs rather than conflict coverage, multiple featured images directly concern Gaza and Palestinians, making it relevant for broader discourse analysis but unsuitable as core conflict reporting.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T05:45:03Z",
+  "duration_seconds": 4.529,
+  "error": null
+}

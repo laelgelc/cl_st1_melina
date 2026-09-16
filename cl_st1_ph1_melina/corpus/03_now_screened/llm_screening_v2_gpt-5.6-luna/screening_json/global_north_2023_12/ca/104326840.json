@@ -1,0 +1,65 @@
+{
+  "article_id": "104326840",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_12/ca/104326840.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_12/ca/104326840.json"
+  },
+  "manifest_row": {
+    "article_id": "104326840",
+    "group": "global_north_2023_12",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2023_12/ca/104326840.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.94,
+    "gaza_role": "passing",
+    "main_topic": "Canadian vehicle market and advice on buying new or used vehicles",
+    "conflict_relevance": "The main article is unrelated to the Gaza conflict, but it includes a substantive embedded news sentence about three Israeli hostages mistakenly killed by Israeli troops in Gaza.",
+    "reason": "The headline and article body focus exclusively on vehicle prices, financing, supply chains, and electric-vehicle incentives. A separate embedded snippet briefly discusses the killing of hostages in Gaza, making the item marginally useful for broader media-discourse analysis but unsuitable for the core corpus.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "fc7d895233f071a071f91b6b40a1978f707d781ffcfb932adf0ba69cadec19b0",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "9ba0caa851a39910b96249b31ee16d533e729cbf610f62d583edce6568918ab4",
+    "raw_response_text_sha256": "e8096c8604d26fb5f06c0ee66342e9c2965a58fd0d74c04aabf65f3407ae04c5"
+  },
+  "api_metadata": {
+    "id": "resp_0e3a306f863e1587006aaa007aa20887d2872e02496236e1b3",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789526138.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2127,
+      "input_tokens_details": {
+        "cache_write_tokens": 2124,
+        "cached_tokens": 0
+      },
+      "output_tokens": 331,
+      "output_tokens_details": {
+        "reasoning_tokens": 158
+      },
+      "total_tokens": 2458
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.94,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Canadian vehicle market and advice on buying new or used vehicles\",\n  \"conflict_relevance\": \"The main article is unrelated to the Gaza conflict, but it includes a substantive embedded news sentence about three Israeli hostages mistakenly killed by Israeli troops in Gaza.\",\n  \"reason\": \"The headline and article body focus exclusively on vehicle prices, financing, supply chains, and electric-vehicle incentives. A separate embedded snippet briefly discusses the killing of hostages in Gaza, making the item marginally useful for broader media-discourse analysis but unsuitable for the core corpus.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:35:43Z",
+  "duration_seconds": 4.615,
+  "error": null
+}

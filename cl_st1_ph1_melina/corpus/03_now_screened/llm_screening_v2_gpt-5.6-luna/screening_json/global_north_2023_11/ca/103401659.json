@@ -1,0 +1,65 @@
+{
+  "article_id": "103401659",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_11/ca/103401659.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_11/ca/103401659.json"
+  },
+  "manifest_row": {
+    "article_id": "103401659",
+    "group": "global_north_2023_11",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2023_11/ca/103401659.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.96,
+    "gaza_role": "background",
+    "main_topic": "Canadian mixed curling championship",
+    "conflict_relevance": "The text includes a substantive but unrelated news snippet about Doctors Without Borders losing contact with medical staff at Gaza's Shifa hospital amid fighting between Israeli and Hamas forces.",
+    "reason": "The apparent main article concerns a curling championship, while the Gaza material is an embedded news item from a multi-article or snippet aggregation. It is meaningful conflict-related content but not central to the article's main topic.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "4a94dd28054379a58dd7f5a9b0f9381420f6a7523740cbc4233f781a3a231832",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "ebce17d79c1652c960e09ac6a7f32c7427d9d8a65b0f0e1a5928b7bcb70594a1",
+    "raw_response_text_sha256": "2d4e8d31bab0801ef4a11871a68841865080c31a9163107d81bda82b6e453c2d"
+  },
+  "api_metadata": {
+    "id": "resp_08ac49a56f7fb145006aa9fbceb68487d286abb83f77c3ed30",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789524942.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1182,
+      "input_tokens_details": {
+        "cache_write_tokens": 1179,
+        "cached_tokens": 0
+      },
+      "output_tokens": 300,
+      "output_tokens_details": {
+        "reasoning_tokens": 145
+      },
+      "total_tokens": 1482
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.96,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Canadian mixed curling championship\",\n  \"conflict_relevance\": \"The text includes a substantive but unrelated news snippet about Doctors Without Borders losing contact with medical staff at Gaza's Shifa hospital amid fighting between Israeli and Hamas forces.\",\n  \"reason\": \"The apparent main article concerns a curling championship, while the Gaza material is an embedded news item from a multi-article or snippet aggregation. It is meaningful conflict-related content but not central to the article's main topic.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:15:46Z",
+  "duration_seconds": 3.841,
+  "error": null
+}

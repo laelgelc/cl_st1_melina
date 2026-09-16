@@ -1,0 +1,65 @@
+{
+  "article_id": "121060724",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_02/nz/121060724.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_02/nz/121060724.json"
+  },
+  "manifest_row": {
+    "article_id": "121060724",
+    "group": "global_north_2025_02",
+    "country_code": "nz",
+    "filepath": "corpus/02_now_organised/global_north_2025_02/nz/121060724.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.9,
+    "gaza_role": "substantial",
+    "main_topic": "Mixed news snippets, including an Israel-Hamas hostage and prisoner exchange",
+    "conflict_relevance": "Contains substantive reporting on Israeli hostages held in Gaza, Palestinian prisoners, and the Israel-Hamas exchange, but the surrounding text consists of unrelated news items.",
+    "reason": "The hostage-exchange segment is meaningfully relevant to the Gaza conflict, but the article is a fragmented compilation of unrelated snippets rather than a coherent conflict-focused article.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "a8859beb62d77bbe4fb33e1860e163cfab5752bb0d6e82eacb8d29a4abebf96e",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "1f9a278e6d40f3db9a6e08bf13430d1d76210452c235d7805e63b712fe53c975",
+    "raw_response_text_sha256": "278ee6165d304bc56238f0412f40d34fbca50718fcf27d20f09bccabd92257a0"
+  },
+  "api_metadata": {
+    "id": "resp_07c7c86300679353006aaa23d17ae487d295e2c14998fba944",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789535185.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 856,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 299,
+      "output_tokens_details": {
+        "reasoning_tokens": 146
+      },
+      "total_tokens": 1155
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.9,\n  \"gaza_role\": \"substantial\",\n  \"main_topic\": \"Mixed news snippets, including an Israel-Hamas hostage and prisoner exchange\",\n  \"conflict_relevance\": \"Contains substantive reporting on Israeli hostages held in Gaza, Palestinian prisoners, and the Israel-Hamas exchange, but the surrounding text consists of unrelated news items.\",\n  \"reason\": \"The hostage-exchange segment is meaningfully relevant to the Gaza conflict, but the article is a fragmented compilation of unrelated snippets rather than a coherent conflict-focused article.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T05:06:28Z",
+  "duration_seconds": 3.59,
+  "error": null
+}

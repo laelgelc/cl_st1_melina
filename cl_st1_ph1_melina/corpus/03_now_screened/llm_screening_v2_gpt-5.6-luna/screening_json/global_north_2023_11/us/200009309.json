@@ -1,0 +1,65 @@
+{
+  "article_id": "200009309",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_11/us/200009309.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_11/us/200009309.json"
+  },
+  "manifest_row": {
+    "article_id": "200009309",
+    "group": "global_north_2023_11",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2023_11/us/200009309.txt"
+  },
+  "screening": {
+    "category": "CORE",
+    "confidence": 0.92,
+    "gaza_role": "substantial",
+    "main_topic": "Daily news newsletter roundup featuring Israel's air war in Gaza and possible Israel-Hamas truce negotiations",
+    "conflict_relevance": "The article contains an extended report on Israeli drone activity and airstrikes in southern Gaza, civilian harm, military targeting procedures, and possible violations of international law, followed by substantial coverage of hostage and prisoner-release negotiations.",
+    "reason": "Although presented as a broader newsletter with several unrelated news items, the Gaza section is detailed and directly addresses military action, civilian risk, international law, hostages, and cease-fire diplomacy.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": true
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "46881d129110b1f31dc7adb950a5158b55acfe5ac5a1354bbd69f4c670847772",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "d5b850e6e4e3ee24c20bf79de6a8e2e564a60abe3c439bfe102a575dbe75803f",
+    "raw_response_text_sha256": "88048dc4aef5949a340889d05c535113e2415f6729125baec74c211698672fff"
+  },
+  "api_metadata": {
+    "id": "resp_0bc4b578a42beb8e006aa9ff3a2e5087d2bf358aebc54c77aa",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789525818.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1891,
+      "input_tokens_details": {
+        "cache_write_tokens": 1888,
+        "cached_tokens": 0
+      },
+      "output_tokens": 371,
+      "output_tokens_details": {
+        "reasoning_tokens": 197
+      },
+      "total_tokens": 2262
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"CORE\",\n  \"confidence\": 0.92,\n  \"gaza_role\": \"substantial\",\n  \"main_topic\": \"Daily news newsletter roundup featuring Israel's air war in Gaza and possible Israel-Hamas truce negotiations\",\n  \"conflict_relevance\": \"The article contains an extended report on Israeli drone activity and airstrikes in southern Gaza, civilian harm, military targeting procedures, and possible violations of international law, followed by substantial coverage of hostage and prisoner-release negotiations.\",\n  \"reason\": \"Although presented as a broader newsletter with several unrelated news items, the Gaza section is detailed and directly addresses military action, civilian risk, international law, hostages, and cease-fire diplomacy.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": true\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:30:23Z",
+  "duration_seconds": 4.959,
+  "error": null
+}

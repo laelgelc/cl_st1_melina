@@ -1,0 +1,65 @@
+{
+  "article_id": "117745750",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_south_2024_11/ng/117745750.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_south_2024_11/ng/117745750.json"
+  },
+  "manifest_row": {
+    "article_id": "117745750",
+    "group": "global_south_2024_11",
+    "country_code": "ng",
+    "filepath": "corpus/02_now_organised/global_south_2024_11/ng/117745750.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.94,
+    "gaza_role": "passing",
+    "main_topic": "Nigeria's out-of-school children and Almajiri education",
+    "conflict_relevance": "The main article concerns Nigeria's education crisis and insecurity, not Gaza or the Israel-Palestine conflict. Gaza-related content appears only in unrelated items in a 'Latest' news roundup.",
+    "reason": "The article's central discussion is the number of out-of-school children in Nigeria and proposed education reforms. The references to Gaza consist of brief embedded news snippets about Pope Francis's comments and an Israeli air strike, which are unrelated to the main article.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "0a5cfe0fea389e5cadba05183257fc53e393bcadd7e7c67f1b606a87755067eb",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "cfb3c5f71e1ff0dc7fa54ef0295e644ce9ed4faf69aa56f12b7c018b89d3377d",
+    "raw_response_text_sha256": "8ee4cdfcb198a162e3c0aa7ff1112723e2a234a81a2b6cc13159709ec59fb2a8"
+  },
+  "api_metadata": {
+    "id": "resp_059b4b1acdd1a309006aaa42491af887d1873f99c00806f53b",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789542985.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2601,
+      "input_tokens_details": {
+        "cache_write_tokens": 2598,
+        "cached_tokens": 0
+      },
+      "output_tokens": 433,
+      "output_tokens_details": {
+        "reasoning_tokens": 260
+      },
+      "total_tokens": 3034
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.94,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Nigeria's out-of-school children and Almajiri education\",\n  \"conflict_relevance\": \"The main article concerns Nigeria's education crisis and insecurity, not Gaza or the Israel-Palestine conflict. Gaza-related content appears only in unrelated items in a 'Latest' news roundup.\",\n  \"reason\": \"The article's central discussion is the number of out-of-school children in Nigeria and proposed education reforms. The references to Gaza consist of brief embedded news snippets about Pope Francis's comments and an Israeli air strike, which are unrelated to the main article.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T07:16:30Z",
+  "duration_seconds": 5.312,
+  "error": null
+}

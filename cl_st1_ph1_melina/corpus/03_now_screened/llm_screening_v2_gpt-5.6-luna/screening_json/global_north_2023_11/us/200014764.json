@@ -1,0 +1,65 @@
+{
+  "article_id": "200014764",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_11/us/200014764.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_11/us/200014764.json"
+  },
+  "manifest_row": {
+    "article_id": "200014764",
+    "group": "global_north_2023_11",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2023_11/us/200014764.txt"
+  },
+  "screening": {
+    "category": "CORE",
+    "confidence": 0.98,
+    "gaza_role": "substantial",
+    "main_topic": "Football Association council member's resignation following a social media post criticizing Benjamin Netanyahu and referencing Hitler in relation to the Israel-Gaza war",
+    "conflict_relevance": "The article directly addresses discourse about the Israel-Gaza war, Palestinian suffering, Netanyahu, antisemitism, apology to the Jewish community, and tensions between communities.",
+    "reason": "The controversy and resignation are explicitly centered on a public statement about the Israel-Gaza war and its framing of Netanyahu and Palestinians, making the conflict central to the article despite its institutional football context.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": true
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "5af6764303f49c2a86a27499b78042bb455c2e1857c6b57dbee9c94e06b80c67",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "5fb4a7374b1d944543343f82c293589385d8db70606572a2e934ec515c2ecafa",
+    "raw_response_text_sha256": "27a6fbc32e000c263a7e963bcc9ae570f4931b7372e1bf5f469b8bccbe3f5058"
+  },
+  "api_metadata": {
+    "id": "resp_0aaeead75012bc6a006aa9ff4e090c87d2af569e1e026301d3",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789525838.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1103,
+      "input_tokens_details": {
+        "cache_write_tokens": 1100,
+        "cached_tokens": 0
+      },
+      "output_tokens": 245,
+      "output_tokens_details": {
+        "reasoning_tokens": 75
+      },
+      "total_tokens": 1348
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"CORE\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"substantial\",\n  \"main_topic\": \"Football Association council member's resignation following a social media post criticizing Benjamin Netanyahu and referencing Hitler in relation to the Israel-Gaza war\",\n  \"conflict_relevance\": \"The article directly addresses discourse about the Israel-Gaza war, Palestinian suffering, Netanyahu, antisemitism, apology to the Jewish community, and tensions between communities.\",\n  \"reason\": \"The controversy and resignation are explicitly centered on a public statement about the Israel-Gaza war and its framing of Netanyahu and Palestinians, making the conflict central to the article despite its institutional football context.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": true\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:30:40Z",
+  "duration_seconds": 2.79,
+  "error": null
+}

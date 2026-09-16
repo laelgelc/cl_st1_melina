@@ -1,0 +1,65 @@
+{
+  "article_id": "117352444",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_11/ca/117352444.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_11/ca/117352444.json"
+  },
+  "manifest_row": {
+    "article_id": "117352444",
+    "group": "global_north_2024_11",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2024_11/ca/117352444.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.96,
+    "gaza_role": "background",
+    "main_topic": "Canada-U.S. relations and NATO defence-spending commitments",
+    "conflict_relevance": "An unrelated embedded latest-news snippet reports that Israeli restrictions on UNRWA may worsen conditions in Gaza and the West Bank.",
+    "reason": "The main article concerns Canadian defence spending and NATO rather than Gaza or Israel/Palestine. However, one substantive item in the appended latest-stories feed directly addresses UNRWA, Israeli policy, and humanitarian consequences in Gaza and the West Bank.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "55bc737b24d518bb23e672d4b4e4b3bebea52a9a6b4c52912a6b4ebf36253d5b",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "292aa82c0bd8a043a5eb3361ed3024bad1cc72b7c5d0186d84d7e0544e20f608",
+    "raw_response_text_sha256": "ec3d643c51c4a4b46bd7993d5ebda137bcd54fc7d774e768aac205b2d440c980"
+  },
+  "api_metadata": {
+    "id": "resp_036e9acc679616eb006aaa1a346b5c87d2989c865a65619d3d",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789532724.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 3052,
+      "input_tokens_details": {
+        "cache_write_tokens": 3049,
+        "cached_tokens": 0
+      },
+      "output_tokens": 324,
+      "output_tokens_details": {
+        "reasoning_tokens": 163
+      },
+      "total_tokens": 3376
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.96,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Canada-U.S. relations and NATO defence-spending commitments\",\n  \"conflict_relevance\": \"An unrelated embedded latest-news snippet reports that Israeli restrictions on UNRWA may worsen conditions in Gaza and the West Bank.\",\n  \"reason\": \"The main article concerns Canadian defence spending and NATO rather than Gaza or Israel/Palestine. However, one substantive item in the appended latest-stories feed directly addresses UNRWA, Israeli policy, and humanitarian consequences in Gaza and the West Bank.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T04:25:28Z",
+  "duration_seconds": 4.128,
+  "error": null
+}

@@ -1,0 +1,65 @@
+{
+  "article_id": "200518443",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_06/us/200518443.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_06/us/200518443.json"
+  },
+  "manifest_row": {
+    "article_id": "200518443",
+    "group": "global_north_2024_06",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2024_06/us/200518443.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "gaza_role": "passing",
+    "main_topic": "Passenger death on a cruise ship and a World War II veteran's wedding",
+    "conflict_relevance": "Gaza is mentioned only in a toast calling for an end to the war, without substantive discussion of the conflict.",
+    "reason": "The article is primarily about unrelated cruise and wedding/World War II stories. The sole Gaza reference is a passing mention in a quote.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "a4740426c1ba855285185d5ec9dc2d789328cd3c93bbf8f00e550408b217cc52",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "25c0ac0ee2f582b748d29218fee6bf58d4eb58fcf4caf73f3ab73cf4e6c9586f",
+    "raw_response_text_sha256": "3deae1bdb095e5e7e98b52af07a7c445c358ac449576ab90d9caa4dcbb7af054"
+  },
+  "api_metadata": {
+    "id": "resp_0286d5103d1c5e68006aaa11a0b17487d2a74e2a6f3e8e0c34",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789530528.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1403,
+      "input_tokens_details": {
+        "cache_write_tokens": 1400,
+        "cached_tokens": 0
+      },
+      "output_tokens": 219,
+      "output_tokens_details": {
+        "reasoning_tokens": 80
+      },
+      "total_tokens": 1622
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Passenger death on a cruise ship and a World War II veteran's wedding\",\n  \"conflict_relevance\": \"Gaza is mentioned only in a toast calling for an end to the war, without substantive discussion of the conflict.\",\n  \"reason\": \"The article is primarily about unrelated cruise and wedding/World War II stories. The sole Gaza reference is a passing mention in a quote.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:48:52Z",
+  "duration_seconds": 3.723,
+  "error": null
+}

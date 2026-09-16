@@ -1,0 +1,65 @@
+{
+  "article_id": "106760306",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_03/ca/106760306.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_03/ca/106760306.json"
+  },
+  "manifest_row": {
+    "article_id": "106760306",
+    "group": "global_north_2024_03",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2024_03/ca/106760306.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.94,
+    "gaza_role": "passing",
+    "main_topic": "Canadian factory prices, energy costs, and inflation",
+    "conflict_relevance": "The main article briefly attributes higher crude prices to ongoing Middle East tensions, while an unrelated embedded latest-stories snippet substantially discusses famine and humanitarian conditions in Gaza.",
+    "reason": "The primary article is economic reporting unrelated to Gaza or the Israel-Palestine conflict. However, the page includes a substantive Gaza famine news snippet, making it marginally useful for broader discourse analysis but unsuitable for the main conflict corpus.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "f56cdcd3ff9fe96f83f566a62c8b0fa8aa09c0b22a3c5a8604a516beeb89088e",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "e3552b150dc776bdb499f9fa5da495e6f9cd1711929f201a6b627fca30240d21",
+    "raw_response_text_sha256": "1a8c147aef55cef39a288fd0e961bd347bb304913ddde17d5ab0693171e3ae58"
+  },
+  "api_metadata": {
+    "id": "resp_0c72b10c5addaaa3006aaa0873f29487d29db35241bfc31531",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789528179.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2187,
+      "input_tokens_details": {
+        "cache_write_tokens": 2184,
+        "cached_tokens": 0
+      },
+      "output_tokens": 356,
+      "output_tokens_details": {
+        "reasoning_tokens": 193
+      },
+      "total_tokens": 2543
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.94,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Canadian factory prices, energy costs, and inflation\",\n  \"conflict_relevance\": \"The main article briefly attributes higher crude prices to ongoing Middle East tensions, while an unrelated embedded latest-stories snippet substantially discusses famine and humanitarian conditions in Gaza.\",\n  \"reason\": \"The primary article is economic reporting unrelated to Gaza or the Israel-Palestine conflict. However, the page includes a substantive Gaza famine news snippet, making it marginally useful for broader discourse analysis but unsuitable for the main conflict corpus.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:09:44Z",
+  "duration_seconds": 4.597,
+  "error": null
+}

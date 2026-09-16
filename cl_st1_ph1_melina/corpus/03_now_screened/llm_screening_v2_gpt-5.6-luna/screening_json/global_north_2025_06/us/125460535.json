@@ -1,0 +1,65 @@
+{
+  "article_id": "125460535",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_06/us/125460535.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_06/us/125460535.json"
+  },
+  "manifest_row": {
+    "article_id": "125460535",
+    "group": "global_north_2025_06",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2025_06/us/125460535.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.97,
+    "gaza_role": "background",
+    "main_topic": "Stanford University news, including criminal charges against campus protesters",
+    "conflict_relevance": "The article mentions pro-Palestinian protesters, their demands, and the Gaza conflict between Israel and Hamas, but the main focus is a Stanford campus legal case and unrelated local news.",
+    "reason": "The Gaza-related content provides meaningful context about campus protest activity but is not the central subject of the article.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "17319ed56b78c6bd4b89f11e07f3b19d692ae49c58edf4c0c1999fde0e3044ef",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "c9f0736e05747fc56b8dcd443b4c28b280080ff8ac6995d92733e81f4328f1ac",
+    "raw_response_text_sha256": "8d5eac3743eb7bf040694d7d42b9b225624dcded981c5975bf67210be39f7636"
+  },
+  "api_metadata": {
+    "id": "resp_0c63348e7fff1dae006aaa30c4800887d186099c2bed107bd5",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789538500.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 874,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 250,
+      "output_tokens_details": {
+        "reasoning_tokens": 105
+      },
+      "total_tokens": 1124
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.97,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Stanford University news, including criminal charges against campus protesters\",\n  \"conflict_relevance\": \"The article mentions pro-Palestinian protesters, their demands, and the Gaza conflict between Israel and Hamas, but the main focus is a Stanford campus legal case and unrelated local news.\",\n  \"reason\": \"The Gaza-related content provides meaningful context about campus protest activity but is not the central subject of the article.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T06:01:44Z",
+  "duration_seconds": 3.95,
+  "error": null
+}

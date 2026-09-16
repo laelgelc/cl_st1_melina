@@ -1,0 +1,65 @@
+{
+  "article_id": "102712567",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_10/ca/102712567.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_10/ca/102712567.json"
+  },
+  "manifest_row": {
+    "article_id": "102712567",
+    "group": "global_north_2023_10",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2023_10/ca/102712567.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.96,
+    "gaza_role": "background",
+    "main_topic": "Canadian energy industry outlook and investment expectations",
+    "conflict_relevance": "The main article concerns Canada's oil and gas sector, but the text also includes a substantive opinion item and report on pro-Palestinian and pro-Israeli demonstrations related to the Israel-Hamas war and violence in Gaza.",
+    "reason": "The headline and primary content focus on Canadian oilsands, energy companies, crude prices, and investment. However, the article compilation contains meaningful discourse about media and political responses to the Israel-Palestine conflict and demonstrations in Toronto and Mississauga. Because this conflict material is not the main subject, the article is peripheral rather than core.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "9e9b0e5b1ce867fce459b6bc59c8c60640bc7543d1ea18549a23c9698bcbe54f",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "e31d6cde4ccadc81ef073c9d784f927e67b6cba2025bce2e1c7c828b29b99d4e",
+    "raw_response_text_sha256": "2b5a7b25e9ac3269c431c8edaaeaaca8796f0debd23c70dba142841f530b1829"
+  },
+  "api_metadata": {
+    "id": "resp_07eade2076fbc0e5006aa9f6592df087d2b740a012f2a0d3db",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789523545.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1827,
+      "input_tokens_details": {
+        "cache_write_tokens": 1824,
+        "cached_tokens": 0
+      },
+      "output_tokens": 298,
+      "output_tokens_details": {
+        "reasoning_tokens": 102
+      },
+      "total_tokens": 2125
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.96,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Canadian energy industry outlook and investment expectations\",\n  \"conflict_relevance\": \"The main article concerns Canada's oil and gas sector, but the text also includes a substantive opinion item and report on pro-Palestinian and pro-Israeli demonstrations related to the Israel-Hamas war and violence in Gaza.\",\n  \"reason\": \"The headline and primary content focus on Canadian oilsands, energy companies, crude prices, and investment. However, the article compilation contains meaningful discourse about media and political responses to the Israel-Palestine conflict and demonstrations in Toronto and Mississauga. Because this conflict material is not the main subject, the article is peripheral rather than core.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T01:52:28Z",
+  "duration_seconds": 3.887,
+  "error": null
+}

@@ -1,0 +1,65 @@
+{
+  "article_id": "91647782",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_10/us/91647782.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_10/us/91647782.json"
+  },
+  "manifest_row": {
+    "article_id": "91647782",
+    "group": "global_north_2023_10",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2023_10/us/91647782.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.96,
+    "gaza_role": "passing",
+    "main_topic": "Toothbrush replacement, hygiene, and storage advice",
+    "conflict_relevance": "The article's main subject is unrelated to the conflict, but it contains a substantive embedded snippet about backlash against WebSummit founder Paddy Cosgrave over comments concerning Israel's actions in Gaza.",
+    "reason": "The Gaza-related material is an unrelated inserted news item rather than part of the toothbrush article, but it contains meaningful discourse about Israel, Gaza, and public reaction, warranting peripheral classification.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "d6b53212ed7635feca9ed80b3fc546e997d68f74889941e997a8c4434e6ab4e8",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "7e08b5c964a24b28816eb78758b0eb581fa4743dd8b1b07e59327f08b5c687a9",
+    "raw_response_text_sha256": "f7177b21f0216f4854c5d225cfa9ce88dbb229a7ca211665f70e5756975e61c6"
+  },
+  "api_metadata": {
+    "id": "resp_0f4358d9f8c06fa5006aa9fa819e8487d2b2e92c2a9270abde",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789524609.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1230,
+      "input_tokens_details": {
+        "cache_write_tokens": 1227,
+        "cached_tokens": 0
+      },
+      "output_tokens": 302,
+      "output_tokens_details": {
+        "reasoning_tokens": 142
+      },
+      "total_tokens": 1532
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.96,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Toothbrush replacement, hygiene, and storage advice\",\n  \"conflict_relevance\": \"The article's main subject is unrelated to the conflict, but it contains a substantive embedded snippet about backlash against WebSummit founder Paddy Cosgrave over comments concerning Israel's actions in Gaza.\",\n  \"reason\": \"The Gaza-related material is an unrelated inserted news item rather than part of the toothbrush article, but it contains meaningful discourse about Israel, Gaza, and public reaction, warranting peripheral classification.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:10:13Z",
+  "duration_seconds": 3.617,
+  "error": null
+}

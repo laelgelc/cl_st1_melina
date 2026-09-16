@@ -1,0 +1,65 @@
+{
+  "article_id": "112543955",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_08/ca/112543955.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_08/ca/112543955.json"
+  },
+  "manifest_row": {
+    "article_id": "112543955",
+    "group": "global_north_2024_08",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2024_08/ca/112543955.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.86,
+    "gaza_role": "passing",
+    "main_topic": "Leadership departures and financial management at London Health Sciences Centre",
+    "conflict_relevance": "The main article is about healthcare administration, but it includes brief news items concerning solidarity with Palestinians at an Ottawa Pride parade and protests against the war in Gaza.",
+    "reason": "The Gaza- and Palestine-related material appears in unrelated embedded news snippets rather than the main article. These snippets contain meaningful but very brief references to public protest and political solidarity, making the item peripheral rather than core.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "5041e0f3c8416ed587825e8efadbed5c175c5ca15f8dd66f2518135a0b991012",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "46ce179f48695dd2764145ab27c26d36d7437198a89a458fde87a770e34814a0",
+    "raw_response_text_sha256": "210a36b23937acb8a1db4f8bda735b07db25eebd75ecef5a891194fe0b1202f8"
+  },
+  "api_metadata": {
+    "id": "resp_06e4e9c8233db379006aaa13f4abb487d2b57dd9b61c7b2cb0",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789531124.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1548,
+      "input_tokens_details": {
+        "cache_write_tokens": 1545,
+        "cached_tokens": 0
+      },
+      "output_tokens": 401,
+      "output_tokens_details": {
+        "reasoning_tokens": 242
+      },
+      "total_tokens": 1949
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.86,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Leadership departures and financial management at London Health Sciences Centre\",\n  \"conflict_relevance\": \"The main article is about healthcare administration, but it includes brief news items concerning solidarity with Palestinians at an Ottawa Pride parade and protests against the war in Gaza.\",\n  \"reason\": \"The Gaza- and Palestine-related material appears in unrelated embedded news snippets rather than the main article. These snippets contain meaningful but very brief references to public protest and political solidarity, making the item peripheral rather than core.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:58:48Z",
+  "duration_seconds": 4.268,
+  "error": null
+}

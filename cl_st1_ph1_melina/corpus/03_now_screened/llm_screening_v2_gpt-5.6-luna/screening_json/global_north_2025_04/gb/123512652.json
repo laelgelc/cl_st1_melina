@@ -1,0 +1,65 @@
+{
+  "article_id": "123512652",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_04/gb/123512652.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_04/gb/123512652.json"
+  },
+  "manifest_row": {
+    "article_id": "123512652",
+    "group": "global_north_2025_04",
+    "country_code": "gb",
+    "filepath": "corpus/02_now_organised/global_north_2025_04/gb/123512652.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.9,
+    "gaza_role": "background",
+    "main_topic": "Hezbollah's withdrawal from military positions in southern Lebanon under the Israel-Hezbollah ceasefire agreement",
+    "conflict_relevance": "The article focuses on the Lebanon-Israel front and Hezbollah's military repositioning, while linking the escalation to the war on Gaza and broader Israel-related regional conflict.",
+    "reason": "Gaza appears as the context for the Israel-Hezbollah clashes, but the article's substantive focus is southern Lebanon, the ceasefire, Israeli troop presence, and Hezbollah's disarmament. It is meaningfully connected to the wider conflict but is not core Gaza or Israel-Palestine coverage.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "174293f93ecd1cc2dc9809d4e0d7d102fe56f57027403529303e5b5a001c080f",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "2c83f9ead90d3e9331acf23b5d420cdbcaf0155052c8f059ad42004526e254fb",
+    "raw_response_text_sha256": "45567bf1e50657b1dbe447eb113f5b638ca68bf3201441cac39d1ce8e7481047"
+  },
+  "api_metadata": {
+    "id": "resp_0af016227dd58cc2006aaa28ea8bd487d1be7f0a430017a2ae",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789536490.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1150,
+      "input_tokens_details": {
+        "cache_write_tokens": 1147,
+        "cached_tokens": 0
+      },
+      "output_tokens": 424,
+      "output_tokens_details": {
+        "reasoning_tokens": 238
+      },
+      "total_tokens": 1574
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.9,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Hezbollah's withdrawal from military positions in southern Lebanon under the Israel-Hezbollah ceasefire agreement\",\n  \"conflict_relevance\": \"The article focuses on the Lebanon-Israel front and Hezbollah's military repositioning, while linking the escalation to the war on Gaza and broader Israel-related regional conflict.\",\n  \"reason\": \"Gaza appears as the context for the Israel-Hezbollah clashes, but the article's substantive focus is southern Lebanon, the ceasefire, Israeli troop presence, and Hezbollah's disarmament. It is meaningfully connected to the wider conflict but is not core Gaza or Israel-Palestine coverage.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T05:28:15Z",
+  "duration_seconds": 5.597,
+  "error": null
+}

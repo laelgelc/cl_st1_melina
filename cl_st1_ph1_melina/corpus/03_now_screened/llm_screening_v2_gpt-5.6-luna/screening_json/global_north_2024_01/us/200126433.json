@@ -1,0 +1,65 @@
+{
+  "article_id": "200126433",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_01/us/200126433.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_01/us/200126433.json"
+  },
+  "manifest_row": {
+    "article_id": "200126433",
+    "group": "global_north_2024_01",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2024_01/us/200126433.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "passing",
+    "main_topic": "Taiwan's presidential election and cross-strait relations with China",
+    "conflict_relevance": "The article is primarily about Taiwan, but it invokes Gaza as a comparison for the potential consequences of military escalation and political miscalculation.",
+    "reason": "Gaza appears in a meaningful closing comparison, where Taiwanese voters express concern about becoming 'the next Gaza,' contributing to broader discourse about war and geopolitical risk, but the article is not otherwise about Israel-Palestine or the Gaza conflict.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "5b9bc4530753521c0f68ddc0720c189d1da442cc8bf8cffde40ebde4a9b7f1fc",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "ae5b09e0c3f1a9fe45ade71a54b54968699ebc2b7dcf4bac4ba31168475182c8",
+    "raw_response_text_sha256": "8f27c365b52c7596c3de4441eb22043c23f9bdc8901ed6e812d59f0e8596b1e6"
+  },
+  "api_metadata": {
+    "id": "resp_07512a2f141eb5d1006aaa055d89e487d2bdb4121a47939218",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789527389.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1913,
+      "input_tokens_details": {
+        "cache_write_tokens": 1910,
+        "cached_tokens": 0
+      },
+      "output_tokens": 232,
+      "output_tokens_details": {
+        "reasoning_tokens": 69
+      },
+      "total_tokens": 2145
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Taiwan's presidential election and cross-strait relations with China\",\n  \"conflict_relevance\": \"The article is primarily about Taiwan, but it invokes Gaza as a comparison for the potential consequences of military escalation and political miscalculation.\",\n  \"reason\": \"Gaza appears in a meaningful closing comparison, where Taiwanese voters express concern about becoming 'the next Gaza,' contributing to broader discourse about war and geopolitical risk, but the article is not otherwise about Israel-Palestine or the Gaza conflict.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:56:32Z",
+  "duration_seconds": 3.101,
+  "error": null
+}

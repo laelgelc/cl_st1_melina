@@ -1,0 +1,65 @@
+{
+  "article_id": "123385101",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_04/us/123385101.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_04/us/123385101.json"
+  },
+  "manifest_row": {
+    "article_id": "123385101",
+    "group": "global_north_2025_04",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2025_04/us/123385101.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.95,
+    "gaza_role": "background",
+    "main_topic": "Changes to IDF regulations concerning beards, dress, religious symbols, and personal appearance",
+    "conflict_relevance": "The article concerns the Israeli military and frames the regulatory changes within wartime conditions and Jewish military identity, but it is not substantively about Gaza, Palestinians, or the Israel-Hamas conflict itself.",
+    "reason": "The main subject is an internal IDF appearance-policy change. References to the war, soldiers protecting Israel, and the conflict near Gaza provide meaningful contextual discourse about the Israeli military and wartime identity, but Gaza and the conflict are not central topics.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "df0d6c08902f1abcbdbd61f92afed272f0f42a0ab48a4f1ea1112aaa43db034b",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "ac83e9cb5744ce31a6c92b2fb9655cdb7aa88d70ba889564e8c092def7857935",
+    "raw_response_text_sha256": "0395348102b6e83bcae569130453f22fbfe0cd79a94342c9acc1a23b7bd8565f"
+  },
+  "api_metadata": {
+    "id": "resp_0acb42fdae3a6948006aaa2a19c3b887d1a424cd213b0af194",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789536793.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1796,
+      "input_tokens_details": {
+        "cache_write_tokens": 1793,
+        "cached_tokens": 0
+      },
+      "output_tokens": 247,
+      "output_tokens_details": {
+        "reasoning_tokens": 66
+      },
+      "total_tokens": 2043
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.95,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Changes to IDF regulations concerning beards, dress, religious symbols, and personal appearance\",\n  \"conflict_relevance\": \"The article concerns the Israeli military and frames the regulatory changes within wartime conditions and Jewish military identity, but it is not substantively about Gaza, Palestinians, or the Israel-Hamas conflict itself.\",\n  \"reason\": \"The main subject is an internal IDF appearance-policy change. References to the war, soldiers protecting Israel, and the conflict near Gaza provide meaningful contextual discourse about the Israeli military and wartime identity, but Gaza and the conflict are not central topics.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T05:33:17Z",
+  "duration_seconds": 3.475,
+  "error": null
+}

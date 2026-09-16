@@ -1,0 +1,65 @@
+{
+  "article_id": "111869538",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_08/gb/111869538.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_08/gb/111869538.json"
+  },
+  "manifest_row": {
+    "article_id": "111869538",
+    "group": "global_north_2024_08",
+    "country_code": "gb",
+    "filepath": "corpus/02_now_organised/global_north_2024_08/gb/111869538.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.94,
+    "gaza_role": "background",
+    "main_topic": "A comedian's comments about parliamentary controversies and an ADHD-related cocaine accusation",
+    "conflict_relevance": "The article includes meaningful discussion of a parliamentary debate on Gaza, alleged procedural manipulation, security concerns, and political protest, but Gaza is not the main subject.",
+    "reason": "The article primarily concerns the speaker's criticism of Parliament and a separate incident involving accusations of cocaine use. Its opening section provides relevant discourse about how a Gaza-related vote was handled, making it peripheral rather than core.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "0ba7c0895085d2b489fc99e65a599e6fe2fe94ca1b38828a342565d584c6b252",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "ce12bfaf7fd0c93e1c1129952f56f946be57a1d17b9bf26250a0a2973106f344",
+    "raw_response_text_sha256": "84b9aaf428e33219f1b5d07ffc0b66c8f21668d4bbc2b313f28a8939b0dd6dc2"
+  },
+  "api_metadata": {
+    "id": "resp_0a53bd8af920e151006aaa1418046487d2ad751c25d4fa7f87",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789531160.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1043,
+      "input_tokens_details": {
+        "cache_write_tokens": 1040,
+        "cached_tokens": 0
+      },
+      "output_tokens": 264,
+      "output_tokens_details": {
+        "reasoning_tokens": 102
+      },
+      "total_tokens": 1307
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.94,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"A comedian's comments about parliamentary controversies and an ADHD-related cocaine accusation\",\n  \"conflict_relevance\": \"The article includes meaningful discussion of a parliamentary debate on Gaza, alleged procedural manipulation, security concerns, and political protest, but Gaza is not the main subject.\",\n  \"reason\": \"The article primarily concerns the speaker's criticism of Parliament and a separate incident involving accusations of cocaine use. Its opening section provides relevant discourse about how a Gaza-related vote was handled, making it peripheral rather than core.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:59:23Z",
+  "duration_seconds": 3.143,
+  "error": null
+}

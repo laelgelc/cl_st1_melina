@@ -1,0 +1,65 @@
+{
+  "article_id": "123943899",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_04/us/123943899.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_04/us/123943899.json"
+  },
+  "manifest_row": {
+    "article_id": "123943899",
+    "group": "global_north_2025_04",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2025_04/us/123943899.txt"
+  },
+  "screening": {
+    "category": "CORE",
+    "confidence": 0.94,
+    "gaza_role": "substantial",
+    "main_topic": "Readers' letters addressing U.S. politics, due process, Gaza, Israel/Palestine, and domestic economic issues",
+    "conflict_relevance": "The article contains substantial reader commentary condemning U.S. support for Israel, Israeli military actions and humanitarian conditions in Gaza, Netanyahu, weapons transfers, and the Israeli-Palestinian territorial conflict.",
+    "reason": "Although presented as a roundup of unrelated letters, the headline explicitly references aiding Netanyahu and multiple substantial letters directly discuss Gaza, Israel, Palestine, occupation, civilian deaths, humanitarian deprivation, and possible Palestinian statehood.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": true
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "0f6f9cc493d7bfb93d2cbb9c5b570cf03ba62ea7f0a251abf803d7f07b635798",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "cbbe3cecb2ddeb3a7b0cb49e5df172ff159f1ad1ef43205d545f9eccd2b79b0d",
+    "raw_response_text_sha256": "5e278c700e0560f22cdfd565a340d7c4b573400647d21f00651384be2054ca49"
+  },
+  "api_metadata": {
+    "id": "resp_00fb9e2561dd9104006aaa2aa67ffc87d1a2cc3a98fb615dab",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789536934.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2428,
+      "input_tokens_details": {
+        "cache_write_tokens": 2425,
+        "cached_tokens": 0
+      },
+      "output_tokens": 406,
+      "output_tokens_details": {
+        "reasoning_tokens": 227
+      },
+      "total_tokens": 2834
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"CORE\",\n  \"confidence\": 0.94,\n  \"gaza_role\": \"substantial\",\n  \"main_topic\": \"Readers' letters addressing U.S. politics, due process, Gaza, Israel/Palestine, and domestic economic issues\",\n  \"conflict_relevance\": \"The article contains substantial reader commentary condemning U.S. support for Israel, Israeli military actions and humanitarian conditions in Gaza, Netanyahu, weapons transfers, and the Israeli-Palestinian territorial conflict.\",\n  \"reason\": \"Although presented as a roundup of unrelated letters, the headline explicitly references aiding Netanyahu and multiple substantial letters directly discuss Gaza, Israel, Palestine, occupation, civilian deaths, humanitarian deprivation, and possible Palestinian statehood.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": true\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T05:35:39Z",
+  "duration_seconds": 5.04,
+  "error": null
+}

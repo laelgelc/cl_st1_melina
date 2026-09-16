@@ -1,0 +1,65 @@
+{
+  "article_id": "114827630",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_09/us/114827630.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_09/us/114827630.json"
+  },
+  "manifest_row": {
+    "article_id": "114827630",
+    "group": "global_north_2024_09",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2024_09/us/114827630.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "passing",
+    "main_topic": "U.S. political polarization and perceptions of Trump voters",
+    "conflict_relevance": "The main discussion concerns Trump and political polarization, with a brief comparison of the Trump and Biden-Harris records mentioning Russia's invasion of Ukraine and Israel's invasion of Gaza.",
+    "reason": "Gaza is referenced meaningfully in one sentence as part of a broader argument about wars under different U.S. administrations, but the article is not substantially about Gaza or the Israel-Palestine conflict. The text also contains unrelated technology and business snippets.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "7b7e8797e05d989127b1be285abc84822d6eda53b1b4d5ddee0988cc4309a254",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "9049b9cb3745b2dd8d6209adb553f9aaffc5ce071fec9aedd4800f6a0ca15201",
+    "raw_response_text_sha256": "c56d99d53c5cdfa9d10606e327e751e188455e40597a25b61ca580d84fee8673"
+  },
+  "api_metadata": {
+    "id": "resp_02ffcb8cf3a1ef67006aaa1784412487d2be32e3687fdfb4ab",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789532036.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1525,
+      "input_tokens_details": {
+        "cache_write_tokens": 1522,
+        "cached_tokens": 0
+      },
+      "output_tokens": 244,
+      "output_tokens_details": {
+        "reasoning_tokens": 73
+      },
+      "total_tokens": 1769
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"U.S. political polarization and perceptions of Trump voters\",\n  \"conflict_relevance\": \"The main discussion concerns Trump and political polarization, with a brief comparison of the Trump and Biden-Harris records mentioning Russia's invasion of Ukraine and Israel's invasion of Gaza.\",\n  \"reason\": \"Gaza is referenced meaningfully in one sentence as part of a broader argument about wars under different U.S. administrations, but the article is not substantially about Gaza or the Israel-Palestine conflict. The text also contains unrelated technology and business snippets.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T04:13:59Z",
+  "duration_seconds": 3.598,
+  "error": null
+}

@@ -1,0 +1,65 @@
+{
+  "article_id": "112580935",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_08/ca/112580935.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_08/ca/112580935.json"
+  },
+  "manifest_row": {
+    "article_id": "112580935",
+    "group": "global_north_2024_08",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2024_08/ca/112580935.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "gaza_role": "boilerplate_or_unrelated",
+    "main_topic": "PGA Tour Champions golf tournament and Ken Tanigawa's victory",
+    "conflict_relevance": "The main article is entirely about a golf tournament. References to Palestinian solidarity and protests against the Gaza war occur only in unrelated appended news snippets.",
+    "reason": "The headline and substantive article concern professional golf, with no meaningful discussion of Gaza, Palestine, Israel/Palestine, or related discourse. The conflict-related items are separate roundup-style snippets.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "be8d64697f567b9e49cb04d8f80975243539a8cf270499b8b52b9f17f451aeae",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "1838e24220414823d8dc65023b2d436bf4c5fbd597e6ec8e2721d9cb7bcd231a",
+    "raw_response_text_sha256": "1e6577b068b12119b3fb02ab0d69dceb2a59cc00178729aa6a8f8a67cbe0d4a1"
+  },
+  "api_metadata": {
+    "id": "resp_039900d0c06dbbba006aaa13f9677487d2b6dd54d459156051",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789531129.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2220,
+      "input_tokens_details": {
+        "cache_write_tokens": 2217,
+        "cached_tokens": 0
+      },
+      "output_tokens": 262,
+      "output_tokens_details": {
+        "reasoning_tokens": 103
+      },
+      "total_tokens": 2482
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"gaza_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"PGA Tour Champions golf tournament and Ken Tanigawa's victory\",\n  \"conflict_relevance\": \"The main article is entirely about a golf tournament. References to Palestinian solidarity and protests against the Gaza war occur only in unrelated appended news snippets.\",\n  \"reason\": \"The headline and substantive article concern professional golf, with no meaningful discussion of Gaza, Palestine, Israel/Palestine, or related discourse. The conflict-related items are separate roundup-style snippets.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:58:53Z",
+  "duration_seconds": 3.888,
+  "error": null
+}

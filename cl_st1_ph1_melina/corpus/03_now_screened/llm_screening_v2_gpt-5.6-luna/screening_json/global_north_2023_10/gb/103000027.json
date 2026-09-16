@@ -1,0 +1,65 @@
+{
+  "article_id": "103000027",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_10/gb/103000027.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_10/gb/103000027.json"
+  },
+  "manifest_row": {
+    "article_id": "103000027",
+    "group": "global_north_2023_10",
+    "country_code": "gb",
+    "filepath": "corpus/02_now_organised/global_north_2023_10/gb/103000027.txt"
+  },
+  "screening": {
+    "category": "CORE",
+    "confidence": 0.99,
+    "gaza_role": "central",
+    "main_topic": "Israeli airstrikes and expanding ground operations in Gaza, with related regional tensions and ceasefire protests",
+    "conflict_relevance": "The text contains substantial reporting on Israel's military offensive in Gaza, alleged Hamas infrastructure at Shifa Hospital, preparations for a ground invasion, the Israel-Lebanon border conflict involving Hezbollah, and protests calling for a ceasefire.",
+    "reason": "Despite containing numerous unrelated article fragments, the primary substantive material is directly focused on the Israel-Hamas war and its regional implications.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": true
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "b4058a0e80211631283fddf39b410382d47cbf5b843ec451b71c4372573f9472",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "891647472078da974b91f2da1dc233e0ed916ba3321fca0b9619e7121670d23f",
+    "raw_response_text_sha256": "1f5752594a2c9642aa14e70027d0baa0ff7d9879ba27fe83163128efcc4da3c1"
+  },
+  "api_metadata": {
+    "id": "resp_0139007c632a426e006aa9f7d1fa0087d28fad3a19c00ed680",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789523921.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2837,
+      "input_tokens_details": {
+        "cache_write_tokens": 2834,
+        "cached_tokens": 0
+      },
+      "output_tokens": 248,
+      "output_tokens_details": {
+        "reasoning_tokens": 84
+      },
+      "total_tokens": 3085
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"CORE\",\n  \"confidence\": 0.99,\n  \"gaza_role\": \"central\",\n  \"main_topic\": \"Israeli airstrikes and expanding ground operations in Gaza, with related regional tensions and ceasefire protests\",\n  \"conflict_relevance\": \"The text contains substantial reporting on Israel's military offensive in Gaza, alleged Hamas infrastructure at Shifa Hospital, preparations for a ground invasion, the Israel-Lebanon border conflict involving Hezbollah, and protests calling for a ceasefire.\",\n  \"reason\": \"Despite containing numerous unrelated article fragments, the primary substantive material is directly focused on the Israel-Hamas war and its regional implications.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": true\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T01:58:44Z",
+  "duration_seconds": 2.967,
+  "error": null
+}

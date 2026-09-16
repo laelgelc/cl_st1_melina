@@ -1,0 +1,65 @@
+{
+  "article_id": "102742477",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_10/ca/102742477.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_10/ca/102742477.json"
+  },
+  "manifest_row": {
+    "article_id": "102742477",
+    "group": "global_north_2023_10",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2023_10/ca/102742477.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "gaza_role": "boilerplate_or_unrelated",
+    "main_topic": "A suspicious fire damaging a daycare centre in Chemawawin Cree Nation, northern Manitoba",
+    "conflict_relevance": "The article's main subject is unrelated to Gaza or the Israel-Palestine conflict; Gaza appears only in unrelated CTVNews.ca top-story snippets.",
+    "reason": "The headline and substantive article concern a Manitoba daycare fire. References to the Gaza hospital blast and hostages in Gaza occur only as brief items in a generic news roundup and are not developed in the article.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "3aea3b2e9759f36c1a7a02de03c9efa9745c093889a032e03c9e2904a8c40c52",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "26455d3e980d28a82234722d4844f2f235fc7b399948d0327e9ceb7999342bee",
+    "raw_response_text_sha256": "8cfb334174c3fc0de7415ff8c1b58dfb603dd8b4ca49dc69d32e993b0ef6e541"
+  },
+  "api_metadata": {
+    "id": "resp_0738af586569de83006aa9f666097c87d2b0733c20d84e48d4",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789523558.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1491,
+      "input_tokens_details": {
+        "cache_write_tokens": 1488,
+        "cached_tokens": 0
+      },
+      "output_tokens": 271,
+      "output_tokens_details": {
+        "reasoning_tokens": 103
+      },
+      "total_tokens": 1762
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"gaza_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"A suspicious fire damaging a daycare centre in Chemawawin Cree Nation, northern Manitoba\",\n  \"conflict_relevance\": \"The article's main subject is unrelated to Gaza or the Israel-Palestine conflict; Gaza appears only in unrelated CTVNews.ca top-story snippets.\",\n  \"reason\": \"The headline and substantive article concern a Manitoba daycare fire. References to the Gaza hospital blast and hostages in Gaza occur only as brief items in a generic news roundup and are not developed in the article.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T01:52:41Z",
+  "duration_seconds": 3.297,
+  "error": null
+}

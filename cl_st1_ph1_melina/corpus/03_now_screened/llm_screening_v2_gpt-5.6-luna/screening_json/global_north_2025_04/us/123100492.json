@@ -1,0 +1,65 @@
+{
+  "article_id": "123100492",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_04/us/123100492.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_04/us/123100492.json"
+  },
+  "manifest_row": {
+    "article_id": "123100492",
+    "group": "global_north_2025_04",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2025_04/us/123100492.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.99,
+    "gaza_role": "substantial",
+    "main_topic": "Ranking and reviewing the best films of 2025 so far",
+    "conflict_relevance": "The article includes a substantial review of From Ground Zero, a collection of films made by Palestinian directors in Gaza documenting destruction, loss, and life under Israeli military action.",
+    "reason": "Although the article is primarily a general film-ranking feature, its discussion of From Ground Zero contains meaningful discourse about Gaza, Palestinian perspectives, humanitarian suffering, and the Israeli-Palestinian conflict.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "6fb02cb580c5302f52d0a1a86f36298e030a36e37a80eba8ef954af303c25775",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "e73eb9f7824595b6ed1c4e0bad1618efd132919a4d4cf368706c472157b318de",
+    "raw_response_text_sha256": "67e6ac70e784181de8b4c1a37f089c45cacc8593635dee06a45781e3deef42cc"
+  },
+  "api_metadata": {
+    "id": "resp_021004977dae95a1006aaa29d4675487d1a59181bb8881d7d4",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789536724.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 3306,
+      "input_tokens_details": {
+        "cache_write_tokens": 3303,
+        "cached_tokens": 0
+      },
+      "output_tokens": 232,
+      "output_tokens_details": {
+        "reasoning_tokens": 72
+      },
+      "total_tokens": 3538
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.99,\n  \"gaza_role\": \"substantial\",\n  \"main_topic\": \"Ranking and reviewing the best films of 2025 so far\",\n  \"conflict_relevance\": \"The article includes a substantial review of From Ground Zero, a collection of films made by Palestinian directors in Gaza documenting destruction, loss, and life under Israeli military action.\",\n  \"reason\": \"Although the article is primarily a general film-ranking feature, its discussion of From Ground Zero contains meaningful discourse about Gaza, Palestinian perspectives, humanitarian suffering, and the Israeli-Palestinian conflict.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T05:32:07Z",
+  "duration_seconds": 3.262,
+  "error": null
+}

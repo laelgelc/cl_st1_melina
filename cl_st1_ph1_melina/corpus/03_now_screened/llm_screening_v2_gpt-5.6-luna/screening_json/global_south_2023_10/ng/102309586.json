@@ -1,0 +1,65 @@
+{
+  "article_id": "102309586",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_south_2023_10/ng/102309586.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_south_2023_10/ng/102309586.json"
+  },
+  "manifest_row": {
+    "article_id": "102309586",
+    "group": "global_south_2023_10",
+    "country_code": "ng",
+    "filepath": "corpus/02_now_organised/global_south_2023_10/ng/102309586.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "gaza_role": "boilerplate_or_unrelated",
+    "main_topic": "Nasarawa State political leadership and support for the state assembly speaker",
+    "conflict_relevance": "No meaningful relevance to Gaza or the Israel-Palestine conflict; 'Gaza' appears only as part of a person's name.",
+    "reason": "The article concerns Nigerian state politics, a tribunal victory, and local development. The sole occurrence of 'Gaza' refers to Commissioner for Health Gaza Gwamna and is unrelated to the research topic.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "4770aeb13292ad03d67d1a3afcd3870ae6e0c4727e7527e3c8359a6ddf7176d8",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "a634a7f448fa03fb1b0c211243ee34e6f51cb1f7ea0f0a0309ba92b9a3831e11",
+    "raw_response_text_sha256": "22ea5296fb4262b468618ec09fae4eaea314de3704ad8b184d32a226c94d9f09"
+  },
+  "api_metadata": {
+    "id": "resp_0bd4bc0123a51523006aaa3374627c87d1ad3cbe18b5cc48d7",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789539188.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1109,
+      "input_tokens_details": {
+        "cache_write_tokens": 1106,
+        "cached_tokens": 0
+      },
+      "output_tokens": 196,
+      "output_tokens_details": {
+        "reasoning_tokens": 36
+      },
+      "total_tokens": 1305
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"gaza_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Nasarawa State political leadership and support for the state assembly speaker\",\n  \"conflict_relevance\": \"No meaningful relevance to Gaza or the Israel-Palestine conflict; 'Gaza' appears only as part of a person's name.\",\n  \"reason\": \"The article concerns Nigerian state politics, a tribunal victory, and local development. The sole occurrence of 'Gaza' refers to Commissioner for Health Gaza Gwamna and is unrelated to the research topic.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T06:13:10Z",
+  "duration_seconds": 2.606,
+  "error": null
+}

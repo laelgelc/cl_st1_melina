@@ -1,0 +1,65 @@
+{
+  "article_id": "102970383",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_10/ca/102970383.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_10/ca/102970383.json"
+  },
+  "manifest_row": {
+    "article_id": "102970383",
+    "group": "global_north_2023_10",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2023_10/ca/102970383.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.96,
+    "gaza_role": "passing",
+    "main_topic": "Vancouver police enforcement of retail theft and shoplifting",
+    "conflict_relevance": "The main article is unrelated to Gaza, but an embedded CTVNews.ca top-stories section includes a brief report about communications outages in Gaza during intensified Israeli bombardment.",
+    "reason": "The Gaza material is a meaningful but very brief embedded news snippet rather than part of the main article, making the text peripheral for conflict discourse research.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "c2db1bd35214542f380e996f87b24c82fa43e7fff0f6e67240d581dd07486a18",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "ab60d9b6ef058424eafa078683939eebcc4ecd169e2b44b91b0dc6ee5b40a54b",
+    "raw_response_text_sha256": "ebf08b34d7c7345bde966697a97f26f0f6b4bbdca0502220208cf9e1cc7124d4"
+  },
+  "api_metadata": {
+    "id": "resp_08b3c42a6797aaaa006aa9f6ab04a487d286e43666eb6602c3",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789523627.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1621,
+      "input_tokens_details": {
+        "cache_write_tokens": 1618,
+        "cached_tokens": 0
+      },
+      "output_tokens": 254,
+      "output_tokens_details": {
+        "reasoning_tokens": 105
+      },
+      "total_tokens": 1875
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.96,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Vancouver police enforcement of retail theft and shoplifting\",\n  \"conflict_relevance\": \"The main article is unrelated to Gaza, but an embedded CTVNews.ca top-stories section includes a brief report about communications outages in Gaza during intensified Israeli bombardment.\",\n  \"reason\": \"The Gaza material is a meaningful but very brief embedded news snippet rather than part of the main article, making the text peripheral for conflict discourse research.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T01:53:50Z",
+  "duration_seconds": 3.107,
+  "error": null
+}

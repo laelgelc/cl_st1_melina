@@ -1,0 +1,65 @@
+{
+  "article_id": "124985819",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_05/ie/124985819.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_05/ie/124985819.json"
+  },
+  "manifest_row": {
+    "article_id": "124985819",
+    "group": "global_north_2025_05",
+    "country_code": "ie",
+    "filepath": "corpus/02_now_organised/global_north_2025_05/ie/124985819.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.96,
+    "gaza_role": "substantial",
+    "main_topic": "Police presence at Kneecap's surprise London concert following a terrorism-related charge against a band member",
+    "conflict_relevance": "The article includes an extended statement from Kneecap linking the charge to famine and alleged genocide in Gaza, British support for Israel, international law, and the suppression of pro-Palestinian speech.",
+    "reason": "Although the main article concerns Kneecap's concert and a terrorism charge involving an alleged Hezbollah flag, the Gaza-related statement is substantial and directly engages with political policing, Israel, the IDF, humanitarian conditions, and international law. The conflict is not the article's primary subject, so it is peripheral rather than core.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "c9915ddbb3fa1eaa01142f8f40f29babb824eaf2037c1a6b7a885d4ec0f01f00",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "7095eaa692eae4f73662bfa943a97228d559be181692e90238c1f76cd85b0b59",
+    "raw_response_text_sha256": "fd67edba1b61be18ef4d3a37670e51deafe3753a41db945334d06b68748c272e"
+  },
+  "api_metadata": {
+    "id": "resp_09731d5046a54896006aaa2c8eeffc87d1848c846970371821",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789537422.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1526,
+      "input_tokens_details": {
+        "cache_write_tokens": 1523,
+        "cached_tokens": 0
+      },
+      "output_tokens": 304,
+      "output_tokens_details": {
+        "reasoning_tokens": 104
+      },
+      "total_tokens": 1830
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.96,\n  \"gaza_role\": \"substantial\",\n  \"main_topic\": \"Police presence at Kneecap's surprise London concert following a terrorism-related charge against a band member\",\n  \"conflict_relevance\": \"The article includes an extended statement from Kneecap linking the charge to famine and alleged genocide in Gaza, British support for Israel, international law, and the suppression of pro-Palestinian speech.\",\n  \"reason\": \"Although the main article concerns Kneecap's concert and a terrorism charge involving an alleged Hezbollah flag, the Gaza-related statement is substantial and directly engages with political policing, Israel, the IDF, humanitarian conditions, and international law. The conflict is not the article's primary subject, so it is peripheral rather than core.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T05:43:47Z",
+  "duration_seconds": 4.903,
+  "error": null
+}

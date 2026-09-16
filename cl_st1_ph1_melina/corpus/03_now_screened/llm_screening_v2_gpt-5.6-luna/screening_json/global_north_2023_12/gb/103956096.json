@@ -1,0 +1,65 @@
+{
+  "article_id": "103956096",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_12/gb/103956096.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_12/gb/103956096.json"
+  },
+  "manifest_row": {
+    "article_id": "103956096",
+    "group": "global_north_2023_12",
+    "country_code": "gb",
+    "filepath": "corpus/02_now_organised/global_north_2023_12/gb/103956096.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.96,
+    "gaza_role": "background",
+    "main_topic": "UAE National Day births and newborn celebrations",
+    "conflict_relevance": "The article briefly references humanitarian assistance to war-ravaged Gaza and identifies the featured parents as Palestinian, but the main subject is celebratory births in the UAE.",
+    "reason": "Gaza and Palestinian identity provide contextual framing for one vignette, yet the article is primarily about UAE National Day newborns rather than the conflict or its consequences.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "c9ff8c0d8ad6153ec445ee37d388d68a873e4e502983347c6772a7968d38188c",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "41d20577f355e8ca4a094fdf1df87d214d52efc48047800e420375adc6c1017d",
+    "raw_response_text_sha256": "2428ac2abbe66b5e0ebe86298ba5203f44fced0d29c7736c2248ca0b29e2156d"
+  },
+  "api_metadata": {
+    "id": "resp_0e1a7b3e6373a3a7006aaa00d5776887d2956c9cfd29aebfe7",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789526229.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1733,
+      "input_tokens_details": {
+        "cache_write_tokens": 1730,
+        "cached_tokens": 0
+      },
+      "output_tokens": 251,
+      "output_tokens_details": {
+        "reasoning_tokens": 103
+      },
+      "total_tokens": 1984
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.96,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"UAE National Day births and newborn celebrations\",\n  \"conflict_relevance\": \"The article briefly references humanitarian assistance to war-ravaged Gaza and identifies the featured parents as Palestinian, but the main subject is celebratory births in the UAE.\",\n  \"reason\": \"Gaza and Palestinian identity provide contextual framing for one vignette, yet the article is primarily about UAE National Day newborns rather than the conflict or its consequences.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:37:13Z",
+  "duration_seconds": 4.05,
+  "error": null
+}

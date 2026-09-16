@@ -1,0 +1,65 @@
+{
+  "article_id": "102934486",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_10/ca/102934486.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_10/ca/102934486.json"
+  },
+  "manifest_row": {
+    "article_id": "102934486",
+    "group": "global_north_2023_10",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2023_10/ca/102934486.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.94,
+    "gaza_role": "background",
+    "main_topic": "Record food-bank demand and food insecurity in Canada",
+    "conflict_relevance": "The main article is unrelated to Gaza, but an embedded CTVNews.ca top-stories roundup includes a substantive brief about humanitarian pauses and ceasefire diplomacy in Gaza.",
+    "reason": "The headline article focuses on Canadian food prices, poverty, and food-bank use. Gaza appears only in an embedded news roundup item, making the article peripheral rather than core, but the Gaza item contains meaningful conflict-related discourse.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "496fd760e0586be3cd0cf7d971c24f5ad9f3f74b807ab4a9a01ebbdbc2a93567",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "5dd198934e98b98ca8b9a3f2acfdfe632b67e600a467812b0503d2426cad3b5b",
+    "raw_response_text_sha256": "eb083ecbdd6f6ef58cc2b910c6c4ef2971e1c118e411e3435718c52cd4be65b1"
+  },
+  "api_metadata": {
+    "id": "resp_03d7b45354f398a2006aa9f6a1461887d28956518042a029fb",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789523617.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1575,
+      "input_tokens_details": {
+        "cache_write_tokens": 1572,
+        "cached_tokens": 0
+      },
+      "output_tokens": 325,
+      "output_tokens_details": {
+        "reasoning_tokens": 163
+      },
+      "total_tokens": 1900
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.94,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Record food-bank demand and food insecurity in Canada\",\n  \"conflict_relevance\": \"The main article is unrelated to Gaza, but an embedded CTVNews.ca top-stories roundup includes a substantive brief about humanitarian pauses and ceasefire diplomacy in Gaza.\",\n  \"reason\": \"The headline article focuses on Canadian food prices, poverty, and food-bank use. Gaza appears only in an embedded news roundup item, making the article peripheral rather than core, but the Gaza item contains meaningful conflict-related discourse.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T01:53:44Z",
+  "duration_seconds": 7.387,
+  "error": null
+}

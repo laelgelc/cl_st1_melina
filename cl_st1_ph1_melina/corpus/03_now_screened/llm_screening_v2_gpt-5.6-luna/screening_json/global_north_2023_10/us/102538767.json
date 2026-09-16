@@ -1,0 +1,65 @@
+{
+  "article_id": "102538767",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_10/us/102538767.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_10/us/102538767.json"
+  },
+  "manifest_row": {
+    "article_id": "102538767",
+    "group": "global_north_2023_10",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2023_10/us/102538767.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.96,
+    "gaza_role": "passing",
+    "main_topic": "Debate over the proposed Ryan Field redevelopment and its economic and community impacts in Evanston",
+    "conflict_relevance": "The article is primarily about a local stadium project but includes a brief news snippet concerning Israeli military casualties, Gaza deaths, and Hamas's attack.",
+    "reason": "The main article is unrelated to Gaza or the Israel-Palestine conflict. However, the embedded conflict-related passage contains meaningful casualty and occupation discourse, making the item peripheral rather than excludable.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "b92fb6d1087db75cec723a53a4fc89f441f56ac9785e00c1b96b5bb5a10ffaa0",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "c4e225d6e027c4881f5cec6b468a1115fabfba77420a4eb8ba9b0739f166149f",
+    "raw_response_text_sha256": "cd0093815c6baedbe1dcdeecd73ec0dd93152a4066ab9635de91c819fc6e2936"
+  },
+  "api_metadata": {
+    "id": "resp_037c86b19152492c006aa9f899f10087d2a2283a912a4634c7",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789524121.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1335,
+      "input_tokens_details": {
+        "cache_write_tokens": 1332,
+        "cached_tokens": 0
+      },
+      "output_tokens": 244,
+      "output_tokens_details": {
+        "reasoning_tokens": 83
+      },
+      "total_tokens": 1579
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.96,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Debate over the proposed Ryan Field redevelopment and its economic and community impacts in Evanston\",\n  \"conflict_relevance\": \"The article is primarily about a local stadium project but includes a brief news snippet concerning Israeli military casualties, Gaza deaths, and Hamas's attack.\",\n  \"reason\": \"The main article is unrelated to Gaza or the Israel-Palestine conflict. However, the embedded conflict-related passage contains meaningful casualty and occupation discourse, making the item peripheral rather than excludable.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:02:05Z",
+  "duration_seconds": 3.518,
+  "error": null
+}

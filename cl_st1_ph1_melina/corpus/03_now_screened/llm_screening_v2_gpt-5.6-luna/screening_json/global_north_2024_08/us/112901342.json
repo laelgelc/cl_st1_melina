@@ -1,0 +1,65 @@
+{
+  "article_id": "112901342",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_08/us/112901342.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_08/us/112901342.json"
+  },
+  "manifest_row": {
+    "article_id": "112901342",
+    "group": "global_north_2024_08",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2024_08/us/112901342.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "passing",
+    "main_topic": "U.S. political conventions and the Democratic National Convention",
+    "conflict_relevance": "The article is primarily about American political conventions but includes a brief photo-roundup mention of an Israeli air strike on Gaza.",
+    "reason": "Gaza appears only in an incidental roundup of photos from around the world, with no substantive discussion of the conflict or related discourse. This is peripheral rather than core relevance.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "7ae4fe3c6faaa99445b871557e722330fc3c159869887e5878a180d4799a8e70",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "116ced8c814b1eb5e344df34b91e5f15b2546467f6e9e4406ec198473fd5e249",
+    "raw_response_text_sha256": "131f1a198a0b7c42a4a8bbd500d759bfd3e8ea0e0f7b4f7093ec316e022a5247"
+  },
+  "api_metadata": {
+    "id": "resp_026a2b2e3f34ec98006aaa1599e89087d280b3da8c84fcc68e",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789531546.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2689,
+      "input_tokens_details": {
+        "cache_write_tokens": 2686,
+        "cached_tokens": 0
+      },
+      "output_tokens": 195,
+      "output_tokens_details": {
+        "reasoning_tokens": 51
+      },
+      "total_tokens": 2884
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"U.S. political conventions and the Democratic National Convention\",\n  \"conflict_relevance\": \"The article is primarily about American political conventions but includes a brief photo-roundup mention of an Israeli air strike on Gaza.\",\n  \"reason\": \"Gaza appears only in an incidental roundup of photos from around the world, with no substantive discussion of the conflict or related discourse. This is peripheral rather than core relevance.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T04:05:49Z",
+  "duration_seconds": 3.697,
+  "error": null
+}

@@ -1,0 +1,65 @@
+{
+  "article_id": "102964992",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_10/ca/102964992.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_10/ca/102964992.json"
+  },
+  "manifest_row": {
+    "article_id": "102964992",
+    "group": "global_north_2023_10",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2023_10/ca/102964992.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "passing",
+    "main_topic": "Fraudulent online obituaries and obituary-related scams",
+    "conflict_relevance": "The main article is unrelated to Gaza or the Israel-Palestine conflict, but a CTVNews.ca top-stories section includes a substantive headline and summary about communications outages in Gaza during intensified Israeli bombardment.",
+    "reason": "The Gaza content appears only as an embedded news roundup item rather than being part of the article's main subject. It provides meaningful but limited conflict-related discourse, making the item peripheral rather than core.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "f0393febae88f08a1712b6716c16b922dae03b2c134bd1b267c64da6c3c6525e",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "b68cdf9534dd42e1ad96d325c2de7d46c65f75e65388bb98dc4d8e16eac319c5",
+    "raw_response_text_sha256": "e8435d4e62cc56e4a9bd028b07308615f97933c11318cb303e1e2fec5ba5dd26"
+  },
+  "api_metadata": {
+    "id": "resp_013ca12edae5b3dd006aa9f6a64e0887d2bfa7c195d4205213",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789523622.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2318,
+      "input_tokens_details": {
+        "cache_write_tokens": 2315,
+        "cached_tokens": 0
+      },
+      "output_tokens": 257,
+      "output_tokens_details": {
+        "reasoning_tokens": 89
+      },
+      "total_tokens": 2575
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Fraudulent online obituaries and obituary-related scams\",\n  \"conflict_relevance\": \"The main article is unrelated to Gaza or the Israel-Palestine conflict, but a CTVNews.ca top-stories section includes a substantive headline and summary about communications outages in Gaza during intensified Israeli bombardment.\",\n  \"reason\": \"The Gaza content appears only as an embedded news roundup item rather than being part of the article's main subject. It provides meaningful but limited conflict-related discourse, making the item peripheral rather than core.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T01:53:46Z",
+  "duration_seconds": 4.195,
+  "error": null
+}

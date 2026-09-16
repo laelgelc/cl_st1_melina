@@ -1,0 +1,65 @@
+{
+  "article_id": "109301921",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_06/us/109301921.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_06/us/109301921.json"
+  },
+  "manifest_row": {
+    "article_id": "109301921",
+    "group": "global_north_2024_06",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2024_06/us/109301921.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "gaza_role": "boilerplate_or_unrelated",
+    "main_topic": "A Ukrainian theater troupe staging King Lear during the Russia-Ukraine war",
+    "conflict_relevance": "The article focuses on Ukrainian displacement, trauma, and cultural resistance, not Gaza or the Israel-Palestine conflict. Gaza appears only in an author's biographical note.",
+    "reason": "The sole Gaza-related material is a passing reference in the photographer's author biography, making it incidental and unsuitable for conflict discourse analysis.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "2f8af0b83b32a72210c872d66be4c886bee3797b6b491e359b704de2db21b20b",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "da188b1e51ed6267e82357a77844849ba8a427333f6d73497caaaebd9ab32bb7",
+    "raw_response_text_sha256": "c201a6413e0fb2d0d77e17cebba69640d48a6db07d8a7f1c2b87572a2b4a45d2"
+  },
+  "api_metadata": {
+    "id": "resp_092ced464d44a8de006aaa1150778887d2b04e325d2a81b337",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789530448.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 4540,
+      "input_tokens_details": {
+        "cache_write_tokens": 4537,
+        "cached_tokens": 0
+      },
+      "output_tokens": 237,
+      "output_tokens_details": {
+        "reasoning_tokens": 84
+      },
+      "total_tokens": 4777
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"gaza_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"A Ukrainian theater troupe staging King Lear during the Russia-Ukraine war\",\n  \"conflict_relevance\": \"The article focuses on Ukrainian displacement, trauma, and cultural resistance, not Gaza or the Israel-Palestine conflict. Gaza appears only in an author's biographical note.\",\n  \"reason\": \"The sole Gaza-related material is a passing reference in the photographer's author biography, making it incidental and unsuitable for conflict discourse analysis.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:47:31Z",
+  "duration_seconds": 3.455,
+  "error": null
+}

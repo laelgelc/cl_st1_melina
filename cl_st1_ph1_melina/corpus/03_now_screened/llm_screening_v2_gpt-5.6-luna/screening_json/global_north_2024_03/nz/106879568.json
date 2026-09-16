@@ -1,0 +1,65 @@
+{
+  "article_id": "106879568",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_03/nz/106879568.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_03/nz/106879568.json"
+  },
+  "manifest_row": {
+    "article_id": "106879568",
+    "group": "global_north_2024_03",
+    "country_code": "nz",
+    "filepath": "corpus/02_now_organised/global_north_2024_03/nz/106879568.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "gaza_role": "boilerplate_or_unrelated",
+    "main_topic": "New Zealand's Cook Strait ferry infrastructure and KiwiRail's cancelled ferry project",
+    "conflict_relevance": "The main article is unrelated to Gaza or the Israel-Hamas conflict; Gaza appears only in an unrelated 'ALSO' snippet about New Zealand humanitarian funding.",
+    "reason": "The article centrally concerns New Zealand interisland ferry policy, infrastructure, safety, and government funding. The Gaza reference is a brief embedded roundup item rather than part of the main article.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "ddf5bf273881da76f28292d1efa70f9a158731654f731e5fc70cb057b875cc63",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "88050f8bd2d2a042f356264021c314e2a6cc0b1f7e623c49522515ce48c3f1ac",
+    "raw_response_text_sha256": "fa8def07579591b475d41c9201a1c4939ca2302cb1434858e1a94b443cddb434"
+  },
+  "api_metadata": {
+    "id": "resp_05c6f29fbc1cf089006aaa0942a54487d2b79d6acfa16fb3f8",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789528386.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1781,
+      "input_tokens_details": {
+        "cache_write_tokens": 1778,
+        "cached_tokens": 0
+      },
+      "output_tokens": 254,
+      "output_tokens_details": {
+        "reasoning_tokens": 92
+      },
+      "total_tokens": 2035
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"gaza_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"New Zealand's Cook Strait ferry infrastructure and KiwiRail's cancelled ferry project\",\n  \"conflict_relevance\": \"The main article is unrelated to Gaza or the Israel-Hamas conflict; Gaza appears only in an unrelated 'ALSO' snippet about New Zealand humanitarian funding.\",\n  \"reason\": \"The article centrally concerns New Zealand interisland ferry policy, infrastructure, safety, and government funding. The Gaza reference is a brief embedded roundup item rather than part of the main article.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:13:13Z",
+  "duration_seconds": 7.193,
+  "error": null
+}

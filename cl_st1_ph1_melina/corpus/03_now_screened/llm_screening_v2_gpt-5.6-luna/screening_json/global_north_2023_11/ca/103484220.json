@@ -1,0 +1,65 @@
+{
+  "article_id": "103484220",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_11/ca/103484220.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_11/ca/103484220.json"
+  },
+  "manifest_row": {
+    "article_id": "103484220",
+    "group": "global_north_2023_11",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2023_11/ca/103484220.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "gaza_role": "boilerplate_or_unrelated",
+    "main_topic": "Death and cultural legacy of Quebec musician Karl Tremblay",
+    "conflict_relevance": "The article is an obituary and profile of Karl Tremblay; Gaza and Israel-Hamas references appear only in an unrelated CTVNews.ca top-stories roundup appended to the article.",
+    "reason": "The main article contains no meaningful discussion of Gaza or the Israel-Palestine conflict. The conflict-related items are separate, incidental roundup snippets rather than part of the article's subject.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "69dc3eaca2339ca178863522f68bf69eec6744df31123a8535c5518a006b528b",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "fcf74b823ef719a6d2c20ad159dbfb64a592d2eab308b3dd3baba856297c2318",
+    "raw_response_text_sha256": "08716d208481bcc468ce4583030022311b70b2f85810ba2668e747d1d00b8a5a"
+  },
+  "api_metadata": {
+    "id": "resp_089051aed08ba00c006aa9fbe0bef087d2b90a89b906f40fcf",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789524960.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2840,
+      "input_tokens_details": {
+        "cache_write_tokens": 2837,
+        "cached_tokens": 0
+      },
+      "output_tokens": 281,
+      "output_tokens_details": {
+        "reasoning_tokens": 116
+      },
+      "total_tokens": 3121
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"gaza_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Death and cultural legacy of Quebec musician Karl Tremblay\",\n  \"conflict_relevance\": \"The article is an obituary and profile of Karl Tremblay; Gaza and Israel-Hamas references appear only in an unrelated CTVNews.ca top-stories roundup appended to the article.\",\n  \"reason\": \"The main article contains no meaningful discussion of Gaza or the Israel-Palestine conflict. The conflict-related items are separate, incidental roundup snippets rather than part of the article's subject.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:16:04Z",
+  "duration_seconds": 3.922,
+  "error": null
+}

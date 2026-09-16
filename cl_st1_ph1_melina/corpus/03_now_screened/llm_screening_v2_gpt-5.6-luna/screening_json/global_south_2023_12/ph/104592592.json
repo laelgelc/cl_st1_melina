@@ -1,0 +1,65 @@
+{
+  "article_id": "104592592",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_south_2023_12/ph/104592592.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_south_2023_12/ph/104592592.json"
+  },
+  "manifest_row": {
+    "article_id": "104592592",
+    "group": "global_south_2023_12",
+    "country_code": "ph",
+    "filepath": "corpus/02_now_organised/global_south_2023_12/ph/104592592.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.97,
+    "gaza_role": "passing",
+    "main_topic": "Poor management and infrastructure at a Philippine cruise port",
+    "conflict_relevance": "The article ends with two unrelated, brief news sentences mentioning the Gaza war and a call for peace.",
+    "reason": "The main article is entirely about cruise-port conditions, tourism infrastructure, and bureaucratic negligence in the Philippines. Gaza appears only in an unrelated embedded news snippet and does not contribute meaningfully to the article's discourse.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "57872879f4686fdc46022ad99ae3417a6c5a71bd974a53b2538d2dbff1277e45",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "5e38df7158d932ed66f295c6009daff073bc8821ebf650ea93839ca84eabf145",
+    "raw_response_text_sha256": "9302a6d82e6b55697a0401454d9432801365c4758b8b84956c4ce015a5e6998e"
+  },
+  "api_metadata": {
+    "id": "resp_02985ec5a7ee5306006aaa374d607487d184f3e5858d5a4f31",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789540173.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1858,
+      "input_tokens_details": {
+        "cache_write_tokens": 1855,
+        "cached_tokens": 0
+      },
+      "output_tokens": 304,
+      "output_tokens_details": {
+        "reasoning_tokens": 158
+      },
+      "total_tokens": 2162
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.97,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Poor management and infrastructure at a Philippine cruise port\",\n  \"conflict_relevance\": \"The article ends with two unrelated, brief news sentences mentioning the Gaza war and a call for peace.\",\n  \"reason\": \"The main article is entirely about cruise-port conditions, tourism infrastructure, and bureaucratic negligence in the Philippines. Gaza appears only in an unrelated embedded news snippet and does not contribute meaningfully to the article's discourse.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T06:29:38Z",
+  "duration_seconds": 4.817,
+  "error": null
+}

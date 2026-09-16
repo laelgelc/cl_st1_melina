@@ -1,0 +1,65 @@
+{
+  "article_id": "200097054",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_12/us/200097054.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_12/us/200097054.json"
+  },
+  "manifest_row": {
+    "article_id": "200097054",
+    "group": "global_north_2023_12",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2023_12/us/200097054.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "gaza_role": "passing",
+    "main_topic": "Media engagement metrics and the popularity of romantic human-interest journalism",
+    "conflict_relevance": "Gaza is mentioned only in a brief comparison with major news topics that typically dominate headlines.",
+    "reason": "The article is about CNN reporter Francesca Street's popular romance stories and digital readership engagement. Gaza appears only in a passing list of wars and is not substantively discussed.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "fdb39d478f888f75e1cda1d174a57fc763475e05394b4cf6ae85d00e4150b634",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "23761d9aae9d254c1351695fd9b809f31bced50d0b3b65605a414a0b3f225f72",
+    "raw_response_text_sha256": "557903970696bbb8128504423e17b18737827fb01bc0ea75d8c86c8181883a3d"
+  },
+  "api_metadata": {
+    "id": "resp_0942aa71fa3b5f57006aaa0349368087d2b4b7f3e1419da037",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789526857.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1804,
+      "input_tokens_details": {
+        "cache_write_tokens": 1801,
+        "cached_tokens": 0
+      },
+      "output_tokens": 200,
+      "output_tokens_details": {
+        "reasoning_tokens": 62
+      },
+      "total_tokens": 2004
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Media engagement metrics and the popularity of romantic human-interest journalism\",\n  \"conflict_relevance\": \"Gaza is mentioned only in a brief comparison with major news topics that typically dominate headlines.\",\n  \"reason\": \"The article is about CNN reporter Francesca Street's popular romance stories and digital readership engagement. Gaza appears only in a passing list of wars and is not substantively discussed.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:47:40Z",
+  "duration_seconds": 3.222,
+  "error": null
+}

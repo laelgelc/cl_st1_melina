@@ -1,0 +1,65 @@
+{
+  "article_id": "112879089",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_08/au/112879089.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_08/au/112879089.json"
+  },
+  "manifest_row": {
+    "article_id": "112879089",
+    "group": "global_north_2024_08",
+    "country_code": "au",
+    "filepath": "corpus/02_now_organised/global_north_2024_08/au/112879089.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "background",
+    "main_topic": "A collection of letters to the editor, mainly concerning Launceston urban planning, immigration satire, art galleries, wine trade, and political donations",
+    "conflict_relevance": "One letter discusses Peter Dutton's proposed immigration restrictions involving people from Gaza, framing Gaza-related immigration within a satirical debate about national security and xenophobia.",
+    "reason": "The article is a multi-letter opinion page and is not centrally about Gaza or the Israel-Palestine conflict. However, the immigration letter contains meaningful discourse about immigrants from Gaza and security policy, making it peripheral rather than incidental.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "9e41a0e0b474e69f3601ab74c2a1518573242f204d074c157bff8a7dc1cdf058",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "86267a26d2ac48ea4d286ea4092bddd154d36de42b9852c11a4dc99b993577e5",
+    "raw_response_text_sha256": "b857829df6c3dd75f63cba3117e91b5c01db970d8c8edafa18258e1e2abfae8c"
+  },
+  "api_metadata": {
+    "id": "resp_06a552f02daac018006aaa13d933a887d2bc5b8c0822cf5855",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789531097.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1678,
+      "input_tokens_details": {
+        "cache_write_tokens": 1675,
+        "cached_tokens": 0
+      },
+      "output_tokens": 258,
+      "output_tokens_details": {
+        "reasoning_tokens": 77
+      },
+      "total_tokens": 1936
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"A collection of letters to the editor, mainly concerning Launceston urban planning, immigration satire, art galleries, wine trade, and political donations\",\n  \"conflict_relevance\": \"One letter discusses Peter Dutton's proposed immigration restrictions involving people from Gaza, framing Gaza-related immigration within a satirical debate about national security and xenophobia.\",\n  \"reason\": \"The article is a multi-letter opinion page and is not centrally about Gaza or the Israel-Palestine conflict. However, the immigration letter contains meaningful discourse about immigrants from Gaza and security policy, making it peripheral rather than incidental.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:58:20Z",
+  "duration_seconds": 3.899,
+  "error": null
+}

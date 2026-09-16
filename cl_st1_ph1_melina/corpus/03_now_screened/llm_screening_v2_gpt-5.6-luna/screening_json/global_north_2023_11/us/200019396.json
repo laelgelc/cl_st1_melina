@@ -1,0 +1,65 @@
+{
+  "article_id": "200019396",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_11/us/200019396.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_11/us/200019396.json"
+  },
+  "manifest_row": {
+    "article_id": "200019396",
+    "group": "global_north_2023_11",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2023_11/us/200019396.txt"
+  },
+  "screening": {
+    "category": "CORE",
+    "confidence": 0.99,
+    "gaza_role": "central",
+    "main_topic": "Criticism of BBC coverage of the Israel-Hamas war and Palestinian civilian suffering",
+    "conflict_relevance": "The primary article directly discusses BBC reporting on Gaza, Palestinian civilians, Hamas, Israeli military claims, the Al-Ahli Arab Hospital explosion, Shifa Hospital, and allegations of media bias in coverage of the conflict.",
+    "reason": "The opening and main article is centrally concerned with media framing and reporting of the Gaza war, including competing accusations of pro-Israel and pro-Palestinian bias. Although the text also contains unrelated sections on Brexit, a political figure's family life, and Black Friday shopping, the conflict-focused article is substantial and directly relevant.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": true
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "408dedd9e0990edaf33e20bf936fdcd3fffbd37786b454dc4aec1d2ade211d48",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "1f14021c3603ee11a7f306617a08199cb25c7201e23ecf5f9e4c84bda27970d7",
+    "raw_response_text_sha256": "3b4d23053774303b5e888c9ef9d6d39c8b4830499b7126e3c803261b007e8b32"
+  },
+  "api_metadata": {
+    "id": "resp_002e8fb1e58474d1006aa9ff5dbee487d2b824b7b8422cf288",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789525853.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1785,
+      "input_tokens_details": {
+        "cache_write_tokens": 1782,
+        "cached_tokens": 0
+      },
+      "output_tokens": 261,
+      "output_tokens_details": {
+        "reasoning_tokens": 65
+      },
+      "total_tokens": 2046
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"CORE\",\n  \"confidence\": 0.99,\n  \"gaza_role\": \"central\",\n  \"main_topic\": \"Criticism of BBC coverage of the Israel-Hamas war and Palestinian civilian suffering\",\n  \"conflict_relevance\": \"The primary article directly discusses BBC reporting on Gaza, Palestinian civilians, Hamas, Israeli military claims, the Al-Ahli Arab Hospital explosion, Shifa Hospital, and allegations of media bias in coverage of the conflict.\",\n  \"reason\": \"The opening and main article is centrally concerned with media framing and reporting of the Gaza war, including competing accusations of pro-Israel and pro-Palestinian bias. Although the text also contains unrelated sections on Brexit, a political figure's family life, and Black Friday shopping, the conflict-focused article is substantial and directly relevant.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": true\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:30:57Z",
+  "duration_seconds": 4.257,
+  "error": null
+}

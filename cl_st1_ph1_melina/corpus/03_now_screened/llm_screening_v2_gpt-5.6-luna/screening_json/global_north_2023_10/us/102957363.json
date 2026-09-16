@@ -1,0 +1,65 @@
+{
+  "article_id": "102957363",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_10/us/102957363.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_10/us/102957363.json"
+  },
+  "manifest_row": {
+    "article_id": "102957363",
+    "group": "global_north_2023_10",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2023_10/us/102957363.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.97,
+    "gaza_role": "background",
+    "main_topic": "Mixed news roundup and video-listing page covering domestic news, entertainment, weather, politics, aviation, and Israel-Gaza developments",
+    "conflict_relevance": "The page includes several substantive conflict-related headlines concerning Israeli hostages, civilian protections during Israeli airstrikes, and an Israeli raid inside Gaza, but these appear alongside many unrelated news items rather than forming the main focus.",
+    "reason": "The material is a compilation of unrelated headlines and video snippets. Its Gaza-related items are meaningful but limited to headline-level references within a broader news roundup, so it is relevant to broader media discourse but not suitable as a core conflict article.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "95e8ff4a9c849bc74a05fd716b9e2187ba431aa975415d25bb07969c0bbb8a64",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "1ea3c04cce76002bafd0e9cf38c0411ae2918d46c536ea73c4c1f9de17938357",
+    "raw_response_text_sha256": "84b03f22bb3637500cb3aa7dde9416580cdcc6c6e857322004211faf4ea32dcc"
+  },
+  "api_metadata": {
+    "id": "resp_0b6a442fcf1a8c33006aa9f99bd44c87d28e59180862d29787",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789524379.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1287,
+      "input_tokens_details": {
+        "cache_write_tokens": 1284,
+        "cached_tokens": 0
+      },
+      "output_tokens": 340,
+      "output_tokens_details": {
+        "reasoning_tokens": 149
+      },
+      "total_tokens": 1627
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.97,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Mixed news roundup and video-listing page covering domestic news, entertainment, weather, politics, aviation, and Israel-Gaza developments\",\n  \"conflict_relevance\": \"The page includes several substantive conflict-related headlines concerning Israeli hostages, civilian protections during Israeli airstrikes, and an Israeli raid inside Gaza, but these appear alongside many unrelated news items rather than forming the main focus.\",\n  \"reason\": \"The material is a compilation of unrelated headlines and video snippets. Its Gaza-related items are meaningful but limited to headline-level references within a broader news roundup, so it is relevant to broader media discourse but not suitable as a core conflict article.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:06:23Z",
+  "duration_seconds": 4.252,
+  "error": null
+}

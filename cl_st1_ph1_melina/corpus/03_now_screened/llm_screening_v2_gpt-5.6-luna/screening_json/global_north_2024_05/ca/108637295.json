@@ -1,0 +1,65 @@
+{
+  "article_id": "108637295",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_05/ca/108637295.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_05/ca/108637295.json"
+  },
+  "manifest_row": {
+    "article_id": "108637295",
+    "group": "global_north_2024_05",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2024_05/ca/108637295.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "passing",
+    "main_topic": "Death of Canadian serial killer Robert Pickton following a prison assault",
+    "conflict_relevance": "The main article is unrelated to Gaza, but the text includes a separate, substantive news snippet about a proposed Israel-Hamas ceasefire and hostage-release deal in Gaza.",
+    "reason": "The headline and primary article concern Robert Pickton and Canadian criminal justice. Gaza appears only in an embedded unrelated news item, which provides meaningful but limited conflict-related discourse.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "fe0e03e43304599caff138da94dfbf78894022bf5e416284becae6d444d13c88",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "3adc2f9c775ea378a11edc33421daf8c6953430fbd2799402ca038bbec55bb3f",
+    "raw_response_text_sha256": "2d62d650500342621732f29afaea8e07189a3f170cc623f5d53ba9767ffe069d"
+  },
+  "api_metadata": {
+    "id": "resp_09d9c50c4addbb5a006aaa0dc655b487d2ac7d7c2577a826e9",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789529542.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2120,
+      "input_tokens_details": {
+        "cache_write_tokens": 2117,
+        "cached_tokens": 0
+      },
+      "output_tokens": 265,
+      "output_tokens_details": {
+        "reasoning_tokens": 111
+      },
+      "total_tokens": 2385
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Death of Canadian serial killer Robert Pickton following a prison assault\",\n  \"conflict_relevance\": \"The main article is unrelated to Gaza, but the text includes a separate, substantive news snippet about a proposed Israel-Hamas ceasefire and hostage-release deal in Gaza.\",\n  \"reason\": \"The headline and primary article concern Robert Pickton and Canadian criminal justice. Gaza appears only in an embedded unrelated news item, which provides meaningful but limited conflict-related discourse.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:32:26Z",
+  "duration_seconds": 4.355,
+  "error": null
+}

@@ -1,0 +1,65 @@
+{
+  "article_id": "200100453",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_12/us/200100453.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_12/us/200100453.json"
+  },
+  "manifest_row": {
+    "article_id": "200100453",
+    "group": "global_north_2023_12",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2023_12/us/200100453.txt"
+  },
+  "screening": {
+    "category": "CORE",
+    "confidence": 0.99,
+    "gaza_role": "substantial",
+    "main_topic": "Berlin police banning a pro-Palestinian New Year's Eve rally amid concerns about criminal activity and unrest",
+    "conflict_relevance": "Directly concerns pro-Palestinian protests, Gaza-related demonstrations, and public responses to the Israel-Hamas war",
+    "reason": "The article focuses on the policing and restriction of pro-Palestinian protests and explicitly connects these demonstrations to the Israel-Hamas war and the killing of children in Gaza.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": true
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "9f13a0dbda02c583041e4975ab626f69cfb2c57edf0772cd1bac4508c2c86b3c",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "b210a58db1d0e60255092a8fbe352d7266d08cb62292218f9318802bf785e04b",
+    "raw_response_text_sha256": "0497169d5566ed37df8d49a77e409ad2067957f7f4ef5194b6f53986b818db73"
+  },
+  "api_metadata": {
+    "id": "resp_0ac22c5a9490fdbd006aaa0352d57c87d2a69196545ced2376",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789526866.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1002,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 213,
+      "output_tokens_details": {
+        "reasoning_tokens": 60
+      },
+      "total_tokens": 1215
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"CORE\",\n  \"confidence\": 0.99,\n  \"gaza_role\": \"substantial\",\n  \"main_topic\": \"Berlin police banning a pro-Palestinian New Year's Eve rally amid concerns about criminal activity and unrest\",\n  \"conflict_relevance\": \"Directly concerns pro-Palestinian protests, Gaza-related demonstrations, and public responses to the Israel-Hamas war\",\n  \"reason\": \"The article focuses on the policing and restriction of pro-Palestinian protests and explicitly connects these demonstrations to the Israel-Hamas war and the killing of children in Gaza.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": true\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:47:49Z",
+  "duration_seconds": 3.198,
+  "error": null
+}

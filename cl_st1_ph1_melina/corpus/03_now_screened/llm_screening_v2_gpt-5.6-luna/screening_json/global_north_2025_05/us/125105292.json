@@ -1,0 +1,65 @@
+{
+  "article_id": "125105292",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_05/us/125105292.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_05/us/125105292.json"
+  },
+  "manifest_row": {
+    "article_id": "125105292",
+    "group": "global_north_2025_05",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2025_05/us/125105292.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "gaza_role": "passing",
+    "main_topic": "George Floyd's murder, its aftermath, policing, racial injustice, and public responses",
+    "conflict_relevance": "The article is overwhelmingly about George Floyd, Minneapolis policing, race, and related political debates. Gaza appears only once in a passing reference to city declarations and is not substantively discussed.",
+    "reason": "The sole Gaza reference is incidental and unrelated to the article's main subject, so it does not meaningfully contribute to analysis of Gaza, Palestine, or the Israel-Palestine conflict.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "282670abbb27c8d7d85f2efef61aef6024950d90c464feac11ae51a87118c422",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "03414a16e58fd09d551e3b2ba3bb89ba6bcd9bd105d0bc3c36934b57232e2720",
+    "raw_response_text_sha256": "5f870dc2f539c262b34497c755d5c43b74fb7a13fa0a1ce9b981090c0f074d4a"
+  },
+  "api_metadata": {
+    "id": "resp_0ff4ea3c59220d69006aaa2df639ec87d1a4e849497ce80881",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789537782.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 7564,
+      "input_tokens_details": {
+        "cache_write_tokens": 7561,
+        "cached_tokens": 0
+      },
+      "output_tokens": 341,
+      "output_tokens_details": {
+        "reasoning_tokens": 176
+      },
+      "total_tokens": 7905
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"George Floyd's murder, its aftermath, policing, racial injustice, and public responses\",\n  \"conflict_relevance\": \"The article is overwhelmingly about George Floyd, Minneapolis policing, race, and related political debates. Gaza appears only once in a passing reference to city declarations and is not substantively discussed.\",\n  \"reason\": \"The sole Gaza reference is incidental and unrelated to the article's main subject, so it does not meaningfully contribute to analysis of Gaza, Palestine, or the Israel-Palestine conflict.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T05:49:46Z",
+  "duration_seconds": 4.146,
+  "error": null
+}

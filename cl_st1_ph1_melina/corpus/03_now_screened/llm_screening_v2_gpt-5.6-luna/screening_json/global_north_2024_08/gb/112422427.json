@@ -1,0 +1,65 @@
+{
+  "article_id": "112422427",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_08/gb/112422427.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_08/gb/112422427.json"
+  },
+  "manifest_row": {
+    "article_id": "112422427",
+    "group": "global_north_2024_08",
+    "country_code": "gb",
+    "filepath": "corpus/02_now_organised/global_north_2024_08/gb/112422427.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "gaza_role": "boilerplate_or_unrelated",
+    "main_topic": "Airline codeshare agreements and regulatory objections involving SAS, Delta, and JetBlue",
+    "conflict_relevance": "The main article concerns aviation industry partnerships and EU traffic-rights disputes; Gaza appears only in a related-article snippet about El Al.",
+    "reason": "The article is not about Gaza or the Israel-Palestine conflict. The Gaza reference is confined to an unrelated embedded related-article item and does not contribute meaningfully to the main article's discourse.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "aa270c1b9c4d11b90667d9dcf6095fcf3c08ad9aeca697d0b6725403972bc185",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "8bafa48e9505e16ad3041366b4589d4d9a5a95420818be26354bdf2f88d3884c",
+    "raw_response_text_sha256": "e490b4d115f444285ca7e9e25457bf4ace50491919ebf08f805bf51fb20c8200"
+  },
+  "api_metadata": {
+    "id": "resp_072026330405f3bf006aaa142d4d8887d294a2b1acad89a8b3",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789531181.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1233,
+      "input_tokens_details": {
+        "cache_write_tokens": 1230,
+        "cached_tokens": 0
+      },
+      "output_tokens": 263,
+      "output_tokens_details": {
+        "reasoning_tokens": 99
+      },
+      "total_tokens": 1496
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Airline codeshare agreements and regulatory objections involving SAS, Delta, and JetBlue\",\n  \"conflict_relevance\": \"The main article concerns aviation industry partnerships and EU traffic-rights disputes; Gaza appears only in a related-article snippet about El Al.\",\n  \"reason\": \"The article is not about Gaza or the Israel-Palestine conflict. The Gaza reference is confined to an unrelated embedded related-article item and does not contribute meaningfully to the main article's discourse.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:59:45Z",
+  "duration_seconds": 3.947,
+  "error": null
+}

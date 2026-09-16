@@ -1,0 +1,65 @@
+{
+  "article_id": "106000259",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_02/us/106000259.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_02/us/106000259.json"
+  },
+  "manifest_row": {
+    "article_id": "106000259",
+    "group": "global_north_2024_02",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2024_02/us/106000259.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.97,
+    "gaza_role": "background",
+    "main_topic": "Houthi attacks on Red Sea shipping and U.S. military strikes in Yemen",
+    "conflict_relevance": "The article links Houthi actions and the regional escalation to support for Palestinians in Gaza, but its substantive focus is on maritime security, U.S. naval threats, and weapons shipments to Yemen.",
+    "reason": "Gaza appears in the lead image caption as the political context for a Houthi rally, while the article's main text concerns Red Sea attacks and U.S. strikes against Houthi targets. This provides meaningful but secondary relevance to broader Gaza-related regional discourse.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "9dce1714c4bdbb11979b5b16733ec21b45ba80c8b1462ad123b31a3da86ffa7d",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "d0ea7eeea85c3ecd53ed85470b96b6e2ac5d8da1670b7755355dbf90d088996c",
+    "raw_response_text_sha256": "7731cc1688cbf07dbeaeb087a3712a6840885cfe8b435164887744fc974e9ccc"
+  },
+  "api_metadata": {
+    "id": "resp_050d1b92e1511895006aaa0749d05487d2b63f7f8fd90d3c03",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789527881.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 931,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 241,
+      "output_tokens_details": {
+        "reasoning_tokens": 57
+      },
+      "total_tokens": 1172
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.97,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Houthi attacks on Red Sea shipping and U.S. military strikes in Yemen\",\n  \"conflict_relevance\": \"The article links Houthi actions and the regional escalation to support for Palestinians in Gaza, but its substantive focus is on maritime security, U.S. naval threats, and weapons shipments to Yemen.\",\n  \"reason\": \"Gaza appears in the lead image caption as the political context for a Houthi rally, while the article's main text concerns Red Sea attacks and U.S. strikes against Houthi targets. This provides meaningful but secondary relevance to broader Gaza-related regional discourse.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:04:45Z",
+  "duration_seconds": 3.404,
+  "error": null
+}

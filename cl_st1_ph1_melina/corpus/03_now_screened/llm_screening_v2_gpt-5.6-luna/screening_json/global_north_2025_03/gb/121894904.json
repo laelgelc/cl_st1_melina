@@ -1,0 +1,65 @@
+{
+  "article_id": "121894904",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_03/gb/121894904.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_03/gb/121894904.json"
+  },
+  "manifest_row": {
+    "article_id": "121894904",
+    "group": "global_north_2025_03",
+    "country_code": "gb",
+    "filepath": "corpus/02_now_organised/global_north_2025_03/gb/121894904.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "background",
+    "main_topic": "International aid to Ukraine and US foreign assistance",
+    "conflict_relevance": "The article mainly concerns aid to Ukraine but includes discussion of US funding for Israel and humanitarian relief for Gaza, as well as a brief reference to the Israel-Hamas hostage and prisoner exchange.",
+    "reason": "Gaza and Israel-Palestine content is meaningful but secondary to the article's focus on Ukraine. The text also contains multiple unrelated snippets and apparent article aggregation.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "c74cbfd8d0ce20cb4f326e354f42ab6b2aa94b7675c3bf04f7547204bf3e60b0",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "dd619d547e7458ebe189ebff7f6a13f65876cc3fac9e6b8796f56ca4d93d71da",
+    "raw_response_text_sha256": "becc54b942f37273d26400b4b39b3cc982c28764f0a88b054f1a5bf55d0b1401"
+  },
+  "api_metadata": {
+    "id": "resp_0a3c1e73f909ef30006aaa25cdab7c87d1bda2f4157111714a",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789535693.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1453,
+      "input_tokens_details": {
+        "cache_write_tokens": 1450,
+        "cached_tokens": 0
+      },
+      "output_tokens": 261,
+      "output_tokens_details": {
+        "reasoning_tokens": 107
+      },
+      "total_tokens": 1714
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"International aid to Ukraine and US foreign assistance\",\n  \"conflict_relevance\": \"The article mainly concerns aid to Ukraine but includes discussion of US funding for Israel and humanitarian relief for Gaza, as well as a brief reference to the Israel-Hamas hostage and prisoner exchange.\",\n  \"reason\": \"Gaza and Israel-Palestine content is meaningful but secondary to the article's focus on Ukraine. The text also contains multiple unrelated snippets and apparent article aggregation.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T05:14:57Z",
+  "duration_seconds": 3.713,
+  "error": null
+}

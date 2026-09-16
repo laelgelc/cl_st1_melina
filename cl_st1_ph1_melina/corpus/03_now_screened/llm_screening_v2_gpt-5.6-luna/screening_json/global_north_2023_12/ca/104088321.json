@@ -1,0 +1,65 @@
+{
+  "article_id": "104088321",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_12/ca/104088321.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_12/ca/104088321.json"
+  },
+  "manifest_row": {
+    "article_id": "104088321",
+    "group": "global_north_2023_12",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2023_12/ca/104088321.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "gaza_role": "passing",
+    "main_topic": "Discovery of the remains of a missing hiker on Vancouver Island",
+    "conflict_relevance": "The main article is unrelated to Gaza or the Israel-Palestine conflict; Gaza appears only in a brief, unrelated embedded news snippet about an academic reportedly killed in an Israeli airstrike.",
+    "reason": "The headline and substantive article concern a missing-person investigation in British Columbia. The single Gaza-related sentence is part of a collection of unrelated news items and does not provide meaningful conflict discourse.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "6d64efe01a21be7f76670f863335fdf9423a7e0cb41092b83a96458b470032f0",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "b8cab0f08f5507ad116d69ed57391a95c364ecd6fcf5df86f717887bdf3625e3",
+    "raw_response_text_sha256": "1c67f3173a91217a1bd40f393cf91d62332e4da5272f3bcd95e5678694571d76"
+  },
+  "api_metadata": {
+    "id": "resp_0e1ccf19e03f62a5006aaa0063fbec87d2aa17aae8d7eb2928",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789526116.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1692,
+      "input_tokens_details": {
+        "cache_write_tokens": 1689,
+        "cached_tokens": 0
+      },
+      "output_tokens": 299,
+      "output_tokens_details": {
+        "reasoning_tokens": 138
+      },
+      "total_tokens": 1991
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Discovery of the remains of a missing hiker on Vancouver Island\",\n  \"conflict_relevance\": \"The main article is unrelated to Gaza or the Israel-Palestine conflict; Gaza appears only in a brief, unrelated embedded news snippet about an academic reportedly killed in an Israeli airstrike.\",\n  \"reason\": \"The headline and substantive article concern a missing-person investigation in British Columbia. The single Gaza-related sentence is part of a collection of unrelated news items and does not provide meaningful conflict discourse.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:35:20Z",
+  "duration_seconds": 4.194,
+  "error": null
+}

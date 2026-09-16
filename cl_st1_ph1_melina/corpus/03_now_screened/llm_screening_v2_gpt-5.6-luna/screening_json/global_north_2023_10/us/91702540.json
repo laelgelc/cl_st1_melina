@@ -1,0 +1,65 @@
+{
+  "article_id": "91702540",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_10/us/91702540.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_10/us/91702540.json"
+  },
+  "manifest_row": {
+    "article_id": "91702540",
+    "group": "global_north_2023_10",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2023_10/us/91702540.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "passing",
+    "main_topic": "A volunteer's experience working at an English immersion camp for Ukrainian refugee children in Poland",
+    "conflict_relevance": "The article briefly compares the humanitarian situation of Ukrainian refugees with refugees in Israel and Gaza, emphasizing the human impact of conflict.",
+    "reason": "The main article concerns Ukrainian refugees and a religious youth camp, not Gaza or the Israel-Palestine conflict. However, it contains a meaningful explicit comparison to the situation in Israel and Gaza, making it relevant to broader humanitarian discourse but not suitable as core conflict coverage.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "3b6fa7a85b688fbb6b9ef1c268d2beed16427949b8e6dcd6711c0507079c1de8",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "acae10c852eaa8ed8181328c2a1500de8f49588f4e4cd8821ed5381402237a92",
+    "raw_response_text_sha256": "7a2f407e54d056a5d166185809ae6fac1fc0fc7fb0b031683b46915b06d06c95"
+  },
+  "api_metadata": {
+    "id": "resp_08662bb21d74ab2b006aa9fb33e1d087d2b1c106c503f7d087",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789524787.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1967,
+      "input_tokens_details": {
+        "cache_write_tokens": 1964,
+        "cached_tokens": 0
+      },
+      "output_tokens": 227,
+      "output_tokens_details": {
+        "reasoning_tokens": 57
+      },
+      "total_tokens": 2194
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"A volunteer's experience working at an English immersion camp for Ukrainian refugee children in Poland\",\n  \"conflict_relevance\": \"The article briefly compares the humanitarian situation of Ukrainian refugees with refugees in Israel and Gaza, emphasizing the human impact of conflict.\",\n  \"reason\": \"The main article concerns Ukrainian refugees and a religious youth camp, not Gaza or the Israel-Palestine conflict. However, it contains a meaningful explicit comparison to the situation in Israel and Gaza, making it relevant to broader humanitarian discourse but not suitable as core conflict coverage.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:13:11Z",
+  "duration_seconds": 3.899,
+  "error": null
+}

@@ -1,0 +1,65 @@
+{
+  "article_id": "121545633",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_02/au/121545633.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_02/au/121545633.json"
+  },
+  "manifest_row": {
+    "article_id": "121545633",
+    "group": "global_north_2025_02",
+    "country_code": "au",
+    "filepath": "corpus/02_now_organised/global_north_2025_02/au/121545633.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "background",
+    "main_topic": "US-Russia negotiations over the war in Ukraine and changing European security relations",
+    "conflict_relevance": "The article's main focus is Ukraine and great-power rivalry, but a substantial embedded section discusses Israel's military presence in Lebanon and negotiations between Israel and Hamas over the Gaza ceasefire, hostages, and troop withdrawal.",
+    "reason": "The Gaza-related material is meaningful but appears as one section within a broader multi-topic news roundup rather than as the article's central subject.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "36b2fa503a052227454390bfd6e8cb2e9e65865d2944d11d234aa110fef5565c",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "8caee46a5949f631395c4349c44a3d655b73c132240e92d08904c5267db120c8",
+    "raw_response_text_sha256": "01cf1178e99dfc19001a6d0c4eb5c656f28933464b7aea1cd09636fe8f132c8f"
+  },
+  "api_metadata": {
+    "id": "resp_084e038ea54d7468006aaa222687b887d292abff685318e91c",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789534758.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2554,
+      "input_tokens_details": {
+        "cache_write_tokens": 2551,
+        "cached_tokens": 0
+      },
+      "output_tokens": 268,
+      "output_tokens_details": {
+        "reasoning_tokens": 108
+      },
+      "total_tokens": 2822
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"US-Russia negotiations over the war in Ukraine and changing European security relations\",\n  \"conflict_relevance\": \"The article's main focus is Ukraine and great-power rivalry, but a substantial embedded section discusses Israel's military presence in Lebanon and negotiations between Israel and Hamas over the Gaza ceasefire, hostages, and troop withdrawal.\",\n  \"reason\": \"The Gaza-related material is meaningful but appears as one section within a broader multi-topic news roundup rather than as the article's central subject.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T04:59:21Z",
+  "duration_seconds": 2.867,
+  "error": null
+}

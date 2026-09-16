@@ -1,0 +1,65 @@
+{
+  "article_id": "103454763",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_11/ca/103454763.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_11/ca/103454763.json"
+  },
+  "manifest_row": {
+    "article_id": "103454763",
+    "group": "global_north_2023_11",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2023_11/ca/103454763.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "gaza_role": "passing",
+    "main_topic": "Structural damage and seasonal closures of rural Saskatchewan community arenas",
+    "conflict_relevance": "An unrelated embedded top-story snippet briefly mentions Canada's criticism of Israel's conduct in Gaza.",
+    "reason": "The main article concerns rink closures, structural repairs, and community fundraising in Saskatchewan. Gaza appears only in a separate, unrelated roundup item and is not meaningfully developed in the article.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "f063bcaf93cb37cb47c8bda6c98da78b12fe06842f1f6bd91d7d3b71aa4b98b8",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "7f951d90aed8aab710a1a2b771a06250e7d5f00ff3605ced13dfac7eea4d5139",
+    "raw_response_text_sha256": "0a8295c388aaaefb9e8dbffd1a29b23338b49c45666e0959e46249b314969680"
+  },
+  "api_metadata": {
+    "id": "resp_0d1b06184caadfbe006aa9fbdc533487d29dd5bca4e283d14e",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789524956.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2656,
+      "input_tokens_details": {
+        "cache_write_tokens": 2653,
+        "cached_tokens": 0
+      },
+      "output_tokens": 236,
+      "output_tokens_details": {
+        "reasoning_tokens": 98
+      },
+      "total_tokens": 2892
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Structural damage and seasonal closures of rural Saskatchewan community arenas\",\n  \"conflict_relevance\": \"An unrelated embedded top-story snippet briefly mentions Canada's criticism of Israel's conduct in Gaza.\",\n  \"reason\": \"The main article concerns rink closures, structural repairs, and community fundraising in Saskatchewan. Gaza appears only in a separate, unrelated roundup item and is not meaningfully developed in the article.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:15:59Z",
+  "duration_seconds": 3.589,
+  "error": null
+}

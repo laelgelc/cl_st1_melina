@@ -1,0 +1,65 @@
+{
+  "article_id": "102701680",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_10/us/102701680.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_10/us/102701680.json"
+  },
+  "manifest_row": {
+    "article_id": "102701680",
+    "group": "global_north_2023_10",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2023_10/us/102701680.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "gaza_role": "passing",
+    "main_topic": "Small-cap stock investment opportunities and market volatility",
+    "conflict_relevance": "The Israel-Gaza war is mentioned once as one of several geopolitical risks affecting market volatility.",
+    "reason": "The article is primarily financial advice and analysis about small-cap stocks. Its brief mention of the Israel-Gaza war provides no substantive discussion of the conflict or related discourse.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "c8a940dcae68d6a11d8dff5558918ad53675832f701297fd614cccbd9edfd3d1",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "bae7c617c3b24cb6b7791d3a4648e7e0d4a7b3d09bdb7afccec8c4cc1662fae0",
+    "raw_response_text_sha256": "c8ba46325ec7657261f45c424e1a2b8d8c4fd467b17b297181a0eec05445fd58"
+  },
+  "api_metadata": {
+    "id": "resp_0d90293ba41abc5b006aa9f907332087d29a9d566949600082",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789524231.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1365,
+      "input_tokens_details": {
+        "cache_write_tokens": 1362,
+        "cached_tokens": 0
+      },
+      "output_tokens": 180,
+      "output_tokens_details": {
+        "reasoning_tokens": 46
+      },
+      "total_tokens": 1545
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Small-cap stock investment opportunities and market volatility\",\n  \"conflict_relevance\": \"The Israel-Gaza war is mentioned once as one of several geopolitical risks affecting market volatility.\",\n  \"reason\": \"The article is primarily financial advice and analysis about small-cap stocks. Its brief mention of the Israel-Gaza war provides no substantive discussion of the conflict or related discourse.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:03:53Z",
+  "duration_seconds": 2.56,
+  "error": null
+}

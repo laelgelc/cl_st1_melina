@@ -1,0 +1,65 @@
+{
+  "article_id": "104196550",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_12/gb/104196550.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_12/gb/104196550.json"
+  },
+  "manifest_row": {
+    "article_id": "104196550",
+    "group": "global_north_2023_12",
+    "country_code": "gb",
+    "filepath": "corpus/02_now_organised/global_north_2023_12/gb/104196550.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "background",
+    "main_topic": "Compilation of unrelated news and feature snippets, including UK current affairs, crime, politics, consumer stories, protests, and internet trends",
+    "conflict_relevance": "The compilation contains meaningful but non-central references to pro-Palestine demonstrations in London, a Zara boycott over imagery perceived as evoking Gaza casualties, and the Israel-Hamas war appearing in global search trends.",
+    "reason": "The text is primarily a multi-item roundup of unrelated articles. Gaza and the Israel-Hamas war appear in several substantive snippets, but no single conflict-related item forms the main subject of the overall article.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "b1e0ee5dee71e7fe6e0305264e6b316a69d6a0ab15e7b4790e3e9118670e27f5",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "88ee2403455f37a70b7b373fa91bae3bf665752b728301c90e6067c267c818a3",
+    "raw_response_text_sha256": "b66f217e6136f2df24f59f4c4199fb6a5ed54e6e9f1a2e1c10449fe4d29ff4c9"
+  },
+  "api_metadata": {
+    "id": "resp_002b75fad05acc76006aaa01016af887d2b040e8e05b836ced",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789526273.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 4748,
+      "input_tokens_details": {
+        "cache_write_tokens": 4745,
+        "cached_tokens": 0
+      },
+      "output_tokens": 285,
+      "output_tokens_details": {
+        "reasoning_tokens": 102
+      },
+      "total_tokens": 5033
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Compilation of unrelated news and feature snippets, including UK current affairs, crime, politics, consumer stories, protests, and internet trends\",\n  \"conflict_relevance\": \"The compilation contains meaningful but non-central references to pro-Palestine demonstrations in London, a Zara boycott over imagery perceived as evoking Gaza casualties, and the Israel-Hamas war appearing in global search trends.\",\n  \"reason\": \"The text is primarily a multi-item roundup of unrelated articles. Gaza and the Israel-Hamas war appear in several substantive snippets, but no single conflict-related item forms the main subject of the overall article.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:37:57Z",
+  "duration_seconds": 3.725,
+  "error": null
+}

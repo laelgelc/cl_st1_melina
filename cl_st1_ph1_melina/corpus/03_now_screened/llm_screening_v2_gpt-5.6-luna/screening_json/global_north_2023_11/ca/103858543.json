@@ -1,0 +1,65 @@
+{
+  "article_id": "103858543",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_11/ca/103858543.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_11/ca/103858543.json"
+  },
+  "manifest_row": {
+    "article_id": "103858543",
+    "group": "global_north_2023_11",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2023_11/ca/103858543.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "passing",
+    "main_topic": "A proposed Westlock, Alberta, bylaw restricting Pride crosswalks and public flags",
+    "conflict_relevance": "The main article is unrelated to Gaza or Israel/Palestine, but an embedded news snippet briefly reports a Gaza truce, the release of hostages by Hamas, Palestinian prisoners held by Israel, and the halt of Israel's military offensive.",
+    "reason": "The headline article concerns LGBTQ2S+ symbols and local Canadian governance. However, the article also contains a substantive but unrelated embedded Gaza news item, making it peripheral rather than excludable.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "983500482dec9c8a933973d5a1c09fd480bec4a0d25b6959daee8620bb1501b6",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "fadbc310b2671aca895dcd54377d04204aa5dc79dc1b2377f9c249af80eab3bf",
+    "raw_response_text_sha256": "f461167b2609e77ebf4a23a8fad3c2ca84cc238c195d7c95b3607c4434ed98e9"
+  },
+  "api_metadata": {
+    "id": "resp_0c65836a18b084df006aa9fc157b6487d289692f07f313f527",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789525013.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 3048,
+      "input_tokens_details": {
+        "cache_write_tokens": 3045,
+        "cached_tokens": 0
+      },
+      "output_tokens": 358,
+      "output_tokens_details": {
+        "reasoning_tokens": 178
+      },
+      "total_tokens": 3406
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"A proposed Westlock, Alberta, bylaw restricting Pride crosswalks and public flags\",\n  \"conflict_relevance\": \"The main article is unrelated to Gaza or Israel/Palestine, but an embedded news snippet briefly reports a Gaza truce, the release of hostages by Hamas, Palestinian prisoners held by Israel, and the halt of Israel's military offensive.\",\n  \"reason\": \"The headline article concerns LGBTQ2S+ symbols and local Canadian governance. However, the article also contains a substantive but unrelated embedded Gaza news item, making it peripheral rather than excludable.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:16:58Z",
+  "duration_seconds": 5.15,
+  "error": null
+}

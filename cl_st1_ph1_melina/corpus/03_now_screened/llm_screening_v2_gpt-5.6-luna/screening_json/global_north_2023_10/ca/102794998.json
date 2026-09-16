@@ -1,0 +1,65 @@
+{
+  "article_id": "102794998",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_10/ca/102794998.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_10/ca/102794998.json"
+  },
+  "manifest_row": {
+    "article_id": "102794998",
+    "group": "global_north_2023_10",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2023_10/ca/102794998.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "gaza_role": "boilerplate_or_unrelated",
+    "main_topic": "A cold-case investigation using DNA technology to identify a teenage girl's murderer",
+    "conflict_relevance": "The headline article is unrelated to Gaza, Palestine, or the Israel-Hamas conflict. Conflict-related passages appear only as unrelated embedded news snippets.",
+    "reason": "The main article is a true-crime feature about a 1975 murder investigation. Although the text includes several substantive Gaza and Israel-Hamas news items, these are separate snippets rather than part of the article's subject.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "d9950c158e102032eda56bf0a3c27e0b71fb5deccad5be734b1fe6b43818dde4",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "297349abc2248a9ba28e5d00442b6a123a451c45cc16e2af83b05e08d575ae1b",
+    "raw_response_text_sha256": "13ec982688b19e80f1de7c45e0e2b805311747c171eeba214cf3a9985de5e2e9"
+  },
+  "api_metadata": {
+    "id": "resp_09588ba88cdf1b4c006aa9f675f01887d29f5a00efec2da8d4",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789523573.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2603,
+      "input_tokens_details": {
+        "cache_write_tokens": 2600,
+        "cached_tokens": 0
+      },
+      "output_tokens": 273,
+      "output_tokens_details": {
+        "reasoning_tokens": 108
+      },
+      "total_tokens": 2876
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"A cold-case investigation using DNA technology to identify a teenage girl's murderer\",\n  \"conflict_relevance\": \"The headline article is unrelated to Gaza, Palestine, or the Israel-Hamas conflict. Conflict-related passages appear only as unrelated embedded news snippets.\",\n  \"reason\": \"The main article is a true-crime feature about a 1975 murder investigation. Although the text includes several substantive Gaza and Israel-Hamas news items, these are separate snippets rather than part of the article's subject.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T01:52:57Z",
+  "duration_seconds": 3.262,
+  "error": null
+}

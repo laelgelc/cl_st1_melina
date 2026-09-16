@@ -1,0 +1,65 @@
+{
+  "article_id": "102907439",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_10/gb/102907439.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_10/gb/102907439.json"
+  },
+  "manifest_row": {
+    "article_id": "102907439",
+    "group": "global_north_2023_10",
+    "country_code": "gb",
+    "filepath": "corpus/02_now_organised/global_north_2023_10/gb/102907439.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.88,
+    "gaza_role": "background",
+    "main_topic": "Meta Platforms' quarterly financial performance and cost reductions",
+    "conflict_relevance": "The text includes meaningful but disconnected references to unidentified Palestinian bodies in Gaza and Biden's call for a path to Israeli-Palestinian peace, while the main item concerns Meta's business results.",
+    "reason": "The Gaza and Israel-Palestine material is substantive enough to be relevant to broader discourse analysis, but it is not integrated into the main article, which focuses on Meta's earnings and digital advertising.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "4da623ba5a08e8eb3ca7f77f67a290e8d014ecb57a6e2c26583538afcc426abd",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "d4c0d9e74d50ac66a5204f5231775bb41ba58697c12235806bd884e2cb8ac66b",
+    "raw_response_text_sha256": "a61a31ee168a86251ba9546e8e2f0eb0e01a9879dcd25b8350c8ebf62d63ca33"
+  },
+  "api_metadata": {
+    "id": "resp_00fc8dc6429df090006aa9f7a5fdac87d2bd7bae3b2da16648",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789523878.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 788,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 311,
+      "output_tokens_details": {
+        "reasoning_tokens": 148
+      },
+      "total_tokens": 1099
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.88,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Meta Platforms' quarterly financial performance and cost reductions\",\n  \"conflict_relevance\": \"The text includes meaningful but disconnected references to unidentified Palestinian bodies in Gaza and Biden's call for a path to Israeli-Palestinian peace, while the main item concerns Meta's business results.\",\n  \"reason\": \"The Gaza and Israel-Palestine material is substantive enough to be relevant to broader discourse analysis, but it is not integrated into the main article, which focuses on Meta's earnings and digital advertising.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T01:58:01Z",
+  "duration_seconds": 3.532,
+  "error": null
+}

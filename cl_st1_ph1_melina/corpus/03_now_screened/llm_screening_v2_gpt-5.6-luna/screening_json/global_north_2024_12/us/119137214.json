@@ -1,0 +1,65 @@
+{
+  "article_id": "119137214",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_12/us/119137214.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_12/us/119137214.json"
+  },
+  "manifest_row": {
+    "article_id": "119137214",
+    "group": "global_north_2024_12",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2024_12/us/119137214.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "substantial",
+    "main_topic": "Annual obituary and remembrance roundup covering notable people who died, including a substantial profile of Gaza journalist Wafa Al-Udaini",
+    "conflict_relevance": "The Wafa Al-Udaini profile discusses Gaza, Israeli occupation and blockade, water and infrastructure destruction, Palestinian journalism, protests, media representation, threats, and her death in an Israeli airstrike.",
+    "reason": "The article is primarily a multi-profile remembrance roundup about people from arts, culture, sports, science, and public life. However, one complete and detailed profile is centrally concerned with Gaza and Palestinian conflict discourse. Because the conflict material is substantial but not the main focus of the overall article, it is classified as PERIPHERAL.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "0dc0b9c23071d15a4f27de76a34e7f984944870a98d97e0a32b1ec73b5fe0b43",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "fd0cbff139a5b6ecf0eb21d09601d60acf0a9f9af0cf9f835297a7be0dc14db0",
+    "raw_response_text_sha256": "47b0a05a8c2b910bdeb386e4093a75c06bdfe50a60b2c6a7f255dc306549797e"
+  },
+  "api_metadata": {
+    "id": "resp_0314dc0f5e5bbbaf006aaa1ea2fed087d28121c71e92214283",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789533859.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 31754,
+      "input_tokens_details": {
+        "cache_write_tokens": 31751,
+        "cached_tokens": 0
+      },
+      "output_tokens": 479,
+      "output_tokens_details": {
+        "reasoning_tokens": 273
+      },
+      "total_tokens": 32233
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"substantial\",\n  \"main_topic\": \"Annual obituary and remembrance roundup covering notable people who died, including a substantial profile of Gaza journalist Wafa Al-Udaini\",\n  \"conflict_relevance\": \"The Wafa Al-Udaini profile discusses Gaza, Israeli occupation and blockade, water and infrastructure destruction, Palestinian journalism, protests, media representation, threats, and her death in an Israeli airstrike.\",\n  \"reason\": \"The article is primarily a multi-profile remembrance roundup about people from arts, culture, sports, science, and public life. However, one complete and detailed profile is centrally concerned with Gaza and Palestinian conflict discourse. Because the conflict material is substantial but not the main focus of the overall article, it is classified as PERIPHERAL.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T04:44:25Z",
+  "duration_seconds": 6.215,
+  "error": null
+}

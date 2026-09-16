@@ -1,0 +1,65 @@
+{
+  "article_id": "105163456",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_01/gb/105163456.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_01/gb/105163456.json"
+  },
+  "manifest_row": {
+    "article_id": "105163456",
+    "group": "global_north_2024_01",
+    "country_code": "gb",
+    "filepath": "corpus/02_now_organised/global_north_2024_01/gb/105163456.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.97,
+    "gaza_role": "background",
+    "main_topic": "Global oil markets and shipping disruptions caused by Houthi attacks in the Red Sea",
+    "conflict_relevance": "The article links Houthi attacks and resulting shipping disruptions to solidarity with Palestinians during the Israel-Gaza war, but focuses primarily on oil supply, tanker availability, and energy markets.",
+    "reason": "The Gaza conflict provides meaningful geopolitical context for the Red Sea attacks, yet the article is not substantially about Gaza, Israel-Palestine, or the humanitarian or military dimensions of the conflict.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "eff139e266b0b10c0c49c684d3102c01715e9fef9544cea80475612f084aed87",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "3c97aa576b20e1dbe51b57101c46598aa80945e38d09e490fccd3d8e9df36732",
+    "raw_response_text_sha256": "09ad4df4e98a3f12a08033b1b68e5e7e8a58cb5fb13ea805ac41d411f67d41de"
+  },
+  "api_metadata": {
+    "id": "resp_0a56912d61d89dae006aaa03ff799087d29c12526c3e896a0d",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789527039.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1398,
+      "input_tokens_details": {
+        "cache_write_tokens": 1395,
+        "cached_tokens": 0
+      },
+      "output_tokens": 231,
+      "output_tokens_details": {
+        "reasoning_tokens": 65
+      },
+      "total_tokens": 1629
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.97,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Global oil markets and shipping disruptions caused by Houthi attacks in the Red Sea\",\n  \"conflict_relevance\": \"The article links Houthi attacks and resulting shipping disruptions to solidarity with Palestinians during the Israel-Gaza war, but focuses primarily on oil supply, tanker availability, and energy markets.\",\n  \"reason\": \"The Gaza conflict provides meaningful geopolitical context for the Red Sea attacks, yet the article is not substantially about Gaza, Israel-Palestine, or the humanitarian or military dimensions of the conflict.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:50:42Z",
+  "duration_seconds": 3.483,
+  "error": null
+}

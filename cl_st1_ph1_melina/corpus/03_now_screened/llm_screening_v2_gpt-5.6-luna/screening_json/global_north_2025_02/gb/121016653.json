@@ -1,0 +1,65 @@
+{
+  "article_id": "121016653",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_02/gb/121016653.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_02/gb/121016653.json"
+  },
+  "manifest_row": {
+    "article_id": "121016653",
+    "group": "global_north_2025_02",
+    "country_code": "gb",
+    "filepath": "corpus/02_now_organised/global_north_2025_02/gb/121016653.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.96,
+    "gaza_role": "passing",
+    "main_topic": "The economic impact of Donald Trump's tariffs on the UK, consumers, inflation, and trade relations",
+    "conflict_relevance": "The article is primarily about tariffs and UK economic policy, but it ends with a separate substantive snippet about the Gaza ceasefire and Hamas's concerns over its possible collapse.",
+    "reason": "The Gaza material is not integrated into the main tariff article and appears to be an appended news item, but it contains meaningful conflict-related reporting rather than a merely incidental or boilerplate mention.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "2d7d5e66c4e2f79806cf98c1480f0a8746275a24ee7960e7e9408154e5113e2d",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "96d9cfc02a6ceb879bbc1c3499c6a9a3ccb831d56693f8dbafea82a8ce03564d",
+    "raw_response_text_sha256": "dab4f5988336e74409710cc79157b2c7f6751b37f58cc63cd51963be7e7f860a"
+  },
+  "api_metadata": {
+    "id": "resp_075b9ac0fa0bd778006aaa22afb1ec87d2865a8de9aba111bb",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789534895.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2059,
+      "input_tokens_details": {
+        "cache_write_tokens": 2056,
+        "cached_tokens": 0
+      },
+      "output_tokens": 288,
+      "output_tokens_details": {
+        "reasoning_tokens": 124
+      },
+      "total_tokens": 2347
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.96,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"The economic impact of Donald Trump's tariffs on the UK, consumers, inflation, and trade relations\",\n  \"conflict_relevance\": \"The article is primarily about tariffs and UK economic policy, but it ends with a separate substantive snippet about the Gaza ceasefire and Hamas's concerns over its possible collapse.\",\n  \"reason\": \"The Gaza material is not integrated into the main tariff article and appears to be an appended news item, but it contains meaningful conflict-related reporting rather than a merely incidental or boilerplate mention.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T05:01:39Z",
+  "duration_seconds": 3.437,
+  "error": null
+}

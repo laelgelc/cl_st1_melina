@@ -1,0 +1,65 @@
+{
+  "article_id": "103258680",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_11/ca/103258680.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_11/ca/103258680.json"
+  },
+  "manifest_row": {
+    "article_id": "103258680",
+    "group": "global_north_2023_11",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2023_11/ca/103258680.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.96,
+    "gaza_role": "passing",
+    "main_topic": "Immigration, affordability, and onward migration from Canada",
+    "conflict_relevance": "The main article concerns immigrant experiences in Canada, but the page includes brief embedded snippets about evacuations from Gaza amid the Israel-Hamas war and reactions to war imagery.",
+    "reason": "The conflict material is not connected to the main immigration story and appears as repeated roundup or embedded-news content. However, the Gaza evacuation reference is sufficiently meaningful to support peripheral relevance rather than exclusion.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "d74598a13b582808df88fe101632870c0af24b207e2e98b27ae342f02c9376b0",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "d8d55de5b14f834258047c666bc0de14b3be319ad202a705f4333a513db2da31",
+    "raw_response_text_sha256": "a596528b1cf80fa51769bf4fb527f8e85ac9f8c869f56f843fa65706b582c82f"
+  },
+  "api_metadata": {
+    "id": "resp_0902e6eae5b08f04006aa9fbb50c8887d2a70a091e13f4e43e",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789524917.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 3914,
+      "input_tokens_details": {
+        "cache_write_tokens": 3911,
+        "cached_tokens": 0
+      },
+      "output_tokens": 349,
+      "output_tokens_details": {
+        "reasoning_tokens": 192
+      },
+      "total_tokens": 4263
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.96,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Immigration, affordability, and onward migration from Canada\",\n  \"conflict_relevance\": \"The main article concerns immigrant experiences in Canada, but the page includes brief embedded snippets about evacuations from Gaza amid the Israel-Hamas war and reactions to war imagery.\",\n  \"reason\": \"The conflict material is not connected to the main immigration story and appears as repeated roundup or embedded-news content. However, the Gaza evacuation reference is sufficiently meaningful to support peripheral relevance rather than exclusion.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:15:21Z",
+  "duration_seconds": 4.629,
+  "error": null
+}

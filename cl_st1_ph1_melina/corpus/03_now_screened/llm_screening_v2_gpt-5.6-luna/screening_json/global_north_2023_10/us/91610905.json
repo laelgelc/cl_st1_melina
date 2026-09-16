@@ -1,0 +1,65 @@
+{
+  "article_id": "91610905",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_10/us/91610905.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_10/us/91610905.json"
+  },
+  "manifest_row": {
+    "article_id": "91610905",
+    "group": "global_north_2023_10",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2023_10/us/91610905.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.97,
+    "gaza_role": "passing",
+    "main_topic": "Claudia Goldin's Nobel Prize and research on the gender pay gap",
+    "conflict_relevance": "The article includes a substantive but unrelated embedded news item about Israel's siege of Gaza and the humanitarian conditions following the October 2023 attacks.",
+    "reason": "The main article is a profile of economist Claudia Goldin and is not about Gaza or the Israel-Palestine conflict. However, the embedded paragraph contains meaningful conflict-related discourse, including the Gaza siege, airstrikes, civilian immobility, deprivation of electricity, food, and fuel, and dehumanizing language attributed to Israel's defense minister.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "b6c6ae19ca766903553ec4526206f0a5a1d64fd76785a0811aa2405f8964d0e1",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "28634f98e81cf03352361b19ccde36a64dd5b74fb7222758e156f84f1c534fb4",
+    "raw_response_text_sha256": "68c8ef3e72363e90dc68f8ad051871d1f66a7855404ceae589d4d54f17be05ae"
+  },
+  "api_metadata": {
+    "id": "resp_09fbb3968795261e006aa9f9fadef087d2b7efbf2fe47b2f71",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789524474.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1858,
+      "input_tokens_details": {
+        "cache_write_tokens": 1855,
+        "cached_tokens": 0
+      },
+      "output_tokens": 306,
+      "output_tokens_details": {
+        "reasoning_tokens": 116
+      },
+      "total_tokens": 2164
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.97,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Claudia Goldin's Nobel Prize and research on the gender pay gap\",\n  \"conflict_relevance\": \"The article includes a substantive but unrelated embedded news item about Israel's siege of Gaza and the humanitarian conditions following the October 2023 attacks.\",\n  \"reason\": \"The main article is a profile of economist Claudia Goldin and is not about Gaza or the Israel-Palestine conflict. However, the embedded paragraph contains meaningful conflict-related discourse, including the Gaza siege, airstrikes, civilian immobility, deprivation of electricity, food, and fuel, and dehumanizing language attributed to Israel's defense minister.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:07:57Z",
+  "duration_seconds": 2.837,
+  "error": null
+}

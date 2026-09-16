@@ -1,0 +1,65 @@
+{
+  "article_id": "103834588",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_11/gb/103834588.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_11/gb/103834588.json"
+  },
+  "manifest_row": {
+    "article_id": "103834588",
+    "group": "global_north_2023_11",
+    "country_code": "gb",
+    "filepath": "corpus/02_now_organised/global_north_2023_11/gb/103834588.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.96,
+    "gaza_role": "passing",
+    "main_topic": "A diplomatic dispute between the UK and Greece over the Parthenon Sculptures and the cancellation of a bilateral meeting",
+    "conflict_relevance": "The article briefly mentions the Israel/Gaza conflict as one of several topics that the Greek prime minister had expected to discuss with the British prime minister.",
+    "reason": "The conflict is not analyzed or discussed substantively, but it appears in a meaningful sentence describing the planned diplomatic agenda. The article also contains several unrelated news snippets.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "39a4dbcf0fb727f28336367f7588a496f8ca71c2aa72b020404795dab2717d1e",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "87eeecc9ee7faecb88da4852f2f7b32b03d6fade42765585e87f0ab827f8b961",
+    "raw_response_text_sha256": "84d064a96b656fdb0da77ec52444bb14350fbea5e9cb73349814fe334173dbf9"
+  },
+  "api_metadata": {
+    "id": "resp_0c04cb1a5cb71d96006aa9fd4f3dac87d28be63e94ab7f6a50",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789525327.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1941,
+      "input_tokens_details": {
+        "cache_write_tokens": 1938,
+        "cached_tokens": 0
+      },
+      "output_tokens": 308,
+      "output_tokens_details": {
+        "reasoning_tokens": 149
+      },
+      "total_tokens": 2249
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.96,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"A diplomatic dispute between the UK and Greece over the Parthenon Sculptures and the cancellation of a bilateral meeting\",\n  \"conflict_relevance\": \"The article briefly mentions the Israel/Gaza conflict as one of several topics that the Greek prime minister had expected to discuss with the British prime minister.\",\n  \"reason\": \"The conflict is not analyzed or discussed substantively, but it appears in a meaningful sentence describing the planned diplomatic agenda. The article also contains several unrelated news snippets.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:22:13Z",
+  "duration_seconds": 5.945,
+  "error": null
+}

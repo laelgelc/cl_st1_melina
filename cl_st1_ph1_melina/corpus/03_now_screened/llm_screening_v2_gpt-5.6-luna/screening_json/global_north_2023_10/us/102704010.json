@@ -1,0 +1,65 @@
+{
+  "article_id": "102704010",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_10/us/102704010.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_10/us/102704010.json"
+  },
+  "manifest_row": {
+    "article_id": "102704010",
+    "group": "global_north_2023_10",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2023_10/us/102704010.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "gaza_role": "boilerplate_or_unrelated",
+    "main_topic": "A healthcare fraud scheme involving federal workers and military healthcare programs",
+    "conflict_relevance": "The article is unrelated to Gaza or the Israel-Hamas war; Gaza appears only in an unrelated closing photo-staff note.",
+    "reason": "The main article concerns criminal healthcare fraud, while the sole Gaza reference is an incidental and disconnected image-related sentence.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "82cdfc20e90ad82f810985afe146a28faa6a1f663fa15e13242bceefe4827280",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "87891309f0cc651d19458c1d0ceba460d39f7db85ba46d6d5c78fb93caff0ef3",
+    "raw_response_text_sha256": "9f5d4987fe55b43a5afbef2be41cc65ccc925cda093bf83040788d69903e8419"
+  },
+  "api_metadata": {
+    "id": "resp_01eacf5f4908b70f006aa9f913a07c87d2975b1f6d1b5494be",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789524243.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1212,
+      "input_tokens_details": {
+        "cache_write_tokens": 1209,
+        "cached_tokens": 0
+      },
+      "output_tokens": 194,
+      "output_tokens_details": {
+        "reasoning_tokens": 56
+      },
+      "total_tokens": 1406
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"gaza_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"A healthcare fraud scheme involving federal workers and military healthcare programs\",\n  \"conflict_relevance\": \"The article is unrelated to Gaza or the Israel-Hamas war; Gaza appears only in an unrelated closing photo-staff note.\",\n  \"reason\": \"The main article concerns criminal healthcare fraud, while the sole Gaza reference is an incidental and disconnected image-related sentence.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:04:06Z",
+  "duration_seconds": 2.832,
+  "error": null
+}

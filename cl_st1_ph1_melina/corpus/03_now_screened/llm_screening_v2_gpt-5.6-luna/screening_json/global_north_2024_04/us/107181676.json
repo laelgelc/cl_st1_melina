@@ -1,0 +1,65 @@
+{
+  "article_id": "107181676",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_04/us/107181676.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_04/us/107181676.json"
+  },
+  "manifest_row": {
+    "article_id": "107181676",
+    "group": "global_north_2024_04",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2024_04/us/107181676.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.96,
+    "gaza_role": "passing",
+    "main_topic": "College basketball, March Madness, athlete compensation, and the rising popularity of women's basketball",
+    "conflict_relevance": "The article's main subject is college basketball; Gaza appears only in a brief unrelated news item within a collection of snippets.",
+    "reason": "The two-sentence report about the Israeli military withdrawal from Al-Shifa hospital and bodies found in Gaza is incidental to the main basketball article and does not contribute meaningfully to the article's central discourse.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "8f45b4e885c4a81acf080f5e6ea87ff674cad7af49085d5508a8397c80b78d3b",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "863d1ed4a42d6ac25c461c7578536010b3adb2d2bc0c963f908b2add04543afd",
+    "raw_response_text_sha256": "b09d06b552f7ef62586aeb997e5e3eb52741ebb99fe1b4bef2bd3c3369f0a6a2"
+  },
+  "api_metadata": {
+    "id": "resp_0ecd962b6ce8c588006aaa0bc83a8c87d2a4d0411d36fd0233",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789529032.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1957,
+      "input_tokens_details": {
+        "cache_write_tokens": 1954,
+        "cached_tokens": 0
+      },
+      "output_tokens": 342,
+      "output_tokens_details": {
+        "reasoning_tokens": 187
+      },
+      "total_tokens": 2299
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.96,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"College basketball, March Madness, athlete compensation, and the rising popularity of women's basketball\",\n  \"conflict_relevance\": \"The article's main subject is college basketball; Gaza appears only in a brief unrelated news item within a collection of snippets.\",\n  \"reason\": \"The two-sentence report about the Israeli military withdrawal from Al-Shifa hospital and bodies found in Gaza is incidental to the main basketball article and does not contribute meaningfully to the article's central discourse.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:23:57Z",
+  "duration_seconds": 5.487,
+  "error": null
+}

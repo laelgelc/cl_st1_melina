@@ -1,0 +1,65 @@
+{
+  "article_id": "121286975",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_02/gb/121286975.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_02/gb/121286975.json"
+  },
+  "manifest_row": {
+    "article_id": "121286975",
+    "group": "global_north_2025_02",
+    "country_code": "gb",
+    "filepath": "corpus/02_now_organised/global_north_2025_02/gb/121286975.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.96,
+    "gaza_role": "passing",
+    "main_topic": "Censorship of journalists and media outlets by the Turkish government and X",
+    "conflict_relevance": "The Gaza war appears only in a brief biographical reference to a journalist's reporting, alongside a promotional Israel-Palestine newsletter mention.",
+    "reason": "The article is primarily about Turkish censorship, press freedom, and Kurdish-related repression. Gaza and Israel-Palestine are not substantively discussed and do not shape the article's main discourse.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "a469fe02f3e6eb7e8485ce1078ad3d46f205a1054baba73434b5a049a6911623",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "20873e895550f58fe4e6cd6074dce2644f8540473e7a0d1ab0f914faa4e8b809",
+    "raw_response_text_sha256": "de3be2d640c20607af146a18a9ceca42a78a128e32eed7a8941d3130d360bd72"
+  },
+  "api_metadata": {
+    "id": "resp_04a106b74941acc7006aaa22f2372c87d2b0817e2de6e9ad04",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789534962.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1734,
+      "input_tokens_details": {
+        "cache_write_tokens": 1731,
+        "cached_tokens": 0
+      },
+      "output_tokens": 346,
+      "output_tokens_details": {
+        "reasoning_tokens": 191
+      },
+      "total_tokens": 2080
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.96,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Censorship of journalists and media outlets by the Turkish government and X\",\n  \"conflict_relevance\": \"The Gaza war appears only in a brief biographical reference to a journalist's reporting, alongside a promotional Israel-Palestine newsletter mention.\",\n  \"reason\": \"The article is primarily about Turkish censorship, press freedom, and Kurdish-related repression. Gaza and Israel-Palestine are not substantively discussed and do not shape the article's main discourse.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T05:02:47Z",
+  "duration_seconds": 5.035,
+  "error": null
+}

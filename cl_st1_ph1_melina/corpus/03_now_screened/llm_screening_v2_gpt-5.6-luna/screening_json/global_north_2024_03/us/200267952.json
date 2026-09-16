@@ -1,0 +1,65 @@
+{
+  "article_id": "200267952",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_03/us/200267952.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_03/us/200267952.json"
+  },
+  "manifest_row": {
+    "article_id": "200267952",
+    "group": "global_north_2024_03",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2024_03/us/200267952.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.93,
+    "gaza_role": "passing",
+    "main_topic": "New Hampshire events and tourism planning for the 2024 solar eclipse",
+    "conflict_relevance": "A newsletter opinion snippet briefly references young people's disaffection with the Biden administration's Israel-Gaza policies.",
+    "reason": "The main article is about the solar eclipse and has no substantive conflict coverage. However, an appended political opinion item contains a meaningful but brief reference to Israel-Gaza policy, making the material peripheral rather than wholly irrelevant.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "e43fcce17d16c47567204fbd02f06ee591f1053517bc47c92947300da8dbdf94",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "ff892c8a5010794be4fa60afd7f641b429f359b71f1961724e1088a87b3303eb",
+    "raw_response_text_sha256": "61d0a1fdc3e905c7185b5b25464287306d7d835a1ff3d461a847efcc3dbca2d8"
+  },
+  "api_metadata": {
+    "id": "resp_0826e73e82c8bfcd006aaa0a14079887d2bf72b0d02acdff7c",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789528596.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2442,
+      "input_tokens_details": {
+        "cache_write_tokens": 2439,
+        "cached_tokens": 0
+      },
+      "output_tokens": 342,
+      "output_tokens_details": {
+        "reasoning_tokens": 189
+      },
+      "total_tokens": 2784
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.93,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"New Hampshire events and tourism planning for the 2024 solar eclipse\",\n  \"conflict_relevance\": \"A newsletter opinion snippet briefly references young people's disaffection with the Biden administration's Israel-Gaza policies.\",\n  \"reason\": \"The main article is about the solar eclipse and has no substantive conflict coverage. However, an appended political opinion item contains a meaningful but brief reference to Israel-Gaza policy, making the material peripheral rather than wholly irrelevant.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:16:40Z",
+  "duration_seconds": 4.617,
+  "error": null
+}

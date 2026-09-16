@@ -1,0 +1,65 @@
+{
+  "article_id": "103769993",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_11/us/103769993.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_11/us/103769993.json"
+  },
+  "manifest_row": {
+    "article_id": "103769993",
+    "group": "global_north_2023_11",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2023_11/us/103769993.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "gaza_role": "passing",
+    "main_topic": "Minnesota college student migration and workforce retention",
+    "conflict_relevance": "The article's main subject is domestic student migration in Minnesota. Gaza appears only in a single unrelated appended sentence about an attack on an Israeli-linked container ship.",
+    "reason": "The Gaza-related material is an incidental embedded news snippet and does not meaningfully contribute to discourse analysis of the conflict.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "e17d6a90c5a98b8f6aecb01846fdb1632a24234869c50d4cae1054848a00d69f",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "1d91e1555cb651c2a2fd2d718ce28f5074eea7694313427944f64ba7e65080ae",
+    "raw_response_text_sha256": "ffe3e2f16663a1ce2f5b0c752b962777fc9917fa97d20e244f4256508dc18696"
+  },
+  "api_metadata": {
+    "id": "resp_01e20caac4dff7e8006aa9feebde5c87d28ae5dbdaa81f1237",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789525739.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2610,
+      "input_tokens_details": {
+        "cache_write_tokens": 2607,
+        "cached_tokens": 0
+      },
+      "output_tokens": 194,
+      "output_tokens_details": {
+        "reasoning_tokens": 57
+      },
+      "total_tokens": 2804
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Minnesota college student migration and workforce retention\",\n  \"conflict_relevance\": \"The article's main subject is domestic student migration in Minnesota. Gaza appears only in a single unrelated appended sentence about an attack on an Israeli-linked container ship.\",\n  \"reason\": \"The Gaza-related material is an incidental embedded news snippet and does not meaningfully contribute to discourse analysis of the conflict.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:29:02Z",
+  "duration_seconds": 2.844,
+  "error": null
+}

@@ -1,0 +1,65 @@
+{
+  "article_id": "105304222",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_01/ie/105304222.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_01/ie/105304222.json"
+  },
+  "manifest_row": {
+    "article_id": "105304222",
+    "group": "global_north_2024_01",
+    "country_code": "ie",
+    "filepath": "corpus/02_now_organised/global_north_2024_01/ie/105304222.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "background",
+    "main_topic": "Senator David Norris's retirement and political career in Ireland",
+    "conflict_relevance": "The article includes a substantial political statement by Norris condemning Israel's conduct in Gaza and describing the humanitarian consequences for Palestinians.",
+    "reason": "Although the article is primarily a profile and retirement report about an Irish senator, it contains several sentences directly addressing Gaza, Netanyahu's government, and civilian deaths. This makes it relevant to broader political discourse around the conflict but not core conflict coverage.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "a4249731901579b9be2b7686e7a0a8a56df7e7a70fb97385e831f2bbcf2289d4",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "7a519022d30ad2dd1b05b396a59c35b59ca270a282a3264a4c676c1939274473",
+    "raw_response_text_sha256": "d40a3fdb322b5eaf0377cef4497abeb398c2a0d843fdebdead87c9cd464c8085"
+  },
+  "api_metadata": {
+    "id": "resp_0e95eec888b30c33006aaa0447692887d2905adbbbd0427fce",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789527111.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1349,
+      "input_tokens_details": {
+        "cache_write_tokens": 1346,
+        "cached_tokens": 0
+      },
+      "output_tokens": 233,
+      "output_tokens_details": {
+        "reasoning_tokens": 74
+      },
+      "total_tokens": 1582
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Senator David Norris's retirement and political career in Ireland\",\n  \"conflict_relevance\": \"The article includes a substantial political statement by Norris condemning Israel's conduct in Gaza and describing the humanitarian consequences for Palestinians.\",\n  \"reason\": \"Although the article is primarily a profile and retirement report about an Irish senator, it contains several sentences directly addressing Gaza, Netanyahu's government, and civilian deaths. This makes it relevant to broader political discourse around the conflict but not core conflict coverage.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:51:54Z",
+  "duration_seconds": 2.922,
+  "error": null
+}

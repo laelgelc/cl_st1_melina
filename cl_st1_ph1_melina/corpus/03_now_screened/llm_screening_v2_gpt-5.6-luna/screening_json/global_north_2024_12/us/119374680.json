@@ -1,0 +1,65 @@
+{
+  "article_id": "119374680",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_12/us/119374680.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_12/us/119374680.json"
+  },
+  "manifest_row": {
+    "article_id": "119374680",
+    "group": "global_north_2024_12",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2024_12/us/119374680.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "gaza_role": "passing",
+    "main_topic": "High school basketball game coverage",
+    "conflict_relevance": "Gaza appears only as a brief reference in a list of other reader-comment topics.",
+    "reason": "The article is primarily a local sports report. The only Gaza-related content is a passing mention of a need for U.S. intervention in Gaza within an unrelated roundup of popular stories and comments.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "85645996e1b73e9f759f09d203a07d682037258d8a90aebe283e2598d0b339a6",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "b667fe7405e607827a716a7ff74f03221fa5ab8487bd351e5d773dd54849dedd",
+    "raw_response_text_sha256": "21ee126a0adc296b74902a597fc5692732079af528f8d564dce5b030e1ca3d5d"
+  },
+  "api_metadata": {
+    "id": "resp_092684cd1af3f2a9006aaa1ece2d2087d2bcc10dc6a7c37312",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789533902.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1689,
+      "input_tokens_details": {
+        "cache_write_tokens": 1686,
+        "cached_tokens": 0
+      },
+      "output_tokens": 187,
+      "output_tokens_details": {
+        "reasoning_tokens": 52
+      },
+      "total_tokens": 1876
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"High school basketball game coverage\",\n  \"conflict_relevance\": \"Gaza appears only as a brief reference in a list of other reader-comment topics.\",\n  \"reason\": \"The article is primarily a local sports report. The only Gaza-related content is a passing mention of a need for U.S. intervention in Gaza within an unrelated roundup of popular stories and comments.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T04:45:04Z",
+  "duration_seconds": 2.716,
+  "error": null
+}

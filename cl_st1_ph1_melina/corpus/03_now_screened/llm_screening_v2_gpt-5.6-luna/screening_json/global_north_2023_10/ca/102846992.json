@@ -1,0 +1,65 @@
+{
+  "article_id": "102846992",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_10/ca/102846992.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_10/ca/102846992.json"
+  },
+  "manifest_row": {
+    "article_id": "102846992",
+    "group": "global_north_2023_10",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2023_10/ca/102846992.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "background",
+    "main_topic": "NHL hockey analysis, including team performance and player statistics",
+    "conflict_relevance": "The main article is unrelated to Gaza, but its embedded latest-stories section includes substantive reporting on the Israel-Hamas war, hostages, Gaza casualties, Israeli airstrikes, and wider regional conflict, as well as a political controversy involving support for Palestinians.",
+    "reason": "The headline article is centrally about NHL teams and performance. However, the appended news snippets contain meaningful conflict-related discourse, so the item is peripheral rather than excludable.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "0ba2ed220fa08868aadbeeb1a7dafc7ed1aa5fb752503cce00f463aeb2a64a9e",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "3d902bbbce46e66f238faf4d97c5d5bb425c6c7715d5620f94ac9796e4130191",
+    "raw_response_text_sha256": "73cfb111b6fc0a304767bff146bcfe13ec8277bbe0aa79a024d4a044ca1ebd40"
+  },
+  "api_metadata": {
+    "id": "resp_04d739487f67492d006aa9f6860d4887d29086d0f068d949e2",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789523590.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 3178,
+      "input_tokens_details": {
+        "cache_write_tokens": 3175,
+        "cached_tokens": 0
+      },
+      "output_tokens": 285,
+      "output_tokens_details": {
+        "reasoning_tokens": 112
+      },
+      "total_tokens": 3463
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"NHL hockey analysis, including team performance and player statistics\",\n  \"conflict_relevance\": \"The main article is unrelated to Gaza, but its embedded latest-stories section includes substantive reporting on the Israel-Hamas war, hostages, Gaza casualties, Israeli airstrikes, and wider regional conflict, as well as a political controversy involving support for Palestinians.\",\n  \"reason\": \"The headline article is centrally about NHL teams and performance. However, the appended news snippets contain meaningful conflict-related discourse, so the item is peripheral rather than excludable.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T01:53:13Z",
+  "duration_seconds": 3.369,
+  "error": null
+}

@@ -1,0 +1,65 @@
+{
+  "article_id": "120115819",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_01/gb/120115819.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_01/gb/120115819.json"
+  },
+  "manifest_row": {
+    "article_id": "120115819",
+    "group": "global_north_2025_01",
+    "country_code": "gb",
+    "filepath": "corpus/02_now_organised/global_north_2025_01/gb/120115819.txt"
+  },
+  "screening": {
+    "category": "CORE",
+    "confidence": 0.91,
+    "gaza_role": "substantial",
+    "main_topic": "US, British, and Israeli airstrikes on Yemen and Houthi attacks linked to the Gaza war",
+    "conflict_relevance": "The article directly connects Israeli and allied military action in Yemen to Houthi operations carried out in solidarity with Palestinians in Gaza, making the regional spillover of the Gaza conflict central to its framing.",
+    "reason": "Although the immediate focus is Yemen, the reported strikes, protests, and Red Sea attacks are explicitly presented as consequences of and responses to the war in Gaza and the Palestinian cause.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": true
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "30d58378a901b9ac1af5f062910aaff47a0c7ed6f1b115c14d0ae4ac49e6c879",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "8e15ae59a317e0bd116ca8a871afc4a35bebb90f778abfa6e5a3c7d093d95a51",
+    "raw_response_text_sha256": "11dc7062c9c678ed8b03704931aac24085b4972adee4027ab0421c94f0defcd6"
+  },
+  "api_metadata": {
+    "id": "resp_0f4bac5cc071c145006aaa1fa2c2b887d2b7629fe7f2ac2930",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789534114.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 920,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 386,
+      "output_tokens_details": {
+        "reasoning_tokens": 216
+      },
+      "total_tokens": 1306
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"CORE\",\n  \"confidence\": 0.91,\n  \"gaza_role\": \"substantial\",\n  \"main_topic\": \"US, British, and Israeli airstrikes on Yemen and Houthi attacks linked to the Gaza war\",\n  \"conflict_relevance\": \"The article directly connects Israeli and allied military action in Yemen to Houthi operations carried out in solidarity with Palestinians in Gaza, making the regional spillover of the Gaza conflict central to its framing.\",\n  \"reason\": \"Although the immediate focus is Yemen, the reported strikes, protests, and Red Sea attacks are explicitly presented as consequences of and responses to the war in Gaza and the Palestinian cause.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": true\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T04:48:39Z",
+  "duration_seconds": 5.039,
+  "error": null
+}

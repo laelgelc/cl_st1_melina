@@ -1,0 +1,65 @@
+{
+  "article_id": "105441830",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_01/gb/105441830.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_01/gb/105441830.json"
+  },
+  "manifest_row": {
+    "article_id": "105441830",
+    "group": "global_north_2024_01",
+    "country_code": "gb",
+    "filepath": "corpus/02_now_organised/global_north_2024_01/gb/105441830.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.93,
+    "gaza_role": "passing",
+    "main_topic": "Protest against the proposed expansion of Farnborough Airport and private jet emissions",
+    "conflict_relevance": "The main article is unrelated to Gaza or the Israel-Palestine conflict, but an embedded latest-news snippet briefly reports on a Palestinian woman attempting to reach safety in Rafah amid fighting in Gaza.",
+    "reason": "The article primarily concerns climate activism and private aviation. It contains one meaningful but isolated Gaza-related news item in a roundup section, making it peripheral rather than core.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "0b4b83df5e5b917b1422c1206d58f34cb65050de2e41cfb477f13cbd9240e4d7",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "dc81613f02bc6d853cd3634ce031d4a6782a625a8693d4c511b8fc08bd33ad1d",
+    "raw_response_text_sha256": "ecb8bca10234991fc5d5fe76578bc9ec55658013a5394fb4a09a48b54625efa0"
+  },
+  "api_metadata": {
+    "id": "resp_0b4cd3518624b37c006aaa0421e52087d28bed19989a282494",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789527073.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2199,
+      "input_tokens_details": {
+        "cache_write_tokens": 2196,
+        "cached_tokens": 0
+      },
+      "output_tokens": 304,
+      "output_tokens_details": {
+        "reasoning_tokens": 142
+      },
+      "total_tokens": 2503
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.93,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Protest against the proposed expansion of Farnborough Airport and private jet emissions\",\n  \"conflict_relevance\": \"The main article is unrelated to Gaza or the Israel-Palestine conflict, but an embedded latest-news snippet briefly reports on a Palestinian woman attempting to reach safety in Rafah amid fighting in Gaza.\",\n  \"reason\": \"The article primarily concerns climate activism and private aviation. It contains one meaningful but isolated Gaza-related news item in a roundup section, making it peripheral rather than core.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:51:17Z",
+  "duration_seconds": 4.171,
+  "error": null
+}

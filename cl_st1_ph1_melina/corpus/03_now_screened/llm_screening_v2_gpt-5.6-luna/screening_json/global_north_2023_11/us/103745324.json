@@ -1,0 +1,65 @@
+{
+  "article_id": "103745324",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_11/us/103745324.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_11/us/103745324.json"
+  },
+  "manifest_row": {
+    "article_id": "103745324",
+    "group": "global_north_2023_11",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2023_11/us/103745324.txt"
+  },
+  "screening": {
+    "category": "CORE",
+    "confidence": 0.99,
+    "gaza_role": "central",
+    "main_topic": "Israel-Hamas hostage deal and temporary pause in fighting",
+    "conflict_relevance": "The article directly covers the Israel-Hamas war, hostage releases, Palestinian prisoners, the temporary cessation of fighting, and humanitarian aid entering Gaza.",
+    "reason": "The article is centrally focused on a hostage-exchange agreement between Israel and Hamas and its implications for Gaza, including the pause in fighting, prisoner releases, and humanitarian assistance.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": true
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "e7e116f02adbb82c4b495a0af259f6568dcf66aa595a7b16db2aca76ab758a1e",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "c5f56eecb429d0cd4c943968f27c7d7ee92d053e2ce934fa7c42bc400d0ff805",
+    "raw_response_text_sha256": "8278d82be4c501068e3d1ab5342a7738a1d70dbe38964040160ee3db4a178671"
+  },
+  "api_metadata": {
+    "id": "resp_06f0b14c0d21e76b006aa9fee5df1487d2b8d5d70232ea436a",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789525733.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 820,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 191,
+      "output_tokens_details": {
+        "reasoning_tokens": 45
+      },
+      "total_tokens": 1011
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"CORE\",\n  \"confidence\": 0.99,\n  \"gaza_role\": \"central\",\n  \"main_topic\": \"Israel-Hamas hostage deal and temporary pause in fighting\",\n  \"conflict_relevance\": \"The article directly covers the Israel-Hamas war, hostage releases, Palestinian prisoners, the temporary cessation of fighting, and humanitarian aid entering Gaza.\",\n  \"reason\": \"The article is centrally focused on a hostage-exchange agreement between Israel and Hamas and its implications for Gaza, including the pause in fighting, prisoner releases, and humanitarian assistance.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": true\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:28:56Z",
+  "duration_seconds": 3.226,
+  "error": null
+}

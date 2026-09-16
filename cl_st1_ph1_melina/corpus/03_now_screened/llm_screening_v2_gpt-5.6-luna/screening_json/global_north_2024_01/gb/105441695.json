@@ -1,0 +1,65 @@
+{
+  "article_id": "105441695",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_01/gb/105441695.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_01/gb/105441695.json"
+  },
+  "manifest_row": {
+    "article_id": "105441695",
+    "group": "global_north_2024_01",
+    "country_code": "gb",
+    "filepath": "corpus/02_now_organised/global_north_2024_01/gb/105441695.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "gaza_role": "passing",
+    "main_topic": "BBC discussions about Huw Edwards's future following allegations involving sexually explicit images",
+    "conflict_relevance": "Gaza is mentioned only as part of a list of ongoing news events and is not discussed substantively.",
+    "reason": "The article focuses entirely on Huw Edwards, his suspension, the police assessment, and BBC staffing and election coverage. The reference to the ongoing wars in Gaza and Ukraine is incidental and provides no meaningful conflict-related discourse.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "b38f270041e3b773d905dbe8919c6a3dc843358fb16e84f0fa73afbe6d98200c",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "df2a74fe567e866f77757fc4d27ade4214d0896134ee31287682abd7c43a9efd",
+    "raw_response_text_sha256": "337cc176cdc70556c89ee069234b6e19edf3b24295a60d82ae4d2d054976fa62"
+  },
+  "api_metadata": {
+    "id": "resp_0546bb77f5301d0e006aaa0421c22c87d28c18c8d536f97d17",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789527073.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1225,
+      "input_tokens_details": {
+        "cache_write_tokens": 1222,
+        "cached_tokens": 0
+      },
+      "output_tokens": 220,
+      "output_tokens_details": {
+        "reasoning_tokens": 67
+      },
+      "total_tokens": 1445
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"BBC discussions about Huw Edwards's future following allegations involving sexually explicit images\",\n  \"conflict_relevance\": \"Gaza is mentioned only as part of a list of ongoing news events and is not discussed substantively.\",\n  \"reason\": \"The article focuses entirely on Huw Edwards, his suspension, the police assessment, and BBC staffing and election coverage. The reference to the ongoing wars in Gaza and Ukraine is incidental and provides no meaningful conflict-related discourse.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:51:16Z",
+  "duration_seconds": 2.732,
+  "error": null
+}

@@ -1,0 +1,65 @@
+{
+  "article_id": "91720419",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_11/us/91720419.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_11/us/91720419.json"
+  },
+  "manifest_row": {
+    "article_id": "91720419",
+    "group": "global_north_2023_11",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2023_11/us/91720419.txt"
+  },
+  "screening": {
+    "category": "CORE",
+    "confidence": 0.98,
+    "gaza_role": "substantial",
+    "main_topic": "Daily news podcast covering the Israel-Hamas war, Captagon allegations involving Hamas, US policy, and unrelated domestic and economic news",
+    "conflict_relevance": "The episode contains an extensive segment on Israeli military operations in Gaza, humanitarian conditions, casualties, hostages, Palestinian evacuations, humanitarian pauses, Islamophobia and antisemitism, as well as a substantial discussion of Hamas and the October 7 attacks.",
+    "reason": "Although the podcast is a multi-topic news roundup, its opening and longest substantive segment directly addresses the Gaza war and related political, humanitarian, security, and media discourses. This makes it relevant to the main corpus despite the inclusion of unrelated items.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": true
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "d2e1573692c7aa79026aa6aa4fffa2b6b5b09e395fecfb0718af456ce48fd809",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "7e05fb11929646e2cc4c9e5719c24d620cdfb77b2d9bf0147bd226b34aeba56b",
+    "raw_response_text_sha256": "e413744f1e0138be193f8ac2ce3c1127c73b52f6e6243898f62acaa5038df25c"
+  },
+  "api_metadata": {
+    "id": "resp_0ce7ad214bb12fc9006aa9ffc68b1887d2afaf0d12be5e7d0f",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789525958.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 3295,
+      "input_tokens_details": {
+        "cache_write_tokens": 3292,
+        "cached_tokens": 0
+      },
+      "output_tokens": 313,
+      "output_tokens_details": {
+        "reasoning_tokens": 114
+      },
+      "total_tokens": 3608
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"CORE\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"substantial\",\n  \"main_topic\": \"Daily news podcast covering the Israel-Hamas war, Captagon allegations involving Hamas, US policy, and unrelated domestic and economic news\",\n  \"conflict_relevance\": \"The episode contains an extensive segment on Israeli military operations in Gaza, humanitarian conditions, casualties, hostages, Palestinian evacuations, humanitarian pauses, Islamophobia and antisemitism, as well as a substantial discussion of Hamas and the October 7 attacks.\",\n  \"reason\": \"Although the podcast is a multi-topic news roundup, its opening and longest substantive segment directly addresses the Gaza war and related political, humanitarian, security, and media discourses. This makes it relevant to the main corpus despite the inclusion of unrelated items.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": true\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:32:43Z",
+  "duration_seconds": 4.824,
+  "error": null
+}

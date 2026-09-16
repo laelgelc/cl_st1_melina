@@ -1,0 +1,65 @@
+{
+  "article_id": "102823034",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_10/ca/102823034.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_10/ca/102823034.json"
+  },
+  "manifest_row": {
+    "article_id": "102823034",
+    "group": "global_north_2023_10",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2023_10/ca/102823034.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "gaza_role": "boilerplate_or_unrelated",
+    "main_topic": "A Canadian father's Lego building and recognition by Lego headquarters",
+    "conflict_relevance": "The main article is unrelated to Gaza or the Israel-Palestine conflict; conflict-related material appears only in a separate CTVNews.ca top-stories roundup.",
+    "reason": "The article concerns Lego building and a personal creative achievement. References to Gaza, Israel, Hezbollah, and related events occur only in unrelated embedded headline snippets and do not form part of the article's discourse.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "d5efdea8463d762b5b73721e7d548bdd18c6647b15494904237be63e9092fca4",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "697ece96e2aa731ecc20af93d9b7a8cd6c64ccba6fd51761dc1eba8841b693da",
+    "raw_response_text_sha256": "00bddb557430369302e01654afdef0ebf0f7cf4762f1e03c1102cda09a27c479"
+  },
+  "api_metadata": {
+    "id": "resp_0d2dcc000b12db2c006aa9f680833087d28a6a88cddc122c57",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789523584.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1597,
+      "input_tokens_details": {
+        "cache_write_tokens": 1594,
+        "cached_tokens": 0
+      },
+      "output_tokens": 237,
+      "output_tokens_details": {
+        "reasoning_tokens": 74
+      },
+      "total_tokens": 1834
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"gaza_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"A Canadian father's Lego building and recognition by Lego headquarters\",\n  \"conflict_relevance\": \"The main article is unrelated to Gaza or the Israel-Palestine conflict; conflict-related material appears only in a separate CTVNews.ca top-stories roundup.\",\n  \"reason\": \"The article concerns Lego building and a personal creative achievement. References to Gaza, Israel, Hezbollah, and related events occur only in unrelated embedded headline snippets and do not form part of the article's discourse.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T01:53:06Z",
+  "duration_seconds": 2.381,
+  "error": null
+}

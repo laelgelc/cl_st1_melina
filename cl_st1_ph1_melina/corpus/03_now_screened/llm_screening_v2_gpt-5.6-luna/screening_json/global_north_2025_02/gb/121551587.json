@@ -1,0 +1,65 @@
+{
+  "article_id": "121551587",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_02/gb/121551587.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_02/gb/121551587.json"
+  },
+  "manifest_row": {
+    "article_id": "121551587",
+    "group": "global_north_2025_02",
+    "country_code": "gb",
+    "filepath": "corpus/02_now_organised/global_north_2025_02/gb/121551587.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "background",
+    "main_topic": "A playful live television exchange between BBC Breakfast and Saturday Kitchen presenters",
+    "conflict_relevance": "The article includes a substantive but secondary report about a breaking-news interruption to cover a Gaza hostage and Palestinian prisoner exchange.",
+    "reason": "The main subject is television presenter banter, while Gaza appears in several sentences describing the imminent hostage handover and the release of Palestinian prisoners. This is meaningful conflict-related discourse but not the article's central focus.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "b5fbf5da5d87177f9acfd1393ff19822f6109b7ca0507f03ac4621baac5fe66d",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "e19772a98476b2610e67e084dd400b528292c3953545cf2307a2e1a2440eec8e",
+    "raw_response_text_sha256": "e5432b3727e9389aaf91c768b055bd1dd4142a818943c3dfb0fdbe6392b95215"
+  },
+  "api_metadata": {
+    "id": "resp_0d60eded1e9565b2006aaa233111f887d2b39ce5f0bd73afa6",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789535025.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1125,
+      "input_tokens_details": {
+        "cache_write_tokens": 1122,
+        "cached_tokens": 0
+      },
+      "output_tokens": 256,
+      "output_tokens_details": {
+        "reasoning_tokens": 103
+      },
+      "total_tokens": 1381
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"A playful live television exchange between BBC Breakfast and Saturday Kitchen presenters\",\n  \"conflict_relevance\": \"The article includes a substantive but secondary report about a breaking-news interruption to cover a Gaza hostage and Palestinian prisoner exchange.\",\n  \"reason\": \"The main subject is television presenter banter, while Gaza appears in several sentences describing the imminent hostage handover and the release of Palestinian prisoners. This is meaningful conflict-related discourse but not the article's central focus.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T05:03:49Z",
+  "duration_seconds": 4.182,
+  "error": null
+}

@@ -1,0 +1,65 @@
+{
+  "article_id": "106644019",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_south_2024_03/ng/106644019.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_south_2024_03/ng/106644019.json"
+  },
+  "manifest_row": {
+    "article_id": "106644019",
+    "group": "global_south_2024_03",
+    "country_code": "ng",
+    "filepath": "corpus/02_now_organised/global_south_2024_03/ng/106644019.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "gaza_role": "boilerplate_or_unrelated",
+    "main_topic": "Nigerian cement price increases and legislative investigation",
+    "conflict_relevance": "The only reference to Gaza is part of the name of a Nigerian lawmaker and has no connection to Gaza, Palestine, or the Israel-Palestine conflict.",
+    "reason": "This article is entirely about cement prices and a Nigerian House of Representatives investigation; the Gaza-related term is an unrelated personal name.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "f1bb2cf8046e5b113100f319d062ee47157df20f9bf01e0cf1ce36c91e3132eb",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "ecbb5800d8c0b0abed33f5bc0a137cf1f118983767a4d3eb0e171465ff9badfa",
+    "raw_response_text_sha256": "03d4983b3be1be3fef8d0ddea418e231eedd0c93bd20e00a984b2a96fdab7a0f"
+  },
+  "api_metadata": {
+    "id": "resp_0e00ef1af64b7a66006aaa39a9a70087d18b0d5c33d24e3ce0",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789540777.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1126,
+      "input_tokens_details": {
+        "cache_write_tokens": 1123,
+        "cached_tokens": 0
+      },
+      "output_tokens": 196,
+      "output_tokens_details": {
+        "reasoning_tokens": 49
+      },
+      "total_tokens": 1322
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"gaza_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Nigerian cement price increases and legislative investigation\",\n  \"conflict_relevance\": \"The only reference to Gaza is part of the name of a Nigerian lawmaker and has no connection to Gaza, Palestine, or the Israel-Palestine conflict.\",\n  \"reason\": \"This article is entirely about cement prices and a Nigerian House of Representatives investigation; the Gaza-related term is an unrelated personal name.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T06:39:40Z",
+  "duration_seconds": 2.757,
+  "error": null
+}

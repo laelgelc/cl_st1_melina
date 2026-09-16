@@ -1,0 +1,65 @@
+{
+  "article_id": "102716078",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_10/gb/102716078.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_10/gb/102716078.json"
+  },
+  "manifest_row": {
+    "article_id": "102716078",
+    "group": "global_north_2023_10",
+    "country_code": "gb",
+    "filepath": "corpus/02_now_organised/global_north_2023_10/gb/102716078.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.88,
+    "gaza_role": "background",
+    "main_topic": "Reported antisemitic incidents in Greater Manchester following the Hamas attack and ensuing Israel-Gaza war",
+    "conflict_relevance": "The article meaningfully connects local antisemitism, anti-Israel and pro-Palestinian rhetoric, and concerns about conflict-related tensions spilling into UK communities. It also provides substantial background on the Gaza humanitarian crisis and Israeli military action, but its primary focus is domestic antisemitism rather than the conflict itself.",
+    "reason": "The conflict is an important context for the article and shapes its discussion of antisemitism, Islamophobia, public safety, and political responses. However, the main subject is the reporting of antisemitic incidents in Greater Manchester, making it peripheral rather than core conflict coverage.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "a712225c0520b566845ffdf445f67c3c0520efd10a894163549d0a0f9d4d7e20",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "de21dec75e3e1b58f4d5291ad493692c8e7e10b72dfd3b4d8d3c82925482abde",
+    "raw_response_text_sha256": "546129e66b6c1485d45415b82b07266a233e5c58571b6da3a3d36cf27d1b5d4f"
+  },
+  "api_metadata": {
+    "id": "resp_05764f96be07364b006aa9f74550c087d28d8d8136e604e23f",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789523781.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1685,
+      "input_tokens_details": {
+        "cache_write_tokens": 1682,
+        "cached_tokens": 0
+      },
+      "output_tokens": 440,
+      "output_tokens_details": {
+        "reasoning_tokens": 230
+      },
+      "total_tokens": 2125
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.88,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Reported antisemitic incidents in Greater Manchester following the Hamas attack and ensuing Israel-Gaza war\",\n  \"conflict_relevance\": \"The article meaningfully connects local antisemitism, anti-Israel and pro-Palestinian rhetoric, and concerns about conflict-related tensions spilling into UK communities. It also provides substantial background on the Gaza humanitarian crisis and Israeli military action, but its primary focus is domestic antisemitism rather than the conflict itself.\",\n  \"reason\": \"The conflict is an important context for the article and shapes its discussion of antisemitism, Islamophobia, public safety, and political responses. However, the main subject is the reporting of antisemitic incidents in Greater Manchester, making it peripheral rather than core conflict coverage.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T01:56:25Z",
+  "duration_seconds": 4.739,
+  "error": null
+}

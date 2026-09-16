@@ -1,0 +1,65 @@
+{
+  "article_id": "105918364",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_02/nz/105918364.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_02/nz/105918364.json"
+  },
+  "manifest_row": {
+    "article_id": "105918364",
+    "group": "global_north_2024_02",
+    "country_code": "nz",
+    "filepath": "corpus/02_now_organised/global_north_2024_02/nz/105918364.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "background",
+    "main_topic": "New Zealand government environmental expenditure and budget priorities",
+    "conflict_relevance": "The main article concerns environmental spending, but embedded material includes commentary on the New Zealand government's positioning on Gaza and an announcement of humanitarian aid for Gaza and the West Bank.",
+    "reason": "Gaza is not relevant to the headline article itself, but the text contains meaningful conflict-related snippets concerning political discourse and humanitarian assistance. These snippets make the item peripheral rather than excludable.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "bc48346701003c9cf23ff0e32df8871ba95ab9a171e2ab96c439d87917487431",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "204fe916722f5764f7c32b35963dbc54cfd52509154d90a1160e1b53ad2359ec",
+    "raw_response_text_sha256": "eb38013ad86ab84a91997da8024a450727c1183d032640f544835ac40a94841b"
+  },
+  "api_metadata": {
+    "id": "resp_06b12b26964bdab6006aaa06bb956487d2ad0e0017fd4ad830",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789527739.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1497,
+      "input_tokens_details": {
+        "cache_write_tokens": 1494,
+        "cached_tokens": 0
+      },
+      "output_tokens": 245,
+      "output_tokens_details": {
+        "reasoning_tokens": 90
+      },
+      "total_tokens": 1742
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"New Zealand government environmental expenditure and budget priorities\",\n  \"conflict_relevance\": \"The main article concerns environmental spending, but embedded material includes commentary on the New Zealand government's positioning on Gaza and an announcement of humanitarian aid for Gaza and the West Bank.\",\n  \"reason\": \"Gaza is not relevant to the headline article itself, but the text contains meaningful conflict-related snippets concerning political discourse and humanitarian assistance. These snippets make the item peripheral rather than excludable.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:02:31Z",
+  "duration_seconds": 12.594,
+  "error": null
+}

@@ -1,0 +1,65 @@
+{
+  "article_id": "113878381",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_09/us/113878381.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_09/us/113878381.json"
+  },
+  "manifest_row": {
+    "article_id": "113878381",
+    "group": "global_north_2024_09",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2024_09/us/113878381.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "gaza_role": "passing",
+    "main_topic": "Avian influenza and the public-health risks of H5N1",
+    "conflict_relevance": "Gaza is mentioned only as one of several competing news stories that distracted attention from a bird-flu update.",
+    "reason": "The article is entirely about bird flu, with a single incidental reference to the war in Gaza and no substantive discussion of the conflict or related discourse.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "fea45a2e94ca03723577c54fbf3e1ed5fb092fb7503eff3b5145ba9dd0db360c",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "5f798feebb17c02da4b21431489633da5a97cbbff2b76fb1c946f1a9cfffb6ff",
+    "raw_response_text_sha256": "725150c25c2d862210ad019db03bb68f900c24bf10a366c883c1a406da0eef9b"
+  },
+  "api_metadata": {
+    "id": "resp_0ea8679529307fb8006aaa16ed19d087d2a7313881bfc80fc4",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789531885.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1735,
+      "input_tokens_details": {
+        "cache_write_tokens": 1732,
+        "cached_tokens": 0
+      },
+      "output_tokens": 181,
+      "output_tokens_details": {
+        "reasoning_tokens": 42
+      },
+      "total_tokens": 1916
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Avian influenza and the public-health risks of H5N1\",\n  \"conflict_relevance\": \"Gaza is mentioned only as one of several competing news stories that distracted attention from a bird-flu update.\",\n  \"reason\": \"The article is entirely about bird flu, with a single incidental reference to the war in Gaza and no substantive discussion of the conflict or related discourse.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T04:11:27Z",
+  "duration_seconds": 2.45,
+  "error": null
+}

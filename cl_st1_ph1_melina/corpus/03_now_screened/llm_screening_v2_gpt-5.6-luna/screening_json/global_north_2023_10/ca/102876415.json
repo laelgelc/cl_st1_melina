@@ -1,0 +1,65 @@
+{
+  "article_id": "102876415",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_10/ca/102876415.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_10/ca/102876415.json"
+  },
+  "manifest_row": {
+    "article_id": "102876415",
+    "group": "global_north_2023_10",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2023_10/ca/102876415.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.97,
+    "gaza_role": "background",
+    "main_topic": "Early-season statistical trends and player performances in the NHL",
+    "conflict_relevance": "The article contains unrelated embedded news snippets about China’s Middle East diplomacy and Canada’s support for humanitarian pauses in the Israel-Hamas conflict.",
+    "reason": "The main article is entirely about NHL teams and players, but it includes meaningful though disconnected references to Israel-Hamas peace talks and humanitarian aid into Gaza. These embedded items make it peripheral rather than excludable.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "1e1a46ef05dc2f4a4d0c15faca164ddf6f682a0ab8d1a671fd8f4fed701c1190",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "9541af899924d810d05e35e6bdfb944aeb0fc30661bbef1afe9346a915916019",
+    "raw_response_text_sha256": "743799b7ca88c3604819c971f1b0e8a4838b33b7dc4ecc918d7a07c6ebf98589"
+  },
+  "api_metadata": {
+    "id": "resp_079f1782f375eae0006aa9f68c7e7c87d29e7cb00a9c1a7b95",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789523596.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 3070,
+      "input_tokens_details": {
+        "cache_write_tokens": 3067,
+        "cached_tokens": 0
+      },
+      "output_tokens": 319,
+      "output_tokens_details": {
+        "reasoning_tokens": 164
+      },
+      "total_tokens": 3389
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.97,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Early-season statistical trends and player performances in the NHL\",\n  \"conflict_relevance\": \"The article contains unrelated embedded news snippets about China’s Middle East diplomacy and Canada’s support for humanitarian pauses in the Israel-Hamas conflict.\",\n  \"reason\": \"The main article is entirely about NHL teams and players, but it includes meaningful though disconnected references to Israel-Hamas peace talks and humanitarian aid into Gaza. These embedded items make it peripheral rather than excludable.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T01:53:20Z",
+  "duration_seconds": 3.774,
+  "error": null
+}

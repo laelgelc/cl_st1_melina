@@ -1,0 +1,65 @@
+{
+  "article_id": "103354185",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_11/ie/103354185.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_11/ie/103354185.json"
+  },
+  "manifest_row": {
+    "article_id": "103354185",
+    "group": "global_north_2023_11",
+    "country_code": "ie",
+    "filepath": "corpus/02_now_organised/global_north_2023_11/ie/103354185.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.93,
+    "gaza_role": "passing",
+    "main_topic": "A roundup of miscellaneous daily news stories",
+    "conflict_relevance": "Includes a substantive but brief item on civilian suffering in Gaza, Israeli strikes near hospitals, Iran's warnings, and the risk of regional escalation.",
+    "reason": "The article is primarily a short multi-story news roundup unrelated to the Israel-Palestine conflict. However, its Gaza item contains meaningful conflict-related discourse, making it peripheral rather than excludable.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "fa4f3d3b99b7c8b5c3a26080e3c401f5f87400b0f79c33fce6f99c4795ef1ec5",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "13cc432c58e84abd4a1a58d08ad0630636e62dc558701e06ae4acfbe16ec1232",
+    "raw_response_text_sha256": "d8b20388dae7e0bc96607eccd61424bb7d4f89b054819f4149e9af6a7bfca4da"
+  },
+  "api_metadata": {
+    "id": "resp_0c8a2b22debd60c3006aa9fd828bc087d2b6f208bd47a6ada2",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789525378.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1269,
+      "input_tokens_details": {
+        "cache_write_tokens": 1266,
+        "cached_tokens": 0
+      },
+      "output_tokens": 320,
+      "output_tokens_details": {
+        "reasoning_tokens": 169
+      },
+      "total_tokens": 1589
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.93,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"A roundup of miscellaneous daily news stories\",\n  \"conflict_relevance\": \"Includes a substantive but brief item on civilian suffering in Gaza, Israeli strikes near hospitals, Iran's warnings, and the risk of regional escalation.\",\n  \"reason\": \"The article is primarily a short multi-story news roundup unrelated to the Israel-Palestine conflict. However, its Gaza item contains meaningful conflict-related discourse, making it peripheral rather than excludable.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:23:04Z",
+  "duration_seconds": 5.854,
+  "error": null
+}

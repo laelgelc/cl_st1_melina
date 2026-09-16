@@ -1,0 +1,65 @@
+{
+  "article_id": "120351895",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_01/ca/120351895.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_01/ca/120351895.json"
+  },
+  "manifest_row": {
+    "article_id": "120351895",
+    "group": "global_north_2025_01",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2025_01/ca/120351895.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "passing",
+    "main_topic": "Justin Trudeau's visit to Auschwitz and Holocaust remembrance events",
+    "conflict_relevance": "The article is primarily about Holocaust commemoration and Canadian-Polish relations, but includes a meaningful reference to Benjamin Netanyahu, an International Criminal Court warrant, and alleged crimes against humanity in Gaza.",
+    "reason": "Gaza is not central to the article, but the reference to Netanyahu and the ICC warrant constitutes relevant discourse connected to the Israel-Gaza conflict. The article also contains apparent subscription and unrelated inserted text.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "bf1933cf2da90ad69de190a360fbb26bd5f132574fa46cee94ebdc6fc68ec780",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "c341fee61f15be42635f0b5a0e397ea501faee0cf3e1f490a64130f4b5fe229f",
+    "raw_response_text_sha256": "03bdc48905237c7a7099fb8614a46399a49cc7b5b56ca66065ae6e60ea05db9c"
+  },
+  "api_metadata": {
+    "id": "resp_0ec210390ea3f1e4006aaa1f3baabc87d286bbdf100583b004",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789534011.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1023,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 245,
+      "output_tokens_details": {
+        "reasoning_tokens": 80
+      },
+      "total_tokens": 1268
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Justin Trudeau's visit to Auschwitz and Holocaust remembrance events\",\n  \"conflict_relevance\": \"The article is primarily about Holocaust commemoration and Canadian-Polish relations, but includes a meaningful reference to Benjamin Netanyahu, an International Criminal Court warrant, and alleged crimes against humanity in Gaza.\",\n  \"reason\": \"Gaza is not central to the article, but the reference to Netanyahu and the ICC warrant constitutes relevant discourse connected to the Israel-Gaza conflict. The article also contains apparent subscription and unrelated inserted text.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T04:46:54Z",
+  "duration_seconds": 3.279,
+  "error": null
+}

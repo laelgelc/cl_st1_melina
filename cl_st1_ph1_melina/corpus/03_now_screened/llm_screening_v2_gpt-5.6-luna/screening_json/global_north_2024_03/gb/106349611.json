@@ -1,0 +1,65 @@
+{
+  "article_id": "106349611",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_03/gb/106349611.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_03/gb/106349611.json"
+  },
+  "manifest_row": {
+    "article_id": "106349611",
+    "group": "global_north_2024_03",
+    "country_code": "gb",
+    "filepath": "corpus/02_now_organised/global_north_2024_03/gb/106349611.txt"
+  },
+  "screening": {
+    "category": "CORE",
+    "confidence": 0.99,
+    "gaza_role": "central",
+    "main_topic": "US humanitarian air aid drop to Gaza amid food shortages",
+    "conflict_relevance": "Direct coverage of humanitarian conditions in Gaza, the delivery of aid, civilian deaths while collecting supplies, and the Israel-Hamas war.",
+    "reason": "The leading article is centrally about the US airlifting food aid into Gaza during the war and humanitarian crisis. Although the text also contains numerous unrelated news snippets, the primary headline and associated material are directly relevant to the Gaza conflict.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": true
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "7df690cb759bddcce2851fb9c22750a8d0adfb3eca1464cfa73409cad981b5d1",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "c127c5a60e9fe0885f270abd655fd58eedfdf256a5ae910b8aef620e86d35922",
+    "raw_response_text_sha256": "2d000da169272cf200ae425dd98878735ca2033917f77ff3134d01c5da822a2d"
+  },
+  "api_metadata": {
+    "id": "resp_081e3f4bdcd42a20006aaa0894afbc87d28ac06297cc9f89e3",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789528212.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 23990,
+      "input_tokens_details": {
+        "cache_write_tokens": 23987,
+        "cached_tokens": 0
+      },
+      "output_tokens": 230,
+      "output_tokens_details": {
+        "reasoning_tokens": 75
+      },
+      "total_tokens": 24220
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"CORE\",\n  \"confidence\": 0.99,\n  \"gaza_role\": \"central\",\n  \"main_topic\": \"US humanitarian air aid drop to Gaza amid food shortages\",\n  \"conflict_relevance\": \"Direct coverage of humanitarian conditions in Gaza, the delivery of aid, civilian deaths while collecting supplies, and the Israel-Hamas war.\",\n  \"reason\": \"The leading article is centrally about the US airlifting food aid into Gaza during the war and humanitarian crisis. Although the text also contains numerous unrelated news snippets, the primary headline and associated material are directly relevant to the Gaza conflict.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": true\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:10:15Z",
+  "duration_seconds": 2.851,
+  "error": null
+}

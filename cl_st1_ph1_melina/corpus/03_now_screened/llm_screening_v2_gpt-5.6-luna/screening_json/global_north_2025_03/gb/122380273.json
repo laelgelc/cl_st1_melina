@@ -1,0 +1,65 @@
+{
+  "article_id": "122380273",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_03/gb/122380273.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_03/gb/122380273.json"
+  },
+  "manifest_row": {
+    "article_id": "122380273",
+    "group": "global_north_2025_03",
+    "country_code": "gb",
+    "filepath": "corpus/02_now_organised/global_north_2025_03/gb/122380273.txt"
+  },
+  "screening": {
+    "category": "CORE",
+    "confidence": 0.99,
+    "gaza_role": "central",
+    "main_topic": "Israel briefing covering Gaza ceasefire negotiations, hostage releases, humanitarian conditions, alleged violations, and related Israeli political and regional developments",
+    "conflict_relevance": "The article directly reports on Gaza ceasefire proposals, Hamas-Israel negotiations, hostages, Palestinian prisoners, humanitarian aid, Israeli military actions, allegations of genocidal acts, and possible relocation of Gazans.",
+    "reason": "Gaza and the Israel-Hamas conflict are the central focus of the briefing, despite the inclusion of several additional Israel-related news items.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": true
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "5f8b03116070cd97e2049e2527c4a64a02d0779dec07a670b8f67933ced0a3a5",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "4acd4943961d8d96777fbcca3b0564834db6382bc8a4dff421c66ce43a3593e7",
+    "raw_response_text_sha256": "9771f8ea356438289d7cf7b9d547c9b87f8302d12e5a2b5f51309705a929cd9b"
+  },
+  "api_metadata": {
+    "id": "resp_0b7c8fedef4fc7ee006aaa261b1d0c87d1960c370a621b4d7f",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789535771.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1976,
+      "input_tokens_details": {
+        "cache_write_tokens": 1973,
+        "cached_tokens": 0
+      },
+      "output_tokens": 273,
+      "output_tokens_details": {
+        "reasoning_tokens": 107
+      },
+      "total_tokens": 2249
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"CORE\",\n  \"confidence\": 0.99,\n  \"gaza_role\": \"central\",\n  \"main_topic\": \"Israel briefing covering Gaza ceasefire negotiations, hostage releases, humanitarian conditions, alleged violations, and related Israeli political and regional developments\",\n  \"conflict_relevance\": \"The article directly reports on Gaza ceasefire proposals, Hamas-Israel negotiations, hostages, Palestinian prisoners, humanitarian aid, Israeli military actions, allegations of genocidal acts, and possible relocation of Gazans.\",\n  \"reason\": \"Gaza and the Israel-Hamas conflict are the central focus of the briefing, despite the inclusion of several additional Israel-related news items.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": true\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T05:16:14Z",
+  "duration_seconds": 4.002,
+  "error": null
+}

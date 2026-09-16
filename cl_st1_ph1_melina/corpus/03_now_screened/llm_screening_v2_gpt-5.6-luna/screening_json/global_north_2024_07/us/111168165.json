@@ -1,0 +1,65 @@
+{
+  "article_id": "111168165",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_07/us/111168165.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_07/us/111168165.json"
+  },
+  "manifest_row": {
+    "article_id": "111168165",
+    "group": "global_north_2024_07",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2024_07/us/111168165.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "gaza_role": "passing",
+    "main_topic": "Masculinity, gender norms, and Republican politics in the 2024 U.S. presidential election",
+    "conflict_relevance": "The article includes only a brief roundup-style sentence noting that Benjamin Netanyahu defended the Gaza war in a speech to Congress; Gaza is not discussed in the main article.",
+    "reason": "The main article concerns masculinity and U.S. political candidates. The Gaza reference appears as an unrelated embedded news item and provides no substantive conflict discourse.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "43dac08411a7877478ff70b9bd0ac4c745896c3038393c1c99cad16aac6478ce",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "34ef659318ab9bd69611dee49fd8d5073c4877105892ed5fea97ef22eb80cb3e",
+    "raw_response_text_sha256": "ad4297018bdbc7c31cf5fc2e2251135645168de261d26de60829759649460c9b"
+  },
+  "api_metadata": {
+    "id": "resp_00449b81f0a13da8006aaa136d719487d2bdaf70e65692b630",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789530989.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2599,
+      "input_tokens_details": {
+        "cache_write_tokens": 2596,
+        "cached_tokens": 0
+      },
+      "output_tokens": 251,
+      "output_tokens_details": {
+        "reasoning_tokens": 94
+      },
+      "total_tokens": 2850
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Masculinity, gender norms, and Republican politics in the 2024 U.S. presidential election\",\n  \"conflict_relevance\": \"The article includes only a brief roundup-style sentence noting that Benjamin Netanyahu defended the Gaza war in a speech to Congress; Gaza is not discussed in the main article.\",\n  \"reason\": \"The main article concerns masculinity and U.S. political candidates. The Gaza reference appears as an unrelated embedded news item and provides no substantive conflict discourse.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:56:33Z",
+  "duration_seconds": 4.15,
+  "error": null
+}

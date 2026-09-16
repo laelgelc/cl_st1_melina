@@ -1,0 +1,65 @@
+{
+  "article_id": "106423862",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_03/gb/106423862.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_03/gb/106423862.json"
+  },
+  "manifest_row": {
+    "article_id": "106423862",
+    "group": "global_north_2024_03",
+    "country_code": "gb",
+    "filepath": "corpus/02_now_organised/global_north_2024_03/gb/106423862.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.96,
+    "gaza_role": "background",
+    "main_topic": "Princess of Wales's recovery and the Army's unauthorized announcement of her possible attendance at Trooping the Colour",
+    "conflict_relevance": "The article includes an unrelated embedded snippet about the difficulty of BBC coverage of the Israel-Hamas war and reporting access to Gaza.",
+    "reason": "The headline article is about the British royal family, but it contains a meaningful, albeit disconnected, passage concerning media impartiality and Gaza coverage. This makes it peripheral rather than core conflict material.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "51e4a1b0dd4065591369b0aeecd98fa0d003480d25b4a44fbee341d6abf33e00",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "6c5c8d275ba2af7780725acc79b33d6db294f8438504e8cabe4b46d321cd4ab0",
+    "raw_response_text_sha256": "dc403f8bb720c6976e355f40ffc20b09e94c2a751f08f86ab56e1238cf46edd2"
+  },
+  "api_metadata": {
+    "id": "resp_0b32d82efde46b05006aaa08a0f61487d2be1cc8e5e62b8e79",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789528225.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1308,
+      "input_tokens_details": {
+        "cache_write_tokens": 1305,
+        "cached_tokens": 0
+      },
+      "output_tokens": 305,
+      "output_tokens_details": {
+        "reasoning_tokens": 146
+      },
+      "total_tokens": 1613
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.96,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Princess of Wales's recovery and the Army's unauthorized announcement of her possible attendance at Trooping the Colour\",\n  \"conflict_relevance\": \"The article includes an unrelated embedded snippet about the difficulty of BBC coverage of the Israel-Hamas war and reporting access to Gaza.\",\n  \"reason\": \"The headline article is about the British royal family, but it contains a meaningful, albeit disconnected, passage concerning media impartiality and Gaza coverage. This makes it peripheral rather than core conflict material.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:10:29Z",
+  "duration_seconds": 4.572,
+  "error": null
+}

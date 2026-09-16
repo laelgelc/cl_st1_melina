@@ -1,0 +1,65 @@
+{
+  "article_id": "123277484",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_04/ie/123277484.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_04/ie/123277484.json"
+  },
+  "manifest_row": {
+    "article_id": "123277484",
+    "group": "global_north_2025_04",
+    "country_code": "ie",
+    "filepath": "corpus/02_now_organised/global_north_2025_04/ie/123277484.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.96,
+    "gaza_role": "background",
+    "main_topic": "U.S. tariffs, global market turmoil, and recession risks",
+    "conflict_relevance": "The liveblog is primarily about tariffs and financial markets, but it includes substantive reporting on Netanyahu's White House visit, the Gaza war, hostages, ceasefire developments, and renewed military action.",
+    "reason": "The conflict-related material is meaningful but embedded within a broader live news roundup focused on trade policy and economic repercussions, so the article is useful for peripheral discourse analysis rather than the main conflict corpus.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "191bb903b18f1cd921f2ceab903f2e2df53d5b313249f4a74f7dc6cb893ca1c2",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "963bf98905a4a555ae4b8610c04e7ab22fc2a94a85dbea2cd8067328b526be21",
+    "raw_response_text_sha256": "33135d245615ae6bed8a27a880b741cc46746f02c3896815a0fb6159f178b26d"
+  },
+  "api_metadata": {
+    "id": "resp_01d5fd1fffddc9b3006aaa296a9c8487d1890966be3fa59a7b",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789536618.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 7854,
+      "input_tokens_details": {
+        "cache_write_tokens": 7851,
+        "cached_tokens": 0
+      },
+      "output_tokens": 280,
+      "output_tokens_details": {
+        "reasoning_tokens": 115
+      },
+      "total_tokens": 8134
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.96,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"U.S. tariffs, global market turmoil, and recession risks\",\n  \"conflict_relevance\": \"The liveblog is primarily about tariffs and financial markets, but it includes substantive reporting on Netanyahu's White House visit, the Gaza war, hostages, ceasefire developments, and renewed military action.\",\n  \"reason\": \"The conflict-related material is meaningful but embedded within a broader live news roundup focused on trade policy and economic repercussions, so the article is useful for peripheral discourse analysis rather than the main conflict corpus.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T05:30:22Z",
+  "duration_seconds": 4.176,
+  "error": null
+}

@@ -1,0 +1,65 @@
+{
+  "article_id": "108218211",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_05/ca/108218211.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_05/ca/108218211.json"
+  },
+  "manifest_row": {
+    "article_id": "108218211",
+    "group": "global_north_2024_05",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2024_05/ca/108218211.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "gaza_role": "boilerplate_or_unrelated",
+    "main_topic": "Impaired-driving collision involving a Windsor police cruiser",
+    "conflict_relevance": "The main article concerns a local traffic collision and has no substantive connection to Gaza or the Israel-Palestine conflict.",
+    "reason": "Gaza appears only in an unrelated roundup snippet about a Toronto mayor declining to attend an Israel Independence Day ceremony; it is not part of the main article.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "b9eb753f1d0f746de18cd087ffd3b433b2bf4176d767056a9c344a4f8620fc6e",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "2724082baf74cd64e826de62be127c3a1f695126c943c6cee0dce7794254ec66",
+    "raw_response_text_sha256": "0395ef579a238422611a5cc86d3cb304339cb643b3263db5ffb0386362341a8a"
+  },
+  "api_metadata": {
+    "id": "resp_0eeef8ce67a5a1fa006aaa0d9c6b8c87d2bfec51718a65edba",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789529500.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1288,
+      "input_tokens_details": {
+        "cache_write_tokens": 1285,
+        "cached_tokens": 0
+      },
+      "output_tokens": 224,
+      "output_tokens_details": {
+        "reasoning_tokens": 80
+      },
+      "total_tokens": 1512
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"gaza_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Impaired-driving collision involving a Windsor police cruiser\",\n  \"conflict_relevance\": \"The main article concerns a local traffic collision and has no substantive connection to Gaza or the Israel-Palestine conflict.\",\n  \"reason\": \"Gaza appears only in an unrelated roundup snippet about a Toronto mayor declining to attend an Israel Independence Day ceremony; it is not part of the main article.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:31:43Z",
+  "duration_seconds": 3.118,
+  "error": null
+}

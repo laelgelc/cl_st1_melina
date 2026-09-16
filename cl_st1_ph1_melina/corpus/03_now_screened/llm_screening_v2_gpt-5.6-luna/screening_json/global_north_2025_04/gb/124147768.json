@@ -1,0 +1,65 @@
+{
+  "article_id": "124147768",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_04/gb/124147768.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_04/gb/124147768.json"
+  },
+  "manifest_row": {
+    "article_id": "124147768",
+    "group": "global_north_2025_04",
+    "country_code": "gb",
+    "filepath": "corpus/02_now_organised/global_north_2025_04/gb/124147768.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.96,
+    "gaza_role": "passing",
+    "main_topic": "Daily news roundup covering US politics, UK climate policy, crime, science, history, and media",
+    "conflict_relevance": "Includes a substantive newspaper headline reference to the Israeli blockade of Gaza, aid restrictions, and child malnutrition, but Gaza is not the focus of the roundup.",
+    "reason": "The article is a multi-item news digest centered on unrelated topics. Its Gaza content is limited to a brief but meaningful summary of humanitarian conditions caused by the Israeli blockade, making it peripheral rather than core.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "8492815f2d51a997b7d753aa800120e359caf5d305d16b14d4302e71b553c493",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "b6697c9b3f894ff3c86aaf41438385e0fefd6d0e2bd27cd92ba1daf3096ff7d1",
+    "raw_response_text_sha256": "51c2fb285a295a3562665eedd683aa601cd968701c1e4d11c1464670d830c559"
+  },
+  "api_metadata": {
+    "id": "resp_0825422af7d541ce006aaa2957d88087d1a0046f4d9b62c4d5",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789536599.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2216,
+      "input_tokens_details": {
+        "cache_write_tokens": 2213,
+        "cached_tokens": 0
+      },
+      "output_tokens": 285,
+      "output_tokens_details": {
+        "reasoning_tokens": 119
+      },
+      "total_tokens": 2501
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.96,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Daily news roundup covering US politics, UK climate policy, crime, science, history, and media\",\n  \"conflict_relevance\": \"Includes a substantive newspaper headline reference to the Israeli blockade of Gaza, aid restrictions, and child malnutrition, but Gaza is not the focus of the roundup.\",\n  \"reason\": \"The article is a multi-item news digest centered on unrelated topics. Its Gaza content is limited to a brief but meaningful summary of humanitarian conditions caused by the Israeli blockade, making it peripheral rather than core.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T05:30:03Z",
+  "duration_seconds": 3.658,
+  "error": null
+}

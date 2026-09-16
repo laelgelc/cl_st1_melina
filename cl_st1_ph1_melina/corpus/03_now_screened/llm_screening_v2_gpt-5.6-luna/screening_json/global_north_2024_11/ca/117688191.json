@@ -1,0 +1,65 @@
+{
+  "article_id": "117688191",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_11/ca/117688191.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_11/ca/117688191.json"
+  },
+  "manifest_row": {
+    "article_id": "117688191",
+    "group": "global_north_2024_11",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2024_11/ca/117688191.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.96,
+    "gaza_role": "background",
+    "main_topic": "Entertainment interview about the television series Cross and actor Samantha Walkes",
+    "conflict_relevance": "The main article is unrelated to the conflict, but the text includes substantive embedded news snippets about famine and humanitarian conditions in northern Gaza and the Israel-Hezbollah conflict arising from the Gaza war.",
+    "reason": "The headline and principal article concern a television series and acting roles. However, the appended news material contains meaningful discussion of Gaza famine, humanitarian aid restrictions, and the regional conflict, making the item peripheral rather than excludable.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "3de406170aac3654f34cd3a491ea9c907be8a60f54bd2338870861be0cc614f2",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "ef4b748c8dec8f85072b8eac8b41847d4da01cafd6af745be68b252ad44c6ed0",
+    "raw_response_text_sha256": "9098e65783b9368a273e83e75db042f3ffbbce37fce7cbcfe4ead67c9f2ba15a"
+  },
+  "api_metadata": {
+    "id": "resp_0fdd641eaa6ee0f5006aaa1a43b48087d2919836dbf63b72fb",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789532739.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2976,
+      "input_tokens_details": {
+        "cache_write_tokens": 2973,
+        "cached_tokens": 0
+      },
+      "output_tokens": 367,
+      "output_tokens_details": {
+        "reasoning_tokens": 197
+      },
+      "total_tokens": 3343
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.96,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Entertainment interview about the television series Cross and actor Samantha Walkes\",\n  \"conflict_relevance\": \"The main article is unrelated to the conflict, but the text includes substantive embedded news snippets about famine and humanitarian conditions in northern Gaza and the Israel-Hezbollah conflict arising from the Gaza war.\",\n  \"reason\": \"The headline and principal article concern a television series and acting roles. However, the appended news material contains meaningful discussion of Gaza famine, humanitarian aid restrictions, and the regional conflict, making the item peripheral rather than excludable.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T04:25:44Z",
+  "duration_seconds": 4.469,
+  "error": null
+}

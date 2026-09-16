@@ -1,0 +1,65 @@
+{
+  "article_id": "102518782",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_10/gb/102518782.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_10/gb/102518782.json"
+  },
+  "manifest_row": {
+    "article_id": "102518782",
+    "group": "global_north_2023_10",
+    "country_code": "gb",
+    "filepath": "corpus/02_now_organised/global_north_2023_10/gb/102518782.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.97,
+    "gaza_role": "background",
+    "main_topic": "Russia and Saudi Arabia's oil-production cuts and their effects on global energy prices",
+    "conflict_relevance": "The article is primarily about oil markets and energy geopolitics, but it meaningfully discusses the Israel-Hamas conflict as a factor affecting crude prices and mentions Saudi diplomatic efforts regarding escalation in Gaza and Israel.",
+    "reason": "The Israel-Hamas war provides important context for potential oil-market disruption, yet the article's central subject is global oil prices and production policy rather than Gaza or the conflict itself.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "ae8efc8a2385a148e3849b307624cac3de25a4f49e69dfc6bed7bed81e15cd8c",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "ecdd071f8a1d8d9be2eaac780327acfd681bc7786816a1a9b46a19b76a593f34",
+    "raw_response_text_sha256": "3e92ecb387eeabf52ee7d2582490baeaab3f93aed0a6895a9eaf4ab76435bb56"
+  },
+  "api_metadata": {
+    "id": "resp_0eaa8b007ceb6517006aa9f702983887d2a2814298875c6211",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789523714.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1202,
+      "input_tokens_details": {
+        "cache_write_tokens": 1199,
+        "cached_tokens": 0
+      },
+      "output_tokens": 165,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 1367
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.97,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Russia and Saudi Arabia's oil-production cuts and their effects on global energy prices\",\n  \"conflict_relevance\": \"The article is primarily about oil markets and energy geopolitics, but it meaningfully discusses the Israel-Hamas conflict as a factor affecting crude prices and mentions Saudi diplomatic efforts regarding escalation in Gaza and Israel.\",\n  \"reason\": \"The Israel-Hamas war provides important context for potential oil-market disruption, yet the article's central subject is global oil prices and production policy rather than Gaza or the conflict itself.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T01:55:17Z",
+  "duration_seconds": 2.608,
+  "error": null
+}

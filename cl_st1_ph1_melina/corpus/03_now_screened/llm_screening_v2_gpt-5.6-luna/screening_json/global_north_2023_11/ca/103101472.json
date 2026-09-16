@@ -1,0 +1,65 @@
+{
+  "article_id": "103101472",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_11/ca/103101472.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_11/ca/103101472.json"
+  },
+  "manifest_row": {
+    "article_id": "103101472",
+    "group": "global_north_2023_11",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2023_11/ca/103101472.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.9,
+    "gaza_role": "passing",
+    "main_topic": "Vancouver housing affordability represented through a Halloween art display",
+    "conflict_relevance": "The main article is unrelated to Gaza, but appended news briefs contain meaningful references to Canadians seeking to leave Gaza and a Toronto family member whose relatives were taken captive by Hamas.",
+    "reason": "The headline article concerns housing, gentrification, and Halloween social commentary. Gaza and the Israel-Hamas war appear only in separate embedded news snippets, which provide limited but substantive conflict-related discourse.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "deb3aaa2eec58e9c1b18805637150356ac7751c6d7c5dfc0c08b0d2be99e0da0",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "4a86398440b1e615ae126cf075194f3ae2c36df162cda95e65215cb79f75c1be",
+    "raw_response_text_sha256": "691ed183efd02d6b1a60ca9f4cb244c50f67662a75c386e5167c7242b5dc49de"
+  },
+  "api_metadata": {
+    "id": "resp_0d8aed79a8f05f5e006aa9fb94e41c87d283922da3857a7b7f",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789524884.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2155,
+      "input_tokens_details": {
+        "cache_write_tokens": 2152,
+        "cached_tokens": 0
+      },
+      "output_tokens": 310,
+      "output_tokens_details": {
+        "reasoning_tokens": 151
+      },
+      "total_tokens": 2465
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.9,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Vancouver housing affordability represented through a Halloween art display\",\n  \"conflict_relevance\": \"The main article is unrelated to Gaza, but appended news briefs contain meaningful references to Canadians seeking to leave Gaza and a Toronto family member whose relatives were taken captive by Hamas.\",\n  \"reason\": \"The headline article concerns housing, gentrification, and Halloween social commentary. Gaza and the Israel-Hamas war appear only in separate embedded news snippets, which provide limited but substantive conflict-related discourse.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:14:48Z",
+  "duration_seconds": 3.787,
+  "error": null
+}

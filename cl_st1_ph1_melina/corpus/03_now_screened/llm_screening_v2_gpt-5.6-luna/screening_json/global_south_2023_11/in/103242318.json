@@ -1,0 +1,65 @@
+{
+  "article_id": "103242318",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_south_2023_11/in/103242318.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_south_2023_11/in/103242318.json"
+  },
+  "manifest_row": {
+    "article_id": "103242318",
+    "group": "global_south_2023_11",
+    "country_code": "in",
+    "filepath": "corpus/02_now_organised/global_south_2023_11/in/103242318.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.96,
+    "gaza_role": "substantial",
+    "main_topic": "Mixed international news and photo roundup",
+    "conflict_relevance": "Contains substantive snippets about Israeli protests demanding a Gaza ceasefire and Israeli airstrikes on a Gaza refugee camp, but the article is primarily a multi-topic roundup.",
+    "reason": "The text consists of several unrelated international-news items. Two items meaningfully concern the Israel-Hamas war and Gaza, but conflict coverage is not the sole or overarching focus of the article.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "7a39733b0a4b529529241cb8ccf38a3dcec5b853ba7058e42321e15d075a1bb9",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "82f9cfb7f082277820427646484ac036fe892f370c99a6f6ea6de838e34e6012",
+    "raw_response_text_sha256": "20b4c5db36435209666692f368d3dce1c411ec134df9f421279d7ba3d786ef77"
+  },
+  "api_metadata": {
+    "id": "resp_0b1f5dbeef3aafe4006aaa34a8c76c87d1ad9b9d83e199fec5",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789539496.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1013,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 353,
+      "output_tokens_details": {
+        "reasoning_tokens": 201
+      },
+      "total_tokens": 1366
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.96,\n  \"gaza_role\": \"substantial\",\n  \"main_topic\": \"Mixed international news and photo roundup\",\n  \"conflict_relevance\": \"Contains substantive snippets about Israeli protests demanding a Gaza ceasefire and Israeli airstrikes on a Gaza refugee camp, but the article is primarily a multi-topic roundup.\",\n  \"reason\": \"The text consists of several unrelated international-news items. Two items meaningfully concern the Israel-Hamas war and Gaza, but conflict coverage is not the sole or overarching focus of the article.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T06:18:21Z",
+  "duration_seconds": 4.711,
+  "error": null
+}

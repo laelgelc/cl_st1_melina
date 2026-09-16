@@ -1,0 +1,65 @@
+{
+  "article_id": "119158638",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_12/gb/119158638.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_12/gb/119158638.json"
+  },
+  "manifest_row": {
+    "article_id": "119158638",
+    "group": "global_north_2024_12",
+    "country_code": "gb",
+    "filepath": "corpus/02_now_organised/global_north_2024_12/gb/119158638.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "gaza_role": "boilerplate_or_unrelated",
+    "main_topic": "A woman being fatally set on fire on a New York City subway",
+    "conflict_relevance": "The article's main subject is unrelated to Gaza or the Israel-Palestine conflict; Gaza appears only in a separate appended news snippet.",
+    "reason": "The headline and substantive article concern a New York subway murder. The final Gaza paragraph is an unrelated embedded news item rather than part of the main article.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "46aaab6fbdfa722a106fb2ed3c96030a31e0c9ebbb4a424d1221642d5fb28ed6",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "63e2d6f26a25e2f33bdce84ece300d4683c61a0defcd9385c3e0ae8bdb96a980",
+    "raw_response_text_sha256": "f80750e1945453aaa086897cf5c996d1ffa0e10625dd3c85906a609e948d4bc6"
+  },
+  "api_metadata": {
+    "id": "resp_0d523ff836b2cfe0006aaa1d94392887d288c0d9cc8b498dbb",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789533588.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1784,
+      "input_tokens_details": {
+        "cache_write_tokens": 1781,
+        "cached_tokens": 0
+      },
+      "output_tokens": 213,
+      "output_tokens_details": {
+        "reasoning_tokens": 61
+      },
+      "total_tokens": 1997
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"gaza_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"A woman being fatally set on fire on a New York City subway\",\n  \"conflict_relevance\": \"The article's main subject is unrelated to Gaza or the Israel-Palestine conflict; Gaza appears only in a separate appended news snippet.\",\n  \"reason\": \"The headline and substantive article concern a New York subway murder. The final Gaza paragraph is an unrelated embedded news item rather than part of the main article.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T04:39:50Z",
+  "duration_seconds": 2.617,
+  "error": null
+}

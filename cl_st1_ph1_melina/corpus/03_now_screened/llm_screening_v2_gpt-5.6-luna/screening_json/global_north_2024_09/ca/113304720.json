@@ -1,0 +1,65 @@
+{
+  "article_id": "113304720",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_09/ca/113304720.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_09/ca/113304720.json"
+  },
+  "manifest_row": {
+    "article_id": "113304720",
+    "group": "global_north_2024_09",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2024_09/ca/113304720.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "background",
+    "main_topic": "Royal Bank of Canada quarterly earnings and share performance",
+    "conflict_relevance": "The main article is unrelated to the Gaza conflict, but the text contains a substantive embedded news snippet about the recovery of six Israeli hostage bodies in Gaza and resulting protests against Benjamin Netanyahu.",
+    "reason": "The headline and primary article concern Canadian banking and financial results. However, the included hostage and Gaza report contains meaningful conflict-related discourse, so the item is peripheral rather than excluded.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "12e61b4ff1fddb77c3a92455d41f286d7e7d82cb8f3dd6772515d416c449e95d",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "ed0ac120a6e21bf665417c76ce912b5cf0ce0871e05639a6fad4ea27dfe2ad1d",
+    "raw_response_text_sha256": "929b24d78e5716098b69066331c767621cfded1715ff4fe761a2b9560a2c8490"
+  },
+  "api_metadata": {
+    "id": "resp_0b23471e3f921939006aaa15fdfd7087d2a620a8e44baef59b",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789531646.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1838,
+      "input_tokens_details": {
+        "cache_write_tokens": 1835,
+        "cached_tokens": 0
+      },
+      "output_tokens": 275,
+      "output_tokens_details": {
+        "reasoning_tokens": 119
+      },
+      "total_tokens": 2113
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Royal Bank of Canada quarterly earnings and share performance\",\n  \"conflict_relevance\": \"The main article is unrelated to the Gaza conflict, but the text contains a substantive embedded news snippet about the recovery of six Israeli hostage bodies in Gaza and resulting protests against Benjamin Netanyahu.\",\n  \"reason\": \"The headline and primary article concern Canadian banking and financial results. However, the included hostage and Gaza report contains meaningful conflict-related discourse, so the item is peripheral rather than excluded.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T04:07:29Z",
+  "duration_seconds": 3.259,
+  "error": null
+}

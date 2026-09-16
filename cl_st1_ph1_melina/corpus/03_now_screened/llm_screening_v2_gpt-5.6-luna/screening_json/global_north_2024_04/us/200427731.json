@@ -1,0 +1,65 @@
+{
+  "article_id": "200427731",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_04/us/200427731.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_04/us/200427731.json"
+  },
+  "manifest_row": {
+    "article_id": "200427731",
+    "group": "global_north_2024_04",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2024_04/us/200427731.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.91,
+    "gaza_role": "passing",
+    "main_topic": "Obituary and personal remembrance of former Florida Senator and Governor Bob Graham",
+    "conflict_relevance": "The article includes an embedded news snippet about growing pro-Palestinian demonstrations at U.S. universities and opposition to Israel's war with Hamas in Gaza, but this is not connected to the main obituary.",
+    "reason": "The main article is unrelated to the Israel-Palestine conflict, but the included paragraph contains meaningful, though very brief, discourse about Gaza-related protests and demands.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "892723adfa1b23a569efcf4e108df88e1edabac74967ca0e75817cc6a9f49399",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "b28b971330293a5a7a850cb293f131936111e00e10cfe4846440edb5455e519a",
+    "raw_response_text_sha256": "babd3285234e06ecbd8d7b91788fd4e22cab908f31fcb4454b8d85b5f78f5b18"
+  },
+  "api_metadata": {
+    "id": "resp_0cfb7435265ebd91006aaa0d3032d887d2ac69c859e457c33e",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789529392.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2154,
+      "input_tokens_details": {
+        "cache_write_tokens": 2151,
+        "cached_tokens": 0
+      },
+      "output_tokens": 304,
+      "output_tokens_details": {
+        "reasoning_tokens": 141
+      },
+      "total_tokens": 2458
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.91,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Obituary and personal remembrance of former Florida Senator and Governor Bob Graham\",\n  \"conflict_relevance\": \"The article includes an embedded news snippet about growing pro-Palestinian demonstrations at U.S. universities and opposition to Israel's war with Hamas in Gaza, but this is not connected to the main obituary.\",\n  \"reason\": \"The main article is unrelated to the Israel-Palestine conflict, but the included paragraph contains meaningful, though very brief, discourse about Gaza-related protests and demands.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:29:57Z",
+  "duration_seconds": 5.163,
+  "error": null
+}

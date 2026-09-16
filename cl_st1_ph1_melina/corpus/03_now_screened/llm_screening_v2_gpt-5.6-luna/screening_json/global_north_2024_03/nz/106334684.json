@@ -1,0 +1,65 @@
+{
+  "article_id": "106334684",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_03/nz/106334684.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_03/nz/106334684.json"
+  },
+  "manifest_row": {
+    "article_id": "106334684",
+    "group": "global_north_2024_03",
+    "country_code": "nz",
+    "filepath": "corpus/02_now_organised/global_north_2024_03/nz/106334684.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "gaza_role": "passing",
+    "main_topic": "Māori health policy and the dissolution of Te Aka Whai Ora",
+    "conflict_relevance": "Gaza appears only in an unrelated roundup snippet announcing New Zealand humanitarian funding for Gaza and the West Bank.",
+    "reason": "The main article concerns Māori health inequities and New Zealand health policy. The Gaza reference is incidental and embedded among unrelated news snippets, so it does not meaningfully contribute to conflict discourse analysis.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "6bf85d1ef24c78e25c98aaf814cf0c1255aaeade082bbcbf7f9c941e8ccf3bfd",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "f78fe7d1e20b91008de689402cfd1c6fc5001b731d4ad2e4bd6644c214bc0f86",
+    "raw_response_text_sha256": "97d140ed6fedd97dd543b602d93f12cb3f0ea0d849a4d8719d2db3b6dd5958fe"
+  },
+  "api_metadata": {
+    "id": "resp_027c220db5e97189006aaa0913b98087d28951ee4962148559",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789528339.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1285,
+      "input_tokens_details": {
+        "cache_write_tokens": 1282,
+        "cached_tokens": 0
+      },
+      "output_tokens": 220,
+      "output_tokens_details": {
+        "reasoning_tokens": 72
+      },
+      "total_tokens": 1505
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Māori health policy and the dissolution of Te Aka Whai Ora\",\n  \"conflict_relevance\": \"Gaza appears only in an unrelated roundup snippet announcing New Zealand humanitarian funding for Gaza and the West Bank.\",\n  \"reason\": \"The main article concerns Māori health inequities and New Zealand health policy. The Gaza reference is incidental and embedded among unrelated news snippets, so it does not meaningfully contribute to conflict discourse analysis.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:12:29Z",
+  "duration_seconds": 10.846,
+  "error": null
+}

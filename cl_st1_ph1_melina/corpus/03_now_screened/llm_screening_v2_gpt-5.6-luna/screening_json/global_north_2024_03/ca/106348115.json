@@ -1,0 +1,65 @@
+{
+  "article_id": "106348115",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_03/ca/106348115.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_03/ca/106348115.json"
+  },
+  "manifest_row": {
+    "article_id": "106348115",
+    "group": "global_north_2024_03",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2024_03/ca/106348115.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "background",
+    "main_topic": "Entertainment coverage of Noel Fielding and The Completely Made-Up Adventures of Dick Turpin",
+    "conflict_relevance": "The article includes a separate embedded Reuters snippet about the first U.S. airdrop of humanitarian aid into Gaza and the humanitarian crisis there.",
+    "reason": "The headline and main article concern a television comedy series and its actors. Gaza appears in a substantive but unrelated embedded news item, making the text potentially useful for broader humanitarian-discourse research but unsuitable as core conflict coverage.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "bb7d3e5eb2d594f9c39180ab13081b26cbe4ef86e33658a9617f06db1db52289",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "e9fad72f4f4bdadff721e217035c9142ea7ee53639fc7281cedc6bd4a5571784",
+    "raw_response_text_sha256": "4b77f544461a0afcbdb75dd94da8afc1893bbf69186528c85f4cdf0f60389c9a"
+  },
+  "api_metadata": {
+    "id": "resp_06d827381b420a89006aaa0851da7087d2910b5636cbde802d",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789528145.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2564,
+      "input_tokens_details": {
+        "cache_write_tokens": 2561,
+        "cached_tokens": 0
+      },
+      "output_tokens": 286,
+      "output_tokens_details": {
+        "reasoning_tokens": 123
+      },
+      "total_tokens": 2850
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Entertainment coverage of Noel Fielding and The Completely Made-Up Adventures of Dick Turpin\",\n  \"conflict_relevance\": \"The article includes a separate embedded Reuters snippet about the first U.S. airdrop of humanitarian aid into Gaza and the humanitarian crisis there.\",\n  \"reason\": \"The headline and main article concern a television comedy series and its actors. Gaza appears in a substantive but unrelated embedded news item, making the text potentially useful for broader humanitarian-discourse research but unsuitable as core conflict coverage.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:09:09Z",
+  "duration_seconds": 3.745,
+  "error": null
+}

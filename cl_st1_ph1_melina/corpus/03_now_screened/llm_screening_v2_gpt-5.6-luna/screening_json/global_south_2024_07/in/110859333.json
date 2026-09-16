@@ -1,0 +1,65 @@
+{
+  "article_id": "110859333",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_south_2024_07/in/110859333.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_south_2024_07/in/110859333.json"
+  },
+  "manifest_row": {
+    "article_id": "110859333",
+    "group": "global_south_2024_07",
+    "country_code": "in",
+    "filepath": "corpus/02_now_organised/global_south_2024_07/in/110859333.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.96,
+    "gaza_role": "passing",
+    "main_topic": "West Nile virus outbreak and fatalities in Israel",
+    "conflict_relevance": "The main article concerns a public-health outbreak in Israel, but an appended related post contains a meaningful reference to Netanyahu's visit to Gaza and Israeli control of the Rafah crossing.",
+    "reason": "The Gaza-related content is separate from and unrelated to the article's main topic, yet it contains substantive conflict discourse rather than a merely incidental keyword.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "53f3f29e233909e522741cc066a4f25f5e8cbdbd50a8e6ddaa9c43b64264765a",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "af0df9a813de4c8b652022a621691739b2069713b4fb37140db080c43a38ee85",
+    "raw_response_text_sha256": "132b0b5d6d6b299c6cbd40cdc6ab3584895be6a69273a606ee0bb90d562f6869"
+  },
+  "api_metadata": {
+    "id": "resp_07205582b604cf28006aaa3d013e9887d1b038cc14bd9897fb",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789541633.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 920,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 288,
+      "output_tokens_details": {
+        "reasoning_tokens": 140
+      },
+      "total_tokens": 1208
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.96,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"West Nile virus outbreak and fatalities in Israel\",\n  \"conflict_relevance\": \"The main article concerns a public-health outbreak in Israel, but an appended related post contains a meaningful reference to Netanyahu's visit to Gaza and Israeli control of the Rafah crossing.\",\n  \"reason\": \"The Gaza-related content is separate from and unrelated to the article's main topic, yet it contains substantive conflict discourse rather than a merely incidental keyword.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T06:53:56Z",
+  "duration_seconds": 3.743,
+  "error": null
+}

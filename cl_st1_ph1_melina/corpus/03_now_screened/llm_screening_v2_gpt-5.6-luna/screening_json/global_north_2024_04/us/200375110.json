@@ -1,0 +1,65 @@
+{
+  "article_id": "200375110",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_04/us/200375110.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_04/us/200375110.json"
+  },
+  "manifest_row": {
+    "article_id": "200375110",
+    "group": "global_north_2024_04",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2024_04/us/200375110.txt"
+  },
+  "screening": {
+    "category": "CORE",
+    "confidence": 0.99,
+    "gaza_role": "central",
+    "main_topic": "Israeli anti-government protests calling for elections and a hostage-release deal during the Israel-Hamas war",
+    "conflict_relevance": "The main article directly concerns the Gaza war, Israeli hostages, military casualties, hostage negotiations, domestic Israeli politics, protests, and criticism of the government's handling of the conflict.",
+    "reason": "The primary article is substantially focused on mass protests in Israel, the demand for elections and a hostage deal, and political debate over the war in Gaza. Although unrelated snippets about NASA, consumer technology, remote work, and startups are appended, they do not alter the relevance of the main article.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": true
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "edffd036e7d6673e20c2c57464189b5f379e166921ea6df3a016176f6ad8b757",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "3102363936db0932b8f63aa2865a970f34a8dfabdd129e154ec9eedb17502d94",
+    "raw_response_text_sha256": "491d49e329998015564d238ec0f86e022c74cc15ddaf0ef891229113a931b8d4"
+  },
+  "api_metadata": {
+    "id": "resp_0f90c19ad89faa43006aaa0cac260887d2a7a2b159b590889b",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789529260.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1507,
+      "input_tokens_details": {
+        "cache_write_tokens": 1504,
+        "cached_tokens": 0
+      },
+      "output_tokens": 255,
+      "output_tokens_details": {
+        "reasoning_tokens": 69
+      },
+      "total_tokens": 1762
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"CORE\",\n  \"confidence\": 0.99,\n  \"gaza_role\": \"central\",\n  \"main_topic\": \"Israeli anti-government protests calling for elections and a hostage-release deal during the Israel-Hamas war\",\n  \"conflict_relevance\": \"The main article directly concerns the Gaza war, Israeli hostages, military casualties, hostage negotiations, domestic Israeli politics, protests, and criticism of the government's handling of the conflict.\",\n  \"reason\": \"The primary article is substantially focused on mass protests in Israel, the demand for elections and a hostage deal, and political debate over the war in Gaza. Although unrelated snippets about NASA, consumer technology, remote work, and startups are appended, they do not alter the relevance of the main article.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": true\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:27:43Z",
+  "duration_seconds": 3.512,
+  "error": null
+}

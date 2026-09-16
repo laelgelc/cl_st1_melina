@@ -1,0 +1,65 @@
+{
+  "article_id": "108044101",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_05/us/108044101.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_05/us/108044101.json"
+  },
+  "manifest_row": {
+    "article_id": "108044101",
+    "group": "global_north_2024_05",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2024_05/us/108044101.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "background",
+    "main_topic": "French-Chinese diplomatic and trade relations, particularly provisional Chinese customs measures on French cognac",
+    "conflict_relevance": "The main article is unrelated to Gaza, but embedded news items contain substantial coverage of the Gaza war, ceasefire negotiations, Rafah, humanitarian aid, civilian casualties, hostages, and protests.",
+    "reason": "The headline article concerns Macron, Xi, and French cognac. However, the page includes a lengthy Reuters report on the Israel-Hamas war and additional references to Rafah and the Gaza conflict. These embedded items provide meaningful conflict discourse but are not the main subject of the article.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "859ac8d2872f04af33a2ee871520ebc68146cfa4c8b78429e5b50ff6155d4692",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "c41a970c8adb45df360aceb6354a179fd5694677b5033ae6456fa6cec7488fe6",
+    "raw_response_text_sha256": "ab668e5e842b04853693f6037551ff2927af9eba3c6f5e6133e1f64d44a3cbc4"
+  },
+  "api_metadata": {
+    "id": "resp_06b868f76f229704006aaa0ea3f0e887d2a8fcd86854c62d80",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789529763.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2481,
+      "input_tokens_details": {
+        "cache_write_tokens": 2478,
+        "cached_tokens": 0
+      },
+      "output_tokens": 314,
+      "output_tokens_details": {
+        "reasoning_tokens": 126
+      },
+      "total_tokens": 2795
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"French-Chinese diplomatic and trade relations, particularly provisional Chinese customs measures on French cognac\",\n  \"conflict_relevance\": \"The main article is unrelated to Gaza, but embedded news items contain substantial coverage of the Gaza war, ceasefire negotiations, Rafah, humanitarian aid, civilian casualties, hostages, and protests.\",\n  \"reason\": \"The headline article concerns Macron, Xi, and French cognac. However, the page includes a lengthy Reuters report on the Israel-Hamas war and additional references to Rafah and the Gaza conflict. These embedded items provide meaningful conflict discourse but are not the main subject of the article.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:36:08Z",
+  "duration_seconds": 4.934,
+  "error": null
+}

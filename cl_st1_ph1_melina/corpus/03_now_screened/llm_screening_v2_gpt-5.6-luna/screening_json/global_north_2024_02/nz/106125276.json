@@ -1,0 +1,65 @@
+{
+  "article_id": "106125276",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_02/nz/106125276.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_02/nz/106125276.json"
+  },
+  "manifest_row": {
+    "article_id": "106125276",
+    "group": "global_north_2024_02",
+    "country_code": "nz",
+    "filepath": "corpus/02_now_organised/global_north_2024_02/nz/106125276.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.97,
+    "gaza_role": "passing",
+    "main_topic": "Auckland public transport usage and capacity planning",
+    "conflict_relevance": "The main article is unrelated to the Israel-Palestine conflict, but an embedded roundup item briefly reports New Zealand aid for humanitarian needs in Gaza and the West Bank.",
+    "reason": "The article primarily discusses rising public transport use in Auckland. Gaza appears in a separate, meaningful news snippet concerning humanitarian assistance and the Israel-Hamas conflict, making the item peripheral rather than core.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "a822dffc48bf95a8a16d638c973b5f9891c07e8396e4b68783abd78da34ecfa8",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "425e731ea531021c41d7ed5940e5f2aeaa8a8c2b1073d51870546b0a308aa5d6",
+    "raw_response_text_sha256": "eb93e4fc40c7f4065680bba6caa2bced9077ba6f0e0b40569a2231cdffb32df9"
+  },
+  "api_metadata": {
+    "id": "resp_0e236d9bb204ee46006aaa06ce8b4887d2aae9034be2e6b59a",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789527758.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1626,
+      "input_tokens_details": {
+        "cache_write_tokens": 1623,
+        "cached_tokens": 0
+      },
+      "output_tokens": 249,
+      "output_tokens_details": {
+        "reasoning_tokens": 93
+      },
+      "total_tokens": 1875
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.97,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Auckland public transport usage and capacity planning\",\n  \"conflict_relevance\": \"The main article is unrelated to the Israel-Palestine conflict, but an embedded roundup item briefly reports New Zealand aid for humanitarian needs in Gaza and the West Bank.\",\n  \"reason\": \"The article primarily discusses rising public transport use in Auckland. Gaza appears in a separate, meaningful news snippet concerning humanitarian assistance and the Israel-Hamas conflict, making the item peripheral rather than core.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:02:42Z",
+  "duration_seconds": 4.917,
+  "error": null
+}

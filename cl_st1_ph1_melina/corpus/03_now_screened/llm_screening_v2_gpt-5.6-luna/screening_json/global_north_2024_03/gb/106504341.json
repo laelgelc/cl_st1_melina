@@ -1,0 +1,65 @@
+{
+  "article_id": "106504341",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_03/gb/106504341.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_03/gb/106504341.json"
+  },
+  "manifest_row": {
+    "article_id": "106504341",
+    "group": "global_north_2024_03",
+    "country_code": "gb",
+    "filepath": "corpus/02_now_organised/global_north_2024_03/gb/106504341.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "gaza_role": "boilerplate_or_unrelated",
+    "main_topic": "Rebuilding the Crooked House pub and comparing it with the Carlton Tavern reconstruction",
+    "conflict_relevance": "The main article is unrelated to Gaza or the Israel-Palestine conflict; it only includes an incidental reference to an Israeli developer and a separate appended news snippet about an Israeli road in Gaza.",
+    "reason": "The headline-associated article concerns historic pub reconstruction, community campaigns, and planning enforcement. The Gaza-related material appears only in an unrelated embedded news item and does not contribute to the main article's discourse.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "d9cd48501e15640018d86ad511ac31c8a1465d72d21a5b531111e0ec559ce92f",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "cb9dc33601c2414ea5ab8b8f3fccc440062470b6b1d25ee326236cef45117cd6",
+    "raw_response_text_sha256": "b556375e397f84f2573333139442b031d8bc2cf343ff194f8798afe3593b4e3e"
+  },
+  "api_metadata": {
+    "id": "resp_0b24ff6908fdee5c006aaa08abd67087d28fa3a75726dca5da",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789528235.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 3293,
+      "input_tokens_details": {
+        "cache_write_tokens": 3290,
+        "cached_tokens": 0
+      },
+      "output_tokens": 362,
+      "output_tokens_details": {
+        "reasoning_tokens": 189
+      },
+      "total_tokens": 3655
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Rebuilding the Crooked House pub and comparing it with the Carlton Tavern reconstruction\",\n  \"conflict_relevance\": \"The main article is unrelated to Gaza or the Israel-Palestine conflict; it only includes an incidental reference to an Israeli developer and a separate appended news snippet about an Israeli road in Gaza.\",\n  \"reason\": \"The headline-associated article concerns historic pub reconstruction, community campaigns, and planning enforcement. The Gaza-related material appears only in an unrelated embedded news item and does not contribute to the main article's discourse.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:10:40Z",
+  "duration_seconds": 5.034,
+  "error": null
+}

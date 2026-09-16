@@ -1,0 +1,65 @@
+{
+  "article_id": "124123912",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_04/us/124123912.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_04/us/124123912.json"
+  },
+  "manifest_row": {
+    "article_id": "124123912",
+    "group": "global_north_2025_04",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2025_04/us/124123912.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "gaza_role": "passing",
+    "main_topic": "Donald Trump's foreign policy and impact on global alliances and international order",
+    "conflict_relevance": "Gaza is mentioned only in a passing list of global locations and is not discussed substantively.",
+    "reason": "The article focuses on Trump's broader foreign policy, Ukraine, China, trade, alliances, and global leadership. It contains no meaningful analysis of Gaza, Palestine, Israel, or the related conflict.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "acb1ce063b1ac6015a4a7ffca9cc826497d39e622c14d116309617e7b31646de",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "011a95c9f65e2a14127e443cfd99315e9a578020828afa845996779e6279aa30",
+    "raw_response_text_sha256": "546b996048f9515d302d69c51e4e4986c0a1e5a52ebbb06566e625be765fc979"
+  },
+  "api_metadata": {
+    "id": "resp_05d0bb698988416f006aaa2ad07fd887d18ea1d50553809bcc",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789536976.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2645,
+      "input_tokens_details": {
+        "cache_write_tokens": 2642,
+        "cached_tokens": 0
+      },
+      "output_tokens": 225,
+      "output_tokens_details": {
+        "reasoning_tokens": 81
+      },
+      "total_tokens": 2870
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Donald Trump's foreign policy and impact on global alliances and international order\",\n  \"conflict_relevance\": \"Gaza is mentioned only in a passing list of global locations and is not discussed substantively.\",\n  \"reason\": \"The article focuses on Trump's broader foreign policy, Ukraine, China, trade, alliances, and global leadership. It contains no meaningful analysis of Gaza, Palestine, Israel, or the related conflict.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T05:36:18Z",
+  "duration_seconds": 2.621,
+  "error": null
+}

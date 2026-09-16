@@ -1,0 +1,65 @@
+{
+  "article_id": "105859716",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_02/gb/105859716.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_02/gb/105859716.json"
+  },
+  "manifest_row": {
+    "article_id": "105859716",
+    "group": "global_north_2024_02",
+    "country_code": "gb",
+    "filepath": "corpus/02_now_organised/global_north_2024_02/gb/105859716.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.97,
+    "gaza_role": "passing",
+    "main_topic": "Aviation industry news and related articles",
+    "conflict_relevance": "Includes a substantive snippet about a Dutch court ruling concerning the transfer of F-35 components to Israel over military operations in Gaza, but the surrounding content is primarily unrelated aviation news.",
+    "reason": "The Gaza-related item has meaningful relevance to international law, arms transfers, and Israel's military conduct, but it appears as one item in a mixed aviation-news page rather than as the main subject.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "fb1acf9460e15dff2da69bd3e9373f7d5e91faea7baf9bdbeeb7ab0ac4a89f59",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "084b4eee4a3a4f86abc6204c4b3a150c705d8593c0c11e20015ba9f4d680bfe1",
+    "raw_response_text_sha256": "167b8697ee073e55821c657c3ea4a5e781d80c1ed7ea0a132aa315f3bcc18a79"
+  },
+  "api_metadata": {
+    "id": "resp_0bfea78f973c99d9006aaa064f14dc87d28903ffde0f56ac7a",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789527631.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 895,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 286,
+      "output_tokens_details": {
+        "reasoning_tokens": 129
+      },
+      "total_tokens": 1181
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.97,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Aviation industry news and related articles\",\n  \"conflict_relevance\": \"Includes a substantive snippet about a Dutch court ruling concerning the transfer of F-35 components to Israel over military operations in Gaza, but the surrounding content is primarily unrelated aviation news.\",\n  \"reason\": \"The Gaza-related item has meaningful relevance to international law, arms transfers, and Israel's military conduct, but it appears as one item in a mixed aviation-news page rather than as the main subject.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:00:34Z",
+  "duration_seconds": 3.527,
+  "error": null
+}

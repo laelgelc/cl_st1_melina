@@ -1,0 +1,65 @@
+{
+  "article_id": "200443892",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_05/us/200443892.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_05/us/200443892.json"
+  },
+  "manifest_row": {
+    "article_id": "200443892",
+    "group": "global_north_2024_05",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2024_05/us/200443892.txt"
+  },
+  "screening": {
+    "category": "CORE",
+    "confidence": 0.98,
+    "gaza_role": "substantial",
+    "main_topic": "Police response to a pro-Palestinian student encampment and protests at City College",
+    "conflict_relevance": "The article directly covers a campus protest motivated by concern over Gaza, including pro-Palestinian chants, an encampment, police arrests, and debate over the right to protest.",
+    "reason": "Although framed as a report on campus closure and NYPD intervention, the central event is a pro-Palestinian protest concerning violence against people in Gaza.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": true
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "7da6f792f3b832adccbd2325448fd035a889b1ec72b52d140878bc07c43f8ec1",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "05744eaf19502ffefe7ccb6dd99974181632c936abf8429975907d848630d15f",
+    "raw_response_text_sha256": "f5a73eb19ca8e2244576ad61543f02fabee246ca5aad42ed67f3a94cf2e55d57"
+  },
+  "api_metadata": {
+    "id": "resp_0ab2212f9cbb3cb2006aaa0f47a6a487d282318c4a7264c6fe",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789529927.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1268,
+      "input_tokens_details": {
+        "cache_write_tokens": 1265,
+        "cached_tokens": 0
+      },
+      "output_tokens": 235,
+      "output_tokens_details": {
+        "reasoning_tokens": 74
+      },
+      "total_tokens": 1503
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"CORE\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"substantial\",\n  \"main_topic\": \"Police response to a pro-Palestinian student encampment and protests at City College\",\n  \"conflict_relevance\": \"The article directly covers a campus protest motivated by concern over Gaza, including pro-Palestinian chants, an encampment, police arrests, and debate over the right to protest.\",\n  \"reason\": \"Although framed as a report on campus closure and NYPD intervention, the central event is a pro-Palestinian protest concerning violence against people in Gaza.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": true\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:38:51Z",
+  "duration_seconds": 3.676,
+  "error": null
+}

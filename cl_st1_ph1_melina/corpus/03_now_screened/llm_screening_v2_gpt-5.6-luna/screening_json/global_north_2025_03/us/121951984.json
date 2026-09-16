@@ -1,0 +1,65 @@
+{
+  "article_id": "121951984",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_03/us/121951984.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_03/us/121951984.json"
+  },
+  "manifest_row": {
+    "article_id": "121951984",
+    "group": "global_north_2025_03",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2025_03/us/121951984.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.97,
+    "gaza_role": "passing",
+    "main_topic": "BlackRock's acquisition of ports at the Panama Canal",
+    "conflict_relevance": "Gaza is mentioned only in a brief promotional or embedded reference to Trump's Gaza plan; the article itself focuses on the Panama Canal, China, and port ownership.",
+    "reason": "The Gaza reference is incidental and undeveloped, appearing in an introductory description of a television segment rather than in the substantive article.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "5e2370e438e5ee7925f8f9a562f21e576205ecae23319362ec853f357bec73e1",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "14be18775418e782203156961f6884d83772fbbcedae495f6fab670ffd2fedff",
+    "raw_response_text_sha256": "50f581c973bb12813d2f1552357db059a2c573fe3b581105de6b79aaaf7f5931"
+  },
+  "api_metadata": {
+    "id": "resp_09a3edf195a2e819006aaa271f779c87d19ac1553ae910401f",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789536031.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1414,
+      "input_tokens_details": {
+        "cache_write_tokens": 1411,
+        "cached_tokens": 0
+      },
+      "output_tokens": 228,
+      "output_tokens_details": {
+        "reasoning_tokens": 86
+      },
+      "total_tokens": 1642
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.97,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"BlackRock's acquisition of ports at the Panama Canal\",\n  \"conflict_relevance\": \"Gaza is mentioned only in a brief promotional or embedded reference to Trump's Gaza plan; the article itself focuses on the Panama Canal, China, and port ownership.\",\n  \"reason\": \"The Gaza reference is incidental and undeveloped, appearing in an introductory description of a television segment rather than in the substantive article.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T05:20:35Z",
+  "duration_seconds": 3.808,
+  "error": null
+}

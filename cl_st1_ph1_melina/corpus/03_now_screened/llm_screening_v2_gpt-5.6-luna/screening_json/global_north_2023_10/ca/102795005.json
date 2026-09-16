@@ -1,0 +1,65 @@
+{
+  "article_id": "102795005",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_10/ca/102795005.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_10/ca/102795005.json"
+  },
+  "manifest_row": {
+    "article_id": "102795005",
+    "group": "global_north_2023_10",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2023_10/ca/102795005.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.99,
+    "gaza_role": "background",
+    "main_topic": "Toronto Mayor Olivia Chow's first 100 days in office and municipal priorities",
+    "conflict_relevance": "The article briefly discusses Chow's deleted social-media posts about the Israel-Gaza war, criticism from both sides, a pro-Israel rally, condemnation of Hamas, and the safety of Toronto residents. It also contains several appended snippets about the Israel-Hamas conflict, Palestine-related demonstrations, and Gaza aid.",
+    "reason": "The main article is primarily about Toronto municipal politics, housing, transit, finances, refugees, and relations with provincial and federal governments. The Israel-Gaza material is meaningful but subsidiary, making the article useful for peripheral analysis of political responses and local public discourse rather than as core conflict coverage.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "c01fa06263b3207b34969b29f03a81eb4c1541c99a5d791742e9b5b369f84a47",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "e4512db7138d9629544034ee7b9300319cc813cbe50486162132ef8fb2471432",
+    "raw_response_text_sha256": "e2b3360fb4aaada5548c2eb937777d65a71f8080c7c652a837ce16ce7ed6cd7d"
+  },
+  "api_metadata": {
+    "id": "resp_0d1e21a0ba7cbd96006aa9f676657087d2ab31ab25c234612b",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789523574.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 3251,
+      "input_tokens_details": {
+        "cache_write_tokens": 3248,
+        "cached_tokens": 0
+      },
+      "output_tokens": 299,
+      "output_tokens_details": {
+        "reasoning_tokens": 92
+      },
+      "total_tokens": 3550
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.99,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Toronto Mayor Olivia Chow's first 100 days in office and municipal priorities\",\n  \"conflict_relevance\": \"The article briefly discusses Chow's deleted social-media posts about the Israel-Gaza war, criticism from both sides, a pro-Israel rally, condemnation of Hamas, and the safety of Toronto residents. It also contains several appended snippets about the Israel-Hamas conflict, Palestine-related demonstrations, and Gaza aid.\",\n  \"reason\": \"The main article is primarily about Toronto municipal politics, housing, transit, finances, refugees, and relations with provincial and federal governments. The Israel-Gaza material is meaningful but subsidiary, making the article useful for peripheral analysis of political responses and local public discourse rather than as core conflict coverage.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T01:52:58Z",
+  "duration_seconds": 4.239,
+  "error": null
+}

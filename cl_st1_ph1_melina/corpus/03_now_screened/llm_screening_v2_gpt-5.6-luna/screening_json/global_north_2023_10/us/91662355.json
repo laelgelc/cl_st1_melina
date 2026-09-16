@@ -1,0 +1,65 @@
+{
+  "article_id": "91662355",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_10/us/91662355.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_10/us/91662355.json"
+  },
+  "manifest_row": {
+    "article_id": "91662355",
+    "group": "global_north_2023_10",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2023_10/us/91662355.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "background",
+    "main_topic": "Illinois Governor JB Pritzker's launch of a political advocacy group focused on abortion rights",
+    "conflict_relevance": "The article includes a substantive but apparently unrelated passage about alleged war crimes, Hamas's attack, Israeli bombings, and the difficulty of responding to fighters embedded among civilians in Gaza.",
+    "reason": "The main article concerns U.S. abortion-rights advocacy and Democratic political organizing, not Gaza or the Israel-Palestine conflict. However, the embedded discussion of the Geneva Conventions and Gaza provides meaningful conflict-related discourse, warranting a peripheral classification.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "17ee9905dc8c0f0a25b1366948c27952d1baf985723138c47ea4692e5be0ae0b",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "616a907e487530b057a5528105f45ecc95cf808825324803108c2c2424582c3b",
+    "raw_response_text_sha256": "43949a97775a096cd9d8f6376d1e99cf0619c750b7a543ad51f24787e7d70f1c"
+  },
+  "api_metadata": {
+    "id": "resp_029fbd8165423e8a006aa9fac2176c87d288731c7fecb04ce2",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789524674.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2163,
+      "input_tokens_details": {
+        "cache_write_tokens": 2160,
+        "cached_tokens": 0
+      },
+      "output_tokens": 270,
+      "output_tokens_details": {
+        "reasoning_tokens": 91
+      },
+      "total_tokens": 2433
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Illinois Governor JB Pritzker's launch of a political advocacy group focused on abortion rights\",\n  \"conflict_relevance\": \"The article includes a substantive but apparently unrelated passage about alleged war crimes, Hamas's attack, Israeli bombings, and the difficulty of responding to fighters embedded among civilians in Gaza.\",\n  \"reason\": \"The main article concerns U.S. abortion-rights advocacy and Democratic political organizing, not Gaza or the Israel-Palestine conflict. However, the embedded discussion of the Geneva Conventions and Gaza provides meaningful conflict-related discourse, warranting a peripheral classification.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:11:17Z",
+  "duration_seconds": 3.423,
+  "error": null
+}

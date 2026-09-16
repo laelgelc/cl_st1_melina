@@ -1,0 +1,65 @@
+{
+  "article_id": "102645831",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_south_2023_10/ph/102645831.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_south_2023_10/ph/102645831.json"
+  },
+  "manifest_row": {
+    "article_id": "102645831",
+    "group": "global_south_2023_10",
+    "country_code": "ph",
+    "filepath": "corpus/02_now_organised/global_south_2023_10/ph/102645831.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "gaza_role": "passing",
+    "main_topic": "Digital service exports and economic development in the Philippines",
+    "conflict_relevance": "The article is about Philippine digital-service exports and development; Gaza appears only in an unrelated embedded news sentence.",
+    "reason": "The Gaza reference is incidental and not connected to the article's main subject or developed into meaningful conflict discourse.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "82c9d413ec31a4aca5dd5b46892d2e36d78e4c1dc5d8a62fbc057ab08dcf0682",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "420cf6115c7cdf636084edfc9a48f0ad779502a2c0c56180b564505a77b0ab62",
+    "raw_response_text_sha256": "eea86e02b0013509b771399469e65fa4ac3d3fb97efabe118c868ee9a2ffc1fe"
+  },
+  "api_metadata": {
+    "id": "resp_0d7b644d3fd2a4a4006aaa33d91e7487d1986d26cf197856d2",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789539289.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1226,
+      "input_tokens_details": {
+        "cache_write_tokens": 1223,
+        "cached_tokens": 0
+      },
+      "output_tokens": 189,
+      "output_tokens_details": {
+        "reasoning_tokens": 63
+      },
+      "total_tokens": 1415
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Digital service exports and economic development in the Philippines\",\n  \"conflict_relevance\": \"The article is about Philippine digital-service exports and development; Gaza appears only in an unrelated embedded news sentence.\",\n  \"reason\": \"The Gaza reference is incidental and not connected to the article's main subject or developed into meaningful conflict discourse.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T06:14:51Z",
+  "duration_seconds": 2.698,
+  "error": null
+}

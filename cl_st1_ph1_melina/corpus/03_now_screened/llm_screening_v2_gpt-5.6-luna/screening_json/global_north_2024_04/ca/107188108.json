@@ -1,0 +1,65 @@
+{
+  "article_id": "107188108",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_04/ca/107188108.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_04/ca/107188108.json"
+  },
+  "manifest_row": {
+    "article_id": "107188108",
+    "group": "global_north_2024_04",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2024_04/ca/107188108.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "gaza_role": "boilerplate_or_unrelated",
+    "main_topic": "Toronto's Vacant Home Tax and disputed tax bills",
+    "conflict_relevance": "The main article is unrelated to Gaza, Palestine, Israel/Palestine, or the conflict. Gaza appears only in a repeated item within a general news roundup.",
+    "reason": "The article centrally concerns Toronto homeowners who received vacant-home tax bills. The only Gaza-related material is a brief, unrelated headline or snippet in the 'Top Stories' section, not part of the main article's discourse.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "e88ec7cc2fc35a9195f590f743873f2c3bf282940f23de8d380a3af70fb23f6e",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "681fdf19b9a3da215b785726f8bb212038a4a3cc0454481651607f0d5286216d",
+    "raw_response_text_sha256": "69c8a3d84399db7be93adb84070a0aa5c91d105e439af45af2da7677ed5601d9"
+  },
+  "api_metadata": {
+    "id": "resp_0a099a7bb68f198b006aaa0aef252887d29fcd0dae2e4b7b81",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789528815.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2888,
+      "input_tokens_details": {
+        "cache_write_tokens": 2885,
+        "cached_tokens": 0
+      },
+      "output_tokens": 212,
+      "output_tokens_details": {
+        "reasoning_tokens": 46
+      },
+      "total_tokens": 3100
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"gaza_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Toronto's Vacant Home Tax and disputed tax bills\",\n  \"conflict_relevance\": \"The main article is unrelated to Gaza, Palestine, Israel/Palestine, or the conflict. Gaza appears only in a repeated item within a general news roundup.\",\n  \"reason\": \"The article centrally concerns Toronto homeowners who received vacant-home tax bills. The only Gaza-related material is a brief, unrelated headline or snippet in the 'Top Stories' section, not part of the main article's discourse.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:20:17Z",
+  "duration_seconds": 2.84,
+  "error": null
+}

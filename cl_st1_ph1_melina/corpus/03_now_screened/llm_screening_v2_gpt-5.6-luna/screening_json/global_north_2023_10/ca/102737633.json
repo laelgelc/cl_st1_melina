@@ -1,0 +1,65 @@
+{
+  "article_id": "102737633",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_10/ca/102737633.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_10/ca/102737633.json"
+  },
+  "manifest_row": {
+    "article_id": "102737633",
+    "group": "global_north_2023_10",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2023_10/ca/102737633.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "gaza_role": "passing",
+    "main_topic": "India's victory over Bangladesh in a Cricket World Cup match",
+    "conflict_relevance": "The main article is unrelated to Gaza or the Israel-Hamas war; Gaza-related references appear only in an embedded list of unrelated top-story snippets.",
+    "reason": "The headline and article body focus entirely on cricket. Although the accompanying top-stories section contains brief items about the Gaza hospital blast, hostages, and online content during the Israel-Hamas war, these are unrelated embedded snippets rather than part of the main article.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "16e10605cf93b4836eecf6cbdfa32a50fad8f25425a56a29b3fe60c4edaddcf3",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "ff29a39e59f444524a158bb6ec67dfe91f0e8296bc2dafffcf3844c36840574d",
+    "raw_response_text_sha256": "22e2910bfa9e5525d8190634cc7368bd91c96cd981bcb3636d5472c8bd788372"
+  },
+  "api_metadata": {
+    "id": "resp_0609cd525982c717006aa9f65fd12087d2875b5ece9ce2e183",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789523551.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2449,
+      "input_tokens_details": {
+        "cache_write_tokens": 2446,
+        "cached_tokens": 0
+      },
+      "output_tokens": 321,
+      "output_tokens_details": {
+        "reasoning_tokens": 154
+      },
+      "total_tokens": 2770
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"India's victory over Bangladesh in a Cricket World Cup match\",\n  \"conflict_relevance\": \"The main article is unrelated to Gaza or the Israel-Hamas war; Gaza-related references appear only in an embedded list of unrelated top-story snippets.\",\n  \"reason\": \"The headline and article body focus entirely on cricket. Although the accompanying top-stories section contains brief items about the Gaza hospital blast, hostages, and online content during the Israel-Hamas war, these are unrelated embedded snippets rather than part of the main article.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T01:52:36Z",
+  "duration_seconds": 4.346,
+  "error": null
+}

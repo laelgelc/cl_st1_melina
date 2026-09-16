@@ -1,0 +1,65 @@
+{
+  "article_id": "200322911",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_03/us/200322911.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_03/us/200322911.json"
+  },
+  "manifest_row": {
+    "article_id": "200322911",
+    "group": "global_north_2024_03",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2024_03/us/200322911.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "passing",
+    "main_topic": "Wisconsin election legislation and Governor Tony Evers's decisions to sign or veto election-related bills",
+    "conflict_relevance": "The article includes a brief embedded news snippet about a U.S. position on an immediate ceasefire between Israel and Hamas in Gaza, but the main article is unrelated to the conflict.",
+    "reason": "The primary article concerns Wisconsin election administration, voting access, and election security. Gaza appears only in a separate, incidental snippet, making the item peripheral rather than core.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "26a07c21d9eaaf8f6b95dce4fd8bf4fd1794ce5c06c7d9e7cf7744c36ebc76dd",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "d477f8cf3868f44affabaa422d063c0957f7e794f7a828169fe15def5d5e2d87",
+    "raw_response_text_sha256": "23aa9283da4e89f829f6cc42a8579f9beb56649161fd79d7602c7c21358fe0e9"
+  },
+  "api_metadata": {
+    "id": "resp_0acf0b253284bcee006aaa0a99068487d28b2f34a8d32698ff",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789528729.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2277,
+      "input_tokens_details": {
+        "cache_write_tokens": 2274,
+        "cached_tokens": 0
+      },
+      "output_tokens": 277,
+      "output_tokens_details": {
+        "reasoning_tokens": 114
+      },
+      "total_tokens": 2554
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Wisconsin election legislation and Governor Tony Evers's decisions to sign or veto election-related bills\",\n  \"conflict_relevance\": \"The article includes a brief embedded news snippet about a U.S. position on an immediate ceasefire between Israel and Hamas in Gaza, but the main article is unrelated to the conflict.\",\n  \"reason\": \"The primary article concerns Wisconsin election administration, voting access, and election security. Gaza appears only in a separate, incidental snippet, making the item peripheral rather than core.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:18:52Z",
+  "duration_seconds": 3.99,
+  "error": null
+}

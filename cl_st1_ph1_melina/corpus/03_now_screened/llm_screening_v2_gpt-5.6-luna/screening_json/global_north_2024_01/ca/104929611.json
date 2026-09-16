@@ -1,0 +1,65 @@
+{
+  "article_id": "104929611",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_01/ca/104929611.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_01/ca/104929611.json"
+  },
+  "manifest_row": {
+    "article_id": "104929611",
+    "group": "global_north_2024_01",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2024_01/ca/104929611.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.91,
+    "gaza_role": "background",
+    "main_topic": "Celebrity fashion and social media activity involving Janet and Paulina Gretzky",
+    "conflict_relevance": "The main article is unrelated to Gaza or the Israel-Palestine conflict, but embedded 'Latest Stories' include substantive reports about a pro-Palestinian protest in Toronto and Israeli military claims about weapons production in Gaza.",
+    "reason": "The headline article concerns a celebrity night out and contains no conflict-related discussion. However, the article includes unrelated embedded news items with meaningful coverage of Palestine-related protest activity and military operations in Gaza, making it peripheral rather than wholly excludable.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "ddcdfe280448f48f49ed807dc2377b502ae5ac48081ead1daedef56b763d2721",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "73eb6adc6561057a1b4cef8deafacb84ca8d1578739f936b69d6cf79d81c784c",
+    "raw_response_text_sha256": "965e0de6b11a682ed24cac8b313086acabd69d344fc579eacf467e33ae121e66"
+  },
+  "api_metadata": {
+    "id": "resp_0c5c8a6a97863560006aaa038a0cb487d2862767fc6552e73e",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789526922.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1783,
+      "input_tokens_details": {
+        "cache_write_tokens": 1780,
+        "cached_tokens": 0
+      },
+      "output_tokens": 397,
+      "output_tokens_details": {
+        "reasoning_tokens": 215
+      },
+      "total_tokens": 2180
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.91,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Celebrity fashion and social media activity involving Janet and Paulina Gretzky\",\n  \"conflict_relevance\": \"The main article is unrelated to Gaza or the Israel-Palestine conflict, but embedded 'Latest Stories' include substantive reports about a pro-Palestinian protest in Toronto and Israeli military claims about weapons production in Gaza.\",\n  \"reason\": \"The headline article concerns a celebrity night out and contains no conflict-related discussion. However, the article includes unrelated embedded news items with meaningful coverage of Palestine-related protest activity and military operations in Gaza, making it peripheral rather than wholly excludable.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:48:46Z",
+  "duration_seconds": 4.628,
+  "error": null
+}

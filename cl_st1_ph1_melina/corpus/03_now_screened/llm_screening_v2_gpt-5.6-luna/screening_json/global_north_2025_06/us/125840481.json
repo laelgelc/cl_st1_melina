@@ -1,0 +1,65 @@
+{
+  "article_id": "125840481",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_06/us/125840481.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_06/us/125840481.json"
+  },
+  "manifest_row": {
+    "article_id": "125840481",
+    "group": "global_north_2025_06",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2025_06/us/125840481.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "background",
+    "main_topic": "Israeli air strikes on Iran, civilian impact, nuclear facilities, and resulting regional tensions",
+    "conflict_relevance": "The article primarily covers the Israel-Iran conflict and nuclear negotiations, while situating the attacks within Israel's broader regional military actions and briefly referencing the death toll in Gaza.",
+    "reason": "Gaza and Palestinians appear in a meaningful contextual sentence, but the article is not centrally about Gaza, Palestine, or the Israel-Hamas war.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "2b6e13480cd48fa3697ed5d187c2924c3f8f4196d2b47c6812d563609b14d4b5",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "fe55145260be8f60ef4024f35d6a184bc2db110ce127efa5eea23cda0bf4ae00",
+    "raw_response_text_sha256": "68b38abf7ac0787f58f4717692dfd870fed99cc5fbfe718da7cdfd5adfb6e5a8"
+  },
+  "api_metadata": {
+    "id": "resp_0822359dee44e6a5006aaa3139580487d1b4bb68dbe9b740c0",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789538617.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1980,
+      "input_tokens_details": {
+        "cache_write_tokens": 1977,
+        "cached_tokens": 0
+      },
+      "output_tokens": 265,
+      "output_tokens_details": {
+        "reasoning_tokens": 109
+      },
+      "total_tokens": 2245
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Israeli air strikes on Iran, civilian impact, nuclear facilities, and resulting regional tensions\",\n  \"conflict_relevance\": \"The article primarily covers the Israel-Iran conflict and nuclear negotiations, while situating the attacks within Israel's broader regional military actions and briefly referencing the death toll in Gaza.\",\n  \"reason\": \"Gaza and Palestinians appear in a meaningful contextual sentence, but the article is not centrally about Gaza, Palestine, or the Israel-Hamas war.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T06:03:41Z",
+  "duration_seconds": 4.654,
+  "error": null
+}

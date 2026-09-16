@@ -1,0 +1,65 @@
+{
+  "article_id": "200048715",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_12/us/200048715.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_12/us/200048715.json"
+  },
+  "manifest_row": {
+    "article_id": "200048715",
+    "group": "global_north_2023_12",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2023_12/us/200048715.txt"
+  },
+  "screening": {
+    "category": "CORE",
+    "confidence": 1.0,
+    "gaza_role": "central",
+    "main_topic": "Israel-Hamas war and the humanitarian and political situation in Gaza",
+    "conflict_relevance": "The article is a live news updates page devoted primarily to Israel's military assault on Gaza, civilian casualties, humanitarian aid, hostages, cease-fire diplomacy, Palestinian displacement, and related international and regional responses.",
+    "reason": "Gaza and the Israel-Hamas war dominate the article, with extensive coverage of military operations, civilian harm, humanitarian conditions, international diplomacy, hostages, Palestinian political developments, and allegations of abuse.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": true
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "546a25cdd23a3daa6e270e5baaf971798d87139cc8d66308443d1ad55b0da7b9",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "6c09d7af31b2d16a93114bfeb8b5658377265a55249858e36dbb01f7b88f3873",
+    "raw_response_text_sha256": "4f20a0456715b8d505b7513a15f4c87c5273fee30fea140cbb2ff0a71604b367"
+  },
+  "api_metadata": {
+    "id": "resp_08aa06bc3e29de27006aaa02ccb46c87d2a77bc3c0e8159394",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789526732.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 6204,
+      "input_tokens_details": {
+        "cache_write_tokens": 6201,
+        "cached_tokens": 0
+      },
+      "output_tokens": 240,
+      "output_tokens_details": {
+        "reasoning_tokens": 73
+      },
+      "total_tokens": 6444
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"CORE\",\n  \"confidence\": 1.0,\n  \"gaza_role\": \"central\",\n  \"main_topic\": \"Israel-Hamas war and the humanitarian and political situation in Gaza\",\n  \"conflict_relevance\": \"The article is a live news updates page devoted primarily to Israel's military assault on Gaza, civilian casualties, humanitarian aid, hostages, cease-fire diplomacy, Palestinian displacement, and related international and regional responses.\",\n  \"reason\": \"Gaza and the Israel-Hamas war dominate the article, with extensive coverage of military operations, civilian harm, humanitarian conditions, international diplomacy, hostages, Palestinian political developments, and allegations of abuse.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": true\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:45:36Z",
+  "duration_seconds": 3.602,
+  "error": null
+}

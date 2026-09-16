@@ -1,0 +1,65 @@
+{
+  "article_id": "104602544",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_12/gb/104602544.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_12/gb/104602544.json"
+  },
+  "manifest_row": {
+    "article_id": "104602544",
+    "group": "global_north_2023_12",
+    "country_code": "gb",
+    "filepath": "corpus/02_now_organised/global_north_2023_12/gb/104602544.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.93,
+    "gaza_role": "passing",
+    "main_topic": "A roundup of unrelated latest news stories",
+    "conflict_relevance": "One embedded item reports on childbirth and humanitarian conditions in war-torn Gaza.",
+    "reason": "The text is primarily a multi-item news roundup covering sports, technology, entertainment, finance, crime, and accidents. It includes a meaningful but very brief Gaza-related report, making it potentially useful for broader discourse analysis but unsuitable as core conflict coverage.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "31b0c5842382655211d90c7b6772614a2c904550c4cbef33bf4ef58dd4325930",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "71503bcfb0efe04404a83eeab7fc3a6d9592afeff6f00ef5ee0c9c95199596f3",
+    "raw_response_text_sha256": "bc663e1881ec210251fd50d5db57cbd7844b23e6f5e8d66e5b98799d731e6c23"
+  },
+  "api_metadata": {
+    "id": "resp_0cf388569290a107006aaa013eb8b487d29e62f2b7d70d28a4",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789526334.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1256,
+      "input_tokens_details": {
+        "cache_write_tokens": 1253,
+        "cached_tokens": 0
+      },
+      "output_tokens": 344,
+      "output_tokens_details": {
+        "reasoning_tokens": 197
+      },
+      "total_tokens": 1600
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.93,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"A roundup of unrelated latest news stories\",\n  \"conflict_relevance\": \"One embedded item reports on childbirth and humanitarian conditions in war-torn Gaza.\",\n  \"reason\": \"The text is primarily a multi-item news roundup covering sports, technology, entertainment, finance, crime, and accidents. It includes a meaningful but very brief Gaza-related report, making it potentially useful for broader discourse analysis but unsuitable as core conflict coverage.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:39:00Z",
+  "duration_seconds": 5.791,
+  "error": null
+}

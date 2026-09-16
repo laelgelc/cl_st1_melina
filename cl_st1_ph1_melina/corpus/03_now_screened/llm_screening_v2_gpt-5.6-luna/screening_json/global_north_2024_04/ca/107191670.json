@@ -1,0 +1,65 @@
+{
+  "article_id": "107191670",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_04/ca/107191670.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_04/ca/107191670.json"
+  },
+  "manifest_row": {
+    "article_id": "107191670",
+    "group": "global_north_2024_04",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2024_04/ca/107191670.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.97,
+    "gaza_role": "passing",
+    "main_topic": "Police investigation into an alleged armed robbery in Ontario",
+    "conflict_relevance": "An embedded CTVNews.ca top-stories roundup includes a brief item about a Canadian killed in an Israeli airstrike in Gaza and calls for an investigation.",
+    "reason": "The main article concerns an unrelated Ontario robbery. Gaza appears only in a meaningful but incidental embedded news item within a list of top stories, making the article peripheral rather than core.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "72d2f7605836b065466ec4be45af6ff894cb6a9e8760130fe7e7c258c3de7452",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "c9ab714714f55dfb2de192fb1c0a44b6d2bcdff17be33509e5cb2b69c42935a5",
+    "raw_response_text_sha256": "d052c42bffa5d3e84514eb295b51219f38ba85691c05d6c92b27d4d0fb0f994a"
+  },
+  "api_metadata": {
+    "id": "resp_01bac01e6bda99ea006aaa0af2c11087d2a01effd717bec7e5",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789528818.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1376,
+      "input_tokens_details": {
+        "cache_write_tokens": 1373,
+        "cached_tokens": 0
+      },
+      "output_tokens": 229,
+      "output_tokens_details": {
+        "reasoning_tokens": 78
+      },
+      "total_tokens": 1605
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.97,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Police investigation into an alleged armed robbery in Ontario\",\n  \"conflict_relevance\": \"An embedded CTVNews.ca top-stories roundup includes a brief item about a Canadian killed in an Israeli airstrike in Gaza and calls for an investigation.\",\n  \"reason\": \"The main article concerns an unrelated Ontario robbery. Gaza appears only in a meaningful but incidental embedded news item within a list of top stories, making the article peripheral rather than core.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:20:22Z",
+  "duration_seconds": 3.442,
+  "error": null
+}

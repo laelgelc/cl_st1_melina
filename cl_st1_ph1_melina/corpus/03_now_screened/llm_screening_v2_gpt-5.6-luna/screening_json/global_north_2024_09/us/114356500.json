@@ -1,0 +1,65 @@
+{
+  "article_id": "114356500",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_09/us/114356500.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_09/us/114356500.json"
+  },
+  "manifest_row": {
+    "article_id": "114356500",
+    "group": "global_north_2024_09",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2024_09/us/114356500.txt"
+  },
+  "screening": {
+    "category": "CORE",
+    "confidence": 0.96,
+    "gaza_role": "background",
+    "main_topic": "Hezbollah-Israel escalation following the exploding pager attacks in Lebanon",
+    "conflict_relevance": "The main article concerns alleged Israeli military action against Hezbollah, retaliation threats, cross-border conflict, and the risk of regional escalation connected to the Gaza war.",
+    "reason": "The headline and opening article are substantially about Israel-related military action, Hezbollah, civilian casualties, retaliation, and the broader regional conflict. Gaza appears as contextual background, while the remainder of the text consists of unrelated news snippets.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": true
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "fc74904b370142c9578d25d8af3846ceeebf85f32867a3f586fb5765f5284265",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "eba8cc15825e5d6ae11eac26082fc972f51e79ce843c4eaa75b2abf8b36ef1fa",
+    "raw_response_text_sha256": "a511d0aef748bc46cd63b784cf373f78b7f353db69fa4d43b5835bd3f9aac604"
+  },
+  "api_metadata": {
+    "id": "resp_0db2fc04f00ffc7c006aaa1739a94887d28099acb255c0269c",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789531961.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2330,
+      "input_tokens_details": {
+        "cache_write_tokens": 2327,
+        "cached_tokens": 0
+      },
+      "output_tokens": 314,
+      "output_tokens_details": {
+        "reasoning_tokens": 154
+      },
+      "total_tokens": 2644
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"CORE\",\n  \"confidence\": 0.96,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Hezbollah-Israel escalation following the exploding pager attacks in Lebanon\",\n  \"conflict_relevance\": \"The main article concerns alleged Israeli military action against Hezbollah, retaliation threats, cross-border conflict, and the risk of regional escalation connected to the Gaza war.\",\n  \"reason\": \"The headline and opening article are substantially about Israel-related military action, Hezbollah, civilian casualties, retaliation, and the broader regional conflict. Gaza appears as contextual background, while the remainder of the text consists of unrelated news snippets.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": true\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T04:12:44Z",
+  "duration_seconds": 2.969,
+  "error": null
+}

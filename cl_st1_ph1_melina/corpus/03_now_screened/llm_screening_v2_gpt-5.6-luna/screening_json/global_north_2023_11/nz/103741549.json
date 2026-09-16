@@ -1,0 +1,65 @@
+{
+  "article_id": "103741549",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_11/nz/103741549.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_11/nz/103741549.json"
+  },
+  "manifest_row": {
+    "article_id": "103741549",
+    "group": "global_north_2023_11",
+    "country_code": "nz",
+    "filepath": "corpus/02_now_organised/global_north_2023_11/nz/103741549.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.96,
+    "gaza_role": "passing",
+    "main_topic": "Clubs New Zealand's response to the formation of New Zealand's coalition government",
+    "conflict_relevance": "The article includes a brief political statement from the Labour Party calling for an urgent ceasefire in Gaza and Israel, but this is not the article's main subject.",
+    "reason": "The main article concerns domestic New Zealand coalition-government appointments and policies affecting clubs. The Gaza-related material appears as a short item within a set of additional unrelated snippets, but it contains meaningful conflict discourse.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "c883123b634e12309d863d7cf7dd3ea887c80d9f27cd505b7c09af63ac6c6113",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "9b3170001b3db4a17981eb37c03a66a1396bfeae34c3caa46a2d960d6981ebec",
+    "raw_response_text_sha256": "a04724c53e14b4ad74b662aee2e664750fa9f1ea1396a2dd1abf0029a74dad22"
+  },
+  "api_metadata": {
+    "id": "resp_0bdccc82423d4737006aa9fdcdf44087d2bc2c513e4b224c66",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789525453.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1322,
+      "input_tokens_details": {
+        "cache_write_tokens": 1319,
+        "cached_tokens": 0
+      },
+      "output_tokens": 251,
+      "output_tokens_details": {
+        "reasoning_tokens": 89
+      },
+      "total_tokens": 1573
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.96,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Clubs New Zealand's response to the formation of New Zealand's coalition government\",\n  \"conflict_relevance\": \"The article includes a brief political statement from the Labour Party calling for an urgent ceasefire in Gaza and Israel, but this is not the article's main subject.\",\n  \"reason\": \"The main article concerns domestic New Zealand coalition-government appointments and policies affecting clubs. The Gaza-related material appears as a short item within a set of additional unrelated snippets, but it contains meaningful conflict discourse.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:24:16Z",
+  "duration_seconds": 2.901,
+  "error": null
+}

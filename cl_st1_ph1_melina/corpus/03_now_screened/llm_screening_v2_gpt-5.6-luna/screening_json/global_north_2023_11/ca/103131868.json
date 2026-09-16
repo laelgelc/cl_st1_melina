@@ -1,0 +1,65 @@
+{
+  "article_id": "103131868",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_11/ca/103131868.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_11/ca/103131868.json"
+  },
+  "manifest_row": {
+    "article_id": "103131868",
+    "group": "global_north_2023_11",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2023_11/ca/103131868.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.93,
+    "gaza_role": "passing",
+    "main_topic": "Mixed Canadian news roundup",
+    "conflict_relevance": "Contains a brief report about a Canadian man and his family attempting to leave Gaza through the Egypt border crossing.",
+    "reason": "The text consists primarily of unrelated news snippets, including crime, health, Indigenous affairs, vehicle recalls, and local stories. The Gaza reference is meaningful but limited to a single brief item and is not the central subject.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "ad07f43faa48d280a34211b4ae115a78357912b5101d5f2db86687239ab44989",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "27184a491b9088f5b5d7e6d196187e8f9e38bb37bc3f0be959ee1e312cbce7ca",
+    "raw_response_text_sha256": "d2c436cccc796cf141b8477faaa53deb197e2c00317613db58b3e45fdab73eca"
+  },
+  "api_metadata": {
+    "id": "resp_0ad95ae64cec8710006aa9fb9cd96487d2a04d30830067ff8d",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789524892.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1350,
+      "input_tokens_details": {
+        "cache_write_tokens": 1347,
+        "cached_tokens": 0
+      },
+      "output_tokens": 304,
+      "output_tokens_details": {
+        "reasoning_tokens": 160
+      },
+      "total_tokens": 1654
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.93,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Mixed Canadian news roundup\",\n  \"conflict_relevance\": \"Contains a brief report about a Canadian man and his family attempting to leave Gaza through the Egypt border crossing.\",\n  \"reason\": \"The text consists primarily of unrelated news snippets, including crime, health, Indigenous affairs, vehicle recalls, and local stories. The Gaza reference is meaningful but limited to a single brief item and is not the central subject.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:14:56Z",
+  "duration_seconds": 4.173,
+  "error": null
+}

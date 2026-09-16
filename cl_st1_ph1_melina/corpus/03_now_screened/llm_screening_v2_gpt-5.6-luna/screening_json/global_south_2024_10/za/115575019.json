@@ -1,0 +1,65 @@
+{
+  "article_id": "115575019",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_south_2024_10/za/115575019.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_south_2024_10/za/115575019.json"
+  },
+  "manifest_row": {
+    "article_id": "115575019",
+    "group": "global_south_2024_10",
+    "country_code": "za",
+    "filepath": "corpus/02_now_organised/global_south_2024_10/za/115575019.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.96,
+    "gaza_role": "substantial",
+    "main_topic": "Mixed news and promotional roundup containing a substantive Gaza war item",
+    "conflict_relevance": "The roundup includes a substantial article about the Gaza war, documenting deaths, displacement, the 7 October Hamas attack, and Israeli hostages, but the overall page is not centered on the conflict.",
+    "reason": "The Gaza-related item is meaningful and directly relevant to the research topic, but it appears as one snippet among numerous unrelated news, lifestyle, and advertising items. It should therefore not be treated as core conflict coverage.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "701cfdde57e82077867171ccfef744604a7ec74f9415950d36d6df38bd883201",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "c32df4282149edc8ce078a01c290221db3f54eb810a5eef59889219f4a0b5948",
+    "raw_response_text_sha256": "01054bd95e841e5f225a197e35ccfbb66ffb94339118cad5e2d8e51aa353f38d"
+  },
+  "api_metadata": {
+    "id": "resp_02a38d46147447b9006aaa415d841087d1a03bf65c87beccbb",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789542749.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1316,
+      "input_tokens_details": {
+        "cache_write_tokens": 1313,
+        "cached_tokens": 0
+      },
+      "output_tokens": 319,
+      "output_tokens_details": {
+        "reasoning_tokens": 150
+      },
+      "total_tokens": 1635
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.96,\n  \"gaza_role\": \"substantial\",\n  \"main_topic\": \"Mixed news and promotional roundup containing a substantive Gaza war item\",\n  \"conflict_relevance\": \"The roundup includes a substantial article about the Gaza war, documenting deaths, displacement, the 7 October Hamas attack, and Israeli hostages, but the overall page is not centered on the conflict.\",\n  \"reason\": \"The Gaza-related item is meaningful and directly relevant to the research topic, but it appears as one snippet among numerous unrelated news, lifestyle, and advertising items. It should therefore not be treated as core conflict coverage.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T07:12:33Z",
+  "duration_seconds": 4.445,
+  "error": null
+}

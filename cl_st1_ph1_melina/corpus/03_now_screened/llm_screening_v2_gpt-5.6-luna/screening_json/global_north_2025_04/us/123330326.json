@@ -1,0 +1,65 @@
+{
+  "article_id": "123330326",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_04/us/123330326.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_04/us/123330326.json"
+  },
+  "manifest_row": {
+    "article_id": "123330326",
+    "group": "global_north_2025_04",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2025_04/us/123330326.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "background",
+    "main_topic": "Daily science news briefing covering research, science policy, and academic affairs",
+    "conflict_relevance": "Includes a substantive item about US immigration officials detaining or deporting international students and scholars over support for Palestinians in Gaza, as well as related academic-freedom concerns.",
+    "reason": "The article is primarily a multi-item science news roundup, but its section on US science in chaos meaningfully discusses repression of pro-Palestinian academic activity and Gaza-related political discourse. This makes it useful as peripheral material rather than core conflict coverage.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "208104e4b59c19ee882cf138087abf7a58ae80e4a68aabbec05b21f3bd5e4cfd",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "b13e57e975f5d53ba38cb0979239fdd2c1f563f9e3e1574bc551aeb9a096d993",
+    "raw_response_text_sha256": "af4a32ba3cd45ad0508f11643e98c78a00746b26b8cd8247c7029f3b86bdc04a"
+  },
+  "api_metadata": {
+    "id": "resp_0c17f8d840f9dc2f006aaa2a0a47d887d1bd904c7d7ee00e8f",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789536778.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1660,
+      "input_tokens_details": {
+        "cache_write_tokens": 1657,
+        "cached_tokens": 0
+      },
+      "output_tokens": 227,
+      "output_tokens_details": {
+        "reasoning_tokens": 54
+      },
+      "total_tokens": 1887
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Daily science news briefing covering research, science policy, and academic affairs\",\n  \"conflict_relevance\": \"Includes a substantive item about US immigration officials detaining or deporting international students and scholars over support for Palestinians in Gaza, as well as related academic-freedom concerns.\",\n  \"reason\": \"The article is primarily a multi-item science news roundup, but its section on US science in chaos meaningfully discusses repression of pro-Palestinian academic activity and Gaza-related political discourse. This makes it useful as peripheral material rather than core conflict coverage.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T05:33:01Z",
+  "duration_seconds": 3.168,
+  "error": null
+}

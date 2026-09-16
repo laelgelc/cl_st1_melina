@@ -1,0 +1,65 @@
+{
+  "article_id": "118348141",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_12/ca/118348141.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_12/ca/118348141.json"
+  },
+  "manifest_row": {
+    "article_id": "118348141",
+    "group": "global_north_2024_12",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2024_12/ca/118348141.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "gaza_role": "passing",
+    "main_topic": "Personal finance advice about auditing and reducing subscription expenses",
+    "conflict_relevance": "The main article is unrelated to Gaza or the Israel-Palestine conflict; Gaza appears only in a repeated embedded news snippet about Israeli hostages.",
+    "reason": "The headline and substantive article concern subscription management and personal budgeting. The Gaza-related sentence is an incidental item in a collection of unrelated news snippets and does not form part of the article's discourse.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "f1c7c88d58d77aa7cb2c2229fd5732867df1d7cfcabda828b8e049b3e24a1b07",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "f1aeba87b1e13aa68a3e452350e09afb8d50e576b283ff66d6779fa3d12d3748",
+    "raw_response_text_sha256": "1adff93ae46ff00286c147b5f6d543f2380d9e4baefb5eb71a815e314421b783"
+  },
+  "api_metadata": {
+    "id": "resp_079f1f0a1a34c57f006aaa1cfc41d087d2a604e54c118199a0",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789533436.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2664,
+      "input_tokens_details": {
+        "cache_write_tokens": 2661,
+        "cached_tokens": 0
+      },
+      "output_tokens": 267,
+      "output_tokens_details": {
+        "reasoning_tokens": 115
+      },
+      "total_tokens": 2931
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Personal finance advice about auditing and reducing subscription expenses\",\n  \"conflict_relevance\": \"The main article is unrelated to Gaza or the Israel-Palestine conflict; Gaza appears only in a repeated embedded news snippet about Israeli hostages.\",\n  \"reason\": \"The headline and substantive article concern subscription management and personal budgeting. The Gaza-related sentence is an incidental item in a collection of unrelated news snippets and does not form part of the article's discourse.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T04:37:19Z",
+  "duration_seconds": 3.736,
+  "error": null
+}

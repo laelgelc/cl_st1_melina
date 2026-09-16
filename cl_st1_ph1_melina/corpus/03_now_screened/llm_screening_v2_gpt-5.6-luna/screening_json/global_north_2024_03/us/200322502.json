@@ -1,0 +1,65 @@
+{
+  "article_id": "200322502",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_03/us/200322502.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_03/us/200322502.json"
+  },
+  "manifest_row": {
+    "article_id": "200322502",
+    "group": "global_north_2024_03",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2024_03/us/200322502.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "passing",
+    "main_topic": "European financial markets, currencies, bonds, commodities, and economic news",
+    "conflict_relevance": "The briefing briefly reports that the United States is bringing a UN resolution for an immediate and sustained cease-fire in Gaza to a Security Council vote, framing the development in relation to oil-market supply-disruption concerns.",
+    "reason": "The article is primarily a financial markets newsletter and is not focused on Gaza or the Israel-Hamas war, but it contains a meaningful sentence about US diplomacy and a Gaza cease-fire resolution.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "445230d9390ed6075746ac2f93a5f446f052b83dff7018bcc238717590ce4912",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "901239eb28bddc9e0fe5db35cb9819d2048ec5072cda06a9c56ce6013d039146",
+    "raw_response_text_sha256": "0a0a8f7bce9ff0e478149ec103c8ecae1b2aba0580a65282f8c2930851f7269e"
+  },
+  "api_metadata": {
+    "id": "resp_0bb03a119acdab68006aaa0a98c39c87d2973423d4312a6ac3",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789528729.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2856,
+      "input_tokens_details": {
+        "cache_write_tokens": 2853,
+        "cached_tokens": 0
+      },
+      "output_tokens": 290,
+      "output_tokens_details": {
+        "reasoning_tokens": 123
+      },
+      "total_tokens": 3146
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"European financial markets, currencies, bonds, commodities, and economic news\",\n  \"conflict_relevance\": \"The briefing briefly reports that the United States is bringing a UN resolution for an immediate and sustained cease-fire in Gaza to a Security Council vote, framing the development in relation to oil-market supply-disruption concerns.\",\n  \"reason\": \"The article is primarily a financial markets newsletter and is not focused on Gaza or the Israel-Hamas war, but it contains a meaningful sentence about US diplomacy and a Gaza cease-fire resolution.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:19:07Z",
+  "duration_seconds": 20.255,
+  "error": null
+}

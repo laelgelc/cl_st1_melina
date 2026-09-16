@@ -1,0 +1,65 @@
+{
+  "article_id": "118295102",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_11/sg/118295102.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_11/sg/118295102.json"
+  },
+  "manifest_row": {
+    "article_id": "118295102",
+    "group": "global_north_2024_11",
+    "country_code": "sg",
+    "filepath": "corpus/02_now_organised/global_north_2024_11/sg/118295102.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "gaza_role": "boilerplate_or_unrelated",
+    "main_topic": "The Ukraine war and the escalation risks of Western long-range missile strikes into Russia",
+    "conflict_relevance": "Gaza appears only in the author's book title in the closing biographical note and is not discussed in the article.",
+    "reason": "The article is entirely focused on the Russia-Ukraine war, missile strikes, nuclear escalation, and NATO involvement. The sole Gaza reference is incidental and unrelated to the article's substantive content.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "fb61f06f2bb52ecdb85401b6717e20a79da0a569c932f74ba804678f38886f89",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "befc52d5b373b6535cd8b20200f481410ec467a86f42fb696849bddb4274d1a4",
+    "raw_response_text_sha256": "6280fd6ff5e126d30b62848952c02ec9ff8f4d29bc6fb6f6c636b40388911cf4"
+  },
+  "api_metadata": {
+    "id": "resp_0dd1e45b60ade7c3006aaa1bc0b09887d2a0fd33dfd901ce4c",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789533120.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2110,
+      "input_tokens_details": {
+        "cache_write_tokens": 2107,
+        "cached_tokens": 0
+      },
+      "output_tokens": 224,
+      "output_tokens_details": {
+        "reasoning_tokens": 69
+      },
+      "total_tokens": 2334
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"gaza_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"The Ukraine war and the escalation risks of Western long-range missile strikes into Russia\",\n  \"conflict_relevance\": \"Gaza appears only in the author's book title in the closing biographical note and is not discussed in the article.\",\n  \"reason\": \"The article is entirely focused on the Russia-Ukraine war, missile strikes, nuclear escalation, and NATO involvement. The sole Gaza reference is incidental and unrelated to the article's substantive content.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T04:32:03Z",
+  "duration_seconds": 2.586,
+  "error": null
+}

@@ -1,0 +1,65 @@
+{
+  "article_id": "125900658",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_south_2025_06/in/125900658.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_south_2025_06/in/125900658.json"
+  },
+  "manifest_row": {
+    "article_id": "125900658",
+    "group": "global_south_2025_06",
+    "country_code": "in",
+    "filepath": "corpus/02_now_organised/global_south_2025_06/in/125900658.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.96,
+    "gaza_role": "background",
+    "main_topic": "Live coverage of the June 2025 Iran-Israel military conflict",
+    "conflict_relevance": "The article is primarily about direct military hostilities between Iran and Israel, but it includes contextual references to Hamas attacks from Gaza and Iran-aligned attacks framed as support for Palestinians during the Israel-Hamas war.",
+    "reason": "Although the article contains extensive reporting on airstrikes, casualties, diplomacy, and escalation between Iran and Israel, Gaza and the Israel-Palestine conflict are not its central subject. The Gaza references provide regional and military context, making it useful for broader conflict discourse analysis but not as core Gaza coverage.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "3301637f3d7fbbf7cf332960145eca08633f0bb63388bdd7f6522f1cef56611c",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "8ae02531daa12b6baaf754d834170f114ac9b2234d096e1221f5288e16085490",
+    "raw_response_text_sha256": "1edbeb4dee7682a9cab8bc201b4bd68ca570701bc43844a477f65fe77b51a546"
+  },
+  "api_metadata": {
+    "id": "resp_0f8ade46c5874399006aaa49f5492c87d19fc2da93e6f1021c",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789544949.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 5221,
+      "input_tokens_details": {
+        "cache_write_tokens": 5218,
+        "cached_tokens": 0
+      },
+      "output_tokens": 329,
+      "output_tokens_details": {
+        "reasoning_tokens": 138
+      },
+      "total_tokens": 5550
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.96,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Live coverage of the June 2025 Iran-Israel military conflict\",\n  \"conflict_relevance\": \"The article is primarily about direct military hostilities between Iran and Israel, but it includes contextual references to Hamas attacks from Gaza and Iran-aligned attacks framed as support for Palestinians during the Israel-Hamas war.\",\n  \"reason\": \"Although the article contains extensive reporting on airstrikes, casualties, diplomacy, and escalation between Iran and Israel, Gaza and the Israel-Palestine conflict are not its central subject. The Gaza references provide regional and military context, making it useful for broader conflict discourse analysis but not as core Gaza coverage.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T07:49:14Z",
+  "duration_seconds": 5.69,
+  "error": null
+}

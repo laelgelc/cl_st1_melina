@@ -1,0 +1,65 @@
+{
+  "article_id": "117645623",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_11/gb/117645623.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_11/gb/117645623.json"
+  },
+  "manifest_row": {
+    "article_id": "117645623",
+    "group": "global_north_2024_11",
+    "country_code": "gb",
+    "filepath": "corpus/02_now_organised/global_north_2024_11/gb/117645623.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.96,
+    "gaza_role": "background",
+    "main_topic": "UK efforts to combat Channel migrant crossings and people-smuggling networks",
+    "conflict_relevance": "The main article concerns migration enforcement, but the text includes substantive embedded reports about alleged genocide and crimes against humanity in Gaza, as well as protests and security surrounding a France-Israel football match amid Israel's war in Gaza.",
+    "reason": "The primary story is unrelated to the Israel-Palestine conflict, while Gaza-related material appears as separate news snippets within a multi-article compilation. These snippets contain meaningful conflict discourse but do not make the main article core coverage.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "976aea26d9038eea06ead54b63c8f2ff8d7672972035774cc774f61819967266",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "3cfb4c6d6b1cd2b6553c7c1d66088d40848efc96bbc238c6b316e026fc2cae84",
+    "raw_response_text_sha256": "8266754bb296703635db6cd72e21f343817a48c520efbab44bd4e0459bb9af28"
+  },
+  "api_metadata": {
+    "id": "resp_0f74c69511d27f81006aaa1acf8e0487d2b7995ba033e05f25",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789532879.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1986,
+      "input_tokens_details": {
+        "cache_write_tokens": 1983,
+        "cached_tokens": 0
+      },
+      "output_tokens": 343,
+      "output_tokens_details": {
+        "reasoning_tokens": 165
+      },
+      "total_tokens": 2329
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.96,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"UK efforts to combat Channel migrant crossings and people-smuggling networks\",\n  \"conflict_relevance\": \"The main article concerns migration enforcement, but the text includes substantive embedded reports about alleged genocide and crimes against humanity in Gaza, as well as protests and security surrounding a France-Israel football match amid Israel's war in Gaza.\",\n  \"reason\": \"The primary story is unrelated to the Israel-Palestine conflict, while Gaza-related material appears as separate news snippets within a multi-article compilation. These snippets contain meaningful conflict discourse but do not make the main article core coverage.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T04:28:03Z",
+  "duration_seconds": 4.523,
+  "error": null
+}

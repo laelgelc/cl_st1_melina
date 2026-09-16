@@ -1,0 +1,65 @@
+{
+  "article_id": "119668597",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_01/au/119668597.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_01/au/119668597.json"
+  },
+  "manifest_row": {
+    "article_id": "119668597",
+    "group": "global_north_2025_01",
+    "country_code": "au",
+    "filepath": "corpus/02_now_organised/global_north_2025_01/au/119668597.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.97,
+    "gaza_role": "substantial",
+    "main_topic": "Australian morning news bulletin covering Canadian politics, a possible Israel-Hamas ceasefire, Australian crime and drowning incidents, an Orthodox Epiphany celebration, and tennis",
+    "conflict_relevance": "The bulletin contains a substantive news segment on ceasefire negotiations between Israel and Hamas, the possible release of 34 Israeli hostages, and US diplomatic efforts, but Gaza is only one item among several unrelated stories.",
+    "reason": "The Israel-Hamas and Gaza coverage is meaningful and directly relevant, but the article as a whole is a multi-topic news roundup rather than a report centrally focused on the conflict.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "af918491cff72c9846e28ec8edd20f7e7b2f8669998f9a4c673e6fa536482601",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "0dd2e4498bdb3e10b67ee71ed6a2aaccf1db810e1d535a23b0d49bcee0803e87",
+    "raw_response_text_sha256": "ea6d0ee15f1312258191f0f43825ad1ff885b4bd433edbcc09b037bddf89e329"
+  },
+  "api_metadata": {
+    "id": "resp_0a5ba931d9ed28c4006aaa1eec911487d2b763ed7b695290cf",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789533932.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1838,
+      "input_tokens_details": {
+        "cache_write_tokens": 1835,
+        "cached_tokens": 0
+      },
+      "output_tokens": 322,
+      "output_tokens_details": {
+        "reasoning_tokens": 137
+      },
+      "total_tokens": 2160
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.97,\n  \"gaza_role\": \"substantial\",\n  \"main_topic\": \"Australian morning news bulletin covering Canadian politics, a possible Israel-Hamas ceasefire, Australian crime and drowning incidents, an Orthodox Epiphany celebration, and tennis\",\n  \"conflict_relevance\": \"The bulletin contains a substantive news segment on ceasefire negotiations between Israel and Hamas, the possible release of 34 Israeli hostages, and US diplomatic efforts, but Gaza is only one item among several unrelated stories.\",\n  \"reason\": \"The Israel-Hamas and Gaza coverage is meaningful and directly relevant, but the article as a whole is a multi-topic news roundup rather than a report centrally focused on the conflict.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T04:45:37Z",
+  "duration_seconds": 4.601,
+  "error": null
+}

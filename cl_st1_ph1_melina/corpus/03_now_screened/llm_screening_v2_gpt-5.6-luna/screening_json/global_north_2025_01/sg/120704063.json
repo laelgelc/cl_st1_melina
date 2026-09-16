@@ -1,0 +1,65 @@
+{
+  "article_id": "120704063",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_01/sg/120704063.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_01/sg/120704063.json"
+  },
+  "manifest_row": {
+    "article_id": "120704063",
+    "group": "global_north_2025_01",
+    "country_code": "sg",
+    "filepath": "corpus/02_now_organised/global_north_2025_01/sg/120704063.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "passing",
+    "main_topic": "International photo roundup of recent events",
+    "conflict_relevance": "Includes a photograph caption about the release in Gaza of a Thai hostage captured during the 2023 Hamas attack, but the roundup is primarily about unrelated global events.",
+    "reason": "The article is a general Today in Pictures feature with one meaningful Gaza- and hostage-related caption among several unrelated images. This supports peripheral discourse analysis but is not core conflict coverage.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "8a05bc65c9942f9e41163d12df5ff5be84527dd2fad21da7f02692e354369dbf",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "99cfc7f4806174a7c8eb1aa9061bb2b4722d9679e1b108c13c57d64958907ef1",
+    "raw_response_text_sha256": "0458f6aa74068124bc7351e543484c67e73cf16cae5eb942467207fa202ab42b"
+  },
+  "api_metadata": {
+    "id": "resp_03c7c80a43175e67006aaa20ae5c7087d2bf7341d130997dc8",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789534382.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1088,
+      "input_tokens_details": {
+        "cache_write_tokens": 1085,
+        "cached_tokens": 0
+      },
+      "output_tokens": 236,
+      "output_tokens_details": {
+        "reasoning_tokens": 87
+      },
+      "total_tokens": 1324
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"International photo roundup of recent events\",\n  \"conflict_relevance\": \"Includes a photograph caption about the release in Gaza of a Thai hostage captured during the 2023 Hamas attack, but the roundup is primarily about unrelated global events.\",\n  \"reason\": \"The article is a general Today in Pictures feature with one meaningful Gaza- and hostage-related caption among several unrelated images. This supports peripheral discourse analysis but is not core conflict coverage.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T04:53:05Z",
+  "duration_seconds": 3.551,
+  "error": null
+}

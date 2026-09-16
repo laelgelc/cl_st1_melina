@@ -1,0 +1,65 @@
+{
+  "article_id": "102795808",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_10/ca/102795808.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_10/ca/102795808.json"
+  },
+  "manifest_row": {
+    "article_id": "102795808",
+    "group": "global_north_2023_10",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2023_10/ca/102795808.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.96,
+    "gaza_role": "background",
+    "main_topic": "Mixed news aggregation dominated by sports coverage",
+    "conflict_relevance": "Includes substantive snippets about the release of American hostages from Gaza and Canadian political pressure concerning the al-Ahli Arab hospital blast, but the overall item is not focused on the conflict.",
+    "reason": "The text is a multi-item compilation of mostly unrelated sports and political news. The Gaza-related passages are meaningful and relevant to conflict discourse, but they function as embedded snippets rather than the central subject.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "b8a6c7b214afa30a5ed99806f34c55694966be952eb095400945c26a3767af08",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "ecf20a5e38f56d628e5f7531ebce360e6d4d9f95174dda0d684b0c2bbb93fad9",
+    "raw_response_text_sha256": "286de98b0ee8996e6414ad6a7ad965213297ce8893e920a672f9e88e630ddec8"
+  },
+  "api_metadata": {
+    "id": "resp_02d52cd308f21ba2006aa9f677723c87d2b68eef96a992890a",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789523575.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2013,
+      "input_tokens_details": {
+        "cache_write_tokens": 2010,
+        "cached_tokens": 0
+      },
+      "output_tokens": 347,
+      "output_tokens_details": {
+        "reasoning_tokens": 189
+      },
+      "total_tokens": 2360
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.96,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Mixed news aggregation dominated by sports coverage\",\n  \"conflict_relevance\": \"Includes substantive snippets about the release of American hostages from Gaza and Canadian political pressure concerning the al-Ahli Arab hospital blast, but the overall item is not focused on the conflict.\",\n  \"reason\": \"The text is a multi-item compilation of mostly unrelated sports and political news. The Gaza-related passages are meaningful and relevant to conflict discourse, but they function as embedded snippets rather than the central subject.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T01:52:59Z",
+  "duration_seconds": 4.112,
+  "error": null
+}

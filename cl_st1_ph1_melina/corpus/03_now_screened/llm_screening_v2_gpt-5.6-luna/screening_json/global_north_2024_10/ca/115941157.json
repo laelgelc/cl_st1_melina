@@ -1,0 +1,65 @@
+{
+  "article_id": "115941157",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_10/ca/115941157.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_10/ca/115941157.json"
+  },
+  "manifest_row": {
+    "article_id": "115941157",
+    "group": "global_north_2024_10",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2024_10/ca/115941157.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "background",
+    "main_topic": "Tom Brady's purchase of a minority stake in the Las Vegas Raiders",
+    "conflict_relevance": "The main article is unrelated to Gaza, but an embedded news snippet references rising threats against Muslims, Arabs, and Jews following the Israel-Hamas war and related fighting in Gaza and Lebanon.",
+    "reason": "The article is primarily a sports report about NFL ownership. However, it contains a meaningful contextual sentence linking a reported antisemitic hate-crime incident in the United States to tensions arising from the wars in Gaza and Lebanon, making it peripheral rather than excludable.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "348b4f15236f181f444c1601b972b42214bde850ed8c005554785f41bf1edc30",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "ee203e314395b028f5f2338aec9e6056925291581337bab1cf6a2caf15a02b04",
+    "raw_response_text_sha256": "fc272d2a3a37c09753414af61043a2129cb8e5de876613244a2f8c9690b3ff74"
+  },
+  "api_metadata": {
+    "id": "resp_0c4aa3189d38db37006aaa1801bfb887d2be8aee3bebd84009",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789532161.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2297,
+      "input_tokens_details": {
+        "cache_write_tokens": 2294,
+        "cached_tokens": 0
+      },
+      "output_tokens": 261,
+      "output_tokens_details": {
+        "reasoning_tokens": 82
+      },
+      "total_tokens": 2558
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Tom Brady's purchase of a minority stake in the Las Vegas Raiders\",\n  \"conflict_relevance\": \"The main article is unrelated to Gaza, but an embedded news snippet references rising threats against Muslims, Arabs, and Jews following the Israel-Hamas war and related fighting in Gaza and Lebanon.\",\n  \"reason\": \"The article is primarily a sports report about NFL ownership. However, it contains a meaningful contextual sentence linking a reported antisemitic hate-crime incident in the United States to tensions arising from the wars in Gaza and Lebanon, making it peripheral rather than excludable.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T04:16:05Z",
+  "duration_seconds": 3.761,
+  "error": null
+}

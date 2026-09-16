@@ -1,0 +1,65 @@
+{
+  "article_id": "125532929",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_south_2025_06/za/125532929.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_south_2025_06/za/125532929.json"
+  },
+  "manifest_row": {
+    "article_id": "125532929",
+    "group": "global_south_2025_06",
+    "country_code": "za",
+    "filepath": "corpus/02_now_organised/global_south_2025_06/za/125532929.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "gaza_role": "passing",
+    "main_topic": "South African morning news and lifestyle roundup",
+    "conflict_relevance": "The roundup includes a brief embedded item about a US veto of a UN Gaza ceasefire resolution, but Gaza is not the focus of the article.",
+    "reason": "This is a multi-item news and promotional roundup covering unrelated South African and international topics. The Gaza reference is limited to one short embedded headline and summary, making the overall item unsuitable for core discourse analysis.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "27d18a6701be23d6902cc5192232d376d9193d9a89e47061a91276a3db9f4110",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "879342c218af6f21c715919c9defba933ce4c5864aeac3311ef5316c264c0ed8",
+    "raw_response_text_sha256": "5d381145d54a648e6e4426da99287a10de6ec101681e42ab422507e30304fcbb"
+  },
+  "api_metadata": {
+    "id": "resp_0a4a74b69359d0a6006aaa4b1055a087d18a64d9c938bfb370",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789545232.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1452,
+      "input_tokens_details": {
+        "cache_write_tokens": 1449,
+        "cached_tokens": 0
+      },
+      "output_tokens": 242,
+      "output_tokens_details": {
+        "reasoning_tokens": 91
+      },
+      "total_tokens": 1694
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"South African morning news and lifestyle roundup\",\n  \"conflict_relevance\": \"The roundup includes a brief embedded item about a US veto of a UN Gaza ceasefire resolution, but Gaza is not the focus of the article.\",\n  \"reason\": \"This is a multi-item news and promotional roundup covering unrelated South African and international topics. The Gaza reference is limited to one short embedded headline and summary, making the overall item unsuitable for core discourse analysis.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T07:53:55Z",
+  "duration_seconds": 3.605,
+  "error": null
+}

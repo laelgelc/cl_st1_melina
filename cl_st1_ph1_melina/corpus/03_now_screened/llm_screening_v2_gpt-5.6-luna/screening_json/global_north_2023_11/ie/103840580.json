@@ -1,0 +1,65 @@
+{
+  "article_id": "103840580",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_11/ie/103840580.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_11/ie/103840580.json"
+  },
+  "manifest_row": {
+    "article_id": "103840580",
+    "group": "global_north_2023_11",
+    "country_code": "ie",
+    "filepath": "corpus/02_now_organised/global_north_2023_11/ie/103840580.txt"
+  },
+  "screening": {
+    "category": "CORE",
+    "confidence": 0.98,
+    "gaza_role": "substantial",
+    "main_topic": "Disruption of a People Before Profit public meeting about Palestine in Dublin, including testimony about family members killed and injured in Gaza",
+    "conflict_relevance": "Directly concerns Palestine solidarity activism, Gaza-related personal testimony, Israeli military action, and opposition to public discussion of the conflict.",
+    "reason": "The primary article centers on a Palestine meeting and a Palestinian speaker's account of deaths and injuries in Gaza. A second, unrelated article about Dublin riots is appended, but the main article is clearly directly relevant to the conflict.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": true
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "58d206fb8ecea629cca033c9a77f66b340eb1a00740bac368527d58162cb23a0",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "3afa0d7a167aa767b9838ab6c6678b712292622ca6bfb639aefd5e9d13666e6d",
+    "raw_response_text_sha256": "39862fe97633678a2e76d3ad9478b2a9ed0c32c1a5b2de26ce4db06dafe9bdb0"
+  },
+  "api_metadata": {
+    "id": "resp_02c3483d8016089a006aa9fda0d5f087d2bdb23c51f9923475",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789525408.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1806,
+      "input_tokens_details": {
+        "cache_write_tokens": 1803,
+        "cached_tokens": 0
+      },
+      "output_tokens": 287,
+      "output_tokens_details": {
+        "reasoning_tokens": 119
+      },
+      "total_tokens": 2093
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"CORE\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"substantial\",\n  \"main_topic\": \"Disruption of a People Before Profit public meeting about Palestine in Dublin, including testimony about family members killed and injured in Gaza\",\n  \"conflict_relevance\": \"Directly concerns Palestine solidarity activism, Gaza-related personal testimony, Israeli military action, and opposition to public discussion of the conflict.\",\n  \"reason\": \"The primary article centers on a Palestine meeting and a Palestinian speaker's account of deaths and injuries in Gaza. A second, unrelated article about Dublin riots is appended, but the main article is clearly directly relevant to the conflict.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": true\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:23:33Z",
+  "duration_seconds": 4.818,
+  "error": null
+}

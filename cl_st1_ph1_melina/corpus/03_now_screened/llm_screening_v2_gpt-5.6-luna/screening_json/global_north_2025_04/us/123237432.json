@@ -1,0 +1,65 @@
+{
+  "article_id": "123237432",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_04/us/123237432.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_04/us/123237432.json"
+  },
+  "manifest_row": {
+    "article_id": "123237432",
+    "group": "global_north_2025_04",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2025_04/us/123237432.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.96,
+    "gaza_role": "passing",
+    "main_topic": "US national security, cybersecurity, privacy, and technology news roundup",
+    "conflict_relevance": "Gaza is mentioned as one of several subjects discussed in US government Signal chats coordinating sensitive national security work.",
+    "reason": "The article is primarily a roundup of unrelated security, privacy, technology, and Trump administration stories. Its Gaza relevance is limited to a meaningful but brief reference to government communications involving Gaza and the Middle East, making it peripheral rather than core conflict coverage.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "bb7d92b1a4efbcc3ef23b9dd434419dc82465d3150f0a9a1b5bd43dfd1914574",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "2226e528d22ede983afd0f0f617d7ca7876742aab5408b89b74e0616cd5f4687",
+    "raw_response_text_sha256": "8a8cc5aba6acef87d90be1d937b4643c761045b9d872b0c29f6bdb758352c769"
+  },
+  "api_metadata": {
+    "id": "resp_0ef08026b441ed53006aaa29f43ed087d1bab7d822375ab00e",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789536756.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2183,
+      "input_tokens_details": {
+        "cache_write_tokens": 2180,
+        "cached_tokens": 0
+      },
+      "output_tokens": 284,
+      "output_tokens_details": {
+        "reasoning_tokens": 126
+      },
+      "total_tokens": 2467
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.96,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"US national security, cybersecurity, privacy, and technology news roundup\",\n  \"conflict_relevance\": \"Gaza is mentioned as one of several subjects discussed in US government Signal chats coordinating sensitive national security work.\",\n  \"reason\": \"The article is primarily a roundup of unrelated security, privacy, technology, and Trump administration stories. Its Gaza relevance is limited to a meaningful but brief reference to government communications involving Gaza and the Middle East, making it peripheral rather than core conflict coverage.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T05:32:40Z",
+  "duration_seconds": 4.557,
+  "error": null
+}

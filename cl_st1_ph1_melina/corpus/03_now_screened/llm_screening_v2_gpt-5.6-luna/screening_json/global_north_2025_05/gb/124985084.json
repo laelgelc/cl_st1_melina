@@ -1,0 +1,65 @@
+{
+  "article_id": "124985084",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_05/gb/124985084.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_05/gb/124985084.json"
+  },
+  "manifest_row": {
+    "article_id": "124985084",
+    "group": "global_north_2025_05",
+    "country_code": "gb",
+    "filepath": "corpus/02_now_organised/global_north_2025_05/gb/124985084.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "background",
+    "main_topic": "A general news and culture roundup covering UK sentencing policy, Starlink, social trends, arts, and commentary",
+    "conflict_relevance": "The roundup includes several meaningful but secondary conflict-related items: Starlink service at a Gaza hospital, commentary on the Israel-Gaza debate, pro-Palestinian campus protests, arms-company divestment, and antisemitism connected to the shooting of Israeli embassy staff.",
+    "reason": "The article is not centrally about Gaza or the Israel-Palestine conflict, but its included commentary provides relevant discourse on Gaza, Israel-Gaza debate, pro-Palestinian activism, antisemitism, and institutional responses. Because it is a multi-item roundup, it is not suitable for the core conflict corpus.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "98ca28626af3db16dd75f536777ac48327321b7f5893025304131ae18fbd257f",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "3eb7f2ff6047e613f17ebdac560db1fee382066bd02cb907483627627e42ee85",
+    "raw_response_text_sha256": "73a34556b42a4b75721f57863a99dde20e1b23f3a8ba2df98bc3b6c97da59811"
+  },
+  "api_metadata": {
+    "id": "resp_0fb41c9e73b5cddb006aaa2c035c4487d1a22fd77fbe86df9f",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789537283.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 3467,
+      "input_tokens_details": {
+        "cache_write_tokens": 3464,
+        "cached_tokens": 0
+      },
+      "output_tokens": 315,
+      "output_tokens_details": {
+        "reasoning_tokens": 100
+      },
+      "total_tokens": 3782
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"A general news and culture roundup covering UK sentencing policy, Starlink, social trends, arts, and commentary\",\n  \"conflict_relevance\": \"The roundup includes several meaningful but secondary conflict-related items: Starlink service at a Gaza hospital, commentary on the Israel-Gaza debate, pro-Palestinian campus protests, arms-company divestment, and antisemitism connected to the shooting of Israeli embassy staff.\",\n  \"reason\": \"The article is not centrally about Gaza or the Israel-Palestine conflict, but its included commentary provides relevant discourse on Gaza, Israel-Gaza debate, pro-Palestinian activism, antisemitism, and institutional responses. Because it is a multi-item roundup, it is not suitable for the core conflict corpus.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T05:41:27Z",
+  "duration_seconds": 4.553,
+  "error": null
+}

@@ -1,0 +1,65 @@
+{
+  "article_id": "103665776",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_11/ca/103665776.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_11/ca/103665776.json"
+  },
+  "manifest_row": {
+    "article_id": "103665776",
+    "group": "global_north_2023_11",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2023_11/ca/103665776.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.99,
+    "gaza_role": "passing",
+    "main_topic": "James Webb Telescope observations of star formation in the centre of the Milky Way",
+    "conflict_relevance": "A CTVNews.ca top-stories snippet briefly mentions a Gaza ceasefire, the release of hostages taken by Hamas, and concerns about the Israel-Hamas war expanding.",
+    "reason": "The main article is entirely about astronomy and the galactic centre. However, an embedded roundup of top stories contains one meaningful sentence concerning Gaza, Hamas hostages, and the Israel-Hamas war, making the item peripheral rather than excludable.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "f9eeb21bd6b3123c78219dd45fff06f4777b893db53e5977953a0b4cbd25209e",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "f3e32a255718d045a26329b6bb4f7bcb72d0a1977a3a4a798ac60d1c246be5b0",
+    "raw_response_text_sha256": "a772d606d414609c068c929dc2f16ec0f4780a4f0c4bd53af91fac7f38ed2fe7"
+  },
+  "api_metadata": {
+    "id": "resp_0cba0e51ae155ab6006aa9fc04cd9c87d282af291a471aa0bd",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789524996.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2357,
+      "input_tokens_details": {
+        "cache_write_tokens": 2354,
+        "cached_tokens": 0
+      },
+      "output_tokens": 263,
+      "output_tokens_details": {
+        "reasoning_tokens": 88
+      },
+      "total_tokens": 2620
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.99,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"James Webb Telescope observations of star formation in the centre of the Milky Way\",\n  \"conflict_relevance\": \"A CTVNews.ca top-stories snippet briefly mentions a Gaza ceasefire, the release of hostages taken by Hamas, and concerns about the Israel-Hamas war expanding.\",\n  \"reason\": \"The main article is entirely about astronomy and the galactic centre. However, an embedded roundup of top stories contains one meaningful sentence concerning Gaza, Hamas hostages, and the Israel-Hamas war, making the item peripheral rather than excludable.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:16:40Z",
+  "duration_seconds": 4.038,
+  "error": null
+}

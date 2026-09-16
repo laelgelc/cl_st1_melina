@@ -1,0 +1,65 @@
+{
+  "article_id": "105528088",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_01/us/105528088.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_01/us/105528088.json"
+  },
+  "manifest_row": {
+    "article_id": "105528088",
+    "group": "global_north_2024_01",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2024_01/us/105528088.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "gaza_role": "boilerplate_or_unrelated",
+    "main_topic": "Italian diplomatic protests over the detention conditions of Ilaria Salis in Hungary",
+    "conflict_relevance": "The main article concerns a separate legal and diplomatic dispute involving Hungary and Italy. Gaza and Israel appear only in unrelated embedded news snippets.",
+    "reason": "The headline and substantive article focus on Ilaria Salis's court case, detention conditions, and Italian-Hungarian relations. The brief Gaza-related material is an unrelated inserted news item rather than part of the article's discourse.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "06c0ea876ce4bf05c0f1bca939faf532b32eae635f40d71b11d785a1b0535917",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "8a4bb7f47fa91ffc16aff3f2e9db6fe8a2b2eb77ce60afbd04ae0838f79a8ad7",
+    "raw_response_text_sha256": "6b2ea788ac03f00cdde0c8362876adbe0dcf974585ad4e8d7746a39a6301114f"
+  },
+  "api_metadata": {
+    "id": "resp_003b8bd043d63f1a006aaa0522feb087d292a5748dd144a4f4",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789527331.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2023,
+      "input_tokens_details": {
+        "cache_write_tokens": 2020,
+        "cached_tokens": 0
+      },
+      "output_tokens": 236,
+      "output_tokens_details": {
+        "reasoning_tokens": 69
+      },
+      "total_tokens": 2259
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Italian diplomatic protests over the detention conditions of Ilaria Salis in Hungary\",\n  \"conflict_relevance\": \"The main article concerns a separate legal and diplomatic dispute involving Hungary and Italy. Gaza and Israel appear only in unrelated embedded news snippets.\",\n  \"reason\": \"The headline and substantive article focus on Ilaria Salis's court case, detention conditions, and Italian-Hungarian relations. The brief Gaza-related material is an unrelated inserted news item rather than part of the article's discourse.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:55:37Z",
+  "duration_seconds": 7.097,
+  "error": null
+}

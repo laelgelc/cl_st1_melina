@@ -1,0 +1,65 @@
+{
+  "article_id": "91614718",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_10/us/91614718.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_10/us/91614718.json"
+  },
+  "manifest_row": {
+    "article_id": "91614718",
+    "group": "global_north_2023_10",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2023_10/us/91614718.txt"
+  },
+  "screening": {
+    "category": "CORE",
+    "confidence": 0.99,
+    "gaza_role": "substantial",
+    "main_topic": "Hamas attack on an Israeli music festival, resulting deaths and hostages, and the subsequent Israel-Gaza war",
+    "conflict_relevance": "The article substantially discusses the October 7 Hamas attack near Gaza, hostage-taking, Israeli military retaliation, and the ensuing siege of Gaza.",
+    "reason": "Although it includes unrelated material about hacktivism and Disney, the primary article content concerns a major event in the Israel-Hamas war and directly references Gaza, Hamas, Israeli military action, hostages, and humanitarian conditions.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": true
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "121a9cfb977e66cd8912c987155ab3771a8bc5859cdbd88289fa03fad0161756",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "5ecd47d02cc8b62c4175309ebe34ea41f7b555f59bda12026d36d7d4ad1cc6ce",
+    "raw_response_text_sha256": "f64452aed2b28a58a62d2acc52cb0f8962c7b1ce0c0dcadb6ea30ce73f1876ca"
+  },
+  "api_metadata": {
+    "id": "resp_08d99d8ad8de17e3006aa9fa11608c87d2881653ca239e154b",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789524497.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1451,
+      "input_tokens_details": {
+        "cache_write_tokens": 1448,
+        "cached_tokens": 0
+      },
+      "output_tokens": 269,
+      "output_tokens_details": {
+        "reasoning_tokens": 100
+      },
+      "total_tokens": 1720
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"CORE\",\n  \"confidence\": 0.99,\n  \"gaza_role\": \"substantial\",\n  \"main_topic\": \"Hamas attack on an Israeli music festival, resulting deaths and hostages, and the subsequent Israel-Gaza war\",\n  \"conflict_relevance\": \"The article substantially discusses the October 7 Hamas attack near Gaza, hostage-taking, Israeli military retaliation, and the ensuing siege of Gaza.\",\n  \"reason\": \"Although it includes unrelated material about hacktivism and Disney, the primary article content concerns a major event in the Israel-Hamas war and directly references Gaza, Hamas, Israeli military action, hostages, and humanitarian conditions.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": true\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:08:20Z",
+  "duration_seconds": 3.6,
+  "error": null
+}

@@ -1,0 +1,65 @@
+{
+  "article_id": "108517966",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_05/us/108517966.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_05/us/108517966.json"
+  },
+  "manifest_row": {
+    "article_id": "108517966",
+    "group": "global_north_2024_05",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2024_05/us/108517966.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.97,
+    "gaza_role": "background",
+    "main_topic": "A roundup of social-media misinformation, including claims about Disease X, migrants in New York, and a Starbucks watermelon mug",
+    "conflict_relevance": "One substantial item fact-checks claims linking Starbucks's watermelon mug to Palestinian solidarity, the Israel-Hamas war, boycotts, protest symbolism, and the company's position on Gaza.",
+    "reason": "The article is primarily a multi-item misinformation roundup about unrelated topics. However, its Starbucks section contains meaningful discourse about Palestine-related symbolism, corporate political positioning, boycotts, and public responses to the Israel-Hamas war, making it relevant as peripheral material rather than core conflict coverage.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "9eb628c0dd524f5e6a6135aa5bdf7c28fcfac341d4d3cb3f957fd9af084be41f",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "330b6c5b21f7127372625daf79663cfba4e692c6bf9ad576d77852486ecba4c4",
+    "raw_response_text_sha256": "0570081b927188f5afe8d8840b11ec694be424f0b466c90a88f68880e314b6cd"
+  },
+  "api_metadata": {
+    "id": "resp_0e2e8967983bbd52006aaa0f1e716087d2bb92ac102dd32060",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789529886.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2404,
+      "input_tokens_details": {
+        "cache_write_tokens": 2401,
+        "cached_tokens": 0
+      },
+      "output_tokens": 295,
+      "output_tokens_details": {
+        "reasoning_tokens": 104
+      },
+      "total_tokens": 2699
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.97,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"A roundup of social-media misinformation, including claims about Disease X, migrants in New York, and a Starbucks watermelon mug\",\n  \"conflict_relevance\": \"One substantial item fact-checks claims linking Starbucks's watermelon mug to Palestinian solidarity, the Israel-Hamas war, boycotts, protest symbolism, and the company's position on Gaza.\",\n  \"reason\": \"The article is primarily a multi-item misinformation roundup about unrelated topics. However, its Starbucks section contains meaningful discourse about Palestine-related symbolism, corporate political positioning, boycotts, and public responses to the Israel-Hamas war, making it relevant as peripheral material rather than core conflict coverage.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:38:10Z",
+  "duration_seconds": 3.964,
+  "error": null
+}

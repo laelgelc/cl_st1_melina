@@ -1,0 +1,65 @@
+{
+  "article_id": "121464606",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_02/au/121464606.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_02/au/121464606.json"
+  },
+  "manifest_row": {
+    "article_id": "121464606",
+    "group": "global_north_2025_02",
+    "country_code": "au",
+    "filepath": "corpus/02_now_organised/global_north_2025_02/au/121464606.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.96,
+    "gaza_role": "background",
+    "main_topic": "Australian political, economic, and current-affairs news updates",
+    "conflict_relevance": "The live blog includes meaningful coverage of antisemitism and hate-speech legislation in Australia, as well as Israeli bus explosions occurring after Hamas returned hostages' bodies from Gaza, but the overall article is dominated by unrelated domestic economic and political news.",
+    "reason": "The article is a multi-item news roundup whose main focus is Australian interest rates, trade, tariffs, industrial relations, and politics. Several entries meaningfully engage with antisemitism, Jewish Australians, Israel, Hamas, hostages, and Gaza, making it relevant to broader conflict-related discourse but not to the main conflict corpus.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "188334c7ca70489197f5e113b039dcf2c1496c01abf7a9b1d906a7f0a45009f2",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "1399d411eedd94f9150aacfc8a3de49e438eb51041dd107af574926d0932b66f",
+    "raw_response_text_sha256": "7b839cac1c00cc77c148989a26dd4754a3e51d1c9d45d7899c403c0a2bc3005c"
+  },
+  "api_metadata": {
+    "id": "resp_0f902af995826b13006aaa2223711c87d294b44f0fa0ef0778",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789534755.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 3901,
+      "input_tokens_details": {
+        "cache_write_tokens": 3898,
+        "cached_tokens": 0
+      },
+      "output_tokens": 339,
+      "output_tokens_details": {
+        "reasoning_tokens": 138
+      },
+      "total_tokens": 4240
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.96,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Australian political, economic, and current-affairs news updates\",\n  \"conflict_relevance\": \"The live blog includes meaningful coverage of antisemitism and hate-speech legislation in Australia, as well as Israeli bus explosions occurring after Hamas returned hostages' bodies from Gaza, but the overall article is dominated by unrelated domestic economic and political news.\",\n  \"reason\": \"The article is a multi-item news roundup whose main focus is Australian interest rates, trade, tariffs, industrial relations, and politics. Several entries meaningfully engage with antisemitism, Jewish Australians, Israel, Hamas, hostages, and Gaza, making it relevant to broader conflict-related discourse but not to the main conflict corpus.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T04:59:20Z",
+  "duration_seconds": 4.727,
+  "error": null
+}

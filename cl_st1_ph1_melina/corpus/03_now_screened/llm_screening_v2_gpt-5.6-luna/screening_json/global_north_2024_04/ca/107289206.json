@@ -1,0 +1,65 @@
+{
+  "article_id": "107289206",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_04/ca/107289206.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_04/ca/107289206.json"
+  },
+  "manifest_row": {
+    "article_id": "107289206",
+    "group": "global_north_2024_04",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2024_04/ca/107289206.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.96,
+    "gaza_role": "passing",
+    "main_topic": "Canadian housing-market conditions, interest rates, affordability, and buyer activity",
+    "conflict_relevance": "The main article is unrelated to Gaza or the Israel-Palestine conflict, but an embedded news snippet briefly reports on U.S. President Biden urging Israel to facilitate humanitarian aid access into Gaza.",
+    "reason": "The headline article centrally concerns Canada's housing market and monetary policy. However, the text includes a meaningful but isolated sentence about humanitarian aid and Israeli border crossings into Gaza, making it peripheral rather than fully excludable.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "f52b782e1eb55f6a69d6630a868df1fadcf0c4c41d6c6717c8ee2a7b7317803d",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "eda06a6d7debcf9470a160e3e66febdd305a59a7866d8ae2091e76370967a361",
+    "raw_response_text_sha256": "3a511ec1b92445032ed2bb54faead80a8b66386e84d833a7f7c3095a4e8fd77c"
+  },
+  "api_metadata": {
+    "id": "resp_0e2f74145339bec8006aaa0affe7bc87d2993c6d05c35bb2fd",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789528831.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 3173,
+      "input_tokens_details": {
+        "cache_write_tokens": 3170,
+        "cached_tokens": 0
+      },
+      "output_tokens": 290,
+      "output_tokens_details": {
+        "reasoning_tokens": 120
+      },
+      "total_tokens": 3463
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.96,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Canadian housing-market conditions, interest rates, affordability, and buyer activity\",\n  \"conflict_relevance\": \"The main article is unrelated to Gaza or the Israel-Palestine conflict, but an embedded news snippet briefly reports on U.S. President Biden urging Israel to facilitate humanitarian aid access into Gaza.\",\n  \"reason\": \"The headline article centrally concerns Canada's housing market and monetary policy. However, the text includes a meaningful but isolated sentence about humanitarian aid and Israeli border crossings into Gaza, making it peripheral rather than fully excludable.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:20:36Z",
+  "duration_seconds": 4.737,
+  "error": null
+}

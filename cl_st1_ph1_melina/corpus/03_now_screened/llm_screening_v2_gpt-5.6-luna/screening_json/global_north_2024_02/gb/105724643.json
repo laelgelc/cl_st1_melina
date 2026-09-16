@@ -1,0 +1,65 @@
+{
+  "article_id": "105724643",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_02/gb/105724643.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_02/gb/105724643.json"
+  },
+  "manifest_row": {
+    "article_id": "105724643",
+    "group": "global_north_2024_02",
+    "country_code": "gb",
+    "filepath": "corpus/02_now_organised/global_north_2024_02/gb/105724643.txt"
+  },
+  "screening": {
+    "category": "CORE",
+    "confidence": 0.99,
+    "gaza_role": "central",
+    "main_topic": "Egypt-US diplomatic efforts to secure a Gaza ceasefire, hostage release, humanitarian assistance, and a broader Palestinian settlement",
+    "conflict_relevance": "The article directly focuses on Gaza ceasefire negotiations, hostages, humanitarian relief, Palestinian displacement, UN resolutions, UNRWA, and regional diplomacy involving Egypt, the United States, Qatar, and Hamas.",
+    "reason": "The primary article is substantially and directly about the Gaza war and related diplomatic, humanitarian, and political issues. A separate investment-opinion article is appended, creating a multi-article extraction issue, but it does not alter the core relevance of the main article.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": true
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "e53431c6c7c0e1937e8829f9572391709e1c4a7af31d0727fa3d90431212f48d",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "64996eadc89a50db2e2377c03bda44a164378d80e563fb7aa3597330707f2b85",
+    "raw_response_text_sha256": "6a421e45cfa051dd50b5d3cdc1f4f4078a3b53ae4bdd66a8175535d21a4d0187"
+  },
+  "api_metadata": {
+    "id": "resp_062cf35774708914006aaa063dac9887d2825be21860591ab7",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789527613.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2462,
+      "input_tokens_details": {
+        "cache_write_tokens": 2459,
+        "cached_tokens": 0
+      },
+      "output_tokens": 279,
+      "output_tokens_details": {
+        "reasoning_tokens": 91
+      },
+      "total_tokens": 2741
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"CORE\",\n  \"confidence\": 0.99,\n  \"gaza_role\": \"central\",\n  \"main_topic\": \"Egypt-US diplomatic efforts to secure a Gaza ceasefire, hostage release, humanitarian assistance, and a broader Palestinian settlement\",\n  \"conflict_relevance\": \"The article directly focuses on Gaza ceasefire negotiations, hostages, humanitarian relief, Palestinian displacement, UN resolutions, UNRWA, and regional diplomacy involving Egypt, the United States, Qatar, and Hamas.\",\n  \"reason\": \"The primary article is substantially and directly about the Gaza war and related diplomatic, humanitarian, and political issues. A separate investment-opinion article is appended, creating a multi-article extraction issue, but it does not alter the core relevance of the main article.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": true\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:00:17Z",
+  "duration_seconds": 3.633,
+  "error": null
+}

@@ -1,0 +1,65 @@
+{
+  "article_id": "103741554",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_11/nz/103741554.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_11/nz/103741554.json"
+  },
+  "manifest_row": {
+    "article_id": "103741554",
+    "group": "global_north_2023_11",
+    "country_code": "nz",
+    "filepath": "corpus/02_now_organised/global_north_2023_11/nz/103741554.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "background",
+    "main_topic": "New Zealand's energy policy and the future role of gas",
+    "conflict_relevance": "The article includes a separate news snippet reporting the New Zealand Labour Party's call for an urgent ceasefire in Gaza and Israel, but this is not connected to the main energy-policy article.",
+    "reason": "The main article concerns gas, renewable energy, and the incoming New Zealand coalition government. Gaza appears in a meaningful but embedded and unrelated political-news item, making the article peripheral rather than core.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "a8e224e6485453fb6344167f84ecce53819b4a9b04ff88b0cb66e0d7cbcf54f3",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "d4dccc3145bf7a5d859109f357fbcf80631a86709d0019320932a12901b7256b",
+    "raw_response_text_sha256": "8f620bc587d88f436c3839f91e0f29616542da37c278297520451f938f52d30a"
+  },
+  "api_metadata": {
+    "id": "resp_0d28075bb84b5e2f006aa9fdce890087d2b5ceac2993eb381c",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789525454.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1263,
+      "input_tokens_details": {
+        "cache_write_tokens": 1260,
+        "cached_tokens": 0
+      },
+      "output_tokens": 259,
+      "output_tokens_details": {
+        "reasoning_tokens": 97
+      },
+      "total_tokens": 1522
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"New Zealand's energy policy and the future role of gas\",\n  \"conflict_relevance\": \"The article includes a separate news snippet reporting the New Zealand Labour Party's call for an urgent ceasefire in Gaza and Israel, but this is not connected to the main energy-policy article.\",\n  \"reason\": \"The main article concerns gas, renewable energy, and the incoming New Zealand coalition government. Gaza appears in a meaningful but embedded and unrelated political-news item, making the article peripheral rather than core.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:24:17Z",
+  "duration_seconds": 3.297,
+  "error": null
+}

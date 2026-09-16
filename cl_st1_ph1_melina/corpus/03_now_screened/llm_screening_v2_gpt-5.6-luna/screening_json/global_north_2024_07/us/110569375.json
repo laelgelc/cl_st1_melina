@@ -1,0 +1,65 @@
+{
+  "article_id": "110569375",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_07/us/110569375.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_07/us/110569375.json"
+  },
+  "manifest_row": {
+    "article_id": "110569375",
+    "group": "global_north_2024_07",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2024_07/us/110569375.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.97,
+    "gaza_role": "passing",
+    "main_topic": "Mixed news roundup and navigation feed",
+    "conflict_relevance": "A brief Gaza-related news snippet appears among several unrelated stories, but the item is not a substantive article about the conflict.",
+    "reason": "The text is a 'Stories for you' aggregation containing unrelated snippets. Although one embedded item reports deaths and strikes in Gaza, there is no coherent main article or sustained conflict-related discourse.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "bffa30a0c47b725e57a4414f301530e57b6507ae3d91114b2c4ca069b50bf03a",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "7fbb47399c8de0e1eaabd943359e208c70cdda3195929a2c58148046da960f0b",
+    "raw_response_text_sha256": "92b7ae88622203c456227614ec919e1e21d39bb2089f77668bde66237be9c183"
+  },
+  "api_metadata": {
+    "id": "resp_0babda01fa0cebd3006aaa1308084887d28b93c4e5ab98a1aa",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789530888.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 865,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 341,
+      "output_tokens_details": {
+        "reasoning_tokens": 199
+      },
+      "total_tokens": 1206
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.97,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Mixed news roundup and navigation feed\",\n  \"conflict_relevance\": \"A brief Gaza-related news snippet appears among several unrelated stories, but the item is not a substantive article about the conflict.\",\n  \"reason\": \"The text is a 'Stories for you' aggregation containing unrelated snippets. Although one embedded item reports deaths and strikes in Gaza, there is no coherent main article or sustained conflict-related discourse.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:54:51Z",
+  "duration_seconds": 3.964,
+  "error": null
+}

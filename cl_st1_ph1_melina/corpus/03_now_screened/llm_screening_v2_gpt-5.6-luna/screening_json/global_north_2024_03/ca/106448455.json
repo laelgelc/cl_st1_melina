@@ -1,0 +1,65 @@
+{
+  "article_id": "106448455",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_03/ca/106448455.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_03/ca/106448455.json"
+  },
+  "manifest_row": {
+    "article_id": "106448455",
+    "group": "global_north_2024_03",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2024_03/ca/106448455.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "gaza_role": "boilerplate_or_unrelated",
+    "main_topic": "New York Community Bancorp's private equity investment, leadership change, and financial difficulties",
+    "conflict_relevance": "The main article is unrelated to Gaza or the Israel-Palestine conflict; Gaza appears only in an embedded Latest Stories snippet.",
+    "reason": "The article centrally covers a regional bank's recapitalization and management changes. The Gaza-related text is an unrelated syndicated news item embedded among other financial and general-news snippets, not part of the main article.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "2835bb7c09ed673df85e96bffe64ed38410c1a14df6ccb5f5bd47fc337862076",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "ceb527b4da50a59551074940256d366b4df3e4f0efc3a4c45861c0baa3e32955",
+    "raw_response_text_sha256": "0c910f2d5a2407ed33de4ac15da2312914f803ed8af7af0b834d66bad67519ae"
+  },
+  "api_metadata": {
+    "id": "resp_0a2b14eb408661c4006aaa085a4dc887d2a824bd2738a2010e",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789528154.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 3839,
+      "input_tokens_details": {
+        "cache_write_tokens": 3836,
+        "cached_tokens": 0
+      },
+      "output_tokens": 308,
+      "output_tokens_details": {
+        "reasoning_tokens": 145
+      },
+      "total_tokens": 4147
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"gaza_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"New York Community Bancorp's private equity investment, leadership change, and financial difficulties\",\n  \"conflict_relevance\": \"The main article is unrelated to Gaza or the Israel-Palestine conflict; Gaza appears only in an embedded Latest Stories snippet.\",\n  \"reason\": \"The article centrally covers a regional bank's recapitalization and management changes. The Gaza-related text is an unrelated syndicated news item embedded among other financial and general-news snippets, not part of the main article.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:09:18Z",
+  "duration_seconds": 4.378,
+  "error": null
+}

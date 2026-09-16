@@ -1,0 +1,65 @@
+{
+  "article_id": "113140755",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_08/us/113140755.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_08/us/113140755.json"
+  },
+  "manifest_row": {
+    "article_id": "113140755",
+    "group": "global_north_2024_08",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2024_08/us/113140755.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "background",
+    "main_topic": "Typhoon Shanshan, evacuations, and weather-related disruption in Japan",
+    "conflict_relevance": "The main article concerns a typhoon in Japan, but the text includes substantive embedded reports on war-ravaged Gaza, Israeli military actions, Palestinian displacement, West Bank settler violence, and Israel-Hezbollah tensions.",
+    "reason": "The conflict-related material is meaningful but appears as unrelated embedded news snippets rather than the focus of the headline or main article.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "bbd6fa0edf7a3c17d09b3feba605184a48f463fd880ca8d304dbaf86f427528a",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "f6b876ae50538c8b5ecf36120a037c67e4b32017be5587f24d4b5a12352489bf",
+    "raw_response_text_sha256": "2ee3d05ffb34c03623bf3e6616a1ae1e942c4bb52374e9bb610a62b028b52aa0"
+  },
+  "api_metadata": {
+    "id": "resp_0d168639d0636455006aaa15b8b43c87d2844fdf8ef382f8dc",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789531576.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2321,
+      "input_tokens_details": {
+        "cache_write_tokens": 2318,
+        "cached_tokens": 0
+      },
+      "output_tokens": 322,
+      "output_tokens_details": {
+        "reasoning_tokens": 164
+      },
+      "total_tokens": 2643
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Typhoon Shanshan, evacuations, and weather-related disruption in Japan\",\n  \"conflict_relevance\": \"The main article concerns a typhoon in Japan, but the text includes substantive embedded reports on war-ravaged Gaza, Israeli military actions, Palestinian displacement, West Bank settler violence, and Israel-Hezbollah tensions.\",\n  \"reason\": \"The conflict-related material is meaningful but appears as unrelated embedded news snippets rather than the focus of the headline or main article.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T04:06:21Z",
+  "duration_seconds": 4.619,
+  "error": null
+}

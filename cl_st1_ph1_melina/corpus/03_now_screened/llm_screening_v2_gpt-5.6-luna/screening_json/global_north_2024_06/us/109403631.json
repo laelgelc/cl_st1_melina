@@ -1,0 +1,65 @@
+{
+  "article_id": "109403631",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_06/us/109403631.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_06/us/109403631.json"
+  },
+  "manifest_row": {
+    "article_id": "109403631",
+    "group": "global_north_2024_06",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2024_06/us/109403631.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "gaza_role": "passing",
+    "main_topic": "LGBTQ+ rights, inclusivity, and public policy in Chicago and Illinois",
+    "conflict_relevance": "Gaza appears only in a brief, unrelated mention of protest graffiti at the end of the article.",
+    "reason": "The article is centrally about LGBTQ+ protections and issues in Chicago. The sole Gaza reference is a passing detail in what appears to be an unrelated appended snippet, providing no substantive conflict discourse.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "ed017a2d1f42f2e41fcd26d7357be4d455ef76f3336c55beb86a7455f5c4fb28",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "26bfb464d7b449fe83ea51b5401e7e815b9447fcef03b30331bb793bc82afeee",
+    "raw_response_text_sha256": "adecae2e5c6467c1fbd0ed2e480e45c580770e4994415526b501e435c14ce83c"
+  },
+  "api_metadata": {
+    "id": "resp_0e42b6db2fed1052006aaa115e1e5887d29acce4ffd5766997",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789530462.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1604,
+      "input_tokens_details": {
+        "cache_write_tokens": 1601,
+        "cached_tokens": 0
+      },
+      "output_tokens": 236,
+      "output_tokens_details": {
+        "reasoning_tokens": 88
+      },
+      "total_tokens": 1840
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"LGBTQ+ rights, inclusivity, and public policy in Chicago and Illinois\",\n  \"conflict_relevance\": \"Gaza appears only in a brief, unrelated mention of protest graffiti at the end of the article.\",\n  \"reason\": \"The article is centrally about LGBTQ+ protections and issues in Chicago. The sole Gaza reference is a passing detail in what appears to be an unrelated appended snippet, providing no substantive conflict discourse.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:47:45Z",
+  "duration_seconds": 3.437,
+  "error": null
+}

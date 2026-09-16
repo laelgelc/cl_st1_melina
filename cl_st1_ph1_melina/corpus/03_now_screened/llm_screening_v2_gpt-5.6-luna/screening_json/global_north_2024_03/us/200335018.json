@@ -1,0 +1,65 @@
+{
+  "article_id": "200335018",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_03/us/200335018.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_03/us/200335018.json"
+  },
+  "manifest_row": {
+    "article_id": "200335018",
+    "group": "global_north_2024_03",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2024_03/us/200335018.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.97,
+    "gaza_role": "passing",
+    "main_topic": "U.S. energy production, energy security, renewables, and climate policy",
+    "conflict_relevance": "Gaza is mentioned once in passing as an example of an ongoing war affecting energy-security concerns, with no discussion of the conflict itself.",
+    "reason": "The article is centrally about oil, gas, renewables, climate security, and U.S. energy policy. Its brief reference to the war in Gaza is incidental and does not provide meaningful discourse for conflict analysis.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "326d324f7374535cd9d1afd7f74f77d83c106c1dfdd0dc51195f706706e71dd8",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "886f7fa23c5bbe9415b1b2bdd994e573e35b8835d8a25b24d6c2df330b9cefae",
+    "raw_response_text_sha256": "c3e0a66de5b39bf1fefe892da2ad1ac4ce54b0e78a580943828a73af588be98c"
+  },
+  "api_metadata": {
+    "id": "resp_04137c8969d1c74e006aaa0aaf57a887d2aaf184c7145eb5d4",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789528751.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2142,
+      "input_tokens_details": {
+        "cache_write_tokens": 2139,
+        "cached_tokens": 0
+      },
+      "output_tokens": 246,
+      "output_tokens_details": {
+        "reasoning_tokens": 87
+      },
+      "total_tokens": 2388
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.97,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"U.S. energy production, energy security, renewables, and climate policy\",\n  \"conflict_relevance\": \"Gaza is mentioned once in passing as an example of an ongoing war affecting energy-security concerns, with no discussion of the conflict itself.\",\n  \"reason\": \"The article is centrally about oil, gas, renewables, climate security, and U.S. energy policy. Its brief reference to the war in Gaza is incidental and does not provide meaningful discourse for conflict analysis.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:19:15Z",
+  "duration_seconds": 3.978,
+  "error": null
+}

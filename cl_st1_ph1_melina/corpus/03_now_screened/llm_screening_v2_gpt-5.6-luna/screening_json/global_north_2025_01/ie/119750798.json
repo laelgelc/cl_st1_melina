@@ -1,0 +1,65 @@
+{
+  "article_id": "119750798",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_01/ie/119750798.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_01/ie/119750798.json"
+  },
+  "manifest_row": {
+    "article_id": "119750798",
+    "group": "global_north_2025_01",
+    "country_code": "ie",
+    "filepath": "corpus/02_now_organised/global_north_2025_01/ie/119750798.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "gaza_role": "passing",
+    "main_topic": "West Cork local news and community events in 2024",
+    "conflict_relevance": "Gaza is mentioned only once in a list of places visited by politician Simon Coveney, without discussion of the conflict or related discourse.",
+    "reason": "The article is a broad annual roundup of unrelated local news. Its sole Gaza reference is incidental and does not provide meaningful material for discourse analysis of Gaza, Palestine, or the Israel-Palestine conflict.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "50b06eeda7160200ebb401b1aff3f20383b7063234af46248d31d63598d494c6",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "d5404c937fac5cdbb288407a2fbc9b6b419599702dd305297cb111e35b444929",
+    "raw_response_text_sha256": "76e4f7b8a07a9570e9d0e2784f7e5c32966fbd0a180186f71ea1da9a12f2ac3c"
+  },
+  "api_metadata": {
+    "id": "resp_0e79cb1d2dc47898006aaa2033e7f487d28c2aab8e1ccc8844",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789534259.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 10544,
+      "input_tokens_details": {
+        "cache_write_tokens": 10541,
+        "cached_tokens": 0
+      },
+      "output_tokens": 245,
+      "output_tokens_details": {
+        "reasoning_tokens": 91
+      },
+      "total_tokens": 10789
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"West Cork local news and community events in 2024\",\n  \"conflict_relevance\": \"Gaza is mentioned only once in a list of places visited by politician Simon Coveney, without discussion of the conflict or related discourse.\",\n  \"reason\": \"The article is a broad annual roundup of unrelated local news. Its sole Gaza reference is incidental and does not provide meaningful material for discourse analysis of Gaza, Palestine, or the Israel-Palestine conflict.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T04:51:02Z",
+  "duration_seconds": 2.617,
+  "error": null
+}

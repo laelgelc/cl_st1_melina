@@ -1,0 +1,65 @@
+{
+  "article_id": "200361164",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_04/us/200361164.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_04/us/200361164.json"
+  },
+  "manifest_row": {
+    "article_id": "200361164",
+    "group": "global_north_2024_04",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2024_04/us/200361164.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "gaza_role": "passing",
+    "main_topic": "US liquefied natural gas permitting policy, climate politics, and energy geopolitics",
+    "conflict_relevance": "Gaza is mentioned only as part of a reference to a broader US funding bill for wars in Ukraine and Gaza; the article does not discuss the Gaza conflict itself.",
+    "reason": "The article centrally concerns LNG export permits, climate policy, White House political bargaining, and Qatar's energy strategy. Gaza appears only in a passing, incidental reference.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "761ba8fbbf23d92638145a894ffb16aa57b1385cd68365f4830c17824891bee2",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "775d21dab63b628f12c717482c32241a10095cabc379f9b72c79f1065632add6",
+    "raw_response_text_sha256": "6fcbe20491a65354e3a12b3fbd8c2c36cd4ff64091245f30868d25d4c365378f"
+  },
+  "api_metadata": {
+    "id": "resp_0604caa50b407053006aaa0c87bb2887d2a75868161bb00ffe",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789529223.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1562,
+      "input_tokens_details": {
+        "cache_write_tokens": 1559,
+        "cached_tokens": 0
+      },
+      "output_tokens": 233,
+      "output_tokens_details": {
+        "reasoning_tokens": 76
+      },
+      "total_tokens": 1795
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"US liquefied natural gas permitting policy, climate politics, and energy geopolitics\",\n  \"conflict_relevance\": \"Gaza is mentioned only as part of a reference to a broader US funding bill for wars in Ukraine and Gaza; the article does not discuss the Gaza conflict itself.\",\n  \"reason\": \"The article centrally concerns LNG export permits, climate policy, White House political bargaining, and Qatar's energy strategy. Gaza appears only in a passing, incidental reference.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:27:06Z",
+  "duration_seconds": 2.588,
+  "error": null
+}

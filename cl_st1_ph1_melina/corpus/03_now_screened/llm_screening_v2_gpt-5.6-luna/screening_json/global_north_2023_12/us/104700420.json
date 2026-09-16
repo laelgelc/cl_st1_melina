@@ -1,0 +1,65 @@
+{
+  "article_id": "104700420",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_12/us/104700420.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_12/us/104700420.json"
+  },
+  "manifest_row": {
+    "article_id": "104700420",
+    "group": "global_north_2023_12",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2023_12/us/104700420.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.97,
+    "gaza_role": "background",
+    "main_topic": "Houthi attacks on Red Sea shipping and US military responses",
+    "conflict_relevance": "The article focuses on the Houthis and Red Sea maritime security, while linking their actions to Israel's war in Gaza, Hamas, and the broader regional Axis of Resistance.",
+    "reason": "Gaza and the Israel-Hamas war provide important context for the Houthis' declared attacks, but the article's primary subject is the Houthis, shipping, and US military action rather than Gaza or the Israel-Palestine conflict itself.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "e23a7b9ab15040e4a7a738b57400941d42cf546fc326ce3d6a0ca5fdb9ab5575",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "1788712578bb48940b1316e6af69b6fc58c11c86e0e54bc6977746aa13272494",
+    "raw_response_text_sha256": "793bb703b276e7e131ff90609d5db0e1f177d2b811253a3dcecfb5c69e13d264"
+  },
+  "api_metadata": {
+    "id": "resp_060bed8c37a87d4c006aaa028e0f6c87d2a65eed2573dc1ff5",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789526670.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 935,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 237,
+      "output_tokens_details": {
+        "reasoning_tokens": 66
+      },
+      "total_tokens": 1172
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.97,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Houthi attacks on Red Sea shipping and US military responses\",\n  \"conflict_relevance\": \"The article focuses on the Houthis and Red Sea maritime security, while linking their actions to Israel's war in Gaza, Hamas, and the broader regional Axis of Resistance.\",\n  \"reason\": \"Gaza and the Israel-Hamas war provide important context for the Houthis' declared attacks, but the article's primary subject is the Houthis, shipping, and US military action rather than Gaza or the Israel-Palestine conflict itself.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:44:33Z",
+  "duration_seconds": 3.668,
+  "error": null
+}

@@ -1,0 +1,65 @@
+{
+  "article_id": "123977855",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_04/us/123977855.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_04/us/123977855.json"
+  },
+  "manifest_row": {
+    "article_id": "123977855",
+    "group": "global_north_2025_04",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2025_04/us/123977855.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.96,
+    "gaza_role": "passing",
+    "main_topic": "Pope Francis's biography, funeral, and a general weekly photo roundup",
+    "conflict_relevance": "Gaza appears only in two incidental photo captions within an unrelated collection of weekly images, without substantive discussion or analysis.",
+    "reason": "The article is primarily about Pope Francis and contains a broad roundup of unrelated photographs. The Gaza references are limited to brief captions accompanying images and do not constitute meaningful conflict coverage.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "e7b2adbf3cc1bbfe083f6fa1b297f1b1596bb232025476dc3e8ac3e4a5cc0402",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "11c53e86748935dac16c015814b31c763b341d31ec1ff5d095bb21647af5c109",
+    "raw_response_text_sha256": "37626d51c523f82b3717f55155891ac74dc3d2392728c78726c20b4775e27c11"
+  },
+  "api_metadata": {
+    "id": "resp_0f3d7d70dda866e3006aaa2aae988487d1a6fba9774d7c049d",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789536942.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2142,
+      "input_tokens_details": {
+        "cache_write_tokens": 2139,
+        "cached_tokens": 0
+      },
+      "output_tokens": 402,
+      "output_tokens_details": {
+        "reasoning_tokens": 256
+      },
+      "total_tokens": 2544
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.96,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Pope Francis's biography, funeral, and a general weekly photo roundup\",\n  \"conflict_relevance\": \"Gaza appears only in two incidental photo captions within an unrelated collection of weekly images, without substantive discussion or analysis.\",\n  \"reason\": \"The article is primarily about Pope Francis and contains a broad roundup of unrelated photographs. The Gaza references are limited to brief captions accompanying images and do not constitute meaningful conflict coverage.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T05:35:48Z",
+  "duration_seconds": 5.664,
+  "error": null
+}

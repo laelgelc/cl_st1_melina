@@ -1,0 +1,65 @@
+{
+  "article_id": "119968450",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_01/sg/119968450.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_01/sg/119968450.json"
+  },
+  "manifest_row": {
+    "article_id": "119968450",
+    "group": "global_north_2025_01",
+    "country_code": "sg",
+    "filepath": "corpus/02_now_organised/global_north_2025_01/sg/119968450.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "background",
+    "main_topic": "Oil prices, Russian oil sanctions, and global energy markets",
+    "conflict_relevance": "The article briefly discusses Israel-Hamas negotiations over a possible deal to end the war in Gaza as one factor that could affect oil markets.",
+    "reason": "The article is primarily about crude oil prices and sanctions on Russian oil. Gaza appears in a meaningful but limited discussion of ceasefire negotiations and their potential market impact, making it peripheral rather than core.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "ffd83a0c47a95ddb072906dd9cfd3479a264c97e9907b3a3bed57ed90815e5e4",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "15a9563a546b4f3cfbb223d1643d8e06897f7e59df2f9b076ffd06d54599bed2",
+    "raw_response_text_sha256": "16456f279d395d6a57c2faf5278686cf642768519b792ce877680e2ded5db4fd"
+  },
+  "api_metadata": {
+    "id": "resp_039b404f110b9cb8006aaa209b7acc87d283258b0fba3d0efb",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789534363.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1512,
+      "input_tokens_details": {
+        "cache_write_tokens": 1509,
+        "cached_tokens": 0
+      },
+      "output_tokens": 220,
+      "output_tokens_details": {
+        "reasoning_tokens": 67
+      },
+      "total_tokens": 1732
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Oil prices, Russian oil sanctions, and global energy markets\",\n  \"conflict_relevance\": \"The article briefly discusses Israel-Hamas negotiations over a possible deal to end the war in Gaza as one factor that could affect oil markets.\",\n  \"reason\": \"The article is primarily about crude oil prices and sanctions on Russian oil. Gaza appears in a meaningful but limited discussion of ceasefire negotiations and their potential market impact, making it peripheral rather than core.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T04:52:46Z",
+  "duration_seconds": 2.84,
+  "error": null
+}

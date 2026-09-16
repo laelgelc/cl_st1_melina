@@ -1,0 +1,65 @@
+{
+  "article_id": "102770169",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_10/ca/102770169.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_10/ca/102770169.json"
+  },
+  "manifest_row": {
+    "article_id": "102770169",
+    "group": "global_north_2023_10",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2023_10/ca/102770169.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.92,
+    "gaza_role": "background",
+    "main_topic": "Identification of a 12-year-old cyclist killed in a vehicle collision in British Columbia",
+    "conflict_relevance": "The main article is unrelated to Gaza, but the text includes substantive embedded snippets about Canadian evacuation efforts from Gaza and deteriorating humanitarian conditions during the Israel-Hamas war.",
+    "reason": "The headline and primary report concern a fatal traffic collision in Pitt Meadows. However, the article contains meaningful, though apparently unrelated, Gaza-related news snippets, making it peripheral rather than excludable.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "969a83a14c63d932af8e521f66fc38725c28f9544023fb0035ae5af79c558366",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "5c6912ad48d5da3bea90ab830b5948d4c817fac6c1a95f87c2c9d5e83d68331a",
+    "raw_response_text_sha256": "a7e3c12f3925ce77dc5c72cec8831c0ebebefc77611a8e33ec6d84b30dcfbae4"
+  },
+  "api_metadata": {
+    "id": "resp_0a512b7b981a4e54006aa9f673b22487d29ca2e67a50c4df56",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789523571.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1393,
+      "input_tokens_details": {
+        "cache_write_tokens": 1390,
+        "cached_tokens": 0
+      },
+      "output_tokens": 342,
+      "output_tokens_details": {
+        "reasoning_tokens": 178
+      },
+      "total_tokens": 1735
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.92,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Identification of a 12-year-old cyclist killed in a vehicle collision in British Columbia\",\n  \"conflict_relevance\": \"The main article is unrelated to Gaza, but the text includes substantive embedded snippets about Canadian evacuation efforts from Gaza and deteriorating humanitarian conditions during the Israel-Hamas war.\",\n  \"reason\": \"The headline and primary report concern a fatal traffic collision in Pitt Meadows. However, the article contains meaningful, though apparently unrelated, Gaza-related news snippets, making it peripheral rather than excludable.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T01:52:55Z",
+  "duration_seconds": 4.165,
+  "error": null
+}

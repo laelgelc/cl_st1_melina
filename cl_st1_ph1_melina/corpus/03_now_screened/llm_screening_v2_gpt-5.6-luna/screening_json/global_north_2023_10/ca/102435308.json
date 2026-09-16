@@ -1,0 +1,65 @@
+{
+  "article_id": "102435308",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_10/ca/102435308.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_10/ca/102435308.json"
+  },
+  "manifest_row": {
+    "article_id": "102435308",
+    "group": "global_north_2023_10",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2023_10/ca/102435308.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.94,
+    "gaza_role": "passing",
+    "main_topic": "Afghan Canadian community support and humanitarian response following the 2023 Herat earthquake",
+    "conflict_relevance": "The main article is about the Afghanistan earthquake, but embedded unrelated snippets contain substantive references to Hamas, Israel, Gaza, antisemitism, and violence in the Middle East.",
+    "reason": "The headline article is not about Gaza or the Israeli-Palestinian conflict. However, the text includes meaningful conflict-related embedded news and commentary, making it peripheral rather than excludable under the stated guidelines.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "7149086e2fb7f03a7ebba1b39e26759df40eeac06eb21d3ca53b419341e388f5",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "80927e80ab0d17c990985778f9a916c74ed23eaa4759ffb65b351848fff35586",
+    "raw_response_text_sha256": "19bcc2995b1d623bb377c196ce0453a8b98fa4b08d651d015e6fb986bc2e7365"
+  },
+  "api_metadata": {
+    "id": "resp_0bf4295aaa26add2006aa9f601c55887d2a9d1da2bcabad3cf",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789523457.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2655,
+      "input_tokens_details": {
+        "cache_write_tokens": 2652,
+        "cached_tokens": 0
+      },
+      "output_tokens": 316,
+      "output_tokens_details": {
+        "reasoning_tokens": 148
+      },
+      "total_tokens": 2971
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.94,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Afghan Canadian community support and humanitarian response following the 2023 Herat earthquake\",\n  \"conflict_relevance\": \"The main article is about the Afghanistan earthquake, but embedded unrelated snippets contain substantive references to Hamas, Israel, Gaza, antisemitism, and violence in the Middle East.\",\n  \"reason\": \"The headline article is not about Gaza or the Israeli-Palestinian conflict. However, the text includes meaningful conflict-related embedded news and commentary, making it peripheral rather than excludable under the stated guidelines.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T01:51:01Z",
+  "duration_seconds": 3.659,
+  "error": null
+}

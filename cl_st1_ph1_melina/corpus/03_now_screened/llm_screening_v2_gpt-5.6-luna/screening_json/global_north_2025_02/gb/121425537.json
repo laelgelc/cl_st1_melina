@@ -1,0 +1,65 @@
+{
+  "article_id": "121425537",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_02/gb/121425537.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_02/gb/121425537.json"
+  },
+  "manifest_row": {
+    "article_id": "121425537",
+    "group": "global_north_2025_02",
+    "country_code": "gb",
+    "filepath": "corpus/02_now_organised/global_north_2025_02/gb/121425537.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "passing",
+    "main_topic": "Donald Trump's conflict with Volodymyr Zelenskyy and diplomatic efforts to end the Russia-Ukraine war",
+    "conflict_relevance": "The article is overwhelmingly about Ukraine, Trump, Zelenskyy, and Russia-Ukraine peace negotiations, but it contains a meaningful critical reference to Trump's proposed displacement of Gaza's population and the potential ethnic cleansing of Palestinians.",
+    "reason": "Gaza and Palestinians appear in a substantive contextual sentence, but the article's central subject is the Russia-Ukraine war rather than the Israel-Palestine conflict.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "a901f33a83ed8d6039645fc6f9b322ac5229501fca6c13c77e9fc2edc1823579",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "d027b21bb9056d83dbb1f3799f98a9796696dfb578ef165a2c3d60e75e4adb2c",
+    "raw_response_text_sha256": "1431639ed022fa53c13850580ccf21a34eeeeb11ef25e7b9e88c2c8981be4597"
+  },
+  "api_metadata": {
+    "id": "resp_0c95c4c1e2eeb0a1006aaa230cbc4487d2ac419d4fb020e571",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789534988.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 4329,
+      "input_tokens_details": {
+        "cache_write_tokens": 4326,
+        "cached_tokens": 0
+      },
+      "output_tokens": 232,
+      "output_tokens_details": {
+        "reasoning_tokens": 59
+      },
+      "total_tokens": 4561
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Donald Trump's conflict with Volodymyr Zelenskyy and diplomatic efforts to end the Russia-Ukraine war\",\n  \"conflict_relevance\": \"The article is overwhelmingly about Ukraine, Trump, Zelenskyy, and Russia-Ukraine peace negotiations, but it contains a meaningful critical reference to Trump's proposed displacement of Gaza's population and the potential ethnic cleansing of Palestinians.\",\n  \"reason\": \"Gaza and Palestinians appear in a substantive contextual sentence, but the article's central subject is the Russia-Ukraine war rather than the Israel-Palestine conflict.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T05:03:12Z",
+  "duration_seconds": 3.81,
+  "error": null
+}

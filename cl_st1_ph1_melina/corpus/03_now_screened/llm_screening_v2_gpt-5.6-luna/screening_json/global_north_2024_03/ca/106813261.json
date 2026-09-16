@@ -1,0 +1,65 @@
+{
+  "article_id": "106813261",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_03/ca/106813261.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_03/ca/106813261.json"
+  },
+  "manifest_row": {
+    "article_id": "106813261",
+    "group": "global_north_2024_03",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2024_03/ca/106813261.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.96,
+    "gaza_role": "passing",
+    "main_topic": "Canada's recreational housing market and projected cottage-property prices",
+    "conflict_relevance": "The main article is unrelated to the Israel-Palestine conflict, but an embedded latest-news snippet reports the death of a man in northern Gaza while awaiting Canadian evacuation or visa assistance.",
+    "reason": "The Gaza content appears only in an unrelated embedded roundup item rather than the main housing article. It contains a meaningful conflict-related sentence, so the item is peripheral rather than excluded.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "fc055c01afb2b87147ec8af7e8ab2275f783d325a1f3964ca55cb619700e12e1",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "5630dd273c30f1098bcf9ac4840c4474244b3383153f7e20e61d36152bd3995a",
+    "raw_response_text_sha256": "2d6224de3b514f12ee69a8f2f93000e15825f94eafcd053a8c28e7c957874e1d"
+  },
+  "api_metadata": {
+    "id": "resp_0c13071fe727b17b006aaa0876cec887d2a77739ee4569105f",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789528182.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2070,
+      "input_tokens_details": {
+        "cache_write_tokens": 2067,
+        "cached_tokens": 0
+      },
+      "output_tokens": 303,
+      "output_tokens_details": {
+        "reasoning_tokens": 145
+      },
+      "total_tokens": 2373
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.96,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Canada's recreational housing market and projected cottage-property prices\",\n  \"conflict_relevance\": \"The main article is unrelated to the Israel-Palestine conflict, but an embedded latest-news snippet reports the death of a man in northern Gaza while awaiting Canadian evacuation or visa assistance.\",\n  \"reason\": \"The Gaza content appears only in an unrelated embedded roundup item rather than the main housing article. It contains a meaningful conflict-related sentence, so the item is peripheral rather than excluded.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:09:48Z",
+  "duration_seconds": 5.519,
+  "error": null
+}

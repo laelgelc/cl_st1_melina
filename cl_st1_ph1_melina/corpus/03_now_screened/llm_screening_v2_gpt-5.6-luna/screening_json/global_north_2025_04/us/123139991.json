@@ -1,0 +1,65 @@
+{
+  "article_id": "123139991",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_04/us/123139991.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_04/us/123139991.json"
+  },
+  "manifest_row": {
+    "article_id": "123139991",
+    "group": "global_north_2025_04",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2025_04/us/123139991.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "background",
+    "main_topic": "The Trump administration's tariffs, financial market reaction, and related US political developments",
+    "conflict_relevance": "The live updates include a substantive segment on the Senate's failed effort to block bomb sales to Israel and references to US complicity and proposals to move Palestinians out of Gaza.",
+    "reason": "The article is primarily a live news roundup about tariffs, markets, and domestic and international political reactions. However, its dedicated report on US military aid to Israel and the displacement of Gaza's Palestinian population provides meaningful conflict-related discourse, making it peripheral rather than excludable.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "2760875b24c1c54d4ec45ea808e1ee782396b130ae019cbe13990189e22ec708",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "c1da162a36bcdf3400c30d7315dc924b724ba4c0755fec6cc51b30d1dc0029ca",
+    "raw_response_text_sha256": "fa00a4fc5713072169c371a9ef7107092a07f70e74ca62941686e9166fc4191c"
+  },
+  "api_metadata": {
+    "id": "resp_04d2c6e388476244006aaa29dbd55087d190ad1888297d60ef",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789536731.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 12568,
+      "input_tokens_details": {
+        "cache_write_tokens": 12565,
+        "cached_tokens": 0
+      },
+      "output_tokens": 253,
+      "output_tokens_details": {
+        "reasoning_tokens": 74
+      },
+      "total_tokens": 12821
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"The Trump administration's tariffs, financial market reaction, and related US political developments\",\n  \"conflict_relevance\": \"The live updates include a substantive segment on the Senate's failed effort to block bomb sales to Israel and references to US complicity and proposals to move Palestinians out of Gaza.\",\n  \"reason\": \"The article is primarily a live news roundup about tariffs, markets, and domestic and international political reactions. However, its dedicated report on US military aid to Israel and the displacement of Gaza's Palestinian population provides meaningful conflict-related discourse, making it peripheral rather than excludable.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T05:32:16Z",
+  "duration_seconds": 4.348,
+  "error": null
+}

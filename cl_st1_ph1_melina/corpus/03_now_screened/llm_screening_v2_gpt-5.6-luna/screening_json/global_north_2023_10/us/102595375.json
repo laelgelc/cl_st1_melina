@@ -1,0 +1,65 @@
+{
+  "article_id": "102595375",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_10/us/102595375.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_10/us/102595375.json"
+  },
+  "manifest_row": {
+    "article_id": "102595375",
+    "group": "global_north_2023_10",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2023_10/us/102595375.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.78,
+    "gaza_role": "background",
+    "main_topic": "NBA season outlook and analysis of teams, players, and championship contenders",
+    "conflict_relevance": "The page contains several embedded headlines and video items concerning the Israel-Gaza war, including civilian evacuation warnings, hostages, Hamas-related security concerns, and Israeli military messaging, but the main article is unrelated sports analysis.",
+    "reason": "The conflict-related material is meaningful but limited to embedded news headlines and short video listings rather than the substantive body of the main article. It may be useful for studying media prominence or headline framing, but not as core conflict coverage.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "61d41c15a6f50a6532e807c440688050c461527cef3b79b3dc7d2f6e677d15af",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "784f9a04ad344eb3dcd63043ab2d68be8a7bd0a286c28a39a53119cf9124f5ff",
+    "raw_response_text_sha256": "31028d4db7232a30a974e9b260d08032d48f1326ab9147d46f9a75ff78801704"
+  },
+  "api_metadata": {
+    "id": "resp_02d615a4188dc571006aa9f8ba88c487d2b425fbeece2ad997",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789524154.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 3903,
+      "input_tokens_details": {
+        "cache_write_tokens": 3900,
+        "cached_tokens": 0
+      },
+      "output_tokens": 550,
+      "output_tokens_details": {
+        "reasoning_tokens": 373
+      },
+      "total_tokens": 4453
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.78,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"NBA season outlook and analysis of teams, players, and championship contenders\",\n  \"conflict_relevance\": \"The page contains several embedded headlines and video items concerning the Israel-Gaza war, including civilian evacuation warnings, hostages, Hamas-related security concerns, and Israeli military messaging, but the main article is unrelated sports analysis.\",\n  \"reason\": \"The conflict-related material is meaningful but limited to embedded news headlines and short video listings rather than the substantive body of the main article. It may be useful for studying media prominence or headline framing, but not as core conflict coverage.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:02:40Z",
+  "duration_seconds": 6.5,
+  "error": null
+}

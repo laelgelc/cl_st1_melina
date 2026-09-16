@@ -1,0 +1,65 @@
+{
+  "article_id": "105307126",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_south_2024_01/in/105307126.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_south_2024_01/in/105307126.json"
+  },
+  "manifest_row": {
+    "article_id": "105307126",
+    "group": "global_south_2024_01",
+    "country_code": "in",
+    "filepath": "corpus/02_now_organised/global_south_2024_01/in/105307126.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.96,
+    "gaza_role": "background",
+    "main_topic": "Israeli missile strike on Iranian-linked targets in Damascus, Syria",
+    "conflict_relevance": "The article concerns Israeli military action in the region and includes a related-post reference to civilian deaths in Gaza, but it is not primarily about the Israel-Palestine conflict.",
+    "reason": "The main report focuses on an Israeli strike in Syria against Iranian targets. Gaza appears only in a separate related-post excerpt, creating some broader discourse relevance but not enough for CORE classification.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "0d55e10d11e92cb83d0ffddc735f2a7e718b8983f3a8999510a571f05cfcb553",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "fec0d1228b44f630a9d759455e99f00f728ae4176b918ad1db437bab9226cb16",
+    "raw_response_text_sha256": "bcf30790959e439d16be2239f81b83c9dfde469de30ba51876539ff902de6f51"
+  },
+  "api_metadata": {
+    "id": "resp_0823bd66af92dd9f006aaa37f74d1887d1869945bbf5a0549d",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789540343.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 926,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 293,
+      "output_tokens_details": {
+        "reasoning_tokens": 134
+      },
+      "total_tokens": 1219
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.96,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Israeli missile strike on Iranian-linked targets in Damascus, Syria\",\n  \"conflict_relevance\": \"The article concerns Israeli military action in the region and includes a related-post reference to civilian deaths in Gaza, but it is not primarily about the Israel-Palestine conflict.\",\n  \"reason\": \"The main report focuses on an Israeli strike in Syria against Iranian targets. Gaza appears only in a separate related-post excerpt, creating some broader discourse relevance but not enough for CORE classification.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T06:32:28Z",
+  "duration_seconds": 5.469,
+  "error": null
+}

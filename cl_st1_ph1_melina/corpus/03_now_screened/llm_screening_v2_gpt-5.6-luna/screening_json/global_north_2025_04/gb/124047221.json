@@ -1,0 +1,65 @@
+{
+  "article_id": "124047221",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_04/gb/124047221.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_04/gb/124047221.json"
+  },
+  "manifest_row": {
+    "article_id": "124047221",
+    "group": "global_north_2025_04",
+    "country_code": "gb",
+    "filepath": "corpus/02_now_organised/global_north_2025_04/gb/124047221.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "background",
+    "main_topic": "Mixed UK political and current-affairs news roundup",
+    "conflict_relevance": "The text contains substantive embedded items about Hamas-Israel ceasefire diplomacy in Gaza and pro-Palestine protests in London, but the overall page is a compilation of largely unrelated news articles.",
+    "reason": "Although several embedded snippets meaningfully concern Gaza, Israel-Palestine diplomacy, and pro-Palestine activism, there is no single coherent main article centered on the conflict. The roundup format makes it unsuitable for the main conflict corpus but potentially useful for broader discourse analysis.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "a84fcbf794b6f7bceb354b9f6d1fb9bd9b6f42e863ac4ecc5fc42c2b3a866f76",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "2a0d460af442a7d79b66937d30f6172c0a929c9552108b3cfba930c7d92f0c90",
+    "raw_response_text_sha256": "2e8bc24dc172f20604769c82aca90d2790087a6bac86b3a68cc7fcecdea56115"
+  },
+  "api_metadata": {
+    "id": "resp_0514ce8917942460006aaa293e36ec87d1998064b38bfa27ca",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789536574.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 4711,
+      "input_tokens_details": {
+        "cache_write_tokens": 4708,
+        "cached_tokens": 0
+      },
+      "output_tokens": 444,
+      "output_tokens_details": {
+        "reasoning_tokens": 266
+      },
+      "total_tokens": 5155
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Mixed UK political and current-affairs news roundup\",\n  \"conflict_relevance\": \"The text contains substantive embedded items about Hamas-Israel ceasefire diplomacy in Gaza and pro-Palestine protests in London, but the overall page is a compilation of largely unrelated news articles.\",\n  \"reason\": \"Although several embedded snippets meaningfully concern Gaza, Israel-Palestine diplomacy, and pro-Palestine activism, there is no single coherent main article centered on the conflict. The roundup format makes it unsuitable for the main conflict corpus but potentially useful for broader discourse analysis.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T05:29:38Z",
+  "duration_seconds": 4.79,
+  "error": null
+}

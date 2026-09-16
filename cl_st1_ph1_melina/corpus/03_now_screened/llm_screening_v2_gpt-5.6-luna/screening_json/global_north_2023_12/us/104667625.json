@@ -1,0 +1,65 @@
+{
+  "article_id": "104667625",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_12/us/104667625.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_12/us/104667625.json"
+  },
+  "manifest_row": {
+    "article_id": "104667625",
+    "group": "global_north_2023_12",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2023_12/us/104667625.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "gaza_role": "passing",
+    "main_topic": "A year-end foreign affairs prediction quiz covering global conflicts and political developments",
+    "conflict_relevance": "Gaza appears only as a labeled prediction category, without substantive discussion of the war, Palestinians, Israel, or related issues.",
+    "reason": "The article is a broad year-ahead quiz, and the Gaza War is mentioned only in a brief heading with no accompanying analysis or meaningful discourse.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "c11265100245bdf15d3841b50c28526b34bc18da3d4d0e790399f7fa29873667",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "bba04537e711992ff552cfba5910e89def27d9114197e49ff03d8b7204fc83e4",
+    "raw_response_text_sha256": "1e9cd0e0a442021c2bf5632c16826de164d4d8a103130c9df23d044b91f25bd9"
+  },
+  "api_metadata": {
+    "id": "resp_0fd4ce8c5e3e915c006aaa02851dac87d28bed4afe8e7b7887",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789526661.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1045,
+      "input_tokens_details": {
+        "cache_write_tokens": 1042,
+        "cached_tokens": 0
+      },
+      "output_tokens": 211,
+      "output_tokens_details": {
+        "reasoning_tokens": 69
+      },
+      "total_tokens": 1256
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"A year-end foreign affairs prediction quiz covering global conflicts and political developments\",\n  \"conflict_relevance\": \"Gaza appears only as a labeled prediction category, without substantive discussion of the war, Palestinians, Israel, or related issues.\",\n  \"reason\": \"The article is a broad year-ahead quiz, and the Gaza War is mentioned only in a brief heading with no accompanying analysis or meaningful discourse.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:44:24Z",
+  "duration_seconds": 3.347,
+  "error": null
+}

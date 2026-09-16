@@ -1,0 +1,65 @@
+{
+  "article_id": "117207802",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_11/gb/117207802.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_11/gb/117207802.json"
+  },
+  "manifest_row": {
+    "article_id": "117207802",
+    "group": "global_north_2024_11",
+    "country_code": "gb",
+    "filepath": "corpus/02_now_organised/global_north_2024_11/gb/117207802.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.92,
+    "gaza_role": "background",
+    "main_topic": "Kemi Badenoch's appointments to the UK Conservative Party shadow cabinet",
+    "conflict_relevance": "The main article is about Conservative Party personnel and leadership politics. It includes background about Priti Patel's unofficial meetings with Israeli officials, while a separate appended news report provides substantial coverage of the Israel-Hezbollah conflict and the war in Gaza.",
+    "reason": "The headline-associated article is not centrally about Gaza or Israel/Palestine, but it contains a meaningful Israel-related biographical reference. The extensive Gaza and Lebanon material appears to be an unrelated embedded article or concatenated snippet rather than the main story.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "35a46beb5d855da8000bf25ed3c036efefe9da261a4e5c9e66da7fb800389ebc",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "af62de2f77b0c8914e3b67183e96af3d662eca43d1909a9fa82fb363a8103f1d",
+    "raw_response_text_sha256": "df99de1c9e00e84075344cf153f8ea3a3fc66096d8bcd7106ea675763c305894"
+  },
+  "api_metadata": {
+    "id": "resp_0bb252a3c17d5f90006aaa1a8017c887d297716206abaf87d8",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789532800.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 3076,
+      "input_tokens_details": {
+        "cache_write_tokens": 3073,
+        "cached_tokens": 0
+      },
+      "output_tokens": 423,
+      "output_tokens_details": {
+        "reasoning_tokens": 237
+      },
+      "total_tokens": 3499
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.92,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Kemi Badenoch's appointments to the UK Conservative Party shadow cabinet\",\n  \"conflict_relevance\": \"The main article is about Conservative Party personnel and leadership politics. It includes background about Priti Patel's unofficial meetings with Israeli officials, while a separate appended news report provides substantial coverage of the Israel-Hezbollah conflict and the war in Gaza.\",\n  \"reason\": \"The headline-associated article is not centrally about Gaza or Israel/Palestine, but it contains a meaningful Israel-related biographical reference. The extensive Gaza and Lebanon material appears to be an unrelated embedded article or concatenated snippet rather than the main story.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T04:26:44Z",
+  "duration_seconds": 4.825,
+  "error": null
+}

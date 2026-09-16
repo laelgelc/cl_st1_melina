@@ -1,0 +1,65 @@
+{
+  "article_id": "106989510",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_03/ca/106989510.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_03/ca/106989510.json"
+  },
+  "manifest_row": {
+    "article_id": "106989510",
+    "group": "global_north_2024_03",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2024_03/ca/106989510.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.96,
+    "gaza_role": "background",
+    "main_topic": "Film criticism and entertainment news, primarily concerning Dune: Part Two and Steven Spielberg",
+    "conflict_relevance": "The text includes meaningful but secondary references to antisemitism and a United Nations Security Council ceasefire resolution concerning Israel, Hamas, hostages, and the Gaza war.",
+    "reason": "The apparent main article is about Steven Spielberg's praise for Dune: Part Two, not the Gaza conflict. However, the appended Spielberg item discusses rising antisemitism, and the final snippet provides substantive information about the Gaza war and a UN ceasefire resolution, making the material relevant to broader conflict-related discourse but unsuitable as core coverage.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "9d2929be5b6d5463cfbd4def57481c861e32b034f4fea0940cbeaac815527222",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "2b0bccfac10a243d0be9714e36743716b554e82ae819e490c690ef7ad4047964",
+    "raw_response_text_sha256": "aac94d03b12903ad2fba1769dc5ae5c8d72b0922f2addfc3248453e7065ffb04"
+  },
+  "api_metadata": {
+    "id": "resp_08c11ffef6ae6bb1006aaa087fe68087d280479e2d5788855c",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789528191.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2116,
+      "input_tokens_details": {
+        "cache_write_tokens": 2113,
+        "cached_tokens": 0
+      },
+      "output_tokens": 411,
+      "output_tokens_details": {
+        "reasoning_tokens": 219
+      },
+      "total_tokens": 2527
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.96,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Film criticism and entertainment news, primarily concerning Dune: Part Two and Steven Spielberg\",\n  \"conflict_relevance\": \"The text includes meaningful but secondary references to antisemitism and a United Nations Security Council ceasefire resolution concerning Israel, Hamas, hostages, and the Gaza war.\",\n  \"reason\": \"The apparent main article is about Steven Spielberg's praise for Dune: Part Two, not the Gaza conflict. However, the appended Spielberg item discusses rising antisemitism, and the final snippet provides substantive information about the Gaza war and a UN ceasefire resolution, making the material relevant to broader conflict-related discourse but unsuitable as core coverage.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:09:57Z",
+  "duration_seconds": 5.322,
+  "error": null
+}

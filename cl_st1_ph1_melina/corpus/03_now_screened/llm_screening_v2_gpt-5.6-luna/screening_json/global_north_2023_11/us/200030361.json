@@ -1,0 +1,65 @@
+{
+  "article_id": "200030361",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_11/us/200030361.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_11/us/200030361.json"
+  },
+  "manifest_row": {
+    "article_id": "200030361",
+    "group": "global_north_2023_11",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2023_11/us/200030361.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.94,
+    "gaza_role": "passing",
+    "main_topic": "Fort Liberty soldiers trespassing on a private farm and military restrictions on off-limits establishments",
+    "conflict_relevance": "The article contains an embedded news paragraph about Hamas releasing hostages during an Israel-Hamas truce, but this is unrelated to the main story.",
+    "reason": "The headline article is about military personnel trespassing at a North Carolina farm. However, a substantive embedded snippet discusses hostage releases by Hamas, the truce, and Americans held in Gaza, providing limited peripheral relevance to the research corpus.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "ee2a284c92c0dd9473c27e1e92b4b7b20565c9651a9a391af99442be03f0adfe",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "a6be0ffb3b25d55f91952cfe42adc8081fb71d091b5caf9a0905a7f10f0a1c81",
+    "raw_response_text_sha256": "7a4a1eec7c50b9d4c887f52268b5cb93c4fb1c086564c8bb57faa0880e32ad69"
+  },
+  "api_metadata": {
+    "id": "resp_0f840d146f272781006aa9ff95370c87d287220ceb27629562",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789525909.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1468,
+      "input_tokens_details": {
+        "cache_write_tokens": 1465,
+        "cached_tokens": 0
+      },
+      "output_tokens": 365,
+      "output_tokens_details": {
+        "reasoning_tokens": 197
+      },
+      "total_tokens": 1833
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.94,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Fort Liberty soldiers trespassing on a private farm and military restrictions on off-limits establishments\",\n  \"conflict_relevance\": \"The article contains an embedded news paragraph about Hamas releasing hostages during an Israel-Hamas truce, but this is unrelated to the main story.\",\n  \"reason\": \"The headline article is about military personnel trespassing at a North Carolina farm. However, a substantive embedded snippet discusses hostage releases by Hamas, the truce, and Americans held in Gaza, providing limited peripheral relevance to the research corpus.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:31:54Z",
+  "duration_seconds": 5.456,
+  "error": null
+}

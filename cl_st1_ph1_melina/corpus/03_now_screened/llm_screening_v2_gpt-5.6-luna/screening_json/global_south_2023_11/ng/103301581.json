@@ -1,0 +1,65 @@
+{
+  "article_id": "103301581",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_south_2023_11/ng/103301581.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_south_2023_11/ng/103301581.json"
+  },
+  "manifest_row": {
+    "article_id": "103301581",
+    "group": "global_south_2023_11",
+    "country_code": "ng",
+    "filepath": "corpus/02_now_organised/global_south_2023_11/ng/103301581.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.96,
+    "gaza_role": "background",
+    "main_topic": "Switzerland's potential resumption of negotiations with the European Union",
+    "conflict_relevance": "The main article is unrelated to Gaza or Israel/Palestine, but the text includes substantive embedded snippets about Israel's war in Gaza and a pro-Palestinian rally in Britain.",
+    "reason": "The headline article concerns Swiss-EU relations. However, the presence of multiple meaningful conflict-related news snippets makes the item potentially useful for broader discourse analysis, though not as core conflict coverage.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "129fd293e67df53787cb8bfe6e068ab08d1c795f4d1ff4d7a33dcfa99d14a0c6",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "0f9803cd8b2a07296f025d03cc4c09d2ca7c4b20dc200dab11eec557a4c6c999",
+    "raw_response_text_sha256": "ca47f2a3621668c1c3b5e19d5c6cc2a388214eb69e50eb3e9fa161ba3ab7f33d"
+  },
+  "api_metadata": {
+    "id": "resp_051a456343cad38d006aaa359e5d3087d1a51c9fe272e2fb7d",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789539742.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1845,
+      "input_tokens_details": {
+        "cache_write_tokens": 1842,
+        "cached_tokens": 0
+      },
+      "output_tokens": 327,
+      "output_tokens_details": {
+        "reasoning_tokens": 164
+      },
+      "total_tokens": 2172
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.96,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Switzerland's potential resumption of negotiations with the European Union\",\n  \"conflict_relevance\": \"The main article is unrelated to Gaza or Israel/Palestine, but the text includes substantive embedded snippets about Israel's war in Gaza and a pro-Palestinian rally in Britain.\",\n  \"reason\": \"The headline article concerns Swiss-EU relations. However, the presence of multiple meaningful conflict-related news snippets makes the item potentially useful for broader discourse analysis, though not as core conflict coverage.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T06:22:27Z",
+  "duration_seconds": 4.91,
+  "error": null
+}

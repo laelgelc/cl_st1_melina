@@ -1,0 +1,65 @@
+{
+  "article_id": "102432587",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_10/ca/102432587.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_10/ca/102432587.json"
+  },
+  "manifest_row": {
+    "article_id": "102432587",
+    "group": "global_north_2023_10",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2023_10/ca/102432587.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.97,
+    "gaza_role": "passing",
+    "main_topic": "Formula One Qatar Grand Prix and Max Verstappen's championship victory",
+    "conflict_relevance": "The article includes an unrelated news paragraph about Israel declaring war and intensifying attacks on Hamas and Gaza, but the main article is sports coverage.",
+    "reason": "The central article concerns Formula One and contains no sustained conflict analysis. However, the embedded Gaza-related news item provides meaningful, though brief, discourse about the Israel-Hamas war, making the item peripheral rather than excludable.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "bf12e2a6f0a03035cabec14dd556eeff8c25a3d84252505c691bd801d82a2dc4",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "5e215fe256536145a8b5f2503e5b4d996950756e07156d8d975b37eb1d7904cb",
+    "raw_response_text_sha256": "3349039f0aaf8261aa6adfcca9be9d59b00d6639e6035870500f03448976443f"
+  },
+  "api_metadata": {
+    "id": "resp_0bebf85b92d9697c006aa9f5ff10b487d29ab5046154e73451",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789523455.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1929,
+      "input_tokens_details": {
+        "cache_write_tokens": 1926,
+        "cached_tokens": 0
+      },
+      "output_tokens": 300,
+      "output_tokens_details": {
+        "reasoning_tokens": 162
+      },
+      "total_tokens": 2229
+    }
+  },
+  "raw_response_text": "{\"category\":\"PERIPHERAL\",\"confidence\":0.97,\"gaza_role\":\"passing\",\"main_topic\":\"Formula One Qatar Grand Prix and Max Verstappen's championship victory\",\"conflict_relevance\":\"The article includes an unrelated news paragraph about Israel declaring war and intensifying attacks on Hamas and Gaza, but the main article is sports coverage.\",\"reason\":\"The central article concerns Formula One and contains no sustained conflict analysis. However, the embedded Gaza-related news item provides meaningful, though brief, discourse about the Israel-Hamas war, making the item peripheral rather than excludable.\",\"multi_article_or_snippet_issue\":true,\"recommended_for_main_corpus\":false}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T01:50:58Z",
+  "duration_seconds": 3.741,
+  "error": null
+}

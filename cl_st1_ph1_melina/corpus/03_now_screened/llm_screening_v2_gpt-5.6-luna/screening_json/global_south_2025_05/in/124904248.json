@@ -1,0 +1,65 @@
+{
+  "article_id": "124904248",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_south_2025_05/in/124904248.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_south_2025_05/in/124904248.json"
+  },
+  "manifest_row": {
+    "article_id": "124904248",
+    "group": "global_south_2025_05",
+    "country_code": "in",
+    "filepath": "corpus/02_now_organised/global_south_2025_05/in/124904248.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "background",
+    "main_topic": "US stock market performance and assorted international business and political news",
+    "conflict_relevance": "The article contains a substantive news item about the UK pausing free-trade talks with Israel, sanctioning individuals and entities linked to violence against Palestinians, and opposing expanded Israeli military activity in Gaza.",
+    "reason": "The primary article is a financial market live blog with many unrelated news snippets. Gaza and Israel/Palestine appear in one meaningful but non-central item concerning diplomatic pressure and sanctions.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "7c66cef753fc6c13c94bceed0cd4ac2903b5514b0a51e645eece421416746449",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "53e00e4913fa7a09b1f6a7e45762918ff0e40567c2fb13aaf8f6d29789e2e2c1",
+    "raw_response_text_sha256": "7107170cab3bea5d6240ae7452de2b8e1b52056fada8123398a7a058e0790559"
+  },
+  "api_metadata": {
+    "id": "resp_0afedf9c897a496b006aaa48c8775487d1ac64c5d4f77cdebc",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789544648.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 4550,
+      "input_tokens_details": {
+        "cache_write_tokens": 4547,
+        "cached_tokens": 0
+      },
+      "output_tokens": 238,
+      "output_tokens_details": {
+        "reasoning_tokens": 76
+      },
+      "total_tokens": 4788
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"US stock market performance and assorted international business and political news\",\n  \"conflict_relevance\": \"The article contains a substantive news item about the UK pausing free-trade talks with Israel, sanctioning individuals and entities linked to violence against Palestinians, and opposing expanded Israeli military activity in Gaza.\",\n  \"reason\": \"The primary article is a financial market live blog with many unrelated news snippets. Gaza and Israel/Palestine appear in one meaningful but non-central item concerning diplomatic pressure and sanctions.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T07:44:12Z",
+  "duration_seconds": 3.897,
+  "error": null
+}

@@ -1,0 +1,65 @@
+{
+  "article_id": "124377818",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_south_2025_05/in/124377818.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_south_2025_05/in/124377818.json"
+  },
+  "manifest_row": {
+    "article_id": "124377818",
+    "group": "global_south_2025_05",
+    "country_code": "in",
+    "filepath": "corpus/02_now_organised/global_south_2025_05/in/124377818.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.88,
+    "gaza_role": "background",
+    "main_topic": "A news podcast episode covering India-Pakistan diplomatic tensions, rising school fees, and the escalating Israel-Gaza war",
+    "conflict_relevance": "The episode includes a dedicated segment on escalating tensions and Israel's intensifying military campaign in Gaza, but the article provides no substantive discussion beyond the segment description.",
+    "reason": "Gaza is featured in the episode title and as one of three major discussion topics, making the reference meaningful. However, the page is primarily a multi-topic podcast listing and contains only a brief summary of the Gaza segment, so it is better treated as peripheral rather than core coverage.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "0a0b962f5ff58d6de9c21c34e4785c9872b33c313324e86b95084973ee8fec3d",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "4d172d59df1dba1a8ba2a2f1d4b43cd7e1f137fb5405ae72b40fc8596ad88162",
+    "raw_response_text_sha256": "55bb6e71d350b5bc4bc75a2ff493f8dc6f9a4735cf44df9ecd3bb3c7ae5a8dad"
+  },
+  "api_metadata": {
+    "id": "resp_0c00f6b18ba16fba006aaa4883245087d187104a62fb6c8c4a",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789544579.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 970,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 424,
+      "output_tokens_details": {
+        "reasoning_tokens": 238
+      },
+      "total_tokens": 1394
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.88,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"A news podcast episode covering India-Pakistan diplomatic tensions, rising school fees, and the escalating Israel-Gaza war\",\n  \"conflict_relevance\": \"The episode includes a dedicated segment on escalating tensions and Israel's intensifying military campaign in Gaza, but the article provides no substantive discussion beyond the segment description.\",\n  \"reason\": \"Gaza is featured in the episode title and as one of three major discussion topics, making the reference meaningful. However, the page is primarily a multi-topic podcast listing and contains only a brief summary of the Gaza segment, so it is better treated as peripheral rather than core coverage.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T07:43:03Z",
+  "duration_seconds": 4.505,
+  "error": null
+}

@@ -1,0 +1,65 @@
+{
+  "article_id": "102488543",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_10/gb/102488543.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_10/gb/102488543.json"
+  },
+  "manifest_row": {
+    "article_id": "102488543",
+    "group": "global_north_2023_10",
+    "country_code": "gb",
+    "filepath": "corpus/02_now_organised/global_north_2023_10/gb/102488543.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.96,
+    "gaza_role": "passing",
+    "main_topic": "Household and grocery shopping deals and product recommendations",
+    "conflict_relevance": "An embedded news passage briefly covers the October 7 Hamas attack, Israeli military actions in Gaza, Palestinian casualties, Canadian political responses, and demonstrations in Canada.",
+    "reason": "The article is primarily a shopping-deals roundup, but it contains a meaningful, unrelated embedded news snippet about the Israel-Hamas war and related protests. This supports peripheral use rather than exclusion.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "e7e51210dce269537ecd37c229143ace602a7f60ef8b4eb6597f1e941d66d3e0",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "d1fabeb5c6bf147c798fa0d43478cbf6b374b7e6730e48990f39d9e520ea0a4a",
+    "raw_response_text_sha256": "1dd7f78e81ac0b8ca91568c1d28c639ff40bfe3157153070f1f38c5879f01a93"
+  },
+  "api_metadata": {
+    "id": "resp_0aae28d381a06010006aa9f6ebddb087d282af5344144b53e0",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789523691.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1140,
+      "input_tokens_details": {
+        "cache_write_tokens": 1137,
+        "cached_tokens": 0
+      },
+      "output_tokens": 279,
+      "output_tokens_details": {
+        "reasoning_tokens": 125
+      },
+      "total_tokens": 1419
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.96,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Household and grocery shopping deals and product recommendations\",\n  \"conflict_relevance\": \"An embedded news passage briefly covers the October 7 Hamas attack, Israeli military actions in Gaza, Palestinian casualties, Canadian political responses, and demonstrations in Canada.\",\n  \"reason\": \"The article is primarily a shopping-deals roundup, but it contains a meaningful, unrelated embedded news snippet about the Israel-Hamas war and related protests. This supports peripheral use rather than exclusion.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T01:54:54Z",
+  "duration_seconds": 3.008,
+  "error": null
+}

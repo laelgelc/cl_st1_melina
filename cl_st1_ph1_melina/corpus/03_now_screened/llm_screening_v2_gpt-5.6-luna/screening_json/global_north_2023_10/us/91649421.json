@@ -1,0 +1,65 @@
+{
+  "article_id": "91649421",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_10/us/91649421.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_10/us/91649421.json"
+  },
+  "manifest_row": {
+    "article_id": "91649421",
+    "group": "global_north_2023_10",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2023_10/us/91649421.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.93,
+    "gaza_role": "background",
+    "main_topic": "A viral dating story about a woman eating 48 oysters and being left with the restaurant bill",
+    "conflict_relevance": "The article ends with an unrelated news snippet about backlash against WebSummit founder Paddy Cosgrave over comments criticizing Israel's actions in the fighting across Israel and Gaza.",
+    "reason": "The headline and main article are entirely about a restaurant date and online reactions to it. However, the appended WebSummit passage contains meaningful, though brief and disconnected, discourse about Israel, Gaza, and public controversy over the conflict.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "e82268945a6d6cd46ca561eec94ea93fb2b69e0e4ffea8c0791f5ad8bdd50538",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "b2998f4e1968aea27ce6b29b265bfcc34699a07e00f8fbca033d2609bc8b0e3f",
+    "raw_response_text_sha256": "2b7c0fd980ba2c24031167b47afb9f02ea4d4306d3025e2038bdcd01e0cbe5a4"
+  },
+  "api_metadata": {
+    "id": "resp_000550e4ed4c90be006aa9fa8f324487d288bc1bdfe718c0eb",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789524623.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1685,
+      "input_tokens_details": {
+        "cache_write_tokens": 1682,
+        "cached_tokens": 0
+      },
+      "output_tokens": 357,
+      "output_tokens_details": {
+        "reasoning_tokens": 185
+      },
+      "total_tokens": 2042
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.93,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"A viral dating story about a woman eating 48 oysters and being left with the restaurant bill\",\n  \"conflict_relevance\": \"The article ends with an unrelated news snippet about backlash against WebSummit founder Paddy Cosgrave over comments criticizing Israel's actions in the fighting across Israel and Gaza.\",\n  \"reason\": \"The headline and main article are entirely about a restaurant date and online reactions to it. However, the appended WebSummit passage contains meaningful, though brief and disconnected, discourse about Israel, Gaza, and public controversy over the conflict.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:10:27Z",
+  "duration_seconds": 4.121,
+  "error": null
+}

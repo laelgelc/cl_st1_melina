@@ -1,0 +1,65 @@
+{
+  "article_id": "103176479",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_11/us/103176479.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_11/us/103176479.json"
+  },
+  "manifest_row": {
+    "article_id": "103176479",
+    "group": "global_north_2023_11",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2023_11/us/103176479.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "background",
+    "main_topic": "El Niño winter snowfall patterns and NOAA snow maps",
+    "conflict_relevance": "The article is primarily about seasonal snowfall in the United States, but it ends with a substantial unrelated snippet about Gaza's humanitarian crisis, Israel's military response, the killing of journalists, and reporting conditions in Gaza.",
+    "reason": "The Gaza-related material is meaningful and directly relevant to conflict discourse, but it is appended as an unrelated embedded item rather than being part of the article's main topic.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "3dcd1027d445efec41f20b788557aaa0bd00812d85556adedce941379b8cde04",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "5c406ce16f34a63772ad9da1a7b7f19a848f3dca9bc43634a472850a5c94ad64",
+    "raw_response_text_sha256": "5af4269d8482d57612af29b0623600209235e1853779382489282aed8e9786c5"
+  },
+  "api_metadata": {
+    "id": "resp_0147a7f5b3d1f226006aa9fe02acb487d2ab12f8f6317b83b6",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789525506.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1861,
+      "input_tokens_details": {
+        "cache_write_tokens": 1858,
+        "cached_tokens": 0
+      },
+      "output_tokens": 316,
+      "output_tokens_details": {
+        "reasoning_tokens": 156
+      },
+      "total_tokens": 2177
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"El Niño winter snowfall patterns and NOAA snow maps\",\n  \"conflict_relevance\": \"The article is primarily about seasonal snowfall in the United States, but it ends with a substantial unrelated snippet about Gaza's humanitarian crisis, Israel's military response, the killing of journalists, and reporting conditions in Gaza.\",\n  \"reason\": \"The Gaza-related material is meaningful and directly relevant to conflict discourse, but it is appended as an unrelated embedded item rather than being part of the article's main topic.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:25:10Z",
+  "duration_seconds": 4.052,
+  "error": null
+}

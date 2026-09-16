@@ -1,0 +1,65 @@
+{
+  "article_id": "104664224",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_12/nz/104664224.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_12/nz/104664224.json"
+  },
+  "manifest_row": {
+    "article_id": "104664224",
+    "group": "global_north_2023_12",
+    "country_code": "nz",
+    "filepath": "corpus/02_now_organised/global_north_2023_12/nz/104664224.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.86,
+    "gaza_role": "background",
+    "main_topic": "Scoop ethical paywall and miscellaneous news snippets",
+    "conflict_relevance": "Includes a substantive religious and political framing of Gaza as a site of Israeli bombing and humanitarian suffering, but the overall item is primarily a paywall notice and mixed-content aggregation.",
+    "reason": "The Gaza reference meaningfully invokes the Israel-Palestine conflict and represents Gaza through Christian symbolism, but it is embedded among unrelated snippets and is not the central topic of the item.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "eb1e070b7975008655ef5eef45f61773d01cc90c63e95c2e7dea4f6a6398dea5",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "277453986803bfd436b6a3b8e3db019b040dada5c70a2f85ab3b5078ce48ce53",
+    "raw_response_text_sha256": "80b3ba8605020c01493756f910f92ebe03865569d00e14f97382e653d3b13faf"
+  },
+  "api_metadata": {
+    "id": "resp_0373d337604d1c5e006aaa019e609487d2a95d25c1a0eda431",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789526430.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 940,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 338,
+      "output_tokens_details": {
+        "reasoning_tokens": 182
+      },
+      "total_tokens": 1278
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.86,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Scoop ethical paywall and miscellaneous news snippets\",\n  \"conflict_relevance\": \"Includes a substantive religious and political framing of Gaza as a site of Israeli bombing and humanitarian suffering, but the overall item is primarily a paywall notice and mixed-content aggregation.\",\n  \"reason\": \"The Gaza reference meaningfully invokes the Israel-Palestine conflict and represents Gaza through Christian symbolism, but it is embedded among unrelated snippets and is not the central topic of the item.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:40:41Z",
+  "duration_seconds": 15.474,
+  "error": null
+}

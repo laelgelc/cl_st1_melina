@@ -1,0 +1,65 @@
+{
+  "article_id": "113496702",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_south_2024_09/in/113496702.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_south_2024_09/in/113496702.json"
+  },
+  "manifest_row": {
+    "article_id": "113496702",
+    "group": "global_south_2024_09",
+    "country_code": "in",
+    "filepath": "corpus/02_now_organised/global_south_2024_09/in/113496702.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.96,
+    "gaza_role": "background",
+    "main_topic": "Houthi attacks on Red Sea shipping and the associated environmental, economic, and humanitarian risks",
+    "conflict_relevance": "The main article discusses Houthi attacks on vessels allegedly linked to Israel or bound for Israel and explicitly presents the Gaza war as the Houthis' stated justification, but Gaza is not the article's central subject. The text also contains a separate, unrelated article about Sudan's humanitarian crisis.",
+    "reason": "The primary article is meaningfully connected to the Gaza conflict through the stated motivation for the Red Sea attacks, yet it focuses mainly on maritime security and the consequences for Yemen and shipping. The appended Sudan article is unrelated.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "ae1d64c16f90716930648f0553bb276460a2cee1e4cba3e974ce5986a0232543",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "89b50a5c3fe97e8192c44381058176b7c3e666258e283eb4a63bdb0430cf425f",
+    "raw_response_text_sha256": "bc28d743a04b15f52695712525ac09447f7d48b71591220d19a4af370f4e8dcf"
+  },
+  "api_metadata": {
+    "id": "resp_018c0778fa6ab3e4006aaa3eee119487d190eda5f28c0f2824",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789542126.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1549,
+      "input_tokens_details": {
+        "cache_write_tokens": 1546,
+        "cached_tokens": 0
+      },
+      "output_tokens": 265,
+      "output_tokens_details": {
+        "reasoning_tokens": 71
+      },
+      "total_tokens": 1814
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.96,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Houthi attacks on Red Sea shipping and the associated environmental, economic, and humanitarian risks\",\n  \"conflict_relevance\": \"The main article discusses Houthi attacks on vessels allegedly linked to Israel or bound for Israel and explicitly presents the Gaza war as the Houthis' stated justification, but Gaza is not the article's central subject. The text also contains a separate, unrelated article about Sudan's humanitarian crisis.\",\n  \"reason\": \"The primary article is meaningfully connected to the Gaza conflict through the stated motivation for the Red Sea attacks, yet it focuses mainly on maritime security and the consequences for Yemen and shipping. The appended Sudan article is unrelated.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T07:02:10Z",
+  "duration_seconds": 4.312,
+  "error": null
+}

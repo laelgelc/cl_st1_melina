@@ -1,0 +1,65 @@
+{
+  "article_id": "114411102",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_09/au/114411102.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_09/au/114411102.json"
+  },
+  "manifest_row": {
+    "article_id": "114411102",
+    "group": "global_north_2024_09",
+    "country_code": "au",
+    "filepath": "corpus/02_now_organised/global_north_2024_09/au/114411102.txt"
+  },
+  "screening": {
+    "category": "CORE",
+    "confidence": 0.96,
+    "gaza_role": "substantial",
+    "main_topic": "Israeli military actions in Gaza and alleged violations of children’s rights, within broader live coverage of Israel, Hezbollah, and regional escalation",
+    "conflict_relevance": "Directly addresses the Gaza war, Palestinian casualties, Israeli military action, Hamas, hostages, humanitarian conditions, international law, and UN criticism, while also covering related Israel-Hezbollah tensions.",
+    "reason": "The opening and most Gaza-focused section reports extensively on alleged Israeli violations of the UN Convention on the Rights of the Child, civilian and child deaths, the October 7 attacks, hostages, and Israel’s response. Although the text also contains multiple Lebanon and Hezbollah news updates, the Gaza material is substantial and directly relevant to the main corpus.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": true
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "76cf4c1770253ed35893d5f600611c51e8bb220fc1ce655fc03d8fc0b433034e",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "7639ca13e70977ecb235683af7f015f8dda761d8ef7052f15722c0222aefad06",
+    "raw_response_text_sha256": "59e97d3bf5e56592978b158d1f044f321bd478ff23091a2d91070900db3e8ebd"
+  },
+  "api_metadata": {
+    "id": "resp_0f1a40d896bc9699006aaa15ef723887d28512caad519dc586",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789531631.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2838,
+      "input_tokens_details": {
+        "cache_write_tokens": 2835,
+        "cached_tokens": 0
+      },
+      "output_tokens": 368,
+      "output_tokens_details": {
+        "reasoning_tokens": 161
+      },
+      "total_tokens": 3206
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"CORE\",\n  \"confidence\": 0.96,\n  \"gaza_role\": \"substantial\",\n  \"main_topic\": \"Israeli military actions in Gaza and alleged violations of children’s rights, within broader live coverage of Israel, Hezbollah, and regional escalation\",\n  \"conflict_relevance\": \"Directly addresses the Gaza war, Palestinian casualties, Israeli military action, Hamas, hostages, humanitarian conditions, international law, and UN criticism, while also covering related Israel-Hezbollah tensions.\",\n  \"reason\": \"The opening and most Gaza-focused section reports extensively on alleged Israeli violations of the UN Convention on the Rights of the Child, civilian and child deaths, the October 7 attacks, hostages, and Israel’s response. Although the text also contains multiple Lebanon and Hezbollah news updates, the Gaza material is substantial and directly relevant to the main corpus.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": true\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T04:07:18Z",
+  "duration_seconds": 6.927,
+  "error": null
+}

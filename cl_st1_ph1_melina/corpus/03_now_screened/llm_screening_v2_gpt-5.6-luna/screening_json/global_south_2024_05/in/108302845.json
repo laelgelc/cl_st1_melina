@@ -1,0 +1,65 @@
+{
+  "article_id": "108302845",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_south_2024_05/in/108302845.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_south_2024_05/in/108302845.json"
+  },
+  "manifest_row": {
+    "article_id": "108302845",
+    "group": "global_south_2024_05",
+    "country_code": "in",
+    "filepath": "corpus/02_now_organised/global_south_2024_05/in/108302845.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.93,
+    "gaza_role": "background",
+    "main_topic": "Mixed news roundup covering sports, politics, international affairs, science, and society",
+    "conflict_relevance": "The text contains several substantive but separate Gaza-related items, including the ICJ hearing on Israel's military operation, the killing of an Indian UN official in Gaza, hospital conditions in Rafah, aid delivery via a floating pier, and Spain's refusal to allow an arms-carrying ship bound for Israel to dock.",
+    "reason": "Gaza and Israel-Palestine issues appear in multiple meaningful snippets, but the document as a whole is a compilation of largely unrelated news items rather than a focused conflict article.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "572e80a795e76a3790a827fe448e529dbcf91769aa6b61ab4f2040bed7649589",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "5c7621c2098fb4536992268d0e2c0fea790b9161d9bd2c092b764e493002b5ef",
+    "raw_response_text_sha256": "2771f0fde66d23ef3580995ce9b2a9ad88b7bae094772cd874fe44bec748c27d"
+  },
+  "api_metadata": {
+    "id": "resp_0e4f5ca46137bcb9006aaa3b3939a487d1804daec9c3e2834f",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789541177.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 3681,
+      "input_tokens_details": {
+        "cache_write_tokens": 3678,
+        "cached_tokens": 0
+      },
+      "output_tokens": 490,
+      "output_tokens_details": {
+        "reasoning_tokens": 300
+      },
+      "total_tokens": 4171
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.93,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Mixed news roundup covering sports, politics, international affairs, science, and society\",\n  \"conflict_relevance\": \"The text contains several substantive but separate Gaza-related items, including the ICJ hearing on Israel's military operation, the killing of an Indian UN official in Gaza, hospital conditions in Rafah, aid delivery via a floating pier, and Spain's refusal to allow an arms-carrying ship bound for Israel to dock.\",\n  \"reason\": \"Gaza and Israel-Palestine issues appear in multiple meaningful snippets, but the document as a whole is a compilation of largely unrelated news items rather than a focused conflict article.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T06:46:23Z",
+  "duration_seconds": 6.255,
+  "error": null
+}

@@ -1,0 +1,65 @@
+{
+  "article_id": "108262446",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_05/us/108262446.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_05/us/108262446.json"
+  },
+  "manifest_row": {
+    "article_id": "108262446",
+    "group": "global_north_2024_05",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2024_05/us/108262446.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "background",
+    "main_topic": "Protests and electricity shortages in Aden, Yemen",
+    "conflict_relevance": "The article is primarily about governance, infrastructure failures, and protests in Yemen, but it links Houthi attacks on Red Sea shipping and the resulting economic strain to Israel's assault in Gaza.",
+    "reason": "Gaza and Israel's military action appear as a meaningful causal context for the Yemeni economic and fuel crisis, but the article is not centrally about the Gaza conflict.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "97728aba67574a18829107724c8351223438c7f200f2099cd96c1eefdd511e93",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "0d3c9d5dd9aa7a9dd62c258f111fe7d2bb183d2e8afaa66869acd343adc95a3d",
+    "raw_response_text_sha256": "3e125173f1cf5f6959362b71d024fbea521d70b82fce07cdd561b84c4cc7831f"
+  },
+  "api_metadata": {
+    "id": "resp_0a9891b29b73a6f1006aaa0eea482087d2b0202ec909ac459d",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789529834.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1419,
+      "input_tokens_details": {
+        "cache_write_tokens": 1416,
+        "cached_tokens": 0
+      },
+      "output_tokens": 194,
+      "output_tokens_details": {
+        "reasoning_tokens": 38
+      },
+      "total_tokens": 1613
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Protests and electricity shortages in Aden, Yemen\",\n  \"conflict_relevance\": \"The article is primarily about governance, infrastructure failures, and protests in Yemen, but it links Houthi attacks on Red Sea shipping and the resulting economic strain to Israel's assault in Gaza.\",\n  \"reason\": \"Gaza and Israel's military action appear as a meaningful causal context for the Yemeni economic and fuel crisis, but the article is not centrally about the Gaza conflict.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:37:16Z",
+  "duration_seconds": 2.716,
+  "error": null
+}

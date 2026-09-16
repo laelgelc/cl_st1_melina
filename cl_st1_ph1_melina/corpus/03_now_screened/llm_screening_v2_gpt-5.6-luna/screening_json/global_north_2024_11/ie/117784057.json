@@ -1,0 +1,65 @@
+{
+  "article_id": "117784057",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_11/ie/117784057.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_11/ie/117784057.json"
+  },
+  "manifest_row": {
+    "article_id": "117784057",
+    "group": "global_north_2024_11",
+    "country_code": "ie",
+    "filepath": "corpus/02_now_organised/global_north_2024_11/ie/117784057.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "gaza_role": "passing",
+    "main_topic": "G20 summit, global poverty initiatives, and geopolitical tensions",
+    "conflict_relevance": "Gaza is mentioned only briefly as one of several ongoing wars affecting the geopolitical context of the G20 summit.",
+    "reason": "The article is primarily about the G20 summit, poverty, climate policy, Ukraine, and US-China relations. Its sole reference to Gaza is a passing mention and does not provide meaningful conflict-related discourse.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "e59e401c7aac2842f21bd22c3aeba19c14607ef4364ac7897e3e5de8e6753cab",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "b9e22ccd267c08a55cc369da95fca58d182e1c78b25222c8feb8a08103ab2a6d",
+    "raw_response_text_sha256": "6fd1abc833a0e14d791e1162929cd080f3942f8b9a31315326246cfdb42a83a0"
+  },
+  "api_metadata": {
+    "id": "resp_0cee717ed35e6928006aaa1b67081087d28f287ee1bedc307a",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789533031.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1411,
+      "input_tokens_details": {
+        "cache_write_tokens": 1408,
+        "cached_tokens": 0
+      },
+      "output_tokens": 251,
+      "output_tokens_details": {
+        "reasoning_tokens": 103
+      },
+      "total_tokens": 1662
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"G20 summit, global poverty initiatives, and geopolitical tensions\",\n  \"conflict_relevance\": \"Gaza is mentioned only briefly as one of several ongoing wars affecting the geopolitical context of the G20 summit.\",\n  \"reason\": \"The article is primarily about the G20 summit, poverty, climate policy, Ukraine, and US-China relations. Its sole reference to Gaza is a passing mention and does not provide meaningful conflict-related discourse.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T04:30:33Z",
+  "duration_seconds": 2.993,
+  "error": null
+}

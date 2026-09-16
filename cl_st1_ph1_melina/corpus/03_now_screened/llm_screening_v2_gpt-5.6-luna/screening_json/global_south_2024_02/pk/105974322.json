@@ -1,0 +1,65 @@
+{
+  "article_id": "105974322",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_south_2024_02/pk/105974322.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_south_2024_02/pk/105974322.json"
+  },
+  "manifest_row": {
+    "article_id": "105974322",
+    "group": "global_south_2024_02",
+    "country_code": "pk",
+    "filepath": "corpus/02_now_organised/global_south_2024_02/pk/105974322.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.96,
+    "gaza_role": "background",
+    "main_topic": "Israeli-Hezbollah border fighting and civilian casualties in southern Lebanon",
+    "conflict_relevance": "The article focuses on Lebanon-Israel hostilities but situates them within Israel's military offensive in Gaza and the wider regional conflict.",
+    "reason": "Gaza is mentioned meaningfully as the context for the escalation, but the main subject is fighting along the Lebanon-Israel border rather than Gaza or Israel-Palestine directly.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "38dbdec2b961bbd53e91a1848bde746e9611789ca7ab88451258ad5dcf7a7464",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "0282337e7ddb88218eff24841892f2b40812870190d1bfd05ca216b7e54e123b",
+    "raw_response_text_sha256": "252a8c9cc7ef80f28c172167b1138556312485606b49de3d96e905d76f7266ab"
+  },
+  "api_metadata": {
+    "id": "resp_056509825e95e2f6006aaa392af08c87d181e3e1ceda92f1fd",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789540650.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 746,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 214,
+      "output_tokens_details": {
+        "reasoning_tokens": 64
+      },
+      "total_tokens": 960
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.96,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Israeli-Hezbollah border fighting and civilian casualties in southern Lebanon\",\n  \"conflict_relevance\": \"The article focuses on Lebanon-Israel hostilities but situates them within Israel's military offensive in Gaza and the wider regional conflict.\",\n  \"reason\": \"Gaza is mentioned meaningfully as the context for the escalation, but the main subject is fighting along the Lebanon-Israel border rather than Gaza or Israel-Palestine directly.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T06:37:34Z",
+  "duration_seconds": 3.232,
+  "error": null
+}

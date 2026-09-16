@@ -1,0 +1,65 @@
+{
+  "article_id": "123885675",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_04/us/123885675.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_04/us/123885675.json"
+  },
+  "manifest_row": {
+    "article_id": "123885675",
+    "group": "global_north_2025_04",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2025_04/us/123885675.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "background",
+    "main_topic": "Live updates on the Trump administration, US politics, government policy, markets, and international affairs",
+    "conflict_relevance": "The article includes a substantive update about international students whose visas or legal status were revoked, including students who protested Israel's war in Gaza. This provides relevant discourse on Gaza-related protest, state repression, immigration status, and academic freedom, but it is not the article's main focus.",
+    "reason": "The primary article is a broad, multi-item news roundup centered on Trump administration developments. Gaza appears in a meaningful but limited section concerning students who protested Israel's war in Gaza, making the item peripheral rather than core.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "cff934226e9a4ea9002b6d4716fc8cffe7744a8a9961d9dbfea430784edb72a0",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "c0c4b3d1d343444ef9e63adc2441b9c8aaf13ef8ce9fcf611282df4d8ab6345a",
+    "raw_response_text_sha256": "73043661b4232385d4cec1aa918b01d5307a9bdc072f27eb3ac4b20570ebcaff"
+  },
+  "api_metadata": {
+    "id": "resp_03664323102651ed006aaa2a93b85887d1ba05a0f362cf1959",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789536915.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 7506,
+      "input_tokens_details": {
+        "cache_write_tokens": 7503,
+        "cached_tokens": 0
+      },
+      "output_tokens": 309,
+      "output_tokens_details": {
+        "reasoning_tokens": 116
+      },
+      "total_tokens": 7815
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Live updates on the Trump administration, US politics, government policy, markets, and international affairs\",\n  \"conflict_relevance\": \"The article includes a substantive update about international students whose visas or legal status were revoked, including students who protested Israel's war in Gaza. This provides relevant discourse on Gaza-related protest, state repression, immigration status, and academic freedom, but it is not the article's main focus.\",\n  \"reason\": \"The primary article is a broad, multi-item news roundup centered on Trump administration developments. Gaza appears in a meaningful but limited section concerning students who protested Israel's war in Gaza, making the item peripheral rather than core.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T05:35:19Z",
+  "duration_seconds": 4.111,
+  "error": null
+}

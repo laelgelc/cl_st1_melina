@@ -1,0 +1,65 @@
+{
+  "article_id": "104993744",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_01/gb/104993744.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_01/gb/104993744.json"
+  },
+  "manifest_row": {
+    "article_id": "104993744",
+    "group": "global_north_2024_01",
+    "country_code": "gb",
+    "filepath": "corpus/02_now_organised/global_north_2024_01/gb/104993744.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "background",
+    "main_topic": "UN Security Council demands an end to Huthi attacks on Red Sea shipping",
+    "conflict_relevance": "The article focuses on Huthi maritime attacks and their effects on global trade, but connects those attacks to Hamas's October 7 assault, Israel's war in Gaza, Palestinian solidarity, and debates over Gaza as a root cause of regional tensions.",
+    "reason": "Gaza and the Israel-Hamas war provide meaningful geopolitical context for the Huthi attacks and are discussed in several sentences, but they are not the article's central subject.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "de69ff44d26f90789d4354a3329331bb3dc5a3952d5fcfd4ff755caf7f7dc39d",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "7c949c3fb22752fe5a128d9418f26df08e479698007b9fee9a50d9ea685e5b2d",
+    "raw_response_text_sha256": "611df5ff5a878c355a353d09d1f35f803de360a927c35757eea275b546bce1be"
+  },
+  "api_metadata": {
+    "id": "resp_01357450f707ac0e006aaa03e70ef487d2bb32df7d79b25e4c",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789527015.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1243,
+      "input_tokens_details": {
+        "cache_write_tokens": 1240,
+        "cached_tokens": 0
+      },
+      "output_tokens": 242,
+      "output_tokens_details": {
+        "reasoning_tokens": 70
+      },
+      "total_tokens": 1485
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"UN Security Council demands an end to Huthi attacks on Red Sea shipping\",\n  \"conflict_relevance\": \"The article focuses on Huthi maritime attacks and their effects on global trade, but connects those attacks to Hamas's October 7 assault, Israel's war in Gaza, Palestinian solidarity, and debates over Gaza as a root cause of regional tensions.\",\n  \"reason\": \"Gaza and the Israel-Hamas war provide meaningful geopolitical context for the Huthi attacks and are discussed in several sentences, but they are not the article's central subject.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:50:17Z",
+  "duration_seconds": 3.0,
+  "error": null
+}

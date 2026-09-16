@@ -1,0 +1,65 @@
+{
+  "article_id": "110052486",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_07/ca/110052486.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_07/ca/110052486.json"
+  },
+  "manifest_row": {
+    "article_id": "110052486",
+    "group": "global_north_2024_07",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2024_07/ca/110052486.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.97,
+    "gaza_role": "passing",
+    "main_topic": "Montreal parking permit pricing for second vehicles",
+    "conflict_relevance": "The article is primarily about local parking policy but includes a separate news snippet reporting Hamas's initial approval of a U.S.-backed phased cease-fire proposal in Gaza.",
+    "reason": "The Gaza-related content is meaningful but isolated from the main article and appears as an embedded unrelated news item. It has limited value for broader conflict discourse analysis but is not central coverage.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "40d336d4ce25c13f135c3daa7bb5c0620c92815dc0fec6b56008d14a746ffa0c",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "c47932b24e9171728c26722617854d83c662f546044b54041cfdd3cc6543a03c",
+    "raw_response_text_sha256": "49b6494a741e993031cc7572e27ccf6bfd8d7c589d42fae80650bd68cc121ddd"
+  },
+  "api_metadata": {
+    "id": "resp_09a51f3c455ab85a006aaa11fe15f887d2a9f3772981ac339e",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789530622.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1462,
+      "input_tokens_details": {
+        "cache_write_tokens": 1459,
+        "cached_tokens": 0
+      },
+      "output_tokens": 245,
+      "output_tokens_details": {
+        "reasoning_tokens": 92
+      },
+      "total_tokens": 1707
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.97,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Montreal parking permit pricing for second vehicles\",\n  \"conflict_relevance\": \"The article is primarily about local parking policy but includes a separate news snippet reporting Hamas's initial approval of a U.S.-backed phased cease-fire proposal in Gaza.\",\n  \"reason\": \"The Gaza-related content is meaningful but isolated from the main article and appears as an embedded unrelated news item. It has limited value for broader conflict discourse analysis but is not central coverage.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:50:25Z",
+  "duration_seconds": 3.648,
+  "error": null
+}

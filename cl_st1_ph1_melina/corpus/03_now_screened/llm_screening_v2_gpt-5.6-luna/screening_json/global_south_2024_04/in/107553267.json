@@ -1,0 +1,65 @@
+{
+  "article_id": "107553267",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_south_2024_04/in/107553267.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_south_2024_04/in/107553267.json"
+  },
+  "manifest_row": {
+    "article_id": "107553267",
+    "group": "global_south_2024_04",
+    "country_code": "in",
+    "filepath": "corpus/02_now_organised/global_south_2024_04/in/107553267.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.96,
+    "gaza_role": "background",
+    "main_topic": "Indian electoral politics and Amit Shah's criticism of Rahul Gandhi",
+    "conflict_relevance": "The main article is about Indian politics, but it includes a substantive embedded news item concerning Biden's reference to Gaza's Rafah, Israel-Iran tensions, and possible regional escalation.",
+    "reason": "The headline and primary content concern the Indian election and domestic political incidents. However, the article also contains a distinct, meaningful conflict-related news snippet, making it peripheral rather than excludable.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "1e8f78444ea500bbf019f1d8895a6ce5ea797bdd0b0eaea9c653eefa6091dfe2",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "ad9d17a4896c4ee9a3cd4c10ff0e434f5ff4aacbcecf9b69a98415c3c1c0bff9",
+    "raw_response_text_sha256": "d15af3fe8f51516668d0f57b0261bfa4e2f96ef2fe77fc6f09b78baae395bd47"
+  },
+  "api_metadata": {
+    "id": "resp_0548f88a8ae0bac1006aaa3a4c9b0087d18ce160622a7691b9",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789540940.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1121,
+      "input_tokens_details": {
+        "cache_write_tokens": 1118,
+        "cached_tokens": 0
+      },
+      "output_tokens": 348,
+      "output_tokens_details": {
+        "reasoning_tokens": 187
+      },
+      "total_tokens": 1469
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.96,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Indian electoral politics and Amit Shah's criticism of Rahul Gandhi\",\n  \"conflict_relevance\": \"The main article is about Indian politics, but it includes a substantive embedded news item concerning Biden's reference to Gaza's Rafah, Israel-Iran tensions, and possible regional escalation.\",\n  \"reason\": \"The headline and primary content concern the Indian election and domestic political incidents. However, the article also contains a distinct, meaningful conflict-related news snippet, making it peripheral rather than excludable.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T06:42:26Z",
+  "duration_seconds": 6.461,
+  "error": null
+}

@@ -1,0 +1,65 @@
+{
+  "article_id": "104261830",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_south_2023_12/ph/104261830.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_south_2023_12/ph/104261830.json"
+  },
+  "manifest_row": {
+    "article_id": "104261830",
+    "group": "global_south_2023_12",
+    "country_code": "ph",
+    "filepath": "corpus/02_now_organised/global_south_2023_12/ph/104261830.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "gaza_role": "boilerplate_or_unrelated",
+    "main_topic": "Vivant Energy's bank loan and power-generation investments",
+    "conflict_relevance": "The article is a business report about financing power projects; the Gaza ceasefire text is an unrelated embedded news snippet.",
+    "reason": "Gaza appears only in a disconnected, incidental paragraph that is not integrated into the article's main subject.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "9dc89bc602f9c0e85d047302b8c29c8d80c3c5e1035f990919e2501a47737088",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "e6f17ce4a8aec1b3397ad86ae45d4d364f457b39584186b441bfddd60de1cc42",
+    "raw_response_text_sha256": "11c2e867ce3767ed0060852c8e9f6ddf78e928e838f15ba5a803fc8a9342a397"
+  },
+  "api_metadata": {
+    "id": "resp_041cf8cb0dcfba43006aaa373b0ac087d1928577db4db649b1",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789540155.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1153,
+      "input_tokens_details": {
+        "cache_write_tokens": 1150,
+        "cached_tokens": 0
+      },
+      "output_tokens": 239,
+      "output_tokens_details": {
+        "reasoning_tokens": 105
+      },
+      "total_tokens": 1392
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"gaza_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Vivant Energy's bank loan and power-generation investments\",\n  \"conflict_relevance\": \"The article is a business report about financing power projects; the Gaza ceasefire text is an unrelated embedded news snippet.\",\n  \"reason\": \"Gaza appears only in a disconnected, incidental paragraph that is not integrated into the article's main subject.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T06:29:18Z",
+  "duration_seconds": 3.084,
+  "error": null
+}

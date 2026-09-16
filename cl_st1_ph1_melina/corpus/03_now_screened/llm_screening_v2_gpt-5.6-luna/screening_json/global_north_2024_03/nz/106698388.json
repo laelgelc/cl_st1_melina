@@ -1,0 +1,65 @@
+{
+  "article_id": "106698388",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_03/nz/106698388.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_03/nz/106698388.json"
+  },
+  "manifest_row": {
+    "article_id": "106698388",
+    "group": "global_north_2024_03",
+    "country_code": "nz",
+    "filepath": "corpus/02_now_organised/global_north_2024_03/nz/106698388.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "gaza_role": "boilerplate_or_unrelated",
+    "main_topic": "New Zealand government economic growth and regulatory reform agenda",
+    "conflict_relevance": "The main article is unrelated to Gaza or the Israel-Palestine conflict; Gaza appears only in a brief embedded news snippet about humanitarian aid.",
+    "reason": "The article is primarily a speech about New Zealand's economic performance, growth, taxation, infrastructure, and regulation. The single Gaza reference is an incidental item in an appended roundup rather than part of the main article's discourse.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "b713832b3f4756e2db7ec4ddd6b92e0a00de20c933f503d7775ff8204a3c2cf2",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "1b27ad4c49c746e57e29909f2726bf36335edc15eed09eb76b81f2183059a3f1",
+    "raw_response_text_sha256": "6dc027c629173390f3ac678bae9869879759b3afb7b704a4cd0081a96a7596a5"
+  },
+  "api_metadata": {
+    "id": "resp_0fc8d261fe9b0187006aaa09311e2c87d2ae63a4cb6067e1eb",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789528369.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 3736,
+      "input_tokens_details": {
+        "cache_write_tokens": 3733,
+        "cached_tokens": 0
+      },
+      "output_tokens": 304,
+      "output_tokens_details": {
+        "reasoning_tokens": 142
+      },
+      "total_tokens": 4040
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"New Zealand government economic growth and regulatory reform agenda\",\n  \"conflict_relevance\": \"The main article is unrelated to Gaza or the Israel-Palestine conflict; Gaza appears only in a brief embedded news snippet about humanitarian aid.\",\n  \"reason\": \"The article is primarily a speech about New Zealand's economic performance, growth, taxation, infrastructure, and regulation. The single Gaza reference is an incidental item in an appended roundup rather than part of the main article's discourse.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:12:53Z",
+  "duration_seconds": 4.815,
+  "error": null
+}

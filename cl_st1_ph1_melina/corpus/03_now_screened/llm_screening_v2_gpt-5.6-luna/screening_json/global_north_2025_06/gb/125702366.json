@@ -1,0 +1,65 @@
+{
+  "article_id": "125702366",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_06/gb/125702366.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_06/gb/125702366.json"
+  },
+  "manifest_row": {
+    "article_id": "125702366",
+    "group": "global_north_2025_06",
+    "country_code": "gb",
+    "filepath": "corpus/02_now_organised/global_north_2025_06/gb/125702366.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.97,
+    "gaza_role": "background",
+    "main_topic": "Denmark's restrictive immigration policy and its relevance to UK Labour",
+    "conflict_relevance": "The main article is about immigration policy, but an embedded commentary item discusses the Gaza-bound Freedom Flotilla, solidarity activism, Western government inaction, and efforts to keep Gaza in public attention.",
+    "reason": "The article is a broad news roundup primarily focused on immigration, health, politics, culture, and lifestyle. The Gaza-related material is confined to a substantive but separate commentary snippet, making it relevant to broader discourse analysis but not core conflict coverage.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "682314a45264efc2dbc8f6d5209e51421327da8f422bd59599f778eaff3a8ea0",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "eadb5a7806d46c3f342f55b53ce0b98576e68aba02396494023dabbd4e20c459",
+    "raw_response_text_sha256": "d2a8441016c4f31df80cca49a2936c6157c06618f67420263e26952ce5b15ac2"
+  },
+  "api_metadata": {
+    "id": "resp_0d4672360fcd1d48006aaa2f1eae5487d19de0a98ac939071a",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789538078.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 3627,
+      "input_tokens_details": {
+        "cache_write_tokens": 3624,
+        "cached_tokens": 0
+      },
+      "output_tokens": 317,
+      "output_tokens_details": {
+        "reasoning_tokens": 142
+      },
+      "total_tokens": 3944
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.97,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Denmark's restrictive immigration policy and its relevance to UK Labour\",\n  \"conflict_relevance\": \"The main article is about immigration policy, but an embedded commentary item discusses the Gaza-bound Freedom Flotilla, solidarity activism, Western government inaction, and efforts to keep Gaza in public attention.\",\n  \"reason\": \"The article is a broad news roundup primarily focused on immigration, health, politics, culture, and lifestyle. The Gaza-related material is confined to a substantive but separate commentary snippet, making it relevant to broader discourse analysis but not core conflict coverage.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T05:54:43Z",
+  "duration_seconds": 4.979,
+  "error": null
+}

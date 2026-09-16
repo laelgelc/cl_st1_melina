@@ -1,0 +1,65 @@
+{
+  "article_id": "103470439",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_11/us/103470439.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_11/us/103470439.json"
+  },
+  "manifest_row": {
+    "article_id": "103470439",
+    "group": "global_north_2023_11",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2023_11/us/103470439.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "substantial",
+    "main_topic": "Investigation into suspected dog poisonings at a Singapore field",
+    "conflict_relevance": "The article includes a substantial embedded report on humanitarian conditions in Gaza, including flooding risks, disease, Israeli bombardment, displacement, and casualty figures, but this is unrelated to the main Singapore dog-poisoning article.",
+    "reason": "The primary article concerns animal deaths and public safety in Singapore. However, the lengthy inserted Gaza report contains meaningful conflict-related discourse and is therefore relevant to broader discourse analysis, though the item should not be treated as core Gaza coverage.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "4760d47f249d4f242ec6bb4f4bf53dbcc884f5b8b9fdbf9316ef9dc1c442f457",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "ed05c009173b783454690a47d1a0546ff85099a8ac497e27caed3cfcc6c3984c",
+    "raw_response_text_sha256": "7b7bf0e07a13aa0c28ae9a20c457620e746ee910b425e5c6a9e8296297c920bb"
+  },
+  "api_metadata": {
+    "id": "resp_073bd4b5e0d9695e006aa9fe783fc887d2a86fd8a51b51b935",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789525624.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1835,
+      "input_tokens_details": {
+        "cache_write_tokens": 1832,
+        "cached_tokens": 0
+      },
+      "output_tokens": 316,
+      "output_tokens_details": {
+        "reasoning_tokens": 140
+      },
+      "total_tokens": 2151
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"substantial\",\n  \"main_topic\": \"Investigation into suspected dog poisonings at a Singapore field\",\n  \"conflict_relevance\": \"The article includes a substantial embedded report on humanitarian conditions in Gaza, including flooding risks, disease, Israeli bombardment, displacement, and casualty figures, but this is unrelated to the main Singapore dog-poisoning article.\",\n  \"reason\": \"The primary article concerns animal deaths and public safety in Singapore. However, the lengthy inserted Gaza report contains meaningful conflict-related discourse and is therefore relevant to broader discourse analysis, though the item should not be treated as core Gaza coverage.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:27:08Z",
+  "duration_seconds": 4.863,
+  "error": null
+}

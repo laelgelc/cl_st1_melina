@@ -1,0 +1,65 @@
+{
+  "article_id": "120041471",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_01/gb/120041471.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_01/gb/120041471.json"
+  },
+  "manifest_row": {
+    "article_id": "120041471",
+    "group": "global_north_2025_01",
+    "country_code": "gb",
+    "filepath": "corpus/02_now_organised/global_north_2025_01/gb/120041471.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "gaza_role": "boilerplate_or_unrelated",
+    "main_topic": "The UK Liberal Democrats' proposal for a new customs union with the European Union",
+    "conflict_relevance": "The article's main subject is Brexit, UK-EU trade, and Donald Trump. Gaza appears only in an unrelated latest-stories snippet about ceasefire mediation.",
+    "reason": "The Gaza-related text is an incidental embedded news item rather than part of the article's substantive discussion.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "f918a7cb6f1d6f12cbbaf0c8b934640b97dd817932712645008f1c07c572ad91",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "2c77be3220a2585d9622c8d6a6077767585befa2297878b885fb15a3193a2897",
+    "raw_response_text_sha256": "5eaa6b3a5aa93664caaa66e4a5fd8cfb64fd5e9ebfa542100de0919b0afb7755"
+  },
+  "api_metadata": {
+    "id": "resp_05cf5a0d10baa417006aaa1f8de45087d2b08d021e92b692ff",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789534093.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1784,
+      "input_tokens_details": {
+        "cache_write_tokens": 1781,
+        "cached_tokens": 0
+      },
+      "output_tokens": 260,
+      "output_tokens_details": {
+        "reasoning_tokens": 113
+      },
+      "total_tokens": 2044
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"The UK Liberal Democrats' proposal for a new customs union with the European Union\",\n  \"conflict_relevance\": \"The article's main subject is Brexit, UK-EU trade, and Donald Trump. Gaza appears only in an unrelated latest-stories snippet about ceasefire mediation.\",\n  \"reason\": \"The Gaza-related text is an incidental embedded news item rather than part of the article's substantive discussion.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T04:48:17Z",
+  "duration_seconds": 3.639,
+  "error": null
+}

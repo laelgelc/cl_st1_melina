@@ -1,0 +1,65 @@
+{
+  "article_id": "109062615",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_06/us/109062615.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_06/us/109062615.json"
+  },
+  "manifest_row": {
+    "article_id": "109062615",
+    "group": "global_north_2024_06",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2024_06/us/109062615.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "gaza_role": "passing",
+    "main_topic": "Public narratives, policy misconceptions, and the promotion of a podcast about misunderstood issues",
+    "conflict_relevance": "A brief embedded news snippet mentions Hamas's response to a Gaza cease-fire resolution and Netanyahu, but the article does not discuss the conflict substantively.",
+    "reason": "The main article concerns how narratives form and persist, with examples involving remote work, immigration, maternal mortality, and education. The Gaza-related material is limited to an unrelated newsletter news item.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "bdac8e4ba9e932ef4a6e9a9c366cedd8a853e3de3e9767dfd0012e81de165d9e",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "2d3f4acd13f07ed5a352f777234484c24138956972da9d88006e90e9717738b5",
+    "raw_response_text_sha256": "7cb48dd5cefd427839ff7464c490e38227103dc178ac9b5a65f7576891f53742"
+  },
+  "api_metadata": {
+    "id": "resp_0afe45cac3c0b5f2006aaa1126ad1c87d29a6c4e4d5fad2e84",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789530406.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1900,
+      "input_tokens_details": {
+        "cache_write_tokens": 1897,
+        "cached_tokens": 0
+      },
+      "output_tokens": 292,
+      "output_tokens_details": {
+        "reasoning_tokens": 136
+      },
+      "total_tokens": 2192
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Public narratives, policy misconceptions, and the promotion of a podcast about misunderstood issues\",\n  \"conflict_relevance\": \"A brief embedded news snippet mentions Hamas's response to a Gaza cease-fire resolution and Netanyahu, but the article does not discuss the conflict substantively.\",\n  \"reason\": \"The main article concerns how narratives form and persist, with examples involving remote work, immigration, maternal mortality, and education. The Gaza-related material is limited to an unrelated newsletter news item.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:46:50Z",
+  "duration_seconds": 3.581,
+  "error": null
+}

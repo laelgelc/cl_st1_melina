@@ -1,0 +1,65 @@
+{
+  "article_id": "104126247",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_12/sg/104126247.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_12/sg/104126247.json"
+  },
+  "manifest_row": {
+    "article_id": "104126247",
+    "group": "global_north_2023_12",
+    "country_code": "sg",
+    "filepath": "corpus/02_now_organised/global_north_2023_12/sg/104126247.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "passing",
+    "main_topic": "Global financial markets, employment data, and interest-rate expectations",
+    "conflict_relevance": "A brief embedded item discusses celebrities taking sides in the Gaza war and public slogans such as 'Free Palestine' and 'I stand with Israel'.",
+    "reason": "The article is primarily a financial-market news roundup unrelated to Gaza, but it contains a meaningful, directly conflict-related snippet about celebrity political expression concerning the Gaza war.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "f37277d9cb47d232cc4679ecb9988f21d0d153e03dbbcde310c479698142f2c9",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "fb4279e9b4e8805e7ccef3661bc396ad9e29ac0844e23454b121209733c9c806",
+    "raw_response_text_sha256": "d3f79c066fcd63d1994a555b163f8cc9ba973117f67096b63609b434e56cfc81"
+  },
+  "api_metadata": {
+    "id": "resp_03411d98a58d9dcc006aaa01a3458887d2982ea1b9a2b902d4",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789526435.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2921,
+      "input_tokens_details": {
+        "cache_write_tokens": 2918,
+        "cached_tokens": 0
+      },
+      "output_tokens": 226,
+      "output_tokens_details": {
+        "reasoning_tokens": 78
+      },
+      "total_tokens": 3147
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Global financial markets, employment data, and interest-rate expectations\",\n  \"conflict_relevance\": \"A brief embedded item discusses celebrities taking sides in the Gaza war and public slogans such as 'Free Palestine' and 'I stand with Israel'.\",\n  \"reason\": \"The article is primarily a financial-market news roundup unrelated to Gaza, but it contains a meaningful, directly conflict-related snippet about celebrity political expression concerning the Gaza war.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:40:38Z",
+  "duration_seconds": 3.531,
+  "error": null
+}

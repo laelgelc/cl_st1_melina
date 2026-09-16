@@ -1,0 +1,65 @@
+{
+  "article_id": "126008453",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_06/gb/126008453.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_06/gb/126008453.json"
+  },
+  "manifest_row": {
+    "article_id": "126008453",
+    "group": "global_north_2025_06",
+    "country_code": "gb",
+    "filepath": "corpus/02_now_organised/global_north_2025_06/gb/126008453.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.96,
+    "gaza_role": "background",
+    "main_topic": "The Israel-Iran war, including military escalation, nuclear facilities, diplomatic efforts, and possible US involvement",
+    "conflict_relevance": "The article is primarily a live news update about the Israel-Iran conflict, but it includes substantive references to Israeli military action in Gaza, civilian deaths while seeking aid, the ongoing Gaza war, and raids on Palestinian refugee camps in the occupied West Bank.",
+    "reason": "Although the article contains meaningful reporting on Gaza and the occupied West Bank, these items are secondary updates within a much larger article focused on the Israel-Iran conflict. It is therefore useful for studying broader regional and conflict-related discourse but should not be treated as core Gaza or Israel-Palestine coverage.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "392a28c3048480d1ea6ba2f18c66f87edc278f2846f919bab1dd9e9b9c19d3d4",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "44a8c13e094924117508712c29b9167c99683fcb30c171510add3ac4b561e0cc",
+    "raw_response_text_sha256": "f6560b835afbd7f08f48c85d92f9ec44126dc4c75c04d04988ff1b4f02964f24"
+  },
+  "api_metadata": {
+    "id": "resp_0b4d1ed5aa719ad4006aaa2f7a56ac87d19d2a34a0fcf0c2f9",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789538170.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 14096,
+      "input_tokens_details": {
+        "cache_write_tokens": 14093,
+        "cached_tokens": 0
+      },
+      "output_tokens": 449,
+      "output_tokens_details": {
+        "reasoning_tokens": 243
+      },
+      "total_tokens": 14545
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.96,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"The Israel-Iran war, including military escalation, nuclear facilities, diplomatic efforts, and possible US involvement\",\n  \"conflict_relevance\": \"The article is primarily a live news update about the Israel-Iran conflict, but it includes substantive references to Israeli military action in Gaza, civilian deaths while seeking aid, the ongoing Gaza war, and raids on Palestinian refugee camps in the occupied West Bank.\",\n  \"reason\": \"Although the article contains meaningful reporting on Gaza and the occupied West Bank, these items are secondary updates within a much larger article focused on the Israel-Iran conflict. It is therefore useful for studying broader regional and conflict-related discourse but should not be treated as core Gaza or Israel-Palestine coverage.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T05:56:17Z",
+  "duration_seconds": 6.887,
+  "error": null
+}

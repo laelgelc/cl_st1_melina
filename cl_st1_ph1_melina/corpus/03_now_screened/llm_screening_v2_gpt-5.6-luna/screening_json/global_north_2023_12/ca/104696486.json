@@ -1,0 +1,65 @@
+{
+  "article_id": "104696486",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_12/ca/104696486.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_12/ca/104696486.json"
+  },
+  "manifest_row": {
+    "article_id": "104696486",
+    "group": "global_north_2023_12",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2023_12/ca/104696486.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.97,
+    "gaza_role": "passing",
+    "main_topic": "Ottawa Senators management and executive appointments",
+    "conflict_relevance": "The main article is about hockey management, but an embedded CTVNews.ca top-stories roundup includes a brief item about Israel's internal political strife before the October 7 Hamas attack from Gaza.",
+    "reason": "The conflict-related material is limited to a substantive but brief embedded roundup item and is not part of the main article.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "fbb743f400a4bd76e5cb3582ca26a2db130cf875fd776c6d681316994f59223e",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "93f20ec4797b48c1331d60e8ac8ff65077caa44fa348506230b02561a0758f67",
+    "raw_response_text_sha256": "cd8bea80a6c4e313be089c9d0781609d7638e52b629a7a077761dce0c591cded"
+  },
+  "api_metadata": {
+    "id": "resp_0e21d4e3789e96b1006aaa00ab394887d29d34fee8769c7d34",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789526187.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1295,
+      "input_tokens_details": {
+        "cache_write_tokens": 1292,
+        "cached_tokens": 0
+      },
+      "output_tokens": 263,
+      "output_tokens_details": {
+        "reasoning_tokens": 117
+      },
+      "total_tokens": 1558
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.97,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Ottawa Senators management and executive appointments\",\n  \"conflict_relevance\": \"The main article is about hockey management, but an embedded CTVNews.ca top-stories roundup includes a brief item about Israel's internal political strife before the October 7 Hamas attack from Gaza.\",\n  \"reason\": \"The conflict-related material is limited to a substantive but brief embedded roundup item and is not part of the main article.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:36:31Z",
+  "duration_seconds": 4.289,
+  "error": null
+}

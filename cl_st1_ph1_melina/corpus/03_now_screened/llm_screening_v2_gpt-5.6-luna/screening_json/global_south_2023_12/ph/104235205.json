@@ -1,0 +1,65 @@
+{
+  "article_id": "104235205",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_south_2023_12/ph/104235205.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_south_2023_12/ph/104235205.json"
+  },
+  "manifest_row": {
+    "article_id": "104235205",
+    "group": "global_south_2023_12",
+    "country_code": "ph",
+    "filepath": "corpus/02_now_organised/global_south_2023_12/ph/104235205.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "background",
+    "main_topic": "Philippine national budget allocations for defense and maritime security in the West Philippine Sea amid tensions with China",
+    "conflict_relevance": "The main article concerns Philippine-China maritime tensions, while an appended news snippet contains meaningful discussion of humanitarian access, hostages, and the collapsing health system in Gaza.",
+    "reason": "The headline article is not about Gaza or Israel/Palestine, but the text includes a substantive embedded Gaza-related news item. This makes it relevant to broader conflict discourse but unsuitable for the core corpus.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "c9a4c1dc0830ed91e73380c49dee9dad8365665bb2281a3f0cae725b6752f0b0",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "ff5c106d8cd83e9a9faaec707a4ce6f3014c7380891721bce4f0b837b5e18858",
+    "raw_response_text_sha256": "3eb04c17d3e10640e9bac61a304dfeb1f6f8b00965d46925016198c413ebf850"
+  },
+  "api_metadata": {
+    "id": "resp_0a0f8f55e888ecd4006aaa3732bfa087d198ca5c183206dcce",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789540146.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1871,
+      "input_tokens_details": {
+        "cache_write_tokens": 1868,
+        "cached_tokens": 0
+      },
+      "output_tokens": 296,
+      "output_tokens_details": {
+        "reasoning_tokens": 127
+      },
+      "total_tokens": 2167
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Philippine national budget allocations for defense and maritime security in the West Philippine Sea amid tensions with China\",\n  \"conflict_relevance\": \"The main article concerns Philippine-China maritime tensions, while an appended news snippet contains meaningful discussion of humanitarian access, hostages, and the collapsing health system in Gaza.\",\n  \"reason\": \"The headline article is not about Gaza or Israel/Palestine, but the text includes a substantive embedded Gaza-related news item. This makes it relevant to broader conflict discourse but unsuitable for the core corpus.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T06:29:10Z",
+  "duration_seconds": 4.087,
+  "error": null
+}

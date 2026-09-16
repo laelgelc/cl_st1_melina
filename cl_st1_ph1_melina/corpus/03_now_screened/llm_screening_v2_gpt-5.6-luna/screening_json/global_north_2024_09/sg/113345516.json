@@ -1,0 +1,65 @@
+{
+  "article_id": "113345516",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_09/sg/113345516.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_09/sg/113345516.json"
+  },
+  "manifest_row": {
+    "article_id": "113345516",
+    "group": "global_north_2024_09",
+    "country_code": "sg",
+    "filepath": "corpus/02_now_organised/global_north_2024_09/sg/113345516.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.99,
+    "gaza_role": "substantial",
+    "main_topic": "Meta's artificial intelligence products, smart glasses, and virtual reality hardware",
+    "conflict_relevance": "The main article is unrelated to Gaza, but the text contains a substantial embedded report on Israeli airstrikes, civilian deaths, humanitarian conditions, and the broader Israel-Hamas war.",
+    "reason": "The headline and primary article concern Meta's technology announcements. However, a lengthy unrelated Gaza news report is embedded in the text, providing meaningful conflict discourse, so the item is peripheral rather than excluded.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "dbdba9ab0b9aff7d90afa05b633b2b67d302fa42d13d73beeaafcc217ace8188",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "e615c6f900304de5a09d64b1b00b4828c8aa289a93e8947a3b21d7336d64fb64",
+    "raw_response_text_sha256": "aa4217e09529f43861248bf4bffe9cc4dd23fda1898429f4a7f3b68239b797eb"
+  },
+  "api_metadata": {
+    "id": "resp_08f2320cc36602cc006aaa168a41a887d28eb92dedc5c7b6f4",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789531786.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2837,
+      "input_tokens_details": {
+        "cache_write_tokens": 2834,
+        "cached_tokens": 0
+      },
+      "output_tokens": 326,
+      "output_tokens_details": {
+        "reasoning_tokens": 161
+      },
+      "total_tokens": 3163
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.99,\n  \"gaza_role\": \"substantial\",\n  \"main_topic\": \"Meta's artificial intelligence products, smart glasses, and virtual reality hardware\",\n  \"conflict_relevance\": \"The main article is unrelated to Gaza, but the text contains a substantial embedded report on Israeli airstrikes, civilian deaths, humanitarian conditions, and the broader Israel-Hamas war.\",\n  \"reason\": \"The headline and primary article concern Meta's technology announcements. However, a lengthy unrelated Gaza news report is embedded in the text, providing meaningful conflict discourse, so the item is peripheral rather than excluded.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T04:09:50Z",
+  "duration_seconds": 4.652,
+  "error": null
+}

@@ -1,0 +1,65 @@
+{
+  "article_id": "113524430",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_09/us/113524430.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_09/us/113524430.json"
+  },
+  "manifest_row": {
+    "article_id": "113524430",
+    "group": "global_north_2024_09",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2024_09/us/113524430.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.96,
+    "gaza_role": "background",
+    "main_topic": "Maryland residential gas explosion and National Transportation Safety Board investigation",
+    "conflict_relevance": "The main article concerns a U.S. gas explosion, but an embedded United Nations news snippet discusses pauses in fighting between Israel and Hamas to facilitate polio vaccinations in Gaza.",
+    "reason": "The Gaza-related material is meaningful but appears only as an unrelated item in a broader news roundup, not as part of the main article.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "597de14c362165d7c1a6ad96620e5808cc029a718a07ef86556c303e336e0452",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "067d0626a91197ecaf92afea78be81545f0d04461f3c82e6a44ffd1121a5f3a5",
+    "raw_response_text_sha256": "2a5544a50d9f139e36e48d5c574602ada18daaba3277cb1bd67120895756e6ed"
+  },
+  "api_metadata": {
+    "id": "resp_0ce16966c18128fc006aaa16b5606087d28703d4af89722e7f",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789531829.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1624,
+      "input_tokens_details": {
+        "cache_write_tokens": 1621,
+        "cached_tokens": 0
+      },
+      "output_tokens": 286,
+      "output_tokens_details": {
+        "reasoning_tokens": 138
+      },
+      "total_tokens": 1910
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.96,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Maryland residential gas explosion and National Transportation Safety Board investigation\",\n  \"conflict_relevance\": \"The main article concerns a U.S. gas explosion, but an embedded United Nations news snippet discusses pauses in fighting between Israel and Hamas to facilitate polio vaccinations in Gaza.\",\n  \"reason\": \"The Gaza-related material is meaningful but appears only as an unrelated item in a broader news roundup, not as part of the main article.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T04:10:33Z",
+  "duration_seconds": 4.447,
+  "error": null
+}

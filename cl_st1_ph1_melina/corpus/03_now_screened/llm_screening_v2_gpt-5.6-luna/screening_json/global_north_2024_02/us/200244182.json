@@ -1,0 +1,65 @@
+{
+  "article_id": "200244182",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_02/us/200244182.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_02/us/200244182.json"
+  },
+  "manifest_row": {
+    "article_id": "200244182",
+    "group": "global_north_2024_02",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2024_02/us/200244182.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.97,
+    "gaza_role": "passing",
+    "main_topic": "Sexual violence and alleged war crimes in Sudan's ongoing conflict",
+    "conflict_relevance": "The article is primarily about the Sudanese conflict and mentions Gaza only briefly as another war overshadowing Sudan.",
+    "reason": "Gaza appears in a comparative aside rather than as a substantive subject of discussion, but the mention is meaningful enough to establish peripheral relevance.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "b739430c66408e1bbf8739199d5536e7b60b32b56e9db862879919575c08bebf",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "e906220c0c7fa9441f9171460c9387fb8fca6cb1cce624415e5e4dbdfe8861ce",
+    "raw_response_text_sha256": "ddbdb92ca3005b0048dad0d26cd38a8ce6fa442cbea7a9f0dad17e2e954ff23e"
+  },
+  "api_metadata": {
+    "id": "resp_0fe5efca7b4f18d2006aaa080693d087d29b6652add13c6dfd",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789528070.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1372,
+      "input_tokens_details": {
+        "cache_write_tokens": 1369,
+        "cached_tokens": 0
+      },
+      "output_tokens": 194,
+      "output_tokens_details": {
+        "reasoning_tokens": 58
+      },
+      "total_tokens": 1566
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.97,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Sexual violence and alleged war crimes in Sudan's ongoing conflict\",\n  \"conflict_relevance\": \"The article is primarily about the Sudanese conflict and mentions Gaza only briefly as another war overshadowing Sudan.\",\n  \"reason\": \"Gaza appears in a comparative aside rather than as a substantive subject of discussion, but the mention is meaningful enough to establish peripheral relevance.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:07:53Z",
+  "duration_seconds": 2.56,
+  "error": null
+}

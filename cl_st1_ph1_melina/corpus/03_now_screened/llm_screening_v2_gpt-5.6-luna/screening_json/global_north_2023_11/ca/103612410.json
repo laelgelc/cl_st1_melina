@@ -1,0 +1,65 @@
+{
+  "article_id": "103612410",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_11/ca/103612410.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_11/ca/103612410.json"
+  },
+  "manifest_row": {
+    "article_id": "103612410",
+    "group": "global_north_2023_11",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2023_11/ca/103612410.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.91,
+    "gaza_role": "passing",
+    "main_topic": "Cybersecurity risks and ransomware attacks affecting Canadian hospitals",
+    "conflict_relevance": "The main article is unrelated to the Israel-Palestine conflict, but the text includes embedded news snippets about fighting around a hospital in northern Gaza and Canadian MPs visiting Israel amid scrutiny of deaths in Gaza.",
+    "reason": "The primary article concerns healthcare cybersecurity. Gaza-related content appears only in separate, embedded news items rather than as part of the article's main subject, but those items contain meaningful references to military action, Hamas, Israel, and deaths in Gaza.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "f6ab5b7e25f3f9c07a3ae2711682b5418dd1fd879a077b6c51b26ce21b602900",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "ebf27a1a21935b6dcfdb3d9035d6a520426c298b54ab74fc0f3973823fbb099a",
+    "raw_response_text_sha256": "df1998ba1905132d8ebfced29cb8485818bc9eb91c86f6974df317f739b7287d"
+  },
+  "api_metadata": {
+    "id": "resp_0428f57a62824c76006aa9fbf9652087d2898ce3ee77e6b4df",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789524985.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2716,
+      "input_tokens_details": {
+        "cache_write_tokens": 2713,
+        "cached_tokens": 0
+      },
+      "output_tokens": 392,
+      "output_tokens_details": {
+        "reasoning_tokens": 218
+      },
+      "total_tokens": 3108
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.91,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Cybersecurity risks and ransomware attacks affecting Canadian hospitals\",\n  \"conflict_relevance\": \"The main article is unrelated to the Israel-Palestine conflict, but the text includes embedded news snippets about fighting around a hospital in northern Gaza and Canadian MPs visiting Israel amid scrutiny of deaths in Gaza.\",\n  \"reason\": \"The primary article concerns healthcare cybersecurity. Gaza-related content appears only in separate, embedded news items rather than as part of the article's main subject, but those items contain meaningful references to military action, Hamas, Israel, and deaths in Gaza.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:16:29Z",
+  "duration_seconds": 4.65,
+  "error": null
+}

@@ -1,0 +1,65 @@
+{
+  "article_id": "120894742",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_south_2025_02/in/120894742.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_south_2025_02/in/120894742.json"
+  },
+  "manifest_row": {
+    "article_id": "120894742",
+    "group": "global_south_2025_02",
+    "country_code": "in",
+    "filepath": "corpus/02_now_organised/global_south_2025_02/in/120894742.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.96,
+    "gaza_role": "passing",
+    "main_topic": "School assembly roundup of national, international, business, and sports headlines",
+    "conflict_relevance": "Gaza appears only in brief international-news snippets within a broad, unrelated news roundup, without substantive discussion or analysis.",
+    "reason": "The article is a multi-topic headline compilation. Although it includes brief mentions of Trump's Gaza proposal and responses from Hamas, Saudi Arabia, Australia, and Israel, these are isolated snippets rather than meaningful conflict coverage.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "4cf6b9d08664cfeff677a053b63033c5617acebf79b7980cb345525a35c3ec80",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "e2fca2b5a7634bd8e991fb26c23b11b8e467914749af34f9b1c6e2e2513365cb",
+    "raw_response_text_sha256": "013e519e72260243faf745acc60c0bf4fef0034fa1daa2b29e9eecd2f2aecbaa"
+  },
+  "api_metadata": {
+    "id": "resp_02d88384e51e0b17006aaa45256a4087d1a404afba2c53fe93",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789543717.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1539,
+      "input_tokens_details": {
+        "cache_write_tokens": 1536,
+        "cached_tokens": 0
+      },
+      "output_tokens": 382,
+      "output_tokens_details": {
+        "reasoning_tokens": 230
+      },
+      "total_tokens": 1921
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.96,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"School assembly roundup of national, international, business, and sports headlines\",\n  \"conflict_relevance\": \"Gaza appears only in brief international-news snippets within a broad, unrelated news roundup, without substantive discussion or analysis.\",\n  \"reason\": \"The article is a multi-topic headline compilation. Although it includes brief mentions of Trump's Gaza proposal and responses from Hamas, Saudi Arabia, Australia, and Israel, these are isolated snippets rather than meaningful conflict coverage.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T07:28:42Z",
+  "duration_seconds": 5.492,
+  "error": null
+}

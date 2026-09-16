@@ -1,0 +1,65 @@
+{
+  "article_id": "123026310",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_03/gb/123026310.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_03/gb/123026310.json"
+  },
+  "manifest_row": {
+    "article_id": "123026310",
+    "group": "global_north_2025_03",
+    "country_code": "gb",
+    "filepath": "corpus/02_now_organised/global_north_2025_03/gb/123026310.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.96,
+    "gaza_role": "background",
+    "main_topic": "US air strikes on Yemen and Houthi attacks on shipping in the Red Sea",
+    "conflict_relevance": "The article focuses on the Yemen conflict and Houthi military actions, but directly links them to Israel's blocking of aid to Gaza and the wider Israel-Gaza war.",
+    "reason": "Gaza is a meaningful causal and geopolitical context for the reported Yemeni escalation, but the article is primarily about air strikes in Yemen and Red Sea maritime attacks rather than Gaza or the Israel-Palestine conflict itself.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "d402e25899c863f380fecfc04ef1205afed78dcbf90a2895aaeb8bd6aa964a18",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "c2b4474b6619a7326c3dabf9524c35c391e792a3e98646d82f09d11ba924b6ef",
+    "raw_response_text_sha256": "6eada5d5456bba94382a989e4c388886f66c4a2634b4ceadbc70dd42a1d3cac0"
+  },
+  "api_metadata": {
+    "id": "resp_0328c6a04999f489006aaa26874f0c87d19556073f4a969178",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789535879.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 899,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 237,
+      "output_tokens_details": {
+        "reasoning_tokens": 67
+      },
+      "total_tokens": 1136
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.96,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"US air strikes on Yemen and Houthi attacks on shipping in the Red Sea\",\n  \"conflict_relevance\": \"The article focuses on the Yemen conflict and Houthi military actions, but directly links them to Israel's blocking of aid to Gaza and the wider Israel-Gaza war.\",\n  \"reason\": \"Gaza is a meaningful causal and geopolitical context for the reported Yemeni escalation, but the article is primarily about air strikes in Yemen and Red Sea maritime attacks rather than Gaza or the Israel-Palestine conflict itself.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T05:18:02Z",
+  "duration_seconds": 3.813,
+  "error": null
+}

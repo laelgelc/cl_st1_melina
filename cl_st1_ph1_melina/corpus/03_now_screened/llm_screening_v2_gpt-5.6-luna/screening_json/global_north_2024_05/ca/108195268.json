@@ -1,0 +1,65 @@
+{
+  "article_id": "108195268",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_05/ca/108195268.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_05/ca/108195268.json"
+  },
+  "manifest_row": {
+    "article_id": "108195268",
+    "group": "global_north_2024_05",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2024_05/ca/108195268.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.99,
+    "gaza_role": "passing",
+    "main_topic": "Airline passenger refunds and regulatory complaints during the COVID-19 pandemic",
+    "conflict_relevance": "The main article is unrelated to Gaza or the Israel-Hamas war, but an embedded news snippet briefly reports updated Gaza fatality figures and the ongoing war.",
+    "reason": "The article primarily concerns airline refund disputes, passenger rights, and regulatory delays. Gaza appears only in a separate embedded news item containing a single substantive sentence about UN reporting on fatalities in Gaza.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "5b6b7aa1276570b8bc0bd663c1106473fe234c44de89b64b5cee13ffcc33087f",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "d88935e701e693aa345100fe2a8dd82725509c2b7a9075ab03a808f5522a94e1",
+    "raw_response_text_sha256": "9c78cfec6518675219c0b08a5ccfd5b014480b363227261c0683d98d30f1e963"
+  },
+  "api_metadata": {
+    "id": "resp_0b9a013744d27d48006aaa0d95955887d291bca1feb0eb9270",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789529493.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2884,
+      "input_tokens_details": {
+        "cache_write_tokens": 2881,
+        "cached_tokens": 0
+      },
+      "output_tokens": 238,
+      "output_tokens_details": {
+        "reasoning_tokens": 81
+      },
+      "total_tokens": 3122
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.99,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Airline passenger refunds and regulatory complaints during the COVID-19 pandemic\",\n  \"conflict_relevance\": \"The main article is unrelated to Gaza or the Israel-Hamas war, but an embedded news snippet briefly reports updated Gaza fatality figures and the ongoing war.\",\n  \"reason\": \"The article primarily concerns airline refund disputes, passenger rights, and regulatory delays. Gaza appears only in a separate embedded news item containing a single substantive sentence about UN reporting on fatalities in Gaza.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:31:37Z",
+  "duration_seconds": 4.33,
+  "error": null
+}

@@ -1,0 +1,65 @@
+{
+  "article_id": "104712633",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_south_2023_12/in/104712633.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_south_2023_12/in/104712633.json"
+  },
+  "manifest_row": {
+    "article_id": "104712633",
+    "group": "global_south_2023_12",
+    "country_code": "in",
+    "filepath": "corpus/02_now_organised/global_south_2023_12/in/104712633.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.97,
+    "gaza_role": "passing",
+    "main_topic": "Global economic outlook for 2024",
+    "conflict_relevance": "Gaza is mentioned only once in a general list of geopolitical tensions and is not discussed further.",
+    "reason": "The article focuses on global economic conditions, inflation, interest rates, oil prices, and other geopolitical developments. Its sole reference to the Gaza war is incidental and provides no substantive conflict-related discourse.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "5fbd18ec408c8e5bce4031e64d08f9e675d375970c132120af6b4d51d0c80d5d",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "1fcd3be019a731093c5959ad03e66e3f4d7d1b5cd6138b79d064fe87f81859b1",
+    "raw_response_text_sha256": "5167049fe4065b96e1db15fb74278a98f731cbb53f76a52fbe1150594289a311"
+  },
+  "api_metadata": {
+    "id": "resp_089efbeb40cf2275006aaa36f889d887d1a84fe9925b13c842",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789540088.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1466,
+      "input_tokens_details": {
+        "cache_write_tokens": 1463,
+        "cached_tokens": 0
+      },
+      "output_tokens": 253,
+      "output_tokens_details": {
+        "reasoning_tokens": 114
+      },
+      "total_tokens": 1719
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.97,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Global economic outlook for 2024\",\n  \"conflict_relevance\": \"Gaza is mentioned only once in a general list of geopolitical tensions and is not discussed further.\",\n  \"reason\": \"The article focuses on global economic conditions, inflation, interest rates, oil prices, and other geopolitical developments. Its sole reference to the Gaza war is incidental and provides no substantive conflict-related discourse.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T06:28:12Z",
+  "duration_seconds": 3.607,
+  "error": null
+}

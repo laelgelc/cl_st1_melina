@@ -1,0 +1,65 @@
+{
+  "article_id": "106031304",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_02/ca/106031304.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_02/ca/106031304.json"
+  },
+  "manifest_row": {
+    "article_id": "106031304",
+    "group": "global_north_2024_02",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2024_02/ca/106031304.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.94,
+    "gaza_role": "passing",
+    "main_topic": "Donald Trump's response to Alexei Navalny's death and his domestic legal and political troubles",
+    "conflict_relevance": "The main article concerns Russian politics and Donald Trump's legal and political controversies, not Gaza or the Israel-Palestine conflict. Gaza and pro-Israel references occur only in unrelated embedded news snippets.",
+    "reason": "The headline-associated article is about Trump and Navalny. A single embedded sentence mentions a proposed UN resolution on a Gaza ceasefire, and another unrelated snippet mentions threats against pro-Israel officials, but neither is developed as part of the main article.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "2f074684aa7ebf9bb51cbb065a7fb0c8c678a4e231ba285cd1c663f9a5276cce",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "9ab6bf29cbd9c719e39fb73b94242e92b01cd8cd114057ed8bcf950142f4ab38",
+    "raw_response_text_sha256": "b6cb3cfe4199443b9cac3b9a194e6f3ad4f7e311c9e65c6ab6c7861312e4d295"
+  },
+  "api_metadata": {
+    "id": "resp_0860876bcb6572b1006aaa06140ad487d29339d77033349b26",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789527572.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2446,
+      "input_tokens_details": {
+        "cache_write_tokens": 2443,
+        "cached_tokens": 0
+      },
+      "output_tokens": 424,
+      "output_tokens_details": {
+        "reasoning_tokens": 244
+      },
+      "total_tokens": 2870
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.94,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Donald Trump's response to Alexei Navalny's death and his domestic legal and political troubles\",\n  \"conflict_relevance\": \"The main article concerns Russian politics and Donald Trump's legal and political controversies, not Gaza or the Israel-Palestine conflict. Gaza and pro-Israel references occur only in unrelated embedded news snippets.\",\n  \"reason\": \"The headline-associated article is about Trump and Navalny. A single embedded sentence mentions a proposed UN resolution on a Gaza ceasefire, and another unrelated snippet mentions threats against pro-Israel officials, but neither is developed as part of the main article.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:59:37Z",
+  "duration_seconds": 5.839,
+  "error": null
+}

@@ -1,0 +1,65 @@
+{
+  "article_id": "106228017",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_02/nz/106228017.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_02/nz/106228017.json"
+  },
+  "manifest_row": {
+    "article_id": "106228017",
+    "group": "global_north_2024_02",
+    "country_code": "nz",
+    "filepath": "corpus/02_now_organised/global_north_2024_02/nz/106228017.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "gaza_role": "boilerplate_or_unrelated",
+    "main_topic": "Tobacco harm reduction policy and criticism of the WHO Framework Convention on Tobacco Control",
+    "conflict_relevance": "The main article is unrelated to Gaza or the Israel-Palestine conflict; Gaza appears only in a separate brief news roundup item.",
+    "reason": "The substantive article concerns tobacco control, safer nicotine products, and WHO/FCTC policy. The sole Gaza reference is an incidental embedded snippet about New Zealand humanitarian funding and does not meaningfully shape the article's discourse.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "1024a0cf6c96bc4309ca3c36123d286d0c81cf0e4ec5625de2b0997b9d9de598",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "9bf7c6a5e06f7d9a8701115968d6676493089837a86d98ef31633ec42b7f0281",
+    "raw_response_text_sha256": "78535f8fcdbfa4d25f269ad60ce00670763ed29f9b86cf726c0d0dd1c3e7f9a1"
+  },
+  "api_metadata": {
+    "id": "resp_0a0ecec4c2e3eb3e006aaa06d24da887d2bb7142840bb736e4",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789527762.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1681,
+      "input_tokens_details": {
+        "cache_write_tokens": 1678,
+        "cached_tokens": 0
+      },
+      "output_tokens": 287,
+      "output_tokens_details": {
+        "reasoning_tokens": 121
+      },
+      "total_tokens": 1968
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Tobacco harm reduction policy and criticism of the WHO Framework Convention on Tobacco Control\",\n  \"conflict_relevance\": \"The main article is unrelated to Gaza or the Israel-Palestine conflict; Gaza appears only in a separate brief news roundup item.\",\n  \"reason\": \"The substantive article concerns tobacco control, safer nicotine products, and WHO/FCTC policy. The sole Gaza reference is an incidental embedded snippet about New Zealand humanitarian funding and does not meaningfully shape the article's discourse.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:02:46Z",
+  "duration_seconds": 4.705,
+  "error": null
+}

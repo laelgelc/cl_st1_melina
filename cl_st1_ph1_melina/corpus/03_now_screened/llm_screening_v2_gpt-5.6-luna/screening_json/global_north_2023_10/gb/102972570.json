@@ -1,0 +1,65 @@
+{
+  "article_id": "102972570",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_10/gb/102972570.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_10/gb/102972570.json"
+  },
+  "manifest_row": {
+    "article_id": "102972570",
+    "group": "global_north_2023_10",
+    "country_code": "gb",
+    "filepath": "corpus/02_now_organised/global_north_2023_10/gb/102972570.txt"
+  },
+  "screening": {
+    "category": "CORE",
+    "confidence": 0.9,
+    "gaza_role": "substantial",
+    "main_topic": "Qatar-UN diplomatic discussions on de-escalation, humanitarian aid, and the Gaza conflict, alongside an unrelated Oman-Saudi environmental cooperation report",
+    "conflict_relevance": "The text includes a substantive report on Qatar's discussions with the UN Secretary-General concerning the occupied Palestinian territories, civilian protection, humanitarian aid, de-escalation, and ending the Gaza war.",
+    "reason": "Although the article contains an unrelated environmental cooperation item, its second substantial news segment directly addresses Gaza diplomacy, humanitarian conditions, civilian harm, and international efforts to end the conflict.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": true
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "9c156d5b06e8cf095381fcccaafc66915f98522f4022cbeba83886c73c4d231b",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "8c9fbe1e520e0071b94c79e54232512755dc54aad882e84bacd647260ee90a5d",
+    "raw_response_text_sha256": "2a7d8a94ce938338f001d6966fd0338b003483cb8199c96c5f8e1ca5385806ca"
+  },
+  "api_metadata": {
+    "id": "resp_03253b53ec6626f9006aa9f7cc03e887d2ba74244b887592d7",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789523916.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1142,
+      "input_tokens_details": {
+        "cache_write_tokens": 1139,
+        "cached_tokens": 0
+      },
+      "output_tokens": 351,
+      "output_tokens_details": {
+        "reasoning_tokens": 174
+      },
+      "total_tokens": 1493
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"CORE\",\n  \"confidence\": 0.9,\n  \"gaza_role\": \"substantial\",\n  \"main_topic\": \"Qatar-UN diplomatic discussions on de-escalation, humanitarian aid, and the Gaza conflict, alongside an unrelated Oman-Saudi environmental cooperation report\",\n  \"conflict_relevance\": \"The text includes a substantive report on Qatar's discussions with the UN Secretary-General concerning the occupied Palestinian territories, civilian protection, humanitarian aid, de-escalation, and ending the Gaza war.\",\n  \"reason\": \"Although the article contains an unrelated environmental cooperation item, its second substantial news segment directly addresses Gaza diplomacy, humanitarian conditions, civilian harm, and international efforts to end the conflict.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": true\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T01:58:40Z",
+  "duration_seconds": 4.75,
+  "error": null
+}

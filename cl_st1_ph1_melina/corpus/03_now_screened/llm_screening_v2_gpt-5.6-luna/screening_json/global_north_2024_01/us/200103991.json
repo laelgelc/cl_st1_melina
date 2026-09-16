@@ -1,0 +1,65 @@
+{
+  "article_id": "200103991",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_01/us/200103991.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_01/us/200103991.json"
+  },
+  "manifest_row": {
+    "article_id": "200103991",
+    "group": "global_north_2024_01",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2024_01/us/200103991.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.93,
+    "gaza_role": "background",
+    "main_topic": "Israel's Supreme Court ruling against a key part of the government's judicial overhaul",
+    "conflict_relevance": "The article focuses on Israel's domestic constitutional and judicial conflict, while repeatedly situating the ruling within the ongoing war against Hamas in Gaza and its effects on Israel's political institutions and war cabinet.",
+    "reason": "The Israel-Hamas war and Gaza provide important political context, but the article's central subject is Israel's judicial overhaul, Supreme Court powers, and domestic political divisions rather than the Gaza conflict itself.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "9bf129f4f427d003832a670e170e288d8545c72bc8c6698e45b6606c9838eb4c",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "2004e0d24c35834b04c82d6d7ceee00704f989ab21ed747485c78dd7543447a4",
+    "raw_response_text_sha256": "60a6f2ed3e2bdcf0c324ad24c73bcace360d0ea39d6cd3cfe22d9390d281b462"
+  },
+  "api_metadata": {
+    "id": "resp_029e65384979da11006aaa052f2e0487d2825687898ff7ac11",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789527343.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1828,
+      "input_tokens_details": {
+        "cache_write_tokens": 1825,
+        "cached_tokens": 0
+      },
+      "output_tokens": 306,
+      "output_tokens_details": {
+        "reasoning_tokens": 139
+      },
+      "total_tokens": 2134
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.93,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Israel's Supreme Court ruling against a key part of the government's judicial overhaul\",\n  \"conflict_relevance\": \"The article focuses on Israel's domestic constitutional and judicial conflict, while repeatedly situating the ruling within the ongoing war against Hamas in Gaza and its effects on Israel's political institutions and war cabinet.\",\n  \"reason\": \"The Israel-Hamas war and Gaza provide important political context, but the article's central subject is Israel's judicial overhaul, Supreme Court powers, and domestic political divisions rather than the Gaza conflict itself.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:55:46Z",
+  "duration_seconds": 3.33,
+  "error": null
+}

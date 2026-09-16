@@ -1,0 +1,65 @@
+{
+  "article_id": "120571700",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_south_2025_01/ph/120571700.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_south_2025_01/ph/120571700.json"
+  },
+  "manifest_row": {
+    "article_id": "120571700",
+    "group": "global_south_2025_01",
+    "country_code": "ph",
+    "filepath": "corpus/02_now_organised/global_south_2025_01/ph/120571700.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.91,
+    "gaza_role": "substantial",
+    "main_topic": "A compilation of unrelated Associated Press United Nations news briefs",
+    "conflict_relevance": "The text contains several substantive Gaza- and Israel-related briefs concerning humanitarian aid, UNRWA, Israeli military actions, ceasefire negotiations, hostages, and Palestinian legal claims, but these are embedded among many unrelated international news items.",
+    "reason": "This is a multi-article roundup rather than a coherent article centered on a single topic. Although several embedded items are directly relevant to Gaza and the Israel-Hamas war, the fragmented compilation format makes it unsuitable as a standalone discourse-analysis article.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "a70a952577768a43ed0021317524a30313e761cecf33c2472ad9cade3785e1cf",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "d6b3c43b21f95c459bf934fdf7d108b0d7ac5e5c01be862af178b0596a4bb485",
+    "raw_response_text_sha256": "fd15b63356010fe76052802d015424ede02dffe4437991d82f064bff82930f8a"
+  },
+  "api_metadata": {
+    "id": "resp_0a657a912b1a66ed006aaa44b499c887d1a87aa1747f667857",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789543604.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2119,
+      "input_tokens_details": {
+        "cache_write_tokens": 2116,
+        "cached_tokens": 0
+      },
+      "output_tokens": 536,
+      "output_tokens_details": {
+        "reasoning_tokens": 356
+      },
+      "total_tokens": 2655
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.91,\n  \"gaza_role\": \"substantial\",\n  \"main_topic\": \"A compilation of unrelated Associated Press United Nations news briefs\",\n  \"conflict_relevance\": \"The text contains several substantive Gaza- and Israel-related briefs concerning humanitarian aid, UNRWA, Israeli military actions, ceasefire negotiations, hostages, and Palestinian legal claims, but these are embedded among many unrelated international news items.\",\n  \"reason\": \"This is a multi-article roundup rather than a coherent article centered on a single topic. Although several embedded items are directly relevant to Gaza and the Israel-Hamas war, the fragmented compilation format makes it unsuitable as a standalone discourse-analysis article.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T07:26:51Z",
+  "duration_seconds": 7.51,
+  "error": null
+}

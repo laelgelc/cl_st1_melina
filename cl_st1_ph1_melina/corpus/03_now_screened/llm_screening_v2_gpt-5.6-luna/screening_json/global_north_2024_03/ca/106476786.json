@@ -1,0 +1,65 @@
+{
+  "article_id": "106476786",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_03/ca/106476786.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_03/ca/106476786.json"
+  },
+  "manifest_row": {
+    "article_id": "106476786",
+    "group": "global_north_2024_03",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2024_03/ca/106476786.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.93,
+    "gaza_role": "passing",
+    "main_topic": "Lyme disease prevention, symptoms, and tick exposure in Canada",
+    "conflict_relevance": "An unrelated embedded news snippet reports Prime Minister Justin Trudeau's position on restoring Canadian funding to a UN relief agency operating in Gaza and the protection of civilian life.",
+    "reason": "The main article is about Lyme disease and has no connection to Gaza or the Israel-Palestine conflict. However, the appended unrelated news snippets include a meaningful, though brief and truncated, item about Canada's response to humanitarian assistance in Gaza, making the material peripherally relevant rather than entirely excludable.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "d827b0850aa1043b3f0a955b4a285c2297c888814dc80746e0b2b6342743892c",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "4088819258edbe27b35164d6b1b7e4f0e40cc48ad48502f24eb81716d65e8760",
+    "raw_response_text_sha256": "4eb27225e8be1d4691cb2d3ee983e027e5e81db6398aea5fa55d127853edf03b"
+  },
+  "api_metadata": {
+    "id": "resp_047fac6e4a34d658006aaa085cfb0087d2b3d8b92ad0126eae",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789528157.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 3231,
+      "input_tokens_details": {
+        "cache_write_tokens": 3228,
+        "cached_tokens": 0
+      },
+      "output_tokens": 422,
+      "output_tokens_details": {
+        "reasoning_tokens": 241
+      },
+      "total_tokens": 3653
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.93,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Lyme disease prevention, symptoms, and tick exposure in Canada\",\n  \"conflict_relevance\": \"An unrelated embedded news snippet reports Prime Minister Justin Trudeau's position on restoring Canadian funding to a UN relief agency operating in Gaza and the protection of civilian life.\",\n  \"reason\": \"The main article is about Lyme disease and has no connection to Gaza or the Israel-Palestine conflict. However, the appended unrelated news snippets include a meaningful, though brief and truncated, item about Canada's response to humanitarian assistance in Gaza, making the material peripherally relevant rather than entirely excludable.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:09:21Z",
+  "duration_seconds": 4.651,
+  "error": null
+}

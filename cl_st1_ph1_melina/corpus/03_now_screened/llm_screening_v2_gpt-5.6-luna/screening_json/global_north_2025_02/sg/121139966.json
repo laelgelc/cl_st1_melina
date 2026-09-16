@@ -1,0 +1,65 @@
+{
+  "article_id": "121139966",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_02/sg/121139966.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_02/sg/121139966.json"
+  },
+  "manifest_row": {
+    "article_id": "121139966",
+    "group": "global_north_2025_02",
+    "country_code": "sg",
+    "filepath": "corpus/02_now_organised/global_north_2025_02/sg/121139966.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.93,
+    "gaza_role": "background",
+    "main_topic": "A Welshman's attempt to purchase a landfill to recover a lost Bitcoin hard drive",
+    "conflict_relevance": "The main article is unrelated to Gaza or Palestine, but embedded snippets contain substantive references to the Israel-Hamas ceasefire, hostage exchanges, and an Israeli hostage held in a Gaza tunnel.",
+    "reason": "The headline-associated article concerns cryptocurrency and a legal dispute over landfill access. However, the text also includes distinct news snippets about Hamas, Israeli hostages, Gaza tunnels, and ceasefire violations, making it peripherally useful for conflict discourse analysis rather than suitable for the core corpus.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "d81e530192d0f136335bd86d9c1deeb9fe92f652e9247484465bfc35ace7e697",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "7f08430b03ccb389c23a811fbb280e00fe058462160d409734934956f03fb375",
+    "raw_response_text_sha256": "25d4012e1ba27b97972658a3fa47b6c1e4c5b711819e3a6e2c91f6e392e95bea"
+  },
+  "api_metadata": {
+    "id": "resp_045a9ace7c26aa61006aaa23f1c93887d28a0465a1961ab4e3",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789535217.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2323,
+      "input_tokens_details": {
+        "cache_write_tokens": 2320,
+        "cached_tokens": 0
+      },
+      "output_tokens": 406,
+      "output_tokens_details": {
+        "reasoning_tokens": 222
+      },
+      "total_tokens": 2729
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.93,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"A Welshman's attempt to purchase a landfill to recover a lost Bitcoin hard drive\",\n  \"conflict_relevance\": \"The main article is unrelated to Gaza or Palestine, but embedded snippets contain substantive references to the Israel-Hamas ceasefire, hostage exchanges, and an Israeli hostage held in a Gaza tunnel.\",\n  \"reason\": \"The headline-associated article concerns cryptocurrency and a legal dispute over landfill access. However, the text also includes distinct news snippets about Hamas, Israeli hostages, Gaza tunnels, and ceasefire violations, making it peripherally useful for conflict discourse analysis rather than suitable for the core corpus.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T05:07:03Z",
+  "duration_seconds": 5.816,
+  "error": null
+}

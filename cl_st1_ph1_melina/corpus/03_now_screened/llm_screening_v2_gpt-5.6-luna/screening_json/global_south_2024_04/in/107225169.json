@@ -1,0 +1,65 @@
+{
+  "article_id": "107225169",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_south_2024_04/in/107225169.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_south_2024_04/in/107225169.json"
+  },
+  "manifest_row": {
+    "article_id": "107225169",
+    "group": "global_south_2024_04",
+    "country_code": "in",
+    "filepath": "corpus/02_now_organised/global_south_2024_04/in/107225169.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.86,
+    "gaza_role": "background",
+    "main_topic": "A 4.8 magnitude earthquake in the New York and New Jersey area",
+    "conflict_relevance": "The article briefly mentions a UN Security Council briefing on the Middle East and a Save the Children representative discussing the suffering of women and children in Gaza, but Gaza is not the article's subject.",
+    "reason": "The main article reports on an unrelated earthquake. Its limited Gaza reference occurs in the context of an embedded description of the interrupted UN briefing, providing some peripheral conflict-related discourse but not substantive coverage.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "652b3163b3f5c58962d8784b0b5f23a89f184ae6f91044c1533a57638005b8be",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "903b9bf47f5090a24450435ed7f24b0c993c48c85aae34dd868d240e98caac02",
+    "raw_response_text_sha256": "efc42c61a0b59771b47821692bcaad5b50abe4ca90fe9b5f52a6b384fd85ad00"
+  },
+  "api_metadata": {
+    "id": "resp_01e0c643aea8b15b006aaa3a0b3b4887d18505dbdd8b51d3db",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789540875.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1093,
+      "input_tokens_details": {
+        "cache_write_tokens": 1090,
+        "cached_tokens": 0
+      },
+      "output_tokens": 344,
+      "output_tokens_details": {
+        "reasoning_tokens": 177
+      },
+      "total_tokens": 1437
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.86,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"A 4.8 magnitude earthquake in the New York and New Jersey area\",\n  \"conflict_relevance\": \"The article briefly mentions a UN Security Council briefing on the Middle East and a Save the Children representative discussing the suffering of women and children in Gaza, but Gaza is not the article's subject.\",\n  \"reason\": \"The main article reports on an unrelated earthquake. Its limited Gaza reference occurs in the context of an embedded description of the interrupted UN briefing, providing some peripheral conflict-related discourse but not substantive coverage.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T06:41:20Z",
+  "duration_seconds": 5.396,
+  "error": null
+}

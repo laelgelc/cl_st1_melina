@@ -1,0 +1,65 @@
+{
+  "article_id": "110395580",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_07/us/110395580.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_07/us/110395580.json"
+  },
+  "manifest_row": {
+    "article_id": "110395580",
+    "group": "global_north_2024_07",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2024_07/us/110395580.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.97,
+    "gaza_role": "background",
+    "main_topic": "Global stock markets and international news",
+    "conflict_relevance": "The text includes a brief but substantive report about bodies found after Israeli troops withdrew from parts of Gaza City and ongoing fighting.",
+    "reason": "The article is mainly about financial markets and also includes an unrelated report from Nigeria. The Gaza item is meaningful but secondary and appears as part of a multi-item news compilation rather than as the central subject.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "9ad9601c893f04328039fae2c7049f22b450befcd67d7ca3c674d33b2ab34e36",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "5131781a5289a15c94c4eb217eb76b8a9dfe11c5c6c57312d2cafd5171d885db",
+    "raw_response_text_sha256": "c44bd23b148e102de193630a87ebb7559efc16d111838fc1c7beadc19bc95a19"
+  },
+  "api_metadata": {
+    "id": "resp_0e08d02dc3786cc0006aaa12fca8d087d2b3e0d56b2e966a72",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789530876.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 785,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 237,
+      "output_tokens_details": {
+        "reasoning_tokens": 91
+      },
+      "total_tokens": 1022
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.97,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Global stock markets and international news\",\n  \"conflict_relevance\": \"The text includes a brief but substantive report about bodies found after Israeli troops withdrew from parts of Gaza City and ongoing fighting.\",\n  \"reason\": \"The article is mainly about financial markets and also includes an unrelated report from Nigeria. The Gaza item is meaningful but secondary and appears as part of a multi-item news compilation rather than as the central subject.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:54:39Z",
+  "duration_seconds": 3.35,
+  "error": null
+}

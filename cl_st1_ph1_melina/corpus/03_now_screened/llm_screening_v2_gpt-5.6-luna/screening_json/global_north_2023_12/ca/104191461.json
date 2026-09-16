@@ -1,0 +1,65 @@
+{
+  "article_id": "104191461",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_12/ca/104191461.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_12/ca/104191461.json"
+  },
+  "manifest_row": {
+    "article_id": "104191461",
+    "group": "global_north_2023_12",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2023_12/ca/104191461.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.95,
+    "gaza_role": "background",
+    "main_topic": "Tax-loss harvesting and investment tax strategies",
+    "conflict_relevance": "The main article is unrelated to Gaza or the Israel-Palestine conflict, but embedded latest-news snippets include substantive items about Israeli policy toward Hamas and the deteriorating health system in Gaza.",
+    "reason": "The article primarily provides personal-finance guidance. Gaza-related material appears only in unrelated embedded news snippets, including meaningful references to the Gaza war and humanitarian conditions, so it is peripheral rather than core.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "529cac55a0ab67e740f7a93b5aa4ec6bc2d878c6ec4f33237e749dc7a4c92124",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "e9b43d0e541e04db34939bbc9b90ab320412e1cac66c8c37b81ceec29c6294c3",
+    "raw_response_text_sha256": "01b7d9dfc5454be985b3677d83e5d9762d2c76dba8bc44b870a2ee5d7adbfe61"
+  },
+  "api_metadata": {
+    "id": "resp_0ace9db78f030995006aaa007225d887d298473833992db087",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789526130.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 3067,
+      "input_tokens_details": {
+        "cache_write_tokens": 3064,
+        "cached_tokens": 0
+      },
+      "output_tokens": 365,
+      "output_tokens_details": {
+        "reasoning_tokens": 205
+      },
+      "total_tokens": 3432
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.95,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Tax-loss harvesting and investment tax strategies\",\n  \"conflict_relevance\": \"The main article is unrelated to Gaza or the Israel-Palestine conflict, but embedded latest-news snippets include substantive items about Israeli policy toward Hamas and the deteriorating health system in Gaza.\",\n  \"reason\": \"The article primarily provides personal-finance guidance. Gaza-related material appears only in unrelated embedded news snippets, including meaningful references to the Gaza war and humanitarian conditions, so it is peripheral rather than core.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:35:35Z",
+  "duration_seconds": 5.592,
+  "error": null
+}

@@ -1,0 +1,65 @@
+{
+  "article_id": "105066905",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_01/us/105066905.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_01/us/105066905.json"
+  },
+  "manifest_row": {
+    "article_id": "105066905",
+    "group": "global_north_2024_01",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2024_01/us/105066905.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.97,
+    "gaza_role": "passing",
+    "main_topic": "Minnesota's proposed elimination of volunteer guardians ad litem in child protection cases",
+    "conflict_relevance": "The article's main subject is unrelated to Gaza, but its closing paragraph briefly mentions demonstrations against the war in Gaza.",
+    "reason": "The Gaza reference is limited to a single meaningful sentence in an apparently unrelated appended snippet, so the article is not suitable for the main conflict corpus but has minimal peripheral relevance.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "ffa443d867e4befc50b39769ed26c5d9e983aceff2e0a93426e3b09c1ef9bcca",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "ec3bbbc6b64dcc79f354ade31c086446ed1217722b0e13a31da4683bf3582c9a",
+    "raw_response_text_sha256": "558339fb1a60027244002f76374c3be8663f1208b5db12a3aed5c119d52d6b44"
+  },
+  "api_metadata": {
+    "id": "resp_05febf55615b7f68006aaa04bf698887d2b801934437ca21ef",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789527231.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2292,
+      "input_tokens_details": {
+        "cache_write_tokens": 2289,
+        "cached_tokens": 0
+      },
+      "output_tokens": 254,
+      "output_tokens_details": {
+        "reasoning_tokens": 106
+      },
+      "total_tokens": 2546
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.97,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Minnesota's proposed elimination of volunteer guardians ad litem in child protection cases\",\n  \"conflict_relevance\": \"The article's main subject is unrelated to Gaza, but its closing paragraph briefly mentions demonstrations against the war in Gaza.\",\n  \"reason\": \"The Gaza reference is limited to a single meaningful sentence in an apparently unrelated appended snippet, so the article is not suitable for the main conflict corpus but has minimal peripheral relevance.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:53:54Z",
+  "duration_seconds": 3.28,
+  "error": null
+}

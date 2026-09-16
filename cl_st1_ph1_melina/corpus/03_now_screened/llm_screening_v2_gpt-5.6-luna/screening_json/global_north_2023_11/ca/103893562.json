@@ -1,0 +1,65 @@
+{
+  "article_id": "103893562",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_11/ca/103893562.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_11/ca/103893562.json"
+  },
+  "manifest_row": {
+    "article_id": "103893562",
+    "group": "global_north_2023_11",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2023_11/ca/103893562.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "passing",
+    "main_topic": "Human trafficking investigation and sentencing in the Toronto area",
+    "conflict_relevance": "The main article is unrelated to Gaza or the Israel-Palestine conflict, but it contains a separate embedded news snippet about Israeli hostages released from captivity in Gaza.",
+    "reason": "The Gaza-related material is a meaningful but isolated sentence in a collection of unrelated news items and is not developed in the main article.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "10926259676145a12a3ce8f4bbc02f2653b1c55f25a74366e01f4f3d335b85be",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "d67584584fcb96e8733396c30a268721efc22d0e3738ae852b90b6eced479080",
+    "raw_response_text_sha256": "944b3a1598cb3c22f3f9cc1baa5f860e244e1e22533d3eb5d95c62774fca2842"
+  },
+  "api_metadata": {
+    "id": "resp_01e64c5b923c2db0006aa9fc1dc6a487d2bbbec7262e50bfa8",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789525021.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1451,
+      "input_tokens_details": {
+        "cache_write_tokens": 1448,
+        "cached_tokens": 0
+      },
+      "output_tokens": 210,
+      "output_tokens_details": {
+        "reasoning_tokens": 65
+      },
+      "total_tokens": 1661
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Human trafficking investigation and sentencing in the Toronto area\",\n  \"conflict_relevance\": \"The main article is unrelated to Gaza or the Israel-Palestine conflict, but it contains a separate embedded news snippet about Israeli hostages released from captivity in Gaza.\",\n  \"reason\": \"The Gaza-related material is a meaningful but isolated sentence in a collection of unrelated news items and is not developed in the main article.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:17:04Z",
+  "duration_seconds": 3.228,
+  "error": null
+}

@@ -1,0 +1,65 @@
+{
+  "article_id": "107125510",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_south_2024_04/ng/107125510.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_south_2024_04/ng/107125510.json"
+  },
+  "manifest_row": {
+    "article_id": "107125510",
+    "group": "global_south_2024_04",
+    "country_code": "ng",
+    "filepath": "corpus/02_now_organised/global_south_2024_04/ng/107125510.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "gaza_role": "passing",
+    "main_topic": "The killing of Nigerian military personnel in Okuama and the risks of military reprisals against local communities",
+    "conflict_relevance": "The article is unrelated to Gaza or the Israel-Palestine conflict; Gaza appears only in an unrelated one-sentence news snippet about Al-Shifa hospital.",
+    "reason": "The main article concerns communal violence and military-civilian relations in Nigeria. The sole Gaza reference is an incidental embedded news item and does not contribute meaningfully to conflict discourse analysis.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "b1f51e579ab81ec854fb78ab19a78a3bbc2f10c0cf6fb288ac134e16a5e41ee6",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "650f0d564ed186e62afd5c0e251c863f371993a83f368c5f5f375f159aa69786",
+    "raw_response_text_sha256": "8e0a11bb34de05d97336ef356cb3e17f7e1064ba52837f291810f01ee868cf28"
+  },
+  "api_metadata": {
+    "id": "resp_0cb71a391e5c2f4c006aaa3a7d679887d19e881b1e87085fe0",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789540989.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2301,
+      "input_tokens_details": {
+        "cache_write_tokens": 2298,
+        "cached_tokens": 0
+      },
+      "output_tokens": 244,
+      "output_tokens_details": {
+        "reasoning_tokens": 82
+      },
+      "total_tokens": 2545
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"The killing of Nigerian military personnel in Okuama and the risks of military reprisals against local communities\",\n  \"conflict_relevance\": \"The article is unrelated to Gaza or the Israel-Palestine conflict; Gaza appears only in an unrelated one-sentence news snippet about Al-Shifa hospital.\",\n  \"reason\": \"The main article concerns communal violence and military-civilian relations in Nigeria. The sole Gaza reference is an incidental embedded news item and does not contribute meaningfully to conflict discourse analysis.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T06:43:13Z",
+  "duration_seconds": 4.316,
+  "error": null
+}

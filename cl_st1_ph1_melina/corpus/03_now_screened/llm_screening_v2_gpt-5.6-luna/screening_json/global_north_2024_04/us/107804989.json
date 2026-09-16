@@ -1,0 +1,65 @@
+{
+  "article_id": "107804989",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_04/us/107804989.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_04/us/107804989.json"
+  },
+  "manifest_row": {
+    "article_id": "107804989",
+    "group": "global_north_2024_04",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2024_04/us/107804989.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.94,
+    "gaza_role": "background",
+    "main_topic": "The French government's proposed acquisition of Atos's sovereign and strategic technology activities",
+    "conflict_relevance": "The main article is unrelated to Gaza, but an embedded 'Latest stories' section includes substantive reporting on Abbas's warnings about an Israeli assault on Rafah, Palestinian displacement, and the wider regional wars.",
+    "reason": "The headline article concerns Atos, French cybersecurity, defense contracts, and the Paris Olympics. However, the text contains a meaningful embedded Gaza-related news item, making it peripheral rather than excludable.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "55d5db9ec4785374df158586835da1b6b64eab1016c02374e08bfe4d54a6e0c3",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "88cf6319b2b55ecd934019993e21cd4a5f83c02d87cc25e085d50625f553d058",
+    "raw_response_text_sha256": "f2238c5b13b0d4aac1da25414b23117caf584cf761ee75fd58e05c8508fab771"
+  },
+  "api_metadata": {
+    "id": "resp_0b37cca34937eddd006aaa0c57e2ec87d284f33111703e4ebf",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789529175.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1864,
+      "input_tokens_details": {
+        "cache_write_tokens": 1861,
+        "cached_tokens": 0
+      },
+      "output_tokens": 426,
+      "output_tokens_details": {
+        "reasoning_tokens": 256
+      },
+      "total_tokens": 2290
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.94,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"The French government's proposed acquisition of Atos's sovereign and strategic technology activities\",\n  \"conflict_relevance\": \"The main article is unrelated to Gaza, but an embedded 'Latest stories' section includes substantive reporting on Abbas's warnings about an Israeli assault on Rafah, Palestinian displacement, and the wider regional wars.\",\n  \"reason\": \"The headline article concerns Atos, French cybersecurity, defense contracts, and the Paris Olympics. However, the text contains a meaningful embedded Gaza-related news item, making it peripheral rather than excludable.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:26:20Z",
+  "duration_seconds": 5.129,
+  "error": null
+}

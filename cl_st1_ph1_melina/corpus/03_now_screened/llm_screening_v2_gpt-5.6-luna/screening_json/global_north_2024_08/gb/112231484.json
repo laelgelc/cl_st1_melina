@@ -1,0 +1,65 @@
+{
+  "article_id": "112231484",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_08/gb/112231484.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_08/gb/112231484.json"
+  },
+  "manifest_row": {
+    "article_id": "112231484",
+    "group": "global_north_2024_08",
+    "country_code": "gb",
+    "filepath": "corpus/02_now_organised/global_north_2024_08/gb/112231484.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.96,
+    "gaza_role": "passing",
+    "main_topic": "MTV Video Music Awards scheduling and nominations",
+    "conflict_relevance": "The article is primarily about the VMAs but briefly notes that the MTV Europe Music Awards were cancelled amid volatility related to the Israel-Gaza conflict.",
+    "reason": "The conflict is mentioned in a meaningful contextual sentence explaining a prior event cancellation, but it is not central to the article.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "27caee6864df256bf60e90d114cd35ea91d94e1f548fcded2c766748f64c7efd",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "07a6d0733f13e92a26e415712fa2f9f742bddf80ae8f5dc98632a827ad480f71",
+    "raw_response_text_sha256": "bb2686b5526a1b97c6eea21d88a16168e29b5d4b09dbc031e7d46ab637e6a504"
+  },
+  "api_metadata": {
+    "id": "resp_021f517b0087e29e006aaa1425fde887d28958988eebb2407e",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789531174.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1104,
+      "input_tokens_details": {
+        "cache_write_tokens": 1101,
+        "cached_tokens": 0
+      },
+      "output_tokens": 185,
+      "output_tokens_details": {
+        "reasoning_tokens": 48
+      },
+      "total_tokens": 1289
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.96,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"MTV Video Music Awards scheduling and nominations\",\n  \"conflict_relevance\": \"The article is primarily about the VMAs but briefly notes that the MTV Europe Music Awards were cancelled amid volatility related to the Israel-Gaza conflict.\",\n  \"reason\": \"The conflict is mentioned in a meaningful contextual sentence explaining a prior event cancellation, but it is not central to the article.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:59:36Z",
+  "duration_seconds": 2.811,
+  "error": null
+}

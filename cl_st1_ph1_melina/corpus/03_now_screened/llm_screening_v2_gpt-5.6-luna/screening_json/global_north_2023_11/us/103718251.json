@@ -1,0 +1,65 @@
+{
+  "article_id": "103718251",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_11/us/103718251.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_11/us/103718251.json"
+  },
+  "manifest_row": {
+    "article_id": "103718251",
+    "group": "global_north_2023_11",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2023_11/us/103718251.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.95,
+    "gaza_role": "background",
+    "main_topic": "Alleged Iranian influence operations within the US government and security-clearance concerns involving Pentagon aide Ariane Tabatabai",
+    "conflict_relevance": "The article links alleged Iranian influence networks to Hamas, the Gaza conflict, the October 7 attack on Israel, US policy toward Iran, and Israeli security concerns, but the main focus is US national-security and Iran-related political controversy.",
+    "reason": "The article contains meaningful discussion of Iran's sponsorship of Hamas, the Gaza conflict, Hamas's October 7 attack, Israel, and US policy, making it relevant to broader conflict discourse. However, Gaza and Israel-Palestine are contextual rather than the central subject. The appended Hannity Christmas-film material is unrelated and appears to be a separate article snippet.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "ec56b07bc5d9513c80c86f9871747f5ccc0226831d530db678bedbef9cefeadb",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "508c88f4070ee70425f3a806bc1a95c9811b9ce09033c57b33a73ec1af7bcb78",
+    "raw_response_text_sha256": "7f499e5dfef62c59fad74e39614acb1f336ad5e5e22d208e153b8198a9408428"
+  },
+  "api_metadata": {
+    "id": "resp_0708a7c280710efa006aa9fedd0b7c87d2ab0659b7a75db61e",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789525725.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2210,
+      "input_tokens_details": {
+        "cache_write_tokens": 2207,
+        "cached_tokens": 0
+      },
+      "output_tokens": 405,
+      "output_tokens_details": {
+        "reasoning_tokens": 188
+      },
+      "total_tokens": 2615
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.95,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Alleged Iranian influence operations within the US government and security-clearance concerns involving Pentagon aide Ariane Tabatabai\",\n  \"conflict_relevance\": \"The article links alleged Iranian influence networks to Hamas, the Gaza conflict, the October 7 attack on Israel, US policy toward Iran, and Israeli security concerns, but the main focus is US national-security and Iran-related political controversy.\",\n  \"reason\": \"The article contains meaningful discussion of Iran's sponsorship of Hamas, the Gaza conflict, Hamas's October 7 attack, Israel, and US policy, making it relevant to broader conflict discourse. However, Gaza and Israel-Palestine are contextual rather than the central subject. The appended Hannity Christmas-film material is unrelated and appears to be a separate article snippet.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:28:51Z",
+  "duration_seconds": 6.917,
+  "error": null
+}

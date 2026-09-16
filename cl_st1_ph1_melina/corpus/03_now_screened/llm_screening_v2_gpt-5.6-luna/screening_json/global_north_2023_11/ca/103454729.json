@@ -1,0 +1,65 @@
+{
+  "article_id": "103454729",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_11/ca/103454729.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_11/ca/103454729.json"
+  },
+  "manifest_row": {
+    "article_id": "103454729",
+    "group": "global_north_2023_11",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2023_11/ca/103454729.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "passing",
+    "main_topic": "The tourism value of a trip to New Westminster featured on The Price Is Right",
+    "conflict_relevance": "The article is unrelated to Gaza, but an embedded CTVNews.ca top-story snippet reports Justin Trudeau urging Israel to protect civilians in the Gaza war.",
+    "reason": "The main article concerns a television game-show prize and New Westminster tourism. The Gaza-related content appears only as a brief, separate news roundup item, making it peripheral rather than core.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "eefea6a73ad50e6c229024c342949197bf84a394391f7b701c940cac990da768",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "2e88f8c1c22f26d861b5b6ad1d4c81493b01be1518ac1361d0b6bcd582eef189",
+    "raw_response_text_sha256": "ac4c9029db72e84775386ee2f154b81e41b8ba2a39ad1860ef9035ec69a3a0c7"
+  },
+  "api_metadata": {
+    "id": "resp_01c3b48ec26e88f8006aa9fbdbeb1087d28989e06cff64bff0",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789524955.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1812,
+      "input_tokens_details": {
+        "cache_write_tokens": 1809,
+        "cached_tokens": 0
+      },
+      "output_tokens": 277,
+      "output_tokens_details": {
+        "reasoning_tokens": 120
+      },
+      "total_tokens": 2089
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"The tourism value of a trip to New Westminster featured on The Price Is Right\",\n  \"conflict_relevance\": \"The article is unrelated to Gaza, but an embedded CTVNews.ca top-story snippet reports Justin Trudeau urging Israel to protect civilians in the Gaza war.\",\n  \"reason\": \"The main article concerns a television game-show prize and New Westminster tourism. The Gaza-related content appears only as a brief, separate news roundup item, making it peripheral rather than core.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:16:01Z",
+  "duration_seconds": 5.349,
+  "error": null
+}

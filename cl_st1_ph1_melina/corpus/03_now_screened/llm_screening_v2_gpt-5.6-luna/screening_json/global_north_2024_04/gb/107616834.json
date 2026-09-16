@@ -1,0 +1,65 @@
+{
+  "article_id": "107616834",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_04/gb/107616834.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_04/gb/107616834.json"
+  },
+  "manifest_row": {
+    "article_id": "107616834",
+    "group": "global_north_2024_04",
+    "country_code": "gb",
+    "filepath": "corpus/02_now_organised/global_north_2024_04/gb/107616834.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "background",
+    "main_topic": "US congressional foreign aid package centered on military and financial assistance for Ukraine",
+    "conflict_relevance": "The article briefly discusses the package's $26 billion allocation for Israel and related assistance to Gaza, including the ban on direct US funding for UNRWA.",
+    "reason": "The article is overwhelmingly about Ukraine, US aid, and the Russia-Ukraine war. Gaza and Israel appear in a meaningful but limited discussion of the broader aid package and UNRWA funding, making it relevant to broader conflict-related discourse but not core Gaza coverage.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "56952753ed08c976fdccba42af85eca1c60c6e379307d057c2267781573956c0",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "904374a56717e1056428f088bf31aab01911a7ac6770c3244e7c74eda6bfa215",
+    "raw_response_text_sha256": "5653240a91861ad402895739147f1b97e755e5e85afa055b0b53a892f18afe83"
+  },
+  "api_metadata": {
+    "id": "resp_0fe6e533dfa5cf49006aaa0b6b758087d287ec1600dd76ec2b",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789528939.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2250,
+      "input_tokens_details": {
+        "cache_write_tokens": 2247,
+        "cached_tokens": 0
+      },
+      "output_tokens": 241,
+      "output_tokens_details": {
+        "reasoning_tokens": 69
+      },
+      "total_tokens": 2491
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"US congressional foreign aid package centered on military and financial assistance for Ukraine\",\n  \"conflict_relevance\": \"The article briefly discusses the package's $26 billion allocation for Israel and related assistance to Gaza, including the ban on direct US funding for UNRWA.\",\n  \"reason\": \"The article is overwhelmingly about Ukraine, US aid, and the Russia-Ukraine war. Gaza and Israel appear in a meaningful but limited discussion of the broader aid package and UNRWA funding, making it relevant to broader conflict-related discourse but not core Gaza coverage.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:22:23Z",
+  "duration_seconds": 4.095,
+  "error": null
+}

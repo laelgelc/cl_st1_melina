@@ -1,0 +1,65 @@
+{
+  "article_id": "200247525",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_02/us/200247525.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_02/us/200247525.json"
+  },
+  "manifest_row": {
+    "article_id": "200247525",
+    "group": "global_north_2024_02",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2024_02/us/200247525.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "gaza_role": "boilerplate_or_unrelated",
+    "main_topic": "Unseasonable weather and severe winter conditions across the United States",
+    "conflict_relevance": "The main article is unrelated to Gaza or the Israel-Palestine conflict; Gaza appears only in a brief recommended-story snippet.",
+    "reason": "The article focuses entirely on weather patterns, temperature extremes, snowfall, wildfire risk, and climate conditions. The Gaza reference is an incidental item in the recommended stories section rather than part of the article's substantive content.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "77ee44892ff067a9f87aed9d9b8ef0a058d7a12c7b8b31410d2a8c76f5355640",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "44b2b94a6a2cb714967a8228395854e70fd93878427f6a02e9bb792d70b3ac6c",
+    "raw_response_text_sha256": "9aa8e65dc7390bd41ed62d19f9d0616783ce79cc2471fc02b28705ab59512713"
+  },
+  "api_metadata": {
+    "id": "resp_0396e06c63d89a26006aaa080d37d087d2a8b3ee83a35f354d",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789528077.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2481,
+      "input_tokens_details": {
+        "cache_write_tokens": 2478,
+        "cached_tokens": 0
+      },
+      "output_tokens": 238,
+      "output_tokens_details": {
+        "reasoning_tokens": 78
+      },
+      "total_tokens": 2719
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"gaza_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Unseasonable weather and severe winter conditions across the United States\",\n  \"conflict_relevance\": \"The main article is unrelated to Gaza or the Israel-Palestine conflict; Gaza appears only in a brief recommended-story snippet.\",\n  \"reason\": \"The article focuses entirely on weather patterns, temperature extremes, snowfall, wildfire risk, and climate conditions. The Gaza reference is an incidental item in the recommended stories section rather than part of the article's substantive content.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:08:00Z",
+  "duration_seconds": 3.675,
+  "error": null
+}

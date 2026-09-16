@@ -1,0 +1,65 @@
+{
+  "article_id": "122430691",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_03/us/122430691.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_03/us/122430691.json"
+  },
+  "manifest_row": {
+    "article_id": "122430691",
+    "group": "global_north_2025_03",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2025_03/us/122430691.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.97,
+    "gaza_role": "background",
+    "main_topic": "US airstrikes on Houthi-controlled areas in Yemen and escalating regional tensions",
+    "conflict_relevance": "The article focuses on the Yemen and Red Sea conflict but connects Houthi actions to Gaza, Israel-linked vessels, and wider regional escalation.",
+    "reason": "Gaza and Israel-Palestine are meaningful contextual elements in explaining the Houthis' military actions and regional tensions, but the article is not centrally about Gaza or the Israel-Hamas war.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "9e15bf1831e66a9bfae1f1865351d178584cbcf422deea50cfd4316e9a7be215",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "0257c6c708b9bfdc53eb179c5f36a2ccb948490cc72f58e3f65da6c05cf22ed8",
+    "raw_response_text_sha256": "31d1383e08a45a9b90024a7dc54e422bdbfff27780f1a10c91e789402fd66b3c"
+  },
+  "api_metadata": {
+    "id": "resp_09cdf9a748854d0e006aaa279e5f2887d1aa0abaa9657e473a",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789536158.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1271,
+      "input_tokens_details": {
+        "cache_write_tokens": 1268,
+        "cached_tokens": 0
+      },
+      "output_tokens": 283,
+      "output_tokens_details": {
+        "reasoning_tokens": 124
+      },
+      "total_tokens": 1554
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.97,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"US airstrikes on Houthi-controlled areas in Yemen and escalating regional tensions\",\n  \"conflict_relevance\": \"The article focuses on the Yemen and Red Sea conflict but connects Houthi actions to Gaza, Israel-linked vessels, and wider regional escalation.\",\n  \"reason\": \"Gaza and Israel-Palestine are meaningful contextual elements in explaining the Houthis' military actions and regional tensions, but the article is not centrally about Gaza or the Israel-Hamas war.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T05:22:42Z",
+  "duration_seconds": 4.346,
+  "error": null
+}

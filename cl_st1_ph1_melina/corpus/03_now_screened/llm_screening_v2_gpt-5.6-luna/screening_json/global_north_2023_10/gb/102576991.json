@@ -1,0 +1,65 @@
+{
+  "article_id": "102576991",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_10/gb/102576991.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_10/gb/102576991.json"
+  },
+  "manifest_row": {
+    "article_id": "102576991",
+    "group": "global_north_2023_10",
+    "country_code": "gb",
+    "filepath": "corpus/02_now_organised/global_north_2023_10/gb/102576991.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "background",
+    "main_topic": "Financial market analysis focusing on equities, oil prices, inflation, and macroeconomic risks",
+    "conflict_relevance": "The article discusses Israel's potential ground invasion of Gaza and escalation of the Israel-Hamas war as geopolitical factors affecting oil prices, supply concerns, and global markets.",
+    "reason": "The article is primarily a stock-market and commodities analysis. The Gaza conflict is meaningfully discussed in several sentences but functions as background to economic and financial analysis rather than being the central subject.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "a6420f76c275f78baf25dc293d0c4db1aead476e9710176e3e8b7e599f6fbcc3",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "f833c1ce6ef692c94f554b417b81dc84341e31c2a8018c20fc66276aa25840f7",
+    "raw_response_text_sha256": "a649d7e859a930061198e168bde4e70156774c4e9c2bb7023a86f456319845d0"
+  },
+  "api_metadata": {
+    "id": "resp_01020b8068159b4d006aa9f714f56c87d29a3e9290d21df523",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789523732.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2109,
+      "input_tokens_details": {
+        "cache_write_tokens": 2106,
+        "cached_tokens": 0
+      },
+      "output_tokens": 227,
+      "output_tokens_details": {
+        "reasoning_tokens": 66
+      },
+      "total_tokens": 2336
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Financial market analysis focusing on equities, oil prices, inflation, and macroeconomic risks\",\n  \"conflict_relevance\": \"The article discusses Israel's potential ground invasion of Gaza and escalation of the Israel-Hamas war as geopolitical factors affecting oil prices, supply concerns, and global markets.\",\n  \"reason\": \"The article is primarily a stock-market and commodities analysis. The Gaza conflict is meaningfully discussed in several sentences but functions as background to economic and financial analysis rather than being the central subject.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T01:55:36Z",
+  "duration_seconds": 3.24,
+  "error": null
+}

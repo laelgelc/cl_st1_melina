@@ -1,0 +1,65 @@
+{
+  "article_id": "104589205",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_south_2023_12/in/104589205.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_south_2023_12/in/104589205.json"
+  },
+  "manifest_row": {
+    "article_id": "104589205",
+    "group": "global_south_2023_12",
+    "country_code": "in",
+    "filepath": "corpus/02_now_organised/global_south_2023_12/in/104589205.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.91,
+    "gaza_role": "background",
+    "main_topic": "A reported blast or possible explosion near the Israeli embassy in New Delhi",
+    "conflict_relevance": "The article links the embassy incident to Israel's war against Hamas in Gaza and global condemnation over civilian casualties, but the main focus is the local security incident rather than the Gaza conflict itself.",
+    "reason": "The article contains meaningful Israel-Gaza context and concerns a security incident involving an Israeli diplomatic site, making it relevant to broader conflict-related discourse. However, Gaza is primarily contextual rather than central to the report.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "edbbd7b25cd269c70a02d02349c32248fcff2c54dfe9962104ad43134b6d78a0",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "df0b35b461c2438132ecc83a1599c58281638a73f2a1e2cf9464be425dd70e7f",
+    "raw_response_text_sha256": "280f4f420882a9a5815048033ee70d37da473e0254c1a6cb26679552bb708db3"
+  },
+  "api_metadata": {
+    "id": "resp_05ba653c4d6ec565006aaa36e255d087d1bb4f229103eb603f",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789540066.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1002,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 342,
+      "output_tokens_details": {
+        "reasoning_tokens": 175
+      },
+      "total_tokens": 1344
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.91,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"A reported blast or possible explosion near the Israeli embassy in New Delhi\",\n  \"conflict_relevance\": \"The article links the embassy incident to Israel's war against Hamas in Gaza and global condemnation over civilian casualties, but the main focus is the local security incident rather than the Gaza conflict itself.\",\n  \"reason\": \"The article contains meaningful Israel-Gaza context and concerns a security incident involving an Israeli diplomatic site, making it relevant to broader conflict-related discourse. However, Gaza is primarily contextual rather than central to the report.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T06:27:50Z",
+  "duration_seconds": 4.405,
+  "error": null
+}

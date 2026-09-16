@@ -1,0 +1,65 @@
+{
+  "article_id": "108086974",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_05/ca/108086974.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_05/ca/108086974.json"
+  },
+  "manifest_row": {
+    "article_id": "108086974",
+    "group": "global_north_2024_05",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2024_05/ca/108086974.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.93,
+    "gaza_role": "substantial",
+    "main_topic": "A collection of newspaper letters about local issues and university protests",
+    "conflict_relevance": "Several letters substantially discuss Gaza, Israeli military action, university encampments, divestment, antisemitism, anti-Zionism, protester safety, and threats against the International Criminal Court.",
+    "reason": "Although the text is a mixed letters-page collection dominated by unrelated local topics, multiple included letters contain meaningful discourse directly connected to Gaza and the Israel-Palestine conflict. It is therefore useful for broader analysis of public debate and media framing but is not a focused conflict article.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "7e4bb59c4dfd25136e24d6e5dd8b61082f4fb2e896dbc3a3c0fe9db365c0c487",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "f1a5acfae057a03bbb2960e309cb372282d92d5196ec33a9ab09df2303cb0167",
+    "raw_response_text_sha256": "39d8ef39b7064a2c5d0132b787a5fe2474b3af52b0532fa46845882fab27ad4f"
+  },
+  "api_metadata": {
+    "id": "resp_0ba45c54961a22c9006aaa0d875cc487d2bae1f796436b6ee1",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789529479.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2077,
+      "input_tokens_details": {
+        "cache_write_tokens": 2074,
+        "cached_tokens": 0
+      },
+      "output_tokens": 643,
+      "output_tokens_details": {
+        "reasoning_tokens": 460
+      },
+      "total_tokens": 2720
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.93,\n  \"gaza_role\": \"substantial\",\n  \"main_topic\": \"A collection of newspaper letters about local issues and university protests\",\n  \"conflict_relevance\": \"Several letters substantially discuss Gaza, Israeli military action, university encampments, divestment, antisemitism, anti-Zionism, protester safety, and threats against the International Criminal Court.\",\n  \"reason\": \"Although the text is a mixed letters-page collection dominated by unrelated local topics, multiple included letters contain meaningful discourse directly connected to Gaza and the Israel-Palestine conflict. It is therefore useful for broader analysis of public debate and media framing but is not a focused conflict article.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:31:27Z",
+  "duration_seconds": 8.048,
+  "error": null
+}

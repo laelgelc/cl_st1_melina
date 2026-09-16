@@ -1,0 +1,65 @@
+{
+  "article_id": "105040021",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_01/us/105040021.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_01/us/105040021.json"
+  },
+  "manifest_row": {
+    "article_id": "105040021",
+    "group": "global_north_2024_01",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2024_01/us/105040021.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.94,
+    "gaza_role": "passing",
+    "main_topic": "U.S. airstrikes against the Houthis in Yemen and debates over presidential war powers",
+    "conflict_relevance": "The article is primarily about Yemen, Red Sea shipping attacks, and U.S. constitutional authority. Gaza appears only in an image caption describing a demonstration and the broader Israel-Hamas conflict.",
+    "reason": "The Gaza reference is incidental and does not contribute substantive discussion of the Gaza conflict or related discourse.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "4d9c18f41f86231292751c96d0720438fe778cb2f8308535d59db303ec2b6aff",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "c99894ae8275d93ee9c39ec735bbdd50972d4b0c34c7c9fc827c8aa6eb7e326c",
+    "raw_response_text_sha256": "74972b7a09a67e26c1e9560dbab24325975bb5e4196e84fd92f15024dea35f6c"
+  },
+  "api_metadata": {
+    "id": "resp_0fd21111f3d1fefc006aaa04b5971487d28a23b37e6259f065",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789527221.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1315,
+      "input_tokens_details": {
+        "cache_write_tokens": 1312,
+        "cached_tokens": 0
+      },
+      "output_tokens": 289,
+      "output_tokens_details": {
+        "reasoning_tokens": 140
+      },
+      "total_tokens": 1604
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.94,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"U.S. airstrikes against the Houthis in Yemen and debates over presidential war powers\",\n  \"conflict_relevance\": \"The article is primarily about Yemen, Red Sea shipping attacks, and U.S. constitutional authority. Gaza appears only in an image caption describing a demonstration and the broader Israel-Hamas conflict.\",\n  \"reason\": \"The Gaza reference is incidental and does not contribute substantive discussion of the Gaza conflict or related discourse.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:53:45Z",
+  "duration_seconds": 3.864,
+  "error": null
+}

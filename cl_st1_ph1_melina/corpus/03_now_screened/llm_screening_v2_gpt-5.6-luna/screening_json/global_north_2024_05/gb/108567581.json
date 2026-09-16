@@ -1,0 +1,65 @@
+{
+  "article_id": "108567581",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_05/gb/108567581.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_05/gb/108567581.json"
+  },
+  "manifest_row": {
+    "article_id": "108567581",
+    "group": "global_north_2024_05",
+    "country_code": "gb",
+    "filepath": "corpus/02_now_organised/global_north_2024_05/gb/108567581.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "gaza_role": "passing",
+    "main_topic": "Travel in Brittany and comparison with Cornwall",
+    "conflict_relevance": "Gaza appears only in an unrelated 'Read next' teaser about wars discussed in France.",
+    "reason": "The main article is a travel feature about Cornwall and Brittany. The sole Gaza reference occurs in a separate, unrelated navigational snippet and does not provide meaningful conflict discourse.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "201e082189e71d285d0789e0986d68e8cef6694c6c71106ed7a93003ae1d13ab",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "b3a02129152b05749a6655ac5755aca711af55a77bd66d314f63a218b9e6575e",
+    "raw_response_text_sha256": "0c9ee3979ad2b5874d0c5e3983e4c4bd0a997e66b8703a43efc23053bfed5e4c"
+  },
+  "api_metadata": {
+    "id": "resp_0d42cc14ff93e922006aaa0e2ca70087d2ab4c89fb05d64aa3",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789529644.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2386,
+      "input_tokens_details": {
+        "cache_write_tokens": 2383,
+        "cached_tokens": 0
+      },
+      "output_tokens": 232,
+      "output_tokens_details": {
+        "reasoning_tokens": 99
+      },
+      "total_tokens": 2618
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Travel in Brittany and comparison with Cornwall\",\n  \"conflict_relevance\": \"Gaza appears only in an unrelated 'Read next' teaser about wars discussed in France.\",\n  \"reason\": \"The main article is a travel feature about Cornwall and Brittany. The sole Gaza reference occurs in a separate, unrelated navigational snippet and does not provide meaningful conflict discourse.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:34:07Z",
+  "duration_seconds": 2.973,
+  "error": null
+}

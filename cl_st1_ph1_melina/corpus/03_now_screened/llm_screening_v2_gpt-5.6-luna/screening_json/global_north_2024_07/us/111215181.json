@@ -1,0 +1,65 @@
+{
+  "article_id": "111215181",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_07/us/111215181.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_07/us/111215181.json"
+  },
+  "manifest_row": {
+    "article_id": "111215181",
+    "group": "global_north_2024_07",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2024_07/us/111215181.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.97,
+    "gaza_role": "background",
+    "main_topic": "UK public finances and a general news roundup",
+    "conflict_relevance": "Includes a discrete news item about Kamala Harris's comments on Palestinian civilian suffering, Israel's right to self-defence, Biden-Netanyahu talks, and Gaza ceasefire negotiations.",
+    "reason": "The article is primarily about a UK budget shortfall and contains several unrelated news snippets. The Gaza coverage is meaningful but embedded as one section of a broader roundup rather than being the article's central subject.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "510047c1797f39b14fb4c4b40e8773f04118a3b28cfca2d8d688532dbfcf1c1e",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "c1fd6cdc434fa4b081398b45d2b3428186e6f65627732f0d48d5255971d797b4",
+    "raw_response_text_sha256": "70cbd6e33b6569284ae7cb5de71360d871b98651a8be969d051a1a8c8608d917"
+  },
+  "api_metadata": {
+    "id": "resp_04311b1314219c68006aaa1379cfc887d2925fd2d1212b0082",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789531001.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2313,
+      "input_tokens_details": {
+        "cache_write_tokens": 2310,
+        "cached_tokens": 0
+      },
+      "output_tokens": 326,
+      "output_tokens_details": {
+        "reasoning_tokens": 167
+      },
+      "total_tokens": 2639
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.97,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"UK public finances and a general news roundup\",\n  \"conflict_relevance\": \"Includes a discrete news item about Kamala Harris's comments on Palestinian civilian suffering, Israel's right to self-defence, Biden-Netanyahu talks, and Gaza ceasefire negotiations.\",\n  \"reason\": \"The article is primarily about a UK budget shortfall and contains several unrelated news snippets. The Gaza coverage is meaningful but embedded as one section of a broader roundup rather than being the article's central subject.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:56:46Z",
+  "duration_seconds": 4.395,
+  "error": null
+}

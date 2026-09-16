@@ -1,0 +1,65 @@
+{
+  "article_id": "108801177",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_06/ca/108801177.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_06/ca/108801177.json"
+  },
+  "manifest_row": {
+    "article_id": "108801177",
+    "group": "global_north_2024_06",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2024_06/ca/108801177.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "gaza_role": "boilerplate_or_unrelated",
+    "main_topic": "Canadian Conservative Party politics and Pierre Poilievre's positions on social policy",
+    "conflict_relevance": "The main article is unrelated to Gaza, Palestine, or the Israel-Palestine conflict; Gaza-related items appear only among appended unrelated news snippets.",
+    "reason": "The article primarily discusses Pierre Poilievre's response to a Conservative MP's comments on abortion, same-sex marriage, marijuana, climate change, and social programs. Gaza-related references occur only in a roundup of separate news items and are not integrated into the article's argument or discourse.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "034e7ded0a8760db6e6c083090e4da1121900425664ee6419555f3974fcb4c5c",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "a75d96961e0d56057662e6fda235d8915fea5aa0d404ddc3f7c56a0979a92235",
+    "raw_response_text_sha256": "41da7761d8720ab5f8d265855eee403c06f49f340b2a464ae7e47e119c24e7f7"
+  },
+  "api_metadata": {
+    "id": "resp_0adade82d8a57ee8006aaa10179a4c87d2938cef6508331be9",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789530135.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 3491,
+      "input_tokens_details": {
+        "cache_write_tokens": 3488,
+        "cached_tokens": 0
+      },
+      "output_tokens": 374,
+      "output_tokens_details": {
+        "reasoning_tokens": 192
+      },
+      "total_tokens": 3865
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Canadian Conservative Party politics and Pierre Poilievre's positions on social policy\",\n  \"conflict_relevance\": \"The main article is unrelated to Gaza, Palestine, or the Israel-Palestine conflict; Gaza-related items appear only among appended unrelated news snippets.\",\n  \"reason\": \"The article primarily discusses Pierre Poilievre's response to a Conservative MP's comments on abortion, same-sex marriage, marijuana, climate change, and social programs. Gaza-related references occur only in a roundup of separate news items and are not integrated into the article's argument or discourse.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:42:21Z",
+  "duration_seconds": 6.054,
+  "error": null
+}

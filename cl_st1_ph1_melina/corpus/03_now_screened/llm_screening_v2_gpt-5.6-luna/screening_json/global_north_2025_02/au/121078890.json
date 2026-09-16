@@ -1,0 +1,65 @@
+{
+  "article_id": "121078890",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_02/au/121078890.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_02/au/121078890.json"
+  },
+  "manifest_row": {
+    "article_id": "121078890",
+    "group": "global_north_2025_02",
+    "country_code": "au",
+    "filepath": "corpus/02_now_organised/global_north_2025_02/au/121078890.txt"
+  },
+  "screening": {
+    "category": "CORE",
+    "confidence": 0.91,
+    "gaza_role": "substantial",
+    "main_topic": "News roundup including the Gaza ceasefire, hostage releases, and proposed displacement of Palestinians",
+    "conflict_relevance": "Contains a substantive news report on Hamas suspending Israeli hostage releases, the Gaza ceasefire agreement, Palestinian prisoners, Israeli detention, proposed displacement of Palestinians, and negotiations over a permanent ceasefire and Israeli withdrawal.",
+    "reason": "Although the text is a multi-item news bulletin, the Gaza segment is one of the three lead stories and provides meaningful, detailed conflict-related discourse concerning hostages, ceasefire negotiations, Palestinian displacement, and Israeli military objectives.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": true
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "4ee5884210627ff1df5a7c40f8850afea5824c6c86e145c0d2f7a1708206a882",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "f5c92d6c9b7eea7c63b893dcf6d2caee7b630fc5850766c1fd625dfebe879005",
+    "raw_response_text_sha256": "dfa46a8e6bc8c5ae87b756fb97d780800c84077e58be763c01d30dc36657a0f8"
+  },
+  "api_metadata": {
+    "id": "resp_0f5fceabd2c8d1b0006aaa2209a12087d2815dbc9186e98043",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789534729.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1808,
+      "input_tokens_details": {
+        "cache_write_tokens": 1805,
+        "cached_tokens": 0
+      },
+      "output_tokens": 440,
+      "output_tokens_details": {
+        "reasoning_tokens": 264
+      },
+      "total_tokens": 2248
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"CORE\",\n  \"confidence\": 0.91,\n  \"gaza_role\": \"substantial\",\n  \"main_topic\": \"News roundup including the Gaza ceasefire, hostage releases, and proposed displacement of Palestinians\",\n  \"conflict_relevance\": \"Contains a substantive news report on Hamas suspending Israeli hostage releases, the Gaza ceasefire agreement, Palestinian prisoners, Israeli detention, proposed displacement of Palestinians, and negotiations over a permanent ceasefire and Israeli withdrawal.\",\n  \"reason\": \"Although the text is a multi-item news bulletin, the Gaza segment is one of the three lead stories and provides meaningful, detailed conflict-related discourse concerning hostages, ceasefire negotiations, Palestinian displacement, and Israeli military objectives.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": true\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T04:58:54Z",
+  "duration_seconds": 5.418,
+  "error": null
+}

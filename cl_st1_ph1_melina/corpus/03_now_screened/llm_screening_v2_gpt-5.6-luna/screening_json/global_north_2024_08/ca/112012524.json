@@ -1,0 +1,65 @@
+{
+  "article_id": "112012524",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_08/ca/112012524.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_08/ca/112012524.json"
+  },
+  "manifest_row": {
+    "article_id": "112012524",
+    "group": "global_north_2024_08",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2024_08/ca/112012524.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.97,
+    "gaza_role": "passing",
+    "main_topic": "Police response to reported gunshots and firearms charges in Ohsweken",
+    "conflict_relevance": "The primary article is unrelated to Gaza or the Israel-Palestine conflict, but the text includes a substantive news snippet about Iran, Israel, Hamas, and Gaza peace talks.",
+    "reason": "The headline and main article concern a local firearms incident in Ohsweken. A separate embedded snippet references potential Iranian retaliation against Israel and negotiations concerning Gaza, making the material marginally useful for broader conflict discourse analysis but not suitable for the core corpus.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "0fb1a95cf9766eb1610abe2b295b9a6618aa9beed7e373768f4b47e5be44f239",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "673ed018b67eec006febd951782faf6c2d383225c264b7f0cb3b4ae196ff749a",
+    "raw_response_text_sha256": "c063cd553eeccdc6ca43069222e0df95396a0123cb3b915a97de0a453a6eebe8"
+  },
+  "api_metadata": {
+    "id": "resp_032f392dd4225f0c006aaa13e7dcc487d295e0a3aa3f33da45",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789531111.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1377,
+      "input_tokens_details": {
+        "cache_write_tokens": 1374,
+        "cached_tokens": 0
+      },
+      "output_tokens": 277,
+      "output_tokens_details": {
+        "reasoning_tokens": 101
+      },
+      "total_tokens": 1654
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.97,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Police response to reported gunshots and firearms charges in Ohsweken\",\n  \"conflict_relevance\": \"The primary article is unrelated to Gaza or the Israel-Palestine conflict, but the text includes a substantive news snippet about Iran, Israel, Hamas, and Gaza peace talks.\",\n  \"reason\": \"The headline and main article concern a local firearms incident in Ohsweken. A separate embedded snippet references potential Iranian retaliation against Israel and negotiations concerning Gaza, making the material marginally useful for broader conflict discourse analysis but not suitable for the core corpus.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:58:35Z",
+  "duration_seconds": 3.826,
+  "error": null
+}

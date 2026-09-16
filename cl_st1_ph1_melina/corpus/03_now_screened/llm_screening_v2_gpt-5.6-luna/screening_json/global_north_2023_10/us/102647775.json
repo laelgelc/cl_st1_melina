@@ -1,0 +1,65 @@
+{
+  "article_id": "102647775",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_10/us/102647775.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_10/us/102647775.json"
+  },
+  "manifest_row": {
+    "article_id": "102647775",
+    "group": "global_north_2023_10",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2023_10/us/102647775.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.94,
+    "gaza_role": "background",
+    "main_topic": "Republican criticism of the Biden administration's $6 billion Iran prisoner-swap and sanctions-relief deal",
+    "conflict_relevance": "The article discusses the deal in relation to Hamas's attack on Israel, alleged Iranian support for Hamas, and Americans held hostage in Gaza, but its primary focus is U.S. policy toward Iran.",
+    "reason": "The Gaza and Israel-Hamas conflict provides important context for the political criticism, yet the article is mainly about the Iran funds and domestic U.S. debate over the prisoner exchange and sanctions enforcement.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "ba760c70b49ff37f56444ee28c2ef809ea510e0a1908e0761c93bc3e6ed7e34e",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "f14696ba2f9d4508a0aec5d6206beb3a54db04eb381c8832bbadfe55da69efa7",
+    "raw_response_text_sha256": "040f5b1fa5d16e8dc7760d2f355353ab2f4f90b12a05f57cb0d4940a8c9954f4"
+  },
+  "api_metadata": {
+    "id": "resp_0ce824ab605c5294006aa9f8e71d9c87d298754e79ce69b093",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789524199.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1078,
+      "input_tokens_details": {
+        "cache_write_tokens": 1075,
+        "cached_tokens": 0
+      },
+      "output_tokens": 256,
+      "output_tokens_details": {
+        "reasoning_tokens": 83
+      },
+      "total_tokens": 1334
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.94,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Republican criticism of the Biden administration's $6 billion Iran prisoner-swap and sanctions-relief deal\",\n  \"conflict_relevance\": \"The article discusses the deal in relation to Hamas's attack on Israel, alleged Iranian support for Hamas, and Americans held hostage in Gaza, but its primary focus is U.S. policy toward Iran.\",\n  \"reason\": \"The Gaza and Israel-Hamas conflict provides important context for the political criticism, yet the article is mainly about the Iran funds and domestic U.S. debate over the prisoner exchange and sanctions enforcement.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:03:22Z",
+  "duration_seconds": 3.69,
+  "error": null
+}

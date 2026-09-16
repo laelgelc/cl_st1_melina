@@ -1,0 +1,65 @@
+{
+  "article_id": "123386591",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_04/gb/123386591.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_04/gb/123386591.json"
+  },
+  "manifest_row": {
+    "article_id": "123386591",
+    "group": "global_north_2025_04",
+    "country_code": "gb",
+    "filepath": "corpus/02_now_organised/global_north_2025_04/gb/123386591.txt"
+  },
+  "screening": {
+    "category": "CORE",
+    "confidence": 0.99,
+    "gaza_role": "central",
+    "main_topic": "Israeli military attacks, blockade, displacement proposals, and the humanitarian crisis in Gaza",
+    "conflict_relevance": "The article is directly and substantially focused on civilian casualties, Israeli military operations, evacuation orders, shortages, blockade conditions, Palestinian displacement, and international responses to the Gaza war.",
+    "reason": "Gaza, Palestinians, Israel's military actions, Hamas, humanitarian deprivation, alleged ethnic cleansing, and international diplomatic responses constitute the article's main subject.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": true
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "486e089cee3192cab7ecc360abd39595521759581a039ecabc9b8da9021b8850",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "345dd68a8eb1cf1f042f12ee4140b816b4cb86560134ef5af462d9143f4a00cf",
+    "raw_response_text_sha256": "41149511aef1ee1a546c54e8110b0535aac68ac11daafcc7a5db88918a9c5cfb"
+  },
+  "api_metadata": {
+    "id": "resp_020fde3005404893006aaa28d8df9487d184ee1b322caca287",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789536472.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1093,
+      "input_tokens_details": {
+        "cache_write_tokens": 1090,
+        "cached_tokens": 0
+      },
+      "output_tokens": 238,
+      "output_tokens_details": {
+        "reasoning_tokens": 84
+      },
+      "total_tokens": 1331
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"CORE\",\n  \"confidence\": 0.99,\n  \"gaza_role\": \"central\",\n  \"main_topic\": \"Israeli military attacks, blockade, displacement proposals, and the humanitarian crisis in Gaza\",\n  \"conflict_relevance\": \"The article is directly and substantially focused on civilian casualties, Israeli military operations, evacuation orders, shortages, blockade conditions, Palestinian displacement, and international responses to the Gaza war.\",\n  \"reason\": \"Gaza, Palestinians, Israel's military actions, Hamas, humanitarian deprivation, alleged ethnic cleansing, and international diplomatic responses constitute the article's main subject.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": true\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T05:27:56Z",
+  "duration_seconds": 3.374,
+  "error": null
+}

@@ -1,0 +1,65 @@
+{
+  "article_id": "123726293",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_04/au/123726293.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_04/au/123726293.json"
+  },
+  "manifest_row": {
+    "article_id": "123726293",
+    "group": "global_north_2025_04",
+    "country_code": "au",
+    "filepath": "corpus/02_now_organised/global_north_2025_04/au/123726293.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "background",
+    "main_topic": "Easter messages of hope from Australian Christian leaders amid global uncertainty",
+    "conflict_relevance": "The article briefly references UNICEF's appeal concerning escalating devastation in Gaza alongside Sudan and Ukraine, placing Gaza within a broader humanitarian discussion.",
+    "reason": "The main focus is Easter, religious hope, charity, and holiday safety. Gaza appears in one meaningful sentence about humanitarian devastation, making the article relevant to broader humanitarian discourse but not to core conflict coverage.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "fc813ca5a363b3df42513995ee67199fc2cfff9bbfc822698a4f20ec74badb45",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "73849e71970abfa3b4c083c473047d9a47769c609fd9bbc7b62f1b8b8a23adfa",
+    "raw_response_text_sha256": "07c402906d7cf42d23f76f60396daa32d0bd72a212cffbedd50c6dd05cf14b56"
+  },
+  "api_metadata": {
+    "id": "resp_08b068f4f89b4935006aaa286499b887d19f05ccca1052b60c",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789536356.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1416,
+      "input_tokens_details": {
+        "cache_write_tokens": 1413,
+        "cached_tokens": 0
+      },
+      "output_tokens": 225,
+      "output_tokens_details": {
+        "reasoning_tokens": 72
+      },
+      "total_tokens": 1641
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Easter messages of hope from Australian Christian leaders amid global uncertainty\",\n  \"conflict_relevance\": \"The article briefly references UNICEF's appeal concerning escalating devastation in Gaza alongside Sudan and Ukraine, placing Gaza within a broader humanitarian discussion.\",\n  \"reason\": \"The main focus is Easter, religious hope, charity, and holiday safety. Gaza appears in one meaningful sentence about humanitarian devastation, making the article relevant to broader humanitarian discourse but not to core conflict coverage.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T05:25:59Z",
+  "duration_seconds": 3.316,
+  "error": null
+}

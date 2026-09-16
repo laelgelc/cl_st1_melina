@@ -1,0 +1,65 @@
+{
+  "article_id": "117968609",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_south_2024_11/ng/117968609.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_south_2024_11/ng/117968609.json"
+  },
+  "manifest_row": {
+    "article_id": "117968609",
+    "group": "global_south_2024_11",
+    "country_code": "ng",
+    "filepath": "corpus/02_now_organised/global_south_2024_11/ng/117968609.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.94,
+    "gaza_role": "passing",
+    "main_topic": "Nigeria's raw-materials processing policy, agricultural exports, and industrial development",
+    "conflict_relevance": "The main article is unrelated to Gaza, but the text includes a substantive embedded news snippet about fuel shortages in Hamas-run Gaza, humanitarian aid disruption, and International Criminal Court arrest warrants.",
+    "reason": "The primary article concerns Nigerian industrial and agricultural policy. Gaza-related discourse appears only in an unrelated embedded article, but that snippet contains meaningful conflict-related content rather than a boilerplate mention.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "8a1f0f16c615c29bc173b9c0b5d92d4cec08cef3125de5f3d26fdb3fb03d5db5",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "2edecc273e60d033aaf7fe32973673a13000b8bad04113a8617d496c443bd358",
+    "raw_response_text_sha256": "55f5186bdc80c64cdca374ec89e1488bceb396a7ba10b043d9496a3a1a53ff14"
+  },
+  "api_metadata": {
+    "id": "resp_03e67c4b94505585006aaa424f104c87d1b26ee17b91dcf9da",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789542991.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2016,
+      "input_tokens_details": {
+        "cache_write_tokens": 2013,
+        "cached_tokens": 0
+      },
+      "output_tokens": 328,
+      "output_tokens_details": {
+        "reasoning_tokens": 166
+      },
+      "total_tokens": 2344
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.94,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Nigeria's raw-materials processing policy, agricultural exports, and industrial development\",\n  \"conflict_relevance\": \"The main article is unrelated to Gaza, but the text includes a substantive embedded news snippet about fuel shortages in Hamas-run Gaza, humanitarian aid disruption, and International Criminal Court arrest warrants.\",\n  \"reason\": \"The primary article concerns Nigerian industrial and agricultural policy. Gaza-related discourse appears only in an unrelated embedded article, but that snippet contains meaningful conflict-related content rather than a boilerplate mention.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T07:16:35Z",
+  "duration_seconds": 4.66,
+  "error": null
+}

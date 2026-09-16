@@ -1,0 +1,65 @@
+{
+  "article_id": "104329599",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_12/ca/104329599.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_12/ca/104329599.json"
+  },
+  "manifest_row": {
+    "article_id": "104329599",
+    "group": "global_north_2023_12",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2023_12/ca/104329599.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "passing",
+    "main_topic": "Winnipeg carjacking and police high-speed chase",
+    "conflict_relevance": "The main article is unrelated to Gaza, but it contains a substantive embedded news item about Israeli troops mistakenly killing three Israeli hostages in the Gaza Strip.",
+    "reason": "The headline and primary article concern a Winnipeg carjacking, arrest, and police pursuit. Gaza appears only in an unrelated embedded snippet, but that snippet contains meaningful conflict-related content, warranting a peripheral classification.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "3e775a14cacdf79ed87424c739bad0ae9087181739b4a3d7aca69a43b201e3c6",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "96f7ac1f53231c5455d9b1029249887e9b71b8b086ed0902850942a913657b0a",
+    "raw_response_text_sha256": "81875fffa57ceffe97098296ceeb2e4bb4e5136c8171f932822c7e1d77aa6355"
+  },
+  "api_metadata": {
+    "id": "resp_0a19f2cce53d04e2006aaa007e0ec887d2ac758b14f7610421",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789526142.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1284,
+      "input_tokens_details": {
+        "cache_write_tokens": 1281,
+        "cached_tokens": 0
+      },
+      "output_tokens": 219,
+      "output_tokens_details": {
+        "reasoning_tokens": 61
+      },
+      "total_tokens": 1503
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Winnipeg carjacking and police high-speed chase\",\n  \"conflict_relevance\": \"The main article is unrelated to Gaza, but it contains a substantive embedded news item about Israeli troops mistakenly killing three Israeli hostages in the Gaza Strip.\",\n  \"reason\": \"The headline and primary article concern a Winnipeg carjacking, arrest, and police pursuit. Gaza appears only in an unrelated embedded snippet, but that snippet contains meaningful conflict-related content, warranting a peripheral classification.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:35:45Z",
+  "duration_seconds": 3.318,
+  "error": null
+}

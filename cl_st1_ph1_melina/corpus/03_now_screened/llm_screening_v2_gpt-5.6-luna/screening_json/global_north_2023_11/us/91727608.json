@@ -1,0 +1,65 @@
+{
+  "article_id": "91727608",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_11/us/91727608.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_11/us/91727608.json"
+  },
+  "manifest_row": {
+    "article_id": "91727608",
+    "group": "global_north_2023_11",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2023_11/us/91727608.txt"
+  },
+  "screening": {
+    "category": "CORE",
+    "confidence": 0.96,
+    "gaza_role": "central",
+    "main_topic": "Israel-Hamas war, Gaza humanitarian crisis, communications blackout, journalism, and related political responses",
+    "conflict_relevance": "The text consists primarily of substantive reporting and linked story summaries about Israel's military response, conditions in Gaza, journalist safety, internet connectivity, political reactions, and disinformation surrounding the conflict.",
+    "reason": "Although formatted as a recommended-stories aggregation containing multiple snippets, most of the material directly concerns Gaza and the Israel-Hamas war and is highly relevant to conflict and media-discourse analysis.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": true
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "2b528080747d50d8e9137ab68f445fc269aa0be8bc837b105029f9263e11e81f",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "7d2ce0613a78c757668249d390ace0f6ea016835e75f2a7db0793c8c2c37041b",
+    "raw_response_text_sha256": "2eeb25a2f17318552d8cc4e3635be12ce786d55fb3663e515dd490a623736e09"
+  },
+  "api_metadata": {
+    "id": "resp_060d9c8808b74edc006aa9ffe9af6887d2907cb484a969517b",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789525993.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1114,
+      "input_tokens_details": {
+        "cache_write_tokens": 1111,
+        "cached_tokens": 0
+      },
+      "output_tokens": 320,
+      "output_tokens_details": {
+        "reasoning_tokens": 154
+      },
+      "total_tokens": 1434
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"CORE\",\n  \"confidence\": 0.96,\n  \"gaza_role\": \"central\",\n  \"main_topic\": \"Israel-Hamas war, Gaza humanitarian crisis, communications blackout, journalism, and related political responses\",\n  \"conflict_relevance\": \"The text consists primarily of substantive reporting and linked story summaries about Israel's military response, conditions in Gaza, journalist safety, internet connectivity, political reactions, and disinformation surrounding the conflict.\",\n  \"reason\": \"Although formatted as a recommended-stories aggregation containing multiple snippets, most of the material directly concerns Gaza and the Israel-Hamas war and is highly relevant to conflict and media-discourse analysis.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": true\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:33:19Z",
+  "duration_seconds": 5.66,
+  "error": null
+}

@@ -1,0 +1,65 @@
+{
+  "article_id": "121929727",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_03/gb/121929727.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_03/gb/121929727.json"
+  },
+  "manifest_row": {
+    "article_id": "121929727",
+    "group": "global_north_2025_03",
+    "country_code": "gb",
+    "filepath": "corpus/02_now_organised/global_north_2025_03/gb/121929727.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.99,
+    "gaza_role": "background",
+    "main_topic": "Ukraine-Russia war, diplomatic negotiations, and European responses to US policy",
+    "conflict_relevance": "The article is overwhelmingly about the Ukraine war and related diplomatic disputes, but includes a substantive background section on proposed Arab plans for Gaza, Hamas, and the future governance of the enclave.",
+    "reason": "Gaza is discussed in several connected sentences concerning an alternative Arab-led plan, the proposed sidelining of Hamas, interim governance, and Palestinian opposition to externally imposed arrangements. However, these references are secondary to the article's main focus on Ukraine.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "2a322b95b667561f3d06085a0a1541578da4b497bfcb8e1a7d432800294d1f45",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "00f9a08b7f4f421553be8ba4810565cd2a4c5924f554500936e82cb4a127b5b6",
+    "raw_response_text_sha256": "87a8cbe1c2395c1c267595d69c626cdf86e4bde0c677e8d8b908e6a2421d4f89"
+  },
+  "api_metadata": {
+    "id": "resp_031b7c4593c07a8c006aaa25d3a33c87d1889b34013206ce8c",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789535699.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 9679,
+      "input_tokens_details": {
+        "cache_write_tokens": 9676,
+        "cached_tokens": 0
+      },
+      "output_tokens": 269,
+      "output_tokens_details": {
+        "reasoning_tokens": 95
+      },
+      "total_tokens": 9948
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.99,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Ukraine-Russia war, diplomatic negotiations, and European responses to US policy\",\n  \"conflict_relevance\": \"The article is overwhelmingly about the Ukraine war and related diplomatic disputes, but includes a substantive background section on proposed Arab plans for Gaza, Hamas, and the future governance of the enclave.\",\n  \"reason\": \"Gaza is discussed in several connected sentences concerning an alternative Arab-led plan, the proposed sidelining of Hamas, interim governance, and Palestinian opposition to externally imposed arrangements. However, these references are secondary to the article's main focus on Ukraine.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T05:15:03Z",
+  "duration_seconds": 4.333,
+  "error": null
+}

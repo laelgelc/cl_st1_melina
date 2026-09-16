@@ -1,0 +1,65 @@
+{
+  "article_id": "111206691",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_07/ca/111206691.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_07/ca/111206691.json"
+  },
+  "manifest_row": {
+    "article_id": "111206691",
+    "group": "global_north_2024_07",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2024_07/ca/111206691.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "background",
+    "main_topic": "Security operations and threats surrounding the 2024 Paris Olympics",
+    "conflict_relevance": "The article briefly situates heightened international tensions in relation to the wars in Ukraine and Gaza, but does not discuss the Gaza conflict substantively.",
+    "reason": "Gaza appears in one meaningful contextual sentence as part of a broader discussion of international tensions; the article is otherwise focused on Olympic security, rail sabotage, and alleged plots.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "3b551d9077432d4aff82721aaeb893d30f6eb3497b571f4f236c7e1eedea6486",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "4d96259002698936ce1bb81e59a20f7174f7f10a0328f787f43c301d58acf63c",
+    "raw_response_text_sha256": "2c1577d0ec223b0af98600a9cdb0cd0c7e4eec676932d2b22d5a9135f8621054"
+  },
+  "api_metadata": {
+    "id": "resp_0cf77ae9aeb58702006aaa12121e0c87d2b39d95496d897dca",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789530642.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1403,
+      "input_tokens_details": {
+        "cache_write_tokens": 1400,
+        "cached_tokens": 0
+      },
+      "output_tokens": 186,
+      "output_tokens_details": {
+        "reasoning_tokens": 37
+      },
+      "total_tokens": 1589
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Security operations and threats surrounding the 2024 Paris Olympics\",\n  \"conflict_relevance\": \"The article briefly situates heightened international tensions in relation to the wars in Ukraine and Gaza, but does not discuss the Gaza conflict substantively.\",\n  \"reason\": \"Gaza appears in one meaningful contextual sentence as part of a broader discussion of international tensions; the article is otherwise focused on Olympic security, rail sabotage, and alleged plots.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:50:44Z",
+  "duration_seconds": 2.903,
+  "error": null
+}

@@ -1,0 +1,65 @@
+{
+  "article_id": "116294392",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_10/gb/116294392.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_10/gb/116294392.json"
+  },
+  "manifest_row": {
+    "article_id": "116294392",
+    "group": "global_north_2024_10",
+    "country_code": "gb",
+    "filepath": "corpus/02_now_organised/global_north_2024_10/gb/116294392.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.94,
+    "gaza_role": "background",
+    "main_topic": "Israeli airstrikes and military targeting of Hezbollah-linked facilities, including hospitals and financial institutions, in Lebanon",
+    "conflict_relevance": "The article is primarily about the Israel-Hezbollah conflict in Lebanon, but it contains meaningful discourse relevant to Gaza, including comparisons between Israeli allegations about hospitals in Lebanon and claims concerning Hamas operations from medical facilities in Gaza, as well as discussion of civilian harm, healthcare targeting, and international law-related ceasefire frameworks.",
+    "reason": "The central focus is Lebanon rather than Gaza or Israel-Palestine, so it is not core coverage of the target conflict. However, its substantial discussion of Israeli military practices, hospitals, humanitarian impacts, and explicit parallels with Gaza makes it useful as peripheral material. The text also contains unrelated embedded snippets about US politics, traffic, and prediction markets.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "c0cb6518da0dd6748ac94cb95a25f4833a52f99b48055493bb3a56b50bdd8838",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "cda6d39b40ae00065c56deba904090589dba74e186686d1a9dd368b06c83dd94",
+    "raw_response_text_sha256": "022578a1d4bd6d53a264a9a3fe070f120d21985bec1ec6fd2630f2b57d8de238"
+  },
+  "api_metadata": {
+    "id": "resp_0e59e8f1f9b4d001006aaa185a196087d2b0d6611653a8d45b",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789532250.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2351,
+      "input_tokens_details": {
+        "cache_write_tokens": 2348,
+        "cached_tokens": 0
+      },
+      "output_tokens": 436,
+      "output_tokens_details": {
+        "reasoning_tokens": 208
+      },
+      "total_tokens": 2787
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.94,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Israeli airstrikes and military targeting of Hezbollah-linked facilities, including hospitals and financial institutions, in Lebanon\",\n  \"conflict_relevance\": \"The article is primarily about the Israel-Hezbollah conflict in Lebanon, but it contains meaningful discourse relevant to Gaza, including comparisons between Israeli allegations about hospitals in Lebanon and claims concerning Hamas operations from medical facilities in Gaza, as well as discussion of civilian harm, healthcare targeting, and international law-related ceasefire frameworks.\",\n  \"reason\": \"The central focus is Lebanon rather than Gaza or Israel-Palestine, so it is not core coverage of the target conflict. However, its substantial discussion of Israeli military practices, hospitals, humanitarian impacts, and explicit parallels with Gaza makes it useful as peripheral material. The text also contains unrelated embedded snippets about US politics, traffic, and prediction markets.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T04:17:35Z",
+  "duration_seconds": 5.83,
+  "error": null
+}

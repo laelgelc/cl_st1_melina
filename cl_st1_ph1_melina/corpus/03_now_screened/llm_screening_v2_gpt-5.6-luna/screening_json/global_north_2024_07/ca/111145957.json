@@ -1,0 +1,65 @@
+{
+  "article_id": "111145957",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_07/ca/111145957.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_07/ca/111145957.json"
+  },
+  "manifest_row": {
+    "article_id": "111145957",
+    "group": "global_north_2024_07",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2024_07/ca/111145957.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.97,
+    "gaza_role": "passing",
+    "main_topic": "Canadian Olympic soccer staff member receiving a suspended sentence for spying on New Zealand's team with a drone",
+    "conflict_relevance": "The main article is unrelated to Gaza or the Israel-Palestine conflict; Gaza appears only in an incidental embedded roundup item.",
+    "reason": "The article's primary subject is an Olympic soccer drone-spying incident. A single passing snippet mentions Israeli officials discussing the war in Gaza and a possible cease-fire, but this is not developed or connected to the main article.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "461965f6a4155c9fbb7679ce704293098cb57061eeb445c0ed5555cd7aecd994",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "58ac7198a8fa4dfa7f1cc23ead5319ec6c6213b8d8e3a530ff8e155d7bb875cf",
+    "raw_response_text_sha256": "8d5de1eb16fd85916df9fc31e96697cb09e946263967822b7c79b5bd48f6bb7b"
+  },
+  "api_metadata": {
+    "id": "resp_082a3ee2915b33bd006aaa120f7c2087d2b4373b918c073d6c",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789530639.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1910,
+      "input_tokens_details": {
+        "cache_write_tokens": 1907,
+        "cached_tokens": 0
+      },
+      "output_tokens": 329,
+      "output_tokens_details": {
+        "reasoning_tokens": 165
+      },
+      "total_tokens": 2239
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.97,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Canadian Olympic soccer staff member receiving a suspended sentence for spying on New Zealand's team with a drone\",\n  \"conflict_relevance\": \"The main article is unrelated to Gaza or the Israel-Palestine conflict; Gaza appears only in an incidental embedded roundup item.\",\n  \"reason\": \"The article's primary subject is an Olympic soccer drone-spying incident. A single passing snippet mentions Israeli officials discussing the war in Gaza and a possible cease-fire, but this is not developed or connected to the main article.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:50:43Z",
+  "duration_seconds": 4.019,
+  "error": null
+}

@@ -1,0 +1,65 @@
+{
+  "article_id": "107190012",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_04/ca/107190012.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_04/ca/107190012.json"
+  },
+  "manifest_row": {
+    "article_id": "107190012",
+    "group": "global_north_2024_04",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2024_04/ca/107190012.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "gaza_role": "passing",
+    "main_topic": "College basketball players and their prospects in the 2024 NBA Draft",
+    "conflict_relevance": "The main article is unrelated to Gaza or the Israel-Palestine conflict. Gaza appears only in an incidental embedded news snippet about regional repercussions of the war.",
+    "reason": "The article centrally discusses Zach Edey, Donovan Clingan, and NBA scouting. The sole conflict-related reference occurs in a separate latest-stories item and does not provide substantive discourse for analysis.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "48049291e930842361dbe0c2a59afca97a7450ceffad5b80854d883b781f97f3",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "0d6aa0b2939a4ff4cddd5f3837439fd7416da388c390770af80f6ed2914e4f71",
+    "raw_response_text_sha256": "4b1c6f4bd5e693b7f333a749cb6f21f2ad4953d19c8c49c6e8da026f2e0e4944"
+  },
+  "api_metadata": {
+    "id": "resp_02f94a4cd93bb34c006aaa0af033bc87d29457fbbe1ae7acb7",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789528816.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2519,
+      "input_tokens_details": {
+        "cache_write_tokens": 2516,
+        "cached_tokens": 0
+      },
+      "output_tokens": 329,
+      "output_tokens_details": {
+        "reasoning_tokens": 170
+      },
+      "total_tokens": 2848
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"College basketball players and their prospects in the 2024 NBA Draft\",\n  \"conflict_relevance\": \"The main article is unrelated to Gaza or the Israel-Palestine conflict. Gaza appears only in an incidental embedded news snippet about regional repercussions of the war.\",\n  \"reason\": \"The article centrally discusses Zach Edey, Donovan Clingan, and NBA scouting. The sole conflict-related reference occurs in a separate latest-stories item and does not provide substantive discourse for analysis.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:20:20Z",
+  "duration_seconds": 4.044,
+  "error": null
+}

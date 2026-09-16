@@ -1,0 +1,65 @@
+{
+  "article_id": "112246549",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_08/us/112246549.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_08/us/112246549.json"
+  },
+  "manifest_row": {
+    "article_id": "112246549",
+    "group": "global_north_2024_08",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2024_08/us/112246549.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "passing",
+    "main_topic": "Chicago parking meter privatization dispute and arbitration ruling",
+    "conflict_relevance": "The main article concerns a Chicago municipal contract dispute, but it includes a separate sentence referring to the Gaza war, its death toll, calls for a ceasefire, and possible political pressure from Kamala Harris.",
+    "reason": "The Gaza-related material is meaningful but peripheral and appears as an unrelated embedded snippet rather than part of the main article's subject.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "7553ce8318ce7868b2b130c799228170d519fd4a4bd6e33e3877fce8340b89dc",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "0cb81f6c493eb0d8c3ac0d09b57911a455e80e40bb8c95ad5211e3e3869e27c8",
+    "raw_response_text_sha256": "99a03e57f5232b2c01e1d6f9eaa29288ca72f0b7caa75a323b5f7c20f4a94f6d"
+  },
+  "api_metadata": {
+    "id": "resp_06c390cb7fb2463a006aaa14fb0f2487d2840adbb14817e3af",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789531387.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2003,
+      "input_tokens_details": {
+        "cache_write_tokens": 2000,
+        "cached_tokens": 0
+      },
+      "output_tokens": 230,
+      "output_tokens_details": {
+        "reasoning_tokens": 79
+      },
+      "total_tokens": 2233
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Chicago parking meter privatization dispute and arbitration ruling\",\n  \"conflict_relevance\": \"The main article concerns a Chicago municipal contract dispute, but it includes a separate sentence referring to the Gaza war, its death toll, calls for a ceasefire, and possible political pressure from Kamala Harris.\",\n  \"reason\": \"The Gaza-related material is meaningful but peripheral and appears as an unrelated embedded snippet rather than part of the main article's subject.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T04:03:10Z",
+  "duration_seconds": 3.974,
+  "error": null
+}

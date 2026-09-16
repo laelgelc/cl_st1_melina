@@ -1,0 +1,65 @@
+{
+  "article_id": "105159674",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_01/ca/105159674.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_01/ca/105159674.json"
+  },
+  "manifest_row": {
+    "article_id": "105159674",
+    "group": "global_north_2024_01",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2024_01/ca/105159674.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.96,
+    "gaza_role": "passing",
+    "main_topic": "Homelessness and cold-weather shelter provision in Vancouver",
+    "conflict_relevance": "The main article concerns homelessness in Vancouver, but an embedded roundup item briefly discusses Canadian visa processing for 144 people in Gaza seeking family reunification.",
+    "reason": "The Gaza reference is meaningful but limited to a single unrelated news snippet and is not developed in the main article.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "30d7cf1d95b4f632649c02b431e167d2c9fa63e1e62ce7953cd27c24a0ec993b",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "2782b5a01f22ba516363953a94d59181996453d9bb85a7d512e9a2b633d60d7e",
+    "raw_response_text_sha256": "6b070f38888ceef449386a88f6ebe1d1f65063d7a8f30de294639c830429d179"
+  },
+  "api_metadata": {
+    "id": "resp_063cd670a67b3a32006aaa03a7fa0c87d2a7ed80f2522d3c76",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789526952.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1881,
+      "input_tokens_details": {
+        "cache_write_tokens": 1878,
+        "cached_tokens": 0
+      },
+      "output_tokens": 200,
+      "output_tokens_details": {
+        "reasoning_tokens": 63
+      },
+      "total_tokens": 2081
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.96,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Homelessness and cold-weather shelter provision in Vancouver\",\n  \"conflict_relevance\": \"The main article concerns homelessness in Vancouver, but an embedded roundup item briefly discusses Canadian visa processing for 144 people in Gaza seeking family reunification.\",\n  \"reason\": \"The Gaza reference is meaningful but limited to a single unrelated news snippet and is not developed in the main article.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:49:14Z",
+  "duration_seconds": 3.016,
+  "error": null
+}

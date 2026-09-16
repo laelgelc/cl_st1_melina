@@ -1,0 +1,65 @@
+{
+  "article_id": "200280119",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_03/us/200280119.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_03/us/200280119.json"
+  },
+  "manifest_row": {
+    "article_id": "200280119",
+    "group": "global_north_2024_03",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2024_03/us/200280119.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "background",
+    "main_topic": "Morning news roundup covering U.S. politics, economics, public safety, environmental disasters, TikTok legislation, and Gaza aid drops",
+    "conflict_relevance": "Includes a substantive section on humanitarian food airdrops over Gaza, criticism of their inadequacy, famine risk, dangerous distribution conditions, and lack of electricity after five months of war.",
+    "reason": "The article is primarily a multi-topic news newsletter rather than coverage centered on Gaza or the Israel-Hamas war. However, its detailed Gaza segment provides meaningful discourse on humanitarian conditions and aid delivery, making it relevant as peripheral material.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "a68f73b259c8bd63bc5b944a3fb0b3b91d001f5058540ad38863012053755460",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "b99f575483a08674dc20d628ff94e88a50e9453f317cd4b81b5f3cbb936bdc1d",
+    "raw_response_text_sha256": "fdf218a6ef64898f1ac31a04a7e298557497db7887028185769232cd4b2ef76f"
+  },
+  "api_metadata": {
+    "id": "resp_0a7848db40873551006aaa0a3101bc87d2be516ea8c75ee2c9",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789528625.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2300,
+      "input_tokens_details": {
+        "cache_write_tokens": 2297,
+        "cached_tokens": 0
+      },
+      "output_tokens": 286,
+      "output_tokens_details": {
+        "reasoning_tokens": 104
+      },
+      "total_tokens": 2586
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Morning news roundup covering U.S. politics, economics, public safety, environmental disasters, TikTok legislation, and Gaza aid drops\",\n  \"conflict_relevance\": \"Includes a substantive section on humanitarian food airdrops over Gaza, criticism of their inadequacy, famine risk, dangerous distribution conditions, and lack of electricity after five months of war.\",\n  \"reason\": \"The article is primarily a multi-topic news newsletter rather than coverage centered on Gaza or the Israel-Hamas war. However, its detailed Gaza segment provides meaningful discourse on humanitarian conditions and aid delivery, making it relevant as peripheral material.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:17:08Z",
+  "duration_seconds": 4.1,
+  "error": null
+}

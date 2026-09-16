@@ -1,0 +1,65 @@
+{
+  "article_id": "103031817",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_10/nz/103031817.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_10/nz/103031817.json"
+  },
+  "manifest_row": {
+    "article_id": "103031817",
+    "group": "global_north_2023_10",
+    "country_code": "nz",
+    "filepath": "corpus/02_now_organised/global_north_2023_10/nz/103031817.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "background",
+    "main_topic": "Smart lighting technology, interoperability standards, artificial intelligence, and sustainable lighting development",
+    "conflict_relevance": "The main article is unrelated to the Gaza conflict, but it includes several substantial embedded news snippets concerning Israeli hostages, the forced displacement order for Palestinians in northern Gaza, humanitarian risks, communications infrastructure, and alleged violations of international humanitarian law.",
+    "reason": "The lighting-industry article is the primary content, while the Gaza-related material appears as unrelated embedded news items. Because those items contain meaningful conflict discourse, the article is peripheral rather than excluded.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "f27af67702c2a29dae59da8a6ad15d287a0d420d7651770b3b06b912f3780915",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "83dca04a0f447878e04605cda0d88e41929b01ccfad04489db69cfb74e6ffb7b",
+    "raw_response_text_sha256": "c247b30daa4de44058ce9b855f10dea5d3444f2b32d4a19b4034e24e91f6efc5"
+  },
+  "api_metadata": {
+    "id": "resp_02b1a6b88c7bc33a006aa9f830164487d29a0bbfea128f6180",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789524016.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2151,
+      "input_tokens_details": {
+        "cache_write_tokens": 2148,
+        "cached_tokens": 0
+      },
+      "output_tokens": 325,
+      "output_tokens_details": {
+        "reasoning_tokens": 150
+      },
+      "total_tokens": 2476
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Smart lighting technology, interoperability standards, artificial intelligence, and sustainable lighting development\",\n  \"conflict_relevance\": \"The main article is unrelated to the Gaza conflict, but it includes several substantial embedded news snippets concerning Israeli hostages, the forced displacement order for Palestinians in northern Gaza, humanitarian risks, communications infrastructure, and alleged violations of international humanitarian law.\",\n  \"reason\": \"The lighting-industry article is the primary content, while the Gaza-related material appears as unrelated embedded news items. Because those items contain meaningful conflict discourse, the article is peripheral rather than excluded.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:00:20Z",
+  "duration_seconds": 4.334,
+  "error": null
+}

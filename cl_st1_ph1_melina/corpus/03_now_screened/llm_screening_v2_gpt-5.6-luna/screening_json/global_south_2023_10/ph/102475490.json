@@ -1,0 +1,65 @@
+{
+  "article_id": "102475490",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_south_2023_10/ph/102475490.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_south_2023_10/ph/102475490.json"
+  },
+  "manifest_row": {
+    "article_id": "102475490",
+    "group": "global_south_2023_10",
+    "country_code": "ph",
+    "filepath": "corpus/02_now_organised/global_south_2023_10/ph/102475490.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.97,
+    "gaza_role": "passing",
+    "main_topic": "Philippine inflation and rice prices",
+    "conflict_relevance": "The article is primarily about inflation but includes a meaningful passing reference to Filipinos in Israel near Gaza who were unaccounted for and feared abducted by Hamas, as well as a brief mention of the Israel-Hamas conflict in a news roundup.",
+    "reason": "The Israel-Hamas conflict is not the article's subject, but it receives more than a purely boilerplate mention through a specific report about missing Filipino workers and Hamas attacks.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "abaa7e148a00f4ded76359282af7c41e7797070886dead571c38af45ff984668",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "e2b091f6b03538a80c3a7229619446c1d9b49967aebce00fa34e12ea0e68cec2",
+    "raw_response_text_sha256": "df8b5c9c3ad5cedc0862dc94e25d426595082f0eec8209c5744317a35c706705"
+  },
+  "api_metadata": {
+    "id": "resp_0f4bfd232ef97899006aaa33caed2887d18c6a148d0e2a3146",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789539275.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1142,
+      "input_tokens_details": {
+        "cache_write_tokens": 1139,
+        "cached_tokens": 0
+      },
+      "output_tokens": 261,
+      "output_tokens_details": {
+        "reasoning_tokens": 95
+      },
+      "total_tokens": 1403
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.97,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Philippine inflation and rice prices\",\n  \"conflict_relevance\": \"The article is primarily about inflation but includes a meaningful passing reference to Filipinos in Israel near Gaza who were unaccounted for and feared abducted by Hamas, as well as a brief mention of the Israel-Hamas conflict in a news roundup.\",\n  \"reason\": \"The Israel-Hamas conflict is not the article's subject, but it receives more than a purely boilerplate mention through a specific report about missing Filipino workers and Hamas attacks.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T06:14:39Z",
+  "duration_seconds": 4.244,
+  "error": null
+}

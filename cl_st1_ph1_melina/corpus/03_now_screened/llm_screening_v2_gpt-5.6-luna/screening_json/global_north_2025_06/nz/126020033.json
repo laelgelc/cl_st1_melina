@@ -1,0 +1,65 @@
+{
+  "article_id": "126020033",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_06/nz/126020033.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_06/nz/126020033.json"
+  },
+  "manifest_row": {
+    "article_id": "126020033",
+    "group": "global_north_2025_06",
+    "country_code": "nz",
+    "filepath": "corpus/02_now_organised/global_north_2025_06/nz/126020033.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.93,
+    "gaza_role": "passing",
+    "main_topic": "New Zealand and global economic and financial developments",
+    "conflict_relevance": "The main article is an economic briefing with no substantive coverage of Gaza or the Israel-Palestine conflict. Gaza and Hamas appear only briefly in an appended reader-comment discussion about Iran and regional politics.",
+    "reason": "The conflict-related material is confined to incidental comment-section content and does not form part of the article's main discourse or subject matter.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "e48d70e9fcf757b2e7516c3ad8fe4c1d9325bdee4f3ff06066cb3331e762b702",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "7fe8a05c9f97714002ac1d0f91d185f77f33ce05c785b844f3717d24512e3c98",
+    "raw_response_text_sha256": "18665927e08201bdd391e949fde1fff99aa30d074e617e5914a6f5052d499d49"
+  },
+  "api_metadata": {
+    "id": "resp_0d046cbc919f678b006aaa3073897487d1acb81bdeb835d5dd",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789538419.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2662,
+      "input_tokens_details": {
+        "cache_write_tokens": 2659,
+        "cached_tokens": 0
+      },
+      "output_tokens": 397,
+      "output_tokens_details": {
+        "reasoning_tokens": 248
+      },
+      "total_tokens": 3059
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.93,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"New Zealand and global economic and financial developments\",\n  \"conflict_relevance\": \"The main article is an economic briefing with no substantive coverage of Gaza or the Israel-Palestine conflict. Gaza and Hamas appear only briefly in an appended reader-comment discussion about Iran and regional politics.\",\n  \"reason\": \"The conflict-related material is confined to incidental comment-section content and does not form part of the article's main discourse or subject matter.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T06:00:26Z",
+  "duration_seconds": 6.767,
+  "error": null
+}

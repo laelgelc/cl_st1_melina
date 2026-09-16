@@ -1,0 +1,65 @@
+{
+  "article_id": "104955177",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_01/us/104955177.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_01/us/104955177.json"
+  },
+  "manifest_row": {
+    "article_id": "104955177",
+    "group": "global_north_2024_01",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2024_01/us/104955177.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "background",
+    "main_topic": "Iraq's negotiations over the continued presence of U.S. forces",
+    "conflict_relevance": "The article primarily concerns U.S.-Iraq relations, Iranian-backed militias, and the U.S. military presence in Iraq, but it connects these issues to the Gaza war and regional escalation, including militia attacks following Israel's invasion of Gaza.",
+    "reason": "Gaza is meaningful geopolitical context for the article's discussion of regional security and attacks on U.S. troops, but the central subject is Iraq's position on U.S. forces rather than the Gaza conflict itself.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "a332c9f42ba1f3bc8555b301b7726409dbd7562028b3d93a67defb701730588b",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "3f1a989d17928150c1f94f9ca4af7f24047dd48f1e3d1da624443310a513a50e",
+    "raw_response_text_sha256": "c86ecd7f7bafa9f14ee115cdc5a8a657b72295ff962e7a3fa3e272c0fea255b8"
+  },
+  "api_metadata": {
+    "id": "resp_08402026ef270e10006aaa04a42e9487d2a980950f289218dc",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789527204.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1328,
+      "input_tokens_details": {
+        "cache_write_tokens": 1325,
+        "cached_tokens": 0
+      },
+      "output_tokens": 246,
+      "output_tokens_details": {
+        "reasoning_tokens": 66
+      },
+      "total_tokens": 1574
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Iraq's negotiations over the continued presence of U.S. forces\",\n  \"conflict_relevance\": \"The article primarily concerns U.S.-Iraq relations, Iranian-backed militias, and the U.S. military presence in Iraq, but it connects these issues to the Gaza war and regional escalation, including militia attacks following Israel's invasion of Gaza.\",\n  \"reason\": \"Gaza is meaningful geopolitical context for the article's discussion of regional security and attacks on U.S. troops, but the central subject is Iraq's position on U.S. forces rather than the Gaza conflict itself.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:53:26Z",
+  "duration_seconds": 2.908,
+  "error": null
+}

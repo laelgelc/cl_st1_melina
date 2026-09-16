@@ -1,0 +1,65 @@
+{
+  "article_id": "103154549",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_11/ca/103154549.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_11/ca/103154549.json"
+  },
+  "manifest_row": {
+    "article_id": "103154549",
+    "group": "global_north_2023_11",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2023_11/ca/103154549.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "background",
+    "main_topic": "Mexican muerteadas and Day of the Dead cultural traditions",
+    "conflict_relevance": "The main article is unrelated to Gaza, but embedded news snippets contain substantive references to the Israel-Hamas war, the humanitarian situation in Gaza, antisemitic and Islamophobic hate crimes, and Canadians seeking to leave Gaza.",
+    "reason": "The headline and principal article concern a traditional Mexican festival. However, the text includes several meaningful but apparently unrelated news items about Gaza and conflict-related hate crimes, making it peripheral rather than core.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "7215618a5e67f24cb188a14f3f5d16f54d896a45bc6d525664f302725983f170",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "18c6ac164c55bca5babc4e0d403f01a806d49a66a672dea5b88c724326d92372",
+    "raw_response_text_sha256": "dc9a5306da66a88065b0e4172a2966ffb0d39c943a532c90847ed9a3cdb4813c"
+  },
+  "api_metadata": {
+    "id": "resp_0e3e2c53c6bf1775006aa9fba0c26087d29b37784e232223ce",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789524896.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2258,
+      "input_tokens_details": {
+        "cache_write_tokens": 2255,
+        "cached_tokens": 0
+      },
+      "output_tokens": 282,
+      "output_tokens_details": {
+        "reasoning_tokens": 113
+      },
+      "total_tokens": 2540
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Mexican muerteadas and Day of the Dead cultural traditions\",\n  \"conflict_relevance\": \"The main article is unrelated to Gaza, but embedded news snippets contain substantive references to the Israel-Hamas war, the humanitarian situation in Gaza, antisemitic and Islamophobic hate crimes, and Canadians seeking to leave Gaza.\",\n  \"reason\": \"The headline and principal article concern a traditional Mexican festival. However, the text includes several meaningful but apparently unrelated news items about Gaza and conflict-related hate crimes, making it peripheral rather than core.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:15:00Z",
+  "duration_seconds": 4.362,
+  "error": null
+}

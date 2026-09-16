@@ -1,0 +1,65 @@
+{
+  "article_id": "104586795",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_south_2023_12/in/104586795.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_south_2023_12/in/104586795.json"
+  },
+  "manifest_row": {
+    "article_id": "104586795",
+    "group": "global_south_2023_12",
+    "country_code": "in",
+    "filepath": "corpus/02_now_organised/global_south_2023_12/in/104586795.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.94,
+    "gaza_role": "background",
+    "main_topic": "Houthi attacks on Red Sea shipping and India's maritime security response",
+    "conflict_relevance": "The article briefly connects Houthi attacks on shipping to retaliation for Israel's military actions in Gaza, but its main focus is regional maritime security, India-linked vessels, and the international naval response.",
+    "reason": "Gaza is meaningfully mentioned as the stated context for the Houthi attacks, yet the article is primarily about Red Sea shipping disruption and India's security policy rather than the Gaza conflict itself.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "1d48999a419a5575bea229020aee9034b6e54cd8b501bedfc9e2d09060bd802d",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "09f032092ed960a8b895224612e1f1a9555cf660d4a9de8b4cbb53327dc3db46",
+    "raw_response_text_sha256": "16624ce17c6c2d3ba4103f5d97d99b05a87e1ab590e507f54996accc99d146c9"
+  },
+  "api_metadata": {
+    "id": "resp_0c2fbec53b1e0844006aaa36dba53887d1a84781530fadf953",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789540059.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1310,
+      "input_tokens_details": {
+        "cache_write_tokens": 1307,
+        "cached_tokens": 0
+      },
+      "output_tokens": 221,
+      "output_tokens_details": {
+        "reasoning_tokens": 55
+      },
+      "total_tokens": 1531
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.94,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Houthi attacks on Red Sea shipping and India's maritime security response\",\n  \"conflict_relevance\": \"The article briefly connects Houthi attacks on shipping to retaliation for Israel's military actions in Gaza, but its main focus is regional maritime security, India-linked vessels, and the international naval response.\",\n  \"reason\": \"Gaza is meaningfully mentioned as the stated context for the Houthi attacks, yet the article is primarily about Red Sea shipping disruption and India's security policy rather than the Gaza conflict itself.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T06:27:43Z",
+  "duration_seconds": 3.544,
+  "error": null
+}

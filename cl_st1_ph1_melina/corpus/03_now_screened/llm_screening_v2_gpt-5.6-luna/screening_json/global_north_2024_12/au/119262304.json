@@ -1,0 +1,65 @@
+{
+  "article_id": "119262304",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_12/au/119262304.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_12/au/119262304.json"
+  },
+  "manifest_row": {
+    "article_id": "119262304",
+    "group": "global_north_2024_12",
+    "country_code": "au",
+    "filepath": "corpus/02_now_organised/global_north_2024_12/au/119262304.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "passing",
+    "main_topic": "The famine and humanitarian crisis caused by Sudan's ongoing war",
+    "conflict_relevance": "The article is primarily about Sudan, but briefly notes that Gaza's Palestinian population also faces the threat of famine, connecting it to broader discourse on conflict-related humanitarian crises.",
+    "reason": "Gaza appears in one substantive concluding sentence about famine risk, but the article contains no further discussion of Gaza, Palestine, or the Israel-Hamas war.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "45ae019ef113850d120352f4f2c96feee5dbee96e4c154ede742dcd4da585193",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "71b3ddd462ef75b76b915e61b80cc6110e1fec36abcb816e23a3c56c7da35b04",
+    "raw_response_text_sha256": "7587943d7a4014684244bbe07ab6f4ae780961d9fdbeaa16dc6fbacfc8668929"
+  },
+  "api_metadata": {
+    "id": "resp_02f9c5fce8b145a4006aaa1cf4fdb887d2a443661519953697",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789533429.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1586,
+      "input_tokens_details": {
+        "cache_write_tokens": 1583,
+        "cached_tokens": 0
+      },
+      "output_tokens": 230,
+      "output_tokens_details": {
+        "reasoning_tokens": 79
+      },
+      "total_tokens": 1816
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"The famine and humanitarian crisis caused by Sudan's ongoing war\",\n  \"conflict_relevance\": \"The article is primarily about Sudan, but briefly notes that Gaza's Palestinian population also faces the threat of famine, connecting it to broader discourse on conflict-related humanitarian crises.\",\n  \"reason\": \"Gaza appears in one substantive concluding sentence about famine risk, but the article contains no further discussion of Gaza, Palestine, or the Israel-Hamas war.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T04:37:11Z",
+  "duration_seconds": 2.848,
+  "error": null
+}

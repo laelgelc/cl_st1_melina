@@ -1,0 +1,65 @@
+{
+  "article_id": "117261631",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_11/ca/117261631.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_11/ca/117261631.json"
+  },
+  "manifest_row": {
+    "article_id": "117261631",
+    "group": "global_north_2024_11",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2024_11/ca/117261631.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "gaza_role": "boilerplate_or_unrelated",
+    "main_topic": "Spartan Delta Corp. third-quarter financial and operational results and 2024 guidance",
+    "conflict_relevance": "Gaza appears only as one item in a generic risk disclosure listing wars and geopolitical uncertainties; the article does not discuss the conflict.",
+    "reason": "The press release is entirely about an oil and gas company's operations, financial performance, drilling activity, and forecasts. Its sole reference to Gaza is a boilerplate mention of the Israel-Hamas conflict in a list of potential business risks.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "652d371e8249ef669cf5a0f17f340dcf04be08b52bfcefc0480b5d23e4752ba3",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "a22b2c9ade45824c53d5ec0ff6d5febbdb90523fba39b884cfa3e877e1f17c4b",
+    "raw_response_text_sha256": "398f5a01c902a625474ee26465207312e69b006335d1f346811cfd8b6cf855eb"
+  },
+  "api_metadata": {
+    "id": "resp_016d122967b8ef5e006aaa1a30ef2487d2a016ec443d22f88a",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789532720.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 8296,
+      "input_tokens_details": {
+        "cache_write_tokens": 8293,
+        "cached_tokens": 0
+      },
+      "output_tokens": 212,
+      "output_tokens_details": {
+        "reasoning_tokens": 44
+      },
+      "total_tokens": 8508
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"gaza_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Spartan Delta Corp. third-quarter financial and operational results and 2024 guidance\",\n  \"conflict_relevance\": \"Gaza appears only as one item in a generic risk disclosure listing wars and geopolitical uncertainties; the article does not discuss the conflict.\",\n  \"reason\": \"The press release is entirely about an oil and gas company's operations, financial performance, drilling activity, and forecasts. Its sole reference to Gaza is a boilerplate mention of the Israel-Hamas conflict in a list of potential business risks.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T04:25:23Z",
+  "duration_seconds": 4.786,
+  "error": null
+}

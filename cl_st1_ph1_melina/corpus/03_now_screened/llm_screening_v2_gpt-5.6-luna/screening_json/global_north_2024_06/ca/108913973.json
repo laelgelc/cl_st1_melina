@@ -1,0 +1,65 @@
+{
+  "article_id": "108913973",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_06/ca/108913973.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_06/ca/108913973.json"
+  },
+  "manifest_row": {
+    "article_id": "108913973",
+    "group": "global_north_2024_06",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2024_06/ca/108913973.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "passing",
+    "main_topic": "Calgary businesses reducing water usage during municipal water restrictions",
+    "conflict_relevance": "The article contains an unrelated news snippet about an Israeli hostage rescue operation in Gaza and reported Palestinian deaths, but the main article is about water conservation in Calgary.",
+    "reason": "The Gaza-related content is a substantive but isolated embedded news item within an otherwise unrelated local business article. It is relevant to conflict discourse only peripherally and should not be included in the main corpus.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "94afffcd6b3fcb24ed4437a03116c5fa7a58ae6d30d856ad22e58c4cf49107dd",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "2c41b853961e2ed44788d2cd311877d308dd9d4c37ed505a4222f8de12abd089",
+    "raw_response_text_sha256": "5522fb6f04dc8c70609f6e485be85eb92a1fcfc2c63a571e60eca88867cccb85"
+  },
+  "api_metadata": {
+    "id": "resp_0acb889642c5c0d7006aaa102b337887d2b81132f71f8f832a",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789530155.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1547,
+      "input_tokens_details": {
+        "cache_write_tokens": 1544,
+        "cached_tokens": 0
+      },
+      "output_tokens": 230,
+      "output_tokens_details": {
+        "reasoning_tokens": 73
+      },
+      "total_tokens": 1777
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Calgary businesses reducing water usage during municipal water restrictions\",\n  \"conflict_relevance\": \"The article contains an unrelated news snippet about an Israeli hostage rescue operation in Gaza and reported Palestinian deaths, but the main article is about water conservation in Calgary.\",\n  \"reason\": \"The Gaza-related content is a substantive but isolated embedded news item within an otherwise unrelated local business article. It is relevant to conflict discourse only peripherally and should not be included in the main corpus.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:42:38Z",
+  "duration_seconds": 3.064,
+  "error": null
+}

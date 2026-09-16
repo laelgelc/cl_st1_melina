@@ -1,0 +1,65 @@
+{
+  "article_id": "103053889",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_south_2023_10/in/103053889.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_south_2023_10/in/103053889.json"
+  },
+  "manifest_row": {
+    "article_id": "103053889",
+    "group": "global_south_2023_10",
+    "country_code": "in",
+    "filepath": "corpus/02_now_organised/global_south_2023_10/in/103053889.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "background",
+    "main_topic": "U.S. stock-market performance ahead of central-bank decisions and corporate earnings",
+    "conflict_relevance": "The article briefly reports Israeli military operations in Gaza and frames the conflict as a geopolitical and market-risk factor.",
+    "reason": "The article is primarily a financial-market report. Its Gaza coverage consists of a short but meaningful passage about Israeli troops and tanks attacking Gaza and the effect of the offensive on investor risk perceptions, making it relevant to broader conflict discourse but not core conflict coverage.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "5a0582d62f988630cc90afa67049f3f1c94a6f1dd8b370687679b1d4d7704b00",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "50bcd621960e783f5d5b336f22d6c5ed89b017767ce087285543a0a11313c8ab",
+    "raw_response_text_sha256": "0025a11831c4c2d5ed7099f7a6c8216aee9a286eabe3cf9ad98215c7d3bb48d5"
+  },
+  "api_metadata": {
+    "id": "resp_0a7e0196e7466471006aaa334b316087d1b008021abda32104",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789539147.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1345,
+      "input_tokens_details": {
+        "cache_write_tokens": 1342,
+        "cached_tokens": 0
+      },
+      "output_tokens": 236,
+      "output_tokens_details": {
+        "reasoning_tokens": 75
+      },
+      "total_tokens": 1581
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"U.S. stock-market performance ahead of central-bank decisions and corporate earnings\",\n  \"conflict_relevance\": \"The article briefly reports Israeli military operations in Gaza and frames the conflict as a geopolitical and market-risk factor.\",\n  \"reason\": \"The article is primarily a financial-market report. Its Gaza coverage consists of a short but meaningful passage about Israeli troops and tanks attacking Gaza and the effect of the offensive on investor risk perceptions, making it relevant to broader conflict discourse but not core conflict coverage.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T06:12:30Z",
+  "duration_seconds": 3.777,
+  "error": null
+}

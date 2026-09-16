@@ -1,0 +1,65 @@
+{
+  "article_id": "108624278",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_05/us/108624278.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_05/us/108624278.json"
+  },
+  "manifest_row": {
+    "article_id": "108624278",
+    "group": "global_north_2024_05",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2024_05/us/108624278.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.97,
+    "gaza_role": "passing",
+    "main_topic": "U.S. presidential election politics and Biden campaign messaging against Donald Trump",
+    "conflict_relevance": "Gaza is mentioned only briefly as one factor contributing to discontent among progressive Democratic voters.",
+    "reason": "The article focuses on the 2024 U.S. election, Donald Trump's legal troubles, celebrity endorsements, and political campaign strategy. Its sole reference to Gaza is a passing list item with no substantive discussion.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "db1a30bb80d629a90999f856e758551ddea2443e6f4291b808cb20d7b7364191",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "8fe5e236145cf907541ff50539105a4f90d72acf80db6d43fd5a740077d7c9a7",
+    "raw_response_text_sha256": "c79d015da4e07f5782ce0dc1d599e4d67bae35f27e1f53c3d48337140798ef2c"
+  },
+  "api_metadata": {
+    "id": "resp_071bfee2a76fb149006aaa0f387e3887d2a3b88ebe5b364426",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789529912.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1551,
+      "input_tokens_details": {
+        "cache_write_tokens": 1548,
+        "cached_tokens": 0
+      },
+      "output_tokens": 206,
+      "output_tokens_details": {
+        "reasoning_tokens": 59
+      },
+      "total_tokens": 1757
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.97,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"U.S. presidential election politics and Biden campaign messaging against Donald Trump\",\n  \"conflict_relevance\": \"Gaza is mentioned only briefly as one factor contributing to discontent among progressive Democratic voters.\",\n  \"reason\": \"The article focuses on the 2024 U.S. election, Donald Trump's legal troubles, celebrity endorsements, and political campaign strategy. Its sole reference to Gaza is a passing list item with no substantive discussion.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:38:35Z",
+  "duration_seconds": 2.839,
+  "error": null
+}

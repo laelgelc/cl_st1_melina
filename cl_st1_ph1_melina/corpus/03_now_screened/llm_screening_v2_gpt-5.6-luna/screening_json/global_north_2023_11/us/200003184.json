@@ -1,0 +1,65 @@
+{
+  "article_id": "200003184",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_11/us/200003184.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_11/us/200003184.json"
+  },
+  "manifest_row": {
+    "article_id": "200003184",
+    "group": "global_north_2023_11",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2023_11/us/200003184.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.94,
+    "gaza_role": "background",
+    "main_topic": "Weekly news and photo roundup covering domestic politics, international events, culture, sports, and holiday content",
+    "conflict_relevance": "The roundup includes multiple substantive references to the Gaza war, including conditions at Al-Shifa Hospital, Israeli military operations, Palestinian civilian casualties, an Israeli soldier killed in Gaza, and a pro-Israel march in Washington.",
+    "reason": "The article is primarily a general-news newsletter and photo roundup rather than focused conflict coverage, but its Gaza-related items are repeated and meaningful enough to support peripheral discourse analysis.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "39fe5b63bff39edc89076781a53b600f4be899909f38106a820b4ba5f9b4747d",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "76337452cb68714ff6a95c796a47c506634a9ea1be577944dd141c14e7f61566",
+    "raw_response_text_sha256": "06e17e654d6efdc404780bd84afedb8558e314eebfca7f47fa260dc4736c221f"
+  },
+  "api_metadata": {
+    "id": "resp_09ea30803617da78006aa9ff264bd487d283657de9b277c0a8",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789525798.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 3661,
+      "input_tokens_details": {
+        "cache_write_tokens": 3658,
+        "cached_tokens": 0
+      },
+      "output_tokens": 372,
+      "output_tokens_details": {
+        "reasoning_tokens": 201
+      },
+      "total_tokens": 4033
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.94,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Weekly news and photo roundup covering domestic politics, international events, culture, sports, and holiday content\",\n  \"conflict_relevance\": \"The roundup includes multiple substantive references to the Gaza war, including conditions at Al-Shifa Hospital, Israeli military operations, Palestinian civilian casualties, an Israeli soldier killed in Gaza, and a pro-Israel march in Washington.\",\n  \"reason\": \"The article is primarily a general-news newsletter and photo roundup rather than focused conflict coverage, but its Gaza-related items are repeated and meaningful enough to support peripheral discourse analysis.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:30:03Z",
+  "duration_seconds": 5.244,
+  "error": null
+}

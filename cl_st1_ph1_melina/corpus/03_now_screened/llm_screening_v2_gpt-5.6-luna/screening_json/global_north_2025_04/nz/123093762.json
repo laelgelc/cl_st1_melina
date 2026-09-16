@@ -1,0 +1,65 @@
+{
+  "article_id": "123093762",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_04/nz/123093762.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_04/nz/123093762.json"
+  },
+  "manifest_row": {
+    "article_id": "123093762",
+    "group": "global_north_2025_04",
+    "country_code": "nz",
+    "filepath": "corpus/02_now_organised/global_north_2025_04/nz/123093762.txt"
+  },
+  "screening": {
+    "category": "CORE",
+    "confidence": 1.0,
+    "gaza_role": "central",
+    "main_topic": "Daily reporting on Israeli airstrikes in Gaza and Israeli military, settler, and occupation-related actions across the West Bank",
+    "conflict_relevance": "The article is directly and extensively concerned with deaths and injuries in Gaza, Israeli military operations, restrictions, raids, arrests, demolitions, settler violence, land seizure, and broader Palestinian displacement and occupation.",
+    "reason": "Gaza casualties are reported prominently, while most of the text documents contemporaneous Israeli military and settler actions affecting Palestinians in the West Bank. The closing biographical material also explicitly frames the report within Palestinian dispossession and human-rights advocacy.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": true
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "dde71dec463ceb2a2f2dea43afb9a0276a0df248b6ab180cf8ff32c1157efa4d",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "29c00c89683bf55282e54a15a1f52f19d037a14db705fe5472fcacc993b2a55c",
+    "raw_response_text_sha256": "ba7f2895d1208e2ef996a12cec9d3001e874572273214e3ce725e976028b7fb4"
+  },
+  "api_metadata": {
+    "id": "resp_0eb9ebfc8c785474006aaa2999613887d1ba82fa53d93ae677",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789536665.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1779,
+      "input_tokens_details": {
+        "cache_write_tokens": 1776,
+        "cached_tokens": 0
+      },
+      "output_tokens": 272,
+      "output_tokens_details": {
+        "reasoning_tokens": 85
+      },
+      "total_tokens": 2051
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"CORE\",\n  \"confidence\": 1.0,\n  \"gaza_role\": \"central\",\n  \"main_topic\": \"Daily reporting on Israeli airstrikes in Gaza and Israeli military, settler, and occupation-related actions across the West Bank\",\n  \"conflict_relevance\": \"The article is directly and extensively concerned with deaths and injuries in Gaza, Israeli military operations, restrictions, raids, arrests, demolitions, settler violence, land seizure, and broader Palestinian displacement and occupation.\",\n  \"reason\": \"Gaza casualties are reported prominently, while most of the text documents contemporaneous Israeli military and settler actions affecting Palestinians in the West Bank. The closing biographical material also explicitly frames the report within Palestinian dispossession and human-rights advocacy.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": true\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T05:31:08Z",
+  "duration_seconds": 3.655,
+  "error": null
+}

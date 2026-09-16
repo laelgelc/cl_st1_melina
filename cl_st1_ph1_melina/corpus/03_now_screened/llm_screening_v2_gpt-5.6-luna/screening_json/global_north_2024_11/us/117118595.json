@@ -1,0 +1,65 @@
+{
+  "article_id": "117118595",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_11/us/117118595.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_11/us/117118595.json"
+  },
+  "manifest_row": {
+    "article_id": "117118595",
+    "group": "global_north_2024_11",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2024_11/us/117118595.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "background",
+    "main_topic": "2024 U.S. House of Representatives elections in suburban Illinois",
+    "conflict_relevance": "The article is primarily an election report but includes candidates' positions on U.S. support for Israel, the Israel-Hamas war, humanitarian assistance in Gaza, hostages, and the proposed destruction of Hamas.",
+    "reason": "Gaza and Israel-Palestine appear meaningfully in candidate-policy discussions, especially the contrasting positions of Jan Schakowsky and Seth Cohen, but the article's central focus is suburban congressional races rather than the conflict itself.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "4d2d5b74970ae9dc1e230acc5541235d6fbeefc3393e5810af44d7f96c7426a6",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "1c2034ece8941372f7cd37596eb42174bebe70ecb93f0316fa1f272391326204",
+    "raw_response_text_sha256": "d3ecc2293b1575add11ac2cda128973dc65da62a9aa4ddf759cc393d08ece2f3"
+  },
+  "api_metadata": {
+    "id": "resp_060048a2a19c7c66006aaa1bc7df8887d289f4d36d4178eac7",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789533127.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2473,
+      "input_tokens_details": {
+        "cache_write_tokens": 2470,
+        "cached_tokens": 0
+      },
+      "output_tokens": 271,
+      "output_tokens_details": {
+        "reasoning_tokens": 96
+      },
+      "total_tokens": 2744
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"2024 U.S. House of Representatives elections in suburban Illinois\",\n  \"conflict_relevance\": \"The article is primarily an election report but includes candidates' positions on U.S. support for Israel, the Israel-Hamas war, humanitarian assistance in Gaza, hostages, and the proposed destruction of Hamas.\",\n  \"reason\": \"Gaza and Israel-Palestine appear meaningfully in candidate-policy discussions, especially the contrasting positions of Jan Schakowsky and Seth Cohen, but the article's central focus is suburban congressional races rather than the conflict itself.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T04:32:11Z",
+  "duration_seconds": 3.908,
+  "error": null
+}

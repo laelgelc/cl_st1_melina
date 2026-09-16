@@ -1,0 +1,65 @@
+{
+  "article_id": "106671414",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_03/nz/106671414.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_03/nz/106671414.json"
+  },
+  "manifest_row": {
+    "article_id": "106671414",
+    "group": "global_north_2024_03",
+    "country_code": "nz",
+    "filepath": "corpus/02_now_organised/global_north_2024_03/nz/106671414.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.96,
+    "gaza_role": "passing",
+    "main_topic": "Citizens Advice Bureau youth website and report on issues facing young people in New Zealand",
+    "conflict_relevance": "The main article is unrelated to Gaza, but an embedded roundup item briefly reports New Zealand funding for humanitarian needs in Gaza and the West Bank and comments on the Israel-Hamas conflict.",
+    "reason": "The Gaza-related content is meaningful but limited to a short, unrelated news snippet embedded within an article primarily about youth legal information and CAB services.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "94fd6d901d9b605292077ec87ca06ed86551c637c2575de733cf85439125a4de",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "f09f4412a2e444bd7698c164bea97d982f3740479072687237f1c9adaef5379b",
+    "raw_response_text_sha256": "08c00d96c7c984d498bfb84ec2765f9426d44d83572ba6d44bca628fd194ddb3"
+  },
+  "api_metadata": {
+    "id": "resp_04945b9e3d553e9a006aaa092f544887d2b8cb84548b0f263c",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789528367.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1700,
+      "input_tokens_details": {
+        "cache_write_tokens": 1697,
+        "cached_tokens": 0
+      },
+      "output_tokens": 272,
+      "output_tokens_details": {
+        "reasoning_tokens": 116
+      },
+      "total_tokens": 1972
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.96,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Citizens Advice Bureau youth website and report on issues facing young people in New Zealand\",\n  \"conflict_relevance\": \"The main article is unrelated to Gaza, but an embedded roundup item briefly reports New Zealand funding for humanitarian needs in Gaza and the West Bank and comments on the Israel-Hamas conflict.\",\n  \"reason\": \"The Gaza-related content is meaningful but limited to a short, unrelated news snippet embedded within an article primarily about youth legal information and CAB services.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:12:51Z",
+  "duration_seconds": 3.999,
+  "error": null
+}

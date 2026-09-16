@@ -1,0 +1,65 @@
+{
+  "article_id": "123812507",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_04/us/123812507.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_04/us/123812507.json"
+  },
+  "manifest_row": {
+    "article_id": "123812507",
+    "group": "global_north_2025_04",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2025_04/us/123812507.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "background",
+    "main_topic": "Pope Francis's death, funeral arrangements, legacy, and succession",
+    "conflict_relevance": "The article briefly reports that Pope Francis's Easter message called for a ceasefire in Gaza and the release of hostages.",
+    "reason": "The article is primarily about Pope Francis and Vatican rituals, health, legacy, and the papal succession. Its single substantive reference to Gaza is meaningful but contextual rather than central to the article.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "452c352342af19aecf659251dc13e27b43b6079aef19abe892524330fdc53aac",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "3f38b068ef65ea5962d3bfe08118efde30fcd90938534ca6279bea827d8f4da2",
+    "raw_response_text_sha256": "ce862044600c3a3d5052f3095a45001d3946260cc4d4ebb1a7aace2a8700c90d"
+  },
+  "api_metadata": {
+    "id": "resp_0bcc7ad50ce422d0006aaa2a8278e087d19febf8b2588a6bfa",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789536898.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 3786,
+      "input_tokens_details": {
+        "cache_write_tokens": 3783,
+        "cached_tokens": 0
+      },
+      "output_tokens": 280,
+      "output_tokens_details": {
+        "reasoning_tokens": 129
+      },
+      "total_tokens": 4066
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Pope Francis's death, funeral arrangements, legacy, and succession\",\n  \"conflict_relevance\": \"The article briefly reports that Pope Francis's Easter message called for a ceasefire in Gaza and the release of hostages.\",\n  \"reason\": \"The article is primarily about Pope Francis and Vatican rituals, health, legacy, and the papal succession. Its single substantive reference to Gaza is meaningful but contextual rather than central to the article.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T05:35:02Z",
+  "duration_seconds": 3.992,
+  "error": null
+}

@@ -1,0 +1,65 @@
+{
+  "article_id": "118571607",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_12/gb/118571607.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_12/gb/118571607.json"
+  },
+  "manifest_row": {
+    "article_id": "118571607",
+    "group": "global_north_2024_12",
+    "country_code": "gb",
+    "filepath": "corpus/02_now_organised/global_north_2024_12/gb/118571607.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "background",
+    "main_topic": "Syrian rebel offensive against the Assad regime and the fall of major Syrian cities",
+    "conflict_relevance": "The article is primarily about the Syrian civil war and regional instability, but it references Hezbollah's conflict with Israel over the Gaza war and includes an embedded item about a Hamas hostage.",
+    "reason": "Gaza is relevant only as regional background and in an unrelated embedded snippet; the main article does not substantially address Gaza, Israel-Palestine, or the Israel-Hamas war.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "21c25e1d5204e7d3d6fc3b3981f8160d4a6b0b53b9f05546a256eabb933499e1",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "a47f2d0002c87ac29defbfc1734fea493852779d77a4671eb402885756582446",
+    "raw_response_text_sha256": "b90435038100a426d079baf98ae257f93adc9047272db4ae3672a0c08e6a70e5"
+  },
+  "api_metadata": {
+    "id": "resp_0b0a8167eb446234006aaa1d516c9487d281a451b20dbda798",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789533521.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2388,
+      "input_tokens_details": {
+        "cache_write_tokens": 2385,
+        "cached_tokens": 0
+      },
+      "output_tokens": 271,
+      "output_tokens_details": {
+        "reasoning_tokens": 108
+      },
+      "total_tokens": 2659
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Syrian rebel offensive against the Assad regime and the fall of major Syrian cities\",\n  \"conflict_relevance\": \"The article is primarily about the Syrian civil war and regional instability, but it references Hezbollah's conflict with Israel over the Gaza war and includes an embedded item about a Hamas hostage.\",\n  \"reason\": \"Gaza is relevant only as regional background and in an unrelated embedded snippet; the main article does not substantially address Gaza, Israel-Palestine, or the Israel-Hamas war.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T04:38:45Z",
+  "duration_seconds": 4.014,
+  "error": null
+}

@@ -1,0 +1,65 @@
+{
+  "article_id": "102783398",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_10/nz/102783398.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_10/nz/102783398.json"
+  },
+  "manifest_row": {
+    "article_id": "102783398",
+    "group": "global_north_2023_10",
+    "country_code": "nz",
+    "filepath": "corpus/02_now_organised/global_north_2023_10/nz/102783398.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.94,
+    "gaza_role": "passing",
+    "main_topic": "Police fatigue stop and drink-driving prevention during a holiday weekend",
+    "conflict_relevance": "The main article is unrelated to Gaza or the Israel-Palestine conflict; Gaza appears only in an incidental political-news snippet embedded elsewhere on the page.",
+    "reason": "The headline and primary article concern road safety, breath testing, and driver fatigue in New Zealand. The sole Gaza reference is a brief evaluative sentence in an unrelated roundup, so it does not provide meaningful conflict discourse for analysis.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "9c5438a6e3d81ed4ff3166a488014d22c9f254e54468cd7b75f6759072260952",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "2fabf73303ad929a53e1c6d71a537afa2b726e4571f4222f84bf74caccd01176",
+    "raw_response_text_sha256": "353b6bccd0ad2783f119b64da470ff46b369837302dbd483065c5c5511891e06"
+  },
+  "api_metadata": {
+    "id": "resp_075a735bebb0d649006aa9f82574b087d2a2ba4b44c1191b80",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789524005.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1581,
+      "input_tokens_details": {
+        "cache_write_tokens": 1578,
+        "cached_tokens": 0
+      },
+      "output_tokens": 344,
+      "output_tokens_details": {
+        "reasoning_tokens": 182
+      },
+      "total_tokens": 1925
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.94,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Police fatigue stop and drink-driving prevention during a holiday weekend\",\n  \"conflict_relevance\": \"The main article is unrelated to Gaza or the Israel-Palestine conflict; Gaza appears only in an incidental political-news snippet embedded elsewhere on the page.\",\n  \"reason\": \"The headline and primary article concern road safety, breath testing, and driver fatigue in New Zealand. The sole Gaza reference is a brief evaluative sentence in an unrelated roundup, so it does not provide meaningful conflict discourse for analysis.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:00:09Z",
+  "duration_seconds": 4.117,
+  "error": null
+}

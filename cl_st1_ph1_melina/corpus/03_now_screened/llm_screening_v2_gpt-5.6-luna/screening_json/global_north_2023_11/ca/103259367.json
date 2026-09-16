@@ -1,0 +1,65 @@
+{
+  "article_id": "103259367",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_11/ca/103259367.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_11/ca/103259367.json"
+  },
+  "manifest_row": {
+    "article_id": "103259367",
+    "group": "global_north_2023_11",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2023_11/ca/103259367.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "gaza_role": "passing",
+    "main_topic": "Cancellation of a plan to convert a motel into a homeless hub in London, Ontario",
+    "conflict_relevance": "The main article is unrelated to Gaza or the Israel-Hamas war; Gaza appears only in a single embedded roundup item about evacuations and the humanitarian crisis.",
+    "reason": "The headline and substantive article concern local homelessness and housing displacement. The Gaza reference is an incidental snippet among multiple unrelated news items and does not provide meaningful material for conflict discourse analysis.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "e2fa274634f3358ae2e6388df5ae765f8822af99cd616102500065144cfcbdd2",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "a8d5170d3bfe8832ba4077c4dfdbc0b3cf0aa0e6af98ccfd62a19aa17679eef8",
+    "raw_response_text_sha256": "539f78936d7b235c43b0db2e0ac4d4d0ab6b76362b41cdbabdea0bbb5103819e"
+  },
+  "api_metadata": {
+    "id": "resp_075e02ee3c32b684006aa9fbb9011887d2a1576de0863579aa",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789524921.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1974,
+      "input_tokens_details": {
+        "cache_write_tokens": 1971,
+        "cached_tokens": 0
+      },
+      "output_tokens": 299,
+      "output_tokens_details": {
+        "reasoning_tokens": 142
+      },
+      "total_tokens": 2273
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Cancellation of a plan to convert a motel into a homeless hub in London, Ontario\",\n  \"conflict_relevance\": \"The main article is unrelated to Gaza or the Israel-Hamas war; Gaza appears only in a single embedded roundup item about evacuations and the humanitarian crisis.\",\n  \"reason\": \"The headline and substantive article concern local homelessness and housing displacement. The Gaza reference is an incidental snippet among multiple unrelated news items and does not provide meaningful material for conflict discourse analysis.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:15:24Z",
+  "duration_seconds": 3.988,
+  "error": null
+}

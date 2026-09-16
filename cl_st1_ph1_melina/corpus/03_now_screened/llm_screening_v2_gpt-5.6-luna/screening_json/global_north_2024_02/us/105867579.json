@@ -1,0 +1,65 @@
+{
+  "article_id": "105867579",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_02/us/105867579.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_02/us/105867579.json"
+  },
+  "manifest_row": {
+    "article_id": "105867579",
+    "group": "global_north_2024_02",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2024_02/us/105867579.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.93,
+    "gaza_role": "passing",
+    "main_topic": "Cadence Design Systems revenue forecast and business performance",
+    "conflict_relevance": "The text includes a separate, unrelated news snippet about Jordan's King Abdullah calling for a full ceasefire in Gaza, but the main article concerns Cadence Design Systems.",
+    "reason": "This is a compilation of unrelated news items. The Gaza-related content is embedded as a distinct passing snippet rather than being part of the main article's subject.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "2d06e47bc259b7fb05e39983082b6fa0f592ad278bf81752ec289b407a1b52ae",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "a5a57f00218bd0451c3c7d919798f173a7cc3e1f7dbd6348d8888cccc0cbba8d",
+    "raw_response_text_sha256": "c7f9efca6efb6a521dc810f7e032d56b172e41c2306e37f3e797ec0b5caac2e2"
+  },
+  "api_metadata": {
+    "id": "resp_08f77e17aad34639006aaa0723a44487d29ebc442c8e7f46e1",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789527843.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 893,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 376,
+      "output_tokens_details": {
+        "reasoning_tokens": 228
+      },
+      "total_tokens": 1269
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.93,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Cadence Design Systems revenue forecast and business performance\",\n  \"conflict_relevance\": \"The text includes a separate, unrelated news snippet about Jordan's King Abdullah calling for a full ceasefire in Gaza, but the main article concerns Cadence Design Systems.\",\n  \"reason\": \"This is a compilation of unrelated news items. The Gaza-related content is embedded as a distinct passing snippet rather than being part of the main article's subject.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:04:07Z",
+  "duration_seconds": 4.158,
+  "error": null
+}

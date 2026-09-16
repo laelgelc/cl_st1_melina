@@ -1,0 +1,65 @@
+{
+  "article_id": "103893056",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_11/ca/103893056.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_11/ca/103893056.json"
+  },
+  "manifest_row": {
+    "article_id": "103893056",
+    "group": "global_north_2023_11",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2023_11/ca/103893056.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "gaza_role": "passing",
+    "main_topic": "Winnipeg police investigation into sexual assault and sexual interference",
+    "conflict_relevance": "The article's main subject is unrelated to Gaza or the Israel-Palestine conflict; it contains only a brief embedded news item about Israeli hostages released from Gaza.",
+    "reason": "The Gaza-related content is a single passing sentence within a collection of unrelated snippets and does not provide meaningful conflict discourse for analysis.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "408878facc20a072c8cb9cfb6ca1a8515bc9a5f4d9f107d7b93d293ac2f13eae",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "50f91104e4610b8e3f017826dce44213c518e46112e50c667a6b7e420e42b841",
+    "raw_response_text_sha256": "8ffe9a9a98eba5d4c1946002ebe29f9e198eba33f3fe4a6cac91b03a78f2f078"
+  },
+  "api_metadata": {
+    "id": "resp_029113e483e26496006aa9fc1c3c9c87d2af0126f8ecbf1f7a",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789525020.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1288,
+      "input_tokens_details": {
+        "cache_write_tokens": 1285,
+        "cached_tokens": 0
+      },
+      "output_tokens": 217,
+      "output_tokens_details": {
+        "reasoning_tokens": 73
+      },
+      "total_tokens": 1505
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Winnipeg police investigation into sexual assault and sexual interference\",\n  \"conflict_relevance\": \"The article's main subject is unrelated to Gaza or the Israel-Palestine conflict; it contains only a brief embedded news item about Israeli hostages released from Gaza.\",\n  \"reason\": \"The Gaza-related content is a single passing sentence within a collection of unrelated snippets and does not provide meaningful conflict discourse for analysis.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:17:04Z",
+  "duration_seconds": 4.24,
+  "error": null
+}

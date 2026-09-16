@@ -1,0 +1,65 @@
+{
+  "article_id": "106437418",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_03/nz/106437418.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_03/nz/106437418.json"
+  },
+  "manifest_row": {
+    "article_id": "106437418",
+    "group": "global_north_2024_03",
+    "country_code": "nz",
+    "filepath": "corpus/02_now_organised/global_north_2024_03/nz/106437418.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.86,
+    "gaza_role": "passing",
+    "main_topic": "New Zealand Foreign Minister Winston Peters' diplomatic visit to India, Indonesia, and Singapore",
+    "conflict_relevance": "The article includes an embedded related-news snippet reporting New Zealand's additional humanitarian funding for Gaza and the West Bank and describing the civilian impact of the Israel-Hamas conflict.",
+    "reason": "The main article concerns New Zealand's relations with South and Southeast Asia, while the Gaza-related material appears only as a separate 'More' news snippet. It provides meaningful but very limited conflict-related discourse and is therefore peripheral rather than core.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "38fd65ec48bf9503c6001a8fd10948908adde99a2f448e1bfa72593dd3524776",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "a987e591dcc1cfb089f9fe14d6c1f3d218ebeb966c558c2b989b4a49aa0eca86",
+    "raw_response_text_sha256": "b48b45f63e117dd7983974632b7920d0f845fb2e52beab0f800b6e074c15c36f"
+  },
+  "api_metadata": {
+    "id": "resp_0baaec46d134ef68006aaa091a3a8487d28eea2e71968d2b89",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789528346.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1622,
+      "input_tokens_details": {
+        "cache_write_tokens": 1619,
+        "cached_tokens": 0
+      },
+      "output_tokens": 327,
+      "output_tokens_details": {
+        "reasoning_tokens": 155
+      },
+      "total_tokens": 1949
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.86,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"New Zealand Foreign Minister Winston Peters' diplomatic visit to India, Indonesia, and Singapore\",\n  \"conflict_relevance\": \"The article includes an embedded related-news snippet reporting New Zealand's additional humanitarian funding for Gaza and the West Bank and describing the civilian impact of the Israel-Hamas conflict.\",\n  \"reason\": \"The main article concerns New Zealand's relations with South and Southeast Asia, while the Gaza-related material appears only as a separate 'More' news snippet. It provides meaningful but very limited conflict-related discourse and is therefore peripheral rather than core.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:12:30Z",
+  "duration_seconds": 4.5,
+  "error": null
+}

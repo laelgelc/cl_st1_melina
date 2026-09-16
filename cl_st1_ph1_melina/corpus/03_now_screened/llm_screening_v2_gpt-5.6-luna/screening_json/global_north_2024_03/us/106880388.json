@@ -1,0 +1,65 @@
+{
+  "article_id": "106880388",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_03/us/106880388.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_03/us/106880388.json"
+  },
+  "manifest_row": {
+    "article_id": "106880388",
+    "group": "global_north_2024_03",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2024_03/us/106880388.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.94,
+    "gaza_role": "background",
+    "main_topic": "US congressional negotiations to avert a federal government shutdown",
+    "conflict_relevance": "The main article is unrelated to Gaza, but an embedded latest-stories item briefly discusses Russia and China opposing a proposed Gaza ceasefire resolution at the UN Security Council.",
+    "reason": "The headline article focuses on US budget negotiations and Republican congressional politics. Gaza appears only in a separate, substantive embedded news snippet, making the item peripheral rather than core.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "f00bebf20242d45fbfaf4d49581d35d612a12b6445b1426f114110e65f7ca087",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "fd925b1fb227ffcc4e7f69c784381be7bf8673332f1612a5f945d62dfa40e276",
+    "raw_response_text_sha256": "d737e519f73faed88a8586c7464ba7cc57c89f5a6365ff3a5d44b78e48fe4bb6"
+  },
+  "api_metadata": {
+    "id": "resp_02c52386668988c5006aaa09cbfd2487d2b970c35f31481afa",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789528524.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2357,
+      "input_tokens_details": {
+        "cache_write_tokens": 2354,
+        "cached_tokens": 0
+      },
+      "output_tokens": 275,
+      "output_tokens_details": {
+        "reasoning_tokens": 124
+      },
+      "total_tokens": 2632
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.94,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"US congressional negotiations to avert a federal government shutdown\",\n  \"conflict_relevance\": \"The main article is unrelated to Gaza, but an embedded latest-stories item briefly discusses Russia and China opposing a proposed Gaza ceasefire resolution at the UN Security Council.\",\n  \"reason\": \"The headline article focuses on US budget negotiations and Republican congressional politics. Gaza appears only in a separate, substantive embedded news snippet, making the item peripheral rather than core.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:15:27Z",
+  "duration_seconds": 3.851,
+  "error": null
+}

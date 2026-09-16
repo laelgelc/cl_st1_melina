@@ -1,0 +1,65 @@
+{
+  "article_id": "103127868",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_11/ca/103127868.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_11/ca/103127868.json"
+  },
+  "manifest_row": {
+    "article_id": "103127868",
+    "group": "global_north_2023_11",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2023_11/ca/103127868.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "background",
+    "main_topic": "Evaluation of Pierre Dorion's tenure as Ottawa Senators general manager",
+    "conflict_relevance": "A substantial Gaza-related news snippet appears among otherwise unrelated sports, business, entertainment, and health content, describing a family fleeing Gaza amid war and humanitarian dangers.",
+    "reason": "The main article is an Ottawa Senators sports analysis and is not about Gaza or the Israel-Palestine conflict. However, the embedded Gaza passage contains meaningful conflict and humanitarian discourse, so the item is peripheral rather than excluded.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "9716e39153c8c6dfb8f60afcb81c3ed3e203b158d8f7def8bf1f5b26cee0dde7",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "a867459d7279bc09b387133d83aeaff59dd9e0226199eec5006ef1ec32258292",
+    "raw_response_text_sha256": "387fa0313286404c924f9f6c4e7f58ec159cdf05bf2f014625e3205b7d939958"
+  },
+  "api_metadata": {
+    "id": "resp_0525214d04db7df4006aa9fb99e69087d298ed7f60f6030b3f",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789524889.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 3719,
+      "input_tokens_details": {
+        "cache_write_tokens": 3716,
+        "cached_tokens": 0
+      },
+      "output_tokens": 267,
+      "output_tokens_details": {
+        "reasoning_tokens": 103
+      },
+      "total_tokens": 3986
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Evaluation of Pierre Dorion's tenure as Ottawa Senators general manager\",\n  \"conflict_relevance\": \"A substantial Gaza-related news snippet appears among otherwise unrelated sports, business, entertainment, and health content, describing a family fleeing Gaza amid war and humanitarian dangers.\",\n  \"reason\": \"The main article is an Ottawa Senators sports analysis and is not about Gaza or the Israel-Palestine conflict. However, the embedded Gaza passage contains meaningful conflict and humanitarian discourse, so the item is peripheral rather than excluded.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:14:54Z",
+  "duration_seconds": 4.23,
+  "error": null
+}

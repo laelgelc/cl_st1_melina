@@ -1,0 +1,65 @@
+{
+  "article_id": "119787912",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_01/ca/119787912.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_01/ca/119787912.json"
+  },
+  "manifest_row": {
+    "article_id": "119787912",
+    "group": "global_north_2025_01",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2025_01/ca/119787912.txt"
+  },
+  "screening": {
+    "category": "CORE",
+    "confidence": 0.99,
+    "gaza_role": "central",
+    "main_topic": "Israel-Hamas war developments, including hostage recovery, Gaza airstrikes, civilian casualties, and ceasefire negotiations",
+    "conflict_relevance": "The article primarily reports on the Gaza war, Israeli military operations, Palestinian casualties, hostages held by Hamas, and diplomatic efforts toward a ceasefire.",
+    "reason": "Despite including several unrelated Middle East news items and reader-response snippets, the headline and principal coverage focus substantially on Gaza, the Israel-Hamas conflict, hostages, military action, and ceasefire negotiations.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": true
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "ac52c83dcd343d27856a1b98a4ee6edff6f07d2750119465d7007cc0423837cd",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "7e0ace831f12f406138cb35b01b67d56ddeea5bd8c20b02d545d9cc74800fbb9",
+    "raw_response_text_sha256": "a347433cb804ce535c975fb6622dcfe5756e820717b89177c3d15c786ecec807"
+  },
+  "api_metadata": {
+    "id": "resp_08ae5d7bd56739cd006aaa1f236c0887d2b43f0bb94220e735",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789533987.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 3131,
+      "input_tokens_details": {
+        "cache_write_tokens": 3128,
+        "cached_tokens": 0
+      },
+      "output_tokens": 233,
+      "output_tokens_details": {
+        "reasoning_tokens": 67
+      },
+      "total_tokens": 3364
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"CORE\",\n  \"confidence\": 0.99,\n  \"gaza_role\": \"central\",\n  \"main_topic\": \"Israel-Hamas war developments, including hostage recovery, Gaza airstrikes, civilian casualties, and ceasefire negotiations\",\n  \"conflict_relevance\": \"The article primarily reports on the Gaza war, Israeli military operations, Palestinian casualties, hostages held by Hamas, and diplomatic efforts toward a ceasefire.\",\n  \"reason\": \"Despite including several unrelated Middle East news items and reader-response snippets, the headline and principal coverage focus substantially on Gaza, the Israel-Hamas conflict, hostages, military action, and ceasefire negotiations.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": true\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T04:46:30Z",
+  "duration_seconds": 3.015,
+  "error": null
+}

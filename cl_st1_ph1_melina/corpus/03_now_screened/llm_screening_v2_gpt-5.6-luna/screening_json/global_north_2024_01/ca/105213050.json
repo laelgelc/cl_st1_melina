@@ -1,0 +1,65 @@
+{
+  "article_id": "105213050",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_01/ca/105213050.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_01/ca/105213050.json"
+  },
+  "manifest_row": {
+    "article_id": "105213050",
+    "group": "global_north_2024_01",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2024_01/ca/105213050.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.97,
+    "gaza_role": "substantial",
+    "main_topic": "Compilation of unrelated news, finance, business, technology, and human-interest items",
+    "conflict_relevance": "One embedded item substantially concerns life in Gaza during the Israel-Hamas war, describing young men doing parkour among destroyed neighbourhoods and nearby refugee-camp children watching.",
+    "reason": "The overall text is a multi-article aggregation dominated by unrelated topics. However, the Gaza passage is meaningful and directly relevant to conflict-related humanitarian and social discourse, so the item is retained as peripheral rather than excluded.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "565808eed00c4b2a4a38fca3508798cbd78a75f9881f7da58340ed714bc56925",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "97c78b189e92663c85491bef75283272cd15df2638199575cb5f50db554f3dbd",
+    "raw_response_text_sha256": "8079550d2f0e6e8db849800bf3f6fa5c06a9fc6f168cf37a52275717a50fc09d"
+  },
+  "api_metadata": {
+    "id": "resp_0aaf2ce4b8b646aa006aaa03ae65b887d2a27cc07383568a74",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789526958.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2345,
+      "input_tokens_details": {
+        "cache_write_tokens": 2342,
+        "cached_tokens": 0
+      },
+      "output_tokens": 367,
+      "output_tokens_details": {
+        "reasoning_tokens": 199
+      },
+      "total_tokens": 2712
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.97,\n  \"gaza_role\": \"substantial\",\n  \"main_topic\": \"Compilation of unrelated news, finance, business, technology, and human-interest items\",\n  \"conflict_relevance\": \"One embedded item substantially concerns life in Gaza during the Israel-Hamas war, describing young men doing parkour among destroyed neighbourhoods and nearby refugee-camp children watching.\",\n  \"reason\": \"The overall text is a multi-article aggregation dominated by unrelated topics. However, the Gaza passage is meaningful and directly relevant to conflict-related humanitarian and social discourse, so the item is retained as peripheral rather than excluded.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:49:24Z",
+  "duration_seconds": 5.754,
+  "error": null
+}

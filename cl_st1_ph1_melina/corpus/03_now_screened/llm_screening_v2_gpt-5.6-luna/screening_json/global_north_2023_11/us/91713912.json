@@ -1,0 +1,65 @@
+{
+  "article_id": "91713912",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_11/us/91713912.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_11/us/91713912.json"
+  },
+  "manifest_row": {
+    "article_id": "91713912",
+    "group": "global_north_2023_11",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2023_11/us/91713912.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.97,
+    "gaza_role": "background",
+    "main_topic": "Russia-Ukraine war live updates",
+    "conflict_relevance": "The article is primarily a live blog about the Russia-Ukraine war, but it includes several substantive updates concerning the Israel-Hamas war, Gaza humanitarian conditions, Israel-related protests, antisemitism, and political reactions to the conflict.",
+    "reason": "Gaza and Israel-Palestine content appears in embedded live-blog updates rather than forming the article's main subject. These passages are meaningful for studying broader discourse around Gaza, antisemitism, protest, and geopolitical framing, so the article is peripheral rather than excludable.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "5e08f52d010193eb593815d3ca420f844466348dba994caf9a84086e96cf2e5a",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "b3685afa85aed4cf84ef721cf42384a713128857ddc27b2fdc5b467eb0d9bad0",
+    "raw_response_text_sha256": "955a10798066d6a88977d265e47af11969070f6dc8dacd4cef3338707936782d"
+  },
+  "api_metadata": {
+    "id": "resp_02405f5ee1e5c0b5006aa9ffa8ae5c87d28dfa3d834568dd45",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789525928.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 5074,
+      "input_tokens_details": {
+        "cache_write_tokens": 5071,
+        "cached_tokens": 0
+      },
+      "output_tokens": 303,
+      "output_tokens_details": {
+        "reasoning_tokens": 119
+      },
+      "total_tokens": 5377
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.97,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Russia-Ukraine war live updates\",\n  \"conflict_relevance\": \"The article is primarily a live blog about the Russia-Ukraine war, but it includes several substantive updates concerning the Israel-Hamas war, Gaza humanitarian conditions, Israel-related protests, antisemitism, and political reactions to the conflict.\",\n  \"reason\": \"Gaza and Israel-Palestine content appears in embedded live-blog updates rather than forming the article's main subject. These passages are meaningful for studying broader discourse around Gaza, antisemitism, protest, and geopolitical framing, so the article is peripheral rather than excludable.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:32:12Z",
+  "duration_seconds": 3.795,
+  "error": null
+}

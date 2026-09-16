@@ -1,0 +1,65 @@
+{
+  "article_id": "105918363",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_02/nz/105918363.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_02/nz/105918363.json"
+  },
+  "manifest_row": {
+    "article_id": "105918363",
+    "group": "global_north_2024_02",
+    "country_code": "nz",
+    "filepath": "corpus/02_now_organised/global_north_2024_02/nz/105918363.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.93,
+    "gaza_role": "background",
+    "main_topic": "A judicial review challenging mandatory cultural training for New Zealand real estate agents",
+    "conflict_relevance": "The article includes embedded political/news snippets discussing Gaza, the Israel-Hamas conflict, and New Zealand humanitarian aid, but these are unrelated to the main story.",
+    "reason": "The primary article concerns cultural training, the Treaty of Waitangi, and professional regulation in New Zealand. Gaza appears only in separate embedded snippets, including commentary on Prime Minister Christopher Luxon's position and reporting on further humanitarian assistance to Gaza and the West Bank.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "99c7bb147f610f865081a1951045d36d19190bb35225ca93f218463f1dce0293",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "907bbb5f6538c17e36b45f8c0595275af11424b7b6edbbe01872661b2e05c6f1",
+    "raw_response_text_sha256": "63e0e9218ef073b9243acca91310f9473a1f84379d8ce62379a55194d11cd98b"
+  },
+  "api_metadata": {
+    "id": "resp_04c2161a05055d8c006aaa06badc0087d2a499e78ea531b4d4",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789527738.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1389,
+      "input_tokens_details": {
+        "cache_write_tokens": 1386,
+        "cached_tokens": 0
+      },
+      "output_tokens": 338,
+      "output_tokens_details": {
+        "reasoning_tokens": 168
+      },
+      "total_tokens": 1727
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.93,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"A judicial review challenging mandatory cultural training for New Zealand real estate agents\",\n  \"conflict_relevance\": \"The article includes embedded political/news snippets discussing Gaza, the Israel-Hamas conflict, and New Zealand humanitarian aid, but these are unrelated to the main story.\",\n  \"reason\": \"The primary article concerns cultural training, the Treaty of Waitangi, and professional regulation in New Zealand. Gaza appears only in separate embedded snippets, including commentary on Prime Minister Christopher Luxon's position and reporting on further humanitarian assistance to Gaza and the West Bank.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:02:23Z",
+  "duration_seconds": 4.514,
+  "error": null
+}

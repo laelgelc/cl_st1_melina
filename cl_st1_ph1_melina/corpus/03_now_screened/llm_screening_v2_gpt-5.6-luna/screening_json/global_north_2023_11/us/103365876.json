@@ -1,0 +1,65 @@
+{
+  "article_id": "103365876",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_11/us/103365876.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_11/us/103365876.json"
+  },
+  "manifest_row": {
+    "article_id": "103365876",
+    "group": "global_north_2023_11",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2023_11/us/103365876.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.97,
+    "gaza_role": "background",
+    "main_topic": "Weekly photo roundup covering international news and events",
+    "conflict_relevance": "The roundup includes several substantive photo captions about Israeli attacks in Gaza, Palestinians fleeing Gaza City, ongoing battles between Israeli forces and Hamas, and hostages held in Gaza.",
+    "reason": "Although Gaza-related content is meaningful and appears in multiple captions, the article is primarily a general collection of unrelated photographs rather than a focused report on the conflict.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "35d1d113fd377985d7b2103a053c372e62fb0717842e11d24aef4830d0a5fa44",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "3e0424ce96f2783c190dce9b19f9a4e06e45c79d002a44c212fbaf2208f8b030",
+    "raw_response_text_sha256": "374d1b1accda9f5f415d7f7127ba1148dc8181c552e6f0721103d8ee210445a6"
+  },
+  "api_metadata": {
+    "id": "resp_008ab358353ab93e006aa9fe5341b087d2b63db7e80da6686f",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789525587.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1406,
+      "input_tokens_details": {
+        "cache_write_tokens": 1403,
+        "cached_tokens": 0
+      },
+      "output_tokens": 334,
+      "output_tokens_details": {
+        "reasoning_tokens": 186
+      },
+      "total_tokens": 1740
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.97,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Weekly photo roundup covering international news and events\",\n  \"conflict_relevance\": \"The roundup includes several substantive photo captions about Israeli attacks in Gaza, Palestinians fleeing Gaza City, ongoing battles between Israeli forces and Hamas, and hostages held in Gaza.\",\n  \"reason\": \"Although Gaza-related content is meaningful and appears in multiple captions, the article is primarily a general collection of unrelated photographs rather than a focused report on the conflict.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:26:33Z",
+  "duration_seconds": 6.047,
+  "error": null
+}

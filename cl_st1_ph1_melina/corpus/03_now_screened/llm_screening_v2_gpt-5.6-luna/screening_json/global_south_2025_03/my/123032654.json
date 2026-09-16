@@ -1,0 +1,65 @@
+{
+  "article_id": "123032654",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_south_2025_03/my/123032654.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_south_2025_03/my/123032654.json"
+  },
+  "manifest_row": {
+    "article_id": "123032654",
+    "group": "global_south_2025_03",
+    "country_code": "my",
+    "filepath": "corpus/02_now_organised/global_south_2025_03/my/123032654.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "background",
+    "main_topic": "Malaysia-Pakistan diplomatic relations and economic cooperation",
+    "conflict_relevance": "The article briefly reports that the leaders discussed supporting Gaza's reconstruction, ending violence against Palestinians, and ceasefire-related peace efforts.",
+    "reason": "The article is primarily about Malaysia-Pakistan ties, investment, and an upcoming visit, but it contains a meaningful sentence concerning Gaza and Palestinians.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "edeed1b80661de142bdc417aa934c4bd832067742a31f071d189645dd4b4a454",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "ac47c64fef9835119998771f39edf6147f3828baf92a7f19b182648e212b697d",
+    "raw_response_text_sha256": "7931f97e920bef946ab3d097ea3ef5bdce06cfad5af0bfd5a77bb3a1d21e85ec"
+  },
+  "api_metadata": {
+    "id": "resp_00ab112336c53124006aaa46db4a5c87d1941f6376ad06fffb",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789544155.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 865,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 193,
+      "output_tokens_details": {
+        "reasoning_tokens": 54
+      },
+      "total_tokens": 1058
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Malaysia-Pakistan diplomatic relations and economic cooperation\",\n  \"conflict_relevance\": \"The article briefly reports that the leaders discussed supporting Gaza's reconstruction, ending violence against Palestinians, and ceasefire-related peace efforts.\",\n  \"reason\": \"The article is primarily about Malaysia-Pakistan ties, investment, and an upcoming visit, but it contains a meaningful sentence concerning Gaza and Palestinians.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T07:35:58Z",
+  "duration_seconds": 3.325,
+  "error": null
+}

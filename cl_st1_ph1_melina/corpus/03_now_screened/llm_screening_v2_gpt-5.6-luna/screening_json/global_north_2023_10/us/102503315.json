@@ -1,0 +1,65 @@
+{
+  "article_id": "102503315",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_10/us/102503315.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_10/us/102503315.json"
+  },
+  "manifest_row": {
+    "article_id": "102503315",
+    "group": "global_north_2023_10",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2023_10/us/102503315.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.96,
+    "gaza_role": "background",
+    "main_topic": "South Korea's possible suspension of the inter-Korean military agreement in response to security concerns involving North Korea",
+    "conflict_relevance": "The article uses the Hamas attack on Israel and violence in Israel and Gaza as a substantive security analogy influencing South Korean defense policy and media commentary.",
+    "reason": "The main article is primarily about inter-Korean relations, surveillance, and North Korean military threats, but it meaningfully discusses the Hamas attack, Israel's surveillance failures, and Israel-Gaza violence as a comparison and policy justification. It is therefore relevant to broader conflict framing but not core Gaza coverage.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "dfb750c2d9bedc3e89306208d4cfeeaaeaec37b743122cba41df2e5d47787a0f",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "6b714757c9f771cee3c635247436a05fee0a0be80bba86b4ed569741a0c8420a",
+    "raw_response_text_sha256": "d6f593a229c736aaf2dfab51047cf0ae6f1c1721936779c6b26b033eaf493885"
+  },
+  "api_metadata": {
+    "id": "resp_00159b32527e43af006aa9f86e42d487d2970fbc672918936d",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789524078.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2560,
+      "input_tokens_details": {
+        "cache_write_tokens": 2557,
+        "cached_tokens": 0
+      },
+      "output_tokens": 331,
+      "output_tokens_details": {
+        "reasoning_tokens": 148
+      },
+      "total_tokens": 2891
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.96,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"South Korea's possible suspension of the inter-Korean military agreement in response to security concerns involving North Korea\",\n  \"conflict_relevance\": \"The article uses the Hamas attack on Israel and violence in Israel and Gaza as a substantive security analogy influencing South Korean defense policy and media commentary.\",\n  \"reason\": \"The main article is primarily about inter-Korean relations, surveillance, and North Korean military threats, but it meaningfully discusses the Hamas attack, Israel's surveillance failures, and Israel-Gaza violence as a comparison and policy justification. It is therefore relevant to broader conflict framing but not core Gaza coverage.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:01:23Z",
+  "duration_seconds": 5.295,
+  "error": null
+}

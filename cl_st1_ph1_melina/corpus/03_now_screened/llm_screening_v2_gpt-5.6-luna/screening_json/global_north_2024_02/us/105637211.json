@@ -1,0 +1,65 @@
+{
+  "article_id": "105637211",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_02/us/105637211.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_02/us/105637211.json"
+  },
+  "manifest_row": {
+    "article_id": "105637211",
+    "group": "global_north_2024_02",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2024_02/us/105637211.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "background",
+    "main_topic": "South Carolina Democratic primary and Biden's reelection prospects",
+    "conflict_relevance": "The article briefly discusses criticism of Biden's support for Israel and military aid during the war in Gaza, particularly among younger voters.",
+    "reason": "The main article concerns the South Carolina Democratic primary, but it includes a meaningful passage linking Biden's electoral prospects to his policy toward Israel and the military campaign in Gaza. The text also contains a separate, unrelated article about Trump's constitutional eligibility case.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "d15537cee82b58a58ebe8d67baf58320c56038b79636519923967c8959733481",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "40067d04066cd179917d9d715481767e82f4f0f9969bbd5b449a7b12787377e0",
+    "raw_response_text_sha256": "2f02adc4230290fba330e00de2d4b1dbd0480011304d06f60eb379905aa8c052"
+  },
+  "api_metadata": {
+    "id": "resp_0f0a7fc11bebe725006aaa06ebf9cc87d2be10e2cc10a26921",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789527787.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 3437,
+      "input_tokens_details": {
+        "cache_write_tokens": 3434,
+        "cached_tokens": 0
+      },
+      "output_tokens": 416,
+      "output_tokens_details": {
+        "reasoning_tokens": 257
+      },
+      "total_tokens": 3853
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"South Carolina Democratic primary and Biden's reelection prospects\",\n  \"conflict_relevance\": \"The article briefly discusses criticism of Biden's support for Israel and military aid during the war in Gaza, particularly among younger voters.\",\n  \"reason\": \"The main article concerns the South Carolina Democratic primary, but it includes a meaningful passage linking Biden's electoral prospects to his policy toward Israel and the military campaign in Gaza. The text also contains a separate, unrelated article about Trump's constitutional eligibility case.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:03:12Z",
+  "duration_seconds": 4.928,
+  "error": null
+}

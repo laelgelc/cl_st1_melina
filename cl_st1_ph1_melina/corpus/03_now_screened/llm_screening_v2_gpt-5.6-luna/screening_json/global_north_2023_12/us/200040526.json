@@ -1,0 +1,65 @@
+{
+  "article_id": "200040526",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_12/us/200040526.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_12/us/200040526.json"
+  },
+  "manifest_row": {
+    "article_id": "200040526",
+    "group": "global_north_2023_12",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2023_12/us/200040526.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "background",
+    "main_topic": "Doug Burgum's withdrawal from the Republican presidential primary",
+    "conflict_relevance": "The text includes a substantial but unrelated embedded discussion of a British television host's questioning of a Palestinian-connected MP about the Hamas attack, along with accusations of racism and Islamophobia.",
+    "reason": "The main article concerns Burgum's campaign suspension and has no substantive connection to Gaza. However, an appended article segment meaningfully addresses Gaza, Hamas, Palestine, media framing, and Islamophobia, making the item peripheral rather than excludable.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "523e2e7bbaf058076e420664523a2865e4cdd40b035fc43f6e75924c710f574b",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "6ce397b0e6ba4d67d38154c97d0956b1ee671e377a860ac959d544fc01f6cfcd",
+    "raw_response_text_sha256": "ae22aff57fd710feece3084918a9ca745f54850b42952312a4ce0449d369ec15"
+  },
+  "api_metadata": {
+    "id": "resp_0fcd7a0e21a207f2006aaa02af064887d2be993d95f2d4d104",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789526703.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2189,
+      "input_tokens_details": {
+        "cache_write_tokens": 2186,
+        "cached_tokens": 0
+      },
+      "output_tokens": 334,
+      "output_tokens_details": {
+        "reasoning_tokens": 164
+      },
+      "total_tokens": 2523
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Doug Burgum's withdrawal from the Republican presidential primary\",\n  \"conflict_relevance\": \"The text includes a substantial but unrelated embedded discussion of a British television host's questioning of a Palestinian-connected MP about the Hamas attack, along with accusations of racism and Islamophobia.\",\n  \"reason\": \"The main article concerns Burgum's campaign suspension and has no substantive connection to Gaza. However, an appended article segment meaningfully addresses Gaza, Hamas, Palestine, media framing, and Islamophobia, making the item peripheral rather than excludable.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:45:08Z",
+  "duration_seconds": 5.396,
+  "error": null
+}

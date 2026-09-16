@@ -1,0 +1,65 @@
+{
+  "article_id": "120293180",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_01/us/120293180.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_01/us/120293180.json"
+  },
+  "manifest_row": {
+    "article_id": "120293180",
+    "group": "global_north_2025_01",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2025_01/us/120293180.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.96,
+    "gaza_role": "background",
+    "main_topic": "Live coverage of Donald Trump's first full day in office and related political, administrative, and confirmation proceedings",
+    "conflict_relevance": "The article includes meaningful background on Elise Stefanik's strong support for Israel, anticipated questioning about the Gaza war, and her endorsement of Israel's claimed biblical right to the entire West Bank.",
+    "reason": "The article is predominantly a broad roundup of Trump administration activities, appointments, executive orders, and political developments. However, its coverage of Stefanik's confirmation hearing contains substantive discourse about Israel, Gaza, the West Bank, and U.S. foreign-policy positions, making it relevant to broader conflict-related political discourse but not core conflict coverage.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "3b6e0796aebc122237c009314f43d98305fa4c781644bfaf36201873d0a6ce7a",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "e9fafb73d374297a1876897988dc978be93d4d4cb8f4914bfa6fe0a155ff657a",
+    "raw_response_text_sha256": "5011bee0d7519dfd1b49aeb2bf4e774d4426078abd30d126abc75b5a380a27a3"
+  },
+  "api_metadata": {
+    "id": "resp_0faac4799c29d55e006aaa217c469487d2aaba745347884685",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789534588.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 11975,
+      "input_tokens_details": {
+        "cache_write_tokens": 11972,
+        "cached_tokens": 0
+      },
+      "output_tokens": 296,
+      "output_tokens_details": {
+        "reasoning_tokens": 98
+      },
+      "total_tokens": 12271
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.96,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Live coverage of Donald Trump's first full day in office and related political, administrative, and confirmation proceedings\",\n  \"conflict_relevance\": \"The article includes meaningful background on Elise Stefanik's strong support for Israel, anticipated questioning about the Gaza war, and her endorsement of Israel's claimed biblical right to the entire West Bank.\",\n  \"reason\": \"The article is predominantly a broad roundup of Trump administration activities, appointments, executive orders, and political developments. However, its coverage of Stefanik's confirmation hearing contains substantive discourse about Israel, Gaza, the West Bank, and U.S. foreign-policy positions, making it relevant to broader conflict-related political discourse but not core conflict coverage.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T04:56:32Z",
+  "duration_seconds": 4.311,
+  "error": null
+}

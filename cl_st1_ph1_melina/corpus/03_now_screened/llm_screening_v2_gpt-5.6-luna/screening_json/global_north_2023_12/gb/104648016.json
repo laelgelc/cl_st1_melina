@@ -1,0 +1,65 @@
+{
+  "article_id": "104648016",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_12/gb/104648016.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_12/gb/104648016.json"
+  },
+  "manifest_row": {
+    "article_id": "104648016",
+    "group": "global_north_2023_12",
+    "country_code": "gb",
+    "filepath": "corpus/02_now_organised/global_north_2023_12/gb/104648016.txt"
+  },
+  "screening": {
+    "category": "CORE",
+    "confidence": 0.99,
+    "gaza_role": "central",
+    "main_topic": "South Africa's ICJ application accusing Israel of genocide against Palestinians in Gaza",
+    "conflict_relevance": "The article directly concerns the Israel-Hamas war, alleged Israeli violations of the Genocide Convention, Palestinian casualties and displacement, military operations in Gaza, and international legal responses.",
+    "reason": "The primary article content focuses on South Africa's genocide case against Israel at the ICJ and provides substantial context about the war and humanitarian conditions in Gaza. Although the text also contains several unrelated news snippets, the main conflict-related article is centrally relevant.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": true
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "f4e951b0f11f440447bc22f7c69b1b1a914e57dd348350d4338521957529da31",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "f424450f6ca33cc3d78380fcbe1af5f2f10b694d2871067e0b8ce302a9f9befe",
+    "raw_response_text_sha256": "73f660a6b3d00a6487ab6bad0aef3ed7e7986eaa960b7c67f9947d6bd873c760"
+  },
+  "api_metadata": {
+    "id": "resp_03da02b439181777006aaa0147ee2887d2a26cb0009ee4f7dd",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789526343.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1634,
+      "input_tokens_details": {
+        "cache_write_tokens": 1631,
+        "cached_tokens": 0
+      },
+      "output_tokens": 252,
+      "output_tokens_details": {
+        "reasoning_tokens": 81
+      },
+      "total_tokens": 1886
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"CORE\",\n  \"confidence\": 0.99,\n  \"gaza_role\": \"central\",\n  \"main_topic\": \"South Africa's ICJ application accusing Israel of genocide against Palestinians in Gaza\",\n  \"conflict_relevance\": \"The article directly concerns the Israel-Hamas war, alleged Israeli violations of the Genocide Convention, Palestinian casualties and displacement, military operations in Gaza, and international legal responses.\",\n  \"reason\": \"The primary article content focuses on South Africa's genocide case against Israel at the ICJ and provides substantial context about the war and humanitarian conditions in Gaza. Although the text also contains several unrelated news snippets, the main conflict-related article is centrally relevant.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": true\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:39:08Z",
+  "duration_seconds": 4.694,
+  "error": null
+}

@@ -1,0 +1,65 @@
+{
+  "article_id": "108345755",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_05/nz/108345755.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_05/nz/108345755.json"
+  },
+  "manifest_row": {
+    "article_id": "108345755",
+    "group": "global_north_2024_05",
+    "country_code": "nz",
+    "filepath": "corpus/02_now_organised/global_north_2024_05/nz/108345755.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.93,
+    "gaza_role": "substantial",
+    "main_topic": "A mixed blog page featuring book recommendations and an embedded article about a former actor's hunger strike in support of Palestine",
+    "conflict_relevance": "The embedded article contains extensive discourse on Israel's military actions in Gaza, Palestinian civilian deaths, humanitarian aid, UNRWA, alleged genocide, international law, New Zealand's support for Israel, and Palestinian solidarity activism.",
+    "reason": "Although the page headline and opening content concern unrelated book recommendations, the embedded hunger-strike article provides substantial, directly relevant discourse about Gaza and Palestine. Because the page combines unrelated items rather than being centrally organized around the conflict, it is classified as PERIPHERAL.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "0e96d4af5a498ed59d6b00336805adf2600fee850df114a75f0b774d3b1066fa",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "c99d184d4426491e583f29033b15ff86a8b717451b9d39651147024ee866095a",
+    "raw_response_text_sha256": "4a40e80b291b3f83254fd4aff780a0ffce6ea275f3b436641f5e486ac62bda87"
+  },
+  "api_metadata": {
+    "id": "resp_0212131a9d113dfd006aaa0e67f9e887d2a69fc1221a54b0be",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789529704.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1629,
+      "input_tokens_details": {
+        "cache_write_tokens": 1626,
+        "cached_tokens": 0
+      },
+      "output_tokens": 368,
+      "output_tokens_details": {
+        "reasoning_tokens": 174
+      },
+      "total_tokens": 1997
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.93,\n  \"gaza_role\": \"substantial\",\n  \"main_topic\": \"A mixed blog page featuring book recommendations and an embedded article about a former actor's hunger strike in support of Palestine\",\n  \"conflict_relevance\": \"The embedded article contains extensive discourse on Israel's military actions in Gaza, Palestinian civilian deaths, humanitarian aid, UNRWA, alleged genocide, international law, New Zealand's support for Israel, and Palestinian solidarity activism.\",\n  \"reason\": \"Although the page headline and opening content concern unrelated book recommendations, the embedded hunger-strike article provides substantial, directly relevant discourse about Gaza and Palestine. Because the page combines unrelated items rather than being centrally organized around the conflict, it is classified as PERIPHERAL.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:35:08Z",
+  "duration_seconds": 4.272,
+  "error": null
+}

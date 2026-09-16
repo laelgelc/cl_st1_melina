@@ -1,0 +1,65 @@
+{
+  "article_id": "103755669",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_11/gb/103755669.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_11/gb/103755669.json"
+  },
+  "manifest_row": {
+    "article_id": "103755669",
+    "group": "global_north_2023_11",
+    "country_code": "gb",
+    "filepath": "corpus/02_now_organised/global_north_2023_11/gb/103755669.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.93,
+    "gaza_role": "background",
+    "main_topic": "Russia's war in Ukraine and a related Gaza hostage and aid update",
+    "conflict_relevance": "The text includes a meaningful but brief update on Gaza hostages, Palestinian prisoners, and aid deliveries, while the main focus appears to be the war in Ukraine.",
+    "reason": "Gaza-related content is substantive enough to provide some conflict discourse, but it appears as a separate news snippet or background item within an article primarily about Ukraine.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "fc314d4a67684efbefa8b0bd0657cda099dddd22a48140c270c350f7be630cf0",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "ae138883e269bc09b8718d83e3bc696a4eb7bc25ba55be658cda5531c05e4e64",
+    "raw_response_text_sha256": "9d81021a47dd37bb95aa938fc0c452e9deeed13b3f651a7a877c871c5ba9e09e"
+  },
+  "api_metadata": {
+    "id": "resp_0da514131b3adbdc006aa9fd35a45087d2b84d03284ed87a7b",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789525301.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 751,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 290,
+      "output_tokens_details": {
+        "reasoning_tokens": 138
+      },
+      "total_tokens": 1041
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.93,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Russia's war in Ukraine and a related Gaza hostage and aid update\",\n  \"conflict_relevance\": \"The text includes a meaningful but brief update on Gaza hostages, Palestinian prisoners, and aid deliveries, while the main focus appears to be the war in Ukraine.\",\n  \"reason\": \"Gaza-related content is substantive enough to provide some conflict discourse, but it appears as a separate news snippet or background item within an article primarily about Ukraine.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:21:46Z",
+  "duration_seconds": 4.498,
+  "error": null
+}

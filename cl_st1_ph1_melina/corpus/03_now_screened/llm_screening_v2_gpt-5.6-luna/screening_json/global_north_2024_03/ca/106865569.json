@@ -1,0 +1,65 @@
+{
+  "article_id": "106865569",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_03/ca/106865569.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_03/ca/106865569.json"
+  },
+  "manifest_row": {
+    "article_id": "106865569",
+    "group": "global_north_2024_03",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2024_03/ca/106865569.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.99,
+    "gaza_role": "passing",
+    "main_topic": "Interview about the film Sleeping Dogs and actress Karen Gillan's collaboration with Russell Crowe",
+    "conflict_relevance": "The main article is unrelated to the Israel-Palestine conflict, but the text includes an embedded news item reporting a United States ceasefire resolution concerning Israel, Hamas, and Gaza.",
+    "reason": "The headline and substantive article focus on a film and its actors. Gaza appears only in a separate, brief news snippet at the end, making the item peripheral rather than core.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "73c35179fbc1ba137b68af5c59821e3c8533ec2970a43f02e55ee6c20c606cf7",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "f262457966e0f518791b03e945a6050449e2384858880c77996ca997f5a190c3",
+    "raw_response_text_sha256": "aeb179336e00fabca1bcfeea424eb6a230809fef455f3ffec01dcfaa18e6d60c"
+  },
+  "api_metadata": {
+    "id": "resp_0b2514ca0b9c3c06006aaa087bb7f087d2be3590e06f93b9fd",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789528187.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2411,
+      "input_tokens_details": {
+        "cache_write_tokens": 2408,
+        "cached_tokens": 0
+      },
+      "output_tokens": 258,
+      "output_tokens_details": {
+        "reasoning_tokens": 93
+      },
+      "total_tokens": 2669
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.99,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Interview about the film Sleeping Dogs and actress Karen Gillan's collaboration with Russell Crowe\",\n  \"conflict_relevance\": \"The main article is unrelated to the Israel-Palestine conflict, but the text includes an embedded news item reporting a United States ceasefire resolution concerning Israel, Hamas, and Gaza.\",\n  \"reason\": \"The headline and substantive article focus on a film and its actors. Gaza appears only in a separate, brief news snippet at the end, making the item peripheral rather than core.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:09:51Z",
+  "duration_seconds": 3.82,
+  "error": null
+}

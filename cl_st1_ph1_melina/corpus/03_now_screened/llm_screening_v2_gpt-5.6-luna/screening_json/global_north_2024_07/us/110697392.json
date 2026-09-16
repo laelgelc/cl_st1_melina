@@ -1,0 +1,65 @@
+{
+  "article_id": "110697392",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_07/us/110697392.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_07/us/110697392.json"
+  },
+  "manifest_row": {
+    "article_id": "110697392",
+    "group": "global_north_2024_07",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2024_07/us/110697392.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "gaza_role": "passing",
+    "main_topic": "Humanitarian crisis and displacement in the Sahel",
+    "conflict_relevance": "Gaza is mentioned only in passing as one of the wars dominating international news; the article focuses on insecurity, refugees, and humanitarian needs in the Sahel.",
+    "reason": "The article is centrally about the Sahel and contains no substantive discussion of Gaza, Palestine, Israel, or the related conflict.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "0c02fa2a034c658b952bde56e07fed82ec68666cf77520286f4b8d8f6dd8f1e8",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "91f7db7febcff44407517887f61d93faaac1509f97425464a263a24e2c5fa2b3",
+    "raw_response_text_sha256": "0f59a250ae0d987d993b43ab9db15a4f1615c06df686f20f61b6d39412824ee6"
+  },
+  "api_metadata": {
+    "id": "resp_0b5c5cfdecf34b83006aaa131bb4f487d2a69f014bf039f47b",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789530907.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1129,
+      "input_tokens_details": {
+        "cache_write_tokens": 1126,
+        "cached_tokens": 0
+      },
+      "output_tokens": 196,
+      "output_tokens_details": {
+        "reasoning_tokens": 55
+      },
+      "total_tokens": 1325
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Humanitarian crisis and displacement in the Sahel\",\n  \"conflict_relevance\": \"Gaza is mentioned only in passing as one of the wars dominating international news; the article focuses on insecurity, refugees, and humanitarian needs in the Sahel.\",\n  \"reason\": \"The article is centrally about the Sahel and contains no substantive discussion of Gaza, Palestine, Israel, or the related conflict.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:55:10Z",
+  "duration_seconds": 2.753,
+  "error": null
+}

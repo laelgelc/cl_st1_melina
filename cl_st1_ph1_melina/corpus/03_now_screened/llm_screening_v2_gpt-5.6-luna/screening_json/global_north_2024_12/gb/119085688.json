@@ -1,0 +1,65 @@
+{
+  "article_id": "119085688",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_12/gb/119085688.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_12/gb/119085688.json"
+  },
+  "manifest_row": {
+    "article_id": "119085688",
+    "group": "global_north_2024_12",
+    "country_code": "gb",
+    "filepath": "corpus/02_now_organised/global_north_2024_12/gb/119085688.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.97,
+    "gaza_role": "background",
+    "main_topic": "UK government funding for pothole repairs and local road maintenance",
+    "conflict_relevance": "The main article is unrelated to the Israel-Palestine conflict, but it includes a substantive embedded snippet about wartime Christmas in Bethlehem and increased West Bank violence since the Gaza war began.",
+    "reason": "The article primarily concerns UK road maintenance and pothole funding. However, the Bethlehem and West Bank passage provides meaningful, though brief and embedded, conflict-related discourse, making the item peripheral rather than excludable.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "7b07212ae3dcc291f5e1a6603374654d83bd780876ce5721635a19f012cc24e4",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "626647a0b6a0e6e3f8e61bee2bb7b1b8cf0645bad90163a5bdfcec6b2ff167c3",
+    "raw_response_text_sha256": "ca6e754a6bbfba5ab26d2ca5a5894c3289d880cebf251d40b3cdb7182b7a9eff"
+  },
+  "api_metadata": {
+    "id": "resp_0b4670272c5e0729006aaa1d8ca2f087d28e7fb5f3b418256a",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789533580.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1671,
+      "input_tokens_details": {
+        "cache_write_tokens": 1668,
+        "cached_tokens": 0
+      },
+      "output_tokens": 263,
+      "output_tokens_details": {
+        "reasoning_tokens": 96
+      },
+      "total_tokens": 1934
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.97,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"UK government funding for pothole repairs and local road maintenance\",\n  \"conflict_relevance\": \"The main article is unrelated to the Israel-Palestine conflict, but it includes a substantive embedded snippet about wartime Christmas in Bethlehem and increased West Bank violence since the Gaza war began.\",\n  \"reason\": \"The article primarily concerns UK road maintenance and pothole funding. However, the Bethlehem and West Bank passage provides meaningful, though brief and embedded, conflict-related discourse, making the item peripheral rather than excludable.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T04:39:43Z",
+  "duration_seconds": 2.986,
+  "error": null
+}

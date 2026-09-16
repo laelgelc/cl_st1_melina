@@ -1,0 +1,65 @@
+{
+  "article_id": "104057325",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_12/ca/104057325.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_12/ca/104057325.json"
+  },
+  "manifest_row": {
+    "article_id": "104057325",
+    "group": "global_north_2023_12",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2023_12/ca/104057325.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.99,
+    "gaza_role": "passing",
+    "main_topic": "Bank of Canada interest-rate policy and the Canadian economy",
+    "conflict_relevance": "A brief embedded news item reports the humanitarian situation in besieged Gaza and the lack of safe haven for civilians, but the main article is unrelated to the conflict.",
+    "reason": "The article primarily discusses Canadian monetary policy, inflation, economic growth, and employment. Gaza appears in one substantive but isolated news snippet concerning UNRWA and civilian safety, making it peripheral rather than core.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "d6b61eb732c65c899b42d6af0d40869d124a5fc451803af9251b0aa8e9cfce1a",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "83827102734bed4608f67770265ec64748608175c1c74e786a15b5de97dc49e8",
+    "raw_response_text_sha256": "7870e48d76e9072a26b61ff9ced19bbb42c9ea4627586ea80ae938a8b86777bb"
+  },
+  "api_metadata": {
+    "id": "resp_03dd52249d8171d1006aaa005f217087d28219e9a93eb46664",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789526111.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2106,
+      "input_tokens_details": {
+        "cache_write_tokens": 2103,
+        "cached_tokens": 0
+      },
+      "output_tokens": 211,
+      "output_tokens_details": {
+        "reasoning_tokens": 52
+      },
+      "total_tokens": 2317
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.99,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Bank of Canada interest-rate policy and the Canadian economy\",\n  \"conflict_relevance\": \"A brief embedded news item reports the humanitarian situation in besieged Gaza and the lack of safe haven for civilians, but the main article is unrelated to the conflict.\",\n  \"reason\": \"The article primarily discusses Canadian monetary policy, inflation, economic growth, and employment. Gaza appears in one substantive but isolated news snippet concerning UNRWA and civilian safety, making it peripheral rather than core.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:35:14Z",
+  "duration_seconds": 3.215,
+  "error": null
+}

@@ -1,0 +1,65 @@
+{
+  "article_id": "103020115",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_10/ca/103020115.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_10/ca/103020115.json"
+  },
+  "manifest_row": {
+    "article_id": "103020115",
+    "group": "global_north_2023_10",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2023_10/ca/103020115.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.96,
+    "gaza_role": "background",
+    "main_topic": "NHL hockey game between the New York Rangers and Vancouver Canucks",
+    "conflict_relevance": "The main article is unrelated sports coverage, but an embedded CTVNews.ca top-stories roundup includes substantive brief items about humanitarian aid entering Gaza and a hostage held by Hamas.",
+    "reason": "The Gaza-related material appears only in an unrelated embedded news roundup rather than in the hockey article itself. Because the snippets contain meaningful conflict-related reporting, the item is peripheral rather than excluded.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "3ddee3aacde79e592f7bdb6378c790515e2fd224cdf3c9aeaee2c9ec370e194c",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "a3580b7262f7d5072811c614592f756c70f7cd47837dd0540869986b5e0090e8",
+    "raw_response_text_sha256": "663760eaf1c4218253de45942778cea7dc37a2d05baf2cad315c9a1e21e866e7"
+  },
+  "api_metadata": {
+    "id": "resp_09f629505d1928f7006aa9f6bd3ab087d2ae9c4adb45750edb",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789523645.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2311,
+      "input_tokens_details": {
+        "cache_write_tokens": 2308,
+        "cached_tokens": 0
+      },
+      "output_tokens": 312,
+      "output_tokens_details": {
+        "reasoning_tokens": 151
+      },
+      "total_tokens": 2623
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.96,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"NHL hockey game between the New York Rangers and Vancouver Canucks\",\n  \"conflict_relevance\": \"The main article is unrelated sports coverage, but an embedded CTVNews.ca top-stories roundup includes substantive brief items about humanitarian aid entering Gaza and a hostage held by Hamas.\",\n  \"reason\": \"The Gaza-related material appears only in an unrelated embedded news roundup rather than in the hockey article itself. Because the snippets contain meaningful conflict-related reporting, the item is peripheral rather than excluded.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T01:54:09Z",
+  "duration_seconds": 3.96,
+  "error": null
+}

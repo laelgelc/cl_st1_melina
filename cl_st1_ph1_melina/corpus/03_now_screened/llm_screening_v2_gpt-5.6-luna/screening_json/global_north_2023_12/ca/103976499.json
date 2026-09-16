@@ -1,0 +1,65 @@
+{
+  "article_id": "103976499",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_12/ca/103976499.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_12/ca/103976499.json"
+  },
+  "manifest_row": {
+    "article_id": "103976499",
+    "group": "global_north_2023_12",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2023_12/ca/103976499.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.94,
+    "gaza_role": "passing",
+    "main_topic": "Luxury residential real estate listings",
+    "conflict_relevance": "The article is primarily a real estate feature but includes an embedded news brief stating that Israel's ground offensive had expanded throughout Gaza and that evacuations were ordered.",
+    "reason": "The Gaza-related content is meaningful but appears only as one unrelated snippet among several news items appended to a real estate article, so it is not suitable for the main conflict corpus.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "b106779a433340f3c108a84bd53f4cffb7fdefadba5401cdbc6f68c103385764",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "01d6bd9e134450374cd36ad8abdea84e7079265517552bb36486016b92fd31aa",
+    "raw_response_text_sha256": "65bf797734b0a0a45fec6602a4a8b387a4b8a95ebfc49d81406c3c3be80b75a3"
+  },
+  "api_metadata": {
+    "id": "resp_0e3cf1bc197423c8006aaa0053eb3887d282cf94e3fb745253",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789526099.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1634,
+      "input_tokens_details": {
+        "cache_write_tokens": 1631,
+        "cached_tokens": 0
+      },
+      "output_tokens": 302,
+      "output_tokens_details": {
+        "reasoning_tokens": 155
+      },
+      "total_tokens": 1936
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.94,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Luxury residential real estate listings\",\n  \"conflict_relevance\": \"The article is primarily a real estate feature but includes an embedded news brief stating that Israel's ground offensive had expanded throughout Gaza and that evacuations were ordered.\",\n  \"reason\": \"The Gaza-related content is meaningful but appears only as one unrelated snippet among several news items appended to a real estate article, so it is not suitable for the main conflict corpus.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:35:04Z",
+  "duration_seconds": 4.652,
+  "error": null
+}

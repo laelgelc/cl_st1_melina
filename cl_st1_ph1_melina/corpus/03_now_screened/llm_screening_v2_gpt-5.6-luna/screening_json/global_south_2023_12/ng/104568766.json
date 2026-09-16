@@ -1,0 +1,65 @@
+{
+  "article_id": "104568766",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_south_2023_12/ng/104568766.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_south_2023_12/ng/104568766.json"
+  },
+  "manifest_row": {
+    "article_id": "104568766",
+    "group": "global_south_2023_12",
+    "country_code": "ng",
+    "filepath": "corpus/02_now_organised/global_south_2023_12/ng/104568766.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.96,
+    "gaza_role": "passing",
+    "main_topic": "Christian reflection on Christmas, Nigerian politics, governance, and religious life",
+    "conflict_relevance": "The main article is unrelated to Gaza, but an embedded latest-news snippet mentions Pope Francis calling for an end to the war in Gaza alongside the war in Ukraine.",
+    "reason": "Gaza appears only in a brief but meaningful sentence within an unrelated roundup of latest items, making the article peripheral rather than core.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "653a8b861b785649f387fa82c3d7dce5b23d59d66e91308c8c66228957fa2ef7",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "0a94be210c248bdf9489b17b36f5111cec00cdfb1b06ce5a876b35d18e7fa92f",
+    "raw_response_text_sha256": "6aab7caefd8af0f3ea282eb0ead5877bce5a7b18e6d030236b927bbc24b91eb0"
+  },
+  "api_metadata": {
+    "id": "resp_0f38adda10b2e190006aaa3723a82087d1a1f4e7b7ba1529bb",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789540131.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1957,
+      "input_tokens_details": {
+        "cache_write_tokens": 1954,
+        "cached_tokens": 0
+      },
+      "output_tokens": 257,
+      "output_tokens_details": {
+        "reasoning_tokens": 110
+      },
+      "total_tokens": 2214
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.96,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Christian reflection on Christmas, Nigerian politics, governance, and religious life\",\n  \"conflict_relevance\": \"The main article is unrelated to Gaza, but an embedded latest-news snippet mentions Pope Francis calling for an end to the war in Gaza alongside the war in Ukraine.\",\n  \"reason\": \"Gaza appears only in a brief but meaningful sentence within an unrelated roundup of latest items, making the article peripheral rather than core.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T06:28:54Z",
+  "duration_seconds": 3.303,
+  "error": null
+}

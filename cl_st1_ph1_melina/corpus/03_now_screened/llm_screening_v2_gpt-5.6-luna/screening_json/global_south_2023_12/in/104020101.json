@@ -1,0 +1,65 @@
+{
+  "article_id": "104020101",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_south_2023_12/in/104020101.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_south_2023_12/in/104020101.json"
+  },
+  "manifest_row": {
+    "article_id": "104020101",
+    "group": "global_south_2023_12",
+    "country_code": "in",
+    "filepath": "corpus/02_now_organised/global_south_2023_12/in/104020101.txt"
+  },
+  "screening": {
+    "category": "CORE",
+    "confidence": 0.82,
+    "gaza_role": "substantial",
+    "main_topic": "Israeli military action and casualties in Gaza",
+    "conflict_relevance": "The text includes substantive reporting on an Israeli air strike causing a child’s death and anticipated Israeli ground operations against Hamas in Khan Yunis.",
+    "reason": "Despite one unrelated UK immigration item, two of the three snippets directly concern Israeli military operations and their effects in Gaza, making the conflict discourse substantial.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": true
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "3a865b948954887a966b56f977819874fc8d7c412c9b034218f75cde431defca",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "1d1e62a1a9fa19ff176cd537193e69b22e9df353eb9906ba4531b065211e60c3",
+    "raw_response_text_sha256": "ecaaf07ce05f9ba254511e9d2d648e6e1f39976e1d7b19ce27388b43f5936217"
+  },
+  "api_metadata": {
+    "id": "resp_052504e12f73b181006aaa3689783487d1aeaecb86c98fad6b",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789539977.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 732,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 385,
+      "output_tokens_details": {
+        "reasoning_tokens": 246
+      },
+      "total_tokens": 1117
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"CORE\",\n  \"confidence\": 0.82,\n  \"gaza_role\": \"substantial\",\n  \"main_topic\": \"Israeli military action and casualties in Gaza\",\n  \"conflict_relevance\": \"The text includes substantive reporting on an Israeli air strike causing a child’s death and anticipated Israeli ground operations against Hamas in Khan Yunis.\",\n  \"reason\": \"Despite one unrelated UK immigration item, two of the three snippets directly concern Israeli military operations and their effects in Gaza, making the conflict discourse substantial.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": true\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T06:26:21Z",
+  "duration_seconds": 4.858,
+  "error": null
+}

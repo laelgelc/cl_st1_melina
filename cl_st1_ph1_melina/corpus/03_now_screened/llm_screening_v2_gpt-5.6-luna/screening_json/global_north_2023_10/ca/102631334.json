@@ -1,0 +1,65 @@
+{
+  "article_id": "102631334",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_10/ca/102631334.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_10/ca/102631334.json"
+  },
+  "manifest_row": {
+    "article_id": "102631334",
+    "group": "global_north_2023_10",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2023_10/ca/102631334.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.93,
+    "gaza_role": "passing",
+    "main_topic": "Indigenous leaders' criticism of parole granted to a fraudulent former social worker",
+    "conflict_relevance": "The main article is unrelated to Gaza or Israel-Palestine, but embedded CTVNews.ca top-story snippets contain substantive references to the Israel-Hamas war, Gaza evacuation, and a potential Israeli ground offensive.",
+    "reason": "The headline article concerns fraud against Indigenous foster children and the Canadian parole system. However, the page includes several meaningful, though unrelated, news snippets about the Israel-Hamas war and Gaza, making it peripheral rather than an exclusion.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "a09f3b01a26813ca0b8e3655d30d8f8d9592f2859a8f66fc59bed4330f251b97",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "afae2885c03e3acb385d76d6528439f3753352e13a0a50f97f60fe9db408f576",
+    "raw_response_text_sha256": "42b3d76e843ef8557f0985f576571f6081c51c33f1b931d43f5c45eb4364d02f"
+  },
+  "api_metadata": {
+    "id": "resp_01dbf837cdadfdce006aa9f6452cfc87d295b2ea32d0f46d21",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789523525.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1880,
+      "input_tokens_details": {
+        "cache_write_tokens": 1877,
+        "cached_tokens": 0
+      },
+      "output_tokens": 402,
+      "output_tokens_details": {
+        "reasoning_tokens": 224
+      },
+      "total_tokens": 2282
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.93,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Indigenous leaders' criticism of parole granted to a fraudulent former social worker\",\n  \"conflict_relevance\": \"The main article is unrelated to Gaza or Israel-Palestine, but embedded CTVNews.ca top-story snippets contain substantive references to the Israel-Hamas war, Gaza evacuation, and a potential Israeli ground offensive.\",\n  \"reason\": \"The headline article concerns fraud against Indigenous foster children and the Canadian parole system. However, the page includes several meaningful, though unrelated, news snippets about the Israel-Hamas war and Gaza, making it peripheral rather than an exclusion.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T01:52:11Z",
+  "duration_seconds": 6.498,
+  "error": null
+}

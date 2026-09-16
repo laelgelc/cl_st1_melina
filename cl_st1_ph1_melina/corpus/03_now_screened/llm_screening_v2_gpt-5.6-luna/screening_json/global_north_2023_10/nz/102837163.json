@@ -1,0 +1,65 @@
+{
+  "article_id": "102837163",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_10/nz/102837163.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_10/nz/102837163.json"
+  },
+  "manifest_row": {
+    "article_id": "102837163",
+    "group": "global_north_2023_10",
+    "country_code": "nz",
+    "filepath": "corpus/02_now_organised/global_north_2023_10/nz/102837163.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "background",
+    "main_topic": "Cultural revival and community resilience in Borodianka, Ukraine, after the Russian invasion",
+    "conflict_relevance": "The main article concerns the war in Ukraine, but it includes several substantive embedded news items about Israeli hostages, the forced displacement order in northern Gaza, humanitarian consequences, communications disruptions, and alleged violations of international humanitarian law.",
+    "reason": "Gaza and Israel-Palestine material is meaningful and detailed but appears as appended or embedded news snippets rather than forming part of the main article about Borodianka.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "cb7b940b773cf296b01f7f30b5cb3dadd6d8803732e8c3d982c4de626c5932f4",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "30b050e24d334c8334bd1679bc0483b01b6f30450fb5cae270b4deca07794731",
+    "raw_response_text_sha256": "05edfa51911d76a4b6746636b100ab1fe31fa3e3fc74c809e808863ac0ece57f"
+  },
+  "api_metadata": {
+    "id": "resp_07a4300d10cfaf09006aa9f828b7e087d2a18bc66f20b0e23f",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789524008.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2541,
+      "input_tokens_details": {
+        "cache_write_tokens": 2538,
+        "cached_tokens": 0
+      },
+      "output_tokens": 296,
+      "output_tokens_details": {
+        "reasoning_tokens": 125
+      },
+      "total_tokens": 2837
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Cultural revival and community resilience in Borodianka, Ukraine, after the Russian invasion\",\n  \"conflict_relevance\": \"The main article concerns the war in Ukraine, but it includes several substantive embedded news items about Israeli hostages, the forced displacement order in northern Gaza, humanitarian consequences, communications disruptions, and alleged violations of international humanitarian law.\",\n  \"reason\": \"Gaza and Israel-Palestine material is meaningful and detailed but appears as appended or embedded news snippets rather than forming part of the main article about Borodianka.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:00:12Z",
+  "duration_seconds": 4.085,
+  "error": null
+}

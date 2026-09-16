@@ -1,0 +1,65 @@
+{
+  "article_id": "107704530",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_south_2024_04/ng/107704530.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_south_2024_04/ng/107704530.json"
+  },
+  "manifest_row": {
+    "article_id": "107704530",
+    "group": "global_south_2024_04",
+    "country_code": "ng",
+    "filepath": "corpus/02_now_organised/global_south_2024_04/ng/107704530.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "passing",
+    "main_topic": "Arsenal's 5-0 Premier League victory over Chelsea",
+    "conflict_relevance": "The article is primarily a football match report but includes a separate embedded news item about Hamas releasing a video of an Israeli-American hostage held in Gaza.",
+    "reason": "The headline and main article concern Premier League football. The Gaza-related content is confined to an unrelated, brief embedded snippet about a hostage, which is meaningful but not part of the article's central subject.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "76df054556cc928ed2024627623b8e7bfec98c99ee8decacd0e26aa2c40ebace",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "d911503c7bfd83cf9364051064cdfb49668058a7d63f218f3095bf5d470fd661",
+    "raw_response_text_sha256": "bdf139b8b57338de52379f3e64e10dd8e4bea4fc330cc095090a47034f8444ba"
+  },
+  "api_metadata": {
+    "id": "resp_0e7ade02613bb17e006aaa3a93529c87d1a72aba89c58c090e",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789541011.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2185,
+      "input_tokens_details": {
+        "cache_write_tokens": 2182,
+        "cached_tokens": 0
+      },
+      "output_tokens": 285,
+      "output_tokens_details": {
+        "reasoning_tokens": 128
+      },
+      "total_tokens": 2470
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Arsenal's 5-0 Premier League victory over Chelsea\",\n  \"conflict_relevance\": \"The article is primarily a football match report but includes a separate embedded news item about Hamas releasing a video of an Israeli-American hostage held in Gaza.\",\n  \"reason\": \"The headline and main article concern Premier League football. The Gaza-related content is confined to an unrelated, brief embedded snippet about a hostage, which is meaningful but not part of the article's central subject.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T06:43:35Z",
+  "duration_seconds": 4.415,
+  "error": null
+}

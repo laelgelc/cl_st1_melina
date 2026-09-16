@@ -1,0 +1,65 @@
+{
+  "article_id": "103527460",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_11/nz/103527460.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_11/nz/103527460.json"
+  },
+  "manifest_row": {
+    "article_id": "103527460",
+    "group": "global_north_2023_11",
+    "country_code": "nz",
+    "filepath": "corpus/02_now_organised/global_north_2023_11/nz/103527460.txt"
+  },
+  "screening": {
+    "category": "CORE",
+    "confidence": 0.99,
+    "gaza_role": "central",
+    "main_topic": "Daily report of Israeli military operations, closures, arrests, violence, casualties, and humanitarian access restrictions in the West Bank and Gaza Strip on November 13–14, 2023.",
+    "conflict_relevance": "The article is directly and extensively concerned with the Israel-Palestine conflict, including the Gaza war, Israeli bombardment and ground operations, Palestinian casualties, crossings and blockade conditions, West Bank raids and checkpoints, settler attacks, arrests, and attacks affecting hospitals and civilians.",
+    "reason": "Gaza and the occupied Palestinian territories constitute the main subject throughout the report. The text provides detailed incident-level coverage of military action, displacement, restrictions, casualties, crossings, and humanitarian conditions. A separate biographical and promotional snippet about a Palestine newsletter appears at the end but does not alter the main article's central conflict focus.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": true
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "009e500a3eea41b42f4f2b0d985cd0e3954d2e385d8add5665d77c5d21d2718e",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "f004591d0751146c5a2a09cea35e3e5f48e963b8cd3bfefdec2a752cdb3ed0e6",
+    "raw_response_text_sha256": "205a1b1267b2d97564f2214a8171b064494b9d4c9eb23cb685b19cacd9a98f1a"
+  },
+  "api_metadata": {
+    "id": "resp_0df41b42e3f72e35006aa9fdbcfb3887d2b79c65911d28229b",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789525437.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 7299,
+      "input_tokens_details": {
+        "cache_write_tokens": 7296,
+        "cached_tokens": 0
+      },
+      "output_tokens": 299,
+      "output_tokens_details": {
+        "reasoning_tokens": 69
+      },
+      "total_tokens": 7598
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"CORE\",\n  \"confidence\": 0.99,\n  \"gaza_role\": \"central\",\n  \"main_topic\": \"Daily report of Israeli military operations, closures, arrests, violence, casualties, and humanitarian access restrictions in the West Bank and Gaza Strip on November 13–14, 2023.\",\n  \"conflict_relevance\": \"The article is directly and extensively concerned with the Israel-Palestine conflict, including the Gaza war, Israeli bombardment and ground operations, Palestinian casualties, crossings and blockade conditions, West Bank raids and checkpoints, settler attacks, arrests, and attacks affecting hospitals and civilians.\",\n  \"reason\": \"Gaza and the occupied Palestinian territories constitute the main subject throughout the report. The text provides detailed incident-level coverage of military action, displacement, restrictions, casualties, crossings, and humanitarian conditions. A separate biographical and promotional snippet about a Palestine newsletter appears at the end but does not alter the main article's central conflict focus.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": true\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:24:01Z",
+  "duration_seconds": 4.844,
+  "error": null
+}

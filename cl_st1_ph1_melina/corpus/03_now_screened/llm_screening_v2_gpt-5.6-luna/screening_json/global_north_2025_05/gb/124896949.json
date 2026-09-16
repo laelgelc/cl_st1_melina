@@ -1,0 +1,65 @@
+{
+  "article_id": "124896949",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_05/gb/124896949.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_05/gb/124896949.json"
+  },
+  "manifest_row": {
+    "article_id": "124896949",
+    "group": "global_north_2025_05",
+    "country_code": "gb",
+    "filepath": "corpus/02_now_organised/global_north_2025_05/gb/124896949.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "gaza_role": "boilerplate_or_unrelated",
+    "main_topic": "King Charles and the political implications of driving a Chinese-made electric vehicle",
+    "conflict_relevance": "The article's main subject is royal transport and electric vehicles; Gaza appears only in an unrelated 'Read next' snippet.",
+    "reason": "The Gaza-related text is an incidental embedded recommendation rather than part of the article's substantive discussion.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "08dacf19fcdb68e516f02325a20373ba3e4d5a39d932887d4951360504a6e154",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "2b1c5fc988585f37aa9b7d08ee10063f18a0e4f6b4e30de99a8f899f45767951",
+    "raw_response_text_sha256": "82f05380aeb83263e25562a493955ecf0e190fe0f78734a5b18d1ced995a3b8e"
+  },
+  "api_metadata": {
+    "id": "resp_0ecaaf1902f594f6006aaa2bebb5c887d1b5fa6c58f9e9daae",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789537259.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 952,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 245,
+      "output_tokens_details": {
+        "reasoning_tokens": 109
+      },
+      "total_tokens": 1197
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"King Charles and the political implications of driving a Chinese-made electric vehicle\",\n  \"conflict_relevance\": \"The article's main subject is royal transport and electric vehicles; Gaza appears only in an unrelated 'Read next' snippet.\",\n  \"reason\": \"The Gaza-related text is an incidental embedded recommendation rather than part of the article's substantive discussion.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T05:41:03Z",
+  "duration_seconds": 3.425,
+  "error": null
+}

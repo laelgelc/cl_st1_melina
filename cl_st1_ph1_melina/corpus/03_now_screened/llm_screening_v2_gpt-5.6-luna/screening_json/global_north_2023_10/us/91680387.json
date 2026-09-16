@@ -1,0 +1,65 @@
+{
+  "article_id": "91680387",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_10/us/91680387.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_10/us/91680387.json"
+  },
+  "manifest_row": {
+    "article_id": "91680387",
+    "group": "global_north_2023_10",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2023_10/us/91680387.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "passing",
+    "main_topic": "Financial markets, Treasury yields, inflation, and monetary policy",
+    "conflict_relevance": "The article briefly identifies delays in Israel's ground invasion of Gaza as one of several factors discussed by market participants, linking the conflict to financial-market sentiment.",
+    "reason": "The article is primarily a market and macroeconomic analysis. Gaza appears in a meaningful but isolated sentence as a geopolitical factor affecting investor discussion, so it is relevant to broader conflict-related discourse but not to the main conflict corpus.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "00b1c8119920013939d11141ea38ed9dc10e53e2aaaf033292c3d0c63472e683",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "c57dacee7b990c4d6ebabc8e28b169007862a21b441be592da053b2ad8dac72b",
+    "raw_response_text_sha256": "d5a3755efd54b72de48c9d62c5d255cb34ebe5fc0c991cb0e3f5591934bf1d94"
+  },
+  "api_metadata": {
+    "id": "resp_016459bf47e01659006aa9faf4b4f087d2946b04c9cbe64d7c",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789524724.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1750,
+      "input_tokens_details": {
+        "cache_write_tokens": 1747,
+        "cached_tokens": 0
+      },
+      "output_tokens": 205,
+      "output_tokens_details": {
+        "reasoning_tokens": 44
+      },
+      "total_tokens": 1955
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Financial markets, Treasury yields, inflation, and monetary policy\",\n  \"conflict_relevance\": \"The article briefly identifies delays in Israel's ground invasion of Gaza as one of several factors discussed by market participants, linking the conflict to financial-market sentiment.\",\n  \"reason\": \"The article is primarily a market and macroeconomic analysis. Gaza appears in a meaningful but isolated sentence as a geopolitical factor affecting investor discussion, so it is relevant to broader conflict-related discourse but not to the main conflict corpus.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:12:07Z",
+  "duration_seconds": 3.247,
+  "error": null
+}

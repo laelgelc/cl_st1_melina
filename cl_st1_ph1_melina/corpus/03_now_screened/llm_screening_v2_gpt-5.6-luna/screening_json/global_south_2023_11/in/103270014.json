@@ -1,0 +1,65 @@
+{
+  "article_id": "103270014",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_south_2023_11/in/103270014.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_south_2023_11/in/103270014.json"
+  },
+  "manifest_row": {
+    "article_id": "103270014",
+    "group": "global_south_2023_11",
+    "country_code": "in",
+    "filepath": "corpus/02_now_organised/global_south_2023_11/in/103270014.txt"
+  },
+  "screening": {
+    "category": "CORE",
+    "confidence": 0.94,
+    "gaza_role": "central",
+    "main_topic": "Israeli military operations in Gaza City against Hamas",
+    "conflict_relevance": "The lead article directly concerns the Israel-Hamas war, Israeli forces operating in Gaza City, Hamas leadership, and the military campaign in Gaza.",
+    "reason": "The opening and substantive news item is centrally about ongoing military action in Gaza. The later paragraphs are unrelated snippets and Reuters boilerplate, indicating a multi-article or extraction issue, but they do not diminish the relevance of the main Gaza report.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": true
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "c510b6a28518c35490091a2f7b2445a6258d491ea948ea9d782127b5bb8190af",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "0f601d568c4abc7a14b161d22d6dec61cd4e5e6576c448a4b3d9cb49bc5dcd81",
+    "raw_response_text_sha256": "7ebc9e3f9f9f056e159209a7fb1ba5baf4879a1631f9dad51bfce0c70783a41a"
+  },
+  "api_metadata": {
+    "id": "resp_075cdb6b856df31b006aaa34b3e56c87d1b1430a2ed4828d67",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789539507.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 785,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 315,
+      "output_tokens_details": {
+        "reasoning_tokens": 156
+      },
+      "total_tokens": 1100
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"CORE\",\n  \"confidence\": 0.94,\n  \"gaza_role\": \"central\",\n  \"main_topic\": \"Israeli military operations in Gaza City against Hamas\",\n  \"conflict_relevance\": \"The lead article directly concerns the Israel-Hamas war, Israeli forces operating in Gaza City, Hamas leadership, and the military campaign in Gaza.\",\n  \"reason\": \"The opening and substantive news item is centrally about ongoing military action in Gaza. The later paragraphs are unrelated snippets and Reuters boilerplate, indicating a multi-article or extraction issue, but they do not diminish the relevance of the main Gaza report.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": true\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T06:18:32Z",
+  "duration_seconds": 4.932,
+  "error": null
+}

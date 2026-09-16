@@ -1,0 +1,65 @@
+{
+  "article_id": "107265786",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_04/ca/107265786.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_04/ca/107265786.json"
+  },
+  "manifest_row": {
+    "article_id": "107265786",
+    "group": "global_north_2024_04",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2024_04/ca/107265786.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "background",
+    "main_topic": "Commemoration of Saskatchewan soldiers' role in the D-Day invasion and a French Legion of Honour award for a Canadian veteran",
+    "conflict_relevance": "The main article is unrelated to Gaza or the Israel-Palestine conflict, but the text includes several substantial embedded news items covering the Israel-Hamas war, Gaza casualties and humanitarian conditions, ceasefire and hostage negotiations, and violence in the West Bank.",
+    "reason": "The primary article concerns a Second World War commemoration. However, the appended latest-stories and news snippets contain meaningful conflict-related reporting, making the item useful for peripheral analysis but not suitable as core conflict coverage.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "c3284f4a390e78d5d4c6040fd5eb351b6a9f0a53e85b3e476ea30d4b4d14e23e",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "ab2b4df6a3528a2d0a517571fad09ce0b4c6cfe3ea1c9226c44018675d64ae71",
+    "raw_response_text_sha256": "7ddff1c37699b1aa31b9b51e642f3dce51f828af567477a168ad73db4e18dff3"
+  },
+  "api_metadata": {
+    "id": "resp_00fe42ded7f64b02006aaa0af81dcc87d2ab7f0f524ece683b",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789528824.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2641,
+      "input_tokens_details": {
+        "cache_write_tokens": 2638,
+        "cached_tokens": 0
+      },
+      "output_tokens": 319,
+      "output_tokens_details": {
+        "reasoning_tokens": 125
+      },
+      "total_tokens": 2960
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Commemoration of Saskatchewan soldiers' role in the D-Day invasion and a French Legion of Honour award for a Canadian veteran\",\n  \"conflict_relevance\": \"The main article is unrelated to Gaza or the Israel-Palestine conflict, but the text includes several substantial embedded news items covering the Israel-Hamas war, Gaza casualties and humanitarian conditions, ceasefire and hostage negotiations, and violence in the West Bank.\",\n  \"reason\": \"The primary article concerns a Second World War commemoration. However, the appended latest-stories and news snippets contain meaningful conflict-related reporting, making the item useful for peripheral analysis but not suitable as core conflict coverage.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:20:28Z",
+  "duration_seconds": 4.518,
+  "error": null
+}

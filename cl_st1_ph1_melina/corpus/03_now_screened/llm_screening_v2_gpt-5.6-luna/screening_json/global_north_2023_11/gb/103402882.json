@@ -1,0 +1,65 @@
+{
+  "article_id": "103402882",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_11/gb/103402882.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_11/gb/103402882.json"
+  },
+  "manifest_row": {
+    "article_id": "103402882",
+    "group": "global_north_2023_11",
+    "country_code": "gb",
+    "filepath": "corpus/02_now_organised/global_north_2023_11/gb/103402882.txt"
+  },
+  "screening": {
+    "category": "CORE",
+    "confidence": 0.98,
+    "gaza_role": "central",
+    "main_topic": "Israeli blockade of hospitals and humanitarian conditions in northern Gaza",
+    "conflict_relevance": "The main article content directly concerns Israeli military actions, hospital access, casualties, and the deteriorating humanitarian situation in Gaza.",
+    "reason": "The opening and most conflict-relevant item focuses substantively on hospitals in northern Gaza being blockaded, increasing casualties, and the lack of medical facilities. Although the text also contains unrelated Ukraine, aviation, and Reuters boilerplate snippets, the Gaza item is directly relevant to the research corpus.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": true
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "fa90d9b627a0520f4cc3bb242f1a7e180a5b2712645c6f75c2e0e98161592bf0",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "1c80877d755bf1b85258a4a848cdb7c95ba8b830fe61763b62cb56c6562a5e6f",
+    "raw_response_text_sha256": "c7e56a0be9905e663384717f4c7b15c082c7f7ea0f559cbc55d5e9c2b1802c9e"
+  },
+  "api_metadata": {
+    "id": "resp_085aacfa73c273e2006aa9fc830e9487d2b93135d85452e5e8",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789525123.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 784,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 263,
+      "output_tokens_details": {
+        "reasoning_tokens": 97
+      },
+      "total_tokens": 1047
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"CORE\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"central\",\n  \"main_topic\": \"Israeli blockade of hospitals and humanitarian conditions in northern Gaza\",\n  \"conflict_relevance\": \"The main article content directly concerns Israeli military actions, hospital access, casualties, and the deteriorating humanitarian situation in Gaza.\",\n  \"reason\": \"The opening and most conflict-relevant item focuses substantively on hospitals in northern Gaza being blockaded, increasing casualties, and the lack of medical facilities. Although the text also contains unrelated Ukraine, aviation, and Reuters boilerplate snippets, the Gaza item is directly relevant to the research corpus.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": true\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:18:47Z",
+  "duration_seconds": 4.908,
+  "error": null
+}

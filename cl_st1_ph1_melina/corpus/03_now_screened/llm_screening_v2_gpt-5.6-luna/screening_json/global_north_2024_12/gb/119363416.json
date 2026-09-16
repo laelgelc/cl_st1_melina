@@ -1,0 +1,65 @@
+{
+  "article_id": "119363416",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_12/gb/119363416.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_12/gb/119363416.json"
+  },
+  "manifest_row": {
+    "article_id": "119363416",
+    "group": "global_north_2024_12",
+    "country_code": "gb",
+    "filepath": "corpus/02_now_organised/global_north_2024_12/gb/119363416.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "gaza_role": "passing",
+    "main_topic": "The Black Death and its effects on European prosperity and social change",
+    "conflict_relevance": "Gaza is mentioned only as one of several historical locations affected by the plague, with no connection to contemporary Palestine or the Israel-Palestine conflict.",
+    "reason": "The article is about medieval disease and European history; the brief historical reference to Gaza is incidental and unrelated to the research focus.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "ab3b132e67f68a91ac399a9e74068381cfb351b3f82ba804e6f4483b45f1f75e",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "b0177b3fc8362e260b2d29b17da17bccc60fe0be8cc2a02cc9f61a628be27052",
+    "raw_response_text_sha256": "6d841e80c8ff7dd43c3289a8e878782a017f6b18e13b2939630725240ffadd55"
+  },
+  "api_metadata": {
+    "id": "resp_0aa8f1b5d5db11ec006aaa1dae8f2487d2afedac99dbde6eaa",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789533614.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 977,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 220,
+      "output_tokens_details": {
+        "reasoning_tokens": 77
+      },
+      "total_tokens": 1197
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"The Black Death and its effects on European prosperity and social change\",\n  \"conflict_relevance\": \"Gaza is mentioned only as one of several historical locations affected by the plague, with no connection to contemporary Palestine or the Israel-Palestine conflict.\",\n  \"reason\": \"The article is about medieval disease and European history; the brief historical reference to Gaza is incidental and unrelated to the research focus.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T04:40:17Z",
+  "duration_seconds": 2.587,
+  "error": null
+}

@@ -1,0 +1,65 @@
+{
+  "article_id": "102716760",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_10/gb/102716760.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_10/gb/102716760.json"
+  },
+  "manifest_row": {
+    "article_id": "102716760",
+    "group": "global_north_2023_10",
+    "country_code": "gb",
+    "filepath": "corpus/02_now_organised/global_north_2023_10/gb/102716760.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "gaza_role": "passing",
+    "main_topic": "Amazon's planned drone package-delivery expansion in the UK",
+    "conflict_relevance": "The main article is unrelated to Gaza or the Israel-Palestine conflict; Gaza appears only in an unrelated embedded news snippet about a hospital blast.",
+    "reason": "The headline and substantive article concern Amazon's drone delivery technology, regulation, safety, and business plans. The sole Gaza-related content is a passing item in a mixed-news block and does not provide meaningful conflict discourse.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "a8a5ec15589246f05dc6a116be2714a21a2429b0ed5447b30f40ed78512f3407",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "b92c51dc224159debb635d52d322a24ccee69aff52293638a200f46ddf10dfa1",
+    "raw_response_text_sha256": "a96aab2167f8c7693edd872effb0c2365e451d1c69a31a3cf10a7097c7c1ad98"
+  },
+  "api_metadata": {
+    "id": "resp_0ec88570f29ebcce006aa9f745d61487d2af75b355a09e6c93",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789523781.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 3030,
+      "input_tokens_details": {
+        "cache_write_tokens": 3027,
+        "cached_tokens": 0
+      },
+      "output_tokens": 234,
+      "output_tokens_details": {
+        "reasoning_tokens": 76
+      },
+      "total_tokens": 3264
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Amazon's planned drone package-delivery expansion in the UK\",\n  \"conflict_relevance\": \"The main article is unrelated to Gaza or the Israel-Palestine conflict; Gaza appears only in an unrelated embedded news snippet about a hospital blast.\",\n  \"reason\": \"The headline and substantive article concern Amazon's drone delivery technology, regulation, safety, and business plans. The sole Gaza-related content is a passing item in a mixed-news block and does not provide meaningful conflict discourse.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T01:56:24Z",
+  "duration_seconds": 2.923,
+  "error": null
+}

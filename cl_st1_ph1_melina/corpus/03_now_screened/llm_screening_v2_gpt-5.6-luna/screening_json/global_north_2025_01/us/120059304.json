@@ -1,0 +1,65 @@
+{
+  "article_id": "120059304",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_01/us/120059304.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_01/us/120059304.json"
+  },
+  "manifest_row": {
+    "article_id": "120059304",
+    "group": "global_north_2025_01",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2025_01/us/120059304.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "passing",
+    "main_topic": "Autonomous food delivery robots operating in Chicago during winter",
+    "conflict_relevance": "The article is primarily about robotic food delivery and contains an unrelated embedded reference to an agreement involving hostage releases, displaced people in Gaza, and humanitarian aid.",
+    "reason": "The Gaza-related material is meaningful but limited to a short, unrelated news snippet appended to an otherwise unrelated article.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "87674fc01534cc8ae5c7811a1a41c2814f6b41c72b966dd1a8afc49c6d7d0c42",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "5b23ef68d4726848da42993e3327459e8eb33755eb3336a069c075c8a22f5931",
+    "raw_response_text_sha256": "ca256ea2aae33f4d1d8d90c76ecb6e5b28755fe5d8b42a6cd97c12a6b29c4923"
+  },
+  "api_metadata": {
+    "id": "resp_01239a5cfd82fa2d006aaa212927f887d2b8970fcfe9645d80",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789534505.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2158,
+      "input_tokens_details": {
+        "cache_write_tokens": 2155,
+        "cached_tokens": 0
+      },
+      "output_tokens": 259,
+      "output_tokens_details": {
+        "reasoning_tokens": 121
+      },
+      "total_tokens": 2417
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Autonomous food delivery robots operating in Chicago during winter\",\n  \"conflict_relevance\": \"The article is primarily about robotic food delivery and contains an unrelated embedded reference to an agreement involving hostage releases, displaced people in Gaza, and humanitarian aid.\",\n  \"reason\": \"The Gaza-related material is meaningful but limited to a short, unrelated news snippet appended to an otherwise unrelated article.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T04:55:08Z",
+  "duration_seconds": 3.594,
+  "error": null
+}

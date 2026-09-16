@@ -1,0 +1,65 @@
+{
+  "article_id": "104613008",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_south_2023_12/ng/104613008.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_south_2023_12/ng/104613008.json"
+  },
+  "manifest_row": {
+    "article_id": "104613008",
+    "group": "global_south_2023_12",
+    "country_code": "ng",
+    "filepath": "corpus/02_now_organised/global_south_2023_12/ng/104613008.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "gaza_role": "passing",
+    "main_topic": "Construction of a mini-military barracks in a Nigerian border community",
+    "conflict_relevance": "The main article concerns local security and military infrastructure in Kogi State, Nigeria, with no substantive connection to Gaza or the Israel-Palestine conflict.",
+    "reason": "The text is primarily an unrelated Nigerian security report. Gaza appears only in a separate embedded snippet about a student debate topic, which is incidental to the headline article.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "04855122c2a2faa2f57ce22dd639e574cc27f7b03d7089c51f4b3d1cdd3d4426",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "24eb5d1dad73e2dc60f20a7a3576c21dea29614964b9bfc956b22cbea4c9d701",
+    "raw_response_text_sha256": "cd0791aad3e8a6197ec4358a10c5f975aaff53d01fbf8ce7838fd05a8fe2ef79"
+  },
+  "api_metadata": {
+    "id": "resp_0bee35205c034641006aaa372a257887d1a1272fa0e6e8f570",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789540138.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2239,
+      "input_tokens_details": {
+        "cache_write_tokens": 2236,
+        "cached_tokens": 0
+      },
+      "output_tokens": 251,
+      "output_tokens_details": {
+        "reasoning_tokens": 100
+      },
+      "total_tokens": 2490
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Construction of a mini-military barracks in a Nigerian border community\",\n  \"conflict_relevance\": \"The main article concerns local security and military infrastructure in Kogi State, Nigeria, with no substantive connection to Gaza or the Israel-Palestine conflict.\",\n  \"reason\": \"The text is primarily an unrelated Nigerian security report. Gaza appears only in a separate embedded snippet about a student debate topic, which is incidental to the headline article.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T06:29:01Z",
+  "duration_seconds": 3.89,
+  "error": null
+}

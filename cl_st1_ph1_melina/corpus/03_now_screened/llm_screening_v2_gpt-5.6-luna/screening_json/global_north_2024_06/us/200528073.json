@@ -1,0 +1,65 @@
+{
+  "article_id": "200528073",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_06/us/200528073.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_06/us/200528073.json"
+  },
+  "manifest_row": {
+    "article_id": "200528073",
+    "group": "global_north_2024_06",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2024_06/us/200528073.txt"
+  },
+  "screening": {
+    "category": "CORE",
+    "confidence": 0.99,
+    "gaza_role": "central",
+    "main_topic": "Israeli hostage families advocating for a ceasefire in Gaza",
+    "conflict_relevance": "Directly concerns the Israel-Hamas war, Gaza ceasefire negotiations, and the perspectives of hostage families.",
+    "reason": "The headline and lead content centrally focus on Israeli hostage families urging a ceasefire in Gaza. The article also contains unrelated Supreme Court news snippets, but these do not alter the main article's core conflict relevance.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": true
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "482c2b80a83d341e2a9493cab93d721492d71118635c362940138a4b97b974e4",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "c9102619a61ccf9bb20f24da28478cbe78407a5544b486d85e6a368a23857807",
+    "raw_response_text_sha256": "3ef0b9c9a865fea726a8b8e16fc7ead123aeeb93a41fe6402b9db147f7d1332a"
+  },
+  "api_metadata": {
+    "id": "resp_06981e0b7e6563fe006aaa11b1f6e887d29569b31673d06b19",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789530546.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 759,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 190,
+      "output_tokens_details": {
+        "reasoning_tokens": 43
+      },
+      "total_tokens": 949
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"CORE\",\n  \"confidence\": 0.99,\n  \"gaza_role\": \"central\",\n  \"main_topic\": \"Israeli hostage families advocating for a ceasefire in Gaza\",\n  \"conflict_relevance\": \"Directly concerns the Israel-Hamas war, Gaza ceasefire negotiations, and the perspectives of hostage families.\",\n  \"reason\": \"The headline and lead content centrally focus on Israeli hostage families urging a ceasefire in Gaza. The article also contains unrelated Supreme Court news snippets, but these do not alter the main article's core conflict relevance.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": true\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:49:11Z",
+  "duration_seconds": 5.789,
+  "error": null
+}

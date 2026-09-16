@@ -1,0 +1,65 @@
+{
+  "article_id": "91649764",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_10/us/91649764.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_10/us/91649764.json"
+  },
+  "manifest_row": {
+    "article_id": "91649764",
+    "group": "global_north_2023_10",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2023_10/us/91649764.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "gaza_role": "boilerplate_or_unrelated",
+    "main_topic": "Kentucky gubernatorial debate covering education, economic development, firearms, and the death penalty",
+    "conflict_relevance": "The article is unrelated to Gaza or the Israel-Palestine conflict; Gaza appears only in an appended photo-caption snippet.",
+    "reason": "The main article reports on a Kentucky political debate. The sole Gaza reference is an unrelated embedded Yahoo News photo caption about strikes in Gaza and does not contribute meaningful conflict discourse.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "b209866a1cabf66cc4cbd0b2703a258831bc859b660d46ce892cde8998e936e4",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "1372b4ed992a3ad1bb91be3a766ce8996aaf265ab562a5ea6c87136bc369ace6",
+    "raw_response_text_sha256": "c8ac645888fe2f00ae4b7767466ec9eeff9df931a0ba65619c67b8c8c74bcb1a"
+  },
+  "api_metadata": {
+    "id": "resp_0b1db64d35a94cd3006aa9fa93735087d2b1ec45e7add872c6",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789524627.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2099,
+      "input_tokens_details": {
+        "cache_write_tokens": 2096,
+        "cached_tokens": 0
+      },
+      "output_tokens": 217,
+      "output_tokens_details": {
+        "reasoning_tokens": 61
+      },
+      "total_tokens": 2316
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"gaza_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Kentucky gubernatorial debate covering education, economic development, firearms, and the death penalty\",\n  \"conflict_relevance\": \"The article is unrelated to Gaza or the Israel-Palestine conflict; Gaza appears only in an appended photo-caption snippet.\",\n  \"reason\": \"The main article reports on a Kentucky political debate. The sole Gaza reference is an unrelated embedded Yahoo News photo caption about strikes in Gaza and does not contribute meaningful conflict discourse.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:10:30Z",
+  "duration_seconds": 3.372,
+  "error": null
+}

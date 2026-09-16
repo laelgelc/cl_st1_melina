@@ -1,0 +1,65 @@
+{
+  "article_id": "200031308",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_11/us/200031308.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_11/us/200031308.json"
+  },
+  "manifest_row": {
+    "article_id": "200031308",
+    "group": "global_north_2023_11",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2023_11/us/200031308.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "gaza_role": "passing",
+    "main_topic": "Closure of a downtown Memphis restaurant and plans for a replacement concept",
+    "conflict_relevance": "The main article is unrelated to Gaza or the Israel-Palestine conflict; a separate appended news snippet briefly discusses Hamas, hostages, Gaza, and an Israel-Hamas truce.",
+    "reason": "The headline and primary article concern a Memphis restaurant closure. The conflict-related hostage paragraph is an unrelated embedded news item rather than part of the article's subject.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "eb24e37b81730ca0a60a103295a19694333289bf5d55c759a896e20ec67685ec",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "4fd875d8742307a0c5d2d35960796c0841f0154f3bed666155c181dbf69160f1",
+    "raw_response_text_sha256": "74a5656e993c811521ef39a79c8dbdb58efd16c615ab35a7929b6758e074f894"
+  },
+  "api_metadata": {
+    "id": "resp_0b93c8d9807507ec006aa9ff9dcd9087d283882dc610f23cf4",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789525917.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1160,
+      "input_tokens_details": {
+        "cache_write_tokens": 1157,
+        "cached_tokens": 0
+      },
+      "output_tokens": 278,
+      "output_tokens_details": {
+        "reasoning_tokens": 122
+      },
+      "total_tokens": 1438
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Closure of a downtown Memphis restaurant and plans for a replacement concept\",\n  \"conflict_relevance\": \"The main article is unrelated to Gaza or the Israel-Palestine conflict; a separate appended news snippet briefly discusses Hamas, hostages, Gaza, and an Israel-Hamas truce.\",\n  \"reason\": \"The headline and primary article concern a Memphis restaurant closure. The conflict-related hostage paragraph is an unrelated embedded news item rather than part of the article's subject.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:32:04Z",
+  "duration_seconds": 7.251,
+  "error": null
+}

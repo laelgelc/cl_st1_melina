@@ -1,0 +1,65 @@
+{
+  "article_id": "109624585",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_06/ca/109624585.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_06/ca/109624585.json"
+  },
+  "manifest_row": {
+    "article_id": "109624585",
+    "group": "global_north_2024_06",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2024_06/ca/109624585.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "gaza_role": "boilerplate_or_unrelated",
+    "main_topic": "Chronic obstructive pulmonary disease care and prevention in Prince Edward Island",
+    "conflict_relevance": "The main article is unrelated to Gaza or the Israel-Palestine conflict; Gaza appears only in an embedded latest-stories/news-video item about Israeli protests and hostages.",
+    "reason": "The article primarily discusses COPD awareness, prevention, treatment, and health-care access. The Gaza-related material belongs to an unrelated embedded news snippet rather than the main article.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "465ccb62d9c841139af2a56e8f621901c2ffdbb1a13ce50eb7e4d1769f173d25",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "2832e2a858f29b8e4a1ffd780d7a0202a737732ce6298a2a6ef2c761803007e7",
+    "raw_response_text_sha256": "08bc5f111dce5ea2ae4e6955138bc6df44d45f8e792b99a77e06ce63aa018762"
+  },
+  "api_metadata": {
+    "id": "resp_03dde4d6c916a4b6006aaa1048ece087d2ad1130a489536b72",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789530184.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1930,
+      "input_tokens_details": {
+        "cache_write_tokens": 1927,
+        "cached_tokens": 0
+      },
+      "output_tokens": 290,
+      "output_tokens_details": {
+        "reasoning_tokens": 129
+      },
+      "total_tokens": 2220
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Chronic obstructive pulmonary disease care and prevention in Prince Edward Island\",\n  \"conflict_relevance\": \"The main article is unrelated to Gaza or the Israel-Palestine conflict; Gaza appears only in an embedded latest-stories/news-video item about Israeli protests and hostages.\",\n  \"reason\": \"The article primarily discusses COPD awareness, prevention, treatment, and health-care access. The Gaza-related material belongs to an unrelated embedded news snippet rather than the main article.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:43:10Z",
+  "duration_seconds": 5.478,
+  "error": null
+}

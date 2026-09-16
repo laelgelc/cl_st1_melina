@@ -1,0 +1,65 @@
+{
+  "article_id": "120643932",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_01/ca/120643932.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_01/ca/120643932.json"
+  },
+  "manifest_row": {
+    "article_id": "120643932",
+    "group": "global_north_2025_01",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2025_01/ca/120643932.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.88,
+    "gaza_role": "passing",
+    "main_topic": "Mixed news content including a measles exposure warning, unrelated Canadian and U.S. policy stories, and a brief reference to foreign aid for Gaza",
+    "conflict_relevance": "The article includes a substantive but isolated reference to U.S. foreign-aid policy and alleged funding for condoms in Gaza, contributing limited discourse on Gaza and humanitarian assistance.",
+    "reason": "The text is primarily a compilation of unrelated news snippets. Gaza appears in one meaningful sentence concerning a political claim about foreign aid, but the conflict is not the focus of the article.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "2be0f17a448d12fd82cc7acfd42b55b4ab3b105d89521dd383ae95f8bd6c0966",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "044028e377a79ff55c32dde378ef98bcd93f478abd1ed17834f23f1087579e5b",
+    "raw_response_text_sha256": "21df5c8a937f5ce028f7387614b33dd5800f9445b7e1aacb69a5fea73b2d1b8e"
+  },
+  "api_metadata": {
+    "id": "resp_048d7564bf59c461006aaa1f4576f887d2ad01d3f850b71912",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789534021.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 3018,
+      "input_tokens_details": {
+        "cache_write_tokens": 3015,
+        "cached_tokens": 0
+      },
+      "output_tokens": 372,
+      "output_tokens_details": {
+        "reasoning_tokens": 199
+      },
+      "total_tokens": 3390
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.88,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Mixed news content including a measles exposure warning, unrelated Canadian and U.S. policy stories, and a brief reference to foreign aid for Gaza\",\n  \"conflict_relevance\": \"The article includes a substantive but isolated reference to U.S. foreign-aid policy and alleged funding for condoms in Gaza, contributing limited discourse on Gaza and humanitarian assistance.\",\n  \"reason\": \"The text is primarily a compilation of unrelated news snippets. Gaza appears in one meaningful sentence concerning a political claim about foreign aid, but the conflict is not the focus of the article.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T04:47:05Z",
+  "duration_seconds": 4.567,
+  "error": null
+}

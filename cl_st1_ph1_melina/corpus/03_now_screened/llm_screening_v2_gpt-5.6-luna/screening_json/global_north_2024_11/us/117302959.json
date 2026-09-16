@@ -1,0 +1,65 @@
+{
+  "article_id": "117302959",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_11/us/117302959.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_11/us/117302959.json"
+  },
+  "manifest_row": {
+    "article_id": "117302959",
+    "group": "global_north_2024_11",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2024_11/us/117302959.txt"
+  },
+  "screening": {
+    "category": "CORE",
+    "confidence": 0.99,
+    "gaza_role": "central",
+    "main_topic": "Israeli strikes and humanitarian conditions in Gaza, including casualties, aid access, vaccination efforts, and the broader Israel-Hamas war",
+    "conflict_relevance": "Direct and substantial coverage of military action, Palestinian casualties, humanitarian access, public health, hostages, and the origins and consequences of the Gaza war",
+    "reason": "Gaza is the main subject of the headline and most of the article, which reports Israeli airstrikes, deaths, humanitarian restrictions, aid delivery problems, disease prevention, and the ongoing Israel-Hamas conflict. The Lebanon conflict is a substantial secondary section but remains connected to the broader regional conflict.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": true
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "d8f2a9610d31544118daa4bc5dd6168a8c09a31a7d608d8c1763f0183e99e729",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "911242a523a7b57318d63147cfbd7500eb647e408982f45f8f9d5555ddd10829",
+    "raw_response_text_sha256": "fbb98b49854d9853178584f151f97076623c0cce5f35022cb94987f84d90e907"
+  },
+  "api_metadata": {
+    "id": "resp_0785fb40e9a00a59006aaa1bec87a487d2991f22b4f5c7740c",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789533164.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1597,
+      "input_tokens_details": {
+        "cache_write_tokens": 1594,
+        "cached_tokens": 0
+      },
+      "output_tokens": 241,
+      "output_tokens_details": {
+        "reasoning_tokens": 53
+      },
+      "total_tokens": 1838
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"CORE\",\n  \"confidence\": 0.99,\n  \"gaza_role\": \"central\",\n  \"main_topic\": \"Israeli strikes and humanitarian conditions in Gaza, including casualties, aid access, vaccination efforts, and the broader Israel-Hamas war\",\n  \"conflict_relevance\": \"Direct and substantial coverage of military action, Palestinian casualties, humanitarian access, public health, hostages, and the origins and consequences of the Gaza war\",\n  \"reason\": \"Gaza is the main subject of the headline and most of the article, which reports Israeli airstrikes, deaths, humanitarian restrictions, aid delivery problems, disease prevention, and the ongoing Israel-Hamas conflict. The Lebanon conflict is a substantial secondary section but remains connected to the broader regional conflict.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": true\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T04:32:47Z",
+  "duration_seconds": 2.987,
+  "error": null
+}

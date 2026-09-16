@@ -1,0 +1,65 @@
+{
+  "article_id": "120504125",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_01/us/120504125.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_01/us/120504125.json"
+  },
+  "manifest_row": {
+    "article_id": "120504125",
+    "group": "global_north_2025_01",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2025_01/us/120504125.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.93,
+    "gaza_role": "passing",
+    "main_topic": "Security protection for former Trump national security officials facing Iranian threats",
+    "conflict_relevance": "The main article concerns U.S.-Iran tensions and former officials involved in the Soleimani strike, while an embedded news item briefly discusses Trump's proposal for Egypt and Jordan to accept Palestinian refugees from besieged Gaza.",
+    "reason": "The primary article is not about Gaza or the Israel-Palestine conflict, but the article includes a meaningful, though brief and unrelated, embedded item concerning Palestinian refugees and Gaza.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "3f3d62707aebbf503ff8a67cb301203e5cbb1c9a41e677f2eb2d86b89ef34510",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "1c188e9816c95141120022684ac40966e089e554c6956a9d5fac9acf8da20f67",
+    "raw_response_text_sha256": "a76f26ab56c1f91e43869cacd16622188ab1b8a1f33b1e0b8b32619de7ec4624"
+  },
+  "api_metadata": {
+    "id": "resp_059807fbb4df82a4006aaa21b03d4887d282c19034a63941d6",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789534640.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1736,
+      "input_tokens_details": {
+        "cache_write_tokens": 1733,
+        "cached_tokens": 0
+      },
+      "output_tokens": 355,
+      "output_tokens_details": {
+        "reasoning_tokens": 190
+      },
+      "total_tokens": 2091
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.93,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Security protection for former Trump national security officials facing Iranian threats\",\n  \"conflict_relevance\": \"The main article concerns U.S.-Iran tensions and former officials involved in the Soleimani strike, while an embedded news item briefly discusses Trump's proposal for Egypt and Jordan to accept Palestinian refugees from besieged Gaza.\",\n  \"reason\": \"The primary article is not about Gaza or the Israel-Palestine conflict, but the article includes a meaningful, though brief and unrelated, embedded item concerning Palestinian refugees and Gaza.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T04:57:24Z",
+  "duration_seconds": 4.387,
+  "error": null
+}

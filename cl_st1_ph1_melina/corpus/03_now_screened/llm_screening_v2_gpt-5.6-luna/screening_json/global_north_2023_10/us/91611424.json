@@ -1,0 +1,65 @@
+{
+  "article_id": "91611424",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_10/us/91611424.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_10/us/91611424.json"
+  },
+  "manifest_row": {
+    "article_id": "91611424",
+    "group": "global_north_2023_10",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2023_10/us/91611424.txt"
+  },
+  "screening": {
+    "category": "CORE",
+    "confidence": 0.96,
+    "gaza_role": "substantial",
+    "main_topic": "Israel-Hamas conflict and military action in Gaza",
+    "conflict_relevance": "The article includes substantive commentary from a former Gaza Division deputy commander about Hamas, Iran, civilian buildings, and Israel's military response.",
+    "reason": "Although the text also contains an unrelated Martha Stewart prison anecdote, the Gaza-related segment directly addresses Hamas, Iran, Israel's security, civilian exposure, and the conduct of war.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": true
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "0b7a5e23bcbfb09d8f74d076fb96720fe2fc24f738c826a9016fc2a8f7b7f026",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "af8f37eb5566f68d2ae837f4422511033a57f9d2733fc75c3abd6e4bab43e978",
+    "raw_response_text_sha256": "7f06875ed54626a153f4c70f4e72f139a4f8d25ed62ad6edcfff973d91974d66"
+  },
+  "api_metadata": {
+    "id": "resp_0f29676140b7047f006aa9f9fe081487d29fd6731dac82dac9",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789524478.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 902,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 255,
+      "output_tokens_details": {
+        "reasoning_tokens": 109
+      },
+      "total_tokens": 1157
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"CORE\",\n  \"confidence\": 0.96,\n  \"gaza_role\": \"substantial\",\n  \"main_topic\": \"Israel-Hamas conflict and military action in Gaza\",\n  \"conflict_relevance\": \"The article includes substantive commentary from a former Gaza Division deputy commander about Hamas, Iran, civilian buildings, and Israel's military response.\",\n  \"reason\": \"Although the text also contains an unrelated Martha Stewart prison anecdote, the Gaza-related segment directly addresses Hamas, Iran, Israel's security, civilian exposure, and the conduct of war.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": true\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:08:01Z",
+  "duration_seconds": 3.97,
+  "error": null
+}

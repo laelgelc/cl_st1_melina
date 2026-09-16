@@ -1,0 +1,65 @@
+{
+  "article_id": "107215708",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_04/ca/107215708.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_04/ca/107215708.json"
+  },
+  "manifest_row": {
+    "article_id": "107215708",
+    "group": "global_north_2024_04",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2024_04/ca/107215708.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "background",
+    "main_topic": "Interview and entertainment coverage of the television series Ghosts",
+    "conflict_relevance": "An unrelated embedded news item reports Israel's dismissal and reprimand of military personnel over drone strikes in Gaza that killed seven aid workers.",
+    "reason": "The main article is entirely about the TV series Ghosts and its actors. However, the article text includes a substantive embedded news snippet about Israeli military conduct and civilian protection in Gaza, making it peripherally relevant rather than excludable.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "9c0447b1fa727752b53cb412bf2a4c7f2b4c9a9be1b9a61afa0fd1b85ae6ef64",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "c0e086464666c9ff72e2081e79d92b5a7cdb8b871184614cd79430085e89db60",
+    "raw_response_text_sha256": "747f482e182eff726a0c096e665a88f4f628e7b67e1318021aa7c93dc16e8a96"
+  },
+  "api_metadata": {
+    "id": "resp_097585a5d841225c006aaa0af49aa087d297ce757e8f8aa226",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789528820.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 3068,
+      "input_tokens_details": {
+        "cache_write_tokens": 3065,
+        "cached_tokens": 0
+      },
+      "output_tokens": 283,
+      "output_tokens_details": {
+        "reasoning_tokens": 123
+      },
+      "total_tokens": 3351
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Interview and entertainment coverage of the television series Ghosts\",\n  \"conflict_relevance\": \"An unrelated embedded news item reports Israel's dismissal and reprimand of military personnel over drone strikes in Gaza that killed seven aid workers.\",\n  \"reason\": \"The main article is entirely about the TV series Ghosts and its actors. However, the article text includes a substantive embedded news snippet about Israeli military conduct and civilian protection in Gaza, making it peripherally relevant rather than excludable.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:20:24Z",
+  "duration_seconds": 3.836,
+  "error": null
+}

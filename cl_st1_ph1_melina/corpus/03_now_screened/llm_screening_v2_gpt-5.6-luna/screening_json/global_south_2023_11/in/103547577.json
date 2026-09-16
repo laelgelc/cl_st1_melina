@@ -1,0 +1,65 @@
+{
+  "article_id": "103547577",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_south_2023_11/in/103547577.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_south_2023_11/in/103547577.json"
+  },
+  "manifest_row": {
+    "article_id": "103547577",
+    "group": "global_south_2023_11",
+    "country_code": "in",
+    "filepath": "corpus/02_now_organised/global_south_2023_11/in/103547577.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "passing",
+    "main_topic": "Cricket and the 2023 ODI World Cup",
+    "conflict_relevance": "The article is primarily about the World Cup but includes a substantive embedded news snippet about Israel's military offensive in Gaza and operations against Hamas.",
+    "reason": "The headline and main article concern cricket, while the Gaza-related content appears as an unrelated embedded section. It has meaningful conflict discourse but is not core coverage.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "b5ebda90e896fd543ad3cff68ff87f6c7d5bf59c6b2fe7be141b852b57a9ebd2",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "b0740ebcd7f117c30e6d68f7edf55f932e2db71221da564e4b0b4b4cd4275c70",
+    "raw_response_text_sha256": "c29ae939d912315bbe56e8046eefabb0bd198fa7389027eadf362a00e0c527ef"
+  },
+  "api_metadata": {
+    "id": "resp_07fa0b1bb5dc5f95006aaa351df63887d1a1eab3c8cd182b2c",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789539613.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1047,
+      "input_tokens_details": {
+        "cache_write_tokens": 1044,
+        "cached_tokens": 0
+      },
+      "output_tokens": 218,
+      "output_tokens_details": {
+        "reasoning_tokens": 74
+      },
+      "total_tokens": 1265
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Cricket and the 2023 ODI World Cup\",\n  \"conflict_relevance\": \"The article is primarily about the World Cup but includes a substantive embedded news snippet about Israel's military offensive in Gaza and operations against Hamas.\",\n  \"reason\": \"The headline and main article concern cricket, while the Gaza-related content appears as an unrelated embedded section. It has meaningful conflict discourse but is not core coverage.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T06:20:17Z",
+  "duration_seconds": 3.238,
+  "error": null
+}

@@ -1,0 +1,65 @@
+{
+  "article_id": "126000716",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_south_2025_06/in/126000716.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_south_2025_06/in/126000716.json"
+  },
+  "manifest_row": {
+    "article_id": "126000716",
+    "group": "global_south_2025_06",
+    "country_code": "in",
+    "filepath": "corpus/02_now_organised/global_south_2025_06/in/126000716.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.96,
+    "gaza_role": "background",
+    "main_topic": "Israeli and Iranian missile strikes and escalating military conflict",
+    "conflict_relevance": "The article focuses on the Iran-Israel conflict and nuclear tensions, but references Israel's use of evacuation warnings in Gaza as a comparison to its warnings in Tehran.",
+    "reason": "Although it contains meaningful conflict-related discourse and directly mentions Israeli military practices in Gaza, Gaza and the Israel-Palestine conflict are not the article's central subject.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "9e80f16bcf42aa336c1c17ed42ede0c3a86235c1213953e6f520aa1ff21e18c4",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "fc92908f4b4252625484a33afb2efbde47087d8c0275eaa596b846d8f6e8f4a2",
+    "raw_response_text_sha256": "3a5082792c93960802d7297712deedf536a442b64de129f76c105a4573f24256"
+  },
+  "api_metadata": {
+    "id": "resp_092620167682c39e006aaa4a149f4887d19b81828e7c17204c",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789544980.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1122,
+      "input_tokens_details": {
+        "cache_write_tokens": 1119,
+        "cached_tokens": 0
+      },
+      "output_tokens": 248,
+      "output_tokens_details": {
+        "reasoning_tokens": 97
+      },
+      "total_tokens": 1370
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.96,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Israeli and Iranian missile strikes and escalating military conflict\",\n  \"conflict_relevance\": \"The article focuses on the Iran-Israel conflict and nuclear tensions, but references Israel's use of evacuation warnings in Gaza as a comparison to its warnings in Tehran.\",\n  \"reason\": \"Although it contains meaningful conflict-related discourse and directly mentions Israeli military practices in Gaza, Gaza and the Israel-Palestine conflict are not the article's central subject.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T07:49:44Z",
+  "duration_seconds": 4.189,
+  "error": null
+}

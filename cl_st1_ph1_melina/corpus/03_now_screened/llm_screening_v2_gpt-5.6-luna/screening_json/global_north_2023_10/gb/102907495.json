@@ -1,0 +1,65 @@
+{
+  "article_id": "102907495",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_10/gb/102907495.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_10/gb/102907495.json"
+  },
+  "manifest_row": {
+    "article_id": "102907495",
+    "group": "global_north_2023_10",
+    "country_code": "gb",
+    "filepath": "corpus/02_now_organised/global_north_2023_10/gb/102907495.txt"
+  },
+  "screening": {
+    "category": "CORE",
+    "confidence": 0.82,
+    "gaza_role": "central",
+    "main_topic": "Gaza civilian deaths, unidentified bodies, and diplomatic proposals for Israel-Palestine peace",
+    "conflict_relevance": "The article directly addresses mass graves and identification of Palestinian victims in Gaza, as well as proposed political pathways to peace between Israelis and Palestinians.",
+    "reason": "The opening reports directly on humanitarian conditions and deaths in Gaza, while the following paragraph discusses Israel-Palestine diplomacy. Although unrelated Meta earnings and Reuters boilerplate appear later, the conflict-related material is substantial and directly relevant.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": true
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "4da623ba5a08e8eb3ca7f77f67a290e8d014ecb57a6e2c26583538afcc426abd",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "d4c0d9e74d50ac66a5204f5231775bb41ba58697c12235806bd884e2cb8ac66b",
+    "raw_response_text_sha256": "cca5831fca35d1d6d05af83406d61e633d4f24121c215cd6cf20a7041fc424be"
+  },
+  "api_metadata": {
+    "id": "resp_045a757cb293186b006aa9f7ae32a887d286b7e23154eaca6e",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789523886.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 788,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 479,
+      "output_tokens_details": {
+        "reasoning_tokens": 315
+      },
+      "total_tokens": 1267
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"CORE\",\n  \"confidence\": 0.82,\n  \"gaza_role\": \"central\",\n  \"main_topic\": \"Gaza civilian deaths, unidentified bodies, and diplomatic proposals for Israel-Palestine peace\",\n  \"conflict_relevance\": \"The article directly addresses mass graves and identification of Palestinian victims in Gaza, as well as proposed political pathways to peace between Israelis and Palestinians.\",\n  \"reason\": \"The opening reports directly on humanitarian conditions and deaths in Gaza, while the following paragraph discusses Israel-Palestine diplomacy. Although unrelated Meta earnings and Reuters boilerplate appear later, the conflict-related material is substantial and directly relevant.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": true\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T01:58:10Z",
+  "duration_seconds": 4.887,
+  "error": null
+}

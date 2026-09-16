@@ -1,0 +1,65 @@
+{
+  "article_id": "108687625",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_06/us/108687625.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_06/us/108687625.json"
+  },
+  "manifest_row": {
+    "article_id": "108687625",
+    "group": "global_north_2024_06",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2024_06/us/108687625.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.96,
+    "gaza_role": "passing",
+    "main_topic": "Boeing Starliner’s aborted crewed launch and NASA’s commercial spaceflight program",
+    "conflict_relevance": "The article is primarily about spaceflight but contains an embedded passage referring to diplomatic setbacks for Israel, condemnation of a Gaza strike, and protests on Western campuses.",
+    "reason": "The Gaza-related material is meaningful but incidental to the main article and appears among multiple unrelated snippets.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "f8fda003826a5c95b7851895e13be1b5416ba3eb3e335bd6d084dfee97bf5755",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "6265cba4de2196c5734426d45512928f0094e03ab0b22a0ac03e8a7eeb3a86a3",
+    "raw_response_text_sha256": "f4378ecd6b6d016b491db93c2b7b5d3fe1ea2ee3e7ae6a649295c29b7e2963a1"
+  },
+  "api_metadata": {
+    "id": "resp_08846feb04123d29006aaa10dbc5f887d29077b97e45913750",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789530331.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2073,
+      "input_tokens_details": {
+        "cache_write_tokens": 2070,
+        "cached_tokens": 0
+      },
+      "output_tokens": 250,
+      "output_tokens_details": {
+        "reasoning_tokens": 107
+      },
+      "total_tokens": 2323
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.96,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Boeing Starliner’s aborted crewed launch and NASA’s commercial spaceflight program\",\n  \"conflict_relevance\": \"The article is primarily about spaceflight but contains an embedded passage referring to diplomatic setbacks for Israel, condemnation of a Gaza strike, and protests on Western campuses.\",\n  \"reason\": \"The Gaza-related material is meaningful but incidental to the main article and appears among multiple unrelated snippets.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:45:35Z",
+  "duration_seconds": 3.474,
+  "error": null
+}

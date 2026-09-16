@@ -1,0 +1,65 @@
+{
+  "article_id": "200479888",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_05/us/200479888.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_05/us/200479888.json"
+  },
+  "manifest_row": {
+    "article_id": "200479888",
+    "group": "global_north_2024_05",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2024_05/us/200479888.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.96,
+    "gaza_role": "background",
+    "main_topic": "A bomb scare and security measures at the Cannes Film Festival",
+    "conflict_relevance": "The article discusses the film The Belle From Gaza, whose plot involves trans Palestinians crossing from Gaza to Tel Aviv, but the main story concerns an unrelated security incident at Cannes.",
+    "reason": "The Gaza-related content is meaningful cultural representation and briefly identifies Palestinian mobility and identity, but it is background to the main report about a bomb scare and does not substantially address the conflict itself.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "fb2b9b5a2bad40914f1db31de64066599e47033f22384dd2da0a96ae387bd0b6",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "fb5b6770b9556fb0a7b8de513b455baa8013838fd0e0aa148487a0db6c4c2fef",
+    "raw_response_text_sha256": "d98f2e12be3173a5da2cc26cca9e2fcb49ee984f3fb38540d490fc66d4db95f2"
+  },
+  "api_metadata": {
+    "id": "resp_099ade78725daa68006aaa0fc8d4b087d29354e234fbc0f3a9",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789530056.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1357,
+      "input_tokens_details": {
+        "cache_write_tokens": 1354,
+        "cached_tokens": 0
+      },
+      "output_tokens": 257,
+      "output_tokens_details": {
+        "reasoning_tokens": 99
+      },
+      "total_tokens": 1614
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.96,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"A bomb scare and security measures at the Cannes Film Festival\",\n  \"conflict_relevance\": \"The article discusses the film The Belle From Gaza, whose plot involves trans Palestinians crossing from Gaza to Tel Aviv, but the main story concerns an unrelated security incident at Cannes.\",\n  \"reason\": \"The Gaza-related content is meaningful cultural representation and briefly identifies Palestinian mobility and identity, but it is background to the main report about a bomb scare and does not substantially address the conflict itself.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:41:00Z",
+  "duration_seconds": 3.526,
+  "error": null
+}

@@ -1,0 +1,65 @@
+{
+  "article_id": "106384516",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_03/us/106384516.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_03/us/106384516.json"
+  },
+  "manifest_row": {
+    "article_id": "106384516",
+    "group": "global_north_2024_03",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2024_03/us/106384516.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.96,
+    "gaza_role": "passing",
+    "main_topic": "Swiss referendum on pension payments and retirement age",
+    "conflict_relevance": "The main article is unrelated to the Israel-Palestine conflict, but an embedded news snippet briefly mentions Palestinian reconciliation efforts and the Gaza war.",
+    "reason": "The headline article concerns Swiss pensions. Gaza appears only in a separate, unrelated embedded news item, which provides a meaningful but very brief reference to Palestinian politics and the Gaza war.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "7c47c473b1c2d8abc277e35d7c91cedcabe8ee2a79ef9cbe90c0cce59058a491",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "6399b534a4b27db41e8396aba0232cd874b3a075d489844e0ec91e599f159c04",
+    "raw_response_text_sha256": "f7f92eb9ba41800a363edfdbad73b710b14d30e501aa891024117ea2a9d286ae"
+  },
+  "api_metadata": {
+    "id": "resp_07d66a0a543fd311006aaa0961e3a087d2b2333d50f37009af",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789528417.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2137,
+      "input_tokens_details": {
+        "cache_write_tokens": 2134,
+        "cached_tokens": 0
+      },
+      "output_tokens": 328,
+      "output_tokens_details": {
+        "reasoning_tokens": 180
+      },
+      "total_tokens": 2465
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.96,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Swiss referendum on pension payments and retirement age\",\n  \"conflict_relevance\": \"The main article is unrelated to the Israel-Palestine conflict, but an embedded news snippet briefly mentions Palestinian reconciliation efforts and the Gaza war.\",\n  \"reason\": \"The headline article concerns Swiss pensions. Gaza appears only in a separate, unrelated embedded news item, which provides a meaningful but very brief reference to Palestinian politics and the Gaza war.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:13:42Z",
+  "duration_seconds": 4.654,
+  "error": null
+}

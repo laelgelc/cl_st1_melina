@@ -1,0 +1,65 @@
+{
+  "article_id": "103342602",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_11/ca/103342602.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_11/ca/103342602.json"
+  },
+  "manifest_row": {
+    "article_id": "103342602",
+    "group": "global_north_2023_11",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2023_11/ca/103342602.txt"
+  },
+  "screening": {
+    "category": "CORE",
+    "confidence": 0.99,
+    "gaza_role": "central",
+    "main_topic": "A family separated by the Gaza war reunites in Canada after the mother and newborn escape through Rafah",
+    "conflict_relevance": "Directly concerns civilians fleeing the Gaza war, bombardment, displacement, humanitarian conditions, family separation, and exit through the Rafah border",
+    "reason": "The main article is centrally about a woman and infant escaping war-torn Gaza and reuniting with the child's father in Canada. Although unrelated health snippets are appended, the headline and primary narrative are directly focused on Gaza and its humanitarian consequences.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": true
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "4b403454757b92ce87f26a8b797665b21d4af9e2cd315b07836aa78d67b88c64",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "598e9feafa41f32071e04190fe014f93ebba53ba8a08d8effd4bfc205fc0764e",
+    "raw_response_text_sha256": "ae8f6d9e788ba3bdcb5debfa4e0d1b45ecc2e5b9bb84ec5343331bf6e0a384bb"
+  },
+  "api_metadata": {
+    "id": "resp_0fb0b76f695a631d006aa9fbbfa76887d29b8b25f3b0be0fca",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789524927.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1122,
+      "input_tokens_details": {
+        "cache_write_tokens": 1119,
+        "cached_tokens": 0
+      },
+      "output_tokens": 222,
+      "output_tokens_details": {
+        "reasoning_tokens": 52
+      },
+      "total_tokens": 1344
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"CORE\",\n  \"confidence\": 0.99,\n  \"gaza_role\": \"central\",\n  \"main_topic\": \"A family separated by the Gaza war reunites in Canada after the mother and newborn escape through Rafah\",\n  \"conflict_relevance\": \"Directly concerns civilians fleeing the Gaza war, bombardment, displacement, humanitarian conditions, family separation, and exit through the Rafah border\",\n  \"reason\": \"The main article is centrally about a woman and infant escaping war-torn Gaza and reuniting with the child's father in Canada. Although unrelated health snippets are appended, the headline and primary narrative are directly focused on Gaza and its humanitarian consequences.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": true\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:15:31Z",
+  "duration_seconds": 3.48,
+  "error": null
+}

@@ -1,0 +1,65 @@
+{
+  "article_id": "200092374",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_12/us/200092374.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_12/us/200092374.json"
+  },
+  "manifest_row": {
+    "article_id": "200092374",
+    "group": "global_north_2023_12",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2023_12/us/200092374.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "background",
+    "main_topic": "Financial market analysis of Bitcoin, WTI crude oil, and a biotech ETF",
+    "conflict_relevance": "The article briefly discusses how attacks on Red Sea vessels linked to the war in Gaza affect oil shipping costs and supply concerns.",
+    "reason": "The article is primarily a financial-market roundup and is not about Gaza or the Israel-Hamas war, but it contains a meaningful sentence connecting the conflict to energy-market volatility.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "e33fef95881cd846e973b9d755fa6c0155921acffe7352608d388da77b24feed",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "5bd9c494e226677c4ab508b2ed9965436f35364d583218a61f8ed5fb6c71049a",
+    "raw_response_text_sha256": "f696373a4d895ba3c0b7233063061165f769ae17d48db280f37b48f8ccccbf70"
+  },
+  "api_metadata": {
+    "id": "resp_06c05f1e3207d3f2006aaa033ed56487d2aa6e0726effeee0a",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789526846.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1474,
+      "input_tokens_details": {
+        "cache_write_tokens": 1471,
+        "cached_tokens": 0
+      },
+      "output_tokens": 225,
+      "output_tokens_details": {
+        "reasoning_tokens": 76
+      },
+      "total_tokens": 1699
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Financial market analysis of Bitcoin, WTI crude oil, and a biotech ETF\",\n  \"conflict_relevance\": \"The article briefly discusses how attacks on Red Sea vessels linked to the war in Gaza affect oil shipping costs and supply concerns.\",\n  \"reason\": \"The article is primarily a financial-market roundup and is not about Gaza or the Israel-Hamas war, but it contains a meaningful sentence connecting the conflict to energy-market volatility.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:47:29Z",
+  "duration_seconds": 3.128,
+  "error": null
+}

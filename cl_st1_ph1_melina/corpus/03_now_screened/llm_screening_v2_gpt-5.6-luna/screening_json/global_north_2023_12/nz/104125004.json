@@ -1,0 +1,65 @@
+{
+  "article_id": "104125004",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_12/nz/104125004.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_12/nz/104125004.json"
+  },
+  "manifest_row": {
+    "article_id": "104125004",
+    "group": "global_north_2023_12",
+    "country_code": "nz",
+    "filepath": "corpus/02_now_organised/global_north_2023_12/nz/104125004.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.94,
+    "gaza_role": "substantial",
+    "main_topic": "Mixed New Zealand political and public-affairs news snippets",
+    "conflict_relevance": "Contains a substantive political commentary describing Gaza’s civilian suffering, blockade, alleged apartheid, and alleged genocide, but the page is primarily a mixed collection of unrelated snippets rather than focused conflict coverage.",
+    "reason": "The Gaza passage is meaningful for studying discourse about the Israel-Palestine conflict and genocide framing, yet it appears alongside unrelated items about New Zealand government and economic policy. It is therefore relevant as peripheral discourse rather than core conflict reporting.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "82f32c9afbdeca2ba040c28b3ccdcfac069ae8ab8cea93aaea04f2b237e59afa",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "8b4a88827dec9d617a5acb9518d283426599fd7049914b52ab9e668c860ddb1f",
+    "raw_response_text_sha256": "f4a2b47156374760f20efe868e4461683dc91faf845bd7f62d68cf7f678c9a9d"
+  },
+  "api_metadata": {
+    "id": "resp_0bc1eca6da38c76c006aaa017fd00087d2b8cb5bf48c859e1c",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789526399.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 920,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 336,
+      "output_tokens_details": {
+        "reasoning_tokens": 188
+      },
+      "total_tokens": 1256
+    }
+  },
+  "raw_response_text": "{\"category\":\"PERIPHERAL\",\"confidence\":0.94,\"gaza_role\":\"substantial\",\"main_topic\":\"Mixed New Zealand political and public-affairs news snippets\",\"conflict_relevance\":\"Contains a substantive political commentary describing Gaza’s civilian suffering, blockade, alleged apartheid, and alleged genocide, but the page is primarily a mixed collection of unrelated snippets rather than focused conflict coverage.\",\"reason\":\"The Gaza passage is meaningful for studying discourse about the Israel-Palestine conflict and genocide framing, yet it appears alongside unrelated items about New Zealand government and economic policy. It is therefore relevant as peripheral discourse rather than core conflict reporting.\",\"multi_article_or_snippet_issue\":true,\"recommended_for_main_corpus\":false}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:40:05Z",
+  "duration_seconds": 5.577,
+  "error": null
+}

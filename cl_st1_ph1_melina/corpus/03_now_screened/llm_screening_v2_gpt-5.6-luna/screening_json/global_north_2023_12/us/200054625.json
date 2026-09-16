@@ -1,0 +1,65 @@
+{
+  "article_id": "200054625",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_12/us/200054625.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_12/us/200054625.json"
+  },
+  "manifest_row": {
+    "article_id": "200054625",
+    "group": "global_north_2023_12",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2023_12/us/200054625.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "background",
+    "main_topic": "A film-industry roundtable with Arab and international filmmakers discussing storytelling, cinema, cultural stereotypes, representation, and media",
+    "conflict_relevance": "The article discusses the ongoing conflict in the Middle East, explicitly references Gaza, and addresses media representation, selective empathy, colonial narratives, and the responsibility of filmmakers to tell authentic stories during violence. However, the article is primarily about filmmaking and Arab cinema rather than Gaza or the Israel-Palestine conflict.",
+    "reason": "The Gaza reference and related discussion of conflict, media framing, stereotypes, and storytelling are meaningful for broader discourse analysis, but they are secondary to the article's main focus on filmmakers and their films.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "b9f266e915264c12064ae3aa6af4d257f36bcda67cb54f4c4e905fd86c35bd52",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "a2641dddf67e8cc0e819c7731edc57faaeb44e2ffb270c3ad6d61fdcb0519d9f",
+    "raw_response_text_sha256": "9993826e366bcb053feae4e7a9b8db5242d9070f5f15064014d63306ef0cd9ad"
+  },
+  "api_metadata": {
+    "id": "resp_063a4ca1c19942e0006aaa02e19d7887d28739c9b6baea29d9",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789526753.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 7055,
+      "input_tokens_details": {
+        "cache_write_tokens": 7052,
+        "cached_tokens": 0
+      },
+      "output_tokens": 277,
+      "output_tokens_details": {
+        "reasoning_tokens": 78
+      },
+      "total_tokens": 7332
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"A film-industry roundtable with Arab and international filmmakers discussing storytelling, cinema, cultural stereotypes, representation, and media\",\n  \"conflict_relevance\": \"The article discusses the ongoing conflict in the Middle East, explicitly references Gaza, and addresses media representation, selective empathy, colonial narratives, and the responsibility of filmmakers to tell authentic stories during violence. However, the article is primarily about filmmaking and Arab cinema rather than Gaza or the Israel-Palestine conflict.\",\n  \"reason\": \"The Gaza reference and related discussion of conflict, media framing, stereotypes, and storytelling are meaningful for broader discourse analysis, but they are secondary to the article's main focus on filmmakers and their films.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:45:58Z",
+  "duration_seconds": 4.507,
+  "error": null
+}

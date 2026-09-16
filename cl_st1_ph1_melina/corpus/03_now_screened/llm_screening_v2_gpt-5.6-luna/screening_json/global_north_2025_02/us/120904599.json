@@ -1,0 +1,65 @@
+{
+  "article_id": "120904599",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_02/us/120904599.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_02/us/120904599.json"
+  },
+  "manifest_row": {
+    "article_id": "120904599",
+    "group": "global_north_2025_02",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2025_02/us/120904599.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "background",
+    "main_topic": "Books newsletter featuring literary reviews, interviews, and reading recommendations",
+    "conflict_relevance": "The newsletter includes substantive discussion of books responding to the 2023 bombardment of Gaza and the treatment of Palestinians, including works by Omar El Akkad and Pankaj Mishra.",
+    "reason": "The article is primarily a literary roundup covering numerous unrelated books and authors, but its Browser section contains meaningful discourse about Gaza, Palestinian suffering, Western responses, and racial politics. This makes it relevant to broader conflict-related discourse but not core conflict coverage.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "e49317916ba69268db60914b74091956a75ad05f15229e5bcad763723480785c",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "5f9ed8fb528e6e99a3bb2b8440a99178d2477431f43102a014a2f58f3f5f488c",
+    "raw_response_text_sha256": "0ed8458b2eeb7954a95dde73476cc082322060eabc95ef36eb046c1005622111"
+  },
+  "api_metadata": {
+    "id": "resp_07e2a36a2142ada6006aaa2434e0dc87d1953d2fbfff0f182a",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789535284.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2605,
+      "input_tokens_details": {
+        "cache_write_tokens": 2602,
+        "cached_tokens": 0
+      },
+      "output_tokens": 310,
+      "output_tokens_details": {
+        "reasoning_tokens": 137
+      },
+      "total_tokens": 2915
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Books newsletter featuring literary reviews, interviews, and reading recommendations\",\n  \"conflict_relevance\": \"The newsletter includes substantive discussion of books responding to the 2023 bombardment of Gaza and the treatment of Palestinians, including works by Omar El Akkad and Pankaj Mishra.\",\n  \"reason\": \"The article is primarily a literary roundup covering numerous unrelated books and authors, but its Browser section contains meaningful discourse about Gaza, Palestinian suffering, Western responses, and racial politics. This makes it relevant to broader conflict-related discourse but not core conflict coverage.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T05:08:09Z",
+  "duration_seconds": 4.626,
+  "error": null
+}

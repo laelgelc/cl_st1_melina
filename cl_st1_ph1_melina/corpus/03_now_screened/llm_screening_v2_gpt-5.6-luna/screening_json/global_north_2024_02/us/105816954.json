@@ -1,0 +1,65 @@
+{
+  "article_id": "105816954",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_02/us/105816954.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_02/us/105816954.json"
+  },
+  "manifest_row": {
+    "article_id": "105816954",
+    "group": "global_north_2024_02",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2024_02/us/105816954.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.95,
+    "gaza_role": "passing",
+    "main_topic": "Hungarian president Katalin Novak's resignation over a controversial pardon in a child sexual abuse case",
+    "conflict_relevance": "The article is primarily about Hungarian domestic politics, but it contains a meaningful embedded passage describing an Israeli tank near a Palestinian family's vehicle during an evacuation attempt in Gaza and the deaths of two medics.",
+    "reason": "Gaza-related content appears only as an unrelated embedded news snippet and is not connected to the article's main topic. Because the passage contains substantive conflict-related details, the item is peripheral rather than excluded.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "f99c3d8790c8242c39b043be33cfc60d5ed56efd0567b7be0566e0e517b16b23",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "f49853a0898ec1b8f61e6901de8015871cf86ecf77f83c411efdefb77b69763c",
+    "raw_response_text_sha256": "3f615e31471122d88dd3c6fe90a5e2744fd07d3c9170412a3553f8b8e1774294"
+  },
+  "api_metadata": {
+    "id": "resp_0d98d12da9d8f3eb006aaa071ad0f887d284caf21184233589",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789527834.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2535,
+      "input_tokens_details": {
+        "cache_write_tokens": 2532,
+        "cached_tokens": 0
+      },
+      "output_tokens": 276,
+      "output_tokens_details": {
+        "reasoning_tokens": 102
+      },
+      "total_tokens": 2811
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.95,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Hungarian president Katalin Novak's resignation over a controversial pardon in a child sexual abuse case\",\n  \"conflict_relevance\": \"The article is primarily about Hungarian domestic politics, but it contains a meaningful embedded passage describing an Israeli tank near a Palestinian family's vehicle during an evacuation attempt in Gaza and the deaths of two medics.\",\n  \"reason\": \"Gaza-related content appears only as an unrelated embedded news snippet and is not connected to the article's main topic. Because the passage contains substantive conflict-related details, the item is peripheral rather than excluded.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:03:58Z",
+  "duration_seconds": 3.557,
+  "error": null
+}

@@ -1,0 +1,65 @@
+{
+  "article_id": "105504841",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_01/us/105504841.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_01/us/105504841.json"
+  },
+  "manifest_row": {
+    "article_id": "105504841",
+    "group": "global_north_2024_01",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2024_01/us/105504841.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "background",
+    "main_topic": "A drone attack on U.S. troops at Tower 22 in Jordan and the resulting military response",
+    "conflict_relevance": "The article situates the attack within the wider regional violence triggered by the war in Gaza, but focuses primarily on the incident in Jordan, U.S. casualties, and attribution.",
+    "reason": "Gaza is meaningfully referenced as the catalyst for broader regional escalation, yet the article is not substantially about Gaza, Israel-Palestine, or the Israel-Hamas war itself.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "a05b967e934fda56aac2ccd6f1126b250558ec0b6a09c0c147007d9aea6aa649",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "b857326ab9692d7bfc143ba8b195804587197ff3a2d9b51456602fc1bcba990e",
+    "raw_response_text_sha256": "5f5d987b68b6b3aec0c1a789367401390ad77b45466f97885f2e8740911bf648"
+  },
+  "api_metadata": {
+    "id": "resp_0fa96b21ab66ea9a006aaa051b581887d2b47d989d0996cd1c",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789527323.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1141,
+      "input_tokens_details": {
+        "cache_write_tokens": 1138,
+        "cached_tokens": 0
+      },
+      "output_tokens": 212,
+      "output_tokens_details": {
+        "reasoning_tokens": 45
+      },
+      "total_tokens": 1353
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"A drone attack on U.S. troops at Tower 22 in Jordan and the resulting military response\",\n  \"conflict_relevance\": \"The article situates the attack within the wider regional violence triggered by the war in Gaza, but focuses primarily on the incident in Jordan, U.S. casualties, and attribution.\",\n  \"reason\": \"Gaza is meaningfully referenced as the catalyst for broader regional escalation, yet the article is not substantially about Gaza, Israel-Palestine, or the Israel-Hamas war itself.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:55:26Z",
+  "duration_seconds": 2.772,
+  "error": null
+}

@@ -1,0 +1,65 @@
+{
+  "article_id": "103893050",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_11/ca/103893050.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_11/ca/103893050.json"
+  },
+  "manifest_row": {
+    "article_id": "103893050",
+    "group": "global_north_2023_11",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2023_11/ca/103893050.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "gaza_role": "passing",
+    "main_topic": "A class-action lawsuit concerning a hospital data breach in southwestern Ontario",
+    "conflict_relevance": "The article's main subject is unrelated to Gaza or the Israel-Palestine conflict; Gaza appears only in a brief embedded news snippet about hostage releases.",
+    "reason": "The Gaza-related content is incidental and not developed as part of the main article.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "b6d52e5470570d65d263c9a74f5459481f172bdcc5777341e5585dfa2dfc22bf",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "0637b6ff1d6094e76502b387b2daa00ff2a1a85b88cfe9c56a1e207f7ae1ff11",
+    "raw_response_text_sha256": "53e96b9e722c50f67890a4d1d8c79d3b629c99377bcff8e6245e62f3f8630e66"
+  },
+  "api_metadata": {
+    "id": "resp_0d5d18690730a853006aa9fc1a88c487d2a2d1f6f2454b8226",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789525018.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1555,
+      "input_tokens_details": {
+        "cache_write_tokens": 1552,
+        "cached_tokens": 0
+      },
+      "output_tokens": 212,
+      "output_tokens_details": {
+        "reasoning_tokens": 78
+      },
+      "total_tokens": 1767
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"A class-action lawsuit concerning a hospital data breach in southwestern Ontario\",\n  \"conflict_relevance\": \"The article's main subject is unrelated to Gaza or the Israel-Palestine conflict; Gaza appears only in a brief embedded news snippet about hostage releases.\",\n  \"reason\": \"The Gaza-related content is incidental and not developed as part of the main article.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:17:01Z",
+  "duration_seconds": 3.05,
+  "error": null
+}

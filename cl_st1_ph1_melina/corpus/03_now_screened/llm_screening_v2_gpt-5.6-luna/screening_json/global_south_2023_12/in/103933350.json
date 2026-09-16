@@ -1,0 +1,65 @@
+{
+  "article_id": "103933350",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_south_2023_12/in/103933350.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_south_2023_12/in/103933350.json"
+  },
+  "manifest_row": {
+    "article_id": "103933350",
+    "group": "global_south_2023_12",
+    "country_code": "in",
+    "filepath": "corpus/02_now_organised/global_south_2023_12/in/103933350.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "background",
+    "main_topic": "Indian political election news and miscellaneous live updates",
+    "conflict_relevance": "The roundup contains a substantive embedded item about the Gaza conflict, including the Saudi Crown Prince's call for a ceasefire, hostage release, and an end to the Gaza blockade, but Gaza is not the main subject.",
+    "reason": "The article is primarily a collection of unrelated Indian political and current-affairs updates. Its Gaza-related passage is meaningful but appears as one discrete snippet within the broader live-news roundup.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "ec0412665260e4874bb98d67804d35b0d54d13bfeeaf76150752041f7a9997c1",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "ef85c25b4a0a5bb035da27c502d877f7a5dda0859a4a2e8ed2daf97399ee4188",
+    "raw_response_text_sha256": "ced4fd5b58e5c6a2e79260a2f6c7ac93a7feee91fd471cbfd6cb075455a4247b"
+  },
+  "api_metadata": {
+    "id": "resp_0071390a09b9755e006aaa3679e2d887d18f1f76490dcbdfbf",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789539961.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 4125,
+      "input_tokens_details": {
+        "cache_write_tokens": 4122,
+        "cached_tokens": 0
+      },
+      "output_tokens": 308,
+      "output_tokens_details": {
+        "reasoning_tokens": 146
+      },
+      "total_tokens": 4433
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Indian political election news and miscellaneous live updates\",\n  \"conflict_relevance\": \"The roundup contains a substantive embedded item about the Gaza conflict, including the Saudi Crown Prince's call for a ceasefire, hostage release, and an end to the Gaza blockade, but Gaza is not the main subject.\",\n  \"reason\": \"The article is primarily a collection of unrelated Indian political and current-affairs updates. Its Gaza-related passage is meaningful but appears as one discrete snippet within the broader live-news roundup.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T06:26:05Z",
+  "duration_seconds": 4.24,
+  "error": null
+}

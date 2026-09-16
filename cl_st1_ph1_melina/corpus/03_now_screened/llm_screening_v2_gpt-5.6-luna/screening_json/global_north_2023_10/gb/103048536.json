@@ -1,0 +1,65 @@
+{
+  "article_id": "103048536",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_10/gb/103048536.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_10/gb/103048536.json"
+  },
+  "manifest_row": {
+    "article_id": "103048536",
+    "group": "global_north_2023_10",
+    "country_code": "gb",
+    "filepath": "corpus/02_now_organised/global_north_2023_10/gb/103048536.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "background",
+    "main_topic": "Local parliamentary activity, transport services, and community issues",
+    "conflict_relevance": "Includes a substantive paragraph about a parliamentary briefing on the effects of the Israel-Gaza conflict on UK communities, including antisemitism, anti-Muslim hate, misinformation, and community safety.",
+    "reason": "The article is primarily a local MP newsletter covering trains, roads, a library, and hospice volunteering. Its discussion of the Israel-Gaza conflict is meaningful but limited to one background section, so it is relevant to broader conflict-related discourse but not core coverage.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "1f44593fb85763da57291f4e138594ea3955eadfb09da2616e08d317ec9a20f7",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "1ec5bca3215b821f7c8ba4134ec06ef030e77c934c3ca96d5a442e4aa1dc08e7",
+    "raw_response_text_sha256": "336cb2e9a0f1fe4819699c67f57242b098d104c7f50ab4d5a5698970de376b8e"
+  },
+  "api_metadata": {
+    "id": "resp_0096403b1ec26318006aa9f7da440c87d295c5b4a70616d114",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789523930.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1283,
+      "input_tokens_details": {
+        "cache_write_tokens": 1280,
+        "cached_tokens": 0
+      },
+      "output_tokens": 231,
+      "output_tokens_details": {
+        "reasoning_tokens": 57
+      },
+      "total_tokens": 1514
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Local parliamentary activity, transport services, and community issues\",\n  \"conflict_relevance\": \"Includes a substantive paragraph about a parliamentary briefing on the effects of the Israel-Gaza conflict on UK communities, including antisemitism, anti-Muslim hate, misinformation, and community safety.\",\n  \"reason\": \"The article is primarily a local MP newsletter covering trains, roads, a library, and hospice volunteering. Its discussion of the Israel-Gaza conflict is meaningful but limited to one background section, so it is relevant to broader conflict-related discourse but not core coverage.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T01:58:53Z",
+  "duration_seconds": 2.963,
+  "error": null
+}

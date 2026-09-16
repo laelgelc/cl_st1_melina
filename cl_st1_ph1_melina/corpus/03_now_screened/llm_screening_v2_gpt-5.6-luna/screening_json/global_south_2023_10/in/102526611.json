@@ -1,0 +1,65 @@
+{
+  "article_id": "102526611",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_south_2023_10/in/102526611.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_south_2023_10/in/102526611.json"
+  },
+  "manifest_row": {
+    "article_id": "102526611",
+    "group": "global_south_2023_10",
+    "country_code": "in",
+    "filepath": "corpus/02_now_organised/global_south_2023_10/in/102526611.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "gaza_role": "passing",
+    "main_topic": "Indian stock market performance and early trading trends",
+    "conflict_relevance": "The Israel-Gaza region is mentioned only briefly as one of several geopolitical factors affecting investor attention; the article contains no substantive discussion of the conflict.",
+    "reason": "The article is primarily a financial market update, and its sole reference to Israel-Gaza is an incidental passing mention.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "12e8adb05166869ad37755188b4eb48eb3971c04f13d91fe4cf56467fdc76506",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "81c6d06385ecae6848f55e4da13af1e4a89dc8eeb6be36fbfb289c3e24dd3c7e",
+    "raw_response_text_sha256": "a470339752d8df158bd82688a6bdc98cec287c4d77ab26cbcc0e585d4f395011"
+  },
+  "api_metadata": {
+    "id": "resp_0127490ce4a58eb5006aaa3244647887d1a757d37129a51dfb",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789538884.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1098,
+      "input_tokens_details": {
+        "cache_write_tokens": 1095,
+        "cached_tokens": 0
+      },
+      "output_tokens": 213,
+      "output_tokens_details": {
+        "reasoning_tokens": 78
+      },
+      "total_tokens": 1311
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Indian stock market performance and early trading trends\",\n  \"conflict_relevance\": \"The Israel-Gaza region is mentioned only briefly as one of several geopolitical factors affecting investor attention; the article contains no substantive discussion of the conflict.\",\n  \"reason\": \"The article is primarily a financial market update, and its sole reference to Israel-Gaza is an incidental passing mention.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T06:08:07Z",
+  "duration_seconds": 3.119,
+  "error": null
+}

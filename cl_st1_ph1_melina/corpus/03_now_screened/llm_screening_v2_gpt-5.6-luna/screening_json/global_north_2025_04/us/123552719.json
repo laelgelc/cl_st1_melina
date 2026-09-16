@@ -1,0 +1,65 @@
+{
+  "article_id": "123552719",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_04/us/123552719.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_04/us/123552719.json"
+  },
+  "manifest_row": {
+    "article_id": "123552719",
+    "group": "global_north_2025_04",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2025_04/us/123552719.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.97,
+    "gaza_role": "passing",
+    "main_topic": "North Carolina Supreme Court election dispute and contested ballots",
+    "conflict_relevance": "The main article concerns a U.S. state election and related voting litigation. Gaza appears only in a separate, brief embedded news snippet about the arrest of a Palestinian student protester.",
+    "reason": "The article's primary content is unrelated to Gaza or Israel/Palestine, and the Gaza-related material is an incidental item in a collection of unrelated news snippets rather than substantive coverage.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "0ad294315c86b2622626e84f8518f2e3239b9d1417c01e0f669b0ad3ac938896",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "55417b9544bd67975cda19c8d3cb78478b0260970869bec89041e54cdc3d2fa7",
+    "raw_response_text_sha256": "e3bbf7e9210a8593dba743af548fae39cc2ce17a1222dc122449fd7ca11cb8d1"
+  },
+  "api_metadata": {
+    "id": "resp_035ea6a470137e72006aaa2a424d8087d1a991d903214074d0",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789536834.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1949,
+      "input_tokens_details": {
+        "cache_write_tokens": 1946,
+        "cached_tokens": 0
+      },
+      "output_tokens": 331,
+      "output_tokens_details": {
+        "reasoning_tokens": 174
+      },
+      "total_tokens": 2280
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.97,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"North Carolina Supreme Court election dispute and contested ballots\",\n  \"conflict_relevance\": \"The main article concerns a U.S. state election and related voting litigation. Gaza appears only in a separate, brief embedded news snippet about the arrest of a Palestinian student protester.\",\n  \"reason\": \"The article's primary content is unrelated to Gaza or Israel/Palestine, and the Gaza-related material is an incidental item in a collection of unrelated news snippets rather than substantive coverage.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T05:33:58Z",
+  "duration_seconds": 4.312,
+  "error": null
+}

@@ -1,0 +1,65 @@
+{
+  "article_id": "113757411",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_09/us/113757411.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_09/us/113757411.json"
+  },
+  "manifest_row": {
+    "article_id": "113757411",
+    "group": "global_north_2024_09",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2024_09/us/113757411.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "gaza_role": "passing",
+    "main_topic": "History and decline of Croydon Airport",
+    "conflict_relevance": "Gaza is mentioned only as one destination on a historical Imperial Airways route map, with no discussion of Palestine, Israel, or the conflict.",
+    "reason": "The article is a travel-history feature about Croydon Airport. Its sole Gaza reference is an incidental geographic mention unrelated to the research topic.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "137a272384ec77a201929f9ce922dd8bf17a950cde68bfc9745cb677e639ebbb",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "36cec263b556cf75520e11c7a85d9b8fc8023458bfa271ce00077a1b57b34ec4",
+    "raw_response_text_sha256": "24623c0b6934e838360fcb4362d30de56b51daeae1d93bebf7e20cf246cceb47"
+  },
+  "api_metadata": {
+    "id": "resp_06931857a8b05a70006aaa16d8363887d28bcf8686b3c47ef3",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789531864.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 4162,
+      "input_tokens_details": {
+        "cache_write_tokens": 4159,
+        "cached_tokens": 0
+      },
+      "output_tokens": 242,
+      "output_tokens_details": {
+        "reasoning_tokens": 103
+      },
+      "total_tokens": 4404
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"History and decline of Croydon Airport\",\n  \"conflict_relevance\": \"Gaza is mentioned only as one destination on a historical Imperial Airways route map, with no discussion of Palestine, Israel, or the conflict.\",\n  \"reason\": \"The article is a travel-history feature about Croydon Airport. Its sole Gaza reference is an incidental geographic mention unrelated to the research topic.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T04:11:07Z",
+  "duration_seconds": 3.651,
+  "error": null
+}

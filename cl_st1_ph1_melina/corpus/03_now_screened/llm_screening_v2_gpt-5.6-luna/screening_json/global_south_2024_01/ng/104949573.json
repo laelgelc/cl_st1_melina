@@ -1,0 +1,65 @@
+{
+  "article_id": "104949573",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_south_2024_01/ng/104949573.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_south_2024_01/ng/104949573.json"
+  },
+  "manifest_row": {
+    "article_id": "104949573",
+    "group": "global_south_2024_01",
+    "country_code": "ng",
+    "filepath": "corpus/02_now_organised/global_south_2024_01/ng/104949573.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.93,
+    "gaza_role": "passing",
+    "main_topic": "Corruption allegations and calls for investigation within the Nigerian government",
+    "conflict_relevance": "The main article is unrelated to Gaza or Israel-Palestine, but an embedded news snippet briefly discusses a French woman whose son is believed to be held hostage by Hamas in Gaza and her appeal to Israel and Hamas.",
+    "reason": "The article primarily concerns Nigerian political corruption and contains multiple unrelated news items. Its only conflict-related content is a brief but meaningful embedded snippet about a Hamas-held hostage and the Israel-Hamas conflict, making it peripheral rather than core.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "d7edbb466b020dc252a0ea473f774d65db066d57ca6073c94c75806a1a69d3e1",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "a045fe62818c3fb6b02c83a0e9f9526e778985a5ad7475d012c3215bc5bd5e34",
+    "raw_response_text_sha256": "8115e632032d1ff4fe5daba9107f2823d6ac26be333a9fed5fbd944840bc6144"
+  },
+  "api_metadata": {
+    "id": "resp_0e440013e22a58a7006aaa383697e887d1a3cb971baabdbe14",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789540406.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2019,
+      "input_tokens_details": {
+        "cache_write_tokens": 2016,
+        "cached_tokens": 0
+      },
+      "output_tokens": 340,
+      "output_tokens_details": {
+        "reasoning_tokens": 164
+      },
+      "total_tokens": 2359
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.93,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Corruption allegations and calls for investigation within the Nigerian government\",\n  \"conflict_relevance\": \"The main article is unrelated to Gaza or Israel-Palestine, but an embedded news snippet briefly discusses a French woman whose son is believed to be held hostage by Hamas in Gaza and her appeal to Israel and Hamas.\",\n  \"reason\": \"The article primarily concerns Nigerian political corruption and contains multiple unrelated news items. Its only conflict-related content is a brief but meaningful embedded snippet about a Hamas-held hostage and the Israel-Hamas conflict, making it peripheral rather than core.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T06:33:31Z",
+  "duration_seconds": 5.022,
+  "error": null
+}

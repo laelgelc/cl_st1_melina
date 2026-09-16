@@ -1,0 +1,65 @@
+{
+  "article_id": "102488548",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_10/gb/102488548.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_10/gb/102488548.json"
+  },
+  "manifest_row": {
+    "article_id": "102488548",
+    "group": "global_north_2023_10",
+    "country_code": "gb",
+    "filepath": "corpus/02_now_organised/global_north_2023_10/gb/102488548.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "gaza_role": "boilerplate_or_unrelated",
+    "main_topic": "Fatal XL Bully dog attack on a pet dog in Falmouth",
+    "conflict_relevance": "The main article is unrelated to Gaza or the Israel-Palestine conflict; Gaza appears only in an unrelated latest-stories snippet.",
+    "reason": "The article focuses entirely on a local dog attack and its aftermath. The brief Gaza-related text is an embedded, unrelated news snippet rather than part of the main article.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "ccd5adcaac613e8ec4fcc4a32f1845c3cc41efbd93cb8c7803439769fce3c857",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "73b2531394757ae75a8d2d56b56fa98e63cc0708d0f2e9bed23457c92cbf3602",
+    "raw_response_text_sha256": "254105c7bf8e6f651d9feb4deabd2f77040bd013b6c8e4f7417bf9dbf20017dd"
+  },
+  "api_metadata": {
+    "id": "resp_00794d9e243bd939006aa9f6ebf26487d281b13ee7410a46d3",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789523691.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1954,
+      "input_tokens_details": {
+        "cache_write_tokens": 1951,
+        "cached_tokens": 0
+      },
+      "output_tokens": 287,
+      "output_tokens_details": {
+        "reasoning_tokens": 133
+      },
+      "total_tokens": 2241
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"gaza_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Fatal XL Bully dog attack on a pet dog in Falmouth\",\n  \"conflict_relevance\": \"The main article is unrelated to Gaza or the Israel-Palestine conflict; Gaza appears only in an unrelated latest-stories snippet.\",\n  \"reason\": \"The article focuses entirely on a local dog attack and its aftermath. The brief Gaza-related text is an embedded, unrelated news snippet rather than part of the main article.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T01:54:55Z",
+  "duration_seconds": 3.779,
+  "error": null
+}

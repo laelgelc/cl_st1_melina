@@ -1,0 +1,65 @@
+{
+  "article_id": "113306737",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_09/gb/113306737.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_09/gb/113306737.json"
+  },
+  "manifest_row": {
+    "article_id": "113306737",
+    "group": "global_north_2024_09",
+    "country_code": "gb",
+    "filepath": "corpus/02_now_organised/global_north_2024_09/gb/113306737.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.96,
+    "gaza_role": "passing",
+    "main_topic": "Political controversy over Donald Trump's Arlington National Cemetery ceremony and the Afghanistan withdrawal",
+    "conflict_relevance": "The article is primarily about US political disputes concerning the Afghanistan withdrawal and the politicization of a military cemetery, but it includes a brief substantive update on polio vaccination efforts in war-ravaged Gaza.",
+    "reason": "Gaza is mentioned meaningfully in a short embedded news item about the polio outbreak and vaccination campaign, but the article as a whole is not focused on Gaza or the Israel-Palestine conflict.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "ec8ecc91bf9930c0fd6c99f2ad8484cca34a8c0e8ad5d7e8b0c79cb0587c5e7c",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "c8c2eff00275d398be492f459230787c2e750ac2eed2ee48ccb412d5e7552282",
+    "raw_response_text_sha256": "7c50188c7b09e694835c94b4d784f370f455fd64b2cb38a50c6483fa94afc40b"
+  },
+  "api_metadata": {
+    "id": "resp_0b04289c3d7d45db006aaa161eddd887d2ba5ebd9fedab25b8",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789531678.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2088,
+      "input_tokens_details": {
+        "cache_write_tokens": 2085,
+        "cached_tokens": 0
+      },
+      "output_tokens": 313,
+      "output_tokens_details": {
+        "reasoning_tokens": 143
+      },
+      "total_tokens": 2401
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.96,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Political controversy over Donald Trump's Arlington National Cemetery ceremony and the Afghanistan withdrawal\",\n  \"conflict_relevance\": \"The article is primarily about US political disputes concerning the Afghanistan withdrawal and the politicization of a military cemetery, but it includes a brief substantive update on polio vaccination efforts in war-ravaged Gaza.\",\n  \"reason\": \"Gaza is mentioned meaningfully in a short embedded news item about the polio outbreak and vaccination campaign, but the article as a whole is not focused on Gaza or the Israel-Palestine conflict.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T04:08:04Z",
+  "duration_seconds": 5.354,
+  "error": null
+}

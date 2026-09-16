@@ -1,0 +1,65 @@
+{
+  "article_id": "104952011",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_01/nz/104952011.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_01/nz/104952011.json"
+  },
+  "manifest_row": {
+    "article_id": "104952011",
+    "group": "global_north_2024_01",
+    "country_code": "nz",
+    "filepath": "corpus/02_now_organised/global_north_2024_01/nz/104952011.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.93,
+    "gaza_role": "background",
+    "main_topic": "News access and paywall messaging, with unrelated legislative content",
+    "conflict_relevance": "Includes a substantive snippet reporting Benjamin Netanyahu's stated efforts to facilitate the voluntary emigration of Gaza residents to other countries.",
+    "reason": "The page is primarily a paywall notice and a collection of unrelated content, but it contains meaningful discourse about Israel's proposed policy toward Gaza. This makes it relevant to broader conflict discourse but not suitable as core conflict coverage.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "1cc628bdb39747cd60579c1bf78c2f895b818b70f11d54ea87a1f57702de734b",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "90f777acb08de88ef1f1897990548cf9fcdd08b37d068e3f33f36e49d68a1e84",
+    "raw_response_text_sha256": "5d6ba89fce1006101bdf7688540ee54865bc5b778eba5a73abb2fb6aa298e734"
+  },
+  "api_metadata": {
+    "id": "resp_059a45a2941153e7006aaa0459d13487d2b76ad0c3c720a529",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789527129.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 841,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 292,
+      "output_tokens_details": {
+        "reasoning_tokens": 138
+      },
+      "total_tokens": 1133
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.93,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"News access and paywall messaging, with unrelated legislative content\",\n  \"conflict_relevance\": \"Includes a substantive snippet reporting Benjamin Netanyahu's stated efforts to facilitate the voluntary emigration of Gaza residents to other countries.\",\n  \"reason\": \"The page is primarily a paywall notice and a collection of unrelated content, but it contains meaningful discourse about Israel's proposed policy toward Gaza. This makes it relevant to broader conflict discourse but not suitable as core conflict coverage.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:52:13Z",
+  "duration_seconds": 4.205,
+  "error": null
+}

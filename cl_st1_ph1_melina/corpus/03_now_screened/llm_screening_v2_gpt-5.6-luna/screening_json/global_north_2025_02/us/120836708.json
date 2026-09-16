@@ -1,0 +1,65 @@
+{
+  "article_id": "120836708",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_02/us/120836708.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_02/us/120836708.json"
+  },
+  "manifest_row": {
+    "article_id": "120836708",
+    "group": "global_north_2025_02",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2025_02/us/120836708.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "gaza_role": "passing",
+    "main_topic": "Jaden Smith's fashion and appearance at the 2025 Grammys",
+    "conflict_relevance": "The article is a celebrity fashion piece; Gaza appears only in an unrelated appended political snippet mentioning a proposal to 'clean out' Gaza.",
+    "reason": "The headline and substantive article concern Jaden Smith's Grammys outfit and contain no meaningful discussion of Gaza or the Israel-Palestine conflict. The Gaza reference is incidental and appears in a separate, unrelated snippet.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "d83ab8cbeb5df218ddb6714af3994cb14d1a07f235a2d1e61459de8df1877f5b",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "0c440779131688f2741addcb3d3585d4e4a63aa2f3f7be90c62d13a493559880",
+    "raw_response_text_sha256": "cfd44bbb68b707c32ed505e8b4710f92a8829a9ae848cd81f91ff237db28f12e"
+  },
+  "api_metadata": {
+    "id": "resp_0606e56e57052474006aaa2417cdbc87d283fa2372dbf7ecb2",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789535255.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1399,
+      "input_tokens_details": {
+        "cache_write_tokens": 1396,
+        "cached_tokens": 0
+      },
+      "output_tokens": 284,
+      "output_tokens_details": {
+        "reasoning_tokens": 125
+      },
+      "total_tokens": 1683
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Jaden Smith's fashion and appearance at the 2025 Grammys\",\n  \"conflict_relevance\": \"The article is a celebrity fashion piece; Gaza appears only in an unrelated appended political snippet mentioning a proposal to 'clean out' Gaza.\",\n  \"reason\": \"The headline and substantive article concern Jaden Smith's Grammys outfit and contain no meaningful discussion of Gaza or the Israel-Palestine conflict. The Gaza reference is incidental and appears in a separate, unrelated snippet.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T05:07:39Z",
+  "duration_seconds": 4.218,
+  "error": null
+}

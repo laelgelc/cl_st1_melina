@@ -1,0 +1,65 @@
+{
+  "article_id": "122428905",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_south_2025_03/pk/122428905.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_south_2025_03/pk/122428905.json"
+  },
+  "manifest_row": {
+    "article_id": "122428905",
+    "group": "global_south_2025_03",
+    "country_code": "pk",
+    "filepath": "corpus/02_now_organised/global_south_2025_03/pk/122428905.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.97,
+    "gaza_role": "background",
+    "main_topic": "US air strikes against Yemen's Houthi rebels and escalating tensions with Iran",
+    "conflict_relevance": "The article is primarily about US-Iran tensions and military action in Yemen, but it meaningfully connects the Houthi attacks to the Gaza war and solidarity with Palestinians.",
+    "reason": "Gaza and Palestinians provide important context for the Houthis' attacks on Israel and Red Sea shipping, yet the article is not centrally about Gaza, Israel-Palestine, or the Israel-Hamas war.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "26dce622e1dd4fef41779aa70a72f142f9ae72d61ec179a8d977b8a2e84ce057",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "95cc99f59d53a70ab16ed41ead6a0f5687e5c760b58db81df6d5fb7ba19b89b6",
+    "raw_response_text_sha256": "b58ee6fb9fb680cabb7a4b5b0ef4c625799aca6cd5abb01842391f76bdc69353"
+  },
+  "api_metadata": {
+    "id": "resp_0532d759d2b2ab51006aaa47111c5487d181b044d6ac78dcfb",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789544209.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1151,
+      "input_tokens_details": {
+        "cache_write_tokens": 1148,
+        "cached_tokens": 0
+      },
+      "output_tokens": 233,
+      "output_tokens_details": {
+        "reasoning_tokens": 66
+      },
+      "total_tokens": 1384
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.97,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"US air strikes against Yemen's Houthi rebels and escalating tensions with Iran\",\n  \"conflict_relevance\": \"The article is primarily about US-Iran tensions and military action in Yemen, but it meaningfully connects the Houthi attacks to the Gaza war and solidarity with Palestinians.\",\n  \"reason\": \"Gaza and Palestinians provide important context for the Houthis' attacks on Israel and Red Sea shipping, yet the article is not centrally about Gaza, Israel-Palestine, or the Israel-Hamas war.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T07:36:52Z",
+  "duration_seconds": 3.288,
+  "error": null
+}

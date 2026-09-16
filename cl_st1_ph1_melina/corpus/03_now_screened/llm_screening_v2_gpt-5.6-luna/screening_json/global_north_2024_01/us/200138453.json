@@ -1,0 +1,65 @@
+{
+  "article_id": "200138453",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_01/us/200138453.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_01/us/200138453.json"
+  },
+  "manifest_row": {
+    "article_id": "200138453",
+    "group": "global_north_2024_01",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2024_01/us/200138453.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "background",
+    "main_topic": "Daily news roundup covering US politics, weather, international events, and culture",
+    "conflict_relevance": "Includes a substantive brief on the 100-day Israel-Hamas war milestone, Israeli military action in Gaza, hostages, deaths, Netanyahu's response to international legal proceedings, and the Gaza humanitarian toll.",
+    "reason": "The article is primarily a general news roundup rather than conflict coverage, but its Israel/Gaza section contains meaningful discourse relevant to the conflict.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "763cf539ce51f8ecd5aeffae11fd804bf5350feb8f448033d63957ddbe0f7b11",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "f89154350363d33e5d6d226f182f350631657283d2381d859d5baa95c938ac53",
+    "raw_response_text_sha256": "38ddf4938d75f8b79bd0f7a28eca2f9a6546fd6ad2f829bb22b07e17c8712910"
+  },
+  "api_metadata": {
+    "id": "resp_0b93464ecc526431006aaa057d139487d2933271df1a619c37",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789527421.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1856,
+      "input_tokens_details": {
+        "cache_write_tokens": 1853,
+        "cached_tokens": 0
+      },
+      "output_tokens": 275,
+      "output_tokens_details": {
+        "reasoning_tokens": 118
+      },
+      "total_tokens": 2131
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Daily news roundup covering US politics, weather, international events, and culture\",\n  \"conflict_relevance\": \"Includes a substantive brief on the 100-day Israel-Hamas war milestone, Israeli military action in Gaza, hostages, deaths, Netanyahu's response to international legal proceedings, and the Gaza humanitarian toll.\",\n  \"reason\": \"The article is primarily a general news roundup rather than conflict coverage, but its Israel/Gaza section contains meaningful discourse relevant to the conflict.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:57:04Z",
+  "duration_seconds": 3.893,
+  "error": null
+}

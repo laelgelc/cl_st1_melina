@@ -1,0 +1,65 @@
+{
+  "article_id": "108957903",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_06/us/108957903.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_06/us/108957903.json"
+  },
+  "manifest_row": {
+    "article_id": "108957903",
+    "group": "global_north_2024_06",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2024_06/us/108957903.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.93,
+    "gaza_role": "passing",
+    "main_topic": "European Parliament elections and gains by far-right parties",
+    "conflict_relevance": "The main article is about EU elections, but an embedded unrelated news item briefly discusses Israel's operation to rescue hostages in central Gaza and the resulting casualties.",
+    "reason": "The article's central subject is European electoral politics rather than Gaza or the Israel-Palestine conflict. However, the embedded Gaza-related sentence provides a meaningful, though very brief, reference to military action, hostages, and civilian harm, making the item peripheral rather than excludable.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "2d24efe58b0ee7ad93d6191c3b3c4fe735d359783eea1115cd27d179c919b2c4",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "1ab9dcf22946e2a9b978ac7f24bc6e6acbf0a9c92dba7663318d819551b13385",
+    "raw_response_text_sha256": "6733cc6b3190240cd34a230e4140cb27859246513e596b666d1452ff462dbee7"
+  },
+  "api_metadata": {
+    "id": "resp_0cdd4363627877db006aaa11111c2c87d2860b6131a43a79ca",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789530385.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2540,
+      "input_tokens_details": {
+        "cache_write_tokens": 2537,
+        "cached_tokens": 0
+      },
+      "output_tokens": 340,
+      "output_tokens_details": {
+        "reasoning_tokens": 166
+      },
+      "total_tokens": 2880
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.93,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"European Parliament elections and gains by far-right parties\",\n  \"conflict_relevance\": \"The main article is about EU elections, but an embedded unrelated news item briefly discusses Israel's operation to rescue hostages in central Gaza and the resulting casualties.\",\n  \"reason\": \"The article's central subject is European electoral politics rather than Gaza or the Israel-Palestine conflict. However, the embedded Gaza-related sentence provides a meaningful, though very brief, reference to military action, hostages, and civilian harm, making the item peripheral rather than excludable.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:46:33Z",
+  "duration_seconds": 8.734,
+  "error": null
+}

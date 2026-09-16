@@ -1,0 +1,65 @@
+{
+  "article_id": "123003709",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_03/gb/123003709.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_03/gb/123003709.json"
+  },
+  "manifest_row": {
+    "article_id": "123003709",
+    "group": "global_north_2025_03",
+    "country_code": "gb",
+    "filepath": "corpus/02_now_organised/global_north_2025_03/gb/123003709.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "gaza_role": "boilerplate_or_unrelated",
+    "main_topic": "A miscellaneous news and commentary roundup covering UK immigration policy, diet trends, EU preparedness, lifestyle, polling, and other topics",
+    "conflict_relevance": "Gaza appears only in a closing teaser for a future feature on Gaza's cash crisis, without substantive discussion in the article itself",
+    "reason": "The article is a multi-topic roundup and contains no meaningful analysis or reporting on Gaza or the Israel-Palestine conflict. The sole Gaza reference is a brief navigational/promotional mention at the end.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "2ffa8f41f4410bd2182e4a14dc3aea801d194a7c11b9818514570afdc4021d9e",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "28a11bc602223f14132a636b030f31a50018389aac57f0fece95dce4440b7ab9",
+    "raw_response_text_sha256": "e13bc1fc1afdbeedadda529b5c372e4179f03f6167e91a9680e359145b7fc118"
+  },
+  "api_metadata": {
+    "id": "resp_0100d494f2a17b7c006aaa2684c57087d1963ad7e837e816a9",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789535876.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 3293,
+      "input_tokens_details": {
+        "cache_write_tokens": 3290,
+        "cached_tokens": 0
+      },
+      "output_tokens": 242,
+      "output_tokens_details": {
+        "reasoning_tokens": 71
+      },
+      "total_tokens": 3535
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"gaza_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"A miscellaneous news and commentary roundup covering UK immigration policy, diet trends, EU preparedness, lifestyle, polling, and other topics\",\n  \"conflict_relevance\": \"Gaza appears only in a closing teaser for a future feature on Gaza's cash crisis, without substantive discussion in the article itself\",\n  \"reason\": \"The article is a multi-topic roundup and contains no meaningful analysis or reporting on Gaza or the Israel-Palestine conflict. The sole Gaza reference is a brief navigational/promotional mention at the end.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T05:18:01Z",
+  "duration_seconds": 4.491,
+  "error": null
+}

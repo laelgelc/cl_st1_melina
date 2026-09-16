@@ -1,0 +1,65 @@
+{
+  "article_id": "103427385",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_11/ca/103427385.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_11/ca/103427385.json"
+  },
+  "manifest_row": {
+    "article_id": "103427385",
+    "group": "global_north_2023_11",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2023_11/ca/103427385.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.97,
+    "gaza_role": "background",
+    "main_topic": "Permanent closure of a Prince Edward Island campground بسبب damage from post-tropical storm Fiona",
+    "conflict_relevance": "The main article is unrelated to the Gaza conflict, but the text includes substantive embedded news snippets about Canadians crossing from Gaza into Egypt and violence at Al-Shifa hospital.",
+    "reason": "The headline and primary article concern storm damage, insurance, and the economic impact on a campground. However, the appended snippets contain meaningful Gaza-related reporting, making the item peripheral rather than wholly excludable.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "cf0a0c35facdf04624d2ec400299353a3fba759b20cb1232c1f7718693442957",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "1384f3da69e29001f9ee5c1adf75091509ae518c9194d8e4281c330b2d6264d1",
+    "raw_response_text_sha256": "c5d426fa768a294613c54b6efb97b6214690469139569512ef4fc28022c90846"
+  },
+  "api_metadata": {
+    "id": "resp_01704fcd36b73008006aa9fbd41b1087d29f24f04931a26cea",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789524948.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1865,
+      "input_tokens_details": {
+        "cache_write_tokens": 1862,
+        "cached_tokens": 0
+      },
+      "output_tokens": 315,
+      "output_tokens_details": {
+        "reasoning_tokens": 149
+      },
+      "total_tokens": 2180
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.97,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Permanent closure of a Prince Edward Island campground بسبب damage from post-tropical storm Fiona\",\n  \"conflict_relevance\": \"The main article is unrelated to the Gaza conflict, but the text includes substantive embedded news snippets about Canadians crossing from Gaza into Egypt and violence at Al-Shifa hospital.\",\n  \"reason\": \"The headline and primary article concern storm damage, insurance, and the economic impact on a campground. However, the appended snippets contain meaningful Gaza-related reporting, making the item peripheral rather than wholly excludable.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:15:53Z",
+  "duration_seconds": 5.107,
+  "error": null
+}

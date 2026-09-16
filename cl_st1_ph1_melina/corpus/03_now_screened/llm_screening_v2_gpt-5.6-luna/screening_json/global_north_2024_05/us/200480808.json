@@ -1,0 +1,65 @@
+{
+  "article_id": "200480808",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_05/us/200480808.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_05/us/200480808.json"
+  },
+  "manifest_row": {
+    "article_id": "200480808",
+    "group": "global_north_2024_05",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2024_05/us/200480808.txt"
+  },
+  "screening": {
+    "category": "CORE",
+    "confidence": 0.99,
+    "gaza_role": "central",
+    "main_topic": "Israeli military strikes and humanitarian conditions in Gaza amid U.S.-Israel diplomatic discussions",
+    "conflict_relevance": "The article directly reports Israeli attacks across Gaza, Palestinian casualties, displacement, conditions in Rafah and Jabalia, humanitarian shortages, and the broader Israel-Hamas war.",
+    "reason": "The headline and main article focus centrally on military action, civilian deaths, displacement, humanitarian conditions, and diplomatic pressure related to the Gaza war. Unrelated snippets about philanthropy, spaceflight, and stock trading appear after the main report but do not alter its classification.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": true
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "8e2a9a0982adc2a7b98920d076ae4670ab177092af99db1416d56546dbb210d6",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "b3efe57dbf7aa5e7a7af89dab2292b88b1015efbee5358bc95dff88927e997bd",
+    "raw_response_text_sha256": "d3e5ec5e38e63f5184e33486aa28d399ea396b61e6a0434f7a30fca9fcd1e428"
+  },
+  "api_metadata": {
+    "id": "resp_070a4c33fd92274c006aaa0fcc04f087d29d7f1b460af17dda",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789530060.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1238,
+      "input_tokens_details": {
+        "cache_write_tokens": 1235,
+        "cached_tokens": 0
+      },
+      "output_tokens": 220,
+      "output_tokens_details": {
+        "reasoning_tokens": 44
+      },
+      "total_tokens": 1458
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"CORE\",\n  \"confidence\": 0.99,\n  \"gaza_role\": \"central\",\n  \"main_topic\": \"Israeli military strikes and humanitarian conditions in Gaza amid U.S.-Israel diplomatic discussions\",\n  \"conflict_relevance\": \"The article directly reports Israeli attacks across Gaza, Palestinian casualties, displacement, conditions in Rafah and Jabalia, humanitarian shortages, and the broader Israel-Hamas war.\",\n  \"reason\": \"The headline and main article focus centrally on military action, civilian deaths, displacement, humanitarian conditions, and diplomatic pressure related to the Gaza war. Unrelated snippets about philanthropy, spaceflight, and stock trading appear after the main report but do not alter its classification.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": true\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:41:03Z",
+  "duration_seconds": 3.252,
+  "error": null
+}

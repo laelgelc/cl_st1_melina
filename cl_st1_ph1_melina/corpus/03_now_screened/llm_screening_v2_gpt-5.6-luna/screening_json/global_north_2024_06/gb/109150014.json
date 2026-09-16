@@ -1,0 +1,65 @@
+{
+  "article_id": "109150014",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_06/gb/109150014.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_06/gb/109150014.json"
+  },
+  "manifest_row": {
+    "article_id": "109150014",
+    "group": "global_north_2024_06",
+    "country_code": "gb",
+    "filepath": "corpus/02_now_organised/global_north_2024_06/gb/109150014.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.97,
+    "gaza_role": "background",
+    "main_topic": "Protests in France against the rise of the far right",
+    "conflict_relevance": "The main article is unrelated to Gaza or the Israel-Palestine conflict, but the text includes a substantial embedded news item about the Gaza war, Palestinian prayers during the hajj, and casualty figures.",
+    "reason": "The headline and primary report concern French electoral politics and anti-far-right demonstrations. However, an appended unrelated hajj report contains meaningful and detailed discourse about Palestinians and the Gaza war, making the item peripheral rather than excludable.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "f313b4b2ffe17f413fcf6dbc1d37102799fdb595055c5b0e8d154c9f8ab03eea",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "86f472d7a1eac222b3212092bc27e7e2ffb7a3566e3c12d37a0d320136506e61",
+    "raw_response_text_sha256": "f7ff0c1ee094d5f34a01379eb704458c11585e667efa9ae10846e6aac362ad09"
+  },
+  "api_metadata": {
+    "id": "resp_0139f7162a9a1f4f006aaa1084e8c087d2b5a7a2d6e9d4edef",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789530244.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2744,
+      "input_tokens_details": {
+        "cache_write_tokens": 2741,
+        "cached_tokens": 0
+      },
+      "output_tokens": 319,
+      "output_tokens_details": {
+        "reasoning_tokens": 145
+      },
+      "total_tokens": 3063
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.97,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Protests in France against the rise of the far right\",\n  \"conflict_relevance\": \"The main article is unrelated to Gaza or the Israel-Palestine conflict, but the text includes a substantial embedded news item about the Gaza war, Palestinian prayers during the hajj, and casualty figures.\",\n  \"reason\": \"The headline and primary report concern French electoral politics and anti-far-right demonstrations. However, an appended unrelated hajj report contains meaningful and detailed discourse about Palestinians and the Gaza war, making the item peripheral rather than excludable.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:44:09Z",
+  "duration_seconds": 4.681,
+  "error": null
+}

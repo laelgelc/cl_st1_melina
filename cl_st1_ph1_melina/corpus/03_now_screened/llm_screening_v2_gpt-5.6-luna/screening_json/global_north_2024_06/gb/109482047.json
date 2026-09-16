@@ -1,0 +1,65 @@
+{
+  "article_id": "109482047",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_06/gb/109482047.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_06/gb/109482047.json"
+  },
+  "manifest_row": {
+    "article_id": "109482047",
+    "group": "global_north_2024_06",
+    "country_code": "gb",
+    "filepath": "corpus/02_now_organised/global_north_2024_06/gb/109482047.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "substantial",
+    "main_topic": "South African rand performance and coalition cabinet negotiations",
+    "conflict_relevance": "The primary article concerns South African financial markets and post-election coalition politics, but it is followed by a substantial, unrelated report on the impact of the Gaza war on Palestinian students and education.",
+    "reason": "The Gaza material is meaningful and extensive, covering Israeli military action, displacement, deaths, destruction of educational institutions, humanitarian conditions, and the effect of war on Palestinian students. However, it appears as an appended separate article after a disclaimer and is not connected to the main headline or topic.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "f59c04d28abca4e7ae002fbec108aaa44df6c55fa11d27412e711ce91bc3fedd",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "50dae041f52ea685fea259613725967d93ac14d4744faac742525701eb55f49e",
+    "raw_response_text_sha256": "96e9332e8dd2e3295fb8efdc458279dcc885678d083636dff35432163c0d4338"
+  },
+  "api_metadata": {
+    "id": "resp_0b01a0fa3f4c5985006aaa109b1cf487d28897bcee686a1110",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789530267.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1878,
+      "input_tokens_details": {
+        "cache_write_tokens": 1875,
+        "cached_tokens": 0
+      },
+      "output_tokens": 294,
+      "output_tokens_details": {
+        "reasoning_tokens": 115
+      },
+      "total_tokens": 2172
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"substantial\",\n  \"main_topic\": \"South African rand performance and coalition cabinet negotiations\",\n  \"conflict_relevance\": \"The primary article concerns South African financial markets and post-election coalition politics, but it is followed by a substantial, unrelated report on the impact of the Gaza war on Palestinian students and education.\",\n  \"reason\": \"The Gaza material is meaningful and extensive, covering Israeli military action, displacement, deaths, destruction of educational institutions, humanitarian conditions, and the effect of war on Palestinian students. However, it appears as an appended separate article after a disclaimer and is not connected to the main headline or topic.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:44:33Z",
+  "duration_seconds": 6.652,
+  "error": null
+}

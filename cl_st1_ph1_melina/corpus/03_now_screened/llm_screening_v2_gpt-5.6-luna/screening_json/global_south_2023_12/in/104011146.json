@@ -1,0 +1,65 @@
+{
+  "article_id": "104011146",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_south_2023_12/in/104011146.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_south_2023_12/in/104011146.json"
+  },
+  "manifest_row": {
+    "article_id": "104011146",
+    "group": "global_south_2023_12",
+    "country_code": "in",
+    "filepath": "corpus/02_now_organised/global_south_2023_12/in/104011146.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.96,
+    "gaza_role": "background",
+    "main_topic": "Daily news roundup covering Indian politics, weather, security, social controversy, climate finance, and international news",
+    "conflict_relevance": "Contains a substantive final news item on Israel's military operations and evacuation orders in Khan Younis, displacement in Gaza, and reported Palestinian casualties.",
+    "reason": "The article is primarily a multi-item news roundup focused on unrelated domestic and international stories. However, its Gaza item contains meaningful conflict-related discourse, making it peripheral rather than excludable.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "8097e9a92241a3877e5a46c0dc50616726bfcec1ad105cf940316d2775f51366",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "f60ade381806f32eb34ef403c4470d84c5049e4991125e33223684c64a6d115a",
+    "raw_response_text_sha256": "d584d35b43912a5ddeaa6f510043ce0dce23a90e8f1d508b69d3a31440ecaf01"
+  },
+  "api_metadata": {
+    "id": "resp_08a7c18ac23b5f74006aaa3686cbd887d193919537fa1a6810",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789539974.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1765,
+      "input_tokens_details": {
+        "cache_write_tokens": 1762,
+        "cached_tokens": 0
+      },
+      "output_tokens": 355,
+      "output_tokens_details": {
+        "reasoning_tokens": 193
+      },
+      "total_tokens": 2120
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.96,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Daily news roundup covering Indian politics, weather, security, social controversy, climate finance, and international news\",\n  \"conflict_relevance\": \"Contains a substantive final news item on Israel's military operations and evacuation orders in Khan Younis, displacement in Gaza, and reported Palestinian casualties.\",\n  \"reason\": \"The article is primarily a multi-item news roundup focused on unrelated domestic and international stories. However, its Gaza item contains meaningful conflict-related discourse, making it peripheral rather than excludable.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T06:26:20Z",
+  "duration_seconds": 6.258,
+  "error": null
+}

@@ -1,0 +1,65 @@
+{
+  "article_id": "123180708",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_04/sg/123180708.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_04/sg/123180708.json"
+  },
+  "manifest_row": {
+    "article_id": "123180708",
+    "group": "global_north_2025_04",
+    "country_code": "sg",
+    "filepath": "corpus/02_now_organised/global_north_2025_04/sg/123180708.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.88,
+    "gaza_role": "background",
+    "main_topic": "International photo roundup featuring events and scenes from around the world",
+    "conflict_relevance": "Includes two substantive photo captions depicting food distribution to Palestinian children in Gaza and Palestinians fleeing evacuation orders issued by the Israeli army.",
+    "reason": "The article is primarily a global visual news roundup, not coverage centered on Gaza or the Israel-Palestine conflict. However, the Gaza captions provide meaningful humanitarian and military-displacement context, making it relevant to broader discourse analysis but unsuitable for the main conflict corpus.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "fc1005f2f85152b930b697734c3b77e7be13b9bcac448faf5197d304e2f018dc",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "83f819b4af759fe19347d88f4c8511c4d03a39ec577ce623ad7a4d60d35bf0a8",
+    "raw_response_text_sha256": "ce8915411e4d766eb00ccefa68ad6da60bcd7e532451a4024e47e91bd23a22c4"
+  },
+  "api_metadata": {
+    "id": "resp_087c51a3b91ea03b006aaa29b445b087d198659b1696ad00b9",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789536692.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1046,
+      "input_tokens_details": {
+        "cache_write_tokens": 1043,
+        "cached_tokens": 0
+      },
+      "output_tokens": 403,
+      "output_tokens_details": {
+        "reasoning_tokens": 239
+      },
+      "total_tokens": 1449
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.88,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"International photo roundup featuring events and scenes from around the world\",\n  \"conflict_relevance\": \"Includes two substantive photo captions depicting food distribution to Palestinian children in Gaza and Palestinians fleeing evacuation orders issued by the Israeli army.\",\n  \"reason\": \"The article is primarily a global visual news roundup, not coverage centered on Gaza or the Israel-Palestine conflict. However, the Gaza captions provide meaningful humanitarian and military-displacement context, making it relevant to broader discourse analysis but unsuitable for the main conflict corpus.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T05:31:36Z",
+  "duration_seconds": 4.524,
+  "error": null
+}

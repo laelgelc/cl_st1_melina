@@ -1,0 +1,65 @@
+{
+  "article_id": "200055928",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_12/us/200055928.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_12/us/200055928.json"
+  },
+  "manifest_row": {
+    "article_id": "200055928",
+    "group": "global_north_2023_12",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2023_12/us/200055928.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.97,
+    "gaza_role": "background",
+    "main_topic": "A roundup of political commentary on higher education, electric-vehicle policy, race, Ukraine, and U.S. foreign policy",
+    "conflict_relevance": "The article briefly discusses Gaza and Hamas in the context of criticism of Biden's foreign-policy record, and references antisemitism in debates over university DEI policies, but the conflict is not the main subject.",
+    "reason": "Gaza and Israel-related material appears in a meaningful but limited portion of a multi-topic opinion roundup. It contributes to broader discourse on U.S. foreign policy and antisemitism but is not substantial enough for the main conflict corpus.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "d933d91ecbebb0deabc196fb6537dbcffc5bc0acabc58c92cdabdd6767760799",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "b0339fbea29aae29da88a3a21ce1225e23c5f3c308a3ddf19a689e187d2b24d6",
+    "raw_response_text_sha256": "220e15ea5ff9b23a6ca43b174127eb33fc3927517db65c39f7382f76f2466342"
+  },
+  "api_metadata": {
+    "id": "resp_00846e484df840ed006aaa02e5ace887d2a2e0154094087a6e",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789526757.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1509,
+      "input_tokens_details": {
+        "cache_write_tokens": 1506,
+        "cached_tokens": 0
+      },
+      "output_tokens": 307,
+      "output_tokens_details": {
+        "reasoning_tokens": 120
+      },
+      "total_tokens": 1816
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.97,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"A roundup of political commentary on higher education, electric-vehicle policy, race, Ukraine, and U.S. foreign policy\",\n  \"conflict_relevance\": \"The article briefly discusses Gaza and Hamas in the context of criticism of Biden's foreign-policy record, and references antisemitism in debates over university DEI policies, but the conflict is not the main subject.\",\n  \"reason\": \"Gaza and Israel-related material appears in a meaningful but limited portion of a multi-topic opinion roundup. It contributes to broader discourse on U.S. foreign policy and antisemitism but is not substantial enough for the main conflict corpus.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:46:01Z",
+  "duration_seconds": 3.611,
+  "error": null
+}

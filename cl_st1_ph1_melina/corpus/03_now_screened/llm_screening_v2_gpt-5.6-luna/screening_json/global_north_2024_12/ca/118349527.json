@@ -1,0 +1,65 @@
+{
+  "article_id": "118349527",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_12/ca/118349527.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_12/ca/118349527.json"
+  },
+  "manifest_row": {
+    "article_id": "118349527",
+    "group": "global_north_2024_12",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2024_12/ca/118349527.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "gaza_role": "passing",
+    "main_topic": "Investigation into a Canadian military helicopter crash",
+    "conflict_relevance": "The article's main subject is a Royal Canadian Air Force helicopter crash; Gaza appears only in an unrelated embedded news snippet about Israeli hostages.",
+    "reason": "The Gaza reference is incidental and unrelated to the main article, which concerns aviation safety and a Canadian military accident.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "6038e024aa867af648013e11c4a5f16e8ed22c5bc36aab6b6414cb7dc54124f3",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "82a890590023f759a3966a8e781535d9c74cddaa646cc8943fc9468639c5af86",
+    "raw_response_text_sha256": "ae8ae60594b1ff18bc16e77723f4f4051ad998a255685b3b0b3a25261409787b"
+  },
+  "api_metadata": {
+    "id": "resp_0164c9d333c347e9006aaa1cff7df487d2ad08777b700f7e2a",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789533439.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1656,
+      "input_tokens_details": {
+        "cache_write_tokens": 1653,
+        "cached_tokens": 0
+      },
+      "output_tokens": 205,
+      "output_tokens_details": {
+        "reasoning_tokens": 72
+      },
+      "total_tokens": 1861
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Investigation into a Canadian military helicopter crash\",\n  \"conflict_relevance\": \"The article's main subject is a Royal Canadian Air Force helicopter crash; Gaza appears only in an unrelated embedded news snippet about Israeli hostages.\",\n  \"reason\": \"The Gaza reference is incidental and unrelated to the main article, which concerns aviation safety and a Canadian military accident.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T04:37:21Z",
+  "duration_seconds": 2.609,
+  "error": null
+}

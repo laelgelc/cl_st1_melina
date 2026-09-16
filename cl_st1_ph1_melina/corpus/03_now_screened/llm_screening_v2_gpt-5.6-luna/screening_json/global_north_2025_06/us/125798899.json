@@ -1,0 +1,65 @@
+{
+  "article_id": "125798899",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_06/us/125798899.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_06/us/125798899.json"
+  },
+  "manifest_row": {
+    "article_id": "125798899",
+    "group": "global_north_2025_06",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2025_06/us/125798899.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "gaza_role": "passing",
+    "main_topic": "Chicago sports, entertainment, politics, and reader commentary",
+    "conflict_relevance": "Gaza appears only in a brief reader-comment mention about displaying Gaza signs in Chicago; the article is otherwise unrelated to the conflict.",
+    "reason": "The text is a compilation of unrelated snippets, with Gaza referenced only incidentally in a single sentence.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "5fdee13aa66b2f6e913f5789bb6f99fdc64237ef5b16d493f8bd4ccfd0086c16",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "066257339f26daae50ea2c92b3b4440206b0a40d493673ee7d4a3f980fc10c9f",
+    "raw_response_text_sha256": "abe39aaa0c3dab945390e906958081292de61d915de60707c380ed89b18ef6c0"
+  },
+  "api_metadata": {
+    "id": "resp_03d7781c886b91f0006aaa3128b84c87d1b7a8baa87a1ae20d",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789538601.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1202,
+      "input_tokens_details": {
+        "cache_write_tokens": 1199,
+        "cached_tokens": 0
+      },
+      "output_tokens": 234,
+      "output_tokens_details": {
+        "reasoning_tokens": 103
+      },
+      "total_tokens": 1436
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Chicago sports, entertainment, politics, and reader commentary\",\n  \"conflict_relevance\": \"Gaza appears only in a brief reader-comment mention about displaying Gaza signs in Chicago; the article is otherwise unrelated to the conflict.\",\n  \"reason\": \"The text is a compilation of unrelated snippets, with Gaza referenced only incidentally in a single sentence.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T06:03:34Z",
+  "duration_seconds": 15.145,
+  "error": null
+}

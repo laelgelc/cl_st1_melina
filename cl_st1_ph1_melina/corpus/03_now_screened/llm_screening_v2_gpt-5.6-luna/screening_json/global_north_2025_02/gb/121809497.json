@@ -1,0 +1,65 @@
+{
+  "article_id": "121809497",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_02/gb/121809497.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_02/gb/121809497.json"
+  },
+  "manifest_row": {
+    "article_id": "121809497",
+    "group": "global_north_2025_02",
+    "country_code": "gb",
+    "filepath": "corpus/02_now_organised/global_north_2025_02/gb/121809497.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "gaza_role": "passing",
+    "main_topic": "A roundup of actions and events involving the Trump administration",
+    "conflict_relevance": "Gaza is mentioned only briefly in the introduction as one of the wars that loomed during the week; the article provides no substantive discussion of the Gaza conflict.",
+    "reason": "The article is primarily about Trump's interactions concerning Ukraine and various domestic and foreign-policy actions. Its sole Gaza reference is an incidental passing mention.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "15cadb50abbffbcdbffa78976c80b4a8c1f7168f292b42b64bbc5796a0134f7a",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "ba53316760c670edb5cde4d80108e590e8927fef5c160b2243209ea22de93057",
+    "raw_response_text_sha256": "8236a88ee9281816f6c270113d311195331cfa9217863de1b0fca7fa2d64e068"
+  },
+  "api_metadata": {
+    "id": "resp_00804ed546fc5ce6006aaa2361443087d2a7d0026996e5b1db",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789535073.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1615,
+      "input_tokens_details": {
+        "cache_write_tokens": 1612,
+        "cached_tokens": 0
+      },
+      "output_tokens": 247,
+      "output_tokens_details": {
+        "reasoning_tokens": 103
+      },
+      "total_tokens": 1862
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"A roundup of actions and events involving the Trump administration\",\n  \"conflict_relevance\": \"Gaza is mentioned only briefly in the introduction as one of the wars that loomed during the week; the article provides no substantive discussion of the Gaza conflict.\",\n  \"reason\": \"The article is primarily about Trump's interactions concerning Ukraine and various domestic and foreign-policy actions. Its sole Gaza reference is an incidental passing mention.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T05:04:36Z",
+  "duration_seconds": 3.598,
+  "error": null
+}

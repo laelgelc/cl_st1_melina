@@ -1,0 +1,65 @@
+{
+  "article_id": "121270314",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_02/nz/121270314.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_02/nz/121270314.json"
+  },
+  "manifest_row": {
+    "article_id": "121270314",
+    "group": "global_north_2025_02",
+    "country_code": "nz",
+    "filepath": "corpus/02_now_organised/global_north_2025_02/nz/121270314.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.97,
+    "gaza_role": "passing",
+    "main_topic": "New Zealand and global economic and financial events",
+    "conflict_relevance": "The article is primarily an economic news roundup and contains only a brief discussion in a comment referring to the Gaza condoms controversy as an example of alleged political deception.",
+    "reason": "Gaza is not part of the main article's subject matter, but the explicit reference appears in a substantive comment discussing public-sector decisions, misinformation, and political accountability. This gives the text limited peripheral relevance to discourse around Gaza-related claims and public debate.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "727957b2900c2a3d6d707cda34df484e7858dce852803d06b12d1bb4a2324c96",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "92542007627a2c3825781b97d9153efb49aeb3b6c2a494944a01fed2c854dfae",
+    "raw_response_text_sha256": "4ebf33ddb3bf6af960acd0ecc3050446fa9806150c073bdbb7e534217e6a1ab1"
+  },
+  "api_metadata": {
+    "id": "resp_07c5c7902fe239f8006aaa23d654d087d29ca2e78dd38e6586",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789535190.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 3421,
+      "input_tokens_details": {
+        "cache_write_tokens": 3418,
+        "cached_tokens": 0
+      },
+      "output_tokens": 250,
+      "output_tokens_details": {
+        "reasoning_tokens": 85
+      },
+      "total_tokens": 3671
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.97,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"New Zealand and global economic and financial events\",\n  \"conflict_relevance\": \"The article is primarily an economic news roundup and contains only a brief discussion in a comment referring to the Gaza condoms controversy as an example of alleged political deception.\",\n  \"reason\": \"Gaza is not part of the main article's subject matter, but the explicit reference appears in a substantive comment discussing public-sector decisions, misinformation, and political accountability. This gives the text limited peripheral relevance to discourse around Gaza-related claims and public debate.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T05:06:33Z",
+  "duration_seconds": 3.42,
+  "error": null
+}

@@ -1,0 +1,65 @@
+{
+  "article_id": "106448456",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_03/ca/106448456.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_03/ca/106448456.json"
+  },
+  "manifest_row": {
+    "article_id": "106448456",
+    "group": "global_north_2024_03",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2024_03/ca/106448456.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "background",
+    "main_topic": "Uranium prices, uranium mining, energy markets, and unrelated business and economic news",
+    "conflict_relevance": "A substantive embedded news passage discusses South Africa's request to the International Court of Justice for orders requiring Israel to allow humanitarian aid into Gaza, along with the war, humanitarian conditions, hostages, and diplomatic pressure.",
+    "reason": "The apparent main article concerns uranium prices and supply-demand conditions, not Gaza or the Israel-Palestine conflict. However, the text contains a meaningful Gaza-related news item concerning international law, humanitarian aid, and the Israel-Hamas war, so it is peripheral rather than excludable.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "4b62f3a5802aa9a7b6172130a3fb4cf6e88b2563b43e437c737be8f4ff75700c",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "17d60a1afa7d747ff40e99ce3bf809e8f70aa873dd9fa28f5b80f2c2bbfc5ecb",
+    "raw_response_text_sha256": "e3337e42f1bae6f9d0fad5d8fa77aaa77725a83db049b0e08c89a396929f3ceb"
+  },
+  "api_metadata": {
+    "id": "resp_0134fd548e717afb006aaa085abb8c87d2bbc5003ab91c1bb4",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789528154.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2633,
+      "input_tokens_details": {
+        "cache_write_tokens": 2630,
+        "cached_tokens": 0
+      },
+      "output_tokens": 323,
+      "output_tokens_details": {
+        "reasoning_tokens": 130
+      },
+      "total_tokens": 2956
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Uranium prices, uranium mining, energy markets, and unrelated business and economic news\",\n  \"conflict_relevance\": \"A substantive embedded news passage discusses South Africa's request to the International Court of Justice for orders requiring Israel to allow humanitarian aid into Gaza, along with the war, humanitarian conditions, hostages, and diplomatic pressure.\",\n  \"reason\": \"The apparent main article concerns uranium prices and supply-demand conditions, not Gaza or the Israel-Palestine conflict. However, the text contains a meaningful Gaza-related news item concerning international law, humanitarian aid, and the Israel-Hamas war, so it is peripheral rather than excludable.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:09:19Z",
+  "duration_seconds": 4.817,
+  "error": null
+}

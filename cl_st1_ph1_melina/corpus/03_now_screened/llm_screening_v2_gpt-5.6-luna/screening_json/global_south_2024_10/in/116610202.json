@@ -1,0 +1,65 @@
+{
+  "article_id": "116610202",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_south_2024_10/in/116610202.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_south_2024_10/in/116610202.json"
+  },
+  "manifest_row": {
+    "article_id": "116610202",
+    "group": "global_south_2024_10",
+    "country_code": "in",
+    "filepath": "corpus/02_now_organised/global_south_2024_10/in/116610202.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.9,
+    "gaza_role": "background",
+    "main_topic": "Israel-Iran military escalation and regional conflict",
+    "conflict_relevance": "The article primarily covers Israeli strikes on Iran and related Hezbollah activity in Lebanon, but it connects these events to the broader regional conflict involving Gaza, Hamas, Israel, and the risk of escalation.",
+    "reason": "Gaza and Hamas appear in meaningful contextual passages, including references to Israeli military actions in Gaza and Hamas's response to the strikes on Iran. However, Gaza and the Israel-Palestine conflict are not the main subject of the article.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "677869e8b7ab7761a373020c77a020fa59c2229429bf23a5fb89ab334c3dbb40",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "8c1c246b2c7e06840312138451cd18d7eb050c1d9e7927469cec66e906e938ea",
+    "raw_response_text_sha256": "cf1903ab1ecfbef38f919d15f30418141e7808e00cca54f84f163db8b477a505"
+  },
+  "api_metadata": {
+    "id": "resp_01179e2a562df4f1006aaa4099df2087d1bb230fc25b44d7e7",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789542553.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2018,
+      "input_tokens_details": {
+        "cache_write_tokens": 2015,
+        "cached_tokens": 0
+      },
+      "output_tokens": 502,
+      "output_tokens_details": {
+        "reasoning_tokens": 332
+      },
+      "total_tokens": 2520
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.9,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Israel-Iran military escalation and regional conflict\",\n  \"conflict_relevance\": \"The article primarily covers Israeli strikes on Iran and related Hezbollah activity in Lebanon, but it connects these events to the broader regional conflict involving Gaza, Hamas, Israel, and the risk of escalation.\",\n  \"reason\": \"Gaza and Hamas appear in meaningful contextual passages, including references to Israeli military actions in Gaza and Hamas's response to the strikes on Iran. However, Gaza and the Israel-Palestine conflict are not the main subject of the article.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T07:09:18Z",
+  "duration_seconds": 5.15,
+  "error": null
+}

@@ -1,0 +1,65 @@
+{
+  "article_id": "106882715",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_03/us/106882715.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_03/us/106882715.json"
+  },
+  "manifest_row": {
+    "article_id": "106882715",
+    "group": "global_north_2024_03",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2024_03/us/106882715.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "gaza_role": "passing",
+    "main_topic": "Weekly photo roundup covering international news and events",
+    "conflict_relevance": "Gaza appears only as one brief item in a list of photograph subjects, referring to humanitarian-aid airdrops without further context or discussion.",
+    "reason": "The article is a multi-item photo roundup whose main subject is general visual news coverage. The Gaza reference is incidental and does not provide meaningful conflict-related discourse.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "405a2a3eec0256f66bc363c4c1c1ba08a0f57088b88879590fcbb1eea6646503",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "6542aa2398a07b75e18a91786bd035cc0535d12779d3283ff5d5538fe532c667",
+    "raw_response_text_sha256": "bae1c99ef0e8e61655cf3ffb2e4ec43f69e017133b8153e7badb89f04945fe1e"
+  },
+  "api_metadata": {
+    "id": "resp_088f8648b6029da5006aaa09ce430487d2a5ba6df114399783",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789528526.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1312,
+      "input_tokens_details": {
+        "cache_write_tokens": 1309,
+        "cached_tokens": 0
+      },
+      "output_tokens": 236,
+      "output_tokens_details": {
+        "reasoning_tokens": 93
+      },
+      "total_tokens": 1548
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Weekly photo roundup covering international news and events\",\n  \"conflict_relevance\": \"Gaza appears only as one brief item in a list of photograph subjects, referring to humanitarian-aid airdrops without further context or discussion.\",\n  \"reason\": \"The article is a multi-item photo roundup whose main subject is general visual news coverage. The Gaza reference is incidental and does not provide meaningful conflict-related discourse.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:15:29Z",
+  "duration_seconds": 3.614,
+  "error": null
+}

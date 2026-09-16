@@ -1,0 +1,65 @@
+{
+  "article_id": "103117046",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_south_2023_11/pk/103117046.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_south_2023_11/pk/103117046.json"
+  },
+  "manifest_row": {
+    "article_id": "103117046",
+    "group": "global_south_2023_11",
+    "country_code": "pk",
+    "filepath": "corpus/02_now_organised/global_south_2023_11/pk/103117046.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.93,
+    "gaza_role": "background",
+    "main_topic": "A mixed roundup of Pakistani political, legal, public health, crime, sports, economic, and international news briefs",
+    "conflict_relevance": "One substantive brief reports Bolivia severing diplomatic ties with Israel over attacks in Gaza and related Latin American diplomatic responses, but the collection is not centered on the conflict.",
+    "reason": "The article consists of multiple largely unrelated news snippets. Its Gaza-related item provides meaningful discourse about Israel's attacks, humanitarian conditions, and diplomatic repercussions, warranting peripheral inclusion, but it is not the main subject of the overall text.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "dd2f0fa645f22304348876cf850ea6bb468add15fe08ae42203558d8821bf026",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "03be180f182e7bd4d00b0f03229a9a8a894c564b1beff9fbd6928198ca7c0366",
+    "raw_response_text_sha256": "25d0c28087a1b3aa052b31d0e3036c372dd4f91c453ee1ee7a56f06a7e69a949"
+  },
+  "api_metadata": {
+    "id": "resp_0c03d4ffb7f88d81006aaa35d48eb887d183c156bc5c3f95f0",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789539796.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1254,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 1251
+      },
+      "output_tokens": 300,
+      "output_tokens_details": {
+        "reasoning_tokens": 124
+      },
+      "total_tokens": 1554
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.93,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"A mixed roundup of Pakistani political, legal, public health, crime, sports, economic, and international news briefs\",\n  \"conflict_relevance\": \"One substantive brief reports Bolivia severing diplomatic ties with Israel over attacks in Gaza and related Latin American diplomatic responses, but the collection is not centered on the conflict.\",\n  \"reason\": \"The article consists of multiple largely unrelated news snippets. Its Gaza-related item provides meaningful discourse about Israel's attacks, humanitarian conditions, and diplomatic repercussions, warranting peripheral inclusion, but it is not the main subject of the overall text.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T06:23:20Z",
+  "duration_seconds": 3.941,
+  "error": null
+}

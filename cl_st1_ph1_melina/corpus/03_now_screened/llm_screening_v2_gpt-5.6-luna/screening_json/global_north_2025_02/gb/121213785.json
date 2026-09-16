@@ -1,0 +1,65 @@
+{
+  "article_id": "121213785",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_02/gb/121213785.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_02/gb/121213785.json"
+  },
+  "manifest_row": {
+    "article_id": "121213785",
+    "group": "global_north_2025_02",
+    "country_code": "gb",
+    "filepath": "corpus/02_now_organised/global_north_2025_02/gb/121213785.txt"
+  },
+  "screening": {
+    "category": "CORE",
+    "confidence": 0.99,
+    "gaza_role": "background",
+    "main_topic": "Israeli settler expansion, violence, and displacement of Palestinian Bedouin communities in the occupied West Bank",
+    "conflict_relevance": "The article centrally examines Israeli occupation, West Bank land seizure, settler violence, Palestinian displacement, annexation, and the political implications for a future Palestinian state, with Gaza referenced as broader war-related context.",
+    "reason": "The main article is directly and substantially focused on Israel/Palestine conflict issues, especially settlement activity, forced displacement, territorial fragmentation, and occupation. Unrelated news items are appended after the main article.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": true
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "80fe7580c0beeeaff8fb4a3905e94421dc885cef5fd674ffd1c71af0e53e3b6a",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "8cb4cddd8488389dd058e41b7fddfa76963f9b169cfe8dab081e1b6451feea00",
+    "raw_response_text_sha256": "64c868bfcb368c4d3e8882f1ab7909ab3fb5e9428b42687ee08105ae7b2409d2"
+  },
+  "api_metadata": {
+    "id": "resp_0d0821955748c2e8006aaa22e54e9887d2baae53394b5328d0",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789534949.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2421,
+      "input_tokens_details": {
+        "cache_write_tokens": 2418,
+        "cached_tokens": 0
+      },
+      "output_tokens": 260,
+      "output_tokens_details": {
+        "reasoning_tokens": 83
+      },
+      "total_tokens": 2681
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"CORE\",\n  \"confidence\": 0.99,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Israeli settler expansion, violence, and displacement of Palestinian Bedouin communities in the occupied West Bank\",\n  \"conflict_relevance\": \"The article centrally examines Israeli occupation, West Bank land seizure, settler violence, Palestinian displacement, annexation, and the political implications for a future Palestinian state, with Gaza referenced as broader war-related context.\",\n  \"reason\": \"The main article is directly and substantially focused on Israel/Palestine conflict issues, especially settlement activity, forced displacement, territorial fragmentation, and occupation. Unrelated news items are appended after the main article.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": true\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T05:02:32Z",
+  "duration_seconds": 3.708,
+  "error": null
+}

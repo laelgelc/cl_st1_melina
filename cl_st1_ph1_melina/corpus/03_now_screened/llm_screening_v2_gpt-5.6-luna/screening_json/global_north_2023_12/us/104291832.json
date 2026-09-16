@@ -1,0 +1,65 @@
+{
+  "article_id": "104291832",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_12/us/104291832.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_12/us/104291832.json"
+  },
+  "manifest_row": {
+    "article_id": "104291832",
+    "group": "global_north_2023_12",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2023_12/us/104291832.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "background",
+    "main_topic": "Taylor Swift's charitable donations and philanthropic activities",
+    "conflict_relevance": "The article discusses Swift's attendance at a comedy event whose proceeds supported humanitarian relief in Gaza, along with criticism and calls for a boycott framed as opposition to an allegedly anti-Israel position.",
+    "reason": "The article is primarily about Taylor Swift's broader charitable giving, especially donations to tornado relief, food banks, and individuals. Gaza-related humanitarian aid and the associated Israel-related backlash form a meaningful but secondary part of the article.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "92a6931f8c66ec59065a17641ca1067d7d9c201b918ee58b63d3e34b028d9f3a",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "35d9044f1cdd3001a4d7db1954fc5e33d15a65886a42a1d9c7a1e6deb477eb1f",
+    "raw_response_text_sha256": "508fb2c09322ec62eb0ace79ae9c84fb9d2e5ad79c38b255705348b03800462f"
+  },
+  "api_metadata": {
+    "id": "resp_0be5b173fbe1b521006aaa021fbaa887d2a44261507f276a23",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789526559.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1894,
+      "input_tokens_details": {
+        "cache_write_tokens": 1891,
+        "cached_tokens": 0
+      },
+      "output_tokens": 211,
+      "output_tokens_details": {
+        "reasoning_tokens": 46
+      },
+      "total_tokens": 2105
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Taylor Swift's charitable donations and philanthropic activities\",\n  \"conflict_relevance\": \"The article discusses Swift's attendance at a comedy event whose proceeds supported humanitarian relief in Gaza, along with criticism and calls for a boycott framed as opposition to an allegedly anti-Israel position.\",\n  \"reason\": \"The article is primarily about Taylor Swift's broader charitable giving, especially donations to tornado relief, food banks, and individuals. Gaza-related humanitarian aid and the associated Israel-related backlash form a meaningful but secondary part of the article.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:42:42Z",
+  "duration_seconds": 3.328,
+  "error": null
+}

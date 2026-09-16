@@ -1,0 +1,65 @@
+{
+  "article_id": "123344823",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_south_2025_04/in/123344823.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_south_2025_04/in/123344823.json"
+  },
+  "manifest_row": {
+    "article_id": "123344823",
+    "group": "global_south_2025_04",
+    "country_code": "in",
+    "filepath": "corpus/02_now_organised/global_south_2025_04/in/123344823.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.9,
+    "gaza_role": "substantial",
+    "main_topic": "Trump-Netanyahu meeting covering Hamas-held hostages, U.S.-Israel relations, tariffs, and U.S.-Iran nuclear talks",
+    "conflict_relevance": "The article meaningfully discusses Israeli hostages held by Hamas in Gaza and the diplomatic relationship between the United States and Israel, but much of its coverage focuses on trade tariffs and Iran negotiations rather than the Gaza conflict itself.",
+    "reason": "Gaza-related hostage discourse is prominent in the opening and closing sections, but the article as a whole is primarily a broad account of bilateral talks dominated by tariffs, trade, and Iran.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "7aa5755958d315753a8785c0266d863a87606c388446585f05b15a89d4729126",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "be6abdafea625d6ee835f5f9473b476ad950d95ff9c2af69fd62690ad029189d",
+    "raw_response_text_sha256": "650c17ad1a76d1f5fbcdc6df2fb9cc0fbeaffcdb61f08f354fdb08265ba77718"
+  },
+  "api_metadata": {
+    "id": "resp_07207cdad7baa68b006aaa4776068487d19f83f05d51a7d867",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789544310.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1366,
+      "input_tokens_details": {
+        "cache_write_tokens": 1363,
+        "cached_tokens": 0
+      },
+      "output_tokens": 372,
+      "output_tokens_details": {
+        "reasoning_tokens": 190
+      },
+      "total_tokens": 1738
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.9,\n  \"gaza_role\": \"substantial\",\n  \"main_topic\": \"Trump-Netanyahu meeting covering Hamas-held hostages, U.S.-Israel relations, tariffs, and U.S.-Iran nuclear talks\",\n  \"conflict_relevance\": \"The article meaningfully discusses Israeli hostages held by Hamas in Gaza and the diplomatic relationship between the United States and Israel, but much of its coverage focuses on trade tariffs and Iran negotiations rather than the Gaza conflict itself.\",\n  \"reason\": \"Gaza-related hostage discourse is prominent in the opening and closing sections, but the article as a whole is primarily a broad account of bilateral talks dominated by tariffs, trade, and Iran.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T07:38:34Z",
+  "duration_seconds": 5.038,
+  "error": null
+}

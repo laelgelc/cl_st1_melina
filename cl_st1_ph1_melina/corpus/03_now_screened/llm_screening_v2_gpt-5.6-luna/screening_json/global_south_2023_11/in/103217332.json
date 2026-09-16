@@ -1,0 +1,65 @@
+{
+  "article_id": "103217332",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_south_2023_11/in/103217332.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_south_2023_11/in/103217332.json"
+  },
+  "manifest_row": {
+    "article_id": "103217332",
+    "group": "global_south_2023_11",
+    "country_code": "in",
+    "filepath": "corpus/02_now_organised/global_south_2023_11/in/103217332.txt"
+  },
+  "screening": {
+    "category": "CORE",
+    "confidence": 0.99,
+    "gaza_role": "central",
+    "main_topic": "Israel-Hamas war, Gaza strikes, and calls for a ceasefire",
+    "conflict_relevance": "The article directly concerns the war in Gaza, Hamas, Israeli military action, ceasefire diplomacy, and related regional violence.",
+    "reason": "The main news item is centrally about the Gaza war and the international debate over a ceasefire. It also includes an unrelated Ukraine-war snippet and Reuters boilerplate.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": true
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "00cfd562bceaf36c7c3e3d3c60156b587bd33295f67bf0f6fc78e268848c9135",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "72fed4e0410cb3ca602e60b06f50defa5e827353883d0e9112ceeb26e724668c",
+    "raw_response_text_sha256": "038c59c22a67d440ade5583af435c173e9e52ad6b3713715bd0daef0a05b1725"
+  },
+  "api_metadata": {
+    "id": "resp_0d4c94242e9c0463006aaa349f893c87d197f6b14af0ad0d82",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789539487.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 752,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 245,
+      "output_tokens_details": {
+        "reasoning_tokens": 101
+      },
+      "total_tokens": 997
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"CORE\",\n  \"confidence\": 0.99,\n  \"gaza_role\": \"central\",\n  \"main_topic\": \"Israel-Hamas war, Gaza strikes, and calls for a ceasefire\",\n  \"conflict_relevance\": \"The article directly concerns the war in Gaza, Hamas, Israeli military action, ceasefire diplomacy, and related regional violence.\",\n  \"reason\": \"The main news item is centrally about the Gaza war and the international debate over a ceasefire. It also includes an unrelated Ukraine-war snippet and Reuters boilerplate.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": true\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T06:18:11Z",
+  "duration_seconds": 3.672,
+  "error": null
+}

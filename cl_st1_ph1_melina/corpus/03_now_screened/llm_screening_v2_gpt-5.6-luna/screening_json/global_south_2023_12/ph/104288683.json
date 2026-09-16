@@ -1,0 +1,65 @@
+{
+  "article_id": "104288683",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_south_2023_12/ph/104288683.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_south_2023_12/ph/104288683.json"
+  },
+  "manifest_row": {
+    "article_id": "104288683",
+    "group": "global_south_2023_12",
+    "country_code": "ph",
+    "filepath": "corpus/02_now_organised/global_south_2023_12/ph/104288683.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "gaza_role": "passing",
+    "main_topic": "Meralco's basketball campaign in the East Asia Super League",
+    "conflict_relevance": "An isolated, duplicated sentence about a UN General Assembly ceasefire resolution appears amid the sports article, with no connection to the main topic or further discussion.",
+    "reason": "The article is fundamentally a basketball report. The Gaza reference is an unrelated embedded news snippet rather than meaningful coverage or discourse about the conflict.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "9e8935a48de7aae07605ead9d29641d9075b2717d77c40786c42264a74ba0fe3",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "1a8cdd2b6137f80fa990b0605de54ae114148b52740ecad85d3fa7d5f1424c05",
+    "raw_response_text_sha256": "19455e8a15aae6d1f9650a172ce98287a57c1852b3274fbd9e7da3928f9a5919"
+  },
+  "api_metadata": {
+    "id": "resp_096d8370f404a2d2006aaa373e22d087d1a5f1f0e44a71b8be",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789540158.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1375,
+      "input_tokens_details": {
+        "cache_write_tokens": 1372,
+        "cached_tokens": 0
+      },
+      "output_tokens": 328,
+      "output_tokens_details": {
+        "reasoning_tokens": 184
+      },
+      "total_tokens": 1703
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Meralco's basketball campaign in the East Asia Super League\",\n  \"conflict_relevance\": \"An isolated, duplicated sentence about a UN General Assembly ceasefire resolution appears amid the sports article, with no connection to the main topic or further discussion.\",\n  \"reason\": \"The article is fundamentally a basketball report. The Gaza reference is an unrelated embedded news snippet rather than meaningful coverage or discourse about the conflict.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T06:29:22Z",
+  "duration_seconds": 4.617,
+  "error": null
+}

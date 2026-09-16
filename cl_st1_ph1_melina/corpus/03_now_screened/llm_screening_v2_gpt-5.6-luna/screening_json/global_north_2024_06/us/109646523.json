@@ -1,0 +1,65 @@
+{
+  "article_id": "109646523",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_06/us/109646523.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_06/us/109646523.json"
+  },
+  "manifest_row": {
+    "article_id": "109646523",
+    "group": "global_north_2024_06",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2024_06/us/109646523.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "gaza_role": "passing",
+    "main_topic": "UN discussion of North Korean ballistic missiles used by Russia in Ukraine",
+    "conflict_relevance": "The main article concerns the Russia-Ukraine war, North Korean arms transfers, and UN sanctions. Gaza appears only in a single unrelated sentence about aid operations at a U.S.-built pier.",
+    "reason": "The Gaza reference is an incidental embedded news item and is not connected to the article's main subject or discourse.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "966329db170911adad10752198c2025fe9347ee55f63b690102c26a00a3312d9",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "480393287f8923799ecb313e466864c23bcbcfefedcd760b00ea0374793d7b68",
+    "raw_response_text_sha256": "9398580c14e56fc92e98f4ce522776723fe36a9529d9a2ab29da0a881992276a"
+  },
+  "api_metadata": {
+    "id": "resp_019d5bedd675fc09006aaa117dfec887d2ac06e28addfbd81f",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789530494.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2317,
+      "input_tokens_details": {
+        "cache_write_tokens": 2314,
+        "cached_tokens": 0
+      },
+      "output_tokens": 243,
+      "output_tokens_details": {
+        "reasoning_tokens": 96
+      },
+      "total_tokens": 2560
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"UN discussion of North Korean ballistic missiles used by Russia in Ukraine\",\n  \"conflict_relevance\": \"The main article concerns the Russia-Ukraine war, North Korean arms transfers, and UN sanctions. Gaza appears only in a single unrelated sentence about aid operations at a U.S.-built pier.\",\n  \"reason\": \"The Gaza reference is an incidental embedded news item and is not connected to the article's main subject or discourse.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:48:17Z",
+  "duration_seconds": 3.598,
+  "error": null
+}

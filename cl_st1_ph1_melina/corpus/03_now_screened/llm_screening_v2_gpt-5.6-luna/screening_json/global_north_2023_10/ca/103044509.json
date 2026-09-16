@@ -1,0 +1,65 @@
+{
+  "article_id": "103044509",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_10/ca/103044509.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_10/ca/103044509.json"
+  },
+  "manifest_row": {
+    "article_id": "103044509",
+    "group": "global_north_2023_10",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2023_10/ca/103044509.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.93,
+    "gaza_role": "passing",
+    "main_topic": "A teenage hockey player's selection for Canada's World Under-17 Hockey Challenge team",
+    "conflict_relevance": "The main article is unrelated to Gaza or Israel-Palestine, but embedded CTV top-story snippets contain brief substantive references to Israel's military assault in Gaza and the regional implications of the Israel-Hamas war.",
+    "reason": "The article's primary content concerns hockey. However, the embedded news roundup includes meaningful, though very brief, conflict-related headlines about Gaza and the Israel-Hamas war, making it peripheral rather than entirely irrelevant.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "6f883102066b5d9d6656fac6777e5b73aaaecb1da4f9fa05bcbc09b00f372c0a",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "c6550b3e2fbc351a36db09a274eacf2a06d6bf1f4e7ecf3e542829bdb41495ed",
+    "raw_response_text_sha256": "67fa58f508db79d923e2cde9401ef5caf1129f8a9c4449992b4ea80cf5ed78b0"
+  },
+  "api_metadata": {
+    "id": "resp_09ed4d0606ac8840006aa9f6c3ad1487d29a8d03b89a5e723e",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789523651.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1850,
+      "input_tokens_details": {
+        "cache_write_tokens": 1847,
+        "cached_tokens": 0
+      },
+      "output_tokens": 356,
+      "output_tokens_details": {
+        "reasoning_tokens": 182
+      },
+      "total_tokens": 2206
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.93,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"A teenage hockey player's selection for Canada's World Under-17 Hockey Challenge team\",\n  \"conflict_relevance\": \"The main article is unrelated to Gaza or Israel-Palestine, but embedded CTV top-story snippets contain brief substantive references to Israel's military assault in Gaza and the regional implications of the Israel-Hamas war.\",\n  \"reason\": \"The article's primary content concerns hockey. However, the embedded news roundup includes meaningful, though very brief, conflict-related headlines about Gaza and the Israel-Hamas war, making it peripheral rather than entirely irrelevant.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T01:54:15Z",
+  "duration_seconds": 4.343,
+  "error": null
+}

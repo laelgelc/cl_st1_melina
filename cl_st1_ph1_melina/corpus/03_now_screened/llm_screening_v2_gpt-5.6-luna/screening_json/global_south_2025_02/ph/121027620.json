@@ -1,0 +1,65 @@
+{
+  "article_id": "121027620",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_south_2025_02/ph/121027620.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_south_2025_02/ph/121027620.json"
+  },
+  "manifest_row": {
+    "article_id": "121027620",
+    "group": "global_south_2025_02",
+    "country_code": "ph",
+    "filepath": "corpus/02_now_organised/global_south_2025_02/ph/121027620.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.91,
+    "gaza_role": "passing",
+    "main_topic": "Mixed news snippets about Baltic energy infrastructure, the Gaza ceasefire, and PlayStation services",
+    "conflict_relevance": "One substantive snippet discusses Israel's alleged lack of commitment to the Gaza ceasefire and the risk of collapse of its second phase, but the overall text is a multi-topic aggregation rather than a focused conflict article.",
+    "reason": "The Gaza content is meaningful and directly relevant to the conflict, but it appears as one item among unrelated news snippets. It should not be treated as core coverage of the article as a whole.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "e5c02ff62c927174d5da2db28ae5dd8a8e152cc8dbd5cc28343681c5da882522",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "f0b0ac594e577d12ce469f001963b41467e82cf6051385820acec9055d66aec6",
+    "raw_response_text_sha256": "51a3f27dd54c78784dfd59237e3cd5ca1c3f31dbef93cbecc8054a3127fd0a7c"
+  },
+  "api_metadata": {
+    "id": "resp_0385131c641c054a006aaa45d5da7087d199a34cbbfffb588a",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789543893.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 825,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 355,
+      "output_tokens_details": {
+        "reasoning_tokens": 183
+      },
+      "total_tokens": 1180
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.91,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Mixed news snippets about Baltic energy infrastructure, the Gaza ceasefire, and PlayStation services\",\n  \"conflict_relevance\": \"One substantive snippet discusses Israel's alleged lack of commitment to the Gaza ceasefire and the risk of collapse of its second phase, but the overall text is a multi-topic aggregation rather than a focused conflict article.\",\n  \"reason\": \"The Gaza content is meaningful and directly relevant to the conflict, but it appears as one item among unrelated news snippets. It should not be treated as core coverage of the article as a whole.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T07:31:38Z",
+  "duration_seconds": 4.403,
+  "error": null
+}

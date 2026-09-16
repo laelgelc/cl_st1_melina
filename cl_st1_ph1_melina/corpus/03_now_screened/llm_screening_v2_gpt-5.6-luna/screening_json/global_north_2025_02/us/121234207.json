@@ -1,0 +1,65 @@
+{
+  "article_id": "121234207",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_02/us/121234207.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_02/us/121234207.json"
+  },
+  "manifest_row": {
+    "article_id": "121234207",
+    "group": "global_north_2025_02",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2025_02/us/121234207.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "gaza_role": "passing",
+    "main_topic": "U.S. government cuts, foreign aid, and the dismantling of federal agencies",
+    "conflict_relevance": "Gaza appears only as a satirical joke and is not substantively discussed.",
+    "reason": "The article primarily concerns USAID, international aid, and DOGE-related U.S. government cuts, while its references to Gaza are incidental comedic remarks with no meaningful conflict discourse.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "dc523e7bd97b48b730701a4edf1d0198a9bfcde314fd2f209f59cd51519d9a76",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "f9edcf7c64485ea574382913fe4c878f78ea015aa293ae1cfb7c496b621400ee",
+    "raw_response_text_sha256": "c22c804eec6506c65f01e6e950b265c0f7935affbda9e8736059f04efbeb1fb8"
+  },
+  "api_metadata": {
+    "id": "resp_054d6bffb5496d6c006aaa24caf70887d18da7a8afdcd849f8",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789535435.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1673,
+      "input_tokens_details": {
+        "cache_write_tokens": 1670,
+        "cached_tokens": 0
+      },
+      "output_tokens": 204,
+      "output_tokens_details": {
+        "reasoning_tokens": 62
+      },
+      "total_tokens": 1877
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"U.S. government cuts, foreign aid, and the dismantling of federal agencies\",\n  \"conflict_relevance\": \"Gaza appears only as a satirical joke and is not substantively discussed.\",\n  \"reason\": \"The article primarily concerns USAID, international aid, and DOGE-related U.S. government cuts, while its references to Gaza are incidental comedic remarks with no meaningful conflict discourse.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T05:10:38Z",
+  "duration_seconds": 3.934,
+  "error": null
+}

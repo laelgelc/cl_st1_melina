@@ -1,0 +1,65 @@
+{
+  "article_id": "122743857",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_03/us/122743857.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_03/us/122743857.json"
+  },
+  "manifest_row": {
+    "article_id": "122743857",
+    "group": "global_north_2025_03",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2025_03/us/122743857.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.93,
+    "gaza_role": "background",
+    "main_topic": "US airstrikes on Yemen and the history of American and Saudi intervention in the Houthi conflict",
+    "conflict_relevance": "The article discusses the Houthi resumption of attacks on Israeli shipping in response to Israel's blockade of aid and goods entering Gaza, the Israel-Hamas ceasefire, Hamas's October 2023 attack and hostage-taking, and US support for Israel. However, its primary focus is Yemen and US foreign policy there.",
+    "reason": "Gaza and the Israel-Hamas war provide important causal and geopolitical context for the article's discussion of Houthi actions and US strikes, but the article is mainly an extended analysis of the Yemen war and American intervention rather than a substantive examination of Gaza or the Israel-Palestine conflict itself.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "c405a4ebdb1e99081f6563e00cb8c651c29395706ccdac193b72780dfa261d6c",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "b5dd4bb421a5080fd761e06e366570f51f185607893f63784acec9457986a918",
+    "raw_response_text_sha256": "bfea3e6229134dc6b26142c60178cd1adb132161d9558655f18c287ec850197b"
+  },
+  "api_metadata": {
+    "id": "resp_067e6d62d7911744006aaa27fdeefc87d1b09c4f072b307261",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789536253.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1917,
+      "input_tokens_details": {
+        "cache_write_tokens": 1914,
+        "cached_tokens": 0
+      },
+      "output_tokens": 381,
+      "output_tokens_details": {
+        "reasoning_tokens": 161
+      },
+      "total_tokens": 2298
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.93,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"US airstrikes on Yemen and the history of American and Saudi intervention in the Houthi conflict\",\n  \"conflict_relevance\": \"The article discusses the Houthi resumption of attacks on Israeli shipping in response to Israel's blockade of aid and goods entering Gaza, the Israel-Hamas ceasefire, Hamas's October 2023 attack and hostage-taking, and US support for Israel. However, its primary focus is Yemen and US foreign policy there.\",\n  \"reason\": \"Gaza and the Israel-Hamas war provide important causal and geopolitical context for the article's discussion of Houthi actions and US strikes, but the article is mainly an extended analysis of the Yemen war and American intervention rather than a substantive examination of Gaza or the Israel-Palestine conflict itself.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T05:24:19Z",
+  "duration_seconds": 5.206,
+  "error": null
+}

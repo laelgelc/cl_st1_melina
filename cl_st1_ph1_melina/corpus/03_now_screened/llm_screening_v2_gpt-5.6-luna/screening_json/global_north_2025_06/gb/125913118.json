@@ -1,0 +1,65 @@
+{
+  "article_id": "125913118",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_06/gb/125913118.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_06/gb/125913118.json"
+  },
+  "manifest_row": {
+    "article_id": "125913118",
+    "group": "global_north_2025_06",
+    "country_code": "gb",
+    "filepath": "corpus/02_now_organised/global_north_2025_06/gb/125913118.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.96,
+    "gaza_role": "passing",
+    "main_topic": "Politically motivated shootings of Minnesota lawmakers and the manhunt for the suspect",
+    "conflict_relevance": "Gaza, the West Bank, and southern Lebanon are mentioned only as regions where the suspect's security firm claims he had worked; the article does not discuss the conflict or related discourse.",
+    "reason": "The article is centrally about a Minnesota political shooting and contains only an incidental biographical reference to Gaza among several global locations.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "41cbeda6e2987990ecf54ebe280616155504d9fd986cb3feb37b879e31ae7737",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "889a5a00f2c08bf40f8fdbda674982c0e1e9664a336f1e7ed3ff10b30e4e2be7",
+    "raw_response_text_sha256": "78b6e01b459221ab62133272b331d1252f36cdd745b8df63b14a9581ef31986c"
+  },
+  "api_metadata": {
+    "id": "resp_092d9f04a3c4acf3006aaa2f58ae5487d1beba739c71c3522a",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789538136.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1040,
+      "input_tokens_details": {
+        "cache_write_tokens": 1037,
+        "cached_tokens": 0
+      },
+      "output_tokens": 297,
+      "output_tokens_details": {
+        "reasoning_tokens": 147
+      },
+      "total_tokens": 1337
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.96,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Politically motivated shootings of Minnesota lawmakers and the manhunt for the suspect\",\n  \"conflict_relevance\": \"Gaza, the West Bank, and southern Lebanon are mentioned only as regions where the suspect's security firm claims he had worked; the article does not discuss the conflict or related discourse.\",\n  \"reason\": \"The article is centrally about a Minnesota political shooting and contains only an incidental biographical reference to Gaza among several global locations.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T05:55:41Z",
+  "duration_seconds": 4.579,
+  "error": null
+}

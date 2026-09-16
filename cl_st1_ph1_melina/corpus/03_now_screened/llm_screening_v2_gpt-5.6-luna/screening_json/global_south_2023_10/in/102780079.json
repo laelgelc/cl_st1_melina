@@ -1,0 +1,65 @@
+{
+  "article_id": "102780079",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_south_2023_10/in/102780079.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_south_2023_10/in/102780079.json"
+  },
+  "manifest_row": {
+    "article_id": "102780079",
+    "group": "global_south_2023_10",
+    "country_code": "in",
+    "filepath": "corpus/02_now_organised/global_south_2023_10/in/102780079.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "passing",
+    "main_topic": "A student-organized Model G20 summit in Kanpur",
+    "conflict_relevance": "The main article concerns an educational diplomatic simulation, but an embedded recommended article briefly discusses how the Gaza war affects global geopolitical divisions and responses to Hamas.",
+    "reason": "Gaza is not part of the main article's subject and appears only in a related-news snippet, but the snippet contains meaningful conflict-related discourse.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "519c5c689e312f48cc19d0fb215b268afeb40b3504ef827ce91b66b4085022f6",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "87e02ee536610809041fe7e127d162aa95d1c2238ad324b40a6255d5af6a0a1a",
+    "raw_response_text_sha256": "34609dae94a2b8f79c86b70951add592e0fc9b358210e99e6bc625cf6445f2b0"
+  },
+  "api_metadata": {
+    "id": "resp_08e88f687947921a006aaa32dfa6dc87d1965dc8f56660063d",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789539039.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1245,
+      "input_tokens_details": {
+        "cache_write_tokens": 1242,
+        "cached_tokens": 0
+      },
+      "output_tokens": 210,
+      "output_tokens_details": {
+        "reasoning_tokens": 65
+      },
+      "total_tokens": 1455
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"A student-organized Model G20 summit in Kanpur\",\n  \"conflict_relevance\": \"The main article concerns an educational diplomatic simulation, but an embedded recommended article briefly discusses how the Gaza war affects global geopolitical divisions and responses to Hamas.\",\n  \"reason\": \"Gaza is not part of the main article's subject and appears only in a related-news snippet, but the snippet contains meaningful conflict-related discourse.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T06:10:43Z",
+  "duration_seconds": 4.446,
+  "error": null
+}

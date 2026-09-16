@@ -1,0 +1,65 @@
+{
+  "article_id": "91672730",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_10/us/91672730.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_10/us/91672730.json"
+  },
+  "manifest_row": {
+    "article_id": "91672730",
+    "group": "global_north_2023_10",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2023_10/us/91672730.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.96,
+    "gaza_role": "passing",
+    "main_topic": "U.S. congressional leadership and Republican Senate policy positions",
+    "conflict_relevance": "The article briefly references Israel's offensive against Gaza and discusses related U.S. policy toward Iran, while a recommended-story snippet contains more substantive discussion of the Israel-Gaza conflict and international law.",
+    "reason": "The main article is about the House Republican struggle to elect a Speaker, not the Gaza conflict. However, it includes a meaningful, though brief, reference to Israel's military action in Gaza and related Middle East policy, making it peripheral rather than excludable.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "9a3f1131ffd7495649be88fe9247d50ba8639bab5f054c0e428214407e2ae057",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "35fb546f283eb907edf76e087f947e2b00dc20ec52b12fc894a591291beb8e81",
+    "raw_response_text_sha256": "c80db57652d136c9ec4b9dd54d8744810ceffdc57aaa9223316b450651dbebeb"
+  },
+  "api_metadata": {
+    "id": "resp_00aa90bef7dc39ee006aa9fadeeca087d283ecd585e0d82d4b",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789524702.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1255,
+      "input_tokens_details": {
+        "cache_write_tokens": 1252,
+        "cached_tokens": 0
+      },
+      "output_tokens": 332,
+      "output_tokens_details": {
+        "reasoning_tokens": 156
+      },
+      "total_tokens": 1587
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.96,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"U.S. congressional leadership and Republican Senate policy positions\",\n  \"conflict_relevance\": \"The article briefly references Israel's offensive against Gaza and discusses related U.S. policy toward Iran, while a recommended-story snippet contains more substantive discussion of the Israel-Gaza conflict and international law.\",\n  \"reason\": \"The main article is about the House Republican struggle to elect a Speaker, not the Gaza conflict. However, it includes a meaningful, though brief, reference to Israel's military action in Gaza and related Middle East policy, making it peripheral rather than excludable.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:11:47Z",
+  "duration_seconds": 4.422,
+  "error": null
+}

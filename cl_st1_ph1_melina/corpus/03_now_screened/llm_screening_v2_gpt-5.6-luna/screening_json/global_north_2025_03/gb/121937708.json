@@ -1,0 +1,65 @@
+{
+  "article_id": "121937708",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_03/gb/121937708.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_03/gb/121937708.json"
+  },
+  "manifest_row": {
+    "article_id": "121937708",
+    "group": "global_north_2025_03",
+    "country_code": "gb",
+    "filepath": "corpus/02_now_organised/global_north_2025_03/gb/121937708.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.97,
+    "gaza_role": "background",
+    "main_topic": "Scottish political debate over possible UK involvement and peacekeeping in the Ukraine war",
+    "conflict_relevance": "The article is primarily about Ukraine, UK defence policy, and Scottish political representation, but includes meaningful commentary criticizing the treatment of Palestinians in Gaza.",
+    "reason": "Gaza is discussed in a substantive reader letter, but it is not the central subject of the article, which consists mainly of commentary on Ukraine and UK military policy.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "7237ff030c088aee0693d488b6aa1f6f147b75c41d273a618442578149d0cf12",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "93b6a06bde0a0124775b2e76ea3dd3d631ad0d14acdd205e7b61a5d51ce7eb5f",
+    "raw_response_text_sha256": "7f338aa0d2c66ec9d635aa340527f068324af40dbb016d6f0b82b51d3eb39081"
+  },
+  "api_metadata": {
+    "id": "resp_00ec3a7d714bd9f7006aaa25d5dd4487d1a569b271e83a2823",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789535701.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2307,
+      "input_tokens_details": {
+        "cache_write_tokens": 2304,
+        "cached_tokens": 0
+      },
+      "output_tokens": 295,
+      "output_tokens_details": {
+        "reasoning_tokens": 143
+      },
+      "total_tokens": 2602
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.97,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Scottish political debate over possible UK involvement and peacekeeping in the Ukraine war\",\n  \"conflict_relevance\": \"The article is primarily about Ukraine, UK defence policy, and Scottish political representation, but includes meaningful commentary criticizing the treatment of Palestinians in Gaza.\",\n  \"reason\": \"Gaza is discussed in a substantive reader letter, but it is not the central subject of the article, which consists mainly of commentary on Ukraine and UK military policy.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T05:15:06Z",
+  "duration_seconds": 4.846,
+  "error": null
+}

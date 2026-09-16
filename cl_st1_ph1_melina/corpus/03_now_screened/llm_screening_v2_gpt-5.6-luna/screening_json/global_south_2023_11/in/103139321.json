@@ -1,0 +1,65 @@
+{
+  "article_id": "103139321",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_south_2023_11/in/103139321.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_south_2023_11/in/103139321.json"
+  },
+  "manifest_row": {
+    "article_id": "103139321",
+    "group": "global_south_2023_11",
+    "country_code": "in",
+    "filepath": "corpus/02_now_organised/global_south_2023_11/in/103139321.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "passing",
+    "main_topic": "Indian electoral politics and Yogi Adityanath's criticism of Congress",
+    "conflict_relevance": "The article briefly invokes Israel's military actions in Gaza as a political analogy for selectively eliminating terrorists, but Gaza is not the subject of the report.",
+    "reason": "The main article concerns a BJP campaign speech and domestic Indian political issues. Its single substantive reference to targeted actions in Gaza provides limited discourse material about how the conflict is rhetorically used in Indian political messaging, so it is peripheral rather than core.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "3dd215602fc77696adb87a63057d01a539607c228e350c1203ee54d48387fed0",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "1293d3d3a27fba21f23b16c36485abfba6d5da584e04c915d7cf17c526b23871",
+    "raw_response_text_sha256": "da7a13cc27b948d0918e9205c1b36db1e47c23e995cf9b0faecce210670313cb"
+  },
+  "api_metadata": {
+    "id": "resp_0aec93db30e31c43006aaa3485ce5887d1b2c17f77c051248e",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789539461.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1316,
+      "input_tokens_details": {
+        "cache_write_tokens": 1313,
+        "cached_tokens": 0
+      },
+      "output_tokens": 212,
+      "output_tokens_details": {
+        "reasoning_tokens": 44
+      },
+      "total_tokens": 1528
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Indian electoral politics and Yogi Adityanath's criticism of Congress\",\n  \"conflict_relevance\": \"The article briefly invokes Israel's military actions in Gaza as a political analogy for selectively eliminating terrorists, but Gaza is not the subject of the report.\",\n  \"reason\": \"The main article concerns a BJP campaign speech and domestic Indian political issues. Its single substantive reference to targeted actions in Gaza provides limited discourse material about how the conflict is rhetorically used in Indian political messaging, so it is peripheral rather than core.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T06:17:44Z",
+  "duration_seconds": 3.315,
+  "error": null
+}

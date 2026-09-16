@@ -1,0 +1,65 @@
+{
+  "article_id": "200064349",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_12/us/200064349.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_12/us/200064349.json"
+  },
+  "manifest_row": {
+    "article_id": "200064349",
+    "group": "global_north_2023_12",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2023_12/us/200064349.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.95,
+    "gaza_role": "substantial",
+    "main_topic": "Daily news roundup covering airlines, Israel-Gaza, vaccines, the European Union, storms, and other general-interest items",
+    "conflict_relevance": "The roundup contains a substantive news section on US support for Israel's military campaign, Gaza casualties, Israeli policy toward Hamas, and US diplomatic pressure regarding civilian harm.",
+    "reason": "Although the article is a general news briefing composed of multiple unrelated items, its Israel section provides meaningful discourse on the Gaza war and US-Israel relations. The conflict is not the overall focus of the article, so it is peripheral rather than core.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "e413cba7980aa616da96fdc84bb237e3a06edb46e639d341656c4554c8d15bf6",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "1633bbc537ca39e289203f1c273dc9b32ca20da43d55d06c3017a86c82cf1d56",
+    "raw_response_text_sha256": "f64ca46a7531da59ffce1525205bf2065ba08e110d3c476e3a8cbe742be6f69e"
+  },
+  "api_metadata": {
+    "id": "resp_0fe3b6a9002931bd006aaa02f6d23887d2a951cf8d62801e1e",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789526774.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1857,
+      "input_tokens_details": {
+        "cache_write_tokens": 1854,
+        "cached_tokens": 0
+      },
+      "output_tokens": 353,
+      "output_tokens_details": {
+        "reasoning_tokens": 172
+      },
+      "total_tokens": 2210
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.95,\n  \"gaza_role\": \"substantial\",\n  \"main_topic\": \"Daily news roundup covering airlines, Israel-Gaza, vaccines, the European Union, storms, and other general-interest items\",\n  \"conflict_relevance\": \"The roundup contains a substantive news section on US support for Israel's military campaign, Gaza casualties, Israeli policy toward Hamas, and US diplomatic pressure regarding civilian harm.\",\n  \"reason\": \"Although the article is a general news briefing composed of multiple unrelated items, its Israel section provides meaningful discourse on the Gaza war and US-Israel relations. The conflict is not the overall focus of the article, so it is peripheral rather than core.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:46:19Z",
+  "duration_seconds": 4.498,
+  "error": null
+}

@@ -1,0 +1,65 @@
+{
+  "article_id": "115334242",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_south_2024_10/za/115334242.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_south_2024_10/za/115334242.json"
+  },
+  "manifest_row": {
+    "article_id": "115334242",
+    "group": "global_south_2024_10",
+    "country_code": "za",
+    "filepath": "corpus/02_now_organised/global_south_2024_10/za/115334242.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "gaza_role": "boilerplate_or_unrelated",
+    "main_topic": "Kaizer Chiefs football players' salaries",
+    "conflict_relevance": "No meaningful relevance to Gaza, Palestine, Israel/Palestine, or the related political and humanitarian discourse. The only mention of Gaza is the geographical name Gaza Province in Mozambique.",
+    "reason": "The article is entirely about South African football and player salaries; the reference to Gaza Province is incidental and unrelated to the Gaza conflict.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "7bd0bcd268586664a6a058d6a152f9029cfd4c1375a27dd364fdd3398b2e8310",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "9d868c84a053f2cb87d396bebea48ea667d0c417b2212e394c624be950fb7e2b",
+    "raw_response_text_sha256": "106d0f808e95facfb1fe715c97b1fcc56d1c58c194e273fb065e263704408c64"
+  },
+  "api_metadata": {
+    "id": "resp_0b63df0da6329b59006aaa415aaa6087d1aa4fdd2bce395668",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789542746.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 4301,
+      "input_tokens_details": {
+        "cache_write_tokens": 4298,
+        "cached_tokens": 0
+      },
+      "output_tokens": 184,
+      "output_tokens_details": {
+        "reasoning_tokens": 35
+      },
+      "total_tokens": 4485
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"gaza_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Kaizer Chiefs football players' salaries\",\n  \"conflict_relevance\": \"No meaningful relevance to Gaza, Palestine, Israel/Palestine, or the related political and humanitarian discourse. The only mention of Gaza is the geographical name Gaza Province in Mozambique.\",\n  \"reason\": \"The article is entirely about South African football and player salaries; the reference to Gaza Province is incidental and unrelated to the Gaza conflict.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T07:12:30Z",
+  "duration_seconds": 3.648,
+  "error": null
+}

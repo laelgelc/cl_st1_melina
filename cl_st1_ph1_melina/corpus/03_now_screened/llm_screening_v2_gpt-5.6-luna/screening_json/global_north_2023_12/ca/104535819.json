@@ -1,0 +1,65 @@
+{
+  "article_id": "104535819",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_12/ca/104535819.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_12/ca/104535819.json"
+  },
+  "manifest_row": {
+    "article_id": "104535819",
+    "group": "global_north_2023_12",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2023_12/ca/104535819.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "passing",
+    "main_topic": "Christmas celebrations and festive traditions among New Canadians",
+    "conflict_relevance": "The main article is unrelated to Gaza or the Israel-Palestine conflict, but embedded latest-story snippets discuss a future Palestinian state, Hamas, Israeli hostages, and deaths in Gaza.",
+    "reason": "The headline article focuses on multicultural Christmas traditions in Newfoundland. However, the page includes substantive, conflict-related news snippets concerning Palestinian governance, Hamas, Israeli hostages, and the Gaza war, making it peripheral rather than excludable.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "b892ad211a1778c6c7d0e4315d76307d18a10ff260234e94a1163270a07df53f",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "ea60ec81856df1e7b26cbb61b4ee0130877a9ef4e9e96e1e304c8a616b5a51fb",
+    "raw_response_text_sha256": "489dc45478a2f40f2c8f63504e5bd553a18b8f311ded8b39379cf2de9f10a1d9"
+  },
+  "api_metadata": {
+    "id": "resp_0f04e545934f112a006aaa0092319c87d2a659bc33d3eac999",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789526162.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2175,
+      "input_tokens_details": {
+        "cache_write_tokens": 2172,
+        "cached_tokens": 0
+      },
+      "output_tokens": 275,
+      "output_tokens_details": {
+        "reasoning_tokens": 107
+      },
+      "total_tokens": 2450
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Christmas celebrations and festive traditions among New Canadians\",\n  \"conflict_relevance\": \"The main article is unrelated to Gaza or the Israel-Palestine conflict, but embedded latest-story snippets discuss a future Palestinian state, Hamas, Israeli hostages, and deaths in Gaza.\",\n  \"reason\": \"The headline article focuses on multicultural Christmas traditions in Newfoundland. However, the page includes substantive, conflict-related news snippets concerning Palestinian governance, Hamas, Israeli hostages, and the Gaza war, making it peripheral rather than excludable.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:36:06Z",
+  "duration_seconds": 4.45,
+  "error": null
+}

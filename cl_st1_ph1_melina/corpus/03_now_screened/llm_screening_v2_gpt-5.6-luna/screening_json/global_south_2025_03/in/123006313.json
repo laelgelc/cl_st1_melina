@@ -1,0 +1,65 @@
+{
+  "article_id": "123006313",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_south_2025_03/in/123006313.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_south_2025_03/in/123006313.json"
+  },
+  "manifest_row": {
+    "article_id": "123006313",
+    "group": "global_south_2025_03",
+    "country_code": "in",
+    "filepath": "corpus/02_now_organised/global_south_2025_03/in/123006313.txt"
+  },
+  "screening": {
+    "category": "CORE",
+    "confidence": 0.99,
+    "gaza_role": "central",
+    "main_topic": "Anti-Hamas protests and repression in Gaza amid the Israel-Hamas war",
+    "conflict_relevance": "The article directly focuses on Palestinian protests in northern Gaza, Hamas's alleged suppression of dissent, the ongoing war, Israeli military action, ceasefire talks, civilian casualties, and hostages.",
+    "reason": "Gaza, Palestinians, Hamas, the war, military strikes, humanitarian suffering, and internal political dissent are the central subjects of the article.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": true
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "37e87bece889d3579eac1546898ab55d3b536104d83cfb358fe6faba99f6d930",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "cfa710b03c6aef9ea4a84f886361ca589e54129e4287b15a0d8a7574b25ad8fd",
+    "raw_response_text_sha256": "420ef3472ddd8b44bd41d13d97290b49a27164f2b3ea57034769155bfa0a8108"
+  },
+  "api_metadata": {
+    "id": "resp_0164f6bb078bc315006aaa46c1514c87d1bbe8227ca5542bb7",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789544129.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1398,
+      "input_tokens_details": {
+        "cache_write_tokens": 1395,
+        "cached_tokens": 0
+      },
+      "output_tokens": 199,
+      "output_tokens_details": {
+        "reasoning_tokens": 46
+      },
+      "total_tokens": 1597
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"CORE\",\n  \"confidence\": 0.99,\n  \"gaza_role\": \"central\",\n  \"main_topic\": \"Anti-Hamas protests and repression in Gaza amid the Israel-Hamas war\",\n  \"conflict_relevance\": \"The article directly focuses on Palestinian protests in northern Gaza, Hamas's alleged suppression of dissent, the ongoing war, Israeli military action, ceasefire talks, civilian casualties, and hostages.\",\n  \"reason\": \"Gaza, Palestinians, Hamas, the war, military strikes, humanitarian suffering, and internal political dissent are the central subjects of the article.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": true\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T07:35:32Z",
+  "duration_seconds": 3.48,
+  "error": null
+}

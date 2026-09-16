@@ -1,0 +1,65 @@
+{
+  "article_id": "102656418",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_10/ca/102656418.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_10/ca/102656418.json"
+  },
+  "manifest_row": {
+    "article_id": "102656418",
+    "group": "global_north_2023_10",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2023_10/ca/102656418.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.94,
+    "gaza_role": "passing",
+    "main_topic": "The discontinuation of GED testing in Canada and alternative pathways to high-school equivalency",
+    "conflict_relevance": "The article includes unrelated news snippets about the Israel-Hamas war, Gaza's humanitarian crisis, hostages, and Canadians affected by the conflict, but these are not connected to the main GED-testing story.",
+    "reason": "The headline and main article concern adult education and the end of GED testing in Canada. However, the text contains meaningful, though embedded and unrelated, references to humanitarian access into Gaza, Israeli hostages, the Israel-Hamas war, and Canadians killed or missing in the conflict.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "82d2914059bcea61d87dc7902ac27c9c121b81bf213af420c4a7e88487a1eb3c",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "40b66d02a1d12aec9368b1676c6e11a5c823d3d03978f8cebecc142329301829",
+    "raw_response_text_sha256": "0cc11a16c2b081c63b7d3abc6aedc2e75725cbce8749428918f5c9c1c079126a"
+  },
+  "api_metadata": {
+    "id": "resp_07e03a8d8839e2f7006aa9f64acb7487d2a2c551fb8e1fb73b",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789523530.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1687,
+      "input_tokens_details": {
+        "cache_write_tokens": 1684,
+        "cached_tokens": 0
+      },
+      "output_tokens": 292,
+      "output_tokens_details": {
+        "reasoning_tokens": 105
+      },
+      "total_tokens": 1979
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.94,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"The discontinuation of GED testing in Canada and alternative pathways to high-school equivalency\",\n  \"conflict_relevance\": \"The article includes unrelated news snippets about the Israel-Hamas war, Gaza's humanitarian crisis, hostages, and Canadians affected by the conflict, but these are not connected to the main GED-testing story.\",\n  \"reason\": \"The headline and main article concern adult education and the end of GED testing in Canada. However, the text contains meaningful, though embedded and unrelated, references to humanitarian access into Gaza, Israeli hostages, the Israel-Hamas war, and Canadians killed or missing in the conflict.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T01:52:14Z",
+  "duration_seconds": 3.952,
+  "error": null
+}

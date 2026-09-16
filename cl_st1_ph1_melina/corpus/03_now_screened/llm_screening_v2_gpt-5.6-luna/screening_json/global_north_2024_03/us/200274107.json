@@ -1,0 +1,65 @@
+{
+  "article_id": "200274107",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_03/us/200274107.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_03/us/200274107.json"
+  },
+  "manifest_row": {
+    "article_id": "200274107",
+    "group": "global_north_2024_03",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2024_03/us/200274107.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "background",
+    "main_topic": "The humanitarian and hunger crisis caused by the war in Sudan",
+    "conflict_relevance": "Gaza is mentioned as a point of comparison to explain why global attention has focused on the Israel-Hamas war rather than Sudan.",
+    "reason": "The article is centrally about Sudan's war, displacement, famine risk, and humanitarian response. It contains a meaningful but brief reference to the Israel-Hamas war in Gaza as part of a discussion of unequal international attention, making it relevant to broader humanitarian and media-attention discourse but not to the main Gaza corpus.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "5fcfeff39e24a71d4ea2eb8f70db8d2fe352975dbe05b8ab7548f86ea8fdb907",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "4c607191e21d71931e43a018be85c754056e296cfcffbb50a154cd75e57718ce",
+    "raw_response_text_sha256": "3d1e077a79567e1ed46264edfc9c390b24dd86f0d0ad6afa9ec9606206a6305c"
+  },
+  "api_metadata": {
+    "id": "resp_04e7ca18967833f1006aaa0a239f9c87d2b098875d0a92faeb",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789528611.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1380,
+      "input_tokens_details": {
+        "cache_write_tokens": 1377,
+        "cached_tokens": 0
+      },
+      "output_tokens": 245,
+      "output_tokens_details": {
+        "reasoning_tokens": 70
+      },
+      "total_tokens": 1625
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"The humanitarian and hunger crisis caused by the war in Sudan\",\n  \"conflict_relevance\": \"Gaza is mentioned as a point of comparison to explain why global attention has focused on the Israel-Hamas war rather than Sudan.\",\n  \"reason\": \"The article is centrally about Sudan's war, displacement, famine risk, and humanitarian response. It contains a meaningful but brief reference to the Israel-Hamas war in Gaza as part of a discussion of unequal international attention, making it relevant to broader humanitarian and media-attention discourse but not to the main Gaza corpus.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:16:55Z",
+  "duration_seconds": 3.576,
+  "error": null
+}

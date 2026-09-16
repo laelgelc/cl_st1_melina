@@ -1,0 +1,65 @@
+{
+  "article_id": "200249631",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_02/us/200249631.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_02/us/200249631.json"
+  },
+  "manifest_row": {
+    "article_id": "200249631",
+    "group": "global_north_2024_02",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2024_02/us/200249631.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.99,
+    "gaza_role": "passing",
+    "main_topic": "South Carolina men's basketball and SEC tournament seeding",
+    "conflict_relevance": "The article is primarily a college basketball report, but it ends with a substantive news sentence about Israeli forces potentially entering Rafah and criticism of Israel's response in Gaza.",
+    "reason": "The Gaza-related content is an appended, unrelated news snippet rather than part of the article's main subject. It is meaningful but too limited for CORE classification.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "7d8e6c5c6639adb7f13d80f089edde9609db8bc2a2bcd3c37bad37b864342221",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "953038e6c435cf2bf012766c66a087bab1e9c9bdcfc380ce0ad56da892e8b533",
+    "raw_response_text_sha256": "9b8c607331cafe482803d2843d31bec81fd4f64f7e37c4b9b04d56c78c08dc7c"
+  },
+  "api_metadata": {
+    "id": "resp_000359071bbd6bda006aaa0817b68887d2ac8f1039523e03fe",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789528087.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1786,
+      "input_tokens_details": {
+        "cache_write_tokens": 1783,
+        "cached_tokens": 0
+      },
+      "output_tokens": 204,
+      "output_tokens_details": {
+        "reasoning_tokens": 55
+      },
+      "total_tokens": 1990
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.99,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"South Carolina men's basketball and SEC tournament seeding\",\n  \"conflict_relevance\": \"The article is primarily a college basketball report, but it ends with a substantive news sentence about Israeli forces potentially entering Rafah and criticism of Israel's response in Gaza.\",\n  \"reason\": \"The Gaza-related content is an appended, unrelated news snippet rather than part of the article's main subject. It is meaningful but too limited for CORE classification.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:08:10Z",
+  "duration_seconds": 3.21,
+  "error": null
+}

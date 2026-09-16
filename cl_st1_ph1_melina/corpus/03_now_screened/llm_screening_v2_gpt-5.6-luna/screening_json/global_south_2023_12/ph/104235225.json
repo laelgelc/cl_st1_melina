@@ -1,0 +1,65 @@
+{
+  "article_id": "104235225",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_south_2023_12/ph/104235225.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_south_2023_12/ph/104235225.json"
+  },
+  "manifest_row": {
+    "article_id": "104235225",
+    "group": "global_south_2023_12",
+    "country_code": "ph",
+    "filepath": "corpus/02_now_organised/global_south_2023_12/ph/104235225.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.94,
+    "gaza_role": "passing",
+    "main_topic": "Alleged Chinese criminal, economic, and political influence in the Philippines",
+    "conflict_relevance": "The main article is unrelated to Gaza or the Israel-Palestine conflict; Gaza appears only in two appended sentences resembling an unrelated news snippet.",
+    "reason": "Although the text briefly mentions humanitarian access to Gaza, the collapse of Gaza's health system, Hamas, and hostages, these remarks are disconnected from the headline and main article and do not provide substantive context for conflict discourse analysis.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "ca2ff4e31aac44a3b83a392ab7986b3f5d702254b483bcf105003520dc0eac52",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "384530bbf977973217b935596ce647d3b08d3086de930cd3911e354e36139053",
+    "raw_response_text_sha256": "d071e9ba76a629f9ab6017583c76364ff287d64d8f41b079f8d021e350f4930e"
+  },
+  "api_metadata": {
+    "id": "resp_0fb9f4e6316f71cf006aaa37348e3887d19b2cd47c85c89174",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789540148.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1199,
+      "input_tokens_details": {
+        "cache_write_tokens": 1196,
+        "cached_tokens": 0
+      },
+      "output_tokens": 397,
+      "output_tokens_details": {
+        "reasoning_tokens": 234
+      },
+      "total_tokens": 1596
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.94,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Alleged Chinese criminal, economic, and political influence in the Philippines\",\n  \"conflict_relevance\": \"The main article is unrelated to Gaza or the Israel-Palestine conflict; Gaza appears only in two appended sentences resembling an unrelated news snippet.\",\n  \"reason\": \"Although the text briefly mentions humanitarian access to Gaza, the collapse of Gaza's health system, Hamas, and hostages, these remarks are disconnected from the headline and main article and do not provide substantive context for conflict discourse analysis.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T06:29:13Z",
+  "duration_seconds": 5.499,
+  "error": null
+}

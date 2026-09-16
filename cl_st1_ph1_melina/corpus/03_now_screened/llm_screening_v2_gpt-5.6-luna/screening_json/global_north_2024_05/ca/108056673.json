@@ -1,0 +1,65 @@
+{
+  "article_id": "108056673",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_05/ca/108056673.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_05/ca/108056673.json"
+  },
+  "manifest_row": {
+    "article_id": "108056673",
+    "group": "global_north_2024_05",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2024_05/ca/108056673.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "gaza_role": "passing",
+    "main_topic": "Cybersecurity attacks targeting the British Columbia government",
+    "conflict_relevance": "The main article is unrelated to Gaza or the Israel-Hamas war; the only reference appears in an unrelated roundup snippet about U.S. politics and Biden's approach to the war.",
+    "reason": "The article centrally concerns alleged state-directed cyberattacks on British Columbia government networks. Gaza is mentioned only once in a peripheral 'Latest Stories' item and does not contribute meaningfully to the article's discourse.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "04839b6c8a8e8af97821727c1303f19d582329b9c8907e7b8ade6756da2b8d22",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "82ee2f690daeed9e18f3cd4bd0fd5c2c35750ac1eb046c54a0a388d80865fbf3",
+    "raw_response_text_sha256": "5ef646979a122e12cb01415b2f6409ed34dee6b4b5d02298373f69852301e78e"
+  },
+  "api_metadata": {
+    "id": "resp_0825a457f504dac3006aaa0d840a1487d2896344ba9791bf14",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789529476.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2467,
+      "input_tokens_details": {
+        "cache_write_tokens": 2464,
+        "cached_tokens": 0
+      },
+      "output_tokens": 223,
+      "output_tokens_details": {
+        "reasoning_tokens": 63
+      },
+      "total_tokens": 2690
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Cybersecurity attacks targeting the British Columbia government\",\n  \"conflict_relevance\": \"The main article is unrelated to Gaza or the Israel-Hamas war; the only reference appears in an unrelated roundup snippet about U.S. politics and Biden's approach to the war.\",\n  \"reason\": \"The article centrally concerns alleged state-directed cyberattacks on British Columbia government networks. Gaza is mentioned only once in a peripheral 'Latest Stories' item and does not contribute meaningfully to the article's discourse.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:31:19Z",
+  "duration_seconds": 3.153,
+  "error": null
+}

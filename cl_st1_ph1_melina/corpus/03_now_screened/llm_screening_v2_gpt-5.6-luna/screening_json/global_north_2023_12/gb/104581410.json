@@ -1,0 +1,65 @@
+{
+  "article_id": "104581410",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_12/gb/104581410.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_12/gb/104581410.json"
+  },
+  "manifest_row": {
+    "article_id": "104581410",
+    "group": "global_north_2023_12",
+    "country_code": "gb",
+    "filepath": "corpus/02_now_organised/global_north_2023_12/gb/104581410.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "background",
+    "main_topic": "Global shipping disruption, freight costs, and inflation",
+    "conflict_relevance": "The article connects Red Sea and Suez Canal disruptions, including Houthi attacks, to Israel's military actions in Gaza, but its primary focus is economic and maritime consequences.",
+    "reason": "Gaza-related conflict discourse provides the stated context for the attacks and shipping disruption, yet the article is mainly about global trade routes, freight prices, and inflation.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "380d1c5ba174b74bc0d2f98b79dcb7ac3b808b2ff8a02709b3beeae62685bbae",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "b0306f60d2a9043af5503b67479a5dfb7c65851e714352f26776e3e26486dea1",
+    "raw_response_text_sha256": "71ba632dfb2a45a683c7f7a8300429fcf93474864f4314d8e80fc24d50c88cc7"
+  },
+  "api_metadata": {
+    "id": "resp_0ca2805b273902b6006aaa013cc3f087d28d11ad8af98a3c89",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789526332.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 741,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 196,
+      "output_tokens_details": {
+        "reasoning_tokens": 44
+      },
+      "total_tokens": 937
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Global shipping disruption, freight costs, and inflation\",\n  \"conflict_relevance\": \"The article connects Red Sea and Suez Canal disruptions, including Houthi attacks, to Israel's military actions in Gaza, but its primary focus is economic and maritime consequences.\",\n  \"reason\": \"Gaza-related conflict discourse provides the stated context for the attacks and shipping disruption, yet the article is mainly about global trade routes, freight prices, and inflation.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:38:55Z",
+  "duration_seconds": 2.401,
+  "error": null
+}

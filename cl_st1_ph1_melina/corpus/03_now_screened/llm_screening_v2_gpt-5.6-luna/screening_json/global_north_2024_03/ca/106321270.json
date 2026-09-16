@@ -1,0 +1,65 @@
+{
+  "article_id": "106321270",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_03/ca/106321270.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_03/ca/106321270.json"
+  },
+  "manifest_row": {
+    "article_id": "106321270",
+    "group": "global_north_2024_03",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2024_03/ca/106321270.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.96,
+    "gaza_role": "passing",
+    "main_topic": "Changes to recommended school literature and anti-racism curriculum in Surrey",
+    "conflict_relevance": "A separate embedded news item briefly reports alleged Israeli gunfire injuring people near a Gaza aid convoy.",
+    "reason": "The main article concerns school reading lists and culturally sensitive education, not the Israel-Palestine conflict. However, it includes one meaningful but unrelated sentence about a Gaza hospital's account of injuries surrounding an aid convoy, making it peripheral rather than excludable.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "e2ec3df3b94e59e610e1a89fbfef274f6ea40606f2b4da927049e4abcee53725",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "330fa351fa2cd785b890b5103060f6a1b26e31d5fcf041464f4b89dd3731c273",
+    "raw_response_text_sha256": "64adaba4ec8d216159fce255d945d9b5ff7e415a41458d631cb451545bf6d19e"
+  },
+  "api_metadata": {
+    "id": "resp_064ee9fc682aa615006aaa0849c56087d29b22f218e72699ee",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789528137.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1679,
+      "input_tokens_details": {
+        "cache_write_tokens": 1676,
+        "cached_tokens": 0
+      },
+      "output_tokens": 314,
+      "output_tokens_details": {
+        "reasoning_tokens": 153
+      },
+      "total_tokens": 1993
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.96,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Changes to recommended school literature and anti-racism curriculum in Surrey\",\n  \"conflict_relevance\": \"A separate embedded news item briefly reports alleged Israeli gunfire injuring people near a Gaza aid convoy.\",\n  \"reason\": \"The main article concerns school reading lists and culturally sensitive education, not the Israel-Palestine conflict. However, it includes one meaningful but unrelated sentence about a Gaza hospital's account of injuries surrounding an aid convoy, making it peripheral rather than excludable.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:09:02Z",
+  "duration_seconds": 4.444,
+  "error": null
+}

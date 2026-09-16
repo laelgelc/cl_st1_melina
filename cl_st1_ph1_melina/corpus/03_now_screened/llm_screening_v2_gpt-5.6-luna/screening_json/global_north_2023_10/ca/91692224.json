@@ -1,0 +1,65 @@
+{
+  "article_id": "91692224",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_10/ca/91692224.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_10/ca/91692224.json"
+  },
+  "manifest_row": {
+    "article_id": "91692224",
+    "group": "global_north_2023_10",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2023_10/ca/91692224.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "gaza_role": "boilerplate_or_unrelated",
+    "main_topic": "Bionic prosthetic hand technology and treatment of phantom limb pain",
+    "conflict_relevance": "The main article is unrelated to Gaza or the Israel-Palestine conflict; Gaza appears only in embedded CTVNews.ca top-story snippets.",
+    "reason": "The article centrally concerns biomedical prosthetics. References to Gaza occur only in a navigational roundup appended to the article, not as part of the main report.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "d8634c2bb57e6a78bae0a9293afaa436755bed636e50efef99e4329dc8a614b7",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "29e9982c0381530b523079c63f0c0fafbaed38910e05229af2dd3c268fd5e44c",
+    "raw_response_text_sha256": "ade3721d263788d116e7e6f9453bdbc6d8d137045a5041df8749235817226086"
+  },
+  "api_metadata": {
+    "id": "resp_0ea2929d1a8c90b1006aa9f6c7e0e087d28dcc8f29d8ea6995",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789523655.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 3216,
+      "input_tokens_details": {
+        "cache_write_tokens": 3213,
+        "cached_tokens": 0
+      },
+      "output_tokens": 277,
+      "output_tokens_details": {
+        "reasoning_tokens": 125
+      },
+      "total_tokens": 3493
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Bionic prosthetic hand technology and treatment of phantom limb pain\",\n  \"conflict_relevance\": \"The main article is unrelated to Gaza or the Israel-Palestine conflict; Gaza appears only in embedded CTVNews.ca top-story snippets.\",\n  \"reason\": \"The article centrally concerns biomedical prosthetics. References to Gaza occur only in a navigational roundup appended to the article, not as part of the main report.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T01:54:19Z",
+  "duration_seconds": 3.478,
+  "error": null
+}

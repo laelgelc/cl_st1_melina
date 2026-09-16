@@ -1,0 +1,65 @@
+{
+  "article_id": "102531365",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_10/nz/102531365.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_10/nz/102531365.json"
+  },
+  "manifest_row": {
+    "article_id": "102531365",
+    "group": "global_north_2023_10",
+    "country_code": "nz",
+    "filepath": "corpus/02_now_organised/global_north_2023_10/nz/102531365.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.96,
+    "gaza_role": "background",
+    "main_topic": "New Zealand political parties' policies toward sole traders",
+    "conflict_relevance": "The main article is unrelated to Gaza, but it includes a substantive embedded passage discussing the Hamas attacks, Israeli hostages, Israeli air strikes on Gaza, and alleged violations of international humanitarian law.",
+    "reason": "The headline article focuses on sole traders and election policy. However, the later embedded news item contains meaningful discourse about the Israel-Hamas war and Gaza, making the item potentially useful for broader discourse analysis but not suitable as core conflict coverage.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "9811137f2c7a547cabd14ab1b5fff0f170331cc5acf236b8f2e77d5b225c91b6",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "146a7b0a9a02e0d97108ad50cf6dc350a56bf571ecd307636e2c45d80b162c85",
+    "raw_response_text_sha256": "e74be6b76a267610e76efdd26b90ec0333e1691446760dbf2e1248ae7c9144c1"
+  },
+  "api_metadata": {
+    "id": "resp_0904ee7d87ac313e006aa9f81855e087d2a559ef3457667efc",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789523992.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2349,
+      "input_tokens_details": {
+        "cache_write_tokens": 2346,
+        "cached_tokens": 0
+      },
+      "output_tokens": 334,
+      "output_tokens_details": {
+        "reasoning_tokens": 164
+      },
+      "total_tokens": 2683
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.96,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"New Zealand political parties' policies toward sole traders\",\n  \"conflict_relevance\": \"The main article is unrelated to Gaza, but it includes a substantive embedded passage discussing the Hamas attacks, Israeli hostages, Israeli air strikes on Gaza, and alleged violations of international humanitarian law.\",\n  \"reason\": \"The headline article focuses on sole traders and election policy. However, the later embedded news item contains meaningful discourse about the Israel-Hamas war and Gaza, making the item potentially useful for broader discourse analysis but not suitable as core conflict coverage.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T01:59:56Z",
+  "duration_seconds": 3.795,
+  "error": null
+}

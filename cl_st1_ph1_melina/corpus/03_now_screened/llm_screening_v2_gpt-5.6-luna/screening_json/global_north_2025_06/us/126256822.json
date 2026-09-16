@@ -1,0 +1,65 @@
+{
+  "article_id": "126256822",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_06/us/126256822.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_06/us/126256822.json"
+  },
+  "manifest_row": {
+    "article_id": "126256822",
+    "group": "global_north_2025_06",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2025_06/us/126256822.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "background",
+    "main_topic": "Political violence and warning signs associated with attacks on US politicians",
+    "conflict_relevance": "The article discusses an alleged attack motivated in part by the perpetrator's anger over Pennsylvania Governor Josh Shapiro's views on the war in Gaza, alongside references to Iran and antisemitism. However, the article's main focus is political violence in the United States, not the Gaza conflict.",
+    "reason": "Gaza-related discourse is meaningful and connected to the reported motive for one alleged attack, but it occupies only a small portion of an article primarily analyzing threats against politicians and extremist violence.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "a373e85dc6d9770f10bbd42b1e4c323ec949b9cde24d813ef6da098448d0753b",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "98ccaa44ade36430c667d4cf48e1a86d56b90e36b65846bde8168f909f36905e",
+    "raw_response_text_sha256": "94f9b737e863a9400972f1383dd6e63bf8050db0b7c410f79b3983d837b7f3b8"
+  },
+  "api_metadata": {
+    "id": "resp_09b3164a1a99a96f006aaa31b52d4887d19a182a7317ef32eb",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789538741.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 3332,
+      "input_tokens_details": {
+        "cache_write_tokens": 3329,
+        "cached_tokens": 0
+      },
+      "output_tokens": 227,
+      "output_tokens_details": {
+        "reasoning_tokens": 46
+      },
+      "total_tokens": 3559
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Political violence and warning signs associated with attacks on US politicians\",\n  \"conflict_relevance\": \"The article discusses an alleged attack motivated in part by the perpetrator's anger over Pennsylvania Governor Josh Shapiro's views on the war in Gaza, alongside references to Iran and antisemitism. However, the article's main focus is political violence in the United States, not the Gaza conflict.\",\n  \"reason\": \"Gaza-related discourse is meaningful and connected to the reported motive for one alleged attack, but it occupies only a small portion of an article primarily analyzing threats against politicians and extremist violence.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T06:05:44Z",
+  "duration_seconds": 3.284,
+  "error": null
+}

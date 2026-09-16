@@ -1,0 +1,65 @@
+{
+  "article_id": "200161401",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_01/us/200161401.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_01/us/200161401.json"
+  },
+  "manifest_row": {
+    "article_id": "200161401",
+    "group": "global_north_2024_01",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2024_01/us/200161401.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.97,
+    "gaza_role": "background",
+    "main_topic": "U.S. airstrikes against Iran-backed militias in Iraq and regional military escalation",
+    "conflict_relevance": "The article reports attacks on U.S. forces by militias that claim to be acting in support of Palestinians in the Israel-Hamas war in Gaza, linking the Iraq strikes to the wider regional conflict.",
+    "reason": "The main article is primarily about U.S. military retaliation in Iraq and related tensions involving Iran-backed groups, not about Gaza itself. However, it contains meaningful contextual discussion of the Gaza war as a stated motivation for militia attacks. Additional unrelated snippets follow the main article.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "40bb306804cc1e863e4adaf5ced0dc4268e2fe2cb86dec28ca6e8be89f3a74b2",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "ae0db8afdb3f2edf88286c259ae70e8759ba3efa2b927cd66433da48133e0a16",
+    "raw_response_text_sha256": "e6ace068b7dba04398161b96f40f4fec5ba75fec36be2f9f32d8e0110f4b8039"
+  },
+  "api_metadata": {
+    "id": "resp_023056d58c1c045d006aaa05ac27f087d288bfa22f04898dcf",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789527468.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1736,
+      "input_tokens_details": {
+        "cache_write_tokens": 1733,
+        "cached_tokens": 0
+      },
+      "output_tokens": 250,
+      "output_tokens_details": {
+        "reasoning_tokens": 64
+      },
+      "total_tokens": 1986
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.97,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"U.S. airstrikes against Iran-backed militias in Iraq and regional military escalation\",\n  \"conflict_relevance\": \"The article reports attacks on U.S. forces by militias that claim to be acting in support of Palestinians in the Israel-Hamas war in Gaza, linking the Iraq strikes to the wider regional conflict.\",\n  \"reason\": \"The main article is primarily about U.S. military retaliation in Iraq and related tensions involving Iran-backed groups, not about Gaza itself. However, it contains meaningful contextual discussion of the Gaza war as a stated motivation for militia attacks. Additional unrelated snippets follow the main article.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:57:51Z",
+  "duration_seconds": 3.671,
+  "error": null
+}

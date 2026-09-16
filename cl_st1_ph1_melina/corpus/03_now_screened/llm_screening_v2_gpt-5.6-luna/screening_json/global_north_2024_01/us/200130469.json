@@ -1,0 +1,65 @@
+{
+  "article_id": "200130469",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_01/us/200130469.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_01/us/200130469.json"
+  },
+  "manifest_row": {
+    "article_id": "200130469",
+    "group": "global_north_2024_01",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2024_01/us/200130469.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.97,
+    "gaza_role": "passing",
+    "main_topic": "Financial market and economic news briefing",
+    "conflict_relevance": "The briefing briefly mentions the Gaza conflict, regional escalation risks, Houthi attacks in the Red Sea, and U.S. diplomatic efforts to prevent a wider war.",
+    "reason": "The article is primarily focused on inflation, financial markets, corporate news, currencies, bonds, commodities, and U.S. politics. Gaza appears in a substantive but isolated sentence within the energy-market section, making it relevant to broader conflict and geopolitical discourse but not to the main corpus of conflict coverage.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "b8b7aef7fdf9fd4dbed4bdeb8df14c01f896e491f5c98ef3ec16449fce68a2c5",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "6ecf5d4f8da828d1fb5de795cabc09cd9fa58fe87e87003ab725c7d8c673b9aa",
+    "raw_response_text_sha256": "196e7022ace5f8b1262c65078e1dda3f2fbdbebc050e35a327f8edda23807fb9"
+  },
+  "api_metadata": {
+    "id": "resp_0fe5943660e85287006aaa0565733c87d2a079936f90c4e2cd",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789527397.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2766,
+      "input_tokens_details": {
+        "cache_write_tokens": 2763,
+        "cached_tokens": 0
+      },
+      "output_tokens": 294,
+      "output_tokens_details": {
+        "reasoning_tokens": 120
+      },
+      "total_tokens": 3060
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.97,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Financial market and economic news briefing\",\n  \"conflict_relevance\": \"The briefing briefly mentions the Gaza conflict, regional escalation risks, Houthi attacks in the Red Sea, and U.S. diplomatic efforts to prevent a wider war.\",\n  \"reason\": \"The article is primarily focused on inflation, financial markets, corporate news, currencies, bonds, commodities, and U.S. politics. Gaza appears in a substantive but isolated sentence within the energy-market section, making it relevant to broader conflict and geopolitical discourse but not to the main corpus of conflict coverage.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:56:41Z",
+  "duration_seconds": 4.244,
+  "error": null
+}

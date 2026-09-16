@@ -1,0 +1,65 @@
+{
+  "article_id": "115958921",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_south_2024_10/ng/115958921.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_south_2024_10/ng/115958921.json"
+  },
+  "manifest_row": {
+    "article_id": "115958921",
+    "group": "global_south_2024_10",
+    "country_code": "ng",
+    "filepath": "corpus/02_now_organised/global_south_2024_10/ng/115958921.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "gaza_role": "boilerplate_or_unrelated",
+    "main_topic": "Nigerian governance and budgetary reform",
+    "conflict_relevance": "The main article concerns Nigeria's public administration, budgeting, and governance. Gaza appears only in an unrelated item within a 'Latest' news roundup.",
+    "reason": "The article's headline and substantive content focus exclusively on Nigerian governance and budget reform. The Gaza reference is an embedded news snippet rather than part of the main article.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "32f2967ddb90a6bb1be870af6dfbb0b099a278a529ad77f220dd5233f6ca65ce",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "62143ecfa4fbc3811d1385cfa5ef8d688a00c4bc4004d23230154792d0634867",
+    "raw_response_text_sha256": "92e4b6f0a86e066f8f4939fea3865ae54f9dc1364e452b032911044dc4b4dced"
+  },
+  "api_metadata": {
+    "id": "resp_0774691bdab68521006aaa40e7c06c87d190b3b4f5045b056c",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789542631.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2759,
+      "input_tokens_details": {
+        "cache_write_tokens": 2756,
+        "cached_tokens": 0
+      },
+      "output_tokens": 319,
+      "output_tokens_details": {
+        "reasoning_tokens": 170
+      },
+      "total_tokens": 3078
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Nigerian governance and budgetary reform\",\n  \"conflict_relevance\": \"The main article concerns Nigeria's public administration, budgeting, and governance. Gaza appears only in an unrelated item within a 'Latest' news roundup.\",\n  \"reason\": \"The article's headline and substantive content focus exclusively on Nigerian governance and budget reform. The Gaza reference is an embedded news snippet rather than part of the main article.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T07:10:38Z",
+  "duration_seconds": 6.909,
+  "error": null
+}

@@ -1,0 +1,65 @@
+{
+  "article_id": "102743641",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_10/gb/102743641.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_10/gb/102743641.json"
+  },
+  "manifest_row": {
+    "article_id": "102743641",
+    "group": "global_north_2023_10",
+    "country_code": "gb",
+    "filepath": "corpus/02_now_organised/global_north_2023_10/gb/102743641.txt"
+  },
+  "screening": {
+    "category": "CORE",
+    "confidence": 0.9,
+    "gaza_role": "central",
+    "main_topic": "Expected Israeli ground invasion of Gaza and military action against Hamas",
+    "conflict_relevance": "Directly concerns Israeli military preparations for a ground invasion of Gaza and the stated objective of defeating Hamas.",
+    "reason": "The principal Gaza-related sentence addresses an imminent ground invasion and Israeli military aims. The text also contains an unrelated U.S. Federal Reserve item and Reuters boilerplate, suggesting a multi-snippet extraction issue.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": true
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "1fa94c883a7ee7555dd5ff32e16c5e6f0bd0f11b440420b30bf3e4e44e24e4f8",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "926c7427b6ec7842e3a33506be527028ae1699e9d0738699d41a6c91f15a33ac",
+    "raw_response_text_sha256": "f7d4cf9ebb269973d96fdb8afc7276cd17c29b7a0e9c92ead4945babcfaa71c2"
+  },
+  "api_metadata": {
+    "id": "resp_06a33448aa9eff6f006aa9f754712487d29a782fc5e67cebc8",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789523796.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 757,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 338,
+      "output_tokens_details": {
+        "reasoning_tokens": 193
+      },
+      "total_tokens": 1095
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"CORE\",\n  \"confidence\": 0.9,\n  \"gaza_role\": \"central\",\n  \"main_topic\": \"Expected Israeli ground invasion of Gaza and military action against Hamas\",\n  \"conflict_relevance\": \"Directly concerns Israeli military preparations for a ground invasion of Gaza and the stated objective of defeating Hamas.\",\n  \"reason\": \"The principal Gaza-related sentence addresses an imminent ground invasion and Israeli military aims. The text also contains an unrelated U.S. Federal Reserve item and Reuters boilerplate, suggesting a multi-snippet extraction issue.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": true\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T01:56:40Z",
+  "duration_seconds": 4.073,
+  "error": null
+}

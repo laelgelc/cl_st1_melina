@@ -1,0 +1,65 @@
+{
+  "article_id": "118129862",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_11/us/118129862.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_11/us/118129862.json"
+  },
+  "manifest_row": {
+    "article_id": "118129862",
+    "group": "global_north_2024_11",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2024_11/us/118129862.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "gaza_role": "passing",
+    "main_topic": "A theatrical production of Thornton Wilder's play \"The Long Christmas Dinner\"",
+    "conflict_relevance": "The article is about theater and contains only a brief, unrelated closing reference to a cease-fire involving Israel, Lebanon, and the Gaza war.",
+    "reason": "The Gaza-related material appears as an appended news snippet and is not integrated into the article's main subject or discourse.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "950c3c2cf61e0e511390045f156be538c6c02ba073d024d42ad750eef4434a72",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "dc54e2772105e795aa9a18d72c42f581ee28fc8d52ce19efc2372b39fd427175",
+    "raw_response_text_sha256": "06d15e018b7b869bd99beb03b8bbee56378b6916dcd25d8cfe90a8337b0dd7ab"
+  },
+  "api_metadata": {
+    "id": "resp_05fed1019d30e5b0006aaa1cad83fc87d282a457b8baa0e8a2",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789533357.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1600,
+      "input_tokens_details": {
+        "cache_write_tokens": 1597,
+        "cached_tokens": 0
+      },
+      "output_tokens": 227,
+      "output_tokens_details": {
+        "reasoning_tokens": 87
+      },
+      "total_tokens": 1827
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"A theatrical production of Thornton Wilder's play \\\"The Long Christmas Dinner\\\"\",\n  \"conflict_relevance\": \"The article is about theater and contains only a brief, unrelated closing reference to a cease-fire involving Israel, Lebanon, and the Gaza war.\",\n  \"reason\": \"The Gaza-related material appears as an appended news snippet and is not integrated into the article's main subject or discourse.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T04:35:59Z",
+  "duration_seconds": 2.53,
+  "error": null
+}

@@ -1,0 +1,65 @@
+{
+  "article_id": "105380115",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_01/ca/105380115.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_01/ca/105380115.json"
+  },
+  "manifest_row": {
+    "article_id": "105380115",
+    "group": "global_north_2024_01",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2024_01/ca/105380115.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "background",
+    "main_topic": "Canadian restrictions on international student permits and their relationship to housing, employment, and immigration policy",
+    "conflict_relevance": "The main article is about Canadian immigration policy, but embedded news snippets contain brief substantive references to Trudeau's position on the Israel-Hamas war, a two-state solution, and Israel's Gaza offensive near Rafah and the Egypt border.",
+    "reason": "The headline and primary article concern international students and Canada's housing crisis rather than Gaza or Palestine. However, the text includes meaningful conflict-related material in appended or embedded news items, making it relevant to broader discourse analysis but unsuitable for the core conflict corpus.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "30c8dcfce5b3fdda9f86bfd3cb9f730ccc737f432ce0a42d52dd81cff21975be",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "15a4266896ca33eb9aed77f7a023c315fe842772835dd365971485043e4983c1",
+    "raw_response_text_sha256": "b2bba51119a86e2e591daa75165b2307bbeefe8a36f6868437dc89a8506925fe"
+  },
+  "api_metadata": {
+    "id": "resp_0445cd35a78e41f4006aaa03b643bc87d28627baeb17342e98",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789526966.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 3194,
+      "input_tokens_details": {
+        "cache_write_tokens": 3191,
+        "cached_tokens": 0
+      },
+      "output_tokens": 294,
+      "output_tokens_details": {
+        "reasoning_tokens": 106
+      },
+      "total_tokens": 3488
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Canadian restrictions on international student permits and their relationship to housing, employment, and immigration policy\",\n  \"conflict_relevance\": \"The main article is about Canadian immigration policy, but embedded news snippets contain brief substantive references to Trudeau's position on the Israel-Hamas war, a two-state solution, and Israel's Gaza offensive near Rafah and the Egypt border.\",\n  \"reason\": \"The headline and primary article concern international students and Canada's housing crisis rather than Gaza or Palestine. However, the text includes meaningful conflict-related material in appended or embedded news items, making it relevant to broader discourse analysis but unsuitable for the core conflict corpus.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:49:29Z",
+  "duration_seconds": 3.443,
+  "error": null
+}

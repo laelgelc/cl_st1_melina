@@ -1,0 +1,65 @@
+{
+  "article_id": "200301301",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_03/us/200301301.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_03/us/200301301.json"
+  },
+  "manifest_row": {
+    "article_id": "200301301",
+    "group": "global_north_2024_03",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2024_03/us/200301301.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "passing",
+    "main_topic": "Use of artificial intelligence to reduce missed NHS appointments",
+    "conflict_relevance": "The main article concerns NHS healthcare technology and is unrelated to Gaza. A recommended-story snippet briefly mentions Chuck Schumer's criticism of Benjamin Netanyahu's handling of the war in Gaza.",
+    "reason": "The Gaza-related content is a meaningful but isolated sentence in an embedded recommended-stories section, while the main article is about AI receptionists and NHS productivity.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "b72c0922e532016b252d2a1c4648cc308ea6264419cdeb57a6de2d3fed40a0df",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "663e557cf8541a7f576521d05d6ffd411e8fa2a9bc2f0d9690103cac04becfae",
+    "raw_response_text_sha256": "0cc48d51d69e231fea001c008779ae565bfd9d441baab5839e1a811d28897ebc"
+  },
+  "api_metadata": {
+    "id": "resp_0e9ffc2a99830417006aaa0a686cb087d2a81ace49db897153",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789528680.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1737,
+      "input_tokens_details": {
+        "cache_write_tokens": 1734,
+        "cached_tokens": 0
+      },
+      "output_tokens": 220,
+      "output_tokens_details": {
+        "reasoning_tokens": 69
+      },
+      "total_tokens": 1957
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Use of artificial intelligence to reduce missed NHS appointments\",\n  \"conflict_relevance\": \"The main article concerns NHS healthcare technology and is unrelated to Gaza. A recommended-story snippet briefly mentions Chuck Schumer's criticism of Benjamin Netanyahu's handling of the war in Gaza.\",\n  \"reason\": \"The Gaza-related content is a meaningful but isolated sentence in an embedded recommended-stories section, while the main article is about AI receptionists and NHS productivity.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:18:03Z",
+  "duration_seconds": 3.443,
+  "error": null
+}

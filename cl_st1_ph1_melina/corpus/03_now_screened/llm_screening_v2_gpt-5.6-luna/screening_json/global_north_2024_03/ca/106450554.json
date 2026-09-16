@@ -1,0 +1,65 @@
+{
+  "article_id": "106450554",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_03/ca/106450554.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_03/ca/106450554.json"
+  },
+  "manifest_row": {
+    "article_id": "106450554",
+    "group": "global_north_2024_03",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2024_03/ca/106450554.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.93,
+    "gaza_role": "passing",
+    "main_topic": "Displacement of Israeli families from communities near the Israel-Lebanon border amid Hezbollah-Israel tensions",
+    "conflict_relevance": "The main article concerns a related regional military conflict involving Israel and Hezbollah rather than Gaza or the Israeli-Palestinian conflict. A separate latest-stories snippet directly discusses humanitarian aid to Gaza.",
+    "reason": "The headline article is meaningfully relevant to broader regional conflict discourse and Israeli displacement, but it is not centrally about Gaza, Palestine, or the Israel-Hamas war. The Gaza item appears as a separate embedded roundup snippet rather than part of the main article.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "7778778e7098e21ee4ee16aa3690f549ad8cc083985029dcdf031f6449bf1469",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "d232bf48062dd0c3caeafdcbf3a35d27a41a3c488406d715f909c49cc3788568",
+    "raw_response_text_sha256": "215df17a3a344dfc8611fa0651eebe5d23b1789b995ec25df23fb5dbedb8ee35"
+  },
+  "api_metadata": {
+    "id": "resp_0f32e62c6e1186b6006aaa085b207087d2a94e2610d0ae7d8d",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789528155.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1554,
+      "input_tokens_details": {
+        "cache_write_tokens": 1551,
+        "cached_tokens": 0
+      },
+      "output_tokens": 445,
+      "output_tokens_details": {
+        "reasoning_tokens": 261
+      },
+      "total_tokens": 1999
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.93,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Displacement of Israeli families from communities near the Israel-Lebanon border amid Hezbollah-Israel tensions\",\n  \"conflict_relevance\": \"The main article concerns a related regional military conflict involving Israel and Hezbollah rather than Gaza or the Israeli-Palestinian conflict. A separate latest-stories snippet directly discusses humanitarian aid to Gaza.\",\n  \"reason\": \"The headline article is meaningfully relevant to broader regional conflict discourse and Israeli displacement, but it is not centrally about Gaza, Palestine, or the Israel-Hamas war. The Gaza item appears as a separate embedded roundup snippet rather than part of the main article.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:09:21Z",
+  "duration_seconds": 6.931,
+  "error": null
+}

@@ -1,0 +1,65 @@
+{
+  "article_id": "120026083",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_01/us/120026083.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_01/us/120026083.json"
+  },
+  "manifest_row": {
+    "article_id": "120026083",
+    "group": "global_north_2025_01",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2025_01/us/120026083.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.86,
+    "gaza_role": "substantial",
+    "main_topic": "A news roundup and podcast transcript covering several current events",
+    "conflict_relevance": "The opening item reports substantively on ceasefire negotiations in Gaza and the proposed release of hostages, but the article primarily consists of unrelated news briefs.",
+    "reason": "The Gaza ceasefire item is meaningful and directly relevant, but it is only one segment of a multi-topic news roundup rather than the central subject of the entire article.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "45ca89efb78ae10de574fc63f04843976ef07136d31dfbbeea93ded25a6b6f48",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "1ebcdcf372bb22920b19600cd32c5c53b7873780f1c329d35cdefa957032674c",
+    "raw_response_text_sha256": "a58124e2bf5de0d91694cadaf2d052f4dffd6d6f26275a3816dfdfaea60eb34d"
+  },
+  "api_metadata": {
+    "id": "resp_097282db133930b9006aaa2113a9fc87d28c4f14b604afa66c",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789534483.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1247,
+      "input_tokens_details": {
+        "cache_write_tokens": 1244,
+        "cached_tokens": 0
+      },
+      "output_tokens": 413,
+      "output_tokens_details": {
+        "reasoning_tokens": 263
+      },
+      "total_tokens": 1660
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.86,\n  \"gaza_role\": \"substantial\",\n  \"main_topic\": \"A news roundup and podcast transcript covering several current events\",\n  \"conflict_relevance\": \"The opening item reports substantively on ceasefire negotiations in Gaza and the proposed release of hostages, but the article primarily consists of unrelated news briefs.\",\n  \"reason\": \"The Gaza ceasefire item is meaningful and directly relevant, but it is only one segment of a multi-topic news roundup rather than the central subject of the entire article.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T04:54:48Z",
+  "duration_seconds": 5.326,
+  "error": null
+}

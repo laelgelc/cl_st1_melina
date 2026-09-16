@@ -1,0 +1,65 @@
+{
+  "article_id": "104935412",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_01/ca/104935412.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_01/ca/104935412.json"
+  },
+  "manifest_row": {
+    "article_id": "104935412",
+    "group": "global_north_2024_01",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2024_01/ca/104935412.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.94,
+    "gaza_role": "passing",
+    "main_topic": "Canadian economic pessimism and household financial concerns",
+    "conflict_relevance": "The article's main subject is the Canadian economy, but embedded snippets contain meaningful references to Canada's visa program for Palestinians in Gaza and pro-Palestinian protests in the United States.",
+    "reason": "The headline and substantive article focus on a Canadian economic survey. Gaza-related material appears only in unrelated embedded news snippets, including criticism of a 1,000-person Palestinian visa cap and chants by pro-Palestinian protesters. These references support peripheral discourse analysis but not inclusion as core conflict coverage.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "f494e2d5442bbe196f78723de731e18635bef0b05e4c2bb2a05ae2922d0d365f",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "b72b33852df14cdd9e761f9e55330dc53c4e4f18cf1532265c0e0e53fd4cd87f",
+    "raw_response_text_sha256": "708bbca74ce21126581e5d37e878315cebeac358322a36af01e049b1ca644a30"
+  },
+  "api_metadata": {
+    "id": "resp_0eb890fac631cfaa006aaa038d1f3c87d2b395d5ee4ca257cc",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789526925.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2100,
+      "input_tokens_details": {
+        "cache_write_tokens": 2097,
+        "cached_tokens": 0
+      },
+      "output_tokens": 355,
+      "output_tokens_details": {
+        "reasoning_tokens": 176
+      },
+      "total_tokens": 2455
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.94,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Canadian economic pessimism and household financial concerns\",\n  \"conflict_relevance\": \"The article's main subject is the Canadian economy, but embedded snippets contain meaningful references to Canada's visa program for Palestinians in Gaza and pro-Palestinian protests in the United States.\",\n  \"reason\": \"The headline and substantive article focus on a Canadian economic survey. Gaza-related material appears only in unrelated embedded news snippets, including criticism of a 1,000-person Palestinian visa cap and chants by pro-Palestinian protesters. These references support peripheral discourse analysis but not inclusion as core conflict coverage.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:48:50Z",
+  "duration_seconds": 5.366,
+  "error": null
+}

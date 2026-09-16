@@ -1,0 +1,65 @@
+{
+  "article_id": "200124305",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_01/us/200124305.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_01/us/200124305.json"
+  },
+  "manifest_row": {
+    "article_id": "200124305",
+    "group": "global_north_2024_01",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2024_01/us/200124305.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.97,
+    "gaza_role": "passing",
+    "main_topic": "Pope Francis's opposition to surrogacy and related Catholic positions",
+    "conflict_relevance": "Gaza is mentioned only in passing as one of several global conflicts in a list of threats to peace.",
+    "reason": "The article is centrally about surrogacy, LGBT issues, and Catholic doctrine. Gaza appears only once in a broad list and is not substantively discussed.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "ac6caf8b6ac5ef847dd9e06030f9dc320c8fcc895a204ef2a7a86ca2ec936729",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "5da01cc7d5fbf7323a9aebbcf9d4591986f8329f638c843e29fbf5016d069107",
+    "raw_response_text_sha256": "bf4344267cd1ad67ee9d2223f1dc9dfdbd7280f0bf540a7128779c046e7c00cb"
+  },
+  "api_metadata": {
+    "id": "resp_0577bde29c316e57006aaa055a39d487d29cb2ce1f1dbb91ef",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789527386.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1185,
+      "input_tokens_details": {
+        "cache_write_tokens": 1182,
+        "cached_tokens": 0
+      },
+      "output_tokens": 229,
+      "output_tokens_details": {
+        "reasoning_tokens": 89
+      },
+      "total_tokens": 1414
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.97,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Pope Francis's opposition to surrogacy and related Catholic positions\",\n  \"conflict_relevance\": \"Gaza is mentioned only in passing as one of several global conflicts in a list of threats to peace.\",\n  \"reason\": \"The article is centrally about surrogacy, LGBT issues, and Catholic doctrine. Gaza appears only once in a broad list and is not substantively discussed.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:56:29Z",
+  "duration_seconds": 3.225,
+  "error": null
+}

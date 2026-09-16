@@ -1,0 +1,65 @@
+{
+  "article_id": "115597133",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_south_2024_10/ng/115597133.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_south_2024_10/ng/115597133.json"
+  },
+  "manifest_row": {
+    "article_id": "115597133",
+    "group": "global_south_2024_10",
+    "country_code": "ng",
+    "filepath": "corpus/02_now_organised/global_south_2024_10/ng/115597133.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "gaza_role": "boilerplate_or_unrelated",
+    "main_topic": "Murder and safety concerns involving an e-hailing driver in Johannesburg",
+    "conflict_relevance": "No meaningful relevance to Gaza, Palestine, Israel/Palestine, or related conflict discourse; Gaza is only the deceased driver's surname.",
+    "reason": "The main article concerns crime and safety risks for Bolt drivers in South Africa. The text contains additional unrelated articles, but none contributes substantive discourse about the Gaza or Israel-Palestine conflict.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "9bd26d8664d66ea9322554917eb5323093b0726af19415b4ed48dff80b3f31d8",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "8fea3ac98d8767f31a32b68d5306f0b19d01256e6afb7340352a7d6e7c58e925",
+    "raw_response_text_sha256": "a3d1d60d1495b2118bbb87b3554c42d7f0b343a9e7ca543839f8d7fbab80ccdf"
+  },
+  "api_metadata": {
+    "id": "resp_0ccf4f85131ccfa1006aaa40df12e087d18ea1da27ca542494",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789542623.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1689,
+      "input_tokens_details": {
+        "cache_write_tokens": 1686,
+        "cached_tokens": 0
+      },
+      "output_tokens": 233,
+      "output_tokens_details": {
+        "reasoning_tokens": 75
+      },
+      "total_tokens": 1922
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"gaza_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Murder and safety concerns involving an e-hailing driver in Johannesburg\",\n  \"conflict_relevance\": \"No meaningful relevance to Gaza, Palestine, Israel/Palestine, or related conflict discourse; Gaza is only the deceased driver's surname.\",\n  \"reason\": \"The main article concerns crime and safety risks for Bolt drivers in South Africa. The text contains additional unrelated articles, but none contributes substantive discourse about the Gaza or Israel-Palestine conflict.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T07:10:26Z",
+  "duration_seconds": 3.186,
+  "error": null
+}

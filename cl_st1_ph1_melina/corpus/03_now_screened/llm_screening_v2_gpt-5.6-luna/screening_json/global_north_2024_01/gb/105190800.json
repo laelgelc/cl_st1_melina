@@ -1,0 +1,65 @@
+{
+  "article_id": "105190800",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_01/gb/105190800.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_01/gb/105190800.json"
+  },
+  "manifest_row": {
+    "article_id": "105190800",
+    "group": "global_north_2024_01",
+    "country_code": "gb",
+    "filepath": "corpus/02_now_organised/global_north_2024_01/gb/105190800.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.97,
+    "gaza_role": "passing",
+    "main_topic": "A live crime-news roundup covering multiple criminal cases and court stories in the UK",
+    "conflict_relevance": "The roundup includes a brief item about Humza Yousaf's family being trapped in Gaza during the Hamas attacks and subsequent Israeli bombardment, with reference to Palestinian deaths and evacuation of UK citizens.",
+    "reason": "Gaza-related content is meaningful but limited to one embedded item within a broad, unrelated crime-news roundup. It is relevant to discourse analysis of media references to the war but is not core conflict coverage.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "cbd27588d5d7ddcc18a9c9600c04412b16c682706f9e33761c7859e26451af76",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "b7fcabe4a26720523aaf19f8935e49867320a4cbe6dad22003b786e8a1ca2d37",
+    "raw_response_text_sha256": "282a595e6901cafcacac86a02d3ce89c882e2c4998d4df798667d9554679ff99"
+  },
+  "api_metadata": {
+    "id": "resp_0fca7b585849cb28006aaa0402d64087d2ac4bf1ae67592b58",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789527042.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2748,
+      "input_tokens_details": {
+        "cache_write_tokens": 2745,
+        "cached_tokens": 0
+      },
+      "output_tokens": 345,
+      "output_tokens_details": {
+        "reasoning_tokens": 175
+      },
+      "total_tokens": 3093
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.97,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"A live crime-news roundup covering multiple criminal cases and court stories in the UK\",\n  \"conflict_relevance\": \"The roundup includes a brief item about Humza Yousaf's family being trapped in Gaza during the Hamas attacks and subsequent Israeli bombardment, with reference to Palestinian deaths and evacuation of UK citizens.\",\n  \"reason\": \"Gaza-related content is meaningful but limited to one embedded item within a broad, unrelated crime-news roundup. It is relevant to discourse analysis of media references to the war but is not core conflict coverage.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:50:46Z",
+  "duration_seconds": 3.632,
+  "error": null
+}

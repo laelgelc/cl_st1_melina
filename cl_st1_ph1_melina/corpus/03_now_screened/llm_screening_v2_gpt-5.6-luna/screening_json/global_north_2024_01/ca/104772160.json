@@ -1,0 +1,65 @@
+{
+  "article_id": "104772160",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_01/ca/104772160.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_01/ca/104772160.json"
+  },
+  "manifest_row": {
+    "article_id": "104772160",
+    "group": "global_north_2024_01",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2024_01/ca/104772160.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "passing",
+    "main_topic": "BYD's growth as a Chinese electric-vehicle and battery manufacturer and its competition with Tesla",
+    "conflict_relevance": "A separate embedded top-stories item briefly discusses warnings to Israel's government about possible displacement of Gaza residents and Canada accepting Palestinians.",
+    "reason": "The main article is about the electric-vehicle industry and has no substantive connection to Gaza or the Israel-Palestine conflict. However, it includes a meaningful but unrelated news snippet concerning possible displacement from Gaza, making it peripheral rather than excludable.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "9d99ffdeea7eeb127b6caee99af358d6944fb12a65285d5267eb49137cf33b04",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "14c03a809aa31004a7aed5c6882a22b58aad8d66aa737701d87c1894ad2628e9",
+    "raw_response_text_sha256": "17ecdbc0f5fcfcb4ccb93b429aa2b172a3add64f129c018c639318cdc67e2191"
+  },
+  "api_metadata": {
+    "id": "resp_071ecf34f828aefb006aaa0379e11487d2ab8d6b5e2ed6269e",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789526905.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2416,
+      "input_tokens_details": {
+        "cache_write_tokens": 2413,
+        "cached_tokens": 0
+      },
+      "output_tokens": 279,
+      "output_tokens_details": {
+        "reasoning_tokens": 109
+      },
+      "total_tokens": 2695
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"BYD's growth as a Chinese electric-vehicle and battery manufacturer and its competition with Tesla\",\n  \"conflict_relevance\": \"A separate embedded top-stories item briefly discusses warnings to Israel's government about possible displacement of Gaza residents and Canada accepting Palestinians.\",\n  \"reason\": \"The main article is about the electric-vehicle industry and has no substantive connection to Gaza or the Israel-Palestine conflict. However, it includes a meaningful but unrelated news snippet concerning possible displacement from Gaza, making it peripheral rather than excludable.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:48:30Z",
+  "duration_seconds": 4.942,
+  "error": null
+}

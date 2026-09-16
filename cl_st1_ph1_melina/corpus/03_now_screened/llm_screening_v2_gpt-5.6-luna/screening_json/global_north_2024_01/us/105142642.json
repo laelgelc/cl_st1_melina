@@ -1,0 +1,65 @@
+{
+  "article_id": "105142642",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_01/us/105142642.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_01/us/105142642.json"
+  },
+  "manifest_row": {
+    "article_id": "105142642",
+    "group": "global_north_2024_01",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2024_01/us/105142642.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "gaza_role": "boilerplate_or_unrelated",
+    "main_topic": "Mental health treatment refusal, transgender mental health, and legal consequences in Singapore",
+    "conflict_relevance": "The main article is unrelated to Gaza or the Israel-Palestine conflict. Gaza appears only in an unrelated truncated item within a 'Latest stories' section.",
+    "reason": "The article centrally discusses mental health treatment, stigma, transgender experiences, family impacts, and Singaporean legal frameworks. The Gaza material is an embedded news snippet rather than part of the article's substantive discourse.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "b38a06f8cf857ecbcb54b6433f852e07c9aa5dcc97437cbd089c3d88b73d55a0",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "33ecf5166e5d2ad62dfb6cee5812899aebc6bf481d22df2ed69593767c9603ed",
+    "raw_response_text_sha256": "f272b26589a7438c51fd4b74fdef6f54cbde608d4c0fad634b17f43b30080d07"
+  },
+  "api_metadata": {
+    "id": "resp_020e5a92b1eab8ca006aaa04ce22a487d28af5080a4cec4fe4",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789527246.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2499,
+      "input_tokens_details": {
+        "cache_write_tokens": 2496,
+        "cached_tokens": 0
+      },
+      "output_tokens": 337,
+      "output_tokens_details": {
+        "reasoning_tokens": 171
+      },
+      "total_tokens": 2836
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Mental health treatment refusal, transgender mental health, and legal consequences in Singapore\",\n  \"conflict_relevance\": \"The main article is unrelated to Gaza or the Israel-Palestine conflict. Gaza appears only in an unrelated truncated item within a 'Latest stories' section.\",\n  \"reason\": \"The article centrally discusses mental health treatment, stigma, transgender experiences, family impacts, and Singaporean legal frameworks. The Gaza material is an embedded news snippet rather than part of the article's substantive discourse.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:54:10Z",
+  "duration_seconds": 4.013,
+  "error": null
+}

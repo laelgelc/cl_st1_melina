@@ -1,0 +1,65 @@
+{
+  "article_id": "120152821",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_01/us/120152821.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_01/us/120152821.json"
+  },
+  "manifest_row": {
+    "article_id": "120152821",
+    "group": "global_north_2025_01",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2025_01/us/120152821.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.88,
+    "gaza_role": "substantial",
+    "main_topic": "Weekly news and photo roundup, including the Israel-Hamas ceasefire agreement",
+    "conflict_relevance": "The article opens with substantial reporting on the Gaza war, ceasefire, hostages, prisoners, casualties, and a protest against US weapons transfers to Israel, but most of the article consists of unrelated international photographs and news items.",
+    "reason": "The Gaza ceasefire is a prominent part of the introduction and appears in several related photo captions, making the conflict meaningfully relevant. However, the overall piece is a broad weekly roundup rather than focused conflict coverage, so it is peripheral rather than core.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "95b75656db11112dab133ea89cdc3c59acbbc5640501fc6e5f6e6b1ddf8f3e7e",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "4fd8cda8731bf50450cd305a720caa22dcfeb0d61f7849ad613242dfd22d0c33",
+    "raw_response_text_sha256": "150152fee336b1b984be7698be2cbc49013fe45881585bfa9fad4fa2c8104a30"
+  },
+  "api_metadata": {
+    "id": "resp_027ea21b4997c0cb006aaa214eafcc87d2898e6a609c78d960",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789534542.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1898,
+      "input_tokens_details": {
+        "cache_write_tokens": 1895,
+        "cached_tokens": 0
+      },
+      "output_tokens": 441,
+      "output_tokens_details": {
+        "reasoning_tokens": 255
+      },
+      "total_tokens": 2339
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.88,\n  \"gaza_role\": \"substantial\",\n  \"main_topic\": \"Weekly news and photo roundup, including the Israel-Hamas ceasefire agreement\",\n  \"conflict_relevance\": \"The article opens with substantial reporting on the Gaza war, ceasefire, hostages, prisoners, casualties, and a protest against US weapons transfers to Israel, but most of the article consists of unrelated international photographs and news items.\",\n  \"reason\": \"The Gaza ceasefire is a prominent part of the introduction and appears in several related photo captions, making the conflict meaningfully relevant. However, the overall piece is a broad weekly roundup rather than focused conflict coverage, so it is peripheral rather than core.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T04:55:49Z",
+  "duration_seconds": 6.752,
+  "error": null
+}

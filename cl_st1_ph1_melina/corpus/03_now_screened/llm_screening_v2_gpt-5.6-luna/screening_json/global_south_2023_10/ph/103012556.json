@@ -1,0 +1,65 @@
+{
+  "article_id": "103012556",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_south_2023_10/ph/103012556.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_south_2023_10/ph/103012556.json"
+  },
+  "manifest_row": {
+    "article_id": "103012556",
+    "group": "global_south_2023_10",
+    "country_code": "ph",
+    "filepath": "corpus/02_now_organised/global_south_2023_10/ph/103012556.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "passing",
+    "main_topic": "The Philippines-US Mutual Defense Treaty and tensions in the South China Sea",
+    "conflict_relevance": "The article briefly references the war between Israel and Gaza as one of the world's major hotspots, but its substantive focus is Philippine-China tensions and US security commitments.",
+    "reason": "Gaza appears meaningfully in the opening geopolitical framing but is not discussed further; the main article concerns the Philippines-US alliance and the South China Sea. A separate onion-price news item appears appended and is unrelated.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "3accfd1a6143a6961e455bb5d96cf59735c44fe2ac78e577ea54734bc052dbf5",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "2272be6cae2160de0b137e7693cf5be1842c93b6414b4a0f7c5aa0eac0016cd5",
+    "raw_response_text_sha256": "c3264946bacbf7321f5b52f4909405f456186b73d969288d540319f3b72c3db9"
+  },
+  "api_metadata": {
+    "id": "resp_07c303fedcb4a6d2006aaa33e8bfec87d1825ee420b905d095",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789539304.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1752,
+      "input_tokens_details": {
+        "cache_write_tokens": 1749,
+        "cached_tokens": 0
+      },
+      "output_tokens": 254,
+      "output_tokens_details": {
+        "reasoning_tokens": 92
+      },
+      "total_tokens": 2006
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"The Philippines-US Mutual Defense Treaty and tensions in the South China Sea\",\n  \"conflict_relevance\": \"The article briefly references the war between Israel and Gaza as one of the world's major hotspots, but its substantive focus is Philippine-China tensions and US security commitments.\",\n  \"reason\": \"Gaza appears meaningfully in the opening geopolitical framing but is not discussed further; the main article concerns the Philippines-US alliance and the South China Sea. A separate onion-price news item appears appended and is unrelated.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T06:15:08Z",
+  "duration_seconds": 3.706,
+  "error": null
+}

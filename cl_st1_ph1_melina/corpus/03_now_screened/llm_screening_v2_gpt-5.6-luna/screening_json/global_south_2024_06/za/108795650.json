@@ -1,0 +1,65 @@
+{
+  "article_id": "108795650",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_south_2024_06/za/108795650.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_south_2024_06/za/108795650.json"
+  },
+  "manifest_row": {
+    "article_id": "108795650",
+    "group": "global_south_2024_06",
+    "country_code": "za",
+    "filepath": "corpus/02_now_organised/global_south_2024_06/za/108795650.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "gaza_role": "boilerplate_or_unrelated",
+    "main_topic": "Stormers rugby team preparing for a United Rugby Championship playoff match",
+    "conflict_relevance": "None; 'Gaza' appears as an anomalous token within a sentence about rugby player Damian Willemse.",
+    "reason": "The article is entirely about rugby and contains no meaningful discussion of Gaza, Palestine, Israel, or the related conflict. The isolated occurrence of 'Gaza' is unrelated and appears to be a text corruption or metadata artifact.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "1db845e872e30d69d190a96e91d04eabbbe59ef36fa288c9e3bf976913be234d",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "25bb6cd696461c1c853b7df85e950459200d24ed6ead44a7fedde01c2a39cf37",
+    "raw_response_text_sha256": "ccd97ffaf02fcf661cae7921a2318c4e5aaa17b529d5fea7f0b0b6cba2234580"
+  },
+  "api_metadata": {
+    "id": "resp_0ec6ad604ca70a3f006aaa3cb8ee0087d18b6ff42356b35463",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789541560.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1441,
+      "input_tokens_details": {
+        "cache_write_tokens": 1438,
+        "cached_tokens": 0
+      },
+      "output_tokens": 245,
+      "output_tokens_details": {
+        "reasoning_tokens": 87
+      },
+      "total_tokens": 1686
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"gaza_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Stormers rugby team preparing for a United Rugby Championship playoff match\",\n  \"conflict_relevance\": \"None; 'Gaza' appears as an anomalous token within a sentence about rugby player Damian Willemse.\",\n  \"reason\": \"The article is entirely about rugby and contains no meaningful discussion of Gaza, Palestine, Israel, or the related conflict. The isolated occurrence of 'Gaza' is unrelated and appears to be a text corruption or metadata artifact.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T06:52:44Z",
+  "duration_seconds": 3.614,
+  "error": null
+}

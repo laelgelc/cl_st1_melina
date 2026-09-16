@@ -1,0 +1,65 @@
+{
+  "article_id": "200540328",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_06/us/200540328.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_06/us/200540328.json"
+  },
+  "manifest_row": {
+    "article_id": "200540328",
+    "group": "global_north_2024_06",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2024_06/us/200540328.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.93,
+    "gaza_role": "passing",
+    "main_topic": "Correction of false reports about Noam Chomsky's death and hospitalization",
+    "conflict_relevance": "Gaza appears only in a file-photo caption noting Chomsky's past support for a Gaza-bound flotilla; the article does not discuss the conflict itself.",
+    "reason": "The article is primarily about Chomsky's health and erroneous obituary reports. Its only Gaza-related content is incidental biographical and image-caption context, providing no substantive conflict discourse.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "5b1afdd53700f86d111bf04e75b72dddebceda8df6d43e123c33a21a5b79ad5e",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "0659eee158c908e95a4fdbb6a02effe0adbac7168e620474fe833df8445845ac",
+    "raw_response_text_sha256": "1d93f1bc8884800aa22879a0bcbad9ec3bb2633ae6d83dca0587796948151596"
+  },
+  "api_metadata": {
+    "id": "resp_0bdb6ea1ff97bc0b006aaa11bf1bf087d2a2c8605fd88e38b4",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789530559.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1031,
+      "input_tokens_details": {
+        "cache_write_tokens": 1028,
+        "cached_tokens": 0
+      },
+      "output_tokens": 284,
+      "output_tokens_details": {
+        "reasoning_tokens": 128
+      },
+      "total_tokens": 1315
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.93,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Correction of false reports about Noam Chomsky's death and hospitalization\",\n  \"conflict_relevance\": \"Gaza appears only in a file-photo caption noting Chomsky's past support for a Gaza-bound flotilla; the article does not discuss the conflict itself.\",\n  \"reason\": \"The article is primarily about Chomsky's health and erroneous obituary reports. Its only Gaza-related content is incidental biographical and image-caption context, providing no substantive conflict discourse.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:49:22Z",
+  "duration_seconds": 3.917,
+  "error": null
+}

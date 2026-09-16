@@ -1,0 +1,65 @@
+{
+  "article_id": "123848403",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_04/ca/123848403.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_04/ca/123848403.json"
+  },
+  "manifest_row": {
+    "article_id": "123848403",
+    "group": "global_north_2025_04",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2025_04/ca/123848403.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "background",
+    "main_topic": "Pope Francis's death, funeral arrangements, and global mourning",
+    "conflict_relevance": "The article includes a substantive subsection on Palestinians in Bethlehem mourning Pope Francis and notes the impact of the 18-month Gaza war on tourism and religious pilgrimage.",
+    "reason": "The main article is about Pope Francis's funeral and the Catholic Church, not Gaza or the Israeli-Palestinian conflict. However, its discussion of Bethlehem, Palestinians, the Israeli-occupied West Bank, and the war in Gaza provides meaningful peripheral conflict-related discourse.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "a7914ccfb97d6cd0d364139e348902f4271b1d277dd45ee9fdfe6d04b03d1766",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "fb7de1b4aef2c1c9cbc8523b7359bd2fe463a79215e280c538fbb860de880397",
+    "raw_response_text_sha256": "02f247166fc022c5ddcec76dfa253e9dea93d6ef2b4cb5c3f182de40e017162a"
+  },
+  "api_metadata": {
+    "id": "resp_0e832d27d08b52d0006aaa2893152087d1b5d3160948771ccf",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789536403.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 4752,
+      "input_tokens_details": {
+        "cache_write_tokens": 4749,
+        "cached_tokens": 0
+      },
+      "output_tokens": 235,
+      "output_tokens_details": {
+        "reasoning_tokens": 64
+      },
+      "total_tokens": 4987
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Pope Francis's death, funeral arrangements, and global mourning\",\n  \"conflict_relevance\": \"The article includes a substantive subsection on Palestinians in Bethlehem mourning Pope Francis and notes the impact of the 18-month Gaza war on tourism and religious pilgrimage.\",\n  \"reason\": \"The main article is about Pope Francis's funeral and the Catholic Church, not Gaza or the Israeli-Palestinian conflict. However, its discussion of Bethlehem, Palestinians, the Israeli-occupied West Bank, and the war in Gaza provides meaningful peripheral conflict-related discourse.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T05:26:45Z",
+  "duration_seconds": 2.915,
+  "error": null
+}

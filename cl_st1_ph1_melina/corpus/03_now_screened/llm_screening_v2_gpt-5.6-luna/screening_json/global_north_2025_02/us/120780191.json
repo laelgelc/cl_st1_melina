@@ -1,0 +1,65 @@
+{
+  "article_id": "120780191",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_02/us/120780191.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_02/us/120780191.json"
+  },
+  "manifest_row": {
+    "article_id": "120780191",
+    "group": "global_north_2025_02",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2025_02/us/120780191.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "gaza_role": "passing",
+    "main_topic": "A newspaper letters-inbox recap and summary of topics discussed by readers",
+    "conflict_relevance": "Gaza is mentioned only briefly as one of several subjects that prompted reader letters, without substantive discussion of the conflict.",
+    "reason": "The article is a roundup of reader correspondence focused mainly on Louisiana politics and local issues. Its reference to the wars in Gaza and Ukraine is incidental and provides no meaningful conflict-related discourse.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "d11636b9594d06beca1533caa482a71030d793974c72e67f0c71e2c70942beab",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "6ca780fea2ca06d0208b3acdfa424170e1f31cfc0eb57431e53cbd4407f7e8b8",
+    "raw_response_text_sha256": "30c61a20e92fbd2c8ceb2bd0988e85e038c7acaf933e141cd4e1c689ffca1cbc"
+  },
+  "api_metadata": {
+    "id": "resp_04c89dde2f025dd5006aaa240aed4487d2be7268aedfe233b8",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789535243.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1119,
+      "input_tokens_details": {
+        "cache_write_tokens": 1116,
+        "cached_tokens": 0
+      },
+      "output_tokens": 260,
+      "output_tokens_details": {
+        "reasoning_tokens": 113
+      },
+      "total_tokens": 1379
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"A newspaper letters-inbox recap and summary of topics discussed by readers\",\n  \"conflict_relevance\": \"Gaza is mentioned only briefly as one of several subjects that prompted reader letters, without substantive discussion of the conflict.\",\n  \"reason\": \"The article is a roundup of reader correspondence focused mainly on Louisiana politics and local issues. Its reference to the wars in Gaza and Ukraine is incidental and provides no meaningful conflict-related discourse.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T05:07:27Z",
+  "duration_seconds": 4.642,
+  "error": null
+}

@@ -1,0 +1,65 @@
+{
+  "article_id": "115391904",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_10/us/115391904.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_10/us/115391904.json"
+  },
+  "manifest_row": {
+    "article_id": "115391904",
+    "group": "global_north_2024_10",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2024_10/us/115391904.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.93,
+    "gaza_role": "passing",
+    "main_topic": "Singapore news roundup and live coverage, with unrelated international news snippets",
+    "conflict_relevance": "A final embedded international-news snippet discusses Netanyahu, Gaza peace negotiations, Hezbollah, Iran, and possible interference in U.S. politics.",
+    "reason": "The article is primarily a collection of unrelated Singapore news stories and does not centrally cover Gaza or the Israel-Palestine conflict. However, it contains a meaningful, though brief and truncated, embedded item directly referencing Gaza and regional conflict diplomacy, making it peripheral rather than excludable.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "189a1cea2c861f2e3ce9822ec187ca48b80ffec2c0dd2a15ea7daf0195baf571",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "cc4ef502248d8fec7f466af11186754def19db8883c5f681114c0ae4b3f71250",
+    "raw_response_text_sha256": "02257ee04963776634423d7932cd08ee0b86aed0a57cad3939a2a1d7a682ac7d"
+  },
+  "api_metadata": {
+    "id": "resp_041137f122b6825c006aaa18d6351487d29b2457eb7609c44a",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789532374.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 3600,
+      "input_tokens_details": {
+        "cache_write_tokens": 3597,
+        "cached_tokens": 0
+      },
+      "output_tokens": 328,
+      "output_tokens_details": {
+        "reasoning_tokens": 180
+      },
+      "total_tokens": 3928
+    }
+  },
+  "raw_response_text": "{\"category\":\"PERIPHERAL\",\"confidence\":0.93,\"gaza_role\":\"passing\",\"main_topic\":\"Singapore news roundup and live coverage, with unrelated international news snippets\",\"conflict_relevance\":\"A final embedded international-news snippet discusses Netanyahu, Gaza peace negotiations, Hezbollah, Iran, and possible interference in U.S. politics.\",\"reason\":\"The article is primarily a collection of unrelated Singapore news stories and does not centrally cover Gaza or the Israel-Palestine conflict. However, it contains a meaningful, though brief and truncated, embedded item directly referencing Gaza and regional conflict diplomacy, making it peripheral rather than excludable.\",\"multi_article_or_snippet_issue\":true,\"recommended_for_main_corpus\":false}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T04:19:37Z",
+  "duration_seconds": 3.065,
+  "error": null
+}

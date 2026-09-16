@@ -1,0 +1,65 @@
+{
+  "article_id": "126142013",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_06/us/126142013.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_06/us/126142013.json"
+  },
+  "manifest_row": {
+    "article_id": "126142013",
+    "group": "global_north_2025_06",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2025_06/us/126142013.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.97,
+    "gaza_role": "passing",
+    "main_topic": "Profile of a suspect in the attempted assassination of Minnesota politicians",
+    "conflict_relevance": "The article briefly mentions the suspect's claimed security experience in the West Bank, Southern Lebanon, and Gaza Strip, but does not discuss the Israel-Palestine conflict or related discourse.",
+    "reason": "The article is centrally about domestic political violence, the suspect's background, religion, business ventures, and firearms. The Gaza reference is an incidental biographical detail rather than meaningful conflict-related content.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "6a4c885496ed0ddccda0a6136396afcb72b0453bd1e346caf25acc8102d0b886",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "ec7c782095f38d2572ffb0e372ba7b81992e0d44d4e838c2778e15c8f001325a",
+    "raw_response_text_sha256": "d458da42c72b2fcbbb105f88b6522e1dfb3cab7b5011a110fa5c52c21fbcae0d"
+  },
+  "api_metadata": {
+    "id": "resp_04efde8ebd82aabe006aaa319681f887d1b7e8ff17cad5aa53",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789538710.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 4322,
+      "input_tokens_details": {
+        "cache_write_tokens": 4319,
+        "cached_tokens": 0
+      },
+      "output_tokens": 252,
+      "output_tokens_details": {
+        "reasoning_tokens": 91
+      },
+      "total_tokens": 4574
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.97,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Profile of a suspect in the attempted assassination of Minnesota politicians\",\n  \"conflict_relevance\": \"The article briefly mentions the suspect's claimed security experience in the West Bank, Southern Lebanon, and Gaza Strip, but does not discuss the Israel-Palestine conflict or related discourse.\",\n  \"reason\": \"The article is centrally about domestic political violence, the suspect's background, religion, business ventures, and firearms. The Gaza reference is an incidental biographical detail rather than meaningful conflict-related content.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T06:05:15Z",
+  "duration_seconds": 5.008,
+  "error": null
+}

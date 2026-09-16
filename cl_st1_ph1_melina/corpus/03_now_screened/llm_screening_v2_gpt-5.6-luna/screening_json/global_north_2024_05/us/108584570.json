@@ -1,0 +1,65 @@
+{
+  "article_id": "108584570",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_05/us/108584570.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_05/us/108584570.json"
+  },
+  "manifest_row": {
+    "article_id": "108584570",
+    "group": "global_north_2024_05",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2024_05/us/108584570.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.97,
+    "gaza_role": "passing",
+    "main_topic": "Mixed U.S. political, LGBTQ+ rights, Gaza military, and severe weather news",
+    "conflict_relevance": "Contains one substantive news item reporting Israel's claimed control of the Gaza-Egypt border and the continuation of its offensive in southern Gaza, but the overall text is a collection of unrelated news snippets.",
+    "reason": "The Gaza passage is meaningful and directly relevant to the conflict, but it is only one embedded item in a multi-topic roundup rather than the central subject.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "f6ea93981860e006103250911e309cff531b6ce1a69c817b47d43cd5aaab80ee",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "09c827a09c6728217f75bf6e54795120fcbdd318f605703b2caa90c123da2db8",
+    "raw_response_text_sha256": "5a048f33782d8e388ce451bd5c2f116f0c1f379660ab3740605597addbd6d37f"
+  },
+  "api_metadata": {
+    "id": "resp_0c80db11ec8a774b006aaa0f2c69c887d2aea74aa934947a05",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789529900.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 798,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 304,
+      "output_tokens_details": {
+        "reasoning_tokens": 143
+      },
+      "total_tokens": 1102
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.97,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Mixed U.S. political, LGBTQ+ rights, Gaza military, and severe weather news\",\n  \"conflict_relevance\": \"Contains one substantive news item reporting Israel's claimed control of the Gaza-Egypt border and the continuation of its offensive in southern Gaza, but the overall text is a collection of unrelated news snippets.\",\n  \"reason\": \"The Gaza passage is meaningful and directly relevant to the conflict, but it is only one embedded item in a multi-topic roundup rather than the central subject.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:38:24Z",
+  "duration_seconds": 4.823,
+  "error": null
+}

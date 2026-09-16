@@ -1,0 +1,65 @@
+{
+  "article_id": "108452505",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_south_2024_05/in/108452505.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_south_2024_05/in/108452505.json"
+  },
+  "manifest_row": {
+    "article_id": "108452505",
+    "group": "global_south_2024_05",
+    "country_code": "in",
+    "filepath": "corpus/02_now_organised/global_south_2024_05/in/108452505.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "gaza_role": "passing",
+    "main_topic": "A general news bulletin covering Indian politics, elections, legal cases, international news, and other current events",
+    "conflict_relevance": "Gaza is mentioned only in passing as one of the wars occupying Washington's attention; the bulletin contains no substantive discussion of the conflict.",
+    "reason": "The article is a multi-item news roundup whose main subjects are unrelated to Gaza. The sole Gaza reference is incidental and does not provide meaningful conflict discourse for analysis.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "79a50bf886538bb234826329d334d6d66f55662b60931dec55082ff8c42cac89",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "9f515b0b28e9b7e51c42bf6faa9e2386fa93c43811f5f9d9e3ace21fbc226cbf",
+    "raw_response_text_sha256": "07ad50556022243e8b345f252cbe4fcbb85b6ab2aae08c05f6bdd17e72cb01bd"
+  },
+  "api_metadata": {
+    "id": "resp_0dd6f02f8ad5a61f006aaa3b4ba0fc87d1aa891cba921e6f82",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789541195.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1965,
+      "input_tokens_details": {
+        "cache_write_tokens": 1962,
+        "cached_tokens": 0
+      },
+      "output_tokens": 216,
+      "output_tokens_details": {
+        "reasoning_tokens": 62
+      },
+      "total_tokens": 2181
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"A general news bulletin covering Indian politics, elections, legal cases, international news, and other current events\",\n  \"conflict_relevance\": \"Gaza is mentioned only in passing as one of the wars occupying Washington's attention; the bulletin contains no substantive discussion of the conflict.\",\n  \"reason\": \"The article is a multi-item news roundup whose main subjects are unrelated to Gaza. The sole Gaza reference is incidental and does not provide meaningful conflict discourse for analysis.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T06:46:39Z",
+  "duration_seconds": 3.593,
+  "error": null
+}

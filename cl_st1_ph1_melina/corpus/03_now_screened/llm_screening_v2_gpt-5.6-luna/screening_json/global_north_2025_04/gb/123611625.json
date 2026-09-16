@@ -1,0 +1,65 @@
+{
+  "article_id": "123611625",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_04/gb/123611625.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_04/gb/123611625.json"
+  },
+  "manifest_row": {
+    "article_id": "123611625",
+    "group": "global_north_2025_04",
+    "country_code": "gb",
+    "filepath": "corpus/02_now_organised/global_north_2025_04/gb/123611625.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.91,
+    "gaza_role": "background",
+    "main_topic": "Court proceedings against people accused of vandalising Donald Trump's Turnberry golf resort",
+    "conflict_relevance": "The article links the vandalism to opposition to Trump's stated Gaza policies and includes substantial discussion of his proposals to 'clean out' Gaza, an AI-generated Gaza video, and threats concerning hostages.",
+    "reason": "The main focus is the Scottish vandalism case and Trump's response, not the Gaza conflict itself. However, the article contains meaningful discourse about Trump's Gaza statements and the political motivation attributed to the protesters, making it relevant as peripheral material.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "a75d288eb0e4f029da863716aa85c03db6a6b113a42fb75b07b7861d0f27d586",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "765f344ce36fbd2a8b596b29164cdb6094a8c50f099a13d524b65da019f3ba10",
+    "raw_response_text_sha256": "3d8268ecb257b03bf4145888d3ae8111a9e50a3e538fe43f97f64b3d146bffef"
+  },
+  "api_metadata": {
+    "id": "resp_043c26277ac9a4d5006aaa28f9bbd887d18f4a8bdd006df8ff",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789536505.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1385,
+      "input_tokens_details": {
+        "cache_write_tokens": 1382,
+        "cached_tokens": 0
+      },
+      "output_tokens": 414,
+      "output_tokens_details": {
+        "reasoning_tokens": 239
+      },
+      "total_tokens": 1799
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.91,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Court proceedings against people accused of vandalising Donald Trump's Turnberry golf resort\",\n  \"conflict_relevance\": \"The article links the vandalism to opposition to Trump's stated Gaza policies and includes substantial discussion of his proposals to 'clean out' Gaza, an AI-generated Gaza video, and threats concerning hostages.\",\n  \"reason\": \"The main focus is the Scottish vandalism case and Trump's response, not the Gaza conflict itself. However, the article contains meaningful discourse about Trump's Gaza statements and the political motivation attributed to the protesters, making it relevant as peripheral material.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T05:28:31Z",
+  "duration_seconds": 5.461,
+  "error": null
+}

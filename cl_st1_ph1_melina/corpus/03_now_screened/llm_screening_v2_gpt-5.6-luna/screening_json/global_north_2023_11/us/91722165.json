@@ -1,0 +1,65 @@
+{
+  "article_id": "91722165",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_11/us/91722165.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_11/us/91722165.json"
+  },
+  "manifest_row": {
+    "article_id": "91722165",
+    "group": "global_north_2023_11",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2023_11/us/91722165.txt"
+  },
+  "screening": {
+    "category": "CORE",
+    "confidence": 0.99,
+    "gaza_role": "central",
+    "main_topic": "Opinion on Israel's military campaign against Hamas, civilian protection, humanitarian relief in Gaza, hostages, regional diplomacy, and international law",
+    "conflict_relevance": "The main article directly addresses the Israel-Hamas war, Gaza's humanitarian crisis, Palestinian civilian casualties, Israel's blockade and aerial campaign, hostage release, regional relations, and the legal and strategic consequences of military action.",
+    "reason": "The headline article is centrally focused on the Gaza war and argues that Israel must combine military objectives with humanitarian safeguards, compliance with international law, diplomatic strategy, and protection of Palestinian civilians. The text also contains a substantial appended CNN feature about an Israeli technology CEO and her employees, which is a separate article but does not alter the relevance of the main opinion piece.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": true
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "b654333866e0747c1f824340ac2df0c682f126e95bd3a8113e8bd3e583795d18",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "196d175092e098dc75357ebe859ee1b044e3719dc9b929d49d90679c5750f6f2",
+    "raw_response_text_sha256": "c5155c406af64b36a70ed77545891cce9d95f619a288b4782d45daaf792622b0"
+  },
+  "api_metadata": {
+    "id": "resp_0b8e7b406efb4029006aa9ffd0e76887d2aa771e11605aed60",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789525968.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 3092,
+      "input_tokens_details": {
+        "cache_write_tokens": 3089,
+        "cached_tokens": 0
+      },
+      "output_tokens": 292,
+      "output_tokens_details": {
+        "reasoning_tokens": 78
+      },
+      "total_tokens": 3384
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"CORE\",\n  \"confidence\": 0.99,\n  \"gaza_role\": \"central\",\n  \"main_topic\": \"Opinion on Israel's military campaign against Hamas, civilian protection, humanitarian relief in Gaza, hostages, regional diplomacy, and international law\",\n  \"conflict_relevance\": \"The main article directly addresses the Israel-Hamas war, Gaza's humanitarian crisis, Palestinian civilian casualties, Israel's blockade and aerial campaign, hostage release, regional relations, and the legal and strategic consequences of military action.\",\n  \"reason\": \"The headline article is centrally focused on the Gaza war and argues that Israel must combine military objectives with humanitarian safeguards, compliance with international law, diplomatic strategy, and protection of Palestinian civilians. The text also contains a substantial appended CNN feature about an Israeli technology CEO and her employees, which is a separate article but does not alter the relevance of the main opinion piece.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": true\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:32:52Z",
+  "duration_seconds": 4.45,
+  "error": null
+}

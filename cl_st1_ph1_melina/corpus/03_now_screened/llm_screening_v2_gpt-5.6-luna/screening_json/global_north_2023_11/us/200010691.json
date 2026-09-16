@@ -1,0 +1,65 @@
+{
+  "article_id": "200010691",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_11/us/200010691.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_11/us/200010691.json"
+  },
+  "manifest_row": {
+    "article_id": "200010691",
+    "group": "global_north_2023_11",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2023_11/us/200010691.txt"
+  },
+  "screening": {
+    "category": "CORE",
+    "confidence": 0.99,
+    "gaza_role": "central",
+    "main_topic": "The planned exchange of Palestinian prisoners held by Israel for Hamas hostages held in Gaza",
+    "conflict_relevance": "Directly addresses the Israel-Hamas war, hostage negotiations, Palestinian detention and administrative detention, alleged abuse of detainees, arrests over expressions of solidarity with Gaza, and the humanitarian context of the conflict.",
+    "reason": "The article is centrally focused on the Palestinian prisoners and Israeli hostages involved in the November 2023 exchange, while also discussing detention practices, legal proceedings, military operations, and conditions in Gaza. A separate unrelated NBA snippet appears at the end.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": true
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "4000fe43a81581c419642b32b3a6059cc521ef384643eecac1211679e13f644b",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "37e1432d5e26e821d563d3f5cd997d54a50bd0375fdd2cc6ae0f84a782e5055f",
+    "raw_response_text_sha256": "5b6e984de94ff3aa1ed932f67b39b9c18c8b625f5a8a3624031575a2ce9c344c"
+  },
+  "api_metadata": {
+    "id": "resp_0b9b74459ae45c28006aa9ff415dc887d2a84897862bc4ddce",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789525825.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1502,
+      "input_tokens_details": {
+        "cache_write_tokens": 1499,
+        "cached_tokens": 0
+      },
+      "output_tokens": 237,
+      "output_tokens_details": {
+        "reasoning_tokens": 58
+      },
+      "total_tokens": 1739
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"CORE\",\n  \"confidence\": 0.99,\n  \"gaza_role\": \"central\",\n  \"main_topic\": \"The planned exchange of Palestinian prisoners held by Israel for Hamas hostages held in Gaza\",\n  \"conflict_relevance\": \"Directly addresses the Israel-Hamas war, hostage negotiations, Palestinian detention and administrative detention, alleged abuse of detainees, arrests over expressions of solidarity with Gaza, and the humanitarian context of the conflict.\",\n  \"reason\": \"The article is centrally focused on the Palestinian prisoners and Israeli hostages involved in the November 2023 exchange, while also discussing detention practices, legal proceedings, military operations, and conditions in Gaza. A separate unrelated NBA snippet appears at the end.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": true\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:30:28Z",
+  "duration_seconds": 3.123,
+  "error": null
+}

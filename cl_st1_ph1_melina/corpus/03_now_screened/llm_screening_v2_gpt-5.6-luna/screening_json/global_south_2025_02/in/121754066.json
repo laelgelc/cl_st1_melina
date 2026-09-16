@@ -1,0 +1,65 @@
+{
+  "article_id": "121754066",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_south_2025_02/in/121754066.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_south_2025_02/in/121754066.json"
+  },
+  "manifest_row": {
+    "article_id": "121754066",
+    "group": "global_south_2025_02",
+    "country_code": "in",
+    "filepath": "corpus/02_now_organised/global_south_2025_02/in/121754066.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.96,
+    "gaza_role": "background",
+    "main_topic": "Apple iPhone dictation bug involving the word \"Trump\"",
+    "conflict_relevance": "The article includes an embedded item about Donald Trump's AI-generated video depicting Gaza as a redeveloped Riviera and the resulting backlash, but this is not the main subject.",
+    "reason": "The main article concerns an Apple speech-recognition glitch. The Gaza-related material is a separate, meaningful but brief embedded snippet concerning political representation of war-torn Gaza and Netanyahu.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "5413559557c6887572554d671123e039e0ed1cead9375debfb91315d664c8b42",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "9ce9964c73d2448659d148c7525912ff50bc4bbcc95b41faace0dd580bf2f66b",
+    "raw_response_text_sha256": "90999ee776118eac3efbdcc20885a61b0b38ffd04f4d43a9d588507841ca2522"
+  },
+  "api_metadata": {
+    "id": "resp_0ef85afd28278b26006aaa4590c01087d1bf4480740f71da55",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789543824.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 845,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 254,
+      "output_tokens_details": {
+        "reasoning_tokens": 99
+      },
+      "total_tokens": 1099
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.96,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Apple iPhone dictation bug involving the word \\\"Trump\\\"\",\n  \"conflict_relevance\": \"The article includes an embedded item about Donald Trump's AI-generated video depicting Gaza as a redeveloped Riviera and the resulting backlash, but this is not the main subject.\",\n  \"reason\": \"The main article concerns an Apple speech-recognition glitch. The Gaza-related material is a separate, meaningful but brief embedded snippet concerning political representation of war-torn Gaza and Netanyahu.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T07:30:28Z",
+  "duration_seconds": 4.062,
+  "error": null
+}

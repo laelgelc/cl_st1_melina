@@ -1,0 +1,65 @@
+{
+  "article_id": "107015249",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_03/ca/107015249.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_03/ca/107015249.json"
+  },
+  "manifest_row": {
+    "article_id": "107015249",
+    "group": "global_north_2024_03",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2024_03/ca/107015249.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.94,
+    "gaza_role": "background",
+    "main_topic": "Emmanuel Macron's diplomatic visit to Brazil and Franco-Brazilian cooperation",
+    "conflict_relevance": "The main article is unrelated to Gaza or the Israel-Palestine conflict, but its appended 'Latest Stories' section contains several substantive items concerning the Gaza war, Israeli-US relations, a Gaza cease-fire resolution, and Israeli military support.",
+    "reason": "The headline article focuses on Macron's Brazil visit, environmental cooperation, defence technology, and international diplomacy. However, the text includes multiple meaningful embedded news snippets about Gaza and Israel, making it potentially useful for peripheral analysis of media aggregation and conflict discourse, but not suitable as core Gaza coverage.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "2b33c0610f173b6e0f78eb0267c8ee6f5b6b191eec81a182ab9cb01257488e3c",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "b2795ca412a0987031a14ab15b1a2079311c2e96ac3bec872b5fbcf492ea6e85",
+    "raw_response_text_sha256": "7bd46bb941a7fe7eb23bda7aad23af8ab0c3ac8598e78fc5bae633f3de29b0ad"
+  },
+  "api_metadata": {
+    "id": "resp_0d0065cddd9db2b4006aaa0883003087d2a2f39c5e3a00caf0",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789528195.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2489,
+      "input_tokens_details": {
+        "cache_write_tokens": 2486,
+        "cached_tokens": 0
+      },
+      "output_tokens": 322,
+      "output_tokens_details": {
+        "reasoning_tokens": 127
+      },
+      "total_tokens": 2811
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.94,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Emmanuel Macron's diplomatic visit to Brazil and Franco-Brazilian cooperation\",\n  \"conflict_relevance\": \"The main article is unrelated to Gaza or the Israel-Palestine conflict, but its appended 'Latest Stories' section contains several substantive items concerning the Gaza war, Israeli-US relations, a Gaza cease-fire resolution, and Israeli military support.\",\n  \"reason\": \"The headline article focuses on Macron's Brazil visit, environmental cooperation, defence technology, and international diplomacy. However, the text includes multiple meaningful embedded news snippets about Gaza and Israel, making it potentially useful for peripheral analysis of media aggregation and conflict discourse, but not suitable as core Gaza coverage.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:09:58Z",
+  "duration_seconds": 3.867,
+  "error": null
+}

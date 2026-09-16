@@ -1,0 +1,65 @@
+{
+  "article_id": "125008977",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_05/us/125008977.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_05/us/125008977.json"
+  },
+  "manifest_row": {
+    "article_id": "125008977",
+    "group": "global_north_2025_05",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2025_05/us/125008977.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.88,
+    "gaza_role": "passing",
+    "main_topic": "A U.S. Department of Education civil rights investigation into admissions practices at a selective Virginia high school",
+    "conflict_relevance": "The main article is unrelated to Gaza or Israel/Palestine, but an embedded roundup item briefly mentions the deportation of a Georgetown scholar over statements opposing Israel's war in Gaza.",
+    "reason": "The headline and substantive article concern school admissions, racial representation, and affirmative-action litigation. Gaza appears only in a separate, truncated news snippet within the page, providing limited but meaningful relevance to discourse around the Gaza war and academic speech.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "1965c2d12d7e6a8687798a72ce2ad1d225baf14d3645c0c29319f4033443da25",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "1ac2792cd9ecc750b580c0454c31875f047b04407a867358a5292a72a3348402",
+    "raw_response_text_sha256": "2dbdc274aa5108009e3746f3708e689f545decf8855cfe8a125002eec1f530a6"
+  },
+  "api_metadata": {
+    "id": "resp_023ee7ae1becc4dc006aaa2de835d087d1aad105794dc64600",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789537768.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1815,
+      "input_tokens_details": {
+        "cache_write_tokens": 1812,
+        "cached_tokens": 0
+      },
+      "output_tokens": 337,
+      "output_tokens_details": {
+        "reasoning_tokens": 159
+      },
+      "total_tokens": 2152
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.88,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"A U.S. Department of Education civil rights investigation into admissions practices at a selective Virginia high school\",\n  \"conflict_relevance\": \"The main article is unrelated to Gaza or Israel/Palestine, but an embedded roundup item briefly mentions the deportation of a Georgetown scholar over statements opposing Israel's war in Gaza.\",\n  \"reason\": \"The headline and substantive article concern school admissions, racial representation, and affirmative-action litigation. Gaza appears only in a separate, truncated news snippet within the page, providing limited but meaningful relevance to discourse around the Gaza war and academic speech.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T05:49:32Z",
+  "duration_seconds": 4.591,
+  "error": null
+}

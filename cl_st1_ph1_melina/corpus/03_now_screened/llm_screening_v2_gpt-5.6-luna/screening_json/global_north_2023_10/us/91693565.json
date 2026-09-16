@@ -1,0 +1,65 @@
+{
+  "article_id": "91693565",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_10/us/91693565.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_10/us/91693565.json"
+  },
+  "manifest_row": {
+    "article_id": "91693565",
+    "group": "global_north_2023_10",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2023_10/us/91693565.txt"
+  },
+  "screening": {
+    "category": "CORE",
+    "confidence": 1.0,
+    "gaza_role": "central",
+    "main_topic": "Israeli military ground raid and preparations for a possible ground invasion in Gaza",
+    "conflict_relevance": "The article directly reports Israeli military action against suspected Hamas positions in Gaza and describes preparations for a broader ground invasion.",
+    "reason": "Gaza and the Israel-Hamas war are the central subject of the article, despite duplicated text and AP boilerplate.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": true
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "d900164706d427d5116ac269625dbea8965e92b7f273750d5d10481e13928214",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "b6bf5378fad69beef94fe93fce63f22d94ce36c10be07f0e112adeae16b0425f",
+    "raw_response_text_sha256": "a8354c30031790249980f8daf0dadcdf10e6b212eebc93a13a66d97d95a11828"
+  },
+  "api_metadata": {
+    "id": "resp_021648b1e318c7c1006aa9fb17668087d2a30266e63d2b96a1",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789524759.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 896,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 132,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 1028
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"CORE\",\n  \"confidence\": 1.0,\n  \"gaza_role\": \"central\",\n  \"main_topic\": \"Israeli military ground raid and preparations for a possible ground invasion in Gaza\",\n  \"conflict_relevance\": \"The article directly reports Israeli military action against suspected Hamas positions in Gaza and describes preparations for a broader ground invasion.\",\n  \"reason\": \"Gaza and the Israel-Hamas war are the central subject of the article, despite duplicated text and AP boilerplate.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": true\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:12:41Z",
+  "duration_seconds": 2.342,
+  "error": null
+}

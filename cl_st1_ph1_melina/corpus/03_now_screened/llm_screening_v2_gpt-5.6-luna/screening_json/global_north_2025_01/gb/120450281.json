@@ -1,0 +1,65 @@
+{
+  "article_id": "120450281",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_01/gb/120450281.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_01/gb/120450281.json"
+  },
+  "manifest_row": {
+    "article_id": "120450281",
+    "group": "global_north_2025_01",
+    "country_code": "gb",
+    "filepath": "corpus/02_now_organised/global_north_2025_01/gb/120450281.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.96,
+    "gaza_role": "passing",
+    "main_topic": "Trump's executive order defining sex and its implications for transgender rights and abortion politics",
+    "conflict_relevance": "The article's main subject is US gender and abortion policy, but an embedded roundup item briefly reports the alleged shooting of a 13-year-old in Gaza during a ceasefire.",
+    "reason": "The Gaza-related content is meaningful but limited to a separate headline and one-sentence news snippet; it is not developed or connected to the article's main discussion.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "f0d994e9b9ef6ed9f7f8b0d999ba2bbb33a900ef087deca08ddc4825e3c2eec6",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "7f4e836946f4ed6161501aa3350e98dc7415857395c5fffeaaa7ccc6a47811ac",
+    "raw_response_text_sha256": "52cf783a39bad341b23eec9d07bf5d264c636944eaeaf20398e3cc430359e29d"
+  },
+  "api_metadata": {
+    "id": "resp_050dd366b9e88001006aaa1fee525887d2a7173246ba109cd7",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789534190.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2247,
+      "input_tokens_details": {
+        "cache_write_tokens": 2244,
+        "cached_tokens": 0
+      },
+      "output_tokens": 268,
+      "output_tokens_details": {
+        "reasoning_tokens": 110
+      },
+      "total_tokens": 2515
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.96,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Trump's executive order defining sex and its implications for transgender rights and abortion politics\",\n  \"conflict_relevance\": \"The article's main subject is US gender and abortion policy, but an embedded roundup item briefly reports the alleged shooting of a 13-year-old in Gaza during a ceasefire.\",\n  \"reason\": \"The Gaza-related content is meaningful but limited to a separate headline and one-sentence news snippet; it is not developed or connected to the article's main discussion.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T04:49:55Z",
+  "duration_seconds": 5.795,
+  "error": null
+}

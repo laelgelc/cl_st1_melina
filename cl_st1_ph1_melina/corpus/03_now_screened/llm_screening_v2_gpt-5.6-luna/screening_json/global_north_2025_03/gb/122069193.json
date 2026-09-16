@@ -1,0 +1,65 @@
+{
+  "article_id": "122069193",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_03/gb/122069193.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_03/gb/122069193.json"
+  },
+  "manifest_row": {
+    "article_id": "122069193",
+    "group": "global_north_2025_03",
+    "country_code": "gb",
+    "filepath": "corpus/02_now_organised/global_north_2025_03/gb/122069193.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "passing",
+    "main_topic": "National Health Service spending and Labour government policy",
+    "conflict_relevance": "The main article concerns NHS finances, but an embedded 'Read next' snippet briefly discusses a Gaza peace and reconstruction plan endorsed by Egypt and the Arab League.",
+    "reason": "The Gaza-related content is a meaningful but very brief recommendation snippet rather than part of the main article.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "2b2d3a7caa87f24b6d7b5d68d5a18fcfd045320cc2d758dcf39fcd9b097fe843",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "75367ff20bb5dd3bfeb5f6a72e2d001c6a1c77aae96996a80ea5abf66a6ec057",
+    "raw_response_text_sha256": "f866941aa26e12e1b30fa988fab6195dd24bc6f251f0d0be59b88ba7d2e8f93c"
+  },
+  "api_metadata": {
+    "id": "resp_0ac145a79c06aee2006aaa25ee4f7487d1811e75863db8b646",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789535726.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 823,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 225,
+      "output_tokens_details": {
+        "reasoning_tokens": 90
+      },
+      "total_tokens": 1048
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"National Health Service spending and Labour government policy\",\n  \"conflict_relevance\": \"The main article concerns NHS finances, but an embedded 'Read next' snippet briefly discusses a Gaza peace and reconstruction plan endorsed by Egypt and the Arab League.\",\n  \"reason\": \"The Gaza-related content is a meaningful but very brief recommendation snippet rather than part of the main article.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T05:15:29Z",
+  "duration_seconds": 3.394,
+  "error": null
+}

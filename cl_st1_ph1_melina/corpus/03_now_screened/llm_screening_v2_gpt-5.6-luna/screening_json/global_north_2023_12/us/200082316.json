@@ -1,0 +1,65 @@
+{
+  "article_id": "200082316",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_12/us/200082316.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_12/us/200082316.json"
+  },
+  "manifest_row": {
+    "article_id": "200082316",
+    "group": "global_north_2023_12",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2023_12/us/200082316.txt"
+  },
+  "screening": {
+    "category": "CORE",
+    "confidence": 0.98,
+    "gaza_role": "substantial",
+    "main_topic": "Iranian proxy activity, regional escalation of the Gaza conflict, and attacks on Red Sea shipping",
+    "conflict_relevance": "The article directly discusses the Gaza conflict, Iran's relationship with Hamas, Hezbollah and Houthi attacks, Israel's security, and the risk of a wider regional war.",
+    "reason": "Gaza and its regional military consequences are central to the article's argument, even though the piece frames the issue primarily through Iran's confrontation with the West and the disruption of global shipping.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": true
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "974d277224d882ab9544b609063a2e86cabb3b08afd146f9529e3e6dc4f53bed",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "703d2b9fe097b7a121432757b0bb64c8f945a69e668041a0dae2c56cbe9f4a80",
+    "raw_response_text_sha256": "8b8f1bb6f7e5d22cf28c4851822676f8510e0a93ab5b2f8c86c4d209e671b158"
+  },
+  "api_metadata": {
+    "id": "resp_078eff422e7df85d006aaa03239ba887d2a66af3687e9a52e0",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789526819.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1890,
+      "input_tokens_details": {
+        "cache_write_tokens": 1887,
+        "cached_tokens": 0
+      },
+      "output_tokens": 225,
+      "output_tokens_details": {
+        "reasoning_tokens": 61
+      },
+      "total_tokens": 2115
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"CORE\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"substantial\",\n  \"main_topic\": \"Iranian proxy activity, regional escalation of the Gaza conflict, and attacks on Red Sea shipping\",\n  \"conflict_relevance\": \"The article directly discusses the Gaza conflict, Iran's relationship with Hamas, Hezbollah and Houthi attacks, Israel's security, and the risk of a wider regional war.\",\n  \"reason\": \"Gaza and its regional military consequences are central to the article's argument, even though the piece frames the issue primarily through Iran's confrontation with the West and the disruption of global shipping.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": true\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:47:03Z",
+  "duration_seconds": 3.599,
+  "error": null
+}

@@ -1,0 +1,65 @@
+{
+  "article_id": "125200416",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_05/au/125200416.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_05/au/125200416.json"
+  },
+  "manifest_row": {
+    "article_id": "125200416",
+    "group": "global_north_2025_05",
+    "country_code": "au",
+    "filepath": "corpus/02_now_organised/global_north_2025_05/au/125200416.txt"
+  },
+  "screening": {
+    "category": "CORE",
+    "confidence": 0.98,
+    "gaza_role": "substantial",
+    "main_topic": "Australian and international morning news bulletin",
+    "conflict_relevance": "Contains a substantial segment on the Gaza aid distribution system, Israeli military action, civilian casualties, humanitarian principles, and allegations that food is being used to control Palestinians.",
+    "reason": "Although the bulletin covers several unrelated domestic, international, and sports stories, its Gaza report is a meaningful and detailed item directly addressing humanitarian conditions, Israeli actions, UNRWA criticism, and aid provision in Gaza.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": true
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "c380cb6dd1729c0711976fa3312b5af052c8e4de939db75d9bd35bd059c1043f",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "179481f80f7077fbc5290c0d2b1fcb06ae96a4789532d30a794459c23726cee6",
+    "raw_response_text_sha256": "a8602efec70452b3126056853b91d0586e9bdbc9d8743c67d44f87eaebe8375e"
+  },
+  "api_metadata": {
+    "id": "resp_07a7713d834dfc49006aaa2b1ae90c87d18befeb58413212b9",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789537050.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1862,
+      "input_tokens_details": {
+        "cache_write_tokens": 1859,
+        "cached_tokens": 0
+      },
+      "output_tokens": 245,
+      "output_tokens_details": {
+        "reasoning_tokens": 90
+      },
+      "total_tokens": 2107
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"CORE\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"substantial\",\n  \"main_topic\": \"Australian and international morning news bulletin\",\n  \"conflict_relevance\": \"Contains a substantial segment on the Gaza aid distribution system, Israeli military action, civilian casualties, humanitarian principles, and allegations that food is being used to control Palestinians.\",\n  \"reason\": \"Although the bulletin covers several unrelated domestic, international, and sports stories, its Gaza report is a meaningful and detailed item directly addressing humanitarian conditions, Israeli actions, UNRWA criticism, and aid provision in Gaza.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": true\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T05:37:33Z",
+  "duration_seconds": 2.721,
+  "error": null
+}

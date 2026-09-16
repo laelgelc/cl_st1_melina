@@ -1,0 +1,65 @@
+{
+  "article_id": "102917019",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_south_2023_10/in/102917019.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_south_2023_10/in/102917019.json"
+  },
+  "manifest_row": {
+    "article_id": "102917019",
+    "group": "global_south_2023_10",
+    "country_code": "in",
+    "filepath": "corpus/02_now_organised/global_south_2023_10/in/102917019.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "background",
+    "main_topic": "Indian stock-market decline and factors affecting investor sentiment",
+    "conflict_relevance": "The article discusses the Israel-Gaza conflict as a geopolitical factor influencing global markets, oil prices, and investor sentiment, including intensified Israeli bombing and calls for a humanitarian pause or ceasefire.",
+    "reason": "The main subject is financial-market performance, but the article contains a meaningful paragraph linking the Gaza conflict to geopolitical concerns and market movements. This makes it relevant as peripheral discourse rather than core conflict coverage.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "40c8b1921816de94f892aa7a9bbe069685f73cadf5b9748f6c770804fdd8afc7",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "8b7ee22d270356a325f6c1f52e1a0b852759eff32eb0ec2579fc60746cfab967",
+    "raw_response_text_sha256": "9208a40d4180cfc6aec6f275de7b93d879701aed17d0e3cc67d041cecffae429"
+  },
+  "api_metadata": {
+    "id": "resp_0e1d755825baefcd006aaa331429bc87d197ac055a2389788c",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789539092.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1697,
+      "input_tokens_details": {
+        "cache_write_tokens": 1694,
+        "cached_tokens": 0
+      },
+      "output_tokens": 212,
+      "output_tokens_details": {
+        "reasoning_tokens": 51
+      },
+      "total_tokens": 1909
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Indian stock-market decline and factors affecting investor sentiment\",\n  \"conflict_relevance\": \"The article discusses the Israel-Gaza conflict as a geopolitical factor influencing global markets, oil prices, and investor sentiment, including intensified Israeli bombing and calls for a humanitarian pause or ceasefire.\",\n  \"reason\": \"The main subject is financial-market performance, but the article contains a meaningful paragraph linking the Gaza conflict to geopolitical concerns and market movements. This makes it relevant as peripheral discourse rather than core conflict coverage.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T06:11:35Z",
+  "duration_seconds": 3.431,
+  "error": null
+}

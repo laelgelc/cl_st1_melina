@@ -1,0 +1,65 @@
+{
+  "article_id": "120888086",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_02/gb/120888086.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_02/gb/120888086.json"
+  },
+  "manifest_row": {
+    "article_id": "120888086",
+    "group": "global_north_2025_02",
+    "country_code": "gb",
+    "filepath": "corpus/02_now_organised/global_north_2025_02/gb/120888086.txt"
+  },
+  "screening": {
+    "category": "CORE",
+    "confidence": 0.96,
+    "gaza_role": "central",
+    "main_topic": "The Israel-Hamas war and proposed US involvement in Gaza",
+    "conflict_relevance": "The text prominently discusses Gaza, Hamas, Israeli military operations, ceasefires, hostages, the 7 October attack, tunnels, and Trump's proposal for US control of the Gaza Strip.",
+    "reason": "Despite including numerous unrelated archived snippets on Ukraine, COVID-19, Lebanon, and regional diplomacy, the leading and several substantial entries are directly focused on Gaza and the Israel-Hamas conflict.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": true
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "797d21a8a7d13ccadc0215c32f891e18230e0ab076cc43dae7aeaecc4c2cc874",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "b3c64c03d3b3d3749619af6d6bd012852d5a4944c1a8accaac562ecaf9bd2fca",
+    "raw_response_text_sha256": "d4e07d9d9bf869670335c0a0ebeeed095b526e000edbb132f1b41df67502be29"
+  },
+  "api_metadata": {
+    "id": "resp_009f513823693e53006aaa2285270887d2b383a4cafb42f92e",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789534853.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2102,
+      "input_tokens_details": {
+        "cache_write_tokens": 2099,
+        "cached_tokens": 0
+      },
+      "output_tokens": 433,
+      "output_tokens_details": {
+        "reasoning_tokens": 274
+      },
+      "total_tokens": 2535
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"CORE\",\n  \"confidence\": 0.96,\n  \"gaza_role\": \"central\",\n  \"main_topic\": \"The Israel-Hamas war and proposed US involvement in Gaza\",\n  \"conflict_relevance\": \"The text prominently discusses Gaza, Hamas, Israeli military operations, ceasefires, hostages, the 7 October attack, tunnels, and Trump's proposal for US control of the Gaza Strip.\",\n  \"reason\": \"Despite including numerous unrelated archived snippets on Ukraine, COVID-19, Lebanon, and regional diplomacy, the leading and several substantial entries are directly focused on Gaza and the Israel-Hamas conflict.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": true\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T05:00:59Z",
+  "duration_seconds": 6.605,
+  "error": null
+}

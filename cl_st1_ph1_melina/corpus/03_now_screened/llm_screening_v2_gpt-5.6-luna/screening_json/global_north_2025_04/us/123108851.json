@@ -1,0 +1,65 @@
+{
+  "article_id": "123108851",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_04/us/123108851.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_04/us/123108851.json"
+  },
+  "manifest_row": {
+    "article_id": "123108851",
+    "group": "global_north_2025_04",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2025_04/us/123108851.txt"
+  },
+  "screening": {
+    "category": "CORE",
+    "confidence": 1.0,
+    "gaza_role": "central",
+    "main_topic": "Israeli military operations in Gaza, including the Rafah offensive, attacks on Hamas infrastructure, and hostage-related statements",
+    "conflict_relevance": "The article directly reports on Israel's renewed invasion of Gaza, military deployments, fighting with Hamas, rocket launchers, arrests, destruction of infrastructure, and the status of Israeli hostages.",
+    "reason": "Gaza and the Israel-Hamas war are the central subject of the article, with detailed coverage of Israeli military actions and official statements concerning hostages and ongoing hostilities.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": true
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "b12e50e921ff54ee276daae0c6cb319af94756091c4064b9f6f3c64c680f179f",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "2cb320e69b88e4496e5d91961ab59370f50019bd66ca01b4d01a342dcd5fa262",
+    "raw_response_text_sha256": "81ce50eaee5c48c24f43dd295f1fdb87a5356530bcf95d20cc3b334ff74274b1"
+  },
+  "api_metadata": {
+    "id": "resp_00fb3dfab25dc2a3006aaa29d6b68887d1a10d98690ab244a5",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789536726.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 929,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 165,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 1094
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"CORE\",\n  \"confidence\": 1.0,\n  \"gaza_role\": \"central\",\n  \"main_topic\": \"Israeli military operations in Gaza, including the Rafah offensive, attacks on Hamas infrastructure, and hostage-related statements\",\n  \"conflict_relevance\": \"The article directly reports on Israel's renewed invasion of Gaza, military deployments, fighting with Hamas, rocket launchers, arrests, destruction of infrastructure, and the status of Israeli hostages.\",\n  \"reason\": \"Gaza and the Israel-Hamas war are the central subject of the article, with detailed coverage of Israeli military actions and official statements concerning hostages and ongoing hostilities.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": true\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T05:32:09Z",
+  "duration_seconds": 2.424,
+  "error": null
+}

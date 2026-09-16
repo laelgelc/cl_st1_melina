@@ -1,0 +1,65 @@
+{
+  "article_id": "104549922",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_south_2023_12/ph/104549922.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_south_2023_12/ph/104549922.json"
+  },
+  "manifest_row": {
+    "article_id": "104549922",
+    "group": "global_south_2023_12",
+    "country_code": "ph",
+    "filepath": "corpus/02_now_organised/global_south_2023_12/ph/104549922.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.97,
+    "gaza_role": "background",
+    "main_topic": "Fuel price increases and the economic effects of Red Sea shipping disruptions",
+    "conflict_relevance": "The article links Houthi attacks on Red Sea shipping to solidarity with Palestinians in Gaza and notes potential inflationary effects, while a separate closing snippet briefly references fighting and humanitarian conditions in Gaza.",
+    "reason": "The main article concerns fuel prices and global shipping, but it contains meaningful contextual discussion connecting the Red Sea attacks to Gaza. It is therefore relevant to broader conflict-related discourse but is not core coverage of the Gaza conflict.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "0d8bb7de968c61ff68c50cac27dd6101efc88f02cd0190e5d30ffb76281c471d",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "a0b4f0febc2c54254a929bf1c2f9c5fe5bdfad9b665bcd386b38a4c9a9b4d4a2",
+    "raw_response_text_sha256": "c4f9d3d6ff0779dd271c41f1522757126d9413268cb971408890226bbfa3996c"
+  },
+  "api_metadata": {
+    "id": "resp_0a2294818e91beda006aaa374a948887d1b61c13d0112dd631",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789540170.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 912,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 235,
+      "output_tokens_details": {
+        "reasoning_tokens": 66
+      },
+      "total_tokens": 1147
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.97,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Fuel price increases and the economic effects of Red Sea shipping disruptions\",\n  \"conflict_relevance\": \"The article links Houthi attacks on Red Sea shipping to solidarity with Palestinians in Gaza and notes potential inflationary effects, while a separate closing snippet briefly references fighting and humanitarian conditions in Gaza.\",\n  \"reason\": \"The main article concerns fuel prices and global shipping, but it contains meaningful contextual discussion connecting the Red Sea attacks to Gaza. It is therefore relevant to broader conflict-related discourse but is not core coverage of the Gaza conflict.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T06:29:34Z",
+  "duration_seconds": 3.824,
+  "error": null
+}

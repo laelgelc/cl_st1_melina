@@ -1,0 +1,65 @@
+{
+  "article_id": "103531693",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_11/us/103531693.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_11/us/103531693.json"
+  },
+  "manifest_row": {
+    "article_id": "103531693",
+    "group": "global_north_2023_11",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2023_11/us/103531693.txt"
+  },
+  "screening": {
+    "category": "CORE",
+    "confidence": 0.99,
+    "gaza_role": "central",
+    "main_topic": "Violent protest at the Democratic National Committee headquarters calling for a cease-fire in Gaza",
+    "conflict_relevance": "The article directly concerns a Gaza cease-fire protest, anti-Zionist activism, police responses to demonstrators, and protest discourse following the Hamas attack on Israel.",
+    "reason": "Gaza and the Israel-Hamas war are central to the protest, its demands, the organizers' identity, and the surrounding political and policing controversy.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": true
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "f36caf80dc567593eaf9294c2589d5d30574411564abfadc05c5eec894f7488a",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "0b0c7c367e6b5cd4c915aa505209039413db6f01beb84c3af0c4fd32c3dbd461",
+    "raw_response_text_sha256": "2204f886749fe42de3c31fb4c48f2e47f19f0356c2898782c363b6317292bab9"
+  },
+  "api_metadata": {
+    "id": "resp_0ae50a67524cc59e006aa9fe96d4c487d2820bcc1939975e72",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789525654.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1120,
+      "input_tokens_details": {
+        "cache_write_tokens": 1117,
+        "cached_tokens": 0
+      },
+      "output_tokens": 150,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 1270
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"CORE\",\n  \"confidence\": 0.99,\n  \"gaza_role\": \"central\",\n  \"main_topic\": \"Violent protest at the Democratic National Committee headquarters calling for a cease-fire in Gaza\",\n  \"conflict_relevance\": \"The article directly concerns a Gaza cease-fire protest, anti-Zionist activism, police responses to demonstrators, and protest discourse following the Hamas attack on Israel.\",\n  \"reason\": \"Gaza and the Israel-Hamas war are central to the protest, its demands, the organizers' identity, and the surrounding political and policing controversy.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": true\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:27:37Z",
+  "duration_seconds": 2.435,
+  "error": null
+}

@@ -1,0 +1,65 @@
+{
+  "article_id": "200209604",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_02/us/200209604.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_02/us/200209604.json"
+  },
+  "manifest_row": {
+    "article_id": "200209604",
+    "group": "global_north_2024_02",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2024_02/us/200209604.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.97,
+    "gaza_role": "background",
+    "main_topic": "U.S. Senate debate over a foreign-aid package for Ukraine, Israel, Taiwan, and humanitarian assistance to Gaza",
+    "conflict_relevance": "The article briefly covers funding for Israel's war with Hamas and humanitarian assistance for Gaza, but its primary focus is the political debate over aid to Ukraine and U.S. foreign-policy leadership.",
+    "reason": "Gaza and Israel are meaningful components of the aid package, but they receive little substantive discussion compared with Ukraine. The text also contains an unrelated article about King Charles's cancer diagnosis.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "1f72edbf7638c6ccd8157ed1bfc7e091235ed9772d6ef01deb706d4193cfd0a8",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "240f524bd20efe4c4ba8c2849628e54cd421cba514274817dbc2da2fbe7d04d6",
+    "raw_response_text_sha256": "7a37b8327da8c6a2c7a4a8b74b2a204ce5c791a6ef35c894826e7fe4296cb4d3"
+  },
+  "api_metadata": {
+    "id": "resp_090ec17edb073275006aaa07be0af887d2aa4def0d4a08549b",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789527998.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2270,
+      "input_tokens_details": {
+        "cache_write_tokens": 2267,
+        "cached_tokens": 0
+      },
+      "output_tokens": 344,
+      "output_tokens_details": {
+        "reasoning_tokens": 172
+      },
+      "total_tokens": 2614
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.97,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"U.S. Senate debate over a foreign-aid package for Ukraine, Israel, Taiwan, and humanitarian assistance to Gaza\",\n  \"conflict_relevance\": \"The article briefly covers funding for Israel's war with Hamas and humanitarian assistance for Gaza, but its primary focus is the political debate over aid to Ukraine and U.S. foreign-policy leadership.\",\n  \"reason\": \"Gaza and Israel are meaningful components of the aid package, but they receive little substantive discussion compared with Ukraine. The text also contains an unrelated article about King Charles's cancer diagnosis.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:06:41Z",
+  "duration_seconds": 3.79,
+  "error": null
+}

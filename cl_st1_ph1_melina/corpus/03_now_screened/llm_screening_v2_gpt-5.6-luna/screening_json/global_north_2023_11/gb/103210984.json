@@ -1,0 +1,65 @@
+{
+  "article_id": "103210984",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_11/gb/103210984.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_11/gb/103210984.json"
+  },
+  "manifest_row": {
+    "article_id": "103210984",
+    "group": "global_north_2023_11",
+    "country_code": "gb",
+    "filepath": "corpus/02_now_organised/global_north_2023_11/gb/103210984.txt"
+  },
+  "screening": {
+    "category": "CORE",
+    "confidence": 0.96,
+    "gaza_role": "central",
+    "main_topic": "Israel-Gaza war and international calls for a ceasefire",
+    "conflict_relevance": "Directly reports Israel's strikes on Gaza, Hamas, ceasefire debate, and related violence in the West Bank and on the Lebanese border.",
+    "reason": "The article's primary news item concerns ongoing military action in Gaza and the diplomatic debate over a ceasefire. It also includes unrelated Ukraine-war reporting and Reuters boilerplate.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": true
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "00cfd562bceaf36c7c3e3d3c60156b587bd33295f67bf0f6fc78e268848c9135",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "72fed4e0410cb3ca602e60b06f50defa5e827353883d0e9112ceeb26e724668c",
+    "raw_response_text_sha256": "194a9125630bd6834e8a8b8cb1ac418ae71ff2f26f90a0c8c08a7913082b004d"
+  },
+  "api_metadata": {
+    "id": "resp_068f0ec1e13dd3e4006aa9fc4c89b487d29d266188bac6edba",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789525068.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 752,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 256,
+      "output_tokens_details": {
+        "reasoning_tokens": 133
+      },
+      "total_tokens": 1008
+    }
+  },
+  "raw_response_text": "{\"category\":\"CORE\",\"confidence\":0.96,\"gaza_role\":\"central\",\"main_topic\":\"Israel-Gaza war and international calls for a ceasefire\",\"conflict_relevance\":\"Directly reports Israel's strikes on Gaza, Hamas, ceasefire debate, and related violence in the West Bank and on the Lebanese border.\",\"reason\":\"The article's primary news item concerns ongoing military action in Gaza and the diplomatic debate over a ceasefire. It also includes unrelated Ukraine-war reporting and Reuters boilerplate.\",\"multi_article_or_snippet_issue\":true,\"recommended_for_main_corpus\":true}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:17:52Z",
+  "duration_seconds": 4.452,
+  "error": null
+}

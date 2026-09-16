@@ -1,0 +1,65 @@
+{
+  "article_id": "108560038",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_05/ca/108560038.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_05/ca/108560038.json"
+  },
+  "manifest_row": {
+    "article_id": "108560038",
+    "group": "global_north_2024_05",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2024_05/ca/108560038.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.96,
+    "gaza_role": "background",
+    "main_topic": "Vandalism and threatening graffiti targeting a Canadian MP's constituency office",
+    "conflict_relevance": "The incident invokes Rafah and Gaza as the stated motivation for a threat and raises issues of protest, hate speech, and political intimidation, but the article is mainly about the vandalism and its effects on the MP.",
+    "reason": "Gaza is meaningfully present in the threatening message and the MP's discussion of acceptable protest, yet the conflict is not the article's central subject. The text also includes unrelated appended news snippets, including a brief Gaza item.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "50aa49dab2dc91b2fd9b374905c31210c665e41b5180e48cba4f0d95ccbc9f4c",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "54a6aaf7d7111e19f71a0f2afa12ad77622bee30e7b2bef55a4d13f8fb2fa1bc",
+    "raw_response_text_sha256": "75dd246b1d8b0605ce99c4f180b55a325152787e05e556633fff65da9791fe53"
+  },
+  "api_metadata": {
+    "id": "resp_076745cdf0dc11ab006aaa0db8ad8887d2bcd6d4f051bf6bda",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789529528.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1946,
+      "input_tokens_details": {
+        "cache_write_tokens": 1943,
+        "cached_tokens": 0
+      },
+      "output_tokens": 300,
+      "output_tokens_details": {
+        "reasoning_tokens": 123
+      },
+      "total_tokens": 2246
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.96,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Vandalism and threatening graffiti targeting a Canadian MP's constituency office\",\n  \"conflict_relevance\": \"The incident invokes Rafah and Gaza as the stated motivation for a threat and raises issues of protest, hate speech, and political intimidation, but the article is mainly about the vandalism and its effects on the MP.\",\n  \"reason\": \"Gaza is meaningfully present in the threatening message and the MP's discussion of acceptable protest, yet the conflict is not the article's central subject. The text also includes unrelated appended news snippets, including a brief Gaza item.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:32:12Z",
+  "duration_seconds": 3.952,
+  "error": null
+}

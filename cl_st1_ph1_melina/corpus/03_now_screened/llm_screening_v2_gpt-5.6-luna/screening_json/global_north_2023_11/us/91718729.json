@@ -1,0 +1,65 @@
+{
+  "article_id": "91718729",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_11/us/91718729.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_11/us/91718729.json"
+  },
+  "manifest_row": {
+    "article_id": "91718729",
+    "group": "global_north_2023_11",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2023_11/us/91718729.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.97,
+    "gaza_role": "passing",
+    "main_topic": "Child-abuse criminal case and unrelated syndicated news snippets",
+    "conflict_relevance": "The text briefly mentions the Gaza war and rising threats to Jewish and Muslim students and faculty in U.S. educational settings, but the main article is unrelated.",
+    "reason": "The Gaza-related sentence provides meaningful but very limited discourse about the conflict's effects on U.S. campuses. It is embedded among multiple unrelated article fragments and is not the focus of the main crime report.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "47ba50dc98cd4267557fec8873a66a83740782d3e6399486856c7ea96322820d",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "4a5d62d4f38b3a657cbe34a306b651011edeccad5b36c5b468906fa382ceb0b0",
+    "raw_response_text_sha256": "7a8642699b3b52e7bebbb486b85a703a65facc8d5f9e36831814cc055381ae42"
+  },
+  "api_metadata": {
+    "id": "resp_0ab7b52c6158df75006aa9ffbf9bfc87d2a89eff0d87c9656b",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789525951.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1484,
+      "input_tokens_details": {
+        "cache_write_tokens": 1481,
+        "cached_tokens": 0
+      },
+      "output_tokens": 271,
+      "output_tokens_details": {
+        "reasoning_tokens": 114
+      },
+      "total_tokens": 1755
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.97,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Child-abuse criminal case and unrelated syndicated news snippets\",\n  \"conflict_relevance\": \"The text briefly mentions the Gaza war and rising threats to Jewish and Muslim students and faculty in U.S. educational settings, but the main article is unrelated.\",\n  \"reason\": \"The Gaza-related sentence provides meaningful but very limited discourse about the conflict's effects on U.S. campuses. It is embedded among multiple unrelated article fragments and is not the focus of the main crime report.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:32:36Z",
+  "duration_seconds": 4.912,
+  "error": null
+}

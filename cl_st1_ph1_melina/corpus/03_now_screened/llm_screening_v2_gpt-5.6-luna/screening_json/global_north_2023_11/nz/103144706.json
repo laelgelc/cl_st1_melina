@@ -1,0 +1,65 @@
+{
+  "article_id": "103144706",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_11/nz/103144706.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_11/nz/103144706.json"
+  },
+  "manifest_row": {
+    "article_id": "103144706",
+    "group": "global_north_2023_11",
+    "country_code": "nz",
+    "filepath": "corpus/02_now_organised/global_north_2023_11/nz/103144706.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "background",
+    "main_topic": "Pacific mental health workforce and culturally appropriate mental health training in New Zealand",
+    "conflict_relevance": "The main article is unrelated to Gaza, but it contains several substantive embedded snippets about Israeli hostages, forced displacement in Gaza, humanitarian consequences, communications infrastructure, and international humanitarian law.",
+    "reason": "The primary article concerns a Pacific mental health graduation and workforce development. Gaza-related material appears as inserted or aggregated news content rather than as part of the main story, but it is sufficiently substantive to have peripheral research value.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "1af550d279a78508b992254945f45ef6b17d74047d8caa71f09d2f161fe9a90c",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "59822b9be4b49bed89cde579b75eced6f1e62f9096857a499956a18a59b2a92a",
+    "raw_response_text_sha256": "9950804c6efad21036d275862b034f8c4ab367b5cd8df8424cf5f62420bb651c"
+  },
+  "api_metadata": {
+    "id": "resp_0ccfaa97cb17de1b006aa9fda485d087d29d904a9d2bf5f234",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789525412.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1728,
+      "input_tokens_details": {
+        "cache_write_tokens": 1725,
+        "cached_tokens": 0
+      },
+      "output_tokens": 291,
+      "output_tokens_details": {
+        "reasoning_tokens": 123
+      },
+      "total_tokens": 2019
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Pacific mental health workforce and culturally appropriate mental health training in New Zealand\",\n  \"conflict_relevance\": \"The main article is unrelated to Gaza, but it contains several substantive embedded snippets about Israeli hostages, forced displacement in Gaza, humanitarian consequences, communications infrastructure, and international humanitarian law.\",\n  \"reason\": \"The primary article concerns a Pacific mental health graduation and workforce development. Gaza-related material appears as inserted or aggregated news content rather than as part of the main story, but it is sufficiently substantive to have peripheral research value.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:23:36Z",
+  "duration_seconds": 4.347,
+  "error": null
+}

@@ -1,0 +1,65 @@
+{
+  "article_id": "111345478",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_07/gb/111345478.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_07/gb/111345478.json"
+  },
+  "manifest_row": {
+    "article_id": "111345478",
+    "group": "global_north_2024_07",
+    "country_code": "gb",
+    "filepath": "corpus/02_now_organised/global_north_2024_07/gb/111345478.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "substantial",
+    "main_topic": "Live coverage and results from the 2024 Paris Olympics",
+    "conflict_relevance": "The article includes a substantial embedded report about Palestinian Olympians, the Gaza war, Palestinian statelessness, and representation at the Olympics, but the overall article is a broad Olympics live blog.",
+    "reason": "The dominant topic is sports coverage across numerous Olympic events. However, the dedicated section titled \"Gaza war weighs heavily on the minds of Palestinian Olympians\" contains meaningful discourse directly related to Gaza and Palestinian political status, making the item useful for peripheral discourse analysis but not as core conflict coverage.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "9c447477a87861c79b013a7c03589f18c89e1ae214e0e19f0773be6ad19f4fac",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "5a5d4346ac40d5206aa94c791bcff5bf9a78fdbcc80b1465dd776a04e72c62f0",
+    "raw_response_text_sha256": "bf2407cfaf33a6b428add1178361141843ef2016df2f4fe750de28b91b999472"
+  },
+  "api_metadata": {
+    "id": "resp_0ac13f9c2ee0787f006aaa125b766887d2b7ed25504d322041",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789530715.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 20324,
+      "input_tokens_details": {
+        "cache_write_tokens": 20321,
+        "cached_tokens": 0
+      },
+      "output_tokens": 323,
+      "output_tokens_details": {
+        "reasoning_tokens": 139
+      },
+      "total_tokens": 20647
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"substantial\",\n  \"main_topic\": \"Live coverage and results from the 2024 Paris Olympics\",\n  \"conflict_relevance\": \"The article includes a substantial embedded report about Palestinian Olympians, the Gaza war, Palestinian statelessness, and representation at the Olympics, but the overall article is a broad Olympics live blog.\",\n  \"reason\": \"The dominant topic is sports coverage across numerous Olympic events. However, the dedicated section titled \\\"Gaza war weighs heavily on the minds of Palestinian Olympians\\\" contains meaningful discourse directly related to Gaza and Palestinian political status, making the item useful for peripheral discourse analysis but not as core conflict coverage.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:52:00Z",
+  "duration_seconds": 4.815,
+  "error": null
+}

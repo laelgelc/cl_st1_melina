@@ -1,0 +1,65 @@
+{
+  "article_id": "108326903",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_05/us/108326903.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_05/us/108326903.json"
+  },
+  "manifest_row": {
+    "article_id": "108326903",
+    "group": "global_north_2024_05",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2024_05/us/108326903.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.95,
+    "gaza_role": "boilerplate_or_unrelated",
+    "main_topic": "Commemoration of the end of Sri Lanka's civil war and Tamil victims",
+    "conflict_relevance": "The main article concerns Sri Lanka's civil war, wartime abuses, and Tamil remembrance, not Gaza, Palestine, or the Israel-Palestine conflict.",
+    "reason": "Gaza appears only in an unrelated embedded latest-stories item about Israeli hostages whose bodies were found in Gaza. The headline-associated article has no meaningful connection to the research topic.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "50c3c53493a1129e6e39ac43db84be310285aec41657e98885dfb0dc5fdf6a3f",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "95ce8858b2fb0f769d8a88d9d07249138642069f0bb1734afc38689946065632",
+    "raw_response_text_sha256": "1d1c3e5af363ee731fcd176a2ae7f20ebb3d28a9a6341a34604c264f47c00652"
+  },
+  "api_metadata": {
+    "id": "resp_0263c4929adbf1fb006aaa0ef586a087d2bfcade0f2fd03d7f",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789529845.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2625,
+      "input_tokens_details": {
+        "cache_write_tokens": 2622,
+        "cached_tokens": 0
+      },
+      "output_tokens": 495,
+      "output_tokens_details": {
+        "reasoning_tokens": 332
+      },
+      "total_tokens": 3120
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.95,\n  \"gaza_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Commemoration of the end of Sri Lanka's civil war and Tamil victims\",\n  \"conflict_relevance\": \"The main article concerns Sri Lanka's civil war, wartime abuses, and Tamil remembrance, not Gaza, Palestine, or the Israel-Palestine conflict.\",\n  \"reason\": \"Gaza appears only in an unrelated embedded latest-stories item about Israeli hostages whose bodies were found in Gaza. The headline-associated article has no meaningful connection to the research topic.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:37:30Z",
+  "duration_seconds": 5.243,
+  "error": null
+}

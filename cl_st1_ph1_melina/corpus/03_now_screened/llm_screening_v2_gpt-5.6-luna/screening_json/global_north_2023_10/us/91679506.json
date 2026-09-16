@@ -1,0 +1,65 @@
+{
+  "article_id": "91679506",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_10/us/91679506.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_10/us/91679506.json"
+  },
+  "manifest_row": {
+    "article_id": "91679506",
+    "group": "global_north_2023_10",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2023_10/us/91679506.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.88,
+    "gaza_role": "passing",
+    "main_topic": "Technology industry layoffs and SpaceX's satellite launch plans",
+    "conflict_relevance": "The article contains a meaningful but brief report about Israeli bombardment of Gaza, humanitarian aid, a possible ground invasion, and hostage releases.",
+    "reason": "The main content concerns technology and space-launch developments, while the Gaza-related material appears as an unrelated embedded news item. It is relevant to conflict discourse but not to the main topic of the article.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "4cc0e54df7ac3f5d86f78afe6da0fd8fbe7b53058d1d4dc7dc6f4d1751cb23b0",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "d71c828d57b2bdf903a58e4fdc0c6967f61e71fd9007595974e93b73294438b1",
+    "raw_response_text_sha256": "5b3fb825ffe713f19b582208de0024e2f802cb9c0dd61b185b5657b428e8db65"
+  },
+  "api_metadata": {
+    "id": "resp_002810d8156a3e57006aa9faf1f92c87d2813b6334a10216f4",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789524721.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 760,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 341,
+      "output_tokens_details": {
+        "reasoning_tokens": 189
+      },
+      "total_tokens": 1101
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.88,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Technology industry layoffs and SpaceX's satellite launch plans\",\n  \"conflict_relevance\": \"The article contains a meaningful but brief report about Israeli bombardment of Gaza, humanitarian aid, a possible ground invasion, and hostage releases.\",\n  \"reason\": \"The main content concerns technology and space-launch developments, while the Gaza-related material appears as an unrelated embedded news item. It is relevant to conflict discourse but not to the main topic of the article.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:12:05Z",
+  "duration_seconds": 3.913,
+  "error": null
+}

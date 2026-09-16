@@ -1,0 +1,65 @@
+{
+  "article_id": "110086486",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_07/us/110086486.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_07/us/110086486.json"
+  },
+  "manifest_row": {
+    "article_id": "110086486",
+    "group": "global_north_2024_07",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2024_07/us/110086486.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "background",
+    "main_topic": "French legislative elections and President Emmanuel Macron's political future",
+    "conflict_relevance": "The main article is about French domestic politics, but the text includes an embedded passage discussing the October 7 attacks, Gaza, Israel's retaliatory campaign, and public reactions to them.",
+    "reason": "The headline article is not about Gaza or the Israel-Palestine conflict. However, the embedded discussion contains meaningful conflict-related discourse, making the item potentially useful for broader analysis but not suitable for the main conflict corpus.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "c2013c82208f14b57c7bc3adf78d9ac8aa1b66b8c46bf75fa44a6cd6a13456f5",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "8d14411abe71533842e462a84f5f203d4074c53c2584d631077e5f4fdf24d079",
+    "raw_response_text_sha256": "70f328e62664be7b97955a6e1e14d1326367ccf1b551d57d02b9498ab1e34bca"
+  },
+  "api_metadata": {
+    "id": "resp_0ff72608dc186dd1006aaa12cc827887d2af86ef228f94c832",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789530828.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 3373,
+      "input_tokens_details": {
+        "cache_write_tokens": 3370,
+        "cached_tokens": 0
+      },
+      "output_tokens": 293,
+      "output_tokens_details": {
+        "reasoning_tokens": 126
+      },
+      "total_tokens": 3666
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"French legislative elections and President Emmanuel Macron's political future\",\n  \"conflict_relevance\": \"The main article is about French domestic politics, but the text includes an embedded passage discussing the October 7 attacks, Gaza, Israel's retaliatory campaign, and public reactions to them.\",\n  \"reason\": \"The headline article is not about Gaza or the Israel-Palestine conflict. However, the embedded discussion contains meaningful conflict-related discourse, making the item potentially useful for broader analysis but not suitable for the main conflict corpus.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:53:52Z",
+  "duration_seconds": 4.578,
+  "error": null
+}

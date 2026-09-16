@@ -1,0 +1,65 @@
+{
+  "article_id": "104180285",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_12/nz/104180285.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_12/nz/104180285.json"
+  },
+  "manifest_row": {
+    "article_id": "104180285",
+    "group": "global_north_2023_12",
+    "country_code": "nz",
+    "filepath": "corpus/02_now_organised/global_north_2023_12/nz/104180285.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "background",
+    "main_topic": "Alcohol harm, alcoholism stigma, and public attitudes in New Zealand",
+    "conflict_relevance": "The main article is unrelated to Gaza, but an embedded roundup item contains substantive commentary on Gaza's civilian population, blockade, alleged apartheid, and genocide.",
+    "reason": "The headline article focuses on alcohol-related harm and stigma. However, the page includes a meaningful Gaza-related snippet discussing humanitarian conditions and political characterizations of the conflict, making it peripheral rather than excludable.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "ab4d28303541ee1436b84d85fb837097c6c46ad2f439a29c362b069a2dc4b730",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "8af7c7a894a41d39faf8eb5a08d0ea6de48dc34f677ab2692b0dd8ed09f988a6",
+    "raw_response_text_sha256": "16352d3bf81448490722953215e15400d78883e658860c4fec369b39c1c406b1"
+  },
+  "api_metadata": {
+    "id": "resp_0432c14e6d48615c006aaa01837bdc87d283ddd4c93a4a4544",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789526403.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1567,
+      "input_tokens_details": {
+        "cache_write_tokens": 1564,
+        "cached_tokens": 0
+      },
+      "output_tokens": 243,
+      "output_tokens_details": {
+        "reasoning_tokens": 84
+      },
+      "total_tokens": 1810
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Alcohol harm, alcoholism stigma, and public attitudes in New Zealand\",\n  \"conflict_relevance\": \"The main article is unrelated to Gaza, but an embedded roundup item contains substantive commentary on Gaza's civilian population, blockade, alleged apartheid, and genocide.\",\n  \"reason\": \"The headline article focuses on alcohol-related harm and stigma. However, the page includes a meaningful Gaza-related snippet discussing humanitarian conditions and political characterizations of the conflict, making it peripheral rather than excludable.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:40:07Z",
+  "duration_seconds": 3.997,
+  "error": null
+}

@@ -1,0 +1,65 @@
+{
+  "article_id": "104201340",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_south_2023_12/in/104201340.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_south_2023_12/in/104201340.json"
+  },
+  "manifest_row": {
+    "article_id": "104201340",
+    "group": "global_south_2023_12",
+    "country_code": "in",
+    "filepath": "corpus/02_now_organised/global_south_2023_12/in/104201340.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.88,
+    "gaza_role": "passing",
+    "main_topic": "Pakistan's rejection of India's Supreme Court verdict on the abrogation of Article 370 and the Kashmir dispute",
+    "conflict_relevance": "The article is primarily about Kashmir and India-Pakistan relations, with only a brief analogy comparing potential Kashmiri reactions to those of people in Gaza.",
+    "reason": "Gaza appears only in a single passing comparison and is not discussed substantively; the article does not meaningfully analyze Gaza, Palestine, or the Israel-Palestine conflict.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "f8788f4b558ceb4101ca29f9021a6ce186426e5d5101833139c3c019253cbc82",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "beb6d3f925be7489e57322939c14ced93b694c7753f5a2b2803f8a8b56a7ccca",
+    "raw_response_text_sha256": "4ea4ba9b127bb04c3dcb2b2a0f726735591a292e3e6f8f173025129af3be1718"
+  },
+  "api_metadata": {
+    "id": "resp_01a37699d0edd05e006aaa36a068c087d1aaac4fd72f3d9c96",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789540000.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1560,
+      "input_tokens_details": {
+        "cache_write_tokens": 1557,
+        "cached_tokens": 0
+      },
+      "output_tokens": 319,
+      "output_tokens_details": {
+        "reasoning_tokens": 156
+      },
+      "total_tokens": 1879
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.88,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Pakistan's rejection of India's Supreme Court verdict on the abrogation of Article 370 and the Kashmir dispute\",\n  \"conflict_relevance\": \"The article is primarily about Kashmir and India-Pakistan relations, with only a brief analogy comparing potential Kashmiri reactions to those of people in Gaza.\",\n  \"reason\": \"Gaza appears only in a single passing comparison and is not discussed substantively; the article does not meaningfully analyze Gaza, Palestine, or the Israel-Palestine conflict.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T06:26:44Z",
+  "duration_seconds": 4.063,
+  "error": null
+}

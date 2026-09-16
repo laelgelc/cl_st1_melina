@@ -1,0 +1,65 @@
+{
+  "article_id": "120020928",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_01/us/120020928.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_01/us/120020928.json"
+  },
+  "manifest_row": {
+    "article_id": "120020928",
+    "group": "global_north_2025_01",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2025_01/us/120020928.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "passing",
+    "main_topic": "Pete Hegseth's Senate confirmation hearing for secretary of defense",
+    "conflict_relevance": "The article is primarily about Hegseth's qualifications, allegations, views on women in combat, and defense policy, but it includes a protest accusing him of being a Christian Zionist who supports the war in Gaza, as well as discussion of a Jerusalem Cross tattoo.",
+    "reason": "Gaza-related discourse appears in a meaningful but brief portion of the hearing coverage and connects the nominee to Christian Zionism and support for the war in Gaza. The conflict is not a central or substantial focus of the article.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "b1c207695d95a14d0554bb99b81333ad7c26fd205f3fab53e4bb0739d8a7dd60",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "3bdb7b855ce1b8727dcd12142a0809a418a0cc2003d5e0649dd7b9c96c5f1356",
+    "raw_response_text_sha256": "f17095d910591826272456fbcd01eeab436a3ec8c015aace4fa20c422ee16e7e"
+  },
+  "api_metadata": {
+    "id": "resp_0d22e3142a892d57006aaa2112e7e487d2ad154795dd20bc49",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789534482.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 6635,
+      "input_tokens_details": {
+        "cache_write_tokens": 6632,
+        "cached_tokens": 0
+      },
+      "output_tokens": 271,
+      "output_tokens_details": {
+        "reasoning_tokens": 84
+      },
+      "total_tokens": 6906
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Pete Hegseth's Senate confirmation hearing for secretary of defense\",\n  \"conflict_relevance\": \"The article is primarily about Hegseth's qualifications, allegations, views on women in combat, and defense policy, but it includes a protest accusing him of being a Christian Zionist who supports the war in Gaza, as well as discussion of a Jerusalem Cross tattoo.\",\n  \"reason\": \"Gaza-related discourse appears in a meaningful but brief portion of the hearing coverage and connects the nominee to Christian Zionism and support for the war in Gaza. The conflict is not a central or substantial focus of the article.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T04:54:46Z",
+  "duration_seconds": 3.886,
+  "error": null
+}

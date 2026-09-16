@@ -1,0 +1,65 @@
+{
+  "article_id": "120903908",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_02/us/120903908.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_02/us/120903908.json"
+  },
+  "manifest_row": {
+    "article_id": "120903908",
+    "group": "global_north_2025_02",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2025_02/us/120903908.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.97,
+    "gaza_role": "passing",
+    "main_topic": "Republican support for President Trump's agenda and expansion of presidential power",
+    "conflict_relevance": "The article briefly mentions opposition among senators to Americans going on the ground in Gaza, but the Israel-Palestine conflict is not otherwise discussed.",
+    "reason": "The main article concerns U.S. domestic politics and the Republican Party. Its single Gaza-related sentence constitutes meaningful but only passing conflict discourse, making it peripheral rather than core.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "a90b359c15ca21e162ae7742386b50864fff72eefae6ff5839dfc2b4c1082d22",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "c5a504ec1a41a5acf99a78b431ae716fadaa193531f721571e984b8ae88afc3b",
+    "raw_response_text_sha256": "5c5f16abde056962d6b28fea3c2f8dc9f88a1bd4da50c0059c07652b1d57f23f"
+  },
+  "api_metadata": {
+    "id": "resp_0381f9a978eb3e68006aaa2430ae7887d19d3e130a8bc88ea9",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789535280.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2766,
+      "input_tokens_details": {
+        "cache_write_tokens": 2763,
+        "cached_tokens": 0
+      },
+      "output_tokens": 305,
+      "output_tokens_details": {
+        "reasoning_tokens": 154
+      },
+      "total_tokens": 3071
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.97,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Republican support for President Trump's agenda and expansion of presidential power\",\n  \"conflict_relevance\": \"The article briefly mentions opposition among senators to Americans going on the ground in Gaza, but the Israel-Palestine conflict is not otherwise discussed.\",\n  \"reason\": \"The main article concerns U.S. domestic politics and the Republican Party. Its single Gaza-related sentence constitutes meaningful but only passing conflict discourse, making it peripheral rather than core.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T05:08:05Z",
+  "duration_seconds": 5.182,
+  "error": null
+}

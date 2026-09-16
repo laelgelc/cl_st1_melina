@@ -1,0 +1,65 @@
+{
+  "article_id": "123209235",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_04/gb/123209235.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_04/gb/123209235.json"
+  },
+  "manifest_row": {
+    "article_id": "123209235",
+    "group": "global_north_2025_04",
+    "country_code": "gb",
+    "filepath": "corpus/02_now_organised/global_north_2025_04/gb/123209235.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.88,
+    "gaza_role": "substantial",
+    "main_topic": "Mixed news roundup including a report on the killing of Gaza paramedics",
+    "conflict_relevance": "The Gaza segment meaningfully addresses the deaths of aid workers, competing Israeli military and Palestinian accounts, video evidence, and the conduct of military operations in Gaza.",
+    "reason": "Although the Gaza report contains substantive conflict-related discourse, it appears alongside several unrelated news items in a multi-story roundup rather than constituting the article's sole or overarching subject.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "9a1e6616074166f00e998c2e26547844720ea9b6fa0fd8d2a6f78b01e3098be2",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "4f78e41c434dfef250bc33eee270fd5509a81e69263140e824bbcf7fb9f3d6be",
+    "raw_response_text_sha256": "3a339b25ba8e1833a9fc18c82e462d41fe4f742d428e0588825454afd7d8dc84"
+  },
+  "api_metadata": {
+    "id": "resp_0ebca67ef52ef211006aaa28baa11487d1877c3b5e0e64b632",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789536442.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1589,
+      "input_tokens_details": {
+        "cache_write_tokens": 1586,
+        "cached_tokens": 0
+      },
+      "output_tokens": 445,
+      "output_tokens_details": {
+        "reasoning_tokens": 290
+      },
+      "total_tokens": 2034
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.88,\n  \"gaza_role\": \"substantial\",\n  \"main_topic\": \"Mixed news roundup including a report on the killing of Gaza paramedics\",\n  \"conflict_relevance\": \"The Gaza segment meaningfully addresses the deaths of aid workers, competing Israeli military and Palestinian accounts, video evidence, and the conduct of military operations in Gaza.\",\n  \"reason\": \"Although the Gaza report contains substantive conflict-related discourse, it appears alongside several unrelated news items in a multi-story roundup rather than constituting the article's sole or overarching subject.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T05:27:28Z",
+  "duration_seconds": 6.124,
+  "error": null
+}

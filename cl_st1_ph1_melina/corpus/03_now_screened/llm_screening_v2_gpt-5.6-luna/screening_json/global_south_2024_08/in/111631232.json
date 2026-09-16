@@ -1,0 +1,65 @@
+{
+  "article_id": "111631232",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_south_2024_08/in/111631232.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_south_2024_08/in/111631232.json"
+  },
+  "manifest_row": {
+    "article_id": "111631232",
+    "group": "global_south_2024_08",
+    "country_code": "in",
+    "filepath": "corpus/02_now_organised/global_south_2024_08/in/111631232.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.96,
+    "gaza_role": "background",
+    "main_topic": "CBSE Class 10 and 12 supplementary examination results in India",
+    "conflict_relevance": "A separate appended article provides substantial analysis of the Israel-Hamas war, the killing of Ismail Haniyeh, Netanyahu's US congressional address, hostages, escalation, Gaza's humanitarian crisis, and alleged war crimes.",
+    "reason": "The primary article is an unrelated education-results report, but the text also contains a substantial, apparently embedded article directly concerning Israel/Palestine and the Gaza war. Because the conflict material is not the main article, this is peripheral rather than core.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "78f8e1c2524cb0ad3147d8405947d907810bbefbe0994d31d12376383e6d5fa5",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "bfaf00059ccc125ae6aed329696164cef451ff8d296faa30256fdc0fe855a2f4",
+    "raw_response_text_sha256": "6cf22aa8227029c66da8f167bf747e9bd17fdf0bbad364b629c1e54df962eaca"
+  },
+  "api_metadata": {
+    "id": "resp_03a2b561bbeed84b006aaa3de1197887d1a55c6e6b5ab934bd",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789541857.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2212,
+      "input_tokens_details": {
+        "cache_write_tokens": 2209,
+        "cached_tokens": 0
+      },
+      "output_tokens": 500,
+      "output_tokens_details": {
+        "reasoning_tokens": 316
+      },
+      "total_tokens": 2712
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.96,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"CBSE Class 10 and 12 supplementary examination results in India\",\n  \"conflict_relevance\": \"A separate appended article provides substantial analysis of the Israel-Hamas war, the killing of Ismail Haniyeh, Netanyahu's US congressional address, hostages, escalation, Gaza's humanitarian crisis, and alleged war crimes.\",\n  \"reason\": \"The primary article is an unrelated education-results report, but the text also contains a substantial, apparently embedded article directly concerning Israel/Palestine and the Gaza war. Because the conflict material is not the main article, this is peripheral rather than core.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T06:57:41Z",
+  "duration_seconds": 4.344,
+  "error": null
+}

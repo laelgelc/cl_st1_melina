@@ -1,0 +1,65 @@
+{
+  "article_id": "103192330",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_11/ie/103192330.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_11/ie/103192330.json"
+  },
+  "manifest_row": {
+    "article_id": "103192330",
+    "group": "global_north_2023_11",
+    "country_code": "ie",
+    "filepath": "corpus/02_now_organised/global_north_2023_11/ie/103192330.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "background",
+    "main_topic": "Funeral fundraiser for a Galway woman who died suddenly",
+    "conflict_relevance": "The main article is unrelated to Gaza, but it includes a substantial embedded news item about James McClean, Sinn Féin, Ireland's diplomatic response to Israel, the Gaza offensive, ceasefire calls, hostages, humanitarian aid, and Palestinian deaths.",
+    "reason": "The headline and primary article concern a local funeral fundraiser. However, the appended Israel-Gaza report contains meaningful conflict-related discourse, making the item peripheral rather than excludable.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "a8312711d6e307323deb9c3e6c278881e51711f9565d7927761b39afc1a1d4ce",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "3f8734fcc93099e4a78debf8fab21e3f49e9f6d1035f6a1d8961ac99cce9f793",
+    "raw_response_text_sha256": "5f69bf7f8d7a12329b2fef81605f6708c726d29b3d6d74ace895eae9a9314ea4"
+  },
+  "api_metadata": {
+    "id": "resp_0d7fc97b368d9ac7006aa9fd74520c87d2a3413bae3d949cb8",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789525364.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1613,
+      "input_tokens_details": {
+        "cache_write_tokens": 1610,
+        "cached_tokens": 0
+      },
+      "output_tokens": 333,
+      "output_tokens_details": {
+        "reasoning_tokens": 162
+      },
+      "total_tokens": 1946
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Funeral fundraiser for a Galway woman who died suddenly\",\n  \"conflict_relevance\": \"The main article is unrelated to Gaza, but it includes a substantial embedded news item about James McClean, Sinn Féin, Ireland's diplomatic response to Israel, the Gaza offensive, ceasefire calls, hostages, humanitarian aid, and Palestinian deaths.\",\n  \"reason\": \"The headline and primary article concern a local funeral fundraiser. However, the appended Israel-Gaza report contains meaningful conflict-related discourse, making the item peripheral rather than excludable.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:22:48Z",
+  "duration_seconds": 4.405,
+  "error": null
+}

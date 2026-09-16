@@ -1,0 +1,65 @@
+{
+  "article_id": "91649451",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_10/us/91649451.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_10/us/91649451.json"
+  },
+  "manifest_row": {
+    "article_id": "91649451",
+    "group": "global_north_2023_10",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2023_10/us/91649451.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.97,
+    "gaza_role": "passing",
+    "main_topic": "Actress Chloë Grace Moretz discusses filming the 2013 horror film Carrie and its prom scene",
+    "conflict_relevance": "The article's main subject is entertainment, but it ends with a substantive unrelated snippet about backlash against Web Summit founder Paddy Cosgrave over comments concerning fighting between Israel and Gaza.",
+    "reason": "The Gaza-related material is not connected to the main entertainment article and appears as an appended news item, but it contains meaningful conflict-related discourse about Israel, Gaza, retaliation, and public outrage.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "63ed3c291a0a922a4cd26af8622ed0d8aa657a427949e48853a8f7b5e76d9bf8",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "0a13d50b3e95302f901edba451cbdd4bb2edde3973b79b68efb0573d01d8cfd2",
+    "raw_response_text_sha256": "221de0b0fc55026adfffa0456cdbdaf172f1142f2c78122cafe7933327bccab4"
+  },
+  "api_metadata": {
+    "id": "resp_08c86423b5d65463006aa9fa9012a487d2b9cee78f693dfc08",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789524624.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2113,
+      "input_tokens_details": {
+        "cache_write_tokens": 2110,
+        "cached_tokens": 0
+      },
+      "output_tokens": 288,
+      "output_tokens_details": {
+        "reasoning_tokens": 119
+      },
+      "total_tokens": 2401
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.97,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Actress Chloë Grace Moretz discusses filming the 2013 horror film Carrie and its prom scene\",\n  \"conflict_relevance\": \"The article's main subject is entertainment, but it ends with a substantive unrelated snippet about backlash against Web Summit founder Paddy Cosgrave over comments concerning fighting between Israel and Gaza.\",\n  \"reason\": \"The Gaza-related material is not connected to the main entertainment article and appears as an appended news item, but it contains meaningful conflict-related discourse about Israel, Gaza, retaliation, and public outrage.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:10:28Z",
+  "duration_seconds": 4.829,
+  "error": null
+}

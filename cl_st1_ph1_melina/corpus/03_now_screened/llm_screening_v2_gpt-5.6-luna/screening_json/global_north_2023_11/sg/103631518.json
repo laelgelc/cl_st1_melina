@@ -1,0 +1,65 @@
+{
+  "article_id": "103631518",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_11/sg/103631518.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_11/sg/103631518.json"
+  },
+  "manifest_row": {
+    "article_id": "103631518",
+    "group": "global_north_2023_11",
+    "country_code": "sg",
+    "filepath": "corpus/02_now_organised/global_north_2023_11/sg/103631518.txt"
+  },
+  "screening": {
+    "category": "CORE",
+    "confidence": 0.99,
+    "gaza_role": "central",
+    "main_topic": "Israeli bombing and destruction of a medical facility in Gaza, and Mahathir Mohamad's condemnation of the attacks",
+    "conflict_relevance": "The article directly concerns Israeli military action in Gaza, Palestinian civilian casualties, attacks on medical and shelter facilities, humanitarian conditions, and political framing of the war.",
+    "reason": "The main article is centrally focused on the destruction of a Gaza physiotherapy centre, deaths of Palestinian civilians, and allegations that Israel is intentionally targeting hospitals and shelters. An unrelated article about Xi Jinping and APEC is appended, but it does not alter the main article's core relevance.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": true
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "f45f6b582472b938c3b21f84ce38e44ef74a9cc661e9b20e30765cec7f421d62",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "395c8258bac2a53e8e6abe108b6e5030c85ca4300c08db46c910ed4c902fd7ee",
+    "raw_response_text_sha256": "7846581aa7f678c488df026a11d74ae5c5eab07119455d045c4ba070e4f84383"
+  },
+  "api_metadata": {
+    "id": "resp_0871faf04a146fb1006aa9fdddd53487d290b085af296f26d9",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789525469.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1849,
+      "input_tokens_details": {
+        "cache_write_tokens": 1846,
+        "cached_tokens": 0
+      },
+      "output_tokens": 263,
+      "output_tokens_details": {
+        "reasoning_tokens": 79
+      },
+      "total_tokens": 2112
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"CORE\",\n  \"confidence\": 0.99,\n  \"gaza_role\": \"central\",\n  \"main_topic\": \"Israeli bombing and destruction of a medical facility in Gaza, and Mahathir Mohamad's condemnation of the attacks\",\n  \"conflict_relevance\": \"The article directly concerns Israeli military action in Gaza, Palestinian civilian casualties, attacks on medical and shelter facilities, humanitarian conditions, and political framing of the war.\",\n  \"reason\": \"The main article is centrally focused on the destruction of a Gaza physiotherapy centre, deaths of Palestinian civilians, and allegations that Israel is intentionally targeting hospitals and shelters. An unrelated article about Xi Jinping and APEC is appended, but it does not alter the main article's core relevance.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": true\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:24:34Z",
+  "duration_seconds": 4.428,
+  "error": null
+}

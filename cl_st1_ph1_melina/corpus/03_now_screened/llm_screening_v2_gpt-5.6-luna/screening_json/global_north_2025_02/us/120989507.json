@@ -1,0 +1,65 @@
+{
+  "article_id": "120989507",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_02/us/120989507.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_02/us/120989507.json"
+  },
+  "manifest_row": {
+    "article_id": "120989507",
+    "group": "global_north_2025_02",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2025_02/us/120989507.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.97,
+    "gaza_role": "background",
+    "main_topic": "Live news roundup covering Trump administration actions, U.S. government policy, immigration, federal agencies, and international affairs",
+    "conflict_relevance": "The roundup includes substantive discussion of Trump's proposal for U.S. control of Gaza and relocation of Palestinians, Rubio's comments describing Gaza as uninhabitable and questioning Palestinian return, and the International Criminal Court's response to U.S. sanctions related to Israel.",
+    "reason": "Gaza and Israel-related issues appear in several meaningful passages, but the article is primarily a broad collection of unrelated U.S. political and administrative news updates rather than focused conflict coverage.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "67a51801f0ceea322d8e60dd93a7c480630128a6467a616a2880db42815eabce",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "2600e5c356a9b7ecd28a63ce4e50cb1055e48dc8c1d039ccb8c45b2522bf99ff",
+    "raw_response_text_sha256": "890790ada3660a35b4c5c178f969fb1fecd8ed7df63f217dea0aab6eda9a3849"
+  },
+  "api_metadata": {
+    "id": "resp_0a1a5d4498b26b59006aaa245ea90c87d1aa2ebfa102ad01e6",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789535326.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 10441,
+      "input_tokens_details": {
+        "cache_write_tokens": 10438,
+        "cached_tokens": 0
+      },
+      "output_tokens": 383,
+      "output_tokens_details": {
+        "reasoning_tokens": 198
+      },
+      "total_tokens": 10824
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.97,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Live news roundup covering Trump administration actions, U.S. government policy, immigration, federal agencies, and international affairs\",\n  \"conflict_relevance\": \"The roundup includes substantive discussion of Trump's proposal for U.S. control of Gaza and relocation of Palestinians, Rubio's comments describing Gaza as uninhabitable and questioning Palestinian return, and the International Criminal Court's response to U.S. sanctions related to Israel.\",\n  \"reason\": \"Gaza and Israel-related issues appear in several meaningful passages, but the article is primarily a broad collection of unrelated U.S. political and administrative news updates rather than focused conflict coverage.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T05:08:52Z",
+  "duration_seconds": 5.671,
+  "error": null
+}

@@ -1,0 +1,65 @@
+{
+  "article_id": "106580039",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_03/gb/106580039.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_03/gb/106580039.json"
+  },
+  "manifest_row": {
+    "article_id": "106580039",
+    "group": "global_north_2024_03",
+    "country_code": "gb",
+    "filepath": "corpus/02_now_organised/global_north_2024_03/gb/106580039.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "background",
+    "main_topic": "Nigeria's economic reforms, currency depreciation, investment climate, and oil-sector outlook",
+    "conflict_relevance": "A separate syndicated news item embedded after the Nigeria-focused article reports on the Gaza war, including calls for a truce, hostage release, humanitarian aid, famine risk, international humanitarian law, and a potential Israeli assault on Rafah.",
+    "reason": "The main article is about Nigeria's economy and contains no conflict-related discussion. However, the appended Gaza news item provides several meaningful sentences relevant to discourse analysis, so the material is peripheral rather than excludable.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "f1f046c8831f8f343b1536d0a621b3f72d229d39800906322eec8d1db297aa05",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "02b541ef1fe63c4474960067c302ef8d21e56b6a57feea63dfdeca6b408a0b97",
+    "raw_response_text_sha256": "805aeb478b40bc50647ea32c8b57461525e8f1c19b7c95513f2487be1d655db6"
+  },
+  "api_metadata": {
+    "id": "resp_0e0644dc019d6a9f006aaa08bcab9087d28ebeda7843187414",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789528252.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1471,
+      "input_tokens_details": {
+        "cache_write_tokens": 1468,
+        "cached_tokens": 0
+      },
+      "output_tokens": 309,
+      "output_tokens_details": {
+        "reasoning_tokens": 130
+      },
+      "total_tokens": 1780
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Nigeria's economic reforms, currency depreciation, investment climate, and oil-sector outlook\",\n  \"conflict_relevance\": \"A separate syndicated news item embedded after the Nigeria-focused article reports on the Gaza war, including calls for a truce, hostage release, humanitarian aid, famine risk, international humanitarian law, and a potential Israeli assault on Rafah.\",\n  \"reason\": \"The main article is about Nigeria's economy and contains no conflict-related discussion. However, the appended Gaza news item provides several meaningful sentences relevant to discourse analysis, so the material is peripheral rather than excludable.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:10:57Z",
+  "duration_seconds": 4.617,
+  "error": null
+}

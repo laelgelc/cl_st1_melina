@@ -1,0 +1,65 @@
+{
+  "article_id": "106575315",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_03/ca/106575315.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_03/ca/106575315.json"
+  },
+  "manifest_row": {
+    "article_id": "106575315",
+    "group": "global_north_2024_03",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2024_03/ca/106575315.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "gaza_role": "boilerplate_or_unrelated",
+    "main_topic": "Cleanup and weather impacts following a major snowstorm in St. John's, Newfoundland",
+    "conflict_relevance": "The main article is unrelated to Gaza or the Israel-Palestine conflict. Gaza appears only in a brief 'Latest Stories' roundup item about Ramadan.",
+    "reason": "The article centrally concerns snow removal, airport operations, and subsequent rainfall in Newfoundland. The Gaza reference is incidental roundup content rather than meaningful discourse.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "919f5290a4326a2decdb7dc514d0d477fced4b3c1a5f003698987f82805eae8c",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "c05fdff369ba3cd210230194677c7c4a29d506f08e9ac922ea51cbeddf2126e5",
+    "raw_response_text_sha256": "a6e5d5b82663e19763cd6f04d0c8e747e39e41d313a47d233d1c3f1cbb2a4dda"
+  },
+  "api_metadata": {
+    "id": "resp_02be9b66bc991925006aaa08663d2c87d28e1ff50756c66425",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789528166.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2490,
+      "input_tokens_details": {
+        "cache_write_tokens": 2487,
+        "cached_tokens": 0
+      },
+      "output_tokens": 218,
+      "output_tokens_details": {
+        "reasoning_tokens": 64
+      },
+      "total_tokens": 2708
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"gaza_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Cleanup and weather impacts following a major snowstorm in St. John's, Newfoundland\",\n  \"conflict_relevance\": \"The main article is unrelated to Gaza or the Israel-Palestine conflict. Gaza appears only in a brief 'Latest Stories' roundup item about Ramadan.\",\n  \"reason\": \"The article centrally concerns snow removal, airport operations, and subsequent rainfall in Newfoundland. The Gaza reference is incidental roundup content rather than meaningful discourse.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:09:29Z",
+  "duration_seconds": 3.802,
+  "error": null
+}

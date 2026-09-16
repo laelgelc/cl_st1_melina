@@ -1,0 +1,65 @@
+{
+  "article_id": "121793626",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_02/ie/121793626.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_02/ie/121793626.json"
+  },
+  "manifest_row": {
+    "article_id": "121793626",
+    "group": "global_north_2025_02",
+    "country_code": "ie",
+    "filepath": "corpus/02_now_organised/global_north_2025_02/ie/121793626.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.93,
+    "gaza_role": "passing",
+    "main_topic": "Pope Francis's hospitalization and activities",
+    "conflict_relevance": "The article briefly mentions a Catholic parish in Gaza thanking Pope Francis for his support, but the main subject is the Pope's health and hospital stay.",
+    "reason": "Gaza appears in a meaningful but isolated sentence connected to the Pope; the surrounding article is primarily about his medical condition and includes substantial fundraising and publication boilerplate.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "c294ebc9293819cbc648a135085c24a2e5ac3c97e63d8f1cc4fb9fe03a2f5b1c",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "7dd00d7dfaa54b628c357e06f3c0b422216c84a621a31ebc69e55fde22105ec3",
+    "raw_response_text_sha256": "b2e50250adda3cba72a3bd2081478a8d6132f8617f49277f8af2ae6b4b74a348"
+  },
+  "api_metadata": {
+    "id": "resp_0f35c57f461bae7b006aaa23c663a087d2bda5e863f81ed963",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789535174.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 904,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 263,
+      "output_tokens_details": {
+        "reasoning_tokens": 119
+      },
+      "total_tokens": 1167
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.93,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Pope Francis's hospitalization and activities\",\n  \"conflict_relevance\": \"The article briefly mentions a Catholic parish in Gaza thanking Pope Francis for his support, but the main subject is the Pope's health and hospital stay.\",\n  \"reason\": \"Gaza appears in a meaningful but isolated sentence connected to the Pope; the surrounding article is primarily about his medical condition and includes substantial fundraising and publication boilerplate.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T05:06:19Z",
+  "duration_seconds": 5.03,
+  "error": null
+}

@@ -1,0 +1,65 @@
+{
+  "article_id": "106978220",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_03/nz/106978220.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_03/nz/106978220.json"
+  },
+  "manifest_row": {
+    "article_id": "106978220",
+    "group": "global_north_2024_03",
+    "country_code": "nz",
+    "filepath": "corpus/02_now_organised/global_north_2024_03/nz/106978220.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "gaza_role": "passing",
+    "main_topic": "Modern slavery legislation and supply-chain labour exploitation in New Zealand",
+    "conflict_relevance": "The article's main subject is New Zealand legislation on modern slavery. Gaza appears only in a brief unrelated 'ALSO' news snippet about humanitarian aid to Gaza and the West Bank.",
+    "reason": "The Gaza reference is incidental and not developed as part of the article's argument or discourse, so it is unsuitable for meaningful conflict-focused analysis.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "2780659029a825d54f508c04c5a34156bd1f9fcc4b8785055ed9c54d94f28058",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "89c1da173427eec587673b97267c5029d5b6bf26bde5f9208e114e08a0b75548",
+    "raw_response_text_sha256": "cb68aabd249ea3d141423485d3efa1cc026bde953db1276f06012a16661cbd21"
+  },
+  "api_metadata": {
+    "id": "resp_0bad6a4f29a5b87c006aaa0946d05c87d2b261e04d0c3d5dfa",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789528390.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1620,
+      "input_tokens_details": {
+        "cache_write_tokens": 1617,
+        "cached_tokens": 0
+      },
+      "output_tokens": 265,
+      "output_tokens_details": {
+        "reasoning_tokens": 115
+      },
+      "total_tokens": 1885
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Modern slavery legislation and supply-chain labour exploitation in New Zealand\",\n  \"conflict_relevance\": \"The article's main subject is New Zealand legislation on modern slavery. Gaza appears only in a brief unrelated 'ALSO' news snippet about humanitarian aid to Gaza and the West Bank.\",\n  \"reason\": \"The Gaza reference is incidental and not developed as part of the article's argument or discourse, so it is unsuitable for meaningful conflict-focused analysis.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:13:14Z",
+  "duration_seconds": 3.731,
+  "error": null
+}

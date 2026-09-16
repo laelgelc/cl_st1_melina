@@ -1,0 +1,65 @@
+{
+  "article_id": "108087967",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_05/ca/108087967.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_05/ca/108087967.json"
+  },
+  "manifest_row": {
+    "article_id": "108087967",
+    "group": "global_north_2024_05",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2024_05/ca/108087967.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.94,
+    "gaza_role": "passing",
+    "main_topic": "London, Ontario emergency preparedness open house",
+    "conflict_relevance": "The main article concerns community emergency preparedness, but an embedded news item references Eurovision protests and the war in Gaza.",
+    "reason": "The Gaza reference is limited to a single sentence in an unrelated snippet, but it meaningfully connects Eurovision-related protests and public discourse to the war in Gaza.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "24de76c8aa6531bec4325d8d63d59426e33d0a7cc96853c47aa9315acb4abded",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "46682a014c83e6e11c0c78b31f18b5114968f83c52b392ad19147a9e6790cfea",
+    "raw_response_text_sha256": "9547a0af6119e607735185866415f71c08f3fb3766c3f4dbabd04feaeb708984"
+  },
+  "api_metadata": {
+    "id": "resp_0ba6e704b7135f99006aaa0d8837f087d2900a6e3c39e596c3",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789529480.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1521,
+      "input_tokens_details": {
+        "cache_write_tokens": 1518,
+        "cached_tokens": 0
+      },
+      "output_tokens": 286,
+      "output_tokens_details": {
+        "reasoning_tokens": 150
+      },
+      "total_tokens": 1807
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.94,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"London, Ontario emergency preparedness open house\",\n  \"conflict_relevance\": \"The main article concerns community emergency preparedness, but an embedded news item references Eurovision protests and the war in Gaza.\",\n  \"reason\": \"The Gaza reference is limited to a single sentence in an unrelated snippet, but it meaningfully connects Eurovision-related protests and public discourse to the war in Gaza.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:31:23Z",
+  "duration_seconds": 3.759,
+  "error": null
+}

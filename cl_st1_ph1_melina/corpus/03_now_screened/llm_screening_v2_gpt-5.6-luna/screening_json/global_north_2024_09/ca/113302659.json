@@ -1,0 +1,65 @@
+{
+  "article_id": "113302659",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_09/ca/113302659.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_09/ca/113302659.json"
+  },
+  "manifest_row": {
+    "article_id": "113302659",
+    "group": "global_north_2024_09",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2024_09/ca/113302659.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.94,
+    "gaza_role": "background",
+    "main_topic": "A vehicle crash in western Quebec",
+    "conflict_relevance": "The article is primarily an unrelated crash report and news aggregation, but it contains a substantive embedded news item about the killing of Gaza hostages, Israeli protests, and calls for an Israel-Hamas ceasefire.",
+    "reason": "The Gaza-related material is meaningful but appears only as an unrelated snippet within a multi-article news compilation, so it is relevant to broader discourse analysis but not suitable as core conflict coverage.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "07bc93764718047eb89e0faede7fe70390692dc57589487f921876f187a42d12",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "303242ba8ff7192dc5be4c0aa4fe2d18dbfb0e320a4884f14500cd91b4711084",
+    "raw_response_text_sha256": "86f94f67de73eac2838e3358c72c43eeb10756c1c3a261fe3d214e6063e1c685"
+  },
+  "api_metadata": {
+    "id": "resp_0439fa0a98f3fd31006aaa15fc769c87d28706fb7e18f63eba",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789531644.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1924,
+      "input_tokens_details": {
+        "cache_write_tokens": 1921,
+        "cached_tokens": 0
+      },
+      "output_tokens": 366,
+      "output_tokens_details": {
+        "reasoning_tokens": 206
+      },
+      "total_tokens": 2290
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.94,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"A vehicle crash in western Quebec\",\n  \"conflict_relevance\": \"The article is primarily an unrelated crash report and news aggregation, but it contains a substantive embedded news item about the killing of Gaza hostages, Israeli protests, and calls for an Israel-Hamas ceasefire.\",\n  \"reason\": \"The Gaza-related material is meaningful but appears only as an unrelated snippet within a multi-article news compilation, so it is relevant to broader discourse analysis but not suitable as core conflict coverage.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T04:07:29Z",
+  "duration_seconds": 5.197,
+  "error": null
+}

@@ -1,0 +1,65 @@
+{
+  "article_id": "107067732",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_03/gb/107067732.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_03/gb/107067732.json"
+  },
+  "manifest_row": {
+    "article_id": "107067732",
+    "group": "global_north_2024_03",
+    "country_code": "gb",
+    "filepath": "corpus/02_now_organised/global_north_2024_03/gb/107067732.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.97,
+    "gaza_role": "background",
+    "main_topic": "Mixed news roundup covering UK politics, crime, entertainment, international events, and human-interest stories",
+    "conflict_relevance": "Includes a substantive but isolated passage describing an Israeli family’s experience during the October 7 attack near the Gaza border.",
+    "reason": "The text is predominantly a collection of unrelated news items. Although one passage meaningfully addresses the October 7 attack and life near the Gaza Strip, the overall article is not centered on Gaza, Israel/Palestine, or the wider conflict.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "deb8b65dd19ccb1d29573309b8653fe9aa85c80bedb7a3e739b57222394aa478",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "9889574ec16e201fcc153f93509ee8ba828d51bd60415e594176c5fac87d423c",
+    "raw_response_text_sha256": "7795e56f67996b6d088295ee59891cd8e73e6cf058fab7c7209c1e9739765ddf"
+  },
+  "api_metadata": {
+    "id": "resp_0b1ab2597f284732006aaa08f252cc87d2bee750aa707935bd",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789528306.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2419,
+      "input_tokens_details": {
+        "cache_write_tokens": 2416,
+        "cached_tokens": 0
+      },
+      "output_tokens": 364,
+      "output_tokens_details": {
+        "reasoning_tokens": 198
+      },
+      "total_tokens": 2783
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.97,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Mixed news roundup covering UK politics, crime, entertainment, international events, and human-interest stories\",\n  \"conflict_relevance\": \"Includes a substantive but isolated passage describing an Israeli family’s experience during the October 7 attack near the Gaza border.\",\n  \"reason\": \"The text is predominantly a collection of unrelated news items. Although one passage meaningfully addresses the October 7 attack and life near the Gaza Strip, the overall article is not centered on Gaza, Israel/Palestine, or the wider conflict.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:11:50Z",
+  "duration_seconds": 4.616,
+  "error": null
+}

@@ -1,0 +1,65 @@
+{
+  "article_id": "106733896",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_03/ca/106733896.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_03/ca/106733896.json"
+  },
+  "manifest_row": {
+    "article_id": "106733896",
+    "group": "global_north_2024_03",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2024_03/ca/106733896.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.94,
+    "gaza_role": "background",
+    "main_topic": "Entertainment interview about the film The Prank, followed by unrelated news snippets",
+    "conflict_relevance": "The main article is unrelated to Gaza or Palestine, but embedded snippets report on pro-Palestinian protests in Toronto, opposition to the Israel-Hamas war, and solidarity with Palestinians in Gaza.",
+    "reason": "The text is a multi-article compilation dominated by an entertainment feature. However, several embedded news items contain meaningful reporting on pro-Palestinian demonstrations and calls for a ceasefire, making it relevant to broader conflict-related discourse but unsuitable as core coverage.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "dac34f930440c412a8e897eb7b0f5aa353bed9f3704059590a1eaccbd77f18ae",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "bf0198d117734a7d469f606337dccd18cef9ae429ef5944c81c3299ee165031f",
+    "raw_response_text_sha256": "339f0facb50dd6bd4e781e1d2f69214eb1aa360f38bb9daf9dfac8ba58519756"
+  },
+  "api_metadata": {
+    "id": "resp_0ce73c71e81b34f6006aaa086e39d487d28f7a7e7acc728797",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789528174.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 3217,
+      "input_tokens_details": {
+        "cache_write_tokens": 3214,
+        "cached_tokens": 0
+      },
+      "output_tokens": 483,
+      "output_tokens_details": {
+        "reasoning_tokens": 303
+      },
+      "total_tokens": 3700
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.94,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Entertainment interview about the film The Prank, followed by unrelated news snippets\",\n  \"conflict_relevance\": \"The main article is unrelated to Gaza or Palestine, but embedded snippets report on pro-Palestinian protests in Toronto, opposition to the Israel-Hamas war, and solidarity with Palestinians in Gaza.\",\n  \"reason\": \"The text is a multi-article compilation dominated by an entertainment feature. However, several embedded news items contain meaningful reporting on pro-Palestinian demonstrations and calls for a ceasefire, making it relevant to broader conflict-related discourse but unsuitable as core coverage.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:09:39Z",
+  "duration_seconds": 5.705,
+  "error": null
+}

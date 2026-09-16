@@ -1,0 +1,65 @@
+{
+  "article_id": "123855475",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_04/us/123855475.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_04/us/123855475.json"
+  },
+  "manifest_row": {
+    "article_id": "123855475",
+    "group": "global_north_2025_04",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2025_04/us/123855475.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.97,
+    "gaza_role": "background",
+    "main_topic": "Holocaust education, haredi Israeli identity, and Jewish continuity",
+    "conflict_relevance": "The article briefly connects Holocaust memory and Israeli identity to the October 7 attacks and mentions an Israeli soldier abducted by Hamas to Gaza, but the central subject is an educational trip to Poland and Holocaust remembrance.",
+    "reason": "The Gaza and Israel-Hamas war references provide meaningful contemporary context for the article's discussion of Jewish identity, heroism, and Israeli statehood, but they are not the article's main focus.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "8efeaee8d95b208c1ce79d22436338a315347a21cad48d3645bbb66cf34d0771",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "a72df3a2722fa260cb7590db619b97152bb18c667eea8e652acbc4066bb0de0d",
+    "raw_response_text_sha256": "59e50347347eb876d95ebcf1fff4f660625aea573625d56a3fa78323fd7dd228"
+  },
+  "api_metadata": {
+    "id": "resp_0c0f19bbd226ff03006aaa2a8f5e9887d19f59c8373f1d29df",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789536911.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2037,
+      "input_tokens_details": {
+        "cache_write_tokens": 2034,
+        "cached_tokens": 0
+      },
+      "output_tokens": 235,
+      "output_tokens_details": {
+        "reasoning_tokens": 66
+      },
+      "total_tokens": 2272
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.97,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Holocaust education, haredi Israeli identity, and Jewish continuity\",\n  \"conflict_relevance\": \"The article briefly connects Holocaust memory and Israeli identity to the October 7 attacks and mentions an Israeli soldier abducted by Hamas to Gaza, but the central subject is an educational trip to Poland and Holocaust remembrance.\",\n  \"reason\": \"The Gaza and Israel-Hamas war references provide meaningful contemporary context for the article's discussion of Jewish identity, heroism, and Israeli statehood, but they are not the article's main focus.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T05:35:14Z",
+  "duration_seconds": 3.279,
+  "error": null
+}

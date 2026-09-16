@@ -1,0 +1,65 @@
+{
+  "article_id": "103495092",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_south_2023_11/in/103495092.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_south_2023_11/in/103495092.json"
+  },
+  "manifest_row": {
+    "article_id": "103495092",
+    "group": "global_south_2023_11",
+    "country_code": "in",
+    "filepath": "corpus/02_now_organised/global_south_2023_11/in/103495092.txt"
+  },
+  "screening": {
+    "category": "CORE",
+    "confidence": 0.99,
+    "gaza_role": "central",
+    "main_topic": "Israeli military operations at a hospital and against Hamas targets in Gaza",
+    "conflict_relevance": "The article directly reports Israeli military activity, alleged Hamas operations, humanitarian deliveries, weapons discoveries, and airstrikes in Gaza.",
+    "reason": "Gaza and the Israel-Hamas war are the article's central subject, with detailed coverage of IDF operations, hospital access, alleged militant activity, and military engagements.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": true
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "564b6fb770f5b08d16ec5c4c82396d52ea58fea84d8bba714ed043634ddfdb8e",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "232aed2980e2d4c40bc8114c4f97d357a10e7a0f7de2820e9682d289060f5c8c",
+    "raw_response_text_sha256": "eb28cb39261b85690959c0007653eefecfc6b21260d37978e33e4877c2112880"
+  },
+  "api_metadata": {
+    "id": "resp_02a4201f576402aa006aaa350797ac87d1b810df20368510bd",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789539591.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 857,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 187,
+      "output_tokens_details": {
+        "reasoning_tokens": 41
+      },
+      "total_tokens": 1044
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"CORE\",\n  \"confidence\": 0.99,\n  \"gaza_role\": \"central\",\n  \"main_topic\": \"Israeli military operations at a hospital and against Hamas targets in Gaza\",\n  \"conflict_relevance\": \"The article directly reports Israeli military activity, alleged Hamas operations, humanitarian deliveries, weapons discoveries, and airstrikes in Gaza.\",\n  \"reason\": \"Gaza and the Israel-Hamas war are the article's central subject, with detailed coverage of IDF operations, hospital access, alleged militant activity, and military engagements.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": true\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T06:19:54Z",
+  "duration_seconds": 2.944,
+  "error": null
+}

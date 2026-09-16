@@ -1,0 +1,65 @@
+{
+  "article_id": "200259726",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_03/us/200259726.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_03/us/200259726.json"
+  },
+  "manifest_row": {
+    "article_id": "200259726",
+    "group": "global_north_2024_03",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2024_03/us/200259726.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "gaza_role": "passing",
+    "main_topic": "A Scranton police detective's recovery and ceremonial return after being shot in the line of duty",
+    "conflict_relevance": "The article is unrelated to the Gaza conflict; it contains only a brief embedded reference to Israeli forces firing near a crowd and the Hamas-controlled Gaza health ministry's account.",
+    "reason": "The main article concerns a local police officer and his appearance at the State of the Union. The Gaza-related text is a short, disconnected snippet with no substantive development or analysis.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "527c65350f021b597ea7119bbc44f4021b0945c0d57cd2f144fed6fba1db4975",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "e3bb98208d31fe36637766439af3886239601f0c13c28117eb33bfb080fae267",
+    "raw_response_text_sha256": "af965cc80330aa7e4af1c81ea7fddf940557f95eaa7a9e3803bc38b69f577559"
+  },
+  "api_metadata": {
+    "id": "resp_05a5b581d2e1af35006aaa09f7d31887d2b21aa923994b903a",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789528567.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1465,
+      "input_tokens_details": {
+        "cache_write_tokens": 1462,
+        "cached_tokens": 0
+      },
+      "output_tokens": 233,
+      "output_tokens_details": {
+        "reasoning_tokens": 72
+      },
+      "total_tokens": 1698
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"A Scranton police detective's recovery and ceremonial return after being shot in the line of duty\",\n  \"conflict_relevance\": \"The article is unrelated to the Gaza conflict; it contains only a brief embedded reference to Israeli forces firing near a crowd and the Hamas-controlled Gaza health ministry's account.\",\n  \"reason\": \"The main article concerns a local police officer and his appearance at the State of the Union. The Gaza-related text is a short, disconnected snippet with no substantive development or analysis.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:16:11Z",
+  "duration_seconds": 4.034,
+  "error": null
+}

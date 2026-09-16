@@ -1,0 +1,65 @@
+{
+  "article_id": "124899903",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_05/gb/124899903.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_05/gb/124899903.json"
+  },
+  "manifest_row": {
+    "article_id": "124899903",
+    "group": "global_north_2025_05",
+    "country_code": "gb",
+    "filepath": "corpus/02_now_organised/global_north_2025_05/gb/124899903.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.99,
+    "gaza_role": "background",
+    "main_topic": "A roundup of UK political, social, lifestyle, and opinion items, led by Brexit and EU relations",
+    "conflict_relevance": "Contains substantive embedded commentary and a quotation about Gaza, Palestinian starvation, Israel's military offensive, international condemnation, and Israel's alleged pariah status.",
+    "reason": "The article is primarily a general news and feature roundup centered on Brexit, migration, social care, lifestyle, and other unrelated topics. However, its Gaza-related quotation and opinion item provide meaningful discourse about humanitarian conditions, Israeli military action, and international responses, making it useful for peripheral discourse analysis but not core conflict coverage.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "55232933c4918d67213946954888b4873f5556e6f544b62d4b2701f831181756",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "a24b057d760a6158b3d542cecbbb155f2654953d761bf31e897d2a1ab6a5a581",
+    "raw_response_text_sha256": "441894e44ca0090302f9c6989c277449256df925199c105e76b05f19618c3f3a"
+  },
+  "api_metadata": {
+    "id": "resp_050d94d99c78f86d006aaa2becd97c87d1a422b174aa5f4482",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789537260.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 3625,
+      "input_tokens_details": {
+        "cache_write_tokens": 3622,
+        "cached_tokens": 0
+      },
+      "output_tokens": 371,
+      "output_tokens_details": {
+        "reasoning_tokens": 183
+      },
+      "total_tokens": 3996
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.99,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"A roundup of UK political, social, lifestyle, and opinion items, led by Brexit and EU relations\",\n  \"conflict_relevance\": \"Contains substantive embedded commentary and a quotation about Gaza, Palestinian starvation, Israel's military offensive, international condemnation, and Israel's alleged pariah status.\",\n  \"reason\": \"The article is primarily a general news and feature roundup centered on Brexit, migration, social care, lifestyle, and other unrelated topics. However, its Gaza-related quotation and opinion item provide meaningful discourse about humanitarian conditions, Israeli military action, and international responses, making it useful for peripheral discourse analysis but not core conflict coverage.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T05:41:05Z",
+  "duration_seconds": 4.755,
+  "error": null
+}

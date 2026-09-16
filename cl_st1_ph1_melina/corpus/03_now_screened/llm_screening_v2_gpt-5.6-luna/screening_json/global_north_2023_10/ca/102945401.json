@@ -1,0 +1,65 @@
+{
+  "article_id": "102945401",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_10/ca/102945401.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_10/ca/102945401.json"
+  },
+  "manifest_row": {
+    "article_id": "102945401",
+    "group": "global_north_2023_10",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2023_10/ca/102945401.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "passing",
+    "main_topic": "Bank of Canada interest-rate decision and economic outlook",
+    "conflict_relevance": "The article briefly identifies the war in Israel and Gaza as a source of geopolitical and economic uncertainty affecting the global outlook and oil prices.",
+    "reason": "The article is primarily about Canadian monetary policy, inflation, and economic growth, but it contains a meaningful sentence linking the Israel-Gaza war to geopolitical uncertainty and energy prices.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "296052acdb57bbe8be432a0e2c9ade6ba7a3b06ec36ac499cabdb1e2ab0a37dd",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "6844f0bc13d72dc0195427771b1552562cec8df305c8d5a82d513c17e1ca8466",
+    "raw_response_text_sha256": "0bf9ec24e2e129d080c4efa7898339dd037644e7d8db3c7c429cbaf8344783b4"
+  },
+  "api_metadata": {
+    "id": "resp_083ca46a299b11b7006aa9f6a60f2087d2963f3f26b53cd95a",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789523622.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1283,
+      "input_tokens_details": {
+        "cache_write_tokens": 1280,
+        "cached_tokens": 0
+      },
+      "output_tokens": 205,
+      "output_tokens_details": {
+        "reasoning_tokens": 60
+      },
+      "total_tokens": 1488
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Bank of Canada interest-rate decision and economic outlook\",\n  \"conflict_relevance\": \"The article briefly identifies the war in Israel and Gaza as a source of geopolitical and economic uncertainty affecting the global outlook and oil prices.\",\n  \"reason\": \"The article is primarily about Canadian monetary policy, inflation, and economic growth, but it contains a meaningful sentence linking the Israel-Gaza war to geopolitical uncertainty and energy prices.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T01:53:45Z",
+  "duration_seconds": 3.136,
+  "error": null
+}

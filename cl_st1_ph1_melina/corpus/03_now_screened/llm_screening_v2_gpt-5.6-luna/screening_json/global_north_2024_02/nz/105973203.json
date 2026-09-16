@@ -1,0 +1,65 @@
+{
+  "article_id": "105973203",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_02/nz/105973203.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_02/nz/105973203.json"
+  },
+  "manifest_row": {
+    "article_id": "105973203",
+    "group": "global_north_2024_02",
+    "country_code": "nz",
+    "filepath": "corpus/02_now_organised/global_north_2024_02/nz/105973203.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "gaza_role": "passing",
+    "main_topic": "Community awards recognizing recovery efforts after Cyclone Gabrielle in Tairawhiti",
+    "conflict_relevance": "The main article is unrelated to Gaza or the Israel-Hamas conflict; Gaza appears only in a brief embedded news snippet about New Zealand humanitarian funding.",
+    "reason": "The article centrally concerns local cyclone recovery and community recognition. The single Gaza-related item is an incidental, separate roundup snippet rather than meaningful discourse in the main article.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "11111549080d1d6c2fdd855a2ab66e40dd09d4a6b32a6104f9bf514f295965fa",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "58b5cd288e2d2bfa9f85814eb4d1a9934a2f443b4f4b05663eb587c0d31fbddc",
+    "raw_response_text_sha256": "e4ca8a6d0a783e9561b3de3f972884c0be31ec28b44ce96b8ce529994e4f9724"
+  },
+  "api_metadata": {
+    "id": "resp_02c322b2a3880186006aaa06c16e1887d292fb591300812f5a",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789527745.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1523,
+      "input_tokens_details": {
+        "cache_write_tokens": 1520,
+        "cached_tokens": 0
+      },
+      "output_tokens": 292,
+      "output_tokens_details": {
+        "reasoning_tokens": 141
+      },
+      "total_tokens": 1815
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Community awards recognizing recovery efforts after Cyclone Gabrielle in Tairawhiti\",\n  \"conflict_relevance\": \"The main article is unrelated to Gaza or the Israel-Hamas conflict; Gaza appears only in a brief embedded news snippet about New Zealand humanitarian funding.\",\n  \"reason\": \"The article centrally concerns local cyclone recovery and community recognition. The single Gaza-related item is an incidental, separate roundup snippet rather than meaningful discourse in the main article.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:02:29Z",
+  "duration_seconds": 4.382,
+  "error": null
+}

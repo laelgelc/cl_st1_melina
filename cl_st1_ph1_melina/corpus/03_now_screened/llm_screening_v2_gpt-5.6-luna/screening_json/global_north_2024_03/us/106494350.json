@@ -1,0 +1,65 @@
+{
+  "article_id": "106494350",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_03/us/106494350.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_03/us/106494350.json"
+  },
+  "manifest_row": {
+    "article_id": "106494350",
+    "group": "global_north_2024_03",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2024_03/us/106494350.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.97,
+    "gaza_role": "passing",
+    "main_topic": "U.S.-China strategic competition and maritime disputes in the South China Sea",
+    "conflict_relevance": "Gaza is mentioned only as one of several global conflicts receiving attention, without substantive discussion.",
+    "reason": "The article is entirely focused on China’s maritime claims, regional security, and U.S. policy in the Indo-Pacific. Gaza appears only in a brief contextual sentence and does not contribute meaningful conflict discourse.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "f74d1a7d994616d836249801cb8181142b9ff92db58f65a1e0bb10cc06dddd5a",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "f185779f4db4add6e41d664e4187b785200f486a88006b00a03656a7ee919d4a",
+    "raw_response_text_sha256": "b499176576803dc1ce2149735225c961b1f5cbeaa0a2070dec1ff346283a03fe"
+  },
+  "api_metadata": {
+    "id": "resp_0b6a9f17f9a05083006aaa097e617887d2956a8462dcbcb19a",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789528446.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1675,
+      "input_tokens_details": {
+        "cache_write_tokens": 1672,
+        "cached_tokens": 0
+      },
+      "output_tokens": 221,
+      "output_tokens_details": {
+        "reasoning_tokens": 74
+      },
+      "total_tokens": 1896
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.97,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"U.S.-China strategic competition and maritime disputes in the South China Sea\",\n  \"conflict_relevance\": \"Gaza is mentioned only as one of several global conflicts receiving attention, without substantive discussion.\",\n  \"reason\": \"The article is entirely focused on China’s maritime claims, regional security, and U.S. policy in the Indo-Pacific. Gaza appears only in a brief contextual sentence and does not contribute meaningful conflict discourse.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:14:09Z",
+  "duration_seconds": 3.283,
+  "error": null
+}

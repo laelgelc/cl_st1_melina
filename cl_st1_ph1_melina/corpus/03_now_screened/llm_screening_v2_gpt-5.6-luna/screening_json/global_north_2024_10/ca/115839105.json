@@ -1,0 +1,65 @@
+{
+  "article_id": "115839105",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_10/ca/115839105.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_10/ca/115839105.json"
+  },
+  "manifest_row": {
+    "article_id": "115839105",
+    "group": "global_north_2024_10",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2024_10/ca/115839105.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "gaza_role": "passing",
+    "main_topic": "Obituary and political biography of former Scottish First Minister Alex Salmond",
+    "conflict_relevance": "The main article concerns Scottish politics and Alex Salmond's death. Gaza appears only in a separate, unrelated embedded news snippet about Israeli bombardment in northern Gaza.",
+    "reason": "The article is not meaningfully about Gaza, Palestine, Israel/Palestine, or the wider conflict; the Gaza-related content is an unrelated inserted news item rather than part of the main article.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "ef146fc3418f4254f594dc1c7741a2d19a7ec46c0f45fe2a99243355eb0809b9",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "dc4992e6d3f01f266008452be127d41ffcd7b407435954c8165530fc244a07e2",
+    "raw_response_text_sha256": "fe1c7f5f68cc1ba8b4b0ba5cf7126c14dc40e70ba1685f894aa2fcfd75fc0e6a"
+  },
+  "api_metadata": {
+    "id": "resp_089c84381e19c0a4006aaa17fefa2887d2b4b3187c3ce8684b",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789532158.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2256,
+      "input_tokens_details": {
+        "cache_write_tokens": 2253,
+        "cached_tokens": 0
+      },
+      "output_tokens": 312,
+      "output_tokens_details": {
+        "reasoning_tokens": 152
+      },
+      "total_tokens": 2568
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Obituary and political biography of former Scottish First Minister Alex Salmond\",\n  \"conflict_relevance\": \"The main article concerns Scottish politics and Alex Salmond's death. Gaza appears only in a separate, unrelated embedded news snippet about Israeli bombardment in northern Gaza.\",\n  \"reason\": \"The article is not meaningfully about Gaza, Palestine, Israel/Palestine, or the wider conflict; the Gaza-related content is an unrelated inserted news item rather than part of the main article.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T04:16:02Z",
+  "duration_seconds": 3.904,
+  "error": null
+}

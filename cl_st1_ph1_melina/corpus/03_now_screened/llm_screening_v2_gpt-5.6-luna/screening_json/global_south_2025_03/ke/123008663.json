@@ -1,0 +1,65 @@
+{
+  "article_id": "123008663",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_south_2025_03/ke/123008663.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_south_2025_03/ke/123008663.json"
+  },
+  "manifest_row": {
+    "article_id": "123008663",
+    "group": "global_south_2025_03",
+    "country_code": "ke",
+    "filepath": "corpus/02_now_organised/global_south_2025_03/ke/123008663.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.93,
+    "gaza_role": "substantial",
+    "main_topic": "Houthi attacks on a U.S. aircraft carrier and U.S. airstrikes in Yemen",
+    "conflict_relevance": "The article reports Houthi actions explicitly framed as support for Palestinians and conditioned on ending the aggression and siege on Gaza, including threats against Israeli-linked shipping and demands for humanitarian aid.",
+    "reason": "The primary subject is the Yemen-based Houthi-U.S. military confrontation and Red Sea shipping, but Gaza is a meaningful stated motivation and contextual issue rather than the article's central focus.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "fcf517e32225a86f4d7520717b84f27cbaade05253aa683f9fcff028d6802e93",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "6d2a9ddf00cd01be6383e5382dd6c9d5f433144722cc869d591855633f7effc8",
+    "raw_response_text_sha256": "20c24eb7cd69f0489602ea64d5f27d95992d7ed8417e5ca61e43e55653206b8c"
+  },
+  "api_metadata": {
+    "id": "resp_085e1cf67ee324e6006aaa46c939a887d1b453f50a68db878d",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789544137.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1275,
+      "input_tokens_details": {
+        "cache_write_tokens": 1272,
+        "cached_tokens": 0
+      },
+      "output_tokens": 320,
+      "output_tokens_details": {
+        "reasoning_tokens": 149
+      },
+      "total_tokens": 1595
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.93,\n  \"gaza_role\": \"substantial\",\n  \"main_topic\": \"Houthi attacks on a U.S. aircraft carrier and U.S. airstrikes in Yemen\",\n  \"conflict_relevance\": \"The article reports Houthi actions explicitly framed as support for Palestinians and conditioned on ending the aggression and siege on Gaza, including threats against Israeli-linked shipping and demands for humanitarian aid.\",\n  \"reason\": \"The primary subject is the Yemen-based Houthi-U.S. military confrontation and Red Sea shipping, but Gaza is a meaningful stated motivation and contextual issue rather than the article's central focus.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T07:35:41Z",
+  "duration_seconds": 4.362,
+  "error": null
+}

@@ -1,0 +1,65 @@
+{
+  "article_id": "108412050",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_05/us/108412050.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_05/us/108412050.json"
+  },
+  "manifest_row": {
+    "article_id": "108412050",
+    "group": "global_north_2024_05",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2024_05/us/108412050.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "gaza_role": "boilerplate_or_unrelated",
+    "main_topic": "Trial of former Guinean dictator Moussa Dadis Camara and officials over the 2009 Conakry massacre",
+    "conflict_relevance": "The main article is entirely about accountability for a massacre in Guinea and is unrelated to Gaza or the Israel-Palestine conflict.",
+    "reason": "References to Palestinian state recognition, Gaza, Israel, Hamas, and the ICC appear only in unrelated 'Latest stories' snippets appended to the article, not in the main report.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "66579ecfd21fb604697bfaa9e6f4f2f58b7702b87d55094ec30d6b4e32c5a56d",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "58c82b0df0b8e6ed7da1433e6106a9dea0a5bdfa1a1ff218a54385300c334c07",
+    "raw_response_text_sha256": "71e1be69bb8f4f38aef2d7a6804003a41595066c4d07c4b8cc94b05a2c564929"
+  },
+  "api_metadata": {
+    "id": "resp_0f77d6c27276b6c2006aaa0f0b217887d2a545ff838f4e483c",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789529867.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2245,
+      "input_tokens_details": {
+        "cache_write_tokens": 2242,
+        "cached_tokens": 0
+      },
+      "output_tokens": 327,
+      "output_tokens_details": {
+        "reasoning_tokens": 162
+      },
+      "total_tokens": 2572
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Trial of former Guinean dictator Moussa Dadis Camara and officials over the 2009 Conakry massacre\",\n  \"conflict_relevance\": \"The main article is entirely about accountability for a massacre in Guinea and is unrelated to Gaza or the Israel-Palestine conflict.\",\n  \"reason\": \"References to Palestinian state recognition, Gaza, Israel, Hamas, and the ICC appear only in unrelated 'Latest stories' snippets appended to the article, not in the main report.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:37:51Z",
+  "duration_seconds": 4.2,
+  "error": null
+}

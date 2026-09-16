@@ -1,0 +1,65 @@
+{
+  "article_id": "108775871",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_06/us/108775871.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_06/us/108775871.json"
+  },
+  "manifest_row": {
+    "article_id": "108775871",
+    "group": "global_north_2024_06",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2024_06/us/108775871.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.96,
+    "gaza_role": "passing",
+    "main_topic": "UK general election coverage and miscellaneous news roundup",
+    "conflict_relevance": "Gaza is mentioned in a commentary summary discussing global geopolitical tensions and the emerging world order, but the article is not otherwise concerned with the conflict.",
+    "reason": "The main article is a broad news and culture roundup focused primarily on the UK election, social care policy, Shein, and other unrelated topics. Gaza appears in one substantive geopolitical commentary snippet, making the item marginally useful for studying broader discourse but unsuitable as core conflict coverage.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "69e76657ef627de1a9f5a1e1edbf924b4f5d29dde4fe6b9288a9fd19c3f91500",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "77b484119376cfa6e43ea4c52ed12cd23791ebfc75175442660742dcdf2da8cf",
+    "raw_response_text_sha256": "0bf667e94d80606002a82fb1c144e9e261401dc0856738fe0f8292f9da6bad98"
+  },
+  "api_metadata": {
+    "id": "resp_074161eee516dd41006aaa10eefbe087d2ab5192f6b15983a3",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789530351.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 3817,
+      "input_tokens_details": {
+        "cache_write_tokens": 3814,
+        "cached_tokens": 0
+      },
+      "output_tokens": 270,
+      "output_tokens_details": {
+        "reasoning_tokens": 102
+      },
+      "total_tokens": 4087
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.96,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"UK general election coverage and miscellaneous news roundup\",\n  \"conflict_relevance\": \"Gaza is mentioned in a commentary summary discussing global geopolitical tensions and the emerging world order, but the article is not otherwise concerned with the conflict.\",\n  \"reason\": \"The main article is a broad news and culture roundup focused primarily on the UK election, social care policy, Shein, and other unrelated topics. Gaza appears in one substantive geopolitical commentary snippet, making the item marginally useful for studying broader discourse but unsuitable as core conflict coverage.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:45:55Z",
+  "duration_seconds": 4.345,
+  "error": null
+}

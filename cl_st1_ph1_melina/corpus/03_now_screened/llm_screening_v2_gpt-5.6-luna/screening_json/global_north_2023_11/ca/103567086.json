@@ -1,0 +1,65 @@
+{
+  "article_id": "103567086",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_11/ca/103567086.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_11/ca/103567086.json"
+  },
+  "manifest_row": {
+    "article_id": "103567086",
+    "group": "global_north_2023_11",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2023_11/ca/103567086.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.94,
+    "gaza_role": "passing",
+    "main_topic": "Stephanie Chan's table tennis medal at the 2023 Parapan American Games",
+    "conflict_relevance": "An unrelated news roundup includes a brief item about Canada's votes on United Nations resolutions concerning Israel, Gaza, and the West Bank.",
+    "reason": "The main article is about Paralympic table tennis and wheelchair basketball, but an embedded CTVNews.ca roundup contains a meaningful, though very brief, reference to Canadian foreign policy on Israel, Gaza, and the West Bank.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "1babb90d3c07709a5a16d34564fc3b4d0be38236ea345d88afa9660e8b127659",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "ee0464cd95878b47c3f3060e06cbaf08326039bffd83b3711397ef958a15e867",
+    "raw_response_text_sha256": "19c4d229fbe092b1c6d86d8b967dfd259c3c8219631152e16af7544ca8922f7a"
+  },
+  "api_metadata": {
+    "id": "resp_05147d70cca013aa006aa9fbecde4087d294349a7636dcd830",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789524972.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1368,
+      "input_tokens_details": {
+        "cache_write_tokens": 1365,
+        "cached_tokens": 0
+      },
+      "output_tokens": 329,
+      "output_tokens_details": {
+        "reasoning_tokens": 168
+      },
+      "total_tokens": 1697
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.94,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Stephanie Chan's table tennis medal at the 2023 Parapan American Games\",\n  \"conflict_relevance\": \"An unrelated news roundup includes a brief item about Canada's votes on United Nations resolutions concerning Israel, Gaza, and the West Bank.\",\n  \"reason\": \"The main article is about Paralympic table tennis and wheelchair basketball, but an embedded CTVNews.ca roundup contains a meaningful, though very brief, reference to Canadian foreign policy on Israel, Gaza, and the West Bank.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:16:17Z",
+  "duration_seconds": 4.287,
+  "error": null
+}

@@ -1,0 +1,65 @@
+{
+  "article_id": "103009387",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_10/us/103009387.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_10/us/103009387.json"
+  },
+  "manifest_row": {
+    "article_id": "103009387",
+    "group": "global_north_2023_10",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2023_10/us/103009387.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.95,
+    "gaza_role": "background",
+    "main_topic": "Mike Pence’s withdrawal from the 2024 US presidential race and Republican Party politics",
+    "conflict_relevance": "The main article concerns US electoral politics, but it includes a substantive embedded passage about Israeli military action in Gaza, Hamas-held hostages, and concerns raised by hostage families.",
+    "reason": "The Gaza-related content is meaningful but appears as a separate news item appended to an article primarily about Pence’s campaign withdrawal. It is relevant to broader conflict discourse but not core coverage of the conflict.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "83147b54f20e5eb40e9c37736abe2e2c4e4c9541652d80b80149421823537206",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "b1831f74235d6748110347d2ce19813a8f2ffac27d186a61be0227e1fb56812e",
+    "raw_response_text_sha256": "b432ef4d344c82ee52f561cd56098a1a732162156056caa14ec4490c843f7156"
+  },
+  "api_metadata": {
+    "id": "resp_013b6aabd6f665b5006aa9f9b475c887d2bd04132679112bec",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789524404.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 898,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 302,
+      "output_tokens_details": {
+        "reasoning_tokens": 160
+      },
+      "total_tokens": 1200
+    }
+  },
+  "raw_response_text": "{\"category\":\"PERIPHERAL\",\"confidence\":0.95,\"gaza_role\":\"background\",\"main_topic\":\"Mike Pence’s withdrawal from the 2024 US presidential race and Republican Party politics\",\"conflict_relevance\":\"The main article concerns US electoral politics, but it includes a substantive embedded passage about Israeli military action in Gaza, Hamas-held hostages, and concerns raised by hostage families.\",\"reason\":\"The Gaza-related content is meaningful but appears as a separate news item appended to an article primarily about Pence’s campaign withdrawal. It is relevant to broader conflict discourse but not core coverage of the conflict.\",\"multi_article_or_snippet_issue\":true,\"recommended_for_main_corpus\":false}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:06:49Z",
+  "duration_seconds": 4.696,
+  "error": null
+}

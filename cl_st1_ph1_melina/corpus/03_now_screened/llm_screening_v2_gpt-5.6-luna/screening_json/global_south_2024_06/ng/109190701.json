@@ -1,0 +1,65 @@
+{
+  "article_id": "109190701",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_south_2024_06/ng/109190701.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_south_2024_06/ng/109190701.json"
+  },
+  "manifest_row": {
+    "article_id": "109190701",
+    "group": "global_south_2024_06",
+    "country_code": "ng",
+    "filepath": "corpus/02_now_organised/global_south_2024_06/ng/109190701.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.96,
+    "gaza_role": "passing",
+    "main_topic": "A Nigerian police manhunt for a man accused of murdering his six-year-old daughter",
+    "conflict_relevance": "The main article is unrelated to Gaza, but an embedded AFP photo caption contains substantive background about Al-Shifa Hospital, Israeli military raids, Hamas, and the destruction of medical infrastructure in Gaza.",
+    "reason": "The headline and article body concern a local homicide in Delta State, Nigeria. However, the included Gaza hospital caption provides meaningful conflict-related discourse, so the item is peripheral rather than excluded.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "16e20a7b46ac1341e53ddda239afd2669dd384d4fc4e8d791efb94a1bacb03fb",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "18bc5e8640657daa0c499d2c785065ec0d1992defd050cd6e72c34938212d4b2",
+    "raw_response_text_sha256": "b1eba13f35a75320945053b3aa1fa7cfc9bac19644b4ad7794ad03686f5b5916"
+  },
+  "api_metadata": {
+    "id": "resp_0162d0d09c7877d5006aaa3c5ce2b887d1a037fae672afed56",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789541468.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1145,
+      "input_tokens_details": {
+        "cache_write_tokens": 1142,
+        "cached_tokens": 0
+      },
+      "output_tokens": 227,
+      "output_tokens_details": {
+        "reasoning_tokens": 83
+      },
+      "total_tokens": 1372
+    }
+  },
+  "raw_response_text": "{\"category\":\"PERIPHERAL\",\"confidence\":0.96,\"gaza_role\":\"passing\",\"main_topic\":\"A Nigerian police manhunt for a man accused of murdering his six-year-old daughter\",\"conflict_relevance\":\"The main article is unrelated to Gaza, but an embedded AFP photo caption contains substantive background about Al-Shifa Hospital, Israeli military raids, Hamas, and the destruction of medical infrastructure in Gaza.\",\"reason\":\"The headline and article body concern a local homicide in Delta State, Nigeria. However, the included Gaza hospital caption provides meaningful conflict-related discourse, so the item is peripheral rather than excluded.\",\"multi_article_or_snippet_issue\":true,\"recommended_for_main_corpus\":false}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T06:51:12Z",
+  "duration_seconds": 3.536,
+  "error": null
+}

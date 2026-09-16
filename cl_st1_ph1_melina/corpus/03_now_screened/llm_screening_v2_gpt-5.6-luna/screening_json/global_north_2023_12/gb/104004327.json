@@ -1,0 +1,65 @@
+{
+  "article_id": "104004327",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_12/gb/104004327.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_12/gb/104004327.json"
+  },
+  "manifest_row": {
+    "article_id": "104004327",
+    "group": "global_north_2023_12",
+    "country_code": "gb",
+    "filepath": "corpus/02_now_organised/global_north_2023_12/gb/104004327.txt"
+  },
+  "screening": {
+    "category": "CORE",
+    "confidence": 0.86,
+    "gaza_role": "central",
+    "main_topic": "Israeli air strikes in southern Gaza and Palestinian casualties",
+    "conflict_relevance": "The lead news item directly concerns Israeli military action, civilian harm, and displacement in Gaza during the Israel-Hamas war.",
+    "reason": "Although the text contains several unrelated Reuters snippets, its opening and most conflict-relevant item is a substantive report on Israeli air strikes and Palestinian deaths and injuries in Gaza.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": true
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "9dfddcd067921bb3a2d3ebd973b740f2ad23e6ba8dc84da1ff9ba2463420214a",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "cd330502c483d7e9535ddf64d099f233b36d2993e6bbc6177cd1d1a3b7830b6b",
+    "raw_response_text_sha256": "0918779c25e030ea61bb34a5e3f3d700a81b6579d0dba42f63feb2afea59ff38"
+  },
+  "api_metadata": {
+    "id": "resp_0da43fb5f14ec605006aaa00e0a9ac87d28e336bad0f876033",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789526240.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 865,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 262,
+      "output_tokens_details": {
+        "reasoning_tokens": 121
+      },
+      "total_tokens": 1127
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"CORE\",\n  \"confidence\": 0.86,\n  \"gaza_role\": \"central\",\n  \"main_topic\": \"Israeli air strikes in southern Gaza and Palestinian casualties\",\n  \"conflict_relevance\": \"The lead news item directly concerns Israeli military action, civilian harm, and displacement in Gaza during the Israel-Hamas war.\",\n  \"reason\": \"Although the text contains several unrelated Reuters snippets, its opening and most conflict-relevant item is a substantive report on Israeli air strikes and Palestinian deaths and injuries in Gaza.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": true\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:37:25Z",
+  "duration_seconds": 4.709,
+  "error": null
+}

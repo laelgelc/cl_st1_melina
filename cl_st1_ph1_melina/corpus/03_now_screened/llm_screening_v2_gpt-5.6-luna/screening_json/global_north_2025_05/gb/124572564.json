@@ -1,0 +1,65 @@
+{
+  "article_id": "124572564",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_05/gb/124572564.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_05/gb/124572564.json"
+  },
+  "manifest_row": {
+    "article_id": "124572564",
+    "group": "global_north_2025_05",
+    "country_code": "gb",
+    "filepath": "corpus/02_now_organised/global_north_2025_05/gb/124572564.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.97,
+    "gaza_role": "passing",
+    "main_topic": "The 2025 BAFTA Television Awards, including ceremony details and nominations",
+    "conflict_relevance": "Gaza appears only as the title of one nominated current-affairs documentary, 'Life and Death in Gaza,' without discussion of its content or the conflict.",
+    "reason": "The article is primarily an entertainment awards guide and contains only a passing nomination-list mention related to Gaza.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "3307aa2d6178b1db55cab14e4727ec20d2c23f3d836e36ea561a5b8e750380b5",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "b67143be228c9e0db000c97e1431c2aaa96750500fc71fec4efdc59aecfb54b6",
+    "raw_response_text_sha256": "9edf1fafce79e0a1669d67ff0f862a1fbe83fa4d412a00d964333f895476354e"
+  },
+  "api_metadata": {
+    "id": "resp_080b7df50aa4e2b2006aaa2b95511087d1ae87d223b8d3209d",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789537173.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2454,
+      "input_tokens_details": {
+        "cache_write_tokens": 2451,
+        "cached_tokens": 0
+      },
+      "output_tokens": 263,
+      "output_tokens_details": {
+        "reasoning_tokens": 123
+      },
+      "total_tokens": 2717
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.97,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"The 2025 BAFTA Television Awards, including ceremony details and nominations\",\n  \"conflict_relevance\": \"Gaza appears only as the title of one nominated current-affairs documentary, 'Life and Death in Gaza,' without discussion of its content or the conflict.\",\n  \"reason\": \"The article is primarily an entertainment awards guide and contains only a passing nomination-list mention related to Gaza.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T05:39:36Z",
+  "duration_seconds": 3.32,
+  "error": null
+}

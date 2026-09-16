@@ -1,0 +1,65 @@
+{
+  "article_id": "102496952",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_south_2023_10/in/102496952.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_south_2023_10/in/102496952.json"
+  },
+  "manifest_row": {
+    "article_id": "102496952",
+    "group": "global_south_2023_10",
+    "country_code": "in",
+    "filepath": "corpus/02_now_organised/global_south_2023_10/in/102496952.txt"
+  },
+  "screening": {
+    "category": "CORE",
+    "confidence": 0.82,
+    "gaza_role": "substantial",
+    "main_topic": "Live breaking-news roundup covering international and domestic developments, including the Israel-Hamas war",
+    "conflict_relevance": "The roundup contains multiple substantive updates on the Israel-Hamas conflict, Palestinian aid, Israeli military activity, protests, casualties, air travel disruptions, and international responses.",
+    "reason": "Although the article includes many unrelated news items, a substantial portion of the associated updates directly concerns Gaza, Israel, Hamas, Palestinians, and reactions to the conflict.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": true
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "fb7365aed35fc03e3858c18d1661bc50253a1cafd8f9077ebf56d69de454cd5a",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "0a97bed7c41954eb9823ca014ec594503dd3c5608f109e9c1b163c8b82a999a9",
+    "raw_response_text_sha256": "015432c546467f21608dfa57ffb3f229b5a98622def8cc6697e75c9128f5e784"
+  },
+  "api_metadata": {
+    "id": "resp_0e787d279fc66626006aaa3232ff8c87d19de9c5bb680c6f3a",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789538867.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1620,
+      "input_tokens_details": {
+        "cache_write_tokens": 1617,
+        "cached_tokens": 0
+      },
+      "output_tokens": 375,
+      "output_tokens_details": {
+        "reasoning_tokens": 220
+      },
+      "total_tokens": 1995
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"CORE\",\n  \"confidence\": 0.82,\n  \"gaza_role\": \"substantial\",\n  \"main_topic\": \"Live breaking-news roundup covering international and domestic developments, including the Israel-Hamas war\",\n  \"conflict_relevance\": \"The roundup contains multiple substantive updates on the Israel-Hamas conflict, Palestinian aid, Israeli military activity, protests, casualties, air travel disruptions, and international responses.\",\n  \"reason\": \"Although the article includes many unrelated news items, a substantial portion of the associated updates directly concerns Gaza, Israel, Hamas, Palestinians, and reactions to the conflict.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": true\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T06:07:52Z",
+  "duration_seconds": 5.422,
+  "error": null
+}

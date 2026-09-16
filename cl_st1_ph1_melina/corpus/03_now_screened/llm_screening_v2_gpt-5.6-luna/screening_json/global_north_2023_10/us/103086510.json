@@ -1,0 +1,65 @@
+{
+  "article_id": "103086510",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_10/us/103086510.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_10/us/103086510.json"
+  },
+  "manifest_row": {
+    "article_id": "103086510",
+    "group": "global_north_2023_10",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2023_10/us/103086510.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.91,
+    "gaza_role": "background",
+    "main_topic": "Debunking a fictional viral video about a Grab delivery rider travelling from Thailand to Singapore to buy chicken rice",
+    "conflict_relevance": "The main article is unrelated to Gaza or Israel/Palestine, but it contains embedded news snippets concerning Israel's ground invasion of Gaza and allegations about anti-Israel rioting in Dagestan.",
+    "reason": "The headline and primary article concern a fictional Grab delivery story. However, the text includes several meaningful, though disconnected, sentences about Gaza and anti-Israel unrest, making it marginally useful for broader discourse analysis but unsuitable for the main conflict corpus.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "0bc9d07c46dfa3e9f66a7092deb5da3414b26d2f9d108092cffbfc9af7234083",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "214c093b1818e1eabf0f7c633dce0f4160dfda5c08b026bf7a5bc4d08f6fa5ca",
+    "raw_response_text_sha256": "8c98015a97e66597571cd02d673108fd058dfa25aa6a894a872f5af581fb7a5f"
+  },
+  "api_metadata": {
+    "id": "resp_00164de4b2a2ca91006aa9f9ceaeb487d29d3dc34e8c0cb005",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789524430.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1505,
+      "input_tokens_details": {
+        "cache_write_tokens": 1502,
+        "cached_tokens": 0
+      },
+      "output_tokens": 387,
+      "output_tokens_details": {
+        "reasoning_tokens": 202
+      },
+      "total_tokens": 1892
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.91,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Debunking a fictional viral video about a Grab delivery rider travelling from Thailand to Singapore to buy chicken rice\",\n  \"conflict_relevance\": \"The main article is unrelated to Gaza or Israel/Palestine, but it contains embedded news snippets concerning Israel's ground invasion of Gaza and allegations about anti-Israel rioting in Dagestan.\",\n  \"reason\": \"The headline and primary article concern a fictional Grab delivery story. However, the text includes several meaningful, though disconnected, sentences about Gaza and anti-Israel unrest, making it marginally useful for broader discourse analysis but unsuitable for the main conflict corpus.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:07:16Z",
+  "duration_seconds": 5.63,
+  "error": null
+}

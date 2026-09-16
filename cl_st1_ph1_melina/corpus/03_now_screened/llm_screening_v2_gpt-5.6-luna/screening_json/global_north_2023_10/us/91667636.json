@@ -1,0 +1,65 @@
+{
+  "article_id": "91667636",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_10/us/91667636.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_10/us/91667636.json"
+  },
+  "manifest_row": {
+    "article_id": "91667636",
+    "group": "global_north_2023_10",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2023_10/us/91667636.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.97,
+    "gaza_role": "passing",
+    "main_topic": "Financial markets, monetary policy, interest rates, and investment opportunities",
+    "conflict_relevance": "The article briefly reports Israeli airstrikes on Gaza and an anticipated ground invasion as part of a market-news roundup.",
+    "reason": "The main article concerns financial markets and Federal Reserve policy. Gaza appears only in a brief 'buzz' item, but the sentence provides meaningful, direct conflict-related reporting, making the article peripheral rather than excludable.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "14d814acf0fd31764aa0591c76fb30df63ab4fe0ead320efe6e9bbcca51e4555",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "e4cd2599ecd2075394192a009dfb533e06a78922b3f4cb37e0503f3d683f8b60",
+    "raw_response_text_sha256": "d4a55f28e7e95006f50cd98e53a7ea0c17b1f03ae2f74cdea79a18c24c4c1807"
+  },
+  "api_metadata": {
+    "id": "resp_038a7de6f90da81e006aa9fad1e30887d2b3b085ae352520be",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789524689.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1787,
+      "input_tokens_details": {
+        "cache_write_tokens": 1784,
+        "cached_tokens": 0
+      },
+      "output_tokens": 337,
+      "output_tokens_details": {
+        "reasoning_tokens": 183
+      },
+      "total_tokens": 2124
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.97,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Financial markets, monetary policy, interest rates, and investment opportunities\",\n  \"conflict_relevance\": \"The article briefly reports Israeli airstrikes on Gaza and an anticipated ground invasion as part of a market-news roundup.\",\n  \"reason\": \"The main article concerns financial markets and Federal Reserve policy. Gaza appears only in a brief 'buzz' item, but the sentence provides meaningful, direct conflict-related reporting, making the article peripheral rather than excludable.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:11:35Z",
+  "duration_seconds": 5.612,
+  "error": null
+}

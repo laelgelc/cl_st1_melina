@@ -1,0 +1,65 @@
+{
+  "article_id": "120320734",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_01/gb/120320734.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_01/gb/120320734.json"
+  },
+  "manifest_row": {
+    "article_id": "120320734",
+    "group": "global_north_2025_01",
+    "country_code": "gb",
+    "filepath": "corpus/02_now_organised/global_north_2025_01/gb/120320734.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.97,
+    "gaza_role": "passing",
+    "main_topic": "Miscellaneous international photo roundup",
+    "conflict_relevance": "A single photograph caption mentions a Palestinian artist painting on rubble in Rafah after a Hamas-Israel ceasefire and hostage-prisoner swap, but the article is otherwise an unrelated collection of general-interest images.",
+    "reason": "The Gaza-related content is an isolated caption in a broad photo roundup and does not provide sustained or meaningful conflict discourse.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "cdf2519393fdeb391c77ef88ad408f981a1f2c78df0e1653d1477e6db20b8fd0",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "ab81935acae337a5f0afe3d7108fb5a75618cae578c443bb2faee2ed2b01d2a5",
+    "raw_response_text_sha256": "e87a40f50cf88a57d62863654655d4a2c2d04692039e0f58fbb9e5336ae98b25"
+  },
+  "api_metadata": {
+    "id": "resp_04c3ef4000732888006aaa1fdec58487d2966e8bf5dc71551a",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789534174.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1314,
+      "input_tokens_details": {
+        "cache_write_tokens": 1311,
+        "cached_tokens": 0
+      },
+      "output_tokens": 320,
+      "output_tokens_details": {
+        "reasoning_tokens": 176
+      },
+      "total_tokens": 1634
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.97,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Miscellaneous international photo roundup\",\n  \"conflict_relevance\": \"A single photograph caption mentions a Palestinian artist painting on rubble in Rafah after a Hamas-Israel ceasefire and hostage-prisoner swap, but the article is otherwise an unrelated collection of general-interest images.\",\n  \"reason\": \"The Gaza-related content is an isolated caption in a broad photo roundup and does not provide sustained or meaningful conflict discourse.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T04:49:39Z",
+  "duration_seconds": 4.896,
+  "error": null
+}

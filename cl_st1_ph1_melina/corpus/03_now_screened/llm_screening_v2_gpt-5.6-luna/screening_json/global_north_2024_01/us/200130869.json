@@ -1,0 +1,65 @@
+{
+  "article_id": "200130869",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_01/us/200130869.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_01/us/200130869.json"
+  },
+  "manifest_row": {
+    "article_id": "200130869",
+    "group": "global_north_2024_01",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2024_01/us/200130869.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.97,
+    "gaza_role": "background",
+    "main_topic": "European and U.S. financial markets, economic indicators, corporate news, and geopolitical developments",
+    "conflict_relevance": "The briefing includes meaningful coverage of the Gaza-related regional escalation involving Houthi attacks in the Red Sea and a separate report on South Africa's genocide case against Israel at the International Court of Justice, but the newsletter as a whole is primarily a financial markets roundup.",
+    "reason": "The conflict material is substantive and directly relevant to Gaza, Israel, international law, and regional military escalation, but it appears as embedded headline items within a broader market briefing rather than as the central subject.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "95c57742b8142e6719b5ed2c0ba41de6fd899da41527ddf5d1cc868a31662afd",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "ef75a3cc4a32111d27c54f3c7a7e4e994cc07c92405adfd84e4d7e3884a29351",
+    "raw_response_text_sha256": "550b243ae2b2b65cd6bab5b1f05c183c0cd3b0b773fbf63b0c81b49b2da449df"
+  },
+  "api_metadata": {
+    "id": "resp_0c6c48d60b9893cf006aaa056636bc87d2a341bfdb819144d5",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789527398.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2941,
+      "input_tokens_details": {
+        "cache_write_tokens": 2938,
+        "cached_tokens": 0
+      },
+      "output_tokens": 306,
+      "output_tokens_details": {
+        "reasoning_tokens": 121
+      },
+      "total_tokens": 3247
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.97,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"European and U.S. financial markets, economic indicators, corporate news, and geopolitical developments\",\n  \"conflict_relevance\": \"The briefing includes meaningful coverage of the Gaza-related regional escalation involving Houthi attacks in the Red Sea and a separate report on South Africa's genocide case against Israel at the International Court of Justice, but the newsletter as a whole is primarily a financial markets roundup.\",\n  \"reason\": \"The conflict material is substantive and directly relevant to Gaza, Israel, international law, and regional military escalation, but it appears as embedded headline items within a broader market briefing rather than as the central subject.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:56:42Z",
+  "duration_seconds": 4.442,
+  "error": null
+}

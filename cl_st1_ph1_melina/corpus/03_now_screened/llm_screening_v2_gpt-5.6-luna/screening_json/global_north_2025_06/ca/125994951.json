@@ -1,0 +1,65 @@
+{
+  "article_id": "125994951",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_06/ca/125994951.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_06/ca/125994951.json"
+  },
+  "manifest_row": {
+    "article_id": "125994951",
+    "group": "global_north_2025_06",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2025_06/ca/125994951.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.95,
+    "gaza_role": "background",
+    "main_topic": "G7 summit diplomacy, Canada-US tariff negotiations, and the Iran-Israel conflict",
+    "conflict_relevance": "The article includes substantial coverage of the Iran-Israel hostilities, G7 diplomatic responses, Israel's military actions, and a G7 call for de-escalation including a ceasefire in Gaza. However, its primary focus is Canada-US trade negotiations and broader G7 summit reporting.",
+    "reason": "This is a multi-item live-news roundup dominated by tariffs, trade, Ukraine, and summit politics. Its Middle East coverage provides meaningful broader discourse relevant to Israel and Gaza, but Gaza itself is not the central subject and appears mainly in the context of a diplomatic statement.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "6600c6f75193fb2ee04a96fa8cef7bbcfeb30b8721c1f21557742e5e2df9cc43",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "9b339d0c404aac7582485dbd73f25d93a964b57246121293c3ce4923c9b6bdb9",
+    "raw_response_text_sha256": "643f63983f09fd76aced3c828c1ac7541f7ba3d00279e4500359684c557bf292"
+  },
+  "api_metadata": {
+    "id": "resp_00eeb513f2cb59dd006aaa2eb0689087d18784c039f3731b03",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789537968.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 10145,
+      "input_tokens_details": {
+        "cache_write_tokens": 10142,
+        "cached_tokens": 0
+      },
+      "output_tokens": 467,
+      "output_tokens_details": {
+        "reasoning_tokens": 265
+      },
+      "total_tokens": 10612
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.95,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"G7 summit diplomacy, Canada-US tariff negotiations, and the Iran-Israel conflict\",\n  \"conflict_relevance\": \"The article includes substantial coverage of the Iran-Israel hostilities, G7 diplomatic responses, Israel's military actions, and a G7 call for de-escalation including a ceasefire in Gaza. However, its primary focus is Canada-US trade negotiations and broader G7 summit reporting.\",\n  \"reason\": \"This is a multi-item live-news roundup dominated by tariffs, trade, Ukraine, and summit politics. Its Middle East coverage provides meaningful broader discourse relevant to Israel and Gaza, but Gaza itself is not the central subject and appears mainly in the context of a diplomatic statement.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T05:52:53Z",
+  "duration_seconds": 5.568,
+  "error": null
+}

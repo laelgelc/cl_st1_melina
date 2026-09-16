@@ -1,0 +1,65 @@
+{
+  "article_id": "104704250",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_12/ca/104704250.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_12/ca/104704250.json"
+  },
+  "manifest_row": {
+    "article_id": "104704250",
+    "group": "global_north_2023_12",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2023_12/ca/104704250.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "gaza_role": "passing",
+    "main_topic": "Closure of Chicopee Ski Resort due to insufficient snow",
+    "conflict_relevance": "The article is about local ski conditions and includes an unrelated CTV News roundup containing a brief mention of Hamas's October 7 attack from Gaza.",
+    "reason": "The main article has no meaningful connection to Gaza, Palestine, Israel, or the conflict; the sole relevant mention appears incidentally in an embedded top-stories roundup.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "3d37e4c6f0c3714daed62736786440509419e7d51e029671958a9335aa3fed3a",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "4a5870834a914636fdf3ff3337f179a154da89a0a492f884c1030e6e862ebec9",
+    "raw_response_text_sha256": "df4ab485c729c9162f8df0cddb079a900551fadd28023568f98b93ea15d8ae94"
+  },
+  "api_metadata": {
+    "id": "resp_0506406a8b4cc452006aaa00b8079c87d29b5e87e08e8ec798",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789526200.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1158,
+      "input_tokens_details": {
+        "cache_write_tokens": 1155,
+        "cached_tokens": 0
+      },
+      "output_tokens": 287,
+      "output_tokens_details": {
+        "reasoning_tokens": 140
+      },
+      "total_tokens": 1445
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Closure of Chicopee Ski Resort due to insufficient snow\",\n  \"conflict_relevance\": \"The article is about local ski conditions and includes an unrelated CTV News roundup containing a brief mention of Hamas's October 7 attack from Gaza.\",\n  \"reason\": \"The main article has no meaningful connection to Gaza, Palestine, Israel, or the conflict; the sole relevant mention appears incidentally in an embedded top-stories roundup.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:36:44Z",
+  "duration_seconds": 4.74,
+  "error": null
+}

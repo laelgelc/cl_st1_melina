@@ -1,0 +1,65 @@
+{
+  "article_id": "103503119",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_11/us/103503119.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_11/us/103503119.json"
+  },
+  "manifest_row": {
+    "article_id": "103503119",
+    "group": "global_north_2023_11",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2023_11/us/103503119.txt"
+  },
+  "screening": {
+    "category": "CORE",
+    "confidence": 0.98,
+    "gaza_role": "substantial",
+    "main_topic": "NSO Group's lobbying campaign to reverse U.S. sanctions by invoking Israel's war in Gaza and intelligence cooperation after the October 7 attacks",
+    "conflict_relevance": "The lead article directly concerns the Gaza war, Israel, Hamas's October 7 attack, U.S.-Israel security coordination, counterterrorism claims, and the use and oversight of surveillance technology in the conflict.",
+    "reason": "The headline and main article focus on how the Israeli spyware company NSO Group is attempting to leverage the Gaza war to improve its standing with the Biden administration and reverse its blacklisting. The article also discusses Israeli military and intelligence support, alleged surveillance abuses, and criticism from privacy experts. Although the surrounding newsletter contains unrelated political, lobbying, and jobs items, the lead article is substantially connected to the conflict.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": true
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "a790c4752dfc872799cc665fda98285bbfdb9b267b7148461ad2350bc2bde361",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "ffec9bb3e6f7b37d15cfa08c9a07d78f7d8cde9b5de120f698822a4ce4ada534",
+    "raw_response_text_sha256": "5415b1b8c428a234794062d697267eab419ffd898352fe2d318eb0549c1180c9"
+  },
+  "api_metadata": {
+    "id": "resp_0ceca4f429989356006aa9fe8978c087d293060debb772176c",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789525641.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 3735,
+      "input_tokens_details": {
+        "cache_write_tokens": 3732,
+        "cached_tokens": 0
+      },
+      "output_tokens": 355,
+      "output_tokens_details": {
+        "reasoning_tokens": 130
+      },
+      "total_tokens": 4090
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"CORE\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"substantial\",\n  \"main_topic\": \"NSO Group's lobbying campaign to reverse U.S. sanctions by invoking Israel's war in Gaza and intelligence cooperation after the October 7 attacks\",\n  \"conflict_relevance\": \"The lead article directly concerns the Gaza war, Israel, Hamas's October 7 attack, U.S.-Israel security coordination, counterterrorism claims, and the use and oversight of surveillance technology in the conflict.\",\n  \"reason\": \"The headline and main article focus on how the Israeli spyware company NSO Group is attempting to leverage the Gaza war to improve its standing with the Biden administration and reverse its blacklisting. The article also discusses Israeli military and intelligence support, alleged surveillance abuses, and criticism from privacy experts. Although the surrounding newsletter contains unrelated political, lobbying, and jobs items, the lead article is substantially connected to the conflict.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": true\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:27:27Z",
+  "duration_seconds": 5.976,
+  "error": null
+}

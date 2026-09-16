@@ -1,0 +1,65 @@
+{
+  "article_id": "112501567",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_08/us/112501567.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_08/us/112501567.json"
+  },
+  "manifest_row": {
+    "article_id": "112501567",
+    "group": "global_north_2024_08",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2024_08/us/112501567.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.97,
+    "gaza_role": "passing",
+    "main_topic": "Cultural and entertainment events surrounding the 2024 Democratic National Convention in Chicago",
+    "conflict_relevance": "Gaza is mentioned only in connection with a pictured sign within a brief event listing; the article does not discuss the conflict or related political discourse substantively.",
+    "reason": "The article is primarily a roundup of local DNC-related parties, performances, comedy shows, and cultural events. The sole Gaza reference is incidental and lacks meaningful contextual discussion.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "c8311cee86f0d4dba6b093c684c607b8c9c3b2e05cbde2ab80913b282fcfae81",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "79a5c27b2d50e16ec25dc002868b2a7cbda3d7d4ca831d6b903984053ad2bce4",
+    "raw_response_text_sha256": "473effc0e1238e3e1de6aa25cfb0d793c50a98cef473a4df2808009d94232aaf"
+  },
+  "api_metadata": {
+    "id": "resp_0fc0453f03ded6c2006aaa152f055c87d29c9b0e446029b631",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789531439.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2125,
+      "input_tokens_details": {
+        "cache_write_tokens": 2122,
+        "cached_tokens": 0
+      },
+      "output_tokens": 257,
+      "output_tokens_details": {
+        "reasoning_tokens": 102
+      },
+      "total_tokens": 2382
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.97,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Cultural and entertainment events surrounding the 2024 Democratic National Convention in Chicago\",\n  \"conflict_relevance\": \"Gaza is mentioned only in connection with a pictured sign within a brief event listing; the article does not discuss the conflict or related political discourse substantively.\",\n  \"reason\": \"The article is primarily a roundup of local DNC-related parties, performances, comedy shows, and cultural events. The sole Gaza reference is incidental and lacks meaningful contextual discussion.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T04:04:03Z",
+  "duration_seconds": 4.184,
+  "error": null
+}

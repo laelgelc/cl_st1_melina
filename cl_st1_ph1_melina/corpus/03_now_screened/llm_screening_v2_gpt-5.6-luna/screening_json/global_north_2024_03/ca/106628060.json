@@ -1,0 +1,65 @@
+{
+  "article_id": "106628060",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_03/ca/106628060.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_03/ca/106628060.json"
+  },
+  "manifest_row": {
+    "article_id": "106628060",
+    "group": "global_north_2024_03",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2024_03/ca/106628060.txt"
+  },
+  "screening": {
+    "category": "CORE",
+    "confidence": 0.87,
+    "gaza_role": "background",
+    "main_topic": "UN investigation into an Israeli tank attack that killed Reuters journalist Issam Abdallah and wounded other journalists in Lebanon",
+    "conflict_relevance": "The main article directly addresses Israeli military action, civilian and journalist protection, alleged violations of international law, UN investigation, and Israel-Hezbollah hostilities. Although the incident occurred in Lebanon rather than Gaza, it is closely connected to the broader regional conflict and discourse about Israel's military conduct and media safety.",
+    "reason": "The headline-associated article is centrally about a conflict-related Israeli attack and international-law findings. The Gaza reference is limited to an image caption, but the substantive story concerns a directly connected regional front and relevant conflict discourse. The text also includes numerous unrelated news snippets and repeated items.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": true
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "6d10fa452c290e2892de6ad6978232fd50fccf81c6a1460c07941c8d4dbb12d8",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "73f75609cf27c13591c023433a469aad4ad8014e3aa5be51d507c530b5f46021",
+    "raw_response_text_sha256": "bb4fc7b07dc36f8d0cfc198b71118b1770344a33e0c1d46db4c0264523c95ede"
+  },
+  "api_metadata": {
+    "id": "resp_0d12e160516b791f006aaa0868d63887d285012dccf33986ef",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789528168.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2536,
+      "input_tokens_details": {
+        "cache_write_tokens": 2533,
+        "cached_tokens": 0
+      },
+      "output_tokens": 446,
+      "output_tokens_details": {
+        "reasoning_tokens": 237
+      },
+      "total_tokens": 2982
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"CORE\",\n  \"confidence\": 0.87,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"UN investigation into an Israeli tank attack that killed Reuters journalist Issam Abdallah and wounded other journalists in Lebanon\",\n  \"conflict_relevance\": \"The main article directly addresses Israeli military action, civilian and journalist protection, alleged violations of international law, UN investigation, and Israel-Hezbollah hostilities. Although the incident occurred in Lebanon rather than Gaza, it is closely connected to the broader regional conflict and discourse about Israel's military conduct and media safety.\",\n  \"reason\": \"The headline-associated article is centrally about a conflict-related Israeli attack and international-law findings. The Gaza reference is limited to an image caption, but the substantive story concerns a directly connected regional front and relevant conflict discourse. The text also includes numerous unrelated news snippets and repeated items.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": true\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:09:33Z",
+  "duration_seconds": 5.078,
+  "error": null
+}

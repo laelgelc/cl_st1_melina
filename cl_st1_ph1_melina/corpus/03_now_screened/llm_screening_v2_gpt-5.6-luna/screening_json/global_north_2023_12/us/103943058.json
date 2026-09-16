@@ -1,0 +1,65 @@
+{
+  "article_id": "103943058",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_12/us/103943058.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_12/us/103943058.json"
+  },
+  "manifest_row": {
+    "article_id": "103943058",
+    "group": "global_north_2023_12",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2023_12/us/103943058.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "background",
+    "main_topic": "A weekly photo roundup featuring political, cultural, and international news images",
+    "conflict_relevance": "The roundup includes photographs and captions about the November 2023 Israel-Gaza ceasefire, the release of Israeli hostages held in Gaza, and the release of Palestinian prisoners from Israeli prisons.",
+    "reason": "The article is primarily a general-interest selection of the week's best photos, with only two meaningful Gaza-related photo captions. These provide relevant discourse on hostages, prisoners, and the ceasefire but do not make the article core conflict coverage.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "604492abfb118829ee792d65beb330d07658919a1555243aac4a7a8a5d22a682",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "9449028d0c28c7d766b1a915ed4fe2bfef27fc38e67b392a338292b3941f1369",
+    "raw_response_text_sha256": "47a31549a54ebd3596622a87127628f311654388d4f0c01d76976d2aa759037d"
+  },
+  "api_metadata": {
+    "id": "resp_01de469d0b6ada97006aaa01adfb2087d29bb28c402db32452",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789526446.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1499,
+      "input_tokens_details": {
+        "cache_write_tokens": 1496,
+        "cached_tokens": 0
+      },
+      "output_tokens": 261,
+      "output_tokens_details": {
+        "reasoning_tokens": 87
+      },
+      "total_tokens": 1760
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"A weekly photo roundup featuring political, cultural, and international news images\",\n  \"conflict_relevance\": \"The roundup includes photographs and captions about the November 2023 Israel-Gaza ceasefire, the release of Israeli hostages held in Gaza, and the release of Palestinian prisoners from Israeli prisons.\",\n  \"reason\": \"The article is primarily a general-interest selection of the week's best photos, with only two meaningful Gaza-related photo captions. These provide relevant discourse on hostages, prisoners, and the ceasefire but do not make the article core conflict coverage.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:40:51Z",
+  "duration_seconds": 5.877,
+  "error": null
+}

@@ -1,0 +1,65 @@
+{
+  "article_id": "103117146",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_south_2023_11/pk/103117146.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_south_2023_11/pk/103117146.json"
+  },
+  "manifest_row": {
+    "article_id": "103117146",
+    "group": "global_south_2023_11",
+    "country_code": "pk",
+    "filepath": "corpus/02_now_organised/global_south_2023_11/pk/103117146.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.94,
+    "gaza_role": "background",
+    "main_topic": "Mixed Pakistani domestic, regional, and international news roundup",
+    "conflict_relevance": "Includes a substantive international-news item reporting Bolivia's decision to sever diplomatic ties with Israel over attacks in Gaza and the humanitarian situation.",
+    "reason": "The text is primarily a collection of unrelated news snippets about Pakistan's courts, politics, crime, health, education, sports, and finance. The Gaza-related item is meaningful but embedded within the broader roundup rather than constituting the main subject.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "dd2f0fa645f22304348876cf850ea6bb468add15fe08ae42203558d8821bf026",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "03be180f182e7bd4d00b0f03229a9a8a894c564b1beff9fbd6928198ca7c0366",
+    "raw_response_text_sha256": "f73fc962ddad0970bd28a3c89f0ff28220e4ee4e467f3336450e48328b3b9183"
+  },
+  "api_metadata": {
+    "id": "resp_00f87832604c8835006aaa35e91d4c87d1a4519cc256c90c03",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789539817.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1254,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 1251
+      },
+      "output_tokens": 306,
+      "output_tokens_details": {
+        "reasoning_tokens": 147
+      },
+      "total_tokens": 1560
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.94,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Mixed Pakistani domestic, regional, and international news roundup\",\n  \"conflict_relevance\": \"Includes a substantive international-news item reporting Bolivia's decision to sever diplomatic ties with Israel over attacks in Gaza and the humanitarian situation.\",\n  \"reason\": \"The text is primarily a collection of unrelated news snippets about Pakistan's courts, politics, crime, health, education, sports, and finance. The Gaza-related item is meaningful but embedded within the broader roundup rather than constituting the main subject.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T06:23:41Z",
+  "duration_seconds": 4.756,
+  "error": null
+}

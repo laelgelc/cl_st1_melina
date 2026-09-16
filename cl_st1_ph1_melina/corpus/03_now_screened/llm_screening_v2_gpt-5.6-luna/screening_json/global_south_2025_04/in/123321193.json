@@ -1,0 +1,65 @@
+{
+  "article_id": "123321193",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_south_2025_04/in/123321193.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_south_2025_04/in/123321193.json"
+  },
+  "manifest_row": {
+    "article_id": "123321193",
+    "group": "global_south_2025_04",
+    "country_code": "in",
+    "filepath": "corpus/02_now_organised/global_south_2025_04/in/123321193.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.97,
+    "gaza_role": "passing",
+    "main_topic": "Indian political and civic events, including the postponement of an Ahmedabad candlelight vigil",
+    "conflict_relevance": "The article briefly reports a permitted candlelight vigil calling for an immediate ceasefire in Gaza, providing limited evidence of public discourse and protest related to the conflict.",
+    "reason": "Gaza is mentioned in a meaningful but incidental sentence within a local political news roundup; the article is not substantially about Gaza or the Israel-Palestine conflict.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "c9d196b1dfe2163fd7ce25c512f5ad9fc43e3aaec581e0abcd48e260fe9f0914",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "5bb51a048422aeb4f6cb336b360e53193598216b09a948245d60558584129df6",
+    "raw_response_text_sha256": "88909326dbfb70529567fd565d6a48f2567d7c314ecdeeb1c1bb409a6fb6da45"
+  },
+  "api_metadata": {
+    "id": "resp_0c11794aa2fef88c006aaa4771686c87d1b0a9a5358fe30bb9",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789544305.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 854,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 251,
+      "output_tokens_details": {
+        "reasoning_tokens": 95
+      },
+      "total_tokens": 1105
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.97,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Indian political and civic events, including the postponement of an Ahmedabad candlelight vigil\",\n  \"conflict_relevance\": \"The article briefly reports a permitted candlelight vigil calling for an immediate ceasefire in Gaza, providing limited evidence of public discourse and protest related to the conflict.\",\n  \"reason\": \"Gaza is mentioned in a meaningful but incidental sentence within a local political news roundup; the article is not substantially about Gaza or the Israel-Palestine conflict.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T07:38:28Z",
+  "duration_seconds": 3.489,
+  "error": null
+}

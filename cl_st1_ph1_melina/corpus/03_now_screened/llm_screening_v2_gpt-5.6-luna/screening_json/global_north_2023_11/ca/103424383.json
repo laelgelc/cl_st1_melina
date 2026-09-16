@@ -1,0 +1,65 @@
+{
+  "article_id": "103424383",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_11/ca/103424383.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_11/ca/103424383.json"
+  },
+  "manifest_row": {
+    "article_id": "103424383",
+    "group": "global_north_2023_11",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2023_11/ca/103424383.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "background",
+    "main_topic": "David Cameron's appointment as U.K. foreign secretary and Rishi Sunak's cabinet reshuffle",
+    "conflict_relevance": "The article is primarily about U.K. domestic politics but meaningfully discusses Suella Braverman's characterization of pro-Palestinian protesters during the Israel-Hamas war, the resulting political controversy, and far-right counterprotests.",
+    "reason": "The Israel-Hamas war and pro-Palestinian demonstrations are important to the account of Braverman's dismissal but are not the article's central subject. The appended CTVNews.ca Top Stories section also contains multiple unrelated conflict-related snippets.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "ce89fc416083f7be2d9049981c5e4903db5a53c911812a4ea71eeb6f9d121eaf",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "20827c4902ce42dbe2dba490a3dbe0383c401c2b235e796c3cc6459e13f0e64b",
+    "raw_response_text_sha256": "a589ec9bf884c5a8cfb680da1e703bbfaaa117dd43999712121a58612c9644bc"
+  },
+  "api_metadata": {
+    "id": "resp_06fad2791c1cda1d006aa9fbcff3c487d28475446ee41f024a",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789524943.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 3356,
+      "input_tokens_details": {
+        "cache_write_tokens": 3353,
+        "cached_tokens": 0
+      },
+      "output_tokens": 287,
+      "output_tokens_details": {
+        "reasoning_tokens": 96
+      },
+      "total_tokens": 3643
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"David Cameron's appointment as U.K. foreign secretary and Rishi Sunak's cabinet reshuffle\",\n  \"conflict_relevance\": \"The article is primarily about U.K. domestic politics but meaningfully discusses Suella Braverman's characterization of pro-Palestinian protesters during the Israel-Hamas war, the resulting political controversy, and far-right counterprotests.\",\n  \"reason\": \"The Israel-Hamas war and pro-Palestinian demonstrations are important to the account of Braverman's dismissal but are not the article's central subject. The appended CTVNews.ca Top Stories section also contains multiple unrelated conflict-related snippets.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:15:47Z",
+  "duration_seconds": 4.067,
+  "error": null
+}

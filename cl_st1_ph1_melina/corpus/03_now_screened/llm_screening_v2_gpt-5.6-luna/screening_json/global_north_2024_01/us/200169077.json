@@ -1,0 +1,65 @@
+{
+  "article_id": "200169077",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_01/us/200169077.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_01/us/200169077.json"
+  },
+  "manifest_row": {
+    "article_id": "200169077",
+    "group": "global_north_2024_01",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2024_01/us/200169077.txt"
+  },
+  "screening": {
+    "category": "CORE",
+    "confidence": 0.99,
+    "gaza_role": "substantial",
+    "main_topic": "Regional military escalation and developments connected to the Gaza war, including attacks on US forces, Israel-Hezbollah clashes, Gaza aid access, humanitarian conditions, and Israeli military operations",
+    "conflict_relevance": "The article is a live-update compilation substantially focused on the Gaza war and its regional consequences, including Gaza humanitarian access, hostages, UNRWA funding, Israeli military activity, Palestinian civilian casualties, and the risk of broader regional escalation.",
+    "reason": "Although the headline centers on a drone attack against US troops in Jordan, the article repeatedly frames the attack as a consequence of the Gaza war and includes multiple substantial reports directly concerning Gaza, Palestinians, Israeli military operations, aid, hospitals, civilian deaths, and hostage-related protests.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": true
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "4fb8a4eb97ecbf585a91491e8240d5e111791cdbf45b714864fd53a92a0c5953",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "68e2a1894b13a2b0cf61d54076cc17413324e03673e516cfb5667681152ea9f5",
+    "raw_response_text_sha256": "3f3acd52cf5d89b9b7310298b2c0d254f9714c897dbbf57cadc27dd94224253c"
+  },
+  "api_metadata": {
+    "id": "resp_0c0002e39064e42e006aaa05bdf55887d2ae41a8b9b4ac15cd",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789527485.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 3207,
+      "input_tokens_details": {
+        "cache_write_tokens": 3204,
+        "cached_tokens": 0
+      },
+      "output_tokens": 312,
+      "output_tokens_details": {
+        "reasoning_tokens": 103
+      },
+      "total_tokens": 3519
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"CORE\",\n  \"confidence\": 0.99,\n  \"gaza_role\": \"substantial\",\n  \"main_topic\": \"Regional military escalation and developments connected to the Gaza war, including attacks on US forces, Israel-Hezbollah clashes, Gaza aid access, humanitarian conditions, and Israeli military operations\",\n  \"conflict_relevance\": \"The article is a live-update compilation substantially focused on the Gaza war and its regional consequences, including Gaza humanitarian access, hostages, UNRWA funding, Israeli military activity, Palestinian civilian casualties, and the risk of broader regional escalation.\",\n  \"reason\": \"Although the headline centers on a drone attack against US troops in Jordan, the article repeatedly frames the attack as a consequence of the Gaza war and includes multiple substantial reports directly concerning Gaza, Palestinians, Israeli military operations, aid, hospitals, civilian deaths, and hostage-related protests.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": true\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:58:09Z",
+  "duration_seconds": 4.138,
+  "error": null
+}

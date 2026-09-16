@@ -1,0 +1,65 @@
+{
+  "article_id": "105306312",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_south_2024_01/in/105306312.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_south_2024_01/in/105306312.json"
+  },
+  "manifest_row": {
+    "article_id": "105306312",
+    "group": "global_south_2024_01",
+    "country_code": "in",
+    "filepath": "corpus/02_now_organised/global_south_2024_01/in/105306312.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "background",
+    "main_topic": "Breaking news roundup covering unrelated domestic and international events",
+    "conflict_relevance": "Includes a substantive embedded report on Saudi Arabia's conditions for normalising relations with Israel and contributing to Gaza's reconstruction, including the need for a pathway to Palestinian statehood.",
+    "reason": "The text is primarily a multi-item live news roundup with numerous unrelated stories. However, one embedded item contains meaningful diplomatic discourse directly concerning Gaza, Israel, Saudi-Israel normalisation, and Palestinian statehood, making it peripheral rather than excludable.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "8d7eb3810a95b41390f2a0f5682346415b6369b57b71d42d0467ad7bd2e99135",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "a1f023ae92ed2cfd159d145375d02799a44bfb9cdd64e00a68773f3bdb8f388c",
+    "raw_response_text_sha256": "159c3cdf95bd4fff6b5a9ffb85aeb70b1254523868c2a3e1ac10f5c3ad9d284e"
+  },
+  "api_metadata": {
+    "id": "resp_093dcec221bf5e38006aaa37f7237887d1b36a631680107757",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789540343.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2116,
+      "input_tokens_details": {
+        "cache_write_tokens": 2113,
+        "cached_tokens": 0
+      },
+      "output_tokens": 303,
+      "output_tokens_details": {
+        "reasoning_tokens": 134
+      },
+      "total_tokens": 2419
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Breaking news roundup covering unrelated domestic and international events\",\n  \"conflict_relevance\": \"Includes a substantive embedded report on Saudi Arabia's conditions for normalising relations with Israel and contributing to Gaza's reconstruction, including the need for a pathway to Palestinian statehood.\",\n  \"reason\": \"The text is primarily a multi-item live news roundup with numerous unrelated stories. However, one embedded item contains meaningful diplomatic discourse directly concerning Gaza, Israel, Saudi-Israel normalisation, and Palestinian statehood, making it peripheral rather than excludable.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T06:32:28Z",
+  "duration_seconds": 5.613,
+  "error": null
+}

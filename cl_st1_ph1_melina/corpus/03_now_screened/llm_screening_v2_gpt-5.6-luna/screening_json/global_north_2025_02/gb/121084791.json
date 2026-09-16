@@ -1,0 +1,65 @@
+{
+  "article_id": "121084791",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_02/gb/121084791.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_02/gb/121084791.json"
+  },
+  "manifest_row": {
+    "article_id": "121084791",
+    "group": "global_north_2025_02",
+    "country_code": "gb",
+    "filepath": "corpus/02_now_organised/global_north_2025_02/gb/121084791.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "passing",
+    "main_topic": "UK parliamentary procedure and the frequency of one-line whips under Keir Starmer's Labour government",
+    "conflict_relevance": "The main article is unrelated to Gaza, but the text includes a substantive embedded or adjacent snippet about the condition of Israeli hostages released by Hamas and alleged deprivation in captivity.",
+    "reason": "The headline and main discussion concern parliamentary voting practices, while the Gaza-related material appears as a separate 'Read next' item rather than part of the article's central content. It is meaningful enough to avoid exclusion but not suitable as core conflict coverage.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "450f84bac14a509c8aa00ffac4668fc646c1a045dc49d8d3f009a77894a288d3",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "56ea20ef961ea074552bf000e32afec72b8b63916cb7badd61411250d569cbb6",
+    "raw_response_text_sha256": "07ca2b90878368a666d56752a5a78655f5ac8005e0cc98721cbc80a3be12867b"
+  },
+  "api_metadata": {
+    "id": "resp_0c11cbc7e6fa50be006aaa22c5d95487d2ad7b7ea2a5dad386",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789534917.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 940,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 276,
+      "output_tokens_details": {
+        "reasoning_tokens": 98
+      },
+      "total_tokens": 1216
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"UK parliamentary procedure and the frequency of one-line whips under Keir Starmer's Labour government\",\n  \"conflict_relevance\": \"The main article is unrelated to Gaza, but the text includes a substantive embedded or adjacent snippet about the condition of Israeli hostages released by Hamas and alleged deprivation in captivity.\",\n  \"reason\": \"The headline and main discussion concern parliamentary voting practices, while the Gaza-related material appears as a separate 'Read next' item rather than part of the article's central content. It is meaningful enough to avoid exclusion but not suitable as core conflict coverage.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T05:02:01Z",
+  "duration_seconds": 3.352,
+  "error": null
+}

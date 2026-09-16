@@ -1,0 +1,65 @@
+{
+  "article_id": "200220252",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_02/us/200220252.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_02/us/200220252.json"
+  },
+  "manifest_row": {
+    "article_id": "200220252",
+    "group": "global_north_2024_02",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2024_02/us/200220252.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.88,
+    "gaza_role": "substantial",
+    "main_topic": "Planned U.S. retaliatory strikes against Iran-backed groups in Iraq and Syria following attacks on U.S. forces",
+    "conflict_relevance": "The article links the regional escalation directly to Israel's war against Hamas, describes the Gaza offensive and casualties, and explains how Iran-backed groups frame their attacks as support for Palestinians, but its primary focus is U.S. military retaliation outside Gaza.",
+    "reason": "Gaza and the Israel-Hamas war provide important context for the article's discussion of regional attacks and escalation, yet the main subject is U.S. action in Iraq and Syria rather than the Gaza conflict itself.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "fd5ea49c4a5e8791949d2326141c3cbfebfde37eaaf745000beb64a773f4c368",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "5b06407a62dd61f8b87a1cfea25e712a97eeb7814715b2b402d5ec7cc80d2a37",
+    "raw_response_text_sha256": "e34ffa6af42f3790f9c2c8e913be55b0344f271890fb7d9eb0dc51006ea1ef35"
+  },
+  "api_metadata": {
+    "id": "resp_0a161ae1ef925861006aaa07d8595087d2a974eb8f3f14692c",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789528024.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1615,
+      "input_tokens_details": {
+        "cache_write_tokens": 1612,
+        "cached_tokens": 0
+      },
+      "output_tokens": 378,
+      "output_tokens_details": {
+        "reasoning_tokens": 188
+      },
+      "total_tokens": 1993
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.88,\n  \"gaza_role\": \"substantial\",\n  \"main_topic\": \"Planned U.S. retaliatory strikes against Iran-backed groups in Iraq and Syria following attacks on U.S. forces\",\n  \"conflict_relevance\": \"The article links the regional escalation directly to Israel's war against Hamas, describes the Gaza offensive and casualties, and explains how Iran-backed groups frame their attacks as support for Palestinians, but its primary focus is U.S. military retaliation outside Gaza.\",\n  \"reason\": \"Gaza and the Israel-Hamas war provide important context for the article's discussion of regional attacks and escalation, yet the main subject is U.S. action in Iraq and Syria rather than the Gaza conflict itself.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:07:09Z",
+  "duration_seconds": 5.169,
+  "error": null
+}

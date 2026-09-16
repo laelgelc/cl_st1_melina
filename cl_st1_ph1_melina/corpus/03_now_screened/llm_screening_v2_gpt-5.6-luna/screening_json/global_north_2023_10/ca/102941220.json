@@ -1,0 +1,65 @@
+{
+  "article_id": "102941220",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_10/ca/102941220.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_10/ca/102941220.json"
+  },
+  "manifest_row": {
+    "article_id": "102941220",
+    "group": "global_north_2023_10",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2023_10/ca/102941220.txt"
+  },
+  "screening": {
+    "category": "CORE",
+    "confidence": 0.93,
+    "gaza_role": "central",
+    "main_topic": "Hamas's attack on Israel from the Gaza Strip",
+    "conflict_relevance": "The primary snippet directly concerns Hamas, Gaza, Israel, rocket attacks, infiltration, and the outbreak of major hostilities.",
+    "reason": "The first and most substantive article segment is centrally about the Gaza-based Hamas attack on Israel. The remaining segments concern unrelated New York flooding and a Canadian awards event.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": true
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "7ff9dd62335aebedc4b4266acb2a3c008653f31a3c99ac75e54035da0d3b5a85",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "a998701c88bfc7e1f0d1eedfe2ce71aa3f9c4f5d29c5866b0d63531744d64aac",
+    "raw_response_text_sha256": "c151dcd6421cb3a1b6e3f24169f14ae2bb8e7fd84965ef0251619919fb1fd89a"
+  },
+  "api_metadata": {
+    "id": "resp_0b87aff5d2469f28006aa9f6a4b42c87d2be20978f27884dc7",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789523620.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 746,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 252,
+      "output_tokens_details": {
+        "reasoning_tokens": 112
+      },
+      "total_tokens": 998
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"CORE\",\n  \"confidence\": 0.93,\n  \"gaza_role\": \"central\",\n  \"main_topic\": \"Hamas's attack on Israel from the Gaza Strip\",\n  \"conflict_relevance\": \"The primary snippet directly concerns Hamas, Gaza, Israel, rocket attacks, infiltration, and the outbreak of major hostilities.\",\n  \"reason\": \"The first and most substantive article segment is centrally about the Gaza-based Hamas attack on Israel. The remaining segments concern unrelated New York flooding and a Canadian awards event.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": true\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T01:53:44Z",
+  "duration_seconds": 3.423,
+  "error": null
+}

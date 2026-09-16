@@ -1,0 +1,65 @@
+{
+  "article_id": "103149966",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_11/us/103149966.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_11/us/103149966.json"
+  },
+  "manifest_row": {
+    "article_id": "103149966",
+    "group": "global_north_2023_11",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2023_11/us/103149966.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.93,
+    "gaza_role": "passing",
+    "main_topic": "Princess Kate and Prince William's school visit and interactions with children",
+    "conflict_relevance": "The article includes an embedded paragraph about the Gaza war, rising civilian deaths, and threats to Jewish and Muslim students and faculty on US campuses.",
+    "reason": "The main article is about the British royal family's mental-health and early-childhood engagement, but it contains a meaningful though unrelated embedded discussion of Gaza-related tensions in educational settings.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "1868cff9f660968983ccf1869d620382e2f9889af02fe3178614e259eee9e645",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "17e23ab0ff3df824a8dc865e2a7c1797db32123479e6ce55a1c1646136bd60e3",
+    "raw_response_text_sha256": "53baa4b9d6035fd5f95955e91ad3e656b2c5e3e44fc07d42444ba8ec62763173"
+  },
+  "api_metadata": {
+    "id": "resp_0d4d5f7bc81f5cb5006aa9fdfdaa3c87d298e31f53801309da",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789525501.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1515,
+      "input_tokens_details": {
+        "cache_write_tokens": 1512,
+        "cached_tokens": 0
+      },
+      "output_tokens": 331,
+      "output_tokens_details": {
+        "reasoning_tokens": 181
+      },
+      "total_tokens": 1846
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.93,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Princess Kate and Prince William's school visit and interactions with children\",\n  \"conflict_relevance\": \"The article includes an embedded paragraph about the Gaza war, rising civilian deaths, and threats to Jewish and Muslim students and faculty on US campuses.\",\n  \"reason\": \"The main article is about the British royal family's mental-health and early-childhood engagement, but it contains a meaningful though unrelated embedded discussion of Gaza-related tensions in educational settings.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:25:06Z",
+  "duration_seconds": 4.994,
+  "error": null
+}

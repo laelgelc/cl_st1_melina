@@ -1,0 +1,65 @@
+{
+  "article_id": "200123961",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_01/us/200123961.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_01/us/200123961.json"
+  },
+  "manifest_row": {
+    "article_id": "200123961",
+    "group": "global_north_2024_01",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2024_01/us/200123961.txt"
+  },
+  "screening": {
+    "category": "CORE",
+    "confidence": 0.99,
+    "gaza_role": "central",
+    "main_topic": "Commentary on the Israel-Palestine conflict, civilian suffering, competing victimhood, and the need for empathy and dialogue",
+    "conflict_relevance": "The main article directly discusses the October 7 Hamas attacks, Israeli hostages, Gaza deaths and bombardment, Palestinian suffering under occupation, Israeli and Palestinian perspectives, dehumanization, and peacebuilding.",
+    "reason": "The headline article is centrally focused on the Israeli-Palestinian conflict and its human, political, and discursive dimensions. Unrelated material about the SEC, entertainment, quantum computing, and the Epstein case is appended, but it is not part of the main article.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": true
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "541267bcf071647b50890c22cec049e25896ea46dfe4e791a3cadf5add97a490",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "8fec99133720d0dc35b39354d73d943cbe697c7b94d27dc1b1ee011b41e0cf6d",
+    "raw_response_text_sha256": "50b6bdd3411e99f97a28fff54f8720a2f34bc689ca917f3024244bfc82c3851c"
+  },
+  "api_metadata": {
+    "id": "resp_0db2daf35023c4c4006aaa055920d087d2a5c63b963d8a4a9d",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789527385.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 4569,
+      "input_tokens_details": {
+        "cache_write_tokens": 4566,
+        "cached_tokens": 0
+      },
+      "output_tokens": 261,
+      "output_tokens_details": {
+        "reasoning_tokens": 68
+      },
+      "total_tokens": 4830
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"CORE\",\n  \"confidence\": 0.99,\n  \"gaza_role\": \"central\",\n  \"main_topic\": \"Commentary on the Israel-Palestine conflict, civilian suffering, competing victimhood, and the need for empathy and dialogue\",\n  \"conflict_relevance\": \"The main article directly discusses the October 7 Hamas attacks, Israeli hostages, Gaza deaths and bombardment, Palestinian suffering under occupation, Israeli and Palestinian perspectives, dehumanization, and peacebuilding.\",\n  \"reason\": \"The headline article is centrally focused on the Israeli-Palestinian conflict and its human, political, and discursive dimensions. Unrelated material about the SEC, entertainment, quantum computing, and the Epstein case is appended, but it is not part of the main article.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": true\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:56:27Z",
+  "duration_seconds": 2.933,
+  "error": null
+}

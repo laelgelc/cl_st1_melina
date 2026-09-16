@@ -1,0 +1,65 @@
+{
+  "article_id": "115320534",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_south_2024_10/in/115320534.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_south_2024_10/in/115320534.json"
+  },
+  "manifest_row": {
+    "article_id": "115320534",
+    "group": "global_south_2024_10",
+    "country_code": "in",
+    "filepath": "corpus/02_now_organised/global_south_2024_10/in/115320534.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "background",
+    "main_topic": "Indian stock-market decline driven by Middle East tensions, regulatory changes, and shifting investment flows to China",
+    "conflict_relevance": "The article discusses the Iran-Israel escalation and briefly situates it within broader regional conflict involving Israel and its proxies in Gaza, Lebanon, and Yemen, but its main focus is financial-market analysis.",
+    "reason": "The conflict is meaningful context for explaining market movements, yet Gaza and the wider Israel-related conflict are not the article's central subject.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "56bac69989dc39796728eedf679459f2647a8ffca4c3d6ada9da93a620c8b4f7",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "a0cdc76bbe2aa934a4b176a61e69d12cf077cfa0dc29c8144a8bb72d922328f3",
+    "raw_response_text_sha256": "0fa232dd001a4a06a82bde3734ce4cd913a19d9afc48caf096142fd32e5fcf66"
+  },
+  "api_metadata": {
+    "id": "resp_0ae40e8cedef8d97006aaa3ff7f7e087d1941be6e018b8e303",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789542392.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1064,
+      "input_tokens_details": {
+        "cache_write_tokens": 1061,
+        "cached_tokens": 0
+      },
+      "output_tokens": 205,
+      "output_tokens_details": {
+        "reasoning_tokens": 45
+      },
+      "total_tokens": 1269
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Indian stock-market decline driven by Middle East tensions, regulatory changes, and shifting investment flows to China\",\n  \"conflict_relevance\": \"The article discusses the Iran-Israel escalation and briefly situates it within broader regional conflict involving Israel and its proxies in Gaza, Lebanon, and Yemen, but its main focus is financial-market analysis.\",\n  \"reason\": \"The conflict is meaningful context for explaining market movements, yet Gaza and the wider Israel-related conflict are not the article's central subject.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T07:06:34Z",
+  "duration_seconds": 3.0,
+  "error": null
+}

@@ -1,0 +1,65 @@
+{
+  "article_id": "123238255",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_04/au/123238255.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_04/au/123238255.json"
+  },
+  "manifest_row": {
+    "article_id": "123238255",
+    "group": "global_north_2025_04",
+    "country_code": "au",
+    "filepath": "corpus/02_now_organised/global_north_2025_04/au/123238255.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.99,
+    "gaza_role": "background",
+    "main_topic": "Australian federal election contests in Victorian electorates",
+    "conflict_relevance": "The article is primarily an election guide, but it meaningfully discusses the Israel-Palestine conflict and community anger about Gaza as factors influencing voting and candidate campaigning in electorates with substantial Muslim, Arabic-speaking, or Palestinian-heritage populations.",
+    "reason": "Gaza and the Israel-Palestine conflict are not the article's central subject, but they receive substantive treatment as an electoral issue in the Wills and Calwell sections.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "4901f9887e7780b574ed07e5edcac8ff8e1e0ac1656ca34cfb53d99aaa118fd5",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "cfe12b865634a483b238b50c960c6c494dd4eb3daa8a02765dc1153775cc5e7f",
+    "raw_response_text_sha256": "b4bcf8c0af8bf902fe85591aeb74a56a4ff5f24c9e8d561519d06dde2de5b1fd"
+  },
+  "api_metadata": {
+    "id": "resp_0a30febeb07da632006aaa28550a0c87d18440fb4757dad846",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789536341.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 4478,
+      "input_tokens_details": {
+        "cache_write_tokens": 4475,
+        "cached_tokens": 0
+      },
+      "output_tokens": 329,
+      "output_tokens_details": {
+        "reasoning_tokens": 160
+      },
+      "total_tokens": 4807
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.99,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Australian federal election contests in Victorian electorates\",\n  \"conflict_relevance\": \"The article is primarily an election guide, but it meaningfully discusses the Israel-Palestine conflict and community anger about Gaza as factors influencing voting and candidate campaigning in electorates with substantial Muslim, Arabic-speaking, or Palestinian-heritage populations.\",\n  \"reason\": \"Gaza and the Israel-Palestine conflict are not the article's central subject, but they receive substantive treatment as an electoral issue in the Wills and Calwell sections.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T05:25:45Z",
+  "duration_seconds": 4.124,
+  "error": null
+}

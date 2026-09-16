@@ -1,0 +1,65 @@
+{
+  "article_id": "200137266",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_01/us/200137266.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_01/us/200137266.json"
+  },
+  "manifest_row": {
+    "article_id": "200137266",
+    "group": "global_north_2024_01",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2024_01/us/200137266.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.97,
+    "gaza_role": "background",
+    "main_topic": "US and UK strikes against Houthi capabilities and attacks on Red Sea shipping",
+    "conflict_relevance": "The article focuses on the Houthi attacks and international military response in the Red Sea, while linking those attacks to Israel's offensive in Gaza and Hamas's October 7 attacks.",
+    "reason": "Gaza is presented as the context and stated cause of the Houthi campaign, but the article's main subject is Yemen, maritime security, and freedom of navigation rather than Gaza or the Israel-Hamas war itself.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "f3b20cc9fa16f1c943ca51f8a57e4a2a86869b77b717da272cfa8f2036f5dae5",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "93ffe410893e8dbe3a47790ea732e79dc454515e963213219002a834089c2b60",
+    "raw_response_text_sha256": "12bd80631f43b0c17b7940d788c2e767f466c9ce335aeefa72dc9d346ffccf5b"
+  },
+  "api_metadata": {
+    "id": "resp_0e2e12fb1e867474006aaa0579a7cc87d28a07b99ce5845b30",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789527417.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1307,
+      "input_tokens_details": {
+        "cache_write_tokens": 1304,
+        "cached_tokens": 0
+      },
+      "output_tokens": 247,
+      "output_tokens_details": {
+        "reasoning_tokens": 76
+      },
+      "total_tokens": 1554
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.97,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"US and UK strikes against Houthi capabilities and attacks on Red Sea shipping\",\n  \"conflict_relevance\": \"The article focuses on the Houthi attacks and international military response in the Red Sea, while linking those attacks to Israel's offensive in Gaza and Hamas's October 7 attacks.\",\n  \"reason\": \"Gaza is presented as the context and stated cause of the Houthi campaign, but the article's main subject is Yemen, maritime security, and freedom of navigation rather than Gaza or the Israel-Hamas war itself.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:57:01Z",
+  "duration_seconds": 3.588,
+  "error": null
+}

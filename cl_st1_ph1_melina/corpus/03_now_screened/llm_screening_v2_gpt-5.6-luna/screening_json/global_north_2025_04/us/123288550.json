@@ -1,0 +1,65 @@
+{
+  "article_id": "123288550",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_04/us/123288550.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_04/us/123288550.json"
+  },
+  "manifest_row": {
+    "article_id": "123288550",
+    "group": "global_north_2025_04",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2025_04/us/123288550.txt"
+  },
+  "screening": {
+    "category": "CORE",
+    "confidence": 0.9,
+    "gaza_role": "substantial",
+    "main_topic": "Trump-Netanyahu discussions concerning Iran, Israel-US relations, Gaza hostages, displacement, and the resumption of the Gaza war",
+    "conflict_relevance": "The article substantially covers Israel-Palestine conflict issues, including hostage negotiations, Israel's military campaign in Gaza, protests in Israel, and a proposed relocation of displaced Palestinians.",
+    "reason": "Although the article also focuses on Iran nuclear talks and US-Israel trade relations, its coverage includes substantive reporting on Gaza hostages, displaced Palestinians, Israeli protests, and the continuation of military action in Gaza.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": true
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "7010afd5e955205714be15316acfaff5a68b018531147cb9628637e50735af31",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "86aaa43e8c29dd581c353c241093f13dbd75e08c59541d405fe03548724a3d34",
+    "raw_response_text_sha256": "29c16bd7b33c2a686b54d9148217382211fef6ab83a5fbed1ac897507e7e1818"
+  },
+  "api_metadata": {
+    "id": "resp_0e473eeb0189cfa0006aaa2a00a28087d191196f10de934e27",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789536768.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1240,
+      "input_tokens_details": {
+        "cache_write_tokens": 1237,
+        "cached_tokens": 0
+      },
+      "output_tokens": 287,
+      "output_tokens_details": {
+        "reasoning_tokens": 111
+      },
+      "total_tokens": 1527
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"CORE\",\n  \"confidence\": 0.9,\n  \"gaza_role\": \"substantial\",\n  \"main_topic\": \"Trump-Netanyahu discussions concerning Iran, Israel-US relations, Gaza hostages, displacement, and the resumption of the Gaza war\",\n  \"conflict_relevance\": \"The article substantially covers Israel-Palestine conflict issues, including hostage negotiations, Israel's military campaign in Gaza, protests in Israel, and a proposed relocation of displaced Palestinians.\",\n  \"reason\": \"Although the article also focuses on Iran nuclear talks and US-Israel trade relations, its coverage includes substantive reporting on Gaza hostages, displaced Palestinians, Israeli protests, and the continuation of military action in Gaza.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": true\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T05:32:52Z",
+  "duration_seconds": 3.775,
+  "error": null
+}

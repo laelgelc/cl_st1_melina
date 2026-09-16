@@ -1,0 +1,65 @@
+{
+  "article_id": "109027046",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_south_2024_06/pk/109027046.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_south_2024_06/pk/109027046.json"
+  },
+  "manifest_row": {
+    "article_id": "109027046",
+    "group": "global_south_2024_06",
+    "country_code": "pk",
+    "filepath": "corpus/02_now_organised/global_south_2024_06/pk/109027046.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.96,
+    "gaza_role": "substantial",
+    "main_topic": "A fraud case involving Pakistani actor Javed Sheikh, with an unrelated article about Arab-American voting and Gaza appended to the text",
+    "conflict_relevance": "The primary article is unrelated to Gaza or Palestine, but the appended article substantially discusses Arab-American political responses to the Gaza war, Biden's Israel/Palestine policies, ceasefire demands, humanitarian aid, and arms shipments to Israel.",
+    "reason": "The text contains two unrelated articles. The main article concerns a Pakistani fraud case, while the appended article is meaningfully relevant to Gaza-related political discourse. Because the Gaza material is substantial but appears to be a separate embedded article rather than the main article, this is peripheral rather than core.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "a1c810c39e27b08697cbfab2d7ab57ceed5b906334715d70157ada48453a5fc9",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "a4c3b797715ba7810745ff87655b53fc64b378cb04940fdd55efff149ac564c1",
+    "raw_response_text_sha256": "954b91ee386715442004b46a1c1f999199c22d5174fef50d3147f201a27afe60"
+  },
+  "api_metadata": {
+    "id": "resp_08230852fc66e5a1006aaa3c8cb56487d1a753282a7e1ac021",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789541516.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2443,
+      "input_tokens_details": {
+        "cache_write_tokens": 2440,
+        "cached_tokens": 0
+      },
+      "output_tokens": 606,
+      "output_tokens_details": {
+        "reasoning_tokens": 401
+      },
+      "total_tokens": 3049
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.96,\n  \"gaza_role\": \"substantial\",\n  \"main_topic\": \"A fraud case involving Pakistani actor Javed Sheikh, with an unrelated article about Arab-American voting and Gaza appended to the text\",\n  \"conflict_relevance\": \"The primary article is unrelated to Gaza or Palestine, but the appended article substantially discusses Arab-American political responses to the Gaza war, Biden's Israel/Palestine policies, ceasefire demands, humanitarian aid, and arms shipments to Israel.\",\n  \"reason\": \"The text contains two unrelated articles. The main article concerns a Pakistani fraud case, while the appended article is meaningfully relevant to Gaza-related political discourse. Because the Gaza material is substantial but appears to be a separate embedded article rather than the main article, this is peripheral rather than core.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T06:52:03Z",
+  "duration_seconds": 7.176,
+  "error": null
+}

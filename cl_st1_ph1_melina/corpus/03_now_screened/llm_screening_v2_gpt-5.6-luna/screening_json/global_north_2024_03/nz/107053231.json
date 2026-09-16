@@ -1,0 +1,65 @@
+{
+  "article_id": "107053231",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_03/nz/107053231.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_03/nz/107053231.json"
+  },
+  "manifest_row": {
+    "article_id": "107053231",
+    "group": "global_north_2024_03",
+    "country_code": "nz",
+    "filepath": "corpus/02_now_organised/global_north_2024_03/nz/107053231.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.96,
+    "gaza_role": "passing",
+    "main_topic": "Homicide investigation in Hastings, New Zealand",
+    "conflict_relevance": "A separate roundup snippet briefly mentions New Zealand providing humanitarian funding for Gaza and the West Bank.",
+    "reason": "The main article concerns a local homicide investigation and is unrelated to the Israel-Palestine conflict. However, an additional news snippet contains a meaningful but very brief reference to humanitarian assistance for Gaza and the West Bank.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "90f116722a710099c202ce7aacd8f2d68851b3003b2e1090ec557c763df4e443",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "12ce119d40812319c7eb8dd4eb00c0447ea4b20db2219b25cd33d0a2eadef74c",
+    "raw_response_text_sha256": "395fecc656334903c7c0454062bf0b850dc6466f2ae0c918bbd200d02c3f1e5f"
+  },
+  "api_metadata": {
+    "id": "resp_0dbdadf775ea80b0006aaa094e998487d28d6fb057763533e9",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789528398.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1334,
+      "input_tokens_details": {
+        "cache_write_tokens": 1331,
+        "cached_tokens": 0
+      },
+      "output_tokens": 245,
+      "output_tokens_details": {
+        "reasoning_tokens": 99
+      },
+      "total_tokens": 1579
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.96,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Homicide investigation in Hastings, New Zealand\",\n  \"conflict_relevance\": \"A separate roundup snippet briefly mentions New Zealand providing humanitarian funding for Gaza and the West Bank.\",\n  \"reason\": \"The main article concerns a local homicide investigation and is unrelated to the Israel-Palestine conflict. However, an additional news snippet contains a meaningful but very brief reference to humanitarian assistance for Gaza and the West Bank.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:13:22Z",
+  "duration_seconds": 4.025,
+  "error": null
+}

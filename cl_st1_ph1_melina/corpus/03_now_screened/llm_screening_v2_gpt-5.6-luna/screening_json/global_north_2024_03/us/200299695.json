@@ -1,0 +1,65 @@
+{
+  "article_id": "200299695",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_03/us/200299695.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_03/us/200299695.json"
+  },
+  "manifest_row": {
+    "article_id": "200299695",
+    "group": "global_north_2024_03",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2024_03/us/200299695.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.97,
+    "gaza_role": "passing",
+    "main_topic": "Democratic intervention in the Ohio Republican Senate primary",
+    "conflict_relevance": "The main article is unrelated to Gaza, but a recommended-stories snippet meaningfully references Chuck Schumer's criticism of Netanyahu's handling of the Gaza war and his call for new Israeli elections.",
+    "reason": "The article's central subject is U.S. electoral strategy in Ohio. Gaza appears only in a substantive but unrelated recommended-story item, making the piece peripheral rather than core.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "81c5e231be72343c9a9044e0ae6442d923396950171ecbe41930b2dd913bf8f7",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "58508e6c0c3d0377d778446e7f3969dc230365f195aed5ae3db3796cf19cd54d",
+    "raw_response_text_sha256": "45a943a2d561c741c4374ac929507ca0e4d51d564964d48573da6854909e2780"
+  },
+  "api_metadata": {
+    "id": "resp_0aa79ab0975daab0006aaa0a62b8c087d2be8138cd8a2e355a",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789528674.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1804,
+      "input_tokens_details": {
+        "cache_write_tokens": 1801,
+        "cached_tokens": 0
+      },
+      "output_tokens": 282,
+      "output_tokens_details": {
+        "reasoning_tokens": 125
+      },
+      "total_tokens": 2086
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.97,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Democratic intervention in the Ohio Republican Senate primary\",\n  \"conflict_relevance\": \"The main article is unrelated to Gaza, but a recommended-stories snippet meaningfully references Chuck Schumer's criticism of Netanyahu's handling of the Gaza war and his call for new Israeli elections.\",\n  \"reason\": \"The article's central subject is U.S. electoral strategy in Ohio. Gaza appears only in a substantive but unrelated recommended-story item, making the piece peripheral rather than core.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:17:57Z",
+  "duration_seconds": 3.024,
+  "error": null
+}

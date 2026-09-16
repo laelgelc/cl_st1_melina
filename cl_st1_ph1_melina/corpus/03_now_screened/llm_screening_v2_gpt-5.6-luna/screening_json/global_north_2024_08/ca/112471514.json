@@ -1,0 +1,65 @@
+{
+  "article_id": "112471514",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_08/ca/112471514.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_08/ca/112471514.json"
+  },
+  "manifest_row": {
+    "article_id": "112471514",
+    "group": "global_north_2024_08",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2024_08/ca/112471514.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "gaza_role": "passing",
+    "main_topic": "Canadian federal politics, parliamentary resumption, and upcoming byelections",
+    "conflict_relevance": "The article is primarily about Canadian political developments and contains only a passing Gaza-related item in an unrelated roundup section.",
+    "reason": "Gaza appears in a single brief news snippet about Israeli strikes and cease-fire negotiations, while the main article concerns Canadian parties, byelections, cabinet changes, and Parliament.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "7a2b2f3c37b6c773b4b9108e91f1db4c58f0df690a86e77e21fe3cf34285681a",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "27f2db0f30ec1c31213f6aa05e52c85296b5ac58b4e944515b4c77a4661b8955",
+    "raw_response_text_sha256": "bb7f12e83a0552e04d81e29e6f95bb70f4720d390c99806416e876bef907e411"
+  },
+  "api_metadata": {
+    "id": "resp_0806b3130379e0ea006aaa13f0eaac87d2ab6871dfd7f2a81e",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789531120.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 4125,
+      "input_tokens_details": {
+        "cache_write_tokens": 4122,
+        "cached_tokens": 0
+      },
+      "output_tokens": 193,
+      "output_tokens_details": {
+        "reasoning_tokens": 50
+      },
+      "total_tokens": 4318
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Canadian federal politics, parliamentary resumption, and upcoming byelections\",\n  \"conflict_relevance\": \"The article is primarily about Canadian political developments and contains only a passing Gaza-related item in an unrelated roundup section.\",\n  \"reason\": \"Gaza appears in a single brief news snippet about Israeli strikes and cease-fire negotiations, while the main article concerns Canadian parties, byelections, cabinet changes, and Parliament.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:58:44Z",
+  "duration_seconds": 3.364,
+  "error": null
+}

@@ -1,0 +1,65 @@
+{
+  "article_id": "117683258",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_11/au/117683258.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_11/au/117683258.json"
+  },
+  "manifest_row": {
+    "article_id": "117683258",
+    "group": "global_north_2024_11",
+    "country_code": "au",
+    "filepath": "corpus/02_now_organised/global_north_2024_11/au/117683258.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.96,
+    "gaza_role": "background",
+    "main_topic": "Australian political donation reform and a broader news roundup",
+    "conflict_relevance": "The roundup contains a substantive item on Australia's UN vote concerning Palestinian sovereignty, Israeli settlements, occupation, and allegations of war crimes and forced displacement in Gaza.",
+    "reason": "The main article concerns political donation caps and unrelated Australian news, but it includes a meaningful standalone section on Palestine, Israel's occupation and settlement activity, and Gaza. Because the conflict material is embedded as a secondary roundup item rather than the main focus, it is peripheral rather than core.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "187dff118edb9993ab0c8d2268ba5f9a5d78c3157be6ae693ea124ff4f1f6756",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "31cecfb9972830941d51be42df7a8a584e55f1c1f9bcaa9cff4713d0c21bf5ab",
+    "raw_response_text_sha256": "d80ce4f1def0a216834c70022e876bccfdf81e64b85856835359f9437b4ae3b2"
+  },
+  "api_metadata": {
+    "id": "resp_083f79e1360ab59b006aaa1a105cfc87d2bf9bbfc9d541eaa2",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789532688.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2070,
+      "input_tokens_details": {
+        "cache_write_tokens": 2067,
+        "cached_tokens": 0
+      },
+      "output_tokens": 344,
+      "output_tokens_details": {
+        "reasoning_tokens": 173
+      },
+      "total_tokens": 2414
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.96,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Australian political donation reform and a broader news roundup\",\n  \"conflict_relevance\": \"The roundup contains a substantive item on Australia's UN vote concerning Palestinian sovereignty, Israeli settlements, occupation, and allegations of war crimes and forced displacement in Gaza.\",\n  \"reason\": \"The main article concerns political donation caps and unrelated Australian news, but it includes a meaningful standalone section on Palestine, Israel's occupation and settlement activity, and Gaza. Because the conflict material is embedded as a secondary roundup item rather than the main focus, it is peripheral rather than core.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T04:24:51Z",
+  "duration_seconds": 3.685,
+  "error": null
+}

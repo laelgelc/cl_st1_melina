@@ -1,0 +1,65 @@
+{
+  "article_id": "103117255",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_11/us/103117255.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_11/us/103117255.json"
+  },
+  "manifest_row": {
+    "article_id": "103117255",
+    "group": "global_north_2023_11",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2023_11/us/103117255.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "background",
+    "main_topic": "President Biden's rural economic agenda and Minnesota campaign visit",
+    "conflict_relevance": "The article briefly reports Biden's remarks about the Israel-Hamas war, the Rafah crossing, evacuations from Gaza, and U.S. diplomatic efforts, but the main focus is domestic policy and electoral politics.",
+    "reason": "The Gaza-related passage is meaningful and concerns humanitarian evacuation and diplomacy, yet it occupies only a small part of an article primarily about Biden's rural economic agenda and campaign activities.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "d19fd40889157420690e99fa0586e37f7b85a268246737993c3b291ed123efea",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "ca4c5bd9b16511a04c7e4a207410746314acf86f453c546f8ba9a1f957bda80d",
+    "raw_response_text_sha256": "357537a40283bb9022c2a9e2bd5bf1afaaf5bd71b3c8bc4f72745815a93dea27"
+  },
+  "api_metadata": {
+    "id": "resp_0e77f76415f7ae38006aa9fde4d8c487d295d4d42e013b109e",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789525476.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1426,
+      "input_tokens_details": {
+        "cache_write_tokens": 1423,
+        "cached_tokens": 0
+      },
+      "output_tokens": 225,
+      "output_tokens_details": {
+        "reasoning_tokens": 63
+      },
+      "total_tokens": 1651
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"President Biden's rural economic agenda and Minnesota campaign visit\",\n  \"conflict_relevance\": \"The article briefly reports Biden's remarks about the Israel-Hamas war, the Rafah crossing, evacuations from Gaza, and U.S. diplomatic efforts, but the main focus is domestic policy and electoral politics.\",\n  \"reason\": \"The Gaza-related passage is meaningful and concerns humanitarian evacuation and diplomacy, yet it occupies only a small part of an article primarily about Biden's rural economic agenda and campaign activities.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:24:39Z",
+  "duration_seconds": 3.033,
+  "error": null
+}

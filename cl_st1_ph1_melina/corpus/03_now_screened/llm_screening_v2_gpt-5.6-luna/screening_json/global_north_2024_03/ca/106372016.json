@@ -1,0 +1,65 @@
+{
+  "article_id": "106372016",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_03/ca/106372016.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_03/ca/106372016.json"
+  },
+  "manifest_row": {
+    "article_id": "106372016",
+    "group": "global_north_2024_03",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2024_03/ca/106372016.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.97,
+    "gaza_role": "background",
+    "main_topic": "Mixed latest-news roundup including markets, consumer recalls, legal news, human-interest stories, and a Gaza humanitarian-aid snippet",
+    "conflict_relevance": "Contains a meaningful but truncated discussion of proposed airdrops of food to hungry Palestinians, Israel's partial siege of Gaza, and the limits of airdrops compared with humanitarian access.",
+    "reason": "The text is primarily an unrelated aggregation of multiple news and finance items. The Gaza passage is substantively relevant to humanitarian conditions and access but is embedded among unrelated snippets and is not the main focus.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "2991cea9fda4f4fe903f348bb0b47c25d01c719d404aada983f84860ee3cf550",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "c14d9f5fe32917542cc2d213773b8732f3d2420c1f11768c185cd76b06098923",
+    "raw_response_text_sha256": "a3d3c341cfa6e47565e8c9bf40768c62ab27fe6d966fb55268ed10adb81e0d29"
+  },
+  "api_metadata": {
+    "id": "resp_0db416bd720133f3006aaa08533c0887d29d26e924a637c4cd",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789528147.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1224,
+      "input_tokens_details": {
+        "cache_write_tokens": 1221,
+        "cached_tokens": 0
+      },
+      "output_tokens": 309,
+      "output_tokens_details": {
+        "reasoning_tokens": 134
+      },
+      "total_tokens": 1533
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.97,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Mixed latest-news roundup including markets, consumer recalls, legal news, human-interest stories, and a Gaza humanitarian-aid snippet\",\n  \"conflict_relevance\": \"Contains a meaningful but truncated discussion of proposed airdrops of food to hungry Palestinians, Israel's partial siege of Gaza, and the limits of airdrops compared with humanitarian access.\",\n  \"reason\": \"The text is primarily an unrelated aggregation of multiple news and finance items. The Gaza passage is substantively relevant to humanitarian conditions and access but is embedded among unrelated snippets and is not the main focus.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:09:11Z",
+  "duration_seconds": 4.032,
+  "error": null
+}

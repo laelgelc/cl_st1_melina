@@ -1,0 +1,65 @@
+{
+  "article_id": "103701742",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_11/gb/103701742.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_11/gb/103701742.json"
+  },
+  "manifest_row": {
+    "article_id": "103701742",
+    "group": "global_north_2023_11",
+    "country_code": "gb",
+    "filepath": "corpus/02_now_organised/global_north_2023_11/gb/103701742.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "background",
+    "main_topic": "The volcanic earthquake and evacuation crisis in Grindavik, Iceland",
+    "conflict_relevance": "A substantive embedded news item reports on the delayed Gaza cease-fire, hostage and prisoner releases, Israeli bombardment, Hamas's October 7 attack, and humanitarian suffering, but this is not the main subject of the article.",
+    "reason": "The text is primarily an article about Iceland's volcanic activity and also contains unrelated sports, culture, and lifestyle snippets. The Gaza passage is meaningful and directly relevant to the research topic, but it appears as a separate embedded news item rather than forming the article's central focus.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "9c4e2df0c55562ae8182c7ee4e280c556eeb5416327ba8d6b80a42a6e04cde2d",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "c3ff4add02fb3532c783072b32a655378e3ff08a1cbdad724deefcf202d49109",
+    "raw_response_text_sha256": "9244f7cba7297bd5871a33c74a887b523ce1225bb2bb7c5ca390232671748803"
+  },
+  "api_metadata": {
+    "id": "resp_03e5713fe48fd31b006aa9fd1b71ec87d2b866e85265d479fb",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789525275.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2068,
+      "input_tokens_details": {
+        "cache_write_tokens": 2065,
+        "cached_tokens": 0
+      },
+      "output_tokens": 293,
+      "output_tokens_details": {
+        "reasoning_tokens": 107
+      },
+      "total_tokens": 2361
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"The volcanic earthquake and evacuation crisis in Grindavik, Iceland\",\n  \"conflict_relevance\": \"A substantive embedded news item reports on the delayed Gaza cease-fire, hostage and prisoner releases, Israeli bombardment, Hamas's October 7 attack, and humanitarian suffering, but this is not the main subject of the article.\",\n  \"reason\": \"The text is primarily an article about Iceland's volcanic activity and also contains unrelated sports, culture, and lifestyle snippets. The Gaza passage is meaningful and directly relevant to the research topic, but it appears as a separate embedded news item rather than forming the article's central focus.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:21:22Z",
+  "duration_seconds": 8.269,
+  "error": null
+}

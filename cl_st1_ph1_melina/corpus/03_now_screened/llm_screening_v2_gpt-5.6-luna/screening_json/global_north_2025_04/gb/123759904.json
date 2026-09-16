@@ -1,0 +1,65 @@
+{
+  "article_id": "123759904",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_04/gb/123759904.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_04/gb/123759904.json"
+  },
+  "manifest_row": {
+    "article_id": "123759904",
+    "group": "global_north_2025_04",
+    "country_code": "gb",
+    "filepath": "corpus/02_now_organised/global_north_2025_04/gb/123759904.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.99,
+    "gaza_role": "passing",
+    "main_topic": "The British royal family's Easter service and controversies surrounding Prince Andrew and the Church of England",
+    "conflict_relevance": "Gaza and Israel are mentioned in the archbishop of York's Easter sermon as examples of global conflict, alongside Ukraine, Myanmar, Sudan, and the Democratic Republic of the Congo.",
+    "reason": "The article is primarily about the British royal family, Prince Andrew's links to an alleged Chinese spy, and Church of England controversies. Its brief reference to Israel and Gaza provides limited but meaningful relevance to broader humanitarian and conflict discourse.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "6df2ac14e27fe8b070f107d54f14152781a3817ca71597a8f719022cd2a79236",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "80423474bb924bdf179965cf153d8803d765dda2551d13bed302e3fe5e27403c",
+    "raw_response_text_sha256": "df2543e927ecfcd25a2e1638c0627959cd0b906fe9ad9e7ea806651e522f99a3"
+  },
+  "api_metadata": {
+    "id": "resp_01d143133e477cfc006aaa291076c887d1a4cf2078717a795e",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789536528.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1298,
+      "input_tokens_details": {
+        "cache_write_tokens": 1295,
+        "cached_tokens": 0
+      },
+      "output_tokens": 225,
+      "output_tokens_details": {
+        "reasoning_tokens": 52
+      },
+      "total_tokens": 1523
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.99,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"The British royal family's Easter service and controversies surrounding Prince Andrew and the Church of England\",\n  \"conflict_relevance\": \"Gaza and Israel are mentioned in the archbishop of York's Easter sermon as examples of global conflict, alongside Ukraine, Myanmar, Sudan, and the Democratic Republic of the Congo.\",\n  \"reason\": \"The article is primarily about the British royal family, Prince Andrew's links to an alleged Chinese spy, and Church of England controversies. Its brief reference to Israel and Gaza provides limited but meaningful relevance to broader humanitarian and conflict discourse.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T05:28:51Z",
+  "duration_seconds": 3.259,
+  "error": null
+}

@@ -1,0 +1,65 @@
+{
+  "article_id": "123778613",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_04/us/123778613.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_04/us/123778613.json"
+  },
+  "manifest_row": {
+    "article_id": "123778613",
+    "group": "global_north_2025_04",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2025_04/us/123778613.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.93,
+    "gaza_role": "background",
+    "main_topic": "Israeli democratic institutions, alleged bureaucratic overreach, and conflicts involving the government, Shin Bet, police, and judiciary",
+    "conflict_relevance": "The article references Israeli hostages held by Hamas in Gaza, hostage-family protests, and security and counterterrorism controversies, but its primary focus is Israel's internal political and democratic crisis.",
+    "reason": "The Gaza-related material provides context for the hostage issue and Israeli security agencies, while the article mainly discusses domestic Israeli governance, alleged institutional corruption, and the Netanyahu government's conflict with bureaucratic and judicial authorities.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "6ad38b385f80a5deac8fb23fb0fe1f15bc757a4578c0a52014889f6ea13a4f0c",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "d42ada6429668adaa7317414fcccf3aca4f51e3e0b36c7e8060f2a683b2f9e70",
+    "raw_response_text_sha256": "80240cc7a70e00973d73429eda21caece1a1e2fdce76aa1c5bdf88fef39007f6"
+  },
+  "api_metadata": {
+    "id": "resp_0a1818b8939964f4006aaa2a77979487d18b2e145c149f0a42",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789536887.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2003,
+      "input_tokens_details": {
+        "cache_write_tokens": 2000,
+        "cached_tokens": 0
+      },
+      "output_tokens": 244,
+      "output_tokens_details": {
+        "reasoning_tokens": 67
+      },
+      "total_tokens": 2247
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.93,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Israeli democratic institutions, alleged bureaucratic overreach, and conflicts involving the government, Shin Bet, police, and judiciary\",\n  \"conflict_relevance\": \"The article references Israeli hostages held by Hamas in Gaza, hostage-family protests, and security and counterterrorism controversies, but its primary focus is Israel's internal political and democratic crisis.\",\n  \"reason\": \"The Gaza-related material provides context for the hostage issue and Israeli security agencies, while the article mainly discusses domestic Israeli governance, alleged institutional corruption, and the Netanyahu government's conflict with bureaucratic and judicial authorities.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T05:34:51Z",
+  "duration_seconds": 3.6,
+  "error": null
+}

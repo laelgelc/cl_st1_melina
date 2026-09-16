@@ -1,0 +1,65 @@
+{
+  "article_id": "108669362",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_06/ca/108669362.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_06/ca/108669362.json"
+  },
+  "manifest_row": {
+    "article_id": "108669362",
+    "group": "global_north_2024_06",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2024_06/ca/108669362.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "passing",
+    "main_topic": "Tourism regulation and overtourism in Spain",
+    "conflict_relevance": "The main article concerns fines for disruptive tourists and protests against overtourism. It contains an unrelated but meaningful embedded news item stating that Israel's prime minister rejected a permanent ceasefire in Gaza absent longstanding conditions.",
+    "reason": "The Gaza reference is substantive enough to count as peripheral conflict discourse, but it is an isolated snippet unrelated to the article's main topic and does not support inclusion in the main conflict corpus.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "020953f130742d6a997c533b199a4eadc942ae78c375335ffe6625937b4b034a",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "c8369cbd080098186fb12d72776bfa09a57ebd40505e32b6bec5dbc8afa4a92f",
+    "raw_response_text_sha256": "6555079c8618ced4eb0736ae95bfcbdc3e7560d421f211fd0ce96543d779a7f3"
+  },
+  "api_metadata": {
+    "id": "resp_024155c1c7832f4f006aaa1011b02c87d2a5615b632e07de85",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789530129.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2049,
+      "input_tokens_details": {
+        "cache_write_tokens": 2046,
+        "cached_tokens": 0
+      },
+      "output_tokens": 270,
+      "output_tokens_details": {
+        "reasoning_tokens": 107
+      },
+      "total_tokens": 2319
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Tourism regulation and overtourism in Spain\",\n  \"conflict_relevance\": \"The main article concerns fines for disruptive tourists and protests against overtourism. It contains an unrelated but meaningful embedded news item stating that Israel's prime minister rejected a permanent ceasefire in Gaza absent longstanding conditions.\",\n  \"reason\": \"The Gaza reference is substantive enough to count as peripheral conflict discourse, but it is an isolated snippet unrelated to the article's main topic and does not support inclusion in the main conflict corpus.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:42:12Z",
+  "duration_seconds": 2.941,
+  "error": null
+}

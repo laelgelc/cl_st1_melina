@@ -1,0 +1,65 @@
+{
+  "article_id": "115475826",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_10/gb/115475826.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_10/gb/115475826.json"
+  },
+  "manifest_row": {
+    "article_id": "115475826",
+    "group": "global_north_2024_10",
+    "country_code": "gb",
+    "filepath": "corpus/02_now_organised/global_north_2024_10/gb/115475826.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "gaza_role": "boilerplate_or_unrelated",
+    "main_topic": "BBC Breakfast presenters playing conkers and viewer reactions",
+    "conflict_relevance": "Gaza is mentioned only as part of a brief description of the programme's other news coverage; the article does not discuss the conflict.",
+    "reason": "The article is centrally about a light-hearted conkers segment and audience responses. The Gaza reference is incidental and provides no substantive discourse relevant to the conflict.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "bead69c5a1991f97456cfdd4335f9caebe63b293d7d39a01ce5059bfc65799d8",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "15c39a8c4ac6dc3c65768ac9837d9001afb1e050a508527ea75762da64159d51",
+    "raw_response_text_sha256": "79757101f76ac2469bb152c24f8478f59a389a850785bd1eb3c4a1f00bc6639f"
+  },
+  "api_metadata": {
+    "id": "resp_007715afd9c53444006aaa183083cc87d2a3aabf26859be41e",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789532208.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1191,
+      "input_tokens_details": {
+        "cache_write_tokens": 1188,
+        "cached_tokens": 0
+      },
+      "output_tokens": 234,
+      "output_tokens_details": {
+        "reasoning_tokens": 88
+      },
+      "total_tokens": 1425
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"BBC Breakfast presenters playing conkers and viewer reactions\",\n  \"conflict_relevance\": \"Gaza is mentioned only as part of a brief description of the programme's other news coverage; the article does not discuss the conflict.\",\n  \"reason\": \"The article is centrally about a light-hearted conkers segment and audience responses. The Gaza reference is incidental and provides no substantive discourse relevant to the conflict.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T04:16:51Z",
+  "duration_seconds": 3.03,
+  "error": null
+}

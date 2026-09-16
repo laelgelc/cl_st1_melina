@@ -1,0 +1,65 @@
+{
+  "article_id": "117566215",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_south_2024_11/ng/117566215.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_south_2024_11/ng/117566215.json"
+  },
+  "manifest_row": {
+    "article_id": "117566215",
+    "group": "global_south_2024_11",
+    "country_code": "ng",
+    "filepath": "corpus/02_now_organised/global_south_2024_11/ng/117566215.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "gaza_role": "boilerplate_or_unrelated",
+    "main_topic": "Nigeria's recovery and management of stolen assets",
+    "conflict_relevance": "No meaningful connection to Gaza, Palestine, Israel/Palestine, or related conflict discourse; 'Gaza' appears only as part of a person's name.",
+    "reason": "The main article concerns Nigerian anti-corruption efforts and asset recovery. The occurrence of 'Gaza' is an unrelated personal name, and the additional text consists of unrelated news snippets.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "385ae0162ec4c1ce7366c44ce278c6754979a3ffa5555bb6305a9c071bfbb9d1",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "30428b8bffef9051b8af975f1357fd898b242d6ede0e08dbc560a54a29e8c58e",
+    "raw_response_text_sha256": "f4c6afb2022c1cbf4b810713d9755de2f4f7303c7530869b630890015d8769c7"
+  },
+  "api_metadata": {
+    "id": "resp_0ff4a5b777d540c4006aaa4240931487d1aac8127a4079cc31",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789542976.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2424,
+      "input_tokens_details": {
+        "cache_write_tokens": 2421,
+        "cached_tokens": 0
+      },
+      "output_tokens": 263,
+      "output_tokens_details": {
+        "reasoning_tokens": 107
+      },
+      "total_tokens": 2687
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"gaza_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Nigeria's recovery and management of stolen assets\",\n  \"conflict_relevance\": \"No meaningful connection to Gaza, Palestine, Israel/Palestine, or related conflict discourse; 'Gaza' appears only as part of a person's name.\",\n  \"reason\": \"The main article concerns Nigerian anti-corruption efforts and asset recovery. The occurrence of 'Gaza' is an unrelated personal name, and the additional text consists of unrelated news snippets.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T07:16:19Z",
+  "duration_seconds": 3.164,
+  "error": null
+}

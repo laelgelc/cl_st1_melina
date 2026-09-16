@@ -1,0 +1,65 @@
+{
+  "article_id": "106340171",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_03/us/106340171.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_03/us/106340171.json"
+  },
+  "manifest_row": {
+    "article_id": "106340171",
+    "group": "global_north_2024_03",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2024_03/us/106340171.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "gaza_role": "boilerplate_or_unrelated",
+    "main_topic": "The inquest and biography of Thomas Kingston, husband of Lady Gabriella Kingston",
+    "conflict_relevance": "The main article concerns a British royal death and contains no meaningful discussion of Gaza or the Israel-Palestine conflict. Gaza appears only in an unrelated recommended-story snippet.",
+    "reason": "The Gaza-related text is an incidental embedded news item unrelated to the article's subject and does not contribute meaningfully to conflict discourse analysis.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "5c030b16f757a6974f10840e6e46cd447c5375b2565cff7a3117596a594124af",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "5c51cc608c7da1a4ac34018523d0e1e2390e01d190f5c4b9ba0c55f050088380",
+    "raw_response_text_sha256": "efbb2aa0f56d69e4275be7f4e8b3ad6a94a6a3894215c0d59f43c45d55b41600"
+  },
+  "api_metadata": {
+    "id": "resp_0a6e3ba696fe78b6006aaa095bee9487d29298ed3719c11e8c",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789528411.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1948,
+      "input_tokens_details": {
+        "cache_write_tokens": 1945,
+        "cached_tokens": 0
+      },
+      "output_tokens": 187,
+      "output_tokens_details": {
+        "reasoning_tokens": 31
+      },
+      "total_tokens": 2135
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"gaza_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"The inquest and biography of Thomas Kingston, husband of Lady Gabriella Kingston\",\n  \"conflict_relevance\": \"The main article concerns a British royal death and contains no meaningful discussion of Gaza or the Israel-Palestine conflict. Gaza appears only in an unrelated recommended-story snippet.\",\n  \"reason\": \"The Gaza-related text is an incidental embedded news item unrelated to the article's subject and does not contribute meaningfully to conflict discourse analysis.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:13:34Z",
+  "duration_seconds": 2.905,
+  "error": null
+}

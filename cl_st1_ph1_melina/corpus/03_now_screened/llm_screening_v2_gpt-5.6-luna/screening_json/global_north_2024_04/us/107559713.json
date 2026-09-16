@@ -1,0 +1,65 @@
+{
+  "article_id": "107559713",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_04/us/107559713.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_04/us/107559713.json"
+  },
+  "manifest_row": {
+    "article_id": "107559713",
+    "group": "global_north_2024_04",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2024_04/us/107559713.txt"
+  },
+  "screening": {
+    "category": "CORE",
+    "confidence": 0.99,
+    "gaza_role": "central",
+    "main_topic": "Gaza hostage uncertainty and cease-fire negotiations in a morning news roundup",
+    "conflict_relevance": "The lead and most prominent item directly addresses hostages held in Gaza, Hamas, Israel, cease-fire negotiations, Palestinian prisoners, and the humanitarian and familial consequences of the conflict; the roundup also includes campus antisemitism tensions and proposed U.S. aid to Israel.",
+    "reason": "Although the article is a multi-item news roundup, its opening and headline-related story is substantially focused on the Gaza war and hostage negotiations, making it directly useful for analysis of conflict discourse.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": true
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "3e4a46338c2294fa5eacef1ead476d695f0a70ae8f8974fd42059d6af899a043",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "8a27655f403b53c9da32584d42eeb75d88b6f5ed4bc14cb2e2918b7804a541bb",
+    "raw_response_text_sha256": "6be7bc3617427f8e3cca8e2bee687f25cf444e28c3c517bea5a0d56c62e78ff2"
+  },
+  "api_metadata": {
+    "id": "resp_00a87ede85d45b16006aaa0c2ec6ac87d2b6a8c3208e3209b0",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789529134.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2475,
+      "input_tokens_details": {
+        "cache_write_tokens": 2472,
+        "cached_tokens": 0
+      },
+      "output_tokens": 257,
+      "output_tokens_details": {
+        "reasoning_tokens": 80
+      },
+      "total_tokens": 2732
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"CORE\",\n  \"confidence\": 0.99,\n  \"gaza_role\": \"central\",\n  \"main_topic\": \"Gaza hostage uncertainty and cease-fire negotiations in a morning news roundup\",\n  \"conflict_relevance\": \"The lead and most prominent item directly addresses hostages held in Gaza, Hamas, Israel, cease-fire negotiations, Palestinian prisoners, and the humanitarian and familial consequences of the conflict; the roundup also includes campus antisemitism tensions and proposed U.S. aid to Israel.\",\n  \"reason\": \"Although the article is a multi-item news roundup, its opening and headline-related story is substantially focused on the Gaza war and hostage negotiations, making it directly useful for analysis of conflict discourse.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": true\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:25:38Z",
+  "duration_seconds": 4.183,
+  "error": null
+}

@@ -1,0 +1,65 @@
+{
+  "article_id": "104775201",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_01/ca/104775201.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_01/ca/104775201.json"
+  },
+  "manifest_row": {
+    "article_id": "104775201",
+    "group": "global_north_2024_01",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2024_01/ca/104775201.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.96,
+    "gaza_role": "passing",
+    "main_topic": "RCMP investigation into a shooting in Moncton, New Brunswick",
+    "conflict_relevance": "The main article is unrelated to the Israel-Palestine conflict, but an embedded top-stories roundup contains a meaningful sentence about warnings against displacement of Gaza residents and Canada accepting Palestinians.",
+    "reason": "The headline and main report concern a local Canadian shooting. Gaza appears only in an unrelated embedded news roundup, where it is referenced in connection with displacement and Israeli government policy.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "538b62b0b0064e31cb555fb013214fec9717c775e7541215c7292f2be3a987f3",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "fdf0eb38381ff999be4c24e799f2e2168ef1d86b2b4ef4876e52455c3d6cebf3",
+    "raw_response_text_sha256": "f699b6e702921ba61c2df1628547fd70c7f782d651c3671812c62ef67d7d9140"
+  },
+  "api_metadata": {
+    "id": "resp_017b8bdf149f7139006aaa037e84ec87d291588dafbe800356",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789526910.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1279,
+      "input_tokens_details": {
+        "cache_write_tokens": 1276,
+        "cached_tokens": 0
+      },
+      "output_tokens": 248,
+      "output_tokens_details": {
+        "reasoning_tokens": 88
+      },
+      "total_tokens": 1527
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.96,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"RCMP investigation into a shooting in Moncton, New Brunswick\",\n  \"conflict_relevance\": \"The main article is unrelated to the Israel-Palestine conflict, but an embedded top-stories roundup contains a meaningful sentence about warnings against displacement of Gaza residents and Canada accepting Palestinians.\",\n  \"reason\": \"The headline and main report concern a local Canadian shooting. Gaza appears only in an unrelated embedded news roundup, where it is referenced in connection with displacement and Israeli government policy.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:48:34Z",
+  "duration_seconds": 3.639,
+  "error": null
+}

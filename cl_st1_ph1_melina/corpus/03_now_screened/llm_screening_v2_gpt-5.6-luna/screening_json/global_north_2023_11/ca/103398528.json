@@ -1,0 +1,65 @@
+{
+  "article_id": "103398528",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_11/ca/103398528.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_11/ca/103398528.json"
+  },
+  "manifest_row": {
+    "article_id": "103398528",
+    "group": "global_north_2023_11",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2023_11/ca/103398528.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.96,
+    "gaza_role": "background",
+    "main_topic": "Women's alpine skiing World Cup slalom",
+    "conflict_relevance": "The article is primarily a sports report but includes substantive embedded items about fighting near Shifa hospital, antisemitism and Islamophobia in Canada amid the Israel-Hamas war, and social-media messaging by Hamas and Israel.",
+    "reason": "The headline article is unrelated to Gaza, but the text contains multiple meaningful conflict-related snippets, including humanitarian conditions, hate-speech discourse, and media/social-media framing of the war. These embedded items make it relevant to broader discourse analysis but not to the main conflict corpus.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "0bc80f3551d45ab001255b9d9ef4599fa0c4bd5cfd3686caea3050edb228f847",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "9a1d3532a5f80440a48b7bbe4884fd325dd9bba64066b3a881f3b50b6d4ff79a",
+    "raw_response_text_sha256": "ca6e43d9529c0401c0135f48035daf88a3fb580e9bbc359ba89dd97ec9641ca5"
+  },
+  "api_metadata": {
+    "id": "resp_090e2f9c6ab4bdd0006aa9fbc87e5087d2b9d04f04ff10c9d7",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789524936.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1810,
+      "input_tokens_details": {
+        "cache_write_tokens": 1807,
+        "cached_tokens": 0
+      },
+      "output_tokens": 315,
+      "output_tokens_details": {
+        "reasoning_tokens": 135
+      },
+      "total_tokens": 2125
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.96,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Women's alpine skiing World Cup slalom\",\n  \"conflict_relevance\": \"The article is primarily a sports report but includes substantive embedded items about fighting near Shifa hospital, antisemitism and Islamophobia in Canada amid the Israel-Hamas war, and social-media messaging by Hamas and Israel.\",\n  \"reason\": \"The headline article is unrelated to Gaza, but the text contains multiple meaningful conflict-related snippets, including humanitarian conditions, hate-speech discourse, and media/social-media framing of the war. These embedded items make it relevant to broader discourse analysis but not to the main conflict corpus.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:15:40Z",
+  "duration_seconds": 4.075,
+  "error": null
+}

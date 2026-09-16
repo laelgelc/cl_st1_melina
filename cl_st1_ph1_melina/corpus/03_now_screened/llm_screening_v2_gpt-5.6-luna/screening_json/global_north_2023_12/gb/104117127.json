@@ -1,0 +1,65 @@
+{
+  "article_id": "104117127",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_12/gb/104117127.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_12/gb/104117127.json"
+  },
+  "manifest_row": {
+    "article_id": "104117127",
+    "group": "global_north_2023_12",
+    "country_code": "gb",
+    "filepath": "corpus/02_now_organised/global_north_2023_12/gb/104117127.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.97,
+    "gaza_role": "passing",
+    "main_topic": "Profile of Columbus Crew coach Wilfried Nancy and his rise in Major League Soccer",
+    "conflict_relevance": "The main article is unrelated to the Israel-Palestine conflict, but the appended latest-stories section contains substantive snippets about the UN Security Council veto of a Gaza ceasefire resolution and casualties in Gaza.",
+    "reason": "The headline article is a sports profile, while Gaza-related material appears only in unrelated embedded news-roundup items. These snippets provide meaningful conflict discourse but should not be treated as core coverage.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "ddae8d90948357dc705d7074e728c4f62aa3a9f3019989836aad287551f904c8",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "22e8c8687ba18f5e12708a4a926abb5d620e39682b76c8003cf08329e1bc0a51",
+    "raw_response_text_sha256": "5750b3719e32aa0797aac3b7dd78aa86a0d924e13144d44f708c6d0db797ee3d"
+  },
+  "api_metadata": {
+    "id": "resp_059a77637655025b006aaa00f5e70087d281edc5a6c644d64b",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789526261.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2068,
+      "input_tokens_details": {
+        "cache_write_tokens": 2065,
+        "cached_tokens": 0
+      },
+      "output_tokens": 332,
+      "output_tokens_details": {
+        "reasoning_tokens": 163
+      },
+      "total_tokens": 2400
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.97,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Profile of Columbus Crew coach Wilfried Nancy and his rise in Major League Soccer\",\n  \"conflict_relevance\": \"The main article is unrelated to the Israel-Palestine conflict, but the appended latest-stories section contains substantive snippets about the UN Security Council veto of a Gaza ceasefire resolution and casualties in Gaza.\",\n  \"reason\": \"The headline article is a sports profile, while Gaza-related material appears only in unrelated embedded news-roundup items. These snippets provide meaningful conflict discourse but should not be treated as core coverage.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:37:47Z",
+  "duration_seconds": 5.543,
+  "error": null
+}

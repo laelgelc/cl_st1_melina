@@ -1,0 +1,65 @@
+{
+  "article_id": "91649334",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_10/us/91649334.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_10/us/91649334.json"
+  },
+  "manifest_row": {
+    "article_id": "91649334",
+    "group": "global_north_2023_10",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2023_10/us/91649334.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "background",
+    "main_topic": "Popular and unpopular wedding dates for 2024",
+    "conflict_relevance": "The article is primarily a wedding-planning feature but includes a substantive appended snippet about WebSummit founder Paddy Cosgrave's criticism of Israel's actions in Gaza and the resulting backlash.",
+    "reason": "The Gaza-related material is meaningful but belongs to an unrelated embedded news item rather than the main article, making it useful only for peripheral discourse analysis.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "bad3ff5dff56055cfe6ef54c34d416f61f54694e5f4f101df804d028e3349064",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "d0c87ad6fef908f14d60aa4aa13ae0df3913a0d9aabcd4178962d43683591dc7",
+    "raw_response_text_sha256": "523e56868bba8c46cd6ed7f72df3288d96653f265df53d7ac3cf4b58bbbca85a"
+  },
+  "api_metadata": {
+    "id": "resp_0304977f292bb849006aa9fa8e18cc87d2a401d4bc34137f3b",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789524622.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2797,
+      "input_tokens_details": {
+        "cache_write_tokens": 2794,
+        "cached_tokens": 0
+      },
+      "output_tokens": 259,
+      "output_tokens_details": {
+        "reasoning_tokens": 109
+      },
+      "total_tokens": 3056
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Popular and unpopular wedding dates for 2024\",\n  \"conflict_relevance\": \"The article is primarily a wedding-planning feature but includes a substantive appended snippet about WebSummit founder Paddy Cosgrave's criticism of Israel's actions in Gaza and the resulting backlash.\",\n  \"reason\": \"The Gaza-related material is meaningful but belongs to an unrelated embedded news item rather than the main article, making it useful only for peripheral discourse analysis.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:10:25Z",
+  "duration_seconds": 3.067,
+  "error": null
+}

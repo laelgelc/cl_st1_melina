@@ -1,0 +1,65 @@
+{
+  "article_id": "120225037",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_south_2025_01/ng/120225037.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_south_2025_01/ng/120225037.json"
+  },
+  "manifest_row": {
+    "article_id": "120225037",
+    "group": "global_south_2025_01",
+    "country_code": "ng",
+    "filepath": "corpus/02_now_organised/global_south_2025_01/ng/120225037.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "passing",
+    "main_topic": "A Catholic priest's suspension after secretly marrying and the resulting social-media reaction in Nigeria",
+    "conflict_relevance": "The article includes an unrelated brief item about a Gaza ceasefire, displaced Palestinians returning to destroyed homes, wartime casualties, and hopes for rebuilding.",
+    "reason": "The main article is about a Nigerian Catholic priest's marriage and suspension, not the Israel-Palestine conflict. However, it contains a meaningful but clearly separate Gaza-related news snippet, making it peripheral rather than excludable.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "beb6d51b798f27ca8c3444274e9f5271d930c63da9e7ab7b8e3f4ac9468a274b",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "4e1186cd7e8775391f08af0c318b1a8eaddcc1d738449e8060f141552b4efe0b",
+    "raw_response_text_sha256": "fe095c01bca73c6a5eb17aad75d4df9533ad0a19763b08b5b54209e1d25a0a8b"
+  },
+  "api_metadata": {
+    "id": "resp_0b3a1dbea430c76d006aaa4497b99887d1b264c9be2f1cf87a",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789543575.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1016,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 263,
+      "output_tokens_details": {
+        "reasoning_tokens": 96
+      },
+      "total_tokens": 1279
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"A Catholic priest's suspension after secretly marrying and the resulting social-media reaction in Nigeria\",\n  \"conflict_relevance\": \"The article includes an unrelated brief item about a Gaza ceasefire, displaced Palestinians returning to destroyed homes, wartime casualties, and hopes for rebuilding.\",\n  \"reason\": \"The main article is about a Nigerian Catholic priest's marriage and suspension, not the Israel-Palestine conflict. However, it contains a meaningful but clearly separate Gaza-related news snippet, making it peripheral rather than excludable.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T07:26:19Z",
+  "duration_seconds": 3.552,
+  "error": null
+}

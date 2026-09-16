@@ -1,0 +1,65 @@
+{
+  "article_id": "109501045",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_06/us/109501045.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_06/us/109501045.json"
+  },
+  "manifest_row": {
+    "article_id": "109501045",
+    "group": "global_north_2024_06",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2024_06/us/109501045.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "background",
+    "main_topic": "Letters to the editor about Jamaal Bowman, Alexandria Ocasio-Cortez, political conduct, and unrelated celebrity news",
+    "conflict_relevance": "One letter discusses Bowman's criticism of AIPAC, Israel's influence on U.S. politicians, and support for Israel amid the Gaza war.",
+    "reason": "The article is primarily a collection of letters about political rally conduct and Justin Timberlake's DUI. However, one substantial paragraph contains meaningful discourse about AIPAC, Israel, U.S. politics, and the Gaza war, making it relevant to broader conflict discourse but not core coverage.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "81a65fe7e140418e1daec4e1b7cf49be907f83e57f00648f6a80e931384b961b",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "fd9f43bafcae93c4ed203998e4b336b4ffec81f8fce296a2b20f65628f295b77",
+    "raw_response_text_sha256": "13d7c13f9863c7549d1121243ee11649bde92c96dcb136f179b29db923f9f169"
+  },
+  "api_metadata": {
+    "id": "resp_03646fe07b057ef5006aaa1168329487d28b457ed0c50646df",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789530472.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1329,
+      "input_tokens_details": {
+        "cache_write_tokens": 1326,
+        "cached_tokens": 0
+      },
+      "output_tokens": 235,
+      "output_tokens_details": {
+        "reasoning_tokens": 50
+      },
+      "total_tokens": 1564
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Letters to the editor about Jamaal Bowman, Alexandria Ocasio-Cortez, political conduct, and unrelated celebrity news\",\n  \"conflict_relevance\": \"One letter discusses Bowman's criticism of AIPAC, Israel's influence on U.S. politicians, and support for Israel amid the Gaza war.\",\n  \"reason\": \"The article is primarily a collection of letters about political rally conduct and Justin Timberlake's DUI. However, one substantial paragraph contains meaningful discourse about AIPAC, Israel, U.S. politics, and the Gaza war, making it relevant to broader conflict discourse but not core coverage.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:47:54Z",
+  "duration_seconds": 2.885,
+  "error": null
+}

@@ -1,0 +1,65 @@
+{
+  "article_id": "111228688",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_07/us/111228688.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_07/us/111228688.json"
+  },
+  "manifest_row": {
+    "article_id": "111228688",
+    "group": "global_north_2024_07",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2024_07/us/111228688.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.99,
+    "gaza_role": "background",
+    "main_topic": "Boar's Head deli meat recall and a multistate listeria outbreak",
+    "conflict_relevance": "The main article concerns food safety, but it includes a substantial unrelated news segment about Trump, Netanyahu, the Israel-Hamas war, Gaza, hostages, cease-fire negotiations, humanitarian aid, and Palestinian political claims.",
+    "reason": "The article's primary subject is the Boar's Head listeria recall. However, the appended material contains meaningful and extensive discourse on Gaza and Israel/Palestine, making it relevant as peripheral material rather than an incidental passing mention.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "f0425a31b4016baf3b9b73a83fa79c346496552ebfc5667f68f05d2de33a8491",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "2ae722d811f60edd1080601e918e1d9451e3f0d4a6b313fbb96f880fbf8bc2fa",
+    "raw_response_text_sha256": "6c1512c5504e30e5e4e9e962cd9d65eb70b4cdbaea3085dad3ced521ddc19e3f"
+  },
+  "api_metadata": {
+    "id": "resp_0db3d8da5ca9916e006aaa137e324c87d29cf8f209651c874b",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789531006.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 3030,
+      "input_tokens_details": {
+        "cache_write_tokens": 3027,
+        "cached_tokens": 0
+      },
+      "output_tokens": 366,
+      "output_tokens_details": {
+        "reasoning_tokens": 183
+      },
+      "total_tokens": 3396
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.99,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Boar's Head deli meat recall and a multistate listeria outbreak\",\n  \"conflict_relevance\": \"The main article concerns food safety, but it includes a substantial unrelated news segment about Trump, Netanyahu, the Israel-Hamas war, Gaza, hostages, cease-fire negotiations, humanitarian aid, and Palestinian political claims.\",\n  \"reason\": \"The article's primary subject is the Boar's Head listeria recall. However, the appended material contains meaningful and extensive discourse on Gaza and Israel/Palestine, making it relevant as peripheral material rather than an incidental passing mention.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:56:50Z",
+  "duration_seconds": 4.293,
+  "error": null
+}

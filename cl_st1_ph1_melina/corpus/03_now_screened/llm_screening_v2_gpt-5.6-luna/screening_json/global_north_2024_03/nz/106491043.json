@@ -1,0 +1,65 @@
+{
+  "article_id": "106491043",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_03/nz/106491043.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_03/nz/106491043.json"
+  },
+  "manifest_row": {
+    "article_id": "106491043",
+    "group": "global_north_2024_03",
+    "country_code": "nz",
+    "filepath": "corpus/02_now_organised/global_north_2024_03/nz/106491043.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "passing",
+    "main_topic": "New Zealand government's environmental policies and expedited approval of resource-extraction projects",
+    "conflict_relevance": "The main article is unrelated to Gaza, but an embedded roundup item reports New Zealand's additional humanitarian funding for Gaza and the West Bank and references the Israel-Hamas conflict.",
+    "reason": "The article primarily concerns environmental regulation and New Zealand politics. Gaza appears in a separate, brief embedded news snippet containing a meaningful sentence about humanitarian aid and civilian suffering, making it peripheral rather than core.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "e88e79ded965c40b3d58a5d96df9279264b95e1483d88627350a3cfc9a45fe4c",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "931de3523c5e518a57d2f2b02845d9f333793b00c31389da9e39d7db994b7d75",
+    "raw_response_text_sha256": "5cb892cda1f7224a7df9f81709fd1f4607c9c5f72346e37ca91cc4fc62e6e42c"
+  },
+  "api_metadata": {
+    "id": "resp_01c6a1386e70ce2e006aaa091ed63487d2832e6f9a90add3ae",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789528350.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1441,
+      "input_tokens_details": {
+        "cache_write_tokens": 1438,
+        "cached_tokens": 0
+      },
+      "output_tokens": 226,
+      "output_tokens_details": {
+        "reasoning_tokens": 64
+      },
+      "total_tokens": 1667
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"New Zealand government's environmental policies and expedited approval of resource-extraction projects\",\n  \"conflict_relevance\": \"The main article is unrelated to Gaza, but an embedded roundup item reports New Zealand's additional humanitarian funding for Gaza and the West Bank and references the Israel-Hamas conflict.\",\n  \"reason\": \"The article primarily concerns environmental regulation and New Zealand politics. Gaza appears in a separate, brief embedded news snippet containing a meaningful sentence about humanitarian aid and civilian suffering, making it peripheral rather than core.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:12:34Z",
+  "duration_seconds": 4.15,
+  "error": null
+}

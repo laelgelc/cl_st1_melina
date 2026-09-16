@@ -1,0 +1,65 @@
+{
+  "article_id": "122477509",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_03/us/122477509.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_03/us/122477509.json"
+  },
+  "manifest_row": {
+    "article_id": "122477509",
+    "group": "global_north_2025_03",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2025_03/us/122477509.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.96,
+    "gaza_role": "passing",
+    "main_topic": "Gold reaching a record price amid economic and geopolitical uncertainty",
+    "conflict_relevance": "Gaza is briefly mentioned as one of several geopolitical conflicts contributing to demand for gold as a safe-haven asset.",
+    "reason": "The article is primarily a financial market analysis of gold prices and investment options. It contains a substantive but brief reference to the conflict in Gaza as a factor affecting investor behavior, making it peripheral rather than core.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "cd2ec27d8084864c13c9700bd8a6fc05e2f203ec162ad7034737751f5e8f4c59",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "6905e0d214862b249eed9050902218ea066e019ace64a9b7efda8ec71c4e034d",
+    "raw_response_text_sha256": "d417c6f6f2a428cf3238380ac761635d60d3a363f3385e526e32f3161b410d2a"
+  },
+  "api_metadata": {
+    "id": "resp_07a5c7b2a75c850e006aaa27b05c4087d182b127b7f2e34f60",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789536176.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1057,
+      "input_tokens_details": {
+        "cache_write_tokens": 1054,
+        "cached_tokens": 0
+      },
+      "output_tokens": 220,
+      "output_tokens_details": {
+        "reasoning_tokens": 70
+      },
+      "total_tokens": 1277
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.96,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Gold reaching a record price amid economic and geopolitical uncertainty\",\n  \"conflict_relevance\": \"Gaza is briefly mentioned as one of several geopolitical conflicts contributing to demand for gold as a safe-haven asset.\",\n  \"reason\": \"The article is primarily a financial market analysis of gold prices and investment options. It contains a substantive but brief reference to the conflict in Gaza as a factor affecting investor behavior, making it peripheral rather than core.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T05:23:00Z",
+  "duration_seconds": 4.223,
+  "error": null
+}

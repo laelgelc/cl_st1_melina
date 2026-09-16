@@ -1,0 +1,65 @@
+{
+  "article_id": "118911935",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_12/ie/118911935.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_12/ie/118911935.json"
+  },
+  "manifest_row": {
+    "article_id": "118911935",
+    "group": "global_north_2024_12",
+    "country_code": "ie",
+    "filepath": "corpus/02_now_organised/global_north_2024_12/ie/118911935.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "gaza_role": "passing",
+    "main_topic": "Parenting advice on discussing difficult news and issues with children",
+    "conflict_relevance": "Gaza is mentioned only in a general list of current wars as part of a broader discussion of children encountering bad news.",
+    "reason": "The article is about age-appropriate parenting and reassuring children, with Gaza appearing only as a passing example alongside Ukraine and other conflicts. It contains no substantive discussion of Gaza, Palestine, Israel, or the conflict.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "006a8d35c7498ccbe0a0232d8fd4107e71571478d2b0f5abe54473d40ec1c4ce",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "b380a46796783d10b1655fa963b302dfe5c1edb6d2c4931a83d26961522cc29b",
+    "raw_response_text_sha256": "0e064d3fb394244318b30bc747a6e14d65b857cab540eac461c976d082fd17b6"
+  },
+  "api_metadata": {
+    "id": "resp_0b34b9f54da82cef006aaa1de2056487d2ba4db7b1a837885d",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789533666.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1685,
+      "input_tokens_details": {
+        "cache_write_tokens": 1682,
+        "cached_tokens": 0
+      },
+      "output_tokens": 252,
+      "output_tokens_details": {
+        "reasoning_tokens": 100
+      },
+      "total_tokens": 1937
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Parenting advice on discussing difficult news and issues with children\",\n  \"conflict_relevance\": \"Gaza is mentioned only in a general list of current wars as part of a broader discussion of children encountering bad news.\",\n  \"reason\": \"The article is about age-appropriate parenting and reassuring children, with Gaza appearing only as a passing example alongside Ukraine and other conflicts. It contains no substantive discussion of Gaza, Palestine, Israel, or the conflict.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T04:41:09Z",
+  "duration_seconds": 3.729,
+  "error": null
+}

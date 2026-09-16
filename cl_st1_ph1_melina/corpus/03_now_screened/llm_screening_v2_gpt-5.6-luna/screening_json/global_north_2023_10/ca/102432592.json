@@ -1,0 +1,65 @@
+{
+  "article_id": "102432592",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_10/ca/102432592.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_10/ca/102432592.json"
+  },
+  "manifest_row": {
+    "article_id": "102432592",
+    "group": "global_north_2023_10",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2023_10/ca/102432592.txt"
+  },
+  "screening": {
+    "category": "CORE",
+    "confidence": 0.86,
+    "gaza_role": "central",
+    "main_topic": "Hamas's attack on Israel and the outbreak of the Israel-Gaza war",
+    "conflict_relevance": "The opening and most conflict-relevant item directly describes Hamas's unprecedented attack from Gaza on Israel, including rocket fire and cross-border infiltration.",
+    "reason": "The article contains substantive reporting on a major Israel-Gaza conflict event, although it is mixed with two unrelated news snippets.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": true
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "7ff9dd62335aebedc4b4266acb2a3c008653f31a3c99ac75e54035da0d3b5a85",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "a998701c88bfc7e1f0d1eedfe2ce71aa3f9c4f5d29c5866b0d63531744d64aac",
+    "raw_response_text_sha256": "5a7504bce9fdd8dc135f02952853de85faf5d890b47cc9e77a32982f5bf89a8f"
+  },
+  "api_metadata": {
+    "id": "resp_03448b9de79e99bc006aa9f5ff62f887d29c8d6bfa23c2be5c",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789523455.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 746,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 344,
+      "output_tokens_details": {
+        "reasoning_tokens": 204
+      },
+      "total_tokens": 1090
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"CORE\",\n  \"confidence\": 0.86,\n  \"gaza_role\": \"central\",\n  \"main_topic\": \"Hamas's attack on Israel and the outbreak of the Israel-Gaza war\",\n  \"conflict_relevance\": \"The opening and most conflict-relevant item directly describes Hamas's unprecedented attack from Gaza on Israel, including rocket fire and cross-border infiltration.\",\n  \"reason\": \"The article contains substantive reporting on a major Israel-Gaza conflict event, although it is mixed with two unrelated news snippets.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": true\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T01:50:59Z",
+  "duration_seconds": 4.247,
+  "error": null
+}

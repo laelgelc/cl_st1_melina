@@ -1,0 +1,65 @@
+{
+  "article_id": "121673853",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_02/us/121673853.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_02/us/121673853.json"
+  },
+  "manifest_row": {
+    "article_id": "121673853",
+    "group": "global_north_2025_02",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2025_02/us/121673853.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "passing",
+    "main_topic": "Assessment of Donald Trump's first month back in office and his administration's political agenda",
+    "conflict_relevance": "The article briefly mentions American hostages returning from Gaza, but does not discuss the Gaza war, Palestinians, Israel, or related political issues in any substantive way.",
+    "reason": "Gaza appears in a single sentence as one of several locations from which American hostages have returned. This is meaningful but incidental to the article's main focus on Trump's domestic agenda, political standing, media developments, and Ukraine policy.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "820f8b41cb05d2ffdaad6cbb5e21f0da8eba7764f71eac13143f8b29cb7b246c",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "ffb0549001a5c5d194e4a57cae2d819c8e45a11fa69b1b928fab07b43424d1db",
+    "raw_response_text_sha256": "f6a96465409c8822449c6f6156ef38d8b5ebbe954cb561adc69608ad89e2da7f"
+  },
+  "api_metadata": {
+    "id": "resp_0a3d8e1582fd85a1006aaa253b682487d1a5daf1eca8d04ec4",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789535547.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2453,
+      "input_tokens_details": {
+        "cache_write_tokens": 2450,
+        "cached_tokens": 0
+      },
+      "output_tokens": 236,
+      "output_tokens_details": {
+        "reasoning_tokens": 67
+      },
+      "total_tokens": 2689
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Assessment of Donald Trump's first month back in office and his administration's political agenda\",\n  \"conflict_relevance\": \"The article briefly mentions American hostages returning from Gaza, but does not discuss the Gaza war, Palestinians, Israel, or related political issues in any substantive way.\",\n  \"reason\": \"Gaza appears in a single sentence as one of several locations from which American hostages have returned. This is meaningful but incidental to the article's main focus on Trump's domestic agenda, political standing, media developments, and Ukraine policy.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T05:12:30Z",
+  "duration_seconds": 3.628,
+  "error": null
+}

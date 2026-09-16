@@ -1,0 +1,65 @@
+{
+  "article_id": "200059128",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_12/us/200059128.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_12/us/200059128.json"
+  },
+  "manifest_row": {
+    "article_id": "200059128",
+    "group": "global_north_2023_12",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2023_12/us/200059128.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.87,
+    "gaza_role": "passing",
+    "main_topic": "China-Philippines tensions and escalation risks in the South China Sea",
+    "conflict_relevance": "Gaza is mentioned briefly as one of the ongoing wars competing for attention in US foreign policy, providing limited broader geopolitical context.",
+    "reason": "The article is centrally about the South China Sea dispute and possible US-China escalation. It contains one meaningful but brief reference to the war in Gaza as part of the wider international security environment, making it peripheral rather than core.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "530420a328744c347c14dbb092ef3ee4575ba73f085c4d99e8399d268a02d3ca",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "d326e279b68229fd88327cc8fd0d8bd6e2a8142dbd37f7a3020ccabc17986681",
+    "raw_response_text_sha256": "623aeb43d9760dfdbc2eb640f8f0f542008ac07c07c0aae0f650d6b47bf39dda"
+  },
+  "api_metadata": {
+    "id": "resp_009cc6cb021b6733006aaa02ec626087d2a738dea2c112d519",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789526764.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2165,
+      "input_tokens_details": {
+        "cache_write_tokens": 2162,
+        "cached_tokens": 0
+      },
+      "output_tokens": 394,
+      "output_tokens_details": {
+        "reasoning_tokens": 236
+      },
+      "total_tokens": 2559
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.87,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"China-Philippines tensions and escalation risks in the South China Sea\",\n  \"conflict_relevance\": \"Gaza is mentioned briefly as one of the ongoing wars competing for attention in US foreign policy, providing limited broader geopolitical context.\",\n  \"reason\": \"The article is centrally about the South China Sea dispute and possible US-China escalation. It contains one meaningful but brief reference to the war in Gaza as part of the wider international security environment, making it peripheral rather than core.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:46:09Z",
+  "duration_seconds": 5.69,
+  "error": null
+}

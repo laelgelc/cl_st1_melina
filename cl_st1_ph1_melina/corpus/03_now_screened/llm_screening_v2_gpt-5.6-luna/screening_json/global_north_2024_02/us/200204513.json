@@ -1,0 +1,65 @@
+{
+  "article_id": "200204513",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_02/us/200204513.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_02/us/200204513.json"
+  },
+  "manifest_row": {
+    "article_id": "200204513",
+    "group": "global_north_2024_02",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2024_02/us/200204513.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "background",
+    "main_topic": "U.S. and allied airstrikes against Yemen's Houthi rebels and efforts to protect Red Sea shipping",
+    "conflict_relevance": "The article links Houthi attacks on Red Sea vessels to Israel's offensive in Gaza, situating the regional military escalation within the broader Gaza conflict, but Gaza is not the article's main subject.",
+    "reason": "The article is primarily about Yemen, Houthi attacks, and international naval operations in the Red Sea. Its explicit explanation that the attacks were carried out over Israel's offensive in Gaza provides meaningful peripheral relevance to the Gaza conflict.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "cbad0b91e64479ae2c05a566556a25d6a365a20f914281b92f8aa57572c6a6ae",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "9dd7698f32065264fe8494ea3b2311313c07c7e3bc4a45fa98a4f1f999f9991c",
+    "raw_response_text_sha256": "e7c775e6f586877b21dfca580f81e12745524e74cdfc60842b32e0b11e94eccb"
+  },
+  "api_metadata": {
+    "id": "resp_0f85d423a584f8c7006aaa07b369cc87d282bed5ced1f5ab6e",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789527987.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1073,
+      "input_tokens_details": {
+        "cache_write_tokens": 1070,
+        "cached_tokens": 0
+      },
+      "output_tokens": 252,
+      "output_tokens_details": {
+        "reasoning_tokens": 69
+      },
+      "total_tokens": 1325
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"U.S. and allied airstrikes against Yemen's Houthi rebels and efforts to protect Red Sea shipping\",\n  \"conflict_relevance\": \"The article links Houthi attacks on Red Sea vessels to Israel's offensive in Gaza, situating the regional military escalation within the broader Gaza conflict, but Gaza is not the article's main subject.\",\n  \"reason\": \"The article is primarily about Yemen, Houthi attacks, and international naval operations in the Red Sea. Its explicit explanation that the attacks were carried out over Israel's offensive in Gaza provides meaningful peripheral relevance to the Gaza conflict.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:06:30Z",
+  "duration_seconds": 2.968,
+  "error": null
+}

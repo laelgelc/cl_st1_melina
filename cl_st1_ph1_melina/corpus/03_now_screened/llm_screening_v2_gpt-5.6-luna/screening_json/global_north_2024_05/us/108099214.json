@@ -1,0 +1,65 @@
+{
+  "article_id": "108099214",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_05/us/108099214.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_05/us/108099214.json"
+  },
+  "manifest_row": {
+    "article_id": "108099214",
+    "group": "global_north_2024_05",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2024_05/us/108099214.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.91,
+    "gaza_role": "passing",
+    "main_topic": "A compilation of unrelated international news briefs",
+    "conflict_relevance": "Includes a substantive brief about Israeli strikes and evacuation orders in Gaza, plus commentary about Hamas, Israel, and rhetoric surrounding the conflict.",
+    "reason": "The text is primarily an unrelated multi-item news compilation, but it contains meaningful conflict-related material. Because the Gaza and Israel-related content is embedded among numerous unrelated snippets and is not the dominant subject, it is peripheral rather than core.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "d0b5e87582b85a7db4aad19b3300dc8ee3c99c963d3e814db99361a349c6ee01",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "2d5e5da849cd82cfd573392dd3697c989e389b8e402fd89c74092fc5af7f5d1e",
+    "raw_response_text_sha256": "ec1f5ad9c763046db2dac6d9c78768096fda64d169eb46e975315149cfece89c"
+  },
+  "api_metadata": {
+    "id": "resp_023ed4c3f1c64dac006aaa0eb8097487d2b59693f09271b3fa",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789529784.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1391,
+      "input_tokens_details": {
+        "cache_write_tokens": 1388,
+        "cached_tokens": 0
+      },
+      "output_tokens": 299,
+      "output_tokens_details": {
+        "reasoning_tokens": 144
+      },
+      "total_tokens": 1690
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.91,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"A compilation of unrelated international news briefs\",\n  \"conflict_relevance\": \"Includes a substantive brief about Israeli strikes and evacuation orders in Gaza, plus commentary about Hamas, Israel, and rhetoric surrounding the conflict.\",\n  \"reason\": \"The text is primarily an unrelated multi-item news compilation, but it contains meaningful conflict-related material. Because the Gaza and Israel-related content is embedded among numerous unrelated snippets and is not the dominant subject, it is peripheral rather than core.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:36:36Z",
+  "duration_seconds": 13.335,
+  "error": null
+}

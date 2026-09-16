@@ -1,0 +1,65 @@
+{
+  "article_id": "103113708",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_south_2023_11/ng/103113708.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_south_2023_11/ng/103113708.json"
+  },
+  "manifest_row": {
+    "article_id": "103113708",
+    "group": "global_south_2023_11",
+    "country_code": "ng",
+    "filepath": "corpus/02_now_organised/global_south_2023_11/ng/103113708.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "background",
+    "main_topic": "European and Nigerian football, including Jude Bellingham's influence at Real Madrid",
+    "conflict_relevance": "The main article is sports coverage, but embedded 'Latest' items include meaningful discussion of Israeli strikes on Gaza, the Israel-Hamas war, antisemitic incidents, and Israel's military tactics.",
+    "reason": "The headline-associated article is not about Gaza or the Israel-Palestine conflict. However, the text contains substantive conflict-related news snippets that may be useful for studying broader media discourse, so it is peripheral rather than excluded.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "1ce0568d5ddbcab83e6bc0d956eb7d17617f5539785e534e82b60c9647feb512",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "763949cdb5e90fe5ecd9e092b293ecd34f586d5d8dbfc7c11c4772977d026816",
+    "raw_response_text_sha256": "2fd51f8e091e99840ecdf33a0ed83f78485d04d6962991ea9053c34a2914c7a9"
+  },
+  "api_metadata": {
+    "id": "resp_083117a267723c75006aaa35949f1087d1a5fef0ca5063079a",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789539732.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1636,
+      "input_tokens_details": {
+        "cache_write_tokens": 1633,
+        "cached_tokens": 0
+      },
+      "output_tokens": 297,
+      "output_tokens_details": {
+        "reasoning_tokens": 122
+      },
+      "total_tokens": 1933
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"European and Nigerian football, including Jude Bellingham's influence at Real Madrid\",\n  \"conflict_relevance\": \"The main article is sports coverage, but embedded 'Latest' items include meaningful discussion of Israeli strikes on Gaza, the Israel-Hamas war, antisemitic incidents, and Israel's military tactics.\",\n  \"reason\": \"The headline-associated article is not about Gaza or the Israel-Palestine conflict. However, the text contains substantive conflict-related news snippets that may be useful for studying broader media discourse, so it is peripheral rather than excluded.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T06:22:16Z",
+  "duration_seconds": 3.657,
+  "error": null
+}

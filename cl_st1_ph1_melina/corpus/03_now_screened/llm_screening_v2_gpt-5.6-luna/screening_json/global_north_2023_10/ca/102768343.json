@@ -1,0 +1,65 @@
+{
+  "article_id": "102768343",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_10/ca/102768343.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_10/ca/102768343.json"
+  },
+  "manifest_row": {
+    "article_id": "102768343",
+    "group": "global_north_2023_10",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2023_10/ca/102768343.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "background",
+    "main_topic": "Toronto Maple Leafs roster depth, scoring distribution, and line combinations",
+    "conflict_relevance": "The main article is about hockey, but an embedded 'Latest Stories' item contains substantive discussion of Canada's response to the Gaza hospital blast during the Israel-Hamas conflict.",
+    "reason": "Gaza is not relevant to the main sports article, but the embedded news item provides meaningful conflict-related discourse rather than a mere passing or boilerplate mention.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "84e32c3d437d6871492d7955aa9d0063ebed56255904077da6a58da309fa4211",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "d6f4ae1b1b747c913224a32a2512275c30acb781884d486b850b8c1ff8645cb6",
+    "raw_response_text_sha256": "8d1d57e4a5be0bb0805eb6d54790feb5fd7062c1458d13a6644fdb4d93676b3e"
+  },
+  "api_metadata": {
+    "id": "resp_075f9399540dd9e5006aa9f66b19d887d297b6830a064a06d8",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789523563.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2256,
+      "input_tokens_details": {
+        "cache_write_tokens": 2253,
+        "cached_tokens": 0
+      },
+      "output_tokens": 288,
+      "output_tokens_details": {
+        "reasoning_tokens": 136
+      },
+      "total_tokens": 2544
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Toronto Maple Leafs roster depth, scoring distribution, and line combinations\",\n  \"conflict_relevance\": \"The main article is about hockey, but an embedded 'Latest Stories' item contains substantive discussion of Canada's response to the Gaza hospital blast during the Israel-Hamas conflict.\",\n  \"reason\": \"Gaza is not relevant to the main sports article, but the embedded news item provides meaningful conflict-related discourse rather than a mere passing or boilerplate mention.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T01:52:46Z",
+  "duration_seconds": 3.714,
+  "error": null
+}

@@ -1,0 +1,65 @@
+{
+  "article_id": "102475462",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_south_2023_10/ph/102475462.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_south_2023_10/ph/102475462.json"
+  },
+  "manifest_row": {
+    "article_id": "102475462",
+    "group": "global_south_2023_10",
+    "country_code": "ph",
+    "filepath": "corpus/02_now_organised/global_south_2023_10/ph/102475462.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.97,
+    "gaza_role": "passing",
+    "main_topic": "Quezon City cycling infrastructure and plans to become the cycling capital of the Philippines",
+    "conflict_relevance": "The article contains a brief report about Filipino workers near Gaza who are unaccounted for and feared kidnapped by Hamas, along with passing references to the Israel-Hamas war and travel to the Holy Land.",
+    "reason": "The main article is about cycling policy and infrastructure in Quezon City. Conflict-related material appears as inserted or loosely connected snippets rather than as part of the central story, but the reference to missing Filipinos near Gaza and Hamas provides meaningful, if very limited, conflict discourse.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "57c670ff835c7d5857236b75ff1841116b71413791bf685858b15c79597b974d",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "ba3e17c817e355ae7699e52b95129850bbd3de7841a7f8105d58353f1d193e36",
+    "raw_response_text_sha256": "f32b509670f6b13ee31cbc51bf4d44af14aa0b6145f6b408b1b80decb88b1cd4"
+  },
+  "api_metadata": {
+    "id": "resp_040373de9404c539006aaa33c84c6087d1a45a611af5c6724a",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789539272.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1369,
+      "input_tokens_details": {
+        "cache_write_tokens": 1366,
+        "cached_tokens": 0
+      },
+      "output_tokens": 337,
+      "output_tokens_details": {
+        "reasoning_tokens": 152
+      },
+      "total_tokens": 1706
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.97,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Quezon City cycling infrastructure and plans to become the cycling capital of the Philippines\",\n  \"conflict_relevance\": \"The article contains a brief report about Filipino workers near Gaza who are unaccounted for and feared kidnapped by Hamas, along with passing references to the Israel-Hamas war and travel to the Holy Land.\",\n  \"reason\": \"The main article is about cycling policy and infrastructure in Quezon City. Conflict-related material appears as inserted or loosely connected snippets rather than as part of the central story, but the reference to missing Filipinos near Gaza and Hamas provides meaningful, if very limited, conflict discourse.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T06:14:36Z",
+  "duration_seconds": 4.333,
+  "error": null
+}

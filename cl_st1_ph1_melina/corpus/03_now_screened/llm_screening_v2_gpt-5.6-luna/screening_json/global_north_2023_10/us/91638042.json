@@ -1,0 +1,65 @@
+{
+  "article_id": "91638042",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_10/us/91638042.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_10/us/91638042.json"
+  },
+  "manifest_row": {
+    "article_id": "91638042",
+    "group": "global_north_2023_10",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2023_10/us/91638042.txt"
+  },
+  "screening": {
+    "category": "CORE",
+    "confidence": 0.99,
+    "gaza_role": "central",
+    "main_topic": "Hamas training and preparation for the October 7 attack from sites in the Gaza Strip",
+    "conflict_relevance": "The article directly concerns Hamas's military preparations in Gaza, the attack on Israel, hostages, Israeli intelligence, and subsequent war-related information and platform-moderation responses.",
+    "reason": "The headline and opening material centrally focus on Hamas training in Gaza for its assault on Israel. Although the text also contains several additional snippets about the Israel-Hamas war, cyberattacks, disinformation, and content moderation, these are all directly connected to the conflict.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": true
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "9a6aaf90cb35211ff09b503b643f7024a39714dcacc744e22faa297dbf7d6ed4",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "bb6ec905f4bf595e7146dc9440725ebdb730952ce2bf3b4ac905719ebb933775",
+    "raw_response_text_sha256": "c5fcff78c7fc032f32c28b42e9f5c3fc60e44594d5040f91697175e84b00562e"
+  },
+  "api_metadata": {
+    "id": "resp_0f62e66cfd6b12d0006aa9fa64a2e087d28148be8c53d7a619",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789524580.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1122,
+      "input_tokens_details": {
+        "cache_write_tokens": 1119,
+        "cached_tokens": 0
+      },
+      "output_tokens": 230,
+      "output_tokens_details": {
+        "reasoning_tokens": 52
+      },
+      "total_tokens": 1352
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"CORE\",\n  \"confidence\": 0.99,\n  \"gaza_role\": \"central\",\n  \"main_topic\": \"Hamas training and preparation for the October 7 attack from sites in the Gaza Strip\",\n  \"conflict_relevance\": \"The article directly concerns Hamas's military preparations in Gaza, the attack on Israel, hostages, Israeli intelligence, and subsequent war-related information and platform-moderation responses.\",\n  \"reason\": \"The headline and opening material centrally focus on Hamas training in Gaza for its assault on Israel. Although the text also contains several additional snippets about the Israel-Hamas war, cyberattacks, disinformation, and content moderation, these are all directly connected to the conflict.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": true\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:09:43Z",
+  "duration_seconds": 3.038,
+  "error": null
+}

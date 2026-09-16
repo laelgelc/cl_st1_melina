@@ -1,0 +1,65 @@
+{
+  "article_id": "117511268",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_11/gb/117511268.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_11/gb/117511268.json"
+  },
+  "manifest_row": {
+    "article_id": "117511268",
+    "group": "global_north_2024_11",
+    "country_code": "gb",
+    "filepath": "corpus/02_now_organised/global_north_2024_11/gb/117511268.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "background",
+    "main_topic": "The Post Office Horizon scandal, government bureaucracy, and compensation for subpostmasters",
+    "conflict_relevance": "The main article is unrelated to Gaza, but it includes a substantive embedded news item about Arab and Muslim leaders demanding an end to Israel's occupation and condemning Israeli crimes in Gaza.",
+    "reason": "The article primarily concerns the UK Post Office Horizon inquiry and compensation claims. Gaza and Israel/Palestine appear in a separate, meaningful news snippet rather than in the main article's topic, making it relevant only to broader discourse analysis.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "d3575f9e85300d8379f1013152e56a44aac3693154083a436a89158215409b08",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "cbd5e0482abb7999b87c7e9f6290e3eff71b2d72233b42949e3ff7a438627987",
+    "raw_response_text_sha256": "903eb7eb5258391e4131d0cc770fd77630c4817a650c2d7c6ec7d9e33e5446df"
+  },
+  "api_metadata": {
+    "id": "resp_0a0a7f8acd0d7c62006aaa1ab6469487d28da158580f0fb16b",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789532854.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1878,
+      "input_tokens_details": {
+        "cache_write_tokens": 1875,
+        "cached_tokens": 0
+      },
+      "output_tokens": 298,
+      "output_tokens_details": {
+        "reasoning_tokens": 124
+      },
+      "total_tokens": 2176
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"The Post Office Horizon scandal, government bureaucracy, and compensation for subpostmasters\",\n  \"conflict_relevance\": \"The main article is unrelated to Gaza, but it includes a substantive embedded news item about Arab and Muslim leaders demanding an end to Israel's occupation and condemning Israeli crimes in Gaza.\",\n  \"reason\": \"The article primarily concerns the UK Post Office Horizon inquiry and compensation claims. Gaza and Israel/Palestine appear in a separate, meaningful news snippet rather than in the main article's topic, making it relevant only to broader discourse analysis.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T04:27:37Z",
+  "duration_seconds": 3.582,
+  "error": null
+}

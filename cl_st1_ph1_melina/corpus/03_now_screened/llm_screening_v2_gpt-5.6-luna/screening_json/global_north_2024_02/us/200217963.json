@@ -1,0 +1,65 @@
+{
+  "article_id": "200217963",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_02/us/200217963.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_02/us/200217963.json"
+  },
+  "manifest_row": {
+    "article_id": "200217963",
+    "group": "global_north_2024_02",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2024_02/us/200217963.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "background",
+    "main_topic": "Explosions and suspected sabotage of an Iranian natural gas pipeline",
+    "conflict_relevance": "The article situates the pipeline explosions within heightened Middle East tensions related to Israel's war on Hamas in Gaza, but Gaza is not the subject of the report.",
+    "reason": "The headline article is primarily about an incident involving Iran's energy infrastructure. The Gaza war appears as meaningful geopolitical context in the opening, making it peripheral rather than core. The text also contains a substantial unrelated baseball article and metadata contamination.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "64a353acf3cca941cb7e950cb910148094898c6101aafe9a93e13f94d226254b",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "ab312784edd3f007e69baa08c52c57f17f43014ee0596b64dd411f3d1a92eebe",
+    "raw_response_text_sha256": "0de6caa823d3c19f7b89061e158e1e06b2e2a3c89a89e9dfa495391013845d35"
+  },
+  "api_metadata": {
+    "id": "resp_0f5d17596824d77f006aaa07d2c43487d2ae001574316a570f",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789528018.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2301,
+      "input_tokens_details": {
+        "cache_write_tokens": 2298,
+        "cached_tokens": 0
+      },
+      "output_tokens": 259,
+      "output_tokens_details": {
+        "reasoning_tokens": 93
+      },
+      "total_tokens": 2560
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Explosions and suspected sabotage of an Iranian natural gas pipeline\",\n  \"conflict_relevance\": \"The article situates the pipeline explosions within heightened Middle East tensions related to Israel's war on Hamas in Gaza, but Gaza is not the subject of the report.\",\n  \"reason\": \"The headline article is primarily about an incident involving Iran's energy infrastructure. The Gaza war appears as meaningful geopolitical context in the opening, making it peripheral rather than core. The text also contains a substantial unrelated baseball article and metadata contamination.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:07:02Z",
+  "duration_seconds": 3.846,
+  "error": null
+}

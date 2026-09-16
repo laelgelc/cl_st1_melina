@@ -1,0 +1,65 @@
+{
+  "article_id": "102645825",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_south_2023_10/ph/102645825.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_south_2023_10/ph/102645825.json"
+  },
+  "manifest_row": {
+    "article_id": "102645825",
+    "group": "global_south_2023_10",
+    "country_code": "ph",
+    "filepath": "corpus/02_now_organised/global_south_2023_10/ph/102645825.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "passing",
+    "main_topic": "Tourism and technology upgrades in Manila's historic Intramuros district",
+    "conflict_relevance": "A single substantive sentence about Israel's preparations for a ground offensive in Gaza appears embedded among unrelated article snippets.",
+    "reason": "The headline and main article concern Philippine tourism infrastructure, while the Gaza reference is a separate, passing news item rather than part of the article's central subject.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "71c02d10a386e1558213fb2460f57f60b0379ce70e79d21c742223ecc438fbe6",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "378646912e009eebfce02372d1181acf6ae9193cc29bec52d233bff0390611b9",
+    "raw_response_text_sha256": "8bc2b45af54140c97474a2f622dfc61e45fc5067129c286e0dc310ad49b754ac"
+  },
+  "api_metadata": {
+    "id": "resp_056da1441ceb003f006aaa33d87c6487d19691b863e7adb708",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789539288.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1003,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 187,
+      "output_tokens_details": {
+        "reasoning_tokens": 46
+      },
+      "total_tokens": 1190
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Tourism and technology upgrades in Manila's historic Intramuros district\",\n  \"conflict_relevance\": \"A single substantive sentence about Israel's preparations for a ground offensive in Gaza appears embedded among unrelated article snippets.\",\n  \"reason\": \"The headline and main article concern Philippine tourism infrastructure, while the Gaza reference is a separate, passing news item rather than part of the article's central subject.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T06:14:51Z",
+  "duration_seconds": 3.374,
+  "error": null
+}

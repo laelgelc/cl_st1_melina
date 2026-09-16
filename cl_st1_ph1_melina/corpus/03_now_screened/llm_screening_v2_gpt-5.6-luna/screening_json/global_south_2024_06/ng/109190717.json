@@ -1,0 +1,65 @@
+{
+  "article_id": "109190717",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_south_2024_06/ng/109190717.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_south_2024_06/ng/109190717.json"
+  },
+  "manifest_row": {
+    "article_id": "109190717",
+    "group": "global_south_2024_06",
+    "country_code": "ng",
+    "filepath": "corpus/02_now_organised/global_south_2024_06/ng/109190717.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.9,
+    "gaza_role": "passing",
+    "main_topic": "Nigerian military operations against bandits in Kaduna State",
+    "conflict_relevance": "The article includes a substantive AFP photo caption about Israeli raids on and destruction of Al-Shifa Hospital in Gaza, but this is unrelated to the main report.",
+    "reason": "The headline and article focus on Nigerian security operations against bandits. Gaza appears only in an embedded photo caption that provides brief conflict-related context, making the item peripheral rather than core.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "ea54cd4cb573937cfef6dfca2587238f117cd090e00656ac1009b25a5b73ffcb",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "f7ded976a12b909880939c115f7a8a706d9b24b003dbef9142a773a4b872379f",
+    "raw_response_text_sha256": "e2a0a3cdb77e813f7cef5194e4ff853fd607831cd492cd3b7fbefa9be91fba2e"
+  },
+  "api_metadata": {
+    "id": "resp_087b2869803f9abf006aaa3c5fa17887d1b4c442a0821a458a",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789541471.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1131,
+      "input_tokens_details": {
+        "cache_write_tokens": 1128,
+        "cached_tokens": 0
+      },
+      "output_tokens": 268,
+      "output_tokens_details": {
+        "reasoning_tokens": 114
+      },
+      "total_tokens": 1399
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.9,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Nigerian military operations against bandits in Kaduna State\",\n  \"conflict_relevance\": \"The article includes a substantive AFP photo caption about Israeli raids on and destruction of Al-Shifa Hospital in Gaza, but this is unrelated to the main report.\",\n  \"reason\": \"The headline and article focus on Nigerian security operations against bandits. Gaza appears only in an embedded photo caption that provides brief conflict-related context, making the item peripheral rather than core.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T06:51:23Z",
+  "duration_seconds": 12.724,
+  "error": null
+}

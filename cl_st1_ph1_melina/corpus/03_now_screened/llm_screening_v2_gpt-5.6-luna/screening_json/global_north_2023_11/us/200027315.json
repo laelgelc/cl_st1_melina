@@ -1,0 +1,65 @@
+{
+  "article_id": "200027315",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_11/us/200027315.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_11/us/200027315.json"
+  },
+  "manifest_row": {
+    "article_id": "200027315",
+    "group": "global_north_2023_11",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2023_11/us/200027315.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "gaza_role": "passing",
+    "main_topic": "Hunter Biden's legal and congressional investigation",
+    "conflict_relevance": "Gaza appears only in an unrelated photo caption about President Biden discussing the release of hostages.",
+    "reason": "The article is focused on Hunter Biden's testimony and political strategy; the Gaza reference is incidental and does not contribute meaningful conflict-related discourse.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "e60a68c847094f6eb7d39031aa4b3e95308595d1e4df17019c25070a2d3d0b61",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "101c916b369fd85eb3358f9191d733dcc70cd8bbd2dbe19339379b5f4e9394f3",
+    "raw_response_text_sha256": "f0c04eaece45a99480b3f45e3c965ef1d1015435491ee29622d0c24011207a23"
+  },
+  "api_metadata": {
+    "id": "resp_05baf0d3924a6c46006aa9ff80cc8087d2a85390245b16de1e",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789525888.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1361,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 1358
+      },
+      "output_tokens": 192,
+      "output_tokens_details": {
+        "reasoning_tokens": 64
+      },
+      "total_tokens": 1553
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Hunter Biden's legal and congressional investigation\",\n  \"conflict_relevance\": \"Gaza appears only in an unrelated photo caption about President Biden discussing the release of hostages.\",\n  \"reason\": \"The article is focused on Hunter Biden's testimony and political strategy; the Gaza reference is incidental and does not contribute meaningful conflict-related discourse.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:31:31Z",
+  "duration_seconds": 2.78,
+  "error": null
+}

@@ -1,0 +1,65 @@
+{
+  "article_id": "117968615",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_south_2024_11/ng/117968615.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_south_2024_11/ng/117968615.json"
+  },
+  "manifest_row": {
+    "article_id": "117968615",
+    "group": "global_south_2024_11",
+    "country_code": "ng",
+    "filepath": "corpus/02_now_organised/global_south_2024_11/ng/117968615.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.96,
+    "gaza_role": "passing",
+    "main_topic": "Nigerian Navy arrest of suspected oil smugglers in Akwa Ibom",
+    "conflict_relevance": "The main article is unrelated to Gaza, but an embedded news snippet briefly discusses fuel shortages in Hamas-run Gaza, disrupted humanitarian aid, and ICC arrest warrants concerning Israeli officials.",
+    "reason": "The headline article concerns maritime smuggling in Nigeria. Gaza-related material appears only as a substantive but unrelated embedded news item, making the piece peripheral rather than core.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "c2d0a7d15ac2ee389f34e533cd004f9705e25337b1cf4b149bacbe567ff85217",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "dfec8e2895a057ad0224d51bdd3dd166e4339e7d87ccf9ca3ee8ed749664100b",
+    "raw_response_text_sha256": "26479bd9c8ed8679f801775a22590fd1a461004a522095622f7126a2dace6e3d"
+  },
+  "api_metadata": {
+    "id": "resp_0fd82238dbe27c94006aaa424ff36087d1a0a5610a9a239af8",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789542991.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1547,
+      "input_tokens_details": {
+        "cache_write_tokens": 1544,
+        "cached_tokens": 0
+      },
+      "output_tokens": 272,
+      "output_tokens_details": {
+        "reasoning_tokens": 114
+      },
+      "total_tokens": 1819
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.96,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Nigerian Navy arrest of suspected oil smugglers in Akwa Ibom\",\n  \"conflict_relevance\": \"The main article is unrelated to Gaza, but an embedded news snippet briefly discusses fuel shortages in Hamas-run Gaza, disrupted humanitarian aid, and ICC arrest warrants concerning Israeli officials.\",\n  \"reason\": \"The headline article concerns maritime smuggling in Nigeria. Gaza-related material appears only as a substantive but unrelated embedded news item, making the piece peripheral rather than core.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T07:16:35Z",
+  "duration_seconds": 4.005,
+  "error": null
+}

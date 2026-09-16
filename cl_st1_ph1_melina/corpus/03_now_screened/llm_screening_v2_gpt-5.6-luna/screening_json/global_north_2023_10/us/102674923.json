@@ -1,0 +1,65 @@
+{
+  "article_id": "102674923",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_10/us/102674923.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_10/us/102674923.json"
+  },
+  "manifest_row": {
+    "article_id": "102674923",
+    "group": "global_north_2023_10",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2023_10/us/102674923.txt"
+  },
+  "screening": {
+    "category": "CORE",
+    "confidence": 0.99,
+    "gaza_role": "central",
+    "main_topic": "Pro-Israel demonstration in Los Angeles amid the Israel-Hamas war and Israeli military preparations in Gaza",
+    "conflict_relevance": "The main article directly covers public mobilization, Israeli solidarity, Hamas attacks, hostages, Israeli military action, Palestinian displacement, and fears of a humanitarian crisis in Gaza.",
+    "reason": "The primary article is centrally focused on a pro-Israel rally responding to the October 7 attack and the ongoing war in Gaza. It also discusses a parallel pro-Palestinian protest, Israeli bombardment, the threatened ground invasion, the Nakba, and competing public narratives about terrorism, Jewish trauma, and Israel's right to self-defense. The latter portion about U.S. migrant family separations is an unrelated concatenated article.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": true
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "59ee1de99e507d3de61f9287bbb3514a82d8c93544c8deaf3c5e85215971f38f",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "aa980337aa402824e14885f1b3eaa2545d506d85da76b516f1e3f76ac697995a",
+    "raw_response_text_sha256": "991ea7e68e4be3860bfc10b83e9e607756de980a24f3faec4653b603c82390eb"
+  },
+  "api_metadata": {
+    "id": "resp_0601f2183ab4d6d2006aa9f8fd3c7487d2850eb5034e01bd5d",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789524221.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 3350,
+      "input_tokens_details": {
+        "cache_write_tokens": 3347,
+        "cached_tokens": 0
+      },
+      "output_tokens": 284,
+      "output_tokens_details": {
+        "reasoning_tokens": 70
+      },
+      "total_tokens": 3634
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"CORE\",\n  \"confidence\": 0.99,\n  \"gaza_role\": \"central\",\n  \"main_topic\": \"Pro-Israel demonstration in Los Angeles amid the Israel-Hamas war and Israeli military preparations in Gaza\",\n  \"conflict_relevance\": \"The main article directly covers public mobilization, Israeli solidarity, Hamas attacks, hostages, Israeli military action, Palestinian displacement, and fears of a humanitarian crisis in Gaza.\",\n  \"reason\": \"The primary article is centrally focused on a pro-Israel rally responding to the October 7 attack and the ongoing war in Gaza. It also discusses a parallel pro-Palestinian protest, Israeli bombardment, the threatened ground invasion, the Nakba, and competing public narratives about terrorism, Jewish trauma, and Israel's right to self-defense. The latter portion about U.S. migrant family separations is an unrelated concatenated article.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": true\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:03:45Z",
+  "duration_seconds": 4.201,
+  "error": null
+}

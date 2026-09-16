@@ -1,0 +1,65 @@
+{
+  "article_id": "125592839",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_06/au/125592839.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_06/au/125592839.json"
+  },
+  "manifest_row": {
+    "article_id": "125592839",
+    "group": "global_north_2025_06",
+    "country_code": "au",
+    "filepath": "corpus/02_now_organised/global_north_2025_06/au/125592839.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.97,
+    "gaza_role": "background",
+    "main_topic": "Australian and international news bulletin",
+    "conflict_relevance": "Includes a substantive news segment about the death of a Thai hostage held in Gaza by Hamas-linked militants, but the bulletin is mainly about unrelated Australian, Ukrainian, economic, disaster, cultural, and sports news.",
+    "reason": "The Gaza-related hostage report contains meaningful conflict discourse, but it is one item in a multi-topic news roundup rather than the article's central subject.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "9312fdad1557436eab354614f1582a012c4ab74693c8ff8e3778ac3dfeba3a2c",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "50b3060ab3d301a3d14c8bd3eb6a074a64098e6b9e3266e90a1608020cabaacc",
+    "raw_response_text_sha256": "a881ee8c43286e2349371de34b377e48471fd7d17880d7cf3e63ee6f34cf1760"
+  },
+  "api_metadata": {
+    "id": "resp_0e19c21d5f29613c006aaa2e4d981087d18860b26f25daccf9",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789537869.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1850,
+      "input_tokens_details": {
+        "cache_write_tokens": 1847,
+        "cached_tokens": 0
+      },
+      "output_tokens": 298,
+      "output_tokens_details": {
+        "reasoning_tokens": 147
+      },
+      "total_tokens": 2148
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.97,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Australian and international news bulletin\",\n  \"conflict_relevance\": \"Includes a substantive news segment about the death of a Thai hostage held in Gaza by Hamas-linked militants, but the bulletin is mainly about unrelated Australian, Ukrainian, economic, disaster, cultural, and sports news.\",\n  \"reason\": \"The Gaza-related hostage report contains meaningful conflict discourse, but it is one item in a multi-topic news roundup rather than the article's central subject.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T05:51:13Z",
+  "duration_seconds": 4.146,
+  "error": null
+}

@@ -1,0 +1,65 @@
+{
+  "article_id": "118961701",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_south_2024_12/ng/118961701.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_south_2024_12/ng/118961701.json"
+  },
+  "manifest_row": {
+    "article_id": "118961701",
+    "group": "global_south_2024_12",
+    "country_code": "ng",
+    "filepath": "corpus/02_now_organised/global_south_2024_12/ng/118961701.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.97,
+    "gaza_role": "passing",
+    "main_topic": "Education policy and access to schooling in Adamawa State, Nigeria",
+    "conflict_relevance": "The main article concerns Nigerian education policy and has no connection to Gaza or the Israel-Palestine conflict. Gaza appears only in a separate, unrelated news snippet within a collection of items.",
+    "reason": "The headline article is about education reforms in Adamawa. Although an embedded snippet briefly reports on ceasefire prospects in Gaza, it is not part of the main article and does not provide meaningful context for analyzing the article's discourse.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "fa6fe8cccf31811061645780ff520e9590609eb33545a7de9103f4df6819ada3",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "e2ad500d301b197cd8362349a8b6307710a90efd7d6fff1bc2e4aaecda9c2bf0",
+    "raw_response_text_sha256": "a466a226bf70ce42d90188d2c93318b055ef92972d03161f138906bb3153bb48"
+  },
+  "api_metadata": {
+    "id": "resp_02a9e5236d576153006aaa4371c32487d18116b64162b79ea7",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789543281.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1675,
+      "input_tokens_details": {
+        "cache_write_tokens": 1672,
+        "cached_tokens": 0
+      },
+      "output_tokens": 287,
+      "output_tokens_details": {
+        "reasoning_tokens": 117
+      },
+      "total_tokens": 1962
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.97,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Education policy and access to schooling in Adamawa State, Nigeria\",\n  \"conflict_relevance\": \"The main article concerns Nigerian education policy and has no connection to Gaza or the Israel-Palestine conflict. Gaza appears only in a separate, unrelated news snippet within a collection of items.\",\n  \"reason\": \"The headline article is about education reforms in Adamawa. Although an embedded snippet briefly reports on ceasefire prospects in Gaza, it is not part of the main article and does not provide meaningful context for analyzing the article's discourse.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T07:21:25Z",
+  "duration_seconds": 3.478,
+  "error": null
+}

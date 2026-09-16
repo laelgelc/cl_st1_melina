@@ -1,0 +1,65 @@
+{
+  "article_id": "124540203",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_05/gb/124540203.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_05/gb/124540203.json"
+  },
+  "manifest_row": {
+    "article_id": "124540203",
+    "group": "global_north_2025_05",
+    "country_code": "gb",
+    "filepath": "corpus/02_now_organised/global_north_2025_05/gb/124540203.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "gaza_role": "boilerplate_or_unrelated",
+    "main_topic": "Joe Biden, Kamala Harris, and sexism in the 2024 US election",
+    "conflict_relevance": "The main article is about US electoral politics and gender; Gaza and Palestine appear only in unrelated embedded headlines or roundup fragments without substantive discussion.",
+    "reason": "The Gaza-related material is incidental and disconnected from the article's main topic. The snippets about Israeli soldiers in Gaza and Shireen Abu Akleh are not developed into meaningful content.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "24d10fb4fb7fbc8c3eb849f77b99ff56367ef0a290a34b89b59a10595e5dade0",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "32a1112b3f10b46eec10d444b50da4e963584ae6a46c859f4003c5e08f07cc72",
+    "raw_response_text_sha256": "a32610fa554cb0db7ca22781f0d1a1d2d50ac94e9dac23c5d9d0c408dc27f11e"
+  },
+  "api_metadata": {
+    "id": "resp_0bf6749ddc2952f2006aaa2b8d87dc87d199537f847acf0ccd",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789537165.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2126,
+      "input_tokens_details": {
+        "cache_write_tokens": 2123,
+        "cached_tokens": 0
+      },
+      "output_tokens": 305,
+      "output_tokens_details": {
+        "reasoning_tokens": 146
+      },
+      "total_tokens": 2431
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Joe Biden, Kamala Harris, and sexism in the 2024 US election\",\n  \"conflict_relevance\": \"The main article is about US electoral politics and gender; Gaza and Palestine appear only in unrelated embedded headlines or roundup fragments without substantive discussion.\",\n  \"reason\": \"The Gaza-related material is incidental and disconnected from the article's main topic. The snippets about Israeli soldiers in Gaza and Shireen Abu Akleh are not developed into meaningful content.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T05:39:29Z",
+  "duration_seconds": 4.202,
+  "error": null
+}

@@ -1,0 +1,65 @@
+{
+  "article_id": "124755118",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_05/au/124755118.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_05/au/124755118.json"
+  },
+  "manifest_row": {
+    "article_id": "124755118",
+    "group": "global_north_2025_05",
+    "country_code": "au",
+    "filepath": "corpus/02_now_organised/global_north_2025_05/au/124755118.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "gaza_role": "passing",
+    "main_topic": "Pope Leo XIV, Vatican leadership, and reform of the Catholic Church",
+    "conflict_relevance": "Gaza is mentioned only in passing as one location associated with Vatican diplomats, without substantive discussion of the conflict or related issues.",
+    "reason": "The article is primarily about the papacy, gender and power structures in the Catholic Church, and Vatican reform. Its sole Gaza reference is incidental and does not provide meaningful conflict discourse.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "00a1d379e9a89e4f0e4bfeec91bb1a5edfdc24ebd88be393e60ff27a656794f2",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "df3d1f0cbd9aeb03c7003dd5ea25cffef2aa85e2bc70b0f202bd72474a325c89",
+    "raw_response_text_sha256": "71e84632613e74a9813145b4d4f5b7e3d62e88188152723741dbbcabf78292b9"
+  },
+  "api_metadata": {
+    "id": "resp_0134d1a3d514e13a006aaa2b000ed887d1854b7635590cbfe6",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789537024.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 3409,
+      "input_tokens_details": {
+        "cache_write_tokens": 3406,
+        "cached_tokens": 0
+      },
+      "output_tokens": 254,
+      "output_tokens_details": {
+        "reasoning_tokens": 104
+      },
+      "total_tokens": 3663
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Pope Leo XIV, Vatican leadership, and reform of the Catholic Church\",\n  \"conflict_relevance\": \"Gaza is mentioned only in passing as one location associated with Vatican diplomats, without substantive discussion of the conflict or related issues.\",\n  \"reason\": \"The article is primarily about the papacy, gender and power structures in the Catholic Church, and Vatican reform. Its sole Gaza reference is incidental and does not provide meaningful conflict discourse.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T05:37:07Z",
+  "duration_seconds": 3.18,
+  "error": null
+}

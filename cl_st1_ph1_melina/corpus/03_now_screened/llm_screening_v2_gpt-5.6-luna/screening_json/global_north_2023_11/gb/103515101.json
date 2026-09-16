@@ -1,0 +1,65 @@
+{
+  "article_id": "103515101",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_11/gb/103515101.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_11/gb/103515101.json"
+  },
+  "manifest_row": {
+    "article_id": "103515101",
+    "group": "global_north_2023_11",
+    "country_code": "gb",
+    "filepath": "corpus/02_now_organised/global_north_2023_11/gb/103515101.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.94,
+    "gaza_role": "substantial",
+    "main_topic": "David Cameron's foreign-policy agenda, including Ukraine, Gaza, Middle East instability, and NATO",
+    "conflict_relevance": "Meaningful discussion of the Gaza war, UK support for Israel's offensive, humanitarian law and assistance, public opinion, regional escalation, and the conflict's implications for international politics, but the article's broader focus is Cameron's foreign-policy responsibilities and Ukraine.",
+    "reason": "The article contains several substantive paragraphs on Gaza and its humanitarian, legal, diplomatic, and geopolitical dimensions, yet Gaza is one component of a wider discussion centered on Ukraine, NATO, and UK foreign policy.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "4686518c003a06b8bd37b743c5b2d37065b6820b5672f435177174369654ba48",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "66da994ee4d93e167881e2605ce0405ef187e5440f743ddf573c6011fe998b1c",
+    "raw_response_text_sha256": "20f5d9818f869dcc09a3314f13d7f8edae43d49db2240bf19c87f6db9df45d13"
+  },
+  "api_metadata": {
+    "id": "resp_0b83eaa828cd63ce006aa9fce35b5887d2893c594622c2803b",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789525219.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1041,
+      "input_tokens_details": {
+        "cache_write_tokens": 1038,
+        "cached_tokens": 0
+      },
+      "output_tokens": 285,
+      "output_tokens_details": {
+        "reasoning_tokens": 100
+      },
+      "total_tokens": 1326
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.94,\n  \"gaza_role\": \"substantial\",\n  \"main_topic\": \"David Cameron's foreign-policy agenda, including Ukraine, Gaza, Middle East instability, and NATO\",\n  \"conflict_relevance\": \"Meaningful discussion of the Gaza war, UK support for Israel's offensive, humanitarian law and assistance, public opinion, regional escalation, and the conflict's implications for international politics, but the article's broader focus is Cameron's foreign-policy responsibilities and Ukraine.\",\n  \"reason\": \"The article contains several substantive paragraphs on Gaza and its humanitarian, legal, diplomatic, and geopolitical dimensions, yet Gaza is one component of a wider discussion centered on Ukraine, NATO, and UK foreign policy.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:20:23Z",
+  "duration_seconds": 4.196,
+  "error": null
+}

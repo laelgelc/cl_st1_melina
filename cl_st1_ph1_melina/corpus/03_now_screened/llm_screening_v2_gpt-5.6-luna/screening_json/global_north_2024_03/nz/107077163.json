@@ -1,0 +1,65 @@
+{
+  "article_id": "107077163",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_03/nz/107077163.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_03/nz/107077163.json"
+  },
+  "manifest_row": {
+    "article_id": "107077163",
+    "group": "global_north_2024_03",
+    "country_code": "nz",
+    "filepath": "corpus/02_now_organised/global_north_2024_03/nz/107077163.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.95,
+    "gaza_role": "passing",
+    "main_topic": "A Socialist Equality Group latest-news index covering New Zealand political and social affairs",
+    "conflict_relevance": "The page includes brief snippets about protests against Israel's bombing of Gaza and a meeting concerning the war, but it is primarily a roundup/index rather than a substantive article on the conflict.",
+    "reason": "This is a multi-item latest-news page containing unrelated article summaries. Although some embedded snippets meaningfully mention Gaza and Palestine, there is no single substantive article associated with the page as a whole.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "73aa264a3f9704a8b238dc1bf802e70da83cbbd4631737d037294b0a976cf4f7",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "bdfa277ae1b2c49fb4c93f2caab9a6eb7bb24166538b9b682c98f1bcc2daee94",
+    "raw_response_text_sha256": "96cdbd0a10dcbab61fc0a7f9b7d1860420d7d4a1331a90fc34877782872311b5"
+  },
+  "api_metadata": {
+    "id": "resp_023a7cad558e127f006aaa094f4aa087d294952b2759a6ed5a",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789528399.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1555,
+      "input_tokens_details": {
+        "cache_write_tokens": 1552,
+        "cached_tokens": 0
+      },
+      "output_tokens": 392,
+      "output_tokens_details": {
+        "reasoning_tokens": 229
+      },
+      "total_tokens": 1947
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.95,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"A Socialist Equality Group latest-news index covering New Zealand political and social affairs\",\n  \"conflict_relevance\": \"The page includes brief snippets about protests against Israel's bombing of Gaza and a meeting concerning the war, but it is primarily a roundup/index rather than a substantive article on the conflict.\",\n  \"reason\": \"This is a multi-item latest-news page containing unrelated article summaries. Although some embedded snippets meaningfully mention Gaza and Palestine, there is no single substantive article associated with the page as a whole.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:13:24Z",
+  "duration_seconds": 5.208,
+  "error": null
+}

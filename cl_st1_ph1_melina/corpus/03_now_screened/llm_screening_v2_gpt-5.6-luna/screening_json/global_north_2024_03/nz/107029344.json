@@ -1,0 +1,65 @@
+{
+  "article_id": "107029344",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_03/nz/107029344.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_03/nz/107029344.json"
+  },
+  "manifest_row": {
+    "article_id": "107029344",
+    "group": "global_north_2024_03",
+    "country_code": "nz",
+    "filepath": "corpus/02_now_organised/global_north_2024_03/nz/107029344.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.97,
+    "gaza_role": "passing",
+    "main_topic": "Drug-related arrest and discovery of a clandestine drug laboratory in Christchurch",
+    "conflict_relevance": "The article includes an unrelated sidebar item reporting New Zealand funding for humanitarian needs in Gaza and the West Bank amid the Israel-Hamas conflict.",
+    "reason": "The main article concerns a drug arrest in Christchurch, but an accompanying 'ALSO' snippet contains a meaningful reference to humanitarian aid for Gaza and the West Bank and civilian suffering in the conflict.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "695b79344f06a3db96129b22cfe12a400bf951222e3b9aa6cce7e0064507a057",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "910964dbc7eac898f69874ae3adc44cf12a32fbc6a7840780736128fdb698f61",
+    "raw_response_text_sha256": "79ebb8ea9e93fd239811624879a6c2d35396221fc9534fcbf3e30ff7dbe6d6d4"
+  },
+  "api_metadata": {
+    "id": "resp_09f92f42696e95a5006aaa094de2c487d2a543f65f962cfaab",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789528397.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1208,
+      "input_tokens_details": {
+        "cache_write_tokens": 1205,
+        "cached_tokens": 0
+      },
+      "output_tokens": 241,
+      "output_tokens_details": {
+        "reasoning_tokens": 87
+      },
+      "total_tokens": 1449
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.97,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Drug-related arrest and discovery of a clandestine drug laboratory in Christchurch\",\n  \"conflict_relevance\": \"The article includes an unrelated sidebar item reporting New Zealand funding for humanitarian needs in Gaza and the West Bank amid the Israel-Hamas conflict.\",\n  \"reason\": \"The main article concerns a drug arrest in Christchurch, but an accompanying 'ALSO' snippet contains a meaningful reference to humanitarian aid for Gaza and the West Bank and civilian suffering in the conflict.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:13:22Z",
+  "duration_seconds": 4.76,
+  "error": null
+}

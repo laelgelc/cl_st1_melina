@@ -1,0 +1,65 @@
+{
+  "article_id": "124234206",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_south_2025_05/in/124234206.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_south_2025_05/in/124234206.json"
+  },
+  "manifest_row": {
+    "article_id": "124234206",
+    "group": "global_south_2025_05",
+    "country_code": "in",
+    "filepath": "corpus/02_now_organised/global_south_2025_05/in/124234206.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.97,
+    "gaza_role": "passing",
+    "main_topic": "India news live updates, including weather, politics, business, and other current affairs",
+    "conflict_relevance": "The roundup contains two brief Gaza-related news headlines, but the article is not substantively about Gaza or the Israel-Palestine conflict.",
+    "reason": "This is a multi-topic live-news roundup focused overwhelmingly on unrelated Indian domestic and international news. Gaza appears only in isolated embedded headlines about an aid vessel strike and the humanitarian situation, without meaningful discussion or context.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "a4a5740bf4df9facc1d3baddf55d353eb382161850d1e710bbaf09e898e354a5",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "b0e4e221e0fb2bd93764898894faea72b8169e5ce3213ddf699c978a78a482df",
+    "raw_response_text_sha256": "99f13e1f8b3a39635c6c0b9117951126efed47634a8f80065341d73f96ebdb10"
+  },
+  "api_metadata": {
+    "id": "resp_0171103098665e71006aaa48759f3887d1888d70057ebbd500",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789544565.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 6235,
+      "input_tokens_details": {
+        "cache_write_tokens": 6232,
+        "cached_tokens": 0
+      },
+      "output_tokens": 352,
+      "output_tokens_details": {
+        "reasoning_tokens": 192
+      },
+      "total_tokens": 6587
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.97,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"India news live updates, including weather, politics, business, and other current affairs\",\n  \"conflict_relevance\": \"The roundup contains two brief Gaza-related news headlines, but the article is not substantively about Gaza or the Israel-Palestine conflict.\",\n  \"reason\": \"This is a multi-topic live-news roundup focused overwhelmingly on unrelated Indian domestic and international news. Gaza appears only in isolated embedded headlines about an aid vessel strike and the humanitarian situation, without meaningful discussion or context.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T07:42:50Z",
+  "duration_seconds": 4.808,
+  "error": null
+}

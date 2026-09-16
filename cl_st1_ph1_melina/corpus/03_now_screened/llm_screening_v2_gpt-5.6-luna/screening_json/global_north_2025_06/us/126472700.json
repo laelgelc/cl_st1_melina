@@ -1,0 +1,65 @@
+{
+  "article_id": "126472700",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_06/us/126472700.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_06/us/126472700.json"
+  },
+  "manifest_row": {
+    "article_id": "126472700",
+    "group": "global_north_2025_06",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2025_06/us/126472700.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "passing",
+    "main_topic": "Senator Thom Tillis's decision not to seek reelection amid conflict with President Trump",
+    "conflict_relevance": "The main article concerns U.S. domestic Republican politics, but it includes a meaningful news item about Trump hosting Israeli Prime Minister Benjamin Netanyahu to pursue a Gaza ceasefire and hostage agreement.",
+    "reason": "Gaza is not part of the article's central subject and appears in an appended set of additional news snippets. However, the Gaza-related sentence contains substantive conflict-related discourse, so the item is peripheral rather than excluded.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "7597506ff791898e5b42ddde9981147220c7d81657218ce5c4a6bc493bc97080",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "4b5213b5b8df66e07240268a20f4a329d50661644c76952a5405255c2cc56ace",
+    "raw_response_text_sha256": "ebaec86eaa990095168b698655ec57b8f4451890a2316361a23c011abb105016"
+  },
+  "api_metadata": {
+    "id": "resp_0ceeedc342d4174d006aaa31e4cf3087d1a78098e557d07a0d",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789538788.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2286,
+      "input_tokens_details": {
+        "cache_write_tokens": 2283,
+        "cached_tokens": 0
+      },
+      "output_tokens": 234,
+      "output_tokens_details": {
+        "reasoning_tokens": 62
+      },
+      "total_tokens": 2520
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Senator Thom Tillis's decision not to seek reelection amid conflict with President Trump\",\n  \"conflict_relevance\": \"The main article concerns U.S. domestic Republican politics, but it includes a meaningful news item about Trump hosting Israeli Prime Minister Benjamin Netanyahu to pursue a Gaza ceasefire and hostage agreement.\",\n  \"reason\": \"Gaza is not part of the article's central subject and appears in an appended set of additional news snippets. However, the Gaza-related sentence contains substantive conflict-related discourse, so the item is peripheral rather than excluded.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T06:06:32Z",
+  "duration_seconds": 3.854,
+  "error": null
+}

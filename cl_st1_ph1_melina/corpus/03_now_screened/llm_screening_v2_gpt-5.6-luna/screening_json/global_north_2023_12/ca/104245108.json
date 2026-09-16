@@ -1,0 +1,65 @@
+{
+  "article_id": "104245108",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_12/ca/104245108.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_12/ca/104245108.json"
+  },
+  "manifest_row": {
+    "article_id": "104245108",
+    "group": "global_north_2023_12",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2023_12/ca/104245108.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "gaza_role": "passing",
+    "main_topic": "Murder trial and threats against lawyers in British Columbia",
+    "conflict_relevance": "The main article is unrelated to Gaza or the Israel-Palestine conflict; the text includes isolated roundup snippets mentioning the Israel-Hamas war and a Gaza-related military attack.",
+    "reason": "The headline and substantive article concern a local murder case in Burnaby. Gaza-related material appears only in unrelated embedded news-roundup items and is not developed as part of the main article.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "750d4e112836d43e8bf7b8ef9fa7766e840b28172d6c88997e42e3a4201932e2",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "d2538909341b3939f0c1abfeb263e17ee53bf8b134af995482628eec8a7fa2da",
+    "raw_response_text_sha256": "9dc28d6310d7d8d98737020710c908319540011571baf9764f697d4604050b2d"
+  },
+  "api_metadata": {
+    "id": "resp_0f0a916d00dd83d2006aaa0074c4bc87d2999b15e8e08372a7",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789526132.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1871,
+      "input_tokens_details": {
+        "cache_write_tokens": 1868,
+        "cached_tokens": 0
+      },
+      "output_tokens": 280,
+      "output_tokens_details": {
+        "reasoning_tokens": 123
+      },
+      "total_tokens": 2151
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Murder trial and threats against lawyers in British Columbia\",\n  \"conflict_relevance\": \"The main article is unrelated to Gaza or the Israel-Palestine conflict; the text includes isolated roundup snippets mentioning the Israel-Hamas war and a Gaza-related military attack.\",\n  \"reason\": \"The headline and substantive article concern a local murder case in Burnaby. Gaza-related material appears only in unrelated embedded news-roundup items and is not developed as part of the main article.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:35:36Z",
+  "duration_seconds": 3.923,
+  "error": null
+}

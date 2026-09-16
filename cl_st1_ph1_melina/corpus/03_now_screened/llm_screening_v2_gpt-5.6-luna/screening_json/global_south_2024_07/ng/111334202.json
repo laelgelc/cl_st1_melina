@@ -1,0 +1,65 @@
+{
+  "article_id": "111334202",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_south_2024_07/ng/111334202.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_south_2024_07/ng/111334202.json"
+  },
+  "manifest_row": {
+    "article_id": "111334202",
+    "group": "global_south_2024_07",
+    "country_code": "ng",
+    "filepath": "corpus/02_now_organised/global_south_2024_07/ng/111334202.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.96,
+    "gaza_role": "passing",
+    "main_topic": "Nigerian nationwide protests and government responses",
+    "conflict_relevance": "The main article is unrelated to Gaza, but an embedded international-news snippet briefly discusses the Gaza war, Israeli military threats, and possible regional escalation involving Lebanon and Iran.",
+    "reason": "The headline and primary content concern Nigerian protests. Gaza-related material appears only in a separate, embedded news item, making the article peripheral rather than core to the research corpus.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "281e3e2b480d730be6c9321d69029139577b2bc4e3fe86f951184c325161351e",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "8c7976ad66bff71209610096d13c490e74ee7080afda9d558cb8342fd9eb6d91",
+    "raw_response_text_sha256": "8f711cf9388f8b6903093bed502d91fe06a50cd7c65bb2c66cd66915a65998b3"
+  },
+  "api_metadata": {
+    "id": "resp_0399d3d25d7e0971006aaa3d687e2087d1b602163ea257f1d5",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789541736.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1335,
+      "input_tokens_details": {
+        "cache_write_tokens": 1332,
+        "cached_tokens": 0
+      },
+      "output_tokens": 288,
+      "output_tokens_details": {
+        "reasoning_tokens": 137
+      },
+      "total_tokens": 1623
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.96,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Nigerian nationwide protests and government responses\",\n  \"conflict_relevance\": \"The main article is unrelated to Gaza, but an embedded international-news snippet briefly discusses the Gaza war, Israeli military threats, and possible regional escalation involving Lebanon and Iran.\",\n  \"reason\": \"The headline and primary content concern Nigerian protests. Gaza-related material appears only in a separate, embedded news item, making the article peripheral rather than core to the research corpus.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T06:55:39Z",
+  "duration_seconds": 3.171,
+  "error": null
+}

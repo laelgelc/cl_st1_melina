@@ -1,0 +1,65 @@
+{
+  "article_id": "106671392",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_03/nz/106671392.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_03/nz/106671392.json"
+  },
+  "manifest_row": {
+    "article_id": "106671392",
+    "group": "global_north_2024_03",
+    "country_code": "nz",
+    "filepath": "corpus/02_now_organised/global_north_2024_03/nz/106671392.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.96,
+    "gaza_role": "passing",
+    "main_topic": "New Zealand government suspension of Significant Natural Areas requirements and resource management reform",
+    "conflict_relevance": "The article is primarily about environmental regulation in New Zealand, but it includes a brief embedded news snippet about New Zealand providing humanitarian assistance to Gaza and the West Bank in response to the Israel-Hamas conflict.",
+    "reason": "Gaza is not part of the main article and appears only in a separate roundup-style item, but the snippet contains a meaningful reference to humanitarian need and the Israel-Hamas conflict.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "d4f57839d3dc86474794eedce768cd83f07f93f2beb948a68d09f731ea284867",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "4b0821606bfbb018e25da2570fe41a16f169dbabbe105273471119b33b04a97f",
+    "raw_response_text_sha256": "0b65da4de8dd0fb7d235d2d822498f20c2f25ba37c12f460938c0d38d0b629d8"
+  },
+  "api_metadata": {
+    "id": "resp_0fe1696ebedab60a006aaa092e4ac087d297810370c73b437c",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789528366.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1488,
+      "input_tokens_details": {
+        "cache_write_tokens": 1485,
+        "cached_tokens": 0
+      },
+      "output_tokens": 257,
+      "output_tokens_details": {
+        "reasoning_tokens": 92
+      },
+      "total_tokens": 1745
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.96,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"New Zealand government suspension of Significant Natural Areas requirements and resource management reform\",\n  \"conflict_relevance\": \"The article is primarily about environmental regulation in New Zealand, but it includes a brief embedded news snippet about New Zealand providing humanitarian assistance to Gaza and the West Bank in response to the Israel-Hamas conflict.\",\n  \"reason\": \"Gaza is not part of the main article and appears only in a separate roundup-style item, but the snippet contains a meaningful reference to humanitarian need and the Israel-Hamas conflict.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:12:49Z",
+  "duration_seconds": 3.573,
+  "error": null
+}

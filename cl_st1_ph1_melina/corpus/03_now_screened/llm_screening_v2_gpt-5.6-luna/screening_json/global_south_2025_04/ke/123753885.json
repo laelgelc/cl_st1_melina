@@ -1,0 +1,65 @@
+{
+  "article_id": "123753885",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_south_2025_04/ke/123753885.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_south_2025_04/ke/123753885.json"
+  },
+  "manifest_row": {
+    "article_id": "123753885",
+    "group": "global_south_2025_04",
+    "country_code": "ke",
+    "filepath": "corpus/02_now_organised/global_south_2025_04/ke/123753885.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "background",
+    "main_topic": "Sudan's civil war, humanitarian crisis, sexual violence, and international accountability",
+    "conflict_relevance": "The article is centrally about the Sudan conflict but references Palestine and Gaza when criticizing the international community's prioritization of other crises and comparing displacement figures.",
+    "reason": "Gaza and Palestine form a meaningful part of the article's comparison of global humanitarian attention, but the main subject is Sudan rather than the Israel-Palestine conflict.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "2550697a680c51edfa048097cfaa23e04f5180478342524eb19c05f424879cc8",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "17b1625c030c559363a2e8e45f61bded2c764dad67e64407d7af4a6c04a99956",
+    "raw_response_text_sha256": "c67f434200a9672f9a77ca6249dd8e89d679fc6bc7d004951ddffa60cfa2c899"
+  },
+  "api_metadata": {
+    "id": "resp_0a6fc762561c136d006aaa47dc27d487d18ad73b8e4b229cb9",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789544412.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1532,
+      "input_tokens_details": {
+        "cache_write_tokens": 1529,
+        "cached_tokens": 0
+      },
+      "output_tokens": 206,
+      "output_tokens_details": {
+        "reasoning_tokens": 52
+      },
+      "total_tokens": 1738
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Sudan's civil war, humanitarian crisis, sexual violence, and international accountability\",\n  \"conflict_relevance\": \"The article is centrally about the Sudan conflict but references Palestine and Gaza when criticizing the international community's prioritization of other crises and comparing displacement figures.\",\n  \"reason\": \"Gaza and Palestine form a meaningful part of the article's comparison of global humanitarian attention, but the main subject is Sudan rather than the Israel-Palestine conflict.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T07:40:15Z",
+  "duration_seconds": 3.849,
+  "error": null
+}

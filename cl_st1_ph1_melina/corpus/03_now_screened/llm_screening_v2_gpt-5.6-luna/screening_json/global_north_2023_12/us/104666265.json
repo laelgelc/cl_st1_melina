@@ -1,0 +1,65 @@
+{
+  "article_id": "104666265",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_12/us/104666265.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_12/us/104666265.json"
+  },
+  "manifest_row": {
+    "article_id": "104666265",
+    "group": "global_north_2023_12",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2023_12/us/104666265.txt"
+  },
+  "screening": {
+    "category": "CORE",
+    "confidence": 0.93,
+    "gaza_role": "background",
+    "main_topic": "Israeli airstrikes against Iranian Revolutionary Guard targets in Syria and broader regional conflict involving Israel, Iran, and Hamas",
+    "conflict_relevance": "The article directly concerns Israeli military operations, a Hamas hostage, Iranian regional activity, and the wider Israel-linked regional war.",
+    "reason": "Although the main reported event concerns strikes in Syria rather than Gaza itself, the article substantially discusses Israel's military activity, Hamas hostage developments, Iran-linked armed groups, and the regional conflict connected to Israel-Palestine.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": true
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "4a0f2b141b053942e699b899c1a9638b3e02836b492d2d5748cd3c8e02d6640d",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "95d0354c89beef10884b4d49cd23ed31f8035d8dd9db36b1ba3c6e797f01be89",
+    "raw_response_text_sha256": "43d5ab11c5e3a441611dd405535c3e69e81cc35559315e4aa15931760a09e6d2"
+  },
+  "api_metadata": {
+    "id": "resp_070d39766e11e015006aaa02832c0087d2bba147768c441bc5",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789526659.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1401,
+      "input_tokens_details": {
+        "cache_write_tokens": 1398,
+        "cached_tokens": 0
+      },
+      "output_tokens": 387,
+      "output_tokens_details": {
+        "reasoning_tokens": 222
+      },
+      "total_tokens": 1788
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"CORE\",\n  \"confidence\": 0.93,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Israeli airstrikes against Iranian Revolutionary Guard targets in Syria and broader regional conflict involving Israel, Iran, and Hamas\",\n  \"conflict_relevance\": \"The article directly concerns Israeli military operations, a Hamas hostage, Iranian regional activity, and the wider Israel-linked regional war.\",\n  \"reason\": \"Although the main reported event concerns strikes in Syria rather than Gaza itself, the article substantially discusses Israel's military activity, Hamas hostage developments, Iran-linked armed groups, and the regional conflict connected to Israel-Palestine.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": true\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:44:24Z",
+  "duration_seconds": 5.629,
+  "error": null
+}

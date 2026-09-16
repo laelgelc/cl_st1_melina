@@ -1,0 +1,65 @@
+{
+  "article_id": "108001932",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_05/ca/108001932.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_05/ca/108001932.json"
+  },
+  "manifest_row": {
+    "article_id": "108001932",
+    "group": "global_north_2024_05",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2024_05/ca/108001932.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "gaza_role": "boilerplate_or_unrelated",
+    "main_topic": "Human-interest stories about genealogy and relocation to France",
+    "conflict_relevance": "The main articles are unrelated to Gaza, Palestine, Israel/Palestine, or the conflict. Gaza-related items appear only in a CTVNews.ca top-stories roundup.",
+    "reason": "The article consists primarily of unrelated feature stories about an adopted man finding his birth mother's ashes and an American woman relocating to the French Riviera. The Gaza references occur only in navigational/news-roundup snippets and are not part of either main article.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "69d3455fe3a9551d041f8da52afa5eb70bc871f884d967662b6d2849b724d0cc",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "b3ea0ac9ad350ea40c1e065ebeff3d84126ba0fd4c84eac6a705677bc5cf2fc7",
+    "raw_response_text_sha256": "d1b1eabde6c990defe01b05e73da5c39da5755510d7a806b7bb209e446345d9e"
+  },
+  "api_metadata": {
+    "id": "resp_0425ed6f9ae8e6fd006aaa0d80baac87d2b128669a01c23c57",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789529472.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 7366,
+      "input_tokens_details": {
+        "cache_write_tokens": 7363,
+        "cached_tokens": 0
+      },
+      "output_tokens": 292,
+      "output_tokens_details": {
+        "reasoning_tokens": 119
+      },
+      "total_tokens": 7658
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"gaza_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Human-interest stories about genealogy and relocation to France\",\n  \"conflict_relevance\": \"The main articles are unrelated to Gaza, Palestine, Israel/Palestine, or the conflict. Gaza-related items appear only in a CTVNews.ca top-stories roundup.\",\n  \"reason\": \"The article consists primarily of unrelated feature stories about an adopted man finding his birth mother's ashes and an American woman relocating to the French Riviera. The Gaza references occur only in navigational/news-roundup snippets and are not part of either main article.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:31:17Z",
+  "duration_seconds": 4.498,
+  "error": null
+}

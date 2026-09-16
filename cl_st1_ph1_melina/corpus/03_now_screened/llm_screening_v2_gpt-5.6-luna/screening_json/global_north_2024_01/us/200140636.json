@@ -1,0 +1,65 @@
+{
+  "article_id": "200140636",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_01/us/200140636.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_01/us/200140636.json"
+  },
+  "manifest_row": {
+    "article_id": "200140636",
+    "group": "global_north_2024_01",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2024_01/us/200140636.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.96,
+    "gaza_role": "background",
+    "main_topic": "UK parliamentary debate and political commentary on British military strikes against the Houthis",
+    "conflict_relevance": "The article discusses the Houthi attacks and British military response in the context of Israel and Gaza, including Labour MPs' calls for a Gaza ceasefire, but Gaza is not the primary subject.",
+    "reason": "The main article is substantially about UK politics, the Houthis, and the decision to bomb Yemen. Its references to Gaza, Israel, and ceasefire politics provide meaningful conflict-related discourse, making it peripheral rather than core. An unrelated technology article is appended.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "1019653ae47dae883bce1db2715447b21a17ee0d5ca0ee7b96c1fdaf18ab161d",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "a9073e2b459d57eb4524410e2989aa02b710430edf4b321e41a20998312a8cca",
+    "raw_response_text_sha256": "082eb3c4d29c78bb7d9ee941950ae627df885a7f36a37535a8208a0e731aa66d"
+  },
+  "api_metadata": {
+    "id": "resp_05e3d24aef41a3d4006aaa0583093887d2a60b0582ed60d234",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789527427.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1478,
+      "input_tokens_details": {
+        "cache_write_tokens": 1475,
+        "cached_tokens": 0
+      },
+      "output_tokens": 360,
+      "output_tokens_details": {
+        "reasoning_tokens": 180
+      },
+      "total_tokens": 1838
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.96,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"UK parliamentary debate and political commentary on British military strikes against the Houthis\",\n  \"conflict_relevance\": \"The article discusses the Houthi attacks and British military response in the context of Israel and Gaza, including Labour MPs' calls for a Gaza ceasefire, but Gaza is not the primary subject.\",\n  \"reason\": \"The main article is substantially about UK politics, the Houthis, and the decision to bomb Yemen. Its references to Gaza, Israel, and ceasefire politics provide meaningful conflict-related discourse, making it peripheral rather than core. An unrelated technology article is appended.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:57:11Z",
+  "duration_seconds": 4.305,
+  "error": null
+}

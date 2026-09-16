@@ -1,0 +1,65 @@
+{
+  "article_id": "200465813",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_05/us/200465813.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_05/us/200465813.json"
+  },
+  "manifest_row": {
+    "article_id": "200465813",
+    "group": "global_north_2024_05",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2024_05/us/200465813.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.97,
+    "gaza_role": "background",
+    "main_topic": "Arrest and prosecution of a teenager accused of vandalizing New York war memorials",
+    "conflict_relevance": "The article discusses pro-Gaza and pro-Palestinian protest activity, including the slogans \"Gaza\" and \"Free Palestine\" and the suspect's association with an anti-Israel organization, but its primary focus is the vandalism investigation and court case.",
+    "reason": "The Palestine-related references provide meaningful context about protest discourse and political identification, yet the article is mainly a crime report rather than coverage of the Gaza conflict itself.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "6a3949e0ebe676e00bc0fbc51403710cbf5663791f3ba7fa3e5e9b18dea194c3",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "f871fbb25b12ac577212b40549640978d24b4c099c8b5d6ec158e4ab2925dbb5",
+    "raw_response_text_sha256": "31ffd262b541e4d32431b61968cbfad1180134ed4e545f62e6bba9ebaa5488f4"
+  },
+  "api_metadata": {
+    "id": "resp_05ff5218118277b2006aaa0f99ece487d2b9386bd7c75f6170",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789530009.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1207,
+      "input_tokens_details": {
+        "cache_write_tokens": 1204,
+        "cached_tokens": 0
+      },
+      "output_tokens": 247,
+      "output_tokens_details": {
+        "reasoning_tokens": 72
+      },
+      "total_tokens": 1454
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.97,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Arrest and prosecution of a teenager accused of vandalizing New York war memorials\",\n  \"conflict_relevance\": \"The article discusses pro-Gaza and pro-Palestinian protest activity, including the slogans \\\"Gaza\\\" and \\\"Free Palestine\\\" and the suspect's association with an anti-Israel organization, but its primary focus is the vandalism investigation and court case.\",\n  \"reason\": \"The Palestine-related references provide meaningful context about protest discourse and political identification, yet the article is mainly a crime report rather than coverage of the Gaza conflict itself.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:40:13Z",
+  "duration_seconds": 3.731,
+  "error": null
+}

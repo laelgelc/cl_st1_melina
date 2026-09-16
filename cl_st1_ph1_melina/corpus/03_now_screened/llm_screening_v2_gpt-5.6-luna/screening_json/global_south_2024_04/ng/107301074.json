@@ -1,0 +1,65 @@
+{
+  "article_id": "107301074",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_south_2024_04/ng/107301074.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_south_2024_04/ng/107301074.json"
+  },
+  "manifest_row": {
+    "article_id": "107301074",
+    "group": "global_south_2024_04",
+    "country_code": "ng",
+    "filepath": "corpus/02_now_organised/global_south_2024_04/ng/107301074.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.97,
+    "gaza_role": "background",
+    "main_topic": "Israeli strikes against Hezbollah in southern Lebanon and the risk of regional escalation",
+    "conflict_relevance": "The article focuses on Israel-Hezbollah hostilities in Lebanon but explicitly situates them in parallel with the Gaza war and discusses the broader regional conflict.",
+    "reason": "Gaza is meaningful contextual background to the article's main subject, though the coverage is primarily about Lebanon, Hezbollah, and the Israel-Lebanon border.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "ddf2fb088e8db17088bd61c20053109619f5327c56bc23978c19e21752b20a3c",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "d2cf189510f70fa2703aa229418a9f31b2b14d3d9e497a6da31ede397c4007d8",
+    "raw_response_text_sha256": "ad5f86d7d1831f846ab0770a9fc60c7310ccf571985901041aaf4204d23bab36"
+  },
+  "api_metadata": {
+    "id": "resp_0411cb324f880de5006aaa3a8515dc87d1b100740102afc694",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789540997.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 998,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 194,
+      "output_tokens_details": {
+        "reasoning_tokens": 44
+      },
+      "total_tokens": 1192
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.97,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Israeli strikes against Hezbollah in southern Lebanon and the risk of regional escalation\",\n  \"conflict_relevance\": \"The article focuses on Israel-Hezbollah hostilities in Lebanon but explicitly situates them in parallel with the Gaza war and discusses the broader regional conflict.\",\n  \"reason\": \"Gaza is meaningful contextual background to the article's main subject, though the coverage is primarily about Lebanon, Hezbollah, and the Israel-Lebanon border.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T06:43:20Z",
+  "duration_seconds": 3.345,
+  "error": null
+}

@@ -1,0 +1,65 @@
+{
+  "article_id": "107367928",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_04/ca/107367928.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_04/ca/107367928.json"
+  },
+  "manifest_row": {
+    "article_id": "107367928",
+    "group": "global_north_2024_04",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2024_04/ca/107367928.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "background",
+    "main_topic": "Canadian oil and gas pipeline expansion, exports, and energy-sector investment",
+    "conflict_relevance": "The main article is unrelated to the Israel-Palestine conflict, but an embedded latest-stories item contains substantive reporting about famine in northern Gaza and Israeli military operations and blockade.",
+    "reason": "The article's primary subject is Canada's energy industry. However, the embedded Gaza news item provides meaningful conflict-related discourse, making the overall text peripheral rather than excludable.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "e79c781fde36fe3d54c8b72cbe704865c58fe1e1b3e44f42af178bfde3b88b94",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "b0fdfa7975250863e6b22fff2da9e877b6b38396db9da1a6c5c946bfd0106f50",
+    "raw_response_text_sha256": "9a178c8e796bc03d6174e0d04a3ec6bcf288d4e896db1a3fb39543edd97ae515"
+  },
+  "api_metadata": {
+    "id": "resp_081ebc7cf38097f0006aaa0b07dcb487d297d4edcb3a8baa4c",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789528839.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2641,
+      "input_tokens_details": {
+        "cache_write_tokens": 2638,
+        "cached_tokens": 0
+      },
+      "output_tokens": 320,
+      "output_tokens_details": {
+        "reasoning_tokens": 161
+      },
+      "total_tokens": 2961
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Canadian oil and gas pipeline expansion, exports, and energy-sector investment\",\n  \"conflict_relevance\": \"The main article is unrelated to the Israel-Palestine conflict, but an embedded latest-stories item contains substantive reporting about famine in northern Gaza and Israeli military operations and blockade.\",\n  \"reason\": \"The article's primary subject is Canada's energy industry. However, the embedded Gaza news item provides meaningful conflict-related discourse, making the overall text peripheral rather than excludable.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:20:43Z",
+  "duration_seconds": 4.149,
+  "error": null
+}

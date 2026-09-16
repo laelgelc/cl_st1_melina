@@ -1,0 +1,65 @@
+{
+  "article_id": "108333625",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_05/ca/108333625.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_05/ca/108333625.json"
+  },
+  "manifest_row": {
+    "article_id": "108333625",
+    "group": "global_north_2024_05",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2024_05/ca/108333625.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "background",
+    "main_topic": "NHL playoffs, particularly the Vancouver Canucks–Edmonton Oilers series and related playoff developments",
+    "conflict_relevance": "The main article is about hockey, but an embedded CTVNews.ca top-stories item discusses Canada's screening of visa applications from people in Gaza and questions about applicants' connections to Hamas.",
+    "reason": "The Gaza-related content is meaningful but limited to an unrelated embedded news snippet, so the article is not suitable as core conflict coverage while remaining relevant to broader discourse about Gaza, migration, and Hamas screening.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "e8992d34cef47c0ff13f48c4f40a7eeb69db578f99fcd1502f85da413fae381d",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "dde4ac93ab2178e7447fb8304815be4eb18abc3c17f229cb4945301442d5f9e3",
+    "raw_response_text_sha256": "6ebdd3a8cb56fd22e3623af00658a3299d073dee9490ca9d83816b13ce21340a"
+  },
+  "api_metadata": {
+    "id": "resp_06ebfa00f1724708006aaa0da45ec487d2b010f7acd79e3e56",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789529508.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2145,
+      "input_tokens_details": {
+        "cache_write_tokens": 2142,
+        "cached_tokens": 0
+      },
+      "output_tokens": 276,
+      "output_tokens_details": {
+        "reasoning_tokens": 104
+      },
+      "total_tokens": 2421
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"NHL playoffs, particularly the Vancouver Canucks–Edmonton Oilers series and related playoff developments\",\n  \"conflict_relevance\": \"The main article is about hockey, but an embedded CTVNews.ca top-stories item discusses Canada's screening of visa applications from people in Gaza and questions about applicants' connections to Hamas.\",\n  \"reason\": \"The Gaza-related content is meaningful but limited to an unrelated embedded news snippet, so the article is not suitable as core conflict coverage while remaining relevant to broader discourse about Gaza, migration, and Hamas screening.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:31:52Z",
+  "duration_seconds": 4.11,
+  "error": null
+}

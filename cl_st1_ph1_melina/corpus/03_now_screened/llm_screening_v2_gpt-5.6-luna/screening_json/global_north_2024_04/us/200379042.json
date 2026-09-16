@@ -1,0 +1,65 @@
+{
+  "article_id": "200379042",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_04/us/200379042.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_04/us/200379042.json"
+  },
+  "manifest_row": {
+    "article_id": "200379042",
+    "group": "global_north_2024_04",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2024_04/us/200379042.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "gaza_role": "boilerplate_or_unrelated",
+    "main_topic": "Whitestone REIT's acquisition of a retail property in Scottsdale, Arizona",
+    "conflict_relevance": "The Gaza conflict appears only in a generic list of geopolitical risks in a financial disclaimer and is not discussed substantively.",
+    "reason": "The article is a corporate real-estate acquisition press release. Its sole reference to Gaza is boilerplate risk-factor language, offering no meaningful discourse for conflict analysis.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "6d50e84840278c93618637c72dacecd84e09fa9e4e01f30fdd178b30f956a254",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "d9255661df32c51fd892961bb3c8c222e1be08b4a2f06dfa6b947bdcbb77e14b",
+    "raw_response_text_sha256": "029baa59e9d0162ea9f13a0fa7d8a36976e62d747d388e581a3ea270f469e675"
+  },
+  "api_metadata": {
+    "id": "resp_0f49248f88293941006aaa0cb6cd5087d2bea42f4bda2417bb",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789529271.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2358,
+      "input_tokens_details": {
+        "cache_write_tokens": 2355,
+        "cached_tokens": 0
+      },
+      "output_tokens": 183,
+      "output_tokens_details": {
+        "reasoning_tokens": 34
+      },
+      "total_tokens": 2541
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"gaza_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Whitestone REIT's acquisition of a retail property in Scottsdale, Arizona\",\n  \"conflict_relevance\": \"The Gaza conflict appears only in a generic list of geopolitical risks in a financial disclaimer and is not discussed substantively.\",\n  \"reason\": \"The article is a corporate real-estate acquisition press release. Its sole reference to Gaza is boilerplate risk-factor language, offering no meaningful discourse for conflict analysis.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:28:00Z",
+  "duration_seconds": 10.061,
+  "error": null
+}

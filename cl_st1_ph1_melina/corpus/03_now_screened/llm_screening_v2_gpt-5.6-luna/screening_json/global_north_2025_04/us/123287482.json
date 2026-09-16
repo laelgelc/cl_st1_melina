@@ -1,0 +1,65 @@
+{
+  "article_id": "123287482",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_04/us/123287482.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_04/us/123287482.json"
+  },
+  "manifest_row": {
+    "article_id": "123287482",
+    "group": "global_north_2025_04",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2025_04/us/123287482.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.97,
+    "gaza_role": "background",
+    "main_topic": "Potential disarmament of Iran-backed militias in Iraq amid US pressure",
+    "conflict_relevance": "The article primarily concerns Iraqi militias and US-Iran tensions, but situates these developments within the regional conflict involving Israel, Hamas, Hezbollah, and Gaza.",
+    "reason": "Gaza and the Israel-Hamas conflict appear as meaningful regional context for discussing the weakening of Iran's Axis of Resistance, but the article is not centrally about Gaza, Palestine, or the Israel-Hamas war.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "094270ea18962ab5e6d1e2396fa4f6fd372373ff41ce2007b9be164a11b67443",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "3bed27826fd82c20c856d72de89e2b6c74dc6b01ed781a5a147d0fe6922d9f48",
+    "raw_response_text_sha256": "6fbe850aa7288ef9034dd442166af613bfc803323e50d1ced2579c1c82268a65"
+  },
+  "api_metadata": {
+    "id": "resp_07282067043d944f006aaa29fe30bc87d1ba6c1347f45897e9",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789536766.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1239,
+      "input_tokens_details": {
+        "cache_write_tokens": 1236,
+        "cached_tokens": 0
+      },
+      "output_tokens": 227,
+      "output_tokens_details": {
+        "reasoning_tokens": 63
+      },
+      "total_tokens": 1466
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.97,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Potential disarmament of Iran-backed militias in Iraq amid US pressure\",\n  \"conflict_relevance\": \"The article primarily concerns Iraqi militias and US-Iran tensions, but situates these developments within the regional conflict involving Israel, Hamas, Hezbollah, and Gaza.\",\n  \"reason\": \"Gaza and the Israel-Hamas conflict appear as meaningful regional context for discussing the weakening of Iran's Axis of Resistance, but the article is not centrally about Gaza, Palestine, or the Israel-Hamas war.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T05:32:49Z",
+  "duration_seconds": 2.986,
+  "error": null
+}

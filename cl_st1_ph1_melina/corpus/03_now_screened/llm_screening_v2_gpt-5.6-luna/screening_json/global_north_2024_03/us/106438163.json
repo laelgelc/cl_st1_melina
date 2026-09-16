@@ -1,0 +1,65 @@
+{
+  "article_id": "106438163",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_03/us/106438163.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_03/us/106438163.json"
+  },
+  "manifest_row": {
+    "article_id": "106438163",
+    "group": "global_north_2024_03",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2024_03/us/106438163.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.96,
+    "gaza_role": "passing",
+    "main_topic": "Climate change and the attempted restoration of Venezuela's last glacier",
+    "conflict_relevance": "The article includes a brief embedded latest-stories item about the UN calling for aid to Gaza and starvation in the Palestinian territory, but Gaza is not related to the main article.",
+    "reason": "The main article concerns glacier loss and environmental policy in Venezuela. Gaza appears only in a short unrelated roundup snippet, which provides limited but meaningful conflict-related discourse.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "89b7e700dd79477982b7ba7e7e242bbda6b28e2717287a28fa1320a94883affb",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "e8a98902f8e3c3c72925428316cdb9c2fb37640a1c9f0b19efb4cad4070dc0b2",
+    "raw_response_text_sha256": "26d9fd2fd01b4a7356c7aaf563bd0121b2b281681e661ac67e9d99d753a12489"
+  },
+  "api_metadata": {
+    "id": "resp_08b02b11da2e0c6a006aaa096ba03487d29a6a8b19e4d1c679",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789528427.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2234,
+      "input_tokens_details": {
+        "cache_write_tokens": 2231,
+        "cached_tokens": 0
+      },
+      "output_tokens": 263,
+      "output_tokens_details": {
+        "reasoning_tokens": 110
+      },
+      "total_tokens": 2497
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.96,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Climate change and the attempted restoration of Venezuela's last glacier\",\n  \"conflict_relevance\": \"The article includes a brief embedded latest-stories item about the UN calling for aid to Gaza and starvation in the Palestinian territory, but Gaza is not related to the main article.\",\n  \"reason\": \"The main article concerns glacier loss and environmental policy in Venezuela. Gaza appears only in a short unrelated roundup snippet, which provides limited but meaningful conflict-related discourse.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:13:51Z",
+  "duration_seconds": 3.763,
+  "error": null
+}

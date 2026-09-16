@@ -1,0 +1,65 @@
+{
+  "article_id": "116756489",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_10/au/116756489.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_10/au/116756489.json"
+  },
+  "manifest_row": {
+    "article_id": "116756489",
+    "group": "global_north_2024_10",
+    "country_code": "au",
+    "filepath": "corpus/02_now_organised/global_north_2024_10/au/116756489.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "passing",
+    "main_topic": "Letters and opinion on Australian politics, public affairs, and miscellaneous local issues",
+    "conflict_relevance": "A short opinion letter discusses the proposed banning of UNRWA, Palestinian access to aid, deaths, Israel, and the Gaza war.",
+    "reason": "The article is primarily a heterogeneous letters-page compilation focused on Qantas upgrades, Australian politics, housing, transport, climate, and other local concerns. Gaza-related discourse appears in one substantive but isolated letter under an 'And another thing' section, making it relevant to broader discourse analysis but not to the main conflict corpus.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "962deabeed3265d6472dc9124e9cc367aa331b55ff640d1dacf44ec072d23a40",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "c87fb303bf6b5da28b94ca2fc767181c50274a680cca5d30b898eefc5d983f1f",
+    "raw_response_text_sha256": "987902422967e74541bb63abc7f49b00f6fdc65664ff418ff94a58a95e4d2fc8"
+  },
+  "api_metadata": {
+    "id": "resp_03b9adc91da2c09e006aaa17ba6ab887d283a56ccab932f3fc",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789532090.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 3884,
+      "input_tokens_details": {
+        "cache_write_tokens": 3881,
+        "cached_tokens": 0
+      },
+      "output_tokens": 368,
+      "output_tokens_details": {
+        "reasoning_tokens": 188
+      },
+      "total_tokens": 4252
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Letters and opinion on Australian politics, public affairs, and miscellaneous local issues\",\n  \"conflict_relevance\": \"A short opinion letter discusses the proposed banning of UNRWA, Palestinian access to aid, deaths, Israel, and the Gaza war.\",\n  \"reason\": \"The article is primarily a heterogeneous letters-page compilation focused on Qantas upgrades, Australian politics, housing, transport, climate, and other local concerns. Gaza-related discourse appears in one substantive but isolated letter under an 'And another thing' section, making it relevant to broader discourse analysis but not to the main conflict corpus.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T04:14:55Z",
+  "duration_seconds": 4.948,
+  "error": null
+}

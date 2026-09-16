@@ -1,0 +1,65 @@
+{
+  "article_id": "102538782",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_10/us/102538782.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_10/us/102538782.json"
+  },
+  "manifest_row": {
+    "article_id": "102538782",
+    "group": "global_north_2023_10",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2023_10/us/102538782.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.95,
+    "gaza_role": "passing",
+    "main_topic": "Redevelopment and new retail tenants at the Westfield Old Orchard mall in Skokie",
+    "conflict_relevance": "The article is primarily about commercial real estate and retail, but it ends with an unrelated snippet reporting Israeli and Gaza casualties and Hamas's stated rationale for its attack.",
+    "reason": "The Gaza and Israel-related content is not integrated into the main article and appears as an appended news fragment. However, it contains meaningful conflict-related reporting rather than a mere boilerplate or navigational mention.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "c4da43316214c7879dabb0c523be8ee5861bfe4537573a6f4de64a190f35557c",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "66ddd1310099107d5740ccfb04b8a1e02d6e357f66b7858bfbb0dac5f9d425f6",
+    "raw_response_text_sha256": "a7844f53cd4373c54e04dee1f0b7ae12d81030b6ae4f7b47a28a6b1be177183a"
+  },
+  "api_metadata": {
+    "id": "resp_0c11ef45ac0ea935006aa9f89b07fc87d28db542966def3d24",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789524123.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1327,
+      "input_tokens_details": {
+        "cache_write_tokens": 1324,
+        "cached_tokens": 0
+      },
+      "output_tokens": 301,
+      "output_tokens_details": {
+        "reasoning_tokens": 136
+      },
+      "total_tokens": 1628
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.95,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Redevelopment and new retail tenants at the Westfield Old Orchard mall in Skokie\",\n  \"conflict_relevance\": \"The article is primarily about commercial real estate and retail, but it ends with an unrelated snippet reporting Israeli and Gaza casualties and Hamas's stated rationale for its attack.\",\n  \"reason\": \"The Gaza and Israel-related content is not integrated into the main article and appears as an appended news fragment. However, it contains meaningful conflict-related reporting rather than a mere boilerplate or navigational mention.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:02:06Z",
+  "duration_seconds": 3.665,
+  "error": null
+}

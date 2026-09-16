@@ -1,0 +1,65 @@
+{
+  "article_id": "200175594",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_01/us/200175594.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_01/us/200175594.json"
+  },
+  "manifest_row": {
+    "article_id": "200175594",
+    "group": "global_north_2024_01",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2024_01/us/200175594.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "gaza_role": "passing",
+    "main_topic": "Tourism risks and cartel violence in Chiapas, Mexico",
+    "conflict_relevance": "Gaza appears only as a comparison used to describe the perceived danger of visiting remote tourist sites; the article does not discuss the Gaza conflict itself.",
+    "reason": "The sole reference to Gaza is an incidental analogy in an article primarily about drug-cartel violence, migration routes, and tourism in Mexico.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "58745849d71cb075ce52cca49a8f93446af84fa69c8897b990fc8c9559ff9602",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "d7bb734d59767d41cd60cf19409b206d7aa0d108c5c67c36c78057732414294c",
+    "raw_response_text_sha256": "09f780fdb080bca86e7aeb54897e27396233b36d9e037ff9776bddd2c78106de"
+  },
+  "api_metadata": {
+    "id": "resp_01c03dbb592a779f006aaa05d16f4487d2afa8b69ba21ebb40",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789527505.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1027,
+      "input_tokens_details": {
+        "cache_write_tokens": 1024,
+        "cached_tokens": 0
+      },
+      "output_tokens": 192,
+      "output_tokens_details": {
+        "reasoning_tokens": 50
+      },
+      "total_tokens": 1219
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Tourism risks and cartel violence in Chiapas, Mexico\",\n  \"conflict_relevance\": \"Gaza appears only as a comparison used to describe the perceived danger of visiting remote tourist sites; the article does not discuss the Gaza conflict itself.\",\n  \"reason\": \"The sole reference to Gaza is an incidental analogy in an article primarily about drug-cartel violence, migration routes, and tourism in Mexico.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:58:27Z",
+  "duration_seconds": 2.397,
+  "error": null
+}

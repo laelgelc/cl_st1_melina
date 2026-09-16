@@ -1,0 +1,65 @@
+{
+  "article_id": "113204508",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_08/us/113204508.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_08/us/113204508.json"
+  },
+  "manifest_row": {
+    "article_id": "113204508",
+    "group": "global_north_2024_08",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2024_08/us/113204508.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.97,
+    "gaza_role": "background",
+    "main_topic": "The rescue of a hiker stranded on a Colorado mountain during a workplace charity expedition",
+    "conflict_relevance": "The article identifies World Central Kitchen as the charity benefiting from the hike and notes that it delivers meals in disaster areas, including Gaza.",
+    "reason": "The article is primarily about a mountain rescue incident, but it contains a meaningful contextual reference to World Central Kitchen's humanitarian work in Gaza. This makes it relevant to broader humanitarian discourse, though not to core Gaza or Israel-Palestine coverage.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "e2d688e30a58c138e3bde3c453a8794e6315654edb2475d350727953b41b27c9",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "b02ae5d0649d430ea4f71ef2e9a37ecda15d55ae4cab49f874c5ee54602a1f7f",
+    "raw_response_text_sha256": "f3000be5c8dc2cb336adb0e1ef2c550d1c58593ad88089870f201975f4c01260"
+  },
+  "api_metadata": {
+    "id": "resp_00b607485ca072a8006aaa15c3e12c87d2b4b794504a9e96ac",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789531587.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1945,
+      "input_tokens_details": {
+        "cache_write_tokens": 1942,
+        "cached_tokens": 0
+      },
+      "output_tokens": 269,
+      "output_tokens_details": {
+        "reasoning_tokens": 102
+      },
+      "total_tokens": 2214
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.97,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"The rescue of a hiker stranded on a Colorado mountain during a workplace charity expedition\",\n  \"conflict_relevance\": \"The article identifies World Central Kitchen as the charity benefiting from the hike and notes that it delivers meals in disaster areas, including Gaza.\",\n  \"reason\": \"The article is primarily about a mountain rescue incident, but it contains a meaningful contextual reference to World Central Kitchen's humanitarian work in Gaza. This makes it relevant to broader humanitarian discourse, though not to core Gaza or Israel-Palestine coverage.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T04:06:33Z",
+  "duration_seconds": 6.171,
+  "error": null
+}

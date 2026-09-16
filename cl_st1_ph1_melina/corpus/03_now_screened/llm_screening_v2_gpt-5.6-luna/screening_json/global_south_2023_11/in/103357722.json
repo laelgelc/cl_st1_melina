@@ -1,0 +1,65 @@
+{
+  "article_id": "103357722",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_south_2023_11/in/103357722.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_south_2023_11/in/103357722.json"
+  },
+  "manifest_row": {
+    "article_id": "103357722",
+    "group": "global_south_2023_11",
+    "country_code": "in",
+    "filepath": "corpus/02_now_organised/global_south_2023_11/in/103357722.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.96,
+    "gaza_role": "substantial",
+    "main_topic": "Mixed news roundup covering Indian legal, education, environmental, religious, and international news",
+    "conflict_relevance": "Contains a substantive embedded report about pro-Palestinian demonstrators protesting at The New York Times headquarters, demanding a Gaza ceasefire and accusing the newspaper of pro-Israel bias in its Israel-Hamas war coverage.",
+    "reason": "The article is primarily a compilation of unrelated news briefs, but one substantial item directly addresses Gaza, the Israel-Hamas war, media framing, journalists' deaths, and pro-Palestinian protest. Because the conflict material is embedded within a broader roundup rather than constituting the main article, it is classified as PERIPHERAL.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "4e6a91f705289373b87d9d25a25a20ff0bb320d2f7c616e721df9fce6185e285",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "e561cea1d4ce6c3c67e131c4a00c68770d4b93903db7195f7538c5d5a156524f",
+    "raw_response_text_sha256": "40895c7eb868ba295d6b35decd5e6fe7e1adf9e92039b7f24f267e2f6f51db86"
+  },
+  "api_metadata": {
+    "id": "resp_075f5923283b1117006aaa34ca434487d19d751b3b5867e08c",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789539530.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1184,
+      "input_tokens_details": {
+        "cache_write_tokens": 1181,
+        "cached_tokens": 0
+      },
+      "output_tokens": 362,
+      "output_tokens_details": {
+        "reasoning_tokens": 160
+      },
+      "total_tokens": 1546
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.96,\n  \"gaza_role\": \"substantial\",\n  \"main_topic\": \"Mixed news roundup covering Indian legal, education, environmental, religious, and international news\",\n  \"conflict_relevance\": \"Contains a substantive embedded report about pro-Palestinian demonstrators protesting at The New York Times headquarters, demanding a Gaza ceasefire and accusing the newspaper of pro-Israel bias in its Israel-Hamas war coverage.\",\n  \"reason\": \"The article is primarily a compilation of unrelated news briefs, but one substantial item directly addresses Gaza, the Israel-Hamas war, media framing, journalists' deaths, and pro-Palestinian protest. Because the conflict material is embedded within a broader roundup rather than constituting the main article, it is classified as PERIPHERAL.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T06:18:55Z",
+  "duration_seconds": 5.551,
+  "error": null
+}

@@ -1,0 +1,65 @@
+{
+  "article_id": "104087700",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_12/ca/104087700.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_12/ca/104087700.json"
+  },
+  "manifest_row": {
+    "article_id": "104087700",
+    "group": "global_north_2023_12",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2023_12/ca/104087700.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "passing",
+    "main_topic": "Edmonton Oilers hockey season and goaltending performance",
+    "conflict_relevance": "A separate top-stories snippet reports that Sofyan Taya was reportedly killed in an Israeli airstrike near Gaza City.",
+    "reason": "The main article is entirely about the Edmonton Oilers, but an embedded news roundup contains a meaningful sentence about a reported Israeli airstrike near Gaza and the death of a former University of Waterloo scholar. This provides limited peripheral relevance but is not core conflict coverage.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "3c8a37aeff0aeb0856ac1317eae423cc410351dcd790f035aaf0f8e02fe06a00",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "f33516f678ee4259d68d888ea841f1d154f02ae35b3f1a5c2b41a27446c7a1e6",
+    "raw_response_text_sha256": "e4d6551a37d2e3c641f8e0b121f46c9fcb401980a3f8b5a0ec8002e5a364d63f"
+  },
+  "api_metadata": {
+    "id": "resp_093c8b255bfb5a12006aaa006317b087d2acc6e2842904fc3b",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789526115.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2116,
+      "input_tokens_details": {
+        "cache_write_tokens": 2113,
+        "cached_tokens": 0
+      },
+      "output_tokens": 237,
+      "output_tokens_details": {
+        "reasoning_tokens": 75
+      },
+      "total_tokens": 2353
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Edmonton Oilers hockey season and goaltending performance\",\n  \"conflict_relevance\": \"A separate top-stories snippet reports that Sofyan Taya was reportedly killed in an Israeli airstrike near Gaza City.\",\n  \"reason\": \"The main article is entirely about the Edmonton Oilers, but an embedded news roundup contains a meaningful sentence about a reported Israeli airstrike near Gaza and the death of a former University of Waterloo scholar. This provides limited peripheral relevance but is not core conflict coverage.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:35:19Z",
+  "duration_seconds": 5.183,
+  "error": null
+}

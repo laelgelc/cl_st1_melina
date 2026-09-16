@@ -1,0 +1,65 @@
+{
+  "article_id": "103298544",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_south_2023_11/in/103298544.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_south_2023_11/in/103298544.json"
+  },
+  "manifest_row": {
+    "article_id": "103298544",
+    "group": "global_south_2023_11",
+    "country_code": "in",
+    "filepath": "corpus/02_now_organised/global_south_2023_11/in/103298544.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.93,
+    "gaza_role": "substantial",
+    "main_topic": "Multi-item news roundup covering Indian politics, international affairs, and other current events",
+    "conflict_relevance": "Contains two meaningful Gaza-related items: a report on a Kolkata protest against Israel's military operation in Gaza and a Reuters report on Israel's ground offensive against Hamas and its humanitarian toll.",
+    "reason": "The article is a compilation of unrelated news snippets rather than a cohesive article centered on Gaza or the Israel-Palestine conflict. However, the Gaza items are substantive enough to support broader discourse analysis, so it is classified as PERIPHERAL rather than EXCLUDE.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "e606d3ace5d8dc76d225d87d4e2c384d65f5d06519936a5e636c6775f73a54ca",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "42750ae8b13e647d75e0c1ee2781fdd0b760b7101bcf912c2dc5bfd34d105906",
+    "raw_response_text_sha256": "f201b8ad79140c3fff63f2075773e3d6e9e75494ace5c1e89b8e4f45308e8558"
+  },
+  "api_metadata": {
+    "id": "resp_0a8dd94e6c6e10a2006aaa34bd255087d18a9b375084a5910c",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789539517.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1579,
+      "input_tokens_details": {
+        "cache_write_tokens": 1576,
+        "cached_tokens": 0
+      },
+      "output_tokens": 437,
+      "output_tokens_details": {
+        "reasoning_tokens": 256
+      },
+      "total_tokens": 2016
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.93,\n  \"gaza_role\": \"substantial\",\n  \"main_topic\": \"Multi-item news roundup covering Indian politics, international affairs, and other current events\",\n  \"conflict_relevance\": \"Contains two meaningful Gaza-related items: a report on a Kolkata protest against Israel's military operation in Gaza and a Reuters report on Israel's ground offensive against Hamas and its humanitarian toll.\",\n  \"reason\": \"The article is a compilation of unrelated news snippets rather than a cohesive article centered on Gaza or the Israel-Palestine conflict. However, the Gaza items are substantive enough to support broader discourse analysis, so it is classified as PERIPHERAL rather than EXCLUDE.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T06:18:42Z",
+  "duration_seconds": 5.899,
+  "error": null
+}

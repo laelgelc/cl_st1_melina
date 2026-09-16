@@ -1,0 +1,65 @@
+{
+  "article_id": "106125261",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_02/nz/106125261.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_02/nz/106125261.json"
+  },
+  "manifest_row": {
+    "article_id": "106125261",
+    "group": "global_north_2024_02",
+    "country_code": "nz",
+    "filepath": "corpus/02_now_organised/global_north_2024_02/nz/106125261.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "passing",
+    "main_topic": "New Zealand government funding to control invasive caulerpa seaweed",
+    "conflict_relevance": "A brief embedded roundup item mentions New Zealand humanitarian funding for Gaza and the West Bank and civilian suffering in the Israel-Hamas conflict.",
+    "reason": "The main article concerns biosecurity and invasive seaweed, but it includes a meaningful, though very brief, Gaza-related news snippet.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "92b2678c2a4dc0726c5f695b9660411fd18c99e4584922f8ab6baeeedda07742",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "93ff50dc0ed62a4f469a7845338ac7e29c04f042a039156ae3860e5221650913",
+    "raw_response_text_sha256": "0e5e3df3d462da565aead668567b88e0926bab6684251726b6c67ff40a38076a"
+  },
+  "api_metadata": {
+    "id": "resp_064ddf3ce1b8c3e9006aaa06cc4b0487d28731abfabd23e1d0",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789527756.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1457,
+      "input_tokens_details": {
+        "cache_write_tokens": 1454,
+        "cached_tokens": 0
+      },
+      "output_tokens": 216,
+      "output_tokens_details": {
+        "reasoning_tokens": 76
+      },
+      "total_tokens": 1673
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"New Zealand government funding to control invasive caulerpa seaweed\",\n  \"conflict_relevance\": \"A brief embedded roundup item mentions New Zealand humanitarian funding for Gaza and the West Bank and civilian suffering in the Israel-Hamas conflict.\",\n  \"reason\": \"The main article concerns biosecurity and invasive seaweed, but it includes a meaningful, though very brief, Gaza-related news snippet.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:02:39Z",
+  "duration_seconds": 3.742,
+  "error": null
+}

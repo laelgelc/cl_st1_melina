@@ -1,0 +1,65 @@
+{
+  "article_id": "104615227",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_south_2023_12/pk/104615227.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_south_2023_12/pk/104615227.json"
+  },
+  "manifest_row": {
+    "article_id": "104615227",
+    "group": "global_south_2023_12",
+    "country_code": "pk",
+    "filepath": "corpus/02_now_organised/global_south_2023_12/pk/104615227.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.97,
+    "gaza_role": "background",
+    "main_topic": "Oil price movements and supply risks from Red Sea shipping disruptions",
+    "conflict_relevance": "The article links Houthi attacks on Red Sea shipping to Israel's war and bombardment of Gaza, describing the resulting trade and energy-market effects.",
+    "reason": "The main article is an oil-market report, not a report about Gaza or the Israel-Hamas war, but it contains meaningful discussion of the Gaza conflict as the stated context for Houthi attacks and related military responses.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "e59b3774329b093efb0ceb047ccedf6d28a3cd2c11f4e8649e54bf36631fea73",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "c43b4d8caf4f20d335538895e46a4792fb8b9eac67b09cd97cab49ad16c79536",
+    "raw_response_text_sha256": "15e5109747dc581d8b5a6be1c58f3166b936a6848857be75a69e472d20919359"
+  },
+  "api_metadata": {
+    "id": "resp_0927098589c88457006aaa378f1d2487d1ab3df57a60fed2b9",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789540239.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1582,
+      "input_tokens_details": {
+        "cache_write_tokens": 1579,
+        "cached_tokens": 0
+      },
+      "output_tokens": 282,
+      "output_tokens_details": {
+        "reasoning_tokens": 121
+      },
+      "total_tokens": 1864
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.97,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Oil price movements and supply risks from Red Sea shipping disruptions\",\n  \"conflict_relevance\": \"The article links Houthi attacks on Red Sea shipping to Israel's war and bombardment of Gaza, describing the resulting trade and energy-market effects.\",\n  \"reason\": \"The main article is an oil-market report, not a report about Gaza or the Israel-Hamas war, but it contains meaningful discussion of the Gaza conflict as the stated context for Houthi attacks and related military responses.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T06:30:44Z",
+  "duration_seconds": 5.521,
+  "error": null
+}

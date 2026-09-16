@@ -1,0 +1,65 @@
+{
+  "article_id": "123843958",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_04/us/123843958.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_04/us/123843958.json"
+  },
+  "manifest_row": {
+    "article_id": "123843958",
+    "group": "global_north_2025_04",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2025_04/us/123843958.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "background",
+    "main_topic": "Live updates on the Trump administration, Elon Musk and Tesla, US politics, markets, and federal policy",
+    "conflict_relevance": "The article includes substantive embedded coverage of pro-Palestinian student activism and detention, antisemitism debates linked to Israel's military response in Gaza, Trump-Netanyahu discussions, and the ongoing Israel-Hamas war.",
+    "reason": "The main article is an unrelated live news roundup centered on US politics and Tesla. However, several embedded items meaningfully address Palestinian activism, antisemitism, Gaza, and Israel-Hamas-related political discourse, making it useful for peripheral analysis but not as core conflict coverage.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "cb21516aaacb5236a72f4747f01c4e8f0791aeaa2591bde7e2177381ef49711e",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "aced41eb64d8955af03f788d21310d50a5157de7b09a44fee737bb1db5c071a6",
+    "raw_response_text_sha256": "98712c48da34317a90eb05348c021f7244e87d1cd220edad27382b5cc181d044"
+  },
+  "api_metadata": {
+    "id": "resp_09d3bca4b417b5c0006aaa2a88709487d1a2b75d43b6582d0c",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789536904.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 9378,
+      "input_tokens_details": {
+        "cache_write_tokens": 9375,
+        "cached_tokens": 0
+      },
+      "output_tokens": 462,
+      "output_tokens_details": {
+        "reasoning_tokens": 269
+      },
+      "total_tokens": 9840
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Live updates on the Trump administration, Elon Musk and Tesla, US politics, markets, and federal policy\",\n  \"conflict_relevance\": \"The article includes substantive embedded coverage of pro-Palestinian student activism and detention, antisemitism debates linked to Israel's military response in Gaza, Trump-Netanyahu discussions, and the ongoing Israel-Hamas war.\",\n  \"reason\": \"The main article is an unrelated live news roundup centered on US politics and Tesla. However, several embedded items meaningfully address Palestinian activism, antisemitism, Gaza, and Israel-Hamas-related political discourse, making it useful for peripheral analysis but not as core conflict coverage.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T05:35:11Z",
+  "duration_seconds": 7.686,
+  "error": null
+}

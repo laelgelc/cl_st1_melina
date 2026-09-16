@@ -1,0 +1,65 @@
+{
+  "article_id": "108137526",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_05/gb/108137526.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_05/gb/108137526.json"
+  },
+  "manifest_row": {
+    "article_id": "108137526",
+    "group": "global_north_2024_05",
+    "country_code": "gb",
+    "filepath": "corpus/02_now_organised/global_north_2024_05/gb/108137526.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "background",
+    "main_topic": "Gulf and Egyptian stock-market performance",
+    "conflict_relevance": "The article briefly reports Israeli military control of the Rafah border crossing, the advance into Rafah, and stalled Israel-Hamas ceasefire talks as geopolitical context for regional markets.",
+    "reason": "The main subject is financial-market performance, but it contains a meaningful sentence about military action in Gaza and ceasefire diplomacy.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "ba676d504b7f9b69208999eb8f6ce2bd276bbd5a367f86f4fbeca81faa547cc6",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "0e6cbb57a347fe28de0dbe3aeb90dafe381deb2758474f3bfe64bd01a3999c71",
+    "raw_response_text_sha256": "05236c65f8e0f0ce3815589e9ed70504cc3e4c836401cb8d1acf7a71f8c3afa4"
+  },
+  "api_metadata": {
+    "id": "resp_02525603369587eb006aaa0df4c64c87d28b18e994b183cd98",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789529588.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1239,
+      "input_tokens_details": {
+        "cache_write_tokens": 1236,
+        "cached_tokens": 0
+      },
+      "output_tokens": 259,
+      "output_tokens_details": {
+        "reasoning_tokens": 117
+      },
+      "total_tokens": 1498
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Gulf and Egyptian stock-market performance\",\n  \"conflict_relevance\": \"The article briefly reports Israeli military control of the Rafah border crossing, the advance into Rafah, and stalled Israel-Hamas ceasefire talks as geopolitical context for regional markets.\",\n  \"reason\": \"The main subject is financial-market performance, but it contains a meaningful sentence about military action in Gaza and ceasefire diplomacy.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:33:12Z",
+  "duration_seconds": 3.944,
+  "error": null
+}

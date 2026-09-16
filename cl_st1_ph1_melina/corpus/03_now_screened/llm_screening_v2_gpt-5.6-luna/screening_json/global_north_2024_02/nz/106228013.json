@@ -1,0 +1,65 @@
+{
+  "article_id": "106228013",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_02/nz/106228013.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_02/nz/106228013.json"
+  },
+  "manifest_row": {
+    "article_id": "106228013",
+    "group": "global_north_2024_02",
+    "country_code": "nz",
+    "filepath": "corpus/02_now_organised/global_north_2024_02/nz/106228013.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.84,
+    "gaza_role": "passing",
+    "main_topic": "Māori health sovereignty and the Waitangi Tribunal's jurisdiction in New Zealand",
+    "conflict_relevance": "The article is primarily about Māori health policy and Treaty of Waitangi issues, but it includes a brief embedded news item about New Zealand funding humanitarian relief in Gaza and the Israel-Hamas conflict.",
+    "reason": "Gaza is mentioned meaningfully in a short, unrelated roundup-style snippet, but the main article does not address the conflict.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "09d6edb966ed4692f38c3c41a0e555dc4b97fed056809b388ac18b9757753601",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "c67ab00d7f92c255dcc51dc6b4a2de3516a6d936e4dd494cfe680d74fd20a2e6",
+    "raw_response_text_sha256": "14eb353f878ea36cd77a8ce89008681f9f40696e0c4231baf9ad641b3ee7007d"
+  },
+  "api_metadata": {
+    "id": "resp_082e292b0806c458006aaa06d1fe3887d29d5e94586290cb87",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789527762.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1820,
+      "input_tokens_details": {
+        "cache_write_tokens": 1817,
+        "cached_tokens": 0
+      },
+      "output_tokens": 373,
+      "output_tokens_details": {
+        "reasoning_tokens": 219
+      },
+      "total_tokens": 2193
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.84,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Māori health sovereignty and the Waitangi Tribunal's jurisdiction in New Zealand\",\n  \"conflict_relevance\": \"The article is primarily about Māori health policy and Treaty of Waitangi issues, but it includes a brief embedded news item about New Zealand funding humanitarian relief in Gaza and the Israel-Hamas conflict.\",\n  \"reason\": \"Gaza is mentioned meaningfully in a short, unrelated roundup-style snippet, but the main article does not address the conflict.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:02:46Z",
+  "duration_seconds": 4.531,
+  "error": null
+}

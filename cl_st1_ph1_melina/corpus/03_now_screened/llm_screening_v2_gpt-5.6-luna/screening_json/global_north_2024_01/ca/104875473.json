@@ -1,0 +1,65 @@
+{
+  "article_id": "104875473",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_01/ca/104875473.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_01/ca/104875473.json"
+  },
+  "manifest_row": {
+    "article_id": "104875473",
+    "group": "global_north_2024_01",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2024_01/ca/104875473.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "gaza_role": "passing",
+    "main_topic": "Ottawa snowfall, winter storm warnings, and traffic impacts",
+    "conflict_relevance": "The article is about local weather and transportation conditions. Gaza appears only as one item in an unrelated CTVNews.ca top-stories roundup.",
+    "reason": "The Gaza reference is a brief, embedded roundup item rather than part of the main article, so it does not provide meaningful discourse for conflict analysis.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "f61b68e89131e17a9a4ce22f8be920e2236a41fcb19b65b5fa19db4af6b2580d",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "5154b676c7e380231b1c8cbc00dce058330a7e8396af890c42a4036c0a551b4c",
+    "raw_response_text_sha256": "fb485dc1a2e4fc942f1fbd78a6470b6b8126382658b6d8af04c839055ea5c9dd"
+  },
+  "api_metadata": {
+    "id": "resp_05403926abc37146006aaa0384791887d2ad2b5e3062435ed6",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789526916.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1581,
+      "input_tokens_details": {
+        "cache_write_tokens": 1578,
+        "cached_tokens": 0
+      },
+      "output_tokens": 232,
+      "output_tokens_details": {
+        "reasoning_tokens": 89
+      },
+      "total_tokens": 1813
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Ottawa snowfall, winter storm warnings, and traffic impacts\",\n  \"conflict_relevance\": \"The article is about local weather and transportation conditions. Gaza appears only as one item in an unrelated CTVNews.ca top-stories roundup.\",\n  \"reason\": \"The Gaza reference is a brief, embedded roundup item rather than part of the main article, so it does not provide meaningful discourse for conflict analysis.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:48:40Z",
+  "duration_seconds": 3.645,
+  "error": null
+}

@@ -1,0 +1,65 @@
+{
+  "article_id": "104573423",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_12/us/104573423.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_12/us/104573423.json"
+  },
+  "manifest_row": {
+    "article_id": "104573423",
+    "group": "global_north_2023_12",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2023_12/us/104573423.txt"
+  },
+  "screening": {
+    "category": "CORE",
+    "confidence": 0.99,
+    "gaza_role": "central",
+    "main_topic": "Israeli military footage of a Hamas tunnel headquarters in Gaza and the discovery of hostage bodies",
+    "conflict_relevance": "Directly concerns the Israel-Hamas war, Israeli military operations in Gaza, Hamas infrastructure, hostages, and the October 7 attacks.",
+    "reason": "The article is centrally focused on a Hamas underground complex in Jabaliya, Israeli military action, hostage deaths, and related wartime events in Gaza.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": true
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "02a58a1cf6ff1fe2dceaf13e52063f136ad91ad778ca6ad4700e647d3948afda",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "3074b9d6c2e79107c2f51b417e0f7d558a93fa471562855df154bcc648cd0900",
+    "raw_response_text_sha256": "aba294c209e26854fc9dd304b75bef381afb9f2cebc15121cbd8915dd3eeb60b"
+  },
+  "api_metadata": {
+    "id": "resp_00c5b399a4a38215006aaa026982f487d2aa8d29fd5a07bf8c",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789526633.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 884,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 194,
+      "output_tokens_details": {
+        "reasoning_tokens": 46
+      },
+      "total_tokens": 1078
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"CORE\",\n  \"confidence\": 0.99,\n  \"gaza_role\": \"central\",\n  \"main_topic\": \"Israeli military footage of a Hamas tunnel headquarters in Gaza and the discovery of hostage bodies\",\n  \"conflict_relevance\": \"Directly concerns the Israel-Hamas war, Israeli military operations in Gaza, Hamas infrastructure, hostages, and the October 7 attacks.\",\n  \"reason\": \"The article is centrally focused on a Hamas underground complex in Jabaliya, Israeli military action, hostage deaths, and related wartime events in Gaza.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": true\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:43:56Z",
+  "duration_seconds": 2.86,
+  "error": null
+}

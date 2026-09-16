@@ -1,0 +1,65 @@
+{
+  "article_id": "104530836",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_12/gb/104530836.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_12/gb/104530836.json"
+  },
+  "manifest_row": {
+    "article_id": "104530836",
+    "group": "global_north_2023_12",
+    "country_code": "gb",
+    "filepath": "corpus/02_now_organised/global_north_2023_12/gb/104530836.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "passing",
+    "main_topic": "The rise of non-alcoholic and low-alcohol drinks and changing drinking habits",
+    "conflict_relevance": "An unrelated embedded latest-stories item mentions Christmas celebrations in Syria being limited in solidarity with Palestinians suffering in the Gaza war.",
+    "reason": "The main article is about alcohol consumption and non-alcoholic beverages, not Gaza or the Israel-Palestine conflict. However, it includes a meaningful but unrelated news snippet concerning solidarity with Palestinians in Gaza, making it peripheral rather than excludable.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "23293cafab6a1ea2e7b9185c99915c665142856268accdc050b97640f9081f14",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "68e910f887c8157444814ade6505fd9c85c4b68567eb41a96a523b5d866eba14",
+    "raw_response_text_sha256": "df81c67b99104397a7c21bd879b06cf41fed076ff0549d2e292e96397d2f64c5"
+  },
+  "api_metadata": {
+    "id": "resp_08069fc9b0b6405d006aaa0132ffe487d290d0de637125eacd",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789526323.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2057,
+      "input_tokens_details": {
+        "cache_write_tokens": 2054,
+        "cached_tokens": 0
+      },
+      "output_tokens": 335,
+      "output_tokens_details": {
+        "reasoning_tokens": 168
+      },
+      "total_tokens": 2392
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"The rise of non-alcoholic and low-alcohol drinks and changing drinking habits\",\n  \"conflict_relevance\": \"An unrelated embedded latest-stories item mentions Christmas celebrations in Syria being limited in solidarity with Palestinians suffering in the Gaza war.\",\n  \"reason\": \"The main article is about alcohol consumption and non-alcoholic beverages, not Gaza or the Israel-Palestine conflict. However, it includes a meaningful but unrelated news snippet concerning solidarity with Palestinians in Gaza, making it peripheral rather than excludable.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:38:47Z",
+  "duration_seconds": 4.515,
+  "error": null
+}

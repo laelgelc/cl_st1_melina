@@ -1,0 +1,65 @@
+{
+  "article_id": "115958859",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_south_2024_10/ng/115958859.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_south_2024_10/ng/115958859.json"
+  },
+  "manifest_row": {
+    "article_id": "115958859",
+    "group": "global_south_2024_10",
+    "country_code": "ng",
+    "filepath": "corpus/02_now_organised/global_south_2024_10/ng/115958859.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "passing",
+    "main_topic": "Thomas Tuchel's appointment as England football manager",
+    "conflict_relevance": "The main article is about football, but an unrelated embedded news item briefly reports the United States warning Israel over aid delivery to Gaza.",
+    "reason": "The headline article has no connection to Gaza or the Israel-Palestine conflict. However, the text includes one meaningful but incidental Gaza-related news snippet, making it peripheral rather than excludable.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "92dff10d9fc78a5ad8d378ae9aa9dabd225babf8babaf46e00da8f459dd7ef5b",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "c1924e66bf75bd832db41d27c66658bd8ee98c83e21d05a4cfb379626dc08fb0",
+    "raw_response_text_sha256": "30a26583aa0d482ba74fefd7b44ea58ca9fa0951de4d979db09a4a3236545505"
+  },
+  "api_metadata": {
+    "id": "resp_0310385f45b90b62006aaa40e5d72087d1ab1efd2cb41bf43e",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789542629.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1794,
+      "input_tokens_details": {
+        "cache_write_tokens": 1791,
+        "cached_tokens": 0
+      },
+      "output_tokens": 274,
+      "output_tokens_details": {
+        "reasoning_tokens": 123
+      },
+      "total_tokens": 2068
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Thomas Tuchel's appointment as England football manager\",\n  \"conflict_relevance\": \"The main article is about football, but an unrelated embedded news item briefly reports the United States warning Israel over aid delivery to Gaza.\",\n  \"reason\": \"The headline article has no connection to Gaza or the Israel-Palestine conflict. However, the text includes one meaningful but incidental Gaza-related news snippet, making it peripheral rather than excludable.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T07:10:33Z",
+  "duration_seconds": 4.164,
+  "error": null
+}

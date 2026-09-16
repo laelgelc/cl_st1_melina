@@ -1,0 +1,65 @@
+{
+  "article_id": "104549882",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_south_2023_12/ph/104549882.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_south_2023_12/ph/104549882.json"
+  },
+  "manifest_row": {
+    "article_id": "104549882",
+    "group": "global_south_2023_12",
+    "country_code": "ph",
+    "filepath": "corpus/02_now_organised/global_south_2023_12/ph/104549882.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "gaza_role": "boilerplate_or_unrelated",
+    "main_topic": "Arrest and deportation of an Indonesian Philippine offshore gaming operator worker",
+    "conflict_relevance": "The article is about Philippine immigration enforcement and alleged POGO-linked cybercrime and human trafficking; the Gaza sentence is an unrelated appended news snippet.",
+    "reason": "Gaza appears only in a disconnected concluding sentence and is not meaningfully connected to the article's main subject.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "84e3f20bf361de21afdb4fbb5ed6d069a5aa7a813d669ad15a287fe59e1342a8",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "5a614831006cd77b00ba80616e94d7892f36e8a8444273b3931833b875496382",
+    "raw_response_text_sha256": "a433559cf6c8bcf3333e4607c062cb194e8aa9060cb3c47c2029b1f1d949bf35"
+  },
+  "api_metadata": {
+    "id": "resp_06c156498ae8edde006aaa3747a77487d1b251f8b5579867e2",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789540167.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 924,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 192,
+      "output_tokens_details": {
+        "reasoning_tokens": 49
+      },
+      "total_tokens": 1116
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"gaza_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Arrest and deportation of an Indonesian Philippine offshore gaming operator worker\",\n  \"conflict_relevance\": \"The article is about Philippine immigration enforcement and alleged POGO-linked cybercrime and human trafficking; the Gaza sentence is an unrelated appended news snippet.\",\n  \"reason\": \"Gaza appears only in a disconnected concluding sentence and is not meaningfully connected to the article's main subject.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T06:29:30Z",
+  "duration_seconds": 3.365,
+  "error": null
+}

@@ -1,0 +1,65 @@
+{
+  "article_id": "124166109",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_04/sg/124166109.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_04/sg/124166109.json"
+  },
+  "manifest_row": {
+    "article_id": "124166109",
+    "group": "global_north_2025_04",
+    "country_code": "sg",
+    "filepath": "corpus/02_now_organised/global_north_2025_04/sg/124166109.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "background",
+    "main_topic": "Joint US-UK military operation against Houthi targets in Yemen",
+    "conflict_relevance": "The article is primarily about military action in Yemen and Red Sea attacks, but it provides meaningful background on the Houthis' stated links to Israel and includes contextual reporting on the Gaza war and Israeli-Palestinian conflict.",
+    "reason": "Gaza and the Israeli-Palestinian conflict appear in a substantive contextual passage explaining the motivation for Houthi attacks and summarizing the war's casualties, allegations, and origins. However, the article's central subject is the US-UK operation in Yemen rather than Gaza or Palestine.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "0042f7130b5dead780a310271fff4a3aa9378fdd63c90a142fe05c4a72ffeb7d",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "32f0ad1e8e7a5498c6c0bb1f386390e9d689be2b098f1dd77a2dbba2a3a46d92",
+    "raw_response_text_sha256": "aa3d49651f0bf2d5f276afeaf89fac1b6bb288a3a135796ac387ca3fb04edc67"
+  },
+  "api_metadata": {
+    "id": "resp_09ff6a89b7913cc3006aaa29c4d65c87d186fa6657e3030356",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789536708.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1170,
+      "input_tokens_details": {
+        "cache_write_tokens": 1167,
+        "cached_tokens": 0
+      },
+      "output_tokens": 237,
+      "output_tokens_details": {
+        "reasoning_tokens": 46
+      },
+      "total_tokens": 1407
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Joint US-UK military operation against Houthi targets in Yemen\",\n  \"conflict_relevance\": \"The article is primarily about military action in Yemen and Red Sea attacks, but it provides meaningful background on the Houthis' stated links to Israel and includes contextual reporting on the Gaza war and Israeli-Palestinian conflict.\",\n  \"reason\": \"Gaza and the Israeli-Palestinian conflict appear in a substantive contextual passage explaining the motivation for Houthi attacks and summarizing the war's casualties, allegations, and origins. However, the article's central subject is the US-UK operation in Yemen rather than Gaza or Palestine.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T05:31:51Z",
+  "duration_seconds": 3.01,
+  "error": null
+}

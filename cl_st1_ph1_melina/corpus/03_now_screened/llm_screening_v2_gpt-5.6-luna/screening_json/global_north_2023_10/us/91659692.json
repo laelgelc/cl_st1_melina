@@ -1,0 +1,65 @@
+{
+  "article_id": "91659692",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_10/us/91659692.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_10/us/91659692.json"
+  },
+  "manifest_row": {
+    "article_id": "91659692",
+    "group": "global_north_2023_10",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2023_10/us/91659692.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "background",
+    "main_topic": "Hollywood actors' strike and proposed union funding",
+    "conflict_relevance": "The article is primarily about the SAG-AFTRA strike but includes a substantive embedded passage about alleged war crimes, Hamas's attack, Israel's bombings, and the difficulty of military response in Gaza.",
+    "reason": "The Gaza-related content is meaningful but unrelated to the article's main topic and appears to be an embedded or improperly merged snippet.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "31083e22dd79c45403ac43c766bd1dcec10a4c1b686e974fa9a0c63d4c638f26",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "cc775412ba81e57db0319cd50b4988f905b3b1bacdb2cfedf05cd1b623d56deb",
+    "raw_response_text_sha256": "85b7391828e6a9693665f01ce311cc5950b25d4ee2dcac5c74ad683dffa2330a"
+  },
+  "api_metadata": {
+    "id": "resp_0100ad602da1abc2006aa9fab8180487d285127fb7e6fed44e",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789524664.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1121,
+      "input_tokens_details": {
+        "cache_write_tokens": 1118,
+        "cached_tokens": 0
+      },
+      "output_tokens": 207,
+      "output_tokens_details": {
+        "reasoning_tokens": 58
+      },
+      "total_tokens": 1328
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Hollywood actors' strike and proposed union funding\",\n  \"conflict_relevance\": \"The article is primarily about the SAG-AFTRA strike but includes a substantive embedded passage about alleged war crimes, Hamas's attack, Israel's bombings, and the difficulty of military response in Gaza.\",\n  \"reason\": \"The Gaza-related content is meaningful but unrelated to the article's main topic and appears to be an embedded or improperly merged snippet.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:11:06Z",
+  "duration_seconds": 2.505,
+  "error": null
+}

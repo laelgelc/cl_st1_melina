@@ -1,0 +1,65 @@
+{
+  "article_id": "121814950",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_02/ie/121814950.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_02/ie/121814950.json"
+  },
+  "manifest_row": {
+    "article_id": "121814950",
+    "group": "global_north_2025_02",
+    "country_code": "ie",
+    "filepath": "corpus/02_now_organised/global_north_2025_02/ie/121814950.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "background",
+    "main_topic": "Roundup of newly released Irish music and artist releases",
+    "conflict_relevance": "One featured protest song explicitly references the war in Gaza and connects it with historical violence, imperialism, and contemporary political sociopathy.",
+    "reason": "The article is primarily a music-news roundup, but its discussion of Ria Rua's 'Black and Tan' includes meaningful commentary on the war in Gaza and its use in protest-song discourse. This makes it relevant to broader cultural and political framing, but not core conflict coverage.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "7e8a81113581c56c5f010795349d9a0c90b8b6440c8b89b6e5a5d1f7964065ce",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "2521cc5aa8516e75aa9e22e1646f1519e2ab7e0435b5a53c821e29b7bd61d2cb",
+    "raw_response_text_sha256": "66689578f8fcb2131aa5c48003df38d3bc4627ba54ceeaebb702c78075e97435"
+  },
+  "api_metadata": {
+    "id": "resp_00c2daf63bbc1510006aaa23c6581887d2b0f674463068e797",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789535174.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 6785,
+      "input_tokens_details": {
+        "cache_write_tokens": 6782,
+        "cached_tokens": 0
+      },
+      "output_tokens": 268,
+      "output_tokens_details": {
+        "reasoning_tokens": 101
+      },
+      "total_tokens": 7053
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Roundup of newly released Irish music and artist releases\",\n  \"conflict_relevance\": \"One featured protest song explicitly references the war in Gaza and connects it with historical violence, imperialism, and contemporary political sociopathy.\",\n  \"reason\": \"The article is primarily a music-news roundup, but its discussion of Ria Rua's 'Black and Tan' includes meaningful commentary on the war in Gaza and its use in protest-song discourse. This makes it relevant to broader cultural and political framing, but not core conflict coverage.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T05:06:18Z",
+  "duration_seconds": 4.112,
+  "error": null
+}

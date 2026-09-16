@@ -1,0 +1,65 @@
+{
+  "article_id": "125907879",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_06/us/125907879.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_06/us/125907879.json"
+  },
+  "manifest_row": {
+    "article_id": "125907879",
+    "group": "global_north_2025_06",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2025_06/us/125907879.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.94,
+    "gaza_role": "background",
+    "main_topic": "Live coverage of the 2025 Israel-Iran conflict, including military strikes, retaliation, diplomacy, civilian casualties, and regional escalation",
+    "conflict_relevance": "The article is primarily about the Israel-Iran war rather than Gaza or the Israel-Palestine conflict, but it contains meaningful references to the ongoing war in Gaza, Hamas, Palestinian support, regional armed groups, and the way the Iran confrontation intersects with the broader conflict.",
+    "reason": "The main coverage concerns Israel and Iran, nuclear facilities, missile exchanges, diplomatic efforts, and regional consequences. Gaza appears as contextual background, including Israel's continuing military operation against Hamas, the death of an Israeli soldier in Gaza, and Houthi attacks framed as support for Palestinians. This makes the article relevant to broader conflict discourse but not suitable as core Gaza coverage.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "8f00f2e18839d785abc75d3f41374a41cac067959e1ed5ce77f6eaa42c886f09",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "ec9ceeb58e13449aa60d112f1c56ffc6964d2648898f61a6e26152a1efe08320",
+    "raw_response_text_sha256": "2e02a132b297b940c4440d29316a2f55555be1940cbd764b1d3cbcc79e5a8e66"
+  },
+  "api_metadata": {
+    "id": "resp_0cbe98459307da6a006aaa31546a7887d180d9fda0e591c7c3",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789538644.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 9388,
+      "input_tokens_details": {
+        "cache_write_tokens": 9385,
+        "cached_tokens": 0
+      },
+      "output_tokens": 442,
+      "output_tokens_details": {
+        "reasoning_tokens": 212
+      },
+      "total_tokens": 9830
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.94,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Live coverage of the 2025 Israel-Iran conflict, including military strikes, retaliation, diplomacy, civilian casualties, and regional escalation\",\n  \"conflict_relevance\": \"The article is primarily about the Israel-Iran war rather than Gaza or the Israel-Palestine conflict, but it contains meaningful references to the ongoing war in Gaza, Hamas, Palestinian support, regional armed groups, and the way the Iran confrontation intersects with the broader conflict.\",\n  \"reason\": \"The main coverage concerns Israel and Iran, nuclear facilities, missile exchanges, diplomatic efforts, and regional consequences. Gaza appears as contextual background, including Israel's continuing military operation against Hamas, the death of an Israeli soldier in Gaza, and Houthi attacks framed as support for Palestinians. This makes the article relevant to broader conflict discourse but not suitable as core Gaza coverage.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T06:04:11Z",
+  "duration_seconds": 7.372,
+  "error": null
+}

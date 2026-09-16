@@ -1,0 +1,65 @@
+{
+  "article_id": "106827480",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_03/nz/106827480.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_03/nz/106827480.json"
+  },
+  "manifest_row": {
+    "article_id": "106827480",
+    "group": "global_north_2024_03",
+    "country_code": "nz",
+    "filepath": "corpus/02_now_organised/global_north_2024_03/nz/106827480.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.97,
+    "gaza_role": "passing",
+    "main_topic": "New Zealand veterans' services and the suspension of Veterans' Affairs VIP services",
+    "conflict_relevance": "The main article is unrelated to Gaza, but an embedded news snippet reports New Zealand humanitarian funding for Gaza and the West Bank in response to the Israel-Hamas conflict.",
+    "reason": "The article's primary subject is veterans' service delivery in New Zealand. Gaza appears in a separate embedded snippet containing a meaningful but brief reference to humanitarian assistance and civilian suffering, making the item peripheral rather than core.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "0571911374401ddeab089c21f700a3621bee3250459a3d00d1de57b8a15c5bfb",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "0abf93f7d86bf743d3ea06d0cda443bdc840b4189f69561dc5a66ae6b28a3bc1",
+    "raw_response_text_sha256": "d10d3ccf28410a555fb4b88ed6bf643d7752b3e19aed3e4da15bca6598a3d715"
+  },
+  "api_metadata": {
+    "id": "resp_08ac04ed51dde378006aaa093c0c5487d299113dbdddf1904c",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789528380.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1491,
+      "input_tokens_details": {
+        "cache_write_tokens": 1488,
+        "cached_tokens": 0
+      },
+      "output_tokens": 247,
+      "output_tokens_details": {
+        "reasoning_tokens": 82
+      },
+      "total_tokens": 1738
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.97,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"New Zealand veterans' services and the suspension of Veterans' Affairs VIP services\",\n  \"conflict_relevance\": \"The main article is unrelated to Gaza, but an embedded news snippet reports New Zealand humanitarian funding for Gaza and the West Bank in response to the Israel-Hamas conflict.\",\n  \"reason\": \"The article's primary subject is veterans' service delivery in New Zealand. Gaza appears in a separate embedded snippet containing a meaningful but brief reference to humanitarian assistance and civilian suffering, making the item peripheral rather than core.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:13:03Z",
+  "duration_seconds": 3.142,
+  "error": null
+}

@@ -1,0 +1,65 @@
+{
+  "article_id": "200527476",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_06/us/200527476.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_06/us/200527476.json"
+  },
+  "manifest_row": {
+    "article_id": "200527476",
+    "group": "global_north_2024_06",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2024_06/us/200527476.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "gaza_role": "passing",
+    "main_topic": "Celebrity entertainment and fertility plans",
+    "conflict_relevance": "The Gaza conflict appears only in an isolated sentence within a separate London election snippet and is not developed.",
+    "reason": "The main article concerns The Kardashians, sperm donation, and family planning. The text contains multiple unrelated snippets, with Gaza mentioned only incidentally in a brief election-related sentence.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "e4e627c38623d2984d766e9dc36ca97dca54b7052f13a64ddff7129c909eb958",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "195df286477b6a1eeaef78e5ca354a0af21784878fb800e791a0a27ce6b9daa1",
+    "raw_response_text_sha256": "d9b746b3b2e058740b208700629f3d5985fed600606ae10503a51f40928b98ec"
+  },
+  "api_metadata": {
+    "id": "resp_03ad6918aeea8cb5006aaa11b11f2087d2875aac9b571b400f",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789530545.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2241,
+      "input_tokens_details": {
+        "cache_write_tokens": 2238,
+        "cached_tokens": 0
+      },
+      "output_tokens": 293,
+      "output_tokens_details": {
+        "reasoning_tokens": 158
+      },
+      "total_tokens": 2534
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Celebrity entertainment and fertility plans\",\n  \"conflict_relevance\": \"The Gaza conflict appears only in an isolated sentence within a separate London election snippet and is not developed.\",\n  \"reason\": \"The main article concerns The Kardashians, sperm donation, and family planning. The text contains multiple unrelated snippets, with Gaza mentioned only incidentally in a brief election-related sentence.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:49:08Z",
+  "duration_seconds": 3.875,
+  "error": null
+}

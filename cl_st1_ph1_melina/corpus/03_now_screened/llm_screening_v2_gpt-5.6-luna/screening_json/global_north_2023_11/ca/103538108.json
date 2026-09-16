@@ -1,0 +1,65 @@
+{
+  "article_id": "103538108",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_11/ca/103538108.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_11/ca/103538108.json"
+  },
+  "manifest_row": {
+    "article_id": "103538108",
+    "group": "global_north_2023_11",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2023_11/ca/103538108.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "passing",
+    "main_topic": "A Prince Edward Island seniors' food-security pilot program",
+    "conflict_relevance": "The main article is unrelated to Gaza, but an embedded latest-stories item contains a brief discussion of Israel's military operation in Gaza and the post-operation dilemma.",
+    "reason": "The primary article concerns provincial meal support for seniors in P.E.I. The Gaza-related material appears only as an unrelated embedded news snippet, but it includes meaningful conflict discourse rather than a merely incidental keyword mention.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "68388ac707a491b6037b0ce17281f67a708b85c04a5270d305b15a261f19cd53",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "a79c1c30a205306c87562cbde44c84ccf355e861f4c0b961fa7defac2d03654c",
+    "raw_response_text_sha256": "839493a10e11a458cccac6fb7b686b82234eceebc3b4b979fd2e487db808e9dc"
+  },
+  "api_metadata": {
+    "id": "resp_0358a5b6a7955831006aa9fbe79c7887d2aca0ed351fd6e8cd",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789524967.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2318,
+      "input_tokens_details": {
+        "cache_write_tokens": 2315,
+        "cached_tokens": 0
+      },
+      "output_tokens": 260,
+      "output_tokens_details": {
+        "reasoning_tokens": 101
+      },
+      "total_tokens": 2578
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"A Prince Edward Island seniors' food-security pilot program\",\n  \"conflict_relevance\": \"The main article is unrelated to Gaza, but an embedded latest-stories item contains a brief discussion of Israel's military operation in Gaza and the post-operation dilemma.\",\n  \"reason\": \"The primary article concerns provincial meal support for seniors in P.E.I. The Gaza-related material appears only as an unrelated embedded news snippet, but it includes meaningful conflict discourse rather than a merely incidental keyword mention.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:16:11Z",
+  "duration_seconds": 4.265,
+  "error": null
+}

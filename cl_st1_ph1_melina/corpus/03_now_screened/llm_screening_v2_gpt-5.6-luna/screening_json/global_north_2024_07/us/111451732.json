@@ -1,0 +1,65 @@
+{
+  "article_id": "111451732",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_07/us/111451732.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_07/us/111451732.json"
+  },
+  "manifest_row": {
+    "article_id": "111451732",
+    "group": "global_north_2024_07",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2024_07/us/111451732.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.94,
+    "gaza_role": "background",
+    "main_topic": "Israeli targeted strike against Hezbollah commander Fuad Shukr in Beirut and the risk of escalation between Israel and Hezbollah",
+    "conflict_relevance": "The article focuses on the Israel-Hezbollah conflict in Lebanon, while linking it to the October 7 Hamas attack, Gaza hostages, and the wider regional consequences of the Israel-Hamas war.",
+    "reason": "The main subject is military escalation between Israel and Hezbollah rather than Gaza or Israel-Palestine directly. However, the article contains meaningful contextual discussion of Hamas, the October 7 attack, hostages brought to Gaza, and the regional conflict, making it useful as peripheral material.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "9a2c142fbae3b7817bccc91e155101e07001a34bfbe456a2b893bbc3671cdef1",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "049fd44f4290faa72445a42f37b787a637f6a16508e45012e3a9f3995f080f1c",
+    "raw_response_text_sha256": "9e6834b5545437916cfd6343986baf9261d4e02b9a5649f3f9b479d5dea16499"
+  },
+  "api_metadata": {
+    "id": "resp_01e8bc26d5b38830006aaa13a4ff1487d28dfb97aa20f4d737",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789531045.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1188,
+      "input_tokens_details": {
+        "cache_write_tokens": 1185,
+        "cached_tokens": 0
+      },
+      "output_tokens": 322,
+      "output_tokens_details": {
+        "reasoning_tokens": 128
+      },
+      "total_tokens": 1510
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.94,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Israeli targeted strike against Hezbollah commander Fuad Shukr in Beirut and the risk of escalation between Israel and Hezbollah\",\n  \"conflict_relevance\": \"The article focuses on the Israel-Hezbollah conflict in Lebanon, while linking it to the October 7 Hamas attack, Gaza hostages, and the wider regional consequences of the Israel-Hamas war.\",\n  \"reason\": \"The main subject is military escalation between Israel and Hezbollah rather than Gaza or Israel-Palestine directly. However, the article contains meaningful contextual discussion of Hamas, the October 7 attack, hostages brought to Gaza, and the regional conflict, making it useful as peripheral material.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:57:28Z",
+  "duration_seconds": 4.064,
+  "error": null
+}

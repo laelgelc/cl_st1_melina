@@ -1,0 +1,65 @@
+{
+  "article_id": "114118409",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_09/ca/114118409.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_09/ca/114118409.json"
+  },
+  "manifest_row": {
+    "article_id": "114118409",
+    "group": "global_north_2024_09",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2024_09/ca/114118409.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "passing",
+    "main_topic": "Ceres Global Ag Corp. financial and operating results for fiscal 2024",
+    "conflict_relevance": "The article briefly references Gaza and Israel among unresolved conflicts contributing to geopolitical tensions and market volatility, but the release is otherwise focused on agricultural business performance.",
+    "reason": "Gaza appears in a substantive but isolated sentence in the company outlook, linking the conflict to geopolitical and market conditions. The article is not about the conflict and should not be included in the main corpus.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "38332ea72e8ee1afb78bd02258392c4e6d1e70ab5ae28eef61a878bab08dedf4",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "a60da09f3797fc165e3162e3ae2efb0918c6735fe304565ed9fe1cae8d74bf4e",
+    "raw_response_text_sha256": "040a96e478ad6f8f82ebbec655065dc8d3178716974e17a4fbc88a9b9718fb8c"
+  },
+  "api_metadata": {
+    "id": "resp_023851b513a187eb006aaa160f160487d28f5612173f0cbfff",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789531663.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 3544,
+      "input_tokens_details": {
+        "cache_write_tokens": 3541,
+        "cached_tokens": 0
+      },
+      "output_tokens": 221,
+      "output_tokens_details": {
+        "reasoning_tokens": 61
+      },
+      "total_tokens": 3765
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Ceres Global Ag Corp. financial and operating results for fiscal 2024\",\n  \"conflict_relevance\": \"The article briefly references Gaza and Israel among unresolved conflicts contributing to geopolitical tensions and market volatility, but the release is otherwise focused on agricultural business performance.\",\n  \"reason\": \"Gaza appears in a substantive but isolated sentence in the company outlook, linking the conflict to geopolitical and market conditions. The article is not about the conflict and should not be included in the main corpus.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T04:07:46Z",
+  "duration_seconds": 3.652,
+  "error": null
+}

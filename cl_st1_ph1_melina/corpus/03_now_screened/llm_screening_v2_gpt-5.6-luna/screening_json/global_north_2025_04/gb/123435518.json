@@ -1,0 +1,65 @@
+{
+  "article_id": "123435518",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_04/gb/123435518.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_04/gb/123435518.json"
+  },
+  "manifest_row": {
+    "article_id": "123435518",
+    "group": "global_north_2025_04",
+    "country_code": "gb",
+    "filepath": "corpus/02_now_organised/global_north_2025_04/gb/123435518.txt"
+  },
+  "screening": {
+    "category": "CORE",
+    "confidence": 0.99,
+    "gaza_role": "central",
+    "main_topic": "Greenpeace protest against US arms sales to Israel and alleged UK restrictions on protest",
+    "conflict_relevance": "The article directly concerns military support for Israel, the Gaza war, alleged US responsibility for violence in Gaza, and protest activism calling for an arms embargo.",
+    "reason": "The article is centrally focused on a protest opposing weapons supplies to Israel and explicitly frames those supplies in relation to the ongoing horrors in Gaza.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": true
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "83fc853f31fd2c72d63a867fef39edcf61427c3afc355c0cb64b06e478fe189c",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "c73feaee5a652b80b0e2a233a4217b4332bec31c4f5bf35b29846b0c4d412002",
+    "raw_response_text_sha256": "0d77121530c9bfe2ffaa567af2834a4a145e77bfd5aeb8618e7704194001d7a0"
+  },
+  "api_metadata": {
+    "id": "resp_0d92b1b41e266501006aaa28df200487d1addbe55b12fbc402",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789536479.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 963,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 181,
+      "output_tokens_details": {
+        "reasoning_tokens": 35
+      },
+      "total_tokens": 1144
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"CORE\",\n  \"confidence\": 0.99,\n  \"gaza_role\": \"central\",\n  \"main_topic\": \"Greenpeace protest against US arms sales to Israel and alleged UK restrictions on protest\",\n  \"conflict_relevance\": \"The article directly concerns military support for Israel, the Gaza war, alleged US responsibility for violence in Gaza, and protest activism calling for an arms embargo.\",\n  \"reason\": \"The article is centrally focused on a protest opposing weapons supplies to Israel and explicitly frames those supplies in relation to the ongoing horrors in Gaza.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": true\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T05:28:02Z",
+  "duration_seconds": 3.711,
+  "error": null
+}

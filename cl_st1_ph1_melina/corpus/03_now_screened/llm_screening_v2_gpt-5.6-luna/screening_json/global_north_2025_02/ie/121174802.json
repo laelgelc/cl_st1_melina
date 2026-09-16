@@ -1,0 +1,65 @@
+{
+  "article_id": "121174802",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_02/ie/121174802.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_02/ie/121174802.json"
+  },
+  "manifest_row": {
+    "article_id": "121174802",
+    "group": "global_north_2025_02",
+    "country_code": "ie",
+    "filepath": "corpus/02_now_organised/global_north_2025_02/ie/121174802.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.91,
+    "gaza_role": "passing",
+    "main_topic": "Donald Trump's psychology, power, and political leadership",
+    "conflict_relevance": "Gaza is mentioned once as an example of an issue Trump cannot simply buy or resolve, without substantive discussion of the conflict.",
+    "reason": "The article primarily analyzes Trump's psychology, political behavior, social norms, and the erosion of rules-based governance. The Gaza reference is incidental and does not contribute meaningful conflict discourse.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "5dc6915ee8bf2060ed059363de279821b73dfa5a390b1119156f98ebcbf74138",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "35f34e84f230c6a356b611a2e631a8420a13779091b955f88ad69562f7933c3a",
+    "raw_response_text_sha256": "77de509f070065b68efd58bc5e5dcb6f6b70ce8b50e907c12a6f3053f10ce287"
+  },
+  "api_metadata": {
+    "id": "resp_0110c6d2926dbe10006aaa2399816887d28bf5d1d37c63b95a",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789535129.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1863,
+      "input_tokens_details": {
+        "cache_write_tokens": 1860,
+        "cached_tokens": 0
+      },
+      "output_tokens": 317,
+      "output_tokens_details": {
+        "reasoning_tokens": 174
+      },
+      "total_tokens": 2180
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.91,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Donald Trump's psychology, power, and political leadership\",\n  \"conflict_relevance\": \"Gaza is mentioned once as an example of an issue Trump cannot simply buy or resolve, without substantive discussion of the conflict.\",\n  \"reason\": \"The article primarily analyzes Trump's psychology, political behavior, social norms, and the erosion of rules-based governance. The Gaza reference is incidental and does not contribute meaningful conflict discourse.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T05:05:33Z",
+  "duration_seconds": 4.576,
+  "error": null
+}

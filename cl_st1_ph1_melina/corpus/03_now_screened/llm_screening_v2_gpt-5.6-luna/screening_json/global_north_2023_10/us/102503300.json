@@ -1,0 +1,65 @@
+{
+  "article_id": "102503300",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_10/us/102503300.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_10/us/102503300.json"
+  },
+  "manifest_row": {
+    "article_id": "102503300",
+    "group": "global_north_2023_10",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2023_10/us/102503300.txt"
+  },
+  "screening": {
+    "category": "CORE",
+    "confidence": 0.99,
+    "gaza_role": "central",
+    "main_topic": "Hamas's planning and execution of the October 7 attack on Israel, including training in Gaza, the breach of the border, and hostage-taking",
+    "conflict_relevance": "The main story directly concerns the Israel-Hamas war, Hamas's military operations from Gaza, Israel's defenses, hostages, and the risk of regional escalation.",
+    "reason": "The primary article is an extensive report on Hamas's attack against Israel and its preparation in Gaza. Although the page also includes unrelated snippets, the main associated story is centrally about the conflict.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": true
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "7fda9cd55583d4c66446fa559c0c9265accfd183d8a815b4b26c7fbd1ab91698",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "e6eac9538ab7b918e32ab729e32c054bc40934a2da0414ed6b400f83f69edd6a",
+    "raw_response_text_sha256": "3687e868d50dfdc583a539ee67030690c55f022b75a5ee4ce41c79cede7a30db"
+  },
+  "api_metadata": {
+    "id": "resp_093a7c6ccffa197e006aa9f86d778087d280216ba05265d789",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789524077.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1371,
+      "input_tokens_details": {
+        "cache_write_tokens": 1368,
+        "cached_tokens": 0
+      },
+      "output_tokens": 248,
+      "output_tokens_details": {
+        "reasoning_tokens": 76
+      },
+      "total_tokens": 1619
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"CORE\",\n  \"confidence\": 0.99,\n  \"gaza_role\": \"central\",\n  \"main_topic\": \"Hamas's planning and execution of the October 7 attack on Israel, including training in Gaza, the breach of the border, and hostage-taking\",\n  \"conflict_relevance\": \"The main story directly concerns the Israel-Hamas war, Hamas's military operations from Gaza, Israel's defenses, hostages, and the risk of regional escalation.\",\n  \"reason\": \"The primary article is an extensive report on Hamas's attack against Israel and its preparation in Gaza. Although the page also includes unrelated snippets, the main associated story is centrally about the conflict.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": true\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:01:20Z",
+  "duration_seconds": 3.169,
+  "error": null
+}

@@ -1,0 +1,65 @@
+{
+  "article_id": "103593504",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_11/gb/103593504.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_11/gb/103593504.json"
+  },
+  "manifest_row": {
+    "article_id": "103593504",
+    "group": "global_north_2023_11",
+    "country_code": "gb",
+    "filepath": "corpus/02_now_organised/global_north_2023_11/gb/103593504.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.91,
+    "gaza_role": "passing",
+    "main_topic": "A BBC journalist's role as an expert witness in a Somali deportation case",
+    "conflict_relevance": "The main article is unrelated to Gaza or the Israel-Palestine conflict, but an embedded latest-stories snippet reports Israel's military claim about a Hamas tunnel beneath al-Shifa hospital in Gaza.",
+    "reason": "The Gaza-related content is a substantive but isolated news snippet appended to an otherwise unrelated article, making it marginally useful for broader media-discourse analysis but unsuitable as core conflict coverage.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "a4951e4d7e65a4afae491cfd22b317cd5b170c40fe3188b866a942c953bf1100",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "1cb0228131c6ce4d1533a0a9df06934e3806d8c80a0ee1a1fa9fafa6ded320f4",
+    "raw_response_text_sha256": "92214de6b20f601053f3dfe7bda1e8c2ee0b838e01ac889e89a5ecbeb52781c0"
+  },
+  "api_metadata": {
+    "id": "resp_0cfd0a8a7a8b7a81006aa9fcfd368087d2bd796f6851104bdd",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789525245.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2514,
+      "input_tokens_details": {
+        "cache_write_tokens": 2511,
+        "cached_tokens": 0
+      },
+      "output_tokens": 325,
+      "output_tokens_details": {
+        "reasoning_tokens": 158
+      },
+      "total_tokens": 2839
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.91,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"A BBC journalist's role as an expert witness in a Somali deportation case\",\n  \"conflict_relevance\": \"The main article is unrelated to Gaza or the Israel-Palestine conflict, but an embedded latest-stories snippet reports Israel's military claim about a Hamas tunnel beneath al-Shifa hospital in Gaza.\",\n  \"reason\": \"The Gaza-related content is a substantive but isolated news snippet appended to an otherwise unrelated article, making it marginally useful for broader media-discourse analysis but unsuitable as core conflict coverage.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:20:49Z",
+  "duration_seconds": 4.342,
+  "error": null
+}

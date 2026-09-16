@@ -1,0 +1,65 @@
+{
+  "article_id": "102483579",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_10/ca/102483579.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_10/ca/102483579.json"
+  },
+  "manifest_row": {
+    "article_id": "102483579",
+    "group": "global_north_2023_10",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2023_10/ca/102483579.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.97,
+    "gaza_role": "boilerplate_or_unrelated",
+    "main_topic": "China's Belt and Road Initiative and its role in international development",
+    "conflict_relevance": "The main article is unrelated to Gaza or the Israel-Palestine conflict. Gaza and the Israel-Hamas war appear only in apparently embedded, duplicated news snippets from other articles.",
+    "reason": "The headline and substantive article concern China's infrastructure lending, debt, development, and geopolitics. Conflict-related passages are incidental page content rather than part of the article's discourse.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "ae9945df39188c4cc83c3026242df2242317ab44283a5da0292ed29e04a90a94",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "11008a3e5482c311ea135e2dde3bdc2878e6a775a1b67115a6287c99d2f373c3",
+    "raw_response_text_sha256": "5afc5dc6455e9e606e19fd76721603a75924fd50d5e9e6514122ce6398563577"
+  },
+  "api_metadata": {
+    "id": "resp_0bdb95354e408fc2006aa9f60e81a887d298623ee872dd6a47",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789523470.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2530,
+      "input_tokens_details": {
+        "cache_write_tokens": 2527,
+        "cached_tokens": 0
+      },
+      "output_tokens": 404,
+      "output_tokens_details": {
+        "reasoning_tokens": 241
+      },
+      "total_tokens": 2934
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.97,\n  \"gaza_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"China's Belt and Road Initiative and its role in international development\",\n  \"conflict_relevance\": \"The main article is unrelated to Gaza or the Israel-Palestine conflict. Gaza and the Israel-Hamas war appear only in apparently embedded, duplicated news snippets from other articles.\",\n  \"reason\": \"The headline and substantive article concern China's infrastructure lending, debt, development, and geopolitics. Conflict-related passages are incidental page content rather than part of the article's discourse.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T01:51:15Z",
+  "duration_seconds": 4.752,
+  "error": null
+}

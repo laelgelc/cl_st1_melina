@@ -1,0 +1,65 @@
+{
+  "article_id": "120710190",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_01/us/120710190.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_01/us/120710190.json"
+  },
+  "manifest_row": {
+    "article_id": "120710190",
+    "group": "global_north_2025_01",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2025_01/us/120710190.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.93,
+    "gaza_role": "background",
+    "main_topic": "US naval operations against Houthi missile and drone attacks in the Red Sea",
+    "conflict_relevance": "The article discusses the Houthis' stated solidarity with Palestinians in Gaza, their attacks on Israel, and the effect of the Israel-Hamas ceasefire on Red Sea operations, but its main focus is US military action against the Houthis rather than Gaza or Israel-Palestine.",
+    "reason": "Meaningfully relevant as coverage of regional military spillover from the Gaza war, though Gaza and the Israel-Palestine conflict provide context rather than constitute the central subject. The text also includes several unrelated technology, finance, health, and energy snippets after the main article.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "030c20820b6899c92838f265580849939d553093912e6f7812173d3279ef5346",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "f6e415fde662cd22a6a03cc216a24e685a5eea51714b9c66391d222feb910dd1",
+    "raw_response_text_sha256": "92a7df1db8f6518d643bf6123cf670c02879bafa5fd9c945fadc0d93768cbc9a"
+  },
+  "api_metadata": {
+    "id": "resp_0c721097b7f96207006aaa21e3ecc887d2a9794c1afce50494",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789534691.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1998,
+      "input_tokens_details": {
+        "cache_write_tokens": 1995,
+        "cached_tokens": 0
+      },
+      "output_tokens": 386,
+      "output_tokens_details": {
+        "reasoning_tokens": 185
+      },
+      "total_tokens": 2384
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.93,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"US naval operations against Houthi missile and drone attacks in the Red Sea\",\n  \"conflict_relevance\": \"The article discusses the Houthis' stated solidarity with Palestinians in Gaza, their attacks on Israel, and the effect of the Israel-Hamas ceasefire on Red Sea operations, but its main focus is US military action against the Houthis rather than Gaza or Israel-Palestine.\",\n  \"reason\": \"Meaningfully relevant as coverage of regional military spillover from the Gaza war, though Gaza and the Israel-Palestine conflict provide context rather than constitute the central subject. The text also includes several unrelated technology, finance, health, and energy snippets after the main article.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T04:58:17Z",
+  "duration_seconds": 6.139,
+  "error": null
+}

@@ -1,0 +1,65 @@
+{
+  "article_id": "104875468",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_01/ca/104875468.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_01/ca/104875468.json"
+  },
+  "manifest_row": {
+    "article_id": "104875468",
+    "group": "global_north_2024_01",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2024_01/ca/104875468.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "passing",
+    "main_topic": "A community telescope-building initiative in Guelph",
+    "conflict_relevance": "The main article is unrelated to Gaza, but an embedded news roundup contains a substantive sentence about the Gaza war, Hamas's attack on Israel, and international ceasefire litigation.",
+    "reason": "The headline article concerns amateur astronomy and community engagement. Gaza appears only in an unrelated CTVNews.ca Top Stories snippet, making the item peripheral rather than core.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "0890b46ce686f2db7c59e8c232aced15c47172408c42bcf1d8d9ffe3fa80dea3",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "1211447aae67b3ba249c7329ed572279703eceffa8a0b75fe290ae62671fffe0",
+    "raw_response_text_sha256": "7609756775c004824d7ad3ecf7eee54655b2d691e43deb38b95eb6b077944de3"
+  },
+  "api_metadata": {
+    "id": "resp_0280e57638cf9adb006aaa038474e887d2917b50fa07468dcb",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789526916.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1178,
+      "input_tokens_details": {
+        "cache_write_tokens": 1175,
+        "cached_tokens": 0
+      },
+      "output_tokens": 214,
+      "output_tokens_details": {
+        "reasoning_tokens": 63
+      },
+      "total_tokens": 1392
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"A community telescope-building initiative in Guelph\",\n  \"conflict_relevance\": \"The main article is unrelated to Gaza, but an embedded news roundup contains a substantive sentence about the Gaza war, Hamas's attack on Israel, and international ceasefire litigation.\",\n  \"reason\": \"The headline article concerns amateur astronomy and community engagement. Gaza appears only in an unrelated CTVNews.ca Top Stories snippet, making the item peripheral rather than core.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:48:39Z",
+  "duration_seconds": 2.786,
+  "error": null
+}

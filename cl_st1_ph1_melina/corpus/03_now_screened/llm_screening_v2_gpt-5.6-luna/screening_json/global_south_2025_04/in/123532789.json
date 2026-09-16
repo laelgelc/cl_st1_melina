@@ -1,0 +1,65 @@
+{
+  "article_id": "123532789",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_south_2025_04/in/123532789.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_south_2025_04/in/123532789.json"
+  },
+  "manifest_row": {
+    "article_id": "123532789",
+    "group": "global_south_2025_04",
+    "country_code": "in",
+    "filepath": "corpus/02_now_organised/global_south_2025_04/in/123532789.txt"
+  },
+  "screening": {
+    "category": "CORE",
+    "confidence": 0.99,
+    "gaza_role": "central",
+    "main_topic": "Gaza ceasefire and hostage negotiations between Israel and Hamas, alongside worsening humanitarian conditions",
+    "conflict_relevance": "The article is directly and substantially about the Gaza war, failed ceasefire talks, hostage and prisoner exchanges, Israeli military operations, Palestinian casualties, displacement, blockade, and humanitarian suffering.",
+    "reason": "Gaza and the Israel-Hamas conflict are the article's central subject throughout, including detailed discussion of negotiations, military action, hostages, casualties, and civilian conditions.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": true
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "4e851d2c7c25024c82b4456b41f3f6adc3234c332c23b5219876013124fc762e",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "949bbc586a7f343f31fe6d7aae027f5e89f7fa231ad0cf1dba842a236b3bb62d",
+    "raw_response_text_sha256": "66bbbdc50ab4b06d5eda4771bf75938fda3c4bd0ac57e4a533339d23b8acfff6"
+  },
+  "api_metadata": {
+    "id": "resp_09a0dc278b04589f006aaa4787d5e087d1b4776af9701fd8bc",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789544327.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1343,
+      "input_tokens_details": {
+        "cache_write_tokens": 1340,
+        "cached_tokens": 0
+      },
+      "output_tokens": 217,
+      "output_tokens_details": {
+        "reasoning_tokens": 57
+      },
+      "total_tokens": 1560
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"CORE\",\n  \"confidence\": 0.99,\n  \"gaza_role\": \"central\",\n  \"main_topic\": \"Gaza ceasefire and hostage negotiations between Israel and Hamas, alongside worsening humanitarian conditions\",\n  \"conflict_relevance\": \"The article is directly and substantially about the Gaza war, failed ceasefire talks, hostage and prisoner exchanges, Israeli military operations, Palestinian casualties, displacement, blockade, and humanitarian suffering.\",\n  \"reason\": \"Gaza and the Israel-Hamas conflict are the article's central subject throughout, including detailed discussion of negotiations, military action, hostages, casualties, and civilian conditions.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": true\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T07:38:51Z",
+  "duration_seconds": 3.339,
+  "error": null
+}

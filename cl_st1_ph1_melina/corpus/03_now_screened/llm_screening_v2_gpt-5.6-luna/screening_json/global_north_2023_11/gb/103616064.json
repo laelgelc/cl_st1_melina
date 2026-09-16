@@ -1,0 +1,65 @@
+{
+  "article_id": "103616064",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_11/gb/103616064.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_11/gb/103616064.json"
+  },
+  "manifest_row": {
+    "article_id": "103616064",
+    "group": "global_north_2023_11",
+    "country_code": "gb",
+    "filepath": "corpus/02_now_organised/global_north_2023_11/gb/103616064.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.97,
+    "gaza_role": "passing",
+    "main_topic": "Ukraine war and Western support for Ukraine",
+    "conflict_relevance": "The article briefly references Gaza as a conflict that may distract Western publics from supporting Ukraine, but Gaza is not a substantive focus.",
+    "reason": "The main subject is Ukraine, Russia, and Western isolationism. Gaza appears in one meaningful sentence as part of a broader discussion of international conflicts and strategic distraction, making the article peripherally relevant.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "6b526d3304c72ac6d4c2151fb6f2f4b9da42ec5b0f543101f744f6150d71d7b4",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "01d489a77aba74a50b02ee52025f63a3eaa80a90df48d5c8f43e044850397c95",
+    "raw_response_text_sha256": "b02810a081d34b449cc75af7c974c3dcc95244f3790e2d98e0b7e4a89559830e"
+  },
+  "api_metadata": {
+    "id": "resp_0cc35395553d643c006aa9fd018cec87d2a989ec37ce35c9ee",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789525249.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 877,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 217,
+      "output_tokens_details": {
+        "reasoning_tokens": 69
+      },
+      "total_tokens": 1094
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.97,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Ukraine war and Western support for Ukraine\",\n  \"conflict_relevance\": \"The article briefly references Gaza as a conflict that may distract Western publics from supporting Ukraine, but Gaza is not a substantive focus.\",\n  \"reason\": \"The main subject is Ukraine, Russia, and Western isolationism. Gaza appears in one meaningful sentence as part of a broader discussion of international conflicts and strategic distraction, making the article peripherally relevant.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:21:02Z",
+  "duration_seconds": 14.464,
+  "error": null
+}

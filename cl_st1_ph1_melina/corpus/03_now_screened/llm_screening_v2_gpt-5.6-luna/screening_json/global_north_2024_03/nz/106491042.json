@@ -1,0 +1,65 @@
+{
+  "article_id": "106491042",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_03/nz/106491042.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_03/nz/106491042.json"
+  },
+  "manifest_row": {
+    "article_id": "106491042",
+    "group": "global_north_2024_03",
+    "country_code": "nz",
+    "filepath": "corpus/02_now_organised/global_north_2024_03/nz/106491042.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.96,
+    "gaza_role": "passing",
+    "main_topic": "New Zealand fast-track resource management and consenting legislation",
+    "conflict_relevance": "The main article is unrelated to Gaza or the Israel-Palestine conflict; Gaza appears only in a brief embedded news snippet about New Zealand humanitarian funding.",
+    "reason": "The substantive article concerns New Zealand domestic environmental and resource-management legislation. The Gaza reference is a short, separate roundup item rather than part of the main article's discourse.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "6e27d1da6cb816b187906a8b99807d3c02bce81905b173143649b5ac61befb7d",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "150b040f95e4af7f40526cba2e336a4245889d41369996f06ce43db2a283a124",
+    "raw_response_text_sha256": "79c1e7fe173907f84720556aa04d74eb5911882dfa1eef8d876f984b5404480f"
+  },
+  "api_metadata": {
+    "id": "resp_0b94114ba226e770006aaa091ec78887d293ec28aa1b3c7ed4",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789528350.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1206,
+      "input_tokens_details": {
+        "cache_write_tokens": 1203,
+        "cached_tokens": 0
+      },
+      "output_tokens": 312,
+      "output_tokens_details": {
+        "reasoning_tokens": 164
+      },
+      "total_tokens": 1518
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.96,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"New Zealand fast-track resource management and consenting legislation\",\n  \"conflict_relevance\": \"The main article is unrelated to Gaza or the Israel-Palestine conflict; Gaza appears only in a brief embedded news snippet about New Zealand humanitarian funding.\",\n  \"reason\": \"The substantive article concerns New Zealand domestic environmental and resource-management legislation. The Gaza reference is a short, separate roundup item rather than part of the main article's discourse.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:12:35Z",
+  "duration_seconds": 4.41,
+  "error": null
+}

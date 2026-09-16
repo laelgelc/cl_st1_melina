@@ -1,0 +1,65 @@
+{
+  "article_id": "108584561",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_05/us/108584561.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_05/us/108584561.json"
+  },
+  "manifest_row": {
+    "article_id": "108584561",
+    "group": "global_north_2024_05",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2024_05/us/108584561.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "gaza_role": "passing",
+    "main_topic": "A fatal house explosion and fire in Wisconsin",
+    "conflict_relevance": "The article's main subject is unrelated to Gaza or the Israel-Palestine conflict; Gaza appears only in an unrelated embedded news snippet.",
+    "reason": "The text is primarily a local report about a Wisconsin house explosion, with several unrelated news items appended, including one brief sentence about Israel's military operation in Gaza. This is incidental rather than meaningful conflict discourse.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "ea8cabe37008e459138311a5f1ed05e3acc9839a9bb0332a46e4768f0e29b23c",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "6acc1344de935543d67e5ba8d296f0a195ed95071a16a473380c90c2ffaa54b7",
+    "raw_response_text_sha256": "aa6608fdcaf5c8a8e054fc3cfa76d9b5259ac4fa8e25e83e971b420133f12172"
+  },
+  "api_metadata": {
+    "id": "resp_04a8764f9cac1916006aaa0f2bf62087d29321114885d3efc7",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789529900.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1113,
+      "input_tokens_details": {
+        "cache_write_tokens": 1110,
+        "cached_tokens": 0
+      },
+      "output_tokens": 219,
+      "output_tokens_details": {
+        "reasoning_tokens": 67
+      },
+      "total_tokens": 1332
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"A fatal house explosion and fire in Wisconsin\",\n  \"conflict_relevance\": \"The article's main subject is unrelated to Gaza or the Israel-Palestine conflict; Gaza appears only in an unrelated embedded news snippet.\",\n  \"reason\": \"The text is primarily a local report about a Wisconsin house explosion, with several unrelated news items appended, including one brief sentence about Israel's military operation in Gaza. This is incidental rather than meaningful conflict discourse.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:38:24Z",
+  "duration_seconds": 4.262,
+  "error": null
+}

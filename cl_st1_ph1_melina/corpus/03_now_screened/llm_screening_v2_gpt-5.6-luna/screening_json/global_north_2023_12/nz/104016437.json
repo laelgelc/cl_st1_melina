@@ -1,0 +1,65 @@
+{
+  "article_id": "104016437",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_12/nz/104016437.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_12/nz/104016437.json"
+  },
+  "manifest_row": {
+    "article_id": "104016437",
+    "group": "global_north_2023_12",
+    "country_code": "nz",
+    "filepath": "corpus/02_now_organised/global_north_2023_12/nz/104016437.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.96,
+    "gaza_role": "background",
+    "main_topic": "Leadership changes and organizational development at the Human Rights Measurement Initiative",
+    "conflict_relevance": "The main article concerns a global human-rights data organization, while appended snippets discuss Israeli hostages, Gaza's evacuation order, humanitarian consequences, and communications infrastructure during the war.",
+    "reason": "The article is primarily an HRMI organizational announcement rather than coverage of Gaza or the Israel-Palestine conflict. However, it contains several meaningful conflict-related snippets, making it peripheral rather than excludable.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "ea799fb4c978a381ecbc714cdfda42b7a4eb667d92b87b6675e0a2766da84950",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "320ec26a21b8a7cb2a6070ac2e67d8c2c3db5ec2070222bb4ac587390e507517",
+    "raw_response_text_sha256": "b513d7bed0a6d57c2cf601268affe3d2ae53046566ee0a5c718d562d8f01591c"
+  },
+  "api_metadata": {
+    "id": "resp_09962412d18ac5b7006aaa0176860887d2981ea5aacfeaf6a7",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789526390.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1836,
+      "input_tokens_details": {
+        "cache_write_tokens": 1833,
+        "cached_tokens": 0
+      },
+      "output_tokens": 289,
+      "output_tokens_details": {
+        "reasoning_tokens": 125
+      },
+      "total_tokens": 2125
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.96,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Leadership changes and organizational development at the Human Rights Measurement Initiative\",\n  \"conflict_relevance\": \"The main article concerns a global human-rights data organization, while appended snippets discuss Israeli hostages, Gaza's evacuation order, humanitarian consequences, and communications infrastructure during the war.\",\n  \"reason\": \"The article is primarily an HRMI organizational announcement rather than coverage of Gaza or the Israel-Palestine conflict. However, it contains several meaningful conflict-related snippets, making it peripheral rather than excludable.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:39:56Z",
+  "duration_seconds": 6.043,
+  "error": null
+}

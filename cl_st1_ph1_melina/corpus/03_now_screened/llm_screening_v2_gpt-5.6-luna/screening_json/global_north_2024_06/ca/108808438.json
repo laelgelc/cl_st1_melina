@@ -1,0 +1,65 @@
+{
+  "article_id": "108808438",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_06/ca/108808438.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_06/ca/108808438.json"
+  },
+  "manifest_row": {
+    "article_id": "108808438",
+    "group": "global_north_2024_06",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2024_06/ca/108808438.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.96,
+    "gaza_role": "passing",
+    "main_topic": "British Columbia politicians crossing the floor between political parties",
+    "conflict_relevance": "The main article is about provincial political defections, but an embedded roundup snippet mentions pro-Palestinian protesters, university negotiations, and demonstrations over Israel's conduct in the Gaza war.",
+    "reason": "The Gaza-related material is confined to a brief embedded news item rather than the main article, but it contains a meaningful reference to protests concerning the Gaza war and therefore has limited peripheral relevance.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "13787b8b7bf8475dbfb54a3215dc5c91b7401b4ab92fa60e5cc8d31ebb9894e5",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "e98ad56525c7f6bba7b62abf9c8d48ab2c72d4d6380bbf80c04fd9d30d9591dd",
+    "raw_response_text_sha256": "cc731640e52e449d9d49b797498b5260813e0ccae996eaf10fc98d830dc13807"
+  },
+  "api_metadata": {
+    "id": "resp_0eff71164286c9c9006aaa101c4a6c87d29327f153ced25c98",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789530140.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1587,
+      "input_tokens_details": {
+        "cache_write_tokens": 1584,
+        "cached_tokens": 0
+      },
+      "output_tokens": 232,
+      "output_tokens_details": {
+        "reasoning_tokens": 73
+      },
+      "total_tokens": 1819
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.96,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"British Columbia politicians crossing the floor between political parties\",\n  \"conflict_relevance\": \"The main article is about provincial political defections, but an embedded roundup snippet mentions pro-Palestinian protesters, university negotiations, and demonstrations over Israel's conduct in the Gaza war.\",\n  \"reason\": \"The Gaza-related material is confined to a brief embedded news item rather than the main article, but it contains a meaningful reference to protests concerning the Gaza war and therefore has limited peripheral relevance.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:42:23Z",
+  "duration_seconds": 2.981,
+  "error": null
+}

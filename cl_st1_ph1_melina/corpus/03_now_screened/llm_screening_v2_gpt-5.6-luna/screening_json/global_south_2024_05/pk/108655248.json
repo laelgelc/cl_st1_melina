@@ -1,0 +1,65 @@
+{
+  "article_id": "108655248",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_south_2024_05/pk/108655248.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_south_2024_05/pk/108655248.json"
+  },
+  "manifest_row": {
+    "article_id": "108655248",
+    "group": "global_south_2024_05",
+    "country_code": "pk",
+    "filepath": "corpus/02_now_organised/global_south_2024_05/pk/108655248.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.96,
+    "gaza_role": "background",
+    "main_topic": "Public sector higher education governance and funding in Pakistan",
+    "conflict_relevance": "The main article is unrelated to Gaza, but an appended separate military news item includes a substantive statement expressing solidarity with occupied Palestine, condemning alleged war crimes and human rights violations in Gaza, and supporting an International Court of Justice decision.",
+    "reason": "The headline and primary article concern Pakistan's 18th Amendment and higher education institutions. Gaza appears only in a distinct, appended news item, but the reference is meaningful enough to support peripheral discourse analysis.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "f491267769381a224d095b9c97f07aa20cbedf0869e260dbb1fc4dc5f660b3cb",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "3905aa61537f0a1a0b376c5adfeefab95b1ae2928f0fef42db6b9d41891d4127",
+    "raw_response_text_sha256": "09166bb0d7b68c20a96042f5cc5a3753b9f999214b18e0671d631a1e8dbd9f0f"
+  },
+  "api_metadata": {
+    "id": "resp_023025ca01ae279a006aaa3be2409c87d18608605f2ee932ad",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789541346.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2153,
+      "input_tokens_details": {
+        "cache_write_tokens": 2150,
+        "cached_tokens": 0
+      },
+      "output_tokens": 312,
+      "output_tokens_details": {
+        "reasoning_tokens": 141
+      },
+      "total_tokens": 2465
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.96,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Public sector higher education governance and funding in Pakistan\",\n  \"conflict_relevance\": \"The main article is unrelated to Gaza, but an appended separate military news item includes a substantive statement expressing solidarity with occupied Palestine, condemning alleged war crimes and human rights violations in Gaza, and supporting an International Court of Justice decision.\",\n  \"reason\": \"The headline and primary article concern Pakistan's 18th Amendment and higher education institutions. Gaza appears only in a distinct, appended news item, but the reference is meaningful enough to support peripheral discourse analysis.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T06:49:10Z",
+  "duration_seconds": 4.313,
+  "error": null
+}

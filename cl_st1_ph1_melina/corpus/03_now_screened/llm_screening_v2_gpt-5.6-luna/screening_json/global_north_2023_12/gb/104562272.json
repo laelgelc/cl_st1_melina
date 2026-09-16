@@ -1,0 +1,65 @@
+{
+  "article_id": "104562272",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_12/gb/104562272.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_12/gb/104562272.json"
+  },
+  "manifest_row": {
+    "article_id": "104562272",
+    "group": "global_north_2023_12",
+    "country_code": "gb",
+    "filepath": "corpus/02_now_organised/global_north_2023_12/gb/104562272.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.97,
+    "gaza_role": "passing",
+    "main_topic": "UK commercial office property downturn, declining property values, and energy-efficiency regulations",
+    "conflict_relevance": "The article is primarily about commercial real estate but contains an embedded news snippet describing Israeli strikes on Gaza's Al-Maghazi refugee camp, casualties, and the humanitarian impact.",
+    "reason": "The Gaza content is meaningful but clearly unrelated to the main article and appears as an inserted or concatenated news item rather than an integrated discussion.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "371074fbf4768efb3fa2502837044776536ea06a8efe27fecc067171fb2b493e",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "549d8077396dce42c16ad2847d9a2785020bc70635019af8dedf42f0fcf45813",
+    "raw_response_text_sha256": "ceada05ed04388eb0911aceea4e7874ff661636b4442f91bf2b5e960ec05a229"
+  },
+  "api_metadata": {
+    "id": "resp_0ececd4bafd6be10006aaa01386b9c87d29335226e12330db8",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789526328.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2189,
+      "input_tokens_details": {
+        "cache_write_tokens": 2186,
+        "cached_tokens": 0
+      },
+      "output_tokens": 241,
+      "output_tokens_details": {
+        "reasoning_tokens": 88
+      },
+      "total_tokens": 2430
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.97,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"UK commercial office property downturn, declining property values, and energy-efficiency regulations\",\n  \"conflict_relevance\": \"The article is primarily about commercial real estate but contains an embedded news snippet describing Israeli strikes on Gaza's Al-Maghazi refugee camp, casualties, and the humanitarian impact.\",\n  \"reason\": \"The Gaza content is meaningful but clearly unrelated to the main article and appears as an inserted or concatenated news item rather than an integrated discussion.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:38:52Z",
+  "duration_seconds": 4.353,
+  "error": null
+}

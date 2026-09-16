@@ -1,0 +1,65 @@
+{
+  "article_id": "106321265",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_03/ca/106321265.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_03/ca/106321265.json"
+  },
+  "manifest_row": {
+    "article_id": "106321265",
+    "group": "global_north_2024_03",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2024_03/ca/106321265.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.96,
+    "gaza_role": "passing",
+    "main_topic": "The alleged sexual assault of a child by a repeat sex offender and concerns about public safety and release procedures",
+    "conflict_relevance": "A separate embedded news snippet discusses wounded people near a Gaza aid convoy and alleged Israeli gunfire, providing limited but meaningful conflict-related discourse.",
+    "reason": "The main article is unrelated to Gaza or the Israel-Palestine conflict, but it contains a substantive sentence about violence surrounding an aid convoy in Gaza and alleged Israeli military shooting. Because this is an embedded secondary item rather than the main topic, the article is peripheral.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "c698a168dcc438c85317281215aa93361011ff3ff6b7613038b56981b37a3d10",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "2677119dd52fa45d5f14c178da87cfcac582f77158d98a07a51f30c8ec8d06bd",
+    "raw_response_text_sha256": "455df9b5e4815dc79e09ade27f1f536be87da0ef8d87452f05e84f195e723f3c"
+  },
+  "api_metadata": {
+    "id": "resp_07639a26cd07bfbe006aaa08494c0c87d281b15fa039578cf0",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789528137.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1560,
+      "input_tokens_details": {
+        "cache_write_tokens": 1557,
+        "cached_tokens": 0
+      },
+      "output_tokens": 255,
+      "output_tokens_details": {
+        "reasoning_tokens": 78
+      },
+      "total_tokens": 1815
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.96,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"The alleged sexual assault of a child by a repeat sex offender and concerns about public safety and release procedures\",\n  \"conflict_relevance\": \"A separate embedded news snippet discusses wounded people near a Gaza aid convoy and alleged Israeli gunfire, providing limited but meaningful conflict-related discourse.\",\n  \"reason\": \"The main article is unrelated to Gaza or the Israel-Palestine conflict, but it contains a substantive sentence about violence surrounding an aid convoy in Gaza and alleged Israeli military shooting. Because this is an embedded secondary item rather than the main topic, the article is peripheral.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:09:01Z",
+  "duration_seconds": 3.885,
+  "error": null
+}

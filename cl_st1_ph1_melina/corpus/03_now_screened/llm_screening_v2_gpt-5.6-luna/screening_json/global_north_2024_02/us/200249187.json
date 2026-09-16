@@ -1,0 +1,65 @@
+{
+  "article_id": "200249187",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_02/us/200249187.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_02/us/200249187.json"
+  },
+  "manifest_row": {
+    "article_id": "200249187",
+    "group": "global_north_2024_02",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2024_02/us/200249187.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.93,
+    "gaza_role": "passing",
+    "main_topic": "Sweden's accession to NATO and European support for Ukraine",
+    "conflict_relevance": "The main article concerns NATO expansion and the Russia-Ukraine war, but it includes a substantive passing sentence about Israel's planned military operation in Rafah and the Gaza ceasefire debate.",
+    "reason": "The Gaza-related content is limited to one meaningful sentence embedded among several otherwise unrelated news snippets. It is relevant to the broader conflict discourse but is not central to the article.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "e57fdcf9442c5832ea7075979e25aba154437b4e9cd3fbdd8392c70706216907",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "e844cdfe3d772bc70f09759af4b7ffe8cefe351b0cfea3497ed915fe6d0e57a5",
+    "raw_response_text_sha256": "9ca7d907a259194840ebe77475dfb96f84009b6c123f82ca3869481f2e7ac2db"
+  },
+  "api_metadata": {
+    "id": "resp_004c8f83164dd662006aaa08165dd487d2be3b692acdf2b5eb",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789528086.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2087,
+      "input_tokens_details": {
+        "cache_write_tokens": 2084,
+        "cached_tokens": 0
+      },
+      "output_tokens": 334,
+      "output_tokens_details": {
+        "reasoning_tokens": 177
+      },
+      "total_tokens": 2421
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.93,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Sweden's accession to NATO and European support for Ukraine\",\n  \"conflict_relevance\": \"The main article concerns NATO expansion and the Russia-Ukraine war, but it includes a substantive passing sentence about Israel's planned military operation in Rafah and the Gaza ceasefire debate.\",\n  \"reason\": \"The Gaza-related content is limited to one meaningful sentence embedded among several otherwise unrelated news snippets. It is relevant to the broader conflict discourse but is not central to the article.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:08:10Z",
+  "duration_seconds": 4.106,
+  "error": null
+}

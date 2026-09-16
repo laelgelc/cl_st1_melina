@@ -1,0 +1,65 @@
+{
+  "article_id": "103401416",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_11/ca/103401416.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_11/ca/103401416.json"
+  },
+  "manifest_row": {
+    "article_id": "103401416",
+    "group": "global_north_2023_11",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2023_11/ca/103401416.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "background",
+    "main_topic": "Search for a missing man in St. Thomas, Ontario",
+    "conflict_relevance": "The article's main subject is unrelated, but it contains embedded news snippets about medical staff and patients trapped at Gaza's Shifa hospital amid fighting between Israel and Hamas.",
+    "reason": "The headline and substantive article concern a Canadian missing-person investigation. However, the text includes meaningful, though clearly separate and embedded, reporting on humanitarian and military conditions in Gaza.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "9a28d04fd0554facbc18e64d3539dbfbf8b0b368d37dc5fa5b6e1c17959fa0a5",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "3824b434517635cab2b3ae98c1236edb558d29c254de9703224dc340fd3646a2",
+    "raw_response_text_sha256": "c6d9a0fee4b67e9ed02e3956a2f6a1a06e371bc46498c17bbc5b57738abb7460"
+  },
+  "api_metadata": {
+    "id": "resp_0422df2c5fbb000a006aa9fbcc18f487d2bad526859f511192",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789524940.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1405,
+      "input_tokens_details": {
+        "cache_write_tokens": 1402,
+        "cached_tokens": 0
+      },
+      "output_tokens": 280,
+      "output_tokens_details": {
+        "reasoning_tokens": 126
+      },
+      "total_tokens": 1685
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Search for a missing man in St. Thomas, Ontario\",\n  \"conflict_relevance\": \"The article's main subject is unrelated, but it contains embedded news snippets about medical staff and patients trapped at Gaza's Shifa hospital amid fighting between Israel and Hamas.\",\n  \"reason\": \"The headline and substantive article concern a Canadian missing-person investigation. However, the text includes meaningful, though clearly separate and embedded, reporting on humanitarian and military conditions in Gaza.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:15:45Z",
+  "duration_seconds": 5.424,
+  "error": null
+}

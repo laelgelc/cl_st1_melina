@@ -1,0 +1,65 @@
+{
+  "article_id": "113540013",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_09/ca/113540013.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_09/ca/113540013.json"
+  },
+  "manifest_row": {
+    "article_id": "113540013",
+    "group": "global_north_2024_09",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2024_09/ca/113540013.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.97,
+    "gaza_role": "passing",
+    "main_topic": "Prince Harry's relationships, royal family estrangement, and charitable activities",
+    "conflict_relevance": "The main article is about Prince Harry and the British royal family, but an embedded news snippet briefly discusses disagreements between the Biden administration and Benjamin Netanyahu over a Gaza cease-fire and hostage-release agreement.",
+    "reason": "The Gaza-related content is a meaningful but isolated sentence in a collection of unrelated news snippets and is not part of the main article's subject.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "c4d393d1c96aaa24170a598112048ec7407c004ccd4a98346abc7830c22d51af",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "d9c1cf011e16a032611b310b71e3965d0a6a11f7ea46e96ff2061687609507f3",
+    "raw_response_text_sha256": "ccb1a166e1b48777883f3caf601ff89f4403f5c01a4f98388f0a5e56a1c2e180"
+  },
+  "api_metadata": {
+    "id": "resp_0da262f58573a2b5006aaa1604344c87d28371af44baa61985",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789531652.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 3677,
+      "input_tokens_details": {
+        "cache_write_tokens": 3674,
+        "cached_tokens": 0
+      },
+      "output_tokens": 241,
+      "output_tokens_details": {
+        "reasoning_tokens": 86
+      },
+      "total_tokens": 3918
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.97,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Prince Harry's relationships, royal family estrangement, and charitable activities\",\n  \"conflict_relevance\": \"The main article is about Prince Harry and the British royal family, but an embedded news snippet briefly discusses disagreements between the Biden administration and Benjamin Netanyahu over a Gaza cease-fire and hostage-release agreement.\",\n  \"reason\": \"The Gaza-related content is a meaningful but isolated sentence in a collection of unrelated news snippets and is not part of the main article's subject.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T04:07:35Z",
+  "duration_seconds": 3.484,
+  "error": null
+}

@@ -1,0 +1,65 @@
+{
+  "article_id": "125835716",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_06/nz/125835716.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_06/nz/125835716.json"
+  },
+  "manifest_row": {
+    "article_id": "125835716",
+    "group": "global_north_2025_06",
+    "country_code": "nz",
+    "filepath": "corpus/02_now_organised/global_north_2025_06/nz/125835716.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "passing",
+    "main_topic": "UNAMI updates on Iraq’s political, human rights, electoral, displacement, and transition issues",
+    "conflict_relevance": "The article briefly mentions the Iraqi Government’s humanitarian aid to people in Gaza alongside aid to other regional populations, but Gaza is not otherwise discussed.",
+    "reason": "The article is centrally about Iraq and the UN mission’s withdrawal, elections, returnees, Yazidi displacement, and human rights. Its single substantive Gaza reference is relevant but incidental to the main topic, making it peripheral rather than core.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "11306e70712f48e49bf5620d40652ee7d265b12e98826fc7e024ecd13d4452ef",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "6d6960d468c4fb859e18105ddf23f746e67f647b13878eaf4c176813a039ae79",
+    "raw_response_text_sha256": "e05d7a5dbb2c18bc8abe5c908895e7c6572ebfedc0629fb1c43907f8ce9f1993"
+  },
+  "api_metadata": {
+    "id": "resp_0a2233282c260027006aaa30687df487d1a948d8522763311b",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789538408.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1786,
+      "input_tokens_details": {
+        "cache_write_tokens": 1783,
+        "cached_tokens": 0
+      },
+      "output_tokens": 225,
+      "output_tokens_details": {
+        "reasoning_tokens": 56
+      },
+      "total_tokens": 2011
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"UNAMI updates on Iraq’s political, human rights, electoral, displacement, and transition issues\",\n  \"conflict_relevance\": \"The article briefly mentions the Iraqi Government’s humanitarian aid to people in Gaza alongside aid to other regional populations, but Gaza is not otherwise discussed.\",\n  \"reason\": \"The article is centrally about Iraq and the UN mission’s withdrawal, elections, returnees, Yazidi displacement, and human rights. Its single substantive Gaza reference is relevant but incidental to the main topic, making it peripheral rather than core.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T06:00:12Z",
+  "duration_seconds": 4.218,
+  "error": null
+}

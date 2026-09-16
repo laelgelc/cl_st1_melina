@@ -1,0 +1,65 @@
+{
+  "article_id": "102741302",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_10/ca/102741302.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_10/ca/102741302.json"
+  },
+  "manifest_row": {
+    "article_id": "102741302",
+    "group": "global_north_2023_10",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2023_10/ca/102741302.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.9,
+    "gaza_role": "background",
+    "main_topic": "Pfizer's pricing of the COVID-19 treatment Paxlovid",
+    "conflict_relevance": "The article's main subject is unrelated to Gaza, but it includes a substantive embedded news passage about Palestinians in Gaza, Israeli bombardment, and neighboring countries' responses to possible displacement.",
+    "reason": "The Gaza-related content appears as an unrelated embedded article rather than the main story, but it contains meaningful conflict discourse and is more than a passing or boilerplate mention.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "c3c436d611f11025718fe81e76428006e52eba1d0dd69e99948b08ee5f3bbdc3",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "7a905dc460bb057feca8177ef44a9c07f302f4c198628703bb1f80bbbe935869",
+    "raw_response_text_sha256": "47a07ad2a15fc76eefef31a0318eb7362f42990ff308d19b389dbedcd5b2a32c"
+  },
+  "api_metadata": {
+    "id": "resp_0270971021868421006aa9f66348d487d289b6036af69f7516",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789523555.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1005,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 330,
+      "output_tokens_details": {
+        "reasoning_tokens": 172
+      },
+      "total_tokens": 1335
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.9,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Pfizer's pricing of the COVID-19 treatment Paxlovid\",\n  \"conflict_relevance\": \"The article's main subject is unrelated to Gaza, but it includes a substantive embedded news passage about Palestinians in Gaza, Israeli bombardment, and neighboring countries' responses to possible displacement.\",\n  \"reason\": \"The Gaza-related content appears as an unrelated embedded article rather than the main story, but it contains meaningful conflict discourse and is more than a passing or boilerplate mention.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T01:52:39Z",
+  "duration_seconds": 4.299,
+  "error": null
+}

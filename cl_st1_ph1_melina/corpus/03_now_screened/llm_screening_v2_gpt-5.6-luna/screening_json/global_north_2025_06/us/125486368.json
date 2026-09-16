@@ -1,0 +1,65 @@
+{
+  "article_id": "125486368",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_06/us/125486368.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_06/us/125486368.json"
+  },
+  "manifest_row": {
+    "article_id": "125486368",
+    "group": "global_north_2025_06",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2025_06/us/125486368.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "gaza_role": "boilerplate_or_unrelated",
+    "main_topic": "Arrest of an alleged accomplice in a fertility clinic bombing",
+    "conflict_relevance": "No meaningful relevance to Gaza, Palestine, or the Israel-Palestine conflict; Gaza appears only in an unrelated related-news snippet.",
+    "reason": "The main article concerns a U.S. fertility clinic bombing, anti-natalist ideology, and explosives investigations. The only Gaza reference is a fragment in a separate 'More from Nation' item and is not part of the article's substantive discourse.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "a2dbfa4f6467b9dba9423917d70ca9d284256aced17aaa19c67aab4af6968da0",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "d1e3efe44501b27bc67539d077962848c73ea0587d249918bd3be2bdf9395798",
+    "raw_response_text_sha256": "245bd1b5d122f766951e9ac6c045a2a662b677d537c35754c3d110620a836d94"
+  },
+  "api_metadata": {
+    "id": "resp_037735a263a29e8e006aaa30c6ecd487d1ae5a4648378db3e2",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789538502.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2068,
+      "input_tokens_details": {
+        "cache_write_tokens": 2065,
+        "cached_tokens": 0
+      },
+      "output_tokens": 296,
+      "output_tokens_details": {
+        "reasoning_tokens": 129
+      },
+      "total_tokens": 2364
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"gaza_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Arrest of an alleged accomplice in a fertility clinic bombing\",\n  \"conflict_relevance\": \"No meaningful relevance to Gaza, Palestine, or the Israel-Palestine conflict; Gaza appears only in an unrelated related-news snippet.\",\n  \"reason\": \"The main article concerns a U.S. fertility clinic bombing, anti-natalist ideology, and explosives investigations. The only Gaza reference is a fragment in a separate 'More from Nation' item and is not part of the article's substantive discourse.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T06:01:47Z",
+  "duration_seconds": 5.059,
+  "error": null
+}

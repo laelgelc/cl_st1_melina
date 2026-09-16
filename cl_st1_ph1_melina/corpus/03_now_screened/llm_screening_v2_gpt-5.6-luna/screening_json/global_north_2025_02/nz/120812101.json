@@ -1,0 +1,65 @@
+{
+  "article_id": "120812101",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_02/nz/120812101.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_02/nz/120812101.json"
+  },
+  "manifest_row": {
+    "article_id": "120812101",
+    "group": "global_north_2025_02",
+    "country_code": "nz",
+    "filepath": "corpus/02_now_organised/global_north_2025_02/nz/120812101.txt"
+  },
+  "screening": {
+    "category": "CORE",
+    "confidence": 0.99,
+    "gaza_role": "central",
+    "main_topic": "Israeli military actions, civilian casualties, occupation practices, raids, demolitions, arrests, and movement restrictions in Gaza and the West Bank",
+    "conflict_relevance": "The article is directly and substantially focused on the Israel-Palestine conflict, documenting deaths and injuries in Gaza alongside military raids, home demolitions, arrests, forced displacement, checkpoints, and other occupation-related measures in the West Bank.",
+    "reason": "Most of the text consists of detailed reporting on Israeli military operations and their effects on Palestinians in Gaza and the occupied West Bank. The closing biographical material is secondary to the central conflict-focused report.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": true
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "9f4dc15ad56be9150bb711559d2d01ba16dd12c6061b7e751dc04650348a7c18",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "b90826d274cb7d56e7fe3453544d34ab48638cd7050cc71177411eca3bcb5caf",
+    "raw_response_text_sha256": "9ee0a6a48262e57f275fa6156ac5941cd073d6aa31586f9808a433befa616962"
+  },
+  "api_metadata": {
+    "id": "resp_034131b7283f7467006aaa23c9e5e487d29d811a6dab635197",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789535177.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1934,
+      "input_tokens_details": {
+        "cache_write_tokens": 1931,
+        "cached_tokens": 0
+      },
+      "output_tokens": 317,
+      "output_tokens_details": {
+        "reasoning_tokens": 130
+      },
+      "total_tokens": 2251
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"CORE\",\n  \"confidence\": 0.99,\n  \"gaza_role\": \"central\",\n  \"main_topic\": \"Israeli military actions, civilian casualties, occupation practices, raids, demolitions, arrests, and movement restrictions in Gaza and the West Bank\",\n  \"conflict_relevance\": \"The article is directly and substantially focused on the Israel-Palestine conflict, documenting deaths and injuries in Gaza alongside military raids, home demolitions, arrests, forced displacement, checkpoints, and other occupation-related measures in the West Bank.\",\n  \"reason\": \"Most of the text consists of detailed reporting on Israeli military operations and their effects on Palestinians in Gaza and the occupied West Bank. The closing biographical material is secondary to the central conflict-focused report.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": true\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T05:06:22Z",
+  "duration_seconds": 4.668,
+  "error": null
+}

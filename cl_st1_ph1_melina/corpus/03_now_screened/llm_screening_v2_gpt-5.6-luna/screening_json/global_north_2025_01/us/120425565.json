@@ -1,0 +1,65 @@
+{
+  "article_id": "120425565",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_01/us/120425565.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_01/us/120425565.json"
+  },
+  "manifest_row": {
+    "article_id": "120425565",
+    "group": "global_north_2025_01",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2025_01/us/120425565.txt"
+  },
+  "screening": {
+    "category": "CORE",
+    "confidence": 0.99,
+    "gaza_role": "background",
+    "main_topic": "Israeli military operation, airstrike, arrests, destruction, and displacement in Jenin and the northern West Bank",
+    "conflict_relevance": "Direct coverage of Israeli military action against Palestinians, alleged excessive use of force, humanitarian consequences, displacement, and international accountability within the broader Israel-Palestine conflict",
+    "reason": "The article is centrally about an ongoing Israeli operation in Jenin, including a drone strike, deaths, arrests, destruction, displacement, and UN warnings about possible human rights violations. Gaza is mentioned as the context of a recently agreed Israel-Hamas truce, but the main focus is the West Bank.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": true
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "72d9a709b823eb66c63d61f0ca23c3365a20d05a07ca42602368f79470d2d07b",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "91e01d79b0e278634319c052d0413c3b53c52ced2d75df5dcb201642ef45280d",
+    "raw_response_text_sha256": "e4d7b4443c9657002bf0ae703af238eae14a380fa94e86366ae6f15dad50b9a9"
+  },
+  "api_metadata": {
+    "id": "resp_05d2eced420e190d006aaa2195a44c87d2a24a378a55c97e2d",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789534613.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1102,
+      "input_tokens_details": {
+        "cache_write_tokens": 1099,
+        "cached_tokens": 0
+      },
+      "output_tokens": 267,
+      "output_tokens_details": {
+        "reasoning_tokens": 78
+      },
+      "total_tokens": 1369
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"CORE\",\n  \"confidence\": 0.99,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Israeli military operation, airstrike, arrests, destruction, and displacement in Jenin and the northern West Bank\",\n  \"conflict_relevance\": \"Direct coverage of Israeli military action against Palestinians, alleged excessive use of force, humanitarian consequences, displacement, and international accountability within the broader Israel-Palestine conflict\",\n  \"reason\": \"The article is centrally about an ongoing Israeli operation in Jenin, including a drone strike, deaths, arrests, destruction, displacement, and UN warnings about possible human rights violations. Gaza is mentioned as the context of a recently agreed Israel-Hamas truce, but the main focus is the West Bank.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": true\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T04:56:58Z",
+  "duration_seconds": 5.904,
+  "error": null
+}

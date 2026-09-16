@@ -1,0 +1,65 @@
+{
+  "article_id": "106884328",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_03/us/106884328.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_03/us/106884328.json"
+  },
+  "manifest_row": {
+    "article_id": "106884328",
+    "group": "global_north_2024_03",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2024_03/us/106884328.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "gaza_role": "boilerplate_or_unrelated",
+    "main_topic": "Political commentary on government earmarks and fiscal spending",
+    "conflict_relevance": "Gaza and Israel appear only in an incidental photo caption describing an emergency spending package; the article does not discuss the conflict.",
+    "reason": "The main article concerns Sen. Rand Paul's criticism of congressional earmarks and government spending. The Gaza reference is limited to unrelated caption text and provides no meaningful conflict discourse.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "1bdc2d80fdc5e89ed98c92f71a2bb1b9c8d62e0a6b6b25aa414d40fdd77c0cb6",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "354f5defe6eaaace7a99830b8874e5f4b6b0e2ab0c97453b31feb84f29a0eb9d",
+    "raw_response_text_sha256": "980e7a5125f47b2af5749ebc7eeb26914ccb3be4be8c9542c88a72a5f77fe3a1"
+  },
+  "api_metadata": {
+    "id": "resp_058302e41bcc684f006aaa09d04a1487d28f74d6bca64dbca8",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789528528.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1539,
+      "input_tokens_details": {
+        "cache_write_tokens": 1536,
+        "cached_tokens": 0
+      },
+      "output_tokens": 229,
+      "output_tokens_details": {
+        "reasoning_tokens": 82
+      },
+      "total_tokens": 1768
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Political commentary on government earmarks and fiscal spending\",\n  \"conflict_relevance\": \"Gaza and Israel appear only in an incidental photo caption describing an emergency spending package; the article does not discuss the conflict.\",\n  \"reason\": \"The main article concerns Sen. Rand Paul's criticism of congressional earmarks and government spending. The Gaza reference is limited to unrelated caption text and provides no meaningful conflict discourse.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:15:31Z",
+  "duration_seconds": 3.595,
+  "error": null
+}

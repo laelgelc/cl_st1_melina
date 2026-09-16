@@ -1,0 +1,65 @@
+{
+  "article_id": "111219407",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_south_2024_07/in/111219407.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_south_2024_07/in/111219407.json"
+  },
+  "manifest_row": {
+    "article_id": "111219407",
+    "group": "global_south_2024_07",
+    "country_code": "in",
+    "filepath": "corpus/02_now_organised/global_south_2024_07/in/111219407.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.96,
+    "gaza_role": "passing",
+    "main_topic": "India-ASEAN diplomatic and strategic cooperation",
+    "conflict_relevance": "Gaza is mentioned only briefly among several regional issues addressed by India's foreign minister, without further discussion or analysis.",
+    "reason": "The article is centrally about India's Act East Policy and engagement with ASEAN. The reference to the conflict in Gaza is incidental and does not provide meaningful discourse for conflict analysis.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "2be574718a2b13dda29d919f7c1f82515c988e0c7ecbc5e6512199c3f80fbd05",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "0e693053d7733105ea1d63da4c6c1394fd563e0d8c0b07183a97e3e963b17119",
+    "raw_response_text_sha256": "745356b1f3a17e3251041d0dcf489af774dbfcfec95c4810095c1f91c5eaaba4"
+  },
+  "api_metadata": {
+    "id": "resp_0844607f56e10600006aaa3d1c1d1887d1a7bfbb6251717d2f",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789541660.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1190,
+      "input_tokens_details": {
+        "cache_write_tokens": 1187,
+        "cached_tokens": 0
+      },
+      "output_tokens": 267,
+      "output_tokens_details": {
+        "reasoning_tokens": 129
+      },
+      "total_tokens": 1457
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.96,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"India-ASEAN diplomatic and strategic cooperation\",\n  \"conflict_relevance\": \"Gaza is mentioned only briefly among several regional issues addressed by India's foreign minister, without further discussion or analysis.\",\n  \"reason\": \"The article is centrally about India's Act East Policy and engagement with ASEAN. The reference to the conflict in Gaza is incidental and does not provide meaningful discourse for conflict analysis.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T06:54:24Z",
+  "duration_seconds": 4.367,
+  "error": null
+}

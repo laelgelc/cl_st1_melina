@@ -1,0 +1,65 @@
+{
+  "article_id": "103654028",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_south_2023_11/in/103654028.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_south_2023_11/in/103654028.json"
+  },
+  "manifest_row": {
+    "article_id": "103654028",
+    "group": "global_south_2023_11",
+    "country_code": "in",
+    "filepath": "corpus/02_now_organised/global_south_2023_11/in/103654028.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "background",
+    "main_topic": "Indian Express daily news roundup covering Indian politics, a tunnel rescue, the Israel-Hamas conflict, terrorism designation, and entertainment",
+    "conflict_relevance": "The roundup includes a substantive headline about a possible Israel-Hamas truce, the continuing assault on Gaza, rocket fire into Israel, and India's response to humanitarian pauses and aid efforts.",
+    "reason": "The article is primarily a multi-item news bulletin focused on several unrelated events. Gaza and the Israel-Hamas conflict receive meaningful coverage in one segment but are not the central subject of the episode.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "5a7ce9d376418452a8a025ca43034aa3c7d1a38b5f52369465dc3d502acd57e8",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "f69ac436a09a0c75f66b5aeb350444e7343b41a1986a9e6e7d559eb3c77d5588",
+    "raw_response_text_sha256": "92773f6f9a9011616bc369d4ce12e50444334ac38493aa85cc2c53d12d032b42"
+  },
+  "api_metadata": {
+    "id": "resp_060d4d715000aa3b006aaa3533caf887d1af912f7886159f5a",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789539635.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1195,
+      "input_tokens_details": {
+        "cache_write_tokens": 1192,
+        "cached_tokens": 0
+      },
+      "output_tokens": 254,
+      "output_tokens_details": {
+        "reasoning_tokens": 80
+      },
+      "total_tokens": 1449
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Indian Express daily news roundup covering Indian politics, a tunnel rescue, the Israel-Hamas conflict, terrorism designation, and entertainment\",\n  \"conflict_relevance\": \"The roundup includes a substantive headline about a possible Israel-Hamas truce, the continuing assault on Gaza, rocket fire into Israel, and India's response to humanitarian pauses and aid efforts.\",\n  \"reason\": \"The article is primarily a multi-item news bulletin focused on several unrelated events. Gaza and the Israel-Hamas conflict receive meaningful coverage in one segment but are not the central subject of the episode.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T06:20:40Z",
+  "duration_seconds": 4.445,
+  "error": null
+}

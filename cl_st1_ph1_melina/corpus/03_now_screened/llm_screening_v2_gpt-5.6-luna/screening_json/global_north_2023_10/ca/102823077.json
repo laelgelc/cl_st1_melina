@@ -1,0 +1,65 @@
+{
+  "article_id": "102823077",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_10/ca/102823077.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_10/ca/102823077.json"
+  },
+  "manifest_row": {
+    "article_id": "102823077",
+    "group": "global_north_2023_10",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2023_10/ca/102823077.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "gaza_role": "boilerplate_or_unrelated",
+    "main_topic": "A Canadian stilt walker attempting to reclaim a world record",
+    "conflict_relevance": "The main article is unrelated to Gaza or the Israel-Palestine conflict; conflict references occur only in an embedded CTVNews.ca top-stories roundup.",
+    "reason": "The headline and substantive article concern a world-record stilt-walking attempt. Although the page includes several brief Gaza and Israel-related headlines, these are unrelated navigational or roundup content rather than part of the main article.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "256d5a1e3a9e03c27b43c3301b37a9e7db4a84cb5fade94eb4b62be9d8dfed0a",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "eff0ed817b1a12eb2ec2bea91c7068504df89340b5e3e3f8c2accd07939da202",
+    "raw_response_text_sha256": "bb592b0e9eefd62149b7e2a141912d94f0aa1f3a52d22bf30169ec769bd4045e"
+  },
+  "api_metadata": {
+    "id": "resp_051c81e4bb26dc0a006aa9f681890c87d2823facaec0649af4",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789523585.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1361,
+      "input_tokens_details": {
+        "cache_write_tokens": 1358,
+        "cached_tokens": 0
+      },
+      "output_tokens": 317,
+      "output_tokens_details": {
+        "reasoning_tokens": 151
+      },
+      "total_tokens": 1678
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"A Canadian stilt walker attempting to reclaim a world record\",\n  \"conflict_relevance\": \"The main article is unrelated to Gaza or the Israel-Palestine conflict; conflict references occur only in an embedded CTVNews.ca top-stories roundup.\",\n  \"reason\": \"The headline and substantive article concern a world-record stilt-walking attempt. Although the page includes several brief Gaza and Israel-related headlines, these are unrelated navigational or roundup content rather than part of the main article.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T01:53:09Z",
+  "duration_seconds": 4.312,
+  "error": null
+}

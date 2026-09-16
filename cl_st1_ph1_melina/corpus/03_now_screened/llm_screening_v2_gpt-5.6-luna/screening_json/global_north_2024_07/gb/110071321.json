@@ -1,0 +1,65 @@
+{
+  "article_id": "110071321",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_07/gb/110071321.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_07/gb/110071321.json"
+  },
+  "manifest_row": {
+    "article_id": "110071321",
+    "group": "global_north_2024_07",
+    "country_code": "gb",
+    "filepath": "corpus/02_now_organised/global_north_2024_07/gb/110071321.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.97,
+    "gaza_role": "passing",
+    "main_topic": "Joe Biden's political vulnerability and pressure to withdraw from the 2024 US presidential race",
+    "conflict_relevance": "The main article is about US electoral politics, but an unrelated embedded passage discusses reactions to the October 7 Hamas attack and Gaza-related public responses.",
+    "reason": "The article is primarily focused on Biden's campaign crisis and Democratic opposition. Gaza appears only in a brief, disconnected paragraph within a collection of mixed snippets, but that passage contains meaningful conflict-related discourse.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "c1e5dab9c8642582605d6796220e482358b7f40680dd3a21b82fb7c8680d9a1a",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "148e177ea77030a88694a87899bb625e82da56c186f9da2d6f5944d5c298e57a",
+    "raw_response_text_sha256": "d20cb9db5c6136e82fc4cc051bdc8e3b92350ce5e1db23298d65017bacf9ea9c"
+  },
+  "api_metadata": {
+    "id": "resp_0fdcc210b739c514006aaa122fb2c887d2a56307a104e6adbc",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789530671.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2423,
+      "input_tokens_details": {
+        "cache_write_tokens": 2420,
+        "cached_tokens": 0
+      },
+      "output_tokens": 284,
+      "output_tokens_details": {
+        "reasoning_tokens": 123
+      },
+      "total_tokens": 2707
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.97,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Joe Biden's political vulnerability and pressure to withdraw from the 2024 US presidential race\",\n  \"conflict_relevance\": \"The main article is about US electoral politics, but an unrelated embedded passage discusses reactions to the October 7 Hamas attack and Gaza-related public responses.\",\n  \"reason\": \"The article is primarily focused on Biden's campaign crisis and Democratic opposition. Gaza appears only in a brief, disconnected paragraph within a collection of mixed snippets, but that passage contains meaningful conflict-related discourse.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:51:16Z",
+  "duration_seconds": 4.586,
+  "error": null
+}

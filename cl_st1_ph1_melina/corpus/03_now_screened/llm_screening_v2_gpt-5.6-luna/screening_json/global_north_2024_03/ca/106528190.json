@@ -1,0 +1,65 @@
+{
+  "article_id": "106528190",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_03/ca/106528190.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_03/ca/106528190.json"
+  },
+  "manifest_row": {
+    "article_id": "106528190",
+    "group": "global_north_2024_03",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2024_03/ca/106528190.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.97,
+    "gaza_role": "passing",
+    "main_topic": "Retirement planning, savings, and investment advice",
+    "conflict_relevance": "The article's main subject is personal finance, but an embedded latest-stories snippet reports alleged Palestinian deaths and injuries in Gaza caused by a humanitarian aid airdrop.",
+    "reason": "The Gaza-related content is a substantive but very brief unrelated news snippet within a finance article roundup. It is relevant to broader conflict and humanitarian discourse but is not part of the article's main topic.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "7527b4d6c37c203c2c494de39a17ca1bf54ead26924d66353dbef0c76f1440ff",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "b9da20c103ac6a483056f4744d4b780eeff2f49c8b11a7b1a725525f0cd4461d",
+    "raw_response_text_sha256": "1a35aaaa85224640e6affbc17e1e1f22be530fb42e6acef0997cea25e2e52ffb"
+  },
+  "api_metadata": {
+    "id": "resp_05868a9cc58a5ff5006aaa0861a2b087d2b666a5b8b5603449",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789528161.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 3445,
+      "input_tokens_details": {
+        "cache_write_tokens": 3442,
+        "cached_tokens": 0
+      },
+      "output_tokens": 270,
+      "output_tokens_details": {
+        "reasoning_tokens": 113
+      },
+      "total_tokens": 3715
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.97,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Retirement planning, savings, and investment advice\",\n  \"conflict_relevance\": \"The article's main subject is personal finance, but an embedded latest-stories snippet reports alleged Palestinian deaths and injuries in Gaza caused by a humanitarian aid airdrop.\",\n  \"reason\": \"The Gaza-related content is a substantive but very brief unrelated news snippet within a finance article roundup. It is relevant to broader conflict and humanitarian discourse but is not part of the article's main topic.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:09:24Z",
+  "duration_seconds": 3.463,
+  "error": null
+}

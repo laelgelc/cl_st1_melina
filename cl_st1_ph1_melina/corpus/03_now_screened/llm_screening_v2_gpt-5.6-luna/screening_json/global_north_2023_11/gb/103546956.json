@@ -1,0 +1,65 @@
+{
+  "article_id": "103546956",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_11/gb/103546956.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_11/gb/103546956.json"
+  },
+  "manifest_row": {
+    "article_id": "103546956",
+    "group": "global_north_2023_11",
+    "country_code": "gb",
+    "filepath": "corpus/02_now_organised/global_north_2023_11/gb/103546956.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.97,
+    "gaza_role": "passing",
+    "main_topic": "Norwegian's proposed acquisition of Widerøe and competition concerns in Norway's domestic airline market",
+    "conflict_relevance": "The main article is unrelated to Gaza or the Israel-Palestine conflict; Gaza appears only in brief summaries of separate airline-related items in a 'More from Airlines' section.",
+    "reason": "The article centrally concerns airline competition and a proposed merger. The references to disruption caused by the Gaza conflict are embedded, unrelated news snippets rather than substantive content of the main article.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "acff7159d9b5913ebaea139a4f37051a51418362b6a3d26fdfc543d0ebf2827c",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "cfbc4b86be4c39b21dba65f2164b98e7dd1f96e8e665977d49d7cb7ba98488df",
+    "raw_response_text_sha256": "d938b83ed0c58d1a17fa2c2dcde00c467a0f0816753f72ea3d25a2da6125e4ac"
+  },
+  "api_metadata": {
+    "id": "resp_0257a16e63976356006aa9fcf5689c87d2931b5e0fa3fdad24",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789525237.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1214,
+      "input_tokens_details": {
+        "cache_write_tokens": 1211,
+        "cached_tokens": 0
+      },
+      "output_tokens": 343,
+      "output_tokens_details": {
+        "reasoning_tokens": 179
+      },
+      "total_tokens": 1557
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.97,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Norwegian's proposed acquisition of Widerøe and competition concerns in Norway's domestic airline market\",\n  \"conflict_relevance\": \"The main article is unrelated to Gaza or the Israel-Palestine conflict; Gaza appears only in brief summaries of separate airline-related items in a 'More from Airlines' section.\",\n  \"reason\": \"The article centrally concerns airline competition and a proposed merger. The references to disruption caused by the Gaza conflict are embedded, unrelated news snippets rather than substantive content of the main article.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:20:41Z",
+  "duration_seconds": 4.296,
+  "error": null
+}

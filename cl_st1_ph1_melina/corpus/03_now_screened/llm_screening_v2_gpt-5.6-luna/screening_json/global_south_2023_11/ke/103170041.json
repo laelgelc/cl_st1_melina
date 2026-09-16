@@ -1,0 +1,65 @@
+{
+  "article_id": "103170041",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_south_2023_11/ke/103170041.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_south_2023_11/ke/103170041.json"
+  },
+  "manifest_row": {
+    "article_id": "103170041",
+    "group": "global_south_2023_11",
+    "country_code": "ke",
+    "filepath": "corpus/02_now_organised/global_south_2023_11/ke/103170041.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "passing",
+    "main_topic": "US Federal Reserve interest-rate policy and inflation",
+    "conflict_relevance": "The article briefly notes that the Fed was monitoring the Israel-Gaza situation for its global economic implications, but the conflict is not otherwise discussed.",
+    "reason": "The article is primarily about US monetary policy, inflation, and interest rates. Its single substantive reference to the Israel-Gaza situation provides limited relevance to broader conflict-related economic discourse but is insufficient for CORE classification.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "58a0ad76d45c89a901f54aae09090483018a58d54115892907b70dba9e0bcdb0",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "dd76a021d5031a9d23174033e7de42adae4ac71883ca20d7b9d1918916a7248a",
+    "raw_response_text_sha256": "05c005de13d4c3a3d70ff33dff0aee69d90aadd2d1db1c6ad07645f67c0a4854"
+  },
+  "api_metadata": {
+    "id": "resp_007be609e3a0427f006aaa357f29c087d1b4cffda2a6de420b",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789539711.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1331,
+      "input_tokens_details": {
+        "cache_write_tokens": 1328,
+        "cached_tokens": 0
+      },
+      "output_tokens": 200,
+      "output_tokens_details": {
+        "reasoning_tokens": 47
+      },
+      "total_tokens": 1531
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"US Federal Reserve interest-rate policy and inflation\",\n  \"conflict_relevance\": \"The article briefly notes that the Fed was monitoring the Israel-Gaza situation for its global economic implications, but the conflict is not otherwise discussed.\",\n  \"reason\": \"The article is primarily about US monetary policy, inflation, and interest rates. Its single substantive reference to the Israel-Gaza situation provides limited relevance to broader conflict-related economic discourse but is insufficient for CORE classification.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T06:21:55Z",
+  "duration_seconds": 4.42,
+  "error": null
+}

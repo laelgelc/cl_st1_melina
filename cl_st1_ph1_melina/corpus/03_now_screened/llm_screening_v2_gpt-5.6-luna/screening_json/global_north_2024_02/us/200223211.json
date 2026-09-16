@@ -1,0 +1,65 @@
+{
+  "article_id": "200223211",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_02/us/200223211.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_02/us/200223211.json"
+  },
+  "manifest_row": {
+    "article_id": "200223211",
+    "group": "global_north_2024_02",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2024_02/us/200223211.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "background",
+    "main_topic": "Palm Beach real estate market and the effects of weather and broader uncertainty on property sales",
+    "conflict_relevance": "The article briefly identifies the war in Gaza, alongside the war in Ukraine and other political and economic concerns, as contributing to general unease among prospective real-estate buyers.",
+    "reason": "The main article is about Palm Beach property activity, but it contains a meaningful sentence linking the Gaza war to public anxiety and consumer reticence. This supports peripheral discourse analysis but not inclusion as core conflict coverage.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "5b0d0f8217e52a73d37392981c70c8306a2a9622af4c686c4bff6f793ed8e355",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "4e48e6d5eb467fa1549555492938e9acd1d8449dcce2676462b3f22f4ede9072",
+    "raw_response_text_sha256": "f220a9c0bc7eed6a9ff59a137c835c5a8c2266f93f150cded457d86b44bf1689"
+  },
+  "api_metadata": {
+    "id": "resp_061f0ab397be0a02006aaa07e0777887d28d07bb3e5244bd83",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789528032.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2039,
+      "input_tokens_details": {
+        "cache_write_tokens": 2036,
+        "cached_tokens": 0
+      },
+      "output_tokens": 219,
+      "output_tokens_details": {
+        "reasoning_tokens": 51
+      },
+      "total_tokens": 2258
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Palm Beach real estate market and the effects of weather and broader uncertainty on property sales\",\n  \"conflict_relevance\": \"The article briefly identifies the war in Gaza, alongside the war in Ukraine and other political and economic concerns, as contributing to general unease among prospective real-estate buyers.\",\n  \"reason\": \"The main article is about Palm Beach property activity, but it contains a meaningful sentence linking the Gaza war to public anxiety and consumer reticence. This supports peripheral discourse analysis but not inclusion as core conflict coverage.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:07:15Z",
+  "duration_seconds": 3.231,
+  "error": null
+}

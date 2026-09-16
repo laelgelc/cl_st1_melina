@@ -1,0 +1,65 @@
+{
+  "article_id": "91660027",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_10/us/91660027.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_10/us/91660027.json"
+  },
+  "manifest_row": {
+    "article_id": "91660027",
+    "group": "global_north_2023_10",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2023_10/us/91660027.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "passing",
+    "main_topic": "Pharmaceutical tampering and the U.S. opioid crisis",
+    "conflict_relevance": "The article is primarily about prescription-drug tampering and opioid overdoses, but includes a substantive embedded passage about Gaza, Hamas, Israeli military action, and the Geneva Conventions.",
+    "reason": "The Gaza-related material is not connected to the main article and appears as an inserted news snippet, but it contains meaningful discourse about alleged war crimes and the conduct of Israeli military operations in Gaza.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "726e78a5ad45c987f65db31e86927a8543f980845e4c682b26b795072dbb57f6",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "ad75fb880ffa529fa7b3d9f2fb317f6b517ff602a65fba7c775087ca2d14fe9e",
+    "raw_response_text_sha256": "175a8c7fc17ed3db42a6faf03ab431a41c546f0e314880634e4e0f63eeae80a2"
+  },
+  "api_metadata": {
+    "id": "resp_033f36cc448f2101006aa9fabbbe9087d287d78670b27b85e0",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789524667.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1289,
+      "input_tokens_details": {
+        "cache_write_tokens": 1286,
+        "cached_tokens": 0
+      },
+      "output_tokens": 241,
+      "output_tokens_details": {
+        "reasoning_tokens": 80
+      },
+      "total_tokens": 1530
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Pharmaceutical tampering and the U.S. opioid crisis\",\n  \"conflict_relevance\": \"The article is primarily about prescription-drug tampering and opioid overdoses, but includes a substantive embedded passage about Gaza, Hamas, Israeli military action, and the Geneva Conventions.\",\n  \"reason\": \"The Gaza-related material is not connected to the main article and appears as an inserted news snippet, but it contains meaningful discourse about alleged war crimes and the conduct of Israeli military operations in Gaza.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:11:11Z",
+  "duration_seconds": 3.727,
+  "error": null
+}

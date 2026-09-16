@@ -1,0 +1,65 @@
+{
+  "article_id": "102411004",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_10/gb/102411004.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_10/gb/102411004.json"
+  },
+  "manifest_row": {
+    "article_id": "102411004",
+    "group": "global_north_2023_10",
+    "country_code": "gb",
+    "filepath": "corpus/02_now_organised/global_north_2023_10/gb/102411004.txt"
+  },
+  "screening": {
+    "category": "CORE",
+    "confidence": 0.99,
+    "gaza_role": "central",
+    "main_topic": "Hamas attacks on Israel, Israeli military response, and escalation along the Gaza border",
+    "conflict_relevance": "The article directly reports Hamas rocket attacks and infiltrations from Gaza, Israeli military retaliation, mobilization, casualties, and the declaration of war.",
+    "reason": "Gaza, Hamas, Israeli military action, the Gaza border, and related fighting constitute the central subject of the article.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": true
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "cde38bab6212ed067adab5384e81dfe723095656b87d3c5b66d05aabe163ceaa",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "b8197e0dfc96fbb779c6fd1d5bc09f7ed9140a67ad8e387ebae4083a916d7ec2",
+    "raw_response_text_sha256": "60e6114a5c0a1644c304925fc47822ed6481f76b47b6098b1f610eac763ab994"
+  },
+  "api_metadata": {
+    "id": "resp_0a43d6a26b540b98006aa9f6c96f2087d2b538e5e2bea5f62b",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789523657.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1034,
+      "input_tokens_details": {
+        "cache_write_tokens": 1031,
+        "cached_tokens": 0
+      },
+      "output_tokens": 185,
+      "output_tokens_details": {
+        "reasoning_tokens": 43
+      },
+      "total_tokens": 1219
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"CORE\",\n  \"confidence\": 0.99,\n  \"gaza_role\": \"central\",\n  \"main_topic\": \"Hamas attacks on Israel, Israeli military response, and escalation along the Gaza border\",\n  \"conflict_relevance\": \"The article directly reports Hamas rocket attacks and infiltrations from Gaza, Israeli military retaliation, mobilization, casualties, and the declaration of war.\",\n  \"reason\": \"Gaza, Hamas, Israeli military action, the Gaza border, and related fighting constitute the central subject of the article.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": true\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T01:54:19Z",
+  "duration_seconds": 2.653,
+  "error": null
+}

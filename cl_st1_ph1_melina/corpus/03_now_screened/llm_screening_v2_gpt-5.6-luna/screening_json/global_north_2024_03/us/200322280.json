@@ -1,0 +1,65 @@
+{
+  "article_id": "200322280",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_03/us/200322280.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_03/us/200322280.json"
+  },
+  "manifest_row": {
+    "article_id": "200322280",
+    "group": "global_north_2024_03",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2024_03/us/200322280.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "gaza_role": "passing",
+    "main_topic": "Viktor Orbán's congratulation of Vladimir Putin and Hungary's position on the Russia-Ukraine war",
+    "conflict_relevance": "Gaza is mentioned only in an Associated Press photo caption noting that EU leaders would discuss the Gaza war and a possible Rafah offensive; the article itself does not develop this topic.",
+    "reason": "The article is primarily about Russia's election, Hungary-Russia relations, and the war in Ukraine. The Gaza reference is incidental and confined to a contextual image caption.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "d19ab17e04e1e27d8ebed07cc039700a736995267c390023560c8b72c0d8da84",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "90b802614afcef51c49bae96207b17c87a4b365db907ba00481550f56378b6c9",
+    "raw_response_text_sha256": "71c1f70d7124d8405d15ebd78b050e69850b45bb1a8b56cd9545aedd48da5e8e"
+  },
+  "api_metadata": {
+    "id": "resp_0bef6d7ddd245e26006aaa0a96d5a087d295dcbc2bc3ff1a09",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789528726.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1361,
+      "input_tokens_details": {
+        "cache_write_tokens": 1358,
+        "cached_tokens": 0
+      },
+      "output_tokens": 263,
+      "output_tokens_details": {
+        "reasoning_tokens": 98
+      },
+      "total_tokens": 1624
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Viktor Orbán's congratulation of Vladimir Putin and Hungary's position on the Russia-Ukraine war\",\n  \"conflict_relevance\": \"Gaza is mentioned only in an Associated Press photo caption noting that EU leaders would discuss the Gaza war and a possible Rafah offensive; the article itself does not develop this topic.\",\n  \"reason\": \"The article is primarily about Russia's election, Hungary-Russia relations, and the war in Ukraine. The Gaza reference is incidental and confined to a contextual image caption.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:18:50Z",
+  "duration_seconds": 3.891,
+  "error": null
+}

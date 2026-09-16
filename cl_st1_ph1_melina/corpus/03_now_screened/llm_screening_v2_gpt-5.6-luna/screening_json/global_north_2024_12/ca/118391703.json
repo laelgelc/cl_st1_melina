@@ -1,0 +1,65 @@
+{
+  "article_id": "118391703",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_12/ca/118391703.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_12/ca/118391703.json"
+  },
+  "manifest_row": {
+    "article_id": "118391703",
+    "group": "global_north_2024_12",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2024_12/ca/118391703.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "gaza_role": "passing",
+    "main_topic": "A passenger falling overboard from a cruise ship",
+    "conflict_relevance": "The main article is unrelated to Gaza or the Israel-Palestine conflict; Gaza appears only in an unrelated latest-stories snippet about Donald Trump's demand for the release of Israeli hostages.",
+    "reason": "The headline article concerns a cruise-ship incident and contains no substantive conflict-related discussion. The Gaza reference is confined to a brief embedded news item and is not meaningfully connected to the article's topic.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "5ca247082fe20b4e4c4e68bce43e3bf6c45d042395e485d11505ef7558aa4c83",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "0a24346d932929a7f62addb89c9f19e9cbd74761a05f0bd1432ed618b07958be",
+    "raw_response_text_sha256": "99e13f8bb0b2241222afdbaff12d7c553a9558a876f8a06aaaa880aaede5ecb9"
+  },
+  "api_metadata": {
+    "id": "resp_0c234297aeee3869006aaa1d05bb1c87d2a688e8677ce24a66",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789533445.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1476,
+      "input_tokens_details": {
+        "cache_write_tokens": 1473,
+        "cached_tokens": 0
+      },
+      "output_tokens": 285,
+      "output_tokens_details": {
+        "reasoning_tokens": 123
+      },
+      "total_tokens": 1761
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"A passenger falling overboard from a cruise ship\",\n  \"conflict_relevance\": \"The main article is unrelated to Gaza or the Israel-Palestine conflict; Gaza appears only in an unrelated latest-stories snippet about Donald Trump's demand for the release of Israeli hostages.\",\n  \"reason\": \"The headline article concerns a cruise-ship incident and contains no substantive conflict-related discussion. The Gaza reference is confined to a brief embedded news item and is not meaningfully connected to the article's topic.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T04:37:29Z",
+  "duration_seconds": 4.014,
+  "error": null
+}

@@ -1,0 +1,65 @@
+{
+  "article_id": "107216109",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_04/ca/107216109.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_04/ca/107216109.json"
+  },
+  "manifest_row": {
+    "article_id": "107216109",
+    "group": "global_north_2024_04",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2024_04/ca/107216109.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "passing",
+    "main_topic": "Growth, launches, and delistings in the Canadian exchange-traded fund market",
+    "conflict_relevance": "The main article is unrelated to Gaza or the Israel-Palestine conflict, but the text includes embedded news snippets reporting on Israeli military actions in Gaza, alleged AI-assisted targeting, and the killing of aid workers.",
+    "reason": "The article's primary subject is Canadian ETFs and financial markets. However, the embedded Gaza-related snippets contain meaningful conflict discourse rather than merely a boilerplate mention, making the item peripheral rather than excludable.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "c942667da83873e504e2a3ffe3556baf105202733d489a252614df170bcc45a5",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "1a4d5530940a972757e814a686ff5922b4ee97b6eaf7116a3bcbca6dc3f0caab",
+    "raw_response_text_sha256": "27446f2b574ef63362a4be742c867fef6e8839b7e46c107b4648db23fa9fdcb0"
+  },
+  "api_metadata": {
+    "id": "resp_007f3766a629f714006aaa0af53d3c87d2b47a1aa434e68e65",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789528821.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2486,
+      "input_tokens_details": {
+        "cache_write_tokens": 2483,
+        "cached_tokens": 0
+      },
+      "output_tokens": 313,
+      "output_tokens_details": {
+        "reasoning_tokens": 137
+      },
+      "total_tokens": 2799
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Growth, launches, and delistings in the Canadian exchange-traded fund market\",\n  \"conflict_relevance\": \"The main article is unrelated to Gaza or the Israel-Palestine conflict, but the text includes embedded news snippets reporting on Israeli military actions in Gaza, alleged AI-assisted targeting, and the killing of aid workers.\",\n  \"reason\": \"The article's primary subject is Canadian ETFs and financial markets. However, the embedded Gaza-related snippets contain meaningful conflict discourse rather than merely a boilerplate mention, making the item peripheral rather than excludable.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:20:26Z",
+  "duration_seconds": 4.972,
+  "error": null
+}

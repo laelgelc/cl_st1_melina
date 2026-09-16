@@ -1,0 +1,65 @@
+{
+  "article_id": "102728653",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_south_2023_10/ph/102728653.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_south_2023_10/ph/102728653.json"
+  },
+  "manifest_row": {
+    "article_id": "102728653",
+    "group": "global_south_2023_10",
+    "country_code": "ph",
+    "filepath": "corpus/02_now_organised/global_south_2023_10/ph/102728653.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.97,
+    "gaza_role": "passing",
+    "main_topic": "Philippine economic resilience and financing for small and medium-sized enterprises",
+    "conflict_relevance": "Gaza and the Israel-Hamas war are mentioned briefly as part of a general discussion of global turmoil, but the article does not analyze the conflict or its political, humanitarian, or social implications.",
+    "reason": "The article is primarily an economic commentary about Philippine trade exposure, domestic consumption, bank liquidity, regulation, and SME financing. Gaza appears only in the opening comparison of two regional wars and has no substantive role in the remainder of the article.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "d4f3bf9507b76fe00779b8da2aed06cd8523a4322787b5b2868e47e3e61ccf3e",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "35338899fcd43978b7a2b129d3c35ea26f4ba17ed32370febc3e667e6b694c09",
+    "raw_response_text_sha256": "38475710ee093f73df262d8235e466d458b536990885860c003f7e78b4bdbc7c"
+  },
+  "api_metadata": {
+    "id": "resp_0e2032fbf69063d2006aaa33df18e087d196af2bb842d3c215",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789539295.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1901,
+      "input_tokens_details": {
+        "cache_write_tokens": 1898,
+        "cached_tokens": 0
+      },
+      "output_tokens": 233,
+      "output_tokens_details": {
+        "reasoning_tokens": 59
+      },
+      "total_tokens": 2134
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.97,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Philippine economic resilience and financing for small and medium-sized enterprises\",\n  \"conflict_relevance\": \"Gaza and the Israel-Hamas war are mentioned briefly as part of a general discussion of global turmoil, but the article does not analyze the conflict or its political, humanitarian, or social implications.\",\n  \"reason\": \"The article is primarily an economic commentary about Philippine trade exposure, domestic consumption, bank liquidity, regulation, and SME financing. Gaza appears only in the opening comparison of two regional wars and has no substantive role in the remainder of the article.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T06:14:58Z",
+  "duration_seconds": 3.14,
+  "error": null
+}

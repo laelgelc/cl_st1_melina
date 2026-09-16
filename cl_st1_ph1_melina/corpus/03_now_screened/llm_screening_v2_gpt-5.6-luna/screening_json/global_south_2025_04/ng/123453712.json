@@ -1,0 +1,65 @@
+{
+  "article_id": "123453712",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_south_2025_04/ng/123453712.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_south_2025_04/ng/123453712.json"
+  },
+  "manifest_row": {
+    "article_id": "123453712",
+    "group": "global_south_2025_04",
+    "country_code": "ng",
+    "filepath": "corpus/02_now_organised/global_south_2025_04/ng/123453712.txt"
+  },
+  "screening": {
+    "category": "CORE",
+    "confidence": 0.98,
+    "gaza_role": "substantial",
+    "main_topic": "Deportation proceedings against pro-Palestinian activist Mahmoud Khalil",
+    "conflict_relevance": "The article directly concerns a prominent activist whose protests against Israel and the Gaza war are central to the deportation case and its political and free-speech implications.",
+    "reason": "Khalil's activism, the Columbia protests, Israel's military operation in Gaza, and the US government's response are substantive elements of the article.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": true
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "5f6bb30143f93f5917c96e18bd45aa1cf47cfb7f0bb4b44fae47a0ef65e1e4d1",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "50e061378b10a3d5f63b5fb77937ed8e646281237f617aed12cc86ec3f0a0e50",
+    "raw_response_text_sha256": "ce80da76174aa9df937005438f693d1308048e257c4be71e6f8873c0fc5d02bd"
+  },
+  "api_metadata": {
+    "id": "resp_0debf9ddd20ff133006aaa47f8234887d1b30b7b8563f9403a",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789544440.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 939,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 225,
+      "output_tokens_details": {
+        "reasoning_tokens": 75
+      },
+      "total_tokens": 1164
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"CORE\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"substantial\",\n  \"main_topic\": \"Deportation proceedings against pro-Palestinian activist Mahmoud Khalil\",\n  \"conflict_relevance\": \"The article directly concerns a prominent activist whose protests against Israel and the Gaza war are central to the deportation case and its political and free-speech implications.\",\n  \"reason\": \"Khalil's activism, the Columbia protests, Israel's military operation in Gaza, and the US government's response are substantive elements of the article.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": true\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T07:40:43Z",
+  "duration_seconds": 3.354,
+  "error": null
+}

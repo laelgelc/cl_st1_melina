@@ -1,0 +1,65 @@
+{
+  "article_id": "103443877",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_11/us/103443877.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_11/us/103443877.json"
+  },
+  "manifest_row": {
+    "article_id": "103443877",
+    "group": "global_north_2023_11",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2023_11/us/103443877.txt"
+  },
+  "screening": {
+    "category": "CORE",
+    "confidence": 0.99,
+    "gaza_role": "central",
+    "main_topic": "Israel-Hamas war, fighting around Shifa Hospital, Gaza military operations, hostages, humanitarian conditions, and related regional and domestic political developments",
+    "conflict_relevance": "The article is centrally focused on the Israel-Hamas war and Gaza, including Israeli military operations, alleged Hamas activity in hospitals, civilian and military casualties, hostages, fuel shortages, ceasefire debates, antisemitism, protests, U.S. policy, and regional escalation.",
+    "reason": "The headline and lead concern Israel's demand that Hamas surrender its alleged base beneath Shifa Hospital in Gaza, while the majority of the text consists of detailed updates and commentary directly related to the Gaza war and its wider political and regional consequences. Although the page contains multiple news snippets and secondary items, these are predominantly connected to the conflict.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": true
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "c317fb7013799b4c229ed600290a40c8611ff5a2311403d402d10c10abdd9ea3",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "35e7ff8c8647ae2fcde16e55a4dc31494ad9d8c1c82eac1834cee08b14043017",
+    "raw_response_text_sha256": "d89f6d608dc1db81ed0a2c07a3391b0bef31def086e7f44946554d8b87c59420"
+  },
+  "api_metadata": {
+    "id": "resp_0634804465b9f097006aa9fe6d1f5c87d29afc52307258c1f6",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789525613.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 5768,
+      "input_tokens_details": {
+        "cache_write_tokens": 5765,
+        "cached_tokens": 0
+      },
+      "output_tokens": 310,
+      "output_tokens_details": {
+        "reasoning_tokens": 87
+      },
+      "total_tokens": 6078
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"CORE\",\n  \"confidence\": 0.99,\n  \"gaza_role\": \"central\",\n  \"main_topic\": \"Israel-Hamas war, fighting around Shifa Hospital, Gaza military operations, hostages, humanitarian conditions, and related regional and domestic political developments\",\n  \"conflict_relevance\": \"The article is centrally focused on the Israel-Hamas war and Gaza, including Israeli military operations, alleged Hamas activity in hospitals, civilian and military casualties, hostages, fuel shortages, ceasefire debates, antisemitism, protests, U.S. policy, and regional escalation.\",\n  \"reason\": \"The headline and lead concern Israel's demand that Hamas surrender its alleged base beneath Shifa Hospital in Gaza, while the majority of the text consists of detailed updates and commentary directly related to the Gaza war and its wider political and regional consequences. Although the page contains multiple news snippets and secondary items, these are predominantly connected to the conflict.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": true\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:26:57Z",
+  "duration_seconds": 4.748,
+  "error": null
+}

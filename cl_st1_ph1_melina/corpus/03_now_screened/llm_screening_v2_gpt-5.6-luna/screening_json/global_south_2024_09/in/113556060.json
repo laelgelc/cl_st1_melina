@@ -1,0 +1,65 @@
+{
+  "article_id": "113556060",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_south_2024_09/in/113556060.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_south_2024_09/in/113556060.json"
+  },
+  "manifest_row": {
+    "article_id": "113556060",
+    "group": "global_south_2024_09",
+    "country_code": "in",
+    "filepath": "corpus/02_now_organised/global_south_2024_09/in/113556060.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "gaza_role": "passing",
+    "main_topic": "Adani Green Energy and TotalEnergies renewable energy joint venture in India",
+    "conflict_relevance": "The article is about renewable energy projects in Gujarat; Gaza appears only in an unrelated embedded headline about hostages and a ceasefire.",
+    "reason": "The Gaza reference is a passing, unrelated news snippet and does not contribute meaningfully to discourse analysis of the conflict.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "a4b0b040550ddd8ce99458268a4dc42c03759c5ff1ddf67ab547a3bff8c724b4",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "cacf63903dd438a154199f3265b523c3a9a85484aba38231c40d1ca85a479b8a",
+    "raw_response_text_sha256": "7d379a7c73c3750899f4c111f24dadb70e79fe29b2732d1e29bf7b99bccdf22a"
+  },
+  "api_metadata": {
+    "id": "resp_01455879a6fc50e6006aaa3ef15eb087d1961cb290000812ed",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789542129.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1076,
+      "input_tokens_details": {
+        "cache_write_tokens": 1073,
+        "cached_tokens": 0
+      },
+      "output_tokens": 205,
+      "output_tokens_details": {
+        "reasoning_tokens": 67
+      },
+      "total_tokens": 1281
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Adani Green Energy and TotalEnergies renewable energy joint venture in India\",\n  \"conflict_relevance\": \"The article is about renewable energy projects in Gujarat; Gaza appears only in an unrelated embedded headline about hostages and a ceasefire.\",\n  \"reason\": \"The Gaza reference is a passing, unrelated news snippet and does not contribute meaningfully to discourse analysis of the conflict.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T07:02:12Z",
+  "duration_seconds": 3.024,
+  "error": null
+}

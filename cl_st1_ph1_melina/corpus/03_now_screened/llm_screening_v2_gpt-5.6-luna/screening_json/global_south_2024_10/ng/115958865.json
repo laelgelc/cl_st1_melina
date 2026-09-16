@@ -1,0 +1,65 @@
+{
+  "article_id": "115958865",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_south_2024_10/ng/115958865.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_south_2024_10/ng/115958865.json"
+  },
+  "manifest_row": {
+    "article_id": "115958865",
+    "group": "global_south_2024_10",
+    "country_code": "ng",
+    "filepath": "corpus/02_now_organised/global_south_2024_10/ng/115958865.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.96,
+    "gaza_role": "background",
+    "main_topic": "Women’s empowerment and gender equality initiatives in Nigeria",
+    "conflict_relevance": "The main article concerns Nigerian women’s empowerment, but it includes a separate news snippet reporting the US warning Israel over humanitarian aid delivery to war-battered Gaza.",
+    "reason": "The Gaza-related material is meaningful but appears as an unrelated embedded roundup item rather than part of the main article’s topic or argument.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "9ef3f69162b20068474b877f72e66a9ecef8f88fa6557682b9460bf3d6f5c818",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "623b0c21eaa8c95faab2c0972a215d6ab854d67d6e7d8de0620266a0a9a59e08",
+    "raw_response_text_sha256": "1e1dfd9d420ee3618ccd86b8fa38e881f5c37ccd7c84e9f6282a578ed3b6fa4c"
+  },
+  "api_metadata": {
+    "id": "resp_02d9852fe78f3662006aaa40e6084487d1a790111865df1b5d",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789542630.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2600,
+      "input_tokens_details": {
+        "cache_write_tokens": 2597,
+        "cached_tokens": 0
+      },
+      "output_tokens": 317,
+      "output_tokens_details": {
+        "reasoning_tokens": 175
+      },
+      "total_tokens": 2917
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.96,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Women’s empowerment and gender equality initiatives in Nigeria\",\n  \"conflict_relevance\": \"The main article concerns Nigerian women’s empowerment, but it includes a separate news snippet reporting the US warning Israel over humanitarian aid delivery to war-battered Gaza.\",\n  \"reason\": \"The Gaza-related material is meaningful but appears as an unrelated embedded roundup item rather than part of the main article’s topic or argument.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T07:10:34Z",
+  "duration_seconds": 4.474,
+  "error": null
+}

@@ -1,0 +1,65 @@
+{
+  "article_id": "102743635",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_10/gb/102743635.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_10/gb/102743635.json"
+  },
+  "manifest_row": {
+    "article_id": "102743635",
+    "group": "global_north_2023_10",
+    "country_code": "gb",
+    "filepath": "corpus/02_now_organised/global_north_2023_10/gb/102743635.txt"
+  },
+  "screening": {
+    "category": "CORE",
+    "confidence": 0.92,
+    "gaza_role": "central",
+    "main_topic": "Israeli preparations for a potential ground invasion of Gaza",
+    "conflict_relevance": "Directly concerns Israeli military action in Gaza and the anticipated ground invasion aimed at Hamas.",
+    "reason": "The opening sentence is a substantive report about Israel's defence minister addressing troops at the Gaza border and signalling an impending ground invasion. Although the text also contains an unrelated U.S. Federal Reserve item and Reuters boilerplate, the Gaza report is the apparent main news item.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": true
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "1fa94c883a7ee7555dd5ff32e16c5e6f0bd0f11b440420b30bf3e4e44e24e4f8",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "926c7427b6ec7842e3a33506be527028ae1699e9d0738699d41a6c91f15a33ac",
+    "raw_response_text_sha256": "64aa8a572b639072d1ed241a912113330bbb575b53836a8a6a212aba5ba11a16"
+  },
+  "api_metadata": {
+    "id": "resp_0a4dc6ad8771c96f006aa9f75372b887d29cc0dc881ae8401c",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789523795.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 757,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 333,
+      "output_tokens_details": {
+        "reasoning_tokens": 179
+      },
+      "total_tokens": 1090
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"CORE\",\n  \"confidence\": 0.92,\n  \"gaza_role\": \"central\",\n  \"main_topic\": \"Israeli preparations for a potential ground invasion of Gaza\",\n  \"conflict_relevance\": \"Directly concerns Israeli military action in Gaza and the anticipated ground invasion aimed at Hamas.\",\n  \"reason\": \"The opening sentence is a substantive report about Israel's defence minister addressing troops at the Gaza border and signalling an impending ground invasion. Although the text also contains an unrelated U.S. Federal Reserve item and Reuters boilerplate, the Gaza report is the apparent main news item.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": true\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T01:56:39Z",
+  "duration_seconds": 3.97,
+  "error": null
+}

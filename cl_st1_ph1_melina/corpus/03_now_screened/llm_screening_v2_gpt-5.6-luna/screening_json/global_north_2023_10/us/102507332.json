@@ -1,0 +1,65 @@
+{
+  "article_id": "102507332",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_10/us/102507332.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_10/us/102507332.json"
+  },
+  "manifest_row": {
+    "article_id": "102507332",
+    "group": "global_north_2023_10",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2023_10/us/102507332.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.94,
+    "gaza_role": "passing",
+    "main_topic": "Retirement and closure of a Chicago bicycle business",
+    "conflict_relevance": "A separate appended sentence mentions two people allegedly captured by Hamas near the Gaza border, linking the text incidentally to the Israel-Hamas conflict and hostages.",
+    "reason": "The main article is entirely about a bicycle shop owner retiring and closing her business. However, it includes a meaningful but unrelated hostage-related sentence concerning Hamas and the Gaza border, making it peripheral rather than excludable.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "6b2ed6a6a2de60205989802b4b7c28ce125ba705714f1588e2f04863de58f44d",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "0814ec01308fa29d0b256d657fbe88862866efc786d595b99d1a8413850f0b74",
+    "raw_response_text_sha256": "ef2f6fba141270ec65498f73bac1c9b0faea0fab2237ad7226e50c3ee73bc46d"
+  },
+  "api_metadata": {
+    "id": "resp_0514b0f8885fd7e9006aa9f887a8f087d298d03851cbc7b2e7",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789524103.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1805,
+      "input_tokens_details": {
+        "cache_write_tokens": 1802,
+        "cached_tokens": 0
+      },
+      "output_tokens": 269,
+      "output_tokens_details": {
+        "reasoning_tokens": 110
+      },
+      "total_tokens": 2074
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.94,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Retirement and closure of a Chicago bicycle business\",\n  \"conflict_relevance\": \"A separate appended sentence mentions two people allegedly captured by Hamas near the Gaza border, linking the text incidentally to the Israel-Hamas conflict and hostages.\",\n  \"reason\": \"The main article is entirely about a bicycle shop owner retiring and closing her business. However, it includes a meaningful but unrelated hostage-related sentence concerning Hamas and the Gaza border, making it peripheral rather than excludable.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:01:46Z",
+  "duration_seconds": 3.304,
+  "error": null
+}

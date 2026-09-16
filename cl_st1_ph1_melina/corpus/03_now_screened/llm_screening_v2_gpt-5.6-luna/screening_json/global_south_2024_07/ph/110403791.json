@@ -1,0 +1,65 @@
+{
+  "article_id": "110403791",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_south_2024_07/ph/110403791.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_south_2024_07/ph/110403791.json"
+  },
+  "manifest_row": {
+    "article_id": "110403791",
+    "group": "global_south_2024_07",
+    "country_code": "ph",
+    "filepath": "corpus/02_now_organised/global_south_2024_07/ph/110403791.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "gaza_role": "passing",
+    "main_topic": "Pressure on Joe Biden to withdraw from the 2024 presidential election",
+    "conflict_relevance": "The Israel-Gaza conflict is mentioned only briefly as one of several global issues discussed at Biden's news conference.",
+    "reason": "The article is primarily about Biden's reelection campaign and Democratic concerns about his age and debate performance. It contains no meaningful discussion of Gaza, Israel-Palestine, or the conflict.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "0e83bd19ff027cc738e6aa6c740638688f1660d87aa8c3ebb11d0d0239fb9016",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "6c00ab6b9f132788d127c05cc344df5725bdbf9691d4aa8ff9b1637c4680aa19",
+    "raw_response_text_sha256": "1fe51d82b5df912d30c0e1da3a28db856eb5049938b7b9ca5eb5fc4a50cb925d"
+  },
+  "api_metadata": {
+    "id": "resp_0ab5cdce9703cf0a006aaa3d7178a087d1a103bd079a63291a",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789541745.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1410,
+      "input_tokens_details": {
+        "cache_write_tokens": 1407,
+        "cached_tokens": 0
+      },
+      "output_tokens": 201,
+      "output_tokens_details": {
+        "reasoning_tokens": 53
+      },
+      "total_tokens": 1611
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Pressure on Joe Biden to withdraw from the 2024 presidential election\",\n  \"conflict_relevance\": \"The Israel-Gaza conflict is mentioned only briefly as one of several global issues discussed at Biden's news conference.\",\n  \"reason\": \"The article is primarily about Biden's reelection campaign and Democratic concerns about his age and debate performance. It contains no meaningful discussion of Gaza, Israel-Palestine, or the conflict.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T06:55:48Z",
+  "duration_seconds": 2.794,
+  "error": null
+}

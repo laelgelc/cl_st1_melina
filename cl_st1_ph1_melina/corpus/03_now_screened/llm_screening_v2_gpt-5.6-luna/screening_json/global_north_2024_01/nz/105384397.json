@@ -1,0 +1,65 @@
+{
+  "article_id": "105384397",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_01/nz/105384397.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_01/nz/105384397.json"
+  },
+  "manifest_row": {
+    "article_id": "105384397",
+    "group": "global_north_2024_01",
+    "country_code": "nz",
+    "filepath": "corpus/02_now_organised/global_north_2024_01/nz/105384397.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.96,
+    "gaza_role": "background",
+    "main_topic": "New Zealand Nurses Organisation news and activities",
+    "conflict_relevance": "The page includes multiple substantive NZNO statements expressing concern about attacks on health workers, civilian deaths, access to healthcare, and violence in Gaza and the Israel-Palestine conflict, but its overall focus is the organisation's broader nursing and labour-related news.",
+    "reason": "This is a multi-item latest-news page rather than a single article focused on Gaza. The Gaza-related entries provide meaningful humanitarian and healthcare discourse, making it relevant as peripheral material but not core conflict coverage.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "27d5aa1c8ee41bccf31d1be84a6ce5b78e2bb075fb0a415223c832307837c908",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "b1d457ac3c0c70edf58ca5ec05344295fcbc38a171c55b065580c514b20c144f",
+    "raw_response_text_sha256": "6785cfa45e5e851eab940c3369b57f2a68d571820496f7d07293e33294dd03d6"
+  },
+  "api_metadata": {
+    "id": "resp_0c6a20b875ea7716006aaa046c726887d285774048fe28108c",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789527148.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1431,
+      "input_tokens_details": {
+        "cache_write_tokens": 1428,
+        "cached_tokens": 0
+      },
+      "output_tokens": 300,
+      "output_tokens_details": {
+        "reasoning_tokens": 126
+      },
+      "total_tokens": 1731
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.96,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"New Zealand Nurses Organisation news and activities\",\n  \"conflict_relevance\": \"The page includes multiple substantive NZNO statements expressing concern about attacks on health workers, civilian deaths, access to healthcare, and violence in Gaza and the Israel-Palestine conflict, but its overall focus is the organisation's broader nursing and labour-related news.\",\n  \"reason\": \"This is a multi-item latest-news page rather than a single article focused on Gaza. The Gaza-related entries provide meaningful humanitarian and healthcare discourse, making it relevant as peripheral material but not core conflict coverage.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:52:31Z",
+  "duration_seconds": 3.759,
+  "error": null
+}

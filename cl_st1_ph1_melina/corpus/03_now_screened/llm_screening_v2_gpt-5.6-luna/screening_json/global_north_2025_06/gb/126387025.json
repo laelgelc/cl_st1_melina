@@ -1,0 +1,65 @@
+{
+  "article_id": "126387025",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_06/gb/126387025.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_06/gb/126387025.json"
+  },
+  "manifest_row": {
+    "article_id": "126387025",
+    "group": "global_north_2025_06",
+    "country_code": "gb",
+    "filepath": "corpus/02_now_organised/global_north_2025_06/gb/126387025.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.97,
+    "gaza_role": "background",
+    "main_topic": "UK nuclear deterrence, NATO escalation, and the history of anti-nuclear protests",
+    "conflict_relevance": "The main article concerns nuclear weapons and NATO rather than Gaza or Palestine, but it includes a substantive embedded reference to Israel's conduct in Gaza and the Gaza Humanitarian Foundation.",
+    "reason": "The primary article is about Starmer's proposed nuclear deterrent and anti-nuclear activism. Gaza appears in a separate, meaningful article teaser discussing starvation, coercion, and humanitarian manipulation, making the item useful for broader discourse analysis but unsuitable as core Gaza-conflict coverage.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "088580269d4e7040fd6d2eb44a5b472d49ebdcb5eaaab35a93bc0e41cdf29c79",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "749f78af51e38e372affd3ba955682a9145fa095ebefb15b8a8fb9aafc9ae814",
+    "raw_response_text_sha256": "da812a69180bbe068b3e968fa3c007b65ba9b76954f34d1fa29bce64c5982857"
+  },
+  "api_metadata": {
+    "id": "resp_0eaaebb3d4138f8f006aaa2fd771bc87d1a6ae75342f1581fe",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789538263.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2225,
+      "input_tokens_details": {
+        "cache_write_tokens": 2222,
+        "cached_tokens": 0
+      },
+      "output_tokens": 395,
+      "output_tokens_details": {
+        "reasoning_tokens": 215
+      },
+      "total_tokens": 2620
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.97,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"UK nuclear deterrence, NATO escalation, and the history of anti-nuclear protests\",\n  \"conflict_relevance\": \"The main article concerns nuclear weapons and NATO rather than Gaza or Palestine, but it includes a substantive embedded reference to Israel's conduct in Gaza and the Gaza Humanitarian Foundation.\",\n  \"reason\": \"The primary article is about Starmer's proposed nuclear deterrent and anti-nuclear activism. Gaza appears in a separate, meaningful article teaser discussing starvation, coercion, and humanitarian manipulation, making the item useful for broader discourse analysis but unsuitable as core Gaza-conflict coverage.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T05:57:48Z",
+  "duration_seconds": 5.463,
+  "error": null
+}

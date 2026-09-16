@@ -1,0 +1,65 @@
+{
+  "article_id": "113193788",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_08/ie/113193788.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_08/ie/113193788.json"
+  },
+  "manifest_row": {
+    "article_id": "113193788",
+    "group": "global_north_2024_08",
+    "country_code": "ie",
+    "filepath": "corpus/02_now_organised/global_north_2024_08/ie/113193788.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "background",
+    "main_topic": "Weekend events and entertainment in Ireland",
+    "conflict_relevance": "The article is primarily an events roundup, but it includes a Gaza fundraising concert whose proceeds support children in Gaza and the West Bank.",
+    "reason": "Gaza is meaningfully referenced in connection with humanitarian fundraising, but the article is not centrally about the conflict and most of the text concerns unrelated cultural events.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "3b46071258ad28b1508845921ad2ec8d629646f6495c9d1150f4f8f4b19e8daf",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "b7d358f848cc0a64a7fb1f6134544ab89e086b4cd54588c31e2e6a85bcdcee7e",
+    "raw_response_text_sha256": "688f2beb763259a7ad1623c83e9f79aa5cb2525417eb3b165224bba8e001ea8f"
+  },
+  "api_metadata": {
+    "id": "resp_0de789bac8cb021f006aaa1461ac8887d283d0080a2e021c99",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789531233.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1337,
+      "input_tokens_details": {
+        "cache_write_tokens": 1334,
+        "cached_tokens": 0
+      },
+      "output_tokens": 220,
+      "output_tokens_details": {
+        "reasoning_tokens": 81
+      },
+      "total_tokens": 1557
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Weekend events and entertainment in Ireland\",\n  \"conflict_relevance\": \"The article is primarily an events roundup, but it includes a Gaza fundraising concert whose proceeds support children in Gaza and the West Bank.\",\n  \"reason\": \"Gaza is meaningfully referenced in connection with humanitarian fundraising, but the article is not centrally about the conflict and most of the text concerns unrelated cultural events.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T04:00:37Z",
+  "duration_seconds": 3.696,
+  "error": null
+}

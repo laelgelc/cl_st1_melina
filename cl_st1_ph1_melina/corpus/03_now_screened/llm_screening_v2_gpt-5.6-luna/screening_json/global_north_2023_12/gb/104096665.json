@@ -1,0 +1,65 @@
+{
+  "article_id": "104096665",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_12/gb/104096665.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_12/gb/104096665.json"
+  },
+  "manifest_row": {
+    "article_id": "104096665",
+    "group": "global_north_2023_12",
+    "country_code": "gb",
+    "filepath": "corpus/02_now_organised/global_north_2023_12/gb/104096665.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.96,
+    "gaza_role": "passing",
+    "main_topic": "Irish politics, Dublin riots, asylum policy, far-right extremism, and the legacy of the Troubles",
+    "conflict_relevance": "The article is primarily about Irish domestic politics and asylum policy, but one letter references calls for a cessation of violence in Gaza as an analogy in a discussion of Irish republicanism.",
+    "reason": "Gaza appears in a meaningful but brief comparison and is not central to the article's main subjects.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "8661668a37b58cc9ccc97e9481d025126ba220c2265de6209f396c0c9c56fbd7",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "336a0b9a5992df448bd509a166d69062224ca9507859851dd1c15001e74b03a3",
+    "raw_response_text_sha256": "a65931d49d9198cbfc3349257297287382abae44fb4141de14d01f1b1579bcfc"
+  },
+  "api_metadata": {
+    "id": "resp_0e168b22fefe1840006aaa00f4461087d28150228e134ae610",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789526260.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1849,
+      "input_tokens_details": {
+        "cache_write_tokens": 1846,
+        "cached_tokens": 0
+      },
+      "output_tokens": 224,
+      "output_tokens_details": {
+        "reasoning_tokens": 73
+      },
+      "total_tokens": 2073
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.96,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Irish politics, Dublin riots, asylum policy, far-right extremism, and the legacy of the Troubles\",\n  \"conflict_relevance\": \"The article is primarily about Irish domestic politics and asylum policy, but one letter references calls for a cessation of violence in Gaza as an analogy in a discussion of Irish republicanism.\",\n  \"reason\": \"Gaza appears in a meaningful but brief comparison and is not central to the article's main subjects.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:37:44Z",
+  "duration_seconds": 4.396,
+  "error": null
+}

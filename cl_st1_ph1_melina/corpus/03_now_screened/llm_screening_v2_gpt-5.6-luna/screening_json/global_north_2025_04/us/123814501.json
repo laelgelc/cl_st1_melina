@@ -1,0 +1,65 @@
+{
+  "article_id": "123814501",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_04/us/123814501.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_04/us/123814501.json"
+  },
+  "manifest_row": {
+    "article_id": "123814501",
+    "group": "global_north_2025_04",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2025_04/us/123814501.txt"
+  },
+  "screening": {
+    "category": "CORE",
+    "confidence": 0.99,
+    "gaza_role": "substantial",
+    "main_topic": "An Israeli editorial celebrating Independence Day torch lighters and national resilience amid the Israel-Hamas war",
+    "conflict_relevance": "The article directly discusses the war, Israeli military personnel and casualties, the October 7 attacks, Hamas captivity, hostages held in Gaza, and pro-Israel wartime national identity and media framing.",
+    "reason": "The war and its human, military, and ideological dimensions are central to the article, which frames Israeli survivors, soldiers, bereaved families, and advocates as symbols of national resilience.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": true
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "0367607b2124a98f6c73149d2b5f73e8814438e7af868e843d40744c98122a62",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "cca476ccd086c761787c71ee79c0b5831dc0b387181c3a7297647d0dc7d7adb6",
+    "raw_response_text_sha256": "0bc1e7246ee020e45ff00dfea759418957051de73e2c681d6c40f57a56ef4ba7"
+  },
+  "api_metadata": {
+    "id": "resp_0ea558da498783a9006aaa2a840c9487d193af48d90369322f",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789536900.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1671,
+      "input_tokens_details": {
+        "cache_write_tokens": 1668,
+        "cached_tokens": 0
+      },
+      "output_tokens": 225,
+      "output_tokens_details": {
+        "reasoning_tokens": 56
+      },
+      "total_tokens": 1896
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"CORE\",\n  \"confidence\": 0.99,\n  \"gaza_role\": \"substantial\",\n  \"main_topic\": \"An Israeli editorial celebrating Independence Day torch lighters and national resilience amid the Israel-Hamas war\",\n  \"conflict_relevance\": \"The article directly discusses the war, Israeli military personnel and casualties, the October 7 attacks, Hamas captivity, hostages held in Gaza, and pro-Israel wartime national identity and media framing.\",\n  \"reason\": \"The war and its human, military, and ideological dimensions are central to the article, which frames Israeli survivors, soldiers, bereaved families, and advocates as symbols of national resilience.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": true\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T05:35:03Z",
+  "duration_seconds": 3.368,
+  "error": null
+}

@@ -1,0 +1,65 @@
+{
+  "article_id": "125450010",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_06/us/125450010.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_06/us/125450010.json"
+  },
+  "manifest_row": {
+    "article_id": "125450010",
+    "group": "global_north_2025_06",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2025_06/us/125450010.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.95,
+    "gaza_role": "background",
+    "main_topic": "ICE detention of the family of a suspect in an antisemitic attack in Colorado",
+    "conflict_relevance": "The attack targeted an event supporting hostages in Gaza, and the suspect reportedly expressed an intention to kill Zionists, making the Israel-Gaza conflict and related antisemitism part of the article's context.",
+    "reason": "The article is primarily about immigration custody, criminal charges, and the investigation into the Colorado attack, rather than Gaza or the Israel-Hamas war itself. However, it contains meaningful discussion of a Gaza-related hostage-support event and anti-Zionist violence.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "6f4370399f42dd8367ab34f257c8a23253806fff837eb39a49628daf2bf6cd80",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "55220e881d3692ef19b7168fabd99330a66be84ee89d46026d239d7877d4a987",
+    "raw_response_text_sha256": "05d7dac2ec48b1af9145628eec14f90050f16e631c8e44bffe2b5a72165e118b"
+  },
+  "api_metadata": {
+    "id": "resp_0ea50849677ccd40006aaa30be670887d19fe07f90b1ebdd27",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789538494.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1019,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 288,
+      "output_tokens_details": {
+        "reasoning_tokens": 105
+      },
+      "total_tokens": 1307
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.95,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"ICE detention of the family of a suspect in an antisemitic attack in Colorado\",\n  \"conflict_relevance\": \"The attack targeted an event supporting hostages in Gaza, and the suspect reportedly expressed an intention to kill Zionists, making the Israel-Gaza conflict and related antisemitism part of the article's context.\",\n  \"reason\": \"The article is primarily about immigration custody, criminal charges, and the investigation into the Colorado attack, rather than Gaza or the Israel-Hamas war itself. However, it contains meaningful discussion of a Gaza-related hostage-support event and anti-Zionist violence.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T06:01:39Z",
+  "duration_seconds": 5.655,
+  "error": null
+}

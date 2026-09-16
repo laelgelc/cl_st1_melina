@@ -1,0 +1,65 @@
+{
+  "article_id": "200092372",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_12/us/200092372.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_12/us/200092372.json"
+  },
+  "manifest_row": {
+    "article_id": "200092372",
+    "group": "global_north_2023_12",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2023_12/us/200092372.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "passing",
+    "main_topic": "The Sudanese civil war, mass displacement, atrocities, humanitarian crisis, and international and Russian involvement",
+    "conflict_relevance": "The article is primarily about Sudan and only mentions the Gaza war in a broader discussion of the Biden administration's multiple international crises; it also includes a promotional reference to antisemitism.",
+    "reason": "Gaza and the Israel-Hamas war are present in a meaningful contextual sentence but are not substantively analyzed or central to the article.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "c697ea9af1bf1b70f9ac7cd790d63b5c66aa5e79f805280613acdc71c501515e",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "861fbf1f205656c2d464be430e4e686614b35a6ec255a647dd62fc5328ca2c77",
+    "raw_response_text_sha256": "4adcf2a974ec18ced4425659ec35f6b53166336aca1f1c2d4865f595640af8ff"
+  },
+  "api_metadata": {
+    "id": "resp_014f4d938f035daa006aaa033eae9887d28e8eac9b6ca76f8d",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789526846.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2755,
+      "input_tokens_details": {
+        "cache_write_tokens": 2752,
+        "cached_tokens": 0
+      },
+      "output_tokens": 259,
+      "output_tokens_details": {
+        "reasoning_tokens": 101
+      },
+      "total_tokens": 3014
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"The Sudanese civil war, mass displacement, atrocities, humanitarian crisis, and international and Russian involvement\",\n  \"conflict_relevance\": \"The article is primarily about Sudan and only mentions the Gaza war in a broader discussion of the Biden administration's multiple international crises; it also includes a promotional reference to antisemitism.\",\n  \"reason\": \"Gaza and the Israel-Hamas war are present in a meaningful contextual sentence but are not substantively analyzed or central to the article.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:47:29Z",
+  "duration_seconds": 3.442,
+  "error": null
+}

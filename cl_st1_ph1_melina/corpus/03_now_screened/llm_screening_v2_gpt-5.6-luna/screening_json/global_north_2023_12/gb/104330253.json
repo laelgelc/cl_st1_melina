@@ -1,0 +1,65 @@
+{
+  "article_id": "104330253",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_12/gb/104330253.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_12/gb/104330253.json"
+  },
+  "manifest_row": {
+    "article_id": "104330253",
+    "group": "global_north_2023_12",
+    "country_code": "gb",
+    "filepath": "corpus/02_now_organised/global_north_2023_12/gb/104330253.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.91,
+    "gaza_role": "background",
+    "main_topic": "Shipping disruptions and security risks in the Red Sea following Houthi attacks",
+    "conflict_relevance": "The article links Houthi attacks and threats against shipping directly to Israel's war in Gaza, the siege, and humanitarian aid, while also containing several additional Gaza- and Israel-Palestine-related news snippets.",
+    "reason": "The headline and main article focus on maritime security, shipping diversions, and the economic effects of Red Sea attacks rather than Gaza itself. However, the conflict is a meaningful causal context, and the text includes substantial embedded reporting on Gaza, hostages, West Bank violence, and Israeli military actions. The article is therefore useful for broader conflict-related discourse but is not core coverage of Gaza.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "cd9dd614c157b7c29f66366aa86b4ed29e86873941bd80aa1655b404128936cc",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "9d1d4d3efab98feca4e4e92f2c0ad4a9d06f57685d2a73e868d5e2178ac43bf8",
+    "raw_response_text_sha256": "f9d3d2f3859093717c8c41e91d0ae8e28704d659ae0823384dc57219fbf97a7a"
+  },
+  "api_metadata": {
+    "id": "resp_0dcc935ac1908df6006aaa0112835887d2b3872f95c28f3430",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789526290.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2017,
+      "input_tokens_details": {
+        "cache_write_tokens": 2014,
+        "cached_tokens": 0
+      },
+      "output_tokens": 403,
+      "output_tokens_details": {
+        "reasoning_tokens": 193
+      },
+      "total_tokens": 2420
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.91,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Shipping disruptions and security risks in the Red Sea following Houthi attacks\",\n  \"conflict_relevance\": \"The article links Houthi attacks and threats against shipping directly to Israel's war in Gaza, the siege, and humanitarian aid, while also containing several additional Gaza- and Israel-Palestine-related news snippets.\",\n  \"reason\": \"The headline and main article focus on maritime security, shipping diversions, and the economic effects of Red Sea attacks rather than Gaza itself. However, the conflict is a meaningful causal context, and the text includes substantial embedded reporting on Gaza, hostages, West Bank violence, and Israeli military actions. The article is therefore useful for broader conflict-related discourse but is not core coverage of Gaza.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:38:15Z",
+  "duration_seconds": 5.228,
+  "error": null
+}

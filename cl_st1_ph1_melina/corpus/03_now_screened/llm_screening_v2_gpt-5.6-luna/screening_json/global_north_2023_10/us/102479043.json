@@ -1,0 +1,65 @@
+{
+  "article_id": "102479043",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_10/us/102479043.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_10/us/102479043.json"
+  },
+  "manifest_row": {
+    "article_id": "102479043",
+    "group": "global_north_2023_10",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2023_10/us/102479043.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "passing",
+    "main_topic": "Chicago local news, community events, restaurants, arts, sports, and miscellaneous features",
+    "conflict_relevance": "The roundup includes a brief but substantive news item about Hamas's attack in southern Israel, Israeli casualties and hostages, and people fleeing Israeli airstrikes in Gaza.",
+    "reason": "The article is primarily an unrelated Chicago news and lifestyle roundup. Its only conflict-related content is a short embedded update on Israel and Gaza, which has some discourse relevance but is not central to the article.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "13dc07a9b53f195f789d6efe12a2dc4104c05d4dee9c1b84dfd53b1fb004dae3",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "fd4b612a4475629d4f5980a90b06a3bd84fd67c66a222b5f088babf4dca4eb6b",
+    "raw_response_text_sha256": "e7e71ddb6afb9bbb03a1fffd3cf77874ad5784141d5d1766ea34f25ead0ac2e3"
+  },
+  "api_metadata": {
+    "id": "resp_0b599c92a0a8e25f006aa9f8681b1887d2bd59d19fad1f651d",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789524072.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1921,
+      "input_tokens_details": {
+        "cache_write_tokens": 1918,
+        "cached_tokens": 0
+      },
+      "output_tokens": 284,
+      "output_tokens_details": {
+        "reasoning_tokens": 119
+      },
+      "total_tokens": 2205
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Chicago local news, community events, restaurants, arts, sports, and miscellaneous features\",\n  \"conflict_relevance\": \"The roundup includes a brief but substantive news item about Hamas's attack in southern Israel, Israeli casualties and hostages, and people fleeing Israeli airstrikes in Gaza.\",\n  \"reason\": \"The article is primarily an unrelated Chicago news and lifestyle roundup. Its only conflict-related content is a short embedded update on Israel and Gaza, which has some discourse relevance but is not central to the article.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:01:15Z",
+  "duration_seconds": 3.261,
+  "error": null
+}

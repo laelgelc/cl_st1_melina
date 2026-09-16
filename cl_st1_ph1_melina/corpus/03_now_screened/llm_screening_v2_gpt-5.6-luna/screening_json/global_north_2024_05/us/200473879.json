@@ -1,0 +1,65 @@
+{
+  "article_id": "200473879",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_05/us/200473879.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_05/us/200473879.json"
+  },
+  "manifest_row": {
+    "article_id": "200473879",
+    "group": "global_north_2024_05",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2024_05/us/200473879.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.97,
+    "gaza_role": "passing",
+    "main_topic": "Indianapolis police staffing, funding, and union negotiations",
+    "conflict_relevance": "The text includes a substantive but isolated sentence about arrests at U.S. campus protests against the war in Gaza.",
+    "reason": "The main article concerns U.S. policing and Indianapolis police staffing, while the Gaza-related content appears as an unrelated embedded news snippet. It is meaningful enough for peripheral discourse analysis but not relevant as core conflict coverage.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "170c4e3eedaf76315f3219dd738001de2b7fee9b71d8c3bf153822790e46da33",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "ed9dd0d5fdd0b59f2df17b44b30a7b5f65d96320a202f183e91be79f900c14fa",
+    "raw_response_text_sha256": "966204443f5b046283d41cc86ce3c6cfc7b15bc661739a6db7a746a26cf08699"
+  },
+  "api_metadata": {
+    "id": "resp_01c9adaf2aa61421006aaa0fb79c2887d28c66a8486cc9f10d",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789530039.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1782,
+      "input_tokens_details": {
+        "cache_write_tokens": 1779,
+        "cached_tokens": 0
+      },
+      "output_tokens": 272,
+      "output_tokens_details": {
+        "reasoning_tokens": 122
+      },
+      "total_tokens": 2054
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.97,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Indianapolis police staffing, funding, and union negotiations\",\n  \"conflict_relevance\": \"The text includes a substantive but isolated sentence about arrests at U.S. campus protests against the war in Gaza.\",\n  \"reason\": \"The main article concerns U.S. policing and Indianapolis police staffing, while the Gaza-related content appears as an unrelated embedded news snippet. It is meaningful enough for peripheral discourse analysis but not relevant as core conflict coverage.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:40:43Z",
+  "duration_seconds": 5.017,
+  "error": null
+}

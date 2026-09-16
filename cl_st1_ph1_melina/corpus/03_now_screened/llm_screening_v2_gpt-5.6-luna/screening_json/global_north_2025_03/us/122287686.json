@@ -1,0 +1,65 @@
+{
+  "article_id": "122287686",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_03/us/122287686.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_03/us/122287686.json"
+  },
+  "manifest_row": {
+    "article_id": "122287686",
+    "group": "global_north_2025_03",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2025_03/us/122287686.txt"
+  },
+  "screening": {
+    "category": "CORE",
+    "confidence": 0.96,
+    "gaza_role": "central",
+    "main_topic": "Israel-Gaza war, hostage negotiations, Palestinian-related security incidents, and regional conflict reporting",
+    "conflict_relevance": "The material directly addresses Gaza, Hamas, Israeli military operations, hostages, possible renewed war, and the political status of Palestinians, while also including related West Bank and regional security coverage.",
+    "reason": "The lead headline concerns a Gazan child allegedly sent by Hamas to an IDF post, and multiple included items directly discuss the Gaza war, Hamas-held hostages, military force, ceasefire dynamics, and Trump's statements about Gaza. Although the text is an aggregation of several snippets, its dominant discourse is directly connected to the conflict.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": true
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "c87bdc4ee66ef9fb376db7f74715a9924444f115a1be1b3852643cd8bc5da16c",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "74786cf7b2fe89ba79755da9371b9cf12a93bd55c00f248f1ff95270d3989cb2",
+    "raw_response_text_sha256": "06f2ac952975828ad917edccc2aa2466c37581fcdf894f218af61c3f4b9d67b5"
+  },
+  "api_metadata": {
+    "id": "resp_0b992bd2dc111535006aaa2777b01c87d19257cb8c9b19769c",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789536119.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1263,
+      "input_tokens_details": {
+        "cache_write_tokens": 1260,
+        "cached_tokens": 0
+      },
+      "output_tokens": 361,
+      "output_tokens_details": {
+        "reasoning_tokens": 167
+      },
+      "total_tokens": 1624
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"CORE\",\n  \"confidence\": 0.96,\n  \"gaza_role\": \"central\",\n  \"main_topic\": \"Israel-Gaza war, hostage negotiations, Palestinian-related security incidents, and regional conflict reporting\",\n  \"conflict_relevance\": \"The material directly addresses Gaza, Hamas, Israeli military operations, hostages, possible renewed war, and the political status of Palestinians, while also including related West Bank and regional security coverage.\",\n  \"reason\": \"The lead headline concerns a Gazan child allegedly sent by Hamas to an IDF post, and multiple included items directly discuss the Gaza war, Hamas-held hostages, military force, ceasefire dynamics, and Trump's statements about Gaza. Although the text is an aggregation of several snippets, its dominant discourse is directly connected to the conflict.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": true\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T05:22:04Z",
+  "duration_seconds": 5.271,
+  "error": null
+}

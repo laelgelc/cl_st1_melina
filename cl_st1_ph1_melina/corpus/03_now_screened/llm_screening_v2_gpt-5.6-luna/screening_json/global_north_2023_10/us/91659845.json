@@ -1,0 +1,65 @@
+{
+  "article_id": "91659845",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_10/us/91659845.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_10/us/91659845.json"
+  },
+  "manifest_row": {
+    "article_id": "91659845",
+    "group": "global_north_2023_10",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2023_10/us/91659845.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.97,
+    "gaza_role": "passing",
+    "main_topic": "Climate change and the increasing rapid intensification of Atlantic hurricanes",
+    "conflict_relevance": "A recommended-stories snippet contains meaningful references to Hamas's attack, Israeli bombings in Gaza, civilian targets, the Geneva Conventions, and the difficulty of distinguishing fighters from civilians.",
+    "reason": "The main article is entirely about hurricane intensification and climate change. Gaza-related discourse appears only in an embedded Recommended Stories item, making it peripheral rather than core, but the snippet contains substantive conflict-related language.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "a1b2063869c62b232fa093ad6b9121b0b9d66e60e296efc56c8ba3462c617143",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "2886bf66993769802692f9cf023c6b70b3f52e544bebe3e5f795954217e3e7db",
+    "raw_response_text_sha256": "eb899ced77ca289b1f569bb739d5d3bc249cd729cc1118b2ef4d28752eac806d"
+  },
+  "api_metadata": {
+    "id": "resp_098385f483f7810f006aa9faba553087d28ea8205390f5045c",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789524666.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1705,
+      "input_tokens_details": {
+        "cache_write_tokens": 1702,
+        "cached_tokens": 0
+      },
+      "output_tokens": 282,
+      "output_tokens_details": {
+        "reasoning_tokens": 118
+      },
+      "total_tokens": 1987
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.97,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Climate change and the increasing rapid intensification of Atlantic hurricanes\",\n  \"conflict_relevance\": \"A recommended-stories snippet contains meaningful references to Hamas's attack, Israeli bombings in Gaza, civilian targets, the Geneva Conventions, and the difficulty of distinguishing fighters from civilians.\",\n  \"reason\": \"The main article is entirely about hurricane intensification and climate change. Gaza-related discourse appears only in an embedded Recommended Stories item, making it peripheral rather than core, but the snippet contains substantive conflict-related language.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:11:10Z",
+  "duration_seconds": 3.913,
+  "error": null
+}

@@ -1,0 +1,65 @@
+{
+  "article_id": "104640684",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_12/nz/104640684.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_12/nz/104640684.json"
+  },
+  "manifest_row": {
+    "article_id": "104640684",
+    "group": "global_north_2023_12",
+    "country_code": "nz",
+    "filepath": "corpus/02_now_organised/global_north_2023_12/nz/104640684.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.97,
+    "gaza_role": "background",
+    "main_topic": "New Zealand's major public relations challenges and contentious issues in 2023",
+    "conflict_relevance": "The main article is unrelated to Gaza, but an embedded Christmas-related item contains substantive political and religious commentary about Israeli bombing and Gaza.",
+    "reason": "Gaza appears in an embedded, unrelated item rather than in the main article. The passage meaningfully invokes Gaza and Israeli military action, making the article marginally useful for studying broader representations of Gaza, but it is not core conflict coverage.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "6bc046d977bc0f4c7fb1dfd47399eee3cb1f2a631e108ac0cfd7beb41697aad2",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "07cda42c785797208fd1e6c7013ca76caf013690e394f175af7d0a47cbf24fd1",
+    "raw_response_text_sha256": "adef2f7e2766a1df2b22205a51c508766addb8142c2f0041fece6da52642ef89"
+  },
+  "api_metadata": {
+    "id": "resp_0d214b5753681ecc006aaa0198f65487d2a52d5aac775fa151",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789526425.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1904,
+      "input_tokens_details": {
+        "cache_write_tokens": 1901,
+        "cached_tokens": 0
+      },
+      "output_tokens": 263,
+      "output_tokens_details": {
+        "reasoning_tokens": 99
+      },
+      "total_tokens": 2167
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.97,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"New Zealand's major public relations challenges and contentious issues in 2023\",\n  \"conflict_relevance\": \"The main article is unrelated to Gaza, but an embedded Christmas-related item contains substantive political and religious commentary about Israeli bombing and Gaza.\",\n  \"reason\": \"Gaza appears in an embedded, unrelated item rather than in the main article. The passage meaningfully invokes Gaza and Israeli military action, making the article marginally useful for studying broader representations of Gaza, but it is not core conflict coverage.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:40:30Z",
+  "duration_seconds": 5.887,
+  "error": null
+}

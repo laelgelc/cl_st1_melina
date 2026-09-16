@@ -1,0 +1,65 @@
+{
+  "article_id": "102460678",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_10/ca/102460678.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_10/ca/102460678.json"
+  },
+  "manifest_row": {
+    "article_id": "102460678",
+    "group": "global_north_2023_10",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2023_10/ca/102460678.txt"
+  },
+  "screening": {
+    "category": "CORE",
+    "confidence": 0.98,
+    "gaza_role": "substantial",
+    "main_topic": "Obituary of former Ottawa police officer Robin Easey",
+    "conflict_relevance": "The text includes substantial embedded coverage of Palestinian solidarity rallies, Jewish and Palestinian community responses, and Israel's siege and airstrikes in Gaza.",
+    "reason": "Although the opening article is an unrelated obituary, the text contains multiple substantial news passages directly addressing Gaza, Israel's military action, and public responses to the conflict. These passages make the item relevant to the research corpus, despite the multi-article compilation.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": true
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "d9f0c6b43da80e0197928a09a3252d3b8b440880053b82eac5013ce832b562c9",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "5e3a0fc9c46aa24462254a2abd60ef27a9215bac44ac49c3202ee74d03252674",
+    "raw_response_text_sha256": "07bb577e515a4c5f9d5e73da9c144673892728d5168f05dcee23c55bce2654c3"
+  },
+  "api_metadata": {
+    "id": "resp_082897afad9ab5bc006aa9f60de11087d2a2306826963199c3",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789523469.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1446,
+      "input_tokens_details": {
+        "cache_write_tokens": 1443,
+        "cached_tokens": 0
+      },
+      "output_tokens": 161,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 1607
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"CORE\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"substantial\",\n  \"main_topic\": \"Obituary of former Ottawa police officer Robin Easey\",\n  \"conflict_relevance\": \"The text includes substantial embedded coverage of Palestinian solidarity rallies, Jewish and Palestinian community responses, and Israel's siege and airstrikes in Gaza.\",\n  \"reason\": \"Although the opening article is an unrelated obituary, the text contains multiple substantial news passages directly addressing Gaza, Israel's military action, and public responses to the conflict. These passages make the item relevant to the research corpus, despite the multi-article compilation.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": true\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T01:51:12Z",
+  "duration_seconds": 2.85,
+  "error": null
+}

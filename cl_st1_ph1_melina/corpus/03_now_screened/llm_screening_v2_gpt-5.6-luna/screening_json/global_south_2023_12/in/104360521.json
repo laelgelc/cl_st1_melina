@@ -1,0 +1,65 @@
+{
+  "article_id": "104360521",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_south_2023_12/in/104360521.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_south_2023_12/in/104360521.json"
+  },
+  "manifest_row": {
+    "article_id": "104360521",
+    "group": "global_south_2023_12",
+    "country_code": "in",
+    "filepath": "corpus/02_now_organised/global_south_2023_12/in/104360521.txt"
+  },
+  "screening": {
+    "category": "CORE",
+    "confidence": 0.99,
+    "gaza_role": "central",
+    "main_topic": "Israeli military strikes and reported Hamas military infrastructure in Gaza",
+    "conflict_relevance": "The article substantially covers IDF operations, airstrikes, tunnels, weapons depots, and Hamas activity across Gaza.",
+    "reason": "Although the text begins with an unrelated report about a protest over a murder in Karachi, the associated Gaza article is centrally focused on Israel-Hamas military activity in the Gaza Strip.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": true
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "f2160ba2f470bc8099724f44548b2c3c9be29adb803828a80bf6ff423647775c",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "2918edad24b5232dd5bd74ed336f1ae8d34627a61c560f5b08beb92317040dd4",
+    "raw_response_text_sha256": "0cbf3e5d44ff31c9da1c37a3beca521dc0ea944ee54af3d4b25547fb99798d15"
+  },
+  "api_metadata": {
+    "id": "resp_0d8ad40c1d5d8d22006aaa36b57bfc87d199e8d86bb8c8fff9",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789540021.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1188,
+      "input_tokens_details": {
+        "cache_write_tokens": 1185,
+        "cached_tokens": 0
+      },
+      "output_tokens": 226,
+      "output_tokens_details": {
+        "reasoning_tokens": 82
+      },
+      "total_tokens": 1414
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"CORE\",\n  \"confidence\": 0.99,\n  \"gaza_role\": \"central\",\n  \"main_topic\": \"Israeli military strikes and reported Hamas military infrastructure in Gaza\",\n  \"conflict_relevance\": \"The article substantially covers IDF operations, airstrikes, tunnels, weapons depots, and Hamas activity across Gaza.\",\n  \"reason\": \"Although the text begins with an unrelated report about a protest over a murder in Karachi, the associated Gaza article is centrally focused on Israel-Hamas military activity in the Gaza Strip.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": true\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T06:27:04Z",
+  "duration_seconds": 3.571,
+  "error": null
+}

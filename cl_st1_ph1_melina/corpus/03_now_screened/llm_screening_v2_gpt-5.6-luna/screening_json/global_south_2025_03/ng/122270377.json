@@ -1,0 +1,65 @@
+{
+  "article_id": "122270377",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_south_2025_03/ng/122270377.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_south_2025_03/ng/122270377.json"
+  },
+  "manifest_row": {
+    "article_id": "122270377",
+    "group": "global_south_2025_03",
+    "country_code": "ng",
+    "filepath": "corpus/02_now_organised/global_south_2025_03/ng/122270377.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "passing",
+    "main_topic": "US-Russia diplomacy and ceasefire negotiations in the Ukraine war",
+    "conflict_relevance": "The main article concerns Ukraine, but it briefly identifies Steve Witkoff as a mediator in the Gaza and Ukraine wars, providing a meaningful though minimal connection to Gaza discourse.",
+    "reason": "Gaza appears only in a brief contextual reference within an otherwise Ukraine-focused article. The surrounding text consists of unrelated news snippets, so the article is not suitable for the main Gaza conflict corpus but has limited peripheral relevance.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "b2e8d323068c2b27ae14fb9de0fe12e928bc339aa9fe71eda9773bc4e86bb3e0",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "8e899d8fe627e6b67f4a710afbf019da245af08efe56c14e6aac6b660e8039b5",
+    "raw_response_text_sha256": "bc116e33f816f5d5bfec14a8e305b54b50d2d2c7735909997feced10555c4b26"
+  },
+  "api_metadata": {
+    "id": "resp_01928194bca6d818006aaa46e1377887d18ffea8e6586db947",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789544161.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2537,
+      "input_tokens_details": {
+        "cache_write_tokens": 2534,
+        "cached_tokens": 0
+      },
+      "output_tokens": 220,
+      "output_tokens_details": {
+        "reasoning_tokens": 55
+      },
+      "total_tokens": 2757
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"US-Russia diplomacy and ceasefire negotiations in the Ukraine war\",\n  \"conflict_relevance\": \"The main article concerns Ukraine, but it briefly identifies Steve Witkoff as a mediator in the Gaza and Ukraine wars, providing a meaningful though minimal connection to Gaza discourse.\",\n  \"reason\": \"Gaza appears only in a brief contextual reference within an otherwise Ukraine-focused article. The surrounding text consists of unrelated news snippets, so the article is not suitable for the main Gaza conflict corpus but has limited peripheral relevance.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T07:36:04Z",
+  "duration_seconds": 3.622,
+  "error": null
+}

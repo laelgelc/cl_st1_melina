@@ -1,0 +1,65 @@
+{
+  "article_id": "105110307",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_south_2024_01/in/105110307.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_south_2024_01/in/105110307.json"
+  },
+  "manifest_row": {
+    "article_id": "105110307",
+    "group": "global_south_2024_01",
+    "country_code": "in",
+    "filepath": "corpus/02_now_organised/global_south_2024_01/in/105110307.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.95,
+    "gaza_role": "background",
+    "main_topic": "Red Sea shipping disruptions and their impact on companies and supply chains",
+    "conflict_relevance": "The article briefly situates Houthi attacks and resulting US-British airstrikes within the regional conflict stemming from Israel's war in Gaza, but its main focus is commercial shipping and logistics.",
+    "reason": "The text is a compilation of unrelated articles. The commercially focused Red Sea report contains meaningful contextual discourse connecting the regional escalation to the Gaza war, while the other items concern an Indian money-laundering investigation and an AI deepfake.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "9088e8ca4ad7427f5919fa3586ccb08a40ce1259f4ec96b6dd7d9265eb8e4748",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "234c403bff7e960e7cdae4c3db24fc8fabbe1cff54599cec0edd64d2053c6b80",
+    "raw_response_text_sha256": "f7a3c8a9c4771888fe0316e6ba73120f0758af3190e0b949f0cce9647c3812ca"
+  },
+  "api_metadata": {
+    "id": "resp_0c228b4ee14c6ab1006aaa37d3b99487d181e555548600c1ba",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789540307.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2783,
+      "input_tokens_details": {
+        "cache_write_tokens": 2780,
+        "cached_tokens": 0
+      },
+      "output_tokens": 341,
+      "output_tokens_details": {
+        "reasoning_tokens": 166
+      },
+      "total_tokens": 3124
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.95,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Red Sea shipping disruptions and their impact on companies and supply chains\",\n  \"conflict_relevance\": \"The article briefly situates Houthi attacks and resulting US-British airstrikes within the regional conflict stemming from Israel's war in Gaza, but its main focus is commercial shipping and logistics.\",\n  \"reason\": \"The text is a compilation of unrelated articles. The commercially focused Red Sea report contains meaningful contextual discourse connecting the regional escalation to the Gaza war, while the other items concern an Indian money-laundering investigation and an AI deepfake.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T06:31:53Z",
+  "duration_seconds": 6.202,
+  "error": null
+}

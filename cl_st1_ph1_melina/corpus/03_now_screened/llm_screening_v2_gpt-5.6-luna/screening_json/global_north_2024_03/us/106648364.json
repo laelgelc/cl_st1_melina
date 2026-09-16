@@ -1,0 +1,65 @@
+{
+  "article_id": "106648364",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_03/us/106648364.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_03/us/106648364.json"
+  },
+  "manifest_row": {
+    "article_id": "106648364",
+    "group": "global_north_2024_03",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2024_03/us/106648364.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.96,
+    "gaza_role": "substantial",
+    "main_topic": "Detention of a South Korean Christian missionary in Russia on espionage allegations",
+    "conflict_relevance": "The main article is unrelated to Gaza or the Israel-Palestine conflict, but the text includes a separate, substantial appended article about a Palestinian soccer player killed in an Israeli airstrike in Gaza.",
+    "reason": "The headline-associated article concerns Russia, espionage allegations, and missionary activity. However, a distinct full news item about the Gaza war is appended to the text, making the item relevant only peripherally and because of the embedded article.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "da4b1e331e10188c95425622998ff8ab8f3a2b3cd57988bd9ef9bb2013477696",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "1644f477ee42929737de449b151f3a459943eabd889266406b69f97b3ace27bf",
+    "raw_response_text_sha256": "6b0335f9ac1de55ec845a672b61d5e89a86fcfef0813623f716d76008f4bfc12"
+  },
+  "api_metadata": {
+    "id": "resp_0a074f47b17cd240006aaa09a15a8487d29c60b6e87d5bebdf",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789528481.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1971,
+      "input_tokens_details": {
+        "cache_write_tokens": 1968,
+        "cached_tokens": 0
+      },
+      "output_tokens": 464,
+      "output_tokens_details": {
+        "reasoning_tokens": 286
+      },
+      "total_tokens": 2435
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.96,\n  \"gaza_role\": \"substantial\",\n  \"main_topic\": \"Detention of a South Korean Christian missionary in Russia on espionage allegations\",\n  \"conflict_relevance\": \"The main article is unrelated to Gaza or the Israel-Palestine conflict, but the text includes a separate, substantial appended article about a Palestinian soccer player killed in an Israeli airstrike in Gaza.\",\n  \"reason\": \"The headline-associated article concerns Russia, espionage allegations, and missionary activity. However, a distinct full news item about the Gaza war is appended to the text, making the item relevant only peripherally and because of the embedded article.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:14:47Z",
+  "duration_seconds": 5.984,
+  "error": null
+}

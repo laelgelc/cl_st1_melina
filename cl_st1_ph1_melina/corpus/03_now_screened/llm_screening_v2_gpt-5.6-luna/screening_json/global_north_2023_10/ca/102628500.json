@@ -1,0 +1,65 @@
+{
+  "article_id": "102628500",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_10/ca/102628500.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_10/ca/102628500.json"
+  },
+  "manifest_row": {
+    "article_id": "102628500",
+    "group": "global_north_2023_10",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2023_10/ca/102628500.txt"
+  },
+  "screening": {
+    "category": "CORE",
+    "confidence": 0.98,
+    "gaza_role": "central",
+    "main_topic": "Israel-Hamas war, Canadian deaths and missing persons, and the humanitarian crisis in Gaza",
+    "conflict_relevance": "The text contains substantial reporting on the October 7 Hamas attacks, Canadian casualties and missing persons, Israeli military retaliation, Gaza's humanitarian conditions, Palestinian casualties, hostages, and the anticipated Israeli ground offensive.",
+    "reason": "Despite containing multiple unrelated article snippets, the prominent conflict-related items are detailed and centrally concern Gaza and the Israel-Hamas war, making the material directly relevant to the main corpus.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": true
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "169bb7aa109159e3a33084810cc57d4d5fd9a33526b567537d2dfe292a3e442a",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "8e5f1dcd84854c87c906bb980f6c9d5c394694b7c96d1a15e2c6a2f2204ee878",
+    "raw_response_text_sha256": "751ed36ea0cb08419b3b9ba727b840d01530107a46baf5f276cf29f1c1ba4cd3"
+  },
+  "api_metadata": {
+    "id": "resp_08a7f4e5355fd15c006aa9f6432a0087d29c84167990c6608d",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789523523.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2759,
+      "input_tokens_details": {
+        "cache_write_tokens": 2756,
+        "cached_tokens": 0
+      },
+      "output_tokens": 301,
+      "output_tokens_details": {
+        "reasoning_tokens": 134
+      },
+      "total_tokens": 3060
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"CORE\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"central\",\n  \"main_topic\": \"Israel-Hamas war, Canadian deaths and missing persons, and the humanitarian crisis in Gaza\",\n  \"conflict_relevance\": \"The text contains substantial reporting on the October 7 Hamas attacks, Canadian casualties and missing persons, Israeli military retaliation, Gaza's humanitarian conditions, Palestinian casualties, hostages, and the anticipated Israeli ground offensive.\",\n  \"reason\": \"Despite containing multiple unrelated article snippets, the prominent conflict-related items are detailed and centrally concern Gaza and the Israel-Hamas war, making the material directly relevant to the main corpus.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": true\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T01:52:07Z",
+  "duration_seconds": 4.103,
+  "error": null
+}

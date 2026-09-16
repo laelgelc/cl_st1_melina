@@ -1,0 +1,65 @@
+{
+  "article_id": "118995805",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_12/ca/118995805.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_12/ca/118995805.json"
+  },
+  "manifest_row": {
+    "article_id": "118995805",
+    "group": "global_north_2024_12",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2024_12/ca/118995805.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "gaza_role": "boilerplate_or_unrelated",
+    "main_topic": "Donald Trump's proposed tariffs, border demands, and rhetoric about Canada becoming the 51st U.S. state",
+    "conflict_relevance": "The main article is about U.S.-Canada relations, trade, migration controls, and NATO defence spending, not Gaza or Israel/Palestine.",
+    "reason": "Gaza appears only in an unrelated item within the page's 'Latest Stories' snippets, mentioning Palestinian students killed in Gaza. This is not part of the main article's discourse.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "1c25f245f8f3b72a84b19e964c5bc49ab0cf7e0799e4dad0a793c765563a0def",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "423fd041984fa570fc70feda2735ed9039f1693da9479239d1a96f96de388d64",
+    "raw_response_text_sha256": "a1851e2b61dd6dc3f10f6ae206876bb93574d09ebdd2ca3ce5e8f08dac1f3f56"
+  },
+  "api_metadata": {
+    "id": "resp_045ae2ded2848d65006aaa1d1ea24487d2b3f351cb8c1ae2e1",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789533470.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 3860,
+      "input_tokens_details": {
+        "cache_write_tokens": 3857,
+        "cached_tokens": 0
+      },
+      "output_tokens": 449,
+      "output_tokens_details": {
+        "reasoning_tokens": 282
+      },
+      "total_tokens": 4309
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Donald Trump's proposed tariffs, border demands, and rhetoric about Canada becoming the 51st U.S. state\",\n  \"conflict_relevance\": \"The main article is about U.S.-Canada relations, trade, migration controls, and NATO defence spending, not Gaza or Israel/Palestine.\",\n  \"reason\": \"Gaza appears only in an unrelated item within the page's 'Latest Stories' snippets, mentioning Palestinian students killed in Gaza. This is not part of the main article's discourse.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T04:37:55Z",
+  "duration_seconds": 4.954,
+  "error": null
+}

@@ -1,0 +1,65 @@
+{
+  "article_id": "120421399",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_south_2025_01/ph/120421399.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_south_2025_01/ph/120421399.json"
+  },
+  "manifest_row": {
+    "article_id": "120421399",
+    "group": "global_south_2025_01",
+    "country_code": "ph",
+    "filepath": "corpus/02_now_organised/global_south_2025_01/ph/120421399.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.94,
+    "gaza_role": "background",
+    "main_topic": "US foreign aid freeze and unrelated domestic and financial news snippets",
+    "conflict_relevance": "The text briefly discusses the exception for military assistance to Israel and links expanded US arms packages to the Gaza war.",
+    "reason": "The article is primarily a collection of unrelated news items about US disaster response and financial markets, but it includes a meaningful paragraph concerning US aid policy, military assistance to Israel, and the Gaza war.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "eca09e29ffa0b580fa64d7f5ef4416bd3fbc41027d3019c39e5b4bef08997458",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "8473a2870a6134227c28033a879d0ca02677eae262706db6caa668f5a7188184",
+    "raw_response_text_sha256": "09fe195032c4cab9d0b6f9ee71b5133f6a77d9a2253c7862107d7f747b3edae6"
+  },
+  "api_metadata": {
+    "id": "resp_0e3b83d039cbc8e8006aaa44afd54487d1ba592eedd9d42c38",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789543599.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 826,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 235,
+      "output_tokens_details": {
+        "reasoning_tokens": 87
+      },
+      "total_tokens": 1061
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.94,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"US foreign aid freeze and unrelated domestic and financial news snippets\",\n  \"conflict_relevance\": \"The text briefly discusses the exception for military assistance to Israel and links expanded US arms packages to the Gaza war.\",\n  \"reason\": \"The article is primarily a collection of unrelated news items about US disaster response and financial markets, but it includes a meaningful paragraph concerning US aid policy, military assistance to Israel, and the Gaza war.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T07:26:43Z",
+  "duration_seconds": 3.5,
+  "error": null
+}

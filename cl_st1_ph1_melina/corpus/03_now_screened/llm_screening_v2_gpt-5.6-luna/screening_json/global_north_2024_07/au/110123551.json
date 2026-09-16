@@ -1,0 +1,65 @@
+{
+  "article_id": "110123551",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_07/au/110123551.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_07/au/110123551.json"
+  },
+  "manifest_row": {
+    "article_id": "110123551",
+    "group": "global_north_2024_07",
+    "country_code": "au",
+    "filepath": "corpus/02_now_organised/global_north_2024_07/au/110123551.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "gaza_role": "passing",
+    "main_topic": "Global life expectancy trends, COVID-19 impacts, and political violence in the United States under Donald Trump",
+    "conflict_relevance": "Gaza is mentioned only in passing as an example of a war-torn place; the article does not discuss the Gaza conflict or related discourse.",
+    "reason": "The article focuses on life expectancy data, public health, gun violence, and criticism of Trump. The single reference to Gaza is incidental and does not provide meaningful conflict-related content.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "e7ed3b156932bae2cf8431899196e7cc19793785d358c4a2b7671e7fa8088fe9",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "3889b874131188461a228805b784610de342b12698be5ce5a00dc2796cfbcfc8",
+    "raw_response_text_sha256": "0190ce00d96ac8be637efeadbc652ddf4967365726d76e5e2a35b31bd78460a4"
+  },
+  "api_metadata": {
+    "id": "resp_0f1d361b6f033c45006aaa11e41e3c87d283ae6559fee602b5",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789530596.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1733,
+      "input_tokens_details": {
+        "cache_write_tokens": 1730,
+        "cached_tokens": 0
+      },
+      "output_tokens": 208,
+      "output_tokens_details": {
+        "reasoning_tokens": 49
+      },
+      "total_tokens": 1941
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Global life expectancy trends, COVID-19 impacts, and political violence in the United States under Donald Trump\",\n  \"conflict_relevance\": \"Gaza is mentioned only in passing as an example of a war-torn place; the article does not discuss the Gaza conflict or related discourse.\",\n  \"reason\": \"The article focuses on life expectancy data, public health, gun violence, and criticism of Trump. The single reference to Gaza is incidental and does not provide meaningful conflict-related content.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:49:58Z",
+  "duration_seconds": 2.189,
+  "error": null
+}

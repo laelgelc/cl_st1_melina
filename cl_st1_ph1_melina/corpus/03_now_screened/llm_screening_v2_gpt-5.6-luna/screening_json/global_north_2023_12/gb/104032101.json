@@ -1,0 +1,65 @@
+{
+  "article_id": "104032101",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_12/gb/104032101.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_12/gb/104032101.json"
+  },
+  "manifest_row": {
+    "article_id": "104032101",
+    "group": "global_north_2023_12",
+    "country_code": "gb",
+    "filepath": "corpus/02_now_organised/global_north_2023_12/gb/104032101.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.94,
+    "gaza_role": "substantial",
+    "main_topic": "Mixed news compilation containing embedded Israel-Hamas war and Gaza coverage",
+    "conflict_relevance": "Includes substantive reporting on alleged hostage abuse and war crimes, antisemitic protest messaging, the October 7 attack, Israeli military operations, civilian casualties, displacement, and humanitarian conditions in Gaza, but the overall text is dominated by unrelated news snippets.",
+    "reason": "The compilation contains several meaningful conflict-related passages, including detailed discussion of hostages, Hamas, Israeli military action, Gaza casualties, displacement, and humanitarian conditions. However, these items are embedded among many unrelated articles, so the compilation is useful for broader discourse analysis but should not be treated as core conflict coverage.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "fda55849dd8ad6fe956e5777cacf386cd83dd2f157a8a671dab9022b82c93b9d",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "9fda6e35a846ab10ca450c1361248f496c2d3918fda6a35ce6606d4ca6b7d231",
+    "raw_response_text_sha256": "33eda675dc34c68f5870c6351a85d780ee93d09ab546fa72d0407caa7da90260"
+  },
+  "api_metadata": {
+    "id": "resp_0bd7c7dc4ebf922a006aaa00e9b34087d28bfa259697063583",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789526249.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 6840,
+      "input_tokens_details": {
+        "cache_write_tokens": 6837,
+        "cached_tokens": 0
+      },
+      "output_tokens": 477,
+      "output_tokens_details": {
+        "reasoning_tokens": 278
+      },
+      "total_tokens": 7317
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.94,\n  \"gaza_role\": \"substantial\",\n  \"main_topic\": \"Mixed news compilation containing embedded Israel-Hamas war and Gaza coverage\",\n  \"conflict_relevance\": \"Includes substantive reporting on alleged hostage abuse and war crimes, antisemitic protest messaging, the October 7 attack, Israeli military operations, civilian casualties, displacement, and humanitarian conditions in Gaza, but the overall text is dominated by unrelated news snippets.\",\n  \"reason\": \"The compilation contains several meaningful conflict-related passages, including detailed discussion of hostages, Hamas, Israeli military action, Gaza casualties, displacement, and humanitarian conditions. However, these items are embedded among many unrelated articles, so the compilation is useful for broader discourse analysis but should not be treated as core conflict coverage.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:37:36Z",
+  "duration_seconds": 7.12,
+  "error": null
+}

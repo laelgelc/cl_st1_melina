@@ -1,0 +1,65 @@
+{
+  "article_id": "104096681",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_12/gb/104096681.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_12/gb/104096681.json"
+  },
+  "manifest_row": {
+    "article_id": "104096681",
+    "group": "global_north_2023_12",
+    "country_code": "gb",
+    "filepath": "corpus/02_now_organised/global_north_2023_12/gb/104096681.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.97,
+    "gaza_role": "passing",
+    "main_topic": "Russian cyber espionage and attempts to interfere in British politics",
+    "conflict_relevance": "The main article is unrelated to Gaza or Israel/Palestine, but a separate 'Latest stories' snippet briefly discusses an Israeli settler's response to the Hamas attack launched from Gaza on October 7.",
+    "reason": "The conflict-related material is a meaningful but very brief embedded news item rather than part of the main article's subject.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "b888fbe41177daf08d7cb5d44b3d2b9918e05d818b487cc538d72f4b79927352",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "0c35cabc9013be3fbb6ee79a75230bab1a9c4adfc9bac85eeb1b39a21bceea22",
+    "raw_response_text_sha256": "4f7041fa3160169c4765a358d09c941de1abd3e63fbe92ff7321d6111d1c0350"
+  },
+  "api_metadata": {
+    "id": "resp_09357c7d39e844d6006aaa00f468e087d2b94979dc3722de65",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789526260.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 3723,
+      "input_tokens_details": {
+        "cache_write_tokens": 3720,
+        "cached_tokens": 0
+      },
+      "output_tokens": 260,
+      "output_tokens_details": {
+        "reasoning_tokens": 108
+      },
+      "total_tokens": 3983
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.97,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Russian cyber espionage and attempts to interfere in British politics\",\n  \"conflict_relevance\": \"The main article is unrelated to Gaza or Israel/Palestine, but a separate 'Latest stories' snippet briefly discusses an Israeli settler's response to the Hamas attack launched from Gaza on October 7.\",\n  \"reason\": \"The conflict-related material is a meaningful but very brief embedded news item rather than part of the main article's subject.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:37:44Z",
+  "duration_seconds": 4.569,
+  "error": null
+}

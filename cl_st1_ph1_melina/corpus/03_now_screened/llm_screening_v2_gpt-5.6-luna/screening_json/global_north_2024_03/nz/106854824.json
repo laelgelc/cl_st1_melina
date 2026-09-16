@@ -1,0 +1,65 @@
+{
+  "article_id": "106854824",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_03/nz/106854824.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_03/nz/106854824.json"
+  },
+  "manifest_row": {
+    "article_id": "106854824",
+    "group": "global_north_2024_03",
+    "country_code": "nz",
+    "filepath": "corpus/02_now_organised/global_north_2024_03/nz/106854824.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "passing",
+    "main_topic": "New Zealand electric vehicle incentives and climate policy",
+    "conflict_relevance": "An unrelated accompanying snippet reports New Zealand humanitarian aid for Gaza and the West Bank and comments on the impact of the Israel-Hamas conflict on civilians.",
+    "reason": "The main article concerns electric vehicle tax incentives and New Zealand climate policy. Gaza appears only in a separate 'Also' news snippet, but that snippet contains a meaningful reference to humanitarian conditions and the Israel-Hamas conflict.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "c1c820b6fdd4cf753eb417ded41e4e276965c5a75c25b561fc000d640a7668c2",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "f6af4c220f611a84272c28106fe61f3bf2209c238befb4fac74c2bad3bcb1c4a",
+    "raw_response_text_sha256": "aec148e25f5dee325f3cd4774930ea214275bff32ae15b80ae7ba50044255d8d"
+  },
+  "api_metadata": {
+    "id": "resp_0fcd0c35d28409d6006aaa093f5b6887d2ae67d41fa0326368",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789528383.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1433,
+      "input_tokens_details": {
+        "cache_write_tokens": 1430,
+        "cached_tokens": 0
+      },
+      "output_tokens": 234,
+      "output_tokens_details": {
+        "reasoning_tokens": 78
+      },
+      "total_tokens": 1667
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"New Zealand electric vehicle incentives and climate policy\",\n  \"conflict_relevance\": \"An unrelated accompanying snippet reports New Zealand humanitarian aid for Gaza and the West Bank and comments on the impact of the Israel-Hamas conflict on civilians.\",\n  \"reason\": \"The main article concerns electric vehicle tax incentives and New Zealand climate policy. Gaza appears only in a separate 'Also' news snippet, but that snippet contains a meaningful reference to humanitarian conditions and the Israel-Hamas conflict.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:13:08Z",
+  "duration_seconds": 5.497,
+  "error": null
+}

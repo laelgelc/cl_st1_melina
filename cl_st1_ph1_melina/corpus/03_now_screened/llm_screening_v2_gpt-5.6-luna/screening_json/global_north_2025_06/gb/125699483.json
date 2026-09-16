@@ -1,0 +1,65 @@
+{
+  "article_id": "125699483",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_06/gb/125699483.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_06/gb/125699483.json"
+  },
+  "manifest_row": {
+    "article_id": "125699483",
+    "group": "global_north_2025_06",
+    "country_code": "gb",
+    "filepath": "corpus/02_now_organised/global_north_2025_06/gb/125699483.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "gaza_role": "boilerplate_or_unrelated",
+    "main_topic": "The Schengen Agreement, European integration, migration, and the rise of right-wing politics",
+    "conflict_relevance": "Gaza appears only in a 'Most popular' headline about a Gaza video, while the main article does not substantively address Gaza, Palestine, or the Israel-Palestine conflict.",
+    "reason": "The article is primarily about Schengen, European borders, migration, multiculturalism, and terrorism. The Gaza reference is an unrelated embedded recommendation rather than part of the article's discourse.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "2832db5430381989f9fd07349ae07df8b83daa8e40213a4e459f4fe4a64601c8",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "27e79dffe612d58b77ca290f9f8df1dd1dc15ce14881d6e3ed78e2fdf535da87",
+    "raw_response_text_sha256": "663d0e8bfbd2902fe88b2189de6cbd16c818cdf7bd259e6abb862d358815d4a5"
+  },
+  "api_metadata": {
+    "id": "resp_0d1b8ee91accdee9006aaa2f1d174087d1b3f9a243e62c4a67",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789538077.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2155,
+      "input_tokens_details": {
+        "cache_write_tokens": 2152,
+        "cached_tokens": 0
+      },
+      "output_tokens": 258,
+      "output_tokens_details": {
+        "reasoning_tokens": 87
+      },
+      "total_tokens": 2413
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"The Schengen Agreement, European integration, migration, and the rise of right-wing politics\",\n  \"conflict_relevance\": \"Gaza appears only in a 'Most popular' headline about a Gaza video, while the main article does not substantively address Gaza, Palestine, or the Israel-Palestine conflict.\",\n  \"reason\": \"The article is primarily about Schengen, European borders, migration, multiculturalism, and terrorism. The Gaza reference is an unrelated embedded recommendation rather than part of the article's discourse.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T05:54:40Z",
+  "duration_seconds": 3.682,
+  "error": null
+}

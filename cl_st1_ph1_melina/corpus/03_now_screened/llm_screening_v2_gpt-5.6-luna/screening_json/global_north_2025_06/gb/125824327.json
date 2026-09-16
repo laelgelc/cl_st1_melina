@@ -1,0 +1,65 @@
+{
+  "article_id": "125824327",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_06/gb/125824327.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_06/gb/125824327.json"
+  },
+  "manifest_row": {
+    "article_id": "125824327",
+    "group": "global_north_2025_06",
+    "country_code": "gb",
+    "filepath": "corpus/02_now_organised/global_north_2025_06/gb/125824327.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.9,
+    "gaza_role": "background",
+    "main_topic": "A live news feed focused primarily on US immigration protests and the deployment of military personnel in Los Angeles, with additional updates on the Israel-Iran conflict",
+    "conflict_relevance": "The feed contains several meaningful updates about Israel's attacks on Iran, US-Israel relations, Netanyahu, and a substantive reference to starvation in Gaza and international law, but these are not the dominant topic of the overall item.",
+    "reason": "This is a multi-story live feed whose main coverage concerns Los Angeles protests, immigration enforcement, and domestic US politics. Its Israel-Iran and Gaza-related sections provide relevant discourse for broader conflict analysis, but the article as a whole is not centrally about Gaza or Israel-Palestine.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "1726dac65d0e6428b8b8cd0a19795574ef1526f16f6c1cf6b6ac526b8e21d664",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "b700647a078e44b3e53a473de881a115629fb9c10e8ee0c0d2d0b2cbd079acbc",
+    "raw_response_text_sha256": "3c2992ea5172174c7846c9af039477c285af5e45ed7d2b97c26ed3e2725d58a3"
+  },
+  "api_metadata": {
+    "id": "resp_07ec066d2c587a1b006aaa2f38373487d19abfc062d2d6e753",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789538104.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 3821,
+      "input_tokens_details": {
+        "cache_write_tokens": 3818,
+        "cached_tokens": 0
+      },
+      "output_tokens": 503,
+      "output_tokens_details": {
+        "reasoning_tokens": 297
+      },
+      "total_tokens": 4324
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.9,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"A live news feed focused primarily on US immigration protests and the deployment of military personnel in Los Angeles, with additional updates on the Israel-Iran conflict\",\n  \"conflict_relevance\": \"The feed contains several meaningful updates about Israel's attacks on Iran, US-Israel relations, Netanyahu, and a substantive reference to starvation in Gaza and international law, but these are not the dominant topic of the overall item.\",\n  \"reason\": \"This is a multi-story live feed whose main coverage concerns Los Angeles protests, immigration enforcement, and domestic US politics. Its Israel-Iran and Gaza-related sections provide relevant discourse for broader conflict analysis, but the article as a whole is not centrally about Gaza or Israel-Palestine.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T05:55:10Z",
+  "duration_seconds": 6.073,
+  "error": null
+}

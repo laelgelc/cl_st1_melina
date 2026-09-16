@@ -1,0 +1,65 @@
+{
+  "article_id": "103566163",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_11/ca/103566163.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_11/ca/103566163.json"
+  },
+  "manifest_row": {
+    "article_id": "103566163",
+    "group": "global_north_2023_11",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2023_11/ca/103566163.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.99,
+    "gaza_role": "background",
+    "main_topic": "Luke Prokop becoming the first openly gay player to play in the American Hockey League",
+    "conflict_relevance": "The text includes a substantive embedded news item about patients and medical staff evacuating Gaza's Shifa Hospital during Israel's war against Hamas, but this is unrelated to the article's main topic.",
+    "reason": "The main article concerns LGBTQ representation in professional hockey. Gaza-related content appears as one separate news snippet within a multi-article compilation, making it relevant to broader conflict discourse but not suitable as core conflict coverage.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "55056093f21875e45bb4c6717e666398eb90e036e518cdc788a8f8bf4cb56b9f",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "e95bf9352772bfe6ed13bcaa183aa521690b1bfad280d224ad58f2e5f6e54397",
+    "raw_response_text_sha256": "8635a31c16940046b9e144b0b959180c97fb8cdfd4bd1411517bb74db94dd3e5"
+  },
+  "api_metadata": {
+    "id": "resp_0a0be622b678500f006aa9fbec772c87d2b7dba59d7bf0eb92",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789524972.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2276,
+      "input_tokens_details": {
+        "cache_write_tokens": 2273,
+        "cached_tokens": 0
+      },
+      "output_tokens": 293,
+      "output_tokens_details": {
+        "reasoning_tokens": 122
+      },
+      "total_tokens": 2569
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.99,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Luke Prokop becoming the first openly gay player to play in the American Hockey League\",\n  \"conflict_relevance\": \"The text includes a substantive embedded news item about patients and medical staff evacuating Gaza's Shifa Hospital during Israel's war against Hamas, but this is unrelated to the article's main topic.\",\n  \"reason\": \"The main article concerns LGBTQ representation in professional hockey. Gaza-related content appears as one separate news snippet within a multi-article compilation, making it relevant to broader conflict discourse but not suitable as core conflict coverage.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:16:17Z",
+  "duration_seconds": 5.23,
+  "error": null
+}

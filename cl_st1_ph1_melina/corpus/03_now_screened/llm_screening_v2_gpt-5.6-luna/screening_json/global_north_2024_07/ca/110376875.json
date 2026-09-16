@@ -1,0 +1,65 @@
+{
+  "article_id": "110376875",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_07/ca/110376875.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_07/ca/110376875.json"
+  },
+  "manifest_row": {
+    "article_id": "110376875",
+    "group": "global_north_2024_07",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2024_07/ca/110376875.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.96,
+    "gaza_role": "passing",
+    "main_topic": "Recovery of the body of a teenager who went missing while fishing in Quebec",
+    "conflict_relevance": "The main article is unrelated to Gaza or the Israeli-Palestinian conflict, but the page includes a substantive embedded news snippet about Palestinians killed in an Israeli assault in Gaza.",
+    "reason": "The headline and primary report concern a Quebec search-and-recovery operation. However, an additional embedded AP item contains meaningful Gaza conflict discourse, so the material is peripheral rather than entirely excludable.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "ec5c5efb764e217417c23ab24251cdb436a6d7684cf2d547e4cbffc8a631f0af",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "29019a5f7b4837f5900e7b4da67414379bd5773fc2e35ef83db722b2c64b01b4",
+    "raw_response_text_sha256": "c3e786a1c551438f0b9f114af8c7bfbdf92ebe2a06a830ba5db9db6eba040aee"
+  },
+  "api_metadata": {
+    "id": "resp_00aaef81ee39b7b1006aaa1204546887d28dcf45f04ce8313e",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789530628.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2023,
+      "input_tokens_details": {
+        "cache_write_tokens": 2020,
+        "cached_tokens": 0
+      },
+      "output_tokens": 299,
+      "output_tokens_details": {
+        "reasoning_tokens": 135
+      },
+      "total_tokens": 2322
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.96,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Recovery of the body of a teenager who went missing while fishing in Quebec\",\n  \"conflict_relevance\": \"The main article is unrelated to Gaza or the Israeli-Palestinian conflict, but the page includes a substantive embedded news snippet about Palestinians killed in an Israeli assault in Gaza.\",\n  \"reason\": \"The headline and primary report concern a Quebec search-and-recovery operation. However, an additional embedded AP item contains meaningful Gaza conflict discourse, so the material is peripheral rather than entirely excludable.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:50:32Z",
+  "duration_seconds": 4.03,
+  "error": null
+}

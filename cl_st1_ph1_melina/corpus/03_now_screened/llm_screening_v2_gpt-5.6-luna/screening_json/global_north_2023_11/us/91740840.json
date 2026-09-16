@@ -1,0 +1,65 @@
+{
+  "article_id": "91740840",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_11/us/91740840.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_11/us/91740840.json"
+  },
+  "manifest_row": {
+    "article_id": "91740840",
+    "group": "global_north_2023_11",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2023_11/us/91740840.txt"
+  },
+  "screening": {
+    "category": "CORE",
+    "confidence": 0.99,
+    "gaza_role": "substantial",
+    "main_topic": "Israeli archaeologists searching for and identifying remains of victims of the October 7 Hamas attack in Kibbutz Be'eri",
+    "conflict_relevance": "Directly concerns the Israel-Hamas war, the October 7 attack, Israeli civilian victims, hostages and missing persons, and the aftermath of violence in communities near the Gaza border.",
+    "reason": "The main Reuters article is centrally about identifying victims of the Hamas attack and documenting its consequences in an Israeli community adjacent to Gaza. Additional appended snippets concern antisemitism, the Israel-Hamas war, and Palestinian workers, but do not alter the main article's core relevance.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": true
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "88c23ca3becbc349ce0bf0d335fd0e933eaab60f828496a555f83bccc29e91d0",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "67ccfaf8e231b8446751b8c150c24ed53b1ed950c1d0c80d17163d9d9b411c92",
+    "raw_response_text_sha256": "8480778c9322ac0b8f443e7dda4f90911f46ccede8edb57fc58d298e6d396c6b"
+  },
+  "api_metadata": {
+    "id": "resp_068df181ab2ca74b006aaa0016f72487d29eba56b4e82380e9",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789526038.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1450,
+      "input_tokens_details": {
+        "cache_write_tokens": 1447,
+        "cached_tokens": 0
+      },
+      "output_tokens": 246,
+      "output_tokens_details": {
+        "reasoning_tokens": 55
+      },
+      "total_tokens": 1696
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"CORE\",\n  \"confidence\": 0.99,\n  \"gaza_role\": \"substantial\",\n  \"main_topic\": \"Israeli archaeologists searching for and identifying remains of victims of the October 7 Hamas attack in Kibbutz Be'eri\",\n  \"conflict_relevance\": \"Directly concerns the Israel-Hamas war, the October 7 attack, Israeli civilian victims, hostages and missing persons, and the aftermath of violence in communities near the Gaza border.\",\n  \"reason\": \"The main Reuters article is centrally about identifying victims of the Hamas attack and documenting its consequences in an Israeli community adjacent to Gaza. Additional appended snippets concern antisemitism, the Israel-Hamas war, and Palestinian workers, but do not alter the main article's core relevance.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": true\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:34:02Z",
+  "duration_seconds": 3.377,
+  "error": null
+}

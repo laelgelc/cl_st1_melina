@@ -1,0 +1,65 @@
+{
+  "article_id": "103522804",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_south_2023_11/in/103522804.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_south_2023_11/in/103522804.json"
+  },
+  "manifest_row": {
+    "article_id": "103522804",
+    "group": "global_south_2023_11",
+    "country_code": "in",
+    "filepath": "corpus/02_now_organised/global_south_2023_11/in/103522804.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "background",
+    "main_topic": "Oil price movements, supply expectations, and energy-market analysis",
+    "conflict_relevance": "The article briefly connects escalating Israel-Hamas conflict in Gaza with US enforcement of oil sanctions against Iran and potential effects on crude markets.",
+    "reason": "The main article concerns crude oil prices and market conditions, not Gaza or the Israel-Hamas war. However, it contains a meaningful geopolitical reference linking the Gaza conflict, Iran, Hamas, and oil sanctions. The text also includes a large unrelated cricket live-blog segment.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "67ab83b15779088efe71e9caa262cdb7ec8f02541d7a5fc62f044f7e2c8bca59",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "8149069aef3e4b1fb42cfdd2abfcb15017d0c8053325c38feac44501fa8aba19",
+    "raw_response_text_sha256": "c6246b4cc64209d52a79ed92e2b5ebf75a4f758667de387f846714446c75626f"
+  },
+  "api_metadata": {
+    "id": "resp_02dec0a5f0829f31006aaa350b89c887d1807c1a17b6f8ea3e",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789539595.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 7683,
+      "input_tokens_details": {
+        "cache_write_tokens": 7680,
+        "cached_tokens": 0
+      },
+      "output_tokens": 306,
+      "output_tokens_details": {
+        "reasoning_tokens": 140
+      },
+      "total_tokens": 7989
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Oil price movements, supply expectations, and energy-market analysis\",\n  \"conflict_relevance\": \"The article briefly connects escalating Israel-Hamas conflict in Gaza with US enforcement of oil sanctions against Iran and potential effects on crude markets.\",\n  \"reason\": \"The main article concerns crude oil prices and market conditions, not Gaza or the Israel-Hamas war. However, it contains a meaningful geopolitical reference linking the Gaza conflict, Iran, Hamas, and oil sanctions. The text also includes a large unrelated cricket live-blog segment.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T06:19:59Z",
+  "duration_seconds": 4.027,
+  "error": null
+}

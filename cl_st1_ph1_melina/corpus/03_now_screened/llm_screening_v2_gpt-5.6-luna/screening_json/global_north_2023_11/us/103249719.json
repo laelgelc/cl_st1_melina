@@ -1,0 +1,65 @@
+{
+  "article_id": "103249719",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_11/us/103249719.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_11/us/103249719.json"
+  },
+  "manifest_row": {
+    "article_id": "103249719",
+    "group": "global_north_2023_11",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2023_11/us/103249719.txt"
+  },
+  "screening": {
+    "category": "CORE",
+    "confidence": 0.98,
+    "gaza_role": "substantial",
+    "main_topic": "Israel-Hamas war, including Israeli military operations in Gaza, humanitarian conditions, hostages, and diplomatic calls for a cease-fire",
+    "conflict_relevance": "The article leads with Israeli troops dividing Gaza, reports airstrikes and civilian casualties, discusses hostages and humanitarian pauses, covers U.S. diplomacy and the occupied West Bank, and includes a further report on a strike near a Gaza hospital.",
+    "reason": "Although formatted as a multi-topic news briefing, the Gaza and Israel-Hamas war coverage is prominent, detailed, and directly relevant to the research corpus.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": true
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "8477bbdfedcc5a9621fc451c71399ff91ac678661dfe08b02c70aa1bc0473171",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "9c2a77f6fd6ac25ed95bc891a275a5fd4b4a1f3019ea401bebbcd07a22ae702b",
+    "raw_response_text_sha256": "9c670af5340a440a760d2e201c0761dc6add8d52eb72443f8ef79645c18977c7"
+  },
+  "api_metadata": {
+    "id": "resp_0e515f1e409ce683006aa9fe26d82c87d2851e2e9cbe53c9fb",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789525542.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1845,
+      "input_tokens_details": {
+        "cache_write_tokens": 1842,
+        "cached_tokens": 0
+      },
+      "output_tokens": 309,
+      "output_tokens_details": {
+        "reasoning_tokens": 131
+      },
+      "total_tokens": 2154
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"CORE\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"substantial\",\n  \"main_topic\": \"Israel-Hamas war, including Israeli military operations in Gaza, humanitarian conditions, hostages, and diplomatic calls for a cease-fire\",\n  \"conflict_relevance\": \"The article leads with Israeli troops dividing Gaza, reports airstrikes and civilian casualties, discusses hostages and humanitarian pauses, covers U.S. diplomacy and the occupied West Bank, and includes a further report on a strike near a Gaza hospital.\",\n  \"reason\": \"Although formatted as a multi-topic news briefing, the Gaza and Israel-Hamas war coverage is prominent, detailed, and directly relevant to the research corpus.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": true\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:25:47Z",
+  "duration_seconds": 4.412,
+  "error": null
+}

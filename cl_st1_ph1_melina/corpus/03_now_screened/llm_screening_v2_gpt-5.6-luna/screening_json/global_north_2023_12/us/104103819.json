@@ -1,0 +1,65 @@
+{
+  "article_id": "104103819",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_12/us/104103819.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_12/us/104103819.json"
+  },
+  "manifest_row": {
+    "article_id": "104103819",
+    "group": "global_north_2023_12",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2023_12/us/104103819.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "background",
+    "main_topic": "Social responsibility and public intervention in response to viral incidents in Singapore",
+    "conflict_relevance": "The main commentary is unrelated to Gaza or the Israel-Palestine conflict, but the article includes several substantive embedded news snippets about Israeli military action in Gaza, Palestinian casualties, displacement, humanitarian shortages, and a hostage-prisoner exchange.",
+    "reason": "The Gaza-related material appears only in an unrelated 'Latest stories' section rather than in the main article, but it contains meaningful conflict discourse and is more substantive than a passing or boilerplate mention.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "1ec42f50609709f14707a3485d457284444358c3af15d33152b8bfdf36d1db14",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "6d7b459f6a84033b1cb053b689f64d64ba34ed12668ab1c1e740abc0cf50c1d0",
+    "raw_response_text_sha256": "1f59dab1ec3d6ea0bbae7685915bb26c58d864ad4376ea1b6f1269ddccaab1bd"
+  },
+  "api_metadata": {
+    "id": "resp_0023c62edb0ba7d6006aaa01dc7c8887d292b3925e390c7cb4",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789526492.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2605,
+      "input_tokens_details": {
+        "cache_write_tokens": 2602,
+        "cached_tokens": 0
+      },
+      "output_tokens": 309,
+      "output_tokens_details": {
+        "reasoning_tokens": 134
+      },
+      "total_tokens": 2914
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Social responsibility and public intervention in response to viral incidents in Singapore\",\n  \"conflict_relevance\": \"The main commentary is unrelated to Gaza or the Israel-Palestine conflict, but the article includes several substantive embedded news snippets about Israeli military action in Gaza, Palestinian casualties, displacement, humanitarian shortages, and a hostage-prisoner exchange.\",\n  \"reason\": \"The Gaza-related material appears only in an unrelated 'Latest stories' section rather than in the main article, but it contains meaningful conflict discourse and is more substantive than a passing or boilerplate mention.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:41:37Z",
+  "duration_seconds": 5.549,
+  "error": null
+}

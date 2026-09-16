@@ -1,0 +1,65 @@
+{
+  "article_id": "108808476",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_06/ca/108808476.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_06/ca/108808476.json"
+  },
+  "manifest_row": {
+    "article_id": "108808476",
+    "group": "global_north_2024_06",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2024_06/ca/108808476.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "gaza_role": "passing",
+    "main_topic": "Relocation of CTV News Vancouver Island and local radio stations to Esquimalt",
+    "conflict_relevance": "The main article is unrelated to Gaza or the Israel-Palestine conflict; a separate snippet briefly mentions University of Victoria protests over Israel's conduct in Gaza.",
+    "reason": "The headline-associated article concerns a broadcaster's studio relocation. The Gaza-related content appears only as an unrelated item in a collection of news snippets and is not developed substantively.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "ac24e63be2a0c6e10d0f455e596dfeadfe95902fd0b795d24d12d339106464bb",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "dd8b85151ac229106aeaf353b9449b6f0ebdc91a658d33093b457f45d8f663a1",
+    "raw_response_text_sha256": "c5ca309921bd1886722e5d467e1d90334671c6c170248c61e0c5accdb01e753f"
+  },
+  "api_metadata": {
+    "id": "resp_0c60d76d222ebb42006aaa101cddf887d2a94006e4898096a1",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789530140.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1408,
+      "input_tokens_details": {
+        "cache_write_tokens": 1405,
+        "cached_tokens": 0
+      },
+      "output_tokens": 327,
+      "output_tokens_details": {
+        "reasoning_tokens": 169
+      },
+      "total_tokens": 1735
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Relocation of CTV News Vancouver Island and local radio stations to Esquimalt\",\n  \"conflict_relevance\": \"The main article is unrelated to Gaza or the Israel-Palestine conflict; a separate snippet briefly mentions University of Victoria protests over Israel's conduct in Gaza.\",\n  \"reason\": \"The headline-associated article concerns a broadcaster's studio relocation. The Gaza-related content appears only as an unrelated item in a collection of news snippets and is not developed substantively.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:42:24Z",
+  "duration_seconds": 4.113,
+  "error": null
+}

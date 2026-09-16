@@ -1,0 +1,65 @@
+{
+  "article_id": "104031863",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_12/ca/104031863.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_12/ca/104031863.json"
+  },
+  "manifest_row": {
+    "article_id": "104031863",
+    "group": "global_north_2023_12",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2023_12/ca/104031863.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.93,
+    "gaza_role": "passing",
+    "main_topic": "Ethical and legal concerns about filming vulnerable people experiencing overdoses in Vancouver's Downtown Eastside",
+    "conflict_relevance": "The article includes an unrelated news snippet reporting Israeli troops entering Gaza and intensified bombardment causing Palestinian casualties, but Gaza is not connected to the main article's subject.",
+    "reason": "The headline article is about privacy, exploitation, and media ethics surrounding overdose filming in Vancouver. A separate embedded news item contains a meaningful but brief report on military action and Palestinian casualties in Gaza, making the item peripheral rather than core.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "d10365bd52202785db103f5fec5c301dab700f4affb950c5d715fedba77725fb",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "f70943a3da7734846971f2db8a0f4ed44d7d714ef586d67f046ca98d91eb745b",
+    "raw_response_text_sha256": "1b60174c3338a041963eca7babbfc9f8874c114bf48fba5df66230ca7950bff0"
+  },
+  "api_metadata": {
+    "id": "resp_0f8f836d8b0edccc006aaa005d102087d2947b6c3a50bf4b8c",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789526109.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1759,
+      "input_tokens_details": {
+        "cache_write_tokens": 1756,
+        "cached_tokens": 0
+      },
+      "output_tokens": 399,
+      "output_tokens_details": {
+        "reasoning_tokens": 227
+      },
+      "total_tokens": 2158
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.93,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Ethical and legal concerns about filming vulnerable people experiencing overdoses in Vancouver's Downtown Eastside\",\n  \"conflict_relevance\": \"The article includes an unrelated news snippet reporting Israeli troops entering Gaza and intensified bombardment causing Palestinian casualties, but Gaza is not connected to the main article's subject.\",\n  \"reason\": \"The headline article is about privacy, exploitation, and media ethics surrounding overdose filming in Vancouver. A separate embedded news item contains a meaningful but brief report on military action and Palestinian casualties in Gaza, making the item peripheral rather than core.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:35:13Z",
+  "duration_seconds": 5.084,
+  "error": null
+}

@@ -1,0 +1,65 @@
+{
+  "article_id": "117762719",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_11/us/117762719.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_11/us/117762719.json"
+  },
+  "manifest_row": {
+    "article_id": "117762719",
+    "group": "global_north_2024_11",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2024_11/us/117762719.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.96,
+    "gaza_role": "passing",
+    "main_topic": "Israeli singer Eden Hason's coming out and engagement",
+    "conflict_relevance": "The article's image caption briefly mentions a 2023 event demanding the release of hostages held in Gaza, but the conflict is not discussed in the article's main content.",
+    "reason": "The article is primarily about a celebrity's personal relationship and contains only an incidental reference to Gaza and hostages in a photo caption.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "f2480c6d5818f224bb0020e2a18dd167d5cd00598ff6f6d2718841aba0bc0bc1",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "a0aa0304e14e9bd929244b17398f95a1d3e0ef621d77e2ce6c9a8add149f72cd",
+    "raw_response_text_sha256": "3b3407ee410e843d75b1106b05a49befc3cb4246a4302026620d6912e71f73ec"
+  },
+  "api_metadata": {
+    "id": "resp_0f4d4bf2d8ef53da006aaa1c5f226c87d2b1617d885b0a18d2",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789533279.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1037,
+      "input_tokens_details": {
+        "cache_write_tokens": 1034,
+        "cached_tokens": 0
+      },
+      "output_tokens": 281,
+      "output_tokens_details": {
+        "reasoning_tokens": 134
+      },
+      "total_tokens": 1318
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.96,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Israeli singer Eden Hason's coming out and engagement\",\n  \"conflict_relevance\": \"The article's image caption briefly mentions a 2023 event demanding the release of hostages held in Gaza, but the conflict is not discussed in the article's main content.\",\n  \"reason\": \"The article is primarily about a celebrity's personal relationship and contains only an incidental reference to Gaza and hostages in a photo caption.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T04:34:43Z",
+  "duration_seconds": 4.005,
+  "error": null
+}

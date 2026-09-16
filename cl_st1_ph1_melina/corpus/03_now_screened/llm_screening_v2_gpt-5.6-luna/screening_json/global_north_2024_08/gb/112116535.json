@@ -1,0 +1,65 @@
+{
+  "article_id": "112116535",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_08/gb/112116535.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_08/gb/112116535.json"
+  },
+  "manifest_row": {
+    "article_id": "112116535",
+    "group": "global_north_2024_08",
+    "country_code": "gb",
+    "filepath": "corpus/02_now_organised/global_north_2024_08/gb/112116535.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "substantial",
+    "main_topic": "Tommy Robinson's corporate finances, insolvency arrangements, and far-right activism",
+    "conflict_relevance": "The main article is unrelated to Gaza, but the text includes a separate, substantive article about an Israeli strike on a Gaza school, civilian casualties, international humanitarian law, ceasefire negotiations, hostages, and competing Israeli and Palestinian claims.",
+    "reason": "The article is a concatenation of two unrelated pieces. The primary piece concerns Tommy Robinson's finances and far-right networks, while the appended Gaza report contains meaningful conflict discourse but is not the main subject of the initial article.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "9c840bc75c05c6cae6e8fc52b20aac96c145fa40fcadfeec65cfa411d6c7ec7c",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "5749c122854321579ab2b29c1ea7f455cee970a498c322d04aaaaca4ed63b166",
+    "raw_response_text_sha256": "5ce0d1f11aa7967cab7f5f0d49cce0c51a911179e028f907ae928372fcbbb387"
+  },
+  "api_metadata": {
+    "id": "resp_0dffb4471034371d006aaa141fe62c87d2a1cd01e85a141b99",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789531167.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 4087,
+      "input_tokens_details": {
+        "cache_write_tokens": 4084,
+        "cached_tokens": 0
+      },
+      "output_tokens": 394,
+      "output_tokens_details": {
+        "reasoning_tokens": 211
+      },
+      "total_tokens": 4481
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"substantial\",\n  \"main_topic\": \"Tommy Robinson's corporate finances, insolvency arrangements, and far-right activism\",\n  \"conflict_relevance\": \"The main article is unrelated to Gaza, but the text includes a separate, substantive article about an Israeli strike on a Gaza school, civilian casualties, international humanitarian law, ceasefire negotiations, hostages, and competing Israeli and Palestinian claims.\",\n  \"reason\": \"The article is a concatenation of two unrelated pieces. The primary piece concerns Tommy Robinson's finances and far-right networks, while the appended Gaza report contains meaningful conflict discourse but is not the main subject of the initial article.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:59:33Z",
+  "duration_seconds": 5.727,
+  "error": null
+}

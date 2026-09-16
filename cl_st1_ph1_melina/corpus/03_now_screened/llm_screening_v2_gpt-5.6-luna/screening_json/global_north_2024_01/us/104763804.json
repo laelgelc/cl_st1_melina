@@ -1,0 +1,65 @@
+{
+  "article_id": "104763804",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_01/us/104763804.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_01/us/104763804.json"
+  },
+  "manifest_row": {
+    "article_id": "104763804",
+    "group": "global_north_2024_01",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2024_01/us/104763804.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "background",
+    "main_topic": "Russian strikes on Ukraine and Ukrainian calls for continued Western military support",
+    "conflict_relevance": "The main article concerns the Russia-Ukraine war, but it includes a separate substantive news snippet about Tony Blair allegedly being linked to discussions on resettling Palestinians from Gaza and proposals concerning Gaza after the war.",
+    "reason": "The headline article is not about Gaza or the Israel-Palestine conflict. However, the embedded Gaza-related item contains meaningful discourse about Palestinian displacement, Israeli settlement proposals, and postwar policy, making the compilation relevant as peripheral material.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "9ac42f203d94681c04d4dea6a6fd66f3d2eea6bf3d1a63c30f8a879840645148",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "73330a9dce603cfafd5601e3614337b5164ee33e5612458948d435cdc9429419",
+    "raw_response_text_sha256": "4af188779eced10a68b17ebbd7f4f4f5080b31b105104070d73d49f495e4c481"
+  },
+  "api_metadata": {
+    "id": "resp_0da7517b7e820220006aaa047cb9d087d2b586c3f80b7f0fb4",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789527164.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2385,
+      "input_tokens_details": {
+        "cache_write_tokens": 2382,
+        "cached_tokens": 0
+      },
+      "output_tokens": 280,
+      "output_tokens_details": {
+        "reasoning_tokens": 104
+      },
+      "total_tokens": 2665
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Russian strikes on Ukraine and Ukrainian calls for continued Western military support\",\n  \"conflict_relevance\": \"The main article concerns the Russia-Ukraine war, but it includes a separate substantive news snippet about Tony Blair allegedly being linked to discussions on resettling Palestinians from Gaza and proposals concerning Gaza after the war.\",\n  \"reason\": \"The headline article is not about Gaza or the Israel-Palestine conflict. However, the embedded Gaza-related item contains meaningful discourse about Palestinian displacement, Israeli settlement proposals, and postwar policy, making the compilation relevant as peripheral material.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:52:47Z",
+  "duration_seconds": 3.359,
+  "error": null
+}

@@ -1,0 +1,65 @@
+{
+  "article_id": "101766121",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_south_2023_09/in/101766121.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_south_2023_09/in/101766121.json"
+  },
+  "manifest_row": {
+    "article_id": "101766121",
+    "group": "global_south_2023_09",
+    "country_code": "in",
+    "filepath": "corpus/02_now_organised/global_south_2023_09/in/101766121.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.97,
+    "gaza_role": "background",
+    "main_topic": "Authoritarian repression and protest movements across the Middle East",
+    "conflict_relevance": "The main article discusses protests and political repression in several Middle Eastern countries, including Israel, and briefly references the Israeli occupation and West Bank and Gaza-related policies. The Gaza/Palestine discourse is meaningful but not central.",
+    "reason": "The article is primarily about regional protest movements and authoritarianism rather than Gaza or the Israel-Palestine conflict. A separate, unrelated article about Indian national security and historical insurgencies is also appended.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "d922cc8b9855d74a2c15d97d1f0de776a4798610aaba62868a66186408d65dce",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "db512cc7812c55a26179d80d3feb1a38a91cdfadec5752d3c0286e750bfc8f5b",
+    "raw_response_text_sha256": "8fa836c9923592aa54a9c3c70fa5016daa341cfdcec8081b5c8a82634cdd1a22"
+  },
+  "api_metadata": {
+    "id": "resp_06a4c4d5577d3c6f006aaa31f0faf887d18275114fa58db148",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789538801.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 4248,
+      "input_tokens_details": {
+        "cache_write_tokens": 4245,
+        "cached_tokens": 0
+      },
+      "output_tokens": 280,
+      "output_tokens_details": {
+        "reasoning_tokens": 110
+      },
+      "total_tokens": 4528
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.97,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Authoritarian repression and protest movements across the Middle East\",\n  \"conflict_relevance\": \"The main article discusses protests and political repression in several Middle Eastern countries, including Israel, and briefly references the Israeli occupation and West Bank and Gaza-related policies. The Gaza/Palestine discourse is meaningful but not central.\",\n  \"reason\": \"The article is primarily about regional protest movements and authoritarianism rather than Gaza or the Israel-Palestine conflict. A separate, unrelated article about Indian national security and historical insurgencies is also appended.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T06:06:45Z",
+  "duration_seconds": 5.125,
+  "error": null
+}

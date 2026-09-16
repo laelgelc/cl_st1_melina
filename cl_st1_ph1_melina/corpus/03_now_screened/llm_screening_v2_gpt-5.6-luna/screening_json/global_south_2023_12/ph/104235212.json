@@ -1,0 +1,65 @@
+{
+  "article_id": "104235212",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_south_2023_12/ph/104235212.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_south_2023_12/ph/104235212.json"
+  },
+  "manifest_row": {
+    "article_id": "104235212",
+    "group": "global_south_2023_12",
+    "country_code": "ph",
+    "filepath": "corpus/02_now_organised/global_south_2023_12/ph/104235212.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "background",
+    "main_topic": "Philippine basketball, including Asi Taulava's record appearance and Robert Bolick's NLEX debut",
+    "conflict_relevance": "The article includes a substantive but unrelated brief about Gaza, Hamas hostages, the WHO, and the collapse of Gaza's health system.",
+    "reason": "The main article is a sports report. The Gaza material appears as an appended news snippet rather than being integrated into the article's central topic, but it contains meaningful conflict-related discourse and is therefore peripheral rather than excludable.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "b119047e7ad8b973b894daf5f5d21ccd6727276caed0ba1d64134ea06a3e238f",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "c25d114c0badc6435a13a8e72c10cf08632278f4a28b9af8e1c1acb74c4138ee",
+    "raw_response_text_sha256": "3c1c6085307aafee734dce8e0b34319a5dafdffdfad85263413f42593eacb617"
+  },
+  "api_metadata": {
+    "id": "resp_0e262af8169e85be006aaa37333f0087d1b2e7ae108dd5e766",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789540147.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1187,
+      "input_tokens_details": {
+        "cache_write_tokens": 1184,
+        "cached_tokens": 0
+      },
+      "output_tokens": 237,
+      "output_tokens_details": {
+        "reasoning_tokens": 68
+      },
+      "total_tokens": 1424
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Philippine basketball, including Asi Taulava's record appearance and Robert Bolick's NLEX debut\",\n  \"conflict_relevance\": \"The article includes a substantive but unrelated brief about Gaza, Hamas hostages, the WHO, and the collapse of Gaza's health system.\",\n  \"reason\": \"The main article is a sports report. The Gaza material appears as an appended news snippet rather than being integrated into the article's central topic, but it contains meaningful conflict-related discourse and is therefore peripheral rather than excludable.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T06:29:10Z",
+  "duration_seconds": 3.112,
+  "error": null
+}
