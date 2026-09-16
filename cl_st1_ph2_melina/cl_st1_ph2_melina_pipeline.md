@@ -13,3 +13,6 @@ python tag.py
 ```
 
 Output: `corpus/05_tagged/<group>/`
+
+## Extract key lemmas by group
+
