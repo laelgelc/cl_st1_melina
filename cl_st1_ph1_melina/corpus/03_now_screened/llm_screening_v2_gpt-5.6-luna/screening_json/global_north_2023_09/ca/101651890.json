@@ -1,0 +1,65 @@
+{
+  "article_id": "101651890",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_09/ca/101651890.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_09/ca/101651890.json"
+  },
+  "manifest_row": {
+    "article_id": "101651890",
+    "group": "global_north_2023_09",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2023_09/ca/101651890.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.91,
+    "gaza_role": "passing",
+    "main_topic": "Toronto shelter access for refugees and asylum seekers",
+    "conflict_relevance": "The main article concerns municipal shelter policy and refugee services in Toronto, not the Israel-Palestine conflict. It includes a separate embedded news snippet about Israel reopening Gaza's Kerem Shalom cargo crossing.",
+    "reason": "The Gaza-related content is a meaningful but unrelated short news item embedded among other latest stories, so the article is relevant only peripherally rather than as core conflict coverage.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "f82fd0626bc443c6154fd94faef3bc2193bd6777b262b44f9466c93adda665e0",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "f5a50d3c7ae8f999a031029d3db009a6b08b367c31e26941f55f7e2554d3fb10",
+    "raw_response_text_sha256": "e4c0d8737ef3705502ff864d71b3bbbb7a9c0063d7bb7a40aca18288d29a647d"
+  },
+  "api_metadata": {
+    "id": "resp_08a6645f3d590ff9006aa9e15695e887d2b8d37e9b2d743179",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789518166.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 3569,
+      "input_tokens_details": {
+        "cache_write_tokens": 3566,
+        "cached_tokens": 0
+      },
+      "output_tokens": 350,
+      "output_tokens_details": {
+        "reasoning_tokens": 191
+      },
+      "total_tokens": 3919
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.91,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Toronto shelter access for refugees and asylum seekers\",\n  \"conflict_relevance\": \"The main article concerns municipal shelter policy and refugee services in Toronto, not the Israel-Palestine conflict. It includes a separate embedded news snippet about Israel reopening Gaza's Kerem Shalom cargo crossing.\",\n  \"reason\": \"The Gaza-related content is a meaningful but unrelated short news item embedded among other latest stories, so the article is relevant only peripherally rather than as core conflict coverage.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 500,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T00:22:51Z",
+  "duration_seconds": 5.601,
+  "error": null
+}

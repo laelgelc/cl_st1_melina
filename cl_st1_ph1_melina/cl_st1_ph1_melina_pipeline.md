@@ -60,7 +60,7 @@ python llm_screening.py \
 ```
 
 
-### Test run
+### Test run, first time
 
 ```shell
 python llm_screening.py \
@@ -68,7 +68,19 @@ python llm_screening.py \
     --output corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna \
     --prompt llm_screening_prompts/llm_screening_v2.md \
     --model gpt-5.6-luna \
-    --limit 10 \
+    --limit 10
+```
+
+### 20 workers test run
+
+```shell
+python llm_screening.py \
+    --manifest corpus/palestine_now.ndjson \
+    --output corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna \
+    --prompt llm_screening_prompts/llm_screening_v2.md \
+    --model gpt-5.6-luna \
+    --limit 200 \
+    --workers 20 \
     --resume
 ```
 
