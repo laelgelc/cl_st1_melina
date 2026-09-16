@@ -81,7 +81,8 @@ python llm_screening.py \
     --model gpt-5.6-luna \
     --limit 200 \
     --workers 20 \
-    --resume
+    --resume \
+    --max-output-tokens 1000
 ```
 
 ### Full run

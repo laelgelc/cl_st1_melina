@@ -1,0 +1,65 @@
+{
+  "article_id": "102542228",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_10/au/102542228.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_10/au/102542228.json"
+  },
+  "manifest_row": {
+    "article_id": "102542228",
+    "group": "global_north_2023_10",
+    "country_code": "au",
+    "filepath": "corpus/02_now_organised/global_north_2023_10/au/102542228.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.96,
+    "gaza_role": "passing",
+    "main_topic": "Mixed news roundup covering inflation, market concerns, Australian public policy, and an alleged rape case",
+    "conflict_relevance": "The Israel-Gaza war is mentioned briefly as a possible factor that could disrupt financial markets, without substantive discussion of the conflict itself.",
+    "reason": "The article consists of multiple unrelated news snippets. Gaza appears only in a brief economic-news reference concerning possible market effects if the war escalates, making it relevant to broader conflict discourse but unsuitable for the core corpus.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "62ff05cbbcebf8e49c3d3ecc77e8dc204801a8f73ad618a20eed598a3e59167e",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "452a7167751f53e99b0726bc8d6249274b35cc587ae416bef3c4656d67380254",
+    "raw_response_text_sha256": "0e31717b8223d2f6701efc600c823621ce24216311080608eec87b80f4f8e35b"
+  },
+  "api_metadata": {
+    "id": "resp_002f9f2b519cfbda006aa9e6b087d487d1bd989c590a339fd3",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789519536.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 786,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 247,
+      "output_tokens_details": {
+        "reasoning_tokens": 85
+      },
+      "total_tokens": 1033
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.96,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Mixed news roundup covering inflation, market concerns, Australian public policy, and an alleged rape case\",\n  \"conflict_relevance\": \"The Israel-Gaza war is mentioned briefly as a possible factor that could disrupt financial markets, without substantive discussion of the conflict itself.\",\n  \"reason\": \"The article consists of multiple unrelated news snippets. Gaza appears only in a brief economic-news reference concerning possible market effects if the war escalates, making it relevant to broader conflict discourse but unsuitable for the core corpus.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 500,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T00:45:39Z",
+  "duration_seconds": 3.375,
+  "error": null
+}
