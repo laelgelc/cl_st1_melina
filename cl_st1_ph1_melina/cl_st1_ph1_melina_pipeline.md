@@ -93,8 +93,10 @@ python llm_screening.py \
     --output corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna \
     --prompt llm_screening_prompts/llm_screening_v2.md \
     --model gpt-5.6-luna \
-    --workers 10 \
-    --resume
+    --workers 20 \
+    --resume \
+    --max-output-tokens 1000 \
+    --max-retries 5
 ```
 
 ### Production mode on an EC2 instance
@@ -106,6 +108,8 @@ bash run_python_ec2.sh \
     --output corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna \
     --prompt llm_screening_prompts/llm_screening_v2.md \
     --model gpt-5.6-luna \
-    --workers 10 \
-    --resume
+    --workers 20 \
+    --resume \
+    --max-output-tokens 1000 \
+    --max-retries 5
 ```
