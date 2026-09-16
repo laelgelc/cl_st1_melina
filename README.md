@@ -20,7 +20,7 @@ The broader research focus is on diachronic media discourse around Palestine/Gaz
 
 ---
 
-## Project Structure
+### Project Structure
 
 The active Phase 1 directory is:
 ```text
@@ -75,7 +75,7 @@ cl_st1_ph3_melina/
 ```
 ---
 
-## Global North/South Classification
+### Global North/South Classification
 
 The project classifies NOW corpus country codes into Global North and Global South categories using:
 ```text
@@ -108,7 +108,7 @@ Current classification:
 
 ---
 
-## Workflow Overview
+### Workflow Overview
 
 Commands should be run from the Phase 1 directory unless otherwise noted:
 ```shell
@@ -116,7 +116,7 @@ cd cl_st1_ph1_melina
 ```
 ---
 
-## 1. Select NOW Articles by Seed Term
+### 1. Select NOW Articles by Seed Term
 
 The first step filters raw NOW text files for articles containing the target seed term, currently centred on `gaza`.
 ```shell
@@ -132,7 +132,7 @@ select_now_files.log
 ```
 ---
 
-## 2. Match NOW Sources and Article Files
+### 2. Match NOW Sources and Article Files
 
 The next step links selected article files with NOW source metadata over a specified date range.
 
@@ -165,7 +165,7 @@ find_now_sources_text_matches.log
 ```
 ---
 
-## 3. Organise NOW Articles
+### 3. Organise NOW Articles
 
 Matched articles are organised into a structured corpus using the study date range and the Global North/South country classification document.
 ```shell
@@ -220,7 +220,7 @@ corpus/02_now_organised/organise_now_articles.log
 ```
 ---
 
-## 4. LLM-Assisted Screening
+### 4. LLM-Assisted Screening
 
 The project includes an LLM screening stage to assess whether organised articles are relevant to the research focus.
 
@@ -267,7 +267,7 @@ The uncompressed NDJSON output exceeded GitHub's standard file-size limit, so th
 
 ---
 
-## 5. Screening Response Fields
+### 5. Screening Response Fields
 
 Each screened article contains an `llm_screening` object with the following key fields:
 
@@ -290,7 +290,7 @@ Only records where this field is `true` are included in the main recommended cor
 
 ---
 
-## 6. Inspecting the Screened Dataset
+### 6. Inspecting the Screened Dataset
 
 The notebook section beginning with **Inspect the df_palestine_now_screened dataset** imports and inspects the screened NDJSON file.
 
@@ -341,7 +341,7 @@ llm_screening_metadata__screened_at
 ```
 ---
 
-## 7. Main Recommended Corpus
+### 7. Main Recommended Corpus
 
 The main recommended corpus is created from the screened dataset by retaining only records where:
 ```text
@@ -355,7 +355,7 @@ The DataFrame is then enriched with additional fields for sampling and later ana
 
 ---
 
-## 8. Word Count Enrichment
+### 8. Word Count Enrichment
 
 The `df_palestine_now_main` DataFrame is enriched with a `word_count` column placed immediately to the right of `filepath`.
 
@@ -378,11 +378,11 @@ df_palestine_now_main["word_count"].plot(kind="box", vert=False)
 ```
 ---
 
-## 9. IQR-Based Sampling Fields
+### 9. IQR-Based Sampling Fields
 
 Two boolean sampling fields are added to `df_palestine_now_main`.
 
-### 9.1 `within_word_count_iqr`
+#### 9.1 `within_word_count_iqr`
 
 The boolean field:
 ```text
@@ -407,7 +407,7 @@ The IQR-filtered corpus contains:
 ```text
 35,781 articles
 ```
-### 9.2 `within_word_count_iqr_cap`
+#### 9.2 `within_word_count_iqr_cap`
 
 The boolean field:
 ```text
@@ -429,7 +429,7 @@ This field identifies the IQR-capped robustness corpus, designed to limit the do
 
 ---
 
-## 10. Exported Main Corpus Files
+### 10. Exported Main Corpus Files
 
 The enriched `df_palestine_now_main` DataFrame is exported to the `corpus/` directory in three formats:
 ```text
@@ -451,11 +451,11 @@ within_word_count_iqr_cap
 ```
 ---
 
-## 11. Phase 2 and Phase 3 Corpus Exports
+### 11. Phase 2 and Phase 3 Corpus Exports
 
 The notebook also copies selected article text files into later phase directories while preserving the original subdirectory structure below `corpus/02_now_organised/`.
 
-### 11.1 Phase 2: IQR-Capped Corpus
+#### 11.1 Phase 2: IQR-Capped Corpus
 
 Files where:
 ```text
@@ -477,7 +477,7 @@ Example destination:
 ```
 This corpus is intended for balanced or capped robustness analysis.
 
-### 11.2 Phase 3: IQR-Filtered Corpus
+#### 11.2 Phase 3: IQR-Filtered Corpus
 
 Files where:
 ```text
@@ -501,13 +501,13 @@ This corpus is intended as the main IQR-filtered analysis corpus.
 
 ---
 
-## 12. Corpus Sampling and Analysis Strategy
+### 12. Corpus Sampling and Analysis Strategy
 
 The sampling strategy distinguishes between **discursive salience** and **lexical-discursive patterning**.
 
 The project therefore does not treat one single corpus as sufficient for every analytical purpose. Instead, it maintains multiple analytically distinct corpus layers.
 
-### 12.1 Full Main Corpus
+#### 12.1 Full Main Corpus
 
 The full recommended corpus is represented by:
 ```text
@@ -539,7 +539,7 @@ Article concentration in particular months or groups is not automatically treate
 - shifts in national foreign-policy discourse;
 - heightened salience of Palestine/Gaza in domestic politics.
 
-### 12.2 IQR-Filtered Corpus
+#### 12.2 IQR-Filtered Corpus
 
 The IQR-filtered corpus is identified through:
 ```text
@@ -555,7 +555,7 @@ It answers:
 
 > Among comparable article-length texts, what lexical-discursive patterns emerge?
 
-### 12.3 IQR-Capped Corpus
+#### 12.3 IQR-Capped Corpus
 
 The IQR-capped corpus is identified through:
 ```text
@@ -580,7 +580,7 @@ It answers:
 
 ---
 
-## 13. Rationale for Multiple Corpus Versions
+### 13. Rationale for Multiple Corpus Versions
 
 The project adopts the following methodological position:
 
@@ -605,7 +605,7 @@ The recommended strategy is therefore:
 
 ---
 
-## 14. Lexical Multidimensional Analysis Considerations
+### 14. Lexical Multidimensional Analysis Considerations
 
 Because the project uses Lexical Multidimensional Analysis, corpus composition is especially important.
 
@@ -631,7 +631,7 @@ If results are similar across the IQR-filtered and IQR-capped corpora, findings 
 
 ---
 
-## 15. Main Outputs
+### 15. Main Outputs
 
 Important generated outputs include:
 
@@ -655,9 +655,9 @@ Important generated outputs include:
 
 ---
 
-## 16. LLM Screening Commands
+### 16. LLM Screening Commands
 
-### Dry Run
+#### Dry Run
 
 Use a dry run to validate configuration before making API calls or generating full screening output.
 ```shell
@@ -669,7 +669,7 @@ python llm_screening.py \
     --limit 10 \
     --dry-run
 ```
-### Initial Test Run
+#### Initial Test Run
 ```shell
 python llm_screening.py \
     --manifest corpus/palestine_now.ndjson \
@@ -678,7 +678,7 @@ python llm_screening.py \
     --model gpt-5.6-luna \
     --limit 10
 ```
-### Parallel Test Run
+#### Parallel Test Run
 ```shell
 python llm_screening.py \
     --manifest corpus/palestine_now.ndjson \
@@ -690,7 +690,7 @@ python llm_screening.py \
     --resume \
     --max-output-tokens 1000
 ```
-### Full Screening Run
+#### Full Screening Run
 ```shell
 python llm_screening.py \
     --manifest corpus/palestine_now.ndjson \
@@ -702,7 +702,7 @@ python llm_screening.py \
     --max-output-tokens 1000 \
     --max-retries 5
 ```
-### Production Run on EC2
+#### Production Run on EC2
 
 For long-running production screening, the pipeline can be executed on an EC2 instance:
 ```shell
@@ -719,7 +719,7 @@ bash run_python_ec2.sh \
 ```
 ---
 
-## 17. Corpus Scope
+### 17. Corpus Scope
 
 The working corpus is built from NOW articles containing the `gaza` seed term and is organised for a study period beginning in September 2023.
 
@@ -737,7 +737,7 @@ The corpus contains news reports, opinion pieces, syndicated content, live updat
 
 ---
 
-## 18. Documentation
+### 18. Documentation
 
 Additional workflow and methodological notes are maintained in the Phase 1 directory:
 ```text
@@ -756,7 +756,7 @@ docs/corpus_sampling_and_analysis_strategy.md
 ```
 ---
 
-## 19. Reproducibility Notes
+### 19. Reproducibility Notes
 
 - Commands should be run from `cl_st1_ph1_melina/`.
 - Generated logs and manifests should be retained for auditability.
@@ -771,6 +771,9 @@ docs/corpus_sampling_and_analysis_strategy.md
 
 ---
 
-## 20. License
+### 20. License
 
 See `LICENSE`.
+
+## Phase 2 - Lexical Multi-dimensional Analysis (IQR-Capped)
+
