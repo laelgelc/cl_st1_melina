@@ -89,6 +89,8 @@ I would structure the corpus in three layers:
 
 This is your complete eligible set after LLM screening.
 
+> corpus/palestine_now_main.tsv
+
 Use it for:
 
 - documenting data collection;
@@ -104,6 +106,8 @@ This answers:
 ### 2. IQR-filtered analysis corpus
 
 This is what you already created: recommended articles within the word-count IQR. You mentioned this gives **35,781 articles**, which is a reasonable size for exploratory multidimensional work.
+
+> corpus/palestine_now_main_iqr.tsv
 
 Use this as your **primary LMDA-ready corpus**, because it controls for extreme article length while preserving much of the natural distribution.
 
@@ -121,20 +125,17 @@ I would not simply impose one global cap on `group` without thinking about what 
 global_position × time_period
 ```
 
-
 or:
 
 ```plain text
 global_position × year_month
 ```
 
-
 or, if feasible:
 
 ```plain text
 global_position × year_month × country_code
 ```
-
 
 depending on how many articles you have in each cell.
 
@@ -209,7 +210,6 @@ global_north_2025_01
 global_south_2025_01
 ```
 
-
 then a group cap is useful.
 
 But I would avoid a cap so low that you lose real diachronic signal. Instead, inspect group counts first and choose a cap based on the distribution.
@@ -237,7 +237,6 @@ keep all groups below the cap;
 randomly sample down only groups above the cap.
 ```
 
-
 This is better than full equalisation because it preserves more data while limiting dominance.
 
 Conceptually:
@@ -253,7 +252,6 @@ df_palestine_now_main_iqr_capped = (
 )
 ```
 
-
 Then compare:
 
 ```plain text
@@ -261,7 +259,6 @@ IQR corpus
 vs
 IQR + capped corpus
 ```
-
 
 If the LMDA dimensions are broadly similar across both, your findings are more robust.
 
@@ -280,7 +277,6 @@ Then sample across:
 ```plain text
 global_position × time_period × word_count_bin
 ```
-
 
 This helps ensure that one group is not disproportionately made up of longer texts.
 
