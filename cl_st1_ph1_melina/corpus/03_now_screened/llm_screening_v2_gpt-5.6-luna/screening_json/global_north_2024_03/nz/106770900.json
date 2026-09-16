@@ -1,0 +1,65 @@
+{
+  "article_id": "106770900",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_03/nz/106770900.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_03/nz/106770900.json"
+  },
+  "manifest_row": {
+    "article_id": "106770900",
+    "group": "global_north_2024_03",
+    "country_code": "nz",
+    "filepath": "corpus/02_now_organised/global_north_2024_03/nz/106770900.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "gaza_role": "boilerplate_or_unrelated",
+    "main_topic": "New Zealand government housing policy and eviction of antisocial Kāinga Ora tenants",
+    "conflict_relevance": "The main article concerns domestic housing policy and contains no substantive discussion of Gaza or the Israel-Palestine conflict. Gaza appears only in an unrelated brief roundup item about humanitarian aid.",
+    "reason": "The article text consists of multiple unrelated snippets, with the primary content focused on New Zealand social housing and antisocial behaviour. The Gaza reference is an incidental embedded news item rather than meaningful discourse in the main article.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "87bd217d792dd5a51f4fdb9ecc4a066d87a021d8f292fbd9acb27001a2d798a1",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "f60775880369989a127a08aff65b2af4c18a6e3ba8285b8e07c9bb2c14390ab9",
+    "raw_response_text_sha256": "bd9debe077c121a668e76207dbc519c46e979c51f63f02117f2d5c38f2bab11c"
+  },
+  "api_metadata": {
+    "id": "resp_0acb6f7e5ba70a07006aaa0935747487d283823c90a2516849",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789528373.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1208,
+      "input_tokens_details": {
+        "cache_write_tokens": 1205,
+        "cached_tokens": 0
+      },
+      "output_tokens": 273,
+      "output_tokens_details": {
+        "reasoning_tokens": 101
+      },
+      "total_tokens": 1481
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"New Zealand government housing policy and eviction of antisocial Kāinga Ora tenants\",\n  \"conflict_relevance\": \"The main article concerns domestic housing policy and contains no substantive discussion of Gaza or the Israel-Palestine conflict. Gaza appears only in an unrelated brief roundup item about humanitarian aid.\",\n  \"reason\": \"The article text consists of multiple unrelated snippets, with the primary content focused on New Zealand social housing and antisocial behaviour. The Gaza reference is an incidental embedded news item rather than meaningful discourse in the main article.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:12:57Z",
+  "duration_seconds": 3.698,
+  "error": null
+}

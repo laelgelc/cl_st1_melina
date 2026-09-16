@@ -1,0 +1,65 @@
+{
+  "article_id": "105420170",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_01/ie/105420170.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_01/ie/105420170.json"
+  },
+  "manifest_row": {
+    "article_id": "105420170",
+    "group": "global_north_2024_01",
+    "country_code": "ie",
+    "filepath": "corpus/02_now_organised/global_north_2024_01/ie/105420170.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.91,
+    "gaza_role": "background",
+    "main_topic": "A house concert fundraiser in Dublin raising money for Gaza",
+    "conflict_relevance": "The article reports a local fundraising event organized to support Gaza, but provides no substantive discussion of the conflict, its politics, humanitarian conditions, or related public discourse.",
+    "reason": "Gaza is the purpose of the fundraiser and is meaningfully mentioned, but the article primarily focuses on the event, its organizers, performers, and money raised rather than on the conflict itself.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "41217e9442008b7a4db4377236c3d3b658b463f445e37df881705409f93d400f",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "07a47f54a6244bb6119742f37db933ba486091446c704c04078a325dc92627f5",
+    "raw_response_text_sha256": "cd8e9ada7744de826334155a5683eedb1d28100e45224daebfc6d17e3a17544f"
+  },
+  "api_metadata": {
+    "id": "resp_00617dde5caf83b5006aaa044a0fec87d2b150be6ae20345ac",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789527114.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 992,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 332,
+      "output_tokens_details": {
+        "reasoning_tokens": 176
+      },
+      "total_tokens": 1324
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.91,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"A house concert fundraiser in Dublin raising money for Gaza\",\n  \"conflict_relevance\": \"The article reports a local fundraising event organized to support Gaza, but provides no substantive discussion of the conflict, its politics, humanitarian conditions, or related public discourse.\",\n  \"reason\": \"Gaza is the purpose of the fundraiser and is meaningfully mentioned, but the article primarily focuses on the event, its organizers, performers, and money raised rather than on the conflict itself.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:51:57Z",
+  "duration_seconds": 3.861,
+  "error": null
+}

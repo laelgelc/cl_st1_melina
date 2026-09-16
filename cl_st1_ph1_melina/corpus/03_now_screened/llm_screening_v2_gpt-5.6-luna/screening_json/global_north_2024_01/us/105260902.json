@@ -1,0 +1,65 @@
+{
+  "article_id": "105260902",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_01/us/105260902.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_01/us/105260902.json"
+  },
+  "manifest_row": {
+    "article_id": "105260902",
+    "group": "global_north_2024_01",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2024_01/us/105260902.txt"
+  },
+  "screening": {
+    "category": "CORE",
+    "confidence": 0.99,
+    "gaza_role": "substantial",
+    "main_topic": "Violent anti-Israel protest targeting Israeli exhibitors at an Italian jewellery fair",
+    "conflict_relevance": "Directly concerns public protest discourse about Israel's military campaign in Gaza, Palestinian solidarity, calls to stop bombing Gaza, and the international political consequences of the Israel-Hamas war.",
+    "reason": "The headline article is centrally about a protest against Israeli participation in a jewellery fair, featuring Free Palestine and Stop Bombing Gaza banners, clashes with police, and contextual reporting on the October 7 attack, hostages, Israel's offensive, and Palestinian deaths. The additional latest-stories items are unrelated snippets, but the main article itself is directly relevant to the conflict.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": true
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "3e0870acda84949b35be4dc00207565335063d04762508ff0d51ff43a51027b3",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "8041086f7fcef41a6eabb89bd306825432760645d429a634caa2330d90151642",
+    "raw_response_text_sha256": "1cdb4582a65a6417407552f62899e4a9a59dc57e75b98d9069a40e2b7f4c2239"
+  },
+  "api_metadata": {
+    "id": "resp_0a5b2310a055585d006aaa04e8775c87d293c3679d5ae8b399",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789527272.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1848,
+      "input_tokens_details": {
+        "cache_write_tokens": 1845,
+        "cached_tokens": 0
+      },
+      "output_tokens": 272,
+      "output_tokens_details": {
+        "reasoning_tokens": 75
+      },
+      "total_tokens": 2120
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"CORE\",\n  \"confidence\": 0.99,\n  \"gaza_role\": \"substantial\",\n  \"main_topic\": \"Violent anti-Israel protest targeting Israeli exhibitors at an Italian jewellery fair\",\n  \"conflict_relevance\": \"Directly concerns public protest discourse about Israel's military campaign in Gaza, Palestinian solidarity, calls to stop bombing Gaza, and the international political consequences of the Israel-Hamas war.\",\n  \"reason\": \"The headline article is centrally about a protest against Israeli participation in a jewellery fair, featuring Free Palestine and Stop Bombing Gaza banners, clashes with police, and contextual reporting on the October 7 attack, hostages, Israel's offensive, and Palestinian deaths. The additional latest-stories items are unrelated snippets, but the main article itself is directly relevant to the conflict.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": true\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:54:36Z",
+  "duration_seconds": 4.406,
+  "error": null
+}

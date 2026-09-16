@@ -1,0 +1,65 @@
+{
+  "article_id": "200321513",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_03/us/200321513.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_03/us/200321513.json"
+  },
+  "manifest_row": {
+    "article_id": "200321513",
+    "group": "global_north_2024_03",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2024_03/us/200321513.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "background",
+    "main_topic": "Egyptian fuel price increases, inflation, currency depreciation, and IMF-linked economic reforms",
+    "conflict_relevance": "The article briefly connects Egypt's economic difficulties and reduced Suez Canal revenues to the Israel-Hamas war in Gaza and related Houthi attacks on Red Sea shipping.",
+    "reason": "The main subject is Egypt's economy and fuel prices, but it contains meaningful contextual discussion of how the Gaza war and associated regional disruption have affected Egypt.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "ab00a2edbe52076a75cc4446cba7a9d803d356851039a434478f87eb94855566",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "985386407e189e95e92e09c62a43fcf974ebfa36e85e2093667c35765bd5beee",
+    "raw_response_text_sha256": "b3fe67dba49365052d189cb1ea4f162788800e98b47e013e6a78e63aedbd627b"
+  },
+  "api_metadata": {
+    "id": "resp_0de35ed6612ae233006aaa0a94603487d2b0aec3de8dbd85cd",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789528724.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1243,
+      "input_tokens_details": {
+        "cache_write_tokens": 1240,
+        "cached_tokens": 0
+      },
+      "output_tokens": 191,
+      "output_tokens_details": {
+        "reasoning_tokens": 36
+      },
+      "total_tokens": 1434
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Egyptian fuel price increases, inflation, currency depreciation, and IMF-linked economic reforms\",\n  \"conflict_relevance\": \"The article briefly connects Egypt's economic difficulties and reduced Suez Canal revenues to the Israel-Hamas war in Gaza and related Houthi attacks on Red Sea shipping.\",\n  \"reason\": \"The main subject is Egypt's economy and fuel prices, but it contains meaningful contextual discussion of how the Gaza war and associated regional disruption have affected Egypt.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:18:47Z",
+  "duration_seconds": 2.85,
+  "error": null
+}

@@ -1,0 +1,65 @@
+{
+  "article_id": "108808768",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_06/ca/108808768.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_06/ca/108808768.json"
+  },
+  "manifest_row": {
+    "article_id": "108808768",
+    "group": "global_north_2024_06",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2024_06/ca/108808768.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.96,
+    "gaza_role": "passing",
+    "main_topic": "A second-degree murder trial and related Canadian news briefs",
+    "conflict_relevance": "The main article concerns a local murder trial and is unrelated to Gaza or Palestine; a separate embedded news brief mentions a University of Victoria investigation into alleged conduct connected to the war in Gaza.",
+    "reason": "The Gaza-related content appears only as one item in a collection of unrelated news snippets and is not developed in the main article, but it constitutes a meaningful passing reference rather than boilerplate.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "4e47eae4035b6e56720724ea97e60495dcca30b29721b63a75fcf2baa8bee7e0",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "72fa98a1fc9d8dd849a5a71a48045228591fe042365159fd7ccb39d285ecdea9",
+    "raw_response_text_sha256": "519bf69ad91cbaadabfb7034752958f418aed7d053000b0d5431f493b913112d"
+  },
+  "api_metadata": {
+    "id": "resp_05f34bd58909f85b006aaa10210d3c87d29d20130bb2bbb533",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789530145.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1832,
+      "input_tokens_details": {
+        "cache_write_tokens": 1829,
+        "cached_tokens": 0
+      },
+      "output_tokens": 251,
+      "output_tokens_details": {
+        "reasoning_tokens": 91
+      },
+      "total_tokens": 2083
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.96,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"A second-degree murder trial and related Canadian news briefs\",\n  \"conflict_relevance\": \"The main article concerns a local murder trial and is unrelated to Gaza or Palestine; a separate embedded news brief mentions a University of Victoria investigation into alleged conduct connected to the war in Gaza.\",\n  \"reason\": \"The Gaza-related content appears only as one item in a collection of unrelated news snippets and is not developed in the main article, but it constitutes a meaningful passing reference rather than boilerplate.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:42:28Z",
+  "duration_seconds": 3.532,
+  "error": null
+}

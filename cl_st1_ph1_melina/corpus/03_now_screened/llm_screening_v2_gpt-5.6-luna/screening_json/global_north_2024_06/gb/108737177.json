@@ -1,0 +1,65 @@
+{
+  "article_id": "108737177",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_06/gb/108737177.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_06/gb/108737177.json"
+  },
+  "manifest_row": {
+    "article_id": "108737177",
+    "group": "global_north_2024_06",
+    "country_code": "gb",
+    "filepath": "corpus/02_now_organised/global_north_2024_06/gb/108737177.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.96,
+    "gaza_role": "background",
+    "main_topic": "Nigel Farage's Reform UK leadership, election candidacy, and the 2024 UK general election",
+    "conflict_relevance": "The article includes a substantive but unrelated embedded update about Israeli hostages held in Gaza, their reported deaths, and a US cease-fire proposal.",
+    "reason": "The main article is a live political news roundup focused on Farage and UK electoral politics. The Gaza-related material is meaningful but appears as an inserted unrelated news item rather than part of the article's central topic.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "e471626d54f57d478ba049f63600536fa7d0ff1e21b6206ec372f2a619a5ea8b",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "980427e5564629b42ba65ac377671765bcad607d5ce47138aaf4b23d17101e55",
+    "raw_response_text_sha256": "f0dd0d288c4d70506a54644a5f228071052ee71497b1c6bdfd222ba8b0b87c0f"
+  },
+  "api_metadata": {
+    "id": "resp_0f512663cb69128d006aaa1054a07c87d2ab349ba36ea23cba",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789530196.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 5312,
+      "input_tokens_details": {
+        "cache_write_tokens": 5309,
+        "cached_tokens": 0
+      },
+      "output_tokens": 337,
+      "output_tokens_details": {
+        "reasoning_tokens": 170
+      },
+      "total_tokens": 5649
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.96,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Nigel Farage's Reform UK leadership, election candidacy, and the 2024 UK general election\",\n  \"conflict_relevance\": \"The article includes a substantive but unrelated embedded update about Israeli hostages held in Gaza, their reported deaths, and a US cease-fire proposal.\",\n  \"reason\": \"The main article is a live political news roundup focused on Farage and UK electoral politics. The Gaza-related material is meaningful but appears as an inserted unrelated news item rather than part of the article's central topic.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:43:21Z",
+  "duration_seconds": 4.99,
+  "error": null
+}

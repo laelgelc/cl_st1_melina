@@ -1,0 +1,65 @@
+{
+  "article_id": "102693019",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_south_2023_10/in/102693019.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_south_2023_10/in/102693019.json"
+  },
+  "manifest_row": {
+    "article_id": "102693019",
+    "group": "global_south_2023_10",
+    "country_code": "in",
+    "filepath": "corpus/02_now_organised/global_south_2023_10/in/102693019.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.96,
+    "gaza_role": "substantial",
+    "main_topic": "A general news roundup covering domestic, international, legal, aviation, and political developments",
+    "conflict_relevance": "Includes a substantive international-news item on the Israel-Hamas war, Biden's visit to Israel, Gaza's humanitarian crisis, and reported casualties.",
+    "reason": "The article is primarily a multi-item news roundup rather than focused coverage of Gaza or the Israel-Hamas war. However, its Gaza segment contains meaningful conflict-related discourse about the humanitarian situation, diplomatic activity, and casualties, making it useful as peripheral material.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "761ab8b33d63215e91111513a8b532ac60836031d2c94223cb997815bbae35d5",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "8af7de4dd35ede855f25bcffe3fbe7752a529ecf029b873b3825fb18a5574fd2",
+    "raw_response_text_sha256": "e9207b24e3b022daba3cf0ea48700ea1572a980d25abe5d01db233378747dadc"
+  },
+  "api_metadata": {
+    "id": "resp_0e6dc23e39646bc5006aaa32aa5e1087d18dee40fd7a20d3ea",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789538986.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1728,
+      "input_tokens_details": {
+        "cache_write_tokens": 1725,
+        "cached_tokens": 0
+      },
+      "output_tokens": 359,
+      "output_tokens_details": {
+        "reasoning_tokens": 188
+      },
+      "total_tokens": 2087
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.96,\n  \"gaza_role\": \"substantial\",\n  \"main_topic\": \"A general news roundup covering domestic, international, legal, aviation, and political developments\",\n  \"conflict_relevance\": \"Includes a substantive international-news item on the Israel-Hamas war, Biden's visit to Israel, Gaza's humanitarian crisis, and reported casualties.\",\n  \"reason\": \"The article is primarily a multi-item news roundup rather than focused coverage of Gaza or the Israel-Hamas war. However, its Gaza segment contains meaningful conflict-related discourse about the humanitarian situation, diplomatic activity, and casualties, making it useful as peripheral material.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T06:09:49Z",
+  "duration_seconds": 3.685,
+  "error": null
+}

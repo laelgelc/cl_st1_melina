@@ -1,0 +1,65 @@
+{
+  "article_id": "104333125",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_12/gb/104333125.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_12/gb/104333125.json"
+  },
+  "manifest_row": {
+    "article_id": "104333125",
+    "group": "global_north_2023_12",
+    "country_code": "gb",
+    "filepath": "corpus/02_now_organised/global_north_2023_12/gb/104333125.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.97,
+    "gaza_role": "background",
+    "main_topic": "British naval action against suspected Houthi drone attacks on Red Sea shipping",
+    "conflict_relevance": "The article connects Houthi attacks on Red Sea shipping and attacks targeting Israel to the Israel-Hamas war, the Gaza siege, and humanitarian conditions in Palestine and Gaza.",
+    "reason": "The main focus is maritime security and British military action in the Red Sea, not Gaza or the Israel-Hamas war. However, it contains meaningful contextual reporting on the Houthis' stated response to the war and their demands concerning Gaza.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "fb472cd037b350307110d5902fc7c545f345068feb78e7f5cf1048d82e4f7842",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "8862a1c3739ce26bce36281e2923225cff108760fb59b87f33e363e8d1ef18ab",
+    "raw_response_text_sha256": "c835c062eabd47c763e0bc3ebf39003d7027b7228e6545ad6caf4acb1dff1105"
+  },
+  "api_metadata": {
+    "id": "resp_0ac6da69fc38122b006aaa0113d9bc87d2bad52af1326216fb",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789526291.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1411,
+      "input_tokens_details": {
+        "cache_write_tokens": 1408,
+        "cached_tokens": 0
+      },
+      "output_tokens": 269,
+      "output_tokens_details": {
+        "reasoning_tokens": 98
+      },
+      "total_tokens": 1680
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.97,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"British naval action against suspected Houthi drone attacks on Red Sea shipping\",\n  \"conflict_relevance\": \"The article connects Houthi attacks on Red Sea shipping and attacks targeting Israel to the Israel-Hamas war, the Gaza siege, and humanitarian conditions in Palestine and Gaza.\",\n  \"reason\": \"The main focus is maritime security and British military action in the Red Sea, not Gaza or the Israel-Hamas war. However, it contains meaningful contextual reporting on the Houthis' stated response to the war and their demands concerning Gaza.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:38:15Z",
+  "duration_seconds": 3.784,
+  "error": null
+}

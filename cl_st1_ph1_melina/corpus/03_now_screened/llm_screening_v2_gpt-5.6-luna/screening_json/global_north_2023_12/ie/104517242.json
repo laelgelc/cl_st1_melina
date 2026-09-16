@@ -1,0 +1,65 @@
+{
+  "article_id": "104517242",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_12/ie/104517242.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_12/ie/104517242.json"
+  },
+  "manifest_row": {
+    "article_id": "104517242",
+    "group": "global_north_2023_12",
+    "country_code": "ie",
+    "filepath": "corpus/02_now_organised/global_north_2023_12/ie/104517242.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.96,
+    "gaza_role": "passing",
+    "main_topic": "Christmas editorial reflecting on religion, peace, tolerance, and humanitarian suffering",
+    "conflict_relevance": "Gaza is mentioned once as one of several places affected by war and suffering, within a general appeal for peace.",
+    "reason": "The text is primarily unrelated commentary about France and a Christmas editorial. The Gaza reference contributes a minimal but meaningful peace-and-suffering discourse connection, so it is peripheral rather than core.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "09f21b109582b60c57fa68622392ed98d5f3d7cd37b5a8e7bceb29e2a6cfe8b7",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "0876a90f1f3ee9764cbde40553dd671fd3c9573b9ed18f917c8db214a0a45247",
+    "raw_response_text_sha256": "c7a609cdf320e713d92ff19542fa3bb35742bdbd17ab1d3260c9c1c0d308e29d"
+  },
+  "api_metadata": {
+    "id": "resp_0540b66e56449c06006aaa016d867487d281f1afb7e3e4a37c",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789526381.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1519,
+      "input_tokens_details": {
+        "cache_write_tokens": 1516,
+        "cached_tokens": 0
+      },
+      "output_tokens": 304,
+      "output_tokens_details": {
+        "reasoning_tokens": 156
+      },
+      "total_tokens": 1823
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.96,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Christmas editorial reflecting on religion, peace, tolerance, and humanitarian suffering\",\n  \"conflict_relevance\": \"Gaza is mentioned once as one of several places affected by war and suffering, within a general appeal for peace.\",\n  \"reason\": \"The text is primarily unrelated commentary about France and a Christmas editorial. The Gaza reference contributes a minimal but meaningful peace-and-suffering discourse connection, so it is peripheral rather than core.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:39:46Z",
+  "duration_seconds": 5.226,
+  "error": null
+}

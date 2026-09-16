@@ -1,0 +1,65 @@
+{
+  "article_id": "107424079",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_04/gb/107424079.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_04/gb/107424079.json"
+  },
+  "manifest_row": {
+    "article_id": "107424079",
+    "group": "global_north_2024_04",
+    "country_code": "gb",
+    "filepath": "corpus/02_now_organised/global_north_2024_04/gb/107424079.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "gaza_role": "passing",
+    "main_topic": "Dating column and a blind date interview",
+    "conflict_relevance": "Gaza is mentioned only once as one of several conversation topics during the date, with no substantive discussion.",
+    "reason": "The article is primarily a dating-column feature, and the isolated reference to Gaza does not provide meaningful conflict-related discourse.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "d50855687dd7e2fa3ecf925d2cd813b28fc9026c72e2b3bfb633feecd9bb13cb",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "06feda1ec41f0d971cf060e0c4392fc3f7ce439ff654db8bb6f92e6d436498d9",
+    "raw_response_text_sha256": "309ff251b697f64adba11b91215f3e7edef54231f8d4c71a4077904707395e70"
+  },
+  "api_metadata": {
+    "id": "resp_0b009bd3f3212ac3006aaa0b4b457c87d2a129eb0c38c543bc",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789528907.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1406,
+      "input_tokens_details": {
+        "cache_write_tokens": 1403,
+        "cached_tokens": 0
+      },
+      "output_tokens": 171,
+      "output_tokens_details": {
+        "reasoning_tokens": 45
+      },
+      "total_tokens": 1577
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Dating column and a blind date interview\",\n  \"conflict_relevance\": \"Gaza is mentioned only once as one of several conversation topics during the date, with no substantive discussion.\",\n  \"reason\": \"The article is primarily a dating-column feature, and the isolated reference to Gaza does not provide meaningful conflict-related discourse.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:21:49Z",
+  "duration_seconds": 2.492,
+  "error": null
+}

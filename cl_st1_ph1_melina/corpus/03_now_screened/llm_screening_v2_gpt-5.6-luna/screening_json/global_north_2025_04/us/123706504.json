@@ -1,0 +1,65 @@
+{
+  "article_id": "123706504",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_04/us/123706504.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_04/us/123706504.json"
+  },
+  "manifest_row": {
+    "article_id": "123706504",
+    "group": "global_north_2025_04",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2025_04/us/123706504.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "background",
+    "main_topic": "Release of classified files concerning the assassination of Robert F. Kennedy",
+    "conflict_relevance": "The article discusses Sirhan Sirhan's Palestinian identity and situates the assassination in the context of the 1967 Six-Day War, including Israel's capture of Gaza, the West Bank, and East Jerusalem.",
+    "reason": "The article is primarily about the RFK assassination and the declassification of related records, but it contains meaningful historical discourse connecting the alleged assassin's background and motive to the Israel-Arab conflict and the 1967 war. Gaza and Palestine are contextual rather than central.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "df91b77cc4105a780eb7e8a9e6b08fb9a59b3b2d90238df919a6aff2c6a612fa",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "95e90ab76f3e85712aed8d21fa09e985d604eb932c648be2522937e27be633b6",
+    "raw_response_text_sha256": "abd1d20268cb2f9023a5f0cdd2d1d09e8d84a6ab34a79e7eb96aa0b54461c3e5"
+  },
+  "api_metadata": {
+    "id": "resp_04970f510d5d70dd006aaa2a664f8c87d18eb4f2a4e2976777",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789536870.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2616,
+      "input_tokens_details": {
+        "cache_write_tokens": 2613,
+        "cached_tokens": 0
+      },
+      "output_tokens": 275,
+      "output_tokens_details": {
+        "reasoning_tokens": 92
+      },
+      "total_tokens": 2891
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Release of classified files concerning the assassination of Robert F. Kennedy\",\n  \"conflict_relevance\": \"The article discusses Sirhan Sirhan's Palestinian identity and situates the assassination in the context of the 1967 Six-Day War, including Israel's capture of Gaza, the West Bank, and East Jerusalem.\",\n  \"reason\": \"The article is primarily about the RFK assassination and the declassification of related records, but it contains meaningful historical discourse connecting the alleged assassin's background and motive to the Israel-Arab conflict and the 1967 war. Gaza and Palestine are contextual rather than central.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T05:34:34Z",
+  "duration_seconds": 4.473,
+  "error": null
+}

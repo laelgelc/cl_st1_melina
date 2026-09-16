@@ -1,0 +1,65 @@
+{
+  "article_id": "124430869",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_05/us/124430869.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_05/us/124430869.json"
+  },
+  "manifest_row": {
+    "article_id": "124430869",
+    "group": "global_north_2025_05",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2025_05/us/124430869.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "gaza_role": "passing",
+    "main_topic": "Daily news podcast roundup covering assorted international, political, sports, and cultural news",
+    "conflict_relevance": "Contains only a brief passing item stating that 21 hostages held by Hamas in Gaza are believed to be alive.",
+    "reason": "The article is a multi-topic news roundup, and Gaza appears only in one short incidental headline-style sentence without substantive discussion.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "e8ea71c006c2f18f7223982ebbd84db9e347fdeca7369ff7671e37baab8d6577",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "d5ed99655459248b713d60c0be85be037ec111b94021c3c340d9f9811ded2e5f",
+    "raw_response_text_sha256": "28280d0b0a38cc7f89cfde5bc6d63d6b493ee8607403feb613fb9ac6fb48ea52"
+  },
+  "api_metadata": {
+    "id": "resp_01db36aab42af471006aaa2d2924cc87d19b5ab71cc1e851b5",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789537577.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 948,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 219,
+      "output_tokens_details": {
+        "reasoning_tokens": 82
+      },
+      "total_tokens": 1167
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Daily news podcast roundup covering assorted international, political, sports, and cultural news\",\n  \"conflict_relevance\": \"Contains only a brief passing item stating that 21 hostages held by Hamas in Gaza are believed to be alive.\",\n  \"reason\": \"The article is a multi-topic news roundup, and Gaza appears only in one short incidental headline-style sentence without substantive discussion.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T05:46:20Z",
+  "duration_seconds": 3.553,
+  "error": null
+}

@@ -1,0 +1,65 @@
+{
+  "article_id": "102887307",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_south_2023_10/in/102887307.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_south_2023_10/in/102887307.json"
+  },
+  "manifest_row": {
+    "article_id": "102887307",
+    "group": "global_south_2023_10",
+    "country_code": "in",
+    "filepath": "corpus/02_now_organised/global_south_2023_10/in/102887307.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.97,
+    "gaza_role": "background",
+    "main_topic": "A general news roundup covering sports, Indian politics and business, international news, and the Israel-Hamas war",
+    "conflict_relevance": "Contains a substantive news item about Israeli ground raids and airstrikes in Gaza, Hamas resistance, and preparations for further military escalation, but the article as a whole is not focused on the conflict.",
+    "reason": "The Gaza report is meaningful and directly relevant to conflict discourse, but it is one segment within a multi-topic news roundup dominated by unrelated stories.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "2f937decb99820a93a7f3fda0c3cc5fc3996cdf56af3726f886b77ac15cfde24",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "9ce3249a710c363c8065c671da7e7b07fa4fc680d7cb77e045f5c0257a56e73a",
+    "raw_response_text_sha256": "d86293bbff1b4823ca399a8c30f575983930dc44ffee8ba63992b5d7027b4c9e"
+  },
+  "api_metadata": {
+    "id": "resp_0a6c6e480fe0686e006aaa3303cc1087d1a2f753e7e3e730f0",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789539075.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1673,
+      "input_tokens_details": {
+        "cache_write_tokens": 1670,
+        "cached_tokens": 0
+      },
+      "output_tokens": 294,
+      "output_tokens_details": {
+        "reasoning_tokens": 130
+      },
+      "total_tokens": 1967
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.97,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"A general news roundup covering sports, Indian politics and business, international news, and the Israel-Hamas war\",\n  \"conflict_relevance\": \"Contains a substantive news item about Israeli ground raids and airstrikes in Gaza, Hamas resistance, and preparations for further military escalation, but the article as a whole is not focused on the conflict.\",\n  \"reason\": \"The Gaza report is meaningful and directly relevant to conflict discourse, but it is one segment within a multi-topic news roundup dominated by unrelated stories.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T06:11:20Z",
+  "duration_seconds": 5.011,
+  "error": null
+}

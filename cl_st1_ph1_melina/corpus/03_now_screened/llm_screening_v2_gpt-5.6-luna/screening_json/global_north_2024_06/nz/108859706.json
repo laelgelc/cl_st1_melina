@@ -1,0 +1,65 @@
+{
+  "article_id": "108859706",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_06/nz/108859706.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_06/nz/108859706.json"
+  },
+  "manifest_row": {
+    "article_id": "108859706",
+    "group": "global_north_2024_06",
+    "country_code": "nz",
+    "filepath": "corpus/02_now_organised/global_north_2024_06/nz/108859706.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.97,
+    "gaza_role": "passing",
+    "main_topic": "Haiti's food insecurity and humanitarian crisis amid gang violence",
+    "conflict_relevance": "Gaza is mentioned only once as one of several global hunger hotspots and is not substantively discussed.",
+    "reason": "The article is centrally about Haiti. Its sole reference to Gaza is a brief contextual listing in a UN hunger report, without meaningful analysis or discourse concerning Gaza or the Israel-Palestine conflict.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "aaceaf6392faf94edc2036c9a367f28b0c4e5a85ec2c312956ac83c85fa07077",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "b61075cada7a27d6111faf54d3fe311c458d69071bb71c899347eb1a5c502fb7",
+    "raw_response_text_sha256": "ac15c47eed0f4c52b331ef95501f35d6c4f28597303382b6ce4f057e45372aa6"
+  },
+  "api_metadata": {
+    "id": "resp_08a5151c342e0c61006aaa10c3f0ec87d2a04f395203bf18f1",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789530307.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1738,
+      "input_tokens_details": {
+        "cache_write_tokens": 1735,
+        "cached_tokens": 0
+      },
+      "output_tokens": 275,
+      "output_tokens_details": {
+        "reasoning_tokens": 130
+      },
+      "total_tokens": 2013
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.97,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Haiti's food insecurity and humanitarian crisis amid gang violence\",\n  \"conflict_relevance\": \"Gaza is mentioned only once as one of several global hunger hotspots and is not substantively discussed.\",\n  \"reason\": \"The article is centrally about Haiti. Its sole reference to Gaza is a brief contextual listing in a UN hunger report, without meaningful analysis or discourse concerning Gaza or the Israel-Palestine conflict.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:45:11Z",
+  "duration_seconds": 4.086,
+  "error": null
+}

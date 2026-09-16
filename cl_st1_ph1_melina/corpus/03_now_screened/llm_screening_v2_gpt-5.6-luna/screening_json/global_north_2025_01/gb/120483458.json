@@ -1,0 +1,65 @@
+{
+  "article_id": "120483458",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_01/gb/120483458.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_01/gb/120483458.json"
+  },
+  "manifest_row": {
+    "article_id": "120483458",
+    "group": "global_north_2025_01",
+    "country_code": "gb",
+    "filepath": "corpus/02_now_organised/global_north_2025_01/gb/120483458.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "background",
+    "main_topic": "Holocaust survivor testimony, remembrance, and antisemitism",
+    "conflict_relevance": "The article briefly connects contemporary antisemitic incidents in the UK to the October 7 attack in Israel and the war in Gaza, but its main focus is Holocaust commemoration and the survivor's biography.",
+    "reason": "Gaza and the Israel-related conflict appear in a meaningful contextual discussion of antisemitism, yet they are not the central subject of the article.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "f0840fd723ee33456be4cd23e8f20d3f9e589d289d2fb6a82e3ecf005f4042bd",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "42737abe26720dae00bdeb8639b7049786159b7cb8dafd72d779029620f44ac0",
+    "raw_response_text_sha256": "4df9f2c2bfb4d3a881a64052bfc6005a808d57f0cb9ba24a601c8914c5459487"
+  },
+  "api_metadata": {
+    "id": "resp_0e041401599ef0b7006aaa1ff8a84c87d2b99b05d792b8849e",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789534200.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2885,
+      "input_tokens_details": {
+        "cache_write_tokens": 2882,
+        "cached_tokens": 0
+      },
+      "output_tokens": 198,
+      "output_tokens_details": {
+        "reasoning_tokens": 41
+      },
+      "total_tokens": 3083
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Holocaust survivor testimony, remembrance, and antisemitism\",\n  \"conflict_relevance\": \"The article briefly connects contemporary antisemitic incidents in the UK to the October 7 attack in Israel and the war in Gaza, but its main focus is Holocaust commemoration and the survivor's biography.\",\n  \"reason\": \"Gaza and the Israel-related conflict appear in a meaningful contextual discussion of antisemitism, yet they are not the central subject of the article.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T04:50:03Z",
+  "duration_seconds": 3.178,
+  "error": null
+}

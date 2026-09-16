@@ -1,0 +1,65 @@
+{
+  "article_id": "105945018",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_02/nz/105945018.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_02/nz/105945018.json"
+  },
+  "manifest_row": {
+    "article_id": "105945018",
+    "group": "global_north_2024_02",
+    "country_code": "nz",
+    "filepath": "corpus/02_now_organised/global_north_2024_02/nz/105945018.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "background",
+    "main_topic": "Delays in New Zealand nurses' holiday-pay remediation payments",
+    "conflict_relevance": "The main article concerns New Zealand healthcare employment and unpaid leave entitlements, but it includes a meaningful embedded political passage about Gaza, the Israel-Hamas conflict, and New Zealand humanitarian funding.",
+    "reason": "Gaza is not the subject of the headline or main article. However, the embedded discussion of Gaza and New Zealand government responses is more substantive than a mere passing or boilerplate mention, making the item useful for peripheral analysis but not for the core corpus.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "ea2601ed31e7dac2fc182b2b3a83fce25c76ce52ae287cfbd32672ef896a24b5",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "83bfeb4082a7fad39143ef658da3bd7d5e96194465c91dd4ba6a9f32cc53e28e",
+    "raw_response_text_sha256": "af3db3b9aaad161f9f8f8dcc2287d97788c455a07dfc4c46fe227222a40b51d5"
+  },
+  "api_metadata": {
+    "id": "resp_0fe5cf7c6e4d9f08006aaa06bd918c87d2b753ba2812da6826",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789527741.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1512,
+      "input_tokens_details": {
+        "cache_write_tokens": 1509,
+        "cached_tokens": 0
+      },
+      "output_tokens": 273,
+      "output_tokens_details": {
+        "reasoning_tokens": 98
+      },
+      "total_tokens": 1785
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Delays in New Zealand nurses' holiday-pay remediation payments\",\n  \"conflict_relevance\": \"The main article concerns New Zealand healthcare employment and unpaid leave entitlements, but it includes a meaningful embedded political passage about Gaza, the Israel-Hamas conflict, and New Zealand humanitarian funding.\",\n  \"reason\": \"Gaza is not the subject of the headline or main article. However, the embedded discussion of Gaza and New Zealand government responses is more substantive than a mere passing or boilerplate mention, making the item useful for peripheral analysis but not for the core corpus.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:02:25Z",
+  "duration_seconds": 4.11,
+  "error": null
+}

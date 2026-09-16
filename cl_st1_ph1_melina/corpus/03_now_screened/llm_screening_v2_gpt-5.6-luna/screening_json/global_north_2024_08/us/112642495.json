@@ -1,0 +1,65 @@
+{
+  "article_id": "112642495",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_08/us/112642495.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_08/us/112642495.json"
+  },
+  "manifest_row": {
+    "article_id": "112642495",
+    "group": "global_north_2024_08",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2024_08/us/112642495.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "gaza_role": "passing",
+    "main_topic": "The Christian Science Monitor's mission, values, and journalistic approach",
+    "conflict_relevance": "Gaza is mentioned only as an example in a general discussion of forecasting wars; the article contains no substantive conflict coverage or discourse about Gaza.",
+    "reason": "The article is primarily an institutional description of the publication and its solutions-oriented journalism. The brief reference to predicting what will happen in Gaza is incidental and does not meaningfully contribute to analysis of the conflict.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "fa828535e9b9a5f1f11d8200dee5171c6f5c87af159bfdce323268f1f98ceee4",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "c3abdab11d538f11eb7c9f08a70d58e60582318ccf21502ad0815c4c2196e092",
+    "raw_response_text_sha256": "d53397a226b938aa5157e80e85542d2795a42695017f1ba717966a4a14e2c408"
+  },
+  "api_metadata": {
+    "id": "resp_0530cd1e75c12ae8006aaa1567479487d2b071039d5682f56c",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789531495.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 929,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 222,
+      "output_tokens_details": {
+        "reasoning_tokens": 66
+      },
+      "total_tokens": 1151
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"The Christian Science Monitor's mission, values, and journalistic approach\",\n  \"conflict_relevance\": \"Gaza is mentioned only as an example in a general discussion of forecasting wars; the article contains no substantive conflict coverage or discourse about Gaza.\",\n  \"reason\": \"The article is primarily an institutional description of the publication and its solutions-oriented journalism. The brief reference to predicting what will happen in Gaza is incidental and does not meaningfully contribute to analysis of the conflict.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T04:04:59Z",
+  "duration_seconds": 4.22,
+  "error": null
+}

@@ -1,0 +1,65 @@
+{
+  "article_id": "115683298",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_10/nz/115683298.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_10/nz/115683298.json"
+  },
+  "manifest_row": {
+    "article_id": "115683298",
+    "group": "global_north_2024_10",
+    "country_code": "nz",
+    "filepath": "corpus/02_now_organised/global_north_2024_10/nz/115683298.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "gaza_role": "passing",
+    "main_topic": "Inspector-General of Intelligence and Security news listings",
+    "conflict_relevance": "The page briefly mentions monitoring intelligence sharing concerning international conflicts, including Israel and Gaza, but provides no substantive discussion of the Gaza conflict.",
+    "reason": "This is a latest-news index page containing a brief, passing Gaza reference in one listing among many unrelated institutional updates.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "a990a96f46aec48777ef1a1a11191b54bfa896d8a52ff1f8de7712467a6b2057",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "cc06b86e3c2bb50bd67f635f039830667c15b563fd21892c96ee61d51eef2357",
+    "raw_response_text_sha256": "f7914b2f1976e89bbd0e1c0fd46d6bd0fba5368c8cd6fed1cd7c950e870761fd"
+  },
+  "api_metadata": {
+    "id": "resp_0a83f7724d7f11f1006aaa18997bbc87d28409b6c2204ee89e",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789532313.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1443,
+      "input_tokens_details": {
+        "cache_write_tokens": 1440,
+        "cached_tokens": 0
+      },
+      "output_tokens": 227,
+      "output_tokens_details": {
+        "reasoning_tokens": 95
+      },
+      "total_tokens": 1670
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Inspector-General of Intelligence and Security news listings\",\n  \"conflict_relevance\": \"The page briefly mentions monitoring intelligence sharing concerning international conflicts, including Israel and Gaza, but provides no substantive discussion of the Gaza conflict.\",\n  \"reason\": \"This is a latest-news index page containing a brief, passing Gaza reference in one listing among many unrelated institutional updates.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T04:18:38Z",
+  "duration_seconds": 4.972,
+  "error": null
+}

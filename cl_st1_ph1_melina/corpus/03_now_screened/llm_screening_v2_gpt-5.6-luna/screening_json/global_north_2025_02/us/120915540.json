@@ -1,0 +1,65 @@
+{
+  "article_id": "120915540",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_02/us/120915540.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_02/us/120915540.json"
+  },
+  "manifest_row": {
+    "article_id": "120915540",
+    "group": "global_north_2025_02",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2025_02/us/120915540.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.96,
+    "gaza_role": "background",
+    "main_topic": "CBS 60 Minutes' release of interview transcripts amid Donald Trump's lawsuit alleging deceptive editing",
+    "conflict_relevance": "The article briefly references differing answers about Israel in the Kamala Harris interview, making it relevant to media framing and political discourse concerning Israel, but the central subject is the CBS lawsuit and interview-editing dispute.",
+    "reason": "The main article is not about Gaza or the Israel-Palestine conflict, but it contains a meaningful reference to an interview question about Israel. A separate roundup item mentions Trump's plans for Gaza, but that is not the focus of the headline article.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "825f781a631033650fe089a4dbd2ba97da53b31640286f6cd66983af566637cc",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "f61e2341ac8e45abcbf45d4411c0c438d3bb260dd09548299b9a9e44b5a4a396",
+    "raw_response_text_sha256": "109d6d019bc136b028017304d8c09f90c13e9075c1f59cc7b0fe0ab8a1632797"
+  },
+  "api_metadata": {
+    "id": "resp_0a39a5eae9b8f27b006aaa243d66e487d1aa3ac5408846839d",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789535293.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1543,
+      "input_tokens_details": {
+        "cache_write_tokens": 1540,
+        "cached_tokens": 0
+      },
+      "output_tokens": 254,
+      "output_tokens_details": {
+        "reasoning_tokens": 71
+      },
+      "total_tokens": 1797
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.96,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"CBS 60 Minutes' release of interview transcripts amid Donald Trump's lawsuit alleging deceptive editing\",\n  \"conflict_relevance\": \"The article briefly references differing answers about Israel in the Kamala Harris interview, making it relevant to media framing and political discourse concerning Israel, but the central subject is the CBS lawsuit and interview-editing dispute.\",\n  \"reason\": \"The main article is not about Gaza or the Israel-Palestine conflict, but it contains a meaningful reference to an interview question about Israel. A separate roundup item mentions Trump's plans for Gaza, but that is not the focus of the headline article.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T05:08:17Z",
+  "duration_seconds": 4.123,
+  "error": null
+}

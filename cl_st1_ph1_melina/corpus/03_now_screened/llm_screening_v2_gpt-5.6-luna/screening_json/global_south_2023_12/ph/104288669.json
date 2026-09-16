@@ -1,0 +1,65 @@
+{
+  "article_id": "104288669",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_south_2023_12/ph/104288669.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_south_2023_12/ph/104288669.json"
+  },
+  "manifest_row": {
+    "article_id": "104288669",
+    "group": "global_south_2023_12",
+    "country_code": "ph",
+    "filepath": "corpus/02_now_organised/global_south_2023_12/ph/104288669.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "passing",
+    "main_topic": "Transport workers' strike and disputes over the Philippine public utility vehicle modernization deadline",
+    "conflict_relevance": "The article is primarily about a Philippine transport strike, but it contains an unrelated embedded sentence about a UN General Assembly resolution demanding a ceasefire in Gaza.",
+    "reason": "Gaza is mentioned in a substantive but clearly unrelated appended news snippet rather than in the main article. This provides limited peripheral relevance but does not warrant inclusion in the core conflict corpus.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "71856c63074190887dc8b518a4e65e1b3966137ecbb9942000f5b7224923921e",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "a201d31ddb6886fd5fa970e10536db009cfd4c5af9236d3a4ee5230294016128",
+    "raw_response_text_sha256": "46ce3dfc6c8e0885bf964f50b9eaa73a421f373bd76cf88d0975d6fd5952c2a6"
+  },
+  "api_metadata": {
+    "id": "resp_086bcb4080436818006aaa373cd5b087d1babb21e80307a0ed",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789540156.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1934,
+      "input_tokens_details": {
+        "cache_write_tokens": 1931,
+        "cached_tokens": 0
+      },
+      "output_tokens": 247,
+      "output_tokens_details": {
+        "reasoning_tokens": 91
+      },
+      "total_tokens": 2181
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Transport workers' strike and disputes over the Philippine public utility vehicle modernization deadline\",\n  \"conflict_relevance\": \"The article is primarily about a Philippine transport strike, but it contains an unrelated embedded sentence about a UN General Assembly resolution demanding a ceasefire in Gaza.\",\n  \"reason\": \"Gaza is mentioned in a substantive but clearly unrelated appended news snippet rather than in the main article. This provides limited peripheral relevance but does not warrant inclusion in the core conflict corpus.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T06:29:20Z",
+  "duration_seconds": 3.446,
+  "error": null
+}

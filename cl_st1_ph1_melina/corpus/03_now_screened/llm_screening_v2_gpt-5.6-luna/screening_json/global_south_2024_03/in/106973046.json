@@ -1,0 +1,65 @@
+{
+  "article_id": "106973046",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_south_2024_03/in/106973046.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_south_2024_03/in/106973046.json"
+  },
+  "manifest_row": {
+    "article_id": "106973046",
+    "group": "global_south_2024_03",
+    "country_code": "in",
+    "filepath": "corpus/02_now_organised/global_south_2024_03/in/106973046.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.96,
+    "gaza_role": "background",
+    "main_topic": "Arvind Kejriwal's arrest and Delhi government health administration",
+    "conflict_relevance": "The article includes embedded or supplementary news snippets about a UN Security Council Gaza ceasefire resolution and hostage release, but Gaza is not connected to the main article topic.",
+    "reason": "The headline and main article concern Kejriwal's custody, Delhi health services, and political protests. Gaza appears only in a substantial but unrelated 'Videos from Other Sections' news item and a brief roundup paragraph, making the article peripheral rather than core.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "0ed1cb0876991310178815eaa66bc9f126836b93360a513bafe257ce9a8552a8",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "c912160467e2a0a1466910d84047b0ef8fac240d5645199330354c7724f22af5",
+    "raw_response_text_sha256": "a4f564bec7e67e04cb0b69b94323f08557ef495dea00b4d7d1e0f2e9e9473120"
+  },
+  "api_metadata": {
+    "id": "resp_0e7c6ea55fb95c4c006aaa3987ac2887d1aa5b6f3105f25aa1",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789540743.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1164,
+      "input_tokens_details": {
+        "cache_write_tokens": 1161,
+        "cached_tokens": 0
+      },
+      "output_tokens": 285,
+      "output_tokens_details": {
+        "reasoning_tokens": 113
+      },
+      "total_tokens": 1449
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.96,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Arvind Kejriwal's arrest and Delhi government health administration\",\n  \"conflict_relevance\": \"The article includes embedded or supplementary news snippets about a UN Security Council Gaza ceasefire resolution and hostage release, but Gaza is not connected to the main article topic.\",\n  \"reason\": \"The headline and main article concern Kejriwal's custody, Delhi health services, and political protests. Gaza appears only in a substantial but unrelated 'Videos from Other Sections' news item and a brief roundup paragraph, making the article peripheral rather than core.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T06:39:08Z",
+  "duration_seconds": 4.785,
+  "error": null
+}

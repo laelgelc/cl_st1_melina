@@ -1,0 +1,65 @@
+{
+  "article_id": "104116015",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_12/ca/104116015.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_12/ca/104116015.json"
+  },
+  "manifest_row": {
+    "article_id": "104116015",
+    "group": "global_north_2023_12",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2023_12/ca/104116015.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.95,
+    "gaza_role": "passing",
+    "main_topic": "The search for a new Winnipeg police chief and related municipal policing matters",
+    "conflict_relevance": "The article includes a separate news item about a Palestinian-Canadian suing the Canadian government to evacuate his grandchildren from Gaza, alleging discriminatory treatment.",
+    "reason": "The headline and main article concern Winnipeg's police chief selection, but the text contains a meaningful Gaza-related item. Because that item is unrelated to the main article and appears among multiple separate snippets, the article is peripheral rather than core.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "c05bae7e33b61783eb6528752e89261a3a8f59b9cc3aafe3fcc592a3b0da6d0f",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "f27e2189d5e5aaeab0247c3638f63c01e1adb51429364283fdb1fc13afe228ad",
+    "raw_response_text_sha256": "eb1788b78c0a629067cfd5863cb56949da4fac0eb6e08614bd6417c610b634ff"
+  },
+  "api_metadata": {
+    "id": "resp_089a7e91463d97a6006aaa006c8ec087d2be12471adc51e99e",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789526124.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1246,
+      "input_tokens_details": {
+        "cache_write_tokens": 1243,
+        "cached_tokens": 0
+      },
+      "output_tokens": 313,
+      "output_tokens_details": {
+        "reasoning_tokens": 150
+      },
+      "total_tokens": 1559
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.95,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"The search for a new Winnipeg police chief and related municipal policing matters\",\n  \"conflict_relevance\": \"The article includes a separate news item about a Palestinian-Canadian suing the Canadian government to evacuate his grandchildren from Gaza, alleging discriminatory treatment.\",\n  \"reason\": \"The headline and main article concern Winnipeg's police chief selection, but the text contains a meaningful Gaza-related item. Because that item is unrelated to the main article and appears among multiple separate snippets, the article is peripheral rather than core.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:35:28Z",
+  "duration_seconds": 3.917,
+  "error": null
+}

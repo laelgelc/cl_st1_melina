@@ -1,0 +1,65 @@
+{
+  "article_id": "108323862",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_south_2024_05/in/108323862.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_south_2024_05/in/108323862.json"
+  },
+  "manifest_row": {
+    "article_id": "108323862",
+    "group": "global_south_2024_05",
+    "country_code": "in",
+    "filepath": "corpus/02_now_organised/global_south_2024_05/in/108323862.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.96,
+    "gaza_role": "passing",
+    "main_topic": "China-Russia economic, military, and strategic relations",
+    "conflict_relevance": "Gaza is mentioned only briefly as one item in a list of global tensions; the article focuses on China-Russia relations and the war in Ukraine.",
+    "reason": "The sole Gaza reference is an incidental contextual sentence stating that Israel is engaged in conflict with Hamas in Gaza. There is no substantive discussion of Gaza, Palestinians, Israel-Palestine, or related discourse.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "ed24602b7cbe6ac2e5be00dc74c71590c5ef99269fdbdf2b95c3ead3e4683af7",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "f2cecdf535fc14b39c993afe7a366d89aedfea9d27da55fb066402cad2a6f765",
+    "raw_response_text_sha256": "a8460f39e9a8ba80c4e85495c372d5a3c81392408bef8fa9816451e7f39d0045"
+  },
+  "api_metadata": {
+    "id": "resp_0400bb4c95489119006aaa3b3cf3e487d18409f285793e554d",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789541180.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2134,
+      "input_tokens_details": {
+        "cache_write_tokens": 2131,
+        "cached_tokens": 0
+      },
+      "output_tokens": 373,
+      "output_tokens_details": {
+        "reasoning_tokens": 217
+      },
+      "total_tokens": 2507
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.96,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"China-Russia economic, military, and strategic relations\",\n  \"conflict_relevance\": \"Gaza is mentioned only briefly as one item in a list of global tensions; the article focuses on China-Russia relations and the war in Ukraine.\",\n  \"reason\": \"The sole Gaza reference is an incidental contextual sentence stating that Israel is engaged in conflict with Hamas in Gaza. There is no substantive discussion of Gaza, Palestinians, Israel-Palestine, or related discourse.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T06:46:27Z",
+  "duration_seconds": 7.131,
+  "error": null
+}

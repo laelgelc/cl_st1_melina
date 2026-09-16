@@ -1,0 +1,65 @@
+{
+  "article_id": "108047070",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_05/us/108047070.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_05/us/108047070.json"
+  },
+  "manifest_row": {
+    "article_id": "108047070",
+    "group": "global_north_2024_05",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2024_05/us/108047070.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "gaza_role": "passing",
+    "main_topic": "A private commercial spaceflight and planned astronaut spacewalk",
+    "conflict_relevance": "The article's main subject is unrelated to Gaza or the Israel-Palestine conflict; Gaza appears only as one headline in a broader news roundup.",
+    "reason": "The Gaza reference is an incidental embedded news item, while the associated article focuses on the Polaris Dawn mission.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "0e8b332b7b7937107419c89c7a6d97f08820d1156edb7e5f91dbef26f33ce2fc",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "ab35e0e6bca3403309d382a03aa12a81343584ccd5fd7e9edb928d1a7a95ba0e",
+    "raw_response_text_sha256": "6258977cf4120510ebb9890cf28d1bffa564b8d648617d4c28fd8830ea0f3d6b"
+  },
+  "api_metadata": {
+    "id": "resp_042df0e85f0ca7e7006aaa0ea8dacc87d297697c327495dc49",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789529768.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 825,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 244,
+      "output_tokens_details": {
+        "reasoning_tokens": 108
+      },
+      "total_tokens": 1069
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"A private commercial spaceflight and planned astronaut spacewalk\",\n  \"conflict_relevance\": \"The article's main subject is unrelated to Gaza or the Israel-Palestine conflict; Gaza appears only as one headline in a broader news roundup.\",\n  \"reason\": \"The Gaza reference is an incidental embedded news item, while the associated article focuses on the Polaris Dawn mission.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:36:12Z",
+  "duration_seconds": 3.518,
+  "error": null
+}

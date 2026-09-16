@@ -1,0 +1,65 @@
+{
+  "article_id": "115722156",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_10/ca/115722156.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_10/ca/115722156.json"
+  },
+  "manifest_row": {
+    "article_id": "115722156",
+    "group": "global_north_2024_10",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2024_10/ca/115722156.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "passing",
+    "main_topic": "TD Bank's money-laundering penalties, regulatory asset cap, and 2025 restructuring plans",
+    "conflict_relevance": "The main article is unrelated to Gaza, but a 'Latest Stories' roundup contains a substantive brief item about relatives of hostages held in Gaza and supporters calling for their release.",
+    "reason": "The Gaza-related content is confined to an embedded roundup snippet and is not connected to the article's main banking subject, but it provides a meaningful reference to hostages in Gaza and the Israel-Hamas war.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "3f482e19349e930918483947e5050c8e3d105d2226c3bf577edba355e557ca4f",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "05a6d7d80f0b732d0fa5893bcbb4548e907261a9710c09642203d13a418d4336",
+    "raw_response_text_sha256": "c61ac37e6396d8037a74d91885a6c033428f2a1134ee081a37a01a84b54343a6"
+  },
+  "api_metadata": {
+    "id": "resp_00db5e3ec47b52f0006aaa17fb1c2887d286bff1cb14cfc102",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789532155.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1899,
+      "input_tokens_details": {
+        "cache_write_tokens": 1896,
+        "cached_tokens": 0
+      },
+      "output_tokens": 247,
+      "output_tokens_details": {
+        "reasoning_tokens": 75
+      },
+      "total_tokens": 2146
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"TD Bank's money-laundering penalties, regulatory asset cap, and 2025 restructuring plans\",\n  \"conflict_relevance\": \"The main article is unrelated to Gaza, but a 'Latest Stories' roundup contains a substantive brief item about relatives of hostages held in Gaza and supporters calling for their release.\",\n  \"reason\": \"The Gaza-related content is confined to an embedded roundup snippet and is not connected to the article's main banking subject, but it provides a meaningful reference to hostages in Gaza and the Israel-Hamas war.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T04:15:58Z",
+  "duration_seconds": 3.895,
+  "error": null
+}

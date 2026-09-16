@@ -1,0 +1,65 @@
+{
+  "article_id": "120059269",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_01/us/120059269.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_01/us/120059269.json"
+  },
+  "manifest_row": {
+    "article_id": "120059269",
+    "group": "global_north_2025_01",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2025_01/us/120059269.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "passing",
+    "main_topic": "Chicago Bears coaching search and organizational instability",
+    "conflict_relevance": "The article ends with a separate brief item about a proposed deal involving hostage releases, displaced people in Gaza, and humanitarian aid.",
+    "reason": "The main article is entirely about American football and the Chicago Bears. Gaza-related content appears only in an unrelated but meaningful embedded news snippet, making the item peripheral rather than core.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "144f9af655d16f71db66745015a96b34f96e4b681db5a639ce1403324dbcf27e",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "bcc19aa2dfde8ee3223fd4d0da9ebcb74c303219922d5f4041e9071f9b2c4afa",
+    "raw_response_text_sha256": "58bc78a2ab12104f8d0a720083caac6010cf17dbae335c3be99340d427caf6eb"
+  },
+  "api_metadata": {
+    "id": "resp_0317291d17d8d90c006aaa2124c98087d2bfe0426bcd0e98f8",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789534500.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1664,
+      "input_tokens_details": {
+        "cache_write_tokens": 1661,
+        "cached_tokens": 0
+      },
+      "output_tokens": 273,
+      "output_tokens_details": {
+        "reasoning_tokens": 130
+      },
+      "total_tokens": 1937
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Chicago Bears coaching search and organizational instability\",\n  \"conflict_relevance\": \"The article ends with a separate brief item about a proposed deal involving hostage releases, displaced people in Gaza, and humanitarian aid.\",\n  \"reason\": \"The main article is entirely about American football and the Chicago Bears. Gaza-related content appears only in an unrelated but meaningful embedded news snippet, making the item peripheral rather than core.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T04:55:04Z",
+  "duration_seconds": 3.729,
+  "error": null
+}

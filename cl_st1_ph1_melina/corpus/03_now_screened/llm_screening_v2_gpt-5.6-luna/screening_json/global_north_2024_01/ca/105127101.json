@@ -1,0 +1,65 @@
+{
+  "article_id": "105127101",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_01/ca/105127101.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_01/ca/105127101.json"
+  },
+  "manifest_row": {
+    "article_id": "105127101",
+    "group": "global_north_2024_01",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2024_01/ca/105127101.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "passing",
+    "main_topic": "Coral resilience to ocean warming and microbial influences on Mediterranean coral mortality",
+    "conflict_relevance": "The main article concerns marine biology and climate change, but an appended news snippet briefly references Israel's war on Hamas in Gaza while discussing regional tensions surrounding Iran-Pakistan strikes.",
+    "reason": "The article's central subject is coral bleaching and heat stress, not Gaza or the Israel-Palestine conflict. However, it contains a meaningful sentence explicitly mentioning Israel's war on Hamas in the Gaza Strip, making it peripheral rather than excludable.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "7c8468e7bdbbf6c65b5324a040780fa861a9b59c73172057350b702b7a47b9f1",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "1b1df79d04799a4dc8a97f9e7754179525fa9733cef6e22fe471bfa817cde4d5",
+    "raw_response_text_sha256": "f43145b94299c52a7388985c6f5edb415cd3b755d97a64d6f21e87115bda280b"
+  },
+  "api_metadata": {
+    "id": "resp_06014ecfee3d9384006aaa03a05b4087d281febe19aeb0529e",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789526944.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2109,
+      "input_tokens_details": {
+        "cache_write_tokens": 2106,
+        "cached_tokens": 0
+      },
+      "output_tokens": 250,
+      "output_tokens_details": {
+        "reasoning_tokens": 75
+      },
+      "total_tokens": 2359
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Coral resilience to ocean warming and microbial influences on Mediterranean coral mortality\",\n  \"conflict_relevance\": \"The main article concerns marine biology and climate change, but an appended news snippet briefly references Israel's war on Hamas in Gaza while discussing regional tensions surrounding Iran-Pakistan strikes.\",\n  \"reason\": \"The article's central subject is coral bleaching and heat stress, not Gaza or the Israel-Palestine conflict. However, it contains a meaningful sentence explicitly mentioning Israel's war on Hamas in the Gaza Strip, making it peripheral rather than excludable.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:49:08Z",
+  "duration_seconds": 3.868,
+  "error": null
+}

@@ -1,0 +1,65 @@
+{
+  "article_id": "113123077",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_08/ca/113123077.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_08/ca/113123077.json"
+  },
+  "manifest_row": {
+    "article_id": "113123077",
+    "group": "global_north_2024_08",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2024_08/ca/113123077.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "background",
+    "main_topic": "Northwest Territories wildfire preparedness, emergency response capacity, and climate change",
+    "conflict_relevance": "A separate embedded news item briefly discusses Arab American frustration with U.S. support for Israel's war in Gaza and related Muslim and Arab American outreach in the U.S. election.",
+    "reason": "The main article is about the 2023 Northwest Territories wildfires and has no substantive focus on Gaza or the Israel-Palestine conflict. However, the embedded political news snippet contains a meaningful sentence directly referencing the war in Gaza and public reactions to U.S. policy, making the item peripheral rather than excludable.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "a2de063b77d45980b1b7ed3866d6ebc7c44b7deb06eb808b269d9c3bba70083e",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "d2308e30df44e440b1c070efea31ab15a9a9e7575afeb5956b14dddf8e6bf387",
+    "raw_response_text_sha256": "462c0fc8daa27a578ba99387b32aa09a9f71d99092a63a13338497772ac8fb16"
+  },
+  "api_metadata": {
+    "id": "resp_073328f8234af3da006aaa1403e81887d2a7523fb9c8ed3aa0",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789531139.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2413,
+      "input_tokens_details": {
+        "cache_write_tokens": 2410,
+        "cached_tokens": 0
+      },
+      "output_tokens": 293,
+      "output_tokens_details": {
+        "reasoning_tokens": 104
+      },
+      "total_tokens": 2706
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Northwest Territories wildfire preparedness, emergency response capacity, and climate change\",\n  \"conflict_relevance\": \"A separate embedded news item briefly discusses Arab American frustration with U.S. support for Israel's war in Gaza and related Muslim and Arab American outreach in the U.S. election.\",\n  \"reason\": \"The main article is about the 2023 Northwest Territories wildfires and has no substantive focus on Gaza or the Israel-Palestine conflict. However, the embedded political news snippet contains a meaningful sentence directly referencing the war in Gaza and public reactions to U.S. policy, making the item peripheral rather than excludable.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:59:03Z",
+  "duration_seconds": 3.249,
+  "error": null
+}

@@ -1,0 +1,65 @@
+{
+  "article_id": "125934689",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_south_2025_06/in/125934689.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_south_2025_06/in/125934689.json"
+  },
+  "manifest_row": {
+    "article_id": "125934689",
+    "group": "global_south_2025_06",
+    "country_code": "in",
+    "filepath": "corpus/02_now_organised/global_south_2025_06/in/125934689.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.97,
+    "gaza_role": "passing",
+    "main_topic": "Indian shooting performances at the 2025 ISSF Munich World Cup",
+    "conflict_relevance": "The article is primarily sports coverage but ends with a politically substantive sentence about India's stance on events in Gaza.",
+    "reason": "Gaza is mentioned only in an appended political statement unrelated to the main sports article. Although the mention is brief, it meaningfully references Gaza and India's diplomatic position, making the item peripheral rather than wholly excludable.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "3fc3b3417633c6cf7c5bd602aab0ff74ef6a86523acca1d21eb5b0f1df64c6e0",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "357d83fc896e95852f5a3f870e09947d835913a96ade93ed3791a72a97e0a2bd",
+    "raw_response_text_sha256": "b813880da3440bf4a5648d1b39507ce24e05f7fcddb8ffecd8f2d60f5d26a395"
+  },
+  "api_metadata": {
+    "id": "resp_0c7dddd024558bde006aaa4a051c2087d1855611e7848fa299",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789544965.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1492,
+      "input_tokens_details": {
+        "cache_write_tokens": 1489,
+        "cached_tokens": 0
+      },
+      "output_tokens": 235,
+      "output_tokens_details": {
+        "reasoning_tokens": 81
+      },
+      "total_tokens": 1727
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.97,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Indian shooting performances at the 2025 ISSF Munich World Cup\",\n  \"conflict_relevance\": \"The article is primarily sports coverage but ends with a politically substantive sentence about India's stance on events in Gaza.\",\n  \"reason\": \"Gaza is mentioned only in an appended political statement unrelated to the main sports article. Although the mention is brief, it meaningfully references Gaza and India's diplomatic position, making the item peripheral rather than wholly excludable.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T07:49:28Z",
+  "duration_seconds": 3.728,
+  "error": null
+}

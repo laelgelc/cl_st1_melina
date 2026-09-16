@@ -1,0 +1,65 @@
+{
+  "article_id": "91648668",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_10/us/91648668.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_10/us/91648668.json"
+  },
+  "manifest_row": {
+    "article_id": "91648668",
+    "group": "global_north_2023_10",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2023_10/us/91648668.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "passing",
+    "main_topic": "Roman Empire-inspired interior design and social media decor trends",
+    "conflict_relevance": "An appended, unrelated snippet discusses outrage within the technology community over WebSummit founder Paddy Cosgrave's comments about Israel's actions in the fighting across Israel and Gaza.",
+    "reason": "The headline article is about home decor and the Roman Empire trend, not the Gaza conflict. However, the text includes a substantive but apparently unrelated embedded snippet concerning Israel, Gaza, and public debate over Israel's retaliatory actions, making it peripheral rather than excludable.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "8d36e916260d48ccbb5174af486e3b6404ac7127aeaa10c9c8b057854b5c2579",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "2092aac95efd718dc206882d66d610f5423924ed2bc05aaa8abbe8fac37729fd",
+    "raw_response_text_sha256": "9d7c7262bc001c21c05d3e053bc2990a3f6cd47e0b83e98df561ab0edd5152e0"
+  },
+  "api_metadata": {
+    "id": "resp_09eee3fc6693ba1b006aa9fa892e4487d2baf1e3b5b00f3c25",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789524617.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1903,
+      "input_tokens_details": {
+        "cache_write_tokens": 1900,
+        "cached_tokens": 0
+      },
+      "output_tokens": 311,
+      "output_tokens_details": {
+        "reasoning_tokens": 138
+      },
+      "total_tokens": 2214
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Roman Empire-inspired interior design and social media decor trends\",\n  \"conflict_relevance\": \"An appended, unrelated snippet discusses outrage within the technology community over WebSummit founder Paddy Cosgrave's comments about Israel's actions in the fighting across Israel and Gaza.\",\n  \"reason\": \"The headline article is about home decor and the Roman Empire trend, not the Gaza conflict. However, the text includes a substantive but apparently unrelated embedded snippet concerning Israel, Gaza, and public debate over Israel's retaliatory actions, making it peripheral rather than excludable.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:10:20Z",
+  "duration_seconds": 3.208,
+  "error": null
+}

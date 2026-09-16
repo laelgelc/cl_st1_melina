@@ -1,0 +1,65 @@
+{
+  "article_id": "108078849",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_05/us/108078849.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_05/us/108078849.json"
+  },
+  "manifest_row": {
+    "article_id": "108078849",
+    "group": "global_north_2024_05",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2024_05/us/108078849.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.94,
+    "gaza_role": "substantial",
+    "main_topic": "Mixed news roundup covering U.S. politics, current events, and an embedded report on Israel's assault on Rafah",
+    "conflict_relevance": "The text includes a substantive news report about Palestinians fleeing Rafah, Israel's military assault on Hamas, U.S. warnings about weapons supplies, and Netanyahu's response.",
+    "reason": "Although the page is primarily a collection of unrelated headlines and snippets, the Gaza-related segment contains meaningful conflict discourse. Because it appears as one item within a broader roundup rather than as the main subject, it is classified as PERIPHERAL.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "a9ded73180e14c98f6da11f5fac78b9b8413ca789a37b519827e0392f97d2fa5",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "06beb22bc674bf43a170dbecff7a5fc75138600f8f139f8944851b552133e0b8",
+    "raw_response_text_sha256": "a8a783959266fd07e3908adc57f27a643cead94fdbd6ed5dbd05c0c2d2d48dd2"
+  },
+  "api_metadata": {
+    "id": "resp_0ff2d03b3df69667006aaa0eb6eeec87d2a418f1c4e449e4f6",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789529782.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 805,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 390,
+      "output_tokens_details": {
+        "reasoning_tokens": 210
+      },
+      "total_tokens": 1195
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.94,\n  \"gaza_role\": \"substantial\",\n  \"main_topic\": \"Mixed news roundup covering U.S. politics, current events, and an embedded report on Israel's assault on Rafah\",\n  \"conflict_relevance\": \"The text includes a substantive news report about Palestinians fleeing Rafah, Israel's military assault on Hamas, U.S. warnings about weapons supplies, and Netanyahu's response.\",\n  \"reason\": \"Although the page is primarily a collection of unrelated headlines and snippets, the Gaza-related segment contains meaningful conflict discourse. Because it appears as one item within a broader roundup rather than as the main subject, it is classified as PERIPHERAL.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:36:28Z",
+  "duration_seconds": 5.318,
+  "error": null
+}

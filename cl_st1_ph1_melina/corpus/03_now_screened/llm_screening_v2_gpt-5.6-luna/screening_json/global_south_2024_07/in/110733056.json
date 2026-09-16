@@ -1,0 +1,65 @@
+{
+  "article_id": "110733056",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_south_2024_07/in/110733056.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_south_2024_07/in/110733056.json"
+  },
+  "manifest_row": {
+    "article_id": "110733056",
+    "group": "global_south_2024_07",
+    "country_code": "in",
+    "filepath": "corpus/02_now_organised/global_south_2024_07/in/110733056.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "background",
+    "main_topic": "Indian Express evening news roundup covering Indian politics, legal affairs, weather, and international news",
+    "conflict_relevance": "The roundup includes a substantive final segment on Israeli airstrikes in Gaza, Palestinian deaths, attacks in designated safe zones, displacement, and Israel's stated targeting of Hamas.",
+    "reason": "The article is primarily a multi-topic news bulletin, not a focused report on Gaza or the Israel-Hamas war. However, its Gaza segment contains meaningful conflict-related discourse and is therefore relevant peripherally.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "0080793006569786c7d2a4e18fc57f8e21008e2fa7e11e73d831a1d6dc6110f2",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "42d178dc5d26c817d32020627147cefca58cfd13b4a8cb42142a98b65b99c754",
+    "raw_response_text_sha256": "748da156a3e0df17bda36af2a0d72b20b32ceb1c361c4436252603a87d1854b6"
+  },
+  "api_metadata": {
+    "id": "resp_0ca881e0cd20a7d0006aaa3cfb4de887d19b17ddf9dee85543",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789541627.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1997,
+      "input_tokens_details": {
+        "cache_write_tokens": 1994,
+        "cached_tokens": 0
+      },
+      "output_tokens": 307,
+      "output_tokens_details": {
+        "reasoning_tokens": 139
+      },
+      "total_tokens": 2304
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Indian Express evening news roundup covering Indian politics, legal affairs, weather, and international news\",\n  \"conflict_relevance\": \"The roundup includes a substantive final segment on Israeli airstrikes in Gaza, Palestinian deaths, attacks in designated safe zones, displacement, and Israel's stated targeting of Hamas.\",\n  \"reason\": \"The article is primarily a multi-topic news bulletin, not a focused report on Gaza or the Israel-Hamas war. However, its Gaza segment contains meaningful conflict-related discourse and is therefore relevant peripherally.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T06:53:51Z",
+  "duration_seconds": 4.216,
+  "error": null
+}

@@ -1,0 +1,65 @@
+{
+  "article_id": "121238470",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_02/us/121238470.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_02/us/121238470.json"
+  },
+  "manifest_row": {
+    "article_id": "121238470",
+    "group": "global_north_2025_02",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2025_02/us/121238470.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.96,
+    "gaza_role": "passing",
+    "main_topic": "Christian Science Monitor mission, subscription promotion, and general anti-corruption journalism",
+    "conflict_relevance": "Gaza is mentioned only in passing as part of a list of issues associated with the current U.S. administration; no conflict-related discussion or analysis is provided.",
+    "reason": "The article is primarily institutional and promotional material about the Christian Science Monitor, with unrelated discussion of corruption and digital governance. The sole Gaza reference is incidental and does not meaningfully contribute to discourse analysis of the conflict.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "add5399c30752f7c60d6975ffbd3c946bbec700ef9ed5235ab6e3bcc412f1f1e",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "ab2251cee283a2715cf22d02cb5fad2dc74800c1006e1f19c11a141e449d8f97",
+    "raw_response_text_sha256": "635b0891d72c61479ff3411cfa85916105703ea9665c29092a6737bb2fad68ce"
+  },
+  "api_metadata": {
+    "id": "resp_04cc40134457e685006aaa24ccbd3c87d19dde147fca6bfe10",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789535436.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1820,
+      "input_tokens_details": {
+        "cache_write_tokens": 1817,
+        "cached_tokens": 0
+      },
+      "output_tokens": 322,
+      "output_tokens_details": {
+        "reasoning_tokens": 159
+      },
+      "total_tokens": 2142
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.96,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Christian Science Monitor mission, subscription promotion, and general anti-corruption journalism\",\n  \"conflict_relevance\": \"Gaza is mentioned only in passing as part of a list of issues associated with the current U.S. administration; no conflict-related discussion or analysis is provided.\",\n  \"reason\": \"The article is primarily institutional and promotional material about the Christian Science Monitor, with unrelated discussion of corruption and digital governance. The sole Gaza reference is incidental and does not meaningfully contribute to discourse analysis of the conflict.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T05:10:41Z",
+  "duration_seconds": 5.057,
+  "error": null
+}

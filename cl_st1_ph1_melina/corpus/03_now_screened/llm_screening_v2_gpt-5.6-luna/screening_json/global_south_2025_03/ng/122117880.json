@@ -1,0 +1,65 @@
+{
+  "article_id": "122117880",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_south_2025_03/ng/122117880.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_south_2025_03/ng/122117880.json"
+  },
+  "manifest_row": {
+    "article_id": "122117880",
+    "group": "global_south_2025_03",
+    "country_code": "ng",
+    "filepath": "corpus/02_now_organised/global_south_2025_03/ng/122117880.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.96,
+    "gaza_role": "background",
+    "main_topic": "Food and nutrition insecurity in Nigeria",
+    "conflict_relevance": "The main article concerns Nigeria's food crisis and related conflict, insecurity, inflation, and humanitarian conditions. It includes a separate substantive snippet about the Organisation of Islamic Cooperation adopting an Arab League proposal opposing a US plan to take over Gaza and displace its residents.",
+    "reason": "The headline and main body are unrelated to Gaza or the Israel-Palestine conflict, but the embedded Gaza-related item contains meaningful discourse about displacement, international diplomacy, and regional opposition to a proposed Gaza plan.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "f71b8011d45e99baf59fcfdac21fa2e2b92082ca6be613496b3461554c3d42b5",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "e444736da45e94f823c8544c0e915e1590a957bdd11d2577958bd84da7ca793c",
+    "raw_response_text_sha256": "23a9198be928729b9f50818624e07d283182421826fc6ddfacc9d446238f9983"
+  },
+  "api_metadata": {
+    "id": "resp_049d178d6735ddc5006aaa46de9a1c87d196ec78386fc6a7c4",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789544158.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2182,
+      "input_tokens_details": {
+        "cache_write_tokens": 2179,
+        "cached_tokens": 0
+      },
+      "output_tokens": 311,
+      "output_tokens_details": {
+        "reasoning_tokens": 136
+      },
+      "total_tokens": 2493
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.96,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Food and nutrition insecurity in Nigeria\",\n  \"conflict_relevance\": \"The main article concerns Nigeria's food crisis and related conflict, insecurity, inflation, and humanitarian conditions. It includes a separate substantive snippet about the Organisation of Islamic Cooperation adopting an Arab League proposal opposing a US plan to take over Gaza and displace its residents.\",\n  \"reason\": \"The headline and main body are unrelated to Gaza or the Israel-Palestine conflict, but the embedded Gaza-related item contains meaningful discourse about displacement, international diplomacy, and regional opposition to a proposed Gaza plan.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T07:36:02Z",
+  "duration_seconds": 4.307,
+  "error": null
+}

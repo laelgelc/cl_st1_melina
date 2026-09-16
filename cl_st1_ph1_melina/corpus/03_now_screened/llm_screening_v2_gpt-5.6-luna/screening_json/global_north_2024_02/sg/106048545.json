@@ -1,0 +1,65 @@
+{
+  "article_id": "106048545",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_02/sg/106048545.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_02/sg/106048545.json"
+  },
+  "manifest_row": {
+    "article_id": "106048545",
+    "group": "global_north_2024_02",
+    "country_code": "sg",
+    "filepath": "corpus/02_now_organised/global_north_2024_02/sg/106048545.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "background",
+    "main_topic": "Climate finance, climate change, and Bangladesh's vulnerability",
+    "conflict_relevance": "The article references the wars in Ukraine and Gaza and condemns civilian killings in Gaza as part of an argument about redirecting arms spending toward climate action.",
+    "reason": "Gaza is meaningfully invoked in the article's discussion of ongoing wars, civilian deaths, and human rights violations, but the article is primarily about climate financing and Bangladesh's climate vulnerability.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "8fe08bf89554c52be1d6555865ffeb10a6ec5c525ada6612d100103d223b2373",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "a2284a6517b264b9e57a5e31296350e3148cc7549f2df5aaeed46bf0e1f8004d",
+    "raw_response_text_sha256": "72509d73ee56e4aea7ac69cf534c74acff313467ab3fd9f337e4af59ad3fb6f4"
+  },
+  "api_metadata": {
+    "id": "resp_0a1ef0488246459a006aaa06daa6f087d2adb03b33a1d02e89",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789527770.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1109,
+      "input_tokens_details": {
+        "cache_write_tokens": 1106,
+        "cached_tokens": 0
+      },
+      "output_tokens": 207,
+      "output_tokens_details": {
+        "reasoning_tokens": 54
+      },
+      "total_tokens": 1316
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Climate finance, climate change, and Bangladesh's vulnerability\",\n  \"conflict_relevance\": \"The article references the wars in Ukraine and Gaza and condemns civilian killings in Gaza as part of an argument about redirecting arms spending toward climate action.\",\n  \"reason\": \"Gaza is meaningfully invoked in the article's discussion of ongoing wars, civilian deaths, and human rights violations, but the article is primarily about climate financing and Bangladesh's climate vulnerability.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:02:53Z",
+  "duration_seconds": 2.551,
+  "error": null
+}

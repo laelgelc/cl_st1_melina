@@ -1,0 +1,65 @@
+{
+  "article_id": "200429964",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_04/us/200429964.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_04/us/200429964.json"
+  },
+  "manifest_row": {
+    "article_id": "200429964",
+    "group": "global_north_2024_04",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2024_04/us/200429964.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.91,
+    "gaza_role": "background",
+    "main_topic": "Donald Trump's criminal hush-money trial",
+    "conflict_relevance": "The text includes a substantive but brief item about pro-Palestinian university demonstrations, opposition to Israel's war with Hamas in Gaza, and protesters' demands.",
+    "reason": "The primary article concerns Trump's criminal trial, while the Gaza-related material appears as a separate appended news snippet rather than the central subject. It is meaningful enough for peripheral discourse analysis but not suitable as core conflict coverage.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "7a969e1a59e8a605e2e35a35fc97c555e04a1b2f8c9106e44e4c9df6d564e7b6",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "5f4bc1dae0216260450548c6568ba974696ea8bdbceaa87b453f0397b21a8493",
+    "raw_response_text_sha256": "8cd6ebac65a74bdaafdb272f6e955b1cd326fcada2732809a468c8931d1b961e"
+  },
+  "api_metadata": {
+    "id": "resp_04f0f1516394b2a8006aaa0d3a08cc87d2bb4fd15d475fa3a6",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789529402.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 835,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 241,
+      "output_tokens_details": {
+        "reasoning_tokens": 85
+      },
+      "total_tokens": 1076
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.91,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Donald Trump's criminal hush-money trial\",\n  \"conflict_relevance\": \"The text includes a substantive but brief item about pro-Palestinian university demonstrations, opposition to Israel's war with Hamas in Gaza, and protesters' demands.\",\n  \"reason\": \"The primary article concerns Trump's criminal trial, while the Gaza-related material appears as a separate appended news snippet rather than the central subject. It is meaningful enough for peripheral discourse analysis but not suitable as core conflict coverage.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:30:05Z",
+  "duration_seconds": 3.777,
+  "error": null
+}

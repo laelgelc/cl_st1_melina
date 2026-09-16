@@ -1,0 +1,65 @@
+{
+  "article_id": "120704025",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_01/sg/120704025.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_01/sg/120704025.json"
+  },
+  "manifest_row": {
+    "article_id": "120704025",
+    "group": "global_north_2025_01",
+    "country_code": "sg",
+    "filepath": "corpus/02_now_organised/global_north_2025_01/sg/120704025.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "substantial",
+    "main_topic": "Donald Trump's executive power, democratic accountability, and political backlash",
+    "conflict_relevance": "The main article is about U.S. democratic institutions and the Trump administration, but it contains a substantial embedded report on the Gaza ceasefire, hostage and prisoner exchanges, humanitarian aid, displacement, UNRWA, and proposed Palestinian relocation.",
+    "reason": "The Gaza material is meaningful and extensive but appears as an unrelated embedded news item rather than part of the article's main argument. It is therefore useful for broader discourse analysis but should not be treated as core conflict coverage.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "7f2ec59f14e887b5bfece3d71c911ca540fb7485bb660f42d71e7740e7232207",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "983dc7ab833ce1b40897e30b4d982dde3355ddef2705ea138347fb607ad5e419",
+    "raw_response_text_sha256": "9c04bfb74ac96b9bc23065a6b2c1a4bae73127c64fdd7b9201b2d5b0ba257f51"
+  },
+  "api_metadata": {
+    "id": "resp_0e4a1640edeadfea006aaa20ae01c487d29033e8e1879b0404",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789534382.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 4179,
+      "input_tokens_details": {
+        "cache_write_tokens": 4176,
+        "cached_tokens": 0
+      },
+      "output_tokens": 358,
+      "output_tokens_details": {
+        "reasoning_tokens": 180
+      },
+      "total_tokens": 4537
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"substantial\",\n  \"main_topic\": \"Donald Trump's executive power, democratic accountability, and political backlash\",\n  \"conflict_relevance\": \"The main article is about U.S. democratic institutions and the Trump administration, but it contains a substantial embedded report on the Gaza ceasefire, hostage and prisoner exchanges, humanitarian aid, displacement, UNRWA, and proposed Palestinian relocation.\",\n  \"reason\": \"The Gaza material is meaningful and extensive but appears as an unrelated embedded news item rather than part of the article's main argument. It is therefore useful for broader discourse analysis but should not be treated as core conflict coverage.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T04:53:08Z",
+  "duration_seconds": 6.319,
+  "error": null
+}

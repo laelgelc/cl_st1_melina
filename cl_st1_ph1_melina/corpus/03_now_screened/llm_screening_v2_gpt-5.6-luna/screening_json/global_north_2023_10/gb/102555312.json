@@ -1,0 +1,65 @@
+{
+  "article_id": "102555312",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_10/gb/102555312.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_10/gb/102555312.json"
+  },
+  "manifest_row": {
+    "article_id": "102555312",
+    "group": "global_north_2023_10",
+    "country_code": "gb",
+    "filepath": "corpus/02_now_organised/global_north_2023_10/gb/102555312.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.94,
+    "gaza_role": "background",
+    "main_topic": "Delta Air Lines flight cancellations, possible additional European flights, and passenger evacuation amid the Israel conflict",
+    "conflict_relevance": "The article meaningfully discusses the operational and civilian travel consequences of the Israel-Hamas war, including suspended flights to Tel Aviv, evacuation difficulties, and airline safety concerns.",
+    "reason": "The primary focus is airline operations rather than the conflict itself, but the war is a substantial causal context for the cancellations, repatriation efforts, and travel disruption. Related-article snippets add further references to Hamas's attack and evacuations from Israel.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "859c53f7e8558d3a39927195ac9b663190fe0ef759732fba1f0bc7dc80464599",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "8f1654479aa61744f4b71a50917d245136cd558364af643e5416dd8ea99fb3a9",
+    "raw_response_text_sha256": "b203c927402571c7e3c4df8604db6c8572c85d5bf76cea7c3c37a961939ff6ba"
+  },
+  "api_metadata": {
+    "id": "resp_0447484e90e50637006aa9f7147a3c87d2ad8828c2314d66b0",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789523732.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1191,
+      "input_tokens_details": {
+        "cache_write_tokens": 1188,
+        "cached_tokens": 0
+      },
+      "output_tokens": 417,
+      "output_tokens_details": {
+        "reasoning_tokens": 240
+      },
+      "total_tokens": 1608
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.94,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Delta Air Lines flight cancellations, possible additional European flights, and passenger evacuation amid the Israel conflict\",\n  \"conflict_relevance\": \"The article meaningfully discusses the operational and civilian travel consequences of the Israel-Hamas war, including suspended flights to Tel Aviv, evacuation difficulties, and airline safety concerns.\",\n  \"reason\": \"The primary focus is airline operations rather than the conflict itself, but the war is a substantial causal context for the cancellations, repatriation efforts, and travel disruption. Related-article snippets add further references to Hamas's attack and evacuations from Israel.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T01:55:38Z",
+  "duration_seconds": 5.731,
+  "error": null
+}

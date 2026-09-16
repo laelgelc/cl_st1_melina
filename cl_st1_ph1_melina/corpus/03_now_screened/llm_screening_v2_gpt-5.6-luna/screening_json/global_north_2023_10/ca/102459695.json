@@ -1,0 +1,65 @@
+{
+  "article_id": "102459695",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_10/ca/102459695.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_10/ca/102459695.json"
+  },
+  "manifest_row": {
+    "article_id": "102459695",
+    "group": "global_north_2023_10",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2023_10/ca/102459695.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.96,
+    "gaza_role": "substantial",
+    "main_topic": "Mixed latest-stories news roundup",
+    "conflict_relevance": "Contains several substantive snippets about the Hamas attack, Israeli military strikes in Gaza, the blockade, Hezbollah, and the broader Israel-Gaza conflict.",
+    "reason": "The text is an aggregated roundup containing unrelated stories, but multiple embedded items meaningfully address Gaza and the Israel-Palestine conflict. It is therefore relevant for broader discourse analysis but not suitable as a coherent core-conflict article.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "4d8d34f123bc31c6acb81bf15e89192d1de5aa49b9fd5f847d4cbe506c8594c2",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "2a19bf72f4f37e5191b21d158994a30ec4d422c7826c00d27d831e19df133f50",
+    "raw_response_text_sha256": "761c0f27ba31fcfe5174f3a0b8041baf4b721a7c5d9660b0b54d349433d96759"
+  },
+  "api_metadata": {
+    "id": "resp_0dbe141054b5ecc1006aa9f60c148087d28739520b6ab6a4f5",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789523468.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1501,
+      "input_tokens_details": {
+        "cache_write_tokens": 1498,
+        "cached_tokens": 0
+      },
+      "output_tokens": 354,
+      "output_tokens_details": {
+        "reasoning_tokens": 197
+      },
+      "total_tokens": 1855
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.96,\n  \"gaza_role\": \"substantial\",\n  \"main_topic\": \"Mixed latest-stories news roundup\",\n  \"conflict_relevance\": \"Contains several substantive snippets about the Hamas attack, Israeli military strikes in Gaza, the blockade, Hezbollah, and the broader Israel-Gaza conflict.\",\n  \"reason\": \"The text is an aggregated roundup containing unrelated stories, but multiple embedded items meaningfully address Gaza and the Israel-Palestine conflict. It is therefore relevant for broader discourse analysis but not suitable as a coherent core-conflict article.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T01:51:12Z",
+  "duration_seconds": 4.411,
+  "error": null
+}

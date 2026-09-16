@@ -1,0 +1,65 @@
+{
+  "article_id": "104087703",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_12/ca/104087703.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_12/ca/104087703.json"
+  },
+  "manifest_row": {
+    "article_id": "104087703",
+    "group": "global_north_2023_12",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2023_12/ca/104087703.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "gaza_role": "boilerplate_or_unrelated",
+    "main_topic": "A British Columbia landlord's liability for a former tenant's strata bylaw violations and fines",
+    "conflict_relevance": "The main article is unrelated to Gaza, Palestine, Israel/Palestine, or associated conflict discourse; Gaza appears only in an unrelated top-stories snippet.",
+    "reason": "The headline article concerns a civil tribunal dispute over strata fines, while the sole Gaza reference appears as a brief, unrelated item in a list of other news stories.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "95777884f3916f0e0706330e64bc34aede10432ad5c40cf0059ff152b2349039",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "5fa3186ba45e17c4a2267cba9fa42b5b2554f0d7a13ad0599481b6489dab88a4",
+    "raw_response_text_sha256": "6d8f4f490cbedd036f9ad7262c70c95a25c755ec635d46979f957134691fed25"
+  },
+  "api_metadata": {
+    "id": "resp_0bef8c6bec2ed577006aaa0062f6a487d28ad67fc6521d0bb6",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789526114.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2009,
+      "input_tokens_details": {
+        "cache_write_tokens": 2006,
+        "cached_tokens": 0
+      },
+      "output_tokens": 207,
+      "output_tokens_details": {
+        "reasoning_tokens": 46
+      },
+      "total_tokens": 2216
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"gaza_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"A British Columbia landlord's liability for a former tenant's strata bylaw violations and fines\",\n  \"conflict_relevance\": \"The main article is unrelated to Gaza, Palestine, Israel/Palestine, or associated conflict discourse; Gaza appears only in an unrelated top-stories snippet.\",\n  \"reason\": \"The headline article concerns a civil tribunal dispute over strata fines, while the sole Gaza reference appears as a brief, unrelated item in a list of other news stories.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:35:17Z",
+  "duration_seconds": 2.851,
+  "error": null
+}

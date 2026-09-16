@@ -1,0 +1,65 @@
+{
+  "article_id": "115955094",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_south_2024_10/in/115955094.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_south_2024_10/in/115955094.json"
+  },
+  "manifest_row": {
+    "article_id": "115955094",
+    "group": "global_south_2024_10",
+    "country_code": "in",
+    "filepath": "corpus/02_now_organised/global_south_2024_10/in/115955094.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.94,
+    "gaza_role": "passing",
+    "main_topic": "Historical patterns and polarization in U.S. presidential elections",
+    "conflict_relevance": "A related-post snippet contains a substantive, highly partisan reference to Israel's retaliation for the October 7 attacks, the destruction of Gaza, and claims about Hamas, but the main article is unrelated to the conflict.",
+    "reason": "The article centrally discusses U.S. electoral history and the 2024 presidential election. Gaza and Israel appear only in an embedded related-post item, which nevertheless contains meaningful conflict discourse and therefore supports peripheral rather than core classification.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "d3b460225ca68e8f5905f8646c1cedb6b60869b66895e0d779a1d88fd3091ff5",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "85c551c5b319133da789b5c82bd0261bdbd87d5c7fc1bc0034a224d25f7b3fe0",
+    "raw_response_text_sha256": "995b0e070d811c0f8018a2c17886c86780b66f9f6c67c11a96505f04c87334bb"
+  },
+  "api_metadata": {
+    "id": "resp_074bad0e1a8763d2006aaa4056c49087d1af6c13006127eed4",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789542486.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1720,
+      "input_tokens_details": {
+        "cache_write_tokens": 1717,
+        "cached_tokens": 0
+      },
+      "output_tokens": 290,
+      "output_tokens_details": {
+        "reasoning_tokens": 118
+      },
+      "total_tokens": 2010
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.94,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Historical patterns and polarization in U.S. presidential elections\",\n  \"conflict_relevance\": \"A related-post snippet contains a substantive, highly partisan reference to Israel's retaliation for the October 7 attacks, the destruction of Gaza, and claims about Hamas, but the main article is unrelated to the conflict.\",\n  \"reason\": \"The article centrally discusses U.S. electoral history and the 2024 presidential election. Gaza and Israel appear only in an embedded related-post item, which nevertheless contains meaningful conflict discourse and therefore supports peripheral rather than core classification.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T07:08:10Z",
+  "duration_seconds": 4.268,
+  "error": null
+}

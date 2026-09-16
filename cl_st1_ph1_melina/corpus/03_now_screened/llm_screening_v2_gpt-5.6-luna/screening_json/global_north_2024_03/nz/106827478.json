@@ -1,0 +1,65 @@
+{
+  "article_id": "106827478",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_03/nz/106827478.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_03/nz/106827478.json"
+  },
+  "manifest_row": {
+    "article_id": "106827478",
+    "group": "global_north_2024_03",
+    "country_code": "nz",
+    "filepath": "corpus/02_now_organised/global_north_2024_03/nz/106827478.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "passing",
+    "main_topic": "Disability support services funding cuts and government policy in New Zealand",
+    "conflict_relevance": "The main article is unrelated to Gaza, but an embedded snippet reports New Zealand funding for humanitarian needs in Gaza and the West Bank and references the Israel-Hamas conflict.",
+    "reason": "The headline and substantive article focus on disability-sector funding, benefit policy, and pay equity. Gaza appears in a separate, brief embedded news item, making the article peripheral rather than core.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "488740325f3b1bb4d8445f59b2b445e1a5b99f75fb8af317a4ab12268f4fda13",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "260f6804aa721e89f47ff7aceb48a5ff9414d8ee017239b5101fa8b542d2064e",
+    "raw_response_text_sha256": "7931ee1ebdf3a0347d141f78aeff4d6258489bbd90c3c5a34587a89e2a881faa"
+  },
+  "api_metadata": {
+    "id": "resp_0d44a09a80b2e835006aaa093bd0c487d2a756fcef59e79095",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789528379.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1384,
+      "input_tokens_details": {
+        "cache_write_tokens": 1381,
+        "cached_tokens": 0
+      },
+      "output_tokens": 225,
+      "output_tokens_details": {
+        "reasoning_tokens": 67
+      },
+      "total_tokens": 1609
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Disability support services funding cuts and government policy in New Zealand\",\n  \"conflict_relevance\": \"The main article is unrelated to Gaza, but an embedded snippet reports New Zealand funding for humanitarian needs in Gaza and the West Bank and references the Israel-Hamas conflict.\",\n  \"reason\": \"The headline and substantive article focus on disability-sector funding, benefit policy, and pay equity. Gaza appears in a separate, brief embedded news item, making the article peripheral rather than core.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:13:03Z",
+  "duration_seconds": 3.476,
+  "error": null
+}

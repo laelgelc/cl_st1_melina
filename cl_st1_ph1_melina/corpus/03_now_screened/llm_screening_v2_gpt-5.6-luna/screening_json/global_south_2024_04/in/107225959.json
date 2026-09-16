@@ -1,0 +1,65 @@
+{
+  "article_id": "107225959",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_south_2024_04/in/107225959.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_south_2024_04/in/107225959.json"
+  },
+  "manifest_row": {
+    "article_id": "107225959",
+    "group": "global_south_2024_04",
+    "country_code": "in",
+    "filepath": "corpus/02_now_organised/global_south_2024_04/in/107225959.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "background",
+    "main_topic": "Earthquake in New Jersey and New York City",
+    "conflict_relevance": "The article is primarily about a U.S. earthquake, but includes a substantive brief mention of a UN Security Council briefing on the situation in war-torn Gaza.",
+    "reason": "Gaza appears in an embedded update describing how an earthquake interrupted a UN briefing about Gaza. This provides limited contextual relevance to Gaza discourse, but the article's main subject is unrelated earthquake coverage.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "dea3b888a1c2a73c6ae87742ee7f023ec51cfbc8313280e07ce9a333c2de5746",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "10d28c2913dd1513b1f8ee36b3df5bf66b8457e9539c64fdc937fc853380f0a8",
+    "raw_response_text_sha256": "5d518120b6359e23c3446e1a993c8c421f833f639df9768fb3edab764f8d3f8b"
+  },
+  "api_metadata": {
+    "id": "resp_0444a34cad5eb3b2006aaa3a0ca5f087d1bb5e1fc87ddf002a",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789540876.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2284,
+      "input_tokens_details": {
+        "cache_write_tokens": 2281,
+        "cached_tokens": 0
+      },
+      "output_tokens": 247,
+      "output_tokens_details": {
+        "reasoning_tokens": 92
+      },
+      "total_tokens": 2531
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Earthquake in New Jersey and New York City\",\n  \"conflict_relevance\": \"The article is primarily about a U.S. earthquake, but includes a substantive brief mention of a UN Security Council briefing on the situation in war-torn Gaza.\",\n  \"reason\": \"Gaza appears in an embedded update describing how an earthquake interrupted a UN briefing about Gaza. This provides limited contextual relevance to Gaza discourse, but the article's main subject is unrelated earthquake coverage.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T06:41:21Z",
+  "duration_seconds": 5.188,
+  "error": null
+}

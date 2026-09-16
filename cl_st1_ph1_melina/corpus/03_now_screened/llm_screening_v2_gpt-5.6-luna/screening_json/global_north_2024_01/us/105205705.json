@@ -1,0 +1,65 @@
+{
+  "article_id": "105205705",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_01/us/105205705.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_01/us/105205705.json"
+  },
+  "manifest_row": {
+    "article_id": "105205705",
+    "group": "global_north_2024_01",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2024_01/us/105205705.txt"
+  },
+  "screening": {
+    "category": "CORE",
+    "confidence": 0.98,
+    "gaza_role": "central",
+    "main_topic": "The impact of Israel's offensive in Gaza on President Biden's support among Arab and Muslim Americans and U.S. electoral politics",
+    "conflict_relevance": "Directly examines Gaza-related military action, ceasefire protests, Arab and Muslim American political responses, and the electoral consequences of U.S. policy toward the conflict.",
+    "reason": "The headline and opening section centrally focus on Gaza, Israel's bombardment, public protests, and declining Biden support among Arab and Muslim Americans. The latter portion appears to be an unrelated appended article about the Republican primary, creating a clear multi-article or text-splicing issue.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": true
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "67da67bb9b7aeaf03d5622ec60365c28bc22927d32945617f4626dfd392ab41b",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "9e82039ec354ae5a0a46df851e88d8560b82d564a1eb4b2513abf87e6a62ad31",
+    "raw_response_text_sha256": "653a9eaa18d7d1391eded7adc44d5cb2e637859c5c3fc587f147a5bdfcc24396"
+  },
+  "api_metadata": {
+    "id": "resp_0b8dc6c84beb72d0006aaa04de56e087d2a5ab73112c85d276",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789527262.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2115,
+      "input_tokens_details": {
+        "cache_write_tokens": 2112,
+        "cached_tokens": 0
+      },
+      "output_tokens": 289,
+      "output_tokens_details": {
+        "reasoning_tokens": 104
+      },
+      "total_tokens": 2404
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"CORE\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"central\",\n  \"main_topic\": \"The impact of Israel's offensive in Gaza on President Biden's support among Arab and Muslim Americans and U.S. electoral politics\",\n  \"conflict_relevance\": \"Directly examines Gaza-related military action, ceasefire protests, Arab and Muslim American political responses, and the electoral consequences of U.S. policy toward the conflict.\",\n  \"reason\": \"The headline and opening section centrally focus on Gaza, Israel's bombardment, public protests, and declining Biden support among Arab and Muslim Americans. The latter portion appears to be an unrelated appended article about the Republican primary, creating a clear multi-article or text-splicing issue.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": true\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:54:26Z",
+  "duration_seconds": 4.107,
+  "error": null
+}

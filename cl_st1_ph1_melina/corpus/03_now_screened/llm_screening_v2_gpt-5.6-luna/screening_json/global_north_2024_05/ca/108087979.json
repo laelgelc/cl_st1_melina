@@ -1,0 +1,65 @@
+{
+  "article_id": "108087979",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_05/ca/108087979.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_05/ca/108087979.json"
+  },
+  "manifest_row": {
+    "article_id": "108087979",
+    "group": "global_north_2024_05",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2024_05/ca/108087979.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.97,
+    "gaza_role": "passing",
+    "main_topic": "Film releases and entertainment news",
+    "conflict_relevance": "The article is primarily a film-review segment and contains only a brief, embedded reference to Eurovision protests and the war in Gaza.",
+    "reason": "Gaza is mentioned in a single passing sentence within an unrelated entertainment and news roundup, without substantive discussion or analysis of the conflict.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "8875a6b32012960618f26896669efcc6f1bb535fd6e035d1a9ccb7fef06fa365",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "0e1991b1bdac58196a645a395646f2fa5e296d483767d1f6b187733a27af167c",
+    "raw_response_text_sha256": "654c37c53c4388c19325a3df3c12bf6659b8dea9b7a02d48f3b06a5e53b25d3d"
+  },
+  "api_metadata": {
+    "id": "resp_09d3aef659e13700006aaa0d88938087d2b7a0a097ee697b47",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789529480.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1881,
+      "input_tokens_details": {
+        "cache_write_tokens": 1878,
+        "cached_tokens": 0
+      },
+      "output_tokens": 308,
+      "output_tokens_details": {
+        "reasoning_tokens": 177
+      },
+      "total_tokens": 2189
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.97,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Film releases and entertainment news\",\n  \"conflict_relevance\": \"The article is primarily a film-review segment and contains only a brief, embedded reference to Eurovision protests and the war in Gaza.\",\n  \"reason\": \"Gaza is mentioned in a single passing sentence within an unrelated entertainment and news roundup, without substantive discussion or analysis of the conflict.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:31:24Z",
+  "duration_seconds": 3.78,
+  "error": null
+}

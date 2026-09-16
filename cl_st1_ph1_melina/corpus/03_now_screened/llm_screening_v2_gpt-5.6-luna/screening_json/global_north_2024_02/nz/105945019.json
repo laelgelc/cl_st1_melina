@@ -1,0 +1,65 @@
+{
+  "article_id": "105945019",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_02/nz/105945019.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_02/nz/105945019.json"
+  },
+  "manifest_row": {
+    "article_id": "105945019",
+    "group": "global_north_2024_02",
+    "country_code": "nz",
+    "filepath": "corpus/02_now_organised/global_north_2024_02/nz/105945019.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.97,
+    "gaza_role": "passing",
+    "main_topic": "Māori political activism and the sale of protest memorabilia",
+    "conflict_relevance": "The main article is unrelated to Gaza, but embedded snippets discuss New Zealand political positioning on Gaza and humanitarian assistance to Gaza and the West Bank.",
+    "reason": "The article primarily concerns a Māori activist, symbolic protest, and fundraising for a political party. Gaza appears only in separate appended news snippets, including brief commentary on the Israel-Hamas conflict and a humanitarian aid announcement, making it peripheral rather than core.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "6b3f15a8b0ed101e6ec122a555378011a07b87b4d39c610230ee576eabb7eb0b",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "cee663a2c3b046b748e4a1752195844487a44ed5cb1d64665a95862f5454ff4b",
+    "raw_response_text_sha256": "8e267e729168168b68a81d7ee23889c452dae0b7dc5132a474acc25d29d17391"
+  },
+  "api_metadata": {
+    "id": "resp_05dd0e9bc9db443d006aaa06bdbf1087d29175bfaecf44b7ff",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789527741.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1662,
+      "input_tokens_details": {
+        "cache_write_tokens": 1659,
+        "cached_tokens": 0
+      },
+      "output_tokens": 281,
+      "output_tokens_details": {
+        "reasoning_tokens": 117
+      },
+      "total_tokens": 1943
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.97,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Māori political activism and the sale of protest memorabilia\",\n  \"conflict_relevance\": \"The main article is unrelated to Gaza, but embedded snippets discuss New Zealand political positioning on Gaza and humanitarian assistance to Gaza and the West Bank.\",\n  \"reason\": \"The article primarily concerns a Māori activist, symbolic protest, and fundraising for a political party. Gaza appears only in separate appended news snippets, including brief commentary on the Israel-Hamas conflict and a humanitarian aid announcement, making it peripheral rather than core.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:02:25Z",
+  "duration_seconds": 4.233,
+  "error": null
+}

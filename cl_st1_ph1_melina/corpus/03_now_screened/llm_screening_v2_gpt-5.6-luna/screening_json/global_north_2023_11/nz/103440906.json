@@ -1,0 +1,65 @@
+{
+  "article_id": "103440906",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_11/nz/103440906.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_11/nz/103440906.json"
+  },
+  "manifest_row": {
+    "article_id": "103440906",
+    "group": "global_north_2023_11",
+    "country_code": "nz",
+    "filepath": "corpus/02_now_organised/global_north_2023_11/nz/103440906.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.95,
+    "gaza_role": "background",
+    "main_topic": "United Nations latest news and humanitarian affairs worldwide",
+    "conflict_relevance": "The page includes substantive snippets about premature babies evacuated from a Gaza hospital and an airstrike on al-Ahli Arab Hospital, but Gaza is not the central subject of the page.",
+    "reason": "This is a multi-item UN news roundup covering conflicts and humanitarian issues worldwide. Its Gaza-related entries provide meaningful conflict discourse, but the page as a whole is not focused on Gaza or the Israel-Palestine conflict.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "d635114888e205fbb1061c92066f1df536dabfcc89634aacc7614e97eab70078",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "599f07491508c2d702f91866f3e345d4f69f7c7a285cf3594e1cdaf5adbcc8c6",
+    "raw_response_text_sha256": "5ea87cb020c144cecfb0d3d701711b91bd6f24c50ab9d67261a08a9b99c5d7a2"
+  },
+  "api_metadata": {
+    "id": "resp_0972e6d75b6130fe006aa9fdb69e8487d29b49c29dc5b05dac",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789525430.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1660,
+      "input_tokens_details": {
+        "cache_write_tokens": 1657,
+        "cached_tokens": 0
+      },
+      "output_tokens": 372,
+      "output_tokens_details": {
+        "reasoning_tokens": 209
+      },
+      "total_tokens": 2032
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.95,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"United Nations latest news and humanitarian affairs worldwide\",\n  \"conflict_relevance\": \"The page includes substantive snippets about premature babies evacuated from a Gaza hospital and an airstrike on al-Ahli Arab Hospital, but Gaza is not the central subject of the page.\",\n  \"reason\": \"This is a multi-item UN news roundup covering conflicts and humanitarian issues worldwide. Its Gaza-related entries provide meaningful conflict discourse, but the page as a whole is not focused on Gaza or the Israel-Palestine conflict.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:23:54Z",
+  "duration_seconds": 4.16,
+  "error": null
+}

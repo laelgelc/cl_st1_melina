@@ -1,0 +1,65 @@
+{
+  "article_id": "91649412",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_10/us/91649412.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_10/us/91649412.json"
+  },
+  "manifest_row": {
+    "article_id": "91649412",
+    "group": "global_north_2023_10",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2023_10/us/91649412.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.96,
+    "gaza_role": "background",
+    "main_topic": "Burger grilling and preventing loss of moisture while cooking",
+    "conflict_relevance": "An unrelated appended news snippet discusses backlash against WebSummit founder Paddy Cosgrave over criticism of Israel's actions in the fighting involving Israel and Gaza.",
+    "reason": "The headline and main article are entirely about cooking burgers, but the text includes a substantive embedded snippet concerning public debate over Israel's actions in Gaza. This makes it peripheral rather than core to the corpus.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "cb390e26743c05ac6362bc3abec1356a64a368d20b0ec7635012e694cf473372",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "7a1cce7cf639fa987826f1c934e320fe191cbca3d4be684ecbc51b74b27956f1",
+    "raw_response_text_sha256": "6f2491ff55c23785d210eb5200787ff87b5722862e6d38f5d5a614e9a85d82b0"
+  },
+  "api_metadata": {
+    "id": "resp_01984bb8596ccdaa006aa9fa8ee4fc87d2882acd6326f5f387",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789524622.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1414,
+      "input_tokens_details": {
+        "cache_write_tokens": 1411,
+        "cached_tokens": 0
+      },
+      "output_tokens": 341,
+      "output_tokens_details": {
+        "reasoning_tokens": 187
+      },
+      "total_tokens": 1755
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.96,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Burger grilling and preventing loss of moisture while cooking\",\n  \"conflict_relevance\": \"An unrelated appended news snippet discusses backlash against WebSummit founder Paddy Cosgrave over criticism of Israel's actions in the fighting involving Israel and Gaza.\",\n  \"reason\": \"The headline and main article are entirely about cooking burgers, but the text includes a substantive embedded snippet concerning public debate over Israel's actions in Gaza. This makes it peripheral rather than core to the corpus.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:10:27Z",
+  "duration_seconds": 4.331,
+  "error": null
+}

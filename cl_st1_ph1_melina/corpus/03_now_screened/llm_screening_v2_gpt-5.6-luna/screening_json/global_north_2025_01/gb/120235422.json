@@ -1,0 +1,65 @@
+{
+  "article_id": "120235422",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_01/gb/120235422.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_01/gb/120235422.json"
+  },
+  "manifest_row": {
+    "article_id": "120235422",
+    "group": "global_north_2025_01",
+    "country_code": "gb",
+    "filepath": "corpus/02_now_organised/global_north_2025_01/gb/120235422.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.95,
+    "gaza_role": "passing",
+    "main_topic": "Vivek Ramaswamy's departure from DOGE and possible Ohio gubernatorial campaign",
+    "conflict_relevance": "The article is primarily about U.S. domestic politics and the Department of Government Efficiency, but an embedded latest-stories section briefly reports on hostages released from Gaza during an Israel-Hamas ceasefire.",
+    "reason": "The Gaza-related material is a discrete, unrelated news snippet rather than part of the main article, but it contains a meaningful sentence about hostages, Gaza, Israel, Hamas, and the ceasefire.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "94850b2f90c609a7e1a8da588654c517da6bd6c0bcd7a0345ba3b3fc759b86ac",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "f266ad9354ed31b6a9bea5e98404602b495aa7440717a16bd30d8ffc0f79197d",
+    "raw_response_text_sha256": "42a0fa0c48c7e3cc4ee9ec29f41c7220edd30c6e6f5ea2529afe8a2746261ad3"
+  },
+  "api_metadata": {
+    "id": "resp_00432838bd9090c0006aaa1fc88a4887d28cd199583bef6ba6",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789534152.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2402,
+      "input_tokens_details": {
+        "cache_write_tokens": 2399,
+        "cached_tokens": 0
+      },
+      "output_tokens": 305,
+      "output_tokens_details": {
+        "reasoning_tokens": 131
+      },
+      "total_tokens": 2707
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.95,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Vivek Ramaswamy's departure from DOGE and possible Ohio gubernatorial campaign\",\n  \"conflict_relevance\": \"The article is primarily about U.S. domestic politics and the Department of Government Efficiency, but an embedded latest-stories section briefly reports on hostages released from Gaza during an Israel-Hamas ceasefire.\",\n  \"reason\": \"The Gaza-related material is a discrete, unrelated news snippet rather than part of the main article, but it contains a meaningful sentence about hostages, Gaza, Israel, Hamas, and the ceasefire.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T04:49:16Z",
+  "duration_seconds": 4.18,
+  "error": null
+}

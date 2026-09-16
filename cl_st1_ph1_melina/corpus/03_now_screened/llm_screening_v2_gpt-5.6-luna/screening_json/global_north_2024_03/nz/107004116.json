@@ -1,0 +1,65 @@
+{
+  "article_id": "107004116",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_03/nz/107004116.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_03/nz/107004116.json"
+  },
+  "manifest_row": {
+    "article_id": "107004116",
+    "group": "global_north_2024_03",
+    "country_code": "nz",
+    "filepath": "corpus/02_now_organised/global_north_2024_03/nz/107004116.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "gaza_role": "passing",
+    "main_topic": "Farm environmental violations and unlawful effluent discharges in New Zealand",
+    "conflict_relevance": "Gaza appears only in an unrelated embedded snippet announcing New Zealand humanitarian funding and does not form part of the main article.",
+    "reason": "The article is primarily about a dairy company's environmental offences. The brief Gaza reference is incidental, fragmentary, and unrelated to the headline article.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "65122a66a94599d82e18e16ebf72fd510c460768bcef66c415a64fdc1217c541",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "1999f6649d858eaab878f53e70b329d4804271bb747b7d0af5b28186ff0a6bb6",
+    "raw_response_text_sha256": "b797a518dfc9c160ea93315ec198f29e28abb6c87df7a4ebc80c97cc77d36468"
+  },
+  "api_metadata": {
+    "id": "resp_0888e4125b11b741006aaa094a7c5c87d29d13ca7eda63a951",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789528394.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1155,
+      "input_tokens_details": {
+        "cache_write_tokens": 1152,
+        "cached_tokens": 0
+      },
+      "output_tokens": 219,
+      "output_tokens_details": {
+        "reasoning_tokens": 80
+      },
+      "total_tokens": 1374
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Farm environmental violations and unlawful effluent discharges in New Zealand\",\n  \"conflict_relevance\": \"Gaza appears only in an unrelated embedded snippet announcing New Zealand humanitarian funding and does not form part of the main article.\",\n  \"reason\": \"The article is primarily about a dairy company's environmental offences. The brief Gaza reference is incidental, fragmentary, and unrelated to the headline article.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:13:17Z",
+  "duration_seconds": 3.401,
+  "error": null
+}

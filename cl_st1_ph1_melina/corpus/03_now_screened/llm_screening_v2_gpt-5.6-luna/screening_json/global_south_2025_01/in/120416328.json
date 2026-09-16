@@ -1,0 +1,65 @@
+{
+  "article_id": "120416328",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_south_2025_01/in/120416328.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_south_2025_01/in/120416328.json"
+  },
+  "manifest_row": {
+    "article_id": "120416328",
+    "group": "global_south_2025_01",
+    "country_code": "in",
+    "filepath": "corpus/02_now_organised/global_south_2025_01/in/120416328.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.97,
+    "gaza_role": "background",
+    "main_topic": "Indian and international breaking-news roundup",
+    "conflict_relevance": "Contains a substantive embedded item about the Gaza ceasefire, the release of four Israeli hostages, and the exchange of Palestinian prisoners, but the overall article is an unrelated multi-topic news roundup.",
+    "reason": "The Gaza-related snippet provides meaningful conflict discourse, yet it is not the main subject of the article, whose primary focus is Indian political, economic, administrative, and international news.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "7824c15ab40c902e8cafbb72260c00bdd11e4df3a6efad48a4b7f6c295b5bc48",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "20ca36b7e7e81493f59b372fd2e0566d057d8e2ce4045bd08cd85296d3767195",
+    "raw_response_text_sha256": "70b37b3b1ab08378ee00f572eea4ab618cc2ecacb3dd34aac0df1417122f7776"
+  },
+  "api_metadata": {
+    "id": "resp_099bb12510c021cf006aaa44434d3087d1a0b6a3d33e1ec40b",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789543491.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2406,
+      "input_tokens_details": {
+        "cache_write_tokens": 2403,
+        "cached_tokens": 0
+      },
+      "output_tokens": 278,
+      "output_tokens_details": {
+        "reasoning_tokens": 123
+      },
+      "total_tokens": 2684
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.97,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Indian and international breaking-news roundup\",\n  \"conflict_relevance\": \"Contains a substantive embedded item about the Gaza ceasefire, the release of four Israeli hostages, and the exchange of Palestinian prisoners, but the overall article is an unrelated multi-topic news roundup.\",\n  \"reason\": \"The Gaza-related snippet provides meaningful conflict discourse, yet it is not the main subject of the article, whose primary focus is Indian political, economic, administrative, and international news.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T07:24:55Z",
+  "duration_seconds": 3.98,
+  "error": null
+}

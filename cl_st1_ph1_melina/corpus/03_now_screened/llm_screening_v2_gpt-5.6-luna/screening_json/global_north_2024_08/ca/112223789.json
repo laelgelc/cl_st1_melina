@@ -1,0 +1,65 @@
+{
+  "article_id": "112223789",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_08/ca/112223789.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_08/ca/112223789.json"
+  },
+  "manifest_row": {
+    "article_id": "112223789",
+    "group": "global_north_2024_08",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2024_08/ca/112223789.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "gaza_role": "boilerplate_or_unrelated",
+    "main_topic": "Scotiabank's acquisition of a minority stake in KeyCorp",
+    "conflict_relevance": "The main article is about a banking transaction and has no substantive connection to Gaza or the Israel-Palestine conflict. A brief unrelated latest-stories item mentions the Israel-Gaza war only as context for rising threats against Jewish, Muslim, and Arab communities.",
+    "reason": "The conflict reference appears only in an embedded roundup item and does not meaningfully contribute to discourse analysis of Gaza, Palestine, or the conflict.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "47fa704829898142b2d6de174dd53dac1bafdc29058e9a6a4b225244a858dad7",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "0b7142272908a068941fabb42d2349e9044d6511577ac29d8e20b91e418ff310",
+    "raw_response_text_sha256": "77b8d999a77d687c04ce0400a83d0ee406c12f427b41761f070f1c70ef885214"
+  },
+  "api_metadata": {
+    "id": "resp_0d822eb8124a3b78006aaa13ea72c487d2940f98ed1c4d22eb",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789531114.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1722,
+      "input_tokens_details": {
+        "cache_write_tokens": 1719,
+        "cached_tokens": 0
+      },
+      "output_tokens": 281,
+      "output_tokens_details": {
+        "reasoning_tokens": 108
+      },
+      "total_tokens": 2003
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Scotiabank's acquisition of a minority stake in KeyCorp\",\n  \"conflict_relevance\": \"The main article is about a banking transaction and has no substantive connection to Gaza or the Israel-Palestine conflict. A brief unrelated latest-stories item mentions the Israel-Gaza war only as context for rising threats against Jewish, Muslim, and Arab communities.\",\n  \"reason\": \"The conflict reference appears only in an embedded roundup item and does not meaningfully contribute to discourse analysis of Gaza, Palestine, or the conflict.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:58:37Z",
+  "duration_seconds": 3.541,
+  "error": null
+}

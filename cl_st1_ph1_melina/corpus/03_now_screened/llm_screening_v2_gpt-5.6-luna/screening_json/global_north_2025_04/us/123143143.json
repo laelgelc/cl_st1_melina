@@ -1,0 +1,65 @@
+{
+  "article_id": "123143143",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_04/us/123143143.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_04/us/123143143.json"
+  },
+  "manifest_row": {
+    "article_id": "123143143",
+    "group": "global_north_2025_04",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2025_04/us/123143143.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "background",
+    "main_topic": "Profile of Israeli volleyball player Ofeck Hazan and his transition from military service to collegiate athletics",
+    "conflict_relevance": "The article discusses Hazan's Israeli military service during the Gaza war, his work supporting tank crews after October 7, 2023, and the personal impact of the conflict, but the primary focus is his volleyball career.",
+    "reason": "The Gaza war and Israeli military service are meaningful parts of the athlete's biography, yet the article is mainly a sports feature about his recruitment, personal development, and performance at the University of Hawaii.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "7be957e59f4e6dff6eec336eee00b1edf8ceb7b24ad520903e03d0ae3676711f",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "1bcfc3435361d3657c8550327732b0139910536a6ece8d6a470799c32b25b2e6",
+    "raw_response_text_sha256": "4d446658b436fa44aea00e414d03cee513569a6c671e3d979f2340b46d693c3a"
+  },
+  "api_metadata": {
+    "id": "resp_0427209f9cbeb9f5006aaa29dd7d9c87d1bf9a537d4c2358e1",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789536733.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1987,
+      "input_tokens_details": {
+        "cache_write_tokens": 1984,
+        "cached_tokens": 0
+      },
+      "output_tokens": 250,
+      "output_tokens_details": {
+        "reasoning_tokens": 71
+      },
+      "total_tokens": 2237
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Profile of Israeli volleyball player Ofeck Hazan and his transition from military service to collegiate athletics\",\n  \"conflict_relevance\": \"The article discusses Hazan's Israeli military service during the Gaza war, his work supporting tank crews after October 7, 2023, and the personal impact of the conflict, but the primary focus is his volleyball career.\",\n  \"reason\": \"The Gaza war and Israeli military service are meaningful parts of the athlete's biography, yet the article is mainly a sports feature about his recruitment, personal development, and performance at the University of Hawaii.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T05:32:16Z",
+  "duration_seconds": 3.205,
+  "error": null
+}

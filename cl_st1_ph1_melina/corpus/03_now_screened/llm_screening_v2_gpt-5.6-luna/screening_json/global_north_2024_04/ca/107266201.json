@@ -1,0 +1,65 @@
+{
+  "article_id": "107266201",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_04/ca/107266201.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_04/ca/107266201.json"
+  },
+  "manifest_row": {
+    "article_id": "107266201",
+    "group": "global_north_2024_04",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2024_04/ca/107266201.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "background",
+    "main_topic": "Mixed Canadian news roundup, led by evacuation efforts in Haiti and including unrelated domestic, consumer, sports, and technology items",
+    "conflict_relevance": "The text contains substantive snippets about the Gaza war, including Israel's withdrawal from Khan Younis and a diplomatic dispute between Poland and Israel following the death of a Polish aid worker in Gaza, but these are not the main focus of the overall item.",
+    "reason": "Meaningful Gaza-related discourse is present, but it appears as embedded news snippets within a largely unrelated multi-item roundup rather than as the central article subject.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "f793592c73dff28d58737424760bc21b07836aee9842fad1282acc552dcf35e1",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "b3806d19a17da8bcdd6734cc7288232c30c36b3e72b943a6afe31afb15c2757b",
+    "raw_response_text_sha256": "b921709302fbcb2e92f759470aa4f99515665acf057c5e621f548fa03e85b7a1"
+  },
+  "api_metadata": {
+    "id": "resp_0177afe5294809b7006aaa0af9211087d2bffb5ca079948db1",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789528825.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1581,
+      "input_tokens_details": {
+        "cache_write_tokens": 1578,
+        "cached_tokens": 0
+      },
+      "output_tokens": 358,
+      "output_tokens_details": {
+        "reasoning_tokens": 179
+      },
+      "total_tokens": 1939
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Mixed Canadian news roundup, led by evacuation efforts in Haiti and including unrelated domestic, consumer, sports, and technology items\",\n  \"conflict_relevance\": \"The text contains substantive snippets about the Gaza war, including Israel's withdrawal from Khan Younis and a diplomatic dispute between Poland and Israel following the death of a Polish aid worker in Gaza, but these are not the main focus of the overall item.\",\n  \"reason\": \"Meaningful Gaza-related discourse is present, but it appears as embedded news snippets within a largely unrelated multi-item roundup rather than as the central article subject.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:20:29Z",
+  "duration_seconds": 4.764,
+  "error": null
+}

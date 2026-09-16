@@ -1,0 +1,65 @@
+{
+  "article_id": "119101348",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_12/us/119101348.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_12/us/119101348.json"
+  },
+  "manifest_row": {
+    "article_id": "119101348",
+    "group": "global_north_2024_12",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2024_12/us/119101348.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "gaza_role": "passing",
+    "main_topic": "Annual roundup of the publication's best 2024 essays and multimedia work",
+    "conflict_relevance": "Gaza is mentioned only briefly in a general summary of major political events covered during the year, without substantive discussion of the war or related issues.",
+    "reason": "This is a roundup article spanning many unrelated topics. The reference to the war in Gaza is incidental and functions as background context rather than meaningful conflict discourse.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "25347651dc7aa3a75800bb59ba00f679282d10a16209d00712a6b0c251f2d49f",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "73d038027bd460f45efc6a30dbce44e63e723a7d4a77c4c18bc28cb2367e19d8",
+    "raw_response_text_sha256": "907991cb2d9a0ae0208a1f57ef42e681fc941bece53cf5f09d4081eaeb618bee"
+  },
+  "api_metadata": {
+    "id": "resp_05da353cc2c2ba41006aaa1e9b869c87d2ab8da544a78edee3",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789533851.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2974,
+      "input_tokens_details": {
+        "cache_write_tokens": 2971,
+        "cached_tokens": 0
+      },
+      "output_tokens": 301,
+      "output_tokens_details": {
+        "reasoning_tokens": 153
+      },
+      "total_tokens": 3275
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Annual roundup of the publication's best 2024 essays and multimedia work\",\n  \"conflict_relevance\": \"Gaza is mentioned only briefly in a general summary of major political events covered during the year, without substantive discussion of the war or related issues.\",\n  \"reason\": \"This is a roundup article spanning many unrelated topics. The reference to the war in Gaza is incidental and functions as background context rather than meaningful conflict discourse.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T04:44:14Z",
+  "duration_seconds": 3.458,
+  "error": null
+}

@@ -1,0 +1,65 @@
+{
+  "article_id": "115547147",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_10/au/115547147.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_10/au/115547147.json"
+  },
+  "manifest_row": {
+    "article_id": "115547147",
+    "group": "global_north_2024_10",
+    "country_code": "au",
+    "filepath": "corpus/02_now_organised/global_north_2024_10/au/115547147.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "gaza_role": "passing",
+    "main_topic": "Western Australian news, including sport, infrastructure, education, workplace issues, and local incidents",
+    "conflict_relevance": "The article contains only a brief news-roundup mention of the Gaza war and an Israeli strike, with no substantive discussion.",
+    "reason": "The main article is an unrelated Perth and Western Australia live news blog. Gaza appears only in a short 'across the nation and around the world' roundup alongside other headlines.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "c225bf960603367c994f971f5572b92cb775349532ab0c7fd685d69f2df6d37f",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "16bb5049d355c7a41f6db7a50fa6bc805e6630a6bc24e391f814f1bbfe98d3d5",
+    "raw_response_text_sha256": "b8632e2e8bde38d78c78171bb2c539fddc21d5c1ec23c86bf2f5aedf049473c0"
+  },
+  "api_metadata": {
+    "id": "resp_0b542a4bb59655dd006aaa17a4f70487d292ee83ef6f111772",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789532068.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2961,
+      "input_tokens_details": {
+        "cache_write_tokens": 2958,
+        "cached_tokens": 0
+      },
+      "output_tokens": 238,
+      "output_tokens_details": {
+        "reasoning_tokens": 87
+      },
+      "total_tokens": 3199
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Western Australian news, including sport, infrastructure, education, workplace issues, and local incidents\",\n  \"conflict_relevance\": \"The article contains only a brief news-roundup mention of the Gaza war and an Israeli strike, with no substantive discussion.\",\n  \"reason\": \"The main article is an unrelated Perth and Western Australia live news blog. Gaza appears only in a short 'across the nation and around the world' roundup alongside other headlines.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T04:14:32Z",
+  "duration_seconds": 3.221,
+  "error": null
+}

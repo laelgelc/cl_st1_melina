@@ -1,0 +1,65 @@
+{
+  "article_id": "116691248",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_south_2024_10/my/116691248.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_south_2024_10/my/116691248.json"
+  },
+  "manifest_row": {
+    "article_id": "116691248",
+    "group": "global_south_2024_10",
+    "country_code": "my",
+    "filepath": "corpus/02_now_organised/global_south_2024_10/my/116691248.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.97,
+    "gaza_role": "passing",
+    "main_topic": "Truck collision at a bus stop in Ramat Hasharon, Israel",
+    "conflict_relevance": "The article only briefly references the Gaza war as context for the anniversary of the October 7 Hamas attack; it does not discuss the conflict substantively.",
+    "reason": "The article is primarily about an injury-causing truck incident in Israel, with Gaza mentioned only once in a contextual closing sentence.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "20f3d8c422bada38706f884b7b683b50ff5941197d157fb4ff300359d08b0ba2",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "0971046cd7f5b83d54a7d49f25f50ae7fe2a28ab8efeaa356b3df69a3c949c2b",
+    "raw_response_text_sha256": "ec386517bee3f334e6ee9c6392ce867a7d50209db77abdde71ce28682246de78"
+  },
+  "api_metadata": {
+    "id": "resp_07a1f391be1d5177006aaa40d6a95487d1a93ea057d478bad2",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789542614.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 815,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 245,
+      "output_tokens_details": {
+        "reasoning_tokens": 102
+      },
+      "total_tokens": 1060
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.97,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Truck collision at a bus stop in Ramat Hasharon, Israel\",\n  \"conflict_relevance\": \"The article only briefly references the Gaza war as context for the anniversary of the October 7 Hamas attack; it does not discuss the conflict substantively.\",\n  \"reason\": \"The article is primarily about an injury-causing truck incident in Israel, with Gaza mentioned only once in a contextual closing sentence.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T07:10:18Z",
+  "duration_seconds": 3.507,
+  "error": null
+}

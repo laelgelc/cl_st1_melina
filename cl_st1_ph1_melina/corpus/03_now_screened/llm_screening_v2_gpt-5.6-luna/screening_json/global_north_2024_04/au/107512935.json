@@ -1,0 +1,65 @@
+{
+  "article_id": "107512935",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_04/au/107512935.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_04/au/107512935.json"
+  },
+  "manifest_row": {
+    "article_id": "107512935",
+    "group": "global_north_2024_04",
+    "country_code": "au",
+    "filepath": "corpus/02_now_organised/global_north_2024_04/au/107512935.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.97,
+    "gaza_role": "background",
+    "main_topic": "Israel's possible responses to Iran's missile and drone attack",
+    "conflict_relevance": "The article focuses on the Israel-Iran confrontation and potential regional escalation, with Gaza mentioned as an ongoing war constraining Israel's strategic options.",
+    "reason": "Gaza is relevant contextual background but is not the subject of the article, which primarily analyzes Israeli military and diplomatic options toward Iran.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "13921165c802c61e91eb0872bfbd0d76ffb28f2e6b9b18a3c8bbf0c96dfe1429",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "4e8e9ad63d9945fcdb9db7e4772f50523979e75d7a2c211daf687b5c4f879498",
+    "raw_response_text_sha256": "e61ee8fadc5a5b08990be7893ff7617221934e80c2503bfedea247eb6b86a27d"
+  },
+  "api_metadata": {
+    "id": "resp_05cce1695beca81b006aaa0ae21d7c87d2a79be73d95e93b40",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789528802.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1768,
+      "input_tokens_details": {
+        "cache_write_tokens": 1765,
+        "cached_tokens": 0
+      },
+      "output_tokens": 190,
+      "output_tokens_details": {
+        "reasoning_tokens": 49
+      },
+      "total_tokens": 1958
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.97,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Israel's possible responses to Iran's missile and drone attack\",\n  \"conflict_relevance\": \"The article focuses on the Israel-Iran confrontation and potential regional escalation, with Gaza mentioned as an ongoing war constraining Israel's strategic options.\",\n  \"reason\": \"Gaza is relevant contextual background but is not the subject of the article, which primarily analyzes Israeli military and diplomatic options toward Iran.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:20:05Z",
+  "duration_seconds": 3.056,
+  "error": null
+}

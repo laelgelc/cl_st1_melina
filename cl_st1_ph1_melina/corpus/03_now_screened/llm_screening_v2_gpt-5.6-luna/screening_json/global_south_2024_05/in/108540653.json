@@ -1,0 +1,65 @@
+{
+  "article_id": "108540653",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_south_2024_05/in/108540653.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_south_2024_05/in/108540653.json"
+  },
+  "manifest_row": {
+    "article_id": "108540653",
+    "group": "global_south_2024_05",
+    "country_code": "in",
+    "filepath": "corpus/02_now_organised/global_south_2024_05/in/108540653.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.94,
+    "gaza_role": "background",
+    "main_topic": "Comparative business performance of AI semiconductor and Chinese solar-panel industries",
+    "conflict_relevance": "The main article is unrelated to Gaza or the Israel-Palestine conflict, but an embedded Bloomberg item substantively discusses the Gaza war, Rafah, Israeli military operations, and their effects on oil markets.",
+    "reason": "The primary article focuses on Nvidia, solar manufacturers, market structures, tariffs, and investment. However, the text also contains a separate, meaningful news article linking the Gaza conflict to geopolitical risk and oil prices, making it peripheral rather than excludable.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "05d08eea0c796f5fae87e0057552531b92e03e33eaec5cb6c186799a269201e7",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "465988f156ddb1f38a1526d7f000ffc1609538287e5fa342c6eec93a8172b81c",
+    "raw_response_text_sha256": "7fb818af1bcb2e0e89ddad64185d051943c16aab2e32d44a6c74ac5a12690072"
+  },
+  "api_metadata": {
+    "id": "resp_0c6c64702ad65ad9006aaa3b56185487d18b62ab831d35627d",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789541206.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2646,
+      "input_tokens_details": {
+        "cache_write_tokens": 2643,
+        "cached_tokens": 0
+      },
+      "output_tokens": 347,
+      "output_tokens_details": {
+        "reasoning_tokens": 167
+      },
+      "total_tokens": 2993
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.94,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Comparative business performance of AI semiconductor and Chinese solar-panel industries\",\n  \"conflict_relevance\": \"The main article is unrelated to Gaza or the Israel-Palestine conflict, but an embedded Bloomberg item substantively discusses the Gaza war, Rafah, Israeli military operations, and their effects on oil markets.\",\n  \"reason\": \"The primary article focuses on Nvidia, solar manufacturers, market structures, tariffs, and investment. However, the text also contains a separate, meaningful news article linking the Gaza conflict to geopolitical risk and oil prices, making it peripheral rather than excludable.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T06:46:50Z",
+  "duration_seconds": 4.99,
+  "error": null
+}

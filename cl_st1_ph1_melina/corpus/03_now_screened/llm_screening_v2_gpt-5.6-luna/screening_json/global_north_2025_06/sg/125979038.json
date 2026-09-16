@@ -1,0 +1,65 @@
+{
+  "article_id": "125979038",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_06/sg/125979038.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_06/sg/125979038.json"
+  },
+  "manifest_row": {
+    "article_id": "125979038",
+    "group": "global_north_2025_06",
+    "country_code": "sg",
+    "filepath": "corpus/02_now_organised/global_north_2025_06/sg/125979038.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "gaza_role": "passing",
+    "main_topic": "International photo roundup",
+    "conflict_relevance": "A single photograph caption depicts Palestinians receiving aid in Gaza, but the article is a general global news-photo collection.",
+    "reason": "Gaza appears only as one incidental item in a broader Today in Pictures roundup and is not developed as a substantive topic.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "05b595d16f2cab1c547b5e7e1a1aac4e2417907a52cbb3a027a6e7c65d4838d1",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "01f4ef41fe2b4d96ab0cf611c165f6d0f2863beefa3048abf8f057fe92752bbc",
+    "raw_response_text_sha256": "730147c08b8c110569b140bb71075f1aa75a12029332f2b19273509301b0925b"
+  },
+  "api_metadata": {
+    "id": "resp_01e088b9b2b0a70c006aaa308d71ec87d183c9a692dadfd5ad",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789538445.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1099,
+      "input_tokens_details": {
+        "cache_write_tokens": 1096,
+        "cached_tokens": 0
+      },
+      "output_tokens": 186,
+      "output_tokens_details": {
+        "reasoning_tokens": 62
+      },
+      "total_tokens": 1285
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"International photo roundup\",\n  \"conflict_relevance\": \"A single photograph caption depicts Palestinians receiving aid in Gaza, but the article is a general global news-photo collection.\",\n  \"reason\": \"Gaza appears only as one incidental item in a broader Today in Pictures roundup and is not developed as a substantive topic.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T06:00:48Z",
+  "duration_seconds": 3.122,
+  "error": null
+}

@@ -1,0 +1,65 @@
+{
+  "article_id": "123457211",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_04/us/123457211.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_04/us/123457211.json"
+  },
+  "manifest_row": {
+    "article_id": "123457211",
+    "group": "global_north_2025_04",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2025_04/us/123457211.txt"
+  },
+  "screening": {
+    "category": "CORE",
+    "confidence": 0.99,
+    "gaza_role": "substantial",
+    "main_topic": "Review of the film The Teacher and its depiction of Palestinian life under Israeli military occupation in the West Bank",
+    "conflict_relevance": "The article centrally discusses Palestinian experiences of occupation, settler violence, military detention, home demolitions, child prisoners, resistance, Palestinian prisoners, and the broader Israel-Palestine conflict as represented in the film.",
+    "reason": "The film review is substantially focused on political violence and everyday life under occupation, including the deaths of Palestinian family members, Israeli settlements, military prisons, Palestinian resistance, and a prisoner-exchange plot. Gaza is mentioned in relation to the post-October 7 context, but the primary focus is the West Bank and the Israeli-Palestinian conflict.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": true
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "6f78e598c0723d1b73717ac5ef3a1eefa601880f19f5e15aae3ee6f2ba01656b",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "81837182f2b72e84568d8e5a2dc844919e433a6a59951bdc124f3bd2fec54d9e",
+    "raw_response_text_sha256": "2802a1c125acaffe5f999648965afa3cb6ef4dcb8ae5c64e96f68812ce9e15ef"
+  },
+  "api_metadata": {
+    "id": "resp_06f38fae2c4dc69f006aaa2a26670487d180a6bce9d740c91d",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789536806.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1705,
+      "input_tokens_details": {
+        "cache_write_tokens": 1702,
+        "cached_tokens": 0
+      },
+      "output_tokens": 206,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 1911
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"CORE\",\n  \"confidence\": 0.99,\n  \"gaza_role\": \"substantial\",\n  \"main_topic\": \"Review of the film The Teacher and its depiction of Palestinian life under Israeli military occupation in the West Bank\",\n  \"conflict_relevance\": \"The article centrally discusses Palestinian experiences of occupation, settler violence, military detention, home demolitions, child prisoners, resistance, Palestinian prisoners, and the broader Israel-Palestine conflict as represented in the film.\",\n  \"reason\": \"The film review is substantially focused on political violence and everyday life under occupation, including the deaths of Palestinian family members, Israeli settlements, military prisons, Palestinian resistance, and a prisoner-exchange plot. Gaza is mentioned in relation to the post-October 7 context, but the primary focus is the West Bank and the Israeli-Palestinian conflict.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": true\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T05:33:29Z",
+  "duration_seconds": 3.18,
+  "error": null
+}

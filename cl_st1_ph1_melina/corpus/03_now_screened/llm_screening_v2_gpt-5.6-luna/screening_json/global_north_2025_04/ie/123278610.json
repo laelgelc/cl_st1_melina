@@ -1,0 +1,65 @@
+{
+  "article_id": "123278610",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_04/ie/123278610.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_04/ie/123278610.json"
+  },
+  "manifest_row": {
+    "article_id": "123278610",
+    "group": "global_north_2025_04",
+    "country_code": "ie",
+    "filepath": "corpus/02_now_organised/global_north_2025_04/ie/123278610.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.91,
+    "gaza_role": "background",
+    "main_topic": "Turkey's financial markets and economic prospects amid Trump's tariff announcements",
+    "conflict_relevance": "The article's main subject is global markets and Turkish economic conditions, but it includes brief geopolitical snippets about the Gaza conflict, including a Trump-Netanyahu meeting and a Cairo summit addressing Gaza's humanitarian and security crisis.",
+    "reason": "Gaza is not part of the main economic analysis, but the article contains meaningful, conflict-related embedded items that reference ongoing diplomacy and the humanitarian situation in Gaza.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "dbc7cff4237e67d1d6b15ece37a073a678ae08cba98fcae50ad8d3467fe8da73",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "906aaf4c97d499f2680a51f25a97d9a6035e06c500bf562224fdc7756624e85a",
+    "raw_response_text_sha256": "c5d567598253c01664894aba0a41ed89c2e6998fd00347de047ade894b2d82fb"
+  },
+  "api_metadata": {
+    "id": "resp_035e19777c47a72c006aaa296db22887d18f9a4ebd365899e1",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789536621.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1619,
+      "input_tokens_details": {
+        "cache_write_tokens": 1616,
+        "cached_tokens": 0
+      },
+      "output_tokens": 274,
+      "output_tokens_details": {
+        "reasoning_tokens": 113
+      },
+      "total_tokens": 1893
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.91,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Turkey's financial markets and economic prospects amid Trump's tariff announcements\",\n  \"conflict_relevance\": \"The article's main subject is global markets and Turkish economic conditions, but it includes brief geopolitical snippets about the Gaza conflict, including a Trump-Netanyahu meeting and a Cairo summit addressing Gaza's humanitarian and security crisis.\",\n  \"reason\": \"Gaza is not part of the main economic analysis, but the article contains meaningful, conflict-related embedded items that reference ongoing diplomacy and the humanitarian situation in Gaza.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T05:30:25Z",
+  "duration_seconds": 3.774,
+  "error": null
+}

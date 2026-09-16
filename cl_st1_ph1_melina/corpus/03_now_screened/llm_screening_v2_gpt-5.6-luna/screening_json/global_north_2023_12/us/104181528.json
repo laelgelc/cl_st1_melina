@@ -1,0 +1,65 @@
+{
+  "article_id": "104181528",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_12/us/104181528.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_12/us/104181528.json"
+  },
+  "manifest_row": {
+    "article_id": "104181528",
+    "group": "global_north_2023_12",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2023_12/us/104181528.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.94,
+    "gaza_role": "background",
+    "main_topic": "ECOWAS sanctions and diplomatic efforts concerning Niger's military coup",
+    "conflict_relevance": "The main article concerns Niger, regional sanctions, military rule, and Sahel security, but includes unrelated embedded material referring to Gaza City and criticism of US aid to Israel during the Gaza war.",
+    "reason": "The headline and substantive article focus on Niger and ECOWAS rather than Gaza or Israel/Palestine. However, the text contains meaningful embedded Gaza-related sentences, so it is peripheral rather than excluded.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "7b57b864673cd6586c0aa3a2722e64be9e89a187d98fb430795796963f4903e3",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "f5adf14ef325dca931ab3b0beeb809a5dfda65ad60944f26cbe6bdff32205e83",
+    "raw_response_text_sha256": "a63052b6d3329a67b910afc7dfe5f7df0d06daec36ee2a7b3d021fae48872be1"
+  },
+  "api_metadata": {
+    "id": "resp_05174618a4cf9303006aaa01f3c0a887d297d36cb94a617ea0",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789526515.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2266,
+      "input_tokens_details": {
+        "cache_write_tokens": 2263,
+        "cached_tokens": 0
+      },
+      "output_tokens": 312,
+      "output_tokens_details": {
+        "reasoning_tokens": 145
+      },
+      "total_tokens": 2578
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.94,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"ECOWAS sanctions and diplomatic efforts concerning Niger's military coup\",\n  \"conflict_relevance\": \"The main article concerns Niger, regional sanctions, military rule, and Sahel security, but includes unrelated embedded material referring to Gaza City and criticism of US aid to Israel during the Gaza war.\",\n  \"reason\": \"The headline and substantive article focus on Niger and ECOWAS rather than Gaza or Israel/Palestine. However, the text contains meaningful embedded Gaza-related sentences, so it is peripheral rather than excluded.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:42:00Z",
+  "duration_seconds": 5.025,
+  "error": null
+}

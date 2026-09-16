@@ -1,0 +1,65 @@
+{
+  "article_id": "120458600",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_south_2025_01/ke/120458600.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_south_2025_01/ke/120458600.json"
+  },
+  "manifest_row": {
+    "article_id": "120458600",
+    "group": "global_south_2025_01",
+    "country_code": "ke",
+    "filepath": "corpus/02_now_organised/global_south_2025_01/ke/120458600.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "gaza_role": "passing",
+    "main_topic": "Kenyan government crackdown on organized criminal gangs",
+    "conflict_relevance": "The article mentions the Gaza gang as one of several Kenyan gangs, but has no connection to Gaza, Palestine, Israel, or the Israel-Hamas conflict.",
+    "reason": "The sole Gaza-related reference is an incidental name in a list of gangs operating in Kenya, making the article irrelevant to the research corpus.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "28f68e5efc8b1e549e3c2e67b6e29ae89e102c7102a9ea621306a8b4e5b46855",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "0ccfa8c23c9f0ecfb8aa8dfccbedb091912df1be30a91063041460c3f1afef30",
+    "raw_response_text_sha256": "38cad253679ae4c5ade41599e3d0c8727566527d3333bde63abc4b38d417e8f9"
+  },
+  "api_metadata": {
+    "id": "resp_04011bf4e87fd9e3006aaa4471027487d1ba8361ad602d1e3f",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789543537.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1640,
+      "input_tokens_details": {
+        "cache_write_tokens": 1637,
+        "cached_tokens": 0
+      },
+      "output_tokens": 192,
+      "output_tokens_details": {
+        "reasoning_tokens": 51
+      },
+      "total_tokens": 1832
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Kenyan government crackdown on organized criminal gangs\",\n  \"conflict_relevance\": \"The article mentions the Gaza gang as one of several Kenyan gangs, but has no connection to Gaza, Palestine, Israel, or the Israel-Hamas conflict.\",\n  \"reason\": \"The sole Gaza-related reference is an incidental name in a list of gangs operating in Kenya, making the article irrelevant to the research corpus.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T07:25:39Z",
+  "duration_seconds": 3.08,
+  "error": null
+}

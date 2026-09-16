@@ -1,0 +1,65 @@
+{
+  "article_id": "107039807",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_03/ca/107039807.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_03/ca/107039807.json"
+  },
+  "manifest_row": {
+    "article_id": "107039807",
+    "group": "global_north_2024_03",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2024_03/ca/107039807.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "gaza_role": "passing",
+    "main_topic": "Niagara Falls emergency preparations for a solar eclipse, with unrelated news snippets",
+    "conflict_relevance": "Gaza is mentioned only in passing as one of several places associated with a prayer for peace; there is no substantive discussion of the conflict.",
+    "reason": "The article is primarily about Niagara's solar-eclipse preparations and includes unrelated sports and human-interest snippets. The Gaza reference is incidental and does not provide meaningful conflict discourse.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "3d64e19635946093ee5c90299234b1d266c27fb45e2fffb6a4ed79e75cb9f7b7",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "894f36ef73f82853e1963483789ec84412432576dd5240c1471af5fea51af83e",
+    "raw_response_text_sha256": "e05e0aeba7dd52c4397c688c7d9616f80d5c941581b445a290a62712af595103"
+  },
+  "api_metadata": {
+    "id": "resp_0ca0bf3f989004ac006aaa088503d887d28b63d9b8362a26c7",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789528197.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 887,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 225,
+      "output_tokens_details": {
+        "reasoning_tokens": 75
+      },
+      "total_tokens": 1112
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Niagara Falls emergency preparations for a solar eclipse, with unrelated news snippets\",\n  \"conflict_relevance\": \"Gaza is mentioned only in passing as one of several places associated with a prayer for peace; there is no substantive discussion of the conflict.\",\n  \"reason\": \"The article is primarily about Niagara's solar-eclipse preparations and includes unrelated sports and human-interest snippets. The Gaza reference is incidental and does not provide meaningful conflict discourse.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:10:00Z",
+  "duration_seconds": 3.649,
+  "error": null
+}

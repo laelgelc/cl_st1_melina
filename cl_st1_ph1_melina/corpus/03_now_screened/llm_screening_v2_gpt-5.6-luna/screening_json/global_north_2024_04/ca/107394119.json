@@ -1,0 +1,65 @@
+{
+  "article_id": "107394119",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_04/ca/107394119.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_04/ca/107394119.json"
+  },
+  "manifest_row": {
+    "article_id": "107394119",
+    "group": "global_north_2024_04",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2024_04/ca/107394119.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.97,
+    "gaza_role": "passing",
+    "main_topic": "Philippines-Japan defense and diplomatic cooperation",
+    "conflict_relevance": "Gaza is mentioned only as one of several regional and international issues discussed by the foreign ministers, without substantive coverage.",
+    "reason": "The article is centrally about Philippines-Japan relations and a planned 2+2 ministerial meeting. Gaza appears only in a brief list of topics and does not contribute meaningful conflict-related discourse.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "a12dec6f5384165aec2c2a6dfed581e84fd93cf7d2e293aebb56c88af4a828cd",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "b2c00b4abb4aa24adf5dc47d836ae34c8d14c6c845919166d5e53f6326a4a175",
+    "raw_response_text_sha256": "3162f128d2193b0d589847f0554a459c13a5a4c38bce0b8a6a35513376e229a4"
+  },
+  "api_metadata": {
+    "id": "resp_0565cd232a3fd6e2006aaa0b08eb1487d282599df541c256af",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789528840.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1225,
+      "input_tokens_details": {
+        "cache_write_tokens": 1222,
+        "cached_tokens": 0
+      },
+      "output_tokens": 217,
+      "output_tokens_details": {
+        "reasoning_tokens": 73
+      },
+      "total_tokens": 1442
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.97,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Philippines-Japan defense and diplomatic cooperation\",\n  \"conflict_relevance\": \"Gaza is mentioned only as one of several regional and international issues discussed by the foreign ministers, without substantive coverage.\",\n  \"reason\": \"The article is centrally about Philippines-Japan relations and a planned 2+2 ministerial meeting. Gaza appears only in a brief list of topics and does not contribute meaningful conflict-related discourse.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:20:44Z",
+  "duration_seconds": 3.678,
+  "error": null
+}

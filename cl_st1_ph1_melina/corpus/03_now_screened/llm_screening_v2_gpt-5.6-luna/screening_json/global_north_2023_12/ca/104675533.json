@@ -1,0 +1,65 @@
+{
+  "article_id": "104675533",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_12/ca/104675533.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_12/ca/104675533.json"
+  },
+  "manifest_row": {
+    "article_id": "104675533",
+    "group": "global_north_2023_12",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2023_12/ca/104675533.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "gaza_role": "passing",
+    "main_topic": "A family injured in a vehicle crash and assorted Canadian news snippets",
+    "conflict_relevance": "The article contains only a brief embedded sentence about Israel's war on Hamas in Gaza, with no substantive discussion or context.",
+    "reason": "The main article concerns a car crash, fundraisers, police shootings, legal matters, climate emissions, and other unrelated Canadian news. The Gaza reference is an incidental snippet rather than meaningful conflict discourse.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "5c1b02181e8bba5445ace8bf0d2e14e294fa530e6ff116c6b06a0619778f0760",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "5d341230c6cec589da50b094f2acbdf48d68ee7e015f50356341f79b11530413",
+    "raw_response_text_sha256": "499d77bcfd0cc52e9b1365bd81d6a1c3c2df9a2f5446682e973fe9806ac9395c"
+  },
+  "api_metadata": {
+    "id": "resp_05a020e14aabd006006aaa00aa4c5887d2a17a59d77a13e46f",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789526186.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1420,
+      "input_tokens_details": {
+        "cache_write_tokens": 1417,
+        "cached_tokens": 0
+      },
+      "output_tokens": 231,
+      "output_tokens_details": {
+        "reasoning_tokens": 81
+      },
+      "total_tokens": 1651
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"A family injured in a vehicle crash and assorted Canadian news snippets\",\n  \"conflict_relevance\": \"The article contains only a brief embedded sentence about Israel's war on Hamas in Gaza, with no substantive discussion or context.\",\n  \"reason\": \"The main article concerns a car crash, fundraisers, police shootings, legal matters, climate emissions, and other unrelated Canadian news. The Gaza reference is an incidental snippet rather than meaningful conflict discourse.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:36:30Z",
+  "duration_seconds": 3.9,
+  "error": null
+}

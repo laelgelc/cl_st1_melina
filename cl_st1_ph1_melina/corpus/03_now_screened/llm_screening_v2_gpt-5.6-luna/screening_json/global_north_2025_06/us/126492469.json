@@ -1,0 +1,65 @@
+{
+  "article_id": "126492469",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_06/us/126492469.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_06/us/126492469.json"
+  },
+  "manifest_row": {
+    "article_id": "126492469",
+    "group": "global_north_2025_06",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2025_06/us/126492469.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.97,
+    "gaza_role": "background",
+    "main_topic": "U.S. political and security news roundup containing references to Gaza hostages, antisemitism, Israel-related violence, and protest rhetoric",
+    "conflict_relevance": "The text includes meaningful discussion of an attack at a march supporting Israeli hostages in Gaza, chants targeting the IDF, threats against Jewish communities and Israel, and debate over the phrase 'globalize the intifada.' These are relevant to broader discourse around the conflict, antisemitism, protest, and political responses, but the article is not centrally about Gaza or the Israel-Palestine conflict.",
+    "reason": "The article is a compilation of largely unrelated news items, several of which contain substantive conflict-related material. Because the conflict references are dispersed and secondary to U.S. political, security, and Iran-related topics, it is peripheral rather than core.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "972f9095fae831dacaeb6b8528b38531a8c9616532f3a5ee16f0e80ca17faf92",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "fc026ca44e10ded54a113da32f95d44c104223c68f5cc50529cac65fa14221d4",
+    "raw_response_text_sha256": "efef73dccf411bdd8cb3b58b9b975fcb69277e9f213f908264c4840b16d43a0e"
+  },
+  "api_metadata": {
+    "id": "resp_0f4c309b914ef77b006aaa31ef63e487d1b34ef68c76a423ce",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789538799.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1425,
+      "input_tokens_details": {
+        "cache_write_tokens": 1422,
+        "cached_tokens": 0
+      },
+      "output_tokens": 412,
+      "output_tokens_details": {
+        "reasoning_tokens": 181
+      },
+      "total_tokens": 1837
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.97,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"U.S. political and security news roundup containing references to Gaza hostages, antisemitism, Israel-related violence, and protest rhetoric\",\n  \"conflict_relevance\": \"The text includes meaningful discussion of an attack at a march supporting Israeli hostages in Gaza, chants targeting the IDF, threats against Jewish communities and Israel, and debate over the phrase 'globalize the intifada.' These are relevant to broader discourse around the conflict, antisemitism, protest, and political responses, but the article is not centrally about Gaza or the Israel-Palestine conflict.\",\n  \"reason\": \"The article is a compilation of largely unrelated news items, several of which contain substantive conflict-related material. Because the conflict references are dispersed and secondary to U.S. political, security, and Iran-related topics, it is peripheral rather than core.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T06:06:46Z",
+  "duration_seconds": 6.904,
+  "error": null
+}

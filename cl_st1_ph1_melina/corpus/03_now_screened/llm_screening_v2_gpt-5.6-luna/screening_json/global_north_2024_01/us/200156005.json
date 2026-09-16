@@ -1,0 +1,65 @@
+{
+  "article_id": "200156005",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_01/us/200156005.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_01/us/200156005.json"
+  },
+  "manifest_row": {
+    "article_id": "200156005",
+    "group": "global_north_2024_01",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2024_01/us/200156005.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.97,
+    "gaza_role": "background",
+    "main_topic": "The death of two U.S. Navy SEALs during a raid to seize Iranian-made weapons bound for Yemen's Houthi rebels",
+    "conflict_relevance": "The article links Houthi attacks on Red Sea and Gulf of Aden shipping to Israel's war with Hamas in Gaza, but the main focus is the maritime raid, weapons seizure, and search for the missing SEALs.",
+    "reason": "Gaza and the Israel-Hamas war provide meaningful geopolitical context for the reported Houthi attacks, yet the article is not centrally about Gaza, Palestinians, or the Israel-Palestine conflict.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "51ad920b1f7e1c65e6582add78f958479738b90bb2db7c56c22c1090e0779aa4",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "5dd9125f4ef27e48aa3958b917a79c3284a6f412badc5b919e06a0a978846bd1",
+    "raw_response_text_sha256": "c69c080e5fddd07a70d71abc5d7154af0360eb9ec4458f0f876c260a058d6be6"
+  },
+  "api_metadata": {
+    "id": "resp_0b6e9337cb7a4cc8006aaa05a679e487d299bb8be0056a1a0d",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789527462.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1292,
+      "input_tokens_details": {
+        "cache_write_tokens": 1289,
+        "cached_tokens": 0
+      },
+      "output_tokens": 239,
+      "output_tokens_details": {
+        "reasoning_tokens": 51
+      },
+      "total_tokens": 1531
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.97,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"The death of two U.S. Navy SEALs during a raid to seize Iranian-made weapons bound for Yemen's Houthi rebels\",\n  \"conflict_relevance\": \"The article links Houthi attacks on Red Sea and Gulf of Aden shipping to Israel's war with Hamas in Gaza, but the main focus is the maritime raid, weapons seizure, and search for the missing SEALs.\",\n  \"reason\": \"Gaza and the Israel-Hamas war provide meaningful geopolitical context for the reported Houthi attacks, yet the article is not centrally about Gaza, Palestinians, or the Israel-Palestine conflict.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:57:45Z",
+  "duration_seconds": 3.485,
+  "error": null
+}

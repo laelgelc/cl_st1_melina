@@ -1,0 +1,65 @@
+{
+  "article_id": "121397611",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_02/us/121397611.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_02/us/121397611.json"
+  },
+  "manifest_row": {
+    "article_id": "121397611",
+    "group": "global_north_2025_02",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2025_02/us/121397611.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.93,
+    "gaza_role": "passing",
+    "main_topic": "US-Russia talks concerning the Russia-Ukraine war",
+    "conflict_relevance": "The article is primarily about Russia-Ukraine diplomacy but includes a separate headline reporting an Israeli strike in Gaza during ongoing peace talks.",
+    "reason": "Gaza appears in a substantive but isolated embedded headline, while the main article concerns the Russia-Ukraine war and US-Russia negotiations.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "897c081a327b198149e83e9a6ac54829d49f83920341d697578a4cddc449a312",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "55fdfaed2bd068787c483429f2e66ad13d23490adf069e23187b5b5b7ddb16d0",
+    "raw_response_text_sha256": "5793e5e80fabb618924bf9e9f405dec44f19ad88236a25bbc7063dd2c1bba63d"
+  },
+  "api_metadata": {
+    "id": "resp_0ec4ce72f318eac4006aaa24f9660c87d1b624daaa39a46508",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789535481.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 799,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 288,
+      "output_tokens_details": {
+        "reasoning_tokens": 150
+      },
+      "total_tokens": 1087
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.93,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"US-Russia talks concerning the Russia-Ukraine war\",\n  \"conflict_relevance\": \"The article is primarily about Russia-Ukraine diplomacy but includes a separate headline reporting an Israeli strike in Gaza during ongoing peace talks.\",\n  \"reason\": \"Gaza appears in a substantive but isolated embedded headline, while the main article concerns the Russia-Ukraine war and US-Russia negotiations.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T05:11:26Z",
+  "duration_seconds": 5.578,
+  "error": null
+}

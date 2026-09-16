@@ -1,0 +1,65 @@
+{
+  "article_id": "123642882",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_04/us/123642882.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_04/us/123642882.json"
+  },
+  "manifest_row": {
+    "article_id": "123642882",
+    "group": "global_north_2025_04",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2025_04/us/123642882.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.97,
+    "gaza_role": "background",
+    "main_topic": "Immigration enforcement and free-speech rights of foreign university students in the United States",
+    "conflict_relevance": "The article discusses students allegedly targeted for expressing support for Palestine, criticizing Israel's conduct in Gaza, or participating in related protests, and examines the framing of such views as support for Hamas or anti-Israel terrorism.",
+    "reason": "The central focus is the Trump administration's detention, deportation, and intimidation of foreign students and the implications for free speech. Gaza, Palestine, Israel, and Hamas are meaningfully discussed as the political context for several cases, but the article is not primarily about the conflict itself.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "34e4f003f34c76c00d97f1a978b958b8e4128c4fade5fe9fb204722920254cb9",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "2edc8d81f7b2813eafe465a10818506e27251b430965d0216bdd94763399de32",
+    "raw_response_text_sha256": "104e4a698f9d8bbe010e77f7ca7e1eb668712b83c579d6d631e4f925e1b46c19"
+  },
+  "api_metadata": {
+    "id": "resp_0c505abfa567b6ea006aaa2a595dc487d1858947d014b7924e",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789536857.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1872,
+      "input_tokens_details": {
+        "cache_write_tokens": 1869,
+        "cached_tokens": 0
+      },
+      "output_tokens": 453,
+      "output_tokens_details": {
+        "reasoning_tokens": 263
+      },
+      "total_tokens": 2325
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.97,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Immigration enforcement and free-speech rights of foreign university students in the United States\",\n  \"conflict_relevance\": \"The article discusses students allegedly targeted for expressing support for Palestine, criticizing Israel's conduct in Gaza, or participating in related protests, and examines the framing of such views as support for Hamas or anti-Israel terrorism.\",\n  \"reason\": \"The central focus is the Trump administration's detention, deportation, and intimidation of foreign students and the implications for free speech. Gaza, Palestine, Israel, and Hamas are meaningfully discussed as the political context for several cases, but the article is not primarily about the conflict itself.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T05:34:22Z",
+  "duration_seconds": 5.502,
+  "error": null
+}

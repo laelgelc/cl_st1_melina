@@ -1,0 +1,65 @@
+{
+  "article_id": "107133800",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_south_2024_04/za/107133800.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_south_2024_04/za/107133800.json"
+  },
+  "manifest_row": {
+    "article_id": "107133800",
+    "group": "global_south_2024_04",
+    "country_code": "za",
+    "filepath": "corpus/02_now_organised/global_south_2024_04/za/107133800.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "gaza_role": "passing",
+    "main_topic": "Fact-checking the Democratic Alliance's South African election manifesto and policy claims",
+    "conflict_relevance": "The article briefly mentions the West Bank and Gaza only as a comparison in global unemployment statistics, without discussing the conflict or related discourse.",
+    "reason": "The article is entirely focused on South African domestic politics, public services, unemployment, crime, education, and energy. The Gaza-related reference is incidental and does not provide meaningful conflict discourse.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "477d84c430a5dfdba7b50ba9cc5b9d241da977ec4d3924055b72bc56e1113123",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "2aa9f542655318c835abc16b64c951f99ce9fd2eaa2dfc050e2315bfda2da764",
+    "raw_response_text_sha256": "07b7fd8735188c887afe476049d6c20388b8d5dcf48a60bba213f4d907e39906"
+  },
+  "api_metadata": {
+    "id": "resp_018a39658e63a291006aaa3aebdf2887d1ab6ae4e809075cb6",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789541099.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 4400,
+      "input_tokens_details": {
+        "cache_write_tokens": 4397,
+        "cached_tokens": 0
+      },
+      "output_tokens": 220,
+      "output_tokens_details": {
+        "reasoning_tokens": 68
+      },
+      "total_tokens": 4620
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Fact-checking the Democratic Alliance's South African election manifesto and policy claims\",\n  \"conflict_relevance\": \"The article briefly mentions the West Bank and Gaza only as a comparison in global unemployment statistics, without discussing the conflict or related discourse.\",\n  \"reason\": \"The article is entirely focused on South African domestic politics, public services, unemployment, crime, education, and energy. The Gaza-related reference is incidental and does not provide meaningful conflict discourse.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T06:45:03Z",
+  "duration_seconds": 3.778,
+  "error": null
+}

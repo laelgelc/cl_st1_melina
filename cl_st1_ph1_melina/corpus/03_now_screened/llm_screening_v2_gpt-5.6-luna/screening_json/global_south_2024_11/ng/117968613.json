@@ -1,0 +1,65 @@
+{
+  "article_id": "117968613",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_south_2024_11/ng/117968613.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_south_2024_11/ng/117968613.json"
+  },
+  "manifest_row": {
+    "article_id": "117968613",
+    "group": "global_south_2024_11",
+    "country_code": "ng",
+    "filepath": "corpus/02_now_organised/global_south_2024_11/ng/117968613.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "background",
+    "main_topic": "Covenant University's interdisciplinary science research ranking",
+    "conflict_relevance": "The main article is unrelated to Gaza, but it contains an embedded news item about fuel shortages in Hamas-run Gaza, the humanitarian impact of the war, aid delivery, and ICC arrest warrants.",
+    "reason": "The headline and primary article concern university rankings in Nigeria. However, a meaningful embedded snippet addresses the Gaza war and related humanitarian and international-law issues, making the item peripheral rather than excludable.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "4ebac7408d94e700a7bf55bb9b846d3e267db59b97281e87fb271155cca3c141",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "45add18ea9b501bd2997866c4d0a65dc2bdbb18172d119ff8012b277ab3273b5",
+    "raw_response_text_sha256": "b5bf6ec01d3f0770e9f598e908dbb1c2e0f6bc595a8bd9cdd0e589515b2e043f"
+  },
+  "api_metadata": {
+    "id": "resp_035c4323cae930f4006aaa424fd8a887d1932911354076fcde",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789542991.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1440,
+      "input_tokens_details": {
+        "cache_write_tokens": 1437,
+        "cached_tokens": 0
+      },
+      "output_tokens": 254,
+      "output_tokens_details": {
+        "reasoning_tokens": 93
+      },
+      "total_tokens": 1694
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Covenant University's interdisciplinary science research ranking\",\n  \"conflict_relevance\": \"The main article is unrelated to Gaza, but it contains an embedded news item about fuel shortages in Hamas-run Gaza, the humanitarian impact of the war, aid delivery, and ICC arrest warrants.\",\n  \"reason\": \"The headline and primary article concern university rankings in Nigeria. However, a meaningful embedded snippet addresses the Gaza war and related humanitarian and international-law issues, making the item peripheral rather than excludable.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T07:16:35Z",
+  "duration_seconds": 3.694,
+  "error": null
+}

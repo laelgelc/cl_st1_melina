@@ -1,0 +1,65 @@
+{
+  "article_id": "104614293",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_12/nz/104614293.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_12/nz/104614293.json"
+  },
+  "manifest_row": {
+    "article_id": "104614293",
+    "group": "global_north_2023_12",
+    "country_code": "nz",
+    "filepath": "corpus/02_now_organised/global_north_2023_12/nz/104614293.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.92,
+    "gaza_role": "passing",
+    "main_topic": "Conservation efforts and vandalism affecting endangered New Zealand dotterels at Waihi Beach",
+    "conflict_relevance": "The main article is unrelated to Gaza or the Israel-Palestine conflict, but it includes an embedded Christmas commentary referring to Israeli bombing and Gaza.",
+    "reason": "The article centrally concerns endangered bird protection. However, a separate embedded snippet contains meaningful, though brief and unrelated, discourse portraying Christ as a Middle Eastern child being born in Gaza after Israeli bombing. This makes the item peripheral rather than core.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "009aeb8700223396b270af6855b4b1dae37149bb0adc93cda43d5db101b9a839",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "1a046dc6716aa4a3b9dd2feae6d48678432a70ac5a254eeefab0b77d4ae0efab",
+    "raw_response_text_sha256": "df916e3b9c4bbb8198bafdd457cd8041e0445ee46c275176aba7a361e2cde990"
+  },
+  "api_metadata": {
+    "id": "resp_02a29e14d9fbf15c006aaa0195b56487d296a8de1bb79337d2",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789526421.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2121,
+      "input_tokens_details": {
+        "cache_write_tokens": 2118,
+        "cached_tokens": 0
+      },
+      "output_tokens": 311,
+      "output_tokens_details": {
+        "reasoning_tokens": 141
+      },
+      "total_tokens": 2432
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.92,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Conservation efforts and vandalism affecting endangered New Zealand dotterels at Waihi Beach\",\n  \"conflict_relevance\": \"The main article is unrelated to Gaza or the Israel-Palestine conflict, but it includes an embedded Christmas commentary referring to Israeli bombing and Gaza.\",\n  \"reason\": \"The article centrally concerns endangered bird protection. However, a separate embedded snippet contains meaningful, though brief and unrelated, discourse portraying Christ as a Middle Eastern child being born in Gaza after Israeli bombing. This makes the item peripheral rather than core.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:40:26Z",
+  "duration_seconds": 4.443,
+  "error": null
+}

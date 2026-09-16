@@ -1,0 +1,65 @@
+{
+  "article_id": "102942187",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_10/ca/102942187.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_10/ca/102942187.json"
+  },
+  "manifest_row": {
+    "article_id": "102942187",
+    "group": "global_north_2023_10",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2023_10/ca/102942187.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "passing",
+    "main_topic": "Auston Matthews's defensive abilities and Hart Trophy candidacy in the NHL",
+    "conflict_relevance": "The main article is unrelated sports coverage, but an embedded latest-stories snippet briefly mentions Iran's warning about U.S. support for Israel's war against Hamas in Gaza.",
+    "reason": "The article is primarily about hockey and Auston Matthews. Its only conflict-related content is a meaningful but incidental embedded news snippet concerning the regional implications of the Gaza war.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "6384d8c7e423294e2eb3ce7ff517d3f0c6247abe3036db53a10f7b476dbdcc8c",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "29e0b41ee81703a654c4f0b44efcdadfbf32579eeba8ceb018cb586974a5a72a",
+    "raw_response_text_sha256": "5912b61769090aeafef0d6ea6592cb1f83f1a5ca3e1a4994d257b5bc4bd27f5b"
+  },
+  "api_metadata": {
+    "id": "resp_0c86872fa4346a20006aa9f6a5258087d29c4ac2a86fbd2851",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789523621.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2543,
+      "input_tokens_details": {
+        "cache_write_tokens": 2540,
+        "cached_tokens": 0
+      },
+      "output_tokens": 242,
+      "output_tokens_details": {
+        "reasoning_tokens": 84
+      },
+      "total_tokens": 2785
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Auston Matthews's defensive abilities and Hart Trophy candidacy in the NHL\",\n  \"conflict_relevance\": \"The main article is unrelated sports coverage, but an embedded latest-stories snippet briefly mentions Iran's warning about U.S. support for Israel's war against Hamas in Gaza.\",\n  \"reason\": \"The article is primarily about hockey and Auston Matthews. Its only conflict-related content is a meaningful but incidental embedded news snippet concerning the regional implications of the Gaza war.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T01:53:44Z",
+  "duration_seconds": 3.758,
+  "error": null
+}

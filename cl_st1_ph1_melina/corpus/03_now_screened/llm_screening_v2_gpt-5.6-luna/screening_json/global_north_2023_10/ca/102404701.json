@@ -1,0 +1,65 @@
+{
+  "article_id": "102404701",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_10/ca/102404701.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_10/ca/102404701.json"
+  },
+  "manifest_row": {
+    "article_id": "102404701",
+    "group": "global_north_2023_10",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2023_10/ca/102404701.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "background",
+    "main_topic": "Seasonal fall foliage in Canada and the effects of weather, wildfire smoke, and climate change",
+    "conflict_relevance": "The main article is unrelated to Gaza, but embedded CTV top-story snippets provide substantive reporting on the Hamas attack from Gaza, Israeli airstrikes, hostages, and the outbreak of war.",
+    "reason": "The article's primary subject is Canadian fall colours and climate conditions. However, it contains repeated, meaningful embedded news summaries about the Israel-Hamas conflict, making it relevant to broader media-discourse analysis but not suitable as core conflict coverage.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "afc53c3d9624980d17829c7a12d22b1a1e27750546e15d759e8361c7b6ba2241",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "7a8d136a8068fd04b4b86b31cbe308f7a9ed5d637e1857e11578f8e8faf9a281",
+    "raw_response_text_sha256": "03f422e63873893076dc95218f527b9d3db21335ae27911ef35a1d7ddb18c66c"
+  },
+  "api_metadata": {
+    "id": "resp_006476da5dd9e28a006aa9f5fb244c87d29a5ebbb2794fb8c8",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789523451.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2048,
+      "input_tokens_details": {
+        "cache_write_tokens": 2045,
+        "cached_tokens": 0
+      },
+      "output_tokens": 291,
+      "output_tokens_details": {
+        "reasoning_tokens": 111
+      },
+      "total_tokens": 2339
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Seasonal fall foliage in Canada and the effects of weather, wildfire smoke, and climate change\",\n  \"conflict_relevance\": \"The main article is unrelated to Gaza, but embedded CTV top-story snippets provide substantive reporting on the Hamas attack from Gaza, Israeli airstrikes, hostages, and the outbreak of war.\",\n  \"reason\": \"The article's primary subject is Canadian fall colours and climate conditions. However, it contains repeated, meaningful embedded news summaries about the Israel-Hamas conflict, making it relevant to broader media-discourse analysis but not suitable as core conflict coverage.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T01:50:54Z",
+  "duration_seconds": 3.916,
+  "error": null
+}

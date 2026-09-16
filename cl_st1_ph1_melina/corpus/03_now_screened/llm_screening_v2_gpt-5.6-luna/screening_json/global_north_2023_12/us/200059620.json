@@ -1,0 +1,65 @@
+{
+  "article_id": "200059620",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_12/us/200059620.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_12/us/200059620.json"
+  },
+  "manifest_row": {
+    "article_id": "200059620",
+    "group": "global_north_2023_12",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2023_12/us/200059620.txt"
+  },
+  "screening": {
+    "category": "CORE",
+    "confidence": 0.98,
+    "gaza_role": "substantial",
+    "main_topic": "Biden's criticism of Israel's conduct of the war in Gaza and Israel's declining international support",
+    "conflict_relevance": "The lead headline and main section directly address U.S.-Israel relations, Israeli military actions, civilian casualties, Gaza, Hamas, and post-war policy.",
+    "reason": "Although the text is a news roundup containing unrelated items about Ukraine, inflation, and a New York City building collapse, its lead story and substantial accompanying coverage focus directly on the Gaza war and political criticism of Israel.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": true
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "0c2600e4032bc09de44e173906d3fa817e5b56d6930657f531a12152299eebf9",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "c2106dce26ab5bdd5600d16f492103e4d23808e2b6f906de1740c0cdfcd7c577",
+    "raw_response_text_sha256": "3b15dc21d855c76f00696afaea208e7a225a1b2583f9d15cd4cb9411ff567c53"
+  },
+  "api_metadata": {
+    "id": "resp_02ea8c4f6bce814c006aaa02edb0f887d29013dc818663964a",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789526765.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1294,
+      "input_tokens_details": {
+        "cache_write_tokens": 1291,
+        "cached_tokens": 0
+      },
+      "output_tokens": 298,
+      "output_tokens_details": {
+        "reasoning_tokens": 132
+      },
+      "total_tokens": 1592
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"CORE\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"substantial\",\n  \"main_topic\": \"Biden's criticism of Israel's conduct of the war in Gaza and Israel's declining international support\",\n  \"conflict_relevance\": \"The lead headline and main section directly address U.S.-Israel relations, Israeli military actions, civilian casualties, Gaza, Hamas, and post-war policy.\",\n  \"reason\": \"Although the text is a news roundup containing unrelated items about Ukraine, inflation, and a New York City building collapse, its lead story and substantial accompanying coverage focus directly on the Gaza war and political criticism of Israel.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": true\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:46:09Z",
+  "duration_seconds": 3.826,
+  "error": null
+}

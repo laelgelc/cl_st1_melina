@@ -1,0 +1,65 @@
+{
+  "article_id": "108214907",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_05/ca/108214907.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_05/ca/108214907.json"
+  },
+  "manifest_row": {
+    "article_id": "108214907",
+    "group": "global_north_2024_05",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2024_05/ca/108214907.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "gaza_role": "passing",
+    "main_topic": "Healthy lifestyle and genetic risk of early death",
+    "conflict_relevance": "The article's main subject is health research; Gaza appears only in incidental roundup snippets mentioning the war and a Toronto mayor's decision not to attend an Israel national day ceremony.",
+    "reason": "The Gaza-related material is unrelated to the headline article and consists only of brief passing mentions in a mixed news roundup, offering no substantive conflict discourse.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "9afa5b1f9a4deb1a0a72a8f20270fbbe19fac484868fb273e60557ead65b94b7",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "dd8e3d0b8dcdeaf152b4801670a359304733b281dae3431bb92555bac3858fd7",
+    "raw_response_text_sha256": "1bc772bf415f504fbfe1a557cf265cdbd3069e60e483380a742cb2f95d1ce1ce"
+  },
+  "api_metadata": {
+    "id": "resp_09558bcf20f7b40e006aaa0d96f4fc87d2b0bbd7fab1ee9613",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789529494.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2390,
+      "input_tokens_details": {
+        "cache_write_tokens": 2387,
+        "cached_tokens": 0
+      },
+      "output_tokens": 312,
+      "output_tokens_details": {
+        "reasoning_tokens": 166
+      },
+      "total_tokens": 2702
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Healthy lifestyle and genetic risk of early death\",\n  \"conflict_relevance\": \"The article's main subject is health research; Gaza appears only in incidental roundup snippets mentioning the war and a Toronto mayor's decision not to attend an Israel national day ceremony.\",\n  \"reason\": \"The Gaza-related material is unrelated to the headline article and consists only of brief passing mentions in a mixed news roundup, offering no substantive conflict discourse.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:31:38Z",
+  "duration_seconds": 4.054,
+  "error": null
+}

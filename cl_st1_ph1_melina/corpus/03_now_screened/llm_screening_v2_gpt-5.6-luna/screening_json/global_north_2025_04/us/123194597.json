@@ -1,0 +1,65 @@
+{
+  "article_id": "123194597",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_04/us/123194597.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_04/us/123194597.json"
+  },
+  "manifest_row": {
+    "article_id": "123194597",
+    "group": "global_north_2025_04",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2025_04/us/123194597.txt"
+  },
+  "screening": {
+    "category": "CORE",
+    "confidence": 0.97,
+    "gaza_role": "central",
+    "main_topic": "Israeli military operations and related regional developments in the Gaza war",
+    "conflict_relevance": "The material directly concerns the Gaza war, the October 7 attack, hostage abductions and killings, protests in solidarity with Gaza, Israeli arms supplies, and related regional military actions.",
+    "reason": "The leading article focuses on an alleged Gaza-based commander involved in the Nir Oz raid and the Bibas abductions and killings. Although the text also contains several separate substantive snippets about Gaza protests, Israeli weapons, the Houthis, and Israeli actions in Syria, the dominant subject is directly connected to the Israel-Hamas war.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": true
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "2c5bb0293da09588d46f2c32b59810b8abd36c2afcaffc672cc41d2ce4f94ef2",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "7833b00941fe84156864eb077492b8aa66d071d4d2a50f511a1489239df84fda",
+    "raw_response_text_sha256": "74ceeaaba3f1d55f9047ec9fba124a8027faf1a1574e2947672213cad60ad7dd"
+  },
+  "api_metadata": {
+    "id": "resp_0a5eeafe239461e6006aaa29e6ff3c87d19e07e892dbb79859",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789536743.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1556,
+      "input_tokens_details": {
+        "cache_write_tokens": 1553,
+        "cached_tokens": 0
+      },
+      "output_tokens": 434,
+      "output_tokens_details": {
+        "reasoning_tokens": 246
+      },
+      "total_tokens": 1990
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"CORE\",\n  \"confidence\": 0.97,\n  \"gaza_role\": \"central\",\n  \"main_topic\": \"Israeli military operations and related regional developments in the Gaza war\",\n  \"conflict_relevance\": \"The material directly concerns the Gaza war, the October 7 attack, hostage abductions and killings, protests in solidarity with Gaza, Israeli arms supplies, and related regional military actions.\",\n  \"reason\": \"The leading article focuses on an alleged Gaza-based commander involved in the Nir Oz raid and the Bibas abductions and killings. Although the text also contains several separate substantive snippets about Gaza protests, Israeli weapons, the Houthis, and Israeli actions in Syria, the dominant subject is directly connected to the Israel-Hamas war.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": true\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T05:32:27Z",
+  "duration_seconds": 4.957,
+  "error": null
+}

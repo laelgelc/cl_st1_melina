@@ -1,0 +1,65 @@
+{
+  "article_id": "109134219",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_06/us/109134219.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_06/us/109134219.json"
+  },
+  "manifest_row": {
+    "article_id": "109134219",
+    "group": "global_north_2024_06",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2024_06/us/109134219.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "background",
+    "main_topic": "US humanitarian aid and famine risks in Sudan",
+    "conflict_relevance": "The article briefly compares Sudan's humanitarian crisis with Gaza, noting famine warnings and the global attention directed toward Gaza. Additional Gaza-related items appear in an appended latest-stories roundup.",
+    "reason": "The main article is about Sudan's war, famine, aid obstruction, and diplomacy rather than Gaza or Israel-Palestine. However, its explicit comparison with Gaza provides meaningful humanitarian discourse relevance, so it is peripheral rather than excluded.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "b5ae4c0e229c8d7be74369d110e7444ac31b21364429ff9b27cd94261b064b4e",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "0cc0cf9287dc8d6daaecc9998ecef0ce50a11edeb61098bb60d5c88d13825e93",
+    "raw_response_text_sha256": "125f0295a35ee36d65af3dbb97a4fe0e5ba6dc4ee6105fa88df5d6736d72b766"
+  },
+  "api_metadata": {
+    "id": "resp_0812599e5ffa9e33006aaa1134dba087d2b4543b1638b8ce6a",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789530420.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2629,
+      "input_tokens_details": {
+        "cache_write_tokens": 2626,
+        "cached_tokens": 0
+      },
+      "output_tokens": 279,
+      "output_tokens_details": {
+        "reasoning_tokens": 113
+      },
+      "total_tokens": 2908
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"US humanitarian aid and famine risks in Sudan\",\n  \"conflict_relevance\": \"The article briefly compares Sudan's humanitarian crisis with Gaza, noting famine warnings and the global attention directed toward Gaza. Additional Gaza-related items appear in an appended latest-stories roundup.\",\n  \"reason\": \"The main article is about Sudan's war, famine, aid obstruction, and diplomacy rather than Gaza or Israel-Palestine. However, its explicit comparison with Gaza provides meaningful humanitarian discourse relevance, so it is peripheral rather than excluded.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:47:04Z",
+  "duration_seconds": 3.853,
+  "error": null
+}

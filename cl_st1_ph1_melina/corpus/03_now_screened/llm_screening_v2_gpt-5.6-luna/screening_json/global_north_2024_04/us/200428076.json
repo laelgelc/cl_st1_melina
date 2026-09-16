@@ -1,0 +1,65 @@
+{
+  "article_id": "200428076",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_04/us/200428076.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_04/us/200428076.json"
+  },
+  "manifest_row": {
+    "article_id": "200428076",
+    "group": "global_north_2024_04",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2024_04/us/200428076.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.92,
+    "gaza_role": "background",
+    "main_topic": "U.S. legislation to ban or force the sale of TikTok",
+    "conflict_relevance": "The main article briefly mentions Israel-related foreign aid, while a recommended-story snippet discusses pro-Palestinian university demonstrations and opposition to Israel's war with Hamas in Gaza.",
+    "reason": "The article is primarily about TikTok, ByteDance, data security, and free-speech concerns. Its conflict-related content is limited to background mention of Israel in the foreign-aid package and a substantive but embedded recommended item about Gaza-related protests.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "7ec11b60b4206cc5fe4d0e91d88c83df10c02bd72ccf797eae1b84cbb08b3674",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "080addae722e5c71626626fd9e31b0929156a5fa52c208d8a668818239ebb791",
+    "raw_response_text_sha256": "577d98adc11e7ed6fae7deaf363d28c72d4f822d84e2983aa057a235d61ea16c"
+  },
+  "api_metadata": {
+    "id": "resp_0ca7980155590e1e006aaa0d316a9887d2bf09276c6f6f09dd",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789529393.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1559,
+      "input_tokens_details": {
+        "cache_write_tokens": 1556,
+        "cached_tokens": 0
+      },
+      "output_tokens": 346,
+      "output_tokens_details": {
+        "reasoning_tokens": 174
+      },
+      "total_tokens": 1905
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.92,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"U.S. legislation to ban or force the sale of TikTok\",\n  \"conflict_relevance\": \"The main article briefly mentions Israel-related foreign aid, while a recommended-story snippet discusses pro-Palestinian university demonstrations and opposition to Israel's war with Hamas in Gaza.\",\n  \"reason\": \"The article is primarily about TikTok, ByteDance, data security, and free-speech concerns. Its conflict-related content is limited to background mention of Israel in the foreign-aid package and a substantive but embedded recommended item about Gaza-related protests.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:29:57Z",
+  "duration_seconds": 4.358,
+  "error": null
+}

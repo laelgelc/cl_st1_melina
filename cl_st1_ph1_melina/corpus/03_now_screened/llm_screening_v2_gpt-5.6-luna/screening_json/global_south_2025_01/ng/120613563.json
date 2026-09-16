@@ -1,0 +1,65 @@
+{
+  "article_id": "120613563",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_south_2025_01/ng/120613563.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_south_2025_01/ng/120613563.json"
+  },
+  "manifest_row": {
+    "article_id": "120613563",
+    "group": "global_south_2025_01",
+    "country_code": "ng",
+    "filepath": "corpus/02_now_organised/global_south_2025_01/ng/120613563.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.93,
+    "gaza_role": "background",
+    "main_topic": "M23 and Rwandan military control of Goma in the eastern Democratic Republic of the Congo",
+    "conflict_relevance": "The main article concerns the DRC conflict and is unrelated to Gaza, but it includes a substantive embedded news item about the release of Gaza hostages under a ceasefire.",
+    "reason": "The headline and overwhelming majority of the article focus on fighting, humanitarian conditions, and diplomacy in the DRC. A separate embedded item meaningfully mentions Gaza hostages and the ceasefire, making the overall text peripheral rather than core to the Gaza/Palestine corpus.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "43edc3e748fa11989031ab79913d812b2e3914a939b4ab12bc02bff9e5f0300c",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "a2c96279e5fc4a71e9fdbd4f32ebcf17a1a23891bebe9a7db2be7c15c3d6c999",
+    "raw_response_text_sha256": "8150795343fe4f57848319092662b8c6d3d0a5065cc4fd6fe4abe80ba6c8d69d"
+  },
+  "api_metadata": {
+    "id": "resp_085f9ed853ca5494006aaa44a030dc87d1be100c0bbf87c17d",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789543584.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2615,
+      "input_tokens_details": {
+        "cache_write_tokens": 2612,
+        "cached_tokens": 0
+      },
+      "output_tokens": 442,
+      "output_tokens_details": {
+        "reasoning_tokens": 259
+      },
+      "total_tokens": 3057
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.93,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"M23 and Rwandan military control of Goma in the eastern Democratic Republic of the Congo\",\n  \"conflict_relevance\": \"The main article concerns the DRC conflict and is unrelated to Gaza, but it includes a substantive embedded news item about the release of Gaza hostages under a ceasefire.\",\n  \"reason\": \"The headline and overwhelming majority of the article focus on fighting, humanitarian conditions, and diplomacy in the DRC. A separate embedded item meaningfully mentions Gaza hostages and the ceasefire, making the overall text peripheral rather than core to the Gaza/Palestine corpus.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T07:26:29Z",
+  "duration_seconds": 5.893,
+  "error": null
+}

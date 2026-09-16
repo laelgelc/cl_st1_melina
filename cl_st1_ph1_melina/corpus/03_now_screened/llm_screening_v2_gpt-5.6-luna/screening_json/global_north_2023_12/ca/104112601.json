@@ -1,0 +1,65 @@
+{
+  "article_id": "104112601",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_12/ca/104112601.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_12/ca/104112601.json"
+  },
+  "manifest_row": {
+    "article_id": "104112601",
+    "group": "global_north_2023_12",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2023_12/ca/104112601.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.95,
+    "gaza_role": "background",
+    "main_topic": "Taylor Swift's Eras Tour and 2023 concert-industry revenues",
+    "conflict_relevance": "The main article is unrelated to Gaza, but the text includes several substantive embedded news items about Gaza, Palestinian evacuation claims, Israeli military operations, and violence in the West Bank.",
+    "reason": "The primary article concerns Taylor Swift and concert sales. However, the embedded Gaza-related reports contain meaningful conflict discourse, so the item is peripheral rather than excluded.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "36970615682141eca347b4b6b7b1bbe6afae5294fc9eb9a50a68df05542a2be0",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "9e5f9e6e56922cf6e36788d3f0330b3bf80c410576f0570854aa30a2a31105da",
+    "raw_response_text_sha256": "4a4e44b0a3a9bb1d3c6421b502050437b65f4f2f1be7acaff49cb236e3065161"
+  },
+  "api_metadata": {
+    "id": "resp_091bd973e6064e2d006aaa0067634087d28478c27a6e69229f",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789526119.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2059,
+      "input_tokens_details": {
+        "cache_write_tokens": 2056,
+        "cached_tokens": 0
+      },
+      "output_tokens": 405,
+      "output_tokens_details": {
+        "reasoning_tokens": 249
+      },
+      "total_tokens": 2464
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.95,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Taylor Swift's Eras Tour and 2023 concert-industry revenues\",\n  \"conflict_relevance\": \"The main article is unrelated to Gaza, but the text includes several substantive embedded news items about Gaza, Palestinian evacuation claims, Israeli military operations, and violence in the West Bank.\",\n  \"reason\": \"The primary article concerns Taylor Swift and concert sales. However, the embedded Gaza-related reports contain meaningful conflict discourse, so the item is peripheral rather than excluded.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:35:24Z",
+  "duration_seconds": 4.992,
+  "error": null
+}

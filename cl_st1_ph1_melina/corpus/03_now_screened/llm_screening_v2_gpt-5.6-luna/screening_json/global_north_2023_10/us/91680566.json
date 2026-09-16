@@ -1,0 +1,65 @@
+{
+  "article_id": "91680566",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_10/us/91680566.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_10/us/91680566.json"
+  },
+  "manifest_row": {
+    "article_id": "91680566",
+    "group": "global_north_2023_10",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2023_10/us/91680566.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "passing",
+    "main_topic": "The contest among House Republicans to elect a new Speaker of the House",
+    "conflict_relevance": "The article briefly mentions Israel's anticipated ground offensive against Hamas in Gaza as one of several urgent issues facing Congress.",
+    "reason": "Gaza is referenced in a meaningful but isolated sentence as part of the broader political context for the House Speaker vacancy. The article is otherwise focused on intraparty congressional politics and does not substantively analyze the conflict.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "f0c64c93325fefcb84c3b32daa6df31276a52c9acc59866e53afcc91c6fced1c",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "aeb6df2617424831b8bb9449d4e69b145370d9639d3608a5aefd5d6eb060fab6",
+    "raw_response_text_sha256": "ef72499552499c3b77ec06678f8c1407a643febeb68bdf12ce87617a11b95fd5"
+  },
+  "api_metadata": {
+    "id": "resp_086505609b933630006aa9faf5a1c487d2985aafe030de99c7",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789524725.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2214,
+      "input_tokens_details": {
+        "cache_write_tokens": 2211,
+        "cached_tokens": 0
+      },
+      "output_tokens": 251,
+      "output_tokens_details": {
+        "reasoning_tokens": 97
+      },
+      "total_tokens": 2465
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"The contest among House Republicans to elect a new Speaker of the House\",\n  \"conflict_relevance\": \"The article briefly mentions Israel's anticipated ground offensive against Hamas in Gaza as one of several urgent issues facing Congress.\",\n  \"reason\": \"Gaza is referenced in a meaningful but isolated sentence as part of the broader political context for the House Speaker vacancy. The article is otherwise focused on intraparty congressional politics and does not substantively analyze the conflict.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:12:08Z",
+  "duration_seconds": 2.996,
+  "error": null
+}

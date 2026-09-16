@@ -1,0 +1,65 @@
+{
+  "article_id": "120948109",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_02/us/120948109.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_02/us/120948109.json"
+  },
+  "manifest_row": {
+    "article_id": "120948109",
+    "group": "global_north_2025_02",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2025_02/us/120948109.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "gaza_role": "boilerplate_or_unrelated",
+    "main_topic": "Indian deportees and alleged mistreatment during U.S. deportation flights",
+    "conflict_relevance": "The article is about U.S. immigration enforcement and Indian deportees. Gaza appears only in an unrelated embedded headline without substantive discussion.",
+    "reason": "The main article has no meaningful engagement with Gaza, Palestine, Israel/Palestine, or the conflict; the sole Gaza reference is a standalone embedded headline.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "b48b7c756939e16bf8a1cfb6d4e6434add648b621f1104c2127760ae7c263b0a",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "d5a6a33263353703626eabb8827f37dbba2b3de3d49fa6ebef3305790637587c",
+    "raw_response_text_sha256": "603993bf181d367dd722e316e44f51d6e3977994e603425913ca3534a7f59232"
+  },
+  "api_metadata": {
+    "id": "resp_02b608143b10c1d4006aaa244c7cec87d196ab086c8f52f4ac",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789535308.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1877,
+      "input_tokens_details": {
+        "cache_write_tokens": 1874,
+        "cached_tokens": 0
+      },
+      "output_tokens": 247,
+      "output_tokens_details": {
+        "reasoning_tokens": 95
+      },
+      "total_tokens": 2124
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"gaza_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Indian deportees and alleged mistreatment during U.S. deportation flights\",\n  \"conflict_relevance\": \"The article is about U.S. immigration enforcement and Indian deportees. Gaza appears only in an unrelated embedded headline without substantive discussion.\",\n  \"reason\": \"The main article has no meaningful engagement with Gaza, Palestine, Israel/Palestine, or the conflict; the sole Gaza reference is a standalone embedded headline.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T05:08:31Z",
+  "duration_seconds": 3.582,
+  "error": null
+}

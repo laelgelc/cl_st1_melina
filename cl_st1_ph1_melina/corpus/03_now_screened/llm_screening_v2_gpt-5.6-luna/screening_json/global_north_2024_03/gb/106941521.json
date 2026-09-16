@@ -1,0 +1,65 @@
+{
+  "article_id": "106941521",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_03/gb/106941521.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_03/gb/106941521.json"
+  },
+  "manifest_row": {
+    "article_id": "106941521",
+    "group": "global_north_2024_03",
+    "country_code": "gb",
+    "filepath": "corpus/02_now_organised/global_north_2024_03/gb/106941521.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.97,
+    "gaza_role": "passing",
+    "main_topic": "Farmers' protest in London against post-Brexit trade deals, imports, and agricultural regulations",
+    "conflict_relevance": "The article is not about Gaza or the Israel-Palestine conflict. It contains only an unrelated, brief mention of relatives of hostages held in Gaza within an embedded news snippet.",
+    "reason": "The main article concerns British farmers and food security. The Gaza reference is incidental and does not contribute meaningfully to conflict-related discourse analysis.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "d4cc009b30bb869e5dbda3dd792d6ac801f3248509ad4494e2e98cd07947f53d",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "0969c5a39298cf349e2e11e22ddc992de55321c769dd0e3b1ec30c192bc0358f",
+    "raw_response_text_sha256": "5a37c8eacbf641cf32cbba984fb39ed83529179f1f6f991b9525585a30060735"
+  },
+  "api_metadata": {
+    "id": "resp_022405ae078030e9006aaa08e2e87c87d29a5cd69b57936c36",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789528290.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2389,
+      "input_tokens_details": {
+        "cache_write_tokens": 2386,
+        "cached_tokens": 0
+      },
+      "output_tokens": 272,
+      "output_tokens_details": {
+        "reasoning_tokens": 114
+      },
+      "total_tokens": 2661
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.97,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Farmers' protest in London against post-Brexit trade deals, imports, and agricultural regulations\",\n  \"conflict_relevance\": \"The article is not about Gaza or the Israel-Palestine conflict. It contains only an unrelated, brief mention of relatives of hostages held in Gaza within an embedded news snippet.\",\n  \"reason\": \"The main article concerns British farmers and food security. The Gaza reference is incidental and does not contribute meaningfully to conflict-related discourse analysis.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:11:34Z",
+  "duration_seconds": 3.511,
+  "error": null
+}

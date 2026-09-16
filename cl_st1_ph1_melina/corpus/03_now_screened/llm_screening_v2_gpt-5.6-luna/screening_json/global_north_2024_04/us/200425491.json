@@ -1,0 +1,65 @@
+{
+  "article_id": "200425491",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_04/us/200425491.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_04/us/200425491.json"
+  },
+  "manifest_row": {
+    "article_id": "200425491",
+    "group": "global_north_2024_04",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2024_04/us/200425491.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.91,
+    "gaza_role": "background",
+    "main_topic": "Proposed relocation and redevelopment of E.E. Smith High School in Fayetteville",
+    "conflict_relevance": "The main article is unrelated to the Gaza conflict, but a substantial recommended-story snippet discusses pro-Palestinian university demonstrations and opposition to Israel's war with Hamas in Gaza.",
+    "reason": "The article's central subject is a local school relocation debate. Its only conflict-related material appears in an unrelated recommended-story section, where Gaza and pro-Palestinian protests are discussed meaningfully rather than merely mentioned in boilerplate.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "0b782fd316dfee5454ada0553b547be297952fc31ece55adaca4b3881c5ac35d",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "43c5d88df00c05af9b990bdc69b617ed62616103f22a900ca4dc986ca60f26d2",
+    "raw_response_text_sha256": "f402c49f2c78d8741b2dd3de8a9830e80c4a6bead296a846ac50c624c074e204"
+  },
+  "api_metadata": {
+    "id": "resp_07cec42036f727dd006aaa0d23261c87d297ee31aea0f6d82d",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789529379.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2952,
+      "input_tokens_details": {
+        "cache_write_tokens": 2949,
+        "cached_tokens": 0
+      },
+      "output_tokens": 417,
+      "output_tokens_details": {
+        "reasoning_tokens": 245
+      },
+      "total_tokens": 3369
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.91,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Proposed relocation and redevelopment of E.E. Smith High School in Fayetteville\",\n  \"conflict_relevance\": \"The main article is unrelated to the Gaza conflict, but a substantial recommended-story snippet discusses pro-Palestinian university demonstrations and opposition to Israel's war with Hamas in Gaza.\",\n  \"reason\": \"The article's central subject is a local school relocation debate. Its only conflict-related material appears in an unrelated recommended-story section, where Gaza and pro-Palestinian protests are discussed meaningfully rather than merely mentioned in boilerplate.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:29:53Z",
+  "duration_seconds": 15.1,
+  "error": null
+}

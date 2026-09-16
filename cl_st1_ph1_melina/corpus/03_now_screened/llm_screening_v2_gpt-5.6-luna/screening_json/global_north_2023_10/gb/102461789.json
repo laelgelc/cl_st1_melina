@@ -1,0 +1,65 @@
+{
+  "article_id": "102461789",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_10/gb/102461789.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_10/gb/102461789.json"
+  },
+  "manifest_row": {
+    "article_id": "102461789",
+    "group": "global_north_2023_10",
+    "country_code": "gb",
+    "filepath": "corpus/02_now_organised/global_north_2023_10/gb/102461789.txt"
+  },
+  "screening": {
+    "category": "CORE",
+    "confidence": 0.99,
+    "gaza_role": "central",
+    "main_topic": "Live coverage of the Hamas attacks on Israel, Israeli military response, hostages, casualties, US and international diplomatic reactions, and developments involving Gaza",
+    "conflict_relevance": "The article is entirely focused on the Israel-Hamas war and its immediate regional and international consequences, including Gaza casualties, Israeli military action, hostage negotiations, diplomacy, and political framing.",
+    "reason": "Gaza, Israel, Hamas, Palestinians, hostages, military strikes, diplomatic responses, and humanitarian and casualty developments are central throughout the live feed.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": true
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "3d7ccd93bd339bb626548c52cddd1c13131fce32945be0c2617067c8412ffe42",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "7bcef7396e6ac4eda16ee2157378b9eb60b00c93f0ce55520afea13b85f6362c",
+    "raw_response_text_sha256": "973656fd7406c08691e0aa2c836e71b3f2edcac6159188a7f2057d143c9797be"
+  },
+  "api_metadata": {
+    "id": "resp_08f4078da38e6862006aa9f6df894887d2ae9877e6a1b1eafd",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789523679.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2909,
+      "input_tokens_details": {
+        "cache_write_tokens": 2906,
+        "cached_tokens": 0
+      },
+      "output_tokens": 262,
+      "output_tokens_details": {
+        "reasoning_tokens": 94
+      },
+      "total_tokens": 3171
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"CORE\",\n  \"confidence\": 0.99,\n  \"gaza_role\": \"central\",\n  \"main_topic\": \"Live coverage of the Hamas attacks on Israel, Israeli military response, hostages, casualties, US and international diplomatic reactions, and developments involving Gaza\",\n  \"conflict_relevance\": \"The article is entirely focused on the Israel-Hamas war and its immediate regional and international consequences, including Gaza casualties, Israeli military action, hostage negotiations, diplomacy, and political framing.\",\n  \"reason\": \"Gaza, Israel, Hamas, Palestinians, hostages, military strikes, diplomatic responses, and humanitarian and casualty developments are central throughout the live feed.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": true\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T01:54:42Z",
+  "duration_seconds": 3.047,
+  "error": null
+}

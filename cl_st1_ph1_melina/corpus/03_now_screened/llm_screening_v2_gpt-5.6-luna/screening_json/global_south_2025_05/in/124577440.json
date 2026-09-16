@@ -1,0 +1,65 @@
+{
+  "article_id": "124577440",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_south_2025_05/in/124577440.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_south_2025_05/in/124577440.json"
+  },
+  "manifest_row": {
+    "article_id": "124577440",
+    "group": "global_south_2025_05",
+    "country_code": "in",
+    "filepath": "corpus/02_now_organised/global_south_2025_05/in/124577440.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "gaza_role": "passing",
+    "main_topic": "India-Pakistan military escalation and risks to Pakistan's nuclear command infrastructure",
+    "conflict_relevance": "Gaza appears only in a social-media comparison describing damage to a Pakistani airbase; the article is otherwise unrelated to Gaza or the Israel-Palestine conflict.",
+    "reason": "The article centrally concerns India-Pakistan hostilities, airstrikes, and nuclear-security concerns. The sole Gaza reference is an incidental metaphor in an embedded social-media post and does not provide meaningful conflict discourse for the research corpus.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "02d938b71f1c448037e3d39d3c728dbbc4f90f2114603c0273b1228b8ce1c76e",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "cb65fe3c264b79df4b3ac56b37965747817ddca80963fb2fcf34dc6bb3cf152b",
+    "raw_response_text_sha256": "82b34f8260751f83c678578b381c3fdc7019fcc4d5455c45211756221532980e"
+  },
+  "api_metadata": {
+    "id": "resp_0b01b6beb30e4a49006aaa4899777c87d185dadfb90e01149a",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789544601.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1335,
+      "input_tokens_details": {
+        "cache_write_tokens": 1332,
+        "cached_tokens": 0
+      },
+      "output_tokens": 275,
+      "output_tokens_details": {
+        "reasoning_tokens": 107
+      },
+      "total_tokens": 1610
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"India-Pakistan military escalation and risks to Pakistan's nuclear command infrastructure\",\n  \"conflict_relevance\": \"Gaza appears only in a social-media comparison describing damage to a Pakistani airbase; the article is otherwise unrelated to Gaza or the Israel-Palestine conflict.\",\n  \"reason\": \"The article centrally concerns India-Pakistan hostilities, airstrikes, and nuclear-security concerns. The sole Gaza reference is an incidental metaphor in an embedded social-media post and does not provide meaningful conflict discourse for the research corpus.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T07:43:25Z",
+  "duration_seconds": 4.149,
+  "error": null
+}

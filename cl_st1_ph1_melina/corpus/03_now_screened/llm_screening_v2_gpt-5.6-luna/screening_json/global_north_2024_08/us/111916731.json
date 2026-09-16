@@ -1,0 +1,65 @@
+{
+  "article_id": "111916731",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_08/us/111916731.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_08/us/111916731.json"
+  },
+  "manifest_row": {
+    "article_id": "111916731",
+    "group": "global_north_2024_08",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2024_08/us/111916731.txt"
+  },
+  "screening": {
+    "category": "CORE",
+    "confidence": 0.99,
+    "gaza_role": "central",
+    "main_topic": "Yahya Sinwar's appointment as Hamas political bureau chief and its implications for the Gaza war, ceasefire negotiations, and hostage talks",
+    "conflict_relevance": "The primary article directly concerns Hamas leadership, Israel's military campaign in Gaza, the October 7 attacks, hostages, assassinations, regional escalation, and negotiations with Israel.",
+    "reason": "The main article is centrally focused on the Israel-Hamas war and Gaza-related political and military developments. Although the text is contaminated by several unrelated news articles, the opening and principal article is clearly core conflict coverage.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": true
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "aeeefa2c4b8a0e0a03da9c4538022f50ee68cfdaca39747bbf8d3b7e257eedf8",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "96cb15c13379e730c90c2b55d1e3058d6ddfc84120cb1dc474121ae71efbe7a3",
+    "raw_response_text_sha256": "e6c04294dd3a65cd4ed009032ca35fbd122958e10f0a5167c3ad89bd6a149de0"
+  },
+  "api_metadata": {
+    "id": "resp_026a534da47636b8006aaa14c2d71c87d28327f7065707ecde",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789531330.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 6592,
+      "input_tokens_details": {
+        "cache_write_tokens": 6589,
+        "cached_tokens": 0
+      },
+      "output_tokens": 268,
+      "output_tokens_details": {
+        "reasoning_tokens": 90
+      },
+      "total_tokens": 6860
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"CORE\",\n  \"confidence\": 0.99,\n  \"gaza_role\": \"central\",\n  \"main_topic\": \"Yahya Sinwar's appointment as Hamas political bureau chief and its implications for the Gaza war, ceasefire negotiations, and hostage talks\",\n  \"conflict_relevance\": \"The primary article directly concerns Hamas leadership, Israel's military campaign in Gaza, the October 7 attacks, hostages, assassinations, regional escalation, and negotiations with Israel.\",\n  \"reason\": \"The main article is centrally focused on the Israel-Hamas war and Gaza-related political and military developments. Although the text is contaminated by several unrelated news articles, the opening and principal article is clearly core conflict coverage.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": true\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T04:02:14Z",
+  "duration_seconds": 4.087,
+  "error": null
+}

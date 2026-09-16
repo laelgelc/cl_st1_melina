@@ -1,0 +1,65 @@
+{
+  "article_id": "105101869",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_01/ca/105101869.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_01/ca/105101869.json"
+  },
+  "manifest_row": {
+    "article_id": "105101869",
+    "group": "global_north_2024_01",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2024_01/ca/105101869.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "background",
+    "main_topic": "William Hung's career, viral fame, gambling addiction, and motivational outlook",
+    "conflict_relevance": "The article is primarily a celebrity profile but includes several unrelated embedded news snippets about Israel's war in Gaza, humanitarian conditions, Red Sea attacks, and solidarity with hostages held in Gaza.",
+    "reason": "The Gaza-related material is meaningful but belongs to separate news snippets appended to an otherwise unrelated article, so it is not suitable for the core conflict corpus.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "785d4b5d64f8b1c44c2447866295a562bd87a9add08f614040dd4cc584e8ac41",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "14ff280578a4d046fc1c33bfb74f8561e047de699cfee38cb1181b9c548544a1",
+    "raw_response_text_sha256": "8e29f81420ee104850215616b6d5bea7fd4cf05d015afd4d8ed01e96991150fb"
+  },
+  "api_metadata": {
+    "id": "resp_07c4731756f77aa5006aaa039d0d7c87d28aa0733313103d4c",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789526941.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2850,
+      "input_tokens_details": {
+        "cache_write_tokens": 2847,
+        "cached_tokens": 0
+      },
+      "output_tokens": 325,
+      "output_tokens_details": {
+        "reasoning_tokens": 168
+      },
+      "total_tokens": 3175
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"William Hung's career, viral fame, gambling addiction, and motivational outlook\",\n  \"conflict_relevance\": \"The article is primarily a celebrity profile but includes several unrelated embedded news snippets about Israel's war in Gaza, humanitarian conditions, Red Sea attacks, and solidarity with hostages held in Gaza.\",\n  \"reason\": \"The Gaza-related material is meaningful but belongs to separate news snippets appended to an otherwise unrelated article, so it is not suitable for the core conflict corpus.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:49:04Z",
+  "duration_seconds": 3.3,
+  "error": null
+}

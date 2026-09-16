@@ -1,0 +1,65 @@
+{
+  "article_id": "200245347",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_02/us/200245347.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_02/us/200245347.json"
+  },
+  "manifest_row": {
+    "article_id": "200245347",
+    "group": "global_north_2024_02",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2024_02/us/200245347.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.96,
+    "gaza_role": "substantial",
+    "main_topic": "Threats and safety concerns faced by UK MPs",
+    "conflict_relevance": "The article discusses MPs receiving death threats and abuse in connection with the Gaza conflict, including parliamentary safety measures during a Gaza-related vote.",
+    "reason": "Although the main focus is political violence and MPs' security rather than the Gaza conflict itself, the article meaningfully addresses how Gaza-related political debate is associated with threats, harassment, and parliamentary procedure.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "1301c361d21a1c2c8de1f31bca15b8192fec31d19495ea375a8424769c73c04a",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "a89b2dedc317eb5f3282d4beadffd8dd3ab22ff6acf4b6a6ec40a59d565d3b04",
+    "raw_response_text_sha256": "4275af67e193f0349ccfac0aaae681487692bc03e78a76bb264290432c1a844f"
+  },
+  "api_metadata": {
+    "id": "resp_08fa9f18fccc6f8b006aaa0808290087d29ec5634b35ad0963",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789528072.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1205,
+      "input_tokens_details": {
+        "cache_write_tokens": 1202,
+        "cached_tokens": 0
+      },
+      "output_tokens": 215,
+      "output_tokens_details": {
+        "reasoning_tokens": 64
+      },
+      "total_tokens": 1420
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.96,\n  \"gaza_role\": \"substantial\",\n  \"main_topic\": \"Threats and safety concerns faced by UK MPs\",\n  \"conflict_relevance\": \"The article discusses MPs receiving death threats and abuse in connection with the Gaza conflict, including parliamentary safety measures during a Gaza-related vote.\",\n  \"reason\": \"Although the main focus is political violence and MPs' security rather than the Gaza conflict itself, the article meaningfully addresses how Gaza-related political debate is associated with threats, harassment, and parliamentary procedure.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:07:55Z",
+  "duration_seconds": 3.129,
+  "error": null
+}

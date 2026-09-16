@@ -1,0 +1,65 @@
+{
+  "article_id": "126013407",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_06/ie/126013407.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_06/ie/126013407.json"
+  },
+  "manifest_row": {
+    "article_id": "126013407",
+    "group": "global_north_2025_06",
+    "country_code": "ie",
+    "filepath": "corpus/02_now_organised/global_north_2025_06/ie/126013407.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "passing",
+    "main_topic": "Irish parliamentary politics and housing policy",
+    "conflict_relevance": "The article is primarily about housing reform and opposition politics in Ireland, but it briefly references an activist returning from Egypt after attempting to participate in the Global March to Gaza.",
+    "reason": "Gaza appears in a meaningful but very brief contextual reference at the end of an otherwise unrelated article.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "7b1e72c834688a8e464332dfdbbf144fe0ab024b4df8588527b1ace9d0faabfd",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "76a7cd19cd00b455251e50d4e0bc29c8b653347ddfe40167bf877bf81402fb67",
+    "raw_response_text_sha256": "b283c1f5172b4b56fa94dae4722cb19a36e9ef054b62e6c7935e91a63d481af8"
+  },
+  "api_metadata": {
+    "id": "resp_0f7a6860a3440907006aaa30361a5487d1a3b6672467254b60",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789538358.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2301,
+      "input_tokens_details": {
+        "cache_write_tokens": 2298,
+        "cached_tokens": 0
+      },
+      "output_tokens": 215,
+      "output_tokens_details": {
+        "reasoning_tokens": 80
+      },
+      "total_tokens": 2516
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Irish parliamentary politics and housing policy\",\n  \"conflict_relevance\": \"The article is primarily about housing reform and opposition politics in Ireland, but it briefly references an activist returning from Egypt after attempting to participate in the Global March to Gaza.\",\n  \"reason\": \"Gaza appears in a meaningful but very brief contextual reference at the end of an otherwise unrelated article.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T05:59:21Z",
+  "duration_seconds": 3.932,
+  "error": null
+}

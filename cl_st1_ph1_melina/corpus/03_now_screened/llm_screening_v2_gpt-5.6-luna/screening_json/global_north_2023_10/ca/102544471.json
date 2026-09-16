@@ -1,0 +1,65 @@
+{
+  "article_id": "102544471",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_10/ca/102544471.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_10/ca/102544471.json"
+  },
+  "manifest_row": {
+    "article_id": "102544471",
+    "group": "global_north_2023_10",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2023_10/ca/102544471.txt"
+  },
+  "screening": {
+    "category": "CORE",
+    "confidence": 0.93,
+    "gaza_role": "substantial",
+    "main_topic": "Canadian evacuation flights from Israel and humanitarian assistance to Israel and Gaza",
+    "conflict_relevance": "The main article content directly concerns the Israel-Gaza conflict, evacuations of Canadian citizens from Israel, and Canadian humanitarian aid addressing urgent needs in Gaza.",
+    "reason": "The lead paragraphs are substantially about the conflict and its immediate humanitarian and diplomatic implications. Although the text also contains several unrelated news snippets, the primary article content is directly relevant to Gaza and the Israel-Gaza war.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": true
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "c621a6d08c258b4809255ee787e192c18e781e6400d7853b677089e8b3d9f960",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "1dc36f87d3ea28f629d7344ed1f2b55d014127265a8e8ac63c9bac5f8ddc0396",
+    "raw_response_text_sha256": "297e4a783e8ce56a2385f01eb0b15c9ed70a1c283c1fcb342d8fe90639a46387"
+  },
+  "api_metadata": {
+    "id": "resp_0026d596592ae0ca006aa9f626346c87d2836ecbbeeac2ee4e",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789523494.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 905,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 280,
+      "output_tokens_details": {
+        "reasoning_tokens": 121
+      },
+      "total_tokens": 1185
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"CORE\",\n  \"confidence\": 0.93,\n  \"gaza_role\": \"substantial\",\n  \"main_topic\": \"Canadian evacuation flights from Israel and humanitarian assistance to Israel and Gaza\",\n  \"conflict_relevance\": \"The main article content directly concerns the Israel-Gaza conflict, evacuations of Canadian citizens from Israel, and Canadian humanitarian aid addressing urgent needs in Gaza.\",\n  \"reason\": \"The lead paragraphs are substantially about the conflict and its immediate humanitarian and diplomatic implications. Although the text also contains several unrelated news snippets, the primary article content is directly relevant to Gaza and the Israel-Gaza war.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": true\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T01:51:38Z",
+  "duration_seconds": 4.101,
+  "error": null
+}

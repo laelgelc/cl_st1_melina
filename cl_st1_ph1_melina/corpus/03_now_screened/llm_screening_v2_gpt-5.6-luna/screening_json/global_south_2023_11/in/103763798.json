@@ -1,0 +1,65 @@
+{
+  "article_id": "103763798",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_south_2023_11/in/103763798.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_south_2023_11/in/103763798.json"
+  },
+  "manifest_row": {
+    "article_id": "103763798",
+    "group": "global_south_2023_11",
+    "country_code": "in",
+    "filepath": "corpus/02_now_organised/global_south_2023_11/in/103763798.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.96,
+    "gaza_role": "passing",
+    "main_topic": "Russia's drone assault on Ukraine",
+    "conflict_relevance": "The text contains a meaningful but brief reference to the release of hostages and Palestinian prisoners and the delivery of aid to northern Gaza.",
+    "reason": "The Gaza-related material is limited to an opening sentence, while the main apparent article concerns the war in Ukraine; the remainder includes unrelated Reuters boilerplate.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "fc314d4a67684efbefa8b0bd0657cda099dddd22a48140c270c350f7be630cf0",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "ae138883e269bc09b8718d83e3bc696a4eb7bc25ba55be658cda5531c05e4e64",
+    "raw_response_text_sha256": "e4ab8c941a78cb9211f1a76bf4908dbdaa51fd9287e7c24d6c62a6c22007bdf1"
+  },
+  "api_metadata": {
+    "id": "resp_083708e4a2349c6a006aaa355db1f487d197d1dd9b3b1cd5fe",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789539677.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 751,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 349,
+      "output_tokens_details": {
+        "reasoning_tokens": 211
+      },
+      "total_tokens": 1100
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.96,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Russia's drone assault on Ukraine\",\n  \"conflict_relevance\": \"The text contains a meaningful but brief reference to the release of hostages and Palestinian prisoners and the delivery of aid to northern Gaza.\",\n  \"reason\": \"The Gaza-related material is limited to an opening sentence, while the main apparent article concerns the war in Ukraine; the remainder includes unrelated Reuters boilerplate.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T06:21:22Z",
+  "duration_seconds": 4.665,
+  "error": null
+}

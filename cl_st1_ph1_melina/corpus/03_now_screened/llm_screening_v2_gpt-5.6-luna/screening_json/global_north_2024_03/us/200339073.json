@@ -1,0 +1,65 @@
+{
+  "article_id": "200339073",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_03/us/200339073.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_03/us/200339073.json"
+  },
+  "manifest_row": {
+    "article_id": "200339073",
+    "group": "global_north_2024_03",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2024_03/us/200339073.txt"
+  },
+  "screening": {
+    "category": "CORE",
+    "confidence": 0.98,
+    "gaza_role": "substantial",
+    "main_topic": "Cinema For Gaza fundraising auction and film-industry support for Palestinians",
+    "conflict_relevance": "The article reports a fundraising initiative for medical aid in Gaza and directly discusses Israel's military siege, bombardment, humanitarian conditions, occupation, and the Israel-Hamas war.",
+    "reason": "Although framed around celebrity auction items and film-industry participation, the article substantially focuses on fundraising for Gaza and explicitly describes the humanitarian and political context of the conflict.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": true
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "05cb20947a9c67f1888fcc0f866505420c5f31599552f08c5d1be3f4773d8d72",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "edcc2256d24cb07fd401021b31b16713b3f609121bb94b4b542623373767af55",
+    "raw_response_text_sha256": "4893dde41c6e4ad3cfadea42bc310dcfc83fb4a35348cedd677521d4bea846ca"
+  },
+  "api_metadata": {
+    "id": "resp_0e79ed94590d212e006aaa0ab6e71087d28d00118411c9cfec",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789528758.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1060,
+      "input_tokens_details": {
+        "cache_write_tokens": 1057,
+        "cached_tokens": 0
+      },
+      "output_tokens": 198,
+      "output_tokens_details": {
+        "reasoning_tokens": 45
+      },
+      "total_tokens": 1258
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"CORE\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"substantial\",\n  \"main_topic\": \"Cinema For Gaza fundraising auction and film-industry support for Palestinians\",\n  \"conflict_relevance\": \"The article reports a fundraising initiative for medical aid in Gaza and directly discusses Israel's military siege, bombardment, humanitarian conditions, occupation, and the Israel-Hamas war.\",\n  \"reason\": \"Although framed around celebrity auction items and film-industry participation, the article substantially focuses on fundraising for Gaza and explicitly describes the humanitarian and political context of the conflict.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": true\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:19:22Z",
+  "duration_seconds": 4.024,
+  "error": null
+}

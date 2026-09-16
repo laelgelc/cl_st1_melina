@@ -1,0 +1,65 @@
+{
+  "article_id": "91648634",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_10/us/91648634.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_10/us/91648634.json"
+  },
+  "manifest_row": {
+    "article_id": "91648634",
+    "group": "global_north_2023_10",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2023_10/us/91648634.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.96,
+    "gaza_role": "background",
+    "main_topic": "Review of the film The Kitchen and its depiction of a besieged, marginalized London community",
+    "conflict_relevance": "The review mentions a Palestine solidarity demonstration and frames the film through themes of dispossession, community under siege, and state violence, but Gaza and Palestine are not the main subject.",
+    "reason": "The article is primarily a film review. Its Palestine-related material provides meaningful contextual and thematic discourse, warranting peripheral inclusion, while the appended WebSummit passage is a separate conflict-related news snippet.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "9a10dd455fba4dd960cf87ece255e4adb070366f46e50b404646463ec048539f",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "46123a987431a15c28630f3b275aeaeeeafdd9273ffbbcb55c4f4a1a49c06a12",
+    "raw_response_text_sha256": "22f1adef5e8f3684dfe3fc1c29570ec2760f94e4dbcc2a2fb09a8700c8d0ced3"
+  },
+  "api_metadata": {
+    "id": "resp_0536fae73f1c3e89006aa9fa8904e887d2b9527be1a5ba54a4",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789524617.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1968,
+      "input_tokens_details": {
+        "cache_write_tokens": 1965,
+        "cached_tokens": 0
+      },
+      "output_tokens": 286,
+      "output_tokens_details": {
+        "reasoning_tokens": 118
+      },
+      "total_tokens": 2254
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.96,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Review of the film The Kitchen and its depiction of a besieged, marginalized London community\",\n  \"conflict_relevance\": \"The review mentions a Palestine solidarity demonstration and frames the film through themes of dispossession, community under siege, and state violence, but Gaza and Palestine are not the main subject.\",\n  \"reason\": \"The article is primarily a film review. Its Palestine-related material provides meaningful contextual and thematic discourse, warranting peripheral inclusion, while the appended WebSummit passage is a separate conflict-related news snippet.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:10:21Z",
+  "duration_seconds": 4.224,
+  "error": null
+}

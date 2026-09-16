@@ -1,0 +1,65 @@
+{
+  "article_id": "119936200",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_01/us/119936200.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_01/us/119936200.json"
+  },
+  "manifest_row": {
+    "article_id": "119936200",
+    "group": "global_north_2025_01",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2025_01/us/119936200.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "gaza_role": "boilerplate_or_unrelated",
+    "main_topic": "U.S. negotiations to release Americans detained by the Taliban and reduce the Guantanamo detainee population",
+    "conflict_relevance": "Gaza is mentioned only in a boilerplate list of places from which Americans have been brought home; there is no substantive discussion of Gaza, Palestine, Israel, or the conflict.",
+    "reason": "The article is centrally about Afghanistan, Taliban detention, and Guantanamo Bay. The sole Gaza reference is incidental and embedded in a general White House statement.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "7408ebbd5d8343ff8afe8638d7dc549c0c48aa5b87991f6b7bb7785da613ece3",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "fda496428aa2b1599ab45fa802074cac1135311f368882fcb9e07bdd0fa91253",
+    "raw_response_text_sha256": "bbd8d9eb9f485ebb45cb81cfce79e89ed65426a662a0bc3ff42fe00477e533df"
+  },
+  "api_metadata": {
+    "id": "resp_0f0e9cb146b7e5f6006aaa20feb86887d2846fd8fbf439ca7e",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789534462.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1344,
+      "input_tokens_details": {
+        "cache_write_tokens": 1341,
+        "cached_tokens": 0
+      },
+      "output_tokens": 266,
+      "output_tokens_details": {
+        "reasoning_tokens": 99
+      },
+      "total_tokens": 1610
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"gaza_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"U.S. negotiations to release Americans detained by the Taliban and reduce the Guantanamo detainee population\",\n  \"conflict_relevance\": \"Gaza is mentioned only in a boilerplate list of places from which Americans have been brought home; there is no substantive discussion of Gaza, Palestine, Israel, or the conflict.\",\n  \"reason\": \"The article is centrally about Afghanistan, Taliban detention, and Guantanamo Bay. The sole Gaza reference is incidental and embedded in a general White House statement.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T04:54:25Z",
+  "duration_seconds": 3.107,
+  "error": null
+}

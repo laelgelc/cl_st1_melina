@@ -1,0 +1,65 @@
+{
+  "article_id": "108174645",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_05/gb/108174645.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_05/gb/108174645.json"
+  },
+  "manifest_row": {
+    "article_id": "108174645",
+    "group": "global_north_2024_05",
+    "country_code": "gb",
+    "filepath": "corpus/02_now_organised/global_north_2024_05/gb/108174645.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.94,
+    "gaza_role": "background",
+    "main_topic": "15-minute cities, urban planning, and conspiracy theories in UK political discourse",
+    "conflict_relevance": "The main article is unrelated to Gaza or Palestine, but embedded text contains brief substantive references to the Gaza war, Israel, Hamas, Palestinian UN membership, and allegations of antisemitism.",
+    "reason": "The headline and primary article concern 15-minute cities and misinformation. However, the text includes an unrelated embedded news item discussing Netanyahu, Gustavo Petro, the war in Gaza, and Palestinian membership at the United Nations, making it marginally useful for broader discourse analysis but not suitable as core conflict coverage.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "3b6193abfc734c280bb7e8a9ddce78eb9abd21f99f55aa1670c4c6aae9d7b060",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "4ecc34518037dc76c913e593aa6aa0826e146de08de3aed7504b258b731b303f",
+    "raw_response_text_sha256": "e4efa7e88e0aa7f35bb7db103050032127b1a318a3a6af85c05ffe73aa106586"
+  },
+  "api_metadata": {
+    "id": "resp_06b770db42ece69d006aaa0dfaa9cc87d2936ee42303832757",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789529594.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2385,
+      "input_tokens_details": {
+        "cache_write_tokens": 2382,
+        "cached_tokens": 0
+      },
+      "output_tokens": 378,
+      "output_tokens_details": {
+        "reasoning_tokens": 192
+      },
+      "total_tokens": 2763
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.94,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"15-minute cities, urban planning, and conspiracy theories in UK political discourse\",\n  \"conflict_relevance\": \"The main article is unrelated to Gaza or Palestine, but embedded text contains brief substantive references to the Gaza war, Israel, Hamas, Palestinian UN membership, and allegations of antisemitism.\",\n  \"reason\": \"The headline and primary article concern 15-minute cities and misinformation. However, the text includes an unrelated embedded news item discussing Netanyahu, Gustavo Petro, the war in Gaza, and Palestinian membership at the United Nations, making it marginally useful for broader discourse analysis but not suitable as core conflict coverage.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:33:20Z",
+  "duration_seconds": 6.487,
+  "error": null
+}

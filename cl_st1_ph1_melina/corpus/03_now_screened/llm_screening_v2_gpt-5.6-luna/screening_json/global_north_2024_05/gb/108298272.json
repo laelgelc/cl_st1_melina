@@ -1,0 +1,65 @@
+{
+  "article_id": "108298272",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_05/gb/108298272.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_05/gb/108298272.json"
+  },
+  "manifest_row": {
+    "article_id": "108298272",
+    "group": "global_north_2024_05",
+    "country_code": "gb",
+    "filepath": "corpus/02_now_organised/global_north_2024_05/gb/108298272.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "background",
+    "main_topic": "Olive oil prices, supply shortages, and counterfeit olive oil enforcement",
+    "conflict_relevance": "The main article is about the olive oil market, but an embedded latest-stories snippet discusses a Palestinian child in Gaza who needs urgent medical treatment and cannot leave for care.",
+    "reason": "The Gaza-related content is a meaningful but separate embedded news item rather than part of the main article. It has some humanitarian relevance to Gaza discourse, but the article's primary subject is unrelated olive oil pricing and crime.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "88a81e260f48eeda831d441f8361d528850e7ee21bc7f2991e3f69c2bb1aa6e8",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "e824d6d5395247f0d9c37e32d765cdcdf90ff4eac9cabe86e221d8694b7bdd75",
+    "raw_response_text_sha256": "afa59e58603424e76c4053e354df4bc62f404cfe1f6d99c06bec377f03033ca7"
+  },
+  "api_metadata": {
+    "id": "resp_05ddadae7dfcbf54006aaa0e0f0abc87d298a76d30eac65535",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789529615.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1394,
+      "input_tokens_details": {
+        "cache_write_tokens": 1391,
+        "cached_tokens": 0
+      },
+      "output_tokens": 237,
+      "output_tokens_details": {
+        "reasoning_tokens": 71
+      },
+      "total_tokens": 1631
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Olive oil prices, supply shortages, and counterfeit olive oil enforcement\",\n  \"conflict_relevance\": \"The main article is about the olive oil market, but an embedded latest-stories snippet discusses a Palestinian child in Gaza who needs urgent medical treatment and cannot leave for care.\",\n  \"reason\": \"The Gaza-related content is a meaningful but separate embedded news item rather than part of the main article. It has some humanitarian relevance to Gaza discourse, but the article's primary subject is unrelated olive oil pricing and crime.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:33:39Z",
+  "duration_seconds": 4.361,
+  "error": null
+}

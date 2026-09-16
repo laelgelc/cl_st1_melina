@@ -1,0 +1,65 @@
+{
+  "article_id": "108214187",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_05/au/108214187.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_05/au/108214187.json"
+  },
+  "manifest_row": {
+    "article_id": "108214187",
+    "group": "global_north_2024_05",
+    "country_code": "au",
+    "filepath": "corpus/02_now_organised/global_north_2024_05/au/108214187.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.9,
+    "gaza_role": "substantial",
+    "main_topic": "A fatal agricultural transport accident involving farm workers",
+    "conflict_relevance": "The text includes a substantial but apparently unrelated news segment about the Gaza war, Palestinian displacement, Israeli military operations, casualties, and hostages.",
+    "reason": "The main article concerns an agricultural bus accident and migrant farm labor. A separate, substantial Gaza news passage is appended, making the item relevant to broader conflict discourse but not clearly a core Gaza article.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "e4e3da989b5ba2fa618693a9951e6046c56e10dd5f838366d3203dd921bc3230",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "e5fe27fe0af8eb63c05d0945052f99db593ad7539e6887bbc5dc27bee3e67ecb",
+    "raw_response_text_sha256": "5a54bbf8076604848aea1836bae242b6d187d8bb0d274e67d55d5c2a94c75a39"
+  },
+  "api_metadata": {
+    "id": "resp_0f6fc3e6f910894f006aaa0d64114487d2be96c99de52eb841",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789529444.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1151,
+      "input_tokens_details": {
+        "cache_write_tokens": 1148,
+        "cached_tokens": 0
+      },
+      "output_tokens": 352,
+      "output_tokens_details": {
+        "reasoning_tokens": 200
+      },
+      "total_tokens": 1503
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.9,\n  \"gaza_role\": \"substantial\",\n  \"main_topic\": \"A fatal agricultural transport accident involving farm workers\",\n  \"conflict_relevance\": \"The text includes a substantial but apparently unrelated news segment about the Gaza war, Palestinian displacement, Israeli military operations, casualties, and hostages.\",\n  \"reason\": \"The main article concerns an agricultural bus accident and migrant farm labor. A separate, substantial Gaza news passage is appended, making the item relevant to broader conflict discourse but not clearly a core Gaza article.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:30:49Z",
+  "duration_seconds": 5.358,
+  "error": null
+}

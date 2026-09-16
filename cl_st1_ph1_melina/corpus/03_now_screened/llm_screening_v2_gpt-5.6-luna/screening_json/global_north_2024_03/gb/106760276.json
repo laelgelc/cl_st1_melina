@@ -1,0 +1,65 @@
+{
+  "article_id": "106760276",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_03/gb/106760276.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_03/gb/106760276.json"
+  },
+  "manifest_row": {
+    "article_id": "106760276",
+    "group": "global_north_2024_03",
+    "country_code": "gb",
+    "filepath": "corpus/02_now_organised/global_north_2024_03/gb/106760276.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.99,
+    "gaza_role": "background",
+    "main_topic": "UK Prime Minister Rishi Sunak's political leadership, economic policies, and Conservative Party leadership plotting",
+    "conflict_relevance": "The main article is unrelated to Gaza, but it includes a substantive embedded news item about the anticipated Israeli assault on Rafah and its consequences for humanitarian aid distribution in Gaza.",
+    "reason": "The article primarily concerns British domestic politics and also contains several unrelated news snippets. A distinct final section meaningfully discusses Gaza humanitarian conditions and the UN's warnings about aid operations in Rafah, making the item relevant as peripheral material rather than an incidental mention.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "c074cd6e225a90ece66cadcdb6ae4eae7ee3e06030e1bf2fdbe44901e5fa426e",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "cc2e15fb3926ed7a481b1a7b03728441d2fa1032bd007235b84d363858d7463d",
+    "raw_response_text_sha256": "8c198a8be19b08fa83b9e36bb82a6c4728c8066cc7764ff673b6bd021e13ad69"
+  },
+  "api_metadata": {
+    "id": "resp_0536581d6e30ad4b006aaa08d249ec87d283839e195cb86db4",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789528274.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2786,
+      "input_tokens_details": {
+        "cache_write_tokens": 2783,
+        "cached_tokens": 0
+      },
+      "output_tokens": 307,
+      "output_tokens_details": {
+        "reasoning_tokens": 128
+      },
+      "total_tokens": 3093
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.99,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"UK Prime Minister Rishi Sunak's political leadership, economic policies, and Conservative Party leadership plotting\",\n  \"conflict_relevance\": \"The main article is unrelated to Gaza, but it includes a substantive embedded news item about the anticipated Israeli assault on Rafah and its consequences for humanitarian aid distribution in Gaza.\",\n  \"reason\": \"The article primarily concerns British domestic politics and also contains several unrelated news snippets. A distinct final section meaningfully discusses Gaza humanitarian conditions and the UN's warnings about aid operations in Rafah, making the item relevant as peripheral material rather than an incidental mention.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:11:18Z",
+  "duration_seconds": 4.196,
+  "error": null
+}

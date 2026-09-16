@@ -1,0 +1,65 @@
+{
+  "article_id": "104352832",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_12/ca/104352832.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_12/ca/104352832.json"
+  },
+  "manifest_row": {
+    "article_id": "104352832",
+    "group": "global_north_2023_12",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2023_12/ca/104352832.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "gaza_role": "boilerplate_or_unrelated",
+    "main_topic": "A court ruling prohibiting a political candidate from using the professional title \"engineer\"",
+    "conflict_relevance": "The main article is unrelated to Gaza or the Israel-Palestine conflict. The only relevant references occur in unrelated CTVNews.ca top-story snippets appended to the article.",
+    "reason": "The article centrally concerns professional regulation and the use of the title \"engineer.\" References to the Israel-Palestinian conflict, Israel-Hamas war, Gaza, and a ceasefire appear only in navigational or roundup content rather than the main article.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "e44c78510abc8f5e20b7a9ac348b3ed7795762097c3f2f0eddfed8f2a56eeee4",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "823902adc2f77417b520c9d4ab776ec47576bd913d468a4c30126ab3604583d7",
+    "raw_response_text_sha256": "cb543e4dbf7c988b812d5729a9e86189be92b9c6b20b923214dee1f5e94f46d0"
+  },
+  "api_metadata": {
+    "id": "resp_01b013369d95257a006aaa0083f6f087d28b8718c827b00a6a",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789526147.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2253,
+      "input_tokens_details": {
+        "cache_write_tokens": 2250,
+        "cached_tokens": 0
+      },
+      "output_tokens": 322,
+      "output_tokens_details": {
+        "reasoning_tokens": 139
+      },
+      "total_tokens": 2575
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"A court ruling prohibiting a political candidate from using the professional title \\\"engineer\\\"\",\n  \"conflict_relevance\": \"The main article is unrelated to Gaza or the Israel-Palestine conflict. The only relevant references occur in unrelated CTVNews.ca top-story snippets appended to the article.\",\n  \"reason\": \"The article centrally concerns professional regulation and the use of the title \\\"engineer.\\\" References to the Israel-Palestinian conflict, Israel-Hamas war, Gaza, and a ceasefire appear only in navigational or roundup content rather than the main article.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:35:51Z",
+  "duration_seconds": 3.963,
+  "error": null
+}

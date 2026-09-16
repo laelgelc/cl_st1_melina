@@ -1,0 +1,65 @@
+{
+  "article_id": "105429619",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_01/us/105429619.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_01/us/105429619.json"
+  },
+  "manifest_row": {
+    "article_id": "105429619",
+    "group": "global_north_2024_01",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2024_01/us/105429619.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.96,
+    "gaza_role": "background",
+    "main_topic": "A general news newsletter covering U.S. immigration legislation, election politics, legal proceedings, executions, technology, and other current events",
+    "conflict_relevance": "The newsletter includes a substantive item on the International Court of Justice proceedings concerning Israel's Gaza offensive, as well as humanitarian conditions at Nasser Hospital and allegations regarding Israeli military operations.",
+    "reason": "Gaza-related content is meaningful and includes international law, military action, alleged genocide, and humanitarian conditions, but it is one section within a broad multi-topic news roundup rather than the central subject.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "c8b117ff2cca03ac857942ecc4a746bd4396bc35bb5d4e6c47eab9ddfe8cb3ba",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "3ff3a86fbdcf8ad61582bfb8c480242b6d2d80316427caa7221c81919576325c",
+    "raw_response_text_sha256": "b10905ee4257cd6c5aff4e31c5fcbb061c1d02fa879f148f8f81313eb02a474a"
+  },
+  "api_metadata": {
+    "id": "resp_0dceb137efeccb1f006aaa050560f487d2abc066c107f1604b",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789527301.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2454,
+      "input_tokens_details": {
+        "cache_write_tokens": 2451,
+        "cached_tokens": 0
+      },
+      "output_tokens": 299,
+      "output_tokens_details": {
+        "reasoning_tokens": 124
+      },
+      "total_tokens": 2753
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.96,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"A general news newsletter covering U.S. immigration legislation, election politics, legal proceedings, executions, technology, and other current events\",\n  \"conflict_relevance\": \"The newsletter includes a substantive item on the International Court of Justice proceedings concerning Israel's Gaza offensive, as well as humanitarian conditions at Nasser Hospital and allegations regarding Israeli military operations.\",\n  \"reason\": \"Gaza-related content is meaningful and includes international law, military action, alleged genocide, and humanitarian conditions, but it is one section within a broad multi-topic news roundup rather than the central subject.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:55:05Z",
+  "duration_seconds": 3.796,
+  "error": null
+}

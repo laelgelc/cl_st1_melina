@@ -1,0 +1,65 @@
+{
+  "article_id": "102907443",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_10/gb/102907443.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_10/gb/102907443.json"
+  },
+  "manifest_row": {
+    "article_id": "102907443",
+    "group": "global_north_2023_10",
+    "country_code": "gb",
+    "filepath": "corpus/02_now_organised/global_north_2023_10/gb/102907443.txt"
+  },
+  "screening": {
+    "category": "CORE",
+    "confidence": 0.93,
+    "gaza_role": "substantial",
+    "main_topic": "Gaza humanitarian crisis and Israel-Palestine peace diplomacy",
+    "conflict_relevance": "The article contains substantive reporting on unidentified Palestinian deaths and mass graves in Gaza, as well as Biden's comments on a political path to peace and independent Israeli and Palestinian states.",
+    "reason": "The Gaza-related material directly addresses humanitarian conditions, deaths, identification of victims, and diplomacy connected to the Israel-Palestine conflict. An unrelated Meta business-news passage is also included, indicating a snippet or multi-article composition.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": true
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "4da623ba5a08e8eb3ca7f77f67a290e8d014ecb57a6e2c26583538afcc426abd",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "d4c0d9e74d50ac66a5204f5231775bb41ba58697c12235806bd884e2cb8ac66b",
+    "raw_response_text_sha256": "df4074ba4a44a3caff68254dac5468705f9d74491be9da772df7f6dc1c2b60ed"
+  },
+  "api_metadata": {
+    "id": "resp_079cba1ceb20837e006aa9f7a6472887d2902d497ef1e3f987",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789523878.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 788,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 378,
+      "output_tokens_details": {
+        "reasoning_tokens": 211
+      },
+      "total_tokens": 1166
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"CORE\",\n  \"confidence\": 0.93,\n  \"gaza_role\": \"substantial\",\n  \"main_topic\": \"Gaza humanitarian crisis and Israel-Palestine peace diplomacy\",\n  \"conflict_relevance\": \"The article contains substantive reporting on unidentified Palestinian deaths and mass graves in Gaza, as well as Biden's comments on a political path to peace and independent Israeli and Palestinian states.\",\n  \"reason\": \"The Gaza-related material directly addresses humanitarian conditions, deaths, identification of victims, and diplomacy connected to the Israel-Palestine conflict. An unrelated Meta business-news passage is also included, indicating a snippet or multi-article composition.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": true\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T01:58:02Z",
+  "duration_seconds": 3.962,
+  "error": null
+}

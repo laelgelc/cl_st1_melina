@@ -1,0 +1,65 @@
+{
+  "article_id": "103658100",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_11/nz/103658100.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_11/nz/103658100.json"
+  },
+  "manifest_row": {
+    "article_id": "103658100",
+    "group": "global_north_2023_11",
+    "country_code": "nz",
+    "filepath": "corpus/02_now_organised/global_north_2023_11/nz/103658100.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "gaza_role": "passing",
+    "main_topic": "Digital disadvantage and access to New Zealand government services",
+    "conflict_relevance": "The main article concerns digital inclusion and government service design in New Zealand. Gaza and Israel appear only in an unrelated embedded roundup snippet.",
+    "reason": "The article is not meaningfully about Gaza, Palestine, Israel/Palestine, or the conflict; the brief Gaza-related passage is incidental and unrelated to the headline article.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "e2268836a0058ab7f261d914a438d28a98ee18a36944710c28a216f9153608e1",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "0696f4b66207c70ba522d55b22f264ca3aa8789a2038be52808dc4ec569ab871",
+    "raw_response_text_sha256": "eaa9da90bd41df1b891690b5572561e1e0e26633b2d493d27c91821922968d9a"
+  },
+  "api_metadata": {
+    "id": "resp_0d1d9261780cd275006aa9fdc546c487d2a619ca34b8e01838",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789525445.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1834,
+      "input_tokens_details": {
+        "cache_write_tokens": 1831,
+        "cached_tokens": 0
+      },
+      "output_tokens": 236,
+      "output_tokens_details": {
+        "reasoning_tokens": 91
+      },
+      "total_tokens": 2070
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Digital disadvantage and access to New Zealand government services\",\n  \"conflict_relevance\": \"The main article concerns digital inclusion and government service design in New Zealand. Gaza and Israel appear only in an unrelated embedded roundup snippet.\",\n  \"reason\": \"The article is not meaningfully about Gaza, Palestine, Israel/Palestine, or the conflict; the brief Gaza-related passage is incidental and unrelated to the headline article.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:24:09Z",
+  "duration_seconds": 4.607,
+  "error": null
+}

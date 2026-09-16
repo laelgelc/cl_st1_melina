@@ -1,0 +1,65 @@
+{
+  "article_id": "102682324",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_10/ca/102682324.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_10/ca/102682324.json"
+  },
+  "manifest_row": {
+    "article_id": "102682324",
+    "group": "global_north_2023_10",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2023_10/ca/102682324.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.97,
+    "gaza_role": "background",
+    "main_topic": "The death of actress Suzanne Somers and her marriage to Alan Hamel",
+    "conflict_relevance": "The main article is unrelated to the conflict, but appended news snippets contain meaningful references to the Gaza hospital strike, the Israel-Hamas war, public commemoration, and institutional debate over taking sides.",
+    "reason": "The celebrity obituary/profile is the primary article, while several distinct embedded snippets address Gaza and broader Israel-Hamas-related discourse. These snippets make the item marginally useful for peripheral discourse analysis but not suitable as core conflict coverage.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "3ecb92979484a2f055f561ca2c844037557681932b799d63dcda41358948c63d",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "c08f99af965acd645d1bdf917da53b77a5196a5a0ce5e15755601dbf31b7d7e4",
+    "raw_response_text_sha256": "ed10081fc9204bc0ed549e8b0bc37f6fafff3048d41cb7a957bcf9a966528be5"
+  },
+  "api_metadata": {
+    "id": "resp_033281a03963c523006aa9f64e89d087d2829db42144a748c5",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789523534.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2352,
+      "input_tokens_details": {
+        "cache_write_tokens": 2349,
+        "cached_tokens": 0
+      },
+      "output_tokens": 332,
+      "output_tokens_details": {
+        "reasoning_tokens": 158
+      },
+      "total_tokens": 2684
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.97,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"The death of actress Suzanne Somers and her marriage to Alan Hamel\",\n  \"conflict_relevance\": \"The main article is unrelated to the conflict, but appended news snippets contain meaningful references to the Gaza hospital strike, the Israel-Hamas war, public commemoration, and institutional debate over taking sides.\",\n  \"reason\": \"The celebrity obituary/profile is the primary article, while several distinct embedded snippets address Gaza and broader Israel-Hamas-related discourse. These snippets make the item marginally useful for peripheral discourse analysis but not suitable as core conflict coverage.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T01:52:18Z",
+  "duration_seconds": 3.656,
+  "error": null
+}

@@ -1,0 +1,65 @@
+{
+  "article_id": "104329934",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_12/ca/104329934.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_12/ca/104329934.json"
+  },
+  "manifest_row": {
+    "article_id": "104329934",
+    "group": "global_north_2023_12",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2023_12/ca/104329934.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.93,
+    "gaza_role": "passing",
+    "main_topic": "Police investigation into distraction-style break-and-enter incidents in Markham",
+    "conflict_relevance": "An embedded news snippet briefly reports that three Israeli hostages were mistakenly killed by Israeli troops in Gaza after reportedly waving a white flag.",
+    "reason": "The main article concerns local break-and-enter investigations and is unrelated to the Gaza conflict, but it contains one meaningful conflict-related news item about Israeli hostages killed in Gaza. This supports peripheral rather than core classification.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "632cf890ec6e6b970268f284d7498c0eaedc385effb733c83dbcab92d910a3e6",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "6f9e4de5f023e209f91f84f3aa37f567112188bd59d8d9980e4d91cbce364965",
+    "raw_response_text_sha256": "b6e2e8c44c1ee73c34d03bd9991238bfaa17e94d1befcb50d3d551e061dc81e2"
+  },
+  "api_metadata": {
+    "id": "resp_00a22852a21f075f006aaa007f984087d2a68494763ce7eb5c",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789526143.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1505,
+      "input_tokens_details": {
+        "cache_write_tokens": 1502,
+        "cached_tokens": 0
+      },
+      "output_tokens": 305,
+      "output_tokens_details": {
+        "reasoning_tokens": 149
+      },
+      "total_tokens": 1810
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.93,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Police investigation into distraction-style break-and-enter incidents in Markham\",\n  \"conflict_relevance\": \"An embedded news snippet briefly reports that three Israeli hostages were mistakenly killed by Israeli troops in Gaza after reportedly waving a white flag.\",\n  \"reason\": \"The main article concerns local break-and-enter investigations and is unrelated to the Gaza conflict, but it contains one meaningful conflict-related news item about Israeli hostages killed in Gaza. This supports peripheral rather than core classification.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:35:48Z",
+  "duration_seconds": 5.216,
+  "error": null
+}

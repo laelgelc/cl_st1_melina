@@ -1,0 +1,65 @@
+{
+  "article_id": "103652058",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_south_2023_11/in/103652058.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_south_2023_11/in/103652058.json"
+  },
+  "manifest_row": {
+    "article_id": "103652058",
+    "group": "global_south_2023_11",
+    "country_code": "in",
+    "filepath": "corpus/02_now_organised/global_south_2023_11/in/103652058.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.99,
+    "gaza_role": "background",
+    "main_topic": "Government funding and modernization of four hospitals in Uttar Pradesh",
+    "conflict_relevance": "The main article is unrelated to Gaza, but an embedded related-news item discusses allegations that Hamas and Palestinian Islamic Jihad operated from Gaza hospitals and disguised personnel as medical staff.",
+    "reason": "The headline article concerns healthcare infrastructure in Uttar Pradesh. However, the included Gaza-related news snippet contains substantive conflict discourse, making the item peripherally relevant rather than excludable.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "f907a6dfd464e2945a92e53e9961e1955ff1c87a1afcde789f004cbf84f0c663",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "ceba0f9b6638516a4b7251eae8c5f78ae1a0e7fa88b8cbc229bd7566133b611d",
+    "raw_response_text_sha256": "92f6e73ad30dbfe7b470d183c6ac72a58a6f8971ecacef2756941c5dce556ee6"
+  },
+  "api_metadata": {
+    "id": "resp_01ce3d7c898fa520006aaa353135c887d197ce8e7893226c13",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789539633.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1364,
+      "input_tokens_details": {
+        "cache_write_tokens": 1361,
+        "cached_tokens": 0
+      },
+      "output_tokens": 271,
+      "output_tokens_details": {
+        "reasoning_tokens": 115
+      },
+      "total_tokens": 1635
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.99,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Government funding and modernization of four hospitals in Uttar Pradesh\",\n  \"conflict_relevance\": \"The main article is unrelated to Gaza, but an embedded related-news item discusses allegations that Hamas and Palestinian Islamic Jihad operated from Gaza hospitals and disguised personnel as medical staff.\",\n  \"reason\": \"The headline article concerns healthcare infrastructure in Uttar Pradesh. However, the included Gaza-related news snippet contains substantive conflict discourse, making the item peripherally relevant rather than excludable.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T06:20:37Z",
+  "duration_seconds": 4.068,
+  "error": null
+}

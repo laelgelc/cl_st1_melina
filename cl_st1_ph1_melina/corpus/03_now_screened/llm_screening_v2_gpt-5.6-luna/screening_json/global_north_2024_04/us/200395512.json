@@ -1,0 +1,65 @@
+{
+  "article_id": "200395512",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_04/us/200395512.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_04/us/200395512.json"
+  },
+  "manifest_row": {
+    "article_id": "200395512",
+    "group": "global_north_2024_04",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2024_04/us/200395512.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "substantial",
+    "main_topic": "Phoenix Suns coach Frank Vogel and the team's NBA playoff prospects",
+    "conflict_relevance": "The headline-associated article is a sports analysis unrelated to Gaza or Israel/Palestine, but the text also contains a substantial separate news recap concerning Iran's attack on Israel, the Israel-Hamas war, Gaza, regional escalation, international law, and the West Bank.",
+    "reason": "The main article is about the Phoenix Suns and Frank Vogel. However, a lengthy embedded article on the Israel-Iran escalation and connected Israel-Hamas conflict issues provides meaningful conflict-related discourse, making the item peripheral rather than excludable.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "02a28ca57d5849679ef0c8eda95409ebb5b7cda7a3a4b6aec1d389210057299a",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "c04a4897f5cef2534f74f2b2d62222a2c4e0da1098135addf1fd29c3318cefc2",
+    "raw_response_text_sha256": "e993677d26891c56ae7088941df9efd5249f6975f2ac3ca1a08aa8802266b317"
+  },
+  "api_metadata": {
+    "id": "resp_0c2d121502162254006aaa0cdc739c87d28dbf1de78ab294d1",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789529308.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 5181,
+      "input_tokens_details": {
+        "cache_write_tokens": 5178,
+        "cached_tokens": 0
+      },
+      "output_tokens": 512,
+      "output_tokens_details": {
+        "reasoning_tokens": 323
+      },
+      "total_tokens": 5693
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"substantial\",\n  \"main_topic\": \"Phoenix Suns coach Frank Vogel and the team's NBA playoff prospects\",\n  \"conflict_relevance\": \"The headline-associated article is a sports analysis unrelated to Gaza or Israel/Palestine, but the text also contains a substantial separate news recap concerning Iran's attack on Israel, the Israel-Hamas war, Gaza, regional escalation, international law, and the West Bank.\",\n  \"reason\": \"The main article is about the Phoenix Suns and Frank Vogel. However, a lengthy embedded article on the Israel-Iran escalation and connected Israel-Hamas conflict issues provides meaningful conflict-related discourse, making the item peripheral rather than excludable.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:28:34Z",
+  "duration_seconds": 5.93,
+  "error": null
+}

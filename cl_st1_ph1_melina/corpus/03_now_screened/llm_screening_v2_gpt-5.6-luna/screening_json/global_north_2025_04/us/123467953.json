@@ -1,0 +1,65 @@
+{
+  "article_id": "123467953",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_04/us/123467953.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_04/us/123467953.json"
+  },
+  "manifest_row": {
+    "article_id": "123467953",
+    "group": "global_north_2025_04",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2025_04/us/123467953.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "background",
+    "main_topic": "Wisconsin state and University of Wisconsin diversity, equity, and inclusion spending and audits",
+    "conflict_relevance": "The article briefly connects UW-Madison to federal investigations concerning protection of Jewish students during campus protests over the war in Gaza, but the article is primarily about DEI programs, spending, and state politics.",
+    "reason": "Gaza-related discourse appears in a meaningful sentence about campus protests and alleged failures to protect Jewish students, yet the conflict is not the article's central subject.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "44c8e0934e530ef661e71cc2c90f1455768a0e6422d114a7b842b5cc86f18e25",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "22e29d9e1b0e3a5a88c21cd67b2928de7488fb42b69e7a8a2091daa99cf442b1",
+    "raw_response_text_sha256": "57a0b6a6536eddcd1748127918153ecf0b5644aae3478578b49736582dfd4936"
+  },
+  "api_metadata": {
+    "id": "resp_001942b2dfec047a006aaa2a2b96d887d1822d68850ca982cd",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789536811.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1485,
+      "input_tokens_details": {
+        "cache_write_tokens": 1482,
+        "cached_tokens": 0
+      },
+      "output_tokens": 196,
+      "output_tokens_details": {
+        "reasoning_tokens": 32
+      },
+      "total_tokens": 1681
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Wisconsin state and University of Wisconsin diversity, equity, and inclusion spending and audits\",\n  \"conflict_relevance\": \"The article briefly connects UW-Madison to federal investigations concerning protection of Jewish students during campus protests over the war in Gaza, but the article is primarily about DEI programs, spending, and state politics.\",\n  \"reason\": \"Gaza-related discourse appears in a meaningful sentence about campus protests and alleged failures to protect Jewish students, yet the conflict is not the article's central subject.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T05:33:34Z",
+  "duration_seconds": 3.116,
+  "error": null
+}

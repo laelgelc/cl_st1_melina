@@ -1,0 +1,65 @@
+{
+  "article_id": "118191008",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_11/us/118191008.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_11/us/118191008.json"
+  },
+  "manifest_row": {
+    "article_id": "118191008",
+    "group": "global_north_2024_11",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2024_11/us/118191008.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.97,
+    "gaza_role": "passing",
+    "main_topic": "Christian theology, apocalypticism, and political responsibility",
+    "conflict_relevance": "Gaza and the Israel-Iran tensions are briefly listed among several global crises, without substantive discussion.",
+    "reason": "The article is primarily a religious commentary on the Apocalypse, Christian vocation, justice, and peace. Gaza appears only in a passing enumeration of contemporary wars and is not analyzed or discussed meaningfully.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "120735a77cc69533a0ce090362a1569e01d7709b1c0f4a15538d044d2a962126",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "7bcf45fad105861fa37935a0d74ad725ae0d071a3687da199cfa42be63bedf00",
+    "raw_response_text_sha256": "55e2aa49b4b10b6b8aa80f351b10c7bdddeb8f13d991ff83e460d328f0aef2ae"
+  },
+  "api_metadata": {
+    "id": "resp_00cffdd698864046006aaa1cbf957087d2bef44759c480956b",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789533375.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1513,
+      "input_tokens_details": {
+        "cache_write_tokens": 1510,
+        "cached_tokens": 0
+      },
+      "output_tokens": 238,
+      "output_tokens_details": {
+        "reasoning_tokens": 95
+      },
+      "total_tokens": 1751
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.97,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Christian theology, apocalypticism, and political responsibility\",\n  \"conflict_relevance\": \"Gaza and the Israel-Iran tensions are briefly listed among several global crises, without substantive discussion.\",\n  \"reason\": \"The article is primarily a religious commentary on the Apocalypse, Christian vocation, justice, and peace. Gaza appears only in a passing enumeration of contemporary wars and is not analyzed or discussed meaningfully.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T04:36:18Z",
+  "duration_seconds": 2.887,
+  "error": null
+}

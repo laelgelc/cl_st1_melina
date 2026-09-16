@@ -1,0 +1,65 @@
+{
+  "article_id": "108191423",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_05/gb/108191423.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_05/gb/108191423.json"
+  },
+  "manifest_row": {
+    "article_id": "108191423",
+    "group": "global_north_2024_05",
+    "country_code": "gb",
+    "filepath": "corpus/02_now_organised/global_north_2024_05/gb/108191423.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.96,
+    "gaza_role": "background",
+    "main_topic": "The worsening Ukrainian military situation and Russia's renewed offensive in Ukraine",
+    "conflict_relevance": "The main analysis briefly frames the Ukraine war as being sidelined by the horrors of the Middle East, and a separate latest-story snippet directly discusses renewed Israeli fighting in northern Gaza.",
+    "reason": "The article is primarily about the Ukraine war, but it contains meaningful contextual reference to the Gaza conflict and an embedded Gaza news item. It is therefore relevant to broader media discourse and conflict attention, but not core Gaza coverage.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "3fbaa414ee1645efe35ee8d3398d51bea22ded96d3843a9edffa3cd492894de7",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "299d46c4c32599b81b35734572c8f82e09acc58203d68ac8a5383120e10fe745",
+    "raw_response_text_sha256": "c02813e4bdbae6b70057486002bffe70b5a28e9609ff9593480e68e6051a4d6d"
+  },
+  "api_metadata": {
+    "id": "resp_00a13f3cfc4172e5006aaa0dff8ecc87d2accf6e85a4a1fdcf",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789529599.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2538,
+      "input_tokens_details": {
+        "cache_write_tokens": 2535,
+        "cached_tokens": 0
+      },
+      "output_tokens": 276,
+      "output_tokens_details": {
+        "reasoning_tokens": 109
+      },
+      "total_tokens": 2814
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.96,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"The worsening Ukrainian military situation and Russia's renewed offensive in Ukraine\",\n  \"conflict_relevance\": \"The main analysis briefly frames the Ukraine war as being sidelined by the horrors of the Middle East, and a separate latest-story snippet directly discusses renewed Israeli fighting in northern Gaza.\",\n  \"reason\": \"The article is primarily about the Ukraine war, but it contains meaningful contextual reference to the Gaza conflict and an embedded Gaza news item. It is therefore relevant to broader media discourse and conflict attention, but not core Gaza coverage.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:33:23Z",
+  "duration_seconds": 3.938,
+  "error": null
+}

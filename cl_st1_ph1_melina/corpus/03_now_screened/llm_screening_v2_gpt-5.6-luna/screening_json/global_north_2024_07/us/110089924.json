@@ -1,0 +1,65 @@
+{
+  "article_id": "110089924",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_07/us/110089924.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_07/us/110089924.json"
+  },
+  "manifest_row": {
+    "article_id": "110089924",
+    "group": "global_north_2024_07",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2024_07/us/110089924.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.91,
+    "gaza_role": "background",
+    "main_topic": "Hezbollah rocket attacks on northern Israel and the Israel-Lebanon border conflict",
+    "conflict_relevance": "The article concerns the Israel-Hezbollah conflict, which is explicitly linked to Hamas and the Gaza war, but Gaza is not the primary subject.",
+    "reason": "Most of the article focuses on the rocket barrage, casualties, displacement, and military escalation along the Israel-Lebanon border. Gaza and Hamas appear as contextual background explaining Hezbollah's stated solidarity and the risk of a broader regional war.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "340ef6b26c2c73549bc3f7f899b13a5346d4e1113b782d3fe7d8d201a4873517",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "30870adad2adee70cd1061ec87c0cada92574a82b1b14040244a768c9076519c",
+    "raw_response_text_sha256": "26ac8431ad03804b8612b436772036ae7722ee0cab1095658e5343dcc846a71a"
+  },
+  "api_metadata": {
+    "id": "resp_08afe782f64fe652006aaa12cd12c887d2abc5cdb7a12b0c02",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789530829.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 879,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 286,
+      "output_tokens_details": {
+        "reasoning_tokens": 121
+      },
+      "total_tokens": 1165
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.91,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Hezbollah rocket attacks on northern Israel and the Israel-Lebanon border conflict\",\n  \"conflict_relevance\": \"The article concerns the Israel-Hezbollah conflict, which is explicitly linked to Hamas and the Gaza war, but Gaza is not the primary subject.\",\n  \"reason\": \"Most of the article focuses on the rocket barrage, casualties, displacement, and military escalation along the Israel-Lebanon border. Gaza and Hamas appear as contextual background explaining Hezbollah's stated solidarity and the risk of a broader regional war.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:53:52Z",
+  "duration_seconds": 3.685,
+  "error": null
+}

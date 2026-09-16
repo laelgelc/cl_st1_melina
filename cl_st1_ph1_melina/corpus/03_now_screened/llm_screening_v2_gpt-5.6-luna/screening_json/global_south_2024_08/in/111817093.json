@@ -1,0 +1,65 @@
+{
+  "article_id": "111817093",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_south_2024_08/in/111817093.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_south_2024_08/in/111817093.json"
+  },
+  "manifest_row": {
+    "article_id": "111817093",
+    "group": "global_south_2024_08",
+    "country_code": "in",
+    "filepath": "corpus/02_now_organised/global_south_2024_08/in/111817093.txt"
+  },
+  "screening": {
+    "category": "CORE",
+    "confidence": 0.99,
+    "gaza_role": "central",
+    "main_topic": "Israeli airstrikes on schools in Gaza and resulting Palestinian casualties",
+    "conflict_relevance": "The article directly reports Israeli military action in Gaza, deaths and injuries among Palestinians, the Israeli military's stated justification, and the broader Israel-Hamas war.",
+    "reason": "Although the page also contains an unrelated article about cancer treatment in Himachal Pradesh, the Gaza article is a substantive report centrally focused on the Israel-Gaza conflict and humanitarian consequences.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": true
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "27a6d5790263e58753f96005f4a031439ac39a0da64d00078e09ba4f63b775c4",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "18df8afbdc7528c660be69a8478bb9730273dfde93d5e1fe83c2dc2651ac4319",
+    "raw_response_text_sha256": "57c7ab52c3711c880a8c7b83c8e2ed97b3f050b0e26022654688e013d385fd67"
+  },
+  "api_metadata": {
+    "id": "resp_07b14c3444442a48006aaa3df3851c87d19dcc9f9fd4a577e6",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789541875.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1573,
+      "input_tokens_details": {
+        "cache_write_tokens": 1570,
+        "cached_tokens": 0
+      },
+      "output_tokens": 264,
+      "output_tokens_details": {
+        "reasoning_tokens": 111
+      },
+      "total_tokens": 1837
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"CORE\",\n  \"confidence\": 0.99,\n  \"gaza_role\": \"central\",\n  \"main_topic\": \"Israeli airstrikes on schools in Gaza and resulting Palestinian casualties\",\n  \"conflict_relevance\": \"The article directly reports Israeli military action in Gaza, deaths and injuries among Palestinians, the Israeli military's stated justification, and the broader Israel-Hamas war.\",\n  \"reason\": \"Although the page also contains an unrelated article about cancer treatment in Himachal Pradesh, the Gaza article is a substantive report centrally focused on the Israel-Gaza conflict and humanitarian consequences.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": true\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T06:57:59Z",
+  "duration_seconds": 4.088,
+  "error": null
+}

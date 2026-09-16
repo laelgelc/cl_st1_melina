@@ -1,0 +1,65 @@
+{
+  "article_id": "104571033",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_south_2023_12/ph/104571033.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_south_2023_12/ph/104571033.json"
+  },
+  "manifest_row": {
+    "article_id": "104571033",
+    "group": "global_south_2023_12",
+    "country_code": "ph",
+    "filepath": "corpus/02_now_organised/global_south_2023_12/ph/104571033.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.97,
+    "gaza_role": "passing",
+    "main_topic": "Professional boxing match between Marlon Tapales and Naoya Inoue",
+    "conflict_relevance": "The article is about boxing and contains only a brief, unrelated sentence about fighting and humanitarian aid in Gaza.",
+    "reason": "Gaza appears solely as an incidental embedded news item and is not meaningfully developed or connected to the article's main topic.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "e2309e32287e367d4f16686f398d8279a1d437d1f5f52839e88269469b56ed3c",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "dd10d62446ac0d2796102b6ca4c9cec722c479ee75221a0f204c3351f2cd54cc",
+    "raw_response_text_sha256": "94a5245e6a51735aa6f44adbb6446dfe07864562a4561ddf67301e15ecb54f2d"
+  },
+  "api_metadata": {
+    "id": "resp_0e17aa8ce8f842bd006aaa374afc6487d18c52d9a442eb28b1",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789540171.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1016,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 249,
+      "output_tokens_details": {
+        "reasoning_tokens": 115
+      },
+      "total_tokens": 1265
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.97,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Professional boxing match between Marlon Tapales and Naoya Inoue\",\n  \"conflict_relevance\": \"The article is about boxing and contains only a brief, unrelated sentence about fighting and humanitarian aid in Gaza.\",\n  \"reason\": \"Gaza appears solely as an incidental embedded news item and is not meaningfully developed or connected to the article's main topic.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T06:29:34Z",
+  "duration_seconds": 3.422,
+  "error": null
+}

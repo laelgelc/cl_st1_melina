@@ -1,0 +1,65 @@
+{
+  "article_id": "123554680",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_04/nz/123554680.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_04/nz/123554680.json"
+  },
+  "manifest_row": {
+    "article_id": "123554680",
+    "group": "global_north_2025_04",
+    "country_code": "nz",
+    "filepath": "corpus/02_now_organised/global_north_2025_04/nz/123554680.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "background",
+    "main_topic": "Business and political news roundup, especially US tariffs and international affairs",
+    "conflict_relevance": "The article includes a substantive but brief Gaza news item covering Hamas's rejection of an Egyptian ceasefire proposal, Israeli attacks, and Palestinian casualties.",
+    "reason": "Gaza is not the main subject of the article, which is primarily a roundup of tariff policy, Ukraine, deportation, and consumer issues. However, the dedicated Gaza section contains meaningful conflict-related reporting, making it relevant as peripheral discourse material.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "6400e2809fe6ebaed7fcbd1181c4a624d8a6cf5e905a864a1eb401ff96d02fab",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "32038c34d1a9f1fa448cc44a551e86d05b7f5448ab346eca57b0c7b90426fc78",
+    "raw_response_text_sha256": "4c067762ff328eb71ce7e8e889e4426b8c0177c972a1c06166e0f6b7271532f8"
+  },
+  "api_metadata": {
+    "id": "resp_04589a88bb4db6f6006aaa29a40b4c87d18901ce5b0204bdf5",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789536676.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1502,
+      "input_tokens_details": {
+        "cache_write_tokens": 1499,
+        "cached_tokens": 0
+      },
+      "output_tokens": 247,
+      "output_tokens_details": {
+        "reasoning_tokens": 82
+      },
+      "total_tokens": 1749
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Business and political news roundup, especially US tariffs and international affairs\",\n  \"conflict_relevance\": \"The article includes a substantive but brief Gaza news item covering Hamas's rejection of an Egyptian ceasefire proposal, Israeli attacks, and Palestinian casualties.\",\n  \"reason\": \"Gaza is not the main subject of the article, which is primarily a roundup of tariff policy, Ukraine, deportation, and consumer issues. However, the dedicated Gaza section contains meaningful conflict-related reporting, making it relevant as peripheral discourse material.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T05:31:19Z",
+  "duration_seconds": 3.604,
+  "error": null
+}

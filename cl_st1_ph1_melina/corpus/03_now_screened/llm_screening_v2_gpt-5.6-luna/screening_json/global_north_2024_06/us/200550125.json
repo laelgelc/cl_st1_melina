@@ -1,0 +1,65 @@
+{
+  "article_id": "200550125",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_06/us/200550125.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_06/us/200550125.json"
+  },
+  "manifest_row": {
+    "article_id": "200550125",
+    "group": "global_north_2024_06",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2024_06/us/200550125.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "background",
+    "main_topic": "Israel's Supreme Court ruling requiring ultra-Orthodox men to undergo compulsory military service",
+    "conflict_relevance": "The article discusses Israel's ongoing war in Gaza as context for military manpower shortages, troop deployment, and political tensions over conscription, but the primary focus is domestic Israeli religious, legal, and coalition politics.",
+    "reason": "The Gaza war and military operations are mentioned meaningfully in relation to the draft ruling and the army's need for additional forces, yet the article is not centrally about Gaza, Palestinians, or the Israel-Hamas conflict.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "bc5cf810d7910d268c1d17bce319a47977dab2789adb292d98709152e440ec30",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "74c95f8754ccef4c96b23ab1925151a481d37a33a7f4af8deceae1d6279d45ca",
+    "raw_response_text_sha256": "c40f7f3ea2d97cafb36cb07cb5870551431ca3ba89d05e12e990c66f7f8993f8"
+  },
+  "api_metadata": {
+    "id": "resp_039e42cd01bb89b5006aaa11cb5c1487d299feecaa59b0d3cf",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789530571.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1474,
+      "input_tokens_details": {
+        "cache_write_tokens": 1471,
+        "cached_tokens": 0
+      },
+      "output_tokens": 229,
+      "output_tokens_details": {
+        "reasoning_tokens": 53
+      },
+      "total_tokens": 1703
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Israel's Supreme Court ruling requiring ultra-Orthodox men to undergo compulsory military service\",\n  \"conflict_relevance\": \"The article discusses Israel's ongoing war in Gaza as context for military manpower shortages, troop deployment, and political tensions over conscription, but the primary focus is domestic Israeli religious, legal, and coalition politics.\",\n  \"reason\": \"The Gaza war and military operations are mentioned meaningfully in relation to the draft ruling and the army's need for additional forces, yet the article is not centrally about Gaza, Palestinians, or the Israel-Hamas conflict.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:49:34Z",
+  "duration_seconds": 3.369,
+  "error": null
+}

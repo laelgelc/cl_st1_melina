@@ -1,0 +1,65 @@
+{
+  "article_id": "106854837",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_03/nz/106854837.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_03/nz/106854837.json"
+  },
+  "manifest_row": {
+    "article_id": "106854837",
+    "group": "global_north_2024_03",
+    "country_code": "nz",
+    "filepath": "corpus/02_now_organised/global_north_2024_03/nz/106854837.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.96,
+    "gaza_role": "passing",
+    "main_topic": "Auckland local government transport, housing, and planning policy",
+    "conflict_relevance": "The main article is unrelated to Gaza, but an embedded roundup item reports New Zealand funding for humanitarian needs in Gaza and the West Bank and comments on the impact of the Israel-Hamas conflict on civilians.",
+    "reason": "The article primarily concerns Auckland transport governance, infrastructure, and housing planning. Gaza appears only in a separate, brief embedded news item, which contains meaningful but very limited conflict-related discourse.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "259ff78011f10cc36c611f63b573f29be9610cb825c06dff769aa1762275d0b4",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "08f2fbad29cf983f366e181e9a645e69b700d5a7246cf52c21c74b7dc588c717",
+    "raw_response_text_sha256": "cbb392845f49318decb5a05b4622d8f0bf867711f72e9382ed8dab0b9a624ce6"
+  },
+  "api_metadata": {
+    "id": "resp_0058185ea276d5ac006aaa0941917087d280b61f8b1053000a",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789528385.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1638,
+      "input_tokens_details": {
+        "cache_write_tokens": 1635,
+        "cached_tokens": 0
+      },
+      "output_tokens": 266,
+      "output_tokens_details": {
+        "reasoning_tokens": 103
+      },
+      "total_tokens": 1904
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.96,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Auckland local government transport, housing, and planning policy\",\n  \"conflict_relevance\": \"The main article is unrelated to Gaza, but an embedded roundup item reports New Zealand funding for humanitarian needs in Gaza and the West Bank and comments on the impact of the Israel-Hamas conflict on civilians.\",\n  \"reason\": \"The article primarily concerns Auckland transport governance, infrastructure, and housing planning. Gaza appears only in a separate, brief embedded news item, which contains meaningful but very limited conflict-related discourse.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:13:18Z",
+  "duration_seconds": 13.976,
+  "error": null
+}

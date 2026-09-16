@@ -1,0 +1,65 @@
+{
+  "article_id": "123807090",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_04/us/123807090.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_04/us/123807090.json"
+  },
+  "manifest_row": {
+    "article_id": "123807090",
+    "group": "global_north_2025_04",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2025_04/us/123807090.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.96,
+    "gaza_role": "substantial",
+    "main_topic": "Daily news roundup covering the Oklahoma City bombing anniversary, Pope Francis, US national security, Gaza, Harvard, and cultural news",
+    "conflict_relevance": "Includes a substantive report on an Israeli military investigation into the killing of Gaza emergency responders, as well as a separate item about a Gaza war photographer killed in an airstrike.",
+    "reason": "The article is a broad news roundup rather than a focused report on Gaza or the Israel-Palestine conflict, but its Gaza-related sections contain meaningful detail about military action, alleged violations, civilian deaths, and war reporting.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "6a2423d91b556952598d210504e3955b60943caa4d9b73659be176f0a5b9175a",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "2e454678eb421fc3fd1ca24e92057cde4b36156ed68d006e7d9d389f4594d317",
+    "raw_response_text_sha256": "21e61eae58aff9d3e741cad28616f13ce5745d6e018f665265913e18422f73bb"
+  },
+  "api_metadata": {
+    "id": "resp_03d8e50d08614422006aaa2a8034b087d19a802c5e54fb2c68",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789536896.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2155,
+      "input_tokens_details": {
+        "cache_write_tokens": 2152,
+        "cached_tokens": 0
+      },
+      "output_tokens": 322,
+      "output_tokens_details": {
+        "reasoning_tokens": 142
+      },
+      "total_tokens": 2477
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.96,\n  \"gaza_role\": \"substantial\",\n  \"main_topic\": \"Daily news roundup covering the Oklahoma City bombing anniversary, Pope Francis, US national security, Gaza, Harvard, and cultural news\",\n  \"conflict_relevance\": \"Includes a substantive report on an Israeli military investigation into the killing of Gaza emergency responders, as well as a separate item about a Gaza war photographer killed in an airstrike.\",\n  \"reason\": \"The article is a broad news roundup rather than a focused report on Gaza or the Israel-Palestine conflict, but its Gaza-related sections contain meaningful detail about military action, alleged violations, civilian deaths, and war reporting.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T05:34:59Z",
+  "duration_seconds": 3.902,
+  "error": null
+}

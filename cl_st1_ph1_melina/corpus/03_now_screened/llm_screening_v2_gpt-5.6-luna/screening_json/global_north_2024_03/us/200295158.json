@@ -1,0 +1,65 @@
+{
+  "article_id": "200295158",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_03/us/200295158.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_03/us/200295158.json"
+  },
+  "manifest_row": {
+    "article_id": "200295158",
+    "group": "global_north_2024_03",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2024_03/us/200295158.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.96,
+    "gaza_role": "passing",
+    "main_topic": "New York City subway safety and a collection of reader letters on domestic political and social issues",
+    "conflict_relevance": "One reader letter contains substantive discourse about Hamas, Palestinians, Israel, Gaza, terrorism, humanitarian conditions, and U.S. accountability, but the overall article is a multi-item letters page dominated by unrelated topics.",
+    "reason": "The Gaza-related material is meaningful but limited to a single embedded letter within a largely unrelated collection, so it is useful for broader discourse analysis but not as core conflict coverage.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "ee5d78885395c7353022ca755246095f03ef02efd31438efd15d233392c45355",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "79cfc0596a916403bd0dac9898a55a7296621391c70ab5ccefd9940c368bd94d",
+    "raw_response_text_sha256": "b88f5ca9fdea6b5e6d883497935fcac8eb23bcaa0f5adf0ea5689470065544d9"
+  },
+  "api_metadata": {
+    "id": "resp_0897b4eff2ea263f006aaa0a586ae087d2996972a0f5edd06d",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789528664.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2386,
+      "input_tokens_details": {
+        "cache_write_tokens": 2383,
+        "cached_tokens": 0
+      },
+      "output_tokens": 411,
+      "output_tokens_details": {
+        "reasoning_tokens": 243
+      },
+      "total_tokens": 2797
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.96,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"New York City subway safety and a collection of reader letters on domestic political and social issues\",\n  \"conflict_relevance\": \"One reader letter contains substantive discourse about Hamas, Palestinians, Israel, Gaza, terrorism, humanitarian conditions, and U.S. accountability, but the overall article is a multi-item letters page dominated by unrelated topics.\",\n  \"reason\": \"The Gaza-related material is meaningful but limited to a single embedded letter within a largely unrelated collection, so it is useful for broader discourse analysis but not as core conflict coverage.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:17:51Z",
+  "duration_seconds": 7.417,
+  "error": null
+}

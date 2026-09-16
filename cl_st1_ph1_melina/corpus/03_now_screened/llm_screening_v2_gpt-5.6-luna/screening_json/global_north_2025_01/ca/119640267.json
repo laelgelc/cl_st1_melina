@@ -1,0 +1,65 @@
+{
+  "article_id": "119640267",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_01/ca/119640267.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_01/ca/119640267.json"
+  },
+  "manifest_row": {
+    "article_id": "119640267",
+    "group": "global_north_2025_01",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2025_01/ca/119640267.txt"
+  },
+  "screening": {
+    "category": "CORE",
+    "confidence": 0.99,
+    "gaza_role": "central",
+    "main_topic": "Israeli strikes, casualties, and funeral prayers in the Gaza Strip during the Israel-Hamas war",
+    "conflict_relevance": "The article directly reports deaths from Israeli strikes in Gaza, funerals, civilian casualties, and the broader Israel-Hamas war.",
+    "reason": "The leading article content is centrally focused on Gaza, Israeli military strikes, Palestinian deaths, and the humanitarian consequences of the war. It is followed by several unrelated entertainment snippets, indicating a multi-article or extraction issue, but the main Gaza report is clearly core material.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": true
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "394379301c201962812982f001a8956d6da76068097216c278d956f112a3a04e",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "21dbe6405737bf9e3782f4bf182a12b61261da6794e61413713ed402f2f89ecc",
+    "raw_response_text_sha256": "17ab3941ef29880ce0849bd7a0d182642b8a5695d4786f649d4cb9cb5edc4810"
+  },
+  "api_metadata": {
+    "id": "resp_0657e64e705dc298006aaa1f2142d487d28267dfad6c812020",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789533985.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1156,
+      "input_tokens_details": {
+        "cache_write_tokens": 1153,
+        "cached_tokens": 0
+      },
+      "output_tokens": 253,
+      "output_tokens_details": {
+        "reasoning_tokens": 82
+      },
+      "total_tokens": 1409
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"CORE\",\n  \"confidence\": 0.99,\n  \"gaza_role\": \"central\",\n  \"main_topic\": \"Israeli strikes, casualties, and funeral prayers in the Gaza Strip during the Israel-Hamas war\",\n  \"conflict_relevance\": \"The article directly reports deaths from Israeli strikes in Gaza, funerals, civilian casualties, and the broader Israel-Hamas war.\",\n  \"reason\": \"The leading article content is centrally focused on Gaza, Israeli military strikes, Palestinian deaths, and the humanitarian consequences of the war. It is followed by several unrelated entertainment snippets, indicating a multi-article or extraction issue, but the main Gaza report is clearly core material.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": true\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T04:46:28Z",
+  "duration_seconds": 3.181,
+  "error": null
+}

@@ -1,0 +1,65 @@
+{
+  "article_id": "103741562",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_11/nz/103741562.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_11/nz/103741562.json"
+  },
+  "manifest_row": {
+    "article_id": "103741562",
+    "group": "global_north_2023_11",
+    "country_code": "nz",
+    "filepath": "corpus/02_now_organised/global_north_2023_11/nz/103741562.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.88,
+    "gaza_role": "passing",
+    "main_topic": "Cystic Fibrosis Christmas Tree Festival in Wellington",
+    "conflict_relevance": "The main article is unrelated to Gaza, but an embedded roundup item reports the New Zealand Labour Party's call for an urgent ceasefire in Gaza and Israel.",
+    "reason": "Gaza-related content appears only as a brief but meaningful embedded news snippet, making the article peripheral rather than core.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "d163cf226bd50f203f300e09b1f3fb8b2e00a9afcda7b2f2a30fe1b1e5b7d6b6",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "b83f544c1934b62a1d1c0bcddf246966d7673c7a840ce1843ebee0985d2fe410",
+    "raw_response_text_sha256": "6fb5ef3414f86b9c593be42e4e12da787bc7ea18c26dcff559c73eda0adb3d98"
+  },
+  "api_metadata": {
+    "id": "resp_0c9360f7e5384dd7006aa9fdce984487d292489f6fc51a43e0",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789525454.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1996,
+      "input_tokens_details": {
+        "cache_write_tokens": 1993,
+        "cached_tokens": 0
+      },
+      "output_tokens": 313,
+      "output_tokens_details": {
+        "reasoning_tokens": 173
+      },
+      "total_tokens": 2309
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.88,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Cystic Fibrosis Christmas Tree Festival in Wellington\",\n  \"conflict_relevance\": \"The main article is unrelated to Gaza, but an embedded roundup item reports the New Zealand Labour Party's call for an urgent ceasefire in Gaza and Israel.\",\n  \"reason\": \"Gaza-related content appears only as a brief but meaningful embedded news snippet, making the article peripheral rather than core.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:24:18Z",
+  "duration_seconds": 4.082,
+  "error": null
+}

@@ -1,0 +1,65 @@
+{
+  "article_id": "102868274",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_south_2023_10/ng/102868274.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_south_2023_10/ng/102868274.json"
+  },
+  "manifest_row": {
+    "article_id": "102868274",
+    "group": "global_south_2023_10",
+    "country_code": "ng",
+    "filepath": "corpus/02_now_organised/global_south_2023_10/ng/102868274.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.96,
+    "gaza_role": "passing",
+    "main_topic": "Mixed news roundup led by a gymnastics retirement and abuse allegations",
+    "conflict_relevance": "Gaza appears only in a brief, unrelated roundup item about Israeli airstrikes and the West Bank; it is not developed as a substantive topic.",
+    "reason": "The article is a collection of unrelated news snippets, with the Gaza reference limited to a passing embedded item rather than meaningful coverage.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "eccd53ac9ae7d434cd0803984d0e65d80dfa991d9b10c78c80ac6c6995edd3cc",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "51812bd401c06492f7b8d89e570fd8e1c3d96d0d86adf78b35f23c2ef01dced4",
+    "raw_response_text_sha256": "eee939f1cd5d7537e66d8c41d033ffc3cce1d7aaa6bb15c69d10a8e837d6cea7"
+  },
+  "api_metadata": {
+    "id": "resp_0fb54d5f122788ad006aaa33b3d7c487d188d5c2722ebb463a",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789539251.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1230,
+      "input_tokens_details": {
+        "cache_write_tokens": 1227,
+        "cached_tokens": 0
+      },
+      "output_tokens": 288,
+      "output_tokens_details": {
+        "reasoning_tokens": 147
+      },
+      "total_tokens": 1518
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.96,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Mixed news roundup led by a gymnastics retirement and abuse allegations\",\n  \"conflict_relevance\": \"Gaza appears only in a brief, unrelated roundup item about Israeli airstrikes and the West Bank; it is not developed as a substantive topic.\",\n  \"reason\": \"The article is a collection of unrelated news snippets, with the Gaza reference limited to a passing embedded item rather than meaningful coverage.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T06:14:16Z",
+  "duration_seconds": 4.449,
+  "error": null
+}

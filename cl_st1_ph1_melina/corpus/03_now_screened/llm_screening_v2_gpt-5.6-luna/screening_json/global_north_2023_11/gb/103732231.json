@@ -1,0 +1,65 @@
+{
+  "article_id": "103732231",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_11/gb/103732231.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_11/gb/103732231.json"
+  },
+  "manifest_row": {
+    "article_id": "103732231",
+    "group": "global_north_2023_11",
+    "country_code": "gb",
+    "filepath": "corpus/02_now_organised/global_north_2023_11/gb/103732231.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.96,
+    "gaza_role": "passing",
+    "main_topic": "A BBC Breakfast broadcast interruption caused by a studio evacuation and technical glitch",
+    "conflict_relevance": "The article only mentions that the interruption cut to a BBC report about the Gaza ceasefire; it provides no substantive discussion of Gaza or the conflict.",
+    "reason": "Gaza appears solely as the subject of an incidental news segment encountered during a report about a broadcasting error. The article's focus is the technical disruption, evacuation, and viewer reactions.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "234a6822d85718e806844c14bf60e5c7d02759e68e90e12e617568ef33e9da22",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "e4501baded1a16d4c7ff47ae92c2e6fd3c9a93614230e8bb16147bc0ee7d8dc9",
+    "raw_response_text_sha256": "728df111a33d8171533dc4114160fb577031536ad25994a5cd015fe12c7b6399"
+  },
+  "api_metadata": {
+    "id": "resp_02b8cf3aed5248ef006aa9fd24bb4887d2829ca7f647042741",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789525284.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 985,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 350,
+      "output_tokens_details": {
+        "reasoning_tokens": 197
+      },
+      "total_tokens": 1335
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.96,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"A BBC Breakfast broadcast interruption caused by a studio evacuation and technical glitch\",\n  \"conflict_relevance\": \"The article only mentions that the interruption cut to a BBC report about the Gaza ceasefire; it provides no substantive discussion of Gaza or the conflict.\",\n  \"reason\": \"Gaza appears solely as the subject of an incidental news segment encountered during a report about a broadcasting error. The article's focus is the technical disruption, evacuation, and viewer reactions.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:21:29Z",
+  "duration_seconds": 4.729,
+  "error": null
+}

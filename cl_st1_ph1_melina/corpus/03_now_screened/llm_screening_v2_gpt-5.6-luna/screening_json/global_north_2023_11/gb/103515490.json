@@ -1,0 +1,65 @@
+{
+  "article_id": "103515490",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_11/gb/103515490.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_11/gb/103515490.json"
+  },
+  "manifest_row": {
+    "article_id": "103515490",
+    "group": "global_north_2023_11",
+    "country_code": "gb",
+    "filepath": "corpus/02_now_organised/global_north_2023_11/gb/103515490.txt"
+  },
+  "screening": {
+    "category": "CORE",
+    "confidence": 0.98,
+    "gaza_role": "central",
+    "main_topic": "Conditions at Gaza's largest hospital during Israeli military operations",
+    "conflict_relevance": "Directly concerns the safety of Palestinian patients and medical staff at a Gaza hospital following the entry of Israeli forces.",
+    "reason": "The substantive article content focuses on a major humanitarian and military development in Gaza. Although unrelated China-related text and Reuters boilerplate are also present, the Gaza hospital report is the main conflict-relevant item.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": true
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "19de1c7f85e9a02cc1215654a469585e4ea63a8d6089b9d866814ddd79cba3fc",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "7daa9a9aeff3f7f4726fd85af7bab557ec254dd5b5b4eee4c3d18b4ca7d052c9",
+    "raw_response_text_sha256": "92227fe3b1ff9b1acfad032077ccd08f3084d07c753e522d36c8ed292e429371"
+  },
+  "api_metadata": {
+    "id": "resp_00790894a9fa3164006aa9fceab3d487d28a1774989cc3b1ad",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789525226.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 750,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 230,
+      "output_tokens_details": {
+        "reasoning_tokens": 107
+      },
+      "total_tokens": 980
+    }
+  },
+  "raw_response_text": "{\"category\":\"CORE\",\"confidence\":0.98,\"gaza_role\":\"central\",\"main_topic\":\"Conditions at Gaza's largest hospital during Israeli military operations\",\"conflict_relevance\":\"Directly concerns the safety of Palestinian patients and medical staff at a Gaza hospital following the entry of Israeli forces.\",\"reason\":\"The substantive article content focuses on a major humanitarian and military development in Gaza. Although unrelated China-related text and Reuters boilerplate are also present, the Gaza hospital report is the main conflict-relevant item.\",\"multi_article_or_snippet_issue\":true,\"recommended_for_main_corpus\":true}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:20:30Z",
+  "duration_seconds": 3.618,
+  "error": null
+}

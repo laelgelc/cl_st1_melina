@@ -1,0 +1,65 @@
+{
+  "article_id": "200425989",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_04/us/200425989.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_04/us/200425989.json"
+  },
+  "manifest_row": {
+    "article_id": "200425989",
+    "group": "global_north_2024_04",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2024_04/us/200425989.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.95,
+    "gaza_role": "passing",
+    "main_topic": "Recognition of a school bus driver who protected students during an onboard attack",
+    "conflict_relevance": "An embedded snippet briefly discusses growing pro-Palestinian university demonstrations against Israel's war with Hamas in Gaza, and another passing reference mentions U.S. aid to Israel.",
+    "reason": "The main article is unrelated to Gaza or Israel/Palestine, but it contains a meaningful embedded news item about pro-Palestinian protests and a brief reference to aid for Israel. This makes it peripheral rather than core.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "c3b7533877e617896adb8a26e484a4ac0690fe421405b2eac3c8eac66862ed92",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "8e34a5b3a39c4a09ae0d1f2a803fc4b86d2bad0149cb95a531dc127c5f96382e",
+    "raw_response_text_sha256": "1bbf4aee34aac53a6fb8834fc40041945faea41a7f8db564bc6f295308004634"
+  },
+  "api_metadata": {
+    "id": "resp_00113c90ac42740e006aaa0d259e9887d293b35d8ecb9ba192",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789529381.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1797,
+      "input_tokens_details": {
+        "cache_write_tokens": 1794,
+        "cached_tokens": 0
+      },
+      "output_tokens": 334,
+      "output_tokens_details": {
+        "reasoning_tokens": 165
+      },
+      "total_tokens": 2131
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.95,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Recognition of a school bus driver who protected students during an onboard attack\",\n  \"conflict_relevance\": \"An embedded snippet briefly discusses growing pro-Palestinian university demonstrations against Israel's war with Hamas in Gaza, and another passing reference mentions U.S. aid to Israel.\",\n  \"reason\": \"The main article is unrelated to Gaza or Israel/Palestine, but it contains a meaningful embedded news item about pro-Palestinian protests and a brief reference to aid for Israel. This makes it peripheral rather than core.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:29:46Z",
+  "duration_seconds": 5.191,
+  "error": null
+}

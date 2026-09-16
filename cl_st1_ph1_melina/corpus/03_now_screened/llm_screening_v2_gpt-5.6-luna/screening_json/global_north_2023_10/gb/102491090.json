@@ -1,0 +1,65 @@
+{
+  "article_id": "102491090",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_10/gb/102491090.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_10/gb/102491090.json"
+  },
+  "manifest_row": {
+    "article_id": "102491090",
+    "group": "global_north_2023_10",
+    "country_code": "gb",
+    "filepath": "corpus/02_now_organised/global_north_2023_10/gb/102491090.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "background",
+    "main_topic": "Global financial markets, bond yields, gold, oil, and investor risk sentiment",
+    "conflict_relevance": "The article discusses the Israel-Hamas clashes, Gaza blockade, military mobilization, and market reactions, including safe-haven demand and effects on oil and Israeli assets, but the primary focus is financial-market analysis.",
+    "reason": "The conflict is a meaningful background factor in the market coverage rather than the central subject. The text also contains a separate gold-market snippet that references the clashes as a cause of increased demand for safe-haven investments.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "e630edb37d04b77267ef8d5292f0c9e84f238b456b8b034adf7675a95c4bf925",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "9f76948890530a7c583dfa208cb4cc16437c0d2116058d32727d5dcde48b8dfb",
+    "raw_response_text_sha256": "7510dd1354148eaab350339df3ed6cf97b9a7c3070a9232ba2679f0abf6c7c15"
+  },
+  "api_metadata": {
+    "id": "resp_0308be62bb7d1feb006aa9f6fdd49487d2b046339f4f277e43",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789523709.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2072,
+      "input_tokens_details": {
+        "cache_write_tokens": 2069,
+        "cached_tokens": 0
+      },
+      "output_tokens": 244,
+      "output_tokens_details": {
+        "reasoning_tokens": 69
+      },
+      "total_tokens": 2316
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Global financial markets, bond yields, gold, oil, and investor risk sentiment\",\n  \"conflict_relevance\": \"The article discusses the Israel-Hamas clashes, Gaza blockade, military mobilization, and market reactions, including safe-haven demand and effects on oil and Israeli assets, but the primary focus is financial-market analysis.\",\n  \"reason\": \"The conflict is a meaningful background factor in the market coverage rather than the central subject. The text also contains a separate gold-market snippet that references the clashes as a cause of increased demand for safe-haven investments.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T01:55:13Z",
+  "duration_seconds": 3.416,
+  "error": null
+}

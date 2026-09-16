@@ -1,0 +1,65 @@
+{
+  "article_id": "101611008",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_south_2023_09/ng/101611008.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_south_2023_09/ng/101611008.json"
+  },
+  "manifest_row": {
+    "article_id": "101611008",
+    "group": "global_south_2023_09",
+    "country_code": "ng",
+    "filepath": "corpus/02_now_organised/global_south_2023_09/ng/101611008.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "gaza_role": "boilerplate_or_unrelated",
+    "main_topic": "Nasarawa State APC efforts to bring defecting politicians back into the party",
+    "conflict_relevance": "No meaningful relevance to Gaza, Palestine, Israel/Palestine, or related conflict discourse; Gaza appears only as a politician's surname.",
+    "reason": "The article concerns Nigerian state-level party politics, and the sole occurrence of 'Gaza' refers to Jonathan Gaza rather than the conflict.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "fa1840e5b8d047a107b2ec52af85f45b96471edfd89a0421c9bbf309a4aec144",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "36e1edc33c86c64a1304464deb046105d82cb4af49a0862adefc3e28ff26c90a",
+    "raw_response_text_sha256": "09c962bda03df0761d6de56dd291027672e1131c7b8825ff3d63ddb2e32e4d78"
+  },
+  "api_metadata": {
+    "id": "resp_054188445f3bbc7d006aaa31f2c4a487d1994e296be49e7410",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789538802.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1171,
+      "input_tokens_details": {
+        "cache_write_tokens": 1168,
+        "cached_tokens": 0
+      },
+      "output_tokens": 195,
+      "output_tokens_details": {
+        "reasoning_tokens": 45
+      },
+      "total_tokens": 1366
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"gaza_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Nasarawa State APC efforts to bring defecting politicians back into the party\",\n  \"conflict_relevance\": \"No meaningful relevance to Gaza, Palestine, Israel/Palestine, or related conflict discourse; Gaza appears only as a politician's surname.\",\n  \"reason\": \"The article concerns Nigerian state-level party politics, and the sole occurrence of 'Gaza' refers to Jonathan Gaza rather than the conflict.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T06:06:46Z",
+  "duration_seconds": 4.371,
+  "error": null
+}

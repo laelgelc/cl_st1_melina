@@ -1,0 +1,65 @@
+{
+  "article_id": "119733399",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_01/us/119733399.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_01/us/119733399.json"
+  },
+  "manifest_row": {
+    "article_id": "119733399",
+    "group": "global_north_2025_01",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2025_01/us/119733399.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "background",
+    "main_topic": "Sudan conflict, RSF sanctions, humanitarian crisis, and alleged foreign support",
+    "conflict_relevance": "The article is primarily about the war and humanitarian crisis in Sudan, but includes a substantive comparison involving US support for Israel's military campaign in Gaza, alleged genocide, Palestinian deaths, and US denial of the allegation.",
+    "reason": "Gaza is not the central subject, but the discussion meaningfully invokes the Gaza war, US military aid, Israeli military action, civilian casualties, and genocide allegations as part of a broader human-rights and foreign-policy discourse.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "0f31a3bc9ab8b77535bd8a2887d63771154785827316e253a1f052d8ede3f8d0",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "5cf0db9456220e3cd1ca86128c5ccac2dd5810c987622a24fbf7830257d0882b",
+    "raw_response_text_sha256": "9486320999835a4bcdda230015228abf85a47693ac524f4a0929fae18181f026"
+  },
+  "api_metadata": {
+    "id": "resp_001f5e148f3bc22d006aaa20d9892087d2ba0b26b7659e5bd1",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789534425.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 885,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 237,
+      "output_tokens_details": {
+        "reasoning_tokens": 59
+      },
+      "total_tokens": 1122
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Sudan conflict, RSF sanctions, humanitarian crisis, and alleged foreign support\",\n  \"conflict_relevance\": \"The article is primarily about the war and humanitarian crisis in Sudan, but includes a substantive comparison involving US support for Israel's military campaign in Gaza, alleged genocide, Palestinian deaths, and US denial of the allegation.\",\n  \"reason\": \"Gaza is not the central subject, but the discussion meaningfully invokes the Gaza war, US military aid, Israeli military action, civilian casualties, and genocide allegations as part of a broader human-rights and foreign-policy discourse.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T04:53:48Z",
+  "duration_seconds": 2.668,
+  "error": null
+}

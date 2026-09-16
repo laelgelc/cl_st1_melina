@@ -1,0 +1,65 @@
+{
+  "article_id": "102721740",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_south_2023_10/in/102721740.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_south_2023_10/in/102721740.json"
+  },
+  "manifest_row": {
+    "article_id": "102721740",
+    "group": "global_south_2023_10",
+    "country_code": "in",
+    "filepath": "corpus/02_now_organised/global_south_2023_10/in/102721740.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "background",
+    "main_topic": "Business news roundup covering markets, government spending, technology, and corporate developments",
+    "conflict_relevance": "Includes a brief news segment on Biden's visit to Israel during the Israel-Gaza war and the Gaza hospital blast, but the article is primarily unrelated business coverage.",
+    "reason": "The conflict appears as one item in a multi-topic business podcast transcript rather than as the central subject. It contains meaningful but limited discussion of Israel, Gaza, Biden's visit, and the hospital attack, making it peripheral rather than core.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "f184f2b02c830f5d101d9914c00c11ddc2cc44547ed9d6687b86dbc9f549ea82",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "a7f995439b02ca7ecb5724977138e114ebe1f042331bef0fcf38495ecbdc91f8",
+    "raw_response_text_sha256": "bb5e3929aa7b85d34daaf2b733bf8c35858b8465634fcfcde6cf084099b1dfdc"
+  },
+  "api_metadata": {
+    "id": "resp_045d30bf5474da06006aaa32b959b087d1ade1fedad3f7839f",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789539001.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1867,
+      "input_tokens_details": {
+        "cache_write_tokens": 1864,
+        "cached_tokens": 0
+      },
+      "output_tokens": 227,
+      "output_tokens_details": {
+        "reasoning_tokens": 58
+      },
+      "total_tokens": 2094
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Business news roundup covering markets, government spending, technology, and corporate developments\",\n  \"conflict_relevance\": \"Includes a brief news segment on Biden's visit to Israel during the Israel-Gaza war and the Gaza hospital blast, but the article is primarily unrelated business coverage.\",\n  \"reason\": \"The conflict appears as one item in a multi-topic business podcast transcript rather than as the central subject. It contains meaningful but limited discussion of Israel, Gaza, Biden's visit, and the hospital attack, making it peripheral rather than core.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T06:10:04Z",
+  "duration_seconds": 3.42,
+  "error": null
+}

@@ -1,0 +1,65 @@
+{
+  "article_id": "117270537",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_11/ie/117270537.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_11/ie/117270537.json"
+  },
+  "manifest_row": {
+    "article_id": "117270537",
+    "group": "global_north_2024_11",
+    "country_code": "ie",
+    "filepath": "corpus/02_now_organised/global_north_2024_11/ie/117270537.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.96,
+    "gaza_role": "passing",
+    "main_topic": "Comparative economic effects of a potential Trump or Harris presidency on Vietnam",
+    "conflict_relevance": "The main article is unrelated to Gaza, but an embedded snippet briefly refers to Israel's bombing of Gaza in connection with Greta Thunberg's political activism.",
+    "reason": "The Gaza reference appears only in a separate, unrelated news snippet rather than in the main article. It provides minimal but meaningful conflict-related discourse, warranting peripheral rather than core classification.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "69454a5042eb9f4ef99544634d52adef7c0ad2b1ce0cd75324a618fefdfd08f4",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "936b0c89e6e406be2e3590a65623ad1feb236debcdd1cdece4f40d1a39056973",
+    "raw_response_text_sha256": "7c9617c463e62aaee256695dd0ee815ad05ad2272b5f8b2f0174257cbd204267"
+  },
+  "api_metadata": {
+    "id": "resp_0effbb35bab4c86a006aaa1b454c4087d2b1fd6f5f89e894b6",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789532997.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1671,
+      "input_tokens_details": {
+        "cache_write_tokens": 1668,
+        "cached_tokens": 0
+      },
+      "output_tokens": 291,
+      "output_tokens_details": {
+        "reasoning_tokens": 135
+      },
+      "total_tokens": 1962
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.96,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Comparative economic effects of a potential Trump or Harris presidency on Vietnam\",\n  \"conflict_relevance\": \"The main article is unrelated to Gaza, but an embedded snippet briefly refers to Israel's bombing of Gaza in connection with Greta Thunberg's political activism.\",\n  \"reason\": \"The Gaza reference appears only in a separate, unrelated news snippet rather than in the main article. It provides minimal but meaningful conflict-related discourse, warranting peripheral rather than core classification.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T04:30:01Z",
+  "duration_seconds": 3.991,
+  "error": null
+}

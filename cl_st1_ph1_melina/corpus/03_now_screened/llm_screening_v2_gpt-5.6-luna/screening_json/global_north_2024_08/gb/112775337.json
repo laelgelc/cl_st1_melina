@@ -1,0 +1,65 @@
+{
+  "article_id": "112775337",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_08/gb/112775337.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_08/gb/112775337.json"
+  },
+  "manifest_row": {
+    "article_id": "112775337",
+    "group": "global_north_2024_08",
+    "country_code": "gb",
+    "filepath": "corpus/02_now_organised/global_north_2024_08/gb/112775337.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "gaza_role": "passing",
+    "main_topic": "A BBC regional news broadcast disrupted by a fire alarm",
+    "conflict_relevance": "Gaza is mentioned only as the subject of a brief broadcast segment that was interrupted during an unrelated fire-alarm incident.",
+    "reason": "The article is primarily about a television studio disruption and contains no substantive discussion of Gaza, the conflict, or related discourse.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "60ecf92ae05917c3e7e031e643189bf1fb8699170ea965d29ff9e811d69db1fc",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "ea64c4854033fd8fadf12ffb109705c4a800402f25032ceae605005e752bfbe5",
+    "raw_response_text_sha256": "dc84ffc2638c93b72fbd7f975dcf0db59c8e09563a52c490921541fc1909c4e8"
+  },
+  "api_metadata": {
+    "id": "resp_07245bcca871a734006aaa143ecd0487d2a4b21dfa7cce90d4",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789531198.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1153,
+      "input_tokens_details": {
+        "cache_write_tokens": 1150,
+        "cached_tokens": 0
+      },
+      "output_tokens": 270,
+      "output_tokens_details": {
+        "reasoning_tokens": 137
+      },
+      "total_tokens": 1423
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"A BBC regional news broadcast disrupted by a fire alarm\",\n  \"conflict_relevance\": \"Gaza is mentioned only as the subject of a brief broadcast segment that was interrupted during an unrelated fire-alarm incident.\",\n  \"reason\": \"The article is primarily about a television studio disruption and contains no substantive discussion of Gaza, the conflict, or related discourse.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T04:00:02Z",
+  "duration_seconds": 4.04,
+  "error": null
+}

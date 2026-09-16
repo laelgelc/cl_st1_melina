@@ -1,0 +1,65 @@
+{
+  "article_id": "200279160",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_03/us/200279160.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_03/us/200279160.json"
+  },
+  "manifest_row": {
+    "article_id": "200279160",
+    "group": "global_north_2024_03",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2024_03/us/200279160.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.96,
+    "gaza_role": "passing",
+    "main_topic": "U.S. reproductive rights and abortion policy",
+    "conflict_relevance": "The war in Gaza is mentioned only briefly as one of several issues President Biden may address; the article contains no substantive discussion of the conflict.",
+    "reason": "The article is centrally about abortion access, reproductive healthcare, and political responses to the post-Dobbs environment. Gaza appears in a single passing reference and does not contribute meaningful conflict-related discourse.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "8efcb18d1507163a0f623a7e7154f1093880a32c23336b2176f3490302e0fb30",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "c78c7f88553b113c012cb19d4aff8b5217f920c8df0445dee0bbf39aa18dafa0",
+    "raw_response_text_sha256": "89b0ef2db881229254441965c1981bc567b4ed90539abf0326253a6a54a747da"
+  },
+  "api_metadata": {
+    "id": "resp_00b79187fb3693a9006aaa0a2debd487d2bef4fbfd4089da2b",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789528621.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1827,
+      "input_tokens_details": {
+        "cache_write_tokens": 1824,
+        "cached_tokens": 0
+      },
+      "output_tokens": 295,
+      "output_tokens_details": {
+        "reasoning_tokens": 146
+      },
+      "total_tokens": 2122
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.96,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"U.S. reproductive rights and abortion policy\",\n  \"conflict_relevance\": \"The war in Gaza is mentioned only briefly as one of several issues President Biden may address; the article contains no substantive discussion of the conflict.\",\n  \"reason\": \"The article is centrally about abortion access, reproductive healthcare, and political responses to the post-Dobbs environment. Gaza appears in a single passing reference and does not contribute meaningful conflict-related discourse.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:17:05Z",
+  "duration_seconds": 4.078,
+  "error": null
+}

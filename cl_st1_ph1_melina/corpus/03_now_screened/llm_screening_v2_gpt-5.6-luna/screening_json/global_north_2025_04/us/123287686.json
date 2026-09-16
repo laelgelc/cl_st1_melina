@@ -1,0 +1,65 @@
+{
+  "article_id": "123287686",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_04/us/123287686.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_04/us/123287686.json"
+  },
+  "manifest_row": {
+    "article_id": "123287686",
+    "group": "global_north_2025_04",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2025_04/us/123287686.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.96,
+    "gaza_role": "background",
+    "main_topic": "Netanyahu's Washington visit and U.S.-Israel trade tensions over tariffs",
+    "conflict_relevance": "The article briefly mentions efforts to secure the release of remaining Israeli hostages in Gaza as one topic expected to arise in Netanyahu's meetings, but the main focus is tariffs and trade policy.",
+    "reason": "The article is primarily about economic and diplomatic discussions concerning U.S. tariffs on Israel. Its reference to hostages in Gaza provides meaningful but limited conflict-related context, making it peripheral rather than core.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "55f1dc18ed96928142b549a2eef44dbde83f97fb92d292316c4499b61eb8f482",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "b951ea58fc53a60a1a577d89b909f8d175ac064b49cde8f6fa204b40d5f29947",
+    "raw_response_text_sha256": "23fc12578a9b2dd3827000f223ffed21951e85d4d2b48bc62202d2e9516c4622"
+  },
+  "api_metadata": {
+    "id": "resp_083313b5449085d2006aaa29ff947c87d19925b3aacafb2ec9",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789536767.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 843,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 234,
+      "output_tokens_details": {
+        "reasoning_tokens": 68
+      },
+      "total_tokens": 1077
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.96,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Netanyahu's Washington visit and U.S.-Israel trade tensions over tariffs\",\n  \"conflict_relevance\": \"The article briefly mentions efforts to secure the release of remaining Israeli hostages in Gaza as one topic expected to arise in Netanyahu's meetings, but the main focus is tariffs and trade policy.\",\n  \"reason\": \"The article is primarily about economic and diplomatic discussions concerning U.S. tariffs on Israel. Its reference to hostages in Gaza provides meaningful but limited conflict-related context, making it peripheral rather than core.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T05:32:50Z",
+  "duration_seconds": 2.998,
+  "error": null
+}

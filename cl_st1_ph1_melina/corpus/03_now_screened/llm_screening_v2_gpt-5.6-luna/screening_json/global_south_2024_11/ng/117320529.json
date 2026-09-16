@@ -1,0 +1,65 @@
+{
+  "article_id": "117320529",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_south_2024_11/ng/117320529.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_south_2024_11/ng/117320529.json"
+  },
+  "manifest_row": {
+    "article_id": "117320529",
+    "group": "global_south_2024_11",
+    "country_code": "ng",
+    "filepath": "corpus/02_now_organised/global_south_2024_11/ng/117320529.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "gaza_role": "boilerplate_or_unrelated",
+    "main_topic": "Cement prices and construction costs in Nigeria",
+    "conflict_relevance": "No meaningful relevance to Gaza, Palestine, Israel/Palestine, or related conflict discourse; “Gaza” appears only as a person's surname.",
+    "reason": "The article concerns falling cement prices, construction materials, and Nigerian lawmakers' directives to cement manufacturers. The sole occurrence of “Gaza” is in the name Jonathan Gaza and is unrelated to the research topic.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "90d80ed27a83e76cfa9de37f1c657cf21b8ef2626af349883a0594c233088475",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "602e2ebba7855a1cf8a72c0fa1ffb418627e559371e16fcfac5ed3ed7f92afae",
+    "raw_response_text_sha256": "191e69ddaff504f22e8dce2ea4c9cfdafac801ad9e4cc70fe0102787e7e97df2"
+  },
+  "api_metadata": {
+    "id": "resp_015b9164bebf3edf006aaa4239fb9487d1b494b79d536dbafe",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789542970.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 957,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 220,
+      "output_tokens_details": {
+        "reasoning_tokens": 61
+      },
+      "total_tokens": 1177
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"gaza_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Cement prices and construction costs in Nigeria\",\n  \"conflict_relevance\": \"No meaningful relevance to Gaza, Palestine, Israel/Palestine, or related conflict discourse; “Gaza” appears only as a person's surname.\",\n  \"reason\": \"The article concerns falling cement prices, construction materials, and Nigerian lawmakers' directives to cement manufacturers. The sole occurrence of “Gaza” is in the name Jonathan Gaza and is unrelated to the research topic.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T07:16:12Z",
+  "duration_seconds": 2.876,
+  "error": null
+}

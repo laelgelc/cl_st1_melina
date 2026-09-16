@@ -1,0 +1,65 @@
+{
+  "article_id": "104175812",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_south_2023_12/in/104175812.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_south_2023_12/in/104175812.json"
+  },
+  "manifest_row": {
+    "article_id": "104175812",
+    "group": "global_south_2023_12",
+    "country_code": "in",
+    "filepath": "corpus/02_now_organised/global_south_2023_12/in/104175812.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "background",
+    "main_topic": "Egyptian presidential election and Abdel Fattah el-Sisi's reelection",
+    "conflict_relevance": "The article discusses how the Israel-Hamas war in Gaza overshadowed Egypt's election and focuses public attention on Palestinian civilian suffering. It also mentions a candidate wearing a Palestinian keffiyeh, but the article's main subject is Egyptian domestic politics.",
+    "reason": "Gaza and Palestinian suffering provide meaningful political context for the election coverage, but the conflict is not the article's central subject.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "7bfcb22354370701c820972b3c4c88948e7842a8d21c5878eea55394b73b6c55",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "adc89aad5718c9817c015371cb56992426be90e75839d01695d133d8a0f6d459",
+    "raw_response_text_sha256": "a37fb2c548537aa4eb6d015805a9d83e05e14caa55dfc35ff9a17d2738d77320"
+  },
+  "api_metadata": {
+    "id": "resp_0631d9cc36b5fab0006aaa3698d6b887d19b4ec1ec1ebb07e7",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789539992.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1578,
+      "input_tokens_details": {
+        "cache_write_tokens": 1575,
+        "cached_tokens": 0
+      },
+      "output_tokens": 239,
+      "output_tokens_details": {
+        "reasoning_tokens": 74
+      },
+      "total_tokens": 1817
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Egyptian presidential election and Abdel Fattah el-Sisi's reelection\",\n  \"conflict_relevance\": \"The article discusses how the Israel-Hamas war in Gaza overshadowed Egypt's election and focuses public attention on Palestinian civilian suffering. It also mentions a candidate wearing a Palestinian keffiyeh, but the article's main subject is Egyptian domestic politics.\",\n  \"reason\": \"Gaza and Palestinian suffering provide meaningful political context for the election coverage, but the conflict is not the article's central subject.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T06:26:36Z",
+  "duration_seconds": 3.634,
+  "error": null
+}

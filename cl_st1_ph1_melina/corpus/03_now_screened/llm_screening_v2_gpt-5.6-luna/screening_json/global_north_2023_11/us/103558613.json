@@ -1,0 +1,65 @@
+{
+  "article_id": "103558613",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_11/us/103558613.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_11/us/103558613.json"
+  },
+  "manifest_row": {
+    "article_id": "103558613",
+    "group": "global_north_2023_11",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2023_11/us/103558613.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "gaza_role": "passing",
+    "main_topic": "Local Chicago shootings, transit crash, fire, and entertainment news",
+    "conflict_relevance": "Gaza appears only as a brief mention of detained protesters in a list of unrelated local events.",
+    "reason": "The article is not substantively about Gaza or the Israel-Palestine conflict; the reference to protests demanding peace in Gaza is incidental.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "4b7da9f12aad7b8b08002ed5bb892dddc94aa869a13353064e8654e2b47434f3",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "a3ccf72e07ac414d2e0ee13a5de51c05a9197c92d58b21936736b873ebe05016",
+    "raw_response_text_sha256": "382ffafbf65ff84579a3591dbbb56854dc99eb7c9e27482809b9b9e109f7fc1e"
+  },
+  "api_metadata": {
+    "id": "resp_0aac8abde232af64006aa9feab5b6087d2852ddb148095a32a",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789525675.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 804,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 246,
+      "output_tokens_details": {
+        "reasoning_tokens": 112
+      },
+      "total_tokens": 1050
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Local Chicago shootings, transit crash, fire, and entertainment news\",\n  \"conflict_relevance\": \"Gaza appears only as a brief mention of detained protesters in a list of unrelated local events.\",\n  \"reason\": \"The article is not substantively about Gaza or the Israel-Palestine conflict; the reference to protests demanding peace in Gaza is incidental.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:27:59Z",
+  "duration_seconds": 3.813,
+  "error": null
+}

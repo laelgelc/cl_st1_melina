@@ -1,0 +1,65 @@
+{
+  "article_id": "117650005",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_11/gb/117650005.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_11/gb/117650005.json"
+  },
+  "manifest_row": {
+    "article_id": "117650005",
+    "group": "global_north_2024_11",
+    "country_code": "gb",
+    "filepath": "corpus/02_now_organised/global_north_2024_11/gb/117650005.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "background",
+    "main_topic": "Daily news roundup covering US politics, European weather, crime, culture, Sudan's civil war, and other stories",
+    "conflict_relevance": "Includes a substantive summary of a Human Rights Watch report alleging that Israel is using evacuation orders to carry out forced displacement of Palestinian civilians in Gaza.",
+    "reason": "The article is primarily a broad news roundup and Gaza appears in only one newspaper-leads item, but that item contains meaningful conflict-related discourse concerning Israel, forced displacement, Palestinian civilians, and Gaza.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "8a6f8b95a0c43faa126735f8bce1699f78569679b4af25624418c2a5c7a1de70",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "5203b2f30dc1b1757e5b0252fefec202eb444adf84cb86621172c38e07e6bb36",
+    "raw_response_text_sha256": "efc02dc6e6f9c1f89a30c61b386624da1255717603b2d947548db1c734e4216c"
+  },
+  "api_metadata": {
+    "id": "resp_025adb0a42ef4a97006aaa1ad1518887d2bac4a2e40392c2b7",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789532881.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2355,
+      "input_tokens_details": {
+        "cache_write_tokens": 2352,
+        "cached_tokens": 0
+      },
+      "output_tokens": 271,
+      "output_tokens_details": {
+        "reasoning_tokens": 106
+      },
+      "total_tokens": 2626
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Daily news roundup covering US politics, European weather, crime, culture, Sudan's civil war, and other stories\",\n  \"conflict_relevance\": \"Includes a substantive summary of a Human Rights Watch report alleging that Israel is using evacuation orders to carry out forced displacement of Palestinian civilians in Gaza.\",\n  \"reason\": \"The article is primarily a broad news roundup and Gaza appears in only one newspaper-leads item, but that item contains meaningful conflict-related discourse concerning Israel, forced displacement, Palestinian civilians, and Gaza.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T04:28:04Z",
+  "duration_seconds": 3.048,
+  "error": null
+}

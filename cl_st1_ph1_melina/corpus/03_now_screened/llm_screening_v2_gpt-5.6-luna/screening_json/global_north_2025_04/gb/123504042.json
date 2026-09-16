@@ -1,0 +1,65 @@
+{
+  "article_id": "123504042",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_04/gb/123504042.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_04/gb/123504042.json"
+  },
+  "manifest_row": {
+    "article_id": "123504042",
+    "group": "global_north_2025_04",
+    "country_code": "gb",
+    "filepath": "corpus/02_now_organised/global_north_2025_04/gb/123504042.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.95,
+    "gaza_role": "background",
+    "main_topic": "Harvard University faculty lawsuit challenging Trump administration demands and threatened federal funding cuts",
+    "conflict_relevance": "The article situates the federal review partly in responses to campus incidents connected to the Israel-Hamas war and mentions antisemitism, but its main focus is academic freedom, university funding, and government pressure.",
+    "reason": "The Israel-Hamas war and related antisemitism concerns provide contextual background, while the substantive reporting concerns Harvard's legal challenge and free-speech issues rather than Gaza or the conflict itself.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "0586360c4637d05d9151c889da45f3ec27e8e4650097c9bc77d71f6574c2a959",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "6d05fcb50d918e32f018d7296c7fd5eaaf2eb89a19a2110584e624de65b66786",
+    "raw_response_text_sha256": "4bd0e3258aa9e6d81c6999bcd793a5e5ce4507a3441a71e9ab832ebbc5d3af1a"
+  },
+  "api_metadata": {
+    "id": "resp_0d264307fc014905006aaa28e9a64087d1b986b8f82674513c",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789536489.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1486,
+      "input_tokens_details": {
+        "cache_write_tokens": 1483,
+        "cached_tokens": 0
+      },
+      "output_tokens": 227,
+      "output_tokens_details": {
+        "reasoning_tokens": 59
+      },
+      "total_tokens": 1713
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.95,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Harvard University faculty lawsuit challenging Trump administration demands and threatened federal funding cuts\",\n  \"conflict_relevance\": \"The article situates the federal review partly in responses to campus incidents connected to the Israel-Hamas war and mentions antisemitism, but its main focus is academic freedom, university funding, and government pressure.\",\n  \"reason\": \"The Israel-Hamas war and related antisemitism concerns provide contextual background, while the substantive reporting concerns Harvard's legal challenge and free-speech issues rather than Gaza or the conflict itself.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T05:28:12Z",
+  "duration_seconds": 3.314,
+  "error": null
+}

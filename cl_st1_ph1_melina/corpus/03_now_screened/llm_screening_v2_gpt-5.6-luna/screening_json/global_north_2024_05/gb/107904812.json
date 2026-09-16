@@ -1,0 +1,65 @@
+{
+  "article_id": "107904812",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_05/gb/107904812.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_05/gb/107904812.json"
+  },
+  "manifest_row": {
+    "article_id": "107904812",
+    "group": "global_north_2024_05",
+    "country_code": "gb",
+    "filepath": "corpus/02_now_organised/global_north_2024_05/gb/107904812.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.96,
+    "gaza_role": "passing",
+    "main_topic": "German aviation passenger taxes and their economic impact",
+    "conflict_relevance": "The main article is unrelated to Gaza, but an embedded aviation-news item briefly discusses the financial impact of the Israeli-Gaza conflict on Royal Jordanian Airlines.",
+    "reason": "The article primarily concerns German aviation taxation, airline costs, and climate policy. Gaza appears only in a substantive but unrelated snippet in a 'More from Airlines' section, making it peripheral rather than core.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "abb8bc901a69a0f800a1ebdff6df874a08f4b1d99eaf68a4afe2faf433bd28cd",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "5f1ca1dbc50636e0d6150b7f73245baeedb5b35a6da80e3cd9bd15f98d4dd3d6",
+    "raw_response_text_sha256": "2c6c2b1ad52dd7cd3ef89b8d0c78079b050091850adb4a306cc187aadf8fd540"
+  },
+  "api_metadata": {
+    "id": "resp_0826fde05a387572006aaa0dd16c4487d2a56cf59b1345f2d1",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789529553.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1571,
+      "input_tokens_details": {
+        "cache_write_tokens": 1568,
+        "cached_tokens": 0
+      },
+      "output_tokens": 264,
+      "output_tokens_details": {
+        "reasoning_tokens": 109
+      },
+      "total_tokens": 1835
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.96,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"German aviation passenger taxes and their economic impact\",\n  \"conflict_relevance\": \"The main article is unrelated to Gaza, but an embedded aviation-news item briefly discusses the financial impact of the Israeli-Gaza conflict on Royal Jordanian Airlines.\",\n  \"reason\": \"The article primarily concerns German aviation taxation, airline costs, and climate policy. Gaza appears only in a substantive but unrelated snippet in a 'More from Airlines' section, making it peripheral rather than core.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:32:37Z",
+  "duration_seconds": 4.296,
+  "error": null
+}

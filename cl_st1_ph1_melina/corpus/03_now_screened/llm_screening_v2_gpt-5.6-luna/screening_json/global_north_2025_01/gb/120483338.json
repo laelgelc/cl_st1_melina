@@ -1,0 +1,65 @@
+{
+  "article_id": "120483338",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_01/gb/120483338.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_01/gb/120483338.json"
+  },
+  "manifest_row": {
+    "article_id": "120483338",
+    "group": "global_north_2025_01",
+    "country_code": "gb",
+    "filepath": "corpus/02_now_organised/global_north_2025_01/gb/120483338.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "gaza_role": "passing",
+    "main_topic": "UK foreign policy and the political choice between closer ties with the European Union and the United States",
+    "conflict_relevance": "Gaza is mentioned only as one of several possible issues that could test the UK's relationship with the United States.",
+    "reason": "The article is primarily about Brexit, UK-EU trade, and relations with Donald Trump. It contains no meaningful discussion of Gaza, Palestine, Israel, or the related conflict.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "3106e68ce82620ed041db27d8f083e79d2c3c277ba7c220d9ccce75a8f483812",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "982f113c1ee996e65ad75ad555d11425cd371009cf2f61974f4e9768f4fc30a1",
+    "raw_response_text_sha256": "c0066c52ef6eeea29247ab67516b707317800eb9f839bfcf842b808d38396406"
+  },
+  "api_metadata": {
+    "id": "resp_00067533d0073082006aaa1ff8139887d297696733b07857a1",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789534200.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1049,
+      "input_tokens_details": {
+        "cache_write_tokens": 1046,
+        "cached_tokens": 0
+      },
+      "output_tokens": 190,
+      "output_tokens_details": {
+        "reasoning_tokens": 40
+      },
+      "total_tokens": 1239
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"UK foreign policy and the political choice between closer ties with the European Union and the United States\",\n  \"conflict_relevance\": \"Gaza is mentioned only as one of several possible issues that could test the UK's relationship with the United States.\",\n  \"reason\": \"The article is primarily about Brexit, UK-EU trade, and relations with Donald Trump. It contains no meaningful discussion of Gaza, Palestine, Israel, or the related conflict.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T04:50:02Z",
+  "duration_seconds": 2.245,
+  "error": null
+}

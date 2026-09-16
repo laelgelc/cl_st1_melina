@@ -1,0 +1,65 @@
+{
+  "article_id": "113157709",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_south_2024_08/za/113157709.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_south_2024_08/za/113157709.json"
+  },
+  "manifest_row": {
+    "article_id": "113157709",
+    "group": "global_south_2024_08",
+    "country_code": "za",
+    "filepath": "corpus/02_now_organised/global_south_2024_08/za/113157709.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.96,
+    "gaza_role": "passing",
+    "main_topic": "A visual news roundup featuring photographs from international events",
+    "conflict_relevance": "Includes a brief caption describing rubble after an Israeli airstrike destroyed homes in Khan Yunis, Gaza.",
+    "reason": "The article is primarily a general photo roundup covering unrelated events worldwide. Gaza appears only in one embedded photograph caption, providing limited but meaningful conflict-related discourse.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "c8929bdcced9010c6876b960fb810de2189da4b4092dee614e819830433d7e47",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "5610c0a0901e9897c7509287d48ddc629cc72b90203e0ee49d36b2f7bf39131a",
+    "raw_response_text_sha256": "76362149b6f747cf93d8b36b7ccece9b41d7e805dfbc5ed87c20a394726f4fb0"
+  },
+  "api_metadata": {
+    "id": "resp_0712fa18310f06fd006aaa3edcf98c87d1a3fe785914f7a9c2",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789542109.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2216,
+      "input_tokens_details": {
+        "cache_write_tokens": 2213,
+        "cached_tokens": 0
+      },
+      "output_tokens": 232,
+      "output_tokens_details": {
+        "reasoning_tokens": 97
+      },
+      "total_tokens": 2448
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.96,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"A visual news roundup featuring photographs from international events\",\n  \"conflict_relevance\": \"Includes a brief caption describing rubble after an Israeli airstrike destroyed homes in Khan Yunis, Gaza.\",\n  \"reason\": \"The article is primarily a general photo roundup covering unrelated events worldwide. Gaza appears only in one embedded photograph caption, providing limited but meaningful conflict-related discourse.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T07:01:53Z",
+  "duration_seconds": 4.249,
+  "error": null
+}

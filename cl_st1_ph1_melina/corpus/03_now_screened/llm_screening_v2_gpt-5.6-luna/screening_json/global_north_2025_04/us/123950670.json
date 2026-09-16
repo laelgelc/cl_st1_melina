@@ -1,0 +1,65 @@
+{
+  "article_id": "123950670",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_04/us/123950670.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_04/us/123950670.json"
+  },
+  "manifest_row": {
+    "article_id": "123950670",
+    "group": "global_north_2025_04",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2025_04/us/123950670.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "passing",
+    "main_topic": "Digital privacy, phone searches, and civil liberties at the US border",
+    "conflict_relevance": "The article briefly mentions active members of pro-Gaza groups among communities potentially targeted during border searches, connecting the broader discussion to political activism and state scrutiny.",
+    "reason": "The article is primarily about US border security, device searches, immigration enforcement, and privacy rather than Gaza or the Israel-Palestine conflict. However, the explicit reference to pro-Gaza groups constitutes meaningful conflict-related discourse, making it peripheral rather than excludable.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "cd2db905bae7abb4f5506f9595f782cd2c9262a0555a64ce2427eafed5a329ab",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "15d511bcf49ed55b48806b1022daaeb6c421738e59096c9bb5e640a040b84e9a",
+    "raw_response_text_sha256": "966809b2486192b4e53a2cd03250c109196db8f2a0cdf4f916dfe8abe1957146"
+  },
+  "api_metadata": {
+    "id": "resp_00a4c238a79bdb20006aaa2aa829d887d18e82df33ca8bbccb",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789536936.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 10862,
+      "input_tokens_details": {
+        "cache_write_tokens": 10859,
+        "cached_tokens": 0
+      },
+      "output_tokens": 310,
+      "output_tokens_details": {
+        "reasoning_tokens": 137
+      },
+      "total_tokens": 11172
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Digital privacy, phone searches, and civil liberties at the US border\",\n  \"conflict_relevance\": \"The article briefly mentions active members of pro-Gaza groups among communities potentially targeted during border searches, connecting the broader discussion to political activism and state scrutiny.\",\n  \"reason\": \"The article is primarily about US border security, device searches, immigration enforcement, and privacy rather than Gaza or the Israel-Palestine conflict. However, the explicit reference to pro-Gaza groups constitutes meaningful conflict-related discourse, making it peripheral rather than excludable.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T05:35:40Z",
+  "duration_seconds": 4.008,
+  "error": null
+}

@@ -1,0 +1,65 @@
+{
+  "article_id": "123158935",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_04/ca/123158935.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_04/ca/123158935.json"
+  },
+  "manifest_row": {
+    "article_id": "123158935",
+    "group": "global_north_2025_04",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2025_04/ca/123158935.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "background",
+    "main_topic": "U.S.-China trade tensions and Chinese geopolitical propaganda",
+    "conflict_relevance": "The article discusses Gaza and pro-Palestinian protesters as elements in a Chinese propaganda video portraying U.S. foreign policy negatively and China as an alternative global power.",
+    "reason": "The article is primarily about tariffs, international trade, and China-U.S. geopolitical competition. Gaza and Palestine-related discourse is meaningful but functions as supporting material in the analysis of Chinese political messaging rather than as the article's central subject.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "de29e49baf92088d516ced89ae76de35a17508e9533b7387444e8deab5b398af",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "fc3c5444061199ae1e4946d3b64516f57fe3278f7cef821978bf6b863652805d",
+    "raw_response_text_sha256": "0b439758831a04fa67a296df4a43f2af38df3d5027e469fd834de2d20f38263d"
+  },
+  "api_metadata": {
+    "id": "resp_0563656c1f4d3e1f006aaa2877464887d192bfabf6c41147ef",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789536375.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2136,
+      "input_tokens_details": {
+        "cache_write_tokens": 2133,
+        "cached_tokens": 0
+      },
+      "output_tokens": 268,
+      "output_tokens_details": {
+        "reasoning_tokens": 103
+      },
+      "total_tokens": 2404
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"U.S.-China trade tensions and Chinese geopolitical propaganda\",\n  \"conflict_relevance\": \"The article discusses Gaza and pro-Palestinian protesters as elements in a Chinese propaganda video portraying U.S. foreign policy negatively and China as an alternative global power.\",\n  \"reason\": \"The article is primarily about tariffs, international trade, and China-U.S. geopolitical competition. Gaza and Palestine-related discourse is meaningful but functions as supporting material in the analysis of Chinese political messaging rather than as the article's central subject.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T05:26:19Z",
+  "duration_seconds": 4.752,
+  "error": null
+}

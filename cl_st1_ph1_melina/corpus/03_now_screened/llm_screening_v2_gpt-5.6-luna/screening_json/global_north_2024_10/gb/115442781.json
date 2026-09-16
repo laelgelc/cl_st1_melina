@@ -1,0 +1,65 @@
+{
+  "article_id": "115442781",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_10/gb/115442781.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_10/gb/115442781.json"
+  },
+  "manifest_row": {
+    "article_id": "115442781",
+    "group": "global_north_2024_10",
+    "country_code": "gb",
+    "filepath": "corpus/02_now_organised/global_north_2024_10/gb/115442781.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.97,
+    "gaza_role": "passing",
+    "main_topic": "UK government borrowing, fiscal rules, inflation, and mortgage interest rates",
+    "conflict_relevance": "The main article is about UK fiscal policy and interest rates, but an appended news snippet contains substantive references to Israel, Hamas, October 7, and Israel's war in Gaza.",
+    "reason": "The Gaza-related material is not connected to the main article and appears as an embedded or appended unrelated snippet. However, it includes meaningful conflict discourse rather than a merely incidental or boilerplate mention, so the item is classified as PERIPHERAL.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "d8644b01b721227fa4b5b2b09b5bcd874855317b025feb005362c355d7a6c615",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "84d11d5c06bdae6394d5ee80e5f3e0df0bdb069380219a9c1124e62afe72ddda",
+    "raw_response_text_sha256": "54b5d59843fcb836c97374fcc9d4a7f85336783f6ed9f1118ab92890eb74f749"
+  },
+  "api_metadata": {
+    "id": "resp_050703371b61deb1006aaa182e778c87d2ae5860c98aefc740",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789532206.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1680,
+      "input_tokens_details": {
+        "cache_write_tokens": 1677,
+        "cached_tokens": 0
+      },
+      "output_tokens": 315,
+      "output_tokens_details": {
+        "reasoning_tokens": 142
+      },
+      "total_tokens": 1995
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.97,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"UK government borrowing, fiscal rules, inflation, and mortgage interest rates\",\n  \"conflict_relevance\": \"The main article is about UK fiscal policy and interest rates, but an appended news snippet contains substantive references to Israel, Hamas, October 7, and Israel's war in Gaza.\",\n  \"reason\": \"The Gaza-related material is not connected to the main article and appears as an embedded or appended unrelated snippet. However, it includes meaningful conflict discourse rather than a merely incidental or boilerplate mention, so the item is classified as PERIPHERAL.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T04:16:50Z",
+  "duration_seconds": 4.342,
+  "error": null
+}

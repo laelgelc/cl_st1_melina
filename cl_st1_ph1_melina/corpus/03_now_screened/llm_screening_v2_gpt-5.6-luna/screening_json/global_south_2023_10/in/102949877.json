@@ -1,0 +1,65 @@
+{
+  "article_id": "102949877",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_south_2023_10/in/102949877.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_south_2023_10/in/102949877.json"
+  },
+  "manifest_row": {
+    "article_id": "102949877",
+    "group": "global_south_2023_10",
+    "country_code": "in",
+    "filepath": "corpus/02_now_organised/global_south_2023_10/in/102949877.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "gaza_role": "boilerplate_or_unrelated",
+    "main_topic": "Centenary celebrations of the IIT-BHU Metallurgical Engineering Department",
+    "conflict_relevance": "The main article is about an academic department's centenary events in India. Gaza appears only in an unrelated embedded news roundup item.",
+    "reason": "The article's primary subject has no connection to Gaza, Palestine, or the Israel-Hamas war; the sole Gaza reference is a passing sentence in a separate recommended-news snippet.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "03fc0ee8de13af6d76fd2d3a3863aab687b0e3a1ce199e0f35981a550f2bcb63",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "7a3b2312b204297c2d11b4d4955ce26b93ab3ba475250c9070c9c69572ac8203",
+    "raw_response_text_sha256": "f203292f0333193a6f496aff42761801daf39d2128b92c822947ec2fe652147a"
+  },
+  "api_metadata": {
+    "id": "resp_002c073c7fb7ae59006aaa331cb58487d18214bee4e2a3110d",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789539100.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1420,
+      "input_tokens_details": {
+        "cache_write_tokens": 1417,
+        "cached_tokens": 0
+      },
+      "output_tokens": 242,
+      "output_tokens_details": {
+        "reasoning_tokens": 89
+      },
+      "total_tokens": 1662
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"gaza_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Centenary celebrations of the IIT-BHU Metallurgical Engineering Department\",\n  \"conflict_relevance\": \"The main article is about an academic department's centenary events in India. Gaza appears only in an unrelated embedded news roundup item.\",\n  \"reason\": \"The article's primary subject has no connection to Gaza, Palestine, or the Israel-Hamas war; the sole Gaza reference is a passing sentence in a separate recommended-news snippet.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T06:11:44Z",
+  "duration_seconds": 3.916,
+  "error": null
+}

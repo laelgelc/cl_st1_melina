@@ -1,0 +1,65 @@
+{
+  "article_id": "108306865",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_05/us/108306865.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_05/us/108306865.json"
+  },
+  "manifest_row": {
+    "article_id": "108306865",
+    "group": "global_north_2024_05",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2024_05/us/108306865.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.96,
+    "gaza_role": "passing",
+    "main_topic": "Irish criticism of the UK's Northern Ireland Troubles legacy legislation",
+    "conflict_relevance": "The main article concerns the Northern Ireland Troubles, accountability, and legacy law, not Gaza or the Israel-Palestine conflict. Gaza appears only in an unrelated embedded latest-stories snippet.",
+    "reason": "The headline and substantive article focus on Northern Ireland and the UK's Troubles legislation. The brief Gaza reference belongs to an unrelated navigational/news roundup item and is not part of the main article.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "fe245394e90a22bfd96f6d124a1dbb460042dc432ffd2325e0c20ec9f7488e76",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "be719e6ba6356c9224103bc3aae030b0785f7e18674cf249f17793d996d22597",
+    "raw_response_text_sha256": "9f6e6af8b1c4b349dc2359696e31f7bc0692ef4b33df1107c05f49fe945e82d4"
+  },
+  "api_metadata": {
+    "id": "resp_035ba47b07a96fbd006aaa0ef0b01c87d2a708bbff92928e0b",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789529840.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1701,
+      "input_tokens_details": {
+        "cache_write_tokens": 1698,
+        "cached_tokens": 0
+      },
+      "output_tokens": 450,
+      "output_tokens_details": {
+        "reasoning_tokens": 290
+      },
+      "total_tokens": 2151
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.96,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Irish criticism of the UK's Northern Ireland Troubles legacy legislation\",\n  \"conflict_relevance\": \"The main article concerns the Northern Ireland Troubles, accountability, and legacy law, not Gaza or the Israel-Palestine conflict. Gaza appears only in an unrelated embedded latest-stories snippet.\",\n  \"reason\": \"The headline and substantive article focus on Northern Ireland and the UK's Troubles legislation. The brief Gaza reference belongs to an unrelated navigational/news roundup item and is not part of the main article.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:37:25Z",
+  "duration_seconds": 5.39,
+  "error": null
+}

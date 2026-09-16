@@ -1,0 +1,65 @@
+{
+  "article_id": "107194112",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_04/ca/107194112.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_04/ca/107194112.json"
+  },
+  "manifest_row": {
+    "article_id": "107194112",
+    "group": "global_north_2024_04",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2024_04/ca/107194112.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "gaza_role": "boilerplate_or_unrelated",
+    "main_topic": "Housing affordability in Vancouver and British Columbia",
+    "conflict_relevance": "The main article is about housing costs and provincial housing policy; Gaza appears only in unrelated CTVNews.ca top-story snippets.",
+    "reason": "The article's substantive content concerns housing affordability in Vancouver and Victoria. References to an Israeli airstrike in Gaza occur only in a detached news roundup and are not developed in the article.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "addb644ae9b3e26445845646f126dc32f72a7b8460819caf3c9b9f27caeeda2f",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "8acf0de198e0090aab503b52ad59001d475e58b3b06779060891afafddd519f5",
+    "raw_response_text_sha256": "35296953bd6a1337984f197f7b6c86e8686b087a3642551ccb657d7d73cdc38f"
+  },
+  "api_metadata": {
+    "id": "resp_0ba831370c28985a006aaa0af3f3a887d29aa3474ec369488e",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789528819.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1748,
+      "input_tokens_details": {
+        "cache_write_tokens": 1745,
+        "cached_tokens": 0
+      },
+      "output_tokens": 204,
+      "output_tokens_details": {
+        "reasoning_tokens": 56
+      },
+      "total_tokens": 1952
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"gaza_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Housing affordability in Vancouver and British Columbia\",\n  \"conflict_relevance\": \"The main article is about housing costs and provincial housing policy; Gaza appears only in unrelated CTVNews.ca top-story snippets.\",\n  \"reason\": \"The article's substantive content concerns housing affordability in Vancouver and Victoria. References to an Israeli airstrike in Gaza occur only in a detached news roundup and are not developed in the article.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:20:22Z",
+  "duration_seconds": 2.912,
+  "error": null
+}

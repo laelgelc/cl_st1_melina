@@ -1,0 +1,65 @@
+{
+  "article_id": "200030468",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_11/us/200030468.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_11/us/200030468.json"
+  },
+  "manifest_row": {
+    "article_id": "200030468",
+    "group": "global_north_2023_11",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2023_11/us/200030468.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.93,
+    "gaza_role": "passing",
+    "main_topic": "Funeral and memorial services for former First Lady Rosalynn Carter",
+    "conflict_relevance": "The article briefly mentions pro-Palestinian protesters demonstrating outside Rosalynn Carter's memorial service, but does not provide substantive discussion of Gaza or the Israel-Palestine conflict.",
+    "reason": "The main article is an extensive live report about Rosalynn Carter's funeral and memorial services. The conflict-related content is limited to a brief embedded item noting a pro-Palestinian protest, making it peripheral rather than core.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "6c4d5a1c90f670110578dad634655f200b6d86b069bab00d792ff0cbef33a991",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "e0b83d3dd61e3436076b98b44012548b1acc40c88d8f2e3146a0fa4ae6c3ab4b",
+    "raw_response_text_sha256": "e1e404dde11fd57b97fa4c92d0bdbf0552fc1380a1b2c2ad06190110bc40852e"
+  },
+  "api_metadata": {
+    "id": "resp_0a9890fae86ab165006aa9ff959fd887d2932533c04053241d",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789525909.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 8452,
+      "input_tokens_details": {
+        "cache_write_tokens": 8449,
+        "cached_tokens": 0
+      },
+      "output_tokens": 337,
+      "output_tokens_details": {
+        "reasoning_tokens": 168
+      },
+      "total_tokens": 8789
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.93,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Funeral and memorial services for former First Lady Rosalynn Carter\",\n  \"conflict_relevance\": \"The article briefly mentions pro-Palestinian protesters demonstrating outside Rosalynn Carter's memorial service, but does not provide substantive discussion of Gaza or the Israel-Palestine conflict.\",\n  \"reason\": \"The main article is an extensive live report about Rosalynn Carter's funeral and memorial services. The conflict-related content is limited to a brief embedded item noting a pro-Palestinian protest, making it peripheral rather than core.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:31:53Z",
+  "duration_seconds": 3.527,
+  "error": null
+}

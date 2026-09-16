@@ -1,0 +1,65 @@
+{
+  "article_id": "104329570",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_12/ca/104329570.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_12/ca/104329570.json"
+  },
+  "manifest_row": {
+    "article_id": "104329570",
+    "group": "global_north_2023_12",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2023_12/ca/104329570.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "gaza_role": "passing",
+    "main_topic": "Civil liability for condominium damage caused by a tenant's discarded cigarette",
+    "conflict_relevance": "The article's main subject is unrelated to Gaza or the Israel-Palestine conflict; Gaza appears only in an unrelated embedded news snippet about Israeli troops mistakenly killing hostages.",
+    "reason": "The central article concerns a British Columbia civil tribunal decision about fire damage and landlord liability. The Gaza-related sentence is a separate, incidental news item rather than part of the article's main discourse.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "591289d6dafd8966e1172b424b2535828f4f9a5dbe4b5bd5c05aebb4b56335b9",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "ae6cf9939cc91b17e62e0a22db800dd21a5820f9e0e1ff65ee6f3bb8335cd46d",
+    "raw_response_text_sha256": "60e29cfdcdd7482de9978a2ff8b387fff8ecb2fd33f104c9f95df11649b9d700"
+  },
+  "api_metadata": {
+    "id": "resp_0d246dc71ff9a9d6006aaa007c134c87d2b00673218fec1744",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789526140.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1670,
+      "input_tokens_details": {
+        "cache_write_tokens": 1667,
+        "cached_tokens": 0
+      },
+      "output_tokens": 270,
+      "output_tokens_details": {
+        "reasoning_tokens": 110
+      },
+      "total_tokens": 1940
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Civil liability for condominium damage caused by a tenant's discarded cigarette\",\n  \"conflict_relevance\": \"The article's main subject is unrelated to Gaza or the Israel-Palestine conflict; Gaza appears only in an unrelated embedded news snippet about Israeli troops mistakenly killing hostages.\",\n  \"reason\": \"The central article concerns a British Columbia civil tribunal decision about fire damage and landlord liability. The Gaza-related sentence is a separate, incidental news item rather than part of the article's main discourse.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:35:43Z",
+  "duration_seconds": 3.83,
+  "error": null
+}

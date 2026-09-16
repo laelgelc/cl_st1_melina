@@ -1,0 +1,65 @@
+{
+  "article_id": "124150104",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_south_2025_04/in/124150104.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_south_2025_04/in/124150104.json"
+  },
+  "manifest_row": {
+    "article_id": "124150104",
+    "group": "global_south_2025_04",
+    "country_code": "in",
+    "filepath": "corpus/02_now_organised/global_south_2025_04/in/124150104.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "background",
+    "main_topic": "Indian civil-service exam preparation roundup covering Indo-Pakistan relations, Pegasus spyware, water disputes, counter-terrorism, Islamophobia, defence procurement, and history",
+    "conflict_relevance": "The roundup includes meaningful discussion of Islamophobia, communal tensions, Kashmir-related conflict, and a reference to Trump's proposal to 'empty Gaza'; it also discusses Israeli-made Pegasus spyware. However, Gaza and the Israel-Palestine conflict are not the main subject.",
+    "reason": "This is a multi-topic UPSC educational roundup rather than a dedicated article on Gaza or Israel-Palestine. Its discussion of Gaza and related themes is embedded within broader sections on Kashmir, India-Pakistan relations, Islamophobia, and national security, making it useful for peripheral discourse analysis but not for the core conflict corpus.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "4a697f851d11b41800328be2011bb8695d5afff014c3de5f8f79b5f89b6859e9",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "87e9064d9c709031f0a2f78917d01883876ec3ed9f3719b16fbb367b549a6301",
+    "raw_response_text_sha256": "f35345c0059517e89206b15b4670babcee2c01d45c6a45018025cb5309d97272"
+  },
+  "api_metadata": {
+    "id": "resp_01d61ed2aec746c0006aaa47cd931087d1b1722be145bf77f3",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789544397.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 6490,
+      "input_tokens_details": {
+        "cache_write_tokens": 6487,
+        "cached_tokens": 0
+      },
+      "output_tokens": 370,
+      "output_tokens_details": {
+        "reasoning_tokens": 144
+      },
+      "total_tokens": 6860
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Indian civil-service exam preparation roundup covering Indo-Pakistan relations, Pegasus spyware, water disputes, counter-terrorism, Islamophobia, defence procurement, and history\",\n  \"conflict_relevance\": \"The roundup includes meaningful discussion of Islamophobia, communal tensions, Kashmir-related conflict, and a reference to Trump's proposal to 'empty Gaza'; it also discusses Israeli-made Pegasus spyware. However, Gaza and the Israel-Palestine conflict are not the main subject.\",\n  \"reason\": \"This is a multi-topic UPSC educational roundup rather than a dedicated article on Gaza or Israel-Palestine. Its discussion of Gaza and related themes is embedded within broader sections on Kashmir, India-Pakistan relations, Islamophobia, and national security, making it useful for peripheral discourse analysis but not for the core conflict corpus.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T07:40:02Z",
+  "duration_seconds": 5.498,
+  "error": null
+}

@@ -1,0 +1,65 @@
+{
+  "article_id": "121062069",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_02/us/121062069.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_02/us/121062069.json"
+  },
+  "manifest_row": {
+    "article_id": "121062069",
+    "group": "global_north_2025_02",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2025_02/us/121062069.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "passing",
+    "main_topic": "Afghan refugees and former U.S. collaborators stranded after the suspension of U.S. resettlement programs",
+    "conflict_relevance": "The article is primarily about Afghanistan and U.S. refugee policy, but includes a separate substantive headline-style mention of pressure on Israel's prime minister over emaciated hostages and a Gaza ceasefire.",
+    "reason": "The Gaza-related content is an unrelated appended news snippet rather than part of the main article, but it contains meaningful conflict discourse about hostages, Israel, and the Gaza ceasefire.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "e4aa45a9700b4d24dcba104aab67c52818018ac3d155eff435862d7c84074e66",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "2b5bf576e700bf25ee2458a2f08b300fb2ccc38536fb9dbf8c2a67ba9d4d1b42",
+    "raw_response_text_sha256": "eaff3dbb1aee4094258dac51aca14b395b99d0eed2aa49ce41750f181b09aad4"
+  },
+  "api_metadata": {
+    "id": "resp_0cc5e347b363a1ea006aaa2480bd6487d184a0928cc74ba4da",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789535360.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2215,
+      "input_tokens_details": {
+        "cache_write_tokens": 2212,
+        "cached_tokens": 0
+      },
+      "output_tokens": 273,
+      "output_tokens_details": {
+        "reasoning_tokens": 100
+      },
+      "total_tokens": 2488
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Afghan refugees and former U.S. collaborators stranded after the suspension of U.S. resettlement programs\",\n  \"conflict_relevance\": \"The article is primarily about Afghanistan and U.S. refugee policy, but includes a separate substantive headline-style mention of pressure on Israel's prime minister over emaciated hostages and a Gaza ceasefire.\",\n  \"reason\": \"The Gaza-related content is an unrelated appended news snippet rather than part of the main article, but it contains meaningful conflict discourse about hostages, Israel, and the Gaza ceasefire.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T05:09:24Z",
+  "duration_seconds": 4.028,
+  "error": null
+}

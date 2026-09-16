@@ -1,0 +1,65 @@
+{
+  "article_id": "200039269",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_12/us/200039269.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_12/us/200039269.json"
+  },
+  "manifest_row": {
+    "article_id": "200039269",
+    "group": "global_north_2023_12",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2023_12/us/200039269.txt"
+  },
+  "screening": {
+    "category": "CORE",
+    "confidence": 0.98,
+    "gaza_role": "substantial",
+    "main_topic": "Potential regional escalation involving attacks on commercial ships, Israel's expanding ground offensive in Gaza, and clashes near the Lebanon border",
+    "conflict_relevance": "The lead briefing directly covers the Gaza war, Israeli bombardment and evacuation warnings, Houthi attacks in the Red Sea, and the risk of wider regional conflict.",
+    "reason": "Although the article is a multi-item daily news briefing containing several unrelated stories, its lead and headline focus on the possible escalation of the war, with substantial discussion of Gaza and related regional military developments.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": true
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "81e6cd5ce6af092ff2a092ff8c1d30897f9c572e8f5b2616cfc6a0e71fc2488c",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "8ed3815db2ab0955f9f9b0540b9d37460a037e87b9310cd5f916161fddf44380",
+    "raw_response_text_sha256": "9e1f1fe8d1bade1dbf3361def340070d5fa6d0363001201107646ef2aba7bb00"
+  },
+  "api_metadata": {
+    "id": "resp_030cb3db1ffe54e7006aaa02a9138c87d2a19eda7926379857",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789526697.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1558,
+      "input_tokens_details": {
+        "cache_write_tokens": 1555,
+        "cached_tokens": 0
+      },
+      "output_tokens": 278,
+      "output_tokens_details": {
+        "reasoning_tokens": 108
+      },
+      "total_tokens": 1836
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"CORE\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"substantial\",\n  \"main_topic\": \"Potential regional escalation involving attacks on commercial ships, Israel's expanding ground offensive in Gaza, and clashes near the Lebanon border\",\n  \"conflict_relevance\": \"The lead briefing directly covers the Gaza war, Israeli bombardment and evacuation warnings, Houthi attacks in the Red Sea, and the risk of wider regional conflict.\",\n  \"reason\": \"Although the article is a multi-item daily news briefing containing several unrelated stories, its lead and headline focus on the possible escalation of the war, with substantial discussion of Gaza and related regional military developments.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": true\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:45:01Z",
+  "duration_seconds": 4.252,
+  "error": null
+}

@@ -1,0 +1,65 @@
+{
+  "article_id": "125558013",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_06/gb/125558013.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_06/gb/125558013.json"
+  },
+  "manifest_row": {
+    "article_id": "125558013",
+    "group": "global_north_2025_06",
+    "country_code": "gb",
+    "filepath": "corpus/02_now_organised/global_north_2025_06/gb/125558013.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.93,
+    "gaza_role": "passing",
+    "main_topic": "Elon Musk's political conflict and public breakup with Donald Trump",
+    "conflict_relevance": "The main article is unrelated to Gaza or Israel-Palestine, but an embedded 'Read next' item contains several sentences framing Israel's war in Gaza and discussing the conflict on Piers Morgan's program.",
+    "reason": "The Gaza-related material appears only in an unrelated embedded article snippet rather than the main article, but it contains meaningful conflict discourse and is therefore peripheral rather than excluded.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "6246e94ffb445d8060b04fefeb06ab8b5e64694109f035ac97be472bc0fe77e0",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "cabdcede22a8e3f1fcb63f6ea860ab46957410bad89229f190b8a9a646472066",
+    "raw_response_text_sha256": "65f208ea234d7bca560a094244f21a20d10abf63f8fbb763d41fa1cea7e2c1cf"
+  },
+  "api_metadata": {
+    "id": "resp_03fba828a51db237006aaa2effc02487d1939c66907d2f9e26",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789538047.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 951,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 340,
+      "output_tokens_details": {
+        "reasoning_tokens": 178
+      },
+      "total_tokens": 1291
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.93,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Elon Musk's political conflict and public breakup with Donald Trump\",\n  \"conflict_relevance\": \"The main article is unrelated to Gaza or Israel-Palestine, but an embedded 'Read next' item contains several sentences framing Israel's war in Gaza and discussing the conflict on Piers Morgan's program.\",\n  \"reason\": \"The Gaza-related material appears only in an unrelated embedded article snippet rather than the main article, but it contains meaningful conflict discourse and is therefore peripheral rather than excluded.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T05:54:11Z",
+  "duration_seconds": 3.966,
+  "error": null
+}

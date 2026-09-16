@@ -1,0 +1,65 @@
+{
+  "article_id": "104230257",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_south_2023_12/ng/104230257.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_south_2023_12/ng/104230257.json"
+  },
+  "manifest_row": {
+    "article_id": "104230257",
+    "group": "global_south_2023_12",
+    "country_code": "ng",
+    "filepath": "corpus/02_now_organised/global_south_2023_12/ng/104230257.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "gaza_role": "boilerplate_or_unrelated",
+    "main_topic": "Nigeria's solid minerals sector, illegal mining, and banditry",
+    "conflict_relevance": "No meaningful relevance to Gaza, Palestine, Israel/Palestine, or the related conflict discourse; 'Gaza' appears only as part of a Nigerian politician's name.",
+    "reason": "The article concerns Nigeria's mining policy and the alleged sponsorship of banditry by illegal miners. The sole occurrence of 'Gaza' is an unrelated personal name.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "2e97be27a8643016d2e5ea2e459878896a61bc4e077280ad3c3bb57eaa52f975",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "6eca2c1ee08254aeb5ae2dc118ca8d5ea4759549a32ff3eb0eed3a0d78680205",
+    "raw_response_text_sha256": "b954663f510ff1fb06b874b7e3afea390dfcf293309355e683cdae7e2626fcbb"
+  },
+  "api_metadata": {
+    "id": "resp_08347785d6323597006aaa3715fc4c87d19e7169b1fbde22fc",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789540118.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1311,
+      "input_tokens_details": {
+        "cache_write_tokens": 1308,
+        "cached_tokens": 0
+      },
+      "output_tokens": 201,
+      "output_tokens_details": {
+        "reasoning_tokens": 40
+      },
+      "total_tokens": 1512
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"gaza_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Nigeria's solid minerals sector, illegal mining, and banditry\",\n  \"conflict_relevance\": \"No meaningful relevance to Gaza, Palestine, Israel/Palestine, or the related conflict discourse; 'Gaza' appears only as part of a Nigerian politician's name.\",\n  \"reason\": \"The article concerns Nigeria's mining policy and the alleged sponsorship of banditry by illegal miners. The sole occurrence of 'Gaza' is an unrelated personal name.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T06:28:40Z",
+  "duration_seconds": 3.058,
+  "error": null
+}

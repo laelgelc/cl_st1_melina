@@ -1,0 +1,65 @@
+{
+  "article_id": "123678251",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_04/us/123678251.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_04/us/123678251.json"
+  },
+  "manifest_row": {
+    "article_id": "123678251",
+    "group": "global_north_2025_04",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2025_04/us/123678251.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "gaza_role": "passing",
+    "main_topic": "Daily news podcast roundup covering unrelated national and international headlines",
+    "conflict_relevance": "A single Gaza-related headline is included among numerous unrelated news items, but the article is not focused on or substantively discussing the conflict.",
+    "reason": "The Gaza reference is an incidental item in a broad news roundup rather than meaningful discourse or coverage of Gaza, Israel/Palestine, or the conflict.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "0103f3fd366cb183bfb9e24ef5793095c1fbacb91e90e0268545da343b23158b",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "e65aff826377154c82c9af7fd51dddb50ad8188dc83ed468624a650a84379144",
+    "raw_response_text_sha256": "050fbe6926879bf682cd5634a5ba518b0d77f0357b1a98f8e6142f09d524ce02"
+  },
+  "api_metadata": {
+    "id": "resp_00a8e76b82728cf4006aaa2a5ecb6487d1a726eda879d03d98",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789536862.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 967,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 229,
+      "output_tokens_details": {
+        "reasoning_tokens": 86
+      },
+      "total_tokens": 1196
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Daily news podcast roundup covering unrelated national and international headlines\",\n  \"conflict_relevance\": \"A single Gaza-related headline is included among numerous unrelated news items, but the article is not focused on or substantively discussing the conflict.\",\n  \"reason\": \"The Gaza reference is an incidental item in a broad news roundup rather than meaningful discourse or coverage of Gaza, Israel/Palestine, or the conflict.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T05:34:25Z",
+  "duration_seconds": 3.327,
+  "error": null
+}

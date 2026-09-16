@@ -1,0 +1,65 @@
+{
+  "article_id": "109098259",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_06/us/109098259.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_06/us/109098259.json"
+  },
+  "manifest_row": {
+    "article_id": "109098259",
+    "group": "global_north_2024_06",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2024_06/us/109098259.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "background",
+    "main_topic": "Daily news roundup covering U.S. politics, weather, health, religion, the Gaza hostage situation, and archaeology",
+    "conflict_relevance": "Includes a substantive embedded report on the rescue of four hostages in Gaza, remaining captives, Israeli military action, reported Palestinian casualties, and cease-fire negotiations.",
+    "reason": "The article is primarily a general news newsletter covering several unrelated topics. However, its dedicated Gaza section contains meaningful conflict discourse, making it useful for broader media-framing analysis but not as core conflict coverage.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "c07caece037ba992d3867d72c9fd5bd318222177f0d9587a3c6b7350970728a2",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "79d555cf1d74d927f8ca65c454509b9a2875c1bd67da122c320f61184caf9250",
+    "raw_response_text_sha256": "f3a44b206f5f51d408b56c27f133536b11b2184a1736e07325cea6bfc1b86d9f"
+  },
+  "api_metadata": {
+    "id": "resp_065296bc1159fabb006aaa112d98b887d2b27e6b366488f752",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789530413.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2145,
+      "input_tokens_details": {
+        "cache_write_tokens": 2142,
+        "cached_tokens": 0
+      },
+      "output_tokens": 340,
+      "output_tokens_details": {
+        "reasoning_tokens": 170
+      },
+      "total_tokens": 2485
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Daily news roundup covering U.S. politics, weather, health, religion, the Gaza hostage situation, and archaeology\",\n  \"conflict_relevance\": \"Includes a substantive embedded report on the rescue of four hostages in Gaza, remaining captives, Israeli military action, reported Palestinian casualties, and cease-fire negotiations.\",\n  \"reason\": \"The article is primarily a general news newsletter covering several unrelated topics. However, its dedicated Gaza section contains meaningful conflict discourse, making it useful for broader media-framing analysis but not as core conflict coverage.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:46:58Z",
+  "duration_seconds": 4.943,
+  "error": null
+}

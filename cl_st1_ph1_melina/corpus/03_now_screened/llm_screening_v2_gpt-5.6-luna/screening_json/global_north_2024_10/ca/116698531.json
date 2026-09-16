@@ -1,0 +1,65 @@
+{
+  "article_id": "116698531",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_10/ca/116698531.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_10/ca/116698531.json"
+  },
+  "manifest_row": {
+    "article_id": "116698531",
+    "group": "global_north_2024_10",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2024_10/ca/116698531.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "background",
+    "main_topic": "Joe Biden's early voting and reduced role in the 2024 U.S. presidential campaign",
+    "conflict_relevance": "The main article is unrelated to the Gaza conflict, but an embedded news roundup item reports Israeli legislation restricting the U.N. agency providing aid to people in Gaza.",
+    "reason": "The headline and substantive article focus on Biden's voting and political future. Gaza appears only in a separate, one-sentence embedded news item, which is meaningful but insufficient for CORE classification.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "e447f8c00d1dac7fe92b9cec4a0b445429f9cf30148fcb6f4e3311febea694ce",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "0964f520a79392d7c68f4e0491968a70566504a16b3688e7ce01f13a03d47dcd",
+    "raw_response_text_sha256": "9f527775f3a579a3646fd0c9909554f31db368509357c00e0f5d83f69789ef9b"
+  },
+  "api_metadata": {
+    "id": "resp_09822f44912a26c1006aaa1817637487d2a21aa2b0c6c30d3a",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789532183.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2518,
+      "input_tokens_details": {
+        "cache_write_tokens": 2515,
+        "cached_tokens": 0
+      },
+      "output_tokens": 264,
+      "output_tokens_details": {
+        "reasoning_tokens": 101
+      },
+      "total_tokens": 2782
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Joe Biden's early voting and reduced role in the 2024 U.S. presidential campaign\",\n  \"conflict_relevance\": \"The main article is unrelated to the Gaza conflict, but an embedded news roundup item reports Israeli legislation restricting the U.N. agency providing aid to people in Gaza.\",\n  \"reason\": \"The headline and substantive article focus on Biden's voting and political future. Gaza appears only in a separate, one-sentence embedded news item, which is meaningful but insufficient for CORE classification.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T04:16:27Z",
+  "duration_seconds": 3.852,
+  "error": null
+}

@@ -1,0 +1,65 @@
+{
+  "article_id": "103248000",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_south_2023_11/pk/103248000.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_south_2023_11/pk/103248000.json"
+  },
+  "manifest_row": {
+    "article_id": "103248000",
+    "group": "global_south_2023_11",
+    "country_code": "pk",
+    "filepath": "corpus/02_now_organised/global_south_2023_11/pk/103248000.txt"
+  },
+  "screening": {
+    "category": "CORE",
+    "confidence": 0.99,
+    "gaza_role": "central",
+    "main_topic": "China's diplomatic response to the Gaza conflict and humanitarian crisis",
+    "conflict_relevance": "The main article directly addresses the Israel-Palestine conflict, Gaza's humanitarian conditions, civilian casualties, alleged attacks on hospitals and refugee camps, international humanitarian law, and China's intended role through the UN Security Council.",
+    "reason": "The primary article is centrally focused on Gaza and Palestinian-Israeli hostilities. Although the text also contains an unrelated Sharjah International Book Fair article, that appears to be a separate embedded news item and does not alter the relevance of the main article.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": true
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "e85dc02a27deccd81a221095e7cff41e378215d9774b3e5be0e8955b17b3d834",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "5793bd9f484686253d73ac03493f418a94d0c2faccab070bd7b6de77b6982883",
+    "raw_response_text_sha256": "e3e831e7910f903d711788cdd7c7fd6ee9ab96a0b2092958e01966ed33374a1a"
+  },
+  "api_metadata": {
+    "id": "resp_04653b1f5134b749006aaa35ff4de487d18ec1a3d994e4f4f8",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789539839.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1583,
+      "input_tokens_details": {
+        "cache_write_tokens": 1580,
+        "cached_tokens": 0
+      },
+      "output_tokens": 254,
+      "output_tokens_details": {
+        "reasoning_tokens": 76
+      },
+      "total_tokens": 1837
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"CORE\",\n  \"confidence\": 0.99,\n  \"gaza_role\": \"central\",\n  \"main_topic\": \"China's diplomatic response to the Gaza conflict and humanitarian crisis\",\n  \"conflict_relevance\": \"The main article directly addresses the Israel-Palestine conflict, Gaza's humanitarian conditions, civilian casualties, alleged attacks on hospitals and refugee camps, international humanitarian law, and China's intended role through the UN Security Council.\",\n  \"reason\": \"The primary article is centrally focused on Gaza and Palestinian-Israeli hostilities. Although the text also contains an unrelated Sharjah International Book Fair article, that appears to be a separate embedded news item and does not alter the relevance of the main article.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": true\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T06:24:02Z",
+  "duration_seconds": 3.699,
+  "error": null
+}

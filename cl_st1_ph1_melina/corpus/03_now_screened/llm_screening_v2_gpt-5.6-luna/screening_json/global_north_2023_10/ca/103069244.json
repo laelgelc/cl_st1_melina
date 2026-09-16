@@ -1,0 +1,65 @@
+{
+  "article_id": "103069244",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_10/ca/103069244.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_10/ca/103069244.json"
+  },
+  "manifest_row": {
+    "article_id": "103069244",
+    "group": "global_north_2023_10",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2023_10/ca/103069244.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.96,
+    "gaza_role": "background",
+    "main_topic": "Adaptation of the novel \"All the Light We Cannot See\" into a Netflix series",
+    "conflict_relevance": "The main article is an entertainment feature unrelated to Gaza, but the text includes several substantive embedded news items about Israel's war in Gaza, Israeli airstrikes, cease-fire calls, and antisemitism protests on U.S. college campuses.",
+    "reason": "The headline-associated article concerns a television adaptation set during World War II. However, the surrounding text contains meaningful conflict-related snippets, including reporting on Netanyahu's rejection of a cease-fire, Israeli airstrikes near Gaza City, and protests related to the Israel-Hamas war. These make the item useful for peripheral discourse analysis but not as core conflict coverage.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "61c37312e6c4c42919278d38b61ac19798b3f2827a248e2160ad87b17f856ddc",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "f35b5327158840bf7a1deadc28fccd3dd1d5900acdb377198f56fdf1caaf7e3d",
+    "raw_response_text_sha256": "4346910fbfec1b2030dda92280e067505473dd1ce17b7bd6c3ecf10b4483655d"
+  },
+  "api_metadata": {
+    "id": "resp_01ce39a35df281ee006aa9f6c66c5c87d28970b630dc64efb3",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789523654.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2680,
+      "input_tokens_details": {
+        "cache_write_tokens": 2677,
+        "cached_tokens": 0
+      },
+      "output_tokens": 346,
+      "output_tokens_details": {
+        "reasoning_tokens": 135
+      },
+      "total_tokens": 3026
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.96,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Adaptation of the novel \\\"All the Light We Cannot See\\\" into a Netflix series\",\n  \"conflict_relevance\": \"The main article is an entertainment feature unrelated to Gaza, but the text includes several substantive embedded news items about Israel's war in Gaza, Israeli airstrikes, cease-fire calls, and antisemitism protests on U.S. college campuses.\",\n  \"reason\": \"The headline-associated article concerns a television adaptation set during World War II. However, the surrounding text contains meaningful conflict-related snippets, including reporting on Netanyahu's rejection of a cease-fire, Israeli airstrikes near Gaza City, and protests related to the Israel-Hamas war. These make the item useful for peripheral discourse analysis but not as core conflict coverage.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T01:54:18Z",
+  "duration_seconds": 3.87,
+  "error": null
+}

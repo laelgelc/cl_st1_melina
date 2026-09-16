@@ -1,0 +1,65 @@
+{
+  "article_id": "119903254",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_01/us/119903254.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_01/us/119903254.json"
+  },
+  "manifest_row": {
+    "article_id": "119903254",
+    "group": "global_north_2025_01",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2025_01/us/119903254.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.96,
+    "gaza_role": "background",
+    "main_topic": "New Orleans Bourbon Street terrorist attack and the recovery of two injured Israeli military reservists",
+    "conflict_relevance": "The article discusses the victims' recent military service in Israel's war against Hamas, including tours in Gaza, but the main focus is the New Orleans attack and its aftermath.",
+    "reason": "The Israel-Hamas war and Gaza appear as meaningful biographical and contextual information about the injured men, yet the article is not primarily about the Gaza conflict or related political, humanitarian, or military developments.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "b7f22c30fa63f98fd81fdc5d728a9eb200c8079363f96bc085d4775a1dac7125",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "c1a00815bb2f52e1e4f559536a87e5ad1a82a9c8235e971138f990656ad27ff5",
+    "raw_response_text_sha256": "07f5596550c1078d0f30c56b52a3e6b4742f7ff03d981d773ed1291a8309667e"
+  },
+  "api_metadata": {
+    "id": "resp_069eb3553bb31cdc006aaa20f8d25c87d28fc799b469c9d663",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789534456.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1196,
+      "input_tokens_details": {
+        "cache_write_tokens": 1193,
+        "cached_tokens": 0
+      },
+      "output_tokens": 220,
+      "output_tokens_details": {
+        "reasoning_tokens": 54
+      },
+      "total_tokens": 1416
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.96,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"New Orleans Bourbon Street terrorist attack and the recovery of two injured Israeli military reservists\",\n  \"conflict_relevance\": \"The article discusses the victims' recent military service in Israel's war against Hamas, including tours in Gaza, but the main focus is the New Orleans attack and its aftermath.\",\n  \"reason\": \"The Israel-Hamas war and Gaza appear as meaningful biographical and contextual information about the injured men, yet the article is not primarily about the Gaza conflict or related political, humanitarian, or military developments.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T04:54:21Z",
+  "duration_seconds": 4.703,
+  "error": null
+}

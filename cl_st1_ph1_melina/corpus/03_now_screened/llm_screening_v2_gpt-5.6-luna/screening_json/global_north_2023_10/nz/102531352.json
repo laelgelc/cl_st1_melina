@@ -1,0 +1,65 @@
+{
+  "article_id": "102531352",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_10/nz/102531352.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_10/nz/102531352.json"
+  },
+  "manifest_row": {
+    "article_id": "102531352",
+    "group": "global_north_2023_10",
+    "country_code": "nz",
+    "filepath": "corpus/02_now_organised/global_north_2023_10/nz/102531352.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.96,
+    "gaza_role": "background",
+    "main_topic": "New Zealand MPs claiming taxpayer-funded accommodation allowances for Wellington properties",
+    "conflict_relevance": "The main article is unrelated to Gaza, but it contains several substantive embedded snippets about the October 7 Hamas attack, Israeli military preparedness, Palestinian civilian deaths, Gaza's humanitarian conditions, and Israeli hostages.",
+    "reason": "The headline article concerns parliamentary allowances and property ownership. However, the text includes multiple meaningful Gaza- and Israel/Palestine-related news snippets, making it potentially useful for broader discourse analysis while unsuitable as core conflict coverage.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "56837529bd4b30c44a11a5a897293c68b90b077b6df86e2cc59feb87eed7d196",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "3af30a6cdbd0e373bff267c335b8c9a6de343e3c89b3df71061b54b6d32ee03c",
+    "raw_response_text_sha256": "ad1dda57f397c11334e6c8870353ad4440692007b25fb6eb51730d95861dfb30"
+  },
+  "api_metadata": {
+    "id": "resp_0fb861e09b1633fb006aa9f8174dcc87d2bf99f6a17eead734",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789523991.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1701,
+      "input_tokens_details": {
+        "cache_write_tokens": 1698,
+        "cached_tokens": 0
+      },
+      "output_tokens": 317,
+      "output_tokens_details": {
+        "reasoning_tokens": 145
+      },
+      "total_tokens": 2018
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.96,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"New Zealand MPs claiming taxpayer-funded accommodation allowances for Wellington properties\",\n  \"conflict_relevance\": \"The main article is unrelated to Gaza, but it contains several substantive embedded snippets about the October 7 Hamas attack, Israeli military preparedness, Palestinian civilian deaths, Gaza's humanitarian conditions, and Israeli hostages.\",\n  \"reason\": \"The headline article concerns parliamentary allowances and property ownership. However, the text includes multiple meaningful Gaza- and Israel/Palestine-related news snippets, making it potentially useful for broader discourse analysis while unsuitable as core conflict coverage.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T01:59:55Z",
+  "duration_seconds": 4.232,
+  "error": null
+}

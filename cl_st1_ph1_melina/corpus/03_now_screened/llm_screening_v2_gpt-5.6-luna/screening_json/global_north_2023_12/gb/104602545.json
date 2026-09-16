@@ -1,0 +1,65 @@
+{
+  "article_id": "104602545",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_12/gb/104602545.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_12/gb/104602545.json"
+  },
+  "manifest_row": {
+    "article_id": "104602545",
+    "group": "global_north_2023_12",
+    "country_code": "gb",
+    "filepath": "corpus/02_now_organised/global_north_2023_12/gb/104602545.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "background",
+    "main_topic": "Green Bay Packers suspension of Jaire Alexander for a coin-toss incident",
+    "conflict_relevance": "The main article is unrelated to Gaza or the Israel-Palestine conflict, but the appended latest-stories section contains substantive brief items about humanitarian conditions and Israeli military action in Gaza.",
+    "reason": "The headline and article body concern an NFL disciplinary decision. However, the embedded roundup includes meaningful reporting on childbirth in war-torn Gaza and deaths caused by the Israel-Gaza war, making the text peripherally relevant rather than excludable.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "5a6a5c47b28638327a37b3fe405dabcff757b5e0d474e7fdf27f0145fd0fa411",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "fa07046a0ace603add6b20a3d30b2db230923ca0686c5c487fae923d03af0a33",
+    "raw_response_text_sha256": "d458e6fd30689ac58b64fde41e3eb1bc4b22e62baa691a162941b69e9d07ccaa"
+  },
+  "api_metadata": {
+    "id": "resp_0e995afdf480cc79006aaa013ed04087d2a092aef82a4a036e",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789526334.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1854,
+      "input_tokens_details": {
+        "cache_write_tokens": 1851,
+        "cached_tokens": 0
+      },
+      "output_tokens": 318,
+      "output_tokens_details": {
+        "reasoning_tokens": 142
+      },
+      "total_tokens": 2172
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Green Bay Packers suspension of Jaire Alexander for a coin-toss incident\",\n  \"conflict_relevance\": \"The main article is unrelated to Gaza or the Israel-Palestine conflict, but the appended latest-stories section contains substantive brief items about humanitarian conditions and Israeli military action in Gaza.\",\n  \"reason\": \"The headline and article body concern an NFL disciplinary decision. However, the embedded roundup includes meaningful reporting on childbirth in war-torn Gaza and deaths caused by the Israel-Gaza war, making the text peripherally relevant rather than excludable.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:38:59Z",
+  "duration_seconds": 4.864,
+  "error": null
+}

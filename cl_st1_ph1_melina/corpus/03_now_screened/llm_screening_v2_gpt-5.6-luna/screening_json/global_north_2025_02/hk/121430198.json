@@ -1,0 +1,65 @@
+{
+  "article_id": "121430198",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_02/hk/121430198.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_02/hk/121430198.json"
+  },
+  "manifest_row": {
+    "article_id": "121430198",
+    "group": "global_north_2025_02",
+    "country_code": "hk",
+    "filepath": "corpus/02_now_organised/global_north_2025_02/hk/121430198.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "gaza_role": "passing",
+    "main_topic": "Trump's foreign policy and China's potential to replace the United States as a global leader",
+    "conflict_relevance": "Gaza is mentioned only parenthetically as one of Trump's foreign-policy concerns and is not discussed substantively.",
+    "reason": "The article primarily analyzes US-China relations, trade, technology, energy policy, and American soft power. Its sole Gaza reference is an incidental passing mention.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "ed3f057c3efac97a112ec5edc00ccd2758b797a10de11dd2099ef01eb6b9997d",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "88814f30e648ea9c7ba03b70849d62bba111f67e5de010baa9f2b47f9a737a58",
+    "raw_response_text_sha256": "cf574db9be311d3de1291c50c00086c49bd02837d1eebfe916a648aaf9586b78"
+  },
+  "api_metadata": {
+    "id": "resp_07bcc8bff72d73b5006aaa23661b6087d288e08615cc563f7f",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789535078.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2227,
+      "input_tokens_details": {
+        "cache_write_tokens": 2224,
+        "cached_tokens": 0
+      },
+      "output_tokens": 213,
+      "output_tokens_details": {
+        "reasoning_tokens": 71
+      },
+      "total_tokens": 2440
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Trump's foreign policy and China's potential to replace the United States as a global leader\",\n  \"conflict_relevance\": \"Gaza is mentioned only parenthetically as one of Trump's foreign-policy concerns and is not discussed substantively.\",\n  \"reason\": \"The article primarily analyzes US-China relations, trade, technology, energy policy, and American soft power. Its sole Gaza reference is an incidental passing mention.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T05:04:40Z",
+  "duration_seconds": 2.953,
+  "error": null
+}

@@ -1,0 +1,65 @@
+{
+  "article_id": "123302711",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_04/us/123302711.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_04/us/123302711.json"
+  },
+  "manifest_row": {
+    "article_id": "123302711",
+    "group": "global_north_2025_04",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2025_04/us/123302711.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.96,
+    "gaza_role": "background",
+    "main_topic": "U.S. tariffs on Israel and trade discussions between Donald Trump and Benjamin Netanyahu",
+    "conflict_relevance": "The article briefly reports that Trump and Netanyahu discussed the Gaza war, efforts to end the Israel-Hamas war, and the release of Israeli hostages, but these issues are secondary to the article's focus on tariffs and trade.",
+    "reason": "The article contains meaningful but limited conflict-related discourse within a primarily economic and diplomatic report centered on U.S. tariffs against Israel.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "a5f4592f565645aaee590ed22993f0b7abc3c7a1dd1917fea634039b91dc3019",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "faf3756793b861ecd75dc7779901feb311632e66fd24ca46d5d6af9b477a7afc",
+    "raw_response_text_sha256": "cc611b2237f1b9f52868c609b3d5bf6a6dc31aafef1d395a007a1fd87320a21a"
+  },
+  "api_metadata": {
+    "id": "resp_0c1d82a55928a8e5006aaa2a086cc887d1ac8a8914d4d2fecd",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789536776.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1164,
+      "input_tokens_details": {
+        "cache_write_tokens": 1161,
+        "cached_tokens": 0
+      },
+      "output_tokens": 222,
+      "output_tokens_details": {
+        "reasoning_tokens": 61
+      },
+      "total_tokens": 1386
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.96,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"U.S. tariffs on Israel and trade discussions between Donald Trump and Benjamin Netanyahu\",\n  \"conflict_relevance\": \"The article briefly reports that Trump and Netanyahu discussed the Gaza war, efforts to end the Israel-Hamas war, and the release of Israeli hostages, but these issues are secondary to the article's focus on tariffs and trade.\",\n  \"reason\": \"The article contains meaningful but limited conflict-related discourse within a primarily economic and diplomatic report centered on U.S. tariffs against Israel.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T05:32:59Z",
+  "duration_seconds": 3.041,
+  "error": null
+}

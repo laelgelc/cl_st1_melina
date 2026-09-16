@@ -1,0 +1,65 @@
+{
+  "article_id": "120202969",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_01/gb/120202969.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_01/gb/120202969.json"
+  },
+  "manifest_row": {
+    "article_id": "120202969",
+    "group": "global_north_2025_01",
+    "country_code": "gb",
+    "filepath": "corpus/02_now_organised/global_north_2025_01/gb/120202969.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "background",
+    "main_topic": "Joe Biden's final full day as U.S. president and remarks at a Martin Luther King Jr. Day church service",
+    "conflict_relevance": "The article includes meaningful discussion of a Gaza ceasefire, Biden's comments on its prospects, and demonstrators accusing him of responsibility for deaths in Gaza, but Gaza is not the article's central subject.",
+    "reason": "The main article focuses on Biden's farewell public appearances, civil rights themes, and political legacy. Its coverage of the Gaza ceasefire and criticism of Biden provides relevant discourse on U.S. policy and public reaction to the conflict, warranting peripheral inclusion rather than core classification.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "b146ee02dca916620523c5ef7af1a02207b54ae26f31f3d0cd86058880c6e4c5",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "b6d84bedd2e962880ade3f2c173f0959d17aa9576c068a10f7289f36705206a4",
+    "raw_response_text_sha256": "59ea5863cce4ee7736d0a0b7872a4aae31ae7d01566eade8bb8736a2cc11843b"
+  },
+  "api_metadata": {
+    "id": "resp_0b959fc93c82484e006aaa1fbc733c87d2a241eaa11a54db12",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789534140.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2104,
+      "input_tokens_details": {
+        "cache_write_tokens": 2101,
+        "cached_tokens": 0
+      },
+      "output_tokens": 278,
+      "output_tokens_details": {
+        "reasoning_tokens": 85
+      },
+      "total_tokens": 2382
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Joe Biden's final full day as U.S. president and remarks at a Martin Luther King Jr. Day church service\",\n  \"conflict_relevance\": \"The article includes meaningful discussion of a Gaza ceasefire, Biden's comments on its prospects, and demonstrators accusing him of responsibility for deaths in Gaza, but Gaza is not the article's central subject.\",\n  \"reason\": \"The main article focuses on Biden's farewell public appearances, civil rights themes, and political legacy. Its coverage of the Gaza ceasefire and criticism of Biden provides relevant discourse on U.S. policy and public reaction to the conflict, warranting peripheral inclusion rather than core classification.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T04:49:03Z",
+  "duration_seconds": 3.06,
+  "error": null
+}

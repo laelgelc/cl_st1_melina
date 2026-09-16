@@ -1,0 +1,65 @@
+{
+  "article_id": "200030741",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_11/us/200030741.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_11/us/200030741.json"
+  },
+  "manifest_row": {
+    "article_id": "200030741",
+    "group": "global_north_2023_11",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2023_11/us/200030741.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.97,
+    "gaza_role": "background",
+    "main_topic": "Liz Cheney's account of Republican support for Donald Trump and the January 6 Capitol attack",
+    "conflict_relevance": "The main article is unrelated to Gaza, but a recommended-story snippet contains substantive information about Hamas releasing hostages during an Israel-Hamas truce.",
+    "reason": "The primary article concerns U.S. domestic politics and the January 6 attack. However, one embedded recommended story meaningfully discusses Hamas, hostages held in Gaza, Israel, and a truce, making the item peripheral rather than excludable.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "ef88f7475c96879e7a61280c1ceff15e4f29b74b102bbc06729ccab55ea2b1d3",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "71989fe27ed65d7fc27e020bdc5a02f4d9c0d55bae497902f3aaa738cd7434b3",
+    "raw_response_text_sha256": "b04cdf031c4cbf6e4f381a58a782a5a5bce308bfa693c22a2822cc2c09f8a3d6"
+  },
+  "api_metadata": {
+    "id": "resp_0fae18ba4b05823c006aa9ff9942e487d29fd7b9e76e733cf1",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789525913.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1641,
+      "input_tokens_details": {
+        "cache_write_tokens": 1638,
+        "cached_tokens": 0
+      },
+      "output_tokens": 331,
+      "output_tokens_details": {
+        "reasoning_tokens": 159
+      },
+      "total_tokens": 1972
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.97,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Liz Cheney's account of Republican support for Donald Trump and the January 6 Capitol attack\",\n  \"conflict_relevance\": \"The main article is unrelated to Gaza, but a recommended-story snippet contains substantive information about Hamas releasing hostages during an Israel-Hamas truce.\",\n  \"reason\": \"The primary article concerns U.S. domestic politics and the January 6 attack. However, one embedded recommended story meaningfully discusses Hamas, hostages held in Gaza, Israel, and a truce, making the item peripheral rather than excludable.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:31:58Z",
+  "duration_seconds": 5.104,
+  "error": null
+}

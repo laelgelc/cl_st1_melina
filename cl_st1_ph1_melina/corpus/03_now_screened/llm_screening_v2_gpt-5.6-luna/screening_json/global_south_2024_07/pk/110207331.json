@@ -1,0 +1,65 @@
+{
+  "article_id": "110207331",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_south_2024_07/pk/110207331.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_south_2024_07/pk/110207331.json"
+  },
+  "manifest_row": {
+    "article_id": "110207331",
+    "group": "global_south_2024_07",
+    "country_code": "pk",
+    "filepath": "corpus/02_now_organised/global_south_2024_07/pk/110207331.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "substantial",
+    "main_topic": "Pakistan government electricity relief measures and power-sector reforms",
+    "conflict_relevance": "The main article concerns Pakistan's domestic energy policy, but it includes a substantial embedded news item about Gaza cease-fire diplomacy, hostages, humanitarian aid, Israel's military offensive, casualties, blockade, and the International Court of Justice.",
+    "reason": "The Gaza material is directly relevant and substantial but appears as a separate embedded article rather than being integrated into the main report. The overall item should therefore be treated as peripheral rather than core.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "2c5da94e2f6042adddf6a2f882281d165727556534bdd3f249cc3ae3140a9678",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "f5fb50fc2e856f4209b27f460b6e8965ec050282c6d43bab93832e1d96db0741",
+    "raw_response_text_sha256": "c59e9d2acbb9ad5440e96e16fc3cded8b8d0e1d1bcef7256d6ebf7463ea7c755"
+  },
+  "api_metadata": {
+    "id": "resp_074bb6a2ff1a55c4006aaa3d915b8087d1a474bbec8b2d2e1e",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789541777.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1909,
+      "input_tokens_details": {
+        "cache_write_tokens": 1906,
+        "cached_tokens": 0
+      },
+      "output_tokens": 317,
+      "output_tokens_details": {
+        "reasoning_tokens": 148
+      },
+      "total_tokens": 2226
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"substantial\",\n  \"main_topic\": \"Pakistan government electricity relief measures and power-sector reforms\",\n  \"conflict_relevance\": \"The main article concerns Pakistan's domestic energy policy, but it includes a substantial embedded news item about Gaza cease-fire diplomacy, hostages, humanitarian aid, Israel's military offensive, casualties, blockade, and the International Court of Justice.\",\n  \"reason\": \"The Gaza material is directly relevant and substantial but appears as a separate embedded article rather than being integrated into the main report. The overall item should therefore be treated as peripheral rather than core.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T06:56:21Z",
+  "duration_seconds": 4.634,
+  "error": null
+}

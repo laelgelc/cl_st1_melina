@@ -1,0 +1,65 @@
+{
+  "article_id": "113345535",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_09/sg/113345535.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_09/sg/113345535.json"
+  },
+  "manifest_row": {
+    "article_id": "113345535",
+    "group": "global_north_2024_09",
+    "country_code": "sg",
+    "filepath": "corpus/02_now_organised/global_north_2024_09/sg/113345535.txt"
+  },
+  "screening": {
+    "category": "CORE",
+    "confidence": 0.98,
+    "gaza_role": "substantial",
+    "main_topic": "Civilian deaths, Israeli airstrikes, and the humanitarian crisis in Gaza",
+    "conflict_relevance": "The embedded Gaza article directly addresses Israeli military action, Palestinian civilian casualties, children killed, displacement, humanitarian conditions, aid restrictions, and the collapse of Gaza's healthcare system.",
+    "reason": "Although the text is a concatenation of unrelated articles and includes a MrBeast business article, boilerplate interface text, and a US democracy opinion piece, the extensive Gaza segment is directly and substantially relevant to the Israel-Palestine conflict.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": true
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "563351d6d8c80b51780f9cb1ebe9ac0f1a3157bd4ebdf7766f1597097b0e2e2b",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "f155bcd2efae59af1ebbe4eea22c7765296476c4d46718bc6135db34db1f130d",
+    "raw_response_text_sha256": "4b075fdf04f26a598d40b60a158b9f97a26ff6e3f99b163f890f722767fbb10d"
+  },
+  "api_metadata": {
+    "id": "resp_04dc94a796903338006aaa168adb7087d2b323e28df0149924",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789531786.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 3117,
+      "input_tokens_details": {
+        "cache_write_tokens": 3114,
+        "cached_tokens": 0
+      },
+      "output_tokens": 356,
+      "output_tokens_details": {
+        "reasoning_tokens": 183
+      },
+      "total_tokens": 3473
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"CORE\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"substantial\",\n  \"main_topic\": \"Civilian deaths, Israeli airstrikes, and the humanitarian crisis in Gaza\",\n  \"conflict_relevance\": \"The embedded Gaza article directly addresses Israeli military action, Palestinian civilian casualties, children killed, displacement, humanitarian conditions, aid restrictions, and the collapse of Gaza's healthcare system.\",\n  \"reason\": \"Although the text is a concatenation of unrelated articles and includes a MrBeast business article, boilerplate interface text, and a US democracy opinion piece, the extensive Gaza segment is directly and substantially relevant to the Israel-Palestine conflict.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": true\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T04:09:51Z",
+  "duration_seconds": 4.443,
+  "error": null
+}

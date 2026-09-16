@@ -1,0 +1,65 @@
+{
+  "article_id": "200141446",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_01/us/200141446.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_01/us/200141446.json"
+  },
+  "manifest_row": {
+    "article_id": "200141446",
+    "group": "global_north_2024_01",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2024_01/us/200141446.txt"
+  },
+  "screening": {
+    "category": "CORE",
+    "confidence": 0.99,
+    "gaza_role": "central",
+    "main_topic": "Live updates on the Israel-Hamas war, including humanitarian conditions in Gaza, hostage and aid negotiations, military operations, telecommunications disruptions, regional escalation, and Israeli political debate",
+    "conflict_relevance": "The article is directly and substantially focused on the Gaza war and its regional and international consequences, including civilian casualties, famine, humanitarian aid, hostages, Israeli military activity, Hamas rocket attacks, US policy, and diplomatic responses.",
+    "reason": "Although the text is a compilation of multiple live-news updates, most items centrally concern Gaza and the Israel-Hamas conflict. The regional stories about Iran, Iraq, the Houthis, and Red Sea shipping are also presented in connection with the broader conflict.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": true
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "478f2cb4a8e7ea6daef7b29c3306f7a42de44d70426fc77f08765b7f7d164dce",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "ed85e5eec349fc541cf9eac2de1def6f84cd226581bed0743c46efb13e5825c2",
+    "raw_response_text_sha256": "cc70c7f3b1674b533be4c1b49aadcad10640afa847cff8792467409e67d56839"
+  },
+  "api_metadata": {
+    "id": "resp_0fec6e817cc30a07006aaa0585737c87d2a974d759f663205f",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789527429.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 3209,
+      "input_tokens_details": {
+        "cache_write_tokens": 3206,
+        "cached_tokens": 0
+      },
+      "output_tokens": 272,
+      "output_tokens_details": {
+        "reasoning_tokens": 70
+      },
+      "total_tokens": 3481
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"CORE\",\n  \"confidence\": 0.99,\n  \"gaza_role\": \"central\",\n  \"main_topic\": \"Live updates on the Israel-Hamas war, including humanitarian conditions in Gaza, hostage and aid negotiations, military operations, telecommunications disruptions, regional escalation, and Israeli political debate\",\n  \"conflict_relevance\": \"The article is directly and substantially focused on the Gaza war and its regional and international consequences, including civilian casualties, famine, humanitarian aid, hostages, Israeli military activity, Hamas rocket attacks, US policy, and diplomatic responses.\",\n  \"reason\": \"Although the text is a compilation of multiple live-news updates, most items centrally concern Gaza and the Israel-Hamas conflict. The regional stories about Iran, Iraq, the Houthis, and Red Sea shipping are also presented in connection with the broader conflict.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": true\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:57:13Z",
+  "duration_seconds": 4.337,
+  "error": null
+}

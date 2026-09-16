@@ -1,0 +1,65 @@
+{
+  "article_id": "115352814",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_10/us/115352814.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_10/us/115352814.json"
+  },
+  "manifest_row": {
+    "article_id": "115352814",
+    "group": "global_north_2024_10",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2024_10/us/115352814.txt"
+  },
+  "screening": {
+    "category": "CORE",
+    "confidence": 0.99,
+    "gaza_role": "substantial",
+    "main_topic": "Israeli military operations, Palestinian militant attacks, settler violence, and regional escalation involving Gaza and the West Bank",
+    "conflict_relevance": "The text is entirely devoted to Israel-Palestine conflict events, including Israeli raids, Gaza airstrikes, Palestinian attacks, settler violence, Al-Aqsa Mosque confrontations, casualties, displacement, and ceasefire efforts.",
+    "reason": "Although the text consists of multiple separate news snippets, each snippet directly concerns the Israeli-Palestinian conflict and several specifically address military action and escalation in Gaza.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": true
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "7265db9cb3f54cf542611ba70795123ca58f8eafb91fbcfba397377fed0e01c5",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "8788bef7097ee44e04376b3874fd809997429325ca6c54be111db5efac8dd4a7",
+    "raw_response_text_sha256": "186dbbe689a68d280d4ccacd7ddcd94083ba02e58c51fff71f3e9d9768d55e20"
+  },
+  "api_metadata": {
+    "id": "resp_0b2d9d35c4bf1b26006aaa18d5219087d282ea342048491f6a",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789532373.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1048,
+      "input_tokens_details": {
+        "cache_write_tokens": 1045,
+        "cached_tokens": 0
+      },
+      "output_tokens": 292,
+      "output_tokens_details": {
+        "reasoning_tokens": 116
+      },
+      "total_tokens": 1340
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"CORE\",\n  \"confidence\": 0.99,\n  \"gaza_role\": \"substantial\",\n  \"main_topic\": \"Israeli military operations, Palestinian militant attacks, settler violence, and regional escalation involving Gaza and the West Bank\",\n  \"conflict_relevance\": \"The text is entirely devoted to Israel-Palestine conflict events, including Israeli raids, Gaza airstrikes, Palestinian attacks, settler violence, Al-Aqsa Mosque confrontations, casualties, displacement, and ceasefire efforts.\",\n  \"reason\": \"Although the text consists of multiple separate news snippets, each snippet directly concerns the Israeli-Palestinian conflict and several specifically address military action and escalation in Gaza.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": true\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T04:19:37Z",
+  "duration_seconds": 4.454,
+  "error": null
+}

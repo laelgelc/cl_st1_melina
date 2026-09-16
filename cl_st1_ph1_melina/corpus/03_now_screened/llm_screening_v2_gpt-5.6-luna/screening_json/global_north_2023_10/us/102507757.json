@@ -1,0 +1,65 @@
+{
+  "article_id": "102507757",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_10/us/102507757.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_10/us/102507757.json"
+  },
+  "manifest_row": {
+    "article_id": "102507757",
+    "group": "global_north_2023_10",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2023_10/us/102507757.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "substantial",
+    "main_topic": "Ladakh Autonomous Hill Development Council–Kargil election and demands for constitutional protections and political autonomy",
+    "conflict_relevance": "The primary article concerns Ladakh and Jammu and Kashmir, not Gaza or Israel-Palestine. However, the text includes a substantial separate explainer on Hamas, Gaza, the Israeli-Palestinian conflict, occupation, blockade, military action, and the October 2023 attack.",
+    "reason": "The headline and main article are unrelated to the Gaza conflict, but the appended Hamas explainer contains extensive, meaningful conflict-related discourse and could be useful for broader corpus analysis. It should not be treated as core coverage of the primary article.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "93bf990cb29b9497fa65a849e4df153a0d46423d4f902711c8103c86192e7ab6",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "992044803c66be8cfbee9a0210b2e963fc1757e37ac9b65ffabefbde0b72c87f",
+    "raw_response_text_sha256": "78d789b03c6bbb6a92e4caa1ee10a879bf23db3b3505d153cd0acdb4a95614e0"
+  },
+  "api_metadata": {
+    "id": "resp_02b2d3327134d593006aa9f8885efc87d297ec715908837502",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789524104.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 3572,
+      "input_tokens_details": {
+        "cache_write_tokens": 3569,
+        "cached_tokens": 0
+      },
+      "output_tokens": 439,
+      "output_tokens_details": {
+        "reasoning_tokens": 260
+      },
+      "total_tokens": 4011
+    }
+  },
+  "raw_response_text": "{\"category\":\"PERIPHERAL\",\"confidence\":0.98,\"gaza_role\":\"substantial\",\"main_topic\":\"Ladakh Autonomous Hill Development Council–Kargil election and demands for constitutional protections and political autonomy\",\"conflict_relevance\":\"The primary article concerns Ladakh and Jammu and Kashmir, not Gaza or Israel-Palestine. However, the text includes a substantial separate explainer on Hamas, Gaza, the Israeli-Palestinian conflict, occupation, blockade, military action, and the October 2023 attack.\",\"reason\":\"The headline and main article are unrelated to the Gaza conflict, but the appended Hamas explainer contains extensive, meaningful conflict-related discourse and could be useful for broader corpus analysis. It should not be treated as core coverage of the primary article.\",\"multi_article_or_snippet_issue\":true,\"recommended_for_main_corpus\":false}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:01:49Z",
+  "duration_seconds": 5.447,
+  "error": null
+}

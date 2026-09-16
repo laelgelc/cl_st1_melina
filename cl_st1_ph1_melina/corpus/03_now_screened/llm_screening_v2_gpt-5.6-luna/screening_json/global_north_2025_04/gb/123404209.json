@@ -1,0 +1,65 @@
+{
+  "article_id": "123404209",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_04/gb/123404209.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_04/gb/123404209.json"
+  },
+  "manifest_row": {
+    "article_id": "123404209",
+    "group": "global_north_2025_04",
+    "country_code": "gb",
+    "filepath": "corpus/02_now_organised/global_north_2025_04/gb/123404209.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.97,
+    "gaza_role": "background",
+    "main_topic": "A news and culture roundup led by Donald Trump's tariff policy reversal",
+    "conflict_relevance": "The article includes a polling item about declining American views of Israel following the Gaza invasion and commentary on prospective US-Iran talks, but the Israel-Palestine material is not the main subject.",
+    "reason": "The main article is a broad daily roundup covering tariffs, science, relationships, entertainment, and other topics. Its Gaza/Israel-related content is meaningful but brief and embedded within a wider collection of unrelated items, making it useful for peripheral discourse analysis rather than the core conflict corpus.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "1cd33d3a46719f9c675f507b96f76c01268b2ede13ddc706f204edc73d7af5bc",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "7a7a2bd09ab2b7b3f4852e7c2919bc6e08b9bf47626d39f6409f611a52349e59",
+    "raw_response_text_sha256": "39e33b1feae0524a7f38027390bfc60f1bba4d3cb0f503b7b80db4afa1156b51"
+  },
+  "api_metadata": {
+    "id": "resp_0c2926cee571c5a8006aaa28dc62d887d1b193483b628c9cc8",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789536476.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 3535,
+      "input_tokens_details": {
+        "cache_write_tokens": 3532,
+        "cached_tokens": 0
+      },
+      "output_tokens": 341,
+      "output_tokens_details": {
+        "reasoning_tokens": 159
+      },
+      "total_tokens": 3876
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.97,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"A news and culture roundup led by Donald Trump's tariff policy reversal\",\n  \"conflict_relevance\": \"The article includes a polling item about declining American views of Israel following the Gaza invasion and commentary on prospective US-Iran talks, but the Israel-Palestine material is not the main subject.\",\n  \"reason\": \"The main article is a broad daily roundup covering tariffs, science, relationships, entertainment, and other topics. Its Gaza/Israel-related content is meaningful but brief and embedded within a wider collection of unrelated items, making it useful for peripheral discourse analysis rather than the core conflict corpus.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T05:28:00Z",
+  "duration_seconds": 4.292,
+  "error": null
+}

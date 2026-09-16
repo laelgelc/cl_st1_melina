@@ -1,0 +1,65 @@
+{
+  "article_id": "91659663",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_10/us/91659663.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_10/us/91659663.json"
+  },
+  "manifest_row": {
+    "article_id": "91659663",
+    "group": "global_north_2023_10",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2023_10/us/91659663.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.96,
+    "gaza_role": "background",
+    "main_topic": "The Biden campaign's use of Truth Social during the 2024 U.S. presidential campaign",
+    "conflict_relevance": "The text includes a substantive but brief discussion of alleged war crimes, Hamas's attack, Israeli bombings, and the difficulty of conducting military operations in Gaza.",
+    "reason": "The main article concerns U.S. political campaign activity and Truth Social, while the Gaza-related material appears as an embedded, unrelated snippet. It nevertheless contains meaningful conflict and international-law discourse, making the item peripheral rather than excludable.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "3b9e7b748c629604decdd8b4cbdb37657240c6579360a4d373daad495b6190e3",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "9bfada8acce6abadcb3bfb4d80454b9721ee738e8ff2193357c1e203428b061a",
+    "raw_response_text_sha256": "1be097a8250623527cb9fc3680c58f42e819cbbb9d8acfd1e474fa8586aaf7af"
+  },
+  "api_metadata": {
+    "id": "resp_0cb89e7501655a76006aa9fab7a0e487d2a62960786ec8517e",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789524663.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1263,
+      "input_tokens_details": {
+        "cache_write_tokens": 1260,
+        "cached_tokens": 0
+      },
+      "output_tokens": 299,
+      "output_tokens_details": {
+        "reasoning_tokens": 127
+      },
+      "total_tokens": 1562
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.96,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"The Biden campaign's use of Truth Social during the 2024 U.S. presidential campaign\",\n  \"conflict_relevance\": \"The text includes a substantive but brief discussion of alleged war crimes, Hamas's attack, Israeli bombings, and the difficulty of conducting military operations in Gaza.\",\n  \"reason\": \"The main article concerns U.S. political campaign activity and Truth Social, while the Gaza-related material appears as an embedded, unrelated snippet. It nevertheless contains meaningful conflict and international-law discourse, making the item peripheral rather than excludable.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:11:08Z",
+  "duration_seconds": 4.544,
+  "error": null
+}

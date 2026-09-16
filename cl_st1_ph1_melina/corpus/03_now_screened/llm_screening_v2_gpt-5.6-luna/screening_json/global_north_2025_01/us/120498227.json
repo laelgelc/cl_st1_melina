@@ -1,0 +1,65 @@
+{
+  "article_id": "120498227",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_01/us/120498227.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_01/us/120498227.json"
+  },
+  "manifest_row": {
+    "article_id": "120498227",
+    "group": "global_north_2025_01",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2025_01/us/120498227.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.96,
+    "gaza_role": "passing",
+    "main_topic": "Review of the 2025 Mercedes-Benz GLC350e plug-in hybrid SUV",
+    "conflict_relevance": "The article includes an embedded paragraph describing the humanitarian impact of the Gaza war on children, including casualties, malnutrition, and a statement to the U.N. Security Council.",
+    "reason": "The main article is an automotive product review, while the Gaza-related material appears only as an unrelated embedded news snippet. Although the snippet contains meaningful conflict discourse, it is not connected to the article's main topic.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "b894a9920be317a5fffdfe27b4db98f44b017bb5e9f2c8bc72f128de0d4170f9",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "d02ec50a05da466ced5376032824a4fc22f63fca7187cda6f1958189d379fa77",
+    "raw_response_text_sha256": "9aac62ffb188ea6cc8e25830573723c24159aa28feb684a2f2a4db2fea8f94fc"
+  },
+  "api_metadata": {
+    "id": "resp_0bee984b22d21e69006aaa21ac33e087d2aab287ebed4b6484",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789534636.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2066,
+      "input_tokens_details": {
+        "cache_write_tokens": 2063,
+        "cached_tokens": 0
+      },
+      "output_tokens": 319,
+      "output_tokens_details": {
+        "reasoning_tokens": 151
+      },
+      "total_tokens": 2385
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.96,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Review of the 2025 Mercedes-Benz GLC350e plug-in hybrid SUV\",\n  \"conflict_relevance\": \"The article includes an embedded paragraph describing the humanitarian impact of the Gaza war on children, including casualties, malnutrition, and a statement to the U.N. Security Council.\",\n  \"reason\": \"The main article is an automotive product review, while the Gaza-related material appears only as an unrelated embedded news snippet. Although the snippet contains meaningful conflict discourse, it is not connected to the article's main topic.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T04:57:20Z",
+  "duration_seconds": 4.57,
+  "error": null
+}

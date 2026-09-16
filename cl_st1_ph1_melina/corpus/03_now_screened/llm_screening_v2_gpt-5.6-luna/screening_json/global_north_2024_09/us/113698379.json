@@ -1,0 +1,65 @@
+{
+  "article_id": "113698379",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_09/us/113698379.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_09/us/113698379.json"
+  },
+  "manifest_row": {
+    "article_id": "113698379",
+    "group": "global_north_2024_09",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2024_09/us/113698379.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.93,
+    "gaza_role": "passing",
+    "main_topic": "Cryptocurrency price reporting and a photojournalism exhibition about global humanitarian crises",
+    "conflict_relevance": "The article includes a passing caption about a man in Gaza City who was shot, within a broader unrelated discussion of war photography and humanitarian crises.",
+    "reason": "The primary content concerns cryptocurrency, while the appended photojournalism feature focuses mainly on Afghanistan, Myanmar, Ukraine, Pakistan, and other crises. Gaza appears only in one meaningful but incidental photograph caption, making the material peripheral rather than core.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "58a54a8e122f310432011f818031bbb4df50a6873e267f74bae3e1eddd8de860",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "ccf1b6925ec8b10b107ebc0aeb698317042c2a935ce4343dae04eea2320cd560",
+    "raw_response_text_sha256": "a53f8b52107abe963f8bbf6ddd62de2d77ac459e971d889f1ebbdb32a0847998"
+  },
+  "api_metadata": {
+    "id": "resp_003e00e5bf12ffa8006aaa16d1d09c87d282bbecb5424eeaea",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789531857.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 3603,
+      "input_tokens_details": {
+        "cache_write_tokens": 3600,
+        "cached_tokens": 0
+      },
+      "output_tokens": 397,
+      "output_tokens_details": {
+        "reasoning_tokens": 232
+      },
+      "total_tokens": 4000
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.93,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Cryptocurrency price reporting and a photojournalism exhibition about global humanitarian crises\",\n  \"conflict_relevance\": \"The article includes a passing caption about a man in Gaza City who was shot, within a broader unrelated discussion of war photography and humanitarian crises.\",\n  \"reason\": \"The primary content concerns cryptocurrency, while the appended photojournalism feature focuses mainly on Afghanistan, Myanmar, Ukraine, Pakistan, and other crises. Gaza appears only in one meaningful but incidental photograph caption, making the material peripheral rather than core.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T04:11:07Z",
+  "duration_seconds": 10.221,
+  "error": null
+}

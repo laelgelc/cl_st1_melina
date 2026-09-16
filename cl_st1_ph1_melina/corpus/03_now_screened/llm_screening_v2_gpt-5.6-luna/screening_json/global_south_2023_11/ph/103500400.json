@@ -1,0 +1,65 @@
+{
+  "article_id": "103500400",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_south_2023_11/ph/103500400.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_south_2023_11/ph/103500400.json"
+  },
+  "manifest_row": {
+    "article_id": "103500400",
+    "group": "global_south_2023_11",
+    "country_code": "ph",
+    "filepath": "corpus/02_now_organised/global_south_2023_11/ph/103500400.txt"
+  },
+  "screening": {
+    "category": "CORE",
+    "confidence": 0.99,
+    "gaza_role": "central",
+    "main_topic": "White House response to the Israeli military operation at Al-Shifa Hospital in Gaza",
+    "conflict_relevance": "Direct coverage of the Israel-Hamas war, the Gaza humanitarian crisis, protection of hospitals and civilians, Israeli military action, and hostage diplomacy.",
+    "reason": "The article focuses on the Israeli operation at Gaza's largest hospital and the White House statement that hospitals and patients must be protected. It includes substantial reporting on civilian casualties, displaced people, medical conditions, and the surrounding conflict. Unrelated Philippine basketball snippets appear appended to the article but do not alter the main topic.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": true
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "04ce157e0aa149dd8402dcbf79106cbef4d1c616260457943eb62696ca818585",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "db252086734788e1f1feda3faa5243dfb67fdcce9f9c9e6f037604c39b00df0d",
+    "raw_response_text_sha256": "c86c6bf0ff9c6965986529207882486410410e9387352f0c46810944a643e1cd"
+  },
+  "api_metadata": {
+    "id": "resp_0b09b464c5307232006aaa35c7babc87d18a1e44c04aad87de",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789539783.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1325,
+      "input_tokens_details": {
+        "cache_write_tokens": 1322,
+        "cached_tokens": 0
+      },
+      "output_tokens": 232,
+      "output_tokens_details": {
+        "reasoning_tokens": 53
+      },
+      "total_tokens": 1557
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"CORE\",\n  \"confidence\": 0.99,\n  \"gaza_role\": \"central\",\n  \"main_topic\": \"White House response to the Israeli military operation at Al-Shifa Hospital in Gaza\",\n  \"conflict_relevance\": \"Direct coverage of the Israel-Hamas war, the Gaza humanitarian crisis, protection of hospitals and civilians, Israeli military action, and hostage diplomacy.\",\n  \"reason\": \"The article focuses on the Israeli operation at Gaza's largest hospital and the White House statement that hospitals and patients must be protected. It includes substantial reporting on civilian casualties, displaced people, medical conditions, and the surrounding conflict. Unrelated Philippine basketball snippets appear appended to the article but do not alter the main topic.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": true\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T06:23:07Z",
+  "duration_seconds": 3.486,
+  "error": null
+}

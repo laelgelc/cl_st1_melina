@@ -1,0 +1,65 @@
+{
+  "article_id": "103567096",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_11/ca/103567096.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_11/ca/103567096.json"
+  },
+  "manifest_row": {
+    "article_id": "103567096",
+    "group": "global_north_2023_11",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2023_11/ca/103567096.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.82,
+    "gaza_role": "passing",
+    "main_topic": "Vancouver police investigation into a 2022 triple stabbing",
+    "conflict_relevance": "The main article is unrelated to the Israel-Palestine conflict, but an embedded news item briefly discusses Canada's votes on UN resolutions concerning Israel, Gaza, and the West Bank, with reference to possible political influences.",
+    "reason": "The conflict-related material is a meaningful but very brief secondary snippet within a collection of otherwise unrelated news items. It is relevant to broader discourse analysis but not to the main article's subject.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "35368aa6dbd63aa23ebe5180faaca1f68d0466c44b8207acf41a8509518accb1",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "f795f8c17a0b5543924f8e466aa32096cc98b4efff98cf6eea7e7d7602a3580d",
+    "raw_response_text_sha256": "63002e5505a2fb03d16bcfd4ac1c02103da9fbd8db905bcbb5ec91594a60bfcb"
+  },
+  "api_metadata": {
+    "id": "resp_04a4b5827e8a0634006aa9fbedb37487d29d7e5d9663211470",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789524973.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1339,
+      "input_tokens_details": {
+        "cache_write_tokens": 1336,
+        "cached_tokens": 0
+      },
+      "output_tokens": 485,
+      "output_tokens_details": {
+        "reasoning_tokens": 318
+      },
+      "total_tokens": 1824
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.82,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Vancouver police investigation into a 2022 triple stabbing\",\n  \"conflict_relevance\": \"The main article is unrelated to the Israel-Palestine conflict, but an embedded news item briefly discusses Canada's votes on UN resolutions concerning Israel, Gaza, and the West Bank, with reference to possible political influences.\",\n  \"reason\": \"The conflict-related material is a meaningful but very brief secondary snippet within a collection of otherwise unrelated news items. It is relevant to broader discourse analysis but not to the main article's subject.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:16:19Z",
+  "duration_seconds": 6.358,
+  "error": null
+}

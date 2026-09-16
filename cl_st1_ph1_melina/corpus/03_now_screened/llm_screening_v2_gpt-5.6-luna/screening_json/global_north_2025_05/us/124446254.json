@@ -1,0 +1,65 @@
+{
+  "article_id": "124446254",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_05/us/124446254.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_05/us/124446254.json"
+  },
+  "manifest_row": {
+    "article_id": "124446254",
+    "group": "global_north_2025_05",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2025_05/us/124446254.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.93,
+    "gaza_role": "passing",
+    "main_topic": "Daily news podcast roundup",
+    "conflict_relevance": "The text briefly mentions the number of Hamas-held hostages believed to be alive in Gaza, but provides no context or substantive discussion.",
+    "reason": "This is a multi-topic news roundup in which Gaza appears only as a brief embedded headline item among unrelated stories.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "e8ea71c006c2f18f7223982ebbd84db9e347fdeca7369ff7671e37baab8d6577",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "d5ed99655459248b713d60c0be85be037ec111b94021c3c340d9f9811ded2e5f",
+    "raw_response_text_sha256": "7db788084dad15ab7fc8dcd16f4a72ada97bc58869214742ca496a4674c561d9"
+  },
+  "api_metadata": {
+    "id": "resp_03baa284340aeaf4006aaa2d2e68f087d193e46e18375cfd29",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789537582.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 948,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 316,
+      "output_tokens_details": {
+        "reasoning_tokens": 189
+      },
+      "total_tokens": 1264
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.93,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Daily news podcast roundup\",\n  \"conflict_relevance\": \"The text briefly mentions the number of Hamas-held hostages believed to be alive in Gaza, but provides no context or substantive discussion.\",\n  \"reason\": \"This is a multi-topic news roundup in which Gaza appears only as a brief embedded headline item among unrelated stories.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T05:46:27Z",
+  "duration_seconds": 4.928,
+  "error": null
+}

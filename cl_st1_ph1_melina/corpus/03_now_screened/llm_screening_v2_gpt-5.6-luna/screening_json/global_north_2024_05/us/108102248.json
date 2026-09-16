@@ -1,0 +1,65 @@
+{
+  "article_id": "108102248",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_05/us/108102248.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_05/us/108102248.json"
+  },
+  "manifest_row": {
+    "article_id": "108102248",
+    "group": "global_north_2024_05",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2024_05/us/108102248.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "background",
+    "main_topic": "Maryland congressional primary elections",
+    "conflict_relevance": "The article is primarily about Maryland's open House races, but it includes meaningful discussion of AIPAC's support for a congressional candidate and another candidate's calls for a Gaza ceasefire and conditioning military aid.",
+    "reason": "Gaza and Israel-related political discourse appears as part of candidate positioning in a broader election article, making it relevant to peripheral analysis but not central conflict coverage.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "f838ccb3cdf23867e0e3ffd21e7f0fed3b6e7fe926916e2d05b72fb72776fc22",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "d0c6bc6f5f23668f53c20868f9d3da28aa32af9e5956282cdbefcf9981da0a6f",
+    "raw_response_text_sha256": "81f47dbe58e4dbba13ab409b2d2917830272a4dde8692b02e69304be95e1b803"
+  },
+  "api_metadata": {
+    "id": "resp_0ae3def73592d756006aaa0ebbc02487d2956f727c23274f25",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789529787.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2752,
+      "input_tokens_details": {
+        "cache_write_tokens": 2749,
+        "cached_tokens": 0
+      },
+      "output_tokens": 197,
+      "output_tokens_details": {
+        "reasoning_tokens": 44
+      },
+      "total_tokens": 2949
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Maryland congressional primary elections\",\n  \"conflict_relevance\": \"The article is primarily about Maryland's open House races, but it includes meaningful discussion of AIPAC's support for a congressional candidate and another candidate's calls for a Gaza ceasefire and conditioning military aid.\",\n  \"reason\": \"Gaza and Israel-related political discourse appears as part of candidate positioning in a broader election article, making it relevant to peripheral analysis but not central conflict coverage.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:36:30Z",
+  "duration_seconds": 3.28,
+  "error": null
+}

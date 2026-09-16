@@ -1,0 +1,65 @@
+{
+  "article_id": "104617072",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_12/us/104617072.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_12/us/104617072.json"
+  },
+  "manifest_row": {
+    "article_id": "104617072",
+    "group": "global_north_2023_12",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2023_12/us/104617072.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.97,
+    "gaza_role": "background",
+    "main_topic": "Morning news roundup covering unrelated celebrity, accident, crime, health, and shopping stories",
+    "conflict_relevance": "Contains a substantive embedded news brief about Israel's expanding ground offensive in central Gaza, forced displacement orders, prolonged war expectations, and regional escalation.",
+    "reason": "The article is primarily a multi-item newsletter roundup unrelated to Gaza, but its Israel-Gaza war segment contains meaningful conflict discourse and is therefore peripheral rather than excludable.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "f036aa37a7eb632ead59f9a4ffd55dfd722a35064667f7889d8466bec452c8c8",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "b76ec3f0a77e1d663b7aea3f22a4107532c34b4c0a853035ff9672eaf35b53ef",
+    "raw_response_text_sha256": "150d4d5dc4257bfca6f7d6215cf25b5806773ea8b0f5a2b4382781f5e4e8a7d9"
+  },
+  "api_metadata": {
+    "id": "resp_0d8818e86e3dd5af006aaa0277dac887d2a5b5c2e6f5c3ea12",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789526647.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1345,
+      "input_tokens_details": {
+        "cache_write_tokens": 1342,
+        "cached_tokens": 0
+      },
+      "output_tokens": 294,
+      "output_tokens_details": {
+        "reasoning_tokens": 140
+      },
+      "total_tokens": 1639
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.97,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Morning news roundup covering unrelated celebrity, accident, crime, health, and shopping stories\",\n  \"conflict_relevance\": \"Contains a substantive embedded news brief about Israel's expanding ground offensive in central Gaza, forced displacement orders, prolonged war expectations, and regional escalation.\",\n  \"reason\": \"The article is primarily a multi-item newsletter roundup unrelated to Gaza, but its Israel-Gaza war segment contains meaningful conflict discourse and is therefore peripheral rather than excludable.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:44:11Z",
+  "duration_seconds": 4.282,
+  "error": null
+}

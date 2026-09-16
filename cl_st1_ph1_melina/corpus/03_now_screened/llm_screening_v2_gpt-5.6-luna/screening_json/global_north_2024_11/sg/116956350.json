@@ -1,0 +1,65 @@
+{
+  "article_id": "116956350",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_11/sg/116956350.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_11/sg/116956350.json"
+  },
+  "manifest_row": {
+    "article_id": "116956350",
+    "group": "global_north_2024_11",
+    "country_code": "sg",
+    "filepath": "corpus/02_now_organised/global_north_2024_11/sg/116956350.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.91,
+    "gaza_role": "passing",
+    "main_topic": "International photo news roundup",
+    "conflict_relevance": "The roundup includes a photograph and caption depicting a Palestinian child amid the destruction in Gaza during the Israel-Hamas war, but Gaza is not otherwise discussed.",
+    "reason": "Gaza appears in one substantive photo caption within a broader weekly collection of unrelated images. This provides limited peripheral relevance but is not suitable as core conflict coverage.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "fc5275e357c13e04e9d2cb3fa7f395226a264f25ea6801a34b9be157503c0f89",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "ecba9b983289b37324a3d06a1b7509dd14dde780e914479a3fa758e6b6df0b38",
+    "raw_response_text_sha256": "5da53aa2859bb2c27aa38bdb0f23dd66fee4bc7e0edb9b62afacf25fbd6e9c0c"
+  },
+  "api_metadata": {
+    "id": "resp_01624999aa103cf0006aaa1baac12887d2a45eb51ff8ae4b5f",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789533098.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1564,
+      "input_tokens_details": {
+        "cache_write_tokens": 1561,
+        "cached_tokens": 0
+      },
+      "output_tokens": 294,
+      "output_tokens_details": {
+        "reasoning_tokens": 153
+      },
+      "total_tokens": 1858
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.91,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"International photo news roundup\",\n  \"conflict_relevance\": \"The roundup includes a photograph and caption depicting a Palestinian child amid the destruction in Gaza during the Israel-Hamas war, but Gaza is not otherwise discussed.\",\n  \"reason\": \"Gaza appears in one substantive photo caption within a broader weekly collection of unrelated images. This provides limited peripheral relevance but is not suitable as core conflict coverage.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T04:31:42Z",
+  "duration_seconds": 3.723,
+  "error": null
+}

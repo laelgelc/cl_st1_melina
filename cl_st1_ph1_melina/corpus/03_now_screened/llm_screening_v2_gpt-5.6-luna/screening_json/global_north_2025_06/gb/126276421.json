@@ -1,0 +1,65 @@
+{
+  "article_id": "126276421",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_06/gb/126276421.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_06/gb/126276421.json"
+  },
+  "manifest_row": {
+    "article_id": "126276421",
+    "group": "global_north_2025_06",
+    "country_code": "gb",
+    "filepath": "corpus/02_now_organised/global_north_2025_06/gb/126276421.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "gaza_role": "boilerplate_or_unrelated",
+    "main_topic": "Newspaper corrections and clarifications",
+    "conflict_relevance": "The page is a compilation of unrelated corrections; its only Gaza-related reference concerns an incorrectly used photograph and provides no substantive discussion of the conflict.",
+    "reason": "This is a corrections roundup rather than an article about Gaza, Palestine, or related discourse. The Gaza protest is mentioned only to clarify that an image was unrelated to another story.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "07b9bb894d3d92f2d2891dd5dabb361a087bdfda7c7921e2376f9a398654c7f1",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "e5f8966149a38caa123e073a01cc956ad74457d9e6d55d7831cf2b4ccde65d25",
+    "raw_response_text_sha256": "0cc2125470d903782d7d152cb36f35a193d0532bdadd060ce2eae90835cc2bc1"
+  },
+  "api_metadata": {
+    "id": "resp_002b6558d43b7894006aaa2fbce01487d19448142d199be91e",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789538236.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 6206,
+      "input_tokens_details": {
+        "cache_write_tokens": 6203,
+        "cached_tokens": 0
+      },
+      "output_tokens": 305,
+      "output_tokens_details": {
+        "reasoning_tokens": 156
+      },
+      "total_tokens": 6511
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"gaza_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Newspaper corrections and clarifications\",\n  \"conflict_relevance\": \"The page is a compilation of unrelated corrections; its only Gaza-related reference concerns an incorrectly used photograph and provides no substantive discussion of the conflict.\",\n  \"reason\": \"This is a corrections roundup rather than an article about Gaza, Palestine, or related discourse. The Gaza protest is mentioned only to clarify that an image was unrelated to another story.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T05:57:20Z",
+  "duration_seconds": 3.892,
+  "error": null
+}

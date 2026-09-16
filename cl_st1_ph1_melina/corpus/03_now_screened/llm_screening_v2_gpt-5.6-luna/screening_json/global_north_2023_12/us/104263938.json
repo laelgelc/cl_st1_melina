@@ -1,0 +1,65 @@
+{
+  "article_id": "104263938",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_12/us/104263938.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_12/us/104263938.json"
+  },
+  "manifest_row": {
+    "article_id": "104263938",
+    "group": "global_north_2023_12",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2023_12/us/104263938.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "substantial",
+    "main_topic": "U.S. political news roundup centered on the House impeachment inquiry into President Biden",
+    "conflict_relevance": "Includes a substantive section on Biden's criticism of Israel's military offensive in Gaza, rising civilian deaths, waning international support, and the U.N. General Assembly cease-fire resolution.",
+    "reason": "The article is primarily about the Biden impeachment inquiry and contains several unrelated news items, but its Gaza section provides meaningful discourse on the war, civilian harm, cease-fire diplomacy, and U.S.-Israel relations. It is therefore relevant as peripheral rather than core conflict coverage.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "82dca3df020f041ceea85b8e6e95384eb6b999e8b43350274f13765350c3d23c",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "77f7f1809c71e2ef4091a30f34000a2d06bcd90849b3c06ecd66ed6d2953451e",
+    "raw_response_text_sha256": "5226405818cbc50fbcedb9292d916654f5dea38ddf560df23739f5ce99ac4a89"
+  },
+  "api_metadata": {
+    "id": "resp_0a0c3061252a3e3f006aaa0214078487d288faeb29f981a74b",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789526548.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2511,
+      "input_tokens_details": {
+        "cache_write_tokens": 2508,
+        "cached_tokens": 0
+      },
+      "output_tokens": 288,
+      "output_tokens_details": {
+        "reasoning_tokens": 107
+      },
+      "total_tokens": 2799
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"substantial\",\n  \"main_topic\": \"U.S. political news roundup centered on the House impeachment inquiry into President Biden\",\n  \"conflict_relevance\": \"Includes a substantive section on Biden's criticism of Israel's military offensive in Gaza, rising civilian deaths, waning international support, and the U.N. General Assembly cease-fire resolution.\",\n  \"reason\": \"The article is primarily about the Biden impeachment inquiry and contains several unrelated news items, but its Gaza section provides meaningful discourse on the war, civilian harm, cease-fire diplomacy, and U.S.-Israel relations. It is therefore relevant as peripheral rather than core conflict coverage.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:42:31Z",
+  "duration_seconds": 3.187,
+  "error": null
+}

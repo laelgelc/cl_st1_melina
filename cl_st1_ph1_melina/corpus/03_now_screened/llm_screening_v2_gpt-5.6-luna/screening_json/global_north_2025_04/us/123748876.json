@@ -1,0 +1,65 @@
+{
+  "article_id": "123748876",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_04/us/123748876.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_04/us/123748876.json"
+  },
+  "manifest_row": {
+    "article_id": "123748876",
+    "group": "global_north_2025_04",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2025_04/us/123748876.txt"
+  },
+  "screening": {
+    "category": "CORE",
+    "confidence": 0.99,
+    "gaza_role": "central",
+    "main_topic": "Israeli soldier killed and others wounded in a Hamas ambush during combat in northern Gaza",
+    "conflict_relevance": "Direct reporting on Israeli military operations, casualties, Hamas activity, tunnels, and the breakdown of the Gaza ceasefire",
+    "reason": "The article is entirely focused on a deadly military incident in the northern Gaza Strip, including Israeli casualties, combat operations near Beit Hanoun, an alleged Hamas ambush, and the escalation of ground operations.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": true
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "4493c86849e44b1c05c0d6c573549e61de1c184fb31f69395bec943287aa4677",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "a4b968a093c3a0be47b309696b33fe273b5040deda8af1e0e1dfa6d301c5dac0",
+    "raw_response_text_sha256": "f3f158ded1e457e5e9cc8c153a8a271b4a3e55c9e1b6670ccb43febb1abdf6ce"
+  },
+  "api_metadata": {
+    "id": "resp_08a9e57cd840f437006aaa2a6f015c87d1b311556fe941c0ed",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789536879.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1012,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 192,
+      "output_tokens_details": {
+        "reasoning_tokens": 37
+      },
+      "total_tokens": 1204
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"CORE\",\n  \"confidence\": 0.99,\n  \"gaza_role\": \"central\",\n  \"main_topic\": \"Israeli soldier killed and others wounded in a Hamas ambush during combat in northern Gaza\",\n  \"conflict_relevance\": \"Direct reporting on Israeli military operations, casualties, Hamas activity, tunnels, and the breakdown of the Gaza ceasefire\",\n  \"reason\": \"The article is entirely focused on a deadly military incident in the northern Gaza Strip, including Israeli casualties, combat operations near Beit Hanoun, an alleged Hamas ambush, and the escalation of ground operations.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": true\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T05:34:41Z",
+  "duration_seconds": 3.107,
+  "error": null
+}

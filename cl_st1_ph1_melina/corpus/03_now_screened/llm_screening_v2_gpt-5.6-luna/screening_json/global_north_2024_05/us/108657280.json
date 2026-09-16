@@ -1,0 +1,65 @@
+{
+  "article_id": "108657280",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_05/us/108657280.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_05/us/108657280.json"
+  },
+  "manifest_row": {
+    "article_id": "108657280",
+    "group": "global_north_2024_05",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2024_05/us/108657280.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "passing",
+    "main_topic": "U.S. presidential politics and Donald Trump's criminal conviction",
+    "conflict_relevance": "The main article is about Biden's response to Trump's conviction and the 2024 presidential campaign; Gaza appears only in a separate appended news item about a proposed Israel-Hamas hostage-release and ceasefire deal.",
+    "reason": "The article's central subject is domestic U.S. electoral politics, but it includes one meaningful sentence concerning the Gaza war and Israel-Hamas negotiations. This supports peripheral rather than core classification.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "2a5aeb081d1146c7c86ce51dbf37d3490682a496afd6ff578c1f2f156f557023",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "4774a15bc5675861fca3581db61c6a39f6e89043f77eb758db9f7ddca72068a0",
+    "raw_response_text_sha256": "de2412a9815972c0cc6e3cc8cf9d8fcf341e24ebdeb27985441ff4f686260ced"
+  },
+  "api_metadata": {
+    "id": "resp_0e011606c7861930006aaa0f3b354487d2b38d9f0654e81f02",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789529915.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2303,
+      "input_tokens_details": {
+        "cache_write_tokens": 2300,
+        "cached_tokens": 0
+      },
+      "output_tokens": 259,
+      "output_tokens_details": {
+        "reasoning_tokens": 95
+      },
+      "total_tokens": 2562
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"U.S. presidential politics and Donald Trump's criminal conviction\",\n  \"conflict_relevance\": \"The main article is about Biden's response to Trump's conviction and the 2024 presidential campaign; Gaza appears only in a separate appended news item about a proposed Israel-Hamas hostage-release and ceasefire deal.\",\n  \"reason\": \"The article's central subject is domestic U.S. electoral politics, but it includes one meaningful sentence concerning the Gaza war and Israel-Hamas negotiations. This supports peripheral rather than core classification.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:38:39Z",
+  "duration_seconds": 3.976,
+  "error": null
+}

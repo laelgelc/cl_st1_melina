@@ -1,0 +1,65 @@
+{
+  "article_id": "200457057",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_05/us/200457057.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_05/us/200457057.json"
+  },
+  "manifest_row": {
+    "article_id": "200457057",
+    "group": "global_north_2024_05",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2024_05/us/200457057.txt"
+  },
+  "screening": {
+    "category": "CORE",
+    "confidence": 0.96,
+    "gaza_role": "substantial",
+    "main_topic": "Mike Pompeo’s commentary on Hamas’s acceptance of an Egypt-Qatar cease-fire proposal and Israel’s military campaign against Hamas",
+    "conflict_relevance": "Directly concerns the Israel-Hamas war, cease-fire negotiations, hostages, Rafah, Israeli military objectives, Hamas, and competing political framings of the conflict.",
+    "reason": "The latter portion is a substantial news segment centered on the Gaza war and cease-fire diplomacy, including extended direct quotations and contextual reporting. The text also contains an unrelated Randy Travis music and AI article, indicating concatenated or multi-article content, but the conflict-related segment is sufficiently developed for core-corpus use.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": true
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "e199eb790dadd6f14dcbf5a86103ee57c4974ae81960d04b8c1174da628e99c9",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "895663beb6e0a09c0dd262afe6d8c5616bcdb604f79663ce31520f38060a5a9c",
+    "raw_response_text_sha256": "4016bfde5af6ea58887a2b7b1c1a4d0c8fe12321e9f17817d8b4f255fa6db558"
+  },
+  "api_metadata": {
+    "id": "resp_0171d05d830655e4006aaa0f7f127887d296f95c5aefec03c8",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789529983.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2236,
+      "input_tokens_details": {
+        "cache_write_tokens": 2233,
+        "cached_tokens": 0
+      },
+      "output_tokens": 339,
+      "output_tokens_details": {
+        "reasoning_tokens": 167
+      },
+      "total_tokens": 2575
+    }
+  },
+  "raw_response_text": "{\"category\":\"CORE\",\"confidence\":0.96,\"gaza_role\":\"substantial\",\"main_topic\":\"Mike Pompeo’s commentary on Hamas’s acceptance of an Egypt-Qatar cease-fire proposal and Israel’s military campaign against Hamas\",\"conflict_relevance\":\"Directly concerns the Israel-Hamas war, cease-fire negotiations, hostages, Rafah, Israeli military objectives, Hamas, and competing political framings of the conflict.\",\"reason\":\"The latter portion is a substantial news segment centered on the Gaza war and cease-fire diplomacy, including extended direct quotations and contextual reporting. The text also contains an unrelated Randy Travis music and AI article, indicating concatenated or multi-article content, but the conflict-related segment is sufficiently developed for core-corpus use.\",\"multi_article_or_snippet_issue\":true,\"recommended_for_main_corpus\":true}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:39:49Z",
+  "duration_seconds": 6.787,
+  "error": null
+}

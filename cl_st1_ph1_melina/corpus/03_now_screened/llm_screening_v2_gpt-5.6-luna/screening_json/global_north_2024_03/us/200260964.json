@@ -1,0 +1,65 @@
+{
+  "article_id": "200260964",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_03/us/200260964.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_03/us/200260964.json"
+  },
+  "manifest_row": {
+    "article_id": "200260964",
+    "group": "global_north_2024_03",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2024_03/us/200260964.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "gaza_role": "passing",
+    "main_topic": "Internal division and competing conventions within the Michigan Republican Party",
+    "conflict_relevance": "The article is about a Michigan Republican Party leadership dispute and delegate selection process; Gaza appears only in a stray, unrelated sentence at the end.",
+    "reason": "The main article has no meaningful connection to Gaza, Palestine, Israel/Palestine, or the conflict. The isolated Gaza reference is incidental and appears to be an embedded or corrupted news snippet.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "eb0ecae567000991f6a8f94c3cda3288dda0c54e761d895a46b337253ad90014",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "ba49bb8390411114bfd55bfc99bcb3036698078a31362c53129a5dbc56493d02",
+    "raw_response_text_sha256": "979d4237c896e5a5e3a3f72c969c8ea56ce9818d945b0041b39d8bc661686bf9"
+  },
+  "api_metadata": {
+    "id": "resp_0ab8693cf6322960006aaa09fef6b487d2b050d71031d27cce",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789528574.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1784,
+      "input_tokens_details": {
+        "cache_write_tokens": 1781,
+        "cached_tokens": 0
+      },
+      "output_tokens": 216,
+      "output_tokens_details": {
+        "reasoning_tokens": 64
+      },
+      "total_tokens": 2000
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Internal division and competing conventions within the Michigan Republican Party\",\n  \"conflict_relevance\": \"The article is about a Michigan Republican Party leadership dispute and delegate selection process; Gaza appears only in a stray, unrelated sentence at the end.\",\n  \"reason\": \"The main article has no meaningful connection to Gaza, Palestine, Israel/Palestine, or the conflict. The isolated Gaza reference is incidental and appears to be an embedded or corrupted news snippet.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:16:17Z",
+  "duration_seconds": 2.746,
+  "error": null
+}

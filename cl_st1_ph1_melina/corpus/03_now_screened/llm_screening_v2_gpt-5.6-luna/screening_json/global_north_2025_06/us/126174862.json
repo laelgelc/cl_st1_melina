@@ -1,0 +1,65 @@
+{
+  "article_id": "126174862",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_06/us/126174862.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_06/us/126174862.json"
+  },
+  "manifest_row": {
+    "article_id": "126174862",
+    "group": "global_north_2025_06",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2025_06/us/126174862.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.94,
+    "gaza_role": "background",
+    "main_topic": "AP news roundup led by U.S. strikes on Iranian nuclear sites during Israel's war with Iran",
+    "conflict_relevance": "The roundup includes a meaningful standalone item about Mahmoud Khalil's detention and continued protest against Israel and the war in Gaza, as well as broader reporting on Israel's military campaign against Iran.",
+    "reason": "The main article is a multi-item news summary primarily focused on the Israel-Iran conflict and several unrelated international stories. Gaza and Palestine-related discourse appears in a substantive but secondary item about protest, detention, antisemitism allegations, and advocacy for Palestine, making the piece useful for peripheral rather than core analysis.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "23e87819aa57205504a359bf0368f664cf9ce0df4a19f70d16413fc142467461",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "01b190619168b81b6546591e1135c1e22fd0de1d32759f01e7896c75dff7ce49",
+    "raw_response_text_sha256": "832c575abd6dbb06f96adf3a09a712599d26da6fd2ee406e30739661844ebfaa"
+  },
+  "api_metadata": {
+    "id": "resp_09bf26d8149177fa006aaa31a6a1a487d19de9d5db821f9645",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789538726.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2342,
+      "input_tokens_details": {
+        "cache_write_tokens": 2339,
+        "cached_tokens": 0
+      },
+      "output_tokens": 471,
+      "output_tokens_details": {
+        "reasoning_tokens": 277
+      },
+      "total_tokens": 2813
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.94,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"AP news roundup led by U.S. strikes on Iranian nuclear sites during Israel's war with Iran\",\n  \"conflict_relevance\": \"The roundup includes a meaningful standalone item about Mahmoud Khalil's detention and continued protest against Israel and the war in Gaza, as well as broader reporting on Israel's military campaign against Iran.\",\n  \"reason\": \"The main article is a multi-item news summary primarily focused on the Israel-Iran conflict and several unrelated international stories. Gaza and Palestine-related discourse appears in a substantive but secondary item about protest, detention, antisemitism allegations, and advocacy for Palestine, making the piece useful for peripheral rather than core analysis.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T06:05:34Z",
+  "duration_seconds": 7.74,
+  "error": null
+}

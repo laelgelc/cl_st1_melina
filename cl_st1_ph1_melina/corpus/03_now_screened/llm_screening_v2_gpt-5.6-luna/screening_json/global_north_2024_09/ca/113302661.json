@@ -1,0 +1,65 @@
+{
+  "article_id": "113302661",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_09/ca/113302661.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_09/ca/113302661.json"
+  },
+  "manifest_row": {
+    "article_id": "113302661",
+    "group": "global_north_2024_09",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2024_09/ca/113302661.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "background",
+    "main_topic": "Alleged machete attack and arrest in Windsor, Ontario",
+    "conflict_relevance": "The main article is unrelated local crime reporting, but it contains a substantial embedded news item about the recovery of six Israeli hostage bodies in Gaza, protests, ceasefire negotiations, Hamas, and Palestinian deaths.",
+    "reason": "The Gaza material is meaningful and includes conflict-related reporting, but it appears as an embedded or concatenated news snippet rather than the subject of the headline article.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "351906a83820f5742b9747f9cf14ba6c1592a3514b9575a1e38aa0463ea74821",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "86d35496d2c0e63d64b581ac3469dd7787f8e0ca77ae2ec45f7d671bbff6447d",
+    "raw_response_text_sha256": "8246a5d6b420661ca29979f08a80848b8858b8acaf083d5a2b3e20f36f70d5d8"
+  },
+  "api_metadata": {
+    "id": "resp_0196ba5202d7f1be006aaa15fc9c9487d286497b99a93704ae",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789531644.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1930,
+      "input_tokens_details": {
+        "cache_write_tokens": 1927,
+        "cached_tokens": 0
+      },
+      "output_tokens": 287,
+      "output_tokens_details": {
+        "reasoning_tokens": 128
+      },
+      "total_tokens": 2217
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Alleged machete attack and arrest in Windsor, Ontario\",\n  \"conflict_relevance\": \"The main article is unrelated local crime reporting, but it contains a substantial embedded news item about the recovery of six Israeli hostage bodies in Gaza, protests, ceasefire negotiations, Hamas, and Palestinian deaths.\",\n  \"reason\": \"The Gaza material is meaningful and includes conflict-related reporting, but it appears as an embedded or concatenated news snippet rather than the subject of the headline article.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T04:07:29Z",
+  "duration_seconds": 4.619,
+  "error": null
+}

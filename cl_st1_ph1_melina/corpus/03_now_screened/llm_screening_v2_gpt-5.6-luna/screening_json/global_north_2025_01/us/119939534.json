@@ -1,0 +1,65 @@
+{
+  "article_id": "119939534",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_01/us/119939534.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_01/us/119939534.json"
+  },
+  "manifest_row": {
+    "article_id": "119939534",
+    "group": "global_north_2025_01",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2025_01/us/119939534.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "background",
+    "main_topic": "Donald Trump's presidential transition and incoming administration",
+    "conflict_relevance": "The article is primarily a live update on Trump's transition, cabinet nominations, domestic politics, and foreign policy. It includes a meaningful segment on negotiations to release Hamas-held hostages in Gaza and potential US and Israeli military and sanctions responses, but Gaza is not the article's main focus.",
+    "reason": "The Gaza-related discussion consists of several substantive paragraphs about hostages, Hamas, Israeli military action, sanctions, and the incoming administration's Middle East policy, making it relevant as peripheral discourse rather than an incidental mention. The text is nevertheless a compilation of largely unrelated transition-news snippets.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "457686367a4306a6fe4191c02d98b8dcee404aa1221022ae86e7f89d10c18c7e",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "78063742c8a2e5a1d3a57557dcd0d819d0fe2978021a42325be3fbfd54433f80",
+    "raw_response_text_sha256": "441cc3cf602fea01c7f19619706556379205c8e2271c98602a17e9fa8d1ea629"
+  },
+  "api_metadata": {
+    "id": "resp_0e9622422df16f78006aaa20ff063c87d2928acd8749385d75",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789534463.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 4985,
+      "input_tokens_details": {
+        "cache_write_tokens": 4982,
+        "cached_tokens": 0
+      },
+      "output_tokens": 252,
+      "output_tokens_details": {
+        "reasoning_tokens": 58
+      },
+      "total_tokens": 5237
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Donald Trump's presidential transition and incoming administration\",\n  \"conflict_relevance\": \"The article is primarily a live update on Trump's transition, cabinet nominations, domestic politics, and foreign policy. It includes a meaningful segment on negotiations to release Hamas-held hostages in Gaza and potential US and Israeli military and sanctions responses, but Gaza is not the article's main focus.\",\n  \"reason\": \"The Gaza-related discussion consists of several substantive paragraphs about hostages, Hamas, Israeli military action, sanctions, and the incoming administration's Middle East policy, making it relevant as peripheral discourse rather than an incidental mention. The text is nevertheless a compilation of largely unrelated transition-news snippets.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T04:54:26Z",
+  "duration_seconds": 4.01,
+  "error": null
+}

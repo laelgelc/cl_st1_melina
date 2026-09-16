@@ -1,0 +1,65 @@
+{
+  "article_id": "91613912",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_10/us/91613912.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_10/us/91613912.json"
+  },
+  "manifest_row": {
+    "article_id": "91613912",
+    "group": "global_north_2023_10",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2023_10/us/91613912.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.86,
+    "gaza_role": "background",
+    "main_topic": "Launch of the XOMG POP! podcast and JoJo Siwa's career",
+    "conflict_relevance": "The article includes an isolated paragraph about Israel's siege of Gaza, airstrikes, civilian conditions, and remarks by the Israeli defense minister, but this is unrelated to the article's main entertainment topic.",
+    "reason": "The main article concerns a teen pop group's podcast. Gaza-related discourse appears only in a separate embedded news item, making the article unsuitable for the main conflict corpus but potentially relevant to broader or contamination-aware discourse analysis.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "48a9fd969442a3a5924d625577cae84d81c39eabb02ce5197b79f6df745c1cfb",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "d130812c758632173aa3736d905274944966cef0c69d8250c70708bb3c5377d0",
+    "raw_response_text_sha256": "fb27d2e94c46338ac32414e98ca1c41aec89de2a48cd8c7828e78bc0b5d12b67"
+  },
+  "api_metadata": {
+    "id": "resp_0ff2f1ca186fa8c5006aa9fa0e386087d2a5f60619a38ad6d8",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789524494.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1907,
+      "input_tokens_details": {
+        "cache_write_tokens": 1904,
+        "cached_tokens": 0
+      },
+      "output_tokens": 384,
+      "output_tokens_details": {
+        "reasoning_tokens": 211
+      },
+      "total_tokens": 2291
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.86,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Launch of the XOMG POP! podcast and JoJo Siwa's career\",\n  \"conflict_relevance\": \"The article includes an isolated paragraph about Israel's siege of Gaza, airstrikes, civilian conditions, and remarks by the Israeli defense minister, but this is unrelated to the article's main entertainment topic.\",\n  \"reason\": \"The main article concerns a teen pop group's podcast. Gaza-related discourse appears only in a separate embedded news item, making the article unsuitable for the main conflict corpus but potentially relevant to broader or contamination-aware discourse analysis.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:08:19Z",
+  "duration_seconds": 5.725,
+  "error": null
+}

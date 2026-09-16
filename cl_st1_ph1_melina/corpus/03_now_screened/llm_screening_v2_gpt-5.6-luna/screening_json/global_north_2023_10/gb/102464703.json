@@ -1,0 +1,65 @@
+{
+  "article_id": "102464703",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_10/gb/102464703.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_10/gb/102464703.json"
+  },
+  "manifest_row": {
+    "article_id": "102464703",
+    "group": "global_north_2023_10",
+    "country_code": "gb",
+    "filepath": "corpus/02_now_organised/global_north_2023_10/gb/102464703.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "background",
+    "main_topic": "Gold prices and financial-market reactions to Middle East instability",
+    "conflict_relevance": "The article briefly reports the Israel-Hamas conflict, including the Gaza incursion and Israeli military response, as the geopolitical trigger for increased safe-haven demand and market volatility.",
+    "reason": "The article is primarily a commodities-market report focused on gold, oil, equities, and U.S. monetary policy. The Gaza-related conflict is meaningful contextual content but is not the article's central subject.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "48c2d7596c13d371323aa24fea18fc95b1e957f79af5c9596d80f514d70cfc0c",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "541142a0ee98bf269424c45c084a6b63148c3fa8114bf143dc95f937d11435ec",
+    "raw_response_text_sha256": "680061ad0eed740a2bc0081ef56db823ae3a17b7bb8185d27353cbe6a6f081a8"
+  },
+  "api_metadata": {
+    "id": "resp_048a8aed203786c3006aa9f6e6bbb087d2971a3d4714b966b6",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789523686.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1139,
+      "input_tokens_details": {
+        "cache_write_tokens": 1136,
+        "cached_tokens": 0
+      },
+      "output_tokens": 250,
+      "output_tokens_details": {
+        "reasoning_tokens": 90
+      },
+      "total_tokens": 1389
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Gold prices and financial-market reactions to Middle East instability\",\n  \"conflict_relevance\": \"The article briefly reports the Israel-Hamas conflict, including the Gaza incursion and Israeli military response, as the geopolitical trigger for increased safe-haven demand and market volatility.\",\n  \"reason\": \"The article is primarily a commodities-market report focused on gold, oil, equities, and U.S. monetary policy. The Gaza-related conflict is meaningful contextual content but is not the article's central subject.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T01:54:49Z",
+  "duration_seconds": 3.025,
+  "error": null
+}

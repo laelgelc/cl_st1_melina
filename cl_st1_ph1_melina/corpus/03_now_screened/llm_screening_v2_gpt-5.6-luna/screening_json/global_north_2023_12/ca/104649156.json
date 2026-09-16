@@ -1,0 +1,65 @@
+{
+  "article_id": "104649156",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_12/ca/104649156.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_12/ca/104649156.json"
+  },
+  "manifest_row": {
+    "article_id": "104649156",
+    "group": "global_north_2023_12",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2023_12/ca/104649156.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "gaza_role": "passing",
+    "main_topic": "Google's 2023 Year in Search trends in Canada",
+    "conflict_relevance": "The article briefly lists developments in Israel and Gaza as one of many globally searched topics, without providing substantive discussion.",
+    "reason": "This is a general search-trends roundup, and the Israel-Gaza reference is only a passing item in a list of unrelated events.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "1182dbc37cf610113cf67b54fb59e164139539ab622e66a40772302ce45ef26b",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "ab99885d2caeec5f08486f0b697bae39fd8c7c2ccc26b0ed74c2c8d6ac5f429e",
+    "raw_response_text_sha256": "e0b161c5abca2b66ac1b48488bb418ef77b60de6641aab8093b71c23fea1fe11"
+  },
+  "api_metadata": {
+    "id": "resp_0ee601fe29b9e700006aaa00a0f45c87d2995c6eb9909a81cd",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789526176.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 795,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 192,
+      "output_tokens_details": {
+        "reasoning_tokens": 57
+      },
+      "total_tokens": 987
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Google's 2023 Year in Search trends in Canada\",\n  \"conflict_relevance\": \"The article briefly lists developments in Israel and Gaza as one of many globally searched topics, without providing substantive discussion.\",\n  \"reason\": \"This is a general search-trends roundup, and the Israel-Gaza reference is only a passing item in a list of unrelated events.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:36:19Z",
+  "duration_seconds": 2.901,
+  "error": null
+}

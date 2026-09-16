@@ -1,0 +1,65 @@
+{
+  "article_id": "200418543",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_04/us/200418543.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_04/us/200418543.json"
+  },
+  "manifest_row": {
+    "article_id": "200418543",
+    "group": "global_north_2024_04",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2024_04/us/200418543.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.94,
+    "gaza_role": "substantial",
+    "main_topic": "Iran-Pakistan diplomatic and economic cooperation amid regional security tensions",
+    "conflict_relevance": "The article reports Iranian and Pakistani condemnations of Israel's war in Gaza, statements supporting Palestinians, criticism of Western support and international institutions, and contextualizes Iran's tensions with Israel.",
+    "reason": "Gaza and Palestine form a meaningful part of the leaders' reported statements and the regional diplomatic context, but the article is primarily about Iran-Pakistan relations, militancy, border cooperation, and energy projects rather than the Gaza conflict itself.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "abb6753ecadb6395cb25037270329c91c612e82d2d616d876ccf8f177e63620a",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "950f0fcbbc8f7c8fb4a7370fb18b18d1a91af47e2c865082df7ca8ead8136b62",
+    "raw_response_text_sha256": "5c3f51d897574973c41be84dc9c70dd3493a956f9ab3c973ded44e45778b86c8"
+  },
+  "api_metadata": {
+    "id": "resp_0f4ecc2cdadfb182006aaa0d196fcc87d2bf432a53eeeb694b",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789529369.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1451,
+      "input_tokens_details": {
+        "cache_write_tokens": 1448,
+        "cached_tokens": 0
+      },
+      "output_tokens": 355,
+      "output_tokens_details": {
+        "reasoning_tokens": 182
+      },
+      "total_tokens": 1806
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.94,\n  \"gaza_role\": \"substantial\",\n  \"main_topic\": \"Iran-Pakistan diplomatic and economic cooperation amid regional security tensions\",\n  \"conflict_relevance\": \"The article reports Iranian and Pakistani condemnations of Israel's war in Gaza, statements supporting Palestinians, criticism of Western support and international institutions, and contextualizes Iran's tensions with Israel.\",\n  \"reason\": \"Gaza and Palestine form a meaningful part of the leaders' reported statements and the regional diplomatic context, but the article is primarily about Iran-Pakistan relations, militancy, border cooperation, and energy projects rather than the Gaza conflict itself.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:29:33Z",
+  "duration_seconds": 3.97,
+  "error": null
+}

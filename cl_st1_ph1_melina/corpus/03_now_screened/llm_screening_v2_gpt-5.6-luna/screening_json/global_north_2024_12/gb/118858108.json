@@ -1,0 +1,65 @@
+{
+  "article_id": "118858108",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_12/gb/118858108.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_12/gb/118858108.json"
+  },
+  "manifest_row": {
+    "article_id": "118858108",
+    "group": "global_north_2024_12",
+    "country_code": "gb",
+    "filepath": "corpus/02_now_organised/global_north_2024_12/gb/118858108.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "background",
+    "main_topic": "Georgia's presidential election, pro-EU protests, and political crisis",
+    "conflict_relevance": "The main article concerns Georgian politics, but the text includes substantive embedded news snippets about Israeli hostage protests related to Gaza and Israel's military actions in Syria.",
+    "reason": "The central article is unrelated to Gaza or Israel/Palestine, but the inclusion of meaningful conflict-related paragraphs makes it relevant as peripheral material rather than an exclusion.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "18fbb068bec50d90bdcf0c23d45958e28bbf0e421ae67a0da71f3a73c5a805f1",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "8c0b739eeb16bac19df6a2b2ea234bf94935bb30887d0d24ed24224d6192ac2b",
+    "raw_response_text_sha256": "90c6ba6e7043b966869a06ec367159ca243e54426f1ab197213368d35e9ff4cd"
+  },
+  "api_metadata": {
+    "id": "resp_024455f839ef98b5006aaa1d75e84887d2bfb892b005f78049",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789533557.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2333,
+      "input_tokens_details": {
+        "cache_write_tokens": 2330,
+        "cached_tokens": 0
+      },
+      "output_tokens": 268,
+      "output_tokens_details": {
+        "reasoning_tokens": 116
+      },
+      "total_tokens": 2601
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Georgia's presidential election, pro-EU protests, and political crisis\",\n  \"conflict_relevance\": \"The main article concerns Georgian politics, but the text includes substantive embedded news snippets about Israeli hostage protests related to Gaza and Israel's military actions in Syria.\",\n  \"reason\": \"The central article is unrelated to Gaza or Israel/Palestine, but the inclusion of meaningful conflict-related paragraphs makes it relevant as peripheral material rather than an exclusion.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T04:39:21Z",
+  "duration_seconds": 4.037,
+  "error": null
+}

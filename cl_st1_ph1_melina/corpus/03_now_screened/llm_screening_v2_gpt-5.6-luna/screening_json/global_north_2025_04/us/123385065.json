@@ -1,0 +1,65 @@
+{
+  "article_id": "123385065",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_04/us/123385065.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_04/us/123385065.json"
+  },
+  "manifest_row": {
+    "article_id": "123385065",
+    "group": "global_north_2025_04",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2025_04/us/123385065.txt"
+  },
+  "screening": {
+    "category": "CORE",
+    "confidence": 0.99,
+    "gaza_role": "central",
+    "main_topic": "Israeli military construction of the Morag Corridor and operations against Hamas in southern Gaza",
+    "conflict_relevance": "Directly concerns Israeli military operations, territorial division, Palestinian displacement or destruction of structures, Hamas, Rafah and Khan Yunis, and efforts to secure a hostage deal.",
+    "reason": "The main article is centrally focused on the IDF's Gaza operations and the strategic purpose and humanitarian implications of the Morag Corridor. It also includes discussion of Hamas fighters and hostage negotiations. The text contains additional unrelated Jerusalem Post snippets about Israeli security officials and Netanyahu's diplomatic meetings.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": true
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "f11718ced16c0306aea2c7b019d048a9aff82de06fdbab0412a64af15db1cac9",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "d4fc0c7ccf09f8ad333193b8f4d23b5cb610b64bcf80d4530f462fb3baceb5f4",
+    "raw_response_text_sha256": "0a0c2aa2fc0ea5a20763000167415870e257226de493208dbbe9fcaa0e3876ee"
+  },
+  "api_metadata": {
+    "id": "resp_0f8414972ef7737d006aaa2a17924087d1a9fb6dd59ef45319",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789536791.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1286,
+      "input_tokens_details": {
+        "cache_write_tokens": 1283,
+        "cached_tokens": 0
+      },
+      "output_tokens": 244,
+      "output_tokens_details": {
+        "reasoning_tokens": 65
+      },
+      "total_tokens": 1530
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"CORE\",\n  \"confidence\": 0.99,\n  \"gaza_role\": \"central\",\n  \"main_topic\": \"Israeli military construction of the Morag Corridor and operations against Hamas in southern Gaza\",\n  \"conflict_relevance\": \"Directly concerns Israeli military operations, territorial division, Palestinian displacement or destruction of structures, Hamas, Rafah and Khan Yunis, and efforts to secure a hostage deal.\",\n  \"reason\": \"The main article is centrally focused on the IDF's Gaza operations and the strategic purpose and humanitarian implications of the Morag Corridor. It also includes discussion of Hamas fighters and hostage negotiations. The text contains additional unrelated Jerusalem Post snippets about Israeli security officials and Netanyahu's diplomatic meetings.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": true\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T05:33:15Z",
+  "duration_seconds": 4.232,
+  "error": null
+}

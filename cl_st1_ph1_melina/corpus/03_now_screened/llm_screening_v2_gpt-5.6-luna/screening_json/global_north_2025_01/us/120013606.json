@@ -1,0 +1,65 @@
+{
+  "article_id": "120013606",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_01/us/120013606.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_01/us/120013606.json"
+  },
+  "manifest_row": {
+    "article_id": "120013606",
+    "group": "global_north_2025_01",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2025_01/us/120013606.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.97,
+    "gaza_role": "background",
+    "main_topic": "U.S. border security and alleged terrorism threats under the Biden administration",
+    "conflict_relevance": "The article invokes Hamas, Israel, Gaza, Palestinian asylum seekers, migration from Gaza, and alleged terrorist infiltration to support a broader argument about U.S. border policy and national security.",
+    "reason": "Gaza and Hamas are meaningful elements of the article's terrorism and migration framing, but the main subject is U.S. immigration policy and partisan criticism of Biden rather than the Israel-Palestine conflict itself.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "55b46adb85811756074e26b6c80c899738195b49ac49b227a5bad801663de688",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "2e27bc631f2c0d8c42f939d5aacb76c6e6f80988b39ea559e7b4695f2d49611c",
+    "raw_response_text_sha256": "abd650a570e557dbab021ac4d281a48e27334d4c650b6c3af5267a7755077c22"
+  },
+  "api_metadata": {
+    "id": "resp_02a5f444eea59e87006aaa211080e087d29aae3f76a9e9bc9a",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789534480.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1435,
+      "input_tokens_details": {
+        "cache_write_tokens": 1432,
+        "cached_tokens": 0
+      },
+      "output_tokens": 236,
+      "output_tokens_details": {
+        "reasoning_tokens": 69
+      },
+      "total_tokens": 1671
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.97,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"U.S. border security and alleged terrorism threats under the Biden administration\",\n  \"conflict_relevance\": \"The article invokes Hamas, Israel, Gaza, Palestinian asylum seekers, migration from Gaza, and alleged terrorist infiltration to support a broader argument about U.S. border policy and national security.\",\n  \"reason\": \"Gaza and Hamas are meaningful elements of the article's terrorism and migration framing, but the main subject is U.S. immigration policy and partisan criticism of Biden rather than the Israel-Palestine conflict itself.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T04:54:43Z",
+  "duration_seconds": 3.161,
+  "error": null
+}

@@ -1,0 +1,65 @@
+{
+  "article_id": "120533113",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_01/us/120533113.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_01/us/120533113.json"
+  },
+  "manifest_row": {
+    "article_id": "120533113",
+    "group": "global_north_2025_01",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2025_01/us/120533113.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.97,
+    "gaza_role": "passing",
+    "main_topic": "Daily news newsletter roundup, primarily covering sports and entertainment",
+    "conflict_relevance": "A brief embedded update reports Palestinians returning to northern Gaza and the scale of displacement, but the newsletter is not focused on the conflict.",
+    "reason": "The Gaza content is a short incidental item within a multi-topic news roundup and does not provide substantial conflict-related discourse for corpus analysis.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "4675f16932324dd3f4ca70e7c117d48d09e9a56999755ffbcde8fe89f4adf696",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "cfc68a0407e886344bb477c731885f88257d48680d6dda0804d8442e9491c72e",
+    "raw_response_text_sha256": "9595616f995351988cf7dc3851bbd7622c4dff75593e60aa57b6b486efffd5ba"
+  },
+  "api_metadata": {
+    "id": "resp_07596e64c4fe169d006aaa21b7f13887d292e0c7b3e0883cfd",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789534647.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1709,
+      "input_tokens_details": {
+        "cache_write_tokens": 1706,
+        "cached_tokens": 0
+      },
+      "output_tokens": 287,
+      "output_tokens_details": {
+        "reasoning_tokens": 150
+      },
+      "total_tokens": 1996
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.97,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Daily news newsletter roundup, primarily covering sports and entertainment\",\n  \"conflict_relevance\": \"A brief embedded update reports Palestinians returning to northern Gaza and the scale of displacement, but the newsletter is not focused on the conflict.\",\n  \"reason\": \"The Gaza content is a short incidental item within a multi-topic news roundup and does not provide substantial conflict-related discourse for corpus analysis.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T04:57:32Z",
+  "duration_seconds": 4.228,
+  "error": null
+}

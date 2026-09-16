@@ -1,0 +1,65 @@
+{
+  "article_id": "123480933",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_04/au/123480933.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_04/au/123480933.json"
+  },
+  "manifest_row": {
+    "article_id": "123480933",
+    "group": "global_north_2025_04",
+    "country_code": "au",
+    "filepath": "corpus/02_now_organised/global_north_2025_04/au/123480933.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "substantial",
+    "main_topic": "Russian missile attack on Sumy, Ukraine, and the prospects for Ukraine peace talks",
+    "conflict_relevance": "The article includes a substantial subsection on Israeli strikes in Gaza, hospital damage, civilian deaths, evacuation, alleged military targeting, humanitarian conditions, and Palm Sunday religious observances.",
+    "reason": "The main article concerns the war in Ukraine and related diplomacy, but its concluding section provides meaningful coverage of Gaza and Israel's military actions, making it relevant to broader conflict discourse without being core Gaza coverage.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "ecbe0a9d3dfaa1fa31cb444cc22445f362d0d5e91c5d201cccd2a5dd3019980b",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "a1c2a8c4d7cd5b8fa5c5aadba163ae222c63dd5273930be756af40cc4f9d6f54",
+    "raw_response_text_sha256": "81a299722abd01868ace3e6c82c79e8844d7e0c7e0a3ca10a92b36aae1ca9f6f"
+  },
+  "api_metadata": {
+    "id": "resp_010c5712b1574d3a006aaa285de6ac87d1b044aa4996cefc11",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789536349.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1853,
+      "input_tokens_details": {
+        "cache_write_tokens": 1850,
+        "cached_tokens": 0
+      },
+      "output_tokens": 297,
+      "output_tokens_details": {
+        "reasoning_tokens": 130
+      },
+      "total_tokens": 2150
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"substantial\",\n  \"main_topic\": \"Russian missile attack on Sumy, Ukraine, and the prospects for Ukraine peace talks\",\n  \"conflict_relevance\": \"The article includes a substantial subsection on Israeli strikes in Gaza, hospital damage, civilian deaths, evacuation, alleged military targeting, humanitarian conditions, and Palm Sunday religious observances.\",\n  \"reason\": \"The main article concerns the war in Ukraine and related diplomacy, but its concluding section provides meaningful coverage of Gaza and Israel's military actions, making it relevant to broader conflict discourse without being core Gaza coverage.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T05:25:53Z",
+  "duration_seconds": 4.219,
+  "error": null
+}

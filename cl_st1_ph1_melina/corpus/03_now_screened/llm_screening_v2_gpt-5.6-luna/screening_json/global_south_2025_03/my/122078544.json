@@ -1,0 +1,65 @@
+{
+  "article_id": "122078544",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_south_2025_03/my/122078544.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_south_2025_03/my/122078544.json"
+  },
+  "manifest_row": {
+    "article_id": "122078544",
+    "group": "global_south_2025_03",
+    "country_code": "my",
+    "filepath": "corpus/02_now_organised/global_south_2025_03/my/122078544.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "gaza_role": "passing",
+    "main_topic": "Pope Francis's hospitalization and medical condition",
+    "conflict_relevance": "Gaza is mentioned only in passing as the location of a parish priest whom the pope called; the article does not discuss the conflict or related discourse.",
+    "reason": "The article is centrally about the pope's health, with no substantive discussion of Gaza, Palestine, Israel, or the conflict. The Gaza reference is incidental.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "083b740c22d7d53db3b911d0f1a7d82e4307818bdca27dfee373c20fb7ad35c2",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "19e488f1ea521bdd89a3248df46a6eb872d8a366a61608936eacb9e75639443a",
+    "raw_response_text_sha256": "891bdfeeb57b9f52ef08d3de7d7cba0deeb43d5e8be764acd40f221c0c85da80"
+  },
+  "api_metadata": {
+    "id": "resp_021d0f57d9e08a1f006aaa46d0db0887d1b973d7ad2cd5f65b",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789544144.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 956,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 292,
+      "output_tokens_details": {
+        "reasoning_tokens": 148
+      },
+      "total_tokens": 1248
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Pope Francis's hospitalization and medical condition\",\n  \"conflict_relevance\": \"Gaza is mentioned only in passing as the location of a parish priest whom the pope called; the article does not discuss the conflict or related discourse.\",\n  \"reason\": \"The article is centrally about the pope's health, with no substantive discussion of Gaza, Palestine, Israel, or the conflict. The Gaza reference is incidental.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T07:35:49Z",
+  "duration_seconds": 5.154,
+  "error": null
+}

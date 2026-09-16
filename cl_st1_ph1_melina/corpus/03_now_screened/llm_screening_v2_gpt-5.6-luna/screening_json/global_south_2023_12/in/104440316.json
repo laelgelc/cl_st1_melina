@@ -1,0 +1,65 @@
+{
+  "article_id": "104440316",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_south_2023_12/in/104440316.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_south_2023_12/in/104440316.json"
+  },
+  "manifest_row": {
+    "article_id": "104440316",
+    "group": "global_south_2023_12",
+    "country_code": "in",
+    "filepath": "corpus/02_now_organised/global_south_2023_12/in/104440316.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.97,
+    "gaza_role": "background",
+    "main_topic": "Red Sea shipping disruptions, Houthi attacks, and impacts on oil shipments to India",
+    "conflict_relevance": "The article discusses Houthi attacks on commercial vessels and explicitly connects them to the Houthis' stated targeting of vessels linked to Israel because of Israel's military offensive in Gaza. However, its primary focus is energy markets, oil transportation, and shipping routes.",
+    "reason": "The Gaza conflict provides important background for explaining the Houthi attacks, but the article is not substantially about Gaza, Israel-Palestine, or the war itself.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "446f4bdb8c8054d30e319c77abe5e8754a1b47d664461c226cb7e661d20d6db3",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "32fa9c13d60daa7f60cf35079b50135cf9953ed584282530fec4ce677aea83c4",
+    "raw_response_text_sha256": "51abf94326172118543d7b74443b3245c22733c8bda3c7958d1d5c3815ff9639"
+  },
+  "api_metadata": {
+    "id": "resp_020601a46ff9c7d6006aaa36c30ab487d1a41f73615b013782",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789540035.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1781,
+      "input_tokens_details": {
+        "cache_write_tokens": 1778,
+        "cached_tokens": 0
+      },
+      "output_tokens": 230,
+      "output_tokens_details": {
+        "reasoning_tokens": 52
+      },
+      "total_tokens": 2011
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.97,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Red Sea shipping disruptions, Houthi attacks, and impacts on oil shipments to India\",\n  \"conflict_relevance\": \"The article discusses Houthi attacks on commercial vessels and explicitly connects them to the Houthis' stated targeting of vessels linked to Israel because of Israel's military offensive in Gaza. However, its primary focus is energy markets, oil transportation, and shipping routes.\",\n  \"reason\": \"The Gaza conflict provides important background for explaining the Houthi attacks, but the article is not substantially about Gaza, Israel-Palestine, or the war itself.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T06:27:18Z",
+  "duration_seconds": 3.182,
+  "error": null
+}

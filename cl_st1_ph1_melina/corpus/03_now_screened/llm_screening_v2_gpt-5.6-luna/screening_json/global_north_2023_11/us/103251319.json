@@ -1,0 +1,65 @@
+{
+  "article_id": "103251319",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_11/us/103251319.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_11/us/103251319.json"
+  },
+  "manifest_row": {
+    "article_id": "103251319",
+    "group": "global_north_2023_11",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2023_11/us/103251319.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.99,
+    "gaza_role": "background",
+    "main_topic": "Pakistan's mass expulsion of Afghan refugees and the resulting humanitarian crisis",
+    "conflict_relevance": "The article briefly frames the Afghan refugee crisis against global attention to Gaza and Israel's war on Hamas, but its substantive focus is Pakistan, Afghanistan, deportation, and refugee protection.",
+    "reason": "Gaza appears in a meaningful contextual sentence at the beginning, connecting the article to broader humanitarian crises, but the article is not otherwise about Gaza, Palestine, Israel, or the Israel-Hamas war.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "6e467317d9f27af6352ccb9a3623d38483a36c24eacb9c3c7e327713974e848f",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "b3ec780d1a6ea08b4ba208e9a7aa7fa12e24bd06bd4d2d9adfc68e3729a75ac5",
+    "raw_response_text_sha256": "34770411750318a344fc18640cf84e1a64a1bc38b049f9767bf084a42e539770"
+  },
+  "api_metadata": {
+    "id": "resp_0bb30164be4ed97c006aa9fe2ca67487d28650add144575375",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789525548.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2140,
+      "input_tokens_details": {
+        "cache_write_tokens": 2137,
+        "cached_tokens": 0
+      },
+      "output_tokens": 234,
+      "output_tokens_details": {
+        "reasoning_tokens": 69
+      },
+      "total_tokens": 2374
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.99,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Pakistan's mass expulsion of Afghan refugees and the resulting humanitarian crisis\",\n  \"conflict_relevance\": \"The article briefly frames the Afghan refugee crisis against global attention to Gaza and Israel's war on Hamas, but its substantive focus is Pakistan, Afghanistan, deportation, and refugee protection.\",\n  \"reason\": \"Gaza appears in a meaningful contextual sentence at the beginning, connecting the article to broader humanitarian crises, but the article is not otherwise about Gaza, Palestine, Israel, or the Israel-Hamas war.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:25:52Z",
+  "duration_seconds": 3.629,
+  "error": null
+}

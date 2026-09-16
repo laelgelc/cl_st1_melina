@@ -1,0 +1,65 @@
+{
+  "article_id": "120915544",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_02/us/120915544.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_02/us/120915544.json"
+  },
+  "manifest_row": {
+    "article_id": "120915544",
+    "group": "global_north_2025_02",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2025_02/us/120915544.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.92,
+    "gaza_role": "background",
+    "main_topic": "Cynthia Erivo receiving Harvard's Hasty Pudding Woman of the Year honor",
+    "conflict_relevance": "The main article is unrelated entertainment coverage, but an embedded United States News snippet briefly reports Donald Trump's plans to take over and reconstruct Gaza.",
+    "reason": "The article's central subject is Cynthia Erivo and a Harvard theatrical award. However, the included news roundup contains a meaningful sentence about Trump's proposed Gaza plans, making it peripherally relevant rather than entirely excludable.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "db65299672d6b68b73f7b540592a2fe349dc3d5d34833fd824ae261098012ec5",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "ed882b8acf03b483764d05a2114cad1f938a9e68fc712d3b97a736884e8de21d",
+    "raw_response_text_sha256": "f87df7db270479b98d86b5266a8cb5c9c68c263b5930fe82b82bec57aaed63cd"
+  },
+  "api_metadata": {
+    "id": "resp_046b19a97fedf4d5006aaa243e5fe087d1a5095656cb85abc6",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789535294.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1764,
+      "input_tokens_details": {
+        "cache_write_tokens": 1761,
+        "cached_tokens": 0
+      },
+      "output_tokens": 288,
+      "output_tokens_details": {
+        "reasoning_tokens": 125
+      },
+      "total_tokens": 2052
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.92,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Cynthia Erivo receiving Harvard's Hasty Pudding Woman of the Year honor\",\n  \"conflict_relevance\": \"The main article is unrelated entertainment coverage, but an embedded United States News snippet briefly reports Donald Trump's plans to take over and reconstruct Gaza.\",\n  \"reason\": \"The article's central subject is Cynthia Erivo and a Harvard theatrical award. However, the included news roundup contains a meaningful sentence about Trump's proposed Gaza plans, making it peripherally relevant rather than entirely excludable.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T05:08:18Z",
+  "duration_seconds": 4.09,
+  "error": null
+}

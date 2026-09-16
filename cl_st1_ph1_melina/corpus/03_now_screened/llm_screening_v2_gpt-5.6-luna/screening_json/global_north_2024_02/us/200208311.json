@@ -1,0 +1,65 @@
+{
+  "article_id": "200208311",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_02/us/200208311.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_02/us/200208311.json"
+  },
+  "manifest_row": {
+    "article_id": "200208311",
+    "group": "global_north_2024_02",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2024_02/us/200208311.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.97,
+    "gaza_role": "passing",
+    "main_topic": "Donald Trump's remarks about NATO and Republican divisions over US foreign and defense policy",
+    "conflict_relevance": "The article briefly mentions ongoing Israeli military action in the Gaza Strip in the context of a Senate security package providing aid to Israel and Ukraine.",
+    "reason": "The article is primarily about NATO, Trump, Russia, and Republican responses. Gaza appears in one substantive contextual sentence concerning military aid and the Israeli assault, making it relevant to broader conflict discourse but not core Gaza coverage.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "c69b2d56e499c2c1eff792c4bab86027c058b86d37258ba1b92b3d6a407ceb3f",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "fe793ef0886904a5c8a220fd29dfdd00d5b9e0b49b3ab7c2dd9bad5f9ade6e73",
+    "raw_response_text_sha256": "934d0e59b08670d55549c4757e7f3736adda44824bd63cb77be2f7e0bf446a49"
+  },
+  "api_metadata": {
+    "id": "resp_021368d368e819d1006aaa07bc177887d2b4516951e36c9ffa",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789527996.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2457,
+      "input_tokens_details": {
+        "cache_write_tokens": 2454,
+        "cached_tokens": 0
+      },
+      "output_tokens": 251,
+      "output_tokens_details": {
+        "reasoning_tokens": 91
+      },
+      "total_tokens": 2708
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.97,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Donald Trump's remarks about NATO and Republican divisions over US foreign and defense policy\",\n  \"conflict_relevance\": \"The article briefly mentions ongoing Israeli military action in the Gaza Strip in the context of a Senate security package providing aid to Israel and Ukraine.\",\n  \"reason\": \"The article is primarily about NATO, Trump, Russia, and Republican responses. Gaza appears in one substantive contextual sentence concerning military aid and the Israeli assault, making it relevant to broader conflict discourse but not core Gaza coverage.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:06:40Z",
+  "duration_seconds": 4.166,
+  "error": null
+}

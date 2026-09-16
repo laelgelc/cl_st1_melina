@@ -1,0 +1,65 @@
+{
+  "article_id": "107506992",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_04/us/107506992.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_04/us/107506992.json"
+  },
+  "manifest_row": {
+    "article_id": "107506992",
+    "group": "global_north_2024_04",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2024_04/us/107506992.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "gaza_role": "passing",
+    "main_topic": "U.S. domestic politics and Donald Trump's political campaign",
+    "conflict_relevance": "Gaza is mentioned only in passing as one of several sources of overseas instability in an unrelated financial-news passage.",
+    "reason": "The main article is a partisan discussion of New York politics, Donald Trump, and U.S. domestic elections. The sole Gaza reference occurs in a separate Morgan Stanley business-news snippet and does not provide substantive conflict-related discourse.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "60d948bfd5701254c1716ea7a6b9dce731b81c7c157a254888e0e3c4d363d9a0",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "712778e226fc5e90b4bccf199616e43c97177c4591e20f363d7e25d0032e7491",
+    "raw_response_text_sha256": "7a27b5f9a7eb83b4ca0215dd4cc7f1294b7ca2d8c64db6c3c3f0c2e1665ed7c6"
+  },
+  "api_metadata": {
+    "id": "resp_0c9346ca24f45c1a006aaa0c23999c87d28986c6270fc496d5",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789529123.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1300,
+      "input_tokens_details": {
+        "cache_write_tokens": 1297,
+        "cached_tokens": 0
+      },
+      "output_tokens": 321,
+      "output_tokens_details": {
+        "reasoning_tokens": 170
+      },
+      "total_tokens": 1621
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"U.S. domestic politics and Donald Trump's political campaign\",\n  \"conflict_relevance\": \"Gaza is mentioned only in passing as one of several sources of overseas instability in an unrelated financial-news passage.\",\n  \"reason\": \"The main article is a partisan discussion of New York politics, Donald Trump, and U.S. domestic elections. The sole Gaza reference occurs in a separate Morgan Stanley business-news snippet and does not provide substantive conflict-related discourse.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:25:28Z",
+  "duration_seconds": 4.905,
+  "error": null
+}

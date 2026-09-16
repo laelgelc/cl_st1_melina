@@ -1,0 +1,65 @@
+{
+  "article_id": "110590093",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_07/us/110590093.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_07/us/110590093.json"
+  },
+  "manifest_row": {
+    "article_id": "110590093",
+    "group": "global_north_2024_07",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2024_07/us/110590093.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.97,
+    "gaza_role": "passing",
+    "main_topic": "NPR Up First podcast landing page and episode listings",
+    "conflict_relevance": "The page includes brief episode-summary mentions of a Hezbollah-Hamas ceasefire position and Gaza evacuations, but provides no substantive reporting or analysis on these issues.",
+    "reason": "This is a navigational podcast page and episode roundup. The conflict-related references occur only as incidental snippets in general news summaries rather than as meaningful article content.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "9e77ce82e977394dcf896e4a814f3139163ca7441d0111b429d91b7c1af14644",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "42a1d3af3b9b1452d1de5b432e31f02ebaeebeb8bda3aa15ddc9508f273414e1",
+    "raw_response_text_sha256": "fd19fb697b833bcebf1c5fe2cd30e37c2fe4f3cfd2c94033f0c77c1e53043bd4"
+  },
+  "api_metadata": {
+    "id": "resp_048c2cabd30b90a8006aaa1310497c87d280076bcc9927a71e",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789530896.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1741,
+      "input_tokens_details": {
+        "cache_write_tokens": 1738,
+        "cached_tokens": 0
+      },
+      "output_tokens": 346,
+      "output_tokens_details": {
+        "reasoning_tokens": 199
+      },
+      "total_tokens": 2087
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.97,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"NPR Up First podcast landing page and episode listings\",\n  \"conflict_relevance\": \"The page includes brief episode-summary mentions of a Hezbollah-Hamas ceasefire position and Gaza evacuations, but provides no substantive reporting or analysis on these issues.\",\n  \"reason\": \"This is a navigational podcast page and episode roundup. The conflict-related references occur only as incidental snippets in general news summaries rather than as meaningful article content.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:55:01Z",
+  "duration_seconds": 4.946,
+  "error": null
+}

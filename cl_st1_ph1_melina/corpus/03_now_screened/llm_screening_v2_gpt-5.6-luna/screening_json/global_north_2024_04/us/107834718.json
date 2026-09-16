@@ -1,0 +1,65 @@
+{
+  "article_id": "107834718",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_04/us/107834718.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_04/us/107834718.json"
+  },
+  "manifest_row": {
+    "article_id": "107834718",
+    "group": "global_north_2024_04",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2024_04/us/107834718.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "gaza_role": "boilerplate_or_unrelated",
+    "main_topic": "The British royal family and the public appearances of King Charles III, Prince William, and Catherine amid cancer treatment",
+    "conflict_relevance": "The main article has no meaningful connection to Gaza or the Israel-Palestine conflict; Gaza-related headlines appear only in a surrounding video/news navigation list.",
+    "reason": "The associated article concerns royal family events and cancer treatment. Conflict-related items are unrelated embedded headlines rather than substantive content in the main article.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "16e0fef042710b171fc85b9349e6c1c0baa233caa248063b03ccc0ad636f63a5",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "33169a25c64f477f5e0875a26e0b8ae8dcae5cdfd7fcb835b75676af45b0701a",
+    "raw_response_text_sha256": "525af8a0cd8f3e906a8c42c01de2db7ac9113fea26034547084507bcc5eabcd7"
+  },
+  "api_metadata": {
+    "id": "resp_04c0e92e063b8fc6006aaa0c64c10887d2be8e12354a172154",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789529188.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1109,
+      "input_tokens_details": {
+        "cache_write_tokens": 1106,
+        "cached_tokens": 0
+      },
+      "output_tokens": 278,
+      "output_tokens_details": {
+        "reasoning_tokens": 119
+      },
+      "total_tokens": 1387
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"gaza_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"The British royal family and the public appearances of King Charles III, Prince William, and Catherine amid cancer treatment\",\n  \"conflict_relevance\": \"The main article has no meaningful connection to Gaza or the Israel-Palestine conflict; Gaza-related headlines appear only in a surrounding video/news navigation list.\",\n  \"reason\": \"The associated article concerns royal family events and cancer treatment. Conflict-related items are unrelated embedded headlines rather than substantive content in the main article.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:26:32Z",
+  "duration_seconds": 3.863,
+  "error": null
+}

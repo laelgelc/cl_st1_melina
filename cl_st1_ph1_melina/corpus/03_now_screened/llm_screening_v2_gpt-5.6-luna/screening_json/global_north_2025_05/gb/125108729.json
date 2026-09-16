@@ -1,0 +1,65 @@
+{
+  "article_id": "125108729",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_05/gb/125108729.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_05/gb/125108729.json"
+  },
+  "manifest_row": {
+    "article_id": "125108729",
+    "group": "global_north_2025_05",
+    "country_code": "gb",
+    "filepath": "corpus/02_now_organised/global_north_2025_05/gb/125108729.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.96,
+    "gaza_role": "background",
+    "main_topic": "US Republican negotiations over Trump's agenda bill",
+    "conflict_relevance": "The article is primarily about US domestic politics and contains an embedded, brief item about Palestinian reactions to Trump's proposal to transform war-torn Gaza into the 'Riviera of the Middle East.'",
+    "reason": "Gaza-related content is meaningful but peripheral to the headline topic and appears as one of several unrelated news snippets.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "57df4c3f295ca38f2e7c6e1f5c3a14e3cc784e9308056dd0fe5e7817163162c2",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "2f2bc7e10786b11f5613d515c91210035873be8a1c643f1957eceae16bc84305",
+    "raw_response_text_sha256": "17a31fb05bfcea91e2ac9d69ab2cb4920f0f520094c3ce7e82bca0d92ee84c39"
+  },
+  "api_metadata": {
+    "id": "resp_0bbe71317592965c006aaa2c14bc3487d192384b1480dcb158",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789537300.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1342,
+      "input_tokens_details": {
+        "cache_write_tokens": 1339,
+        "cached_tokens": 0
+      },
+      "output_tokens": 280,
+      "output_tokens_details": {
+        "reasoning_tokens": 136
+      },
+      "total_tokens": 1622
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.96,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"US Republican negotiations over Trump's agenda bill\",\n  \"conflict_relevance\": \"The article is primarily about US domestic politics and contains an embedded, brief item about Palestinian reactions to Trump's proposal to transform war-torn Gaza into the 'Riviera of the Middle East.'\",\n  \"reason\": \"Gaza-related content is meaningful but peripheral to the headline topic and appears as one of several unrelated news snippets.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T05:41:46Z",
+  "duration_seconds": 6.426,
+  "error": null
+}

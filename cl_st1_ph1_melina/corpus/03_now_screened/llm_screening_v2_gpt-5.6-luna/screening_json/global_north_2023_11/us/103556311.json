@@ -1,0 +1,65 @@
+{
+  "article_id": "103556311",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_11/us/103556311.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_11/us/103556311.json"
+  },
+  "manifest_row": {
+    "article_id": "103556311",
+    "group": "global_north_2023_11",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2023_11/us/103556311.txt"
+  },
+  "screening": {
+    "category": "CORE",
+    "confidence": 0.86,
+    "gaza_role": "substantial",
+    "main_topic": "A Gaza cease-fire protest that shut down the San Francisco-Oakland Bay Bridge and disrupted a Google-Epic Games antitrust trial",
+    "conflict_relevance": "The article directly covers public protest over the Israel-Hamas conflict and calls for a Gaza cease-fire, including protest tactics, slogans, arrests, and the broader wave of conflict-related demonstrations.",
+    "reason": "Although the article includes substantial details about the unrelated antitrust trial and traffic disruption, the central news event is a protest explicitly organized around Gaza and the Israel-Hamas conflict.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": true
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "988a6ecc704c88be8dc75f10a3102f03d7bbb7405395ca7bdc2fd5edeb76f545",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "fa7f7ac509e567186bad68d0cf18aec3367ca8ea094b478c22b0020582f9e720",
+    "raw_response_text_sha256": "692bd4f998b01944eeb1afb5865423ca2f8f13e34ca968799579e9397d6d3afc"
+  },
+  "api_metadata": {
+    "id": "resp_0be29d3a213081e7006aa9fe9c9cb487d287777263956620ea",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789525660.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1291,
+      "input_tokens_details": {
+        "cache_write_tokens": 1288,
+        "cached_tokens": 0
+      },
+      "output_tokens": 293,
+      "output_tokens_details": {
+        "reasoning_tokens": 121
+      },
+      "total_tokens": 1584
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"CORE\",\n  \"confidence\": 0.86,\n  \"gaza_role\": \"substantial\",\n  \"main_topic\": \"A Gaza cease-fire protest that shut down the San Francisco-Oakland Bay Bridge and disrupted a Google-Epic Games antitrust trial\",\n  \"conflict_relevance\": \"The article directly covers public protest over the Israel-Hamas conflict and calls for a Gaza cease-fire, including protest tactics, slogans, arrests, and the broader wave of conflict-related demonstrations.\",\n  \"reason\": \"Although the article includes substantial details about the unrelated antitrust trial and traffic disruption, the central news event is a protest explicitly organized around Gaza and the Israel-Hamas conflict.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": true\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:27:44Z",
+  "duration_seconds": 4.231,
+  "error": null
+}

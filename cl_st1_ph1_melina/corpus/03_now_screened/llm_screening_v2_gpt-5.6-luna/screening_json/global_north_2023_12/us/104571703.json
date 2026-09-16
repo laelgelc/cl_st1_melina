@@ -1,0 +1,65 @@
+{
+  "article_id": "104571703",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_12/us/104571703.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_12/us/104571703.json"
+  },
+  "manifest_row": {
+    "article_id": "104571703",
+    "group": "global_north_2023_12",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2023_12/us/104571703.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "gaza_role": "passing",
+    "main_topic": "2023 political year-in-review and 2024 U.S. election outlook",
+    "conflict_relevance": "Gaza is mentioned only briefly as one of several issues facing Joe Biden; the article is not substantively about the conflict.",
+    "reason": "This is a roundup introduction to 23 political stories, with only a passing reference to the war in Gaza and no meaningful conflict-related discussion.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "2dd2c825e2cecf104865cca2b729f5edb6d989c5e813544b1078a6ebafd0a6f3",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "d4d2e50b217ca1f46e00a42cebcdd9c67522c4931c0aa34cb3cee77aff05febb",
+    "raw_response_text_sha256": "3e31d8be2feca4b8e90cc4830961ad1590b28d3c96fee47bd3ed686b4c7ff42a"
+  },
+  "api_metadata": {
+    "id": "resp_0bc096b70188353b006aaa0267e4a887d2a1a9776fed3dca19",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789526631.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 913,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 221,
+      "output_tokens_details": {
+        "reasoning_tokens": 78
+      },
+      "total_tokens": 1134
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"2023 political year-in-review and 2024 U.S. election outlook\",\n  \"conflict_relevance\": \"Gaza is mentioned only briefly as one of several issues facing Joe Biden; the article is not substantively about the conflict.\",\n  \"reason\": \"This is a roundup introduction to 23 political stories, with only a passing reference to the war in Gaza and no meaningful conflict-related discussion.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:43:55Z",
+  "duration_seconds": 3.458,
+  "error": null
+}

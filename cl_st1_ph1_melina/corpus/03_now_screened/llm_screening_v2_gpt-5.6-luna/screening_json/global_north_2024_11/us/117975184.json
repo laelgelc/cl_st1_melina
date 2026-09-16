@@ -1,0 +1,65 @@
+{
+  "article_id": "117975184",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_11/us/117975184.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_11/us/117975184.json"
+  },
+  "manifest_row": {
+    "article_id": "117975184",
+    "group": "global_north_2024_11",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2024_11/us/117975184.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "background",
+    "main_topic": "A weekly photo roundup covering Chicago news and scenes from an Amtrak journey",
+    "conflict_relevance": "Includes a substantive photo caption about an injured Palestinian child from Gaza arriving in Chicago for medical care through HEAL Palestine.",
+    "reason": "The article is primarily a miscellaneous Chicago news and photo gallery roundup, but it contains meaningful discourse about a child injured in Gaza and Palestinian medical care in Chicago. This supports peripheral rather than core classification.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "6b37adfb6f1900355b5e9ece79c3fa4da1548fb5c8616e4ff275acd66372e47d",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "0b431c2435260d64c2d152ffd5364b8f84d0ec714133aaf68c8a2c94d0258294",
+    "raw_response_text_sha256": "44407cc35c572cf9fc15fb8869845c6e3dc82da8f925372b175af687a3d1fe4b"
+  },
+  "api_metadata": {
+    "id": "resp_04e57fe100385522006aaa1c88bd9487d2ad7765f16ff34edd",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789533320.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1408,
+      "input_tokens_details": {
+        "cache_write_tokens": 1405,
+        "cached_tokens": 0
+      },
+      "output_tokens": 211,
+      "output_tokens_details": {
+        "reasoning_tokens": 59
+      },
+      "total_tokens": 1619
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"A weekly photo roundup covering Chicago news and scenes from an Amtrak journey\",\n  \"conflict_relevance\": \"Includes a substantive photo caption about an injured Palestinian child from Gaza arriving in Chicago for medical care through HEAL Palestine.\",\n  \"reason\": \"The article is primarily a miscellaneous Chicago news and photo gallery roundup, but it contains meaningful discourse about a child injured in Gaza and Palestinian medical care in Chicago. This supports peripheral rather than core classification.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T04:35:23Z",
+  "duration_seconds": 3.26,
+  "error": null
+}

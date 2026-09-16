@@ -1,0 +1,65 @@
+{
+  "article_id": "123260725",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_04/us/123260725.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_04/us/123260725.json"
+  },
+  "manifest_row": {
+    "article_id": "123260725",
+    "group": "global_north_2025_04",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2025_04/us/123260725.txt"
+  },
+  "screening": {
+    "category": "CORE",
+    "confidence": 0.99,
+    "gaza_role": "substantial",
+    "main_topic": "Netanyahu's meeting with Trump and the changing U.S.-Israel relationship",
+    "conflict_relevance": "The article substantially discusses Israel's renewed offensive in Gaza, the hostage crisis, U.S. support for Israeli military action, humanitarian concerns, and diplomatic coordination between Netanyahu and Trump.",
+    "reason": "Gaza and the Israel-Hamas war are central agenda items in the reported Trump-Netanyahu meeting and are repeatedly connected to U.S. policy, Israeli military operations, hostages, and the absence of humanitarian guardrails.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": true
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "4dc7139488dfaf8454bef0e87f0bba06144d88b254dbad2299e0cb7b2e99e1e2",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "5f1407cc1840efc691305d0490f622c80da26ba0906d49f717e5bb639816c85e",
+    "raw_response_text_sha256": "2a597dd040e9aee54c90caf6d819b63e25b32403275ddb3684bf4123aafa8aa4"
+  },
+  "api_metadata": {
+    "id": "resp_070fdf861ab4b79b006aaa29f90bf887d1b8cf0bfa0a08e0de",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789536761.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2118,
+      "input_tokens_details": {
+        "cache_write_tokens": 2115,
+        "cached_tokens": 0
+      },
+      "output_tokens": 248,
+      "output_tokens_details": {
+        "reasoning_tokens": 80
+      },
+      "total_tokens": 2366
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"CORE\",\n  \"confidence\": 0.99,\n  \"gaza_role\": \"substantial\",\n  \"main_topic\": \"Netanyahu's meeting with Trump and the changing U.S.-Israel relationship\",\n  \"conflict_relevance\": \"The article substantially discusses Israel's renewed offensive in Gaza, the hostage crisis, U.S. support for Israeli military action, humanitarian concerns, and diplomatic coordination between Netanyahu and Trump.\",\n  \"reason\": \"Gaza and the Israel-Hamas war are central agenda items in the reported Trump-Netanyahu meeting and are repeatedly connected to U.S. policy, Israeli military operations, hostages, and the absence of humanitarian guardrails.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": true\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T05:32:43Z",
+  "duration_seconds": 3.101,
+  "error": null
+}

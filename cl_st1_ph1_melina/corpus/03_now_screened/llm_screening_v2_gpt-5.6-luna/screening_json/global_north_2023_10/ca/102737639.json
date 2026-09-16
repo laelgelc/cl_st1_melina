@@ -1,0 +1,65 @@
+{
+  "article_id": "102737639",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_10/ca/102737639.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_10/ca/102737639.json"
+  },
+  "manifest_row": {
+    "article_id": "102737639",
+    "group": "global_north_2023_10",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2023_10/ca/102737639.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.97,
+    "gaza_role": "passing",
+    "main_topic": "Effects of extreme heat and intensive agriculture on nesting birds and biodiversity",
+    "conflict_relevance": "The main article is unrelated to Gaza or the Israel-Palestine conflict; Gaza-related material appears only in an embedded CTVNews.ca top-stories roundup.",
+    "reason": "The article's substantive content concerns climate change, farming, and bird conservation. Although the embedded roundup contains brief items about the Gaza hospital blast, hostages in Gaza, and platform regulation during the Israel-Hamas war, these are unrelated snippets rather than the focus of the article.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "dd8b0078855bfa37d10ee1958615726aeb1af82da87cee1a1e7c8400f7680771",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "8b2ddcbcb1fc39f3fb3f0bf55b0d1058e1db5bd77d4ca5c3d35960734c63dc61",
+    "raw_response_text_sha256": "4bedc0e8d7cc58243912fc28b25432b9133a4c5f171bc3c522c60a5aa57c62fc"
+  },
+  "api_metadata": {
+    "id": "resp_09c945a7de8d8ea8006aa9f66033b887d2980f1dd24c5205b8",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789523552.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2826,
+      "input_tokens_details": {
+        "cache_write_tokens": 2823,
+        "cached_tokens": 0
+      },
+      "output_tokens": 365,
+      "output_tokens_details": {
+        "reasoning_tokens": 190
+      },
+      "total_tokens": 3191
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.97,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Effects of extreme heat and intensive agriculture on nesting birds and biodiversity\",\n  \"conflict_relevance\": \"The main article is unrelated to Gaza or the Israel-Palestine conflict; Gaza-related material appears only in an embedded CTVNews.ca top-stories roundup.\",\n  \"reason\": \"The article's substantive content concerns climate change, farming, and bird conservation. Although the embedded roundup contains brief items about the Gaza hospital blast, hostages in Gaza, and platform regulation during the Israel-Hamas war, these are unrelated snippets rather than the focus of the article.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T01:52:36Z",
+  "duration_seconds": 4.806,
+  "error": null
+}

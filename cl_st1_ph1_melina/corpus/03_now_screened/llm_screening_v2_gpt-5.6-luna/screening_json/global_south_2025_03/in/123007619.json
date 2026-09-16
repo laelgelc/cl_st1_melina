@@ -1,0 +1,65 @@
+{
+  "article_id": "123007619",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_south_2025_03/in/123007619.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_south_2025_03/in/123007619.json"
+  },
+  "manifest_row": {
+    "article_id": "123007619",
+    "group": "global_south_2025_03",
+    "country_code": "in",
+    "filepath": "corpus/02_now_organised/global_south_2025_03/in/123007619.txt"
+  },
+  "screening": {
+    "category": "CORE",
+    "confidence": 0.99,
+    "gaza_role": "central",
+    "main_topic": "Israel's bombardment of Gaza during Eid, hostage negotiations, and related US strikes in Yemen",
+    "conflict_relevance": "The article centrally reports on Gaza casualties, Israeli military action, Palestinian humanitarian conditions, Hamas hostages, ceasefire diplomacy, and the wider regional conflict involving Yemen.",
+    "reason": "Gaza and the Israel-Hamas war form the primary subject of the article, with substantial reporting on deaths, attacks, recovered bodies, hostage demands, and ceasefire efforts. The Yemen material is related regional conflict coverage.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": true
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "82d74c0329746d610720239ee6e54a77e8a02262db8d126865b7ea73705ce840",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "ef0aa95c075d5faa3a2baee7d998437d9a44f73f07c936e1a5596c13bc096d76",
+    "raw_response_text_sha256": "af9bc768453131f9e575190cb50a103e68fc76fd765f7d89003e8345c7e2c863"
+  },
+  "api_metadata": {
+    "id": "resp_016bc0a83cd2f115006aaa46c3868887d1a6191cf144b0dd9a",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789544131.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1032,
+      "input_tokens_details": {
+        "cache_write_tokens": 1029,
+        "cached_tokens": 0
+      },
+      "output_tokens": 233,
+      "output_tokens_details": {
+        "reasoning_tokens": 65
+      },
+      "total_tokens": 1265
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"CORE\",\n  \"confidence\": 0.99,\n  \"gaza_role\": \"central\",\n  \"main_topic\": \"Israel's bombardment of Gaza during Eid, hostage negotiations, and related US strikes in Yemen\",\n  \"conflict_relevance\": \"The article centrally reports on Gaza casualties, Israeli military action, Palestinian humanitarian conditions, Hamas hostages, ceasefire diplomacy, and the wider regional conflict involving Yemen.\",\n  \"reason\": \"Gaza and the Israel-Hamas war form the primary subject of the article, with substantial reporting on deaths, attacks, recovered bodies, hostage demands, and ceasefire efforts. The Yemen material is related regional conflict coverage.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": true\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T07:35:34Z",
+  "duration_seconds": 3.236,
+  "error": null
+}

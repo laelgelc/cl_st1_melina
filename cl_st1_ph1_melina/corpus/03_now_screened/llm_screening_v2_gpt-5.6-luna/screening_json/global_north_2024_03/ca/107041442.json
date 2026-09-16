@@ -1,0 +1,65 @@
+{
+  "article_id": "107041442",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_03/ca/107041442.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_03/ca/107041442.json"
+  },
+  "manifest_row": {
+    "article_id": "107041442",
+    "group": "global_north_2024_03",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2024_03/ca/107041442.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "gaza_role": "boilerplate_or_unrelated",
+    "main_topic": "Government funding for a permanent homeless shelter and supportive housing in Courtenay, British Columbia",
+    "conflict_relevance": "The main article is unrelated to Gaza or the Israel-Palestine conflict; Gaza appears only in an unrelated brief about a Good Friday reenactment and prayers for peace.",
+    "reason": "The headline and substantive article concern homelessness and shelter infrastructure in British Columbia. The Gaza reference is incidental and embedded in an unrelated snippet rather than meaningful discourse.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "bbd814bf72624d8134b81dc1693e3498bd9c9c576fffa6079e73cfe60e85b67f",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "9b9b85dca6a7ee603a48a1303cd39737c86fe4bf67a30caf2437ea99d3e6d185",
+    "raw_response_text_sha256": "b3507dacd7d6131258ea94c8df10a1a81c7164aa0e60578b62534910f10833a0"
+  },
+  "api_metadata": {
+    "id": "resp_0f10f3328ff23b07006aaa0888fb3087d2aca5f8e370d3907d",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789528201.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1284,
+      "input_tokens_details": {
+        "cache_write_tokens": 1281,
+        "cached_tokens": 0
+      },
+      "output_tokens": 222,
+      "output_tokens_details": {
+        "reasoning_tokens": 60
+      },
+      "total_tokens": 1506
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"gaza_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Government funding for a permanent homeless shelter and supportive housing in Courtenay, British Columbia\",\n  \"conflict_relevance\": \"The main article is unrelated to Gaza or the Israel-Palestine conflict; Gaza appears only in an unrelated brief about a Good Friday reenactment and prayers for peace.\",\n  \"reason\": \"The headline and substantive article concern homelessness and shelter infrastructure in British Columbia. The Gaza reference is incidental and embedded in an unrelated snippet rather than meaningful discourse.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:10:03Z",
+  "duration_seconds": 3.126,
+  "error": null
+}

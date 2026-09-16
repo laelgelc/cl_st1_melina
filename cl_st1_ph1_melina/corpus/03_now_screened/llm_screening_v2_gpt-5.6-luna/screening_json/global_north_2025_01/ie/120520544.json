@@ -1,0 +1,65 @@
+{
+  "article_id": "120520544",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_01/ie/120520544.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_01/ie/120520544.json"
+  },
+  "manifest_row": {
+    "article_id": "120520544",
+    "group": "global_north_2025_01",
+    "country_code": "ie",
+    "filepath": "corpus/02_now_organised/global_north_2025_01/ie/120520544.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "background",
+    "main_topic": "Irish-British political relations and discussions between Irish and UK leaders",
+    "conflict_relevance": "The article briefly reports that the leaders discussed the situation in the Middle East and the need for increased humanitarian aid to Gaza.",
+    "reason": "Gaza appears in a meaningful sentence describing international diplomatic discussion and humanitarian assistance, but the article is primarily about Ireland-UK relations, storm recovery, Northern Ireland, and Holocaust commemoration.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "89c11a33f9d3eeea8599da748ad9aeb919bcb526134e9d8f43f09eaf2d604f1e",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "ac25e4a308f8360c976c3828ba0ece05fe28c4656e470cbaec3a6e23c8dfb6ad",
+    "raw_response_text_sha256": "bf19d53a5f7adc4db8ccafaf017f97bcb03ba33954a37cf9904df2ac68ae0374"
+  },
+  "api_metadata": {
+    "id": "resp_01e9df5d7d962849006aaa2066709487d2ac15245fb02b3573",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789534310.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1325,
+      "input_tokens_details": {
+        "cache_write_tokens": 1322,
+        "cached_tokens": 0
+      },
+      "output_tokens": 199,
+      "output_tokens_details": {
+        "reasoning_tokens": 48
+      },
+      "total_tokens": 1524
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Irish-British political relations and discussions between Irish and UK leaders\",\n  \"conflict_relevance\": \"The article briefly reports that the leaders discussed the situation in the Middle East and the need for increased humanitarian aid to Gaza.\",\n  \"reason\": \"Gaza appears in a meaningful sentence describing international diplomatic discussion and humanitarian assistance, but the article is primarily about Ireland-UK relations, storm recovery, Northern Ireland, and Holocaust commemoration.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T04:51:53Z",
+  "duration_seconds": 2.793,
+  "error": null
+}

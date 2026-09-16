@@ -1,0 +1,65 @@
+{
+  "article_id": "125940847",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_06/us/125940847.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_06/us/125940847.json"
+  },
+  "manifest_row": {
+    "article_id": "125940847",
+    "group": "global_north_2025_06",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2025_06/us/125940847.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.97,
+    "gaza_role": "passing",
+    "main_topic": "Protests in Denver against the Trump administration, deportations, and immigration enforcement",
+    "conflict_relevance": "The article briefly mentions an earlier 'All Out for Gaza, End the Genocide' protest at the Capitol, but the main coverage concerns unrelated domestic political and immigration protests.",
+    "reason": "Gaza appears in a substantive event reference within the photo caption, but it is not the focus of the article.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "23c8eafd34cffc372e88793d439e2382066494a0c67f85bc07b2130fddff8529",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "2b55669c9b7b727f60a342b2a0c886b14875fde4d482e1703ac8a8fac591d041",
+    "raw_response_text_sha256": "574a523bc2c75c84bd29c523d8077117eec333a9cd75697c712aff22ef5ccb1d"
+  },
+  "api_metadata": {
+    "id": "resp_04719f2aa4074765006aaa315d616c87d1b09164fb63208015",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789538653.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1325,
+      "input_tokens_details": {
+        "cache_write_tokens": 1322,
+        "cached_tokens": 0
+      },
+      "output_tokens": 224,
+      "output_tokens_details": {
+        "reasoning_tokens": 76
+      },
+      "total_tokens": 1549
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.97,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Protests in Denver against the Trump administration, deportations, and immigration enforcement\",\n  \"conflict_relevance\": \"The article briefly mentions an earlier 'All Out for Gaza, End the Genocide' protest at the Capitol, but the main coverage concerns unrelated domestic political and immigration protests.\",\n  \"reason\": \"Gaza appears in a substantive event reference within the photo caption, but it is not the focus of the article.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T06:04:16Z",
+  "duration_seconds": 3.329,
+  "error": null
+}

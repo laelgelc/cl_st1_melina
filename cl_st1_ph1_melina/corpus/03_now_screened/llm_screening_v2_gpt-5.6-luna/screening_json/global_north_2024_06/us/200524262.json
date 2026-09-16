@@ -1,0 +1,65 @@
+{
+  "article_id": "200524262",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_06/us/200524262.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_06/us/200524262.json"
+  },
+  "manifest_row": {
+    "article_id": "200524262",
+    "group": "global_north_2024_06",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2024_06/us/200524262.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.96,
+    "gaza_role": "background",
+    "main_topic": "FBI crime statistics and U.S. political debate over crime",
+    "conflict_relevance": "The main article is unrelated to Gaza or the Israel-Hamas war, but a substantial embedded latest-news item briefly covers stalled hostage-release negotiations, Israeli military operations in Rafah, and rescued hostages.",
+    "reason": "The headline article focuses on declining U.S. crime rates and election politics. Gaza-related discourse appears only in a separate roundup snippet, but that snippet contains meaningful conflict-related reporting, making the item peripheral rather than excludable.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "2a6011062cb5159a76a88ded94f59d5a7bffe664393ee6ceb53bb993f82ce0b5",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "2d96faf0cab90ab774923f32bc748712f059216462a26e7d351922ee3fc0a301",
+    "raw_response_text_sha256": "19b897dba4693a560efd5b0b4c57141d0163e69a9157cd270bb40d28ab8af17d"
+  },
+  "api_metadata": {
+    "id": "resp_0c7303e4a84b040f006aaa11ad5ae087d2a2fb155d36fd0705",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789530541.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 3462,
+      "input_tokens_details": {
+        "cache_write_tokens": 3459,
+        "cached_tokens": 0
+      },
+      "output_tokens": 312,
+      "output_tokens_details": {
+        "reasoning_tokens": 139
+      },
+      "total_tokens": 3774
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.96,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"FBI crime statistics and U.S. political debate over crime\",\n  \"conflict_relevance\": \"The main article is unrelated to Gaza or the Israel-Hamas war, but a substantial embedded latest-news item briefly covers stalled hostage-release negotiations, Israeli military operations in Rafah, and rescued hostages.\",\n  \"reason\": \"The headline article focuses on declining U.S. crime rates and election politics. Gaza-related discourse appears only in a separate roundup snippet, but that snippet contains meaningful conflict-related reporting, making the item peripheral rather than excludable.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:49:06Z",
+  "duration_seconds": 5.627,
+  "error": null
+}

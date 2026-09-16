@@ -1,0 +1,65 @@
+{
+  "article_id": "119300620",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_south_2024_12/in/119300620.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_south_2024_12/in/119300620.json"
+  },
+  "manifest_row": {
+    "article_id": "119300620",
+    "group": "global_south_2024_12",
+    "country_code": "in",
+    "filepath": "corpus/02_now_organised/global_south_2024_12/in/119300620.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.96,
+    "gaza_role": "background",
+    "main_topic": "Israeli strikes on Yemen and escalating conflict with the Houthis",
+    "conflict_relevance": "The article focuses on Israel-Houthi military escalation in Yemen, while connecting Houthi attacks to the Gaza war and solidarity with Palestinians.",
+    "reason": "Gaza is meaningful contextual framing for the reported regional escalation, but the article is primarily about military actions in Yemen rather than Gaza, Palestinians, or the Israel-Palestine conflict itself.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "c59bfdd8b43631d487f7bda49e1ae799c46f21209922889c589883fb7e72134f",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "68ffa4fe13bdfea8ccf829a48b9f15c903db4592cd752062680cf9c6eee37cfe",
+    "raw_response_text_sha256": "ef7e9821c01ea62ff2818cf7ca9ac0e061f4262e625eda5dc2b617db09c7ca2e"
+  },
+  "api_metadata": {
+    "id": "resp_01d40594215d7d09006aaa433cfe7087d1918277dc7cff9596",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789543229.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 902,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 202,
+      "output_tokens_details": {
+        "reasoning_tokens": 48
+      },
+      "total_tokens": 1104
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.96,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Israeli strikes on Yemen and escalating conflict with the Houthis\",\n  \"conflict_relevance\": \"The article focuses on Israel-Houthi military escalation in Yemen, while connecting Houthi attacks to the Gaza war and solidarity with Palestinians.\",\n  \"reason\": \"Gaza is meaningful contextual framing for the reported regional escalation, but the article is primarily about military actions in Yemen rather than Gaza, Palestinians, or the Israel-Palestine conflict itself.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T07:20:36Z",
+  "duration_seconds": 7.813,
+  "error": null
+}

@@ -1,0 +1,65 @@
+{
+  "article_id": "102707621",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_10/ca/102707621.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_10/ca/102707621.json"
+  },
+  "manifest_row": {
+    "article_id": "102707621",
+    "group": "global_north_2023_10",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2023_10/ca/102707621.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.97,
+    "gaza_role": "background",
+    "main_topic": "The television series Suits and its streaming success",
+    "conflict_relevance": "The main article is unrelated to Gaza or Israel/Palestine, but appended snippets include an opinion item about corporate media and politicians in the Israel-Palestine conflict and a substantive report on pro-Palestinian and pro-Israeli demonstrations in Toronto concerning the Israel-Hamas war.",
+    "reason": "The primary article concerns Suits, while conflict-related material appears as separate embedded or appended news content. These snippets contain meaningful discourse about Gaza, demonstrations, and media framing, making the item peripheral rather than excludable.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "35a6e6163918d6843c70f255faf1c2b0129a1af624ca9fff5692c6cec5f80750",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "4577defa99909ad4979beac95efd53a17fd66e5c6b9045104bab06f27a4bd7ff",
+    "raw_response_text_sha256": "d82be1e57e0ca5f0df07db5baf0c97884d1621648efa881fb09d7c06b6260695"
+  },
+  "api_metadata": {
+    "id": "resp_0a32c6170d3e1e04006aa9f653a60887d29035fe29e559eccd",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789523539.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1662,
+      "input_tokens_details": {
+        "cache_write_tokens": 1659,
+        "cached_tokens": 0
+      },
+      "output_tokens": 333,
+      "output_tokens_details": {
+        "reasoning_tokens": 145
+      },
+      "total_tokens": 1995
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.97,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"The television series Suits and its streaming success\",\n  \"conflict_relevance\": \"The main article is unrelated to Gaza or Israel/Palestine, but appended snippets include an opinion item about corporate media and politicians in the Israel-Palestine conflict and a substantive report on pro-Palestinian and pro-Israeli demonstrations in Toronto concerning the Israel-Hamas war.\",\n  \"reason\": \"The primary article concerns Suits, while conflict-related material appears as separate embedded or appended news content. These snippets contain meaningful discourse about Gaza, demonstrations, and media framing, making the item peripheral rather than excludable.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T01:52:23Z",
+  "duration_seconds": 3.979,
+  "error": null
+}

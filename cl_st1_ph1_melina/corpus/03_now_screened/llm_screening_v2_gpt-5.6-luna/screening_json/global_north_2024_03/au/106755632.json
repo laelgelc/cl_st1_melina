@@ -1,0 +1,65 @@
+{
+  "article_id": "106755632",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_03/au/106755632.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_03/au/106755632.json"
+  },
+  "manifest_row": {
+    "article_id": "106755632",
+    "group": "global_north_2024_03",
+    "country_code": "au",
+    "filepath": "corpus/02_now_organised/global_north_2024_03/au/106755632.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "gaza_role": "passing",
+    "main_topic": "Artificial intelligence regulation, algorithmic bias, and responsible AI",
+    "conflict_relevance": "Gaza is mentioned only as one item in Google's 2023 Australian search trends, with no further discussion of the conflict.",
+    "reason": "The article is centrally about AI governance, algorithmic harms, and responsible technology. The reference to the war in Gaza is incidental and does not contribute meaningful conflict-related discourse analysis.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "7d56fb20f70b0c6ffb8d894fef8595f11eddfc4507ccc2379b7267ef6599c015",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "5c00e5ae5de63bbaa2625cb312e338b718426b4d39e4efc11d587f9ed2a3f0f9",
+    "raw_response_text_sha256": "67335267eba330a1a8933bfc0253f89028651d3e9b24b489e9546b0a3d08f595"
+  },
+  "api_metadata": {
+    "id": "resp_0d4c1a4cf7baeaff006aaa083d251887d29d0d8e50d7e222fb",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789528125.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1562,
+      "input_tokens_details": {
+        "cache_write_tokens": 1559,
+        "cached_tokens": 0
+      },
+      "output_tokens": 202,
+      "output_tokens_details": {
+        "reasoning_tokens": 56
+      },
+      "total_tokens": 1764
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Artificial intelligence regulation, algorithmic bias, and responsible AI\",\n  \"conflict_relevance\": \"Gaza is mentioned only as one item in Google's 2023 Australian search trends, with no further discussion of the conflict.\",\n  \"reason\": \"The article is centrally about AI governance, algorithmic harms, and responsible technology. The reference to the war in Gaza is incidental and does not contribute meaningful conflict-related discourse analysis.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:08:47Z",
+  "duration_seconds": 2.788,
+  "error": null
+}

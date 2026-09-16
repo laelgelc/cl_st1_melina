@@ -1,0 +1,65 @@
+{
+  "article_id": "123456408",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_04/sg/123456408.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_04/sg/123456408.json"
+  },
+  "manifest_row": {
+    "article_id": "123456408",
+    "group": "global_north_2025_04",
+    "country_code": "sg",
+    "filepath": "corpus/02_now_organised/global_north_2025_04/sg/123456408.txt"
+  },
+  "screening": {
+    "category": "CORE",
+    "confidence": 0.99,
+    "gaza_role": "substantial",
+    "main_topic": "The impact of Israeli military operations, settler violence, UNRWA restrictions, and humanitarian funding cuts on education for Palestinian children in the West Bank and Gaza",
+    "conflict_relevance": "Directly addresses Israeli operations and occupation-related restrictions in the West Bank, the destruction and disruption of education in Gaza, Palestinian humanitarian conditions, UNRWA funding, and the broader Israel-Hamas war.",
+    "reason": "The article is centrally focused on how the Israel-Palestine conflict affects Palestinian education and humanitarian services, with substantial discussion of both the West Bank and Gaza.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": true
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "ac5723a44802ce90106e52feb0f06d93467e63c06d3125870d2279e710139b99",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "41d71f6b08669a7860e1a69142e1f43043b9a794206a38f30f72b56a2a95ca20",
+    "raw_response_text_sha256": "88698568f4c1b5888c1ad8ad4d6803dc03b43ada93981c450be617d90fa9d7fb"
+  },
+  "api_metadata": {
+    "id": "resp_03a6b38d57a0ef7e006aaa29babc1487d1b0535cabd1c3768d",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789536698.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1712,
+      "input_tokens_details": {
+        "cache_write_tokens": 1709,
+        "cached_tokens": 0
+      },
+      "output_tokens": 224,
+      "output_tokens_details": {
+        "reasoning_tokens": 46
+      },
+      "total_tokens": 1936
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"CORE\",\n  \"confidence\": 0.99,\n  \"gaza_role\": \"substantial\",\n  \"main_topic\": \"The impact of Israeli military operations, settler violence, UNRWA restrictions, and humanitarian funding cuts on education for Palestinian children in the West Bank and Gaza\",\n  \"conflict_relevance\": \"Directly addresses Israeli operations and occupation-related restrictions in the West Bank, the destruction and disruption of education in Gaza, Palestinian humanitarian conditions, UNRWA funding, and the broader Israel-Hamas war.\",\n  \"reason\": \"The article is centrally focused on how the Israel-Palestine conflict affects Palestinian education and humanitarian services, with substantial discussion of both the West Bank and Gaza.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": true\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T05:31:41Z",
+  "duration_seconds": 3.007,
+  "error": null
+}

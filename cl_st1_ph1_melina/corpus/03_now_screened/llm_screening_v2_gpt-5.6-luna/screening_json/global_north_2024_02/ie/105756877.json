@@ -1,0 +1,65 @@
+{
+  "article_id": "105756877",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_02/ie/105756877.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_02/ie/105756877.json"
+  },
+  "manifest_row": {
+    "article_id": "105756877",
+    "group": "global_north_2024_02",
+    "country_code": "ie",
+    "filepath": "corpus/02_now_organised/global_north_2024_02/ie/105756877.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.97,
+    "gaza_role": "passing",
+    "main_topic": "Dating advice from a television maître d'",
+    "conflict_relevance": "Gaza is mentioned once as an example of a politically contentious topic to avoid discussing on a first date.",
+    "reason": "The article is primarily about dating etiquette and a television personality. The Gaza reference is incidental and does not develop meaningful conflict-related discourse.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "35c76f3dac07aaea09bb887440d7c160aa701305d319ab32e1eb088bd5e3a296",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "10fc0c23bfc65a334f4c013dfd5fe8107f46ca391716986f559cf4eba4a6fadd",
+    "raw_response_text_sha256": "4ab0fc145db009a02a32007663c028ad38c87a104e59fe46377437c7159de8ab"
+  },
+  "api_metadata": {
+    "id": "resp_07bb155b806f32f2006aaa06a2758887d2b9d2690e61528568",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789527714.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2066,
+      "input_tokens_details": {
+        "cache_write_tokens": 2063,
+        "cached_tokens": 0
+      },
+      "output_tokens": 289,
+      "output_tokens_details": {
+        "reasoning_tokens": 160
+      },
+      "total_tokens": 2355
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.97,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Dating advice from a television maître d'\",\n  \"conflict_relevance\": \"Gaza is mentioned once as an example of a politically contentious topic to avoid discussing on a first date.\",\n  \"reason\": \"The article is primarily about dating etiquette and a television personality. The Gaza reference is incidental and does not develop meaningful conflict-related discourse.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:01:57Z",
+  "duration_seconds": 3.3,
+  "error": null
+}

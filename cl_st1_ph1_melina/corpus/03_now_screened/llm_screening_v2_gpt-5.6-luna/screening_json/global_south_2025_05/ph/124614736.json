@@ -1,0 +1,65 @@
+{
+  "article_id": "124614736",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_south_2025_05/ph/124614736.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_south_2025_05/ph/124614736.json"
+  },
+  "manifest_row": {
+    "article_id": "124614736",
+    "group": "global_south_2025_05",
+    "country_code": "ph",
+    "filepath": "corpus/02_now_organised/global_south_2025_05/ph/124614736.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.93,
+    "gaza_role": "passing",
+    "main_topic": "A compilation of unrelated Associated Press news snippets about the Middle East and surrounding regions",
+    "conflict_relevance": "The compilation includes several brief references to the Israel-Hamas war, Gaza-related devastation, Hamas cease-fire demands, and Houthi attacks linked to the war, but no single article develops these topics.",
+    "reason": "This is a multi-article news compilation rather than a coherent article. Although some embedded snippets contain meaningful conflict-related information, the overall item is a roundup of unrelated stories and is unsuitable as a standalone discourse-analysis document.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "33608bfb1bf715bd77fa8cc290df024172a63349b0b4dacda885549075c7a610",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "1a6370410b012974a6893309457af40a67765a367284dab32c26f7953f2b539c",
+    "raw_response_text_sha256": "4fbcceee7b1816c12729a4c3c509228935e9f6b59ded717938ad55906b8f4924"
+  },
+  "api_metadata": {
+    "id": "resp_06eb777b20335dfb006aaa49364c3487d18d9328ab2457e976",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789544758.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1956,
+      "input_tokens_details": {
+        "cache_write_tokens": 1953,
+        "cached_tokens": 0
+      },
+      "output_tokens": 465,
+      "output_tokens_details": {
+        "reasoning_tokens": 292
+      },
+      "total_tokens": 2421
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.93,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"A compilation of unrelated Associated Press news snippets about the Middle East and surrounding regions\",\n  \"conflict_relevance\": \"The compilation includes several brief references to the Israel-Hamas war, Gaza-related devastation, Hamas cease-fire demands, and Houthi attacks linked to the war, but no single article develops these topics.\",\n  \"reason\": \"This is a multi-article news compilation rather than a coherent article. Although some embedded snippets contain meaningful conflict-related information, the overall item is a roundup of unrelated stories and is unsuitable as a standalone discourse-analysis document.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T07:46:04Z",
+  "duration_seconds": 6.273,
+  "error": null
+}

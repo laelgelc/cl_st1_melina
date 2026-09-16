@@ -1,0 +1,65 @@
+{
+  "article_id": "118344654",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_12/ie/118344654.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_12/ie/118344654.json"
+  },
+  "manifest_row": {
+    "article_id": "118344654",
+    "group": "global_north_2024_12",
+    "country_code": "ie",
+    "filepath": "corpus/02_now_organised/global_north_2024_12/ie/118344654.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.97,
+    "gaza_role": "passing",
+    "main_topic": "Reactions to Donald Trump's 2024 U.S. presidential election victory",
+    "conflict_relevance": "Gaza is mentioned only as one item among several issues associated with the election, without substantive discussion of the war or related discourse.",
+    "reason": "The article focuses on U.S. electoral reactions, domestic policy, and political polarization. The reference to the ongoing war in Gaza is a passing, undeveloped mention and does not provide meaningful conflict-related discourse.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "7fa06a2835b5cbcae6e9d0ed602978e6a3de22af9816253a9b2237f67f4880cf",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "94072f0fc65996d233e4be1615b75d1c6c97da32e67423718e74930a88959a2a",
+    "raw_response_text_sha256": "ad4207371de5ba5d18b9db369b5e707c3b75dd2ddbdd5d5c44bb94106f7a3035"
+  },
+  "api_metadata": {
+    "id": "resp_030de08a84e08584006aaa1dc40eec87d29df0c9a7a765dc4c",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789533636.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2566,
+      "input_tokens_details": {
+        "cache_write_tokens": 2563,
+        "cached_tokens": 0
+      },
+      "output_tokens": 316,
+      "output_tokens_details": {
+        "reasoning_tokens": 160
+      },
+      "total_tokens": 2882
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.97,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Reactions to Donald Trump's 2024 U.S. presidential election victory\",\n  \"conflict_relevance\": \"Gaza is mentioned only as one item among several issues associated with the election, without substantive discussion of the war or related discourse.\",\n  \"reason\": \"The article focuses on U.S. electoral reactions, domestic policy, and political polarization. The reference to the ongoing war in Gaza is a passing, undeveloped mention and does not provide meaningful conflict-related discourse.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T04:40:40Z",
+  "duration_seconds": 4.5,
+  "error": null
+}

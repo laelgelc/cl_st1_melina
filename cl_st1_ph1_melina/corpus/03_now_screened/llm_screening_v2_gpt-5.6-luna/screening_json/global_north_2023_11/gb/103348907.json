@@ -1,0 +1,65 @@
+{
+  "article_id": "103348907",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_11/gb/103348907.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_11/gb/103348907.json"
+  },
+  "manifest_row": {
+    "article_id": "103348907",
+    "group": "global_north_2023_11",
+    "country_code": "gb",
+    "filepath": "corpus/02_now_organised/global_north_2023_11/gb/103348907.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "background",
+    "main_topic": "Scottish and UK criminal justice policy, short prison sentences, and community sentencing",
+    "conflict_relevance": "The text includes a separate substantive snippet about divisions in the Labour Party over Keir Starmer's refusal to call for a ceasefire in Gaza, including discussion of the humanitarian catastrophe, reported death toll, and a ministerial resignation.",
+    "reason": "The main article concerns criminal justice and prison policy. Gaza-related content is meaningful but appears as a separate embedded article or snippet rather than forming the central subject.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "ca7ccf20afc04d3f36a61b16ea8d918a65d69eb4cff3448f0cf1f909672fd663",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "a997195f208993936e7ce9ad3e3080ef68e9b2d2b9df070e4bb7f9c2cd42fd1f",
+    "raw_response_text_sha256": "af0cf5aa0e692ab0346a595c93eae7f97291dd284401ba3bfba492490e9df6c1"
+  },
+  "api_metadata": {
+    "id": "resp_0e19f4fb3e8007f9006aa9fc6de1e487d2be63f285bdaeca66",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789525101.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2353,
+      "input_tokens_details": {
+        "cache_write_tokens": 2350,
+        "cached_tokens": 0
+      },
+      "output_tokens": 350,
+      "output_tokens_details": {
+        "reasoning_tokens": 182
+      },
+      "total_tokens": 2703
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Scottish and UK criminal justice policy, short prison sentences, and community sentencing\",\n  \"conflict_relevance\": \"The text includes a separate substantive snippet about divisions in the Labour Party over Keir Starmer's refusal to call for a ceasefire in Gaza, including discussion of the humanitarian catastrophe, reported death toll, and a ministerial resignation.\",\n  \"reason\": \"The main article concerns criminal justice and prison policy. Gaza-related content is meaningful but appears as a separate embedded article or snippet rather than forming the central subject.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:18:27Z",
+  "duration_seconds": 5.933,
+  "error": null
+}

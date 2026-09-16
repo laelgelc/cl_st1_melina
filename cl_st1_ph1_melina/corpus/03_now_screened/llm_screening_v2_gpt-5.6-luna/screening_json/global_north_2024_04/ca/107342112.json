@@ -1,0 +1,65 @@
+{
+  "article_id": "107342112",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_04/ca/107342112.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_04/ca/107342112.json"
+  },
+  "manifest_row": {
+    "article_id": "107342112",
+    "group": "global_north_2024_04",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2024_04/ca/107342112.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "passing",
+    "main_topic": "A winery recalling and rebranding a sparkling wine after a trademark dispute with Dom Pérignon",
+    "conflict_relevance": "The main article is unrelated to Gaza or the Israel-Hamas war, but an embedded top-stories section includes a substantive sentence about Israeli aircraft killing members of a Hamas leader's family in Gaza during cease-fire negotiations.",
+    "reason": "The conflict-related content appears only as an unrelated embedded news item rather than as part of the main article. It is meaningful but brief, making the article peripheral rather than core.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "8b04fae0eba45eb11995ee08bb602829838daa9f45add6d6a9e29bb519bb58f9",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "3421ee8aeb85bfb01b0dd105299267c30201f50cfb578a6a5d32a7e7499ebb5d",
+    "raw_response_text_sha256": "939e9ef6235a35434a99fcc805594e045d4a70eb2a0e88dcc94fa246f62e914b"
+  },
+  "api_metadata": {
+    "id": "resp_002d9338c821c38e006aaa0b03b6c087d2af53eabbf8fe2eac",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789528835.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1660,
+      "input_tokens_details": {
+        "cache_write_tokens": 1657,
+        "cached_tokens": 0
+      },
+      "output_tokens": 309,
+      "output_tokens_details": {
+        "reasoning_tokens": 137
+      },
+      "total_tokens": 1969
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"A winery recalling and rebranding a sparkling wine after a trademark dispute with Dom Pérignon\",\n  \"conflict_relevance\": \"The main article is unrelated to Gaza or the Israel-Hamas war, but an embedded top-stories section includes a substantive sentence about Israeli aircraft killing members of a Hamas leader's family in Gaza during cease-fire negotiations.\",\n  \"reason\": \"The conflict-related content appears only as an unrelated embedded news item rather than as part of the main article. It is meaningful but brief, making the article peripheral rather than core.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:20:39Z",
+  "duration_seconds": 3.463,
+  "error": null
+}

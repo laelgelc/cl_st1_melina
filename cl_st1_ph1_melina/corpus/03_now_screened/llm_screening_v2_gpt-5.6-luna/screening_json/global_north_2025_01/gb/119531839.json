@@ -1,0 +1,65 @@
+{
+  "article_id": "119531839",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_01/gb/119531839.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_01/gb/119531839.json"
+  },
+  "manifest_row": {
+    "article_id": "119531839",
+    "group": "global_north_2025_01",
+    "country_code": "gb",
+    "filepath": "corpus/02_now_organised/global_north_2025_01/gb/119531839.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "gaza_role": "passing",
+    "main_topic": "UK government advertising and VAT on private school fees",
+    "conflict_relevance": "The article is about private school VAT policy and Treasury advertising; Gaza appears only in an unrelated truncated 'Read next' teaser.",
+    "reason": "The main article contains no substantive discussion of Gaza or the Israel-Palestine conflict. The sole Gaza reference is an incidental embedded snippet unrelated to the headline.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "b7fb2deec07fc01f82a6a628925d309953081d5b0db7d50f32baa13772597f24",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "b7b3cb872fdcd53d163b047e50782a55be6b19fc89c6ad4fa64a31bb92a3d953",
+    "raw_response_text_sha256": "bbbc2c60b7ceb6f5865653009994303c0e3e59a9bbb4734f3a915e7c3673c526"
+  },
+  "api_metadata": {
+    "id": "resp_07d92620bb00a2c7006aaa1f4e90e887d28cc00e8ca428d3e4",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789534030.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 929,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 199,
+      "output_tokens_details": {
+        "reasoning_tokens": 58
+      },
+      "total_tokens": 1128
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"UK government advertising and VAT on private school fees\",\n  \"conflict_relevance\": \"The article is about private school VAT policy and Treasury advertising; Gaza appears only in an unrelated truncated 'Read next' teaser.\",\n  \"reason\": \"The main article contains no substantive discussion of Gaza or the Israel-Palestine conflict. The sole Gaza reference is an incidental embedded snippet unrelated to the headline.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T04:47:13Z",
+  "duration_seconds": 2.639,
+  "error": null
+}

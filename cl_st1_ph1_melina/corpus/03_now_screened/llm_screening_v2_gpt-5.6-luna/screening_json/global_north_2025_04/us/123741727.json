@@ -1,0 +1,65 @@
+{
+  "article_id": "123741727",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_04/us/123741727.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_04/us/123741727.json"
+  },
+  "manifest_row": {
+    "article_id": "123741727",
+    "group": "global_north_2025_04",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2025_04/us/123741727.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "background",
+    "main_topic": "US air strikes on Houthi-controlled areas and infrastructure in Yemen",
+    "conflict_relevance": "The article explains that Houthi attacks on Red Sea shipping are linked to Israel's war on Gaza and reports Houthi claims of supporting Palestinians and Gaza.",
+    "reason": "The central focus is the US military campaign against the Houthis and its humanitarian and infrastructural consequences in Yemen. Gaza and Palestine provide meaningful political and contextual framing but are not the primary subject.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "fcbacb035ab9f6f57fa15f7f6dc68b6923b4e6321d4a2043b2ccf2667a35fe9d",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "88fd167ade8197939b33da2c482d400d796a65d1d02f525ee6f0aba30d55d3cf",
+    "raw_response_text_sha256": "4c8cec1e4fb1102e3e63bf8422506d0140075dbb8fa0cdfebe3ccc7592ac47f6"
+  },
+  "api_metadata": {
+    "id": "resp_05a39672d0341968006aaa2a6e2f4c87d1859c40c5c4d3f58c",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789536878.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1279,
+      "input_tokens_details": {
+        "cache_write_tokens": 1276,
+        "cached_tokens": 0
+      },
+      "output_tokens": 217,
+      "output_tokens_details": {
+        "reasoning_tokens": 58
+      },
+      "total_tokens": 1496
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"US air strikes on Houthi-controlled areas and infrastructure in Yemen\",\n  \"conflict_relevance\": \"The article explains that Houthi attacks on Red Sea shipping are linked to Israel's war on Gaza and reports Houthi claims of supporting Palestinians and Gaza.\",\n  \"reason\": \"The central focus is the US military campaign against the Houthis and its humanitarian and infrastructural consequences in Yemen. Gaza and Palestine provide meaningful political and contextual framing but are not the primary subject.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T05:34:40Z",
+  "duration_seconds": 2.531,
+  "error": null
+}

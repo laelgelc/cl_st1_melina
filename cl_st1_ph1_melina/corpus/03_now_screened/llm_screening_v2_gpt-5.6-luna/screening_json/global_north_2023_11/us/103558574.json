@@ -1,0 +1,65 @@
+{
+  "article_id": "103558574",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_11/us/103558574.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_11/us/103558574.json"
+  },
+  "manifest_row": {
+    "article_id": "103558574",
+    "group": "global_north_2023_11",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2023_11/us/103558574.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "gaza_role": "passing",
+    "main_topic": "Federal corruption trial of former Chicago Alderman Ed Burke",
+    "conflict_relevance": "Gaza appears only in a brief, unrelated mention of protesters detained at a Chicago transportation center; the article is otherwise about municipal corruption proceedings.",
+    "reason": "The main article concerns the Ed Burke trial, while Gaza is mentioned only incidentally in a final roundup-style sentence alongside unrelated local events.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "4cf944501fc146b00f4a32155776cc01b71f8c007662ef6b77b40eb0a66db5e5",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "ac60484f615e1c949ad21dfdadc6de164b55e5e310fcbb6d904212bf4b143148",
+    "raw_response_text_sha256": "20e5d02f370d72e9f50bf53553f0cef6aa466fb171ea21f297b082dfefe6aa4f"
+  },
+  "api_metadata": {
+    "id": "resp_0d33413fdeabce43006aa9fea51fd087d2b57e60629edea74b",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789525669.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1943,
+      "input_tokens_details": {
+        "cache_write_tokens": 1940,
+        "cached_tokens": 0
+      },
+      "output_tokens": 229,
+      "output_tokens_details": {
+        "reasoning_tokens": 89
+      },
+      "total_tokens": 2172
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Federal corruption trial of former Chicago Alderman Ed Burke\",\n  \"conflict_relevance\": \"Gaza appears only in a brief, unrelated mention of protesters detained at a Chicago transportation center; the article is otherwise about municipal corruption proceedings.\",\n  \"reason\": \"The main article concerns the Ed Burke trial, while Gaza is mentioned only incidentally in a final roundup-style sentence alongside unrelated local events.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:27:52Z",
+  "duration_seconds": 3.053,
+  "error": null
+}

@@ -1,0 +1,65 @@
+{
+  "article_id": "200348677",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_03/us/200348677.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_03/us/200348677.json"
+  },
+  "manifest_row": {
+    "article_id": "200348677",
+    "group": "global_north_2024_03",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2024_03/us/200348677.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "gaza_role": "boilerplate_or_unrelated",
+    "main_topic": "U.S. political debate over Donald Trump's post depicting Joe Biden tied up",
+    "conflict_relevance": "The text is a collection of unrelated headlines and a political commentary segment; the Gaza reference appears only as an isolated headline without substantive discussion.",
+    "reason": "Gaza is mentioned in a disconnected headline about entrepreneurs and youth, but the associated article content concerns Trump, Biden, and political violence. There is no meaningful discourse about Gaza or the Israeli-Palestinian conflict.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "db40ef00096018570b5a040ffc4e07528dd8ec641a0d152f8e61b4f26e38b5ce",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "978c8b304e05480076dc0f6bea71e351a9e0efa5fbcf566dca8e203dd0def90e",
+    "raw_response_text_sha256": "17d8030996ff70a4327207a9e8adc9d1e0893bab1fe67fe13d4b02dd6b05afd4"
+  },
+  "api_metadata": {
+    "id": "resp_0ff454c4d9a9c02b006aaa0ac8300087d2a0ec1bfc9716204e",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789528776.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 845,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 259,
+      "output_tokens_details": {
+        "reasoning_tokens": 95
+      },
+      "total_tokens": 1104
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"U.S. political debate over Donald Trump's post depicting Joe Biden tied up\",\n  \"conflict_relevance\": \"The text is a collection of unrelated headlines and a political commentary segment; the Gaza reference appears only as an isolated headline without substantive discussion.\",\n  \"reason\": \"Gaza is mentioned in a disconnected headline about entrepreneurs and youth, but the associated article content concerns Trump, Biden, and political violence. There is no meaningful discourse about Gaza or the Israeli-Palestinian conflict.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:19:39Z",
+  "duration_seconds": 3.299,
+  "error": null
+}

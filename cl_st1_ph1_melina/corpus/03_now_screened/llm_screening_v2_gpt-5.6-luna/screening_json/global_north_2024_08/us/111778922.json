@@ -1,0 +1,65 @@
+{
+  "article_id": "111778922",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_08/us/111778922.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_08/us/111778922.json"
+  },
+  "manifest_row": {
+    "article_id": "111778922",
+    "group": "global_north_2024_08",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2024_08/us/111778922.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "background",
+    "main_topic": "Socially assistive robots in physiotherapy and post-stroke rehabilitation",
+    "conflict_relevance": "The article briefly connects the need for rehabilitation to soldiers wounded in the Gaza war and on Israel's northern front, but the main subject is medical technology and rehabilitation research.",
+    "reason": "Gaza appears in a meaningful contextual sentence about the rehabilitation needs of war-wounded soldiers, yet the article is not primarily about the conflict or its broader political, humanitarian, or military dimensions.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "5f35b572f9f4622f68933e030cb8523d7209f7615621906e0bc6d2c659325b85",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "e15b555bf440120b03b3d57f09ccfb8367fa5797c3e36d5f4cb662b2170aef6c",
+    "raw_response_text_sha256": "cff8f8546fc3eaad2ed63360bdebc48e32d5fd2444afa64f8bb78bc72395f417"
+  },
+  "api_metadata": {
+    "id": "resp_0aa51ce65a83f20e006aaa14a6d38c87d282488796abeec3ee",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789531302.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1611,
+      "input_tokens_details": {
+        "cache_write_tokens": 1608,
+        "cached_tokens": 0
+      },
+      "output_tokens": 212,
+      "output_tokens_details": {
+        "reasoning_tokens": 52
+      },
+      "total_tokens": 1823
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Socially assistive robots in physiotherapy and post-stroke rehabilitation\",\n  \"conflict_relevance\": \"The article briefly connects the need for rehabilitation to soldiers wounded in the Gaza war and on Israel's northern front, but the main subject is medical technology and rehabilitation research.\",\n  \"reason\": \"Gaza appears in a meaningful contextual sentence about the rehabilitation needs of war-wounded soldiers, yet the article is not primarily about the conflict or its broader political, humanitarian, or military dimensions.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T04:01:46Z",
+  "duration_seconds": 3.874,
+  "error": null
+}

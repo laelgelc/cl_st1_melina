@@ -1,0 +1,65 @@
+{
+  "article_id": "121666364",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_south_2025_02/in/121666364.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_south_2025_02/in/121666364.json"
+  },
+  "manifest_row": {
+    "article_id": "121666364",
+    "group": "global_south_2025_02",
+    "country_code": "in",
+    "filepath": "corpus/02_now_organised/global_south_2025_02/in/121666364.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "background",
+    "main_topic": "A general live news blog containing miscellaneous domestic and international news updates",
+    "conflict_relevance": "The article includes a substantive report on Yair Lapid's proposal for Egyptian control of Gaza after the conflict, but Gaza is only one item in a broad, unrelated news roundup.",
+    "reason": "The Gaza-related paragraph provides meaningful conflict discourse, yet the overall article is a multi-topic live blog dominated by unrelated news and does not centrally cover Gaza or the Israel-Palestine conflict.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "59c3e04cb3bbfb8168fe8f80c51ae3eb6e6c4e593becf4a6f778a85540d9cec5",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "ce50a7ae58fdc7679d517547b38d4cd9ef9f181935bbf5ca7355c4090c0eed0b",
+    "raw_response_text_sha256": "7d3c3d336c695aaa5c8fa5d3305f303e8cebc9131a5ec36a9ee80390edb516e4"
+  },
+  "api_metadata": {
+    "id": "resp_0fce410535c0d531006aaa4586d15087d198e483bed292e58f",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789543814.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1877,
+      "input_tokens_details": {
+        "cache_write_tokens": 1874,
+        "cached_tokens": 0
+      },
+      "output_tokens": 295,
+      "output_tokens_details": {
+        "reasoning_tokens": 133
+      },
+      "total_tokens": 2172
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"A general live news blog containing miscellaneous domestic and international news updates\",\n  \"conflict_relevance\": \"The article includes a substantive report on Yair Lapid's proposal for Egyptian control of Gaza after the conflict, but Gaza is only one item in a broad, unrelated news roundup.\",\n  \"reason\": \"The Gaza-related paragraph provides meaningful conflict discourse, yet the overall article is a multi-topic live blog dominated by unrelated news and does not centrally cover Gaza or the Israel-Palestine conflict.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T07:30:19Z",
+  "duration_seconds": 4.887,
+  "error": null
+}

@@ -1,0 +1,65 @@
+{
+  "article_id": "103398500",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_11/ca/103398500.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_11/ca/103398500.json"
+  },
+  "manifest_row": {
+    "article_id": "103398500",
+    "group": "global_north_2023_11",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2023_11/ca/103398500.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "background",
+    "main_topic": "The Marvels' box-office performance and broader trends in the Marvel Cinematic Universe",
+    "conflict_relevance": "The main article is unrelated to Gaza or the Israel-Hamas war, but embedded news snippets contain meaningful references to fighting near Gaza's Shifa hospital, antisemitism and Islamophobia in Canada amid the war, and social-media propaganda by Hamas and Israel.",
+    "reason": "The headline and article body concern film industry and box-office news. Conflict-related material appears only in embedded, unrelated news snippets, making the article useful for broader discourse analysis but not as core conflict coverage.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "ad7c0850adc0cfad8b7ca6c7ddd747f54137207bc821ad6e7ee587691c09ffd5",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "6e6b172d7cbc3129e1682db1d45833424eff0ebeb4a952f0e99599b1c5c24e56",
+    "raw_response_text_sha256": "6ec4911278225e0db60413c5e37bd71246d519b2e9184b387ec6a6769a0a4ab5"
+  },
+  "api_metadata": {
+    "id": "resp_03b7231149ea453f006aa9fbc743a487d2863a375ae15d2bd7",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789524935.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2474,
+      "input_tokens_details": {
+        "cache_write_tokens": 2471,
+        "cached_tokens": 0
+      },
+      "output_tokens": 337,
+      "output_tokens_details": {
+        "reasoning_tokens": 154
+      },
+      "total_tokens": 2811
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"The Marvels' box-office performance and broader trends in the Marvel Cinematic Universe\",\n  \"conflict_relevance\": \"The main article is unrelated to Gaza or the Israel-Hamas war, but embedded news snippets contain meaningful references to fighting near Gaza's Shifa hospital, antisemitism and Islamophobia in Canada amid the war, and social-media propaganda by Hamas and Israel.\",\n  \"reason\": \"The headline and article body concern film industry and box-office news. Conflict-related material appears only in embedded, unrelated news snippets, making the article useful for broader discourse analysis but not as core conflict coverage.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:15:39Z",
+  "duration_seconds": 4.579,
+  "error": null
+}

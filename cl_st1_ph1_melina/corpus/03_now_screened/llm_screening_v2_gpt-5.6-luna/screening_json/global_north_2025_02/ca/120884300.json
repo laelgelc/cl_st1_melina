@@ -1,0 +1,65 @@
+{
+  "article_id": "120884300",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_02/ca/120884300.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_02/ca/120884300.json"
+  },
+  "manifest_row": {
+    "article_id": "120884300",
+    "group": "global_north_2025_02",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2025_02/ca/120884300.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.96,
+    "gaza_role": "background",
+    "main_topic": "Review and interview coverage of the film Kinda Pregnant and its portrayal of motherhood",
+    "conflict_relevance": "The main article is unrelated to the Gaza conflict, but appended latest-story snippets include substantive references to U.S. proposals concerning Gaza, potential Palestinian displacement, Israel's military assault, and U.N. assistance for Palestinian refugees.",
+    "reason": "The headline article concerns a Netflix comedy and discussions of pregnancy, motherhood, and film-making. However, the embedded news roundup contains meaningful, though unrelated and secondary, reporting on Gaza and Palestinians, making the item peripheral rather than excludable.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "81f2db0fb3e8537139c78bc23d7fd25334c1f5af3cbe3a03818c271309cf11bb",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "ba79992dd38f2282004ed221f73b4a304912b8c4501dbc993c778f96e38744eb",
+    "raw_response_text_sha256": "14f008cc9cf1052ffcf29e1610e7d7309127d1b1c65a8a5a1c2034d597d3b202"
+  },
+  "api_metadata": {
+    "id": "resp_05dd9985e6e5d1fa006aaa2235db0887d2a3f25e609954f7cf",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789534773.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2873,
+      "input_tokens_details": {
+        "cache_write_tokens": 2870,
+        "cached_tokens": 0
+      },
+      "output_tokens": 338,
+      "output_tokens_details": {
+        "reasoning_tokens": 154
+      },
+      "total_tokens": 3211
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.96,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Review and interview coverage of the film Kinda Pregnant and its portrayal of motherhood\",\n  \"conflict_relevance\": \"The main article is unrelated to the Gaza conflict, but appended latest-story snippets include substantive references to U.S. proposals concerning Gaza, potential Palestinian displacement, Israel's military assault, and U.N. assistance for Palestinian refugees.\",\n  \"reason\": \"The headline article concerns a Netflix comedy and discussions of pregnancy, motherhood, and film-making. However, the embedded news roundup contains meaningful, though unrelated and secondary, reporting on Gaza and Palestinians, making the item peripheral rather than excludable.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T04:59:38Z",
+  "duration_seconds": 4.865,
+  "error": null
+}

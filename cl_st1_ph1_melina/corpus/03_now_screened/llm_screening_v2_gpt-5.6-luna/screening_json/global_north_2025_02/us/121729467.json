@@ -1,0 +1,65 @@
+{
+  "article_id": "121729467",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_02/us/121729467.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_02/us/121729467.json"
+  },
+  "manifest_row": {
+    "article_id": "121729467",
+    "group": "global_north_2025_02",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2025_02/us/121729467.txt"
+  },
+  "screening": {
+    "category": "CORE",
+    "confidence": 0.99,
+    "gaza_role": "central",
+    "main_topic": "Israel-Gaza war, hostage releases, ceasefire negotiations, and the return and burial of Israeli hostages",
+    "conflict_relevance": "The text directly concerns Gaza hostage negotiations, the Israel-Hamas ceasefire, Palestinian prisoner releases, Egypt's proposed involvement, and Israeli public responses to the deaths of hostages.",
+    "reason": "Although the article text combines several related news and opinion snippets, all of the substantive material is directly focused on the Gaza war, hostages, ceasefire arrangements, and associated Israeli-Palestinian issues.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": true
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "cc098b36c2d316a058119663fb5321ae20fd1826bb53a62a8c3fd24030f18e5e",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "ab22188501dc7d43e2e7d1d336011b9b6834d8f1e4ca9e04b548407a09427daa",
+    "raw_response_text_sha256": "1f30a1a9d213d6b5acbc3ba5e984dde70380d77b2996fcadad9723e153e394a4"
+  },
+  "api_metadata": {
+    "id": "resp_028f7bb6d579cfb8006aaa254acb4c87d1a2f5b3cd5e595e78",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789535562.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1621,
+      "input_tokens_details": {
+        "cache_write_tokens": 1618,
+        "cached_tokens": 0
+      },
+      "output_tokens": 233,
+      "output_tokens_details": {
+        "reasoning_tokens": 62
+      },
+      "total_tokens": 1854
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"CORE\",\n  \"confidence\": 0.99,\n  \"gaza_role\": \"central\",\n  \"main_topic\": \"Israel-Gaza war, hostage releases, ceasefire negotiations, and the return and burial of Israeli hostages\",\n  \"conflict_relevance\": \"The text directly concerns Gaza hostage negotiations, the Israel-Hamas ceasefire, Palestinian prisoner releases, Egypt's proposed involvement, and Israeli public responses to the deaths of hostages.\",\n  \"reason\": \"Although the article text combines several related news and opinion snippets, all of the substantive material is directly focused on the Gaza war, hostages, ceasefire arrangements, and associated Israeli-Palestinian issues.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": true\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T05:12:46Z",
+  "duration_seconds": 3.566,
+  "error": null
+}

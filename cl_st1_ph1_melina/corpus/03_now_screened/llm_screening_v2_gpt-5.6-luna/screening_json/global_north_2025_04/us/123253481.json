@@ -1,0 +1,65 @@
+{
+  "article_id": "123253481",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_04/us/123253481.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_04/us/123253481.json"
+  },
+  "manifest_row": {
+    "article_id": "123253481",
+    "group": "global_north_2025_04",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2025_04/us/123253481.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "background",
+    "main_topic": "Internal conflict, governance, and political dysfunction within the St. Paul City Council",
+    "conflict_relevance": "The article discusses pro-Palestinian protests that interrupted council meetings and efforts to introduce a ceasefire resolution condemning U.S. support for Israeli bombing in Gaza.",
+    "reason": "The article is primarily about St. Paul municipal politics, council disputes, attendance, budgeting, and local policy. Its Gaza-related material is meaningful and provides evidence of local political debate and protest around the Israel-Gaza war, but it is a relatively small background element rather than the central subject.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "ca8f936e9bd7deb20a6e0b14a9c413d46ea676af78b93ec41d0ee5f7648f0cce",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "d41665fe298069d2c5a97c98698c076b70afaeec508fddbd8b253864e51d2d49",
+    "raw_response_text_sha256": "0180bdc70b6454b21697fd44786609ec0888a49066446a41dd4c2d319935733c"
+  },
+  "api_metadata": {
+    "id": "resp_0d0079e11aa7e173006aaa29f5c8dc87d1a3182bc2347e3b94",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789536757.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 4173,
+      "input_tokens_details": {
+        "cache_write_tokens": 4170,
+        "cached_tokens": 0
+      },
+      "output_tokens": 244,
+      "output_tokens_details": {
+        "reasoning_tokens": 62
+      },
+      "total_tokens": 4417
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Internal conflict, governance, and political dysfunction within the St. Paul City Council\",\n  \"conflict_relevance\": \"The article discusses pro-Palestinian protests that interrupted council meetings and efforts to introduce a ceasefire resolution condemning U.S. support for Israeli bombing in Gaza.\",\n  \"reason\": \"The article is primarily about St. Paul municipal politics, council disputes, attendance, budgeting, and local policy. Its Gaza-related material is meaningful and provides evidence of local political debate and protest around the Israel-Gaza war, but it is a relatively small background element rather than the central subject.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T05:32:40Z",
+  "duration_seconds": 3.289,
+  "error": null
+}

@@ -1,0 +1,65 @@
+{
+  "article_id": "104906580",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_01/ca/104906580.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_01/ca/104906580.json"
+  },
+  "manifest_row": {
+    "article_id": "104906580",
+    "group": "global_north_2024_01",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2024_01/ca/104906580.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "background",
+    "main_topic": "Police charges arising from a school disturbance in Nova Scotia",
+    "conflict_relevance": "The main article is unrelated to Gaza or the Israel-Palestine conflict, but a substantive embedded 'Latest Stories' snippet reports on Israel shifting its military campaign in Gaza.",
+    "reason": "The text is a multi-article aggregation whose primary story concerns violence at a Canadian school. The Gaza-related content appears only as a separate, meaningful news snippet, making the item peripheral rather than core.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "c45cca7873b0ea5b23f3bf6cffce551845b027ba4848868810e27ff3bbeb80c5",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "15239d1d7261caa11175560a31b47765cb42e64a11be040ed3baed9235761082",
+    "raw_response_text_sha256": "d012807b9c82231d1100bf2a6a5bc6ad8c61b7b6b9b58f9ab14f6671a5343453"
+  },
+  "api_metadata": {
+    "id": "resp_03e446f4ddcb200d006aaa0388989887d29e5df642c9e3daee",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789526920.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 4240,
+      "input_tokens_details": {
+        "cache_write_tokens": 4237,
+        "cached_tokens": 0
+      },
+      "output_tokens": 317,
+      "output_tokens_details": {
+        "reasoning_tokens": 156
+      },
+      "total_tokens": 4557
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Police charges arising from a school disturbance in Nova Scotia\",\n  \"conflict_relevance\": \"The main article is unrelated to Gaza or the Israel-Palestine conflict, but a substantive embedded 'Latest Stories' snippet reports on Israel shifting its military campaign in Gaza.\",\n  \"reason\": \"The text is a multi-article aggregation whose primary story concerns violence at a Canadian school. The Gaza-related content appears only as a separate, meaningful news snippet, making the item peripheral rather than core.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:48:44Z",
+  "duration_seconds": 3.983,
+  "error": null
+}

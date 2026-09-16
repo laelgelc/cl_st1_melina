@@ -1,0 +1,65 @@
+{
+  "article_id": "119954853",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_01/gb/119954853.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_01/gb/119954853.json"
+  },
+  "manifest_row": {
+    "article_id": "119954853",
+    "group": "global_north_2025_01",
+    "country_code": "gb",
+    "filepath": "corpus/02_now_organised/global_north_2025_01/gb/119954853.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.94,
+    "gaza_role": "background",
+    "main_topic": "Russian sabotage operations and the ongoing Russia-Ukraine war",
+    "conflict_relevance": "The main article is unrelated to Gaza, but an embedded news item discusses regional upheaval following the Israel-Hamas war, including Hamas's degradation in Gaza and its effects on Iraq's security policy.",
+    "reason": "The primary article concerns Russian sabotage and Ukraine. Gaza appears in a substantive but unrelated embedded news snippet about Iraq's diplomatic and security balancing amid the Israel-Hamas war, making the text marginally useful for broader conflict-related discourse analysis but not suitable as core coverage.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "e1623439c526af50a833e29c976e407f231fcea4e05faf5d116182a2b0810bf4",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "8b9c2885c9865e5cc7895824e6ad1a6fa27f87aa3a98b4e14d4502d08a618dd3",
+    "raw_response_text_sha256": "9826bb10c47a42810cb28ba1d6d0e786bb400f21cae01a051a2d3526961126ba"
+  },
+  "api_metadata": {
+    "id": "resp_07a5bc6cbb5df250006aaa1f7b378087d2a09f885c1bcf9afe",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789534075.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2023,
+      "input_tokens_details": {
+        "cache_write_tokens": 2020,
+        "cached_tokens": 0
+      },
+      "output_tokens": 280,
+      "output_tokens_details": {
+        "reasoning_tokens": 103
+      },
+      "total_tokens": 2303
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.94,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Russian sabotage operations and the ongoing Russia-Ukraine war\",\n  \"conflict_relevance\": \"The main article is unrelated to Gaza, but an embedded news item discusses regional upheaval following the Israel-Hamas war, including Hamas's degradation in Gaza and its effects on Iraq's security policy.\",\n  \"reason\": \"The primary article concerns Russian sabotage and Ukraine. Gaza appears in a substantive but unrelated embedded news snippet about Iraq's diplomatic and security balancing amid the Israel-Hamas war, making the text marginally useful for broader conflict-related discourse analysis but not suitable as core coverage.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T04:47:58Z",
+  "duration_seconds": 3.696,
+  "error": null
+}

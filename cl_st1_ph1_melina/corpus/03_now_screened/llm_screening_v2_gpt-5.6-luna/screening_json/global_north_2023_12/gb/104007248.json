@@ -1,0 +1,65 @@
+{
+  "article_id": "104007248",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_12/gb/104007248.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_12/gb/104007248.json"
+  },
+  "manifest_row": {
+    "article_id": "104007248",
+    "group": "global_north_2023_12",
+    "country_code": "gb",
+    "filepath": "corpus/02_now_organised/global_north_2023_12/gb/104007248.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.97,
+    "gaza_role": "background",
+    "main_topic": "Oil market movements and geopolitical risks affecting energy prices",
+    "conflict_relevance": "The article discusses resumed fighting in Gaza, attacks involving Israeli vessels and Yemen's Houthi group, and Qatar's call for an international investigation into alleged Israeli crimes in Gaza, but these issues are presented as background to financial-market reporting.",
+    "reason": "The primary focus is oil futures, OPEC+, fuel demand, and regional market performance. Gaza and related military and diplomatic developments receive meaningful but secondary coverage.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "b1b1f72d1764c771b50f27d36a7c50ef2dd0d663f5686f6285e6529a78284a92",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "693146cb8cd83bbdbdea545cad31703e82640dd2fa1b7c2feb6d736f52d4b64c",
+    "raw_response_text_sha256": "51e40108639d23869d0830d9b3b6206f36502b2c79ad87ab35a9aa7e1f8eef2c"
+  },
+  "api_metadata": {
+    "id": "resp_0e7e85da99887356006aaa00e7202c87d2b2a29863aec7195f",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789526247.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 905,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 236,
+      "output_tokens_details": {
+        "reasoning_tokens": 73
+      },
+      "total_tokens": 1141
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.97,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Oil market movements and geopolitical risks affecting energy prices\",\n  \"conflict_relevance\": \"The article discusses resumed fighting in Gaza, attacks involving Israeli vessels and Yemen's Houthi group, and Qatar's call for an international investigation into alleged Israeli crimes in Gaza, but these issues are presented as background to financial-market reporting.\",\n  \"reason\": \"The primary focus is oil futures, OPEC+, fuel demand, and regional market performance. Gaza and related military and diplomatic developments receive meaningful but secondary coverage.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:37:31Z",
+  "duration_seconds": 4.223,
+  "error": null
+}

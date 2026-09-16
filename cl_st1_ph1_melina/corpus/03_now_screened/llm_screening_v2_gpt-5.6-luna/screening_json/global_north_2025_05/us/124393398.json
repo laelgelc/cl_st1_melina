@@ -1,0 +1,65 @@
+{
+  "article_id": "124393398",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_05/us/124393398.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_05/us/124393398.json"
+  },
+  "manifest_row": {
+    "article_id": "124393398",
+    "group": "global_north_2025_05",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2025_05/us/124393398.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.97,
+    "gaza_role": "background",
+    "main_topic": "U.S.-Houthi ceasefire and Red Sea shipping attacks",
+    "conflict_relevance": "The article primarily covers the U.S. agreement with the Houthis and related attacks in Yemen and the Red Sea, but it meaningfully connects Houthi actions and Israeli strikes to the Gaza war.",
+    "reason": "Gaza is an important motivating context for the Houthis' campaign and is explicitly referenced in the group's statement, but the article is not centrally about Gaza or the Israel-Hamas war.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "1edf2433b429c9a4c23830d3a69b71fde841ca055b0b6afe4c026ffb34fcfd69",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "30856064ec741065aa03d849f77c56ba92f4363170f7174565298a67e00396d1",
+    "raw_response_text_sha256": "67fe1d90beb2d02a20fa3e0d7e57828aa8e915f2ac4405565461d466b5d9bffe"
+  },
+  "api_metadata": {
+    "id": "resp_0181aeaa0b89fae7006aaa2d1a881c87d1b4f875060c069d0b",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789537562.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1035,
+      "input_tokens_details": {
+        "cache_write_tokens": 1032,
+        "cached_tokens": 0
+      },
+      "output_tokens": 233,
+      "output_tokens_details": {
+        "reasoning_tokens": 67
+      },
+      "total_tokens": 1268
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.97,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"U.S.-Houthi ceasefire and Red Sea shipping attacks\",\n  \"conflict_relevance\": \"The article primarily covers the U.S. agreement with the Houthis and related attacks in Yemen and the Red Sea, but it meaningfully connects Houthi actions and Israeli strikes to the Gaza war.\",\n  \"reason\": \"Gaza is an important motivating context for the Houthis' campaign and is explicitly referenced in the group's statement, but the article is not centrally about Gaza or the Israel-Hamas war.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T05:46:06Z",
+  "duration_seconds": 4.005,
+  "error": null
+}

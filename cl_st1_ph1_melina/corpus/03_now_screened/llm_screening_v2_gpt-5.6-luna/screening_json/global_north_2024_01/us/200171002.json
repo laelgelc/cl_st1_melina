@@ -1,0 +1,65 @@
+{
+  "article_id": "200171002",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_01/us/200171002.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_01/us/200171002.json"
+  },
+  "manifest_row": {
+    "article_id": "200171002",
+    "group": "global_north_2024_01",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2024_01/us/200171002.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.96,
+    "gaza_role": "passing",
+    "main_topic": "New York congressional election and campaign politics",
+    "conflict_relevance": "The article briefly mentions a campaign appearance at a hostage-support event for Omer Neutra, who is being held in Gaza.",
+    "reason": "The main focus is the electoral contest between Tom Suozzi and Mazi Pilip, with only a specific but limited reference to a Gaza hostage and related public event.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "3d9cd16a7e6aefcdd37bc53f38a1ff3b729dc2ea0a8c801d1ce1796bd5570521",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "bcdf327122dcd8f144257243aa25214e6502cb5aaad6d814e01bcb4e0fa6ee6f",
+    "raw_response_text_sha256": "aacf4c91b43d5897dfe904d71e4cb9ebf7034c493e6e310bf14c69611ea7b48f"
+  },
+  "api_metadata": {
+    "id": "resp_06700c86f56034c5006aaa05c5d36887d2be90f927ed24dfd4",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789527493.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1152,
+      "input_tokens_details": {
+        "cache_write_tokens": 1149,
+        "cached_tokens": 0
+      },
+      "output_tokens": 218,
+      "output_tokens_details": {
+        "reasoning_tokens": 77
+      },
+      "total_tokens": 1370
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.96,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"New York congressional election and campaign politics\",\n  \"conflict_relevance\": \"The article briefly mentions a campaign appearance at a hostage-support event for Omer Neutra, who is being held in Gaza.\",\n  \"reason\": \"The main focus is the electoral contest between Tom Suozzi and Mazi Pilip, with only a specific but limited reference to a Gaza hostage and related public event.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:58:16Z",
+  "duration_seconds": 3.195,
+  "error": null
+}

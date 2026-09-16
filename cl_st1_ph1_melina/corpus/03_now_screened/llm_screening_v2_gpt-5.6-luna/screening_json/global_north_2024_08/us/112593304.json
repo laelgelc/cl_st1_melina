@@ -1,0 +1,65 @@
+{
+  "article_id": "112593304",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_08/us/112593304.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_08/us/112593304.json"
+  },
+  "manifest_row": {
+    "article_id": "112593304",
+    "group": "global_north_2024_08",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2024_08/us/112593304.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.92,
+    "gaza_role": "passing",
+    "main_topic": "Readers' letters about U.S. politics, social issues, and local concerns",
+    "conflict_relevance": "A brief letter warns pro-Palestinian protesters that they may end up protesting in Gaza, invoking Gaza in the context of protest and political expression.",
+    "reason": "The article is a collection of unrelated letters, mostly focused on the U.S. election and domestic issues. One letter contains a meaningful but very brief reference to pro-Palestinian protests and Gaza, making it peripheral rather than core conflict coverage.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "22b42ac5a7c8466f20383570fe46864088f183ac6f19d8ba26dd721d3fdc0af0",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "385986a7af16f2209d2ce5edafbd3f8c146a656289931629f46849771b613d3f",
+    "raw_response_text_sha256": "8e43d5b7077f430393cbbaf5ce9f664701f66c8e42855644788179302a91273d"
+  },
+  "api_metadata": {
+    "id": "resp_0a180fb2a8860193006aaa1550768887d28c3c479033337b73",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789531472.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2353,
+      "input_tokens_details": {
+        "cache_write_tokens": 2350,
+        "cached_tokens": 0
+      },
+      "output_tokens": 305,
+      "output_tokens_details": {
+        "reasoning_tokens": 135
+      },
+      "total_tokens": 2658
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.92,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Readers' letters about U.S. politics, social issues, and local concerns\",\n  \"conflict_relevance\": \"A brief letter warns pro-Palestinian protesters that they may end up protesting in Gaza, invoking Gaza in the context of protest and political expression.\",\n  \"reason\": \"The article is a collection of unrelated letters, mostly focused on the U.S. election and domestic issues. One letter contains a meaningful but very brief reference to pro-Palestinian protests and Gaza, making it peripheral rather than core conflict coverage.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T04:04:36Z",
+  "duration_seconds": 4.009,
+  "error": null
+}

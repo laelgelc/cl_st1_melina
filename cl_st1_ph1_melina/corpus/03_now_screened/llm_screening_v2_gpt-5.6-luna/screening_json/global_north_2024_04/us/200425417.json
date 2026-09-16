@@ -1,0 +1,65 @@
+{
+  "article_id": "200425417",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_04/us/200425417.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_04/us/200425417.json"
+  },
+  "manifest_row": {
+    "article_id": "200425417",
+    "group": "global_north_2024_04",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2024_04/us/200425417.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.96,
+    "gaza_role": "passing",
+    "main_topic": "A cold-case murder investigation involving the discovery of a mother and daughter's remains",
+    "conflict_relevance": "The article includes an embedded snippet about growing pro-Palestinian demonstrations, opposition to Israel's war with Hamas in Gaza, and protesters' demands, but this is unrelated to the main crime report.",
+    "reason": "The headline and article body concern a West Virginia double-murder cold case. However, a substantive embedded news item briefly references campus pro-Palestinian protests and the Gaza war, making the item peripherally relevant rather than entirely excludable.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "8fc275bf19d57494527ba20f807fc6f01dd563d6872af29e08ffeea059e9caa3",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "fdd3e3090e38077ba47683c90a0a47f513ab9c653fdd8f0fcb0eb7c2b9cdc90e",
+    "raw_response_text_sha256": "42920cd596ad9ef5ce0ec5743d4dcd2e70e7856e43007e639bbacb0b1c59b033"
+  },
+  "api_metadata": {
+    "id": "resp_09ce681091e2e02a006aaa0d21e12487d29868708ce473ec10",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789529377.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1176,
+      "input_tokens_details": {
+        "cache_write_tokens": 1173,
+        "cached_tokens": 0
+      },
+      "output_tokens": 256,
+      "output_tokens_details": {
+        "reasoning_tokens": 76
+      },
+      "total_tokens": 1432
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.96,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"A cold-case murder investigation involving the discovery of a mother and daughter's remains\",\n  \"conflict_relevance\": \"The article includes an embedded snippet about growing pro-Palestinian demonstrations, opposition to Israel's war with Hamas in Gaza, and protesters' demands, but this is unrelated to the main crime report.\",\n  \"reason\": \"The headline and article body concern a West Virginia double-murder cold case. However, a substantive embedded news item briefly references campus pro-Palestinian protests and the Gaza war, making the item peripherally relevant rather than entirely excludable.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:29:41Z",
+  "duration_seconds": 3.357,
+  "error": null
+}

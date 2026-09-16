@@ -1,0 +1,65 @@
+{
+  "article_id": "105127130",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_01/ca/105127130.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_01/ca/105127130.json"
+  },
+  "manifest_row": {
+    "article_id": "105127130",
+    "group": "global_north_2024_01",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2024_01/ca/105127130.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.97,
+    "gaza_role": "passing",
+    "main_topic": "Global and Canadian tobacco use and tobacco-control policies",
+    "conflict_relevance": "The article is about tobacco use; Gaza appears only in a brief, unrelated news snippet about Iran-Pakistan tensions and Israel's war on Hamas.",
+    "reason": "The main article contains no substantive discussion of Gaza, Palestine, or the Israel-Palestine conflict. The sole reference is a passing mention in an embedded roundup of unrelated news items.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "f70f8f1f06a228a1ef304b72aaf8430fcc9386343f6786d5f533da612f6b75a0",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "b86134f9b98139e063774f7aa6be3bab7c4d40857f22d4e1ddb260e49a05e026",
+    "raw_response_text_sha256": "f17fdf6486b3bf70e98b6a3321facfd095210919928ee69142ca84732a5a1ca4"
+  },
+  "api_metadata": {
+    "id": "resp_07eb842899c2ced5006aaa03a0cec087d2b02f85e75c90ff81",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789526944.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1998,
+      "input_tokens_details": {
+        "cache_write_tokens": 1995,
+        "cached_tokens": 0
+      },
+      "output_tokens": 301,
+      "output_tokens_details": {
+        "reasoning_tokens": 150
+      },
+      "total_tokens": 2299
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.97,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Global and Canadian tobacco use and tobacco-control policies\",\n  \"conflict_relevance\": \"The article is about tobacco use; Gaza appears only in a brief, unrelated news snippet about Iran-Pakistan tensions and Israel's war on Hamas.\",\n  \"reason\": \"The main article contains no substantive discussion of Gaza, Palestine, or the Israel-Palestine conflict. The sole reference is a passing mention in an embedded roundup of unrelated news items.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:49:09Z",
+  "duration_seconds": 5.21,
+  "error": null
+}

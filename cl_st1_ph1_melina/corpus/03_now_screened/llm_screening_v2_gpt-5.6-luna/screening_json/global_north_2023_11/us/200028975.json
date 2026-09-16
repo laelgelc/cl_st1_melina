@@ -1,0 +1,65 @@
+{
+  "article_id": "200028975",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_11/us/200028975.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_11/us/200028975.json"
+  },
+  "manifest_row": {
+    "article_id": "200028975",
+    "group": "global_north_2023_11",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2023_11/us/200028975.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.94,
+    "gaza_role": "background",
+    "main_topic": "Florida gun regulation, property rights, and stray-bullet shootings",
+    "conflict_relevance": "The main article is unrelated to Gaza or the Israeli-Palestinian conflict, but it contains an embedded news item about Hamas releasing Israeli-Russian hostages and the continuing detention of hostages in Gaza.",
+    "reason": "The headline and substantive article concern firearm discharge laws and gun control in Florida. A separate embedded snippet provides a meaningful but brief update on hostages held in Gaza, making the item peripheral rather than core.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "e4a66318299d702bfbab44cd60ceb5bbc71d75f767d733a1a23da85017b61fc5",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "6b15eaa9f2d809c156656ab4153daf03ce2723016d21488a81c842b884067dcb",
+    "raw_response_text_sha256": "bbce95fd76bbde9c3ffb48135902125a6a3b15127a73c398409da679f6899e71"
+  },
+  "api_metadata": {
+    "id": "resp_016bcdd3008b237f006aa9ff89a4d087d2961d6b9e13204511",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789525897.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2003,
+      "input_tokens_details": {
+        "cache_write_tokens": 2000,
+        "cached_tokens": 0
+      },
+      "output_tokens": 330,
+      "output_tokens_details": {
+        "reasoning_tokens": 161
+      },
+      "total_tokens": 2333
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.94,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Florida gun regulation, property rights, and stray-bullet shootings\",\n  \"conflict_relevance\": \"The main article is unrelated to Gaza or the Israeli-Palestinian conflict, but it contains an embedded news item about Hamas releasing Israeli-Russian hostages and the continuing detention of hostages in Gaza.\",\n  \"reason\": \"The headline and substantive article concern firearm discharge laws and gun control in Florida. A separate embedded snippet provides a meaningful but brief update on hostages held in Gaza, making the item peripheral rather than core.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:31:41Z",
+  "duration_seconds": 3.752,
+  "error": null
+}

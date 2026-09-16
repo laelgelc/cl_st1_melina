@@ -1,0 +1,65 @@
+{
+  "article_id": "104117552",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_12/gb/104117552.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_12/gb/104117552.json"
+  },
+  "manifest_row": {
+    "article_id": "104117552",
+    "group": "global_north_2023_12",
+    "country_code": "gb",
+    "filepath": "corpus/02_now_organised/global_north_2023_12/gb/104117552.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "background",
+    "main_topic": "Political satire and commentary on Boris Johnson, British politics, and assorted current affairs",
+    "conflict_relevance": "A dedicated short section discusses violence against Palestinians in the occupied West Bank and humanitarian conditions affecting children in Gaza, but the article as a whole is not focused on the conflict.",
+    "reason": "The Gaza and Palestine references constitute meaningful discourse, including discussion of Palestinian deaths, occupation, deprivation, and public indifference. However, they appear in one brief subsection within a largely unrelated multi-topic opinion and satire column.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "2091c01df6746786660846af887a2bf4326688bcff063584c2daa7e6a13be689",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "fca07844218134690d1d6eec6990834c232d1e8de3bcf0addb7032ab6b61e86f",
+    "raw_response_text_sha256": "53a484bce6b237a70e35c98af70a2b29ee404d5d86146c34f3bf65c276a8704c"
+  },
+  "api_metadata": {
+    "id": "resp_0ba3ae06ee9c9a07006aaa00f8009087d2a9e1924c63afc580",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789526264.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2322,
+      "input_tokens_details": {
+        "cache_write_tokens": 2319,
+        "cached_tokens": 0
+      },
+      "output_tokens": 277,
+      "output_tokens_details": {
+        "reasoning_tokens": 109
+      },
+      "total_tokens": 2599
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Political satire and commentary on Boris Johnson, British politics, and assorted current affairs\",\n  \"conflict_relevance\": \"A dedicated short section discusses violence against Palestinians in the occupied West Bank and humanitarian conditions affecting children in Gaza, but the article as a whole is not focused on the conflict.\",\n  \"reason\": \"The Gaza and Palestine references constitute meaningful discourse, including discussion of Palestinian deaths, occupation, deprivation, and public indifference. However, they appear in one brief subsection within a largely unrelated multi-topic opinion and satire column.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:37:48Z",
+  "duration_seconds": 4.816,
+  "error": null
+}

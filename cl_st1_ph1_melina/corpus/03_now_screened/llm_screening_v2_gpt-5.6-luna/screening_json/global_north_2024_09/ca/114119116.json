@@ -1,0 +1,65 @@
+{
+  "article_id": "114119116",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_09/ca/114119116.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_09/ca/114119116.json"
+  },
+  "manifest_row": {
+    "article_id": "114119116",
+    "group": "global_north_2024_09",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2024_09/ca/114119116.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.95,
+    "gaza_role": "background",
+    "main_topic": "Interview with filmmaker Olivier Sarbil about the documentary Viktor, a film about a Deaf Ukrainian man amid Russia's invasion of Ukraine",
+    "conflict_relevance": "The main article concerns the Russia-Ukraine war rather than Gaza or Israel/Palestine, but an embedded latest-stories item contains a substantive report about a Palestinian activist facing violence in Gaza from both Israeli forces and Hamas.",
+    "reason": "The primary article is unrelated to the Gaza conflict, but the embedded Gaza report is more than a passing or boilerplate mention and has meaningful conflict-related content. It should therefore be retained as peripheral rather than core coverage.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "18f94c1ef53d0d893773385ca1b156dfd87af14c398cd9a67b0e8c0fd92f82cb",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "54c4ecc9d97c4666bc4c16740183ccf5c806fe6b287149bc66b71bedea781f8f",
+    "raw_response_text_sha256": "01769aa57e3750d774518d99c3ed17cf078fbb1c58973e1b3967819ca21d7723"
+  },
+  "api_metadata": {
+    "id": "resp_0a30c2f73b0dda92006aaa160fab9887d2863c33b1aff1d75e",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789531663.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 3533,
+      "input_tokens_details": {
+        "cache_write_tokens": 3530,
+        "cached_tokens": 0
+      },
+      "output_tokens": 359,
+      "output_tokens_details": {
+        "reasoning_tokens": 171
+      },
+      "total_tokens": 3892
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.95,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Interview with filmmaker Olivier Sarbil about the documentary Viktor, a film about a Deaf Ukrainian man amid Russia's invasion of Ukraine\",\n  \"conflict_relevance\": \"The main article concerns the Russia-Ukraine war rather than Gaza or Israel/Palestine, but an embedded latest-stories item contains a substantive report about a Palestinian activist facing violence in Gaza from both Israeli forces and Hamas.\",\n  \"reason\": \"The primary article is unrelated to the Gaza conflict, but the embedded Gaza report is more than a passing or boilerplate mention and has meaningful conflict-related content. It should therefore be retained as peripheral rather than core coverage.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T04:07:49Z",
+  "duration_seconds": 6.209,
+  "error": null
+}

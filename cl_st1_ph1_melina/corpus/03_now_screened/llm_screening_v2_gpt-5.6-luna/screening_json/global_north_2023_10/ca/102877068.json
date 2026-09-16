@@ -1,0 +1,65 @@
+{
+  "article_id": "102877068",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_10/ca/102877068.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_10/ca/102877068.json"
+  },
+  "manifest_row": {
+    "article_id": "102877068",
+    "group": "global_north_2023_10",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2023_10/ca/102877068.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.96,
+    "gaza_role": "substantial",
+    "main_topic": "Mixed news and entertainment snippets, including a report on the Israel-Hamas war and humanitarian conditions in Gaza",
+    "conflict_relevance": "A substantial embedded news passage discusses Israel's bombardment of Gaza, the anticipated ground invasion, rising casualties, the blockade, and shortages of food, water, and medicine, but the overall text is a compilation of unrelated articles.",
+    "reason": "The text is dominated by unrelated material about television, crime, film, health, travel, and sports. However, the Gaza passage is meaningful and directly relevant to the conflict, so the item is retained as PERIPHERAL rather than excluded.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "935dca95b4646aa2ee6099204797cfbc5e9df6800f66013184768481bc05b1d3",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "ddb814a26e9e1bd2ba3fa7dd46ba13e57afc62ed72f3e2d49e9d2f80cc2e1d0b",
+    "raw_response_text_sha256": "30b2febeca49b7b40d772f3ffc88137d13a22ba28a4c349b3f48fda6aadbd4bd"
+  },
+  "api_metadata": {
+    "id": "resp_0057308f6280f32f006aa9f68e1c4c87d29762e49ef10caf5d",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789523598.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2307,
+      "input_tokens_details": {
+        "cache_write_tokens": 2304,
+        "cached_tokens": 0
+      },
+      "output_tokens": 507,
+      "output_tokens_details": {
+        "reasoning_tokens": 317
+      },
+      "total_tokens": 2814
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.96,\n  \"gaza_role\": \"substantial\",\n  \"main_topic\": \"Mixed news and entertainment snippets, including a report on the Israel-Hamas war and humanitarian conditions in Gaza\",\n  \"conflict_relevance\": \"A substantial embedded news passage discusses Israel's bombardment of Gaza, the anticipated ground invasion, rising casualties, the blockade, and shortages of food, water, and medicine, but the overall text is a compilation of unrelated articles.\",\n  \"reason\": \"The text is dominated by unrelated material about television, crime, film, health, travel, and sports. However, the Gaza passage is meaningful and directly relevant to the conflict, so the item is retained as PERIPHERAL rather than excluded.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T01:53:24Z",
+  "duration_seconds": 6.39,
+  "error": null
+}

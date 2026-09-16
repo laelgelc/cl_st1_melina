@@ -1,0 +1,65 @@
+{
+  "article_id": "111957759",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_south_2024_08/za/111957759.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_south_2024_08/za/111957759.json"
+  },
+  "manifest_row": {
+    "article_id": "111957759",
+    "group": "global_south_2024_08",
+    "country_code": "za",
+    "filepath": "corpus/02_now_organised/global_south_2024_08/za/111957759.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.96,
+    "gaza_role": "background",
+    "main_topic": "Daily news photograph roundup, especially the 2024 Paris Olympics and South African news",
+    "conflict_relevance": "Includes a substantive photograph caption about Palestinians fleeing an Israeli air strike in Gaza and provides casualty figures and brief context on the Israel-Hamas war.",
+    "reason": "The article is primarily a general visual news roundup and sports coverage, but its Gaza photograph and accompanying caption contain meaningful conflict-related discourse. It is therefore relevant as peripheral rather than core coverage.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "e689ee8fcdac54ebf756041ac35b8147a55b386fc021df69255536b550e74352",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "1956055bbb34f0cb4a5b42b50affaa684550888f90305e656b6a4e2e9b2be425",
+    "raw_response_text_sha256": "610d531956e7fb554e298784c2963740af760a1a80f44cf58286680a2bd8c783"
+  },
+  "api_metadata": {
+    "id": "resp_044723c14296b65f006aaa3ed319d087d1a2ca44b3395f163d",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789542099.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2437,
+      "input_tokens_details": {
+        "cache_write_tokens": 2434,
+        "cached_tokens": 0
+      },
+      "output_tokens": 326,
+      "output_tokens_details": {
+        "reasoning_tokens": 169
+      },
+      "total_tokens": 2763
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.96,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Daily news photograph roundup, especially the 2024 Paris Olympics and South African news\",\n  \"conflict_relevance\": \"Includes a substantive photograph caption about Palestinians fleeing an Israeli air strike in Gaza and provides casualty figures and brief context on the Israel-Hamas war.\",\n  \"reason\": \"The article is primarily a general visual news roundup and sports coverage, but its Gaza photograph and accompanying caption contain meaningful conflict-related discourse. It is therefore relevant as peripheral rather than core coverage.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T07:01:44Z",
+  "duration_seconds": 5.302,
+  "error": null
+}

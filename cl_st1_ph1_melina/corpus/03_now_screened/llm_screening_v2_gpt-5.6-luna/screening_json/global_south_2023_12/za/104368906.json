@@ -1,0 +1,65 @@
+{
+  "article_id": "104368906",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_south_2023_12/za/104368906.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_south_2023_12/za/104368906.json"
+  },
+  "manifest_row": {
+    "article_id": "104368906",
+    "group": "global_south_2023_12",
+    "country_code": "za",
+    "filepath": "corpus/02_now_organised/global_south_2023_12/za/104368906.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "background",
+    "main_topic": "Release of South African hostage Gerco van Deventer",
+    "conflict_relevance": "The article is primarily about a hostage held in Libya and Mali, but it includes meaningful discussion of Gift of the Givers' intervention in Gaza and the killing of its Gaza office head by Israeli forces.",
+    "reason": "The Gaza-related material is substantive but subsidiary to the article's main focus on hostage negotiations and release. The opening peace-walk article is unrelated, indicating that the text contains multiple article snippets.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "2279d58590bf8ecd05266715504df4683cb545ac5314403d6c9e8889434231b9",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "a83f7491b7acdac9da75d0598ad6b8125af72a6d5488d7b37c48b4a20948c7b7",
+    "raw_response_text_sha256": "ce522a90cea79f646a52a0daa4f802dfd09be1c09334d1acefb5f95e00c0f034"
+  },
+  "api_metadata": {
+    "id": "resp_02e277c03a907f75006aaa379de58887d1b1cfbfb2fb53210d",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789540253.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2182,
+      "input_tokens_details": {
+        "cache_write_tokens": 2179,
+        "cached_tokens": 0
+      },
+      "output_tokens": 237,
+      "output_tokens_details": {
+        "reasoning_tokens": 73
+      },
+      "total_tokens": 2419
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Release of South African hostage Gerco van Deventer\",\n  \"conflict_relevance\": \"The article is primarily about a hostage held in Libya and Mali, but it includes meaningful discussion of Gift of the Givers' intervention in Gaza and the killing of its Gaza office head by Israeli forces.\",\n  \"reason\": \"The Gaza-related material is substantive but subsidiary to the article's main focus on hostage negotiations and release. The opening peace-walk article is unrelated, indicating that the text contains multiple article snippets.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T06:30:57Z",
+  "duration_seconds": 3.44,
+  "error": null
+}

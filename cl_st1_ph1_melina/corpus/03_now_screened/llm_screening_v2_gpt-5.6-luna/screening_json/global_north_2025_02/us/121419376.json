@@ -1,0 +1,65 @@
+{
+  "article_id": "121419376",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_02/us/121419376.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_02/us/121419376.json"
+  },
+  "manifest_row": {
+    "article_id": "121419376",
+    "group": "global_north_2025_02",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2025_02/us/121419376.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "gaza_role": "boilerplate_or_unrelated",
+    "main_topic": "Biography and interview about Saturday Night Live creator Lorne Michaels",
+    "conflict_relevance": "No meaningful relevance to Gaza, Palestine, Israel/Palestine, or the conflict; Gaza appears only in an unrelated closing snippet.",
+    "reason": "The article is centrally about Lorne Michaels and the history and management of Saturday Night Live. The brief reference to a proposal to 'clean out' Gaza is part of an unrelated appended item rather than the article's substantive content.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "acd97a3ca16a21348e762a278c54aca6619e51ac302290229b45a20440b75e29",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "09d2edeceef6a9f71462eaa322000542705299be66a56f12dd03ecc4335dab44",
+    "raw_response_text_sha256": "01f8e576015dc710877291b6e9b7e12081036f41b0faeb78af71eec8b6cf0154"
+  },
+  "api_metadata": {
+    "id": "resp_0893d8ce79997aa5006aaa2505164c87d198c2c0e8fd0e45df",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789535493.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 5798,
+      "input_tokens_details": {
+        "cache_write_tokens": 5795,
+        "cached_tokens": 0
+      },
+      "output_tokens": 285,
+      "output_tokens_details": {
+        "reasoning_tokens": 122
+      },
+      "total_tokens": 6083
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"gaza_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Biography and interview about Saturday Night Live creator Lorne Michaels\",\n  \"conflict_relevance\": \"No meaningful relevance to Gaza, Palestine, Israel/Palestine, or the conflict; Gaza appears only in an unrelated closing snippet.\",\n  \"reason\": \"The article is centrally about Lorne Michaels and the history and management of Saturday Night Live. The brief reference to a proposal to 'clean out' Gaza is part of an unrelated appended item rather than the article's substantive content.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T05:11:37Z",
+  "duration_seconds": 4.105,
+  "error": null
+}

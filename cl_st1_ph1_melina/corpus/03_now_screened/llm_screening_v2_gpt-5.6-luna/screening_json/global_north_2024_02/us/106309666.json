@@ -1,0 +1,65 @@
+{
+  "article_id": "106309666",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_02/us/106309666.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_02/us/106309666.json"
+  },
+  "manifest_row": {
+    "article_id": "106309666",
+    "group": "global_north_2024_02",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2024_02/us/106309666.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.96,
+    "gaza_role": "background",
+    "main_topic": "The largest wildfire in Texas history and the emergency response to it",
+    "conflict_relevance": "The text includes a substantive embedded news snippet about Palestinians seeking aid in Gaza and Israeli troops opening fire, but this is unrelated to the main wildfire article.",
+    "reason": "The headline and primary article concern the Texas wildfire. However, the embedded Gaza report contains meaningful conflict-related discourse, making the item peripheral rather than excludable.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "cc00674426ef1dc0b0d23cd752626c53c64524f78c7cdfcf0c8fbe480f6d02ca",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "b6030cf7852025ca3650ec79a131d4163e0a01d97b993cd0d667229513f9392d",
+    "raw_response_text_sha256": "359a9e0b4dcb4322256701cb4619048f1bb4b39c3cfd338a65718c71914adecf"
+  },
+  "api_metadata": {
+    "id": "resp_01c761267b6da6c3006aaa077efe7087d295feb70d327449b0",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789527935.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2661,
+      "input_tokens_details": {
+        "cache_write_tokens": 2658,
+        "cached_tokens": 0
+      },
+      "output_tokens": 291,
+      "output_tokens_details": {
+        "reasoning_tokens": 141
+      },
+      "total_tokens": 2952
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.96,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"The largest wildfire in Texas history and the emergency response to it\",\n  \"conflict_relevance\": \"The text includes a substantive embedded news snippet about Palestinians seeking aid in Gaza and Israeli troops opening fire, but this is unrelated to the main wildfire article.\",\n  \"reason\": \"The headline and primary article concern the Texas wildfire. However, the embedded Gaza report contains meaningful conflict-related discourse, making the item peripheral rather than excludable.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:05:38Z",
+  "duration_seconds": 4.037,
+  "error": null
+}

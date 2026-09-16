@@ -1,0 +1,65 @@
+{
+  "article_id": "102502010",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_10/nz/102502010.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_10/nz/102502010.json"
+  },
+  "manifest_row": {
+    "article_id": "102502010",
+    "group": "global_north_2023_10",
+    "country_code": "nz",
+    "filepath": "corpus/02_now_organised/global_north_2023_10/nz/102502010.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "gaza_role": "passing",
+    "main_topic": "New Zealand political advertising about electric vehicle subsidies, climate policy, and alleged greenwashing",
+    "conflict_relevance": "The article's main subject is New Zealand domestic climate and electoral politics. Gaza appears only in a brief unrelated roundup item quoting Chris Hipkins condemning Hamas attacks, civilian targeting, and hostage-taking.",
+    "reason": "The Gaza-related content is incidental and not developed into substantive discussion of the conflict or its broader discourse.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "6e2183bd890cd0220d349108613a5f2c7da6b09616dc356f4973a9ef8159b5e4",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "77e8807e1820b5971eb6ac12ca93a884a6c58f99377ca0f4d9ae97f244e8cf64",
+    "raw_response_text_sha256": "baa9d09d99cc6ccb8166f75e28a23fb68fab0ef1b980837e9e099d7a667a1ef0"
+  },
+  "api_metadata": {
+    "id": "resp_08678bf5b6b91872006aa9f816b5b487d289f4af145ca2307b",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789523990.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2005,
+      "input_tokens_details": {
+        "cache_write_tokens": 2002,
+        "cached_tokens": 0
+      },
+      "output_tokens": 271,
+      "output_tokens_details": {
+        "reasoning_tokens": 121
+      },
+      "total_tokens": 2276
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"New Zealand political advertising about electric vehicle subsidies, climate policy, and alleged greenwashing\",\n  \"conflict_relevance\": \"The article's main subject is New Zealand domestic climate and electoral politics. Gaza appears only in a brief unrelated roundup item quoting Chris Hipkins condemning Hamas attacks, civilian targeting, and hostage-taking.\",\n  \"reason\": \"The Gaza-related content is incidental and not developed into substantive discussion of the conflict or its broader discourse.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T01:59:54Z",
+  "duration_seconds": 3.414,
+  "error": null
+}

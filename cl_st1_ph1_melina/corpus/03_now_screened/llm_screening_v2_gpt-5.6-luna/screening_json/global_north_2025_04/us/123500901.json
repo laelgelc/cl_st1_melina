@@ -1,0 +1,65 @@
+{
+  "article_id": "123500901",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_04/us/123500901.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_04/us/123500901.json"
+  },
+  "manifest_row": {
+    "article_id": "123500901",
+    "group": "global_north_2025_04",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2025_04/us/123500901.txt"
+  },
+  "screening": {
+    "category": "CORE",
+    "confidence": 1.0,
+    "gaza_role": "central",
+    "main_topic": "Israeli strikes across Gaza, including attacks on hospitals, civilian areas, and charity workers",
+    "conflict_relevance": "The article is directly focused on ongoing Israeli military operations in Gaza, civilian deaths and injuries, damage to healthcare infrastructure, humanitarian conditions, hostages, ceasefire negotiations, and the legal protection of hospitals under international law.",
+    "reason": "Gaza and the Israel-Hamas war are the central subject throughout the article, which reports multiple strikes, casualties, hospital damage, humanitarian impacts, competing Israeli and Palestinian claims, and the broader wartime context.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": true
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "46ee3f579ae489c7fdf34c68aece3fa7b58f5d104855a9bc88a0ea63640f3fd8",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "99b630418c26fd3fc22545c7b566b00304ec566438562038ed6459c57dff58f6",
+    "raw_response_text_sha256": "f91a3e28eb9934c49bd91e09cfb7097d125f03853479bcb021202a4344353507"
+  },
+  "api_metadata": {
+    "id": "resp_0dfe37a13ebf8c26006aaa2a32b8cc87d1bf2c9360c63e6368",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789536818.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1784,
+      "input_tokens_details": {
+        "cache_write_tokens": 1781,
+        "cached_tokens": 0
+      },
+      "output_tokens": 174,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 1958
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"CORE\",\n  \"confidence\": 1.0,\n  \"gaza_role\": \"central\",\n  \"main_topic\": \"Israeli strikes across Gaza, including attacks on hospitals, civilian areas, and charity workers\",\n  \"conflict_relevance\": \"The article is directly focused on ongoing Israeli military operations in Gaza, civilian deaths and injuries, damage to healthcare infrastructure, humanitarian conditions, hostages, ceasefire negotiations, and the legal protection of hospitals under international law.\",\n  \"reason\": \"Gaza and the Israel-Hamas war are the central subject throughout the article, which reports multiple strikes, casualties, hospital damage, humanitarian impacts, competing Israeli and Palestinian claims, and the broader wartime context.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": true\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T05:33:41Z",
+  "duration_seconds": 2.485,
+  "error": null
+}

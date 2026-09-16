@@ -1,0 +1,65 @@
+{
+  "article_id": "200399938",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_04/us/200399938.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_04/us/200399938.json"
+  },
+  "manifest_row": {
+    "article_id": "200399938",
+    "group": "global_north_2024_04",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2024_04/us/200399938.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.96,
+    "gaza_role": "passing",
+    "main_topic": "Knife attacks and religious tensions in Sydney",
+    "conflict_relevance": "The article briefly mentions that the bishop speaks about the plight of Palestinians in Gaza, but the main subject is unrelated domestic violence and community tensions in Australia.",
+    "reason": "Gaza appears in a meaningful biographical sentence about the bishop's political commentary, but it is not developed or connected to the article's central narrative.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "e42a474b4af0485947bb8800faf699fe395e2727cffa673bb457a7b2466c30d0",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "652e729650a0d0140342f2a17fd53c67a2b73c07b13545e13aa2513c9c4ce0b3",
+    "raw_response_text_sha256": "1387f35c8233dfe772eed535bfc934dc47f102b2070285cd1fe5d50e82432040"
+  },
+  "api_metadata": {
+    "id": "resp_0c4df7baf3ceed54006aaa0ce9b64c87d2bd58ff6f9d432c59",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789529321.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1700,
+      "input_tokens_details": {
+        "cache_write_tokens": 1697,
+        "cached_tokens": 0
+      },
+      "output_tokens": 213,
+      "output_tokens_details": {
+        "reasoning_tokens": 70
+      },
+      "total_tokens": 1913
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.96,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Knife attacks and religious tensions in Sydney\",\n  \"conflict_relevance\": \"The article briefly mentions that the bishop speaks about the plight of Palestinians in Gaza, but the main subject is unrelated domestic violence and community tensions in Australia.\",\n  \"reason\": \"Gaza appears in a meaningful biographical sentence about the bishop's political commentary, but it is not developed or connected to the article's central narrative.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:28:44Z",
+  "duration_seconds": 3.19,
+  "error": null
+}

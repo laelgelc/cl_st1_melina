@@ -1,0 +1,65 @@
+{
+  "article_id": "106321258",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_03/ca/106321258.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_03/ca/106321258.json"
+  },
+  "manifest_row": {
+    "article_id": "106321258",
+    "group": "global_north_2024_03",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2024_03/ca/106321258.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.96,
+    "gaza_role": "passing",
+    "main_topic": "Pedestrian fatality and local news briefs",
+    "conflict_relevance": "The article is primarily about a fatal pedestrian collision in Victoria and contains several unrelated news snippets. One embedded snippet includes a meaningful but incomplete reference to a Gaza City hospital, wounded people, and alleged Israeli gunfire.",
+    "reason": "The Gaza-related content is not connected to the headline or main article and appears as a brief embedded news item, but it contains substantive conflict-related discourse rather than merely boilerplate text.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "8b9c946e461ac7215ed3ab25bac35ddb9a10427dbc004209f89489cc22cbac32",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "08ef3fcf7a784da21f8a08737cd01bd8e8c20165a9ce26ac859dc6325a2b0200",
+    "raw_response_text_sha256": "463b95b291d1a4dc18576b7152aadbfd52bc1473b3c2707451aec2ab632a9321"
+  },
+  "api_metadata": {
+    "id": "resp_03a1d1711e4b886c006aaa08489f1887d2a0347470f7c3abe4",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789528136.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1047,
+      "input_tokens_details": {
+        "cache_write_tokens": 1044,
+        "cached_tokens": 0
+      },
+      "output_tokens": 254,
+      "output_tokens_details": {
+        "reasoning_tokens": 92
+      },
+      "total_tokens": 1301
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.96,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Pedestrian fatality and local news briefs\",\n  \"conflict_relevance\": \"The article is primarily about a fatal pedestrian collision in Victoria and contains several unrelated news snippets. One embedded snippet includes a meaningful but incomplete reference to a Gaza City hospital, wounded people, and alleged Israeli gunfire.\",\n  \"reason\": \"The Gaza-related content is not connected to the headline or main article and appears as a brief embedded news item, but it contains substantive conflict-related discourse rather than merely boilerplate text.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:08:59Z",
+  "duration_seconds": 2.795,
+  "error": null
+}

@@ -1,0 +1,65 @@
+{
+  "article_id": "102970700",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_10/ca/102970700.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_10/ca/102970700.json"
+  },
+  "manifest_row": {
+    "article_id": "102970700",
+    "group": "global_north_2023_10",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2023_10/ca/102970700.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.96,
+    "gaza_role": "boilerplate_or_unrelated",
+    "main_topic": "Ontario’s $10-a-day child-care funding and affordability",
+    "conflict_relevance": "The article is about provincial child-care funding and contains Gaza only in an unrelated CTVNews.ca Top Stories roundup.",
+    "reason": "Gaza is not part of the main article and appears only as a duplicated brief news item about communications outages and intensified bombardment. This does not meaningfully contribute to discourse analysis of the article’s primary subject.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "02795d8712e27697b9ab459b5840159e04b77420a89e3c3543216d2ba75723d7",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "4450d8cc0220ac147c167585d571692633f3ccf2f2b4c90a8cd317a7dfa718e5",
+    "raw_response_text_sha256": "9ac9e4f832949f89ffcc6ee400bb3a893d83c450667212b651e75393dbee16c5"
+  },
+  "api_metadata": {
+    "id": "resp_0bfbfe70ce7ebe01006aa9f6b1421087d2a1cad38bf7f7d4de",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789523633.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2167,
+      "input_tokens_details": {
+        "cache_write_tokens": 2164,
+        "cached_tokens": 0
+      },
+      "output_tokens": 387,
+      "output_tokens_details": {
+        "reasoning_tokens": 231
+      },
+      "total_tokens": 2554
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.96,\n  \"gaza_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Ontario’s $10-a-day child-care funding and affordability\",\n  \"conflict_relevance\": \"The article is about provincial child-care funding and contains Gaza only in an unrelated CTVNews.ca Top Stories roundup.\",\n  \"reason\": \"Gaza is not part of the main article and appears only as a duplicated brief news item about communications outages and intensified bombardment. This does not meaningfully contribute to discourse analysis of the article’s primary subject.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T01:53:56Z",
+  "duration_seconds": 3.945,
+  "error": null
+}

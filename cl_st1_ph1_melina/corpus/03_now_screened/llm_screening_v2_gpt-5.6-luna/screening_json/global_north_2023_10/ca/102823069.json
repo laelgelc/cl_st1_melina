@@ -1,0 +1,65 @@
+{
+  "article_id": "102823069",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_10/ca/102823069.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_10/ca/102823069.json"
+  },
+  "manifest_row": {
+    "article_id": "102823069",
+    "group": "global_north_2023_10",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2023_10/ca/102823069.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.93,
+    "gaza_role": "passing",
+    "main_topic": "Battery research, electric-vehicle technology, and climate-change mitigation in Halifax",
+    "conflict_relevance": "The main article is unrelated to Gaza or Israel/Palestine, but appended top-story snippets contain substantive references to the Israel-Hamas war, Gaza hospital explosion claims, Israeli military strikes, and Lebanon-Israel tensions.",
+    "reason": "The article's central subject is battery science and commercialization. Gaza-related content appears only in an unrelated news roundup appended to the article, making it peripheral rather than core to conflict discourse analysis.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "5163105de152af2a30a59e9c21b21a65381c4272362d6b47f0cdd8d5eaaaa846",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "df8f98430bfed9252aafb3312c2b53ddf9400480f152d2cee8807ace6b079b4e",
+    "raw_response_text_sha256": "50b5279fa5a6bbdd62878e890de1c982170344fae435aea8cbd83d7f22744940"
+  },
+  "api_metadata": {
+    "id": "resp_0404b5bbe05aecb0006aa9f68131f887d2810bb46625afe996",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789523585.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2241,
+      "input_tokens_details": {
+        "cache_write_tokens": 2238,
+        "cached_tokens": 0
+      },
+      "output_tokens": 371,
+      "output_tokens_details": {
+        "reasoning_tokens": 200
+      },
+      "total_tokens": 2612
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.93,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Battery research, electric-vehicle technology, and climate-change mitigation in Halifax\",\n  \"conflict_relevance\": \"The main article is unrelated to Gaza or Israel/Palestine, but appended top-story snippets contain substantive references to the Israel-Hamas war, Gaza hospital explosion claims, Israeli military strikes, and Lebanon-Israel tensions.\",\n  \"reason\": \"The article's central subject is battery science and commercialization. Gaza-related content appears only in an unrelated news roundup appended to the article, making it peripheral rather than core to conflict discourse analysis.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T01:53:13Z",
+  "duration_seconds": 8.714,
+  "error": null
+}

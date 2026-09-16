@@ -1,0 +1,65 @@
+{
+  "article_id": "118455436",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_12/us/118455436.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_12/us/118455436.json"
+  },
+  "manifest_row": {
+    "article_id": "118455436",
+    "group": "global_north_2024_12",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2024_12/us/118455436.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.96,
+    "gaza_role": "passing",
+    "main_topic": "Generic world news live blog",
+    "conflict_relevance": "A single Gaza photo-caption/update is embedded in otherwise generic boilerplate about international news.",
+    "reason": "The article is primarily an AI-generated live-blog description and contains only a brief passing reference to an Israeli strike in Gaza, without substantive reporting or analysis.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "ab8e8fa705b4baaa3916dbe10a65c0aac6108d6173ea55cda6e0e6cb74005df3",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "9fc12f9c96bfec85e1d5f80ee337d9831b85cd71e41005131be95494675796ad",
+    "raw_response_text_sha256": "5904dac3ef01477459904e4bcf100744efb5a4b36ffd6c32cd2e3306e164bad8"
+  },
+  "api_metadata": {
+    "id": "resp_089278d01c07e9e1006aaa1e3f9bdc87d29eefb4bfa2a365c2",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789533759.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 763,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 276,
+      "output_tokens_details": {
+        "reasoning_tokens": 149
+      },
+      "total_tokens": 1039
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.96,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Generic world news live blog\",\n  \"conflict_relevance\": \"A single Gaza photo-caption/update is embedded in otherwise generic boilerplate about international news.\",\n  \"reason\": \"The article is primarily an AI-generated live-blog description and contains only a brief passing reference to an Israeli strike in Gaza, without substantive reporting or analysis.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T04:42:43Z",
+  "duration_seconds": 4.227,
+  "error": null
+}

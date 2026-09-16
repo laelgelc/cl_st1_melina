@@ -1,0 +1,65 @@
+{
+  "article_id": "120523558",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_south_2025_01/in/120523558.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_south_2025_01/in/120523558.json"
+  },
+  "manifest_row": {
+    "article_id": "120523558",
+    "group": "global_south_2025_01",
+    "country_code": "in",
+    "filepath": "corpus/02_now_organised/global_south_2025_01/in/120523558.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.94,
+    "gaza_role": "passing",
+    "main_topic": "Delhi local news and live updates, including a building collapse and Indian political developments",
+    "conflict_relevance": "The live blog includes a brief embedded update reporting Israel's claim that some hostages listed for release in the Gaza ceasefire are dead.",
+    "reason": "The article is primarily an unrelated Delhi news live blog. Gaza and the Israel-Hamas war appear only in one embedded headline/update, which has some meaningful conflict relevance but is not developed within the main article.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "0d0784904b180862498c5a8dd20f0476f84d94161ef52a475edc9d715c047f87",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "b250a254175aaba45525e974cf7247724d19ea571ea36e4454923cf8c29e40e3",
+    "raw_response_text_sha256": "d1b22ed100e50236ef2a61ec08ce6d9d1131529694eaa03f77e8627031fd6540"
+  },
+  "api_metadata": {
+    "id": "resp_0443f547e0ee84fa006aaa445702a087d190d0c114ff3f0688",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789543511.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1791,
+      "input_tokens_details": {
+        "cache_write_tokens": 1788,
+        "cached_tokens": 0
+      },
+      "output_tokens": 288,
+      "output_tokens_details": {
+        "reasoning_tokens": 129
+      },
+      "total_tokens": 2079
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.94,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Delhi local news and live updates, including a building collapse and Indian political developments\",\n  \"conflict_relevance\": \"The live blog includes a brief embedded update reporting Israel's claim that some hostages listed for release in the Gaza ceasefire are dead.\",\n  \"reason\": \"The article is primarily an unrelated Delhi news live blog. Gaza and the Israel-Hamas war appear only in one embedded headline/update, which has some meaningful conflict relevance but is not developed within the main article.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T07:25:15Z",
+  "duration_seconds": 4.293,
+  "error": null
+}

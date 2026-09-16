@@ -1,0 +1,65 @@
+{
+  "article_id": "109624978",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_06/ca/109624978.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_06/ca/109624978.json"
+  },
+  "manifest_row": {
+    "article_id": "109624978",
+    "group": "global_north_2024_06",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2024_06/ca/109624978.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "gaza_role": "passing",
+    "main_topic": "A Canadian youth camp encouraging female and gender-diverse participants to pursue careers as first responders",
+    "conflict_relevance": "The article includes one unrelated embedded sentence about humanitarian aid being moved from a U.S.-built pier off the Gaza coast, but Gaza is not part of the main article.",
+    "reason": "The headline and substantive article focus on Camp Courage, gender representation, Indigenous inclusion, and emergency-services careers. The Gaza reference appears only in a disconnected roundup of unrelated news items and does not provide meaningful conflict discourse.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "18d4c231b36cb544df0fc80a8e9982cb26bb4f921333c9dc51b98e80fada9e5f",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "642be2a8fa749c76efd612c6d21b1dc4e85d4b9b6b2ca9407364cf3f200b3d4a",
+    "raw_response_text_sha256": "085d549995e86b12033efea004394265a9c0f198d4f6f5b36d6ab6ae710f7422"
+  },
+  "api_metadata": {
+    "id": "resp_0a850af1f80a6395006aaa10499e3c87d29457dacad49b8c30",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789530185.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2963,
+      "input_tokens_details": {
+        "cache_write_tokens": 2960,
+        "cached_tokens": 0
+      },
+      "output_tokens": 361,
+      "output_tokens_details": {
+        "reasoning_tokens": 193
+      },
+      "total_tokens": 3324
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"A Canadian youth camp encouraging female and gender-diverse participants to pursue careers as first responders\",\n  \"conflict_relevance\": \"The article includes one unrelated embedded sentence about humanitarian aid being moved from a U.S.-built pier off the Gaza coast, but Gaza is not part of the main article.\",\n  \"reason\": \"The headline and substantive article focus on Camp Courage, gender representation, Indigenous inclusion, and emergency-services careers. The Gaza reference appears only in a disconnected roundup of unrelated news items and does not provide meaningful conflict discourse.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:43:09Z",
+  "duration_seconds": 3.731,
+  "error": null
+}

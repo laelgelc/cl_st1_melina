@@ -1,0 +1,65 @@
+{
+  "article_id": "102769761",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_10/ca/102769761.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_10/ca/102769761.json"
+  },
+  "manifest_row": {
+    "article_id": "102769761",
+    "group": "global_north_2023_10",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2023_10/ca/102769761.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.96,
+    "gaza_role": "passing",
+    "main_topic": "Vandalism targeting a Canadian Legion, war memorial, cemeteries, and a church in New Brunswick",
+    "conflict_relevance": "The main article is unrelated to Gaza or the Israel-Hamas war, but the text includes several embedded news snippets about Canadian evacuation efforts from Gaza, humanitarian conditions there, and protests and hate incidents linked to the Israel-Hamas war.",
+    "reason": "The headline and substantive article concern local vandalism in Fredericton and Harvey. Gaza-related material appears as separate, embedded news items rather than as part of the main story, but includes meaningful sentences about evacuation, humanitarian conditions, protests, and hate incidents, making the item peripheral rather than wholly excludable.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "13d24ab003a1a0f24880a14907e8aa3baad73f158546f485942f01d3d87ef688",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "ec5587a402df024d6d0c11ce5013581d8d0fd7f6606325672ebfa310d00428a3",
+    "raw_response_text_sha256": "b6bb914632e200b7be0850e5b1f7f1c454428188799354c6594e1f9a23b3b69e"
+  },
+  "api_metadata": {
+    "id": "resp_070160e5f30fb467006aa9f670ad2487d2b785820b678cffd4",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789523568.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1429,
+      "input_tokens_details": {
+        "cache_write_tokens": 1426,
+        "cached_tokens": 0
+      },
+      "output_tokens": 325,
+      "output_tokens_details": {
+        "reasoning_tokens": 120
+      },
+      "total_tokens": 1754
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.96,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Vandalism targeting a Canadian Legion, war memorial, cemeteries, and a church in New Brunswick\",\n  \"conflict_relevance\": \"The main article is unrelated to Gaza or the Israel-Hamas war, but the text includes several embedded news snippets about Canadian evacuation efforts from Gaza, humanitarian conditions there, and protests and hate incidents linked to the Israel-Hamas war.\",\n  \"reason\": \"The headline and substantive article concern local vandalism in Fredericton and Harvey. Gaza-related material appears as separate, embedded news items rather than as part of the main story, but includes meaningful sentences about evacuation, humanitarian conditions, protests, and hate incidents, making the item peripheral rather than wholly excludable.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T01:52:52Z",
+  "duration_seconds": 3.631,
+  "error": null
+}

@@ -1,0 +1,65 @@
+{
+  "article_id": "116220439",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_south_2024_10/in/116220439.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_south_2024_10/in/116220439.json"
+  },
+  "manifest_row": {
+    "article_id": "116220439",
+    "group": "global_south_2024_10",
+    "country_code": "in",
+    "filepath": "corpus/02_now_organised/global_south_2024_10/in/116220439.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.96,
+    "gaza_role": "passing",
+    "main_topic": "India's hunger crisis, malnutrition, and government negligence",
+    "conflict_relevance": "The main article concerns India's Global Hunger Index ranking and domestic welfare policy, but it ends with a brief embedded snippet about Palestinian deaths in Gaza following the October 7, 2023 Hamas attack.",
+    "reason": "The article is not about Gaza or the Israel-Palestine conflict. However, the appended Gaza snippet contains a meaningful sentence directly referencing Israeli military actions and Palestinian casualties, making the item marginally useful for broader discourse analysis but unsuitable as core conflict coverage.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "3db23ce9e33e4b996244b7ed422520e265aee37e7b9f54557ba5043e7f534bda",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "e32cabe5e421b9dd16b4ab0ad89a7a7f0967a4067176e6dbb91625c3bbaf3642",
+    "raw_response_text_sha256": "e5e2e45010fc9aefe5d0ac9c62946bd4ea8a8d722bb68dbb6bbefbf2d5c77008"
+  },
+  "api_metadata": {
+    "id": "resp_05785345624f2ae7006aaa40804c4887d1b68e703696e0241d",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789542528.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2121,
+      "input_tokens_details": {
+        "cache_write_tokens": 2118,
+        "cached_tokens": 0
+      },
+      "output_tokens": 287,
+      "output_tokens_details": {
+        "reasoning_tokens": 110
+      },
+      "total_tokens": 2408
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.96,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"India's hunger crisis, malnutrition, and government negligence\",\n  \"conflict_relevance\": \"The main article concerns India's Global Hunger Index ranking and domestic welfare policy, but it ends with a brief embedded snippet about Palestinian deaths in Gaza following the October 7, 2023 Hamas attack.\",\n  \"reason\": \"The article is not about Gaza or the Israel-Palestine conflict. However, the appended Gaza snippet contains a meaningful sentence directly referencing Israeli military actions and Palestinian casualties, making the item marginally useful for broader discourse analysis but unsuitable as core conflict coverage.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T07:08:53Z",
+  "duration_seconds": 4.963,
+  "error": null
+}

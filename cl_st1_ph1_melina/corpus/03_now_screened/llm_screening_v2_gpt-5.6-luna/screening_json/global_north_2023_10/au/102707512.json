@@ -1,0 +1,65 @@
+{
+  "article_id": "102707512",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_10/au/102707512.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_10/au/102707512.json"
+  },
+  "manifest_row": {
+    "article_id": "102707512",
+    "group": "global_north_2023_10",
+    "country_code": "au",
+    "filepath": "corpus/02_now_organised/global_north_2023_10/au/102707512.txt"
+  },
+  "screening": {
+    "category": "CORE",
+    "confidence": 0.99,
+    "gaza_role": "central",
+    "main_topic": "Live coverage of the Israel-Hamas war, including Gaza's humanitarian crisis, Israeli military operations, the al-Ahli hospital explosion, humanitarian aid, regional escalation, and diplomatic responses",
+    "conflict_relevance": "The article is entirely focused on the Israel-Hamas war and directly addresses Gaza, Palestinians, Israeli military claims, Hamas, humanitarian assistance, international law, hostages or evacuation issues, and regional and international diplomacy.",
+    "reason": "Although formatted as a liveblog containing multiple updates, nearly every substantive item concerns the Gaza conflict or its regional consequences. It provides extensive material on military action, media framing, competing accounts of the hospital explosion, collective punishment, aid restrictions, displacement, and diplomatic efforts.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": true
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "b0cd6a428a6fa1da965c399102e8dd58e0dfc7faec14b87be4c35db0b2fbdb97",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "c9a157c3610a88c8b19c52d001812e995f07020f9ecfbf94fdb7391ddb8a9199",
+    "raw_response_text_sha256": "56d2cc3f977c2d530f12856caa85ae4acd22bdef927c289a37bc4c97f2654c8d"
+  },
+  "api_metadata": {
+    "id": "resp_08a8389b71c95ea0006aa9f44a2c3887d292b7d5f60280615c",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789523018.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 4326,
+      "input_tokens_details": {
+        "cache_write_tokens": 4323,
+        "cached_tokens": 0
+      },
+      "output_tokens": 261,
+      "output_tokens_details": {
+        "reasoning_tokens": 57
+      },
+      "total_tokens": 4587
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"CORE\",\n  \"confidence\": 0.99,\n  \"gaza_role\": \"central\",\n  \"main_topic\": \"Live coverage of the Israel-Hamas war, including Gaza's humanitarian crisis, Israeli military operations, the al-Ahli hospital explosion, humanitarian aid, regional escalation, and diplomatic responses\",\n  \"conflict_relevance\": \"The article is entirely focused on the Israel-Hamas war and directly addresses Gaza, Palestinians, Israeli military claims, Hamas, humanitarian assistance, international law, hostages or evacuation issues, and regional and international diplomacy.\",\n  \"reason\": \"Although formatted as a liveblog containing multiple updates, nearly every substantive item concerns the Gaza conflict or its regional consequences. It provides extensive material on military action, media framing, competing accounts of the hospital explosion, collective punishment, aid restrictions, displacement, and diplomatic efforts.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": true\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T01:43:41Z",
+  "duration_seconds": 3.929,
+  "error": null
+}

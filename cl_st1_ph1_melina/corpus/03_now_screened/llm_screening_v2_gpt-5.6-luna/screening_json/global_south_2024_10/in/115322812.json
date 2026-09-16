@@ -1,0 +1,65 @@
+{
+  "article_id": "115322812",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_south_2024_10/in/115322812.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_south_2024_10/in/115322812.json"
+  },
+  "manifest_row": {
+    "article_id": "115322812",
+    "group": "global_south_2024_10",
+    "country_code": "in",
+    "filepath": "corpus/02_now_organised/global_south_2024_10/in/115322812.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "background",
+    "main_topic": "Israeli military operations against Hezbollah in southern Lebanon",
+    "conflict_relevance": "The article focuses on the Israel-Hezbollah conflict in Lebanon, with background references to the Gaza war, Israeli occupation of the Golan Heights, and the wider regional escalation.",
+    "reason": "Although Gaza is mentioned as context rather than the subject, the article meaningfully discusses Israel's regional military conflict and its connection to the Gaza war and occupied territories.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "8818f1be3ef091e85cddf159582d11b8001a8af48e509aa62ad02611bdf3fc55",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "a5a8bb0b89015ad45b81ddc112bb879cc17c6495e89db65f76224d304bb46585",
+    "raw_response_text_sha256": "e93634d8ce9692febec87d100372d0300e538f86a7914901a0cb2fe33c0603a8"
+  },
+  "api_metadata": {
+    "id": "resp_0dd877dcc5767ec3006aaa3ffc6c6887d1bc803632ebc3cfe8",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789542396.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 973,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 201,
+      "output_tokens_details": {
+        "reasoning_tokens": 50
+      },
+      "total_tokens": 1174
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Israeli military operations against Hezbollah in southern Lebanon\",\n  \"conflict_relevance\": \"The article focuses on the Israel-Hezbollah conflict in Lebanon, with background references to the Gaza war, Israeli occupation of the Golan Heights, and the wider regional escalation.\",\n  \"reason\": \"Although Gaza is mentioned as context rather than the subject, the article meaningfully discusses Israel's regional military conflict and its connection to the Gaza war and occupied territories.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T07:06:39Z",
+  "duration_seconds": 3.668,
+  "error": null
+}

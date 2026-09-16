@@ -1,0 +1,65 @@
+{
+  "article_id": "123311450",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_south_2025_04/bd/123311450.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_south_2025_04/bd/123311450.json"
+  },
+  "manifest_row": {
+    "article_id": "123311450",
+    "group": "global_south_2025_04",
+    "country_code": "bd",
+    "filepath": "corpus/02_now_organised/global_south_2025_04/bd/123311450.txt"
+  },
+  "screening": {
+    "category": "CORE",
+    "confidence": 0.99,
+    "gaza_role": "central",
+    "main_topic": "University shutdown and student protest in solidarity with Gaza",
+    "conflict_relevance": "The article directly reports a university-wide shutdown, rally, boycott, and solidarity campaign protesting Israeli military action and humanitarian conditions in Gaza.",
+    "reason": "Gaza and the Israel-Palestine conflict are the central subject of the article, including discussion of Israeli aggression, occupation, alleged genocide, humanitarian catastrophe, Palestinian solidarity, and protest mobilization.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": true
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "232609f34ebec130b3ef7808a29526757d1de0399b38f1788718219c285debc8",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "ba8cc8f9004e8c5dc19c238f1f4b0f4e7b1965031e481240cdabe45395603410",
+    "raw_response_text_sha256": "af48fb20dab7b1f1ebb65c3b1b719d17460df184f3cf396d783fee5c4bae5c82"
+  },
+  "api_metadata": {
+    "id": "resp_0b75fbfed02e3516006aaa4745242087d1abd4e8eaf28c0e0b",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789544261.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1335,
+      "input_tokens_details": {
+        "cache_write_tokens": 1332,
+        "cached_tokens": 0
+      },
+      "output_tokens": 213,
+      "output_tokens_details": {
+        "reasoning_tokens": 64
+      },
+      "total_tokens": 1548
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"CORE\",\n  \"confidence\": 0.99,\n  \"gaza_role\": \"central\",\n  \"main_topic\": \"University shutdown and student protest in solidarity with Gaza\",\n  \"conflict_relevance\": \"The article directly reports a university-wide shutdown, rally, boycott, and solidarity campaign protesting Israeli military action and humanitarian conditions in Gaza.\",\n  \"reason\": \"Gaza and the Israel-Palestine conflict are the central subject of the article, including discussion of Israeli aggression, occupation, alleged genocide, humanitarian catastrophe, Palestinian solidarity, and protest mobilization.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": true\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T07:37:44Z",
+  "duration_seconds": 3.305,
+  "error": null
+}

@@ -1,0 +1,65 @@
+{
+  "article_id": "103259344",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_11/ca/103259344.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_11/ca/103259344.json"
+  },
+  "manifest_row": {
+    "article_id": "103259344",
+    "group": "global_north_2023_11",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2023_11/ca/103259344.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.93,
+    "gaza_role": "passing",
+    "main_topic": "Police tactical response to a falsely reported kidnapping in Edmonton",
+    "conflict_relevance": "The article includes a meaningful but unrelated news snippet about Canadians evacuating Gaza amid the Israel-Hamas war and humanitarian crisis.",
+    "reason": "The main article concerns an Edmonton police incident, while the Gaza material appears as a separate embedded news item rather than part of the article's central subject. It is still a substantive sentence relevant to conflict discourse, so the article is peripheral rather than excluded.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "e44c356e8377b03a1bb170deb158b130f7c52d9c9b9832a50f05068a7d95ba0f",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "58298c2e9cb9b965c24e1eda4f1bc915d4b4cd3d7535b5f6c982fc7271f206fd",
+    "raw_response_text_sha256": "562514e1a04cb7fdfd8dce983dd2c8b138ccb34b77139cf1ac2b39f721310cc1"
+  },
+  "api_metadata": {
+    "id": "resp_0dc896fffbb83f93006aa9fbb7869c87d2864ea34988df3729",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789524919.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1644,
+      "input_tokens_details": {
+        "cache_write_tokens": 1641,
+        "cached_tokens": 0
+      },
+      "output_tokens": 282,
+      "output_tokens_details": {
+        "reasoning_tokens": 145
+      },
+      "total_tokens": 1926
+    }
+  },
+  "raw_response_text": "{\"category\":\"PERIPHERAL\",\"confidence\":0.93,\"gaza_role\":\"passing\",\"main_topic\":\"Police tactical response to a falsely reported kidnapping in Edmonton\",\"conflict_relevance\":\"The article includes a meaningful but unrelated news snippet about Canadians evacuating Gaza amid the Israel-Hamas war and humanitarian crisis.\",\"reason\":\"The main article concerns an Edmonton police incident, while the Gaza material appears as a separate embedded news item rather than part of the article's central subject. It is still a substantive sentence relevant to conflict discourse, so the article is peripheral rather than excluded.\",\"multi_article_or_snippet_issue\":true,\"recommended_for_main_corpus\":false}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:15:23Z",
+  "duration_seconds": 4.074,
+  "error": null
+}

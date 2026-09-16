@@ -1,0 +1,65 @@
+{
+  "article_id": "121041266",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_02/us/121041266.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_02/us/121041266.json"
+  },
+  "manifest_row": {
+    "article_id": "121041266",
+    "group": "global_north_2025_02",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2025_02/us/121041266.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "gaza_role": "passing",
+    "main_topic": "Trump's rhetoric about acquiring Canada and expanding U.S. borders",
+    "conflict_relevance": "Gaza is mentioned only incidentally as one of several foreign territories Trump has discussed acquiring; the article otherwise concerns Canada-U.S. relations.",
+    "reason": "The article is not substantively about Gaza, Palestine, Israel, or the related conflict. The single Gaza reference is incidental and does not contribute meaningful conflict discourse analysis.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "7c7ff5eabdf8caecd3ffaf5999fc0c6e529d51f9f08a6d448f89f000c8038203",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "74f0cb388952de9c2a8a7a3cfb45e327437cc7c34f6ecc2c5e49da54cf33a5e3",
+    "raw_response_text_sha256": "c23af6200a3b8f4dd5b468d943e5d8eb8fd05a1ab536608064179da0e7170498"
+  },
+  "api_metadata": {
+    "id": "resp_0ea5e94ef3a2794f006aaa247d4b3487d1b93f2c37c1e2369c",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789535357.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 884,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 219,
+      "output_tokens_details": {
+        "reasoning_tokens": 71
+      },
+      "total_tokens": 1103
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Trump's rhetoric about acquiring Canada and expanding U.S. borders\",\n  \"conflict_relevance\": \"Gaza is mentioned only incidentally as one of several foreign territories Trump has discussed acquiring; the article otherwise concerns Canada-U.S. relations.\",\n  \"reason\": \"The article is not substantively about Gaza, Palestine, Israel, or the related conflict. The single Gaza reference is incidental and does not contribute meaningful conflict discourse analysis.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T05:09:20Z",
+  "duration_seconds": 3.619,
+  "error": null
+}

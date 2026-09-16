@@ -1,0 +1,65 @@
+{
+  "article_id": "104570318",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_12/nz/104570318.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_12/nz/104570318.json"
+  },
+  "manifest_row": {
+    "article_id": "104570318",
+    "group": "global_north_2023_12",
+    "country_code": "nz",
+    "filepath": "corpus/02_now_organised/global_north_2023_12/nz/104570318.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.93,
+    "gaza_role": "background",
+    "main_topic": "Mixed news and commentary snippets, including a Christmas reflection linking Christian symbolism to Israeli bombing and Gaza",
+    "conflict_relevance": "Contains meaningful discourse portraying Gaza as the setting of ongoing Israeli violence and framing Jesus as a brown-skinned Middle Eastern child born amid the conflict.",
+    "reason": "The Gaza-related passage offers relevant religious and political framing, but the text is primarily a collection of unrelated snippets about paywalls, Christmas, taxation, and New Zealand legislation rather than a focused conflict article.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "eb1e070b7975008655ef5eef45f61773d01cc90c63e95c2e7dea4f6a6398dea5",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "277453986803bfd436b6a3b8e3db019b040dada5c70a2f85ab3b5078ce48ce53",
+    "raw_response_text_sha256": "b56d68bb1accde5bd5e28047a45949ee6c256a52ff2589ea9ce458f4139b3e11"
+  },
+  "api_metadata": {
+    "id": "resp_0254c76327e76b6c006aaa0191875887d298a36f925ecebe58",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789526417.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 940,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 351,
+      "output_tokens_details": {
+        "reasoning_tokens": 189
+      },
+      "total_tokens": 1291
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.93,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Mixed news and commentary snippets, including a Christmas reflection linking Christian symbolism to Israeli bombing and Gaza\",\n  \"conflict_relevance\": \"Contains meaningful discourse portraying Gaza as the setting of ongoing Israeli violence and framing Jesus as a brown-skinned Middle Eastern child born amid the conflict.\",\n  \"reason\": \"The Gaza-related passage offers relevant religious and political framing, but the text is primarily a collection of unrelated snippets about paywalls, Christmas, taxation, and New Zealand legislation rather than a focused conflict article.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:40:23Z",
+  "duration_seconds": 5.711,
+  "error": null
+}

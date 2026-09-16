@@ -1,0 +1,65 @@
+{
+  "article_id": "117670515",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_south_2024_11/in/117670515.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_south_2024_11/in/117670515.json"
+  },
+  "manifest_row": {
+    "article_id": "117670515",
+    "group": "global_south_2024_11",
+    "country_code": "in",
+    "filepath": "corpus/02_now_organised/global_south_2024_11/in/117670515.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.97,
+    "gaza_role": "boilerplate_or_unrelated",
+    "main_topic": "Australian Aboriginal sovereignty, mining, colonialism, and military infrastructure",
+    "conflict_relevance": "The main article does not discuss Gaza, Palestine, or the Israel-Palestine conflict. Gaza appears only in a brief related-posts teaser unrelated to the article's subject.",
+    "reason": "The article centrally concerns Australia's colonial history, Indigenous dispossession, mineral extraction, and military policy. The passing Gaza reference occurs only in navigational related-posts text and does not provide substantive conflict discourse.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "df44a6dd4ccf919e17b81ced73d359d94dfc02fea0316fd88431a8f0a5358cab",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "702d5c85c581c5e0323c8b496d726572d20b88ffe93184433b7033b4b15850f1",
+    "raw_response_text_sha256": "14b476ee50623c8f583760fca72a044e1f0712769481de1960e01fabb910024b"
+  },
+  "api_metadata": {
+    "id": "resp_0fde7b9a8b94ee76006aaa41cc086487d1bce6b7c9c90ee2c0",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789542860.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2270,
+      "input_tokens_details": {
+        "cache_write_tokens": 2267,
+        "cached_tokens": 0
+      },
+      "output_tokens": 269,
+      "output_tokens_details": {
+        "reasoning_tokens": 101
+      },
+      "total_tokens": 2539
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.97,\n  \"gaza_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Australian Aboriginal sovereignty, mining, colonialism, and military infrastructure\",\n  \"conflict_relevance\": \"The main article does not discuss Gaza, Palestine, or the Israel-Palestine conflict. Gaza appears only in a brief related-posts teaser unrelated to the article's subject.\",\n  \"reason\": \"The article centrally concerns Australia's colonial history, Indigenous dispossession, mineral extraction, and military policy. The passing Gaza reference occurs only in navigational related-posts text and does not provide substantive conflict discourse.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T07:14:24Z",
+  "duration_seconds": 4.205,
+  "error": null
+}

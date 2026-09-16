@@ -1,0 +1,65 @@
+{
+  "article_id": "107191652",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_04/ca/107191652.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_04/ca/107191652.json"
+  },
+  "manifest_row": {
+    "article_id": "107191652",
+    "group": "global_north_2024_04",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2024_04/ca/107191652.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.96,
+    "gaza_role": "passing",
+    "main_topic": "Rising gasoline prices and carbon taxes in the Toronto area",
+    "conflict_relevance": "The main article is unrelated to Gaza, but an embedded CTV News top-stories roundup includes a substantive item about a Canadian killed in an Israeli airstrike in Gaza and calls for an investigation.",
+    "reason": "The headline and article body focus entirely on fuel prices, oil markets, carbon taxation, and seasonal gasoline blends. Gaza appears only in a separate embedded news snippet, which provides meaningful but limited conflict-related discourse.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "8a597c6cb70ae36279d4ad5c7e81845ee230999e6d1b740bbf37fb82ae9e58c4",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "ff6f76fd9c322a6689a9e672c87aa7819af11f1a6f30a4167c7718616489d0e2",
+    "raw_response_text_sha256": "2a0d40ee9b41e449020c796096dc4f7ef864e3615579a9c31c28849906982605"
+  },
+  "api_metadata": {
+    "id": "resp_03da9fc9bf70f5dc006aaa0af1556c87d2a5e299cc9e21377b",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789528817.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1748,
+      "input_tokens_details": {
+        "cache_write_tokens": 1745,
+        "cached_tokens": 0
+      },
+      "output_tokens": 292,
+      "output_tokens_details": {
+        "reasoning_tokens": 125
+      },
+      "total_tokens": 2040
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.96,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Rising gasoline prices and carbon taxes in the Toronto area\",\n  \"conflict_relevance\": \"The main article is unrelated to Gaza, but an embedded CTV News top-stories roundup includes a substantive item about a Canadian killed in an Israeli airstrike in Gaza and calls for an investigation.\",\n  \"reason\": \"The headline and article body focus entirely on fuel prices, oil markets, carbon taxation, and seasonal gasoline blends. Gaza appears only in a separate embedded news snippet, which provides meaningful but limited conflict-related discourse.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:20:21Z",
+  "duration_seconds": 3.892,
+  "error": null
+}

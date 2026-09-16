@@ -1,0 +1,65 @@
+{
+  "article_id": "102970695",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_10/ca/102970695.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_10/ca/102970695.json"
+  },
+  "manifest_row": {
+    "article_id": "102970695",
+    "group": "global_north_2023_10",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2023_10/ca/102970695.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "background",
+    "main_topic": "Toronto-area armed robbery investigation",
+    "conflict_relevance": "The article itself concerns a local robbery, but embedded CTV top-story snippets include substantive reporting on Gaza communications outages and intensified Israeli bombardment.",
+    "reason": "Gaza coverage is present as a meaningful but unrelated news snippet rather than as the subject of the main article.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "545a9e04123aca050a6145e9b7d9b62dbc4e01b1c22623b9c1f3e379b566dc1d",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "416fcf9498a49ec35cab09cd3e5b6ba7bf70b163f77132a7626772713e4908f4",
+    "raw_response_text_sha256": "1252d361e92edf75008c27df4608e777cdac22ccb69245684612ee5610266859"
+  },
+  "api_metadata": {
+    "id": "resp_0383f76f809746c2006aa9f6b0598887d280f331ed6f64df5e",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789523632.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1099,
+      "input_tokens_details": {
+        "cache_write_tokens": 1096,
+        "cached_tokens": 0
+      },
+      "output_tokens": 209,
+      "output_tokens_details": {
+        "reasoning_tokens": 78
+      },
+      "total_tokens": 1308
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Toronto-area armed robbery investigation\",\n  \"conflict_relevance\": \"The article itself concerns a local robbery, but embedded CTV top-story snippets include substantive reporting on Gaza communications outages and intensified Israeli bombardment.\",\n  \"reason\": \"Gaza coverage is present as a meaningful but unrelated news snippet rather than as the subject of the main article.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T01:53:55Z",
+  "duration_seconds": 2.942,
+  "error": null
+}

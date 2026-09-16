@@ -1,0 +1,65 @@
+{
+  "article_id": "104935375",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_01/ca/104935375.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_01/ca/104935375.json"
+  },
+  "manifest_row": {
+    "article_id": "104935375",
+    "group": "global_north_2024_01",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2024_01/ca/104935375.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.97,
+    "gaza_role": "passing",
+    "main_topic": "Fatal nightclub shooting and police investigation in Mississauga",
+    "conflict_relevance": "The article is primarily about a local homicide but contains an embedded, unrelated sentence concerning Canada's temporary resident visa program for Palestinians in Gaza and comparisons with assistance to Ukrainians.",
+    "reason": "The Gaza-related material is meaningful but incidental to the main article and appears within a collection of unrelated snippets, so the article is peripheral rather than core.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "d7d485182245eca442ca85b1803e6ca58ae8c51c68127403a67d8ec007df03f2",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "c649d2229e20d68e64bc9d293d15e4e7db396a3f95e3502b292d3ce5a633e22d",
+    "raw_response_text_sha256": "cb23c4c2f191fc4996e62ad9b7c96daddb63201960d9073412791c4004eef85e"
+  },
+  "api_metadata": {
+    "id": "resp_0a32132457a44feb006aaa038a918887d2948db84cd491ac4e",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789526922.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1611,
+      "input_tokens_details": {
+        "cache_write_tokens": 1608,
+        "cached_tokens": 0
+      },
+      "output_tokens": 263,
+      "output_tokens_details": {
+        "reasoning_tokens": 114
+      },
+      "total_tokens": 1874
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.97,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Fatal nightclub shooting and police investigation in Mississauga\",\n  \"conflict_relevance\": \"The article is primarily about a local homicide but contains an embedded, unrelated sentence concerning Canada's temporary resident visa program for Palestinians in Gaza and comparisons with assistance to Ukrainians.\",\n  \"reason\": \"The Gaza-related material is meaningful but incidental to the main article and appears within a collection of unrelated snippets, so the article is peripheral rather than core.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:48:46Z",
+  "duration_seconds": 3.93,
+  "error": null
+}

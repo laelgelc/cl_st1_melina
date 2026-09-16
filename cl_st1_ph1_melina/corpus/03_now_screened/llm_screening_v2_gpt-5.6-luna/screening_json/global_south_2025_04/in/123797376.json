@@ -1,0 +1,65 @@
+{
+  "article_id": "123797376",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_south_2025_04/in/123797376.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_south_2025_04/in/123797376.json"
+  },
+  "manifest_row": {
+    "article_id": "123797376",
+    "group": "global_south_2025_04",
+    "country_code": "in",
+    "filepath": "corpus/02_now_organised/global_south_2025_04/in/123797376.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.97,
+    "gaza_role": "passing",
+    "main_topic": "Pope Francis's life, papacy, responsibilities, and legacy",
+    "conflict_relevance": "The article briefly mentions Pope Francis's stance on the wars in Gaza and Ukraine as part of a broader summary of his positions, but does not discuss Gaza substantively.",
+    "reason": "Gaza appears in a meaningful sentence about Pope Francis's public positions, yet the article is primarily an obituary and explainer about the papacy rather than conflict coverage.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "50cecb60857463406897ef2474d918d8e1fd76cda5af3675f60489b1b9a3cb2e",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "4d1e1044f5d47054c00f5d172426db336d873f67fd3a01b13aaa9416d8dbd5f1",
+    "raw_response_text_sha256": "ef697cf8d9473f4adcc492842dcca87d7b4432d3fe1b7b2eb0b563405268ade1"
+  },
+  "api_metadata": {
+    "id": "resp_0e8c2af46fc8860d006aaa47a9d8a487d19244da3c9efcea7b",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789544361.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 946,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 206,
+      "output_tokens_details": {
+        "reasoning_tokens": 51
+      },
+      "total_tokens": 1152
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.97,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Pope Francis's life, papacy, responsibilities, and legacy\",\n  \"conflict_relevance\": \"The article briefly mentions Pope Francis's stance on the wars in Gaza and Ukraine as part of a broader summary of his positions, but does not discuss Gaza substantively.\",\n  \"reason\": \"Gaza appears in a meaningful sentence about Pope Francis's public positions, yet the article is primarily an obituary and explainer about the papacy rather than conflict coverage.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T07:39:24Z",
+  "duration_seconds": 2.847,
+  "error": null
+}

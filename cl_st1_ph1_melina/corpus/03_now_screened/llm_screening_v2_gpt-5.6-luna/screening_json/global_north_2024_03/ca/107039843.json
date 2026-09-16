@@ -1,0 +1,65 @@
+{
+  "article_id": "107039843",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_03/ca/107039843.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_03/ca/107039843.json"
+  },
+  "manifest_row": {
+    "article_id": "107039843",
+    "group": "global_north_2024_03",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2024_03/ca/107039843.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "gaza_role": "passing",
+    "main_topic": "A possible previously unknown volcano on Mars and its implications for planetary geology and future exploration",
+    "conflict_relevance": "The article is about Martian geology; Gaza and the Israel-Hamas war appear only in unrelated appended news snippets.",
+    "reason": "The main article has no meaningful connection to Gaza, Palestine, Israel/Palestine, or the conflict. The few Gaza references are incidental elements of a multi-article news feed.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "a2fda4d3598032e667498c9dd1df0541a03d6974fb1ea3a1e565f65d81583852",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "a2fa83838fe1251d93e24d69eb358a8afc1cb06598790b7487d27c51a06765db",
+    "raw_response_text_sha256": "6bb436c9ba903b4aa55d4bf578cda6ddde5158e061db338720e12fb9079f2d0a"
+  },
+  "api_metadata": {
+    "id": "resp_0c80ce61f821f51f006aaa0886dd8087d2b6f5e0dc06a42cdd",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789528198.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 3136,
+      "input_tokens_details": {
+        "cache_write_tokens": 3133,
+        "cached_tokens": 0
+      },
+      "output_tokens": 319,
+      "output_tokens_details": {
+        "reasoning_tokens": 168
+      },
+      "total_tokens": 3455
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"A possible previously unknown volcano on Mars and its implications for planetary geology and future exploration\",\n  \"conflict_relevance\": \"The article is about Martian geology; Gaza and the Israel-Hamas war appear only in unrelated appended news snippets.\",\n  \"reason\": \"The main article has no meaningful connection to Gaza, Palestine, Israel/Palestine, or the conflict. The few Gaza references are incidental elements of a multi-article news feed.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:10:02Z",
+  "duration_seconds": 3.889,
+  "error": null
+}

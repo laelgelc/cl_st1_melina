@@ -1,0 +1,65 @@
+{
+  "article_id": "102734049",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_south_2023_10/za/102734049.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_south_2023_10/za/102734049.json"
+  },
+  "manifest_row": {
+    "article_id": "102734049",
+    "group": "global_south_2023_10",
+    "country_code": "za",
+    "filepath": "corpus/02_now_organised/global_south_2023_10/za/102734049.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "gaza_role": "passing",
+    "main_topic": "South Africa versus France rugby World Cup quarter-final",
+    "conflict_relevance": "Gaza appears only as an isolated sports metaphor and is not connected to any discussion of the conflict or related discourse.",
+    "reason": "The article is entirely about a rugby match, spectators, and tournament strategy. The lone reference to Gaza is incidental and does not provide meaningful material for conflict discourse analysis.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "5cc5a82ef01efde40341fff0a3363777cfe6a3a5a37e0a8c645c061b13baba90",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "28596933c2c721dfa023960d8a7283329e583828c4ca6180cafacf8a38b7ca79",
+    "raw_response_text_sha256": "9cefd38307fde5c199c150094a11012db000d71c5013d4572784c28d7eab6be8"
+  },
+  "api_metadata": {
+    "id": "resp_00c5e5088c64e0f7006aaa346ccbf887d1a74e7955c0f51a75",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789539436.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2700,
+      "input_tokens_details": {
+        "cache_write_tokens": 2697,
+        "cached_tokens": 0
+      },
+      "output_tokens": 190,
+      "output_tokens_details": {
+        "reasoning_tokens": 50
+      },
+      "total_tokens": 2890
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"South Africa versus France rugby World Cup quarter-final\",\n  \"conflict_relevance\": \"Gaza appears only as an isolated sports metaphor and is not connected to any discussion of the conflict or related discourse.\",\n  \"reason\": \"The article is entirely about a rugby match, spectators, and tournament strategy. The lone reference to Gaza is incidental and does not provide meaningful material for conflict discourse analysis.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T06:17:19Z",
+  "duration_seconds": 2.655,
+  "error": null
+}

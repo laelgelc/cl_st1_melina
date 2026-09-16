@@ -1,0 +1,65 @@
+{
+  "article_id": "103214632",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_11/gb/103214632.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_11/gb/103214632.json"
+  },
+  "manifest_row": {
+    "article_id": "103214632",
+    "group": "global_north_2023_11",
+    "country_code": "gb",
+    "filepath": "corpus/02_now_organised/global_north_2023_11/gb/103214632.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "gaza_role": "passing",
+    "main_topic": "FTSE 100 dividend stocks and retirement income investing",
+    "conflict_relevance": "Gaza is mentioned only as a generic geopolitical risk that could affect market conditions.",
+    "reason": "The article is entirely about investment opportunities and dividend shares, with a single incidental reference to events in Gaza. It does not meaningfully discuss the conflict or related discourse.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "fcb38d5d9d98bc5aa29769d74d5c09d71fc70cd19eb2046d9aeb7db9a9aec0bc",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "90dbff39db3af441213247711ef590e59d7bbe601a8bcef97384103c74dfc986",
+    "raw_response_text_sha256": "e59d1999dbf5cd938d2b6ae87b5ebfff218e2c1b365a3e8084380a2af909ffbd"
+  },
+  "api_metadata": {
+    "id": "resp_04b8250323ec41e4006aa9fc53387487d2bb5aedd01db8256d",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789525075.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2316,
+      "input_tokens_details": {
+        "cache_write_tokens": 2313,
+        "cached_tokens": 0
+      },
+      "output_tokens": 211,
+      "output_tokens_details": {
+        "reasoning_tokens": 77
+      },
+      "total_tokens": 2527
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"FTSE 100 dividend stocks and retirement income investing\",\n  \"conflict_relevance\": \"Gaza is mentioned only as a generic geopolitical risk that could affect market conditions.\",\n  \"reason\": \"The article is entirely about investment opportunities and dividend shares, with a single incidental reference to events in Gaza. It does not meaningfully discuss the conflict or related discourse.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:17:58Z",
+  "duration_seconds": 3.449,
+  "error": null
+}

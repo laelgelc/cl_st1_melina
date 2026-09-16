@@ -1,0 +1,65 @@
+{
+  "article_id": "103333948",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_11/us/103333948.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_11/us/103333948.json"
+  },
+  "manifest_row": {
+    "article_id": "103333948",
+    "group": "global_north_2023_11",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2023_11/us/103333948.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.96,
+    "gaza_role": "passing",
+    "main_topic": "Personalized news roundup containing unrelated brief story snippets",
+    "conflict_relevance": "Includes brief snippets about gunfire at Jewish schools in Montreal amid Israel-Hamas war tensions and Israeli humanitarian pauses in northern Gaza, but neither is developed as the main article.",
+    "reason": "The text is a heterogeneous 'Stories for you' roundup consisting of unrelated news excerpts. Although two snippets concern the conflict, the item lacks a substantive unified article suitable for discourse analysis.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "4dd9f5d74ae18461cc5720fad17e99776a23e9bc07db39b93a093634cc1e3fd6",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "7edbe211f0fa4d2154fa733b0cdd858d27fab2f9dc60c3f65d712917c1b56ed8",
+    "raw_response_text_sha256": "417819eb659c0851831e394262ad117e0d7fa526a5f1378d10dcea9a17d45b10"
+  },
+  "api_metadata": {
+    "id": "resp_0659c8d15d8b0ea4006aa9fe4882b087d283a759661c290345",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789525576.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 952,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 417,
+      "output_tokens_details": {
+        "reasoning_tokens": 263
+      },
+      "total_tokens": 1369
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.96,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Personalized news roundup containing unrelated brief story snippets\",\n  \"conflict_relevance\": \"Includes brief snippets about gunfire at Jewish schools in Montreal amid Israel-Hamas war tensions and Israeli humanitarian pauses in northern Gaza, but neither is developed as the main article.\",\n  \"reason\": \"The text is a heterogeneous 'Stories for you' roundup consisting of unrelated news excerpts. Although two snippets concern the conflict, the item lacks a substantive unified article suitable for discourse analysis.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:26:21Z",
+  "duration_seconds": 5.419,
+  "error": null
+}

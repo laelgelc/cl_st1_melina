@@ -1,0 +1,65 @@
+{
+  "article_id": "200136218",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_01/us/200136218.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_01/us/200136218.json"
+  },
+  "manifest_row": {
+    "article_id": "200136218",
+    "group": "global_north_2024_01",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2024_01/us/200136218.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.97,
+    "gaza_role": "boilerplate_or_unrelated",
+    "main_topic": "Mixed photo-caption roundup covering unrelated stories",
+    "conflict_relevance": "Several captions briefly reference Palestinian deaths, an Israeli prisoner release, and the Gaza-Rafah crossing, but there is no substantive article-level discussion.",
+    "reason": "The text consists of multiple unrelated image captions and snippets rather than a coherent article focused on the conflict. The Gaza- and Palestine-related material is caption-level roundup content and is not sufficient for meaningful discourse analysis.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "5c1eec9069f1a12d3295fa103f45d056f3f4ff3212fe360544ddd4d66bca6cff",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "f2f6bd5575c42052418b61f0d28da1d39047ee9dd99d7453864a3ff4d3d2e597",
+    "raw_response_text_sha256": "4dcb0c2d194d41d08824bc5a7c8f3980153071f4f86e60b37acc7f391d0fb0b0"
+  },
+  "api_metadata": {
+    "id": "resp_0d6888c21b24f83b006aaa0576954887d294318f7450fb04a3",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789527414.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 975,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 424,
+      "output_tokens_details": {
+        "reasoning_tokens": 267
+      },
+      "total_tokens": 1399
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.97,\n  \"gaza_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Mixed photo-caption roundup covering unrelated stories\",\n  \"conflict_relevance\": \"Several captions briefly reference Palestinian deaths, an Israeli prisoner release, and the Gaza-Rafah crossing, but there is no substantive article-level discussion.\",\n  \"reason\": \"The text consists of multiple unrelated image captions and snippets rather than a coherent article focused on the conflict. The Gaza- and Palestine-related material is caption-level roundup content and is not sufficient for meaningful discourse analysis.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:56:59Z",
+  "duration_seconds": 4.567,
+  "error": null
+}

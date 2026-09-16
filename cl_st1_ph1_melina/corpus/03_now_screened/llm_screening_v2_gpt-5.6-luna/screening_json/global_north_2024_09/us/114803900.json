@@ -1,0 +1,65 @@
+{
+  "article_id": "114803900",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_09/us/114803900.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_09/us/114803900.json"
+  },
+  "manifest_row": {
+    "article_id": "114803900",
+    "group": "global_north_2024_09",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2024_09/us/114803900.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.93,
+    "gaza_role": "background",
+    "main_topic": "Israeli military escalation and possible ground operation against Hezbollah in Lebanon",
+    "conflict_relevance": "The article primarily covers the Israel-Hezbollah conflict and humanitarian displacement in Lebanon, while linking the escalation to the Gaza war, Hamas, and Hezbollah's stated demand for a Gaza cease-fire.",
+    "reason": "Gaza is a meaningful contextual element in the article's explanation of Hezbollah's involvement and regional escalation, but the central subject is the Lebanon front rather than Gaza, Palestine, or the Israel-Hamas war itself.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "4356f4f525de19f641ecd43474ffad745b271770eaad1c2f521f9b031fdc7def",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "3a2e9443e01da2def9a0ffd0b7d9a812bf195a90beab431514e6286c5786e536",
+    "raw_response_text_sha256": "f522d25bfb7739f0564a2474a04906d4486f0d67dce790c2af8e43b385973986"
+  },
+  "api_metadata": {
+    "id": "resp_0dc6d5e3d1dd677e006aaa177f05ec87d2843bd9b107559a84",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789532031.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2434,
+      "input_tokens_details": {
+        "cache_write_tokens": 2431,
+        "cached_tokens": 0
+      },
+      "output_tokens": 261,
+      "output_tokens_details": {
+        "reasoning_tokens": 94
+      },
+      "total_tokens": 2695
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.93,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Israeli military escalation and possible ground operation against Hezbollah in Lebanon\",\n  \"conflict_relevance\": \"The article primarily covers the Israel-Hezbollah conflict and humanitarian displacement in Lebanon, while linking the escalation to the Gaza war, Hamas, and Hezbollah's stated demand for a Gaza cease-fire.\",\n  \"reason\": \"Gaza is a meaningful contextual element in the article's explanation of Hezbollah's involvement and regional escalation, but the central subject is the Lebanon front rather than Gaza, Palestine, or the Israel-Hamas war itself.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T04:13:53Z",
+  "duration_seconds": 2.722,
+  "error": null
+}

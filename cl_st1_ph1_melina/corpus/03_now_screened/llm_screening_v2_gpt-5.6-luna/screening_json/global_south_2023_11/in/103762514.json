@@ -1,0 +1,65 @@
+{
+  "article_id": "103762514",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_south_2023_11/in/103762514.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_south_2023_11/in/103762514.json"
+  },
+  "manifest_row": {
+    "article_id": "103762514",
+    "group": "global_south_2023_11",
+    "country_code": "in",
+    "filepath": "corpus/02_now_organised/global_south_2023_11/in/103762514.txt"
+  },
+  "screening": {
+    "category": "CORE",
+    "confidence": 0.98,
+    "gaza_role": "central",
+    "main_topic": "Release and reunification of Israeli hostages held by Hamas in Gaza during a temporary ceasefire",
+    "conflict_relevance": "Directly concerns the Israel-Hamas war, hostages held in Gaza, the ceasefire arrangement, and Israeli families affected by the conflict.",
+    "reason": "The text contains a substantial PTI article about children and women released from Hamas captivity in Gaza and reunited with their families. It is preceded by an unrelated article about an ex-servicemen's protest in Punjab, indicating that multiple articles have been concatenated.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": true
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "3f61e7f0f05a8a9466e99eec25cdb1f880dbac10cb124b8a31e1e003c2babff7",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "daaeff8ba6bff0ef2c89434819562bbdf1e5252466b06b294eb0dbaad3c5edac",
+    "raw_response_text_sha256": "c98f6dad09383243cc07aae7d25bb3928ba7ff3d1c31dbfe77f61f826ddab9bb"
+  },
+  "api_metadata": {
+    "id": "resp_0449815212bc03ac006aaa3552a21887d1ad36d0a071163d8d",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789539666.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1440,
+      "input_tokens_details": {
+        "cache_write_tokens": 1437,
+        "cached_tokens": 0
+      },
+      "output_tokens": 328,
+      "output_tokens_details": {
+        "reasoning_tokens": 157
+      },
+      "total_tokens": 1768
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"CORE\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"central\",\n  \"main_topic\": \"Release and reunification of Israeli hostages held by Hamas in Gaza during a temporary ceasefire\",\n  \"conflict_relevance\": \"Directly concerns the Israel-Hamas war, hostages held in Gaza, the ceasefire arrangement, and Israeli families affected by the conflict.\",\n  \"reason\": \"The text contains a substantial PTI article about children and women released from Hamas captivity in Gaza and reunited with their families. It is preceded by an unrelated article about an ex-servicemen's protest in Punjab, indicating that multiple articles have been concatenated.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": true\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T06:21:10Z",
+  "duration_seconds": 4.344,
+  "error": null
+}

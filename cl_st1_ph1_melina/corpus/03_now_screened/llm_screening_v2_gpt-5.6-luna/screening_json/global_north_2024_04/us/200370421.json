@@ -1,0 +1,65 @@
+{
+  "article_id": "200370421",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_04/us/200370421.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_04/us/200370421.json"
+  },
+  "manifest_row": {
+    "article_id": "200370421",
+    "group": "global_north_2024_04",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2024_04/us/200370421.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "gaza_role": "passing",
+    "main_topic": "New York City earthquake and its effects on residents, transportation, and infrastructure",
+    "conflict_relevance": "The Israel-Gaza conflict is mentioned only as the subject of a United Nations Security Council address that was interrupted by the earthquake.",
+    "reason": "The article is primarily about an earthquake in New York and contains no substantive discussion of Gaza, Israel-Palestine, or the conflict.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "39e6781bf3bc3d93ded049635d385b4eea06d354944b705b9da8aaae91dcc9a4",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "d2dc27073b80d000f0f9080d92928578a01a8fe95c840625ddb113cd8e567c44",
+    "raw_response_text_sha256": "0571c76305cab6f44616bfee0daca579a0c647b96d2b5fa240f0aaf9c0f58131"
+  },
+  "api_metadata": {
+    "id": "resp_090ea30080575774006aaa0ca0ea0c87d2a40e8a40b998dbbe",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789529248.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1192,
+      "input_tokens_details": {
+        "cache_write_tokens": 1189,
+        "cached_tokens": 0
+      },
+      "output_tokens": 219,
+      "output_tokens_details": {
+        "reasoning_tokens": 77
+      },
+      "total_tokens": 1411
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"New York City earthquake and its effects on residents, transportation, and infrastructure\",\n  \"conflict_relevance\": \"The Israel-Gaza conflict is mentioned only as the subject of a United Nations Security Council address that was interrupted by the earthquake.\",\n  \"reason\": \"The article is primarily about an earthquake in New York and contains no substantive discussion of Gaza, Israel-Palestine, or the conflict.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:27:31Z",
+  "duration_seconds": 3.31,
+  "error": null
+}

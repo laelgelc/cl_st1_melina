@@ -1,0 +1,65 @@
+{
+  "article_id": "91710114",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_10/us/91710114.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_10/us/91710114.json"
+  },
+  "manifest_row": {
+    "article_id": "91710114",
+    "group": "global_north_2023_10",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2023_10/us/91710114.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "gaza_role": "passing",
+    "main_topic": "Lexeo Therapeutics' biotechnology pipeline, financial status, and IPO prospects",
+    "conflict_relevance": "The article's main subject is a biopharmaceutical company and its IPO. Gaza and related regional conflict appear only in an unrelated financial-news snippet about oil markets and geopolitical risk.",
+    "reason": "The Gaza reference is incidental and disconnected from the article's main topic, offering no sustained or meaningful discourse for analysis of the conflict.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "f996c3c0b435de2317d2c26c61f92ae49ee52934fc701fa1dbdb75ea2140d694",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "c1b99682684827c84e0e11f0060abd59fb1b29d136701fa1d433a531a7cca178",
+    "raw_response_text_sha256": "020f2d5e3d83a8a64dfdd4f3a52a4d54fdf4b464147bed02c1ca12af1ff7a922"
+  },
+  "api_metadata": {
+    "id": "resp_0db1f247793b0fb2006aa9fb506bf087d2a422b99461b25a97",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789524816.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2704,
+      "input_tokens_details": {
+        "cache_write_tokens": 2701,
+        "cached_tokens": 0
+      },
+      "output_tokens": 264,
+      "output_tokens_details": {
+        "reasoning_tokens": 114
+      },
+      "total_tokens": 2968
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Lexeo Therapeutics' biotechnology pipeline, financial status, and IPO prospects\",\n  \"conflict_relevance\": \"The article's main subject is a biopharmaceutical company and its IPO. Gaza and related regional conflict appear only in an unrelated financial-news snippet about oil markets and geopolitical risk.\",\n  \"reason\": \"The Gaza reference is incidental and disconnected from the article's main topic, offering no sustained or meaningful discourse for analysis of the conflict.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:13:40Z",
+  "duration_seconds": 4.454,
+  "error": null
+}

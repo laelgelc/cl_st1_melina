@@ -1,0 +1,65 @@
+{
+  "article_id": "200001483",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_11/us/200001483.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_11/us/200001483.json"
+  },
+  "manifest_row": {
+    "article_id": "200001483",
+    "group": "global_north_2023_11",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2023_11/us/200001483.txt"
+  },
+  "screening": {
+    "category": "CORE",
+    "confidence": 0.99,
+    "gaza_role": "central",
+    "main_topic": "Antisemitism, blood-libel accusations, and media framing of Israel's military campaign in Gaza",
+    "conflict_relevance": "The article is centrally focused on the Israel-Hamas war, Gaza, allegations concerning civilian harm and hospitals, reporting about Israeli military conduct, and competing interpretations of anti-Israel discourse.",
+    "reason": "The main article directly analyzes and argues about Gaza, Israel's military actions, Hamas, Palestinian civilian casualties, hospitals, ceasefire demands, antisemitism, and media coverage. Unrelated technology shopping snippets appear appended to the text but do not alter the main article's central conflict relevance.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": true
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "d466cc6577c9605f6e53293c07811186c3098f6e3e42dcecc6238183b3355321",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "0954db766d6575e84bce0ac65359eb37d42a37249c613bb8e10e46228ee1ef96",
+    "raw_response_text_sha256": "1949bb59c4ffffd29717a2ae86cb7e20f81c4f0e8fdbbc72309eb6848a09c3b6"
+  },
+  "api_metadata": {
+    "id": "resp_0d451167f2dd8a00006aa9ff21b51087d29bdc233c09fe6c44",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789525793.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2087,
+      "input_tokens_details": {
+        "cache_write_tokens": 2084,
+        "cached_tokens": 0
+      },
+      "output_tokens": 253,
+      "output_tokens_details": {
+        "reasoning_tokens": 66
+      },
+      "total_tokens": 2340
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"CORE\",\n  \"confidence\": 0.99,\n  \"gaza_role\": \"central\",\n  \"main_topic\": \"Antisemitism, blood-libel accusations, and media framing of Israel's military campaign in Gaza\",\n  \"conflict_relevance\": \"The article is centrally focused on the Israel-Hamas war, Gaza, allegations concerning civilian harm and hospitals, reporting about Israeli military conduct, and competing interpretations of anti-Israel discourse.\",\n  \"reason\": \"The main article directly analyzes and argues about Gaza, Israel's military actions, Hamas, Palestinian civilian casualties, hospitals, ceasefire demands, antisemitism, and media coverage. Unrelated technology shopping snippets appear appended to the text but do not alter the main article's central conflict relevance.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": true\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:29:57Z",
+  "duration_seconds": 4.441,
+  "error": null
+}

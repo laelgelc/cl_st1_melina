@@ -1,0 +1,65 @@
+{
+  "article_id": "104235247",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_south_2023_12/ph/104235247.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_south_2023_12/ph/104235247.json"
+  },
+  "manifest_row": {
+    "article_id": "104235247",
+    "group": "global_south_2023_12",
+    "country_code": "ph",
+    "filepath": "corpus/02_now_organised/global_south_2023_12/ph/104235247.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.96,
+    "gaza_role": "passing",
+    "main_topic": "Canadian murder charges against a person accused of selling suicide kits",
+    "conflict_relevance": "The main article is unrelated to Gaza, but it ends with a substantive embedded news item about humanitarian access, hostages, and the collapse of Gaza's health system.",
+    "reason": "The article's primary subject is a Canadian criminal case involving suicide kits. Gaza-related content appears only as an unrelated appended snippet, but it contains meaningful conflict discourse rather than a boilerplate mention.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "794192ef5671fd767b19e02434bac8e34e37699cee775ed710a6da393d550701",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "1051324bc05e0deb2e6ec3d24b94db643230e12ec12029c11a8c1210b04ca892",
+    "raw_response_text_sha256": "82679cb4ffc0908c59b803a334f315342e602bca8a907e70b85a6595ff3f56d2"
+  },
+  "api_metadata": {
+    "id": "resp_08517537ed9c7532006aaa3736cdf487d1a8eff594b729774e",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789540150.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1147,
+      "input_tokens_details": {
+        "cache_write_tokens": 1144,
+        "cached_tokens": 0
+      },
+      "output_tokens": 297,
+      "output_tokens_details": {
+        "reasoning_tokens": 139
+      },
+      "total_tokens": 1444
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.96,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Canadian murder charges against a person accused of selling suicide kits\",\n  \"conflict_relevance\": \"The main article is unrelated to Gaza, but it ends with a substantive embedded news item about humanitarian access, hostages, and the collapse of Gaza's health system.\",\n  \"reason\": \"The article's primary subject is a Canadian criminal case involving suicide kits. Gaza-related content appears only as an unrelated appended snippet, but it contains meaningful conflict discourse rather than a boilerplate mention.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T06:29:14Z",
+  "duration_seconds": 3.935,
+  "error": null
+}

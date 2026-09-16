@@ -1,0 +1,65 @@
+{
+  "article_id": "119308785",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_12/gb/119308785.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_12/gb/119308785.json"
+  },
+  "manifest_row": {
+    "article_id": "119308785",
+    "group": "global_north_2024_12",
+    "country_code": "gb",
+    "filepath": "corpus/02_now_organised/global_north_2024_12/gb/119308785.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.93,
+    "gaza_role": "background",
+    "main_topic": "Israeli strikes on Houthi-controlled sites in Yemen, including Sana'a airport",
+    "conflict_relevance": "The article focuses on the regional Israel-Houthi conflict and Israeli attacks in Yemen, while connecting those attacks to the Israeli war in Gaza and citing Palestinian casualties.",
+    "reason": "Gaza and the Israel-Hamas war provide important context for the Houthi missile attacks and Israeli military action, but the article is primarily about events in Yemen rather than Gaza or the Israeli-Palestinian conflict itself.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "c5a75cef18aeabce9ca46691590123b5cd019d12ed3c9caa7b409018a00274db",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "a92d4ec6847a58779f226972a1c224bb9b7a261aeff0f5bf28590bb6a96c29d9",
+    "raw_response_text_sha256": "33d74fc2e81e528b16e798b507338630a37d815446d8a3df7f561e785c5f8282"
+  },
+  "api_metadata": {
+    "id": "resp_0b94b1422bdeb69e006aaa1da52cdc87d297e2052ba2bf7fc2",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789533605.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1355,
+      "input_tokens_details": {
+        "cache_write_tokens": 1352,
+        "cached_tokens": 0
+      },
+      "output_tokens": 267,
+      "output_tokens_details": {
+        "reasoning_tokens": 98
+      },
+      "total_tokens": 1622
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.93,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Israeli strikes on Houthi-controlled sites in Yemen, including Sana'a airport\",\n  \"conflict_relevance\": \"The article focuses on the regional Israel-Houthi conflict and Israeli attacks in Yemen, while connecting those attacks to the Israeli war in Gaza and citing Palestinian casualties.\",\n  \"reason\": \"Gaza and the Israel-Hamas war provide important context for the Houthi missile attacks and Israeli military action, but the article is primarily about events in Yemen rather than Gaza or the Israeli-Palestinian conflict itself.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T04:40:07Z",
+  "duration_seconds": 2.815,
+  "error": null
+}

@@ -1,0 +1,65 @@
+{
+  "article_id": "103242776",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_south_2023_11/in/103242776.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_south_2023_11/in/103242776.json"
+  },
+  "manifest_row": {
+    "article_id": "103242776",
+    "group": "global_south_2023_11",
+    "country_code": "in",
+    "filepath": "corpus/02_now_organised/global_south_2023_11/in/103242776.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.96,
+    "gaza_role": "passing",
+    "main_topic": "Donald Trump's testimony in a New York civil fraud trial",
+    "conflict_relevance": "The article contains a separate substantive news snippet about Gaza, civilian deaths, and calls for a ceasefire, but this is unrelated to the main article topic.",
+    "reason": "The main article concerns Trump's civil fraud trial. Gaza appears only in an embedded, unrelated news item, which provides meaningful but limited conflict-related discourse.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "52295c57d68bd87361444b5426173f9318a7c9ada0806d5b2ddf2890c134fad4",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "011f4be5dabcf2b7fdc0ea8b49cccdd2bfe6cfbbc664857990590071b2bbb2f1",
+    "raw_response_text_sha256": "23cc41c8be12403eecad4c708e3384e57f54722005094499689ee4a9267158d8"
+  },
+  "api_metadata": {
+    "id": "resp_0d1b5062af5690f2006aaa34aa198c87d1881baa664c6ca08f",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789539498.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 761,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 289,
+      "output_tokens_details": {
+        "reasoning_tokens": 143
+      },
+      "total_tokens": 1050
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.96,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Donald Trump's testimony in a New York civil fraud trial\",\n  \"conflict_relevance\": \"The article contains a separate substantive news snippet about Gaza, civilian deaths, and calls for a ceasefire, but this is unrelated to the main article topic.\",\n  \"reason\": \"The main article concerns Trump's civil fraud trial. Gaza appears only in an embedded, unrelated news item, which provides meaningful but limited conflict-related discourse.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T06:18:22Z",
+  "duration_seconds": 4.206,
+  "error": null
+}

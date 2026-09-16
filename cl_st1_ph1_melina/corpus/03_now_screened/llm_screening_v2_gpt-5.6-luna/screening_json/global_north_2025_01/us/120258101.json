@@ -1,0 +1,65 @@
+{
+  "article_id": "120258101",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_01/us/120258101.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_01/us/120258101.json"
+  },
+  "manifest_row": {
+    "article_id": "120258101",
+    "group": "global_north_2025_01",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2025_01/us/120258101.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.99,
+    "gaza_role": "background",
+    "main_topic": "Donald Trump's inauguration, initial executive actions, appointments, and political transition",
+    "conflict_relevance": "The liveblog includes meaningful but secondary coverage of the Gaza ceasefire, Israeli hostages, Palestinian Authority diplomacy, Netanyahu's planned visit, Trump's comments on the Israel-Hamas war, and inauguration references to Gaza and pro-Palestinian protests.",
+    "reason": "The main article is an extensive inauguration-day liveblog rather than a report centered on Gaza or Israel/Palestine. However, several substantive embedded updates directly address Gaza-related hostages, the ceasefire, Palestinian diplomatic reactions, Israel-US relations, and public discourse surrounding the conflict, making it useful for peripheral discourse analysis.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "8f76e869bb7a6587752fcd7a467360100bf3a6559bb74037d5896d24cd301f0a",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "563e5ae70ad6e43e92d4b0da76d6b84ec9b7db5cd9b2904e4c932b2682c7d694",
+    "raw_response_text_sha256": "c42dbd656d9c016004d3103dfe3641fbcf506480a77feafad3e36ef1ae53c286"
+  },
+  "api_metadata": {
+    "id": "resp_032a5c63a53c6b5d006aaa21735ac087d2b818248cd68fd218",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789534579.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 50063,
+      "input_tokens_details": {
+        "cache_write_tokens": 50060,
+        "cached_tokens": 0
+      },
+      "output_tokens": 366,
+      "output_tokens_details": {
+        "reasoning_tokens": 164
+      },
+      "total_tokens": 50429
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.99,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Donald Trump's inauguration, initial executive actions, appointments, and political transition\",\n  \"conflict_relevance\": \"The liveblog includes meaningful but secondary coverage of the Gaza ceasefire, Israeli hostages, Palestinian Authority diplomacy, Netanyahu's planned visit, Trump's comments on the Israel-Hamas war, and inauguration references to Gaza and pro-Palestinian protests.\",\n  \"reason\": \"The main article is an extensive inauguration-day liveblog rather than a report centered on Gaza or Israel/Palestine. However, several substantive embedded updates directly address Gaza-related hostages, the ceasefire, Palestinian diplomatic reactions, Israel-US relations, and public discourse surrounding the conflict, making it useful for peripheral discourse analysis.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T04:56:23Z",
+  "duration_seconds": 4.296,
+  "error": null
+}

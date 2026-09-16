@@ -1,0 +1,65 @@
+{
+  "article_id": "123167542",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_04/gb/123167542.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_04/gb/123167542.json"
+  },
+  "manifest_row": {
+    "article_id": "123167542",
+    "group": "global_north_2025_04",
+    "country_code": "gb",
+    "filepath": "corpus/02_now_organised/global_north_2025_04/gb/123167542.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "background",
+    "main_topic": "Donald Trump's tariff policies, trade negotiations, market fallout, and related US political developments",
+    "conflict_relevance": "The live feed includes a substantive embedded update on Netanyahu's possible White House visit, renewed Israeli military action in Gaza, hostage pressure, territorial seizure, and fears of permanent displacement.",
+    "reason": "The article is primarily a rolling news report about tariffs, trade negotiations, financial markets, US government actions, and unrelated political developments. However, its Gaza segment contains meaningful conflict discourse, making it useful for broader analysis but not suitable as core conflict coverage.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "be993c6449bc7855e97dd031c7a6c60c63eafe4a3c4c35a72b1ea0713729a8a4",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "2050012ba022f6ea160cd769951d1137559dc3812c4f3b7a6ea6e30b9e261379",
+    "raw_response_text_sha256": "fec850392ae51e59deafedea7cb99679fa88c73a5255115bb5f11d3c15045f7a"
+  },
+  "api_metadata": {
+    "id": "resp_06ddb47a746d6622006aaa28b4456487d1a761a1c3108e2f0c",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789536436.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 5036,
+      "input_tokens_details": {
+        "cache_write_tokens": 5033,
+        "cached_tokens": 0
+      },
+      "output_tokens": 267,
+      "output_tokens_details": {
+        "reasoning_tokens": 90
+      },
+      "total_tokens": 5303
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Donald Trump's tariff policies, trade negotiations, market fallout, and related US political developments\",\n  \"conflict_relevance\": \"The live feed includes a substantive embedded update on Netanyahu's possible White House visit, renewed Israeli military action in Gaza, hostage pressure, territorial seizure, and fears of permanent displacement.\",\n  \"reason\": \"The article is primarily a rolling news report about tariffs, trade negotiations, financial markets, US government actions, and unrelated political developments. However, its Gaza segment contains meaningful conflict discourse, making it useful for broader analysis but not suitable as core conflict coverage.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T05:27:20Z",
+  "duration_seconds": 4.647,
+  "error": null
+}

@@ -1,0 +1,65 @@
+{
+  "article_id": "102567250",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_10/us/102567250.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_10/us/102567250.json"
+  },
+  "manifest_row": {
+    "article_id": "102567250",
+    "group": "global_north_2023_10",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2023_10/us/102567250.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "substantial",
+    "main_topic": "Weekly roundup of notable photographs from around the world",
+    "conflict_relevance": "The roundup includes several photographs and captions depicting the October 2023 Hamas attack, Israeli strikes and rocket fire, injured Palestinian children, and deaths in Israel, but Gaza and the conflict are not the article's central subject.",
+    "reason": "This is a multi-topic photo gallery whose main focus is a selection of international news images. The Gaza-related images and captions provide meaningful conflict discourse, warranting peripheral inclusion rather than exclusion, but the article should not be treated as core conflict coverage.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "b0c8142297c7415c5ee4fbae08156efd857640b85e446222ed38ed323f4d329e",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "2ea761a9ef3129beb9e5474a6243be8f8c0151efcf64926815f41ac59e6dad9e",
+    "raw_response_text_sha256": "6a0e0fba16753b8484e709f927c38fbcb323dc3bf73a175a96adc2697c7bf1f2"
+  },
+  "api_metadata": {
+    "id": "resp_0a79ef20f79dd4d2006aa9f8abc42487d2922b1b4ea375e32a",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789524139.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1405,
+      "input_tokens_details": {
+        "cache_write_tokens": 1402,
+        "cached_tokens": 0
+      },
+      "output_tokens": 314,
+      "output_tokens_details": {
+        "reasoning_tokens": 135
+      },
+      "total_tokens": 1719
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"substantial\",\n  \"main_topic\": \"Weekly roundup of notable photographs from around the world\",\n  \"conflict_relevance\": \"The roundup includes several photographs and captions depicting the October 2023 Hamas attack, Israeli strikes and rocket fire, injured Palestinian children, and deaths in Israel, but Gaza and the conflict are not the article's central subject.\",\n  \"reason\": \"This is a multi-topic photo gallery whose main focus is a selection of international news images. The Gaza-related images and captions provide meaningful conflict discourse, warranting peripheral inclusion rather than exclusion, but the article should not be treated as core conflict coverage.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:02:29Z",
+  "duration_seconds": 9.937,
+  "error": null
+}

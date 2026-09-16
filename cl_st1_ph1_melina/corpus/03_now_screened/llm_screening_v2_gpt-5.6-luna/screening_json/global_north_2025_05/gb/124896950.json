@@ -1,0 +1,65 @@
+{
+  "article_id": "124896950",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_05/gb/124896950.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_05/gb/124896950.json"
+  },
+  "manifest_row": {
+    "article_id": "124896950",
+    "group": "global_north_2025_05",
+    "country_code": "gb",
+    "filepath": "corpus/02_now_organised/global_north_2025_05/gb/124896950.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "passing",
+    "main_topic": "UK–EU relations and criticism of Keir Starmer's EU deal",
+    "conflict_relevance": "The main article is about Brexit and a UK–EU agreement, but an embedded 'Read next' item meaningfully mentions the UK government's response to Israel's offensive in Gaza and its diplomatic measures.",
+    "reason": "The Gaza-related material is confined to an unrelated embedded teaser rather than the article's main discussion, but it contains substantive conflict-related content.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "b3c66d37be322d4c601deae608b7e0ea376c14ca42fa3946b5b61436eb31046a",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "19d38e16e6a906b8d1aecb1ddd30748a45e92a723029725d3d4dbd2e0c149c5d",
+    "raw_response_text_sha256": "9c8e4dab23c60f383abb968e98276dd97cd126829ac9108f4428308b8339ec12"
+  },
+  "api_metadata": {
+    "id": "resp_09c5169df4f7424b006aaa2bebd59c87d1b3c3311f3f276525",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789537259.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 953,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 287,
+      "output_tokens_details": {
+        "reasoning_tokens": 131
+      },
+      "total_tokens": 1240
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"UK–EU relations and criticism of Keir Starmer's EU deal\",\n  \"conflict_relevance\": \"The main article is about Brexit and a UK–EU agreement, but an embedded 'Read next' item meaningfully mentions the UK government's response to Israel's offensive in Gaza and its diplomatic measures.\",\n  \"reason\": \"The Gaza-related material is confined to an unrelated embedded teaser rather than the article's main discussion, but it contains substantive conflict-related content.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T05:41:03Z",
+  "duration_seconds": 4.199,
+  "error": null
+}

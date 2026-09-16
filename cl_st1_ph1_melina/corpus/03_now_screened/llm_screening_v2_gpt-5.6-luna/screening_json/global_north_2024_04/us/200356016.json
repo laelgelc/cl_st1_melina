@@ -1,0 +1,65 @@
+{
+  "article_id": "200356016",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_04/us/200356016.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_04/us/200356016.json"
+  },
+  "manifest_row": {
+    "article_id": "200356016",
+    "group": "global_north_2024_04",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2024_04/us/200356016.txt"
+  },
+  "screening": {
+    "category": "CORE",
+    "confidence": 0.99,
+    "gaza_role": "central",
+    "main_topic": "Israeli airstrike that killed World Central Kitchen aid workers in Gaza and its humanitarian, diplomatic, and political repercussions",
+    "conflict_relevance": "The article is overwhelmingly focused on the Gaza war, the killing of humanitarian workers, humanitarian aid access, civilian suffering, Israeli military accountability, international responses, ceasefire diplomacy, and related regional tensions.",
+    "reason": "Nearly all of the main live coverage concerns Gaza, Palestinians, Israeli military action, humanitarian conditions, aid organizations, international law, and government responses. A final unrelated item about a Boston Red Sox baseball game is appended, but it does not alter the main article's central conflict focus.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": true
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "b60c64ce93e443df05982c58e49997ca554f48cce579d14e946c83250af8e839",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "e6f65486404c929900929927ba7f8dcfe155631ab3e2f1dd67df8a691498c466",
+    "raw_response_text_sha256": "718cd5ad4b3df84f81909082db997a090bd584b1c9cdccc8a3bf7e6851e88f65"
+  },
+  "api_metadata": {
+    "id": "resp_02b2f89761d2ca27006aaa0c79aec887d2874f559fd9d3e621",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789529209.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 7813,
+      "input_tokens_details": {
+        "cache_write_tokens": 7810,
+        "cached_tokens": 0
+      },
+      "output_tokens": 269,
+      "output_tokens_details": {
+        "reasoning_tokens": 78
+      },
+      "total_tokens": 8082
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"CORE\",\n  \"confidence\": 0.99,\n  \"gaza_role\": \"central\",\n  \"main_topic\": \"Israeli airstrike that killed World Central Kitchen aid workers in Gaza and its humanitarian, diplomatic, and political repercussions\",\n  \"conflict_relevance\": \"The article is overwhelmingly focused on the Gaza war, the killing of humanitarian workers, humanitarian aid access, civilian suffering, Israeli military accountability, international responses, ceasefire diplomacy, and related regional tensions.\",\n  \"reason\": \"Nearly all of the main live coverage concerns Gaza, Palestinians, Israeli military action, humanitarian conditions, aid organizations, international law, and government responses. A final unrelated item about a Boston Red Sox baseball game is appended, but it does not alter the main article's central conflict focus.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": true\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:26:53Z",
+  "duration_seconds": 3.994,
+  "error": null
+}

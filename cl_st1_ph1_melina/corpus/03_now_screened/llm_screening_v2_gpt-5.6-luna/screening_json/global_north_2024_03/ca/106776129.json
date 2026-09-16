@@ -1,0 +1,65 @@
+{
+  "article_id": "106776129",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_03/ca/106776129.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_03/ca/106776129.json"
+  },
+  "manifest_row": {
+    "article_id": "106776129",
+    "group": "global_north_2024_03",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2024_03/ca/106776129.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "gaza_role": "boilerplate_or_unrelated",
+    "main_topic": "TikTok-viral Pizza Lava Toast recipe review",
+    "conflict_relevance": "The main article is entirely about a food trend and recipe preparation. References to Palestine and Gaza appear only in unrelated appended news-story snippets.",
+    "reason": "The article's subject is a pizza toast recipe; the Gaza and Palestine material is unrelated to the main article and appears as extraneous roundup or embedded content.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "a66ee138114aa0aff76a491902380dbba01f11917a5d6236b9ab346a6858c0ad",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "f17c1b424d9b05773615b75918e46366bbe6b67a3231a737b45eac30624ae7c4",
+    "raw_response_text_sha256": "9237d8d2a617369459c9bc5ef542961ef91ef252b315957f85d299515a76622c"
+  },
+  "api_metadata": {
+    "id": "resp_0d8dbba7f2675b20006aaa087412fc87d2ab3e073e967e5c5d",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789528180.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2140,
+      "input_tokens_details": {
+        "cache_write_tokens": 2137,
+        "cached_tokens": 0
+      },
+      "output_tokens": 231,
+      "output_tokens_details": {
+        "reasoning_tokens": 84
+      },
+      "total_tokens": 2371
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"gaza_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"TikTok-viral Pizza Lava Toast recipe review\",\n  \"conflict_relevance\": \"The main article is entirely about a food trend and recipe preparation. References to Palestine and Gaza appear only in unrelated appended news-story snippets.\",\n  \"reason\": \"The article's subject is a pizza toast recipe; the Gaza and Palestine material is unrelated to the main article and appears as extraneous roundup or embedded content.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:09:43Z",
+  "duration_seconds": 3.923,
+  "error": null
+}

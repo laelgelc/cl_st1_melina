@@ -1,0 +1,65 @@
+{
+  "article_id": "120915543",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_02/us/120915543.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_02/us/120915543.json"
+  },
+  "manifest_row": {
+    "article_id": "120915543",
+    "group": "global_north_2025_02",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2025_02/us/120915543.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.97,
+    "gaza_role": "passing",
+    "main_topic": "North Carolina funding for Hurricane Helene recovery",
+    "conflict_relevance": "An embedded news item briefly reports Donald Trump's proposal to take over and reconstruct Gaza, but the main article concerns North Carolina disaster relief.",
+    "reason": "The primary article is unrelated to Gaza or the Israel-Palestine conflict, but a substantive embedded roundup item contains a meaningful reference to Trump's Gaza plans. It is therefore peripheral rather than core.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "edda0cf4ec83c73ffa1d4ec0767a7428556d08b3a6a316fabad408414d7e7f49",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "3f00797a0a7c8c64b82cd36f38760aeaba29d70d6a9b4cf368ae92ea418f173b",
+    "raw_response_text_sha256": "ff7a8fe50625e58f3a2dee32febfd6b7585c498a4ad940c83dbfe93c42748c25"
+  },
+  "api_metadata": {
+    "id": "resp_0be7ea85774a3e18006aaa243de17c87d18d927e58bf282c10",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789535293.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1869,
+      "input_tokens_details": {
+        "cache_write_tokens": 1866,
+        "cached_tokens": 0
+      },
+      "output_tokens": 273,
+      "output_tokens_details": {
+        "reasoning_tokens": 124
+      },
+      "total_tokens": 2142
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.97,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"North Carolina funding for Hurricane Helene recovery\",\n  \"conflict_relevance\": \"An embedded news item briefly reports Donald Trump's proposal to take over and reconstruct Gaza, but the main article concerns North Carolina disaster relief.\",\n  \"reason\": \"The primary article is unrelated to Gaza or the Israel-Palestine conflict, but a substantive embedded roundup item contains a meaningful reference to Trump's Gaza plans. It is therefore peripheral rather than core.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T05:08:19Z",
+  "duration_seconds": 5.774,
+  "error": null
+}

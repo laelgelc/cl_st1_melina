@@ -1,0 +1,65 @@
+{
+  "article_id": "105505838",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_01/us/105505838.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_01/us/105505838.json"
+  },
+  "manifest_row": {
+    "article_id": "105505838",
+    "group": "global_north_2024_01",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2024_01/us/105505838.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "gaza_role": "passing",
+    "main_topic": "Chicago letters and local civic and business issues",
+    "conflict_relevance": "Gaza is mentioned only in passing as part of a local meeting agenda concerning a cease-fire resolution; the text does not substantively discuss the conflict.",
+    "reason": "The article consists mainly of unrelated letters and local news snippets. The sole Gaza reference is incidental and provides no meaningful conflict discourse for analysis.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "8d4a31622cc5d6dae5a77ef749e7f711ca46683af8f90ca698e54619574ebb1f",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "176d705b557c7046965d26bebc0ed47b3f3923c8fdf88b4ea76cd94e72aebed2",
+    "raw_response_text_sha256": "7d3578a184af489c1ec67218351566c0903af18bf9f0532099213187eb72700c"
+  },
+  "api_metadata": {
+    "id": "resp_0cc08b7efc29c030006aaa0520b5fc87d2b292eb3d4289055f",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789527328.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1262,
+      "input_tokens_details": {
+        "cache_write_tokens": 1259,
+        "cached_tokens": 0
+      },
+      "output_tokens": 243,
+      "output_tokens_details": {
+        "reasoning_tokens": 103
+      },
+      "total_tokens": 1505
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Chicago letters and local civic and business issues\",\n  \"conflict_relevance\": \"Gaza is mentioned only in passing as part of a local meeting agenda concerning a cease-fire resolution; the text does not substantively discuss the conflict.\",\n  \"reason\": \"The article consists mainly of unrelated letters and local news snippets. The sole Gaza reference is incidental and provides no meaningful conflict discourse for analysis.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:55:31Z",
+  "duration_seconds": 3.237,
+  "error": null
+}

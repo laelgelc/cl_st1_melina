@@ -1,0 +1,65 @@
+{
+  "article_id": "120892808",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_02/ie/120892808.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_02/ie/120892808.json"
+  },
+  "manifest_row": {
+    "article_id": "120892808",
+    "group": "global_north_2025_02",
+    "country_code": "ie",
+    "filepath": "corpus/02_now_organised/global_north_2025_02/ie/120892808.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.86,
+    "gaza_role": "passing",
+    "main_topic": "Hungarian household and retail lending trends in 2024",
+    "conflict_relevance": "The main article concerns Hungary's retail credit market, but an embedded news headline reports on proposed US control and redevelopment of the Gaza Strip following talks between Donald Trump and Benjamin Netanyahu.",
+    "reason": "The Gaza-related item is a meaningful but isolated embedded headline unrelated to the article's main economic subject, so the article is relevant only to broader media-discourse analysis and not to the main conflict corpus.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "acf1390361531377d7663b680c51a08dd0017501075739b4e65bf4a3fd8e2632",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "df1d110c9ac53fde5cd5bb7a9fc896088de5d03d5d8eb84a773f9501d18d529d",
+    "raw_response_text_sha256": "514bcfaf17a7e176247a4dac84c8d98c5be40e8ad0305c361fe88ca41f61e43c"
+  },
+  "api_metadata": {
+    "id": "resp_0a188eaff1c84de3006aaa2378e31487d28622c43a75fac194",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789535096.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1528,
+      "input_tokens_details": {
+        "cache_write_tokens": 1525,
+        "cached_tokens": 0
+      },
+      "output_tokens": 405,
+      "output_tokens_details": {
+        "reasoning_tokens": 243
+      },
+      "total_tokens": 1933
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.86,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Hungarian household and retail lending trends in 2024\",\n  \"conflict_relevance\": \"The main article concerns Hungary's retail credit market, but an embedded news headline reports on proposed US control and redevelopment of the Gaza Strip following talks between Donald Trump and Benjamin Netanyahu.\",\n  \"reason\": \"The Gaza-related item is a meaningful but isolated embedded headline unrelated to the article's main economic subject, so the article is relevant only to broader media-discourse analysis and not to the main conflict corpus.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T05:05:02Z",
+  "duration_seconds": 6.115,
+  "error": null
+}

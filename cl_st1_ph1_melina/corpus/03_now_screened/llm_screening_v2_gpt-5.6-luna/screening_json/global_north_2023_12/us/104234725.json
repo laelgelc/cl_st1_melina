@@ -1,0 +1,65 @@
+{
+  "article_id": "104234725",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_12/us/104234725.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_12/us/104234725.json"
+  },
+  "manifest_row": {
+    "article_id": "104234725",
+    "group": "global_north_2023_12",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2023_12/us/104234725.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.97,
+    "gaza_role": "substantial",
+    "main_topic": "A morning news roundup focused primarily on Ukraine aid negotiations, inflation, domestic U.S. news, and other current events",
+    "conflict_relevance": "Includes a substantial section on a former Israeli hostage's fears for hostages held by Hamas, Israeli and U.S. actions in Gaza, and a UN vote on a humanitarian pause",
+    "reason": "The article is a general news newsletter rather than a dedicated Gaza or Israel-Palestine report, but its hostage and Gaza coverage contains meaningful conflict discourse relevant to broader media analysis.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "a056e00d300d1a2c03a65b5fbbd7f7adb993f6304231062016712bf4dd01e479",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "007ee6ff3f56a30d9fd9a2b58dd7352d44b7f2d34debec19aa57a5fab2c8b63e",
+    "raw_response_text_sha256": "9d1633819a168afef4f4fd35264b8f332ea1bf94325a109f59a7d8fd17a29e7d"
+  },
+  "api_metadata": {
+    "id": "resp_0263309a7ae52bc7006aaa02090c7487d2b3cfa0cae2eccb34",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789526537.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2195,
+      "input_tokens_details": {
+        "cache_write_tokens": 2192,
+        "cached_tokens": 0
+      },
+      "output_tokens": 355,
+      "output_tokens_details": {
+        "reasoning_tokens": 183
+      },
+      "total_tokens": 2550
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.97,\n  \"gaza_role\": \"substantial\",\n  \"main_topic\": \"A morning news roundup focused primarily on Ukraine aid negotiations, inflation, domestic U.S. news, and other current events\",\n  \"conflict_relevance\": \"Includes a substantial section on a former Israeli hostage's fears for hostages held by Hamas, Israeli and U.S. actions in Gaza, and a UN vote on a humanitarian pause\",\n  \"reason\": \"The article is a general news newsletter rather than a dedicated Gaza or Israel-Palestine report, but its hostage and Gaza coverage contains meaningful conflict discourse relevant to broader media analysis.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:42:21Z",
+  "duration_seconds": 5.05,
+  "error": null
+}

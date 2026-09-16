@@ -1,0 +1,65 @@
+{
+  "article_id": "105156126",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_01/ca/105156126.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_01/ca/105156126.json"
+  },
+  "manifest_row": {
+    "article_id": "105156126",
+    "group": "global_north_2024_01",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2024_01/ca/105156126.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.91,
+    "gaza_role": "passing",
+    "main_topic": "Ontario healthcare wait times, surgical centres, and hospital capacity",
+    "conflict_relevance": "A brief embedded item mentions Canada processing visa applications for people in the Gaza Strip seeking family reunification, but the article is otherwise unrelated to the conflict.",
+    "reason": "The main article concerns Ontario healthcare policy and hospital wait times. The Gaza reference is a meaningful but very brief passing mention within a collection of unrelated news items, making it peripheral rather than core.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "9d12de344b1bd520165db49a10c061468d07699944eba94423336dc800f46b98",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "34b2677010d4f17ba263bc8a24a59e9cd427a18c785ffd7a64e992ccce740e61",
+    "raw_response_text_sha256": "03d375c5bd5adcd673c547b6fec5f0808bf94dc22b6793775f6308b3f18a998a"
+  },
+  "api_metadata": {
+    "id": "resp_058bc896e066e97a006aaa03a4b86087d2a83849b873338e12",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789526948.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1848,
+      "input_tokens_details": {
+        "cache_write_tokens": 1845,
+        "cached_tokens": 0
+      },
+      "output_tokens": 302,
+      "output_tokens_details": {
+        "reasoning_tokens": 147
+      },
+      "total_tokens": 2150
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.91,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Ontario healthcare wait times, surgical centres, and hospital capacity\",\n  \"conflict_relevance\": \"A brief embedded item mentions Canada processing visa applications for people in the Gaza Strip seeking family reunification, but the article is otherwise unrelated to the conflict.\",\n  \"reason\": \"The main article concerns Ontario healthcare policy and hospital wait times. The Gaza reference is a meaningful but very brief passing mention within a collection of unrelated news items, making it peripheral rather than core.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:49:12Z",
+  "duration_seconds": 4.296,
+  "error": null
+}

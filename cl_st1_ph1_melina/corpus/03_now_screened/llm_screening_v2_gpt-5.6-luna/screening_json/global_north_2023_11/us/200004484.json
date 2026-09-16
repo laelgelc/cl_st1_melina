@@ -1,0 +1,65 @@
+{
+  "article_id": "200004484",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_11/us/200004484.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_11/us/200004484.json"
+  },
+  "manifest_row": {
+    "article_id": "200004484",
+    "group": "global_north_2023_11",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2023_11/us/200004484.txt"
+  },
+  "screening": {
+    "category": "CORE",
+    "confidence": 0.99,
+    "gaza_role": "central",
+    "main_topic": "Israeli military operations in Gaza, humanitarian casualties, hospital raids, and negotiations for a hostage-release deal",
+    "conflict_relevance": "Direct and substantial coverage of the Israel-Hamas war, including military action, civilian deaths, displaced people, hospital attacks, hostage negotiations, international pressure, and humanitarian conditions.",
+    "reason": "The headline and virtually the entire main article focus on the Gaza war, Israeli operations, Hamas, hostages, alleged military infrastructure in hospitals, humanitarian impacts, and diplomatic efforts to secure a pause in fighting. Unrelated cybersecurity, holiday, shopping, and advertising snippets appear appended to the article but do not alter the main article's central relevance.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": true
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "2fba81a534b48c23832f1c9f5fa582a75fc38ab6178980ad373b4eb2b9ae6c54",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "29dd6d3ca8fecdb3ceb9c22d528e4b72b65f7a29c6c56c080640bb86978528fa",
+    "raw_response_text_sha256": "5a87efdfeb7999c787fedbc603e79760e27711f0ece609d33624cefce5affa14"
+  },
+  "api_metadata": {
+    "id": "resp_00dfa17571fac497006aa9ff2b5de087d2a1ec3f2a6714eef3",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789525803.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2300,
+      "input_tokens_details": {
+        "cache_write_tokens": 2297,
+        "cached_tokens": 0
+      },
+      "output_tokens": 258,
+      "output_tokens_details": {
+        "reasoning_tokens": 62
+      },
+      "total_tokens": 2558
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"CORE\",\n  \"confidence\": 0.99,\n  \"gaza_role\": \"central\",\n  \"main_topic\": \"Israeli military operations in Gaza, humanitarian casualties, hospital raids, and negotiations for a hostage-release deal\",\n  \"conflict_relevance\": \"Direct and substantial coverage of the Israel-Hamas war, including military action, civilian deaths, displaced people, hospital attacks, hostage negotiations, international pressure, and humanitarian conditions.\",\n  \"reason\": \"The headline and virtually the entire main article focus on the Gaza war, Israeli operations, Hamas, hostages, alleged military infrastructure in hospitals, humanitarian impacts, and diplomatic efforts to secure a pause in fighting. Unrelated cybersecurity, holiday, shopping, and advertising snippets appear appended to the article but do not alter the main article's central relevance.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": true\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:30:07Z",
+  "duration_seconds": 4.472,
+  "error": null
+}

@@ -1,0 +1,65 @@
+{
+  "article_id": "103239534",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_11/ie/103239534.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_11/ie/103239534.json"
+  },
+  "manifest_row": {
+    "article_id": "103239534",
+    "group": "global_north_2023_11",
+    "country_code": "ie",
+    "filepath": "corpus/02_now_organised/global_north_2023_11/ie/103239534.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.96,
+    "gaza_role": "boilerplate_or_unrelated",
+    "main_topic": "Historical account of Sophie Scholl and the White Rose resistance",
+    "conflict_relevance": "Gaza appears only in the headline and image caption; the available article text discusses Nazi-era resistance without substantive engagement with Gaza or the Israel-Palestine conflict.",
+    "reason": "Despite the Gaza-related headline and photograph, the article body contains no meaningful discussion of Gaza, Palestinians, Israel, or the current conflict.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "16b412cacb1c5c001ad906fce97e688cd4b43c85a23f70247782265bd1acaca2",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "7ea3050444fd5eb5122a5016f62851ffaa105e4968e054f55b49dd7a32f79bd7",
+    "raw_response_text_sha256": "1f945e9ff55aa7a0ac2d049aa94c25aac208943b4268f5c23665966715d4a753"
+  },
+  "api_metadata": {
+    "id": "resp_09bf2baa07ed9138006aa9fd77325487d293634d51e4b02ab7",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789525367.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 793,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 280,
+      "output_tokens_details": {
+        "reasoning_tokens": 129
+      },
+      "total_tokens": 1073
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.96,\n  \"gaza_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Historical account of Sophie Scholl and the White Rose resistance\",\n  \"conflict_relevance\": \"Gaza appears only in the headline and image caption; the available article text discusses Nazi-era resistance without substantive engagement with Gaza or the Israel-Palestine conflict.\",\n  \"reason\": \"Despite the Gaza-related headline and photograph, the article body contains no meaningful discussion of Gaza, Palestinians, Israel, or the current conflict.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:22:50Z",
+  "duration_seconds": 3.594,
+  "error": null
+}

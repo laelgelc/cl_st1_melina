@@ -1,0 +1,65 @@
+{
+  "article_id": "117828777",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_11/ie/117828777.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_11/ie/117828777.json"
+  },
+  "manifest_row": {
+    "article_id": "117828777",
+    "group": "global_north_2024_11",
+    "country_code": "ie",
+    "filepath": "corpus/02_now_organised/global_north_2024_11/ie/117828777.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.97,
+    "gaza_role": "passing",
+    "main_topic": "Iran-Venezuela economic and strategic cooperation under sanctions",
+    "conflict_relevance": "The main article concerns Iran-Venezuela relations, but it includes a separate substantive news snippet about Hamas leaders and Gaza ceasefire negotiations.",
+    "reason": "The Gaza-related content is not part of the main article's central topic, yet the mention of Hamas and ceasefire negotiations is meaningful enough to warrant peripheral classification rather than exclusion.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "a16aaa83f2bd254746afecd516114e50e9eaa3246663ee4a7da67478eeffbeae",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "f2ba555234c3652c1a23668f6fc5ee5af12c11d96119daa284e39de878ccfbbb",
+    "raw_response_text_sha256": "41d90a538960d0d3e66c195c60f21ae3c7adeb34b79e4fdbe2e17a06aaaa9471"
+  },
+  "api_metadata": {
+    "id": "resp_0e10ea79526d478c006aaa1b6edd3487d2ade26ce6bcba6af1",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789533038.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1562,
+      "input_tokens_details": {
+        "cache_write_tokens": 1559,
+        "cached_tokens": 0
+      },
+      "output_tokens": 212,
+      "output_tokens_details": {
+        "reasoning_tokens": 64
+      },
+      "total_tokens": 1774
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.97,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Iran-Venezuela economic and strategic cooperation under sanctions\",\n  \"conflict_relevance\": \"The main article concerns Iran-Venezuela relations, but it includes a separate substantive news snippet about Hamas leaders and Gaza ceasefire negotiations.\",\n  \"reason\": \"The Gaza-related content is not part of the main article's central topic, yet the mention of Hamas and ceasefire negotiations is meaningful enough to warrant peripheral classification rather than exclusion.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T04:30:41Z",
+  "duration_seconds": 2.745,
+  "error": null
+}

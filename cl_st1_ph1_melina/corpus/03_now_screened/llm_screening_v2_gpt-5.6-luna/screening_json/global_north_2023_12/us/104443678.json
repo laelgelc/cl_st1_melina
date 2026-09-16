@@ -1,0 +1,65 @@
+{
+  "article_id": "104443678",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_12/us/104443678.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_12/us/104443678.json"
+  },
+  "manifest_row": {
+    "article_id": "104443678",
+    "group": "global_north_2023_12",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2023_12/us/104443678.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.93,
+    "gaza_role": "substantial",
+    "main_topic": "U.S. defense and foreign policy newsletter roundup",
+    "conflict_relevance": "Contains a substantial section on the Gaza war, including U.N. Security Council negotiations over humanitarian pauses, U.S. policy toward Israel and Hamas, civilian casualties, hostages, military strategy, and domestic political divisions over Biden's handling of the conflict.",
+    "reason": "The article is a broader defense and national security newsletter covering immigration, Ukraine, military promotions, and Taiwan, but its Gaza coverage is detailed and meaningful rather than incidental. Because Gaza is one substantial component of a multi-topic roundup rather than the overall central subject, it is classified as PERIPHERAL.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "f46449095a7830ed2b443a119772900e24afb7d626fd609ea6346b146f97d57b",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "0db29901c779fac94d3bad9af966e297d205f2109dc78572e5557e6843cd0381",
+    "raw_response_text_sha256": "3cde442682240d826de948eab549177fd9e3bc5991503959d38f6025411e61cf"
+  },
+  "api_metadata": {
+    "id": "resp_04a483a863199171006aaa0248001087d2b7d543c6e95649fe",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789526600.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 3133,
+      "input_tokens_details": {
+        "cache_write_tokens": 3130,
+        "cached_tokens": 0
+      },
+      "output_tokens": 402,
+      "output_tokens_details": {
+        "reasoning_tokens": 207
+      },
+      "total_tokens": 3535
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.93,\n  \"gaza_role\": \"substantial\",\n  \"main_topic\": \"U.S. defense and foreign policy newsletter roundup\",\n  \"conflict_relevance\": \"Contains a substantial section on the Gaza war, including U.N. Security Council negotiations over humanitarian pauses, U.S. policy toward Israel and Hamas, civilian casualties, hostages, military strategy, and domestic political divisions over Biden's handling of the conflict.\",\n  \"reason\": \"The article is a broader defense and national security newsletter covering immigration, Ukraine, military promotions, and Taiwan, but its Gaza coverage is detailed and meaningful rather than incidental. Because Gaza is one substantial component of a multi-topic roundup rather than the overall central subject, it is classified as PERIPHERAL.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:43:25Z",
+  "duration_seconds": 5.597,
+  "error": null
+}

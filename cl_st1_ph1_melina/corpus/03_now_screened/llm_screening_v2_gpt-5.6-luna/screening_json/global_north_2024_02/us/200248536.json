@@ -1,0 +1,65 @@
+{
+  "article_id": "200248536",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_02/us/200248536.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_02/us/200248536.json"
+  },
+  "manifest_row": {
+    "article_id": "200248536",
+    "group": "global_north_2024_02",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2024_02/us/200248536.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "gaza_role": "passing",
+    "main_topic": "Outdoor hiking and wilderness safety",
+    "conflict_relevance": "The article is unrelated to Gaza or the Israel-Palestine conflict; it contains only a single embedded news snippet mentioning Netanyahu, Rafah, and a possible ceasefire.",
+    "reason": "The main article provides wilderness safety advice, while the Gaza-related sentence is an incidental item in a collection of unrelated snippets and is not developed substantively.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "5b81858e125091348db24e51bf6a2e2dd1cab7a94ee395350f28758af01bbd96",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "feec482da9fe66b0014a7f30ce96a881a37f3747325e8394d7fc24ab457fd903",
+    "raw_response_text_sha256": "cdc98fed6ae99d6551dd147f1146497a60205c8e4fa855c682bc11ee63cc9d70"
+  },
+  "api_metadata": {
+    "id": "resp_041ba0745d8ceef0006aaa0813515c87d286bb1f3ef3e0f404",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789528083.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2889,
+      "input_tokens_details": {
+        "cache_write_tokens": 2886,
+        "cached_tokens": 0
+      },
+      "output_tokens": 227,
+      "output_tokens_details": {
+        "reasoning_tokens": 82
+      },
+      "total_tokens": 3116
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Outdoor hiking and wilderness safety\",\n  \"conflict_relevance\": \"The article is unrelated to Gaza or the Israel-Palestine conflict; it contains only a single embedded news snippet mentioning Netanyahu, Rafah, and a possible ceasefire.\",\n  \"reason\": \"The main article provides wilderness safety advice, while the Gaza-related sentence is an incidental item in a collection of unrelated snippets and is not developed substantively.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:08:06Z",
+  "duration_seconds": 3.136,
+  "error": null
+}

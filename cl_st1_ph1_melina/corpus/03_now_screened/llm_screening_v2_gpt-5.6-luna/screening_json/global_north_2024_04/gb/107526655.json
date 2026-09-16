@@ -1,0 +1,65 @@
+{
+  "article_id": "107526655",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_04/gb/107526655.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_04/gb/107526655.json"
+  },
+  "manifest_row": {
+    "article_id": "107526655",
+    "group": "global_north_2024_04",
+    "country_code": "gb",
+    "filepath": "corpus/02_now_organised/global_north_2024_04/gb/107526655.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.96,
+    "gaza_role": "passing",
+    "main_topic": "Chinese civil aviation passenger and cargo recovery after the COVID-19 pandemic",
+    "conflict_relevance": "A related-article snippet discusses the Israeli-Gaza conflict and its impact on Israir Group's fleet and business recovery.",
+    "reason": "The main article concerns Chinese aviation and pandemic-era traffic recovery. Gaza appears only in a substantive but unrelated related-article snippet about an Israeli airline's post-war fleet restoration, making the item peripheral rather than core.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "da933623446ea8b2cc990b3cbf69df753af84585a864483cbaf1b97a5a2fc2e8",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "6e87f2fc179fc42c6d6fe1ab079b0d1dd38853337da8277a4c22d209dd945470",
+    "raw_response_text_sha256": "576c15e5dcb08c68a5e9d873d94a558b00035dc5c651c95f028918ec80d85f3b"
+  },
+  "api_metadata": {
+    "id": "resp_0dbd688735692c54006aaa0b61f30087d290a37fd447386f20",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789528929.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1208,
+      "input_tokens_details": {
+        "cache_write_tokens": 1205,
+        "cached_tokens": 0
+      },
+      "output_tokens": 273,
+      "output_tokens_details": {
+        "reasoning_tokens": 118
+      },
+      "total_tokens": 1481
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.96,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Chinese civil aviation passenger and cargo recovery after the COVID-19 pandemic\",\n  \"conflict_relevance\": \"A related-article snippet discusses the Israeli-Gaza conflict and its impact on Israir Group's fleet and business recovery.\",\n  \"reason\": \"The main article concerns Chinese aviation and pandemic-era traffic recovery. Gaza appears only in a substantive but unrelated related-article snippet about an Israeli airline's post-war fleet restoration, making the item peripheral rather than core.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:22:13Z",
+  "duration_seconds": 3.544,
+  "error": null
+}

@@ -1,0 +1,65 @@
+{
+  "article_id": "123987405",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_04/us/123987405.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_04/us/123987405.json"
+  },
+  "manifest_row": {
+    "article_id": "123987405",
+    "group": "global_north_2025_04",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2025_04/us/123987405.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "background",
+    "main_topic": "Iran-US negotiations over Iran's nuclear program and sanctions",
+    "conflict_relevance": "The article briefly situates the Iran nuclear talks within regional tensions, mentioning Israel's ongoing war on Hamas in Gaza and the possibility of Israeli action against Iran.",
+    "reason": "The article is primarily about Iran's nuclear negotiations, enrichment, sanctions, and potential Israeli strikes on Iranian facilities. Gaza and the Israel-Hamas war appear in a meaningful but limited contextual passage, making the article relevant to broader regional conflict discourse but not core Gaza coverage.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "065f259884aab282a96880ba30e9760016085b3c1abeee6cb48a5333ee29a1d0",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "abec22baa3d65aec11554a0c2a5e67086aeda9520defdb7b6fe42c31e02c531c",
+    "raw_response_text_sha256": "951c1f6ee3cbcbfd760a24f43083b622e52ff714becff230a9635ce81de42b76"
+  },
+  "api_metadata": {
+    "id": "resp_05aa5eebf82352aa006aaa2ab3643887d1b8df5e350407a725",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789536947.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2115,
+      "input_tokens_details": {
+        "cache_write_tokens": 2112,
+        "cached_tokens": 0
+      },
+      "output_tokens": 226,
+      "output_tokens_details": {
+        "reasoning_tokens": 56
+      },
+      "total_tokens": 2341
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Iran-US negotiations over Iran's nuclear program and sanctions\",\n  \"conflict_relevance\": \"The article briefly situates the Iran nuclear talks within regional tensions, mentioning Israel's ongoing war on Hamas in Gaza and the possibility of Israeli action against Iran.\",\n  \"reason\": \"The article is primarily about Iran's nuclear negotiations, enrichment, sanctions, and potential Israeli strikes on Iranian facilities. Gaza and the Israel-Hamas war appear in a meaningful but limited contextual passage, making the article relevant to broader regional conflict discourse but not core Gaza coverage.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T05:35:50Z",
+  "duration_seconds": 2.791,
+  "error": null
+}

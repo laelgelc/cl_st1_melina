@@ -1,0 +1,65 @@
+{
+  "article_id": "110393794",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_south_2024_07/in/110393794.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_south_2024_07/in/110393794.json"
+  },
+  "manifest_row": {
+    "article_id": "110393794",
+    "group": "global_south_2024_07",
+    "country_code": "in",
+    "filepath": "corpus/02_now_organised/global_south_2024_07/in/110393794.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.97,
+    "gaza_role": "passing",
+    "main_topic": "Mixed news roundup covering Indian politics, entertainment, sports, technology, economics, and international news",
+    "conflict_relevance": "Includes a substantive item about the US-built humanitarian pier in Gaza, its dismantling, aid delivery challenges, security, and looting concerns, but the overall text is overwhelmingly unrelated to the Gaza conflict.",
+    "reason": "The article is a compilation of many unrelated news snippets. Gaza appears in one meaningful paragraph concerning humanitarian infrastructure and aid operations, making it peripheral rather than core conflict coverage.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "93b73f488c01b8808d4d959b2083426d6be527551941feb528501a9d4f09631a",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "f336f083331f394152de75a9cfc4446a093f4e7117ae75da52a1a88dd2f75827",
+    "raw_response_text_sha256": "acc26adddae07303b895af6e5ec537d7968433042b4630d416e89aad1956d88c"
+  },
+  "api_metadata": {
+    "id": "resp_06f65b6d4324aedb006aaa3ceede7c87d1a6b2402774661300",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789541614.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 3885,
+      "input_tokens_details": {
+        "cache_write_tokens": 3882,
+        "cached_tokens": 0
+      },
+      "output_tokens": 318,
+      "output_tokens_details": {
+        "reasoning_tokens": 151
+      },
+      "total_tokens": 4203
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.97,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Mixed news roundup covering Indian politics, entertainment, sports, technology, economics, and international news\",\n  \"conflict_relevance\": \"Includes a substantive item about the US-built humanitarian pier in Gaza, its dismantling, aid delivery challenges, security, and looting concerns, but the overall text is overwhelmingly unrelated to the Gaza conflict.\",\n  \"reason\": \"The article is a compilation of many unrelated news snippets. Gaza appears in one meaningful paragraph concerning humanitarian infrastructure and aid operations, making it peripheral rather than core conflict coverage.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T06:53:39Z",
+  "duration_seconds": 4.997,
+  "error": null
+}

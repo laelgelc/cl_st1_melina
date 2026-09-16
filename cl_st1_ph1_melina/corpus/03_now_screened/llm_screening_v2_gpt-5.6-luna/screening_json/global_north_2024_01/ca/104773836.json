@@ -1,0 +1,65 @@
+{
+  "article_id": "104773836",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_01/ca/104773836.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_01/ca/104773836.json"
+  },
+  "manifest_row": {
+    "article_id": "104773836",
+    "group": "global_north_2024_01",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2024_01/ca/104773836.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.94,
+    "gaza_role": "background",
+    "main_topic": "Mixed latest-news roundup dominated by sports coverage",
+    "conflict_relevance": "Includes a substantive embedded news item about Saleh Arouri's assassination, Israeli targeting, Hamas, and the ongoing war in Gaza.",
+    "reason": "The text is primarily a collection of unrelated sports stories, but it contains a meaningful conflict-related snippet concerning Arouri, Israel, Hamas, and Gaza. Because the Gaza-related material is embedded within a broader roundup rather than being the main article, it is peripheral rather than core.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "661d6337a259c13c3078df5231ee6e8806b21584a61908c42c6d17f966906989",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "16c1a3af85de6c5e7646e32269cddaffca2ba2a1c616082a2b234add510e10c8",
+    "raw_response_text_sha256": "c9cb3949a297bd0dad670c5d9d47955fdf9c5b0101d4e7e1751e5a7fd8e3e0c3"
+  },
+  "api_metadata": {
+    "id": "resp_0ddef3e8828f2455006aaa0379f26887d2b345fc6fce4da80b",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789526905.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1428,
+      "input_tokens_details": {
+        "cache_write_tokens": 1425,
+        "cached_tokens": 0
+      },
+      "output_tokens": 385,
+      "output_tokens_details": {
+        "reasoning_tokens": 220
+      },
+      "total_tokens": 1813
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.94,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Mixed latest-news roundup dominated by sports coverage\",\n  \"conflict_relevance\": \"Includes a substantive embedded news item about Saleh Arouri's assassination, Israeli targeting, Hamas, and the ongoing war in Gaza.\",\n  \"reason\": \"The text is primarily a collection of unrelated sports stories, but it contains a meaningful conflict-related snippet concerning Arouri, Israel, Hamas, and Gaza. Because the Gaza-related material is embedded within a broader roundup rather than being the main article, it is peripheral rather than core.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:48:30Z",
+  "duration_seconds": 4.741,
+  "error": null
+}

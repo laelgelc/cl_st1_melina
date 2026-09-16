@@ -1,0 +1,65 @@
+{
+  "article_id": "123014428",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_03/us/123014428.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_03/us/123014428.json"
+  },
+  "manifest_row": {
+    "article_id": "123014428",
+    "group": "global_north_2025_03",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2025_03/us/123014428.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "background",
+    "main_topic": "U.S. airstrikes against Houthi targets in Yemen",
+    "conflict_relevance": "The article is primarily about the U.S.-Houthi conflict in Yemen, but it meaningfully connects the strikes to the Houthis' threats against Israeli-linked shipping and Israel's blockade of aid entering Gaza.",
+    "reason": "Gaza and Israel's restrictions on aid are presented as the trigger for the Houthi campaign against shipping, making the article relevant to broader regional discourse around the Gaza war, though Gaza is not the central subject.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "a5375891c032a1a81cbb302bfbb78d82e754b22b8d9c24e2183fd89ecec0461c",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "f43eba582b7f42f3dcbe7ade6fa0336027c3ad3ba3d1ada426b5af0e7174f5e4",
+    "raw_response_text_sha256": "3a7f326d3c9108aa641bd4a306b121966c3aaa3ab0208f1651a5d0eb7b66cb16"
+  },
+  "api_metadata": {
+    "id": "resp_07b8561b8ee774da006aaa2845ee1087d1a4354a205c0eadf7",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789536325.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1046,
+      "input_tokens_details": {
+        "cache_write_tokens": 1043,
+        "cached_tokens": 0
+      },
+      "output_tokens": 231,
+      "output_tokens_details": {
+        "reasoning_tokens": 57
+      },
+      "total_tokens": 1277
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"U.S. airstrikes against Houthi targets in Yemen\",\n  \"conflict_relevance\": \"The article is primarily about the U.S.-Houthi conflict in Yemen, but it meaningfully connects the strikes to the Houthis' threats against Israeli-linked shipping and Israel's blockade of aid entering Gaza.\",\n  \"reason\": \"Gaza and Israel's restrictions on aid are presented as the trigger for the Houthi campaign against shipping, making the article relevant to broader regional discourse around the Gaza war, though Gaza is not the central subject.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T05:25:28Z",
+  "duration_seconds": 2.981,
+  "error": null
+}

@@ -1,0 +1,65 @@
+{
+  "article_id": "200473789",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_05/us/200473789.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_05/us/200473789.json"
+  },
+  "manifest_row": {
+    "article_id": "200473789",
+    "group": "global_north_2024_05",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2024_05/us/200473789.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.97,
+    "gaza_role": "passing",
+    "main_topic": "Summer planning, work, and activities for college students",
+    "conflict_relevance": "The main article is unrelated to Gaza, but a recommended story discusses arrests at U.S. college protests against the war in Gaza and consequences for participating students.",
+    "reason": "Gaza appears only in a substantive recommended-story snippet, not in the main article.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "d1c3fd4e21d29a2e16227f100109371f5e1eb11251e88e773a1ff01f8dd62f78",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "b4920fa5f632c8dca588811a1e9285dc1c725eef02557dfcaed0d079876efe82",
+    "raw_response_text_sha256": "408a6c6307bd54feda8430a50c56b21588811bceb879a86436be7e0596f5c8ab"
+  },
+  "api_metadata": {
+    "id": "resp_0e18f0f393b8b67e006aaa0fb6972087d2a947cbce6be1fd43",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789530038.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1611,
+      "input_tokens_details": {
+        "cache_write_tokens": 1608,
+        "cached_tokens": 0
+      },
+      "output_tokens": 225,
+      "output_tokens_details": {
+        "reasoning_tokens": 91
+      },
+      "total_tokens": 1836
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.97,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Summer planning, work, and activities for college students\",\n  \"conflict_relevance\": \"The main article is unrelated to Gaza, but a recommended story discusses arrests at U.S. college protests against the war in Gaza and consequences for participating students.\",\n  \"reason\": \"Gaza appears only in a substantive recommended-story snippet, not in the main article.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:40:41Z",
+  "duration_seconds": 2.937,
+  "error": null
+}

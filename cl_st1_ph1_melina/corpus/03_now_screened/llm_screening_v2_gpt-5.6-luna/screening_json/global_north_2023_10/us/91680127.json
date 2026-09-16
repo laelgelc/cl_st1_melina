@@ -1,0 +1,65 @@
+{
+  "article_id": "91680127",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_10/us/91680127.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_10/us/91680127.json"
+  },
+  "manifest_row": {
+    "article_id": "91680127",
+    "group": "global_north_2023_10",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2023_10/us/91680127.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.93,
+    "gaza_role": "passing",
+    "main_topic": "Mixed news snippets covering crime, U.S. politics, autonomous vehicles, health technology, Gaza, and online content disputes",
+    "conflict_relevance": "One embedded news item reports Israeli airstrikes on Gaza, U.S. pressure to delay a ground invasion, humanitarian aid, and hostage releases.",
+    "reason": "The text is an aggregation of unrelated news snippets rather than an article centrally focused on Gaza or the Israel-Palestine conflict. However, the Gaza item contains meaningful conflict-related discourse, so it is classified as peripheral rather than excluded.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "bb83f35fd9fd6f4dda66ed1020efaafaef43f289f960ac18c36bb1183236d99f",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "d312a0cef2cd2c2033061236bdd168211d94d255e0c8e7f78f4a1fe8f5e6e5fc",
+    "raw_response_text_sha256": "bbef1356bee3fe2401aa13d491284e3947f358744460a96c493159004df2fb60"
+  },
+  "api_metadata": {
+    "id": "resp_02231273a66e987b006aa9faf3914087d2891dcff359b642f3",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789524723.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1036,
+      "input_tokens_details": {
+        "cache_write_tokens": 1033,
+        "cached_tokens": 0
+      },
+      "output_tokens": 361,
+      "output_tokens_details": {
+        "reasoning_tokens": 186
+      },
+      "total_tokens": 1397
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.93,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Mixed news snippets covering crime, U.S. politics, autonomous vehicles, health technology, Gaza, and online content disputes\",\n  \"conflict_relevance\": \"One embedded news item reports Israeli airstrikes on Gaza, U.S. pressure to delay a ground invasion, humanitarian aid, and hostage releases.\",\n  \"reason\": \"The text is an aggregation of unrelated news snippets rather than an article centrally focused on Gaza or the Israel-Palestine conflict. However, the Gaza item contains meaningful conflict-related discourse, so it is classified as peripheral rather than excluded.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:12:08Z",
+  "duration_seconds": 4.871,
+  "error": null
+}

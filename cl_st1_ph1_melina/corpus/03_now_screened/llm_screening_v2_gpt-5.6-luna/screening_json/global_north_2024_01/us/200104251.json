@@ -1,0 +1,65 @@
+{
+  "article_id": "200104251",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_01/us/200104251.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_01/us/200104251.json"
+  },
+  "manifest_row": {
+    "article_id": "200104251",
+    "group": "global_north_2024_01",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2024_01/us/200104251.txt"
+  },
+  "screening": {
+    "category": "CORE",
+    "confidence": 0.94,
+    "gaza_role": "substantial",
+    "main_topic": "Israeli political infighting and a former Netanyahu minister's apology for contributing to divisions before the October 7 Hamas attack",
+    "conflict_relevance": "The main article directly concerns the political context preceding the Hamas attack from Gaza and Israeli responsibility, accountability, and public discourse surrounding the conflict.",
+    "reason": "The first three paragraphs form a conflict-related article about Israeli internal strife before October 7 and its perceived contribution to the attack. The later sports and fantasy-football text is unrelated snippet contamination.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": true
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "0bb1c06ec15c45eedbc2eafd9075460fdb7649b6991dc242634f08d36e3765d4",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "a2a4b4e881b4633a5c425927e1651976ca77c20d35dc2770a58c8e1988d82c69",
+    "raw_response_text_sha256": "c91d536c360fc8811629cf88d10dc933d6c1ce4ec5ee914d047335189d4bec07"
+  },
+  "api_metadata": {
+    "id": "resp_00a052f25fe194ff006aaa052f6c8487d2983a83d671bc4c07",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789527343.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 845,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 285,
+      "output_tokens_details": {
+        "reasoning_tokens": 121
+      },
+      "total_tokens": 1130
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"CORE\",\n  \"confidence\": 0.94,\n  \"gaza_role\": \"substantial\",\n  \"main_topic\": \"Israeli political infighting and a former Netanyahu minister's apology for contributing to divisions before the October 7 Hamas attack\",\n  \"conflict_relevance\": \"The main article directly concerns the political context preceding the Hamas attack from Gaza and Israeli responsibility, accountability, and public discourse surrounding the conflict.\",\n  \"reason\": \"The first three paragraphs form a conflict-related article about Israeli internal strife before October 7 and its perceived contribution to the attack. The later sports and fantasy-football text is unrelated snippet contamination.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": true\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:55:47Z",
+  "duration_seconds": 3.872,
+  "error": null
+}

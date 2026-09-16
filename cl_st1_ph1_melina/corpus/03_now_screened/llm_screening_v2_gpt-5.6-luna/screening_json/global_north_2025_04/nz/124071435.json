@@ -1,0 +1,65 @@
+{
+  "article_id": "124071435",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_04/nz/124071435.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_04/nz/124071435.json"
+  },
+  "manifest_row": {
+    "article_id": "124071435",
+    "group": "global_north_2025_04",
+    "country_code": "nz",
+    "filepath": "corpus/02_now_organised/global_north_2025_04/nz/124071435.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "background",
+    "main_topic": "US military strikes against Houthi targets in Yemen",
+    "conflict_relevance": "The article primarily covers US-Houthi hostilities and attacks on Red Sea shipping, but it links the Houthi campaign to solidarity with Palestinians and situates the Houthis alongside Hamas and Hezbollah in the regional conflict involving Israel.",
+    "reason": "The Gaza and Israel-Palestine conflict provides meaningful regional context, but the article is mainly about Yemen, Houthi attacks, and US military operations rather than Gaza or the Israel-Hamas war itself.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "b1e605ebc12f8afeebe2581617fc3bedfc4614cc6f60792eaa36ba702e27eb34",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "c1e9126ecdd98e1fb8abf13ad82770cb65a4a9288ea56b1c2fe3f96dfc640fe4",
+    "raw_response_text_sha256": "81262d93a7308320461186d03018bb49a3bf26ace98677ebf854f4c325343290"
+  },
+  "api_metadata": {
+    "id": "resp_0aa0d164c433d027006aaa29af411087d1abb8958e4016cf9f",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789536687.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1485,
+      "input_tokens_details": {
+        "cache_write_tokens": 1482,
+        "cached_tokens": 0
+      },
+      "output_tokens": 233,
+      "output_tokens_details": {
+        "reasoning_tokens": 59
+      },
+      "total_tokens": 1718
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"US military strikes against Houthi targets in Yemen\",\n  \"conflict_relevance\": \"The article primarily covers US-Houthi hostilities and attacks on Red Sea shipping, but it links the Houthi campaign to solidarity with Palestinians and situates the Houthis alongside Hamas and Hezbollah in the regional conflict involving Israel.\",\n  \"reason\": \"The Gaza and Israel-Palestine conflict provides meaningful regional context, but the article is mainly about Yemen, Houthi attacks, and US military operations rather than Gaza or the Israel-Hamas war itself.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T05:31:30Z",
+  "duration_seconds": 3.64,
+  "error": null
+}

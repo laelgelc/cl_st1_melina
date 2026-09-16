@@ -1,0 +1,65 @@
+{
+  "article_id": "102486625",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_10/us/102486625.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_10/us/102486625.json"
+  },
+  "manifest_row": {
+    "article_id": "102486625",
+    "group": "global_north_2023_10",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2023_10/us/102486625.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "background",
+    "main_topic": "House Republican efforts to elect a new Speaker after Kevin McCarthy's ouster",
+    "conflict_relevance": "The article mentions the Israel-Hamas war and Israel and Gaza as context for congressional leadership urgency and a press conference, but does not analyze or report substantially on the conflict itself.",
+    "reason": "The article is primarily about internal House Republican politics and the Speaker selection process. References to Israel, Hamas, and Gaza are meaningful but secondary and serve mainly as political context.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "98a696bc0ef0aa59b34137a904b71c3fd17eeeb7e934c3bc603690175f1f5ffa",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "b0797296191908ca90608cb36fefd038bdfa693ef93db05b3434d85e0a080f0f",
+    "raw_response_text_sha256": "17a72cd6bec3521a406d09bca99b12c9d313955077cc3b83b3e92f29a25cab5b"
+  },
+  "api_metadata": {
+    "id": "resp_0e259ca836b9cd60006aa9f86cb3e487d29eb542993114bd59",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789524076.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1380,
+      "input_tokens_details": {
+        "cache_write_tokens": 1377,
+        "cached_tokens": 0
+      },
+      "output_tokens": 224,
+      "output_tokens_details": {
+        "reasoning_tokens": 64
+      },
+      "total_tokens": 1604
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"House Republican efforts to elect a new Speaker after Kevin McCarthy's ouster\",\n  \"conflict_relevance\": \"The article mentions the Israel-Hamas war and Israel and Gaza as context for congressional leadership urgency and a press conference, but does not analyze or report substantially on the conflict itself.\",\n  \"reason\": \"The article is primarily about internal House Republican politics and the Speaker selection process. References to Israel, Hamas, and Gaza are meaningful but secondary and serve mainly as political context.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:01:20Z",
+  "duration_seconds": 3.488,
+  "error": null
+}

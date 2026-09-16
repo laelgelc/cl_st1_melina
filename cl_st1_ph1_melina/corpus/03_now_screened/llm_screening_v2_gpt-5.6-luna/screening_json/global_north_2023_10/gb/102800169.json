@@ -1,0 +1,65 @@
+{
+  "article_id": "102800169",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_10/gb/102800169.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_10/gb/102800169.json"
+  },
+  "manifest_row": {
+    "article_id": "102800169",
+    "group": "global_north_2023_10",
+    "country_code": "gb",
+    "filepath": "corpus/02_now_organised/global_north_2023_10/gb/102800169.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "background",
+    "main_topic": "Barcelona football club finances and legal controversies",
+    "conflict_relevance": "The main article is unrelated to Gaza, but an embedded latest-stories item reports a substantial pro-Palestine march in London protesting Israel's bombardment of Gaza.",
+    "reason": "The headline article concerns Barcelona's debt, financing, and corruption allegations. However, the appended roundup includes a meaningful paragraph about a large pro-Palestine demonstration and opposition to Israel's bombardment of Gaza, making the item peripheral rather than excludable.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "146e03575b5bdf8d38e34118973e058f9b407d3bf6c4eca455dfc0d8d104f7d5",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "30a3e3af3ddef6bde5cdc5ea201b64940089d2c5d384e6b2188893280de2d9d2",
+    "raw_response_text_sha256": "71bbe60da7a145e315a098b3f1d6b0429ff9637b286c255c88bf1f280c6ca556"
+  },
+  "api_metadata": {
+    "id": "resp_044394efb3ea2e5b006aa9f767b8d487d2b7b55a96427b942e",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789523815.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2152,
+      "input_tokens_details": {
+        "cache_write_tokens": 2149,
+        "cached_tokens": 0
+      },
+      "output_tokens": 263,
+      "output_tokens_details": {
+        "reasoning_tokens": 94
+      },
+      "total_tokens": 2415
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Barcelona football club finances and legal controversies\",\n  \"conflict_relevance\": \"The main article is unrelated to Gaza, but an embedded latest-stories item reports a substantial pro-Palestine march in London protesting Israel's bombardment of Gaza.\",\n  \"reason\": \"The headline article concerns Barcelona's debt, financing, and corruption allegations. However, the appended roundup includes a meaningful paragraph about a large pro-Palestine demonstration and opposition to Israel's bombardment of Gaza, making the item peripheral rather than excludable.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T01:56:58Z",
+  "duration_seconds": 3.11,
+  "error": null
+}

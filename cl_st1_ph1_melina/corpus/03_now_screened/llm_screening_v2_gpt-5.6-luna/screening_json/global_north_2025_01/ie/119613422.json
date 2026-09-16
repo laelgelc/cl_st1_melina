@@ -1,0 +1,65 @@
+{
+  "article_id": "119613422",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_01/ie/119613422.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_01/ie/119613422.json"
+  },
+  "manifest_row": {
+    "article_id": "119613422",
+    "group": "global_north_2025_01",
+    "country_code": "ie",
+    "filepath": "corpus/02_now_organised/global_north_2025_01/ie/119613422.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.96,
+    "gaza_role": "substantial",
+    "main_topic": "Mixed letters page covering social, cultural, economic, and political issues",
+    "conflict_relevance": "One substantial letter focuses on Gaza, Israeli military actions, attacks affecting hospitals, the collapse of healthcare, the ICJ genocide case, and the prospects for a ceasefire.",
+    "reason": "The article is a compilation of unrelated reader letters, most of which do not concern the conflict. However, the dedicated Gaza letter contains meaningful discourse directly relevant to the Israel-Palestine conflict and humanitarian conditions, making the item useful as peripheral rather than core coverage.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "64a4664c5bc2694b88e44607f3a5ef724656b9a67f9c796b01fe80eb377e9771",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "775a847b82c8dcddae5b009f8057a3979cf0e9b2c6c836800bfd70a85ec0f449",
+    "raw_response_text_sha256": "8dc6d7b749f988130eb740aca7ab9274e3b6163e6447465a75aff54cc003be42"
+  },
+  "api_metadata": {
+    "id": "resp_03b702c1edf3556a006aaa202bcf1c87d2995fe76e9356fd88",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789534251.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2046,
+      "input_tokens_details": {
+        "cache_write_tokens": 2043,
+        "cached_tokens": 0
+      },
+      "output_tokens": 498,
+      "output_tokens_details": {
+        "reasoning_tokens": 321
+      },
+      "total_tokens": 2544
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.96,\n  \"gaza_role\": \"substantial\",\n  \"main_topic\": \"Mixed letters page covering social, cultural, economic, and political issues\",\n  \"conflict_relevance\": \"One substantial letter focuses on Gaza, Israeli military actions, attacks affecting hospitals, the collapse of healthcare, the ICJ genocide case, and the prospects for a ceasefire.\",\n  \"reason\": \"The article is a compilation of unrelated reader letters, most of which do not concern the conflict. However, the dedicated Gaza letter contains meaningful discourse directly relevant to the Israel-Palestine conflict and humanitarian conditions, making the item useful as peripheral rather than core coverage.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T04:50:58Z",
+  "duration_seconds": 6.745,
+  "error": null
+}

@@ -1,0 +1,65 @@
+{
+  "article_id": "111926004",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_08/ca/111926004.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_08/ca/111926004.json"
+  },
+  "manifest_row": {
+    "article_id": "111926004",
+    "group": "global_north_2024_08",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2024_08/ca/111926004.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "passing",
+    "main_topic": "Health effects of ultrafine air pollution in Montreal and Toronto",
+    "conflict_relevance": "The main article is unrelated to Gaza or the Israel-Palestine conflict, but the text includes a separate embedded news item about children released after being held hostage in Gaza.",
+    "reason": "The headline article focuses on air pollution and mortality. A distinct, substantive Gaza hostage-related snippet appears later in the text, making the item marginally useful for broader conflict discourse analysis but not suitable as core conflict coverage.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "4a82f655569dc77719f2b585b27b0468bbf26df5a3405e38aa55c6cad56062d0",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "bbf007aad3fefc3d9cc13b90a16940ee9186830ec0813fb2d54fb63f4d14fe59",
+    "raw_response_text_sha256": "14ee9e8dfadfc3a0a59d638f63222a5b2c8fbf5ffc6ec607752963b66206f5c4"
+  },
+  "api_metadata": {
+    "id": "resp_080bed604da1212c006aaa13e68dcc87d2bd9836eff40a3021",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789531110.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1862,
+      "input_tokens_details": {
+        "cache_write_tokens": 1859,
+        "cached_tokens": 0
+      },
+      "output_tokens": 265,
+      "output_tokens_details": {
+        "reasoning_tokens": 99
+      },
+      "total_tokens": 2127
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Health effects of ultrafine air pollution in Montreal and Toronto\",\n  \"conflict_relevance\": \"The main article is unrelated to Gaza or the Israel-Palestine conflict, but the text includes a separate embedded news item about children released after being held hostage in Gaza.\",\n  \"reason\": \"The headline article focuses on air pollution and mortality. A distinct, substantive Gaza hostage-related snippet appears later in the text, making the item marginally useful for broader conflict discourse analysis but not suitable as core conflict coverage.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:58:34Z",
+  "duration_seconds": 3.887,
+  "error": null
+}

@@ -1,0 +1,65 @@
+{
+  "article_id": "122471730",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_03/sg/122471730.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_03/sg/122471730.json"
+  },
+  "manifest_row": {
+    "article_id": "122471730",
+    "group": "global_north_2025_03",
+    "country_code": "sg",
+    "filepath": "corpus/02_now_organised/global_north_2025_03/sg/122471730.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.97,
+    "gaza_role": "background",
+    "main_topic": "Red Sea tensions, Houthi attacks, and China’s calls for de-escalation",
+    "conflict_relevance": "The article is primarily about Houthi attacks on US naval forces and Red Sea shipping, but it explicitly connects those attacks to the Gaza war and claimed solidarity with Palestinians.",
+    "reason": "Gaza is relevant as the stated context and motivation for the Houthis’ regional actions, but the article does not substantially discuss Gaza, Palestinians, or the Israel-Hamas conflict itself.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "9d9e0cae902789d0a1a4e3867d910b8b9e54c545f724f1c7d83ed4164d3e6d11",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "2676ce95463145524fda3ac2abf80f4dc09964da6c3d0585e340c9074b059f4d",
+    "raw_response_text_sha256": "64a6be8907adf60b7615ed0739ef310a2f2e093605c4e7bf08e69957eab38c32"
+  },
+  "api_metadata": {
+    "id": "resp_0290adf08b5f21bd006aaa26f9d12887d1a100cbabdebd6f56",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789535993.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 914,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 221,
+      "output_tokens_details": {
+        "reasoning_tokens": 56
+      },
+      "total_tokens": 1135
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.97,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Red Sea tensions, Houthi attacks, and China’s calls for de-escalation\",\n  \"conflict_relevance\": \"The article is primarily about Houthi attacks on US naval forces and Red Sea shipping, but it explicitly connects those attacks to the Gaza war and claimed solidarity with Palestinians.\",\n  \"reason\": \"Gaza is relevant as the stated context and motivation for the Houthis’ regional actions, but the article does not substantially discuss Gaza, Palestinians, or the Israel-Hamas conflict itself.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T05:19:56Z",
+  "duration_seconds": 3.161,
+  "error": null
+}

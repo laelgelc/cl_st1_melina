@@ -1,0 +1,65 @@
+{
+  "article_id": "123342301",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_04/us/123342301.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_04/us/123342301.json"
+  },
+  "manifest_row": {
+    "article_id": "123342301",
+    "group": "global_north_2025_04",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2025_04/us/123342301.txt"
+  },
+  "screening": {
+    "category": "CORE",
+    "confidence": 0.86,
+    "gaza_role": "substantial",
+    "main_topic": "Mixed editorial compilation including U.S. tariffs, democratic institutions, elections, and a substantial editorial on Gaza and Israel's conduct of the war",
+    "conflict_relevance": "The text contains an extended, substantive editorial focused on killings of Palestinian paramedics, humanitarian conditions, alleged war crimes, international law, Israeli military actions, Netanyahu, Gaza policy, and Palestinian displacement.",
+    "reason": "Although the article is a compilation of largely unrelated editorials and news excerpts, its Gaza section is lengthy and centrally addresses major conflict-related issues, making it useful for core discourse analysis.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": true
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "32515c8601a8cb850c6c47b5de9fac278222dfec522d9a592a74c3e1c449771e",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "d93529936d174de1a110907ac6c00eda63ea07db72e3ebab754f4ec2629c6648",
+    "raw_response_text_sha256": "b58ba7686792466ab63b1acf334d5604c79a21ae4ee417ae4ed267e3d895f86a"
+  },
+  "api_metadata": {
+    "id": "resp_0ec61273442e07c2006aaa2a0eb5b087d1a580128cdc605150",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789536782.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 5725,
+      "input_tokens_details": {
+        "cache_write_tokens": 5722,
+        "cached_tokens": 0
+      },
+      "output_tokens": 437,
+      "output_tokens_details": {
+        "reasoning_tokens": 260
+      },
+      "total_tokens": 6162
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"CORE\",\n  \"confidence\": 0.86,\n  \"gaza_role\": \"substantial\",\n  \"main_topic\": \"Mixed editorial compilation including U.S. tariffs, democratic institutions, elections, and a substantial editorial on Gaza and Israel's conduct of the war\",\n  \"conflict_relevance\": \"The text contains an extended, substantive editorial focused on killings of Palestinian paramedics, humanitarian conditions, alleged war crimes, international law, Israeli military actions, Netanyahu, Gaza policy, and Palestinian displacement.\",\n  \"reason\": \"Although the article is a compilation of largely unrelated editorials and news excerpts, its Gaza section is lengthy and centrally addresses major conflict-related issues, making it useful for core discourse analysis.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": true\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T05:33:11Z",
+  "duration_seconds": 9.091,
+  "error": null
+}

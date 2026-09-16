@@ -1,0 +1,65 @@
+{
+  "article_id": "112004640",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_08/us/112004640.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_08/us/112004640.json"
+  },
+  "manifest_row": {
+    "article_id": "112004640",
+    "group": "global_north_2024_08",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2024_08/us/112004640.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.96,
+    "gaza_role": "substantial",
+    "main_topic": "Mixed news coverage including US election politics and Kamala Harris's Gaza war policy",
+    "conflict_relevance": "The text includes meaningful reporting on Harris's position on an arms embargo against Israel and US policy toward the Gaza war, but this appears alongside unrelated news items.",
+    "reason": "The Gaza-related material is relevant to discourse analysis of US political positioning and arms policy, but the supplied text is a compilation of otherwise unrelated snippets rather than a focused conflict article.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "0de39b717a649517c60abade0c0b337fed5a68aa2d683db83e0e4eb0a4ae4261",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "290c4208358e37331b0bc91a196dd462bb73a9816f6978627119e3f7049ecfe8",
+    "raw_response_text_sha256": "3be4c054b314b2307e860d9c161488f0483d0b5d1e48cc603eb79798026f98d3"
+  },
+  "api_metadata": {
+    "id": "resp_0740b843451885e0006aaa14d23de487d29f18071e7a771826",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789531346.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 905,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 297,
+      "output_tokens_details": {
+        "reasoning_tokens": 139
+      },
+      "total_tokens": 1202
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.96,\n  \"gaza_role\": \"substantial\",\n  \"main_topic\": \"Mixed news coverage including US election politics and Kamala Harris's Gaza war policy\",\n  \"conflict_relevance\": \"The text includes meaningful reporting on Harris's position on an arms embargo against Israel and US policy toward the Gaza war, but this appears alongside unrelated news items.\",\n  \"reason\": \"The Gaza-related material is relevant to discourse analysis of US political positioning and arms policy, but the supplied text is a compilation of otherwise unrelated snippets rather than a focused conflict article.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T04:02:30Z",
+  "duration_seconds": 4.869,
+  "error": null
+}

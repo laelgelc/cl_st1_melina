@@ -1,0 +1,65 @@
+{
+  "article_id": "104943921",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_01/ie/104943921.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_01/ie/104943921.json"
+  },
+  "manifest_row": {
+    "article_id": "104943921",
+    "group": "global_north_2024_01",
+    "country_code": "ie",
+    "filepath": "corpus/02_now_organised/global_north_2024_01/ie/104943921.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.93,
+    "gaza_role": "substantial",
+    "main_topic": "Irish letters page covering housing, road safety, urban planning, sexuality education, and a letter advocating political change in Israel over the Gaza conflict",
+    "conflict_relevance": "One substantial letter directly discusses Gaza, Israel, Netanyahu, alleged crimes against humanity, regional escalation, and the effects of Red Sea disruption on international shipping.",
+    "reason": "The page is primarily a collection of unrelated letters on Irish domestic issues, but it contains a meaningful and directly conflict-focused letter concerning Gaza and Israel. Because the relevant material is embedded within a broader letters roundup rather than constituting the main subject of the article, it is best classified as PERIPHERAL.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "edc0999a6e6b508a9d4c667c7c3211ce154b9c265140a2c3c5ffaf1af7f3d172",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "8a5c381241624405346023e48919f2a21ed62079462f79958be23eabcb1121aa",
+    "raw_response_text_sha256": "eee20fbafeecdb8784eb7736b3383a09f751467747c79c3a2e3b89eead170dde"
+  },
+  "api_metadata": {
+    "id": "resp_061461d60e807883006aaa043d442487d2b5902452885ba13a",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789527101.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2004,
+      "input_tokens_details": {
+        "cache_write_tokens": 2001,
+        "cached_tokens": 0
+      },
+      "output_tokens": 483,
+      "output_tokens_details": {
+        "reasoning_tokens": 289
+      },
+      "total_tokens": 2487
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.93,\n  \"gaza_role\": \"substantial\",\n  \"main_topic\": \"Irish letters page covering housing, road safety, urban planning, sexuality education, and a letter advocating political change in Israel over the Gaza conflict\",\n  \"conflict_relevance\": \"One substantial letter directly discusses Gaza, Israel, Netanyahu, alleged crimes against humanity, regional escalation, and the effects of Red Sea disruption on international shipping.\",\n  \"reason\": \"The page is primarily a collection of unrelated letters on Irish domestic issues, but it contains a meaningful and directly conflict-focused letter concerning Gaza and Israel. Because the relevant material is embedded within a broader letters roundup rather than constituting the main subject of the article, it is best classified as PERIPHERAL.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:51:46Z",
+  "duration_seconds": 4.956,
+  "error": null
+}

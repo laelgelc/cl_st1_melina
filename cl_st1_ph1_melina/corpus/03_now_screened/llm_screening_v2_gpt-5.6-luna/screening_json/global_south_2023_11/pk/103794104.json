@@ -1,0 +1,65 @@
+{
+  "article_id": "103794104",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_south_2023_11/pk/103794104.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_south_2023_11/pk/103794104.json"
+  },
+  "manifest_row": {
+    "article_id": "103794104",
+    "group": "global_south_2023_11",
+    "country_code": "pk",
+    "filepath": "corpus/02_now_organised/global_south_2023_11/pk/103794104.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.96,
+    "gaza_role": "passing",
+    "main_topic": "Pope Francis's illness and altered public appearance",
+    "conflict_relevance": "The article briefly mentions Pope Francis's thanks for the release of hostages in Gaza, but provides no substantive discussion of the conflict.",
+    "reason": "Gaza appears only as a passing element in a summary of the pope's Sunday message; the article is centrally about his health and public appearance.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "559b84904f7b487a11ff8df28b771995074ec87205df7208ff00157e098983a6",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "940e4b24fe1eae750707d1ba79493b4178e33d6babc5a8f35fadb145ee503a17",
+    "raw_response_text_sha256": "fbf304abe0e7d358e8a10c8068c3c32237dd2cef9840d4180f7e92dbd16b878e"
+  },
+  "api_metadata": {
+    "id": "resp_022a144317c7ca7e006aaa3654061c87d1b4d3caaed69443e9",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789539924.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1169,
+      "input_tokens_details": {
+        "cache_write_tokens": 1166,
+        "cached_tokens": 0
+      },
+      "output_tokens": 241,
+      "output_tokens_details": {
+        "reasoning_tokens": 102
+      },
+      "total_tokens": 1410
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.96,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Pope Francis's illness and altered public appearance\",\n  \"conflict_relevance\": \"The article briefly mentions Pope Francis's thanks for the release of hostages in Gaza, but provides no substantive discussion of the conflict.\",\n  \"reason\": \"Gaza appears only as a passing element in a summary of the pope's Sunday message; the article is centrally about his health and public appearance.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T06:25:28Z",
+  "duration_seconds": 4.716,
+  "error": null
+}

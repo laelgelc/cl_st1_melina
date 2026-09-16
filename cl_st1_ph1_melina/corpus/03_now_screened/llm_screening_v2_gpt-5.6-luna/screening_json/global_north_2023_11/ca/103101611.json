@@ -1,0 +1,65 @@
+{
+  "article_id": "103101611",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_11/ca/103101611.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_11/ca/103101611.json"
+  },
+  "manifest_row": {
+    "article_id": "103101611",
+    "group": "global_north_2023_11",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2023_11/ca/103101611.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.93,
+    "gaza_role": "passing",
+    "main_topic": "Bomb threats targeting schools in Ontario",
+    "conflict_relevance": "The main article concerns school bomb threats and unrelated Canadian news, but it includes brief snippets about Canadian efforts to facilitate foreign nationals leaving Gaza and humanitarian aid to Gaza and the West Bank during the Israel-Hamas war.",
+    "reason": "The Gaza-related material is meaningful but appears as unrelated embedded news items rather than part of the main article's subject. It is therefore relevant to broader discourse analysis but not suitable as core conflict coverage.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "ba25ce6cc9de9995ba4b9e953e500c17b1441262527db0a6cf13d9e02b8fe359",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "38edc7c120aaa6416aaf2d8522b3c2ea235d5d9dd201e1c55c38ce792b0fab59",
+    "raw_response_text_sha256": "0f0d9a67277370941fa64e7c84d8c45f2bcb311eb01d29f5367cb2d36c33e563"
+  },
+  "api_metadata": {
+    "id": "resp_0dd8fa8993dd8cfa006aa9fb97d77487d28cb9169d1773889d",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789524887.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1967,
+      "input_tokens_details": {
+        "cache_write_tokens": 1964,
+        "cached_tokens": 0
+      },
+      "output_tokens": 350,
+      "output_tokens_details": {
+        "reasoning_tokens": 187
+      },
+      "total_tokens": 2317
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.93,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Bomb threats targeting schools in Ontario\",\n  \"conflict_relevance\": \"The main article concerns school bomb threats and unrelated Canadian news, but it includes brief snippets about Canadian efforts to facilitate foreign nationals leaving Gaza and humanitarian aid to Gaza and the West Bank during the Israel-Hamas war.\",\n  \"reason\": \"The Gaza-related material is meaningful but appears as unrelated embedded news items rather than part of the main article's subject. It is therefore relevant to broader discourse analysis but not suitable as core conflict coverage.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:14:52Z",
+  "duration_seconds": 4.598,
+  "error": null
+}

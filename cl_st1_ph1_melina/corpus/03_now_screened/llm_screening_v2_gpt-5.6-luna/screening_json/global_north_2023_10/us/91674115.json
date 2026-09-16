@@ -1,0 +1,65 @@
+{
+  "article_id": "91674115",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_10/us/91674115.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_10/us/91674115.json"
+  },
+  "manifest_row": {
+    "article_id": "91674115",
+    "group": "global_north_2023_10",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2023_10/us/91674115.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "background",
+    "main_topic": "The murder and funeral of Detroit synagogue president Samantha Woll",
+    "conflict_relevance": "The article briefly contextualizes the killing within heightened Jewish-Muslim tensions in the United States arising from the Israel-Hamas conflict and mentions deaths in Israel and Gaza.",
+    "reason": "The main subject is a local murder and community leader, not the Gaza conflict, but the article contains meaningful contextual discussion connecting the incident to conflict-related intercommunal tensions.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "febedbff3706c48c06073430afe3650c00c8b781a47f8b34376e462fa98f24c0",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "7d1aa0ee1bbfc4a66e044926be45fcafad0616a733129cb51820ff413b95ca12",
+    "raw_response_text_sha256": "64a89265529e7cd88d15f9f31442c4940aca4f64b4f57023edb5b97c0f03dd92"
+  },
+  "api_metadata": {
+    "id": "resp_0b9e2f742305fd1c006aa9fae7a2a487d28ab39625155ccf70",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789524711.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1336,
+      "input_tokens_details": {
+        "cache_write_tokens": 1333,
+        "cached_tokens": 0
+      },
+      "output_tokens": 227,
+      "output_tokens_details": {
+        "reasoning_tokens": 98
+      },
+      "total_tokens": 1563
+    }
+  },
+  "raw_response_text": "{\"category\":\"PERIPHERAL\",\"confidence\":0.98,\"gaza_role\":\"background\",\"main_topic\":\"The murder and funeral of Detroit synagogue president Samantha Woll\",\"conflict_relevance\":\"The article briefly contextualizes the killing within heightened Jewish-Muslim tensions in the United States arising from the Israel-Hamas conflict and mentions deaths in Israel and Gaza.\",\"reason\":\"The main subject is a local murder and community leader, not the Gaza conflict, but the article contains meaningful contextual discussion connecting the incident to conflict-related intercommunal tensions.\",\"multi_article_or_snippet_issue\":true,\"recommended_for_main_corpus\":false}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:11:54Z",
+  "duration_seconds": 3.148,
+  "error": null
+}

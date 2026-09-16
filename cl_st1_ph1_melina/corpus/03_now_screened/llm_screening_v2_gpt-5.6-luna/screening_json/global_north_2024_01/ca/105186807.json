@@ -1,0 +1,65 @@
+{
+  "article_id": "105186807",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_01/ca/105186807.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_01/ca/105186807.json"
+  },
+  "manifest_row": {
+    "article_id": "105186807",
+    "group": "global_north_2024_01",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2024_01/ca/105186807.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.91,
+    "gaza_role": "passing",
+    "main_topic": "Canada Emergency Business Account loan repayment and forgiveness deadlines",
+    "conflict_relevance": "A substantial embedded news snippet discusses Israel's military offensive in Gaza, disagreement between Israel and the United States, and prospects for a Palestinian state, but this is unrelated to the main article.",
+    "reason": "The primary article concerns Canadian pandemic-era business loans. However, the embedded 'Latest Stories' material contains meaningful discourse about Gaza and Israel-Palestine, making the item marginally useful for broader discourse analysis but unsuitable for the core corpus.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "96558244ed2a432a1e228dfb6c6ed7849d48132f70377728a2c37fb8f14f9341",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "5c3567cde01ac46b439278e9e9cb7b89d79fb6943ff4a07d5b13adb5261a10a0",
+    "raw_response_text_sha256": "3bf10896499844da6bcb5866d188796d1b9f1b0f9f2e7cff42a23560a4130420"
+  },
+  "api_metadata": {
+    "id": "resp_071f3ff742eba214006aaa03adfe0c87d290cc46123bb83286",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789526958.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1566,
+      "input_tokens_details": {
+        "cache_write_tokens": 1563,
+        "cached_tokens": 0
+      },
+      "output_tokens": 320,
+      "output_tokens_details": {
+        "reasoning_tokens": 150
+      },
+      "total_tokens": 1886
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.91,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Canada Emergency Business Account loan repayment and forgiveness deadlines\",\n  \"conflict_relevance\": \"A substantial embedded news snippet discusses Israel's military offensive in Gaza, disagreement between Israel and the United States, and prospects for a Palestinian state, but this is unrelated to the main article.\",\n  \"reason\": \"The primary article concerns Canadian pandemic-era business loans. However, the embedded 'Latest Stories' material contains meaningful discourse about Gaza and Israel-Palestine, making the item marginally useful for broader discourse analysis but unsuitable for the core corpus.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:49:21Z",
+  "duration_seconds": 3.784,
+  "error": null
+}

@@ -1,0 +1,65 @@
+{
+  "article_id": "124016231",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_04/gb/124016231.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_04/gb/124016231.json"
+  },
+  "manifest_row": {
+    "article_id": "124016231",
+    "group": "global_north_2025_04",
+    "country_code": "gb",
+    "filepath": "corpus/02_now_organised/global_north_2025_04/gb/124016231.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.94,
+    "gaza_role": "substantial",
+    "main_topic": "Trumpism, authoritarianism, McCarthyism, and political resistance",
+    "conflict_relevance": "The article is primarily an argument about opposing Trumpism, but it contains a substantial discussion of Gaza, including accusations of starvation and blockade, Palestinian deaths, criticism of US and European political responses, allegations of antisemitism being used to silence criticism, and references to Israeli and Haaretz discourse.",
+    "reason": "Gaza is a significant part of the article's political argument but is not its overall central subject. The article also includes several apparently separate roundup or related-content sections on China, sanctions, public transport, and Paul Robeson.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "2f19d41ceca881a7cf13e2fbea72c16095e4f0184b7f6c363f0e4c8a97f9223e",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "d05719d7106d44cdf5f2cac08ad681ca2715065da210f5aba34ce5a3bc9e1289",
+    "raw_response_text_sha256": "9cf3e0bc2b581541f9281d64502cb8b957519eccd3baf34f86ff69422f52a097"
+  },
+  "api_metadata": {
+    "id": "resp_030219d7517d9627006aaa2938546487d19e43a7919df0b26a",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789536568.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 3433,
+      "input_tokens_details": {
+        "cache_write_tokens": 3430,
+        "cached_tokens": 0
+      },
+      "output_tokens": 352,
+      "output_tokens_details": {
+        "reasoning_tokens": 158
+      },
+      "total_tokens": 3785
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.94,\n  \"gaza_role\": \"substantial\",\n  \"main_topic\": \"Trumpism, authoritarianism, McCarthyism, and political resistance\",\n  \"conflict_relevance\": \"The article is primarily an argument about opposing Trumpism, but it contains a substantial discussion of Gaza, including accusations of starvation and blockade, Palestinian deaths, criticism of US and European political responses, allegations of antisemitism being used to silence criticism, and references to Israeli and Haaretz discourse.\",\n  \"reason\": \"Gaza is a significant part of the article's political argument but is not its overall central subject. The article also includes several apparently separate roundup or related-content sections on China, sanctions, public transport, and Paul Robeson.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T05:29:33Z",
+  "duration_seconds": 5.476,
+  "error": null
+}

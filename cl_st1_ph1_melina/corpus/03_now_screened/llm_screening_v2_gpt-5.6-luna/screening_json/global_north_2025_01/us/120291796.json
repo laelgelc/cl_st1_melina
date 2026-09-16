@@ -1,0 +1,65 @@
+{
+  "article_id": "120291796",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_01/us/120291796.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_01/us/120291796.json"
+  },
+  "manifest_row": {
+    "article_id": "120291796",
+    "group": "global_north_2025_01",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2025_01/us/120291796.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "background",
+    "main_topic": "Live coverage of the first days of the Trump administration and related political developments",
+    "conflict_relevance": "The article briefly characterizes Elise Stefanik as an ardent ally of Israel's military operations in Gaza in the context of her U.N. ambassador confirmation hearing.",
+    "reason": "Gaza is mentioned meaningfully but only as background to a broader article about Trump administration appointments, pardons, immigration policy, and domestic politics. It is not central or substantial coverage of the Gaza conflict.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "a20492eab65207bb73727bdd7b2a1e5b33440712798a25724b0a5fd329e1b0eb",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "4cebe4305c686a35aae89c870a0dd348f2da225b155c561a79aa93cfae6c7090",
+    "raw_response_text_sha256": "94b5e73243ae1e22e3f7f711706396dd5021e56cba5c54cd4be1336e2401dd47"
+  },
+  "api_metadata": {
+    "id": "resp_0d5de479135d4a09006aaa2178a3ac87d2babaa756d0cc0b53",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789534584.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 11134,
+      "input_tokens_details": {
+        "cache_write_tokens": 11131,
+        "cached_tokens": 0
+      },
+      "output_tokens": 241,
+      "output_tokens_details": {
+        "reasoning_tokens": 78
+      },
+      "total_tokens": 11375
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Live coverage of the first days of the Trump administration and related political developments\",\n  \"conflict_relevance\": \"The article briefly characterizes Elise Stefanik as an ardent ally of Israel's military operations in Gaza in the context of her U.N. ambassador confirmation hearing.\",\n  \"reason\": \"Gaza is mentioned meaningfully but only as background to a broader article about Trump administration appointments, pardons, immigration policy, and domestic politics. It is not central or substantial coverage of the Gaza conflict.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T04:56:27Z",
+  "duration_seconds": 2.972,
+  "error": null
+}

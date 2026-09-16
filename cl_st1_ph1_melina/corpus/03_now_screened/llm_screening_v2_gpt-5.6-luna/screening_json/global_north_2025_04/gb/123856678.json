@@ -1,0 +1,65 @@
+{
+  "article_id": "123856678",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_04/gb/123856678.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_04/gb/123856678.json"
+  },
+  "manifest_row": {
+    "article_id": "123856678",
+    "group": "global_north_2025_04",
+    "country_code": "gb",
+    "filepath": "corpus/02_now_organised/global_north_2025_04/gb/123856678.txt"
+  },
+  "screening": {
+    "category": "CORE",
+    "confidence": 0.86,
+    "gaza_role": "substantial",
+    "main_topic": "Syrian arrests of senior Palestinian Islamic Jihad leaders amid US and Israeli pressure",
+    "conflict_relevance": "The article directly concerns a Palestinian armed group involved in the Gaza war, Israeli military strikes against its members and infrastructure, and regional diplomatic and counterterrorism demands linked to Israel and Palestine.",
+    "reason": "Although the immediate setting is Syria, the article substantially addresses Palestinian Islamic Jihad, its ongoing fighting in Gaza, Israeli military action, and the broader regional dynamics of the Israel-Palestine conflict.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": true
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "89aa29b3be94f0b58bf139def4629bbb6b8f83b3800615ea0e6419b54adcc755",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "06ca3653eb5649eb99799e97d30249e70c3835d37bbffe7fea58216a40d37089",
+    "raw_response_text_sha256": "3b41dd73bfcdb5884ce709b99039c6d0ca84efca5af1982538c3e49a98625202"
+  },
+  "api_metadata": {
+    "id": "resp_0a2a689712bea43a006aaa2921a41487d194eebb96d27940dd",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789536545.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1274,
+      "input_tokens_details": {
+        "cache_write_tokens": 1271,
+        "cached_tokens": 0
+      },
+      "output_tokens": 377,
+      "output_tokens_details": {
+        "reasoning_tokens": 210
+      },
+      "total_tokens": 1651
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"CORE\",\n  \"confidence\": 0.86,\n  \"gaza_role\": \"substantial\",\n  \"main_topic\": \"Syrian arrests of senior Palestinian Islamic Jihad leaders amid US and Israeli pressure\",\n  \"conflict_relevance\": \"The article directly concerns a Palestinian armed group involved in the Gaza war, Israeli military strikes against its members and infrastructure, and regional diplomatic and counterterrorism demands linked to Israel and Palestine.\",\n  \"reason\": \"Although the immediate setting is Syria, the article substantially addresses Palestinian Islamic Jihad, its ongoing fighting in Gaza, Israeli military action, and the broader regional dynamics of the Israel-Palestine conflict.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": true\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T05:29:10Z",
+  "duration_seconds": 5.316,
+  "error": null
+}

@@ -1,0 +1,65 @@
+{
+  "article_id": "91699483",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_10/us/91699483.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_10/us/91699483.json"
+  },
+  "manifest_row": {
+    "article_id": "91699483",
+    "group": "global_north_2023_10",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2023_10/us/91699483.txt"
+  },
+  "screening": {
+    "category": "CORE",
+    "confidence": 0.99,
+    "gaza_role": "central",
+    "main_topic": "Israeli airstrikes and expanding ground operations in Gaza during the Israel-Hamas war",
+    "conflict_relevance": "The article directly reports on Israeli bombardment, ground incursions, Hamas resistance, casualties, hostages, communications outages, humanitarian conditions, and allegations concerning hospitals.",
+    "reason": "Gaza and the Israel-Hamas war are the clear focus of the headline and most of the substantive reporting. Although unrelated newsletter material and an additional connectivity snippet are appended, the main article is centrally relevant to the conflict.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": true
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "fff33d033e1c32b2efa2920da89c2ba8043eb2da8df44dd778b88beb6fbee795",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "b39bc6b1cd9451b4e28328b36a0a2b67f5900c5f859f19132702f569944b6264",
+    "raw_response_text_sha256": "4ae95328b1d748d29394f8cfde2e90ca0105a0c7d45436fae4145023c49183b2"
+  },
+  "api_metadata": {
+    "id": "resp_00e4821bd87b6e1e006aa9fb28c4f887d292eb463d9247db2f",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789524776.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1595,
+      "input_tokens_details": {
+        "cache_write_tokens": 1592,
+        "cached_tokens": 0
+      },
+      "output_tokens": 227,
+      "output_tokens_details": {
+        "reasoning_tokens": 60
+      },
+      "total_tokens": 1822
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"CORE\",\n  \"confidence\": 0.99,\n  \"gaza_role\": \"central\",\n  \"main_topic\": \"Israeli airstrikes and expanding ground operations in Gaza during the Israel-Hamas war\",\n  \"conflict_relevance\": \"The article directly reports on Israeli bombardment, ground incursions, Hamas resistance, casualties, hostages, communications outages, humanitarian conditions, and allegations concerning hospitals.\",\n  \"reason\": \"Gaza and the Israel-Hamas war are the clear focus of the headline and most of the substantive reporting. Although unrelated newsletter material and an additional connectivity snippet are appended, the main article is centrally relevant to the conflict.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": true\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:12:59Z",
+  "duration_seconds": 3.931,
+  "error": null
+}

@@ -1,0 +1,65 @@
+{
+  "article_id": "103053873",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_south_2023_10/in/103053873.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_south_2023_10/in/103053873.json"
+  },
+  "manifest_row": {
+    "article_id": "103053873",
+    "group": "global_south_2023_10",
+    "country_code": "in",
+    "filepath": "corpus/02_now_organised/global_south_2023_10/in/103053873.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.93,
+    "gaza_role": "background",
+    "main_topic": "El Al flight-route changes and aviation security concerns",
+    "conflict_relevance": "The article briefly provides an update on Israel's military campaign against Hamas in Gaza and links the airline's route decision to security concerns, but the main topic is air travel.",
+    "reason": "The Gaza war is discussed in several meaningful sentences, including the campaign's phases, expected duration, and October 7 context. However, this material is secondary to the aviation report and appears appended as a separate news update.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "c5319e16464a55c373bc3a860ce118fe694434d3c540db353529b9c5d2b7132e",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "0a3b5b25c512397279beccd991cbb9d9ecff56df6f053f28948d51bf1d243b2e",
+    "raw_response_text_sha256": "1b91f52f3f4320abe1ed951586619a468eb77eb243257ca897330413d826c64b"
+  },
+  "api_metadata": {
+    "id": "resp_012c9d7205636bd0006aaa334b25d887d181545414977359ba",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789539147.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 907,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 316,
+      "output_tokens_details": {
+        "reasoning_tokens": 153
+      },
+      "total_tokens": 1223
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.93,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"El Al flight-route changes and aviation security concerns\",\n  \"conflict_relevance\": \"The article briefly provides an update on Israel's military campaign against Hamas in Gaza and links the airline's route decision to security concerns, but the main topic is air travel.\",\n  \"reason\": \"The Gaza war is discussed in several meaningful sentences, including the campaign's phases, expected duration, and October 7 context. However, this material is secondary to the aviation report and appears appended as a separate news update.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T06:12:32Z",
+  "duration_seconds": 5.647,
+  "error": null
+}

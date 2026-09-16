@@ -1,0 +1,65 @@
+{
+  "article_id": "120078053",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_01/us/120078053.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_01/us/120078053.json"
+  },
+  "manifest_row": {
+    "article_id": "120078053",
+    "group": "global_north_2025_01",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2025_01/us/120078053.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.88,
+    "gaza_role": "passing",
+    "main_topic": "Ben Stiller's departure from Saturday Night Live",
+    "conflict_relevance": "The text is a compilation of unrelated articles and includes a meaningful but brief reference to protests concerning the Gaza war and accusations that Pete Hegseth is a Christian Zionist.",
+    "reason": "The headline and primary article concern Ben Stiller and Saturday Night Live, with no conflict-related content. However, an embedded news item on Senate confirmation hearings contains a substantive sentence linking protesters' anti-war arguments to Hegseth's position on the war in Gaza.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "fbfe1d2c78ca7923b879651b92ef78138879d9e59ee8026c18bb23a023fab95b",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "6f66fc532486b055d31aeb92d21a405c89450e857aa2ffa7d11aec4c52f690f6",
+    "raw_response_text_sha256": "92cb0c79f77dae7860dbb7cd3f51971428fb00f9adbb1cd6fd789d58fa96bf9e"
+  },
+  "api_metadata": {
+    "id": "resp_00fed75fb7c90d2e006aaa2133651087d2823d4a43ed9d6795",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789534515.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 3794,
+      "input_tokens_details": {
+        "cache_write_tokens": 3791,
+        "cached_tokens": 0
+      },
+      "output_tokens": 406,
+      "output_tokens_details": {
+        "reasoning_tokens": 233
+      },
+      "total_tokens": 4200
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.88,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Ben Stiller's departure from Saturday Night Live\",\n  \"conflict_relevance\": \"The text is a compilation of unrelated articles and includes a meaningful but brief reference to protests concerning the Gaza war and accusations that Pete Hegseth is a Christian Zionist.\",\n  \"reason\": \"The headline and primary article concern Ben Stiller and Saturday Night Live, with no conflict-related content. However, an embedded news item on Senate confirmation hearings contains a substantive sentence linking protesters' anti-war arguments to Hegseth's position on the war in Gaza.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T04:55:20Z",
+  "duration_seconds": 5.424,
+  "error": null
+}

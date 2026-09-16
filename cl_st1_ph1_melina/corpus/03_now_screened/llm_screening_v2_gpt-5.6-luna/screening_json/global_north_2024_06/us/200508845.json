@@ -1,0 +1,65 @@
+{
+  "article_id": "200508845",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_06/us/200508845.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_06/us/200508845.json"
+  },
+  "manifest_row": {
+    "article_id": "200508845",
+    "group": "global_north_2024_06",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2024_06/us/200508845.txt"
+  },
+  "screening": {
+    "category": "CORE",
+    "confidence": 0.88,
+    "gaza_role": "substantial",
+    "main_topic": "Daily news podcast transcript covering U.S. politics, the Israel-Hamas ceasefire proposal, Gaza, campus protests, Mexico's election, and other news",
+    "conflict_relevance": "The transcript contains substantial reporting on a proposed Israel-Hamas ceasefire, hostage and prisoner exchanges, Israeli withdrawal, Gaza reconstruction, ongoing hostilities, and pro-Palestinian campus protests.",
+    "reason": "Although this is a multi-topic news roundup, the Gaza-related segments provide detailed and directly relevant discourse about diplomacy, military action, hostages, Palestinians, humanitarian reconstruction, and protest responses to Israel's campaign in Gaza.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": true
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "2a64473e2db8b5fbb84779182badc1f9d2326f80e3924782df238d7b50d138e0",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "5505901c58b8272a1c41ef834418c1aac53a9d9ee36323a6a809b66bec3d710f",
+    "raw_response_text_sha256": "0bdfa3565e5eeef566fc9fd5c71398095a05db1b153015321109f16641f31e23"
+  },
+  "api_metadata": {
+    "id": "resp_04eecdc2decfb3c4006aaa118c5b2887d29d59d2aa6ce9faae",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789530508.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 3467,
+      "input_tokens_details": {
+        "cache_write_tokens": 3464,
+        "cached_tokens": 0
+      },
+      "output_tokens": 452,
+      "output_tokens_details": {
+        "reasoning_tokens": 266
+      },
+      "total_tokens": 3919
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"CORE\",\n  \"confidence\": 0.88,\n  \"gaza_role\": \"substantial\",\n  \"main_topic\": \"Daily news podcast transcript covering U.S. politics, the Israel-Hamas ceasefire proposal, Gaza, campus protests, Mexico's election, and other news\",\n  \"conflict_relevance\": \"The transcript contains substantial reporting on a proposed Israel-Hamas ceasefire, hostage and prisoner exchanges, Israeli withdrawal, Gaza reconstruction, ongoing hostilities, and pro-Palestinian campus protests.\",\n  \"reason\": \"Although this is a multi-topic news roundup, the Gaza-related segments provide detailed and directly relevant discourse about diplomacy, military action, hostages, Palestinians, humanitarian reconstruction, and protest responses to Israel's campaign in Gaza.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": true\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:48:34Z",
+  "duration_seconds": 6.511,
+  "error": null
+}

@@ -1,0 +1,65 @@
+{
+  "article_id": "103044998",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_10/ca/103044998.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_10/ca/103044998.json"
+  },
+  "manifest_row": {
+    "article_id": "103044998",
+    "group": "global_north_2023_10",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2023_10/ca/103044998.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.93,
+    "gaza_role": "passing",
+    "main_topic": "Criminal charges related to the death of an infant in Windsor, Ontario",
+    "conflict_relevance": "The main article is unrelated to Gaza or the Israel-Palestine conflict, but an embedded CTV News top-stories roundup contains brief substantive references to Israel's military assault in Gaza and the regional implications of the Israel-Hamas war.",
+    "reason": "The headline and primary article concern a local infant death investigation. Gaza-related material appears only in unrelated embedded roundup snippets, making the item peripheral rather than core.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "e1c51899db3c921b142b967d51bd8f1d0e23aab4391220429615ec1e4f2f1e08",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "ab009954193d77741d9c4b9921dd635df5bf28647b10533e117880b6de2ce16d",
+    "raw_response_text_sha256": "a5f290de77e7424479b1b0d1d301dd10fe43f0d0c9b6b2577bddc95085ea622c"
+  },
+  "api_metadata": {
+    "id": "resp_0b4d48e65215b3e0006aa9f6c4a73887d2ba41fbc333c6dc21",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789523652.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1312,
+      "input_tokens_details": {
+        "cache_write_tokens": 1309,
+        "cached_tokens": 0
+      },
+      "output_tokens": 371,
+      "output_tokens_details": {
+        "reasoning_tokens": 202
+      },
+      "total_tokens": 1683
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.93,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Criminal charges related to the death of an infant in Windsor, Ontario\",\n  \"conflict_relevance\": \"The main article is unrelated to Gaza or the Israel-Palestine conflict, but an embedded CTV News top-stories roundup contains brief substantive references to Israel's military assault in Gaza and the regional implications of the Israel-Hamas war.\",\n  \"reason\": \"The headline and primary article concern a local infant death investigation. Gaza-related material appears only in unrelated embedded roundup snippets, making the item peripheral rather than core.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T01:54:16Z",
+  "duration_seconds": 4.346,
+  "error": null
+}

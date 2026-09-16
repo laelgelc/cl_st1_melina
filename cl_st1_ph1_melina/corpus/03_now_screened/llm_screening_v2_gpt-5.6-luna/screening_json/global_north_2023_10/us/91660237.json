@@ -1,0 +1,65 @@
+{
+  "article_id": "91660237",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_10/us/91660237.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_10/us/91660237.json"
+  },
+  "manifest_row": {
+    "article_id": "91660237",
+    "group": "global_north_2023_10",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2023_10/us/91660237.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "passing",
+    "main_topic": "U.S.-Mexico border wall construction and environmental law waivers",
+    "conflict_relevance": "Contains a meaningful but unrelated discussion of the Geneva Conventions, Hamas's initial attack, Israel's bombing of Gaza, and alleged war crimes.",
+    "reason": "The article is primarily about the U.S.-Mexico border wall and its environmental impacts. A distinct inserted passage discusses Israel, Hamas, Gaza, and international humanitarian law, making it relevant to broader conflict discourse but not core coverage.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "e574266511a19b3d16e983f97a99b38214c8513980646d7b55514e54ad15a28e",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "8b7603b9584d4bdbbc8f2021be303d8f5eed1cf7dcc09823049f0ccc4b171986",
+    "raw_response_text_sha256": "2f2a126a5c6576ba83897bc127f3d89683193b458893e437b207f5420498e006"
+  },
+  "api_metadata": {
+    "id": "resp_0e8e0ef4d3c57f07006aa9fabbf6d887d2acd976c0895cd06d",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789524667.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2021,
+      "input_tokens_details": {
+        "cache_write_tokens": 2018,
+        "cached_tokens": 0
+      },
+      "output_tokens": 263,
+      "output_tokens_details": {
+        "reasoning_tokens": 102
+      },
+      "total_tokens": 2284
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"U.S.-Mexico border wall construction and environmental law waivers\",\n  \"conflict_relevance\": \"Contains a meaningful but unrelated discussion of the Geneva Conventions, Hamas's initial attack, Israel's bombing of Gaza, and alleged war crimes.\",\n  \"reason\": \"The article is primarily about the U.S.-Mexico border wall and its environmental impacts. A distinct inserted passage discusses Israel, Hamas, Gaza, and international humanitarian law, making it relevant to broader conflict discourse but not core coverage.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:11:12Z",
+  "duration_seconds": 4.274,
+  "error": null
+}

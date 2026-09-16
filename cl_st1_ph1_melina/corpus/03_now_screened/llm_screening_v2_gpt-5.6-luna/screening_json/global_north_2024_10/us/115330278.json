@@ -1,0 +1,65 @@
+{
+  "article_id": "115330278",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_10/us/115330278.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_10/us/115330278.json"
+  },
+  "manifest_row": {
+    "article_id": "115330278",
+    "group": "global_north_2024_10",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2024_10/us/115330278.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.88,
+    "gaza_role": "background",
+    "main_topic": "Israeli strikes in Beirut and the escalating Israel-Hezbollah conflict in Lebanon",
+    "conflict_relevance": "The article focuses on the Lebanon front but connects it directly to the Israel-Hamas war, Gaza casualties, the October 7 attack, and the broader regional conflict.",
+    "reason": "Gaza and the Israel-Hamas war provide meaningful context for the main story, but the article is primarily about Israeli military action against Hezbollah in Lebanon rather than Gaza or Israel-Palestine itself.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "cbcfd07d0c1bee19efb6ef7e8ab5635608d9ff203cf5937fa99259e93fc0328d",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "a114903196abac1a00bb6edbbd98aadb42db8e04ea2b4eb68fc1904b05e17d07",
+    "raw_response_text_sha256": "6aabc4c62324127a045bb8b12b2a995846e083f506db6989a73c3894953c6b70"
+  },
+  "api_metadata": {
+    "id": "resp_0da613e5aa66cc6d006aaa18cbdba087d284f164d4cb50a55b",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789532363.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 819,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 308,
+      "output_tokens_details": {
+        "reasoning_tokens": 145
+      },
+      "total_tokens": 1127
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.88,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Israeli strikes in Beirut and the escalating Israel-Hezbollah conflict in Lebanon\",\n  \"conflict_relevance\": \"The article focuses on the Lebanon front but connects it directly to the Israel-Hamas war, Gaza casualties, the October 7 attack, and the broader regional conflict.\",\n  \"reason\": \"Gaza and the Israel-Hamas war provide meaningful context for the main story, but the article is primarily about Israeli military action against Hezbollah in Lebanon rather than Gaza or Israel-Palestine itself.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T04:19:28Z",
+  "duration_seconds": 4.632,
+  "error": null
+}

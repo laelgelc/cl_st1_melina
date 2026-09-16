@@ -1,0 +1,65 @@
+{
+  "article_id": "103616648",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_11/gb/103616648.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_11/gb/103616648.json"
+  },
+  "manifest_row": {
+    "article_id": "103616648",
+    "group": "global_north_2023_11",
+    "country_code": "gb",
+    "filepath": "corpus/02_now_organised/global_north_2023_11/gb/103616648.txt"
+  },
+  "screening": {
+    "category": "CORE",
+    "confidence": 0.95,
+    "gaza_role": "central",
+    "main_topic": "Evacuation of premature babies from Gaza and reported deaths at another Gaza hospital",
+    "conflict_relevance": "Direct coverage of the Israel-Hamas war, Gaza hospitals, civilian casualties, humanitarian evacuation, and urgent medical treatment.",
+    "reason": "The leading article content is centrally focused on the humanitarian and military situation in Gaza, including hospital conditions, evacuation of premature infants, deaths, and Israeli tank encirclement. The text also contains unrelated OpenAI and General Motors snippets, suggesting article aggregation or contamination, but the Gaza report is substantial and directly relevant.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": true
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "bbfe6a17f67df24bbccabea5a9a19a817e02b666c05b485f5e826f6b99e72b2e",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "f49ad253d03364521827bfccfdd77d2d49fb96d42ef1d9fc18dd90c0d0c8fddc",
+    "raw_response_text_sha256": "8b87bf2d52ee0be86314104533c2572ada95129c0eea1d3ef0b3bf550e281278"
+  },
+  "api_metadata": {
+    "id": "resp_0e158e726ccd2ad5006aa9fd04e0f887d2a251c43327009f5c",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789525252.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 808,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 296,
+      "output_tokens_details": {
+        "reasoning_tokens": 122
+      },
+      "total_tokens": 1104
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"CORE\",\n  \"confidence\": 0.95,\n  \"gaza_role\": \"central\",\n  \"main_topic\": \"Evacuation of premature babies from Gaza and reported deaths at another Gaza hospital\",\n  \"conflict_relevance\": \"Direct coverage of the Israel-Hamas war, Gaza hospitals, civilian casualties, humanitarian evacuation, and urgent medical treatment.\",\n  \"reason\": \"The leading article content is centrally focused on the humanitarian and military situation in Gaza, including hospital conditions, evacuation of premature infants, deaths, and Israeli tank encirclement. The text also contains unrelated OpenAI and General Motors snippets, suggesting article aggregation or contamination, but the Gaza report is substantial and directly relevant.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": true\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:20:57Z",
+  "duration_seconds": 4.405,
+  "error": null
+}

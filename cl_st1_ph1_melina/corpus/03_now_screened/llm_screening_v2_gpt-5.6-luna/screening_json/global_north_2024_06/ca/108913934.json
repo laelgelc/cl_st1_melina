@@ -1,0 +1,65 @@
+{
+  "article_id": "108913934",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_06/ca/108913934.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_06/ca/108913934.json"
+  },
+  "manifest_row": {
+    "article_id": "108913934",
+    "group": "global_north_2024_06",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2024_06/ca/108913934.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "passing",
+    "main_topic": "Edmonton Oilers and Florida Panthers coaches and players preparing for the 2024 Stanley Cup Final",
+    "conflict_relevance": "The article is primarily a hockey feature, but it includes a substantive embedded top-stories item about an Israeli hostage rescue operation in central Gaza, the military assault, and reported Palestinian deaths.",
+    "reason": "The Gaza-related content is meaningful but appears only as an unrelated news roundup item rather than as part of the main article.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "bebfa229932ea546a4e49f76efe805f4c2f8d7f310a04205b760beea4476735b",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "9d185bd797d35ac29360373c480924a3aeb8b5d88cd8942758dac04343178dfa",
+    "raw_response_text_sha256": "17fed7a349ee1778daa699e7caef0aff96308619fa7cc3ee28f2e763396410e5"
+  },
+  "api_metadata": {
+    "id": "resp_0fbaa837c1b440ca006aaa1027652487d29158400bc437851b",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789530151.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2069,
+      "input_tokens_details": {
+        "cache_write_tokens": 2066,
+        "cached_tokens": 0
+      },
+      "output_tokens": 250,
+      "output_tokens_details": {
+        "reasoning_tokens": 94
+      },
+      "total_tokens": 2319
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Edmonton Oilers and Florida Panthers coaches and players preparing for the 2024 Stanley Cup Final\",\n  \"conflict_relevance\": \"The article is primarily a hockey feature, but it includes a substantive embedded top-stories item about an Israeli hostage rescue operation in central Gaza, the military assault, and reported Palestinian deaths.\",\n  \"reason\": \"The Gaza-related content is meaningful but appears only as an unrelated news roundup item rather than as part of the main article.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:42:34Z",
+  "duration_seconds": 3.442,
+  "error": null
+}

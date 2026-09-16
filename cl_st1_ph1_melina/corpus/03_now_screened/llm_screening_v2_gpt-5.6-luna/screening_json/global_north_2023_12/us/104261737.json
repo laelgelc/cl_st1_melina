@@ -1,0 +1,65 @@
+{
+  "article_id": "104261737",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_12/us/104261737.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_12/us/104261737.json"
+  },
+  "manifest_row": {
+    "article_id": "104261737",
+    "group": "global_north_2023_12",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2023_12/us/104261737.txt"
+  },
+  "screening": {
+    "category": "CORE",
+    "confidence": 0.98,
+    "gaza_role": "substantial",
+    "main_topic": "Huthi attacks on Red Sea shipping and their connection to the Israel-Hamas war",
+    "conflict_relevance": "The article centrally examines how the Gaza war has prompted Huthi attacks on ships linked to Israel, the regional spillover of the conflict, Iranian influence, and Israeli and international responses.",
+    "reason": "The headline article is substantially about a conflict-related regional escalation connected directly to Gaza, Israel, and Hamas, including military action, maritime attacks, and fears of wider regional war. The text also contains several unrelated news snippets appended after the main article.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": true
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "a4e0f65d50dcd42652181a0b642bfd947868b3c0d8f306cad992461ce9624d65",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "abb1fdeee4bba15427a08ec002ce07ecaef9767f953d42d3c199d9e1fb2c216e",
+    "raw_response_text_sha256": "ae0ac3e0f6f5f1302e31532dabdd9571e2f9a106a3614b5dde6c478788dff81b"
+  },
+  "api_metadata": {
+    "id": "resp_0857c5b606798d20006aaa020fa1cc87d2bed03cf675c60dee",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789526543.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2604,
+      "input_tokens_details": {
+        "cache_write_tokens": 2601,
+        "cached_tokens": 0
+      },
+      "output_tokens": 254,
+      "output_tokens_details": {
+        "reasoning_tokens": 78
+      },
+      "total_tokens": 2858
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"CORE\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"substantial\",\n  \"main_topic\": \"Huthi attacks on Red Sea shipping and their connection to the Israel-Hamas war\",\n  \"conflict_relevance\": \"The article centrally examines how the Gaza war has prompted Huthi attacks on ships linked to Israel, the regional spillover of the conflict, Iranian influence, and Israeli and international responses.\",\n  \"reason\": \"The headline article is substantially about a conflict-related regional escalation connected directly to Gaza, Israel, and Hamas, including military action, maritime attacks, and fears of wider regional war. The text also contains several unrelated news snippets appended after the main article.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": true\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:42:27Z",
+  "duration_seconds": 3.668,
+  "error": null
+}

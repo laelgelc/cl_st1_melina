@@ -1,0 +1,65 @@
+{
+  "article_id": "105819781",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_02/us/105819781.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_02/us/105819781.json"
+  },
+  "manifest_row": {
+    "article_id": "105819781",
+    "group": "global_north_2024_02",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2024_02/us/105819781.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "passing",
+    "main_topic": "Joe Biden's age, classified-documents investigation, and presidential campaign",
+    "conflict_relevance": "The newsletter includes a brief news item stating that Benjamin Netanyahu ordered planning for an evacuation of Rafah ahead of an expected Israeli military invasion.",
+    "reason": "The article is primarily about Biden's age and political vulnerabilities. Gaza appears only in a short embedded roundup item about the planned Rafah evacuation, providing limited but meaningful conflict-related discourse.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "a424be3b2e4cb6ba67e5377720da5188ebe584f12516fd6bff2ed13f58ea777c",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "2b8bd2e865f2aed96257ce6dd174bcb40bad6b8b3702cb4521e97b8860921321",
+    "raw_response_text_sha256": "58166c7717fb2480e210160bcecbae323b4d234142c47da1c1d1f84cfec7dbe2"
+  },
+  "api_metadata": {
+    "id": "resp_0bcec50eed5ed0ef006aaa071b674887d29f564ab11d7d6380",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789527835.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2490,
+      "input_tokens_details": {
+        "cache_write_tokens": 2487,
+        "cached_tokens": 0
+      },
+      "output_tokens": 232,
+      "output_tokens_details": {
+        "reasoning_tokens": 80
+      },
+      "total_tokens": 2722
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Joe Biden's age, classified-documents investigation, and presidential campaign\",\n  \"conflict_relevance\": \"The newsletter includes a brief news item stating that Benjamin Netanyahu ordered planning for an evacuation of Rafah ahead of an expected Israeli military invasion.\",\n  \"reason\": \"The article is primarily about Biden's age and political vulnerabilities. Gaza appears only in a short embedded roundup item about the planned Rafah evacuation, providing limited but meaningful conflict-related discourse.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:03:58Z",
+  "duration_seconds": 3.092,
+  "error": null
+}

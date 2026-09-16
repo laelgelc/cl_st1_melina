@@ -1,0 +1,65 @@
+{
+  "article_id": "123920171",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_south_2025_04/in/123920171.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_south_2025_04/in/123920171.json"
+  },
+  "manifest_row": {
+    "article_id": "123920171",
+    "group": "global_south_2025_04",
+    "country_code": "in",
+    "filepath": "corpus/02_now_organised/global_south_2025_04/in/123920171.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "passing",
+    "main_topic": "The Pahalgam terror attack, victims' funerals, and political and religious framing of the killings",
+    "conflict_relevance": "Gaza appears in a political statement comparing the promised retaliation for the Pahalgam killings to Gaza being 'finished,' providing limited evidence of Gaza-related rhetorical framing.",
+    "reason": "The article is centrally about the Pahalgam attack and its aftermath in India, not Gaza or the Israel-Palestine conflict. However, the direct Gaza reference is meaningful as a rhetorical comparison in a political speech, so the article is peripheral rather than excluded.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "0af909a206c3138181513b9c1aeec0e3d78b0cccdc82c34ee5e5431f01505f6f",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "aed4d00d48862240755f3ebc3766d6f72b885d281675041fe65723dc16669efa",
+    "raw_response_text_sha256": "430d5e71a38073ced06f5d89f0c1cff6ad351c36dc136545be335f7be522e2d4"
+  },
+  "api_metadata": {
+    "id": "resp_0faafb0b58915646006aaa47b3d34887d181069c32f78e1b12",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789544371.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1204,
+      "input_tokens_details": {
+        "cache_write_tokens": 1201,
+        "cached_tokens": 0
+      },
+      "output_tokens": 244,
+      "output_tokens_details": {
+        "reasoning_tokens": 60
+      },
+      "total_tokens": 1448
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"The Pahalgam terror attack, victims' funerals, and political and religious framing of the killings\",\n  \"conflict_relevance\": \"Gaza appears in a political statement comparing the promised retaliation for the Pahalgam killings to Gaza being 'finished,' providing limited evidence of Gaza-related rhetorical framing.\",\n  \"reason\": \"The article is centrally about the Pahalgam attack and its aftermath in India, not Gaza or the Israel-Palestine conflict. However, the direct Gaza reference is meaningful as a rhetorical comparison in a political speech, so the article is peripheral rather than excluded.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T07:39:35Z",
+  "duration_seconds": 3.582,
+  "error": null
+}

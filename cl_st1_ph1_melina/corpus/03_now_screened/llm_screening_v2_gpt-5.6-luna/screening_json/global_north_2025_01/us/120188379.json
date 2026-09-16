@@ -1,0 +1,65 @@
+{
+  "article_id": "120188379",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_01/us/120188379.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_01/us/120188379.json"
+  },
+  "manifest_row": {
+    "article_id": "120188379",
+    "group": "global_north_2025_01",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2025_01/us/120188379.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "background",
+    "main_topic": "Donald Trump's inauguration, transition into office, and related US political developments",
+    "conflict_relevance": "The live-update article includes a substantive embedded report on Trump's statements to Benjamin Netanyahu, the Gaza ceasefire-hostage agreement, Hamas-held hostages, and threatened consequences for a breakdown in the ceasefire.",
+    "reason": "The article is primarily a broad inauguration news roundup containing many unrelated political and logistical updates. Although one dedicated section meaningfully addresses the Israel-Hamas war and Gaza ceasefire, the conflict is not the main subject of the overall article.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "4e83d4abb2c6a2e12502c0f622b5b1987f3aa1afbdfdff5dd5c26f7d3bc76460",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "3b78f7849e39df5ef7fdbd6cb8bbee40db84880d2eb90d41ef20a0132d5fd487",
+    "raw_response_text_sha256": "d2f235b8bd37a4f08120a6a1fc447e854c18b5e6251e1f9824b7ab379b91e8d6"
+  },
+  "api_metadata": {
+    "id": "resp_016d413c47511141006aaa2159e9ac87d2ad5e81aee35fcbe7",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789534553.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 8576,
+      "input_tokens_details": {
+        "cache_write_tokens": 8573,
+        "cached_tokens": 0
+      },
+      "output_tokens": 375,
+      "output_tokens_details": {
+        "reasoning_tokens": 200
+      },
+      "total_tokens": 8951
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Donald Trump's inauguration, transition into office, and related US political developments\",\n  \"conflict_relevance\": \"The live-update article includes a substantive embedded report on Trump's statements to Benjamin Netanyahu, the Gaza ceasefire-hostage agreement, Hamas-held hostages, and threatened consequences for a breakdown in the ceasefire.\",\n  \"reason\": \"The article is primarily a broad inauguration news roundup containing many unrelated political and logistical updates. Although one dedicated section meaningfully addresses the Israel-Hamas war and Gaza ceasefire, the conflict is not the main subject of the overall article.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T04:55:58Z",
+  "duration_seconds": 4.889,
+  "error": null
+}

@@ -1,0 +1,65 @@
+{
+  "article_id": "200341321",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_03/us/200341321.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_03/us/200341321.json"
+  },
+  "manifest_row": {
+    "article_id": "200341321",
+    "group": "global_north_2024_03",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2024_03/us/200341321.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.95,
+    "gaza_role": "background",
+    "main_topic": "Israeli ultra-Orthodox military conscription exemptions and their impact on Benjamin Netanyahu's governing coalition",
+    "conflict_relevance": "The article concerns Israeli domestic politics and military-service policy, with the Gaza war providing important political context and increasing pressure over conscription. It also briefly references criticism of Netanyahu's handling of the war.",
+    "reason": "The main subject is the Israeli conscription dispute rather than the Gaza conflict itself, but the war meaningfully shapes the political issue and is discussed in several sentences. The text also includes unrelated sports, disaster, and technology snippets.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "a5c2c6248abe39c280b4e28aba39da5abaca32746be208dca635a24ac867e94f",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "e724e077fe895a299d9ced5080e7235a51c63854bd3da3bcba9b6dbd36dff815",
+    "raw_response_text_sha256": "94feb33d8f5899db0be287b47eb6cfcba144f45ecb52d296477d78f8d3090b4a"
+  },
+  "api_metadata": {
+    "id": "resp_0a47ef05c9310c4b006aaa0ab9b81887d2821e146699023d9b",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789528761.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1925,
+      "input_tokens_details": {
+        "cache_write_tokens": 1922,
+        "cached_tokens": 0
+      },
+      "output_tokens": 333,
+      "output_tokens_details": {
+        "reasoning_tokens": 154
+      },
+      "total_tokens": 2258
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.95,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Israeli ultra-Orthodox military conscription exemptions and their impact on Benjamin Netanyahu's governing coalition\",\n  \"conflict_relevance\": \"The article concerns Israeli domestic politics and military-service policy, with the Gaza war providing important political context and increasing pressure over conscription. It also briefly references criticism of Netanyahu's handling of the war.\",\n  \"reason\": \"The main subject is the Israeli conscription dispute rather than the Gaza conflict itself, but the war meaningfully shapes the political issue and is discussed in several sentences. The text also includes unrelated sports, disaster, and technology snippets.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:19:27Z",
+  "duration_seconds": 5.529,
+  "error": null
+}

@@ -1,0 +1,65 @@
+{
+  "article_id": "121300752",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_02/gb/121300752.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_02/gb/121300752.json"
+  },
+  "manifest_row": {
+    "article_id": "121300752",
+    "group": "global_north_2025_02",
+    "country_code": "gb",
+    "filepath": "corpus/02_now_organised/global_north_2025_02/gb/121300752.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "passing",
+    "main_topic": "Alexei Navalny, a proposed prisoner exchange, and Russian opposition politics",
+    "conflict_relevance": "The main article is about Navalny and Germany-Russia relations, but embedded latest-story snippets briefly mention Gaza, Netanyahu's strategy, and an International Criminal Court complaint against an Israeli minister.",
+    "reason": "The article's central subject is unrelated to the Israel-Palestine conflict. However, it contains meaningful, though very brief and embedded, references to Gaza and legal action involving Israel, making it peripheral rather than excludable.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "d55f97d54566f358e2862a74162742079a74cae2ba16926d5d7e394738ecf92e",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "17a0334bac59e32410efb7860751a70106444b9428c42e5bd78a59326c113b3d",
+    "raw_response_text_sha256": "f8a4104e96f4e55607ea8d0303790df80a9a963df358b5987ff90726e74060c2"
+  },
+  "api_metadata": {
+    "id": "resp_0f7defbcbdd4e207006aaa22f5977c87d29c3882083f2787b7",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789534965.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2459,
+      "input_tokens_details": {
+        "cache_write_tokens": 2456,
+        "cached_tokens": 0
+      },
+      "output_tokens": 264,
+      "output_tokens_details": {
+        "reasoning_tokens": 91
+      },
+      "total_tokens": 2723
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Alexei Navalny, a proposed prisoner exchange, and Russian opposition politics\",\n  \"conflict_relevance\": \"The main article is about Navalny and Germany-Russia relations, but embedded latest-story snippets briefly mention Gaza, Netanyahu's strategy, and an International Criminal Court complaint against an Israeli minister.\",\n  \"reason\": \"The article's central subject is unrelated to the Israel-Palestine conflict. However, it contains meaningful, though very brief and embedded, references to Gaza and legal action involving Israel, making it peripheral rather than excludable.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T05:02:49Z",
+  "duration_seconds": 4.14,
+  "error": null
+}

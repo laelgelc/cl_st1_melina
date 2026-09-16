@@ -1,0 +1,65 @@
+{
+  "article_id": "115458701",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_south_2024_10/ng/115458701.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_south_2024_10/ng/115458701.json"
+  },
+  "manifest_row": {
+    "article_id": "115458701",
+    "group": "global_south_2024_10",
+    "country_code": "ng",
+    "filepath": "corpus/02_now_organised/global_south_2024_10/ng/115458701.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.95,
+    "gaza_role": "passing",
+    "main_topic": "Nigerian researchers' participation in an international digital governance conference",
+    "conflict_relevance": "The article includes an embedded news item about worldwide pro-Palestinian protests calling for a ceasefire in Gaza and Lebanon, but this is unrelated to the main article's focus.",
+    "reason": "The primary article concerns digital governance research and Nigerian participation in ICEGOV 2024. Gaza appears in a substantive but clearly separate embedded news snippet describing international demonstrations, making the item peripheral rather than core.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "f46b43ab60cb81addca782c73c773f97b867523fe6176255e9bd2302ce3b92a4",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "14667b781685f52314731047588e8823e6e8dcc3fc010c10b725cde0dad7a862",
+    "raw_response_text_sha256": "ebf9838f8a3edd08eb2a48ee769a3046cbf6eb49ec47d398add319b814955d6a"
+  },
+  "api_metadata": {
+    "id": "resp_039605b2b41f29ef006aaa40dd90f487d189974ef890b32102",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789542621.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1756,
+      "input_tokens_details": {
+        "cache_write_tokens": 1753,
+        "cached_tokens": 0
+      },
+      "output_tokens": 288,
+      "output_tokens_details": {
+        "reasoning_tokens": 123
+      },
+      "total_tokens": 2044
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.95,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Nigerian researchers' participation in an international digital governance conference\",\n  \"conflict_relevance\": \"The article includes an embedded news item about worldwide pro-Palestinian protests calling for a ceasefire in Gaza and Lebanon, but this is unrelated to the main article's focus.\",\n  \"reason\": \"The primary article concerns digital governance research and Nigerian participation in ICEGOV 2024. Gaza appears in a substantive but clearly separate embedded news snippet describing international demonstrations, making the item peripheral rather than core.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T07:10:25Z",
+  "duration_seconds": 3.673,
+  "error": null
+}

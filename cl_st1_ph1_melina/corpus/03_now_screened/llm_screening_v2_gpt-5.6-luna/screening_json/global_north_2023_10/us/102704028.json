@@ -1,0 +1,65 @@
+{
+  "article_id": "102704028",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_10/us/102704028.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_10/us/102704028.json"
+  },
+  "manifest_row": {
+    "article_id": "102704028",
+    "group": "global_north_2023_10",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2023_10/us/102704028.txt"
+  },
+  "screening": {
+    "category": "CORE",
+    "confidence": 0.99,
+    "gaza_role": "central",
+    "main_topic": "Iranian threats and U.S. involvement in the Israel-Hamas war and Gaza crisis",
+    "conflict_relevance": "The article centrally discusses Israel's attacks and blockade of Gaza, Hamas's attack and hostages, Iran's response, U.S. military and diplomatic involvement, regional escalation, humanitarian conditions, and possible violations of international law.",
+    "reason": "Gaza and the Israel-Hamas war are the central subject of the headline and main article, with extensive coverage of military action, political responses, humanitarian consequences, international involvement, and regional escalation. The text also contains several appended or possibly unrelated news snippets, but these do not displace the core focus of the main article.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": true
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "19f2b8281182f6657e93018a09c64a30d5c208142cbf5e9e88d10494e1e2d2a9",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "7c2f02c16a00107354fe4769bc4851d8a6b72eba090b0f6d5c12c694a89cac5b",
+    "raw_response_text_sha256": "01bb89c02299076099c544982eec3a097e9d95e3800eee90ae212443b62a9121"
+  },
+  "api_metadata": {
+    "id": "resp_06ff332a983aaf26006aa9f9147c2c87d2ab5a602c244e2525",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789524244.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2167,
+      "input_tokens_details": {
+        "cache_write_tokens": 2164,
+        "cached_tokens": 0
+      },
+      "output_tokens": 310,
+      "output_tokens_details": {
+        "reasoning_tokens": 110
+      },
+      "total_tokens": 2477
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"CORE\",\n  \"confidence\": 0.99,\n  \"gaza_role\": \"central\",\n  \"main_topic\": \"Iranian threats and U.S. involvement in the Israel-Hamas war and Gaza crisis\",\n  \"conflict_relevance\": \"The article centrally discusses Israel's attacks and blockade of Gaza, Hamas's attack and hostages, Iran's response, U.S. military and diplomatic involvement, regional escalation, humanitarian conditions, and possible violations of international law.\",\n  \"reason\": \"Gaza and the Israel-Hamas war are the central subject of the headline and main article, with extensive coverage of military action, political responses, humanitarian consequences, international involvement, and regional escalation. The text also contains several appended or possibly unrelated news snippets, but these do not displace the core focus of the main article.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": true\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:04:08Z",
+  "duration_seconds": 4.341,
+  "error": null
+}

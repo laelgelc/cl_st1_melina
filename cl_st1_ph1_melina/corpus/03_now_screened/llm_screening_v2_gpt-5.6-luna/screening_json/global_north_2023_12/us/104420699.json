@@ -1,0 +1,65 @@
+{
+  "article_id": "104420699",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_12/us/104420699.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_12/us/104420699.json"
+  },
+  "manifest_row": {
+    "article_id": "104420699",
+    "group": "global_north_2023_12",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2023_12/us/104420699.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "background",
+    "main_topic": "Japan's prospective export of Patriot missile interceptors to the United States to support Ukraine",
+    "conflict_relevance": "The article is primarily about Ukraine, Japan's defense-export policy, and U.S. weapons inventories, but it meaningfully references the Israel-Gaza war as another demand on U.S. air-defense resources.",
+    "reason": "Gaza is not the article's central subject, yet the Israel-Gaza war is explicitly discussed as contributing to the strain on Patriot system supplies and U.S. military deployments in the Middle East.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "e0419e4a70413f0fe4f76ea0ff6a53b2a84872a433fe874da48030604eb77fea",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "8639f836ed636ec3b5a4eaa9a18fd1a9ebe97f1f1576259c32df37dd10a8a633",
+    "raw_response_text_sha256": "a8fa35ba8998255516d7794f04613038af43534a633595463bfc5a80a7a6aeaa"
+  },
+  "api_metadata": {
+    "id": "resp_08ef1965fdf0c914006aaa0240929c87d28b4cea15fa138954",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789526592.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 3938,
+      "input_tokens_details": {
+        "cache_write_tokens": 3935,
+        "cached_tokens": 0
+      },
+      "output_tokens": 259,
+      "output_tokens_details": {
+        "reasoning_tokens": 87
+      },
+      "total_tokens": 4197
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Japan's prospective export of Patriot missile interceptors to the United States to support Ukraine\",\n  \"conflict_relevance\": \"The article is primarily about Ukraine, Japan's defense-export policy, and U.S. weapons inventories, but it meaningfully references the Israel-Gaza war as another demand on U.S. air-defense resources.\",\n  \"reason\": \"Gaza is not the article's central subject, yet the Israel-Gaza war is explicitly discussed as contributing to the strain on Patriot system supplies and U.S. military deployments in the Middle East.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:43:16Z",
+  "duration_seconds": 4.255,
+  "error": null
+}

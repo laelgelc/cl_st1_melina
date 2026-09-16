@@ -1,0 +1,65 @@
+{
+  "article_id": "106423249",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_03/ca/106423249.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_03/ca/106423249.json"
+  },
+  "manifest_row": {
+    "article_id": "106423249",
+    "group": "global_north_2024_03",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2024_03/ca/106423249.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.96,
+    "gaza_role": "passing",
+    "main_topic": "A social-media stunt involving a vehicle driven into Burrard Inlet and related police investigation",
+    "conflict_relevance": "The article includes one meaningful but unrelated news item about ceasefire negotiations with Hamas in Gaza and the release of Israeli hostages.",
+    "reason": "The main article concerns a Canadian social-media stunt and has no connection to Gaza or the Israel-Palestine conflict. However, an embedded news snippet substantively mentions Gaza ceasefire negotiations and Israeli hostages, making it peripheral rather than excludable.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "dba9e97162f985725666cb29551d8eff78740f76a15814c6429770512a47573c",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "381d41559d64c02f3f3039424390f4d86db545beb5a213ad14b89d9a594e65a8",
+    "raw_response_text_sha256": "5b6d0c7fb4ecc2fff84e1fa9de2dbd91bc516593d1854d5514da765ef3b0c4bc"
+  },
+  "api_metadata": {
+    "id": "resp_0f7e4b12e5383503006aaa08599b1487d2a348e1af5e0f2667",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789528153.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1714,
+      "input_tokens_details": {
+        "cache_write_tokens": 1711,
+        "cached_tokens": 0
+      },
+      "output_tokens": 305,
+      "output_tokens_details": {
+        "reasoning_tokens": 136
+      },
+      "total_tokens": 2019
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.96,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"A social-media stunt involving a vehicle driven into Burrard Inlet and related police investigation\",\n  \"conflict_relevance\": \"The article includes one meaningful but unrelated news item about ceasefire negotiations with Hamas in Gaza and the release of Israeli hostages.\",\n  \"reason\": \"The main article concerns a Canadian social-media stunt and has no connection to Gaza or the Israel-Palestine conflict. However, an embedded news snippet substantively mentions Gaza ceasefire negotiations and Israeli hostages, making it peripheral rather than excludable.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:09:17Z",
+  "duration_seconds": 4.271,
+  "error": null
+}

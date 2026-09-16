@@ -1,0 +1,65 @@
+{
+  "article_id": "107465878",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_04/gb/107465878.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_04/gb/107465878.json"
+  },
+  "manifest_row": {
+    "article_id": "107465878",
+    "group": "global_north_2024_04",
+    "country_code": "gb",
+    "filepath": "corpus/02_now_organised/global_north_2024_04/gb/107465878.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.97,
+    "gaza_role": "background",
+    "main_topic": "Scottish National Party political campaigning and Scottish independence",
+    "conflict_relevance": "The article references SNP calls for an immediate ceasefire in Gaza and portrays Labour and Conservative alignment on Gaza as part of a broader political critique.",
+    "reason": "Gaza is meaningfully invoked in the article's discussion of party positions and Scottish political representation, but the main subject is SNP campaigning, Westminster politics, and Scottish independence rather than the conflict itself.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "089aa74dce61b8d025c0bc46cff2f785b6317e31bbfab0bafb6cca7592d1067a",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "31ef01c1ac19819fb35971240409b0caadaef77983ccf50772474c49d1516bfa",
+    "raw_response_text_sha256": "1f41dddf99189135be8bb21aaed05f2fb2d4780e6289ec2df6d3317a096acb64"
+  },
+  "api_metadata": {
+    "id": "resp_0b234fdc5151d41f006aaa0b52842887d290419f9d7c5c3a1e",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789528914.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1850,
+      "input_tokens_details": {
+        "cache_write_tokens": 1847,
+        "cached_tokens": 0
+      },
+      "output_tokens": 259,
+      "output_tokens_details": {
+        "reasoning_tokens": 107
+      },
+      "total_tokens": 2109
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.97,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Scottish National Party political campaigning and Scottish independence\",\n  \"conflict_relevance\": \"The article references SNP calls for an immediate ceasefire in Gaza and portrays Labour and Conservative alignment on Gaza as part of a broader political critique.\",\n  \"reason\": \"Gaza is meaningfully invoked in the article's discussion of party positions and Scottish political representation, but the main subject is SNP campaigning, Westminster politics, and Scottish independence rather than the conflict itself.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:21:58Z",
+  "duration_seconds": 4.455,
+  "error": null
+}

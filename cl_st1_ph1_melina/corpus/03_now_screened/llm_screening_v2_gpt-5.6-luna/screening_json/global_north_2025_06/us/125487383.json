@@ -1,0 +1,65 @@
+{
+  "article_id": "125487383",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_06/us/125487383.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_06/us/125487383.json"
+  },
+  "manifest_row": {
+    "article_id": "125487383",
+    "group": "global_north_2025_06",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2025_06/us/125487383.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.96,
+    "gaza_role": "background",
+    "main_topic": "Immigration enforcement, illegal immigration, crime, and antisemitism in the United States",
+    "conflict_relevance": "The article discusses a Boulder attack targeting a march for Israeli hostages held by Hamas in Gaza, references pro-Hamas campus protests, antisemitism, Zionism, and the slogan \"Free Palestine.\" These issues are used primarily to support an argument about immigration and national security rather than to analyze the Gaza conflict itself.",
+    "reason": "The article contains meaningful discourse linking Gaza-related hostages, Hamas, Palestine, Zionism, antisemitism, and campus protest activity to debates over immigration and deportation. However, its central subject is U.S. immigration policy and crime, so it is peripheral rather than core conflict coverage.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "a10c4efe253ae7208abe443924fbc1abc122b8b1c28e9cd8af6fe74cc882f431",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "4cfb7ef534b1b3c7c8b5e1e5fcb93843625a49ce4ff14b88f5eb8bdbba11fc44",
+    "raw_response_text_sha256": "07d40fb37e14cecdbeccf92d5dc943690ff9a3c1210ff99419bb2f7e25f9d636"
+  },
+  "api_metadata": {
+    "id": "resp_0fe807436a50cae5006aaa30c9365887d1b0087d13740b4bb8",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789538505.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1920,
+      "input_tokens_details": {
+        "cache_write_tokens": 1917,
+        "cached_tokens": 0
+      },
+      "output_tokens": 289,
+      "output_tokens_details": {
+        "reasoning_tokens": 75
+      },
+      "total_tokens": 2209
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.96,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Immigration enforcement, illegal immigration, crime, and antisemitism in the United States\",\n  \"conflict_relevance\": \"The article discusses a Boulder attack targeting a march for Israeli hostages held by Hamas in Gaza, references pro-Hamas campus protests, antisemitism, Zionism, and the slogan \\\"Free Palestine.\\\" These issues are used primarily to support an argument about immigration and national security rather than to analyze the Gaza conflict itself.\",\n  \"reason\": \"The article contains meaningful discourse linking Gaza-related hostages, Hamas, Palestine, Zionism, antisemitism, and campus protest activity to debates over immigration and deportation. However, its central subject is U.S. immigration policy and crime, so it is peripheral rather than core conflict coverage.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T06:01:50Z",
+  "duration_seconds": 5.005,
+  "error": null
+}

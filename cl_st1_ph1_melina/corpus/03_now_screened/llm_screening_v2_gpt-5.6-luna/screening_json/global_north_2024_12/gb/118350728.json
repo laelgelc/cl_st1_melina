@@ -1,0 +1,65 @@
+{
+  "article_id": "118350728",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_12/gb/118350728.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_12/gb/118350728.json"
+  },
+  "manifest_row": {
+    "article_id": "118350728",
+    "group": "global_north_2024_12",
+    "country_code": "gb",
+    "filepath": "corpus/02_now_organised/global_north_2024_12/gb/118350728.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.97,
+    "gaza_role": "passing",
+    "main_topic": "US congressional investigation into the origins of Covid-19 and the pandemic response",
+    "conflict_relevance": "An unrelated embedded latest-stories item reports Donald Trump's demand for the release of Israeli hostages held in Gaza and references Israel's campaign against Hamas.",
+    "reason": "The main article is entirely about Covid-19, the lab-leak theory, and US pandemic policy. However, a substantive embedded news snippet concerns Gaza hostages and the Israel-Hamas war, making the item marginally useful for broader conflict discourse analysis but not suitable for the main corpus.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "9eccb9d4625733150b3efab04d732790b80bddcbbacca833747c5c60df26e966",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "0264c66ab678b5dce288622e4fc93322058651ab1e2cd8d392a5b9fcb1c87422",
+    "raw_response_text_sha256": "c7460226a6414113f87944ec101b8b5858ffaff7828527203eabc897309ca8ae"
+  },
+  "api_metadata": {
+    "id": "resp_03378d85c8214f9c006aaa1d378d3887d29d045b386eff1b9e",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789533495.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1807,
+      "input_tokens_details": {
+        "cache_write_tokens": 1804,
+        "cached_tokens": 0
+      },
+      "output_tokens": 319,
+      "output_tokens_details": {
+        "reasoning_tokens": 142
+      },
+      "total_tokens": 2126
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.97,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"US congressional investigation into the origins of Covid-19 and the pandemic response\",\n  \"conflict_relevance\": \"An unrelated embedded latest-stories item reports Donald Trump's demand for the release of Israeli hostages held in Gaza and references Israel's campaign against Hamas.\",\n  \"reason\": \"The main article is entirely about Covid-19, the lab-leak theory, and US pandemic policy. However, a substantive embedded news snippet concerns Gaza hostages and the Israel-Hamas war, making the item marginally useful for broader conflict discourse analysis but not suitable for the main corpus.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T04:38:19Z",
+  "duration_seconds": 3.891,
+  "error": null
+}

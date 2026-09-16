@@ -1,0 +1,65 @@
+{
+  "article_id": "124001020",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_south_2025_04/in/124001020.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_south_2025_04/in/124001020.json"
+  },
+  "manifest_row": {
+    "article_id": "124001020",
+    "group": "global_south_2025_04",
+    "country_code": "in",
+    "filepath": "corpus/02_now_organised/global_south_2025_04/in/124001020.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.97,
+    "gaza_role": "background",
+    "main_topic": "Global vaccination, infectious disease outbreaks, and declining public-health funding",
+    "conflict_relevance": "Gaza is mentioned as an example of a conflict zone where funding shortages impede childhood vaccination efforts.",
+    "reason": "The article is primarily about vaccine hesitancy, measles outbreaks, and international health funding, but it contains a meaningful humanitarian reference to vaccination access for children in Gaza.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "8762167dc02faeea2fa66fca76bbd5db1070e8938168bf56f0db7d5ece9ed7db",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "f18be3440b1c7e1a032a1a3542387a65e20fa59aa33cd58ccd8360a4389b8ba4",
+    "raw_response_text_sha256": "c726065df9d84e0f6008b95629d946349701b09e11cde8652fe8881b73c3856d"
+  },
+  "api_metadata": {
+    "id": "resp_0804a35b1341980f006aaa47bbe2e887d1bcafd5aa100d6205",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789544379.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1229,
+      "input_tokens_details": {
+        "cache_write_tokens": 1226,
+        "cached_tokens": 0
+      },
+      "output_tokens": 210,
+      "output_tokens_details": {
+        "reasoning_tokens": 69
+      },
+      "total_tokens": 1439
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.97,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Global vaccination, infectious disease outbreaks, and declining public-health funding\",\n  \"conflict_relevance\": \"Gaza is mentioned as an example of a conflict zone where funding shortages impede childhood vaccination efforts.\",\n  \"reason\": \"The article is primarily about vaccine hesitancy, measles outbreaks, and international health funding, but it contains a meaningful humanitarian reference to vaccination access for children in Gaza.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T07:39:42Z",
+  "duration_seconds": 2.919,
+  "error": null
+}

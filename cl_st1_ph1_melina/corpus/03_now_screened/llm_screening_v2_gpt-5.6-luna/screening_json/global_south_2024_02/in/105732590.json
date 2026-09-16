@@ -1,0 +1,65 @@
+{
+  "article_id": "105732590",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_south_2024_02/in/105732590.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_south_2024_02/in/105732590.json"
+  },
+  "manifest_row": {
+    "article_id": "105732590",
+    "group": "global_south_2024_02",
+    "country_code": "in",
+    "filepath": "corpus/02_now_organised/global_south_2024_02/in/105732590.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "substantial",
+    "main_topic": "Pakistan general elections, political violence, and the crackdown on Imran Khan's PTI",
+    "conflict_relevance": "The main article is about Pakistan's elections, but the text also contains a substantial unrelated article about pro-Palestine protests, Gaza, Israel-Hamas conflict discourse, antisemitism, Islamophobia, free speech, and campus politics in the United States.",
+    "reason": "The headline and opening section concern Pakistan's elections rather than Gaza or Israel/Palestine. However, a lengthy embedded article provides meaningful material for studying public discourse surrounding Gaza, Palestine, campus protests, Zionism, antisemitism, Islamophobia, and institutional responses. Because the conflict-related material is not the main article's subject, this is peripheral rather than core.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "c8fe1450829b3f1bad973289c57c6d51015b7b8f07ffcaa8a1dc858fa3e848da",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "54484b9d41c058a99aa40a98a11d6ea455c3556044f7eb9917d6753407a27114",
+    "raw_response_text_sha256": "0d1d29aab356d105f91c88a2a37a7fa3c9ae3e1ead99020760ef008d1c68652b"
+  },
+  "api_metadata": {
+    "id": "resp_0eedb87c5f4c5cd1006aaa38c059f487d18ef93faf51b47b27",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789540544.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 6625,
+      "input_tokens_details": {
+        "cache_write_tokens": 6622,
+        "cached_tokens": 0
+      },
+      "output_tokens": 476,
+      "output_tokens_details": {
+        "reasoning_tokens": 256
+      },
+      "total_tokens": 7101
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"substantial\",\n  \"main_topic\": \"Pakistan general elections, political violence, and the crackdown on Imran Khan's PTI\",\n  \"conflict_relevance\": \"The main article is about Pakistan's elections, but the text also contains a substantial unrelated article about pro-Palestine protests, Gaza, Israel-Hamas conflict discourse, antisemitism, Islamophobia, free speech, and campus politics in the United States.\",\n  \"reason\": \"The headline and opening section concern Pakistan's elections rather than Gaza or Israel/Palestine. However, a lengthy embedded article provides meaningful material for studying public discourse surrounding Gaza, Palestine, campus protests, Zionism, antisemitism, Islamophobia, and institutional responses. Because the conflict-related material is not the main article's subject, this is peripheral rather than core.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T06:35:50Z",
+  "duration_seconds": 6.155,
+  "error": null
+}

@@ -1,0 +1,65 @@
+{
+  "article_id": "200017683",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_11/us/200017683.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_11/us/200017683.json"
+  },
+  "manifest_row": {
+    "article_id": "200017683",
+    "group": "global_north_2023_11",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2023_11/us/200017683.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "passing",
+    "main_topic": "Jeff Zucker's prospective acquisition of the UK Telegraph Group and Spectator",
+    "conflict_relevance": "The article briefly references the Israel-Gaza war as an example of major news coverage that Zucker missed while away from CNN, but the article is primarily about media ownership and business.",
+    "reason": "The Israel-Gaza war appears in a meaningful but isolated sentence within an article focused on Jeff Zucker's return to media and the proposed Telegraph acquisition. It is relevant to broader media-discourse research but not to the main conflict corpus.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "f3e0befc03b6f47b4f0517734266aa9d1107578ce996ea65bb2fd7518b7cfec9",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "66158ba1b466d71a6e74ccb84e2cf8e60dba0767b425a1dc2b0d8dbd40051e67",
+    "raw_response_text_sha256": "a10bdb02720e02f3c32c0231f9379a485652d8537d3b74a98c2d3a7ad82d4811"
+  },
+  "api_metadata": {
+    "id": "resp_094b2515d151696e006aa9ff571c9c87d2a3d511595033d82d",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789525847.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1211,
+      "input_tokens_details": {
+        "cache_write_tokens": 1208,
+        "cached_tokens": 0
+      },
+      "output_tokens": 205,
+      "output_tokens_details": {
+        "reasoning_tokens": 35
+      },
+      "total_tokens": 1416
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Jeff Zucker's prospective acquisition of the UK Telegraph Group and Spectator\",\n  \"conflict_relevance\": \"The article briefly references the Israel-Gaza war as an example of major news coverage that Zucker missed while away from CNN, but the article is primarily about media ownership and business.\",\n  \"reason\": \"The Israel-Gaza war appears in a meaningful but isolated sentence within an article focused on Jeff Zucker's return to media and the proposed Telegraph acquisition. It is relevant to broader media-discourse research but not to the main conflict corpus.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:30:50Z",
+  "duration_seconds": 3.44,
+  "error": null
+}

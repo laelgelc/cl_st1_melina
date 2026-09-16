@@ -1,0 +1,65 @@
+{
+  "article_id": "115985419",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_10/us/115985419.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_10/us/115985419.json"
+  },
+  "manifest_row": {
+    "article_id": "115985419",
+    "group": "global_north_2024_10",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2024_10/us/115985419.txt"
+  },
+  "screening": {
+    "category": "CORE",
+    "confidence": 0.99,
+    "gaza_role": "substantial",
+    "main_topic": "Israeli military and diplomatic actions involving Gaza, Lebanon, Iran, and humanitarian access for wounded Gazans",
+    "conflict_relevance": "The text contains substantial coverage of Israel's war-related military operations, US-Israel diplomatic concerns, humanitarian assistance and evacuation from Gaza, and related regional conflict dynamics.",
+    "reason": "Although the article combines several news items, multiple sections directly address Gaza's humanitarian situation and the evacuation of wounded Gazans, while the remaining sections concern closely connected Israeli military and regional conflict developments.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": true
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "418e48c2d2884ba5c8c1d92dfa8ee8d0aacf099c278c1d92928d7ba8a648323e",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "eb7354a6e51d32ea6737102d55ac13da7c20132827b5569e89ee8751436404b7",
+    "raw_response_text_sha256": "823c5187d7e4c1a45cd4a98c3fd602b9d82e86dbffc32b1acff05a394cba6c0f"
+  },
+  "api_metadata": {
+    "id": "resp_0b8ccff037807152006aaa1956089487d2ad2e7b7e5bcd699d",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789532502.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1649,
+      "input_tokens_details": {
+        "cache_write_tokens": 1646,
+        "cached_tokens": 0
+      },
+      "output_tokens": 287,
+      "output_tokens_details": {
+        "reasoning_tokens": 122
+      },
+      "total_tokens": 1936
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"CORE\",\n  \"confidence\": 0.99,\n  \"gaza_role\": \"substantial\",\n  \"main_topic\": \"Israeli military and diplomatic actions involving Gaza, Lebanon, Iran, and humanitarian access for wounded Gazans\",\n  \"conflict_relevance\": \"The text contains substantial coverage of Israel's war-related military operations, US-Israel diplomatic concerns, humanitarian assistance and evacuation from Gaza, and related regional conflict dynamics.\",\n  \"reason\": \"Although the article combines several news items, multiple sections directly address Gaza's humanitarian situation and the evacuation of wounded Gazans, while the remaining sections concern closely connected Israeli military and regional conflict developments.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": true\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T04:21:45Z",
+  "duration_seconds": 3.486,
+  "error": null
+}

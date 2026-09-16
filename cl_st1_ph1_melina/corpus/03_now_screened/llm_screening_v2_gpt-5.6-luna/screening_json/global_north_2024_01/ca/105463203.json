@@ -1,0 +1,65 @@
+{
+  "article_id": "105463203",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_01/ca/105463203.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_01/ca/105463203.json"
+  },
+  "manifest_row": {
+    "article_id": "105463203",
+    "group": "global_north_2024_01",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2024_01/ca/105463203.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.96,
+    "gaza_role": "background",
+    "main_topic": "How to stream the Detroit Lions versus San Francisco 49ers NFC Championship game",
+    "conflict_relevance": "The main article is unrelated to the conflict, but an embedded 'Latest Stories' section includes substantive snippets about the Israel-Hamas war, hostage negotiations, and risks to humanitarian aid in Gaza following funding pauses to UNRWA.",
+    "reason": "The headline article is focused entirely on NFL streaming options. However, the appended news roundup contains several meaningful conflict-related items, making the page potentially useful for peripheral discourse analysis rather than core conflict coverage.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "05d9d1c2aebe2fd4189db37f39b697b3c66ac6c993e84d21311b0f50267d4cd3",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "2a034b8088091251062f0aa0b06910d44edc34d323259f5c3187c683df4b1ddd",
+    "raw_response_text_sha256": "87df3d8e28d9f045500954ba80b9d519c0441b1cc17d4cdb5690b453bbf64cbd"
+  },
+  "api_metadata": {
+    "id": "resp_0ffe4f50d1ff73f4006aaa03bf582487d28da4a937b2e27264",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789526975.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2560,
+      "input_tokens_details": {
+        "cache_write_tokens": 2557,
+        "cached_tokens": 0
+      },
+      "output_tokens": 300,
+      "output_tokens_details": {
+        "reasoning_tokens": 125
+      },
+      "total_tokens": 2860
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.96,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"How to stream the Detroit Lions versus San Francisco 49ers NFC Championship game\",\n  \"conflict_relevance\": \"The main article is unrelated to the conflict, but an embedded 'Latest Stories' section includes substantive snippets about the Israel-Hamas war, hostage negotiations, and risks to humanitarian aid in Gaza following funding pauses to UNRWA.\",\n  \"reason\": \"The headline article is focused entirely on NFL streaming options. However, the appended news roundup contains several meaningful conflict-related items, making the page potentially useful for peripheral discourse analysis rather than core conflict coverage.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:49:39Z",
+  "duration_seconds": 3.959,
+  "error": null
+}

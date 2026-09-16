@@ -1,0 +1,65 @@
+{
+  "article_id": "104265617",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_12/us/104265617.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_12/us/104265617.json"
+  },
+  "manifest_row": {
+    "article_id": "104265617",
+    "group": "global_north_2023_12",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2023_12/us/104265617.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "background",
+    "main_topic": "The careers and leadership challenges of U.S. House speakers, especially Kevin McCarthy and Nancy Pelosi",
+    "conflict_relevance": "The article's main subject is U.S. congressional leadership, but its newsletter roundup includes meaningful discussion of Israel's war in Gaza, U.S. support for Israel, international anger, and Gaza cease-fire protests in Los Angeles.",
+    "reason": "Gaza-related material appears in substantive newsletter items but is not central to the main article, which focuses on the durability and political struggles of House speakers.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "87058957b5f1ad657bf6a2cfa8869ffd00358b9985ef7f45ad33691933b19a9d",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "e5bc20ae5308972d8d30465a840a597f3af08fcbae63e3ee4c92bf31f79ed91c",
+    "raw_response_text_sha256": "f84cfa98bc057c4acb62edcfa54668221de8239e6c3f928fbf8be3c6aaad183b"
+  },
+  "api_metadata": {
+    "id": "resp_04daa87926f63444006aaa021902b487d28f8f7e493c2b91e7",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789526553.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2249,
+      "input_tokens_details": {
+        "cache_write_tokens": 2246,
+        "cached_tokens": 0
+      },
+      "output_tokens": 274,
+      "output_tokens_details": {
+        "reasoning_tokens": 104
+      },
+      "total_tokens": 2523
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"The careers and leadership challenges of U.S. House speakers, especially Kevin McCarthy and Nancy Pelosi\",\n  \"conflict_relevance\": \"The article's main subject is U.S. congressional leadership, but its newsletter roundup includes meaningful discussion of Israel's war in Gaza, U.S. support for Israel, international anger, and Gaza cease-fire protests in Los Angeles.\",\n  \"reason\": \"Gaza-related material appears in substantive newsletter items but is not central to the main article, which focuses on the durability and political struggles of House speakers.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:42:37Z",
+  "duration_seconds": 4.471,
+  "error": null
+}

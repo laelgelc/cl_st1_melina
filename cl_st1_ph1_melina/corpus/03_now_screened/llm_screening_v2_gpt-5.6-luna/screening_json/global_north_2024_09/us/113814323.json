@@ -1,0 +1,65 @@
+{
+  "article_id": "113814323",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_09/us/113814323.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_09/us/113814323.json"
+  },
+  "manifest_row": {
+    "article_id": "113814323",
+    "group": "global_north_2024_09",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2024_09/us/113814323.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "background",
+    "main_topic": "Israeli strikes on targets in Syria and tensions involving Iran-backed groups",
+    "conflict_relevance": "The article is primarily about Israeli military action in Syria, but it situates Hezbollah's clashes with Israel within the context of Israel's war against Hamas in Gaza.",
+    "reason": "Gaza and the Israel-Hamas war provide meaningful regional context, but the article is not centrally about Gaza, Palestinians, or the Israel-Palestine conflict.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "296bb940ab4a842435a12b126cd41f52d2c5538a406b4218da02be8cf986c7e8",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "dd33b3a16a1763ed018374e764ddde3524d90eb64f7a9b9be55ff5f9b7d1b0ed",
+    "raw_response_text_sha256": "77d6b44707d5973bf3a86e97190124c0e4552aaaec1cae0cd8e720230cd869c4"
+  },
+  "api_metadata": {
+    "id": "resp_01d4fbea744c77b2006aaa16df588487d28d4ad91046a18013",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789531871.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 901,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 206,
+      "output_tokens_details": {
+        "reasoning_tokens": 52
+      },
+      "total_tokens": 1107
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Israeli strikes on targets in Syria and tensions involving Iran-backed groups\",\n  \"conflict_relevance\": \"The article is primarily about Israeli military action in Syria, but it situates Hezbollah's clashes with Israel within the context of Israel's war against Hamas in Gaza.\",\n  \"reason\": \"Gaza and the Israel-Hamas war provide meaningful regional context, but the article is not centrally about Gaza, Palestinians, or the Israel-Palestine conflict.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T04:11:14Z",
+  "duration_seconds": 3.633,
+  "error": null
+}

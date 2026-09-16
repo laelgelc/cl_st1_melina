@@ -1,0 +1,65 @@
+{
+  "article_id": "102701697",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_10/us/102701697.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_10/us/102701697.json"
+  },
+  "manifest_row": {
+    "article_id": "102701697",
+    "group": "global_north_2023_10",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2023_10/us/102701697.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "background",
+    "main_topic": "Activist investing and private equity, with an embedded discussion of Meta and Threads content moderation",
+    "conflict_relevance": "The main article concerns investment strategy, but a substantial embedded section discusses Meta's management of content, misinformation, and policy enforcement related to the Israel-Hamas war.",
+    "reason": "The conflict material is meaningful and detailed but appears as an unrelated embedded news item rather than the central subject of the article.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "95ebca92d7590bdaf06c6b47501590ee06235cf572a98a3b2e3ce3967edc948a",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "bc6a16a3c7897d80bf6332c9b5adb48264469f11bab1369a63221375fb2dd4a1",
+    "raw_response_text_sha256": "0cfcf2470ab40a655ae6b7fd478028a216ac07615457cd9daf13c51880f5f84e"
+  },
+  "api_metadata": {
+    "id": "resp_0894d7b60d0232cb006aa9f9073f2487d2afc7b6c7f740d71b",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789524231.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1511,
+      "input_tokens_details": {
+        "cache_write_tokens": 1508,
+        "cached_tokens": 0
+      },
+      "output_tokens": 317,
+      "output_tokens_details": {
+        "reasoning_tokens": 168
+      },
+      "total_tokens": 1828
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Activist investing and private equity, with an embedded discussion of Meta and Threads content moderation\",\n  \"conflict_relevance\": \"The main article concerns investment strategy, but a substantial embedded section discusses Meta's management of content, misinformation, and policy enforcement related to the Israel-Hamas war.\",\n  \"reason\": \"The conflict material is meaningful and detailed but appears as an unrelated embedded news item rather than the central subject of the article.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:03:55Z",
+  "duration_seconds": 4.206,
+  "error": null
+}

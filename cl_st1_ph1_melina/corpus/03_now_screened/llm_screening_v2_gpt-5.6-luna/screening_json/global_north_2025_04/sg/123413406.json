@@ -1,0 +1,65 @@
+{
+  "article_id": "123413406",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_04/sg/123413406.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_04/sg/123413406.json"
+  },
+  "manifest_row": {
+    "article_id": "123413406",
+    "group": "global_north_2025_04",
+    "country_code": "sg",
+    "filepath": "corpus/02_now_organised/global_north_2025_04/sg/123413406.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.96,
+    "gaza_role": "passing",
+    "main_topic": "A roundup of international news photographs and current events",
+    "conflict_relevance": "Includes a substantive photograph caption describing an Israeli strike in Gaza, the stated target, and reported civilian deaths, but Gaza is only one item among many unrelated images.",
+    "reason": "The article is primarily a global photo roundup rather than conflict coverage. Its Gaza caption contains meaningful conflict-related information, making it peripheral rather than wholly incidental or boilerplate.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "9ddefc2f0146f7ade2d6e25037c86ff685ec2ca35e34fc24512e126fb02ae01d",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "3cd5ebd09ca551dd6ee72c8a17b738012087e9e7589aafe7df6c818622bab059",
+    "raw_response_text_sha256": "8764f2e1913d79d9941a0c8b76057ba4524139564d6a280037f77e983f9002e5"
+  },
+  "api_metadata": {
+    "id": "resp_064259c5cf4dfdc8006aaa29b8f3e487d18711bb539e06f18a",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789536697.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1121,
+      "input_tokens_details": {
+        "cache_write_tokens": 1118,
+        "cached_tokens": 0
+      },
+      "output_tokens": 312,
+      "output_tokens_details": {
+        "reasoning_tokens": 162
+      },
+      "total_tokens": 1433
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.96,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"A roundup of international news photographs and current events\",\n  \"conflict_relevance\": \"Includes a substantive photograph caption describing an Israeli strike in Gaza, the stated target, and reported civilian deaths, but Gaza is only one item among many unrelated images.\",\n  \"reason\": \"The article is primarily a global photo roundup rather than conflict coverage. Its Gaza caption contains meaningful conflict-related information, making it peripheral rather than wholly incidental or boilerplate.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T05:31:40Z",
+  "duration_seconds": 4.426,
+  "error": null
+}

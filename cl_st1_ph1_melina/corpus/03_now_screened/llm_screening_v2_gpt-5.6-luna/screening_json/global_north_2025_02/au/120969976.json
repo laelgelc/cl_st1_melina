@@ -1,0 +1,65 @@
+{
+  "article_id": "120969976",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_02/au/120969976.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_02/au/120969976.json"
+  },
+  "manifest_row": {
+    "article_id": "120969976",
+    "group": "global_north_2025_02",
+    "country_code": "au",
+    "filepath": "corpus/02_now_organised/global_north_2025_02/au/120969976.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.94,
+    "gaza_role": "background",
+    "main_topic": "Letters to the editor covering Australian politics, public affairs, and current events",
+    "conflict_relevance": "The roundup includes several substantive letters debating Israel's Gaza war, allegations of genocide and ethnic cleansing, Palestinian resilience, Trump's proposed takeover of Gaza, and the international response.",
+    "reason": "The article is a multi-topic letters roundup whose headline and primary subject concern UFC funding and NSW politics. However, multiple embedded letters contain meaningful discourse about Gaza, Israel, Palestinians, Trump, and the war, making it relevant for peripheral discourse analysis rather than the main conflict corpus.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "6c97c7272f81dcc6fd2e1ae50e3cf90cd17d2f3fb23d07c8a61242efcc288e92",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "2d3e37f312fda3a0cb01965df0d896545da9f181ac7681b24e33eef8d2a42d2e",
+    "raw_response_text_sha256": "783bbcd8421a1af7545b8851303d6d5c2e516e615387b22b1be2043b87ba808a"
+  },
+  "api_metadata": {
+    "id": "resp_034c5cc17aa5784f006aaa21fe755c87d28d3204ad342bf3ab",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789534718.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 4299,
+      "input_tokens_details": {
+        "cache_write_tokens": 4296,
+        "cached_tokens": 0
+      },
+      "output_tokens": 536,
+      "output_tokens_details": {
+        "reasoning_tokens": 358
+      },
+      "total_tokens": 4835
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.94,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Letters to the editor covering Australian politics, public affairs, and current events\",\n  \"conflict_relevance\": \"The roundup includes several substantive letters debating Israel's Gaza war, allegations of genocide and ethnic cleansing, Palestinian resilience, Trump's proposed takeover of Gaza, and the international response.\",\n  \"reason\": \"The article is a multi-topic letters roundup whose headline and primary subject concern UFC funding and NSW politics. However, multiple embedded letters contain meaningful discourse about Gaza, Israel, Palestinians, Trump, and the war, making it relevant for peripheral discourse analysis rather than the main conflict corpus.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T04:58:45Z",
+  "duration_seconds": 7.245,
+  "error": null
+}

@@ -1,0 +1,65 @@
+{
+  "article_id": "122584436",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_south_2025_03/in/122584436.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_south_2025_03/in/122584436.json"
+  },
+  "manifest_row": {
+    "article_id": "122584436",
+    "group": "global_south_2025_03",
+    "country_code": "in",
+    "filepath": "corpus/02_now_organised/global_south_2025_03/in/122584436.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "passing",
+    "main_topic": "A multi-topic news aggregation containing sports, entertainment, technology, politics, and other brief reports",
+    "conflict_relevance": "The text includes a substantive but isolated report that Hamas fired rockets at Israel after the collapse of a ceasefire and that Israeli airstrikes increased Gaza's death toll.",
+    "reason": "The article is overwhelmingly composed of unrelated news snippets. Gaza and Hamas appear in one meaningful embedded report, making it relevant to broader conflict discourse but not suitable as core conflict coverage.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "a6f9862ac96b604e3e3389b506121520d83b389092023349fd4668fef0684b3c",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "f2c04694d7caadec3ee7d57289bf0e54af03327f26f62191727f885417e0eaab",
+    "raw_response_text_sha256": "f8e98e3752f7a6e9cfb8efa6bf813130d0333fd89fbdef754f3178d74ecf003d"
+  },
+  "api_metadata": {
+    "id": "resp_031434eb37c1e812006aaa468d2c7087d1a0ec8ff1ab524e1d",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789544077.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 4353,
+      "input_tokens_details": {
+        "cache_write_tokens": 4350,
+        "cached_tokens": 0
+      },
+      "output_tokens": 319,
+      "output_tokens_details": {
+        "reasoning_tokens": 157
+      },
+      "total_tokens": 4672
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"A multi-topic news aggregation containing sports, entertainment, technology, politics, and other brief reports\",\n  \"conflict_relevance\": \"The text includes a substantive but isolated report that Hamas fired rockets at Israel after the collapse of a ceasefire and that Israeli airstrikes increased Gaza's death toll.\",\n  \"reason\": \"The article is overwhelmingly composed of unrelated news snippets. Gaza and Hamas appear in one meaningful embedded report, making it relevant to broader conflict discourse but not suitable as core conflict coverage.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T07:34:41Z",
+  "duration_seconds": 4.966,
+  "error": null
+}

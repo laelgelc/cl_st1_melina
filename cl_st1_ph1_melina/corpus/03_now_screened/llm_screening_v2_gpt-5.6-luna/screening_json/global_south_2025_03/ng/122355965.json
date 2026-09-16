@@ -1,0 +1,65 @@
+{
+  "article_id": "122355965",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_south_2025_03/ng/122355965.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_south_2025_03/ng/122355965.json"
+  },
+  "manifest_row": {
+    "article_id": "122355965",
+    "group": "global_south_2025_03",
+    "country_code": "ng",
+    "filepath": "corpus/02_now_organised/global_south_2025_03/ng/122355965.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.97,
+    "gaza_role": "background",
+    "main_topic": "Review of Davido's song \"Be There Still\" and his musical career",
+    "conflict_relevance": "The main article is unrelated to the Gaza conflict, but an embedded Guardian Life news snippet briefly reports on Hamas, an Israeli-American hostage, and Gaza ceasefire talks.",
+    "reason": "The headline article is a music review. However, the surrounding article text contains a substantive but unrelated Gaza ceasefire and hostage-news item, making the material marginally useful for broader discourse analysis but unsuitable for the core corpus.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "571bcb25990b37585e978a2d40881d33607205e79c0f065ee66acdbf69a7e3c7",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "c8a1dd59e97ab00529ade91a50132baa3b5957bea919dc9976b072ce292d5acb",
+    "raw_response_text_sha256": "e33005ed4c0f7f5390d9b766dce0ac066b61d1295dd817c3595f19e35220a186"
+  },
+  "api_metadata": {
+    "id": "resp_04641cfad216f701006aaa46e1d2e487d1ae736212c31fcdf7",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789544161.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2385,
+      "input_tokens_details": {
+        "cache_write_tokens": 2382,
+        "cached_tokens": 0
+      },
+      "output_tokens": 258,
+      "output_tokens_details": {
+        "reasoning_tokens": 90
+      },
+      "total_tokens": 2643
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.97,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Review of Davido's song \\\"Be There Still\\\" and his musical career\",\n  \"conflict_relevance\": \"The main article is unrelated to the Gaza conflict, but an embedded Guardian Life news snippet briefly reports on Hamas, an Israeli-American hostage, and Gaza ceasefire talks.\",\n  \"reason\": \"The headline article is a music review. However, the surrounding article text contains a substantive but unrelated Gaza ceasefire and hostage-news item, making the material marginally useful for broader discourse analysis but unsuitable for the core corpus.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T07:36:05Z",
+  "duration_seconds": 3.761,
+  "error": null
+}

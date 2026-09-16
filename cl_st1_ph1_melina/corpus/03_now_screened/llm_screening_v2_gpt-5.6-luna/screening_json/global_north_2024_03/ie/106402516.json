@@ -1,0 +1,65 @@
+{
+  "article_id": "106402516",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_03/ie/106402516.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_03/ie/106402516.json"
+  },
+  "manifest_row": {
+    "article_id": "106402516",
+    "group": "global_north_2024_03",
+    "country_code": "ie",
+    "filepath": "corpus/02_now_organised/global_north_2024_03/ie/106402516.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.9,
+    "gaza_role": "background",
+    "main_topic": "Daily news roundup covering Irish domestic affairs and selected international news",
+    "conflict_relevance": "Includes a substantive news item about US calls for a ceasefire in Gaza, humanitarian conditions, aid deliveries, famine, and Israel's military campaign.",
+    "reason": "The article is primarily a multi-topic 60-second news summary rather than coverage centered on Gaza. However, its Gaza item contains meaningful conflict-related discourse, making it useful as peripheral material.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "0e3b264d10c76607b926b013a777c4490ea0ea53bde736851eca81716b207ec9",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "b3b06296bdf1c0576e1e5736c26397f68fcccaf49ebd9694b707ee8673861a75",
+    "raw_response_text_sha256": "31876ca71224f047599ba08b8e4362469e7a7079d9bf31e552076d82beee310b"
+  },
+  "api_metadata": {
+    "id": "resp_008d31c0d2c7cfda006aaa0901167887d2bdbe042e8691c6a6",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789528321.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1582,
+      "input_tokens_details": {
+        "cache_write_tokens": 1579,
+        "cached_tokens": 0
+      },
+      "output_tokens": 384,
+      "output_tokens_details": {
+        "reasoning_tokens": 231
+      },
+      "total_tokens": 1966
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.9,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Daily news roundup covering Irish domestic affairs and selected international news\",\n  \"conflict_relevance\": \"Includes a substantive news item about US calls for a ceasefire in Gaza, humanitarian conditions, aid deliveries, famine, and Israel's military campaign.\",\n  \"reason\": \"The article is primarily a multi-topic 60-second news summary rather than coverage centered on Gaza. However, its Gaza item contains meaningful conflict-related discourse, making it useful as peripheral material.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:12:05Z",
+  "duration_seconds": 4.354,
+  "error": null
+}

@@ -1,0 +1,65 @@
+{
+  "article_id": "200392916",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_04/us/200392916.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_04/us/200392916.json"
+  },
+  "manifest_row": {
+    "article_id": "200392916",
+    "group": "global_north_2024_04",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2024_04/us/200392916.txt"
+  },
+  "screening": {
+    "category": "CORE",
+    "confidence": 0.9,
+    "gaza_role": "background",
+    "main_topic": "Iranian drone and missile attacks on Israel and the resulting regional escalation",
+    "conflict_relevance": "The article centrally covers military action involving Israel and explicitly situates the Iran-Israel confrontation within the broader Israel-Hamas war and regional conflict involving Gaza.",
+    "reason": "Although the immediate focus is Iran's attack on Israel rather than Gaza itself, it concerns directly connected military escalation, Israeli defense operations, regional actors, and the broader war context involving Palestinians in Gaza.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": true
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "20537a77cb4412b543210ebb82c02f52a24fa2250b4da56166de860287218f76",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "f2849b8541e0ae43f6f229184e5fb7383035b4f83d00f7147b29c69b0cb608c7",
+    "raw_response_text_sha256": "906e21f96cf7473192fcd055e2cefd054a372571c43fa5ea690adb5cd0270412"
+  },
+  "api_metadata": {
+    "id": "resp_0dddeef9f10f189f006aaa0cd2318887d2a237f2b220d68bd4",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789529298.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2170,
+      "input_tokens_details": {
+        "cache_write_tokens": 2167,
+        "cached_tokens": 0
+      },
+      "output_tokens": 320,
+      "output_tokens_details": {
+        "reasoning_tokens": 164
+      },
+      "total_tokens": 2490
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"CORE\",\n  \"confidence\": 0.9,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Iranian drone and missile attacks on Israel and the resulting regional escalation\",\n  \"conflict_relevance\": \"The article centrally covers military action involving Israel and explicitly situates the Iran-Israel confrontation within the broader Israel-Hamas war and regional conflict involving Gaza.\",\n  \"reason\": \"Although the immediate focus is Iran's attack on Israel rather than Gaza itself, it concerns directly connected military escalation, Israeli defense operations, regional actors, and the broader war context involving Palestinians in Gaza.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": true\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:28:23Z",
+  "duration_seconds": 5.793,
+  "error": null
+}

@@ -1,0 +1,65 @@
+{
+  "article_id": "103145203",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_south_2023_11/pk/103145203.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_south_2023_11/pk/103145203.json"
+  },
+  "manifest_row": {
+    "article_id": "103145203",
+    "group": "global_south_2023_11",
+    "country_code": "pk",
+    "filepath": "corpus/02_now_organised/global_south_2023_11/pk/103145203.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.93,
+    "gaza_role": "substantial",
+    "main_topic": "Pakistan Foreign Office press briefing covering regional security, Gaza, deportation policy, Kashmir, and diplomatic affairs",
+    "conflict_relevance": "The article includes a substantial section on the Gaza humanitarian and military situation, including calls to lift the siege, protect civilians, establish humanitarian corridors, and end Israeli military action, but Gaza is only one topic in a broader press-briefing roundup.",
+    "reason": "Meaningful discourse about Gaza and Israel's military actions is present, but the article is not primarily focused on the conflict as a whole.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "1de98a48eb80a741cb9e342c503c9ce40deb470d3a2eaf7fa54984b3f3362a86",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "42579adb53195dc849b6d4c9f05f9ae3698317333651ad8117606c3f5ced7e55",
+    "raw_response_text_sha256": "fd8869df4e28be84b2a33d64e75b58a40355d7af224d3ee1f61d718b45b09fed"
+  },
+  "api_metadata": {
+    "id": "resp_00f474b389234731006aaa35effd3087d1995a1d08c5e482bb",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789539824.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1604,
+      "input_tokens_details": {
+        "cache_write_tokens": 1601,
+        "cached_tokens": 0
+      },
+      "output_tokens": 313,
+      "output_tokens_details": {
+        "reasoning_tokens": 140
+      },
+      "total_tokens": 1917
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.93,\n  \"gaza_role\": \"substantial\",\n  \"main_topic\": \"Pakistan Foreign Office press briefing covering regional security, Gaza, deportation policy, Kashmir, and diplomatic affairs\",\n  \"conflict_relevance\": \"The article includes a substantial section on the Gaza humanitarian and military situation, including calls to lift the siege, protect civilians, establish humanitarian corridors, and end Israeli military action, but Gaza is only one topic in a broader press-briefing roundup.\",\n  \"reason\": \"Meaningful discourse about Gaza and Israel's military actions is present, but the article is not primarily focused on the conflict as a whole.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T06:23:48Z",
+  "duration_seconds": 4.173,
+  "error": null
+}

@@ -1,0 +1,65 @@
+{
+  "article_id": "125060938",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_05/au/125060938.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_05/au/125060938.json"
+  },
+  "manifest_row": {
+    "article_id": "125060938",
+    "group": "global_north_2025_05",
+    "country_code": "au",
+    "filepath": "corpus/02_now_organised/global_north_2025_05/au/125060938.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "substantial",
+    "main_topic": "Mixed morning news bulletin covering floods, the Russia-Ukraine war, Gaza, and football",
+    "conflict_relevance": "Includes a substantive news segment on an Israeli air strike in Gaza that killed nine children, condemnation by the UN special rapporteur, and calls by former world leaders to suspend arms transfers to Israel.",
+    "reason": "The bulletin is not primarily about Gaza because it consists of several unrelated news items, but its Gaza segment contains meaningful reporting on civilian deaths, Israeli military action, international condemnation, and arms-transfer diplomacy.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "7268a2004e70cba948592af5746450c412834409e081bb4235210910281a29bf",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "bf6056ccf266e86912dc1db166a63cb0b8774c41be16c80a86efd52c8b3a8839",
+    "raw_response_text_sha256": "0d6a78ff4e76a5278e2c9df2eb14bc2c08c8404733f1d46a46cc18d1cd4ce7fd"
+  },
+  "api_metadata": {
+    "id": "resp_0d4306614f5d07d2006aaa2b12606887d19096826e6fee1e24",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789537042.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1482,
+      "input_tokens_details": {
+        "cache_write_tokens": 1479,
+        "cached_tokens": 0
+      },
+      "output_tokens": 319,
+      "output_tokens_details": {
+        "reasoning_tokens": 148
+      },
+      "total_tokens": 1801
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"substantial\",\n  \"main_topic\": \"Mixed morning news bulletin covering floods, the Russia-Ukraine war, Gaza, and football\",\n  \"conflict_relevance\": \"Includes a substantive news segment on an Israeli air strike in Gaza that killed nine children, condemnation by the UN special rapporteur, and calls by former world leaders to suspend arms transfers to Israel.\",\n  \"reason\": \"The bulletin is not primarily about Gaza because it consists of several unrelated news items, but its Gaza segment contains meaningful reporting on civilian deaths, Israeli military action, international condemnation, and arms-transfer diplomacy.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T05:37:26Z",
+  "duration_seconds": 4.575,
+  "error": null
+}

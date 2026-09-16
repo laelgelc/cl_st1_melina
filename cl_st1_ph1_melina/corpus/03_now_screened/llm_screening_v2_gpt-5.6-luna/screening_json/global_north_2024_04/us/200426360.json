@@ -1,0 +1,65 @@
+{
+  "article_id": "200426360",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_04/us/200426360.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_04/us/200426360.json"
+  },
+  "manifest_row": {
+    "article_id": "200426360",
+    "group": "global_north_2024_04",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2024_04/us/200426360.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.95,
+    "gaza_role": "background",
+    "main_topic": "A former police officer and school employee accused of murder, rape, and misconduct",
+    "conflict_relevance": "The article includes an embedded news snippet about pro-Palestinian university demonstrations opposing Israel's war with Hamas in Gaza and another brief reference to U.S. aid for Israel.",
+    "reason": "The main article concerns a local murder and allegations of sexual misconduct, not Gaza or the Israel-Palestine conflict. However, the embedded paragraph on pro-Palestinian protests contains meaningful conflict-related discourse, making the item peripheral rather than excludable.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "b48924c3e62194675d4964c99ccd085cd1ec0c1071b993243db3ddb3b1208563",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "87a8880c2cf51f617e97f071fde1860f0c1253f5e47bacb4ae1e1b7bca1cb0fd",
+    "raw_response_text_sha256": "d7bc63b5926d9fb047c69798522c18cbd4dc29648b225eb3e6864a9db38ab8d6"
+  },
+  "api_metadata": {
+    "id": "resp_065aa76b660123c6006aaa0d286a1487d2959b4bcf63fcf9e9",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789529384.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2954,
+      "input_tokens_details": {
+        "cache_write_tokens": 2951,
+        "cached_tokens": 0
+      },
+      "output_tokens": 303,
+      "output_tokens_details": {
+        "reasoning_tokens": 125
+      },
+      "total_tokens": 3257
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.95,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"A former police officer and school employee accused of murder, rape, and misconduct\",\n  \"conflict_relevance\": \"The article includes an embedded news snippet about pro-Palestinian university demonstrations opposing Israel's war with Hamas in Gaza and another brief reference to U.S. aid for Israel.\",\n  \"reason\": \"The main article concerns a local murder and allegations of sexual misconduct, not Gaza or the Israel-Palestine conflict. However, the embedded paragraph on pro-Palestinian protests contains meaningful conflict-related discourse, making the item peripheral rather than excludable.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:29:48Z",
+  "duration_seconds": 4.281,
+  "error": null
+}

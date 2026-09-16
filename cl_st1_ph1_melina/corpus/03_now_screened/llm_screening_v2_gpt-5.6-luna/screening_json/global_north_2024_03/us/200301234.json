@@ -1,0 +1,65 @@
+{
+  "article_id": "200301234",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_03/us/200301234.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_03/us/200301234.json"
+  },
+  "manifest_row": {
+    "article_id": "200301234",
+    "group": "global_north_2024_03",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2024_03/us/200301234.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "gaza_role": "boilerplate_or_unrelated",
+    "main_topic": "Daisy Goodwin, her novel about Maria Callas, feminism, and sexual-harassment allegations",
+    "conflict_relevance": "No meaningful relevance in the main article; Gaza appears only in an unrelated recommended-story snippet about Chuck Schumer criticizing Israel's handling of the war.",
+    "reason": "The article is primarily a profile of Daisy Goodwin and discussion of her literary work and advocacy around sexual harassment. The Gaza reference occurs only in a separate recommended-story item and is not integrated into the article's subject or discourse.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "0a32c39c421b661896a9fc73333c7114cc422eee2af642c90cbb57472eb1c8f6",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "b64b5bb929f195c7c40fcf7fb6d29225f921cb104c7458c23322f774dd89291c",
+    "raw_response_text_sha256": "0648df5798a0ae4b5c01744deaae14d3819b556ce0cd4b01e5f2dbe003eb2014"
+  },
+  "api_metadata": {
+    "id": "resp_0a28790933c2d809006aaa0a685b6c87d2948731dbe6f8158a",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789528680.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 4581,
+      "input_tokens_details": {
+        "cache_write_tokens": 4578,
+        "cached_tokens": 0
+      },
+      "output_tokens": 364,
+      "output_tokens_details": {
+        "reasoning_tokens": 190
+      },
+      "total_tokens": 4945
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"gaza_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Daisy Goodwin, her novel about Maria Callas, feminism, and sexual-harassment allegations\",\n  \"conflict_relevance\": \"No meaningful relevance in the main article; Gaza appears only in an unrelated recommended-story snippet about Chuck Schumer criticizing Israel's handling of the war.\",\n  \"reason\": \"The article is primarily a profile of Daisy Goodwin and discussion of her literary work and advocacy around sexual harassment. The Gaza reference occurs only in a separate recommended-story item and is not integrated into the article's subject or discourse.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:18:04Z",
+  "duration_seconds": 4.683,
+  "error": null
+}

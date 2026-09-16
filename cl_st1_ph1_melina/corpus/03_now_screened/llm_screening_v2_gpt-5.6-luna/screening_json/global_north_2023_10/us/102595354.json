@@ -1,0 +1,65 @@
+{
+  "article_id": "102595354",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_10/us/102595354.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_10/us/102595354.json"
+  },
+  "manifest_row": {
+    "article_id": "102595354",
+    "group": "global_north_2023_10",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2023_10/us/102595354.txt"
+  },
+  "screening": {
+    "category": "CORE",
+    "confidence": 0.98,
+    "gaza_role": "substantial",
+    "main_topic": "Morning news roundup led by Israel's evacuation order for northern Gaza and the humanitarian consequences of the Israel-Hamas war",
+    "conflict_relevance": "The article contains substantial coverage of the Gaza war, including the evacuation order affecting 1.1 million people, Hamas's response, intensified Israeli airstrikes, the siege and shortages of essential supplies, civilian casualties, humanitarian warnings, diplomacy involving Mahmoud Abbas and Antony Blinken, hostages, and global pro-Palestinian protests.",
+    "reason": "Although presented as a broader newsletter roundup, the lead and several detailed paragraphs focus directly on Gaza, military action, humanitarian conditions, international law concerns, diplomacy, and protest responses. This makes it relevant as core conflict coverage.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": true
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "42eb5e55410fe43b54a536d27f42d0883d2d93ffab77ecdd87fbe7c5d9a20aac",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "a5409fe861c91cf8f03f5fe493273a52f333e2d1c04e47e86bc64f37e99770ab",
+    "raw_response_text_sha256": "32676a4bfa899eed86f1a0fe061ea00e9dfd116af237603ab5f3d8789921b8f1"
+  },
+  "api_metadata": {
+    "id": "resp_04a297e86f49a99b006aa9f8ba53f087d28dbb6768a3ddce49",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789524154.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1798,
+      "input_tokens_details": {
+        "cache_write_tokens": 1795,
+        "cached_tokens": 0
+      },
+      "output_tokens": 320,
+      "output_tokens_details": {
+        "reasoning_tokens": 111
+      },
+      "total_tokens": 2118
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"CORE\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"substantial\",\n  \"main_topic\": \"Morning news roundup led by Israel's evacuation order for northern Gaza and the humanitarian consequences of the Israel-Hamas war\",\n  \"conflict_relevance\": \"The article contains substantial coverage of the Gaza war, including the evacuation order affecting 1.1 million people, Hamas's response, intensified Israeli airstrikes, the siege and shortages of essential supplies, civilian casualties, humanitarian warnings, diplomacy involving Mahmoud Abbas and Antony Blinken, hostages, and global pro-Palestinian protests.\",\n  \"reason\": \"Although presented as a broader newsletter roundup, the lead and several detailed paragraphs focus directly on Gaza, military action, humanitarian conditions, international law concerns, diplomacy, and protest responses. This makes it relevant as core conflict coverage.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": true\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:02:39Z",
+  "duration_seconds": 5.136,
+  "error": null
+}

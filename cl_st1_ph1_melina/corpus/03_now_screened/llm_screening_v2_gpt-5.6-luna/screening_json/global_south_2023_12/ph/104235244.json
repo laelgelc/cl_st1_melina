@@ -1,0 +1,65 @@
+{
+  "article_id": "104235244",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_south_2023_12/ph/104235244.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_south_2023_12/ph/104235244.json"
+  },
+  "manifest_row": {
+    "article_id": "104235244",
+    "group": "global_south_2023_12",
+    "country_code": "ph",
+    "filepath": "corpus/02_now_organised/global_south_2023_12/ph/104235244.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.96,
+    "gaza_role": "background",
+    "main_topic": "Philippine military operations and ceasefire policy toward the New People's Army",
+    "conflict_relevance": "The main article concerns the communist insurgency in the Philippines, but it includes substantive embedded references to humanitarian access to Gaza, Hamas, hostages, and Gaza's health system.",
+    "reason": "Gaza-related material is not connected to the headline or main article topic, but the embedded sentences contain meaningful conflict discourse rather than a merely passing or boilerplate mention.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "228c77bfc7c9481c42f424bbe7f0d082ff450241157f08f4c4d3cf0e414fd025",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "d9fd83200c31b550ab8f0a18ea8e88255281e7201c8b06516019a3163201785a",
+    "raw_response_text_sha256": "2c182174ccfdba2b1642a7c3d30ad6fa85bba67320d047eb378e2b932722b769"
+  },
+  "api_metadata": {
+    "id": "resp_053d87dba03b2cea006aaa3736602487d18453da74b91e5ee5",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789540150.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1135,
+      "input_tokens_details": {
+        "cache_write_tokens": 1132,
+        "cached_tokens": 0
+      },
+      "output_tokens": 240,
+      "output_tokens_details": {
+        "reasoning_tokens": 82
+      },
+      "total_tokens": 1375
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.96,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Philippine military operations and ceasefire policy toward the New People's Army\",\n  \"conflict_relevance\": \"The main article concerns the communist insurgency in the Philippines, but it includes substantive embedded references to humanitarian access to Gaza, Hamas, hostages, and Gaza's health system.\",\n  \"reason\": \"Gaza-related material is not connected to the headline or main article topic, but the embedded sentences contain meaningful conflict discourse rather than a merely passing or boilerplate mention.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T06:29:14Z",
+  "duration_seconds": 4.372,
+  "error": null
+}

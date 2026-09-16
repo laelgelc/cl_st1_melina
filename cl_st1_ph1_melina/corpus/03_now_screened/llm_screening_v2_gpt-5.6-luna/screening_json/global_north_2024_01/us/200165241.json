@@ -1,0 +1,65 @@
+{
+  "article_id": "200165241",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_01/us/200165241.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_01/us/200165241.json"
+  },
+  "manifest_row": {
+    "article_id": "200165241",
+    "group": "global_north_2024_01",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2024_01/us/200165241.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.99,
+    "gaza_role": "passing",
+    "main_topic": "Unusual write-in votes in the 2024 New Hampshire presidential primaries",
+    "conflict_relevance": "The article briefly notes that some voters wrote in \"cease-fire\" to draw attention to Israel's war in Gaza, framing it as a protest vote within a broader discussion of unconventional ballots.",
+    "reason": "The article is primarily about offbeat write-in candidates and voter behavior, but it contains a meaningful sentence about Gaza-related cease-fire protest votes. The appended unrelated snippets do not alter the main article's classification.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "0924c94813330debc54fbdf852b43030f6d3e3cc5efe61002b2be5518cf6051f",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "d9e6d931d39823d337ca72e9b873f66f181d1a7a1d79d4cf3315262ab6040a4c",
+    "raw_response_text_sha256": "5769c8b8b6b705c5d5515fd8ec18d70dd749acd152beb95f27b7e0b7b8d288be"
+  },
+  "api_metadata": {
+    "id": "resp_0b279e23628947dc006aaa05b442e487d2a503940dddf77bbf",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789527476.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1726,
+      "input_tokens_details": {
+        "cache_write_tokens": 1723,
+        "cached_tokens": 0
+      },
+      "output_tokens": 246,
+      "output_tokens_details": {
+        "reasoning_tokens": 76
+      },
+      "total_tokens": 1972
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.99,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Unusual write-in votes in the 2024 New Hampshire presidential primaries\",\n  \"conflict_relevance\": \"The article briefly notes that some voters wrote in \\\"cease-fire\\\" to draw attention to Israel's war in Gaza, framing it as a protest vote within a broader discussion of unconventional ballots.\",\n  \"reason\": \"The article is primarily about offbeat write-in candidates and voter behavior, but it contains a meaningful sentence about Gaza-related cease-fire protest votes. The appended unrelated snippets do not alter the main article's classification.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:58:00Z",
+  "duration_seconds": 3.951,
+  "error": null
+}

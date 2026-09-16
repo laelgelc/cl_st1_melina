@@ -1,0 +1,65 @@
+{
+  "article_id": "111201500",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_07/ca/111201500.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_07/ca/111201500.json"
+  },
+  "manifest_row": {
+    "article_id": "111201500",
+    "group": "global_north_2024_07",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2024_07/ca/111201500.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "gaza_role": "passing",
+    "main_topic": "Canadian women's soccer team's Olympic match and a drone-spying scandal",
+    "conflict_relevance": "The article's main subject is Olympic soccer. Gaza appears only in a separate, unrelated snippet about Benjamin Netanyahu's visit to Washington and cease-fire discussions.",
+    "reason": "The Gaza-related content is an incidental embedded news item rather than part of the main article's topic or discourse.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "0ebf120f807beff8b92aa412ebaf9caa7e694e5f0beac2861d50f0cc495c7d35",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "6df75a0dbb19aac6b1036f654a3accb15dea22b7cbf19aa7e4180f3702c9bcef",
+    "raw_response_text_sha256": "05a92c05abdec269400b852712c69efec711fcdd5036be301326b324ee65723b"
+  },
+  "api_metadata": {
+    "id": "resp_0b89935bb47b80c4006aaa1210d8f887d2bcb82b619bd07af6",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789530640.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2324,
+      "input_tokens_details": {
+        "cache_write_tokens": 2321,
+        "cached_tokens": 0
+      },
+      "output_tokens": 252,
+      "output_tokens_details": {
+        "reasoning_tokens": 113
+      },
+      "total_tokens": 2576
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Canadian women's soccer team's Olympic match and a drone-spying scandal\",\n  \"conflict_relevance\": \"The article's main subject is Olympic soccer. Gaza appears only in a separate, unrelated snippet about Benjamin Netanyahu's visit to Washington and cease-fire discussions.\",\n  \"reason\": \"The Gaza-related content is an incidental embedded news item rather than part of the main article's topic or discourse.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:50:44Z",
+  "duration_seconds": 3.837,
+  "error": null
+}

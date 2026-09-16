@@ -1,0 +1,65 @@
+{
+  "article_id": "123595337",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_04/gb/123595337.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_04/gb/123595337.json"
+  },
+  "manifest_row": {
+    "article_id": "123595337",
+    "group": "global_north_2025_04",
+    "country_code": "gb",
+    "filepath": "corpus/02_now_organised/global_north_2025_04/gb/123595337.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.96,
+    "gaza_role": "background",
+    "main_topic": "Iran's nuclear programme, nuclear deterrence, and prospects for US-Iran diplomacy",
+    "conflict_relevance": "The article primarily addresses Iran's nuclear capabilities and regional security, but connects these issues to the Israel-Hamas war, Hamas's support from Iran, Israel's retaliation, and direct Israel-Iran tensions.",
+    "reason": "Gaza and the Israel-Hamas war provide important context for the article's discussion of Iran's regional allies and security calculations, but the article is not centrally about Gaza, Palestine, or the conflict itself.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "405d37f51ce3e6fb793f1545c3de2997f1fc1ac87a955203dc23029666004fe3",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "86b7a0e638fbba6c418743875d02c375d92b084747b755abc46b19c5cd968bc5",
+    "raw_response_text_sha256": "9a12fc1870d515caacbea5ea7e8e74ce7e3d6f58066b2e7991f249563be51772"
+  },
+  "api_metadata": {
+    "id": "resp_03e2be65588401ee006aaa28f5156c87d19bdad6daccdf1ce9",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789536501.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2246,
+      "input_tokens_details": {
+        "cache_write_tokens": 2243,
+        "cached_tokens": 0
+      },
+      "output_tokens": 256,
+      "output_tokens_details": {
+        "reasoning_tokens": 83
+      },
+      "total_tokens": 2502
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.96,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Iran's nuclear programme, nuclear deterrence, and prospects for US-Iran diplomacy\",\n  \"conflict_relevance\": \"The article primarily addresses Iran's nuclear capabilities and regional security, but connects these issues to the Israel-Hamas war, Hamas's support from Iran, Israel's retaliation, and direct Israel-Iran tensions.\",\n  \"reason\": \"Gaza and the Israel-Hamas war provide important context for the article's discussion of Iran's regional allies and security calculations, but the article is not centrally about Gaza, Palestine, or the conflict itself.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T05:28:25Z",
+  "duration_seconds": 4.277,
+  "error": null
+}

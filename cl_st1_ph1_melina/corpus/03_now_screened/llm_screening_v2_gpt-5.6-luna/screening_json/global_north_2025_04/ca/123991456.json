@@ -1,0 +1,65 @@
+{
+  "article_id": "123991456",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_04/ca/123991456.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_04/ca/123991456.json"
+  },
+  "manifest_row": {
+    "article_id": "123991456",
+    "group": "global_north_2025_04",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2025_04/ca/123991456.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.96,
+    "gaza_role": "background",
+    "main_topic": "Passover, liberation, and Jewish historical memory",
+    "conflict_relevance": "The article uses the October 7, 2023 attacks and Israeli hostages held in Gaza as a contemporary religious and communal example of physical and spiritual liberation.",
+    "reason": "Although the article is mainly a Passover reflection and discussion of Jewish religious tradition, it contains meaningful discourse about Hamas, the October 7 attacks, and hostages in Gaza.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "954c060bac148bc88ff468682e3e10f62787899e7f8efad7b513a89d5d27d446",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "1d6c53b6ba67c600c1643e3eed661144ca4c108213b581b285ab37e13ff6cd44",
+    "raw_response_text_sha256": "f087faa39a3f499f91a697a5fa022a0ec2b19c120315301ede1cf515094fc854"
+  },
+  "api_metadata": {
+    "id": "resp_0498099b1339dc30006aaa28999bd887d1a66c42da3b04c225",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789536409.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1342,
+      "input_tokens_details": {
+        "cache_write_tokens": 1339,
+        "cached_tokens": 0
+      },
+      "output_tokens": 249,
+      "output_tokens_details": {
+        "reasoning_tokens": 97
+      },
+      "total_tokens": 1591
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.96,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Passover, liberation, and Jewish historical memory\",\n  \"conflict_relevance\": \"The article uses the October 7, 2023 attacks and Israeli hostages held in Gaza as a contemporary religious and communal example of physical and spiritual liberation.\",\n  \"reason\": \"Although the article is mainly a Passover reflection and discussion of Jewish religious tradition, it contains meaningful discourse about Hamas, the October 7 attacks, and hostages in Gaza.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T05:26:53Z",
+  "duration_seconds": 3.73,
+  "error": null
+}

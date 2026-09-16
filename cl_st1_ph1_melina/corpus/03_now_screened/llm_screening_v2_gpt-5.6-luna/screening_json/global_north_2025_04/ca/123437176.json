@@ -1,0 +1,65 @@
+{
+  "article_id": "123437176",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_04/ca/123437176.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_04/ca/123437176.json"
+  },
+  "manifest_row": {
+    "article_id": "123437176",
+    "group": "global_north_2025_04",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2025_04/ca/123437176.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "passing",
+    "main_topic": "Frank and Oak store closures and search for a buyer or investor",
+    "conflict_relevance": "The article briefly mentions conflict in Gaza as one of several supply-chain factors that delayed inventory shipments.",
+    "reason": "The article is primarily a business report about a Canadian apparel retailer's financial difficulties and store closures. Gaza appears meaningfully but only in a single causal sentence about supply-chain disruption, making it peripheral rather than core.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "2c3c47f768d42e026387027020c69d1b1354bee0e3f2c75dd71eaa8cfc3ef3cf",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "74965f97c33c188aac5181e03deb21f518443959db705dca0fe108e6d9fd55dc",
+    "raw_response_text_sha256": "05b41ef1cc94c85bebf0159735d32b0e0fb857507c743b8d8504c3cc976591af"
+  },
+  "api_metadata": {
+    "id": "resp_0f9613a284599f8a006aaa2880c9a887d1bf044375526559c7",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789536384.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 991,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 147,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 1138
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Frank and Oak store closures and search for a buyer or investor\",\n  \"conflict_relevance\": \"The article briefly mentions conflict in Gaza as one of several supply-chain factors that delayed inventory shipments.\",\n  \"reason\": \"The article is primarily a business report about a Canadian apparel retailer's financial difficulties and store closures. Gaza appears meaningfully but only in a single causal sentence about supply-chain disruption, making it peripheral rather than core.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T05:26:27Z",
+  "duration_seconds": 2.579,
+  "error": null
+}

@@ -1,0 +1,65 @@
+{
+  "article_id": "123678266",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_04/us/123678266.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_04/us/123678266.json"
+  },
+  "manifest_row": {
+    "article_id": "123678266",
+    "group": "global_north_2025_04",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2025_04/us/123678266.txt"
+  },
+  "screening": {
+    "category": "CORE",
+    "confidence": 0.98,
+    "gaza_role": "central",
+    "main_topic": "Hamas's response to an Israeli hostage-deal proposal and related Israel-Hamas war developments",
+    "conflict_relevance": "The article directly concerns Hamas, hostages, cessation of hostilities, Israeli military action, withdrawal from Gaza, and the status of Hamas's weapons.",
+    "reason": "The main headline and substantive text focus on negotiations between Israel and Hamas over a hostage deal and the continuation or cessation of the war in Gaza. The text also contains an unrelated embedded item about US-Israel-Iran relations, indicating article concatenation, but the primary associated article is directly relevant to the conflict.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": true
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "68cb4fe769d227c822dbbb047cc45c0be7bb5d042ae34a11a59804bbad197b46",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "024ef3d46c85a220bb2253d32ea79debdeb9f88472e00f0a5be037738c2572b7",
+    "raw_response_text_sha256": "be8b7f4fe7e4d1ee34e28003e63375faa94f3fe6392bae65844634e030b405d7"
+  },
+  "api_metadata": {
+    "id": "resp_0060939852f81bd3006aaa2a5edd0087d1b55f4a2f0dc661fe",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789536862.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 878,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 244,
+      "output_tokens_details": {
+        "reasoning_tokens": 61
+      },
+      "total_tokens": 1122
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"CORE\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"central\",\n  \"main_topic\": \"Hamas's response to an Israeli hostage-deal proposal and related Israel-Hamas war developments\",\n  \"conflict_relevance\": \"The article directly concerns Hamas, hostages, cessation of hostilities, Israeli military action, withdrawal from Gaza, and the status of Hamas's weapons.\",\n  \"reason\": \"The main headline and substantive text focus on negotiations between Israel and Hamas over a hostage deal and the continuation or cessation of the war in Gaza. The text also contains an unrelated embedded item about US-Israel-Iran relations, indicating article concatenation, but the primary associated article is directly relevant to the conflict.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": true\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T05:34:26Z",
+  "duration_seconds": 3.311,
+  "error": null
+}

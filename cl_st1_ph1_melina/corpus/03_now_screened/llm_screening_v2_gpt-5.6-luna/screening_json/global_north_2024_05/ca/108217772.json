@@ -1,0 +1,65 @@
+{
+  "article_id": "108217772",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_05/ca/108217772.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_05/ca/108217772.json"
+  },
+  "manifest_row": {
+    "article_id": "108217772",
+    "group": "global_north_2024_05",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2024_05/ca/108217772.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "passing",
+    "main_topic": "Health Canada recall of an unauthorized dietary supplement containing undeclared prescription drugs",
+    "conflict_relevance": "A separate news snippet mentions a Toronto mayor declining to attend an Israeli national day ceremony because the event was divisive amid the war in Gaza.",
+    "reason": "The main article concerns a dietary supplement recall and is unrelated to the Gaza conflict. However, it includes a meaningful but brief Gaza-related snippet about public debate over an Israel-related civic ceremony.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "ac735ed83c1a95dcc6f753ae53d658430729b846a21879e525db23a65e5689dc",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "f580a621f77d596c88ea275538e49c5692b8f9c6105e50315402d5a925de79d9",
+    "raw_response_text_sha256": "b863bea3a8eb56a5c40693dcda87c5aa2424617e0fff723ac1a5a65b709733f2"
+  },
+  "api_metadata": {
+    "id": "resp_06fbaea265170dcf006aaa0d9b066c87d29a83a7fe833672c3",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789529499.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1372,
+      "input_tokens_details": {
+        "cache_write_tokens": 1369,
+        "cached_tokens": 0
+      },
+      "output_tokens": 221,
+      "output_tokens_details": {
+        "reasoning_tokens": 67
+      },
+      "total_tokens": 1593
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Health Canada recall of an unauthorized dietary supplement containing undeclared prescription drugs\",\n  \"conflict_relevance\": \"A separate news snippet mentions a Toronto mayor declining to attend an Israeli national day ceremony because the event was divisive amid the war in Gaza.\",\n  \"reason\": \"The main article concerns a dietary supplement recall and is unrelated to the Gaza conflict. However, it includes a meaningful but brief Gaza-related snippet about public debate over an Israel-related civic ceremony.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:31:42Z",
+  "duration_seconds": 3.568,
+  "error": null
+}

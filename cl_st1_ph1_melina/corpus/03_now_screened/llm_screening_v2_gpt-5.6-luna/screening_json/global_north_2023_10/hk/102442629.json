@@ -1,0 +1,65 @@
+{
+  "article_id": "102442629",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_10/hk/102442629.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_10/hk/102442629.json"
+  },
+  "manifest_row": {
+    "article_id": "102442629",
+    "group": "global_north_2023_10",
+    "country_code": "hk",
+    "filepath": "corpus/02_now_organised/global_north_2023_10/hk/102442629.txt"
+  },
+  "screening": {
+    "category": "CORE",
+    "confidence": 0.99,
+    "gaza_role": "central",
+    "main_topic": "The Israel-Hamas war, including the Hamas attack on Israel, Israeli military operations in Gaza, hostages, and civilian evacuation and safety concerns.",
+    "conflict_relevance": "The article directly reports on armed conflict between Israel and Hamas, Israeli airstrikes and ground operations in Gaza, the initial Hamas assault, hostages, and related regional and civilian-security issues.",
+    "reason": "Gaza and the Israel-Hamas war are the central subject of the headline, images, and main reporting, despite additional paragraphs concerning travel advisories and Hong Kong residents.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": true
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "06c73d2b54cc7caf7aaf2303f250d77bf3901fc9e30e28bb4e34e4ca3a660f07",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "39b906eef02460918e375cf730ec09192a27999a804b5d1f12d757aca1e8cda7",
+    "raw_response_text_sha256": "c699f8121d42d4fa8a8bf48a6adfe7d8b66b1a964218a407d2f7b7aacce9642c"
+  },
+  "api_metadata": {
+    "id": "resp_0a1b8dbbcf6505c4006aa9f7e7921487d2aeb8942e21ef9400",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789523943.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 978,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 238,
+      "output_tokens_details": {
+        "reasoning_tokens": 64
+      },
+      "total_tokens": 1216
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"CORE\",\n  \"confidence\": 0.99,\n  \"gaza_role\": \"central\",\n  \"main_topic\": \"The Israel-Hamas war, including the Hamas attack on Israel, Israeli military operations in Gaza, hostages, and civilian evacuation and safety concerns.\",\n  \"conflict_relevance\": \"The article directly reports on armed conflict between Israel and Hamas, Israeli airstrikes and ground operations in Gaza, the initial Hamas assault, hostages, and related regional and civilian-security issues.\",\n  \"reason\": \"Gaza and the Israel-Hamas war are the central subject of the headline, images, and main reporting, despite additional paragraphs concerning travel advisories and Hong Kong residents.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": true\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T01:59:07Z",
+  "duration_seconds": 3.985,
+  "error": null
+}

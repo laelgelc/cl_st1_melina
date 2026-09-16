@@ -1,0 +1,65 @@
+{
+  "article_id": "102841328",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_10/us/102841328.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_10/us/102841328.json"
+  },
+  "manifest_row": {
+    "article_id": "102841328",
+    "group": "global_north_2023_10",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2023_10/us/102841328.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.93,
+    "gaza_role": "passing",
+    "main_topic": "The murder and memorial service of Detroit synagogue president Samantha Woll",
+    "conflict_relevance": "The article briefly mentions Israeli airstrikes in Gaza and the broader Israel-Hamas war, while also describing interfaith relations involving the Jewish community and Muslim advocacy groups.",
+    "reason": "The main article concerns a local homicide and memorial service. Gaza appears in a brief contextual news sentence rather than as a substantive focus, but the interfaith and Jewish-Muslim community discussion gives the article limited relevance to broader conflict-related discourse.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "f9583c19671afd65e4be93378878bd5b97100824f2ff512dff8a958292870313",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "bc510d67e6f0389e6ed4a9a0b43f27f32208fc1b5d529b95774e1a731a5d0182",
+    "raw_response_text_sha256": "5d6ce7d5a1e1c2055d3c13301aeabdde5160af5d10fc9c3dfef05d0b744dad93"
+  },
+  "api_metadata": {
+    "id": "resp_0993e46bc9c01c7b006aa9f967947487d2ab717a996358818f",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789524327.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1409,
+      "input_tokens_details": {
+        "cache_write_tokens": 1406,
+        "cached_tokens": 0
+      },
+      "output_tokens": 252,
+      "output_tokens_details": {
+        "reasoning_tokens": 85
+      },
+      "total_tokens": 1661
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.93,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"The murder and memorial service of Detroit synagogue president Samantha Woll\",\n  \"conflict_relevance\": \"The article briefly mentions Israeli airstrikes in Gaza and the broader Israel-Hamas war, while also describing interfaith relations involving the Jewish community and Muslim advocacy groups.\",\n  \"reason\": \"The main article concerns a local homicide and memorial service. Gaza appears in a brief contextual news sentence rather than as a substantive focus, but the interfaith and Jewish-Muslim community discussion gives the article limited relevance to broader conflict-related discourse.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:05:31Z",
+  "duration_seconds": 3.602,
+  "error": null
+}

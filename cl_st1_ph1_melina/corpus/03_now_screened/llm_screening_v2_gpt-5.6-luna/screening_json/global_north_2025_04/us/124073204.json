@@ -1,0 +1,65 @@
+{
+  "article_id": "124073204",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_04/us/124073204.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_04/us/124073204.json"
+  },
+  "manifest_row": {
+    "article_id": "124073204",
+    "group": "global_north_2025_04",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2025_04/us/124073204.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "background",
+    "main_topic": "U.S. military strikes against the Houthi movement in Yemen and alleged civilian casualties at a migrant detention center",
+    "conflict_relevance": "The article is primarily about U.S.-Houthi hostilities and migrant deaths in Yemen, but it meaningfully connects Houthi Red Sea attacks to Israel's military operation in Gaza and situates the Houthis within the regional axis of resistance involving Hamas and Hezbollah.",
+    "reason": "Gaza and the Israel-Hamas war provide important geopolitical context for the Houthi attacks and subsequent U.S. military campaign, but the article is not centrally about Gaza, Palestinians, or the Israel-Palestine conflict.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "de7dd297f32230de85b310ef479b27189b5db1bda4257d76e9642a6e9bd051f1",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "dd859d1cf0f768f752d9f7c068ea819ea6c9780cfb0cb1f65a723929c5f92280",
+    "raw_response_text_sha256": "9e60e697ece08b4e3f36b50c5630145014dfa543407a882d48776e8a91291c8c"
+  },
+  "api_metadata": {
+    "id": "resp_06cf379309976c5e006aaa2ac2188087d19478b571bff96878",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789536962.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1381,
+      "input_tokens_details": {
+        "cache_write_tokens": 1378,
+        "cached_tokens": 0
+      },
+      "output_tokens": 232,
+      "output_tokens_details": {
+        "reasoning_tokens": 34
+      },
+      "total_tokens": 1613
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"U.S. military strikes against the Houthi movement in Yemen and alleged civilian casualties at a migrant detention center\",\n  \"conflict_relevance\": \"The article is primarily about U.S.-Houthi hostilities and migrant deaths in Yemen, but it meaningfully connects Houthi Red Sea attacks to Israel's military operation in Gaza and situates the Houthis within the regional axis of resistance involving Hamas and Hezbollah.\",\n  \"reason\": \"Gaza and the Israel-Hamas war provide important geopolitical context for the Houthi attacks and subsequent U.S. military campaign, but the article is not centrally about Gaza, Palestinians, or the Israel-Palestine conflict.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T05:36:05Z",
+  "duration_seconds": 3.71,
+  "error": null
+}

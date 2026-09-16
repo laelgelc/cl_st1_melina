@@ -1,0 +1,65 @@
+{
+  "article_id": "121238474",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_02/us/121238474.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_02/us/121238474.json"
+  },
+  "manifest_row": {
+    "article_id": "121238474",
+    "group": "global_north_2025_02",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2025_02/us/121238474.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "gaza_role": "passing",
+    "main_topic": "Trump administration efforts to reduce or dismantle federal agencies and programs",
+    "conflict_relevance": "The article briefly mentions a future state for Gaza while listing issues addressed by the U.S. president, but does not discuss Gaza, Palestine, Israel, or the conflict substantively.",
+    "reason": "The main article concerns U.S. domestic politics, federal spending cuts, farmers, USAID, and government agencies. The sole Gaza reference is incidental and unrelated to the article's substantive discourse.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "5f1567c81b5c48af8b16632e62a937e887953a8cf0a28b513a136fd432d11715",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "903e8fcaebf87c55f83137139485755a0b0be2ff997dcc0107589541703e87b4",
+    "raw_response_text_sha256": "8b37ba9db5f12d8e186007d1b5af07513c1c827fd3aea5e5a72d0b3ab5418fba"
+  },
+  "api_metadata": {
+    "id": "resp_0aaae204280196ae006aaa24cd64bc87d185787454b049f1da",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789535437.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 3563,
+      "input_tokens_details": {
+        "cache_write_tokens": 3560,
+        "cached_tokens": 0
+      },
+      "output_tokens": 259,
+      "output_tokens_details": {
+        "reasoning_tokens": 98
+      },
+      "total_tokens": 3822
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Trump administration efforts to reduce or dismantle federal agencies and programs\",\n  \"conflict_relevance\": \"The article briefly mentions a future state for Gaza while listing issues addressed by the U.S. president, but does not discuss Gaza, Palestine, Israel, or the conflict substantively.\",\n  \"reason\": \"The main article concerns U.S. domestic politics, federal spending cuts, farmers, USAID, and government agencies. The sole Gaza reference is incidental and unrelated to the article's substantive discourse.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T05:10:40Z",
+  "duration_seconds": 3.813,
+  "error": null
+}

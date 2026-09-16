@@ -1,0 +1,65 @@
+{
+  "article_id": "120960149",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_02/ie/120960149.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_02/ie/120960149.json"
+  },
+  "manifest_row": {
+    "article_id": "120960149",
+    "group": "global_north_2025_02",
+    "country_code": "ie",
+    "filepath": "corpus/02_now_organised/global_north_2025_02/ie/120960149.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.97,
+    "gaza_role": "background",
+    "main_topic": "A politician's final appearance at the Parliamentary Assembly of the Council of Europe",
+    "conflict_relevance": "The article includes meaningful discussion of criticism directed at the Council of Europe for not condemning Israel's actions in Gaza and the alleged impact on its human-rights reputation.",
+    "reason": "Gaza is a substantive part of the politician's remarks but is not the central subject of the article, which focuses mainly on his election and departure from the parliamentary assembly.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "fc3909511ed03341116e124240ff4dc101d4d0365abd6181e9ef16f9185dde3d",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "3660a17405cb29f408c7c2673b6c27e471338ca2b3b204dfe8f9c935c5410191",
+    "raw_response_text_sha256": "70baea2cd4892bb138025defce08c5a7f70af13fe725847afbc48ebb92acb161"
+  },
+  "api_metadata": {
+    "id": "resp_0eb3921117cc871c006aaa237efe9087d29c4b1e33a1f390e9",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789535103.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1056,
+      "input_tokens_details": {
+        "cache_write_tokens": 1053,
+        "cached_tokens": 0
+      },
+      "output_tokens": 229,
+      "output_tokens_details": {
+        "reasoning_tokens": 72
+      },
+      "total_tokens": 1285
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.97,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"A politician's final appearance at the Parliamentary Assembly of the Council of Europe\",\n  \"conflict_relevance\": \"The article includes meaningful discussion of criticism directed at the Council of Europe for not condemning Israel's actions in Gaza and the alleged impact on its human-rights reputation.\",\n  \"reason\": \"Gaza is a substantive part of the politician's remarks but is not the central subject of the article, which focuses mainly on his election and departure from the parliamentary assembly.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T05:05:05Z",
+  "duration_seconds": 2.786,
+  "error": null
+}

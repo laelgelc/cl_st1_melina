@@ -1,0 +1,65 @@
+{
+  "article_id": "102818598",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_10/ca/102818598.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_10/ca/102818598.json"
+  },
+  "manifest_row": {
+    "article_id": "102818598",
+    "group": "global_north_2023_10",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2023_10/ca/102818598.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "gaza_role": "boilerplate_or_unrelated",
+    "main_topic": "Canadian fiscal policy and economic growth",
+    "conflict_relevance": "The main article concerns Canadian fiscal responsibility and business policy. Gaza appears only in an unrelated embedded image caption about Israeli bombing.",
+    "reason": "The Gaza-related text is a passing, disconnected snippet rather than part of the article's substantive discourse.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "3e0d3fc00c951f22bba866896552cad22b9e30b6e99fcbfcfd3a3834741288bf",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "11a456aea9cb0c0ec490c0244fbe7bf869675489795dc13ecfc60f334cf3e173",
+    "raw_response_text_sha256": "3c9f323ee0e064850235015535ef33f062d1566367014bee2e29d748de7ca86b"
+  },
+  "api_metadata": {
+    "id": "resp_0f981adeadc69fad006aa9f67cb6f487d29ea14c64626c3bbd",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789523580.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1873,
+      "input_tokens_details": {
+        "cache_write_tokens": 1870,
+        "cached_tokens": 0
+      },
+      "output_tokens": 227,
+      "output_tokens_details": {
+        "reasoning_tokens": 97
+      },
+      "total_tokens": 2100
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Canadian fiscal policy and economic growth\",\n  \"conflict_relevance\": \"The main article concerns Canadian fiscal responsibility and business policy. Gaza appears only in an unrelated embedded image caption about Israeli bombing.\",\n  \"reason\": \"The Gaza-related text is a passing, disconnected snippet rather than part of the article's substantive discourse.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T01:53:04Z",
+  "duration_seconds": 3.451,
+  "error": null
+}

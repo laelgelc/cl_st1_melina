@@ -1,0 +1,65 @@
+{
+  "article_id": "91637390",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_10/us/91637390.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_10/us/91637390.json"
+  },
+  "manifest_row": {
+    "article_id": "91637390",
+    "group": "global_north_2023_10",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2023_10/us/91637390.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "background",
+    "main_topic": "Stock-market performance, bank earnings, and consumer confidence",
+    "conflict_relevance": "The article briefly discusses rising Middle East tensions and Israel's call for the mass evacuation of civilians in northern Gaza as a factor affecting investor sentiment.",
+    "reason": "The article is primarily a financial-market report, but it contains meaningful discussion of the Gaza evacuation order and the UN warning about its humanitarian consequences.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "6ebdd45b85437364c4c85c3b09560d823756fe7d2fe49e2012cdc7bba68f8fda",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "2b30e9c2cb4a40fe3f858ba14d782e22490967e10edfb126b0d1e1260789c8eb",
+    "raw_response_text_sha256": "1319ba37fed9924ce08e8dee8dfcaa7f45c8992e369dfeddeacd21285fa5b64f"
+  },
+  "api_metadata": {
+    "id": "resp_0193fe12cd129e29006aa9fa62ee9087d28d7ee37e7df42c45",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789524578.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1220,
+      "input_tokens_details": {
+        "cache_write_tokens": 1217,
+        "cached_tokens": 0
+      },
+      "output_tokens": 195,
+      "output_tokens_details": {
+        "reasoning_tokens": 53
+      },
+      "total_tokens": 1415
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Stock-market performance, bank earnings, and consumer confidence\",\n  \"conflict_relevance\": \"The article briefly discusses rising Middle East tensions and Israel's call for the mass evacuation of civilians in northern Gaza as a factor affecting investor sentiment.\",\n  \"reason\": \"The article is primarily a financial-market report, but it contains meaningful discussion of the Gaza evacuation order and the UN warning about its humanitarian consequences.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:09:41Z",
+  "duration_seconds": 2.714,
+  "error": null
+}

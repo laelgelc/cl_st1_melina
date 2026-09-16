@@ -1,0 +1,65 @@
+{
+  "article_id": "107266656",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_04/ca/107266656.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_04/ca/107266656.json"
+  },
+  "manifest_row": {
+    "article_id": "107266656",
+    "group": "global_north_2024_04",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2024_04/ca/107266656.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.97,
+    "gaza_role": "passing",
+    "main_topic": "Controversy over proposed tree removal and redevelopment of Millennium Park in St. Albert",
+    "conflict_relevance": "The main article is unrelated to Gaza, but embedded snippets mention a diplomatic dispute between Poland and Israel after the death of a Polish aid worker in Gaza and Israel’s withdrawal from Khan Younis.",
+    "reason": "The article primarily concerns local park planning, environmental concerns, and municipal spending. However, it includes meaningful but unrelated Gaza and Israel-related news snippets, making it peripheral rather than excludable.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "de2397b8c73091fa4cd4cbe64c78c68f31d7112531ca95cb33c44e298521beb1",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "efed0741000a5470a0c1f7d845bb5c90cd0a2e13bcf1f967b8fbce7d9b068275",
+    "raw_response_text_sha256": "36721dc2b9173921b24c74d6b5e489a0c5450341595d78db01714a057f31e54c"
+  },
+  "api_metadata": {
+    "id": "resp_088d857ae71d9728006aaa0afa6b9c87d29996be3883fd66ef",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789528826.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1945,
+      "input_tokens_details": {
+        "cache_write_tokens": 1942,
+        "cached_tokens": 0
+      },
+      "output_tokens": 294,
+      "output_tokens_details": {
+        "reasoning_tokens": 148
+      },
+      "total_tokens": 2239
+    }
+  },
+  "raw_response_text": "{\"category\":\"PERIPHERAL\",\"confidence\":0.97,\"gaza_role\":\"passing\",\"main_topic\":\"Controversy over proposed tree removal and redevelopment of Millennium Park in St. Albert\",\"conflict_relevance\":\"The main article is unrelated to Gaza, but embedded snippets mention a diplomatic dispute between Poland and Israel after the death of a Polish aid worker in Gaza and Israel’s withdrawal from Khan Younis.\",\"reason\":\"The article primarily concerns local park planning, environmental concerns, and municipal spending. However, it includes meaningful but unrelated Gaza and Israel-related news snippets, making it peripheral rather than excludable.\",\"multi_article_or_snippet_issue\":true,\"recommended_for_main_corpus\":false}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:20:31Z",
+  "duration_seconds": 4.954,
+  "error": null
+}

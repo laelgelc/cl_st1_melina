@@ -1,0 +1,65 @@
+{
+  "article_id": "120188791",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_01/us/120188791.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_01/us/120188791.json"
+  },
+  "manifest_row": {
+    "article_id": "120188791",
+    "group": "global_north_2025_01",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2025_01/us/120188791.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "background",
+    "main_topic": "Donald Trump's return to the U.S. presidency and its political and cultural implications",
+    "conflict_relevance": "The article's introduction references a Middle East ceasefire and reporting on people in Israel and Gaza, including the uncertainty and psychological effects following the war. However, the main article focuses extensively on Trump and U.S. politics.",
+    "reason": "The Gaza-related material is meaningful but limited to an introductory discussion of a separate ceasefire report; it does not shape the main article's topic or analysis.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "f53ab583c86fca83a3e6ce98a5560977d3c3f9aa8b5fa62cfcd1c9a5457427bd",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "4d3eb2afb890cc5d7814a3160a877fbb5a5a4f38d7b7942084c89427ce0e561e",
+    "raw_response_text_sha256": "aa99221cd5e8dccc633b39c75aa70e94ee381bdbe74eb3e5359aa3def51a3bd8"
+  },
+  "api_metadata": {
+    "id": "resp_067aca3eab26f084006aaa215a64ec87d2832ec84790abd582",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789534554.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 5763,
+      "input_tokens_details": {
+        "cache_write_tokens": 5760,
+        "cached_tokens": 0
+      },
+      "output_tokens": 285,
+      "output_tokens_details": {
+        "reasoning_tokens": 119
+      },
+      "total_tokens": 6048
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Donald Trump's return to the U.S. presidency and its political and cultural implications\",\n  \"conflict_relevance\": \"The article's introduction references a Middle East ceasefire and reporting on people in Israel and Gaza, including the uncertainty and psychological effects following the war. However, the main article focuses extensively on Trump and U.S. politics.\",\n  \"reason\": \"The Gaza-related material is meaningful but limited to an introductory discussion of a separate ceasefire report; it does not shape the main article's topic or analysis.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T04:55:58Z",
+  "duration_seconds": 4.375,
+  "error": null
+}

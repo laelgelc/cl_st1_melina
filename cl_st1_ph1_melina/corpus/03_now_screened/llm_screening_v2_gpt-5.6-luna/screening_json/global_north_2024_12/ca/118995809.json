@@ -1,0 +1,65 @@
+{
+  "article_id": "118995809",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_12/ca/118995809.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_12/ca/118995809.json"
+  },
+  "manifest_row": {
+    "article_id": "118995809",
+    "group": "global_north_2024_12",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2024_12/ca/118995809.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.94,
+    "gaza_role": "background",
+    "main_topic": "Entertainment interview with actor Patrick J. Adams about Young Werther and Suits",
+    "conflict_relevance": "The main article is unrelated to Gaza or the Israel-Hamas war, but a substantial item in the appended latest-stories roundup reports on Palestinian students killed in Gaza.",
+    "reason": "The conflict-related material appears only in an unrelated embedded latest-stories snippet rather than the main article. It contains meaningful information about Palestinians killed in Gaza, so the item is peripheral rather than excluded.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "b10b4eacd34fcefb7889cfaa9c3f43c229119bdbc2ffe678c6b304d9534adb47",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "4beb6dd90b09441dae6ffeacfb670eaa4dee3273a4a9e1aacdf7797b4b421f6c",
+    "raw_response_text_sha256": "1e8b37334f4e197502e9030afdad002aca2a230e223c88b7e7a3d90c1fb7fd9d"
+  },
+  "api_metadata": {
+    "id": "resp_019b90675f00977f006aaa1d1ee2ec87d2a2510978d8772f08",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789533470.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2714,
+      "input_tokens_details": {
+        "cache_write_tokens": 2711,
+        "cached_tokens": 0
+      },
+      "output_tokens": 357,
+      "output_tokens_details": {
+        "reasoning_tokens": 194
+      },
+      "total_tokens": 3071
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.94,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Entertainment interview with actor Patrick J. Adams about Young Werther and Suits\",\n  \"conflict_relevance\": \"The main article is unrelated to Gaza or the Israel-Hamas war, but a substantial item in the appended latest-stories roundup reports on Palestinian students killed in Gaza.\",\n  \"reason\": \"The conflict-related material appears only in an unrelated embedded latest-stories snippet rather than the main article. It contains meaningful information about Palestinians killed in Gaza, so the item is peripheral rather than excluded.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T04:37:54Z",
+  "duration_seconds": 4.061,
+  "error": null
+}

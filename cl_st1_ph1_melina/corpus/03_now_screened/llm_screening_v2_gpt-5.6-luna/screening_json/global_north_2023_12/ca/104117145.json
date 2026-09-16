@@ -1,0 +1,65 @@
+{
+  "article_id": "104117145",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_12/ca/104117145.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_12/ca/104117145.json"
+  },
+  "manifest_row": {
+    "article_id": "104117145",
+    "group": "global_north_2023_12",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2023_12/ca/104117145.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "passing",
+    "main_topic": "Legal challenge to the eviction of a homeless encampment in Vancouver's Downtown Eastside",
+    "conflict_relevance": "The main article is unrelated to Gaza, but an embedded roundup item briefly mentions a Palestinian-Canadian lawsuit seeking evacuation assistance for family members in Gaza.",
+    "reason": "The headline and substantive article concern homelessness, encampment removal, fire-safety orders, and Charter rights in Vancouver. However, the text includes a meaningful, though very brief and unrelated, news item about discriminatory Canadian policy allegedly preventing a family from evacuating Gaza, making it peripheral rather than excludable.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "e303182b74876d119b2440d38fd17e88f65e1d35833eca9d9d43dae0522464ef",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "592f90774a1dac6f9645bc428c7b8e43bf77895fbde15c66d60921a2f116a0dc",
+    "raw_response_text_sha256": "753efb59e0393242d7903e215b8a2774c43df1dfcd9a6d1d6c41a9ac2b8bb545"
+  },
+  "api_metadata": {
+    "id": "resp_05081dd0f1b17777006aaa006d397487d289a2f039ec47e1e0",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789526125.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2416,
+      "input_tokens_details": {
+        "cache_write_tokens": 2413,
+        "cached_tokens": 0
+      },
+      "output_tokens": 337,
+      "output_tokens_details": {
+        "reasoning_tokens": 153
+      },
+      "total_tokens": 2753
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Legal challenge to the eviction of a homeless encampment in Vancouver's Downtown Eastside\",\n  \"conflict_relevance\": \"The main article is unrelated to Gaza, but an embedded roundup item briefly mentions a Palestinian-Canadian lawsuit seeking evacuation assistance for family members in Gaza.\",\n  \"reason\": \"The headline and substantive article concern homelessness, encampment removal, fire-safety orders, and Charter rights in Vancouver. However, the text includes a meaningful, though very brief and unrelated, news item about discriminatory Canadian policy allegedly preventing a family from evacuating Gaza, making it peripheral rather than excludable.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:35:29Z",
+  "duration_seconds": 4.571,
+  "error": null
+}

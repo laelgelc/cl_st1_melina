@@ -1,0 +1,65 @@
+{
+  "article_id": "103893053",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_11/ca/103893053.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_11/ca/103893053.json"
+  },
+  "manifest_row": {
+    "article_id": "103893053",
+    "group": "global_north_2023_11",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2023_11/ca/103893053.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "gaza_role": "passing",
+    "main_topic": "Sexual abuse of children and sentencing of a former Quebec firefighter",
+    "conflict_relevance": "The article's main subject is unrelated to Gaza or the Israel-Palestine conflict; Gaza appears only in a brief embedded news snippet about released Israeli hostages.",
+    "reason": "The Gaza-related content is a single incidental item within a collection of unrelated snippets and does not contribute meaningfully to conflict discourse analysis.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "13a6c65414ce04d4d2f253d2e4af57e72c6ab225a2386d31234ba41b9212fa3f",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "dd9a5d6fe74b88e172cee666f2730516f0672d49dd29d18644ef5cf1f661a543",
+    "raw_response_text_sha256": "5e88e4e44418d1f9128d4d9fdc2bfdc48360f1a6d25c8b36ba8211b5c4695f71"
+  },
+  "api_metadata": {
+    "id": "resp_00d0d19986e36509006aa9fc1c271087d2ad57a47a33795f24",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789525020.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2528,
+      "input_tokens_details": {
+        "cache_write_tokens": 2525,
+        "cached_tokens": 0
+      },
+      "output_tokens": 226,
+      "output_tokens_details": {
+        "reasoning_tokens": 80
+      },
+      "total_tokens": 2754
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Sexual abuse of children and sentencing of a former Quebec firefighter\",\n  \"conflict_relevance\": \"The article's main subject is unrelated to Gaza or the Israel-Palestine conflict; Gaza appears only in a brief embedded news snippet about released Israeli hostages.\",\n  \"reason\": \"The Gaza-related content is a single incidental item within a collection of unrelated snippets and does not contribute meaningfully to conflict discourse analysis.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:17:02Z",
+  "duration_seconds": 2.892,
+  "error": null
+}

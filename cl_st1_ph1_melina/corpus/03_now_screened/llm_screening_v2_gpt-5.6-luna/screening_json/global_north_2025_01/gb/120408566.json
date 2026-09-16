@@ -1,0 +1,65 @@
+{
+  "article_id": "120408566",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_01/gb/120408566.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_01/gb/120408566.json"
+  },
+  "manifest_row": {
+    "article_id": "120408566",
+    "group": "global_north_2025_01",
+    "country_code": "gb",
+    "filepath": "corpus/02_now_organised/global_north_2025_01/gb/120408566.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "background",
+    "main_topic": "Antarctic iceberg A23a and its potential impact on wildlife near South Georgia",
+    "conflict_relevance": "The main article is unrelated to Gaza or the Israel-Palestine conflict, but it includes a substantive appended news snippet about Hamas releasing Israeli hostages as part of a Gaza ceasefire deal.",
+    "reason": "The article primarily concerns an iceberg, climate change, and Antarctic wildlife. The Gaza-related hostage and ceasefire report is a separate embedded news item rather than part of the article's central topic, but it contains meaningful conflict discourse and therefore supports a peripheral classification.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "09c4d93ed06c0865331c0afcf7e2f175455dde7bdc39f2da35bcce78a25eef7b",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "ccd05cb06c1fed4962202d87c053c22dc594ee475d33959d18332a41051d2bb0",
+    "raw_response_text_sha256": "e0e08ca4b598c6d6d2c0b7bb25787bf3d6598526ad57491c858d344567afd33a"
+  },
+  "api_metadata": {
+    "id": "resp_0f1076906f4e3f59006aaa1fe7047887d281eedcf822e4c667",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789534183.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1934,
+      "input_tokens_details": {
+        "cache_write_tokens": 1931,
+        "cached_tokens": 0
+      },
+      "output_tokens": 268,
+      "output_tokens_details": {
+        "reasoning_tokens": 86
+      },
+      "total_tokens": 2202
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Antarctic iceberg A23a and its potential impact on wildlife near South Georgia\",\n  \"conflict_relevance\": \"The main article is unrelated to Gaza or the Israel-Palestine conflict, but it includes a substantive appended news snippet about Hamas releasing Israeli hostages as part of a Gaza ceasefire deal.\",\n  \"reason\": \"The article primarily concerns an iceberg, climate change, and Antarctic wildlife. The Gaza-related hostage and ceasefire report is a separate embedded news item rather than part of the article's central topic, but it contains meaningful conflict discourse and therefore supports a peripheral classification.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T04:49:46Z",
+  "duration_seconds": 3.425,
+  "error": null
+}

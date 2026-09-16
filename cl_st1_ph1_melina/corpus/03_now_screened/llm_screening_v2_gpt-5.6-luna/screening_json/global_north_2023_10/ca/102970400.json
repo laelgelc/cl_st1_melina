@@ -1,0 +1,65 @@
+{
+  "article_id": "102970400",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_10/ca/102970400.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_10/ca/102970400.json"
+  },
+  "manifest_row": {
+    "article_id": "102970400",
+    "group": "global_north_2023_10",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2023_10/ca/102970400.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "background",
+    "main_topic": "British Columbia conservation funding for old-growth forests and critical habitat",
+    "conflict_relevance": "The main article is unrelated to Gaza, but embedded CTV top-story snippets contain substantive reporting on communications collapse in Gaza during intensified Israeli bombardment and ground operations.",
+    "reason": "The Gaza material is a separate news snippet rather than part of the main article, but it provides meaningful conflict-related discourse and therefore supports peripheral use rather than exclusion.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "9413f41f82b2fe53ba6c38d47fa06e1cae4b571fe19a58a794ae4caf6e6ebc70",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "b7b6b5866d398fd8cef202b2cefedda6f3ca8c1c210c85945f0fa3a0e25467f5",
+    "raw_response_text_sha256": "ab9eb58e461125402731de4f79a7b1fe77691815dbd1c78e86d2c63dd2452997"
+  },
+  "api_metadata": {
+    "id": "resp_0b6fc42da71dfcde006aa9f6ad03d887d2b6b5db21046afc7f",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789523629.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1306,
+      "input_tokens_details": {
+        "cache_write_tokens": 1303,
+        "cached_tokens": 0
+      },
+      "output_tokens": 274,
+      "output_tokens_details": {
+        "reasoning_tokens": 123
+      },
+      "total_tokens": 1580
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"British Columbia conservation funding for old-growth forests and critical habitat\",\n  \"conflict_relevance\": \"The main article is unrelated to Gaza, but embedded CTV top-story snippets contain substantive reporting on communications collapse in Gaza during intensified Israeli bombardment and ground operations.\",\n  \"reason\": \"The Gaza material is a separate news snippet rather than part of the main article, but it provides meaningful conflict-related discourse and therefore supports peripheral use rather than exclusion.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T01:53:52Z",
+  "duration_seconds": 4.008,
+  "error": null
+}

@@ -1,0 +1,65 @@
+{
+  "article_id": "117601135",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_11/gb/117601135.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_11/gb/117601135.json"
+  },
+  "manifest_row": {
+    "article_id": "117601135",
+    "group": "global_north_2024_11",
+    "country_code": "gb",
+    "filepath": "corpus/02_now_organised/global_north_2024_11/gb/117601135.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "background",
+    "main_topic": "Murder trial involving the killing of William Bush by his housemate Dylan Thomas",
+    "conflict_relevance": "The article mentions that the defendant travelled to Turkey and wanted to visit Gaza and Basrah, with witnesses discussing whether he had gone to Gaza. Gaza is relevant only as a contextual detail about the defendant's travel and interests, not as the subject of conflict reporting.",
+    "reason": "The article is overwhelmingly about a Cardiff murder trial, but it contains several substantive references to the defendant's stated wish to visit Gaza. These references provide limited peripheral discourse relevance but do not make the article core conflict coverage.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "ae80b66af821c23505210701199c58a7c3071d6eb619c4f5ede059eb2e212260",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "24a3aeecba7d383b53f8670e8dfba2e15af999e2be2a58e95f7fa3ced7fdf87b",
+    "raw_response_text_sha256": "5c771777f5c65b5350fa7e35418f6a55db6d46d9f9f238c6ad4a0e6a3a562092"
+  },
+  "api_metadata": {
+    "id": "resp_05bc2a1295937cd4006aaa1ac8b7bc87d2a169a15a7ecd87ed",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789532872.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 11537,
+      "input_tokens_details": {
+        "cache_write_tokens": 11534,
+        "cached_tokens": 0
+      },
+      "output_tokens": 259,
+      "output_tokens_details": {
+        "reasoning_tokens": 73
+      },
+      "total_tokens": 11796
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Murder trial involving the killing of William Bush by his housemate Dylan Thomas\",\n  \"conflict_relevance\": \"The article mentions that the defendant travelled to Turkey and wanted to visit Gaza and Basrah, with witnesses discussing whether he had gone to Gaza. Gaza is relevant only as a contextual detail about the defendant's travel and interests, not as the subject of conflict reporting.\",\n  \"reason\": \"The article is overwhelmingly about a Cardiff murder trial, but it contains several substantive references to the defendant's stated wish to visit Gaza. These references provide limited peripheral discourse relevance but do not make the article core conflict coverage.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T04:27:57Z",
+  "duration_seconds": 4.988,
+  "error": null
+}

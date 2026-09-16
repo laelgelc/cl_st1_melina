@@ -1,0 +1,65 @@
+{
+  "article_id": "126136741",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_south_2025_06/in/126136741.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_south_2025_06/in/126136741.json"
+  },
+  "manifest_row": {
+    "article_id": "126136741",
+    "group": "global_south_2025_06",
+    "country_code": "in",
+    "filepath": "corpus/02_now_organised/global_south_2025_06/in/126136741.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.88,
+    "gaza_role": "background",
+    "main_topic": "Houthi threats against US warships amid the Israel-Iran conflict",
+    "conflict_relevance": "The article concerns regional military tensions involving Israel and references the Israeli offensive against Hamas in Gaza, but Gaza and the Israel-Palestine conflict are not its main focus.",
+    "reason": "The central subject is the Houthi warning to target US ships if Washington supports Israel in its conflict with Iran. Gaza appears as background context for the broader Israel-Hamas conflict, making the article relevant to wider regional conflict discourse but not suitable as core Gaza coverage.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "4602f52a96704636f8b7d5824b8cdeec454a08110bbd7b667f109c5a989eb154",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "281b0b2360a7bb87513408a2cf8558da18ff27f25a0b380baf6ef32914fad173",
+    "raw_response_text_sha256": "11961751af0024a60d9150432051f790be3ca77ab98fca8f1ee6ec049343c86a"
+  },
+  "api_metadata": {
+    "id": "resp_03ba7d56fc2ea44b006aaa4a3073c887d1826927529b322a9b",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789545008.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1233,
+      "input_tokens_details": {
+        "cache_write_tokens": 1230,
+        "cached_tokens": 0
+      },
+      "output_tokens": 422,
+      "output_tokens_details": {
+        "reasoning_tokens": 245
+      },
+      "total_tokens": 1655
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.88,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Houthi threats against US warships amid the Israel-Iran conflict\",\n  \"conflict_relevance\": \"The article concerns regional military tensions involving Israel and references the Israeli offensive against Hamas in Gaza, but Gaza and the Israel-Palestine conflict are not its main focus.\",\n  \"reason\": \"The central subject is the Houthi warning to target US ships if Washington supports Israel in its conflict with Iran. Gaza appears as background context for the broader Israel-Hamas conflict, making the article relevant to wider regional conflict discourse but not suitable as core Gaza coverage.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T07:50:14Z",
+  "duration_seconds": 5.726,
+  "error": null
+}

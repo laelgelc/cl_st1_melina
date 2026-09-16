@@ -1,0 +1,65 @@
+{
+  "article_id": "104696483",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_12/ca/104696483.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_12/ca/104696483.json"
+  },
+  "manifest_row": {
+    "article_id": "104696483",
+    "group": "global_north_2023_12",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2023_12/ca/104696483.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "background",
+    "main_topic": "China-Taiwan relations and Xi Jinping's reunification rhetoric",
+    "conflict_relevance": "The main article concerns Taiwan rather than Gaza or Israel-Palestine, but the accompanying top-stories roundup includes meaningful references to the October 7 Hamas attack, internal Israeli politics, and the Gaza-linked Red Sea conflict.",
+    "reason": "The headline article is unrelated to the Gaza conflict, while embedded roundup items contain substantive but brief references to Israel, Hamas, Gaza, and regional escalation. These references make the item peripherally useful for broader discourse analysis but not suitable for the core corpus.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "bb9eede91bf0d9072bd919c5073dfbf7a3d418013adbb32d36e1c6bfb48c0a09",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "3bba6ae4feaa37d8cdd2965fdedbec8bbda761f2a10d55c26739577f69695726",
+    "raw_response_text_sha256": "a3864ff693fa17d13110c534332d1d81248a3b82f89c05e98f3cb5bdfcd3c4bc"
+  },
+  "api_metadata": {
+    "id": "resp_05d47d1d8807c5ae006aaa00aadeb487d2899302cb20127d2d",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789526186.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1923,
+      "input_tokens_details": {
+        "cache_write_tokens": 1920,
+        "cached_tokens": 0
+      },
+      "output_tokens": 289,
+      "output_tokens_details": {
+        "reasoning_tokens": 105
+      },
+      "total_tokens": 2212
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"China-Taiwan relations and Xi Jinping's reunification rhetoric\",\n  \"conflict_relevance\": \"The main article concerns Taiwan rather than Gaza or Israel-Palestine, but the accompanying top-stories roundup includes meaningful references to the October 7 Hamas attack, internal Israeli politics, and the Gaza-linked Red Sea conflict.\",\n  \"reason\": \"The headline article is unrelated to the Gaza conflict, while embedded roundup items contain substantive but brief references to Israel, Hamas, Gaza, and regional escalation. These references make the item peripherally useful for broader discourse analysis but not suitable for the core corpus.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:36:31Z",
+  "duration_seconds": 4.921,
+  "error": null
+}

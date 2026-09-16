@@ -1,0 +1,65 @@
+{
+  "article_id": "114361092",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_south_2024_09/in/114361092.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_south_2024_09/in/114361092.json"
+  },
+  "manifest_row": {
+    "article_id": "114361092",
+    "group": "global_south_2024_09",
+    "country_code": "in",
+    "filepath": "corpus/02_now_organised/global_south_2024_09/in/114361092.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.86,
+    "gaza_role": "background",
+    "main_topic": "Hezbollah walkie-talkie explosions in Lebanon and how walkie-talkies work",
+    "conflict_relevance": "The article reports attacks attributed to Israel against Hezbollah and situates them within the wider Israel-Hamas conflict, but most of the text is a generic technical explanation of walkie-talkies.",
+    "reason": "The opening paragraphs contain meaningful discussion of Israel, Hezbollah, Hamas, and Gaza-related regional military escalation. However, the article's dominant content is an unrelated device explainer, so it is useful as peripheral conflict discourse rather than core coverage.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "cf31b846f5f0e43b4987248138148f48ccdae551ad3c73e849348a38ef52d125",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "ead51c4a5499c6c8a529934308b0961aec93c875d503964d801a2c6005497bf3",
+    "raw_response_text_sha256": "f4096d7e1048cb3263f60b5ec316f15e9059b5efed33018a5b11ee8680e548f8"
+  },
+  "api_metadata": {
+    "id": "resp_06d5f3fe6ad9b497006aaa3f2ce38c87d1b08e9e0549aef9db",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789542188.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1117,
+      "input_tokens_details": {
+        "cache_write_tokens": 1114,
+        "cached_tokens": 0
+      },
+      "output_tokens": 367,
+      "output_tokens_details": {
+        "reasoning_tokens": 191
+      },
+      "total_tokens": 1484
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.86,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Hezbollah walkie-talkie explosions in Lebanon and how walkie-talkies work\",\n  \"conflict_relevance\": \"The article reports attacks attributed to Israel against Hezbollah and situates them within the wider Israel-Hamas conflict, but most of the text is a generic technical explanation of walkie-talkies.\",\n  \"reason\": \"The opening paragraphs contain meaningful discussion of Israel, Hezbollah, Hamas, and Gaza-related regional military escalation. However, the article's dominant content is an unrelated device explainer, so it is useful as peripheral conflict discourse rather than core coverage.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T07:03:12Z",
+  "duration_seconds": 4.043,
+  "error": null
+}

@@ -1,0 +1,65 @@
+{
+  "article_id": "104020505",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_12/us/104020505.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_12/us/104020505.json"
+  },
+  "manifest_row": {
+    "article_id": "104020505",
+    "group": "global_north_2023_12",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2023_12/us/104020505.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "background",
+    "main_topic": "Biden's economic agenda and the political messaging around the term 'Bidenomics'",
+    "conflict_relevance": "The article is primarily about Biden's economic branding but includes meaningful discussion of U.S. aid to Israel, congressional debate over a national security supplemental package, campus antisemitism hearings, and Israel-Gaza-related protests affecting Biden politically.",
+    "reason": "The Israel-Gaza material is not the central subject, but it constitutes substantive political and public-discourse content relevant to the conflict, particularly regarding U.S. support for Israel and domestic protest responses.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "4b517e2d851a6290a7badc485f08b2ead2d535b8fbad5dda9a73e7d741060e99",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "2c31d9e20b39a6158742f350fdbf55b713d18d76f6e071fe79ef1be2f4818ff7",
+    "raw_response_text_sha256": "166bb6802d3436c7256113f7c33cc734e5fc68a591dc904df705a42312253101"
+  },
+  "api_metadata": {
+    "id": "resp_08dd142d37ff8cc1006aaa01c1d06c87d2b18b45d188f83663",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789526465.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 3094,
+      "input_tokens_details": {
+        "cache_write_tokens": 3091,
+        "cached_tokens": 0
+      },
+      "output_tokens": 278,
+      "output_tokens_details": {
+        "reasoning_tokens": 101
+      },
+      "total_tokens": 3372
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Biden's economic agenda and the political messaging around the term 'Bidenomics'\",\n  \"conflict_relevance\": \"The article is primarily about Biden's economic branding but includes meaningful discussion of U.S. aid to Israel, congressional debate over a national security supplemental package, campus antisemitism hearings, and Israel-Gaza-related protests affecting Biden politically.\",\n  \"reason\": \"The Israel-Gaza material is not the central subject, but it constitutes substantive political and public-discourse content relevant to the conflict, particularly regarding U.S. support for Israel and domestic protest responses.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:41:09Z",
+  "duration_seconds": 3.509,
+  "error": null
+}

@@ -1,0 +1,65 @@
+{
+  "article_id": "124877773",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_05/us/124877773.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_05/us/124877773.json"
+  },
+  "manifest_row": {
+    "article_id": "124877773",
+    "group": "global_north_2025_05",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2025_05/us/124877773.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.97,
+    "gaza_role": "passing",
+    "main_topic": "Christian Science Monitor mission and unrelated international news coverage",
+    "conflict_relevance": "Gaza and Palestinians are mentioned only as brief examples in general editorial framing and an unrelated Syria report.",
+    "reason": "The text is primarily institutional boilerplate and unrelated coverage of Syria and Romania. Gaza appears in a generic list of geopolitical disputes, while Palestinians are mentioned only briefly in an unrelated passage about Syria. It does not provide substantive conflict discourse.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "6d534cfb0b560a7ca27ddbeb8bc44ee034956e451110b49f3bfa710f65008e99",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "5e6bca1e1c548bc207039a9be6b69c15c1b14f109a0427d46e72a01f23b85f08",
+    "raw_response_text_sha256": "20d21374bc62b488c4169f5ee72b411ee9e3067d3fd16b8c839bdca5bde0604c"
+  },
+  "api_metadata": {
+    "id": "resp_0af2d41133b135bf006aaa2db60c8087d19babb26365ec94d8",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789537718.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1412,
+      "input_tokens_details": {
+        "cache_write_tokens": 1409,
+        "cached_tokens": 0
+      },
+      "output_tokens": 294,
+      "output_tokens_details": {
+        "reasoning_tokens": 144
+      },
+      "total_tokens": 1706
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.97,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Christian Science Monitor mission and unrelated international news coverage\",\n  \"conflict_relevance\": \"Gaza and Palestinians are mentioned only as brief examples in general editorial framing and an unrelated Syria report.\",\n  \"reason\": \"The text is primarily institutional boilerplate and unrelated coverage of Syria and Romania. Gaza appears in a generic list of geopolitical disputes, while Palestinians are mentioned only briefly in an unrelated passage about Syria. It does not provide substantive conflict discourse.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T05:48:42Z",
+  "duration_seconds": 4.368,
+  "error": null
+}

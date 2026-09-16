@@ -1,0 +1,65 @@
+{
+  "article_id": "200234457",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_02/us/200234457.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_02/us/200234457.json"
+  },
+  "manifest_row": {
+    "article_id": "200234457",
+    "group": "global_north_2024_02",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2024_02/us/200234457.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "gaza_role": "passing",
+    "main_topic": "UK Conservative Party politics and Kemi Badenoch's handling of the Post Office scandal",
+    "conflict_relevance": "Gaza is mentioned only incidentally in a list of topics associated with a politician's social-media commentary.",
+    "reason": "The main article is political commentary about Kemi Badenoch, parliamentary disputes, and the Post Office scandal. The sole Gaza reference is a passing aside, while the remaining unrelated snippets appear to be extraneous embedded content.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "c9da3bf32086809ac2432e6917a8aad97c0a0a491d7aec4b856277591b849aba",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "0a71a0a2aefddc5248df053578d19ac906a82cc2965915b1589592891c1efa9e",
+    "raw_response_text_sha256": "978ee45d9281bb5238bce161a65a7fc8900d0a149388d211dd59db8a713ccec1"
+  },
+  "api_metadata": {
+    "id": "resp_03fbb6c184589ec0006aaa07f9b57487d2b50060775a255df3",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789528057.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1681,
+      "input_tokens_details": {
+        "cache_write_tokens": 1678,
+        "cached_tokens": 0
+      },
+      "output_tokens": 225,
+      "output_tokens_details": {
+        "reasoning_tokens": 70
+      },
+      "total_tokens": 1906
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"UK Conservative Party politics and Kemi Badenoch's handling of the Post Office scandal\",\n  \"conflict_relevance\": \"Gaza is mentioned only incidentally in a list of topics associated with a politician's social-media commentary.\",\n  \"reason\": \"The main article is political commentary about Kemi Badenoch, parliamentary disputes, and the Post Office scandal. The sole Gaza reference is a passing aside, while the remaining unrelated snippets appear to be extraneous embedded content.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:07:40Z",
+  "duration_seconds": 3.368,
+  "error": null
+}

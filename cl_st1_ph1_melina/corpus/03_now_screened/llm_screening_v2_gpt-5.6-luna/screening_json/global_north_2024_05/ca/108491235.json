@@ -1,0 +1,65 @@
+{
+  "article_id": "108491235",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_05/ca/108491235.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_05/ca/108491235.json"
+  },
+  "manifest_row": {
+    "article_id": "108491235",
+    "group": "global_north_2024_05",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2024_05/ca/108491235.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.96,
+    "gaza_role": "passing",
+    "main_topic": "Canadian junior hockey and the London Knights' Memorial Cup tournament",
+    "conflict_relevance": "A separate embedded news snippet reports on an Israeli strike in Rafah, Gaza, and the resulting deaths, but this is unrelated to the article's main sports coverage.",
+    "reason": "The article is primarily about hockey and contains an isolated but substantive sentence concerning the Rafah strike and Israeli Prime Minister Benjamin Netanyahu's response. This makes it peripheral rather than core, with a clear multi-snippet composition.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "c408d3cb604c410472ca96ee394520fe334a2da2f14fdb34b95bd3e9f6579755",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "20a7473572413792d0b703f4f0a83c8d1b29467ec3b13eeea5c107bf052d3f31",
+    "raw_response_text_sha256": "af6a59a6c75c5fb0b8991c06d030d82b015a8e007ef1f8c1ffcdabba66bf749a"
+  },
+  "api_metadata": {
+    "id": "resp_0403dbfe3c3af06f006aaa0db4473487d2be48f2d5204b5f25",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789529524.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1579,
+      "input_tokens_details": {
+        "cache_write_tokens": 1576,
+        "cached_tokens": 0
+      },
+      "output_tokens": 235,
+      "output_tokens_details": {
+        "reasoning_tokens": 72
+      },
+      "total_tokens": 1814
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.96,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Canadian junior hockey and the London Knights' Memorial Cup tournament\",\n  \"conflict_relevance\": \"A separate embedded news snippet reports on an Israeli strike in Rafah, Gaza, and the resulting deaths, but this is unrelated to the article's main sports coverage.\",\n  \"reason\": \"The article is primarily about hockey and contains an isolated but substantive sentence concerning the Rafah strike and Israeli Prime Minister Benjamin Netanyahu's response. This makes it peripheral rather than core, with a clear multi-snippet composition.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:32:08Z",
+  "duration_seconds": 4.487,
+  "error": null
+}

@@ -1,0 +1,65 @@
+{
+  "article_id": "123287565",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_04/us/123287565.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_04/us/123287565.json"
+  },
+  "manifest_row": {
+    "article_id": "123287565",
+    "group": "global_north_2025_04",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2025_04/us/123287565.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.93,
+    "gaza_role": "background",
+    "main_topic": "A Palestinian Information Center social-media post mistakenly using a photograph of actress Katherine Heigl to illustrate a French doctor treating wounded Palestinians in Gaza",
+    "conflict_relevance": "The article references medical treatment for Palestinians wounded in clashes with Israeli forces and identifies the outlet as affiliated with Hamas, but its primary focus is the media error and resulting ridicule.",
+    "reason": "The Gaza conflict provides the context for the incident, yet the article is mainly about an image-identification mistake rather than conflict developments or substantive political, humanitarian, or military discourse.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "77661fb991f6238455f5dbf14f2e17ccd356cc3c8346ae8cc6a86cd088a5d583",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "c5169a470e263d627971e0d2cca4787664c36cfa26f8ac9627f7ebd9c6c66a9a",
+    "raw_response_text_sha256": "3fa965781343c86a8bf749519e3be46b9d5a3dd3690426c69cf26a069489dbcd"
+  },
+  "api_metadata": {
+    "id": "resp_00323ec8513aa70e006aaa29ff381887d1a1c1728304d4eac1",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789536767.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 819,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 315,
+      "output_tokens_details": {
+        "reasoning_tokens": 144
+      },
+      "total_tokens": 1134
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.93,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"A Palestinian Information Center social-media post mistakenly using a photograph of actress Katherine Heigl to illustrate a French doctor treating wounded Palestinians in Gaza\",\n  \"conflict_relevance\": \"The article references medical treatment for Palestinians wounded in clashes with Israeli forces and identifies the outlet as affiliated with Hamas, but its primary focus is the media error and resulting ridicule.\",\n  \"reason\": \"The Gaza conflict provides the context for the incident, yet the article is mainly about an image-identification mistake rather than conflict developments or substantive political, humanitarian, or military discourse.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T05:32:51Z",
+  "duration_seconds": 4.243,
+  "error": null
+}

@@ -1,0 +1,65 @@
+{
+  "article_id": "124683095",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_05/au/124683095.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_05/au/124683095.json"
+  },
+  "manifest_row": {
+    "article_id": "124683095",
+    "group": "global_north_2025_05",
+    "country_code": "au",
+    "filepath": "corpus/02_now_organised/global_north_2025_05/au/124683095.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.95,
+    "gaza_role": "background",
+    "main_topic": "US President Donald Trump's defence and investment agreements with Qatar, alongside other news headlines",
+    "conflict_relevance": "The bulletin includes meaningful but brief references to Gaza, alleged famine conditions, hostages, temporary ceasefire arrangements, and Israeli air strikes, while its main focus is Qatar-US agreements and unrelated Australian political and sporting news.",
+    "reason": "Gaza-related discourse appears in a substantive passage within a broader multi-item news bulletin, but the article is not centrally focused on the Israel-Palestine conflict.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "5e6ac5d0be650156c663a985cdb67d48e8bb8a1fb7570257e1e0e3f80403f5e8",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "db789ac3c543b6f63311ff1c132bf1ce6c1e0348a077434b570309fe778a70f9",
+    "raw_response_text_sha256": "46ba055664106d2c40ee0a12a6e33e391987265f31493a6461caea569a6c9321"
+  },
+  "api_metadata": {
+    "id": "resp_0c279475fb09fe97006aaa2afba9d487d18eb312d45b086405",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789537019.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1400,
+      "input_tokens_details": {
+        "cache_write_tokens": 1397,
+        "cached_tokens": 0
+      },
+      "output_tokens": 344,
+      "output_tokens_details": {
+        "reasoning_tokens": 177
+      },
+      "total_tokens": 1744
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.95,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"US President Donald Trump's defence and investment agreements with Qatar, alongside other news headlines\",\n  \"conflict_relevance\": \"The bulletin includes meaningful but brief references to Gaza, alleged famine conditions, hostages, temporary ceasefire arrangements, and Israeli air strikes, while its main focus is Qatar-US agreements and unrelated Australian political and sporting news.\",\n  \"reason\": \"Gaza-related discourse appears in a substantive passage within a broader multi-item news bulletin, but the article is not centrally focused on the Israel-Palestine conflict.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T05:37:04Z",
+  "duration_seconds": 4.624,
+  "error": null
+}

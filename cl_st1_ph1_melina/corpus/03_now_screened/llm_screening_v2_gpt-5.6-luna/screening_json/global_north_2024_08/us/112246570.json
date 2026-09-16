@@ -1,0 +1,65 @@
+{
+  "article_id": "112246570",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_08/us/112246570.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_08/us/112246570.json"
+  },
+  "manifest_row": {
+    "article_id": "112246570",
+    "group": "global_north_2024_08",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2024_08/us/112246570.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.96,
+    "gaza_role": "passing",
+    "main_topic": "The career and baseball experiences of pitcher Marciano",
+    "conflict_relevance": "A short, apparently embedded unrelated news snippet mentions the Gaza war, its death toll, political calls to end it, and possible responses to protests.",
+    "reason": "The article is overwhelmingly about baseball and contains an appended passage on Gaza and Chicago protest management that is not connected to the main subject. The Gaza content is meaningful but too incidental for the core corpus.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "2f4ef97e44415ce6a5a803b06862e5de7db8a272c2303e28ee248b9f5197d851",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "b077523ec4e91a9c82ce3c5c1a5bc479283127a851895de4310a8f7e99815686",
+    "raw_response_text_sha256": "7ce113900649df0773a2fb2fb717b58d5bb014c88505bac8e6ea47f5738eeae0"
+  },
+  "api_metadata": {
+    "id": "resp_08465f98b9985777006aaa14fd6c1887d28997b516dd55ebf9",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789531389.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1855,
+      "input_tokens_details": {
+        "cache_write_tokens": 1852,
+        "cached_tokens": 0
+      },
+      "output_tokens": 351,
+      "output_tokens_details": {
+        "reasoning_tokens": 198
+      },
+      "total_tokens": 2206
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.96,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"The career and baseball experiences of pitcher Marciano\",\n  \"conflict_relevance\": \"A short, apparently embedded unrelated news snippet mentions the Gaza war, its death toll, political calls to end it, and possible responses to protests.\",\n  \"reason\": \"The article is overwhelmingly about baseball and contains an appended passage on Gaza and Chicago protest management that is not connected to the main subject. The Gaza content is meaningful but too incidental for the core corpus.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T04:03:14Z",
+  "duration_seconds": 5.11,
+  "error": null
+}

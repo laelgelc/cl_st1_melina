@@ -1,0 +1,65 @@
+{
+  "article_id": "120125076",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_01/au/120125076.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_01/au/120125076.json"
+  },
+  "manifest_row": {
+    "article_id": "120125076",
+    "group": "global_north_2025_01",
+    "country_code": "au",
+    "filepath": "corpus/02_now_organised/global_north_2025_01/au/120125076.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.96,
+    "gaza_role": "background",
+    "main_topic": "A collection of letters to the editor on climate change, Australian politics, public services, international affairs, travel, and the Israel-Palestine conflict",
+    "conflict_relevance": "One letter discusses Hamas's governance of Gaza, foreign aid, alleged militarisation and antisemitic indoctrination, Israel's absorption of Jewish refugees, and the status of Palestinian refugees.",
+    "reason": "The text is primarily a multi-letter roundup covering unrelated subjects. Although one letter contains meaningful and politically framed discourse about Gaza, Hamas, Israel, and Palestinian refugees, the collection as a whole is not centrally about the conflict.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "6e72c638442fb673c78144836182201f4ad1ae551600acd8c835085a94bfd9f7",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "62b56186a242a8f4bc15ca22250d16db241c43092aa07d8ec9ce8f7f538ca01a",
+    "raw_response_text_sha256": "f6299a1716cd5fa59dacc64ab1238c395615ef6da439adff9425c29f85c5bd3a"
+  },
+  "api_metadata": {
+    "id": "resp_08bdc0ac73c7e23e006aaa1efff5f887d2b9e672f5be8bb8db",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789533951.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2610,
+      "input_tokens_details": {
+        "cache_write_tokens": 2607,
+        "cached_tokens": 0
+      },
+      "output_tokens": 364,
+      "output_tokens_details": {
+        "reasoning_tokens": 177
+      },
+      "total_tokens": 2974
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.96,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"A collection of letters to the editor on climate change, Australian politics, public services, international affairs, travel, and the Israel-Palestine conflict\",\n  \"conflict_relevance\": \"One letter discusses Hamas's governance of Gaza, foreign aid, alleged militarisation and antisemitic indoctrination, Israel's absorption of Jewish refugees, and the status of Palestinian refugees.\",\n  \"reason\": \"The text is primarily a multi-letter roundup covering unrelated subjects. Although one letter contains meaningful and politically framed discourse about Gaza, Hamas, Israel, and Palestinian refugees, the collection as a whole is not centrally about the conflict.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T04:45:55Z",
+  "duration_seconds": 4.086,
+  "error": null
+}

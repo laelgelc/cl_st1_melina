@@ -1,0 +1,65 @@
+{
+  "article_id": "102487077",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_10/ca/102487077.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_10/ca/102487077.json"
+  },
+  "manifest_row": {
+    "article_id": "102487077",
+    "group": "global_north_2023_10",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2023_10/ca/102487077.txt"
+  },
+  "screening": {
+    "category": "CORE",
+    "confidence": 0.99,
+    "gaza_role": "central",
+    "main_topic": "The death of a Montreal man during the Hamas attacks in Israel on October 7, 2023",
+    "conflict_relevance": "The article directly reports a civilian death during the Hamas attacks, the experiences of the victim's family and friends, Jewish community mourning, and the wider Israel-Palestinian war.",
+    "reason": "The main article is substantially focused on an individual killed during the October 7 attacks near the Gaza-Israel border and situates his death within the ongoing Israel-Hamas conflict. Although unrelated news snippets are embedded later in the text, they do not alter the central topic.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": true
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "c9fbb4b1c7656addbaca2706beacadaeb3d3d78e1161121390516c8b61df86eb",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "e00ce92b8483c1f3921e78f46e26a07e95b7594d7840589fa82eb15c8e1ea1f5",
+    "raw_response_text_sha256": "8182fbdfa2046ad8763754967bc76890eba1414e188f8e7bb729683d6649bfa1"
+  },
+  "api_metadata": {
+    "id": "resp_05297d0b107cdc0e006aa9f615077487d29c7d7febea4943c7",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789523477.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2302,
+      "input_tokens_details": {
+        "cache_write_tokens": 2299,
+        "cached_tokens": 0
+      },
+      "output_tokens": 182,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 2484
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"CORE\",\n  \"confidence\": 0.99,\n  \"gaza_role\": \"central\",\n  \"main_topic\": \"The death of a Montreal man during the Hamas attacks in Israel on October 7, 2023\",\n  \"conflict_relevance\": \"The article directly reports a civilian death during the Hamas attacks, the experiences of the victim's family and friends, Jewish community mourning, and the wider Israel-Palestinian war.\",\n  \"reason\": \"The main article is substantially focused on an individual killed during the October 7 attacks near the Gaza-Israel border and situates his death within the ongoing Israel-Hamas conflict. Although unrelated news snippets are embedded later in the text, they do not alter the central topic.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": true\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T01:51:19Z",
+  "duration_seconds": 2.587,
+  "error": null
+}

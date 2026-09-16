@@ -1,0 +1,65 @@
+{
+  "article_id": "103333947",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_11/us/103333947.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_11/us/103333947.json"
+  },
+  "manifest_row": {
+    "article_id": "103333947",
+    "group": "global_north_2023_11",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2023_11/us/103333947.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "passing",
+    "main_topic": "Mixed news roundup covering Canada, Gaza, financial markets, space history, and cryptocurrency",
+    "conflict_relevance": "Contains brief but meaningful snippets about Israel-Hamas war-related tensions in Montreal and humanitarian pauses in northern Gaza",
+    "reason": "The text is a multi-item news roundup rather than a focused conflict article. Its Gaza and Israel-related snippets are relevant but not the main subject of the overall item.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "4dd9f5d74ae18461cc5720fad17e99776a23e9bc07db39b93a093634cc1e3fd6",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "7edbe211f0fa4d2154fa733b0cdd858d27fab2f9dc60c3f65d712917c1b56ed8",
+    "raw_response_text_sha256": "88fbb84c2bc92567e2ed0bfc7010a3804ef5b1b56618dac958428349cdb11edc"
+  },
+  "api_metadata": {
+    "id": "resp_05d4332c51ffe6ff006aa9fe494bfc87d29e400c8163111712",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789525577.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 952,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 280,
+      "output_tokens_details": {
+        "reasoning_tokens": 134
+      },
+      "total_tokens": 1232
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Mixed news roundup covering Canada, Gaza, financial markets, space history, and cryptocurrency\",\n  \"conflict_relevance\": \"Contains brief but meaningful snippets about Israel-Hamas war-related tensions in Montreal and humanitarian pauses in northern Gaza\",\n  \"reason\": \"The text is a multi-item news roundup rather than a focused conflict article. Its Gaza and Israel-related snippets are relevant but not the main subject of the overall item.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:26:21Z",
+  "duration_seconds": 5.78,
+  "error": null
+}

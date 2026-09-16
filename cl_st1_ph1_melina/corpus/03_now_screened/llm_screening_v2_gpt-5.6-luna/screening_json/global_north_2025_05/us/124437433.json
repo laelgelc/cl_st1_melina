@@ -1,0 +1,65 @@
+{
+  "article_id": "124437433",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_05/us/124437433.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_05/us/124437433.json"
+  },
+  "manifest_row": {
+    "article_id": "124437433",
+    "group": "global_north_2025_05",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2025_05/us/124437433.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "passing",
+    "main_topic": "India-Pakistan military escalation and the Kashmir conflict",
+    "conflict_relevance": "Gaza is mentioned briefly as one of the wars contributing to global fatigue, but the article is otherwise focused on India-Pakistan relations and Kashmir.",
+    "reason": "The article contains a meaningful comparative reference to the war in Gaza in its discussion of the international context, but Gaza, Palestine, and the Israel-Palestine conflict are not central or substantially developed topics.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "a5cd0f3bb4fab9b6b04bf762a16ed123a7dbc3dfdbb0f4861dd38d7099c0e21a",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "ce52a4994d95f60929ba7de13c1a7e491b73b120eaf955e08d86f83a8e8bd110",
+    "raw_response_text_sha256": "be29f23d9d121cf253d0fb780034b9793f47f1d165f6e2a3a7494b4448e2cdb0"
+  },
+  "api_metadata": {
+    "id": "resp_08efa3670973936a006aaa2d2a15a487d19d0aac3eb6cfa90a",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789537578.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2431,
+      "input_tokens_details": {
+        "cache_write_tokens": 2428,
+        "cached_tokens": 0
+      },
+      "output_tokens": 216,
+      "output_tokens_details": {
+        "reasoning_tokens": 59
+      },
+      "total_tokens": 2647
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"India-Pakistan military escalation and the Kashmir conflict\",\n  \"conflict_relevance\": \"Gaza is mentioned briefly as one of the wars contributing to global fatigue, but the article is otherwise focused on India-Pakistan relations and Kashmir.\",\n  \"reason\": \"The article contains a meaningful comparative reference to the war in Gaza in its discussion of the international context, but Gaza, Palestine, and the Israel-Palestine conflict are not central or substantially developed topics.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T05:46:21Z",
+  "duration_seconds": 3.198,
+  "error": null
+}

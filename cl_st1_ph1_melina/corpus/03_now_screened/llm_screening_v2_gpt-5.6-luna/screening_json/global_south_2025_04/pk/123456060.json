@@ -1,0 +1,65 @@
+{
+  "article_id": "123456060",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_south_2025_04/pk/123456060.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_south_2025_04/pk/123456060.json"
+  },
+  "manifest_row": {
+    "article_id": "123456060",
+    "group": "global_south_2025_04",
+    "country_code": "pk",
+    "filepath": "corpus/02_now_organised/global_south_2025_04/pk/123456060.txt"
+  },
+  "screening": {
+    "category": "CORE",
+    "confidence": 1.0,
+    "gaza_role": "central",
+    "main_topic": "Humanitarian crisis in Gaza, aid blockade, deteriorating medical conditions, and risks to humanitarian workers",
+    "conflict_relevance": "The article directly reports on the Gaza humanitarian emergency, the suspension of aid deliveries, hospital supply shortages, Israeli military operations, alleged killings of aid workers, and the broader Israel-Hamas war.",
+    "reason": "Gaza and the humanitarian consequences of the conflict are the central subject of the article, with substantial discussion of aid access, healthcare, civilian conditions, military action, and competing Israeli and Palestinian-related claims.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": true
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "975e45013768daaff83727c2a64de33bb706a28803ea9f3e6801d429afb4387c",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "ce4bf66d9846c884edf06060520c4ee155ef68dcf0b80b5b5c8a347fd73125fb",
+    "raw_response_text_sha256": "91fbfc3dbadab7e243eb5b39f02936d311b657b5245ddb47c82c1d6fe7a12fad"
+  },
+  "api_metadata": {
+    "id": "resp_0bb545fae7c02dc0006aaa4825c9b087d1bceb9df5ddf766cc",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789544485.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1176,
+      "input_tokens_details": {
+        "cache_write_tokens": 1173,
+        "cached_tokens": 0
+      },
+      "output_tokens": 253,
+      "output_tokens_details": {
+        "reasoning_tokens": 82
+      },
+      "total_tokens": 1429
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"CORE\",\n  \"confidence\": 1.0,\n  \"gaza_role\": \"central\",\n  \"main_topic\": \"Humanitarian crisis in Gaza, aid blockade, deteriorating medical conditions, and risks to humanitarian workers\",\n  \"conflict_relevance\": \"The article directly reports on the Gaza humanitarian emergency, the suspension of aid deliveries, hospital supply shortages, Israeli military operations, alleged killings of aid workers, and the broader Israel-Hamas war.\",\n  \"reason\": \"Gaza and the humanitarian consequences of the conflict are the central subject of the article, with substantial discussion of aid access, healthcare, civilian conditions, military action, and competing Israeli and Palestinian-related claims.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": true\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T07:41:29Z",
+  "duration_seconds": 3.79,
+  "error": null
+}

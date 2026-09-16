@@ -1,0 +1,65 @@
+{
+  "article_id": "104615165",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_12/us/104615165.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_12/us/104615165.json"
+  },
+  "manifest_row": {
+    "article_id": "104615165",
+    "group": "global_north_2023_12",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2023_12/us/104615165.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "background",
+    "main_topic": "US-Mexico migration negotiations and border policy",
+    "conflict_relevance": "The main article is about migration policy and contains no substantive discussion of Gaza, but its appended latest-stories section includes several meaningful reports on the Israel-Hamas war, Gaza casualties, humanitarian aid, governance, and Israeli military operations.",
+    "reason": "The headline article is unrelated to the Gaza conflict. However, the embedded latest-stories material contains multiple substantive Gaza-related items, making the page potentially useful for broader discourse analysis but not for the main conflict corpus.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "4306308215ddea56621ad298c26d7e06463db5e3f4ca1a72b9dd5dbfbde47c0e",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "421f9c1fe58ed970f58bac044e4298e15bbe8ab3cf35c094459de2b15df1379d",
+    "raw_response_text_sha256": "7064cbf0faf159180d33ad5a8ef40729d4e00d453f929262d93f80238f460cff"
+  },
+  "api_metadata": {
+    "id": "resp_07c60fd7a3e6a6bd006aaa02762e1c87d2b2f763d8bff496a7",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789526646.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2438,
+      "input_tokens_details": {
+        "cache_write_tokens": 2435,
+        "cached_tokens": 0
+      },
+      "output_tokens": 343,
+      "output_tokens_details": {
+        "reasoning_tokens": 170
+      },
+      "total_tokens": 2781
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"US-Mexico migration negotiations and border policy\",\n  \"conflict_relevance\": \"The main article is about migration policy and contains no substantive discussion of Gaza, but its appended latest-stories section includes several meaningful reports on the Israel-Hamas war, Gaza casualties, humanitarian aid, governance, and Israeli military operations.\",\n  \"reason\": \"The headline article is unrelated to the Gaza conflict. However, the embedded latest-stories material contains multiple substantive Gaza-related items, making the page potentially useful for broader discourse analysis but not for the main conflict corpus.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:44:09Z",
+  "duration_seconds": 3.877,
+  "error": null
+}

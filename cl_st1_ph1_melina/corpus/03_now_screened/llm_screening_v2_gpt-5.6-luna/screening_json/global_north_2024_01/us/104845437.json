@@ -1,0 +1,65 @@
+{
+  "article_id": "104845437",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_01/us/104845437.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_01/us/104845437.json"
+  },
+  "manifest_row": {
+    "article_id": "104845437",
+    "group": "global_north_2024_01",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2024_01/us/104845437.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.97,
+    "gaza_role": "passing",
+    "main_topic": "Singapore telecommunications measures to block international scam calls",
+    "conflict_relevance": "An unrelated latest-stories snippet briefly references Israel's war on Hamas in Gaza as regional context for a bombing in Iran.",
+    "reason": "The main article concerns Singapore telecom policy and scam prevention, not the Gaza conflict. However, an embedded news item contains a meaningful contextual reference to Israel's war on Hamas in Gaza, making the item peripheral rather than wholly excludable.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "a94746a85c8b3cb1a8f13f5d78b39a0938f59785c9edbfbf63a670b328666f1d",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "04d4ae895504fdaa648bee78b25fd7ab256e5ef7281bba70e15063f32b8f1415",
+    "raw_response_text_sha256": "a5b12fdd146c9f0457ba68982896e6cfa749add39cbe6201b6e87de64a8d38a3"
+  },
+  "api_metadata": {
+    "id": "resp_0c6135627b6165a5006aaa0490243887d29c84942332da680a",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789527184.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1768,
+      "input_tokens_details": {
+        "cache_write_tokens": 1765,
+        "cached_tokens": 0
+      },
+      "output_tokens": 261,
+      "output_tokens_details": {
+        "reasoning_tokens": 106
+      },
+      "total_tokens": 2029
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.97,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Singapore telecommunications measures to block international scam calls\",\n  \"conflict_relevance\": \"An unrelated latest-stories snippet briefly references Israel's war on Hamas in Gaza as regional context for a bombing in Iran.\",\n  \"reason\": \"The main article concerns Singapore telecom policy and scam prevention, not the Gaza conflict. However, an embedded news item contains a meaningful contextual reference to Israel's war on Hamas in Gaza, making the item peripheral rather than wholly excludable.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:53:07Z",
+  "duration_seconds": 3.659,
+  "error": null
+}

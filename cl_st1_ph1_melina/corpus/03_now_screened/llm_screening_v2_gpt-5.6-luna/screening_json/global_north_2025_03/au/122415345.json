@@ -1,0 +1,65 @@
+{
+  "article_id": "122415345",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_03/au/122415345.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_03/au/122415345.json"
+  },
+  "manifest_row": {
+    "article_id": "122415345",
+    "group": "global_north_2025_03",
+    "country_code": "au",
+    "filepath": "corpus/02_now_organised/global_north_2025_03/au/122415345.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "background",
+    "main_topic": "Morning news bulletin covering a nightclub fire in North Macedonia, Australian cyclone recovery and budget impacts, Yemen airstrikes, medical staffing, spaceflight, and athletics",
+    "conflict_relevance": "Includes a substantive news segment on US airstrikes in Yemen linked to Houthi attacks responding to Israel's restriction of humanitarian aid and electricity to Gaza.",
+    "reason": "The bulletin is primarily about unrelated international, domestic, scientific, and sporting news. However, its Yemen segment contains meaningful discourse connecting military action, the Houthis, Israel, and humanitarian conditions in Gaza, making it peripheral rather than excludable.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "a8c5bc249505f2ede3969a7083280a547fd07fad3acaa01cd0717e12eb22df10",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "f7548ec3c06b19c43cc6ba3c5c2cca520a1e216dda2988486d73ded067f72f52",
+    "raw_response_text_sha256": "92ef2d8a96e20174aace3cc177f673f4f9b4e24d972022ab46615cfb3f9804c3"
+  },
+  "api_metadata": {
+    "id": "resp_0b1781617e5e4d16006aaa2577744487d1afa1220b55a9185f",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789535607.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1618,
+      "input_tokens_details": {
+        "cache_write_tokens": 1615,
+        "cached_tokens": 0
+      },
+      "output_tokens": 287,
+      "output_tokens_details": {
+        "reasoning_tokens": 100
+      },
+      "total_tokens": 1905
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Morning news bulletin covering a nightclub fire in North Macedonia, Australian cyclone recovery and budget impacts, Yemen airstrikes, medical staffing, spaceflight, and athletics\",\n  \"conflict_relevance\": \"Includes a substantive news segment on US airstrikes in Yemen linked to Houthi attacks responding to Israel's restriction of humanitarian aid and electricity to Gaza.\",\n  \"reason\": \"The bulletin is primarily about unrelated international, domestic, scientific, and sporting news. However, its Yemen segment contains meaningful discourse connecting military action, the Houthis, Israel, and humanitarian conditions in Gaza, making it peripheral rather than excludable.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T05:13:31Z",
+  "duration_seconds": 4.633,
+  "error": null
+}

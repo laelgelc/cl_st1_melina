@@ -1,0 +1,65 @@
+{
+  "article_id": "121142252",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_02/us/121142252.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_02/us/121142252.json"
+  },
+  "manifest_row": {
+    "article_id": "121142252",
+    "group": "global_north_2025_02",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2025_02/us/121142252.txt"
+  },
+  "screening": {
+    "category": "CORE",
+    "confidence": 0.99,
+    "gaza_role": "substantial",
+    "main_topic": "Live coverage of the Trump administration, including proposals to remove Palestinians from Gaza, US control and redevelopment of Gaza, the Israel-Hamas ceasefire, hostages, humanitarian evacuations, and diplomatic discussions with Jordan",
+    "conflict_relevance": "The article contains extensive and repeated coverage of Gaza-related policy, diplomacy, displacement proposals, ceasefire conditions, hostages, Palestinian rights, humanitarian medical evacuations, and reactions from Hamas, Jordan, Israel, and the United States.",
+    "reason": "Although presented as a broad live news roundup with many unrelated domestic and international items, multiple substantial sections focus directly on Gaza, the Israel-Hamas war, the ceasefire, hostage releases, Trump's proposed displacement and US control of Gaza, and the humanitarian situation.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": true
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "f58f394c13c12ff7a461c9518961ae06b0d921b61d77f1095e61474901f33df2",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "9735005e6937aeef5668a0c3b4ce2c516e3fc8d431a44c42a7f374cb7665bf74",
+    "raw_response_text_sha256": "1efb75f422af663dd718abdbfd61e6f3b1f325a664fc8d6a22b3d9a2ccc09927"
+  },
+  "api_metadata": {
+    "id": "resp_0ef8da3c21d3c636006aaa24a6ecfc87d18700a06a6ac3707e",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789535398.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 9434,
+      "input_tokens_details": {
+        "cache_write_tokens": 9431,
+        "cached_tokens": 0
+      },
+      "output_tokens": 305,
+      "output_tokens_details": {
+        "reasoning_tokens": 92
+      },
+      "total_tokens": 9739
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"CORE\",\n  \"confidence\": 0.99,\n  \"gaza_role\": \"substantial\",\n  \"main_topic\": \"Live coverage of the Trump administration, including proposals to remove Palestinians from Gaza, US control and redevelopment of Gaza, the Israel-Hamas ceasefire, hostages, humanitarian evacuations, and diplomatic discussions with Jordan\",\n  \"conflict_relevance\": \"The article contains extensive and repeated coverage of Gaza-related policy, diplomacy, displacement proposals, ceasefire conditions, hostages, Palestinian rights, humanitarian medical evacuations, and reactions from Hamas, Jordan, Israel, and the United States.\",\n  \"reason\": \"Although presented as a broad live news roundup with many unrelated domestic and international items, multiple substantial sections focus directly on Gaza, the Israel-Hamas war, the ceasefire, hostage releases, Trump's proposed displacement and US control of Gaza, and the humanitarian situation.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": true\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T05:10:02Z",
+  "duration_seconds": 4.001,
+  "error": null
+}

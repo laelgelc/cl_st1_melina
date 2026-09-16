@@ -1,0 +1,65 @@
+{
+  "article_id": "113303201",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_09/ca/113303201.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_09/ca/113303201.json"
+  },
+  "manifest_row": {
+    "article_id": "113303201",
+    "group": "global_north_2024_09",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2024_09/ca/113303201.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.97,
+    "gaza_role": "passing",
+    "main_topic": "The resurgence of compact digital cameras and nostalgia among young people",
+    "conflict_relevance": "The text includes an embedded news item about Israeli hostages found dead in Gaza, Israeli protests, and calls for a ceasefire, but this is unrelated to the main article.",
+    "reason": "The primary article concerns digital-camera nostalgia and media habits. However, the text contains a substantive but embedded passage about the Gaza war, hostage deaths, and Israeli public demands for a ceasefire, making it useful only for peripheral discourse analysis.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "f0f91270ce93b0b0cfd8d212cb19d8c51d382f72b805525ce7c93d6ffb46d2ec",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "25aa1277fdd44d6532f0965dc780bbecf04e3259d3c32a59af4dca6618530ffe",
+    "raw_response_text_sha256": "05d69287665bdb7631dcc138279e2eae411c780dae19231b203e593d1b499b54"
+  },
+  "api_metadata": {
+    "id": "resp_06a7708aec64fcf8006aaa15fe147887d291ac82125278b126",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789531646.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 3253,
+      "input_tokens_details": {
+        "cache_write_tokens": 3250,
+        "cached_tokens": 0
+      },
+      "output_tokens": 312,
+      "output_tokens_details": {
+        "reasoning_tokens": 143
+      },
+      "total_tokens": 3565
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.97,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"The resurgence of compact digital cameras and nostalgia among young people\",\n  \"conflict_relevance\": \"The text includes an embedded news item about Israeli hostages found dead in Gaza, Israeli protests, and calls for a ceasefire, but this is unrelated to the main article.\",\n  \"reason\": \"The primary article concerns digital-camera nostalgia and media habits. However, the text contains a substantive but embedded passage about the Gaza war, hostage deaths, and Israeli public demands for a ceasefire, making it useful only for peripheral discourse analysis.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T04:07:30Z",
+  "duration_seconds": 4.984,
+  "error": null
+}

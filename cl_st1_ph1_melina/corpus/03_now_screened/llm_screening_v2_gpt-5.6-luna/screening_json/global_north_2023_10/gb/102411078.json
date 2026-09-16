@@ -1,0 +1,65 @@
+{
+  "article_id": "102411078",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_10/gb/102411078.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_10/gb/102411078.json"
+  },
+  "manifest_row": {
+    "article_id": "102411078",
+    "group": "global_north_2023_10",
+    "country_code": "gb",
+    "filepath": "corpus/02_now_organised/global_north_2023_10/gb/102411078.txt"
+  },
+  "screening": {
+    "category": "CORE",
+    "confidence": 0.99,
+    "gaza_role": "central",
+    "main_topic": "The 7 October 2023 Hamas attack on Israel, hostage-taking, and Israel's military response in Gaza",
+    "conflict_relevance": "Direct and substantial coverage of the Israel-Hamas war, including casualties, rocket attacks, hostages, military operations, political statements, occupation, and international responses.",
+    "reason": "Although the text contains unrelated Coronation Street, football, and crime material, the clearly identifiable main news article is centrally about the Hamas attack on Israel and Israeli retaliation in Gaza.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": true
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "817867a6a7d174a188ff09173c94dfab9a14988f82133aa93d87dd3c7a6b0729",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "8a5aec8f664019854533d99855ea8f56fb2288dd5133c39c8a48b339bed10cd8",
+    "raw_response_text_sha256": "bd243749a8edfb412755e5498777aa74dd2fdbf794421120a9dd9d8603b0f7fa"
+  },
+  "api_metadata": {
+    "id": "resp_0171172013c9d737006aa9f6c9be7087d2a7a3c4253468e864",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789523657.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 3028,
+      "input_tokens_details": {
+        "cache_write_tokens": 3025,
+        "cached_tokens": 0
+      },
+      "output_tokens": 254,
+      "output_tokens_details": {
+        "reasoning_tokens": 91
+      },
+      "total_tokens": 3282
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"CORE\",\n  \"confidence\": 0.99,\n  \"gaza_role\": \"central\",\n  \"main_topic\": \"The 7 October 2023 Hamas attack on Israel, hostage-taking, and Israel's military response in Gaza\",\n  \"conflict_relevance\": \"Direct and substantial coverage of the Israel-Hamas war, including casualties, rocket attacks, hostages, military operations, political statements, occupation, and international responses.\",\n  \"reason\": \"Although the text contains unrelated Coronation Street, football, and crime material, the clearly identifiable main news article is centrally about the Hamas attack on Israel and Israeli retaliation in Gaza.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": true\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T01:54:20Z",
+  "duration_seconds": 2.909,
+  "error": null
+}

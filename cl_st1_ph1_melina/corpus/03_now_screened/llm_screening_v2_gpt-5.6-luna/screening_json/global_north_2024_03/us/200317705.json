@@ -1,0 +1,65 @@
+{
+  "article_id": "200317705",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_03/us/200317705.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_03/us/200317705.json"
+  },
+  "manifest_row": {
+    "article_id": "200317705",
+    "group": "global_north_2024_03",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2024_03/us/200317705.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.97,
+    "gaza_role": "background",
+    "main_topic": "Filmmaking and storytelling as tools for healing trauma among refugees and war survivors",
+    "conflict_relevance": "The article includes a meaningful account of the filmmaker's humanitarian medical mission in Rafah, Gaza, describing bombardment, trauma, and therapeutic storytelling among people affected by the war, but Gaza is not the article's central subject.",
+    "reason": "Gaza-related discourse occupies a substantial passage and concerns humanitarian conditions, military violence, trauma, and solidarity. However, the main article focuses on the filmmaker's broader work with Syrian refugees and trauma recovery rather than the Gaza conflict itself.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "712ee46f38d6ce016900a8e5944a9fbca47c2a4b0616324441abba5c02a1319c",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "95c10fe3d759900f68984dba87047bc524bbc10240c0933a29566b8b4fcadfdc",
+    "raw_response_text_sha256": "67906d5e2f6a03ff69e621d81ff94df2e35830d0d99463a40ad561a9efedfe33"
+  },
+  "api_metadata": {
+    "id": "resp_0830303bb6fe6017006aaa0a8cf15887d2aca557fda33723aa",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789528716.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1240,
+      "input_tokens_details": {
+        "cache_write_tokens": 1237,
+        "cached_tokens": 0
+      },
+      "output_tokens": 251,
+      "output_tokens_details": {
+        "reasoning_tokens": 69
+      },
+      "total_tokens": 1491
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.97,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Filmmaking and storytelling as tools for healing trauma among refugees and war survivors\",\n  \"conflict_relevance\": \"The article includes a meaningful account of the filmmaker's humanitarian medical mission in Rafah, Gaza, describing bombardment, trauma, and therapeutic storytelling among people affected by the war, but Gaza is not the article's central subject.\",\n  \"reason\": \"Gaza-related discourse occupies a substantial passage and concerns humanitarian conditions, military violence, trauma, and solidarity. However, the main article focuses on the filmmaker's broader work with Syrian refugees and trauma recovery rather than the Gaza conflict itself.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:18:41Z",
+  "duration_seconds": 4.251,
+  "error": null
+}

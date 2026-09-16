@@ -1,0 +1,65 @@
+{
+  "article_id": "91738926",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_11/us/91738926.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_11/us/91738926.json"
+  },
+  "manifest_row": {
+    "article_id": "91738926",
+    "group": "global_north_2023_11",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2023_11/us/91738926.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "background",
+    "main_topic": "Islamic State attack on pro-government forces in Syria",
+    "conflict_relevance": "The article is primarily about violence in Syria but includes meaningful background on Israel's war in Gaza and related Israeli strikes in Syria.",
+    "reason": "Gaza and Israel-Palestine are not the central subject, but the article explicitly situates regional violence in relation to the Gaza war and Israel's military actions in Syria.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "32f0333c867c9ef03c135af255f12686e345d64dcfc98865219e8b8820706225",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "4646241f95d487fa7b8354fc35131d9da6d8035b39fccd4f2b65573a2ae73ad5",
+    "raw_response_text_sha256": "f5482eac4bc8b9cc0d49b628cce1186d1fd12e5bf509815433a1216eaee44671"
+  },
+  "api_metadata": {
+    "id": "resp_0c0fecdee905af7e006aaa0010c34c87d29edd413541161e1d",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789526032.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1042,
+      "input_tokens_details": {
+        "cache_write_tokens": 1039,
+        "cached_tokens": 0
+      },
+      "output_tokens": 182,
+      "output_tokens_details": {
+        "reasoning_tokens": 35
+      },
+      "total_tokens": 1224
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Islamic State attack on pro-government forces in Syria\",\n  \"conflict_relevance\": \"The article is primarily about violence in Syria but includes meaningful background on Israel's war in Gaza and related Israeli strikes in Syria.\",\n  \"reason\": \"Gaza and Israel-Palestine are not the central subject, but the article explicitly situates regional violence in relation to the Gaza war and Israel's military actions in Syria.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:33:56Z",
+  "duration_seconds": 3.413,
+  "error": null
+}

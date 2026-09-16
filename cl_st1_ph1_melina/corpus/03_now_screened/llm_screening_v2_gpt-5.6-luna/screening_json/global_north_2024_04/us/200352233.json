@@ -1,0 +1,65 @@
+{
+  "article_id": "200352233",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_04/us/200352233.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_04/us/200352233.json"
+  },
+  "manifest_row": {
+    "article_id": "200352233",
+    "group": "global_north_2024_04",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2024_04/us/200352233.txt"
+  },
+  "screening": {
+    "category": "CORE",
+    "confidence": 0.99,
+    "gaza_role": "central",
+    "main_topic": "Israeli protesters calling for a hostage-release deal and early elections",
+    "conflict_relevance": "Directly concerns hostages held in Gaza, Israeli government policy, and domestic protests related to the Israel-Hamas war.",
+    "reason": "The article focuses on protests outside the Knesset demanding the release of hostages held in Gaza and criticizing the Israeli government's handling of the conflict. The repeated AP boilerplate does not affect the article's central relevance.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": true
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "4f852a2ad79711668605be9c4629801cbeae0c96f0e463bf8ecbb00fd564013f",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "bf0d179a106191c80604ca4a4cf766166a12e46ffc82ddee0eb5d647acfeaa28",
+    "raw_response_text_sha256": "f19106da6b6f9811c107a5498d191753d96be80a8323fb0055dbeea19308a711"
+  },
+  "api_metadata": {
+    "id": "resp_0188adc52dd328af006aaa0c70203087d2b09ea76c99e8361e",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789529200.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 881,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 207,
+      "output_tokens_details": {
+        "reasoning_tokens": 54
+      },
+      "total_tokens": 1088
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"CORE\",\n  \"confidence\": 0.99,\n  \"gaza_role\": \"central\",\n  \"main_topic\": \"Israeli protesters calling for a hostage-release deal and early elections\",\n  \"conflict_relevance\": \"Directly concerns hostages held in Gaza, Israeli government policy, and domestic protests related to the Israel-Hamas war.\",\n  \"reason\": \"The article focuses on protests outside the Knesset demanding the release of hostages held in Gaza and criticizing the Israeli government's handling of the conflict. The repeated AP boilerplate does not affect the article's central relevance.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": true\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:26:42Z",
+  "duration_seconds": 2.836,
+  "error": null
+}

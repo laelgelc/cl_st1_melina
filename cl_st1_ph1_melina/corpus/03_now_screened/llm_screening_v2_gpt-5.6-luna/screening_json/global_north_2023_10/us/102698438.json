@@ -1,0 +1,65 @@
+{
+  "article_id": "102698438",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_10/us/102698438.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_10/us/102698438.json"
+  },
+  "manifest_row": {
+    "article_id": "102698438",
+    "group": "global_north_2023_10",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2023_10/us/102698438.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.96,
+    "gaza_role": "background",
+    "main_topic": "Singapore digital payment and banking outage affecting young people",
+    "conflict_relevance": "An unrelated embedded news snippet discusses the Israel-Hamas war, U.S. aircraft carrier deployments, deterrence, regional escalation, and potential consequences for Gaza.",
+    "reason": "The main article is about personal experiences during a payment-system outage in Singapore. However, it includes a substantive but clearly unrelated embedded report about the military and geopolitical context of the war involving Israel and Gaza, making it useful only for broader peripheral discourse analysis.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "a363a18e805cbabc4ed2eeba4020d3a4de72ab9625048b74614d525e0e103d58",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "48e56dd86b07f6ab00ca85074873818c3b9ac561fc0910c54b8342f915ba8669",
+    "raw_response_text_sha256": "2f464754c2dfd4f88b96bb7eb9bbfb75475c737500959d9488d97609ea8dae23"
+  },
+  "api_metadata": {
+    "id": "resp_0cd13ff152158c0a006aa9f903ec6887d2addf6fa9dc658577",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789524227.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2743,
+      "input_tokens_details": {
+        "cache_write_tokens": 2740,
+        "cached_tokens": 0
+      },
+      "output_tokens": 376,
+      "output_tokens_details": {
+        "reasoning_tokens": 210
+      },
+      "total_tokens": 3119
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.96,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Singapore digital payment and banking outage affecting young people\",\n  \"conflict_relevance\": \"An unrelated embedded news snippet discusses the Israel-Hamas war, U.S. aircraft carrier deployments, deterrence, regional escalation, and potential consequences for Gaza.\",\n  \"reason\": \"The main article is about personal experiences during a payment-system outage in Singapore. However, it includes a substantive but clearly unrelated embedded report about the military and geopolitical context of the war involving Israel and Gaza, making it useful only for broader peripheral discourse analysis.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:03:52Z",
+  "duration_seconds": 4.686,
+  "error": null
+}

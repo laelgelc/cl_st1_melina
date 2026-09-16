@@ -1,0 +1,65 @@
+{
+  "article_id": "123309075",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_04/us/123309075.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_04/us/123309075.json"
+  },
+  "manifest_row": {
+    "article_id": "123309075",
+    "group": "global_north_2025_04",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2025_04/us/123309075.txt"
+  },
+  "screening": {
+    "category": "CORE",
+    "confidence": 0.94,
+    "gaza_role": "substantial",
+    "main_topic": "Trump-Netanyahu diplomacy, Iran's nuclear program, Israel-U.S. relations, and negotiations related to the Israel-Hamas war",
+    "conflict_relevance": "The article substantially discusses the Israel-Hamas war, possible Israeli concessions on Gaza, proposed U.S.-Israel diplomacy, occupied West Bank annexation, and regional negotiations involving Israel and Arab states.",
+    "reason": "Although the text is a concatenation of many unrelated news items, one substantial article directly concerns Netanyahu's meeting with Trump and diplomatic efforts connected to Gaza and the Israel-Hamas war. This is meaningful core conflict-related coverage.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": true
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "0d6c63244d19213a95bd3760f827125c4b27eb8e9aabc2a6372f72e2820921ca",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "043c5477cbe8978d7950473d66bad4c462d436c8f71ffa2218cb6c232f63d907",
+    "raw_response_text_sha256": "cd29eccdf640f6b6b08f1376a9aaffd6b46eadb0b8b4230a7ba1e0993e3b2561"
+  },
+  "api_metadata": {
+    "id": "resp_0d0c0a1bbee42354006aaa2a08fce087d1bfce745d3e003b16",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789536777.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 5867,
+      "input_tokens_details": {
+        "cache_write_tokens": 5864,
+        "cached_tokens": 0
+      },
+      "output_tokens": 375,
+      "output_tokens_details": {
+        "reasoning_tokens": 193
+      },
+      "total_tokens": 6242
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"CORE\",\n  \"confidence\": 0.94,\n  \"gaza_role\": \"substantial\",\n  \"main_topic\": \"Trump-Netanyahu diplomacy, Iran's nuclear program, Israel-U.S. relations, and negotiations related to the Israel-Hamas war\",\n  \"conflict_relevance\": \"The article substantially discusses the Israel-Hamas war, possible Israeli concessions on Gaza, proposed U.S.-Israel diplomacy, occupied West Bank annexation, and regional negotiations involving Israel and Arab states.\",\n  \"reason\": \"Although the text is a concatenation of many unrelated news items, one substantial article directly concerns Netanyahu's meeting with Trump and diplomatic efforts connected to Gaza and the Israel-Hamas war. This is meaningful core conflict-related coverage.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": true\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T05:33:01Z",
+  "duration_seconds": 4.993,
+  "error": null
+}

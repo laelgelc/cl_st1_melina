@@ -1,0 +1,65 @@
+{
+  "article_id": "123573551",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_south_2025_04/in/123573551.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_south_2025_04/in/123573551.json"
+  },
+  "manifest_row": {
+    "article_id": "123573551",
+    "group": "global_south_2025_04",
+    "country_code": "in",
+    "filepath": "corpus/02_now_organised/global_south_2025_04/in/123573551.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.94,
+    "gaza_role": "background",
+    "main_topic": "Mixed news aggregation, including an Israeli political dispute involving the Shin Bet and families of hostages in Gaza",
+    "conflict_relevance": "One substantive snippet discusses the Israeli government's conflict with the Shin Bet and criticism from families of hostages held in Gaza, but the overall text is dominated by unrelated sports, entertainment, technology, and general news items.",
+    "reason": "The Gaza-related passage is meaningful but not the central focus of the aggregated text. It is therefore relevant to broader conflict discourse but unsuitable as core conflict coverage.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "1f02855f7f4c6df6119b750a07600abf9492c1f5c6f281c6e8e40f2edba021d8",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "44b654f05f49e88ef89f864faa87af51d158b5a21d16a530bbaac9d5d34e5c67",
+    "raw_response_text_sha256": "663a59c9bdfe1b0d893349cc12c4fd2c3d6a2c8ae5be883ef8636a14539f7fc6"
+  },
+  "api_metadata": {
+    "id": "resp_08cff9cf14108f51006aaa478b4ce487d19dcfcd1429c29b6a",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789544331.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 4106,
+      "input_tokens_details": {
+        "cache_write_tokens": 4103,
+        "cached_tokens": 0
+      },
+      "output_tokens": 403,
+      "output_tokens_details": {
+        "reasoning_tokens": 234
+      },
+      "total_tokens": 4509
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.94,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Mixed news aggregation, including an Israeli political dispute involving the Shin Bet and families of hostages in Gaza\",\n  \"conflict_relevance\": \"One substantive snippet discusses the Israeli government's conflict with the Shin Bet and criticism from families of hostages held in Gaza, but the overall text is dominated by unrelated sports, entertainment, technology, and general news items.\",\n  \"reason\": \"The Gaza-related passage is meaningful but not the central focus of the aggregated text. It is therefore relevant to broader conflict discourse but unsuitable as core conflict coverage.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T07:38:56Z",
+  "duration_seconds": 5.277,
+  "error": null
+}

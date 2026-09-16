@@ -1,0 +1,65 @@
+{
+  "article_id": "109058776",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_south_2024_06/my/109058776.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_south_2024_06/my/109058776.json"
+  },
+  "manifest_row": {
+    "article_id": "109058776",
+    "group": "global_south_2024_06",
+    "country_code": "my",
+    "filepath": "corpus/02_now_organised/global_south_2024_06/my/109058776.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.84,
+    "gaza_role": "passing",
+    "main_topic": "Malaysia-Singapore bilateral relations and other unrelated news snippets",
+    "conflict_relevance": "A final embedded news item reports uncertainty over Gaza ceasefire and hostage negotiations, providing limited but meaningful conflict-related discourse.",
+    "reason": "The main article concerns Malaysia-Singapore relations, while the Gaza content appears only as a brief, unrelated news snippet about ceasefire and hostage talks.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "4b5864164bba40702e7537f21a2d8a4bbc4d1076e18128f69a8533fb258b5568",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "243eab1c385868da464b1ca4cf4d0b6ddbccd889c6c5d81f724757be8d36f8f7",
+    "raw_response_text_sha256": "b8e01722ef977f7e99771eb4250acb532e471c8d9792523e57fbf333c667fe17"
+  },
+  "api_metadata": {
+    "id": "resp_0c506d6c1b43aaf0006aaa3c579ed087d1b1e0f1bf03e66e21",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789541463.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1174,
+      "input_tokens_details": {
+        "cache_write_tokens": 1171,
+        "cached_tokens": 0
+      },
+      "output_tokens": 354,
+      "output_tokens_details": {
+        "reasoning_tokens": 214
+      },
+      "total_tokens": 1528
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.84,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Malaysia-Singapore bilateral relations and other unrelated news snippets\",\n  \"conflict_relevance\": \"A final embedded news item reports uncertainty over Gaza ceasefire and hostage negotiations, providing limited but meaningful conflict-related discourse.\",\n  \"reason\": \"The main article concerns Malaysia-Singapore relations, while the Gaza content appears only as a brief, unrelated news snippet about ceasefire and hostage talks.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T06:51:08Z",
+  "duration_seconds": 4.826,
+  "error": null
+}

@@ -1,0 +1,65 @@
+{
+  "article_id": "113085414",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_south_2024_08/za/113085414.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_south_2024_08/za/113085414.json"
+  },
+  "manifest_row": {
+    "article_id": "113085414",
+    "group": "global_south_2024_08",
+    "country_code": "za",
+    "filepath": "corpus/02_now_organised/global_south_2024_08/za/113085414.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.93,
+    "gaza_role": "background",
+    "main_topic": "A visual news roundup featuring photographs of international events",
+    "conflict_relevance": "The roundup includes captions about an Israeli air strike in the occupied West Bank, Palestinian casualties, and rehabilitation support for amputees at a Jordanian field hospital in Gaza.",
+    "reason": "The article is primarily a general photo roundup covering unrelated global news, sports, culture, and events. However, two substantial photo captions directly reference Israeli military action in the West Bank and humanitarian medical support in Gaza, making it relevant as peripheral conflict discourse rather than core coverage.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "53037a60248825ea72eaaf676a3a5836f8237e0ff054f4c03c23c940c08df2e7",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "70b84ba9915cb9ea8d32be16b84a0e690a8d78542f3d0bac00ff2fb52dfe8886",
+    "raw_response_text_sha256": "71d1a9bedc026eca8012a44e1755dd1c83499591859274312d7b8899a9086cce"
+  },
+  "api_metadata": {
+    "id": "resp_0cba2739831866f9006aaa3edc7f5487d18c4709d3902b32b2",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789542108.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1977,
+      "input_tokens_details": {
+        "cache_write_tokens": 1974,
+        "cached_tokens": 0
+      },
+      "output_tokens": 315,
+      "output_tokens_details": {
+        "reasoning_tokens": 143
+      },
+      "total_tokens": 2292
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.93,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"A visual news roundup featuring photographs of international events\",\n  \"conflict_relevance\": \"The roundup includes captions about an Israeli air strike in the occupied West Bank, Palestinian casualties, and rehabilitation support for amputees at a Jordanian field hospital in Gaza.\",\n  \"reason\": \"The article is primarily a general photo roundup covering unrelated global news, sports, culture, and events. However, two substantial photo captions directly reference Israeli military action in the West Bank and humanitarian medical support in Gaza, making it relevant as peripheral conflict discourse rather than core coverage.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T07:01:52Z",
+  "duration_seconds": 4.079,
+  "error": null
+}

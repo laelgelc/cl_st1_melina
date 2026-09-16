@@ -1,0 +1,65 @@
+{
+  "article_id": "118681503",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_12/gb/118681503.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_12/gb/118681503.json"
+  },
+  "manifest_row": {
+    "article_id": "118681503",
+    "group": "global_north_2024_12",
+    "country_code": "gb",
+    "filepath": "corpus/02_now_organised/global_north_2024_12/gb/118681503.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.96,
+    "gaza_role": "substantial",
+    "main_topic": "The fall of the Assad regime and ensuing political and military developments in Syria",
+    "conflict_relevance": "The live feed contains substantial embedded coverage of Israeli attacks in Gaza, Palestinian casualties, the Israel-Hamas ceasefire effort, UK arms exports to Israel, international humanitarian law, hostages, and humanitarian conditions. However, its main focus is the Syrian conflict and regional developments unrelated to Gaza.",
+    "reason": "Although the article includes multiple meaningful passages directly concerning Gaza and Israel-Palestine, the headline and majority of the coverage focus on Syria, Israeli strikes against Syrian targets, HTS, Assad, and related regional events. It is therefore useful for broader regional and conflict discourse analysis but is not core Gaza coverage.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "6a4538153187afd10c5d53627e386f2f1e8bf989fc96e267dca3297e9ab38ce5",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "c7af449cf954a0277d8616487564dcdab75f48b044e93114619d8ec87f6f2b8e",
+    "raw_response_text_sha256": "6514a146277cad2273a77bf4a77884c7457465173990d528cd91e5b135171739"
+  },
+  "api_metadata": {
+    "id": "resp_00ad5b9e3a2f8b4f006aaa1d5dfb6887d2b1bfb3535235947a",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789533534.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 5661,
+      "input_tokens_details": {
+        "cache_write_tokens": 5658,
+        "cached_tokens": 0
+      },
+      "output_tokens": 383,
+      "output_tokens_details": {
+        "reasoning_tokens": 173
+      },
+      "total_tokens": 6044
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.96,\n  \"gaza_role\": \"substantial\",\n  \"main_topic\": \"The fall of the Assad regime and ensuing political and military developments in Syria\",\n  \"conflict_relevance\": \"The live feed contains substantial embedded coverage of Israeli attacks in Gaza, Palestinian casualties, the Israel-Hamas ceasefire effort, UK arms exports to Israel, international humanitarian law, hostages, and humanitarian conditions. However, its main focus is the Syrian conflict and regional developments unrelated to Gaza.\",\n  \"reason\": \"Although the article includes multiple meaningful passages directly concerning Gaza and Israel-Palestine, the headline and majority of the coverage focus on Syria, Israeli strikes against Syrian targets, HTS, Assad, and related regional events. It is therefore useful for broader regional and conflict discourse analysis but is not core Gaza coverage.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T04:38:59Z",
+  "duration_seconds": 5.163,
+  "error": null
+}

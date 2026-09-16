@@ -1,0 +1,65 @@
+{
+  "article_id": "122549044",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_03/us/122549044.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_03/us/122549044.json"
+  },
+  "manifest_row": {
+    "article_id": "122549044",
+    "group": "global_north_2025_03",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2025_03/us/122549044.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.97,
+    "gaza_role": "background",
+    "main_topic": "U.S. strikes against the Houthis and escalating tensions with Iran in the Red Sea",
+    "conflict_relevance": "The article is primarily about U.S.-Houthi hostilities and Iranian support for the Houthis, but it links Houthi attacks to Israel's actions in Gaza and briefly references Hamas and Hezbollah.",
+    "reason": "Gaza is presented as the motivation for Houthi attacks rather than the central subject of the article. The references provide meaningful context for regional conflict discourse but do not make this core Gaza coverage.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "c2f4b9fb0c7f29374d15638065fcb81f1b9d3b7ef1a9af1ebb3174d04a65d4de",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "1dbe1dc38d9573bacbb68ac922016613024ccbe199fc2c1714668102554d1770",
+    "raw_response_text_sha256": "f429a2d462cf38feb133b62dea65ea30f7d5dc00e8e4c31c24772629c714d4e3"
+  },
+  "api_metadata": {
+    "id": "resp_0918d30c0b30d4b2006aaa27c6d1a887d1975db115299fb626",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789536198.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1083,
+      "input_tokens_details": {
+        "cache_write_tokens": 1080,
+        "cached_tokens": 0
+      },
+      "output_tokens": 237,
+      "output_tokens_details": {
+        "reasoning_tokens": 64
+      },
+      "total_tokens": 1320
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.97,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"U.S. strikes against the Houthis and escalating tensions with Iran in the Red Sea\",\n  \"conflict_relevance\": \"The article is primarily about U.S.-Houthi hostilities and Iranian support for the Houthis, but it links Houthi attacks to Israel's actions in Gaza and briefly references Hamas and Hezbollah.\",\n  \"reason\": \"Gaza is presented as the motivation for Houthi attacks rather than the central subject of the article. The references provide meaningful context for regional conflict discourse but do not make this core Gaza coverage.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T05:23:21Z",
+  "duration_seconds": 3.258,
+  "error": null
+}

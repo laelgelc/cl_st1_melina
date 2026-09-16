@@ -1,0 +1,65 @@
+{
+  "article_id": "102421775",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_south_2023_10/ng/102421775.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_south_2023_10/ng/102421775.json"
+  },
+  "manifest_row": {
+    "article_id": "102421775",
+    "group": "global_south_2023_10",
+    "country_code": "ng",
+    "filepath": "corpus/02_now_organised/global_south_2023_10/ng/102421775.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "gaza_role": "boilerplate_or_unrelated",
+    "main_topic": "Road travel and infrastructure conditions between Benin, Sapele, and Warri in Nigeria",
+    "conflict_relevance": "The main article is unrelated to Gaza or the Israel-Palestine conflict; Gaza appears only in an unrelated item within a 'Latest' section.",
+    "reason": "The article focuses entirely on Nigerian roads, transportation, insecurity, and travel experiences. The single sentence about Hamas and Israel is an embedded, unrelated news snippet and does not provide meaningful discourse for the conflict corpus.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "7262e337b0aaed10abf7c979f7d6d12aa42c0094a1428de7200499fb415f99b4",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "2ba227d728c1da62dae4e3f916d4bf348d178256bd568d817f41d63f92772ab2",
+    "raw_response_text_sha256": "331f6e93032dda5d03910b381cb3cb8c7fa830f4873be1c361026a0f5027ca35"
+  },
+  "api_metadata": {
+    "id": "resp_0c12cd780f1d9a2c006aaa3375cf6887d18a9363e12adc619e",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789539189.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 3019,
+      "input_tokens_details": {
+        "cache_write_tokens": 3016,
+        "cached_tokens": 0
+      },
+      "output_tokens": 255,
+      "output_tokens_details": {
+        "reasoning_tokens": 87
+      },
+      "total_tokens": 3274
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"gaza_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Road travel and infrastructure conditions between Benin, Sapele, and Warri in Nigeria\",\n  \"conflict_relevance\": \"The main article is unrelated to Gaza or the Israel-Palestine conflict; Gaza appears only in an unrelated item within a 'Latest' section.\",\n  \"reason\": \"The article focuses entirely on Nigerian roads, transportation, insecurity, and travel experiences. The single sentence about Hamas and Israel is an embedded, unrelated news snippet and does not provide meaningful discourse for the conflict corpus.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T06:13:13Z",
+  "duration_seconds": 3.549,
+  "error": null
+}

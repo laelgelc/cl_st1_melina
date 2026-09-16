@@ -1,0 +1,65 @@
+{
+  "article_id": "108863949",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_06/us/108863949.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_06/us/108863949.json"
+  },
+  "manifest_row": {
+    "article_id": "108863949",
+    "group": "global_north_2024_06",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2024_06/us/108863949.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "gaza_role": "passing",
+    "main_topic": "U.S. border policy and immigration enforcement",
+    "conflict_relevance": "Gaza is mentioned only in an incidental comparison to Biden's border order and is not substantively discussed.",
+    "reason": "The article focuses on U.S. immigration and border enforcement; the reference to the Gaza pier is a passing rhetorical analogy with no meaningful conflict-related discourse.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "05386c665df3723b0bdb6592015d0d030f8d867c74cb72c3ab2d800ff8ecee8c",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "e2dd41c4735c8c349d02f55993c2c0df3660e7f09a3963eaafe330ec23f0e469",
+    "raw_response_text_sha256": "07f2020900bc21d8ecca96e45c84ffa4b308faeb78bc6dfff297cbc66fa02914"
+  },
+  "api_metadata": {
+    "id": "resp_0074308bc81a1c36006aaa10ff0c0887d28db9437bc9721e3a",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789530367.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 795,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 236,
+      "output_tokens_details": {
+        "reasoning_tokens": 102
+      },
+      "total_tokens": 1031
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"U.S. border policy and immigration enforcement\",\n  \"conflict_relevance\": \"Gaza is mentioned only in an incidental comparison to Biden's border order and is not substantively discussed.\",\n  \"reason\": \"The article focuses on U.S. immigration and border enforcement; the reference to the Gaza pier is a passing rhetorical analogy with no meaningful conflict-related discourse.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:46:10Z",
+  "duration_seconds": 3.75,
+  "error": null
+}

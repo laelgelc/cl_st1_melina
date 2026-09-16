@@ -1,0 +1,65 @@
+{
+  "article_id": "102879485",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_10/gb/102879485.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_10/gb/102879485.json"
+  },
+  "manifest_row": {
+    "article_id": "102879485",
+    "group": "global_north_2023_10",
+    "country_code": "gb",
+    "filepath": "corpus/02_now_organised/global_north_2023_10/gb/102879485.txt"
+  },
+  "screening": {
+    "category": "CORE",
+    "confidence": 0.98,
+    "gaza_role": "central",
+    "main_topic": "Humanitarian pause and hostage conditions in the Israel-Hamas war",
+    "conflict_relevance": "The article directly discusses humanitarian conditions in besieged Gaza, international appeals for an aid pause, and the treatment and release of an Israeli hostage.",
+    "reason": "The substantive conflict-related content concerns aid access for Gaza civilians and an Israeli hostage abducted by militants. The Microsoft business item and Reuters boilerplate are unrelated embedded material, but the main conflict content is directly relevant.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": true
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "e6902da2327ea0de014c962f5ef64555bf7317b8eb934f9501a0d2edbad39def",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "d98626e1076962c1738c06459b9e2a92e8188df935862b5d676b300042fce48f",
+    "raw_response_text_sha256": "e7aad601847b98f0d545ec568fcf7f177614c2c4ff1053e1dd54edb18153351c"
+  },
+  "api_metadata": {
+    "id": "resp_01aa9f0a110cccc5006aa9f78c8df887d2a2009acb676ca8e2",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789523852.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 806,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 256,
+      "output_tokens_details": {
+        "reasoning_tokens": 99
+      },
+      "total_tokens": 1062
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"CORE\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"central\",\n  \"main_topic\": \"Humanitarian pause and hostage conditions in the Israel-Hamas war\",\n  \"conflict_relevance\": \"The article directly discusses humanitarian conditions in besieged Gaza, international appeals for an aid pause, and the treatment and release of an Israeli hostage.\",\n  \"reason\": \"The substantive conflict-related content concerns aid access for Gaza civilians and an Israeli hostage abducted by militants. The Microsoft business item and Reuters boilerplate are unrelated embedded material, but the main conflict content is directly relevant.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": true\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T01:57:35Z",
+  "duration_seconds": 2.816,
+  "error": null
+}

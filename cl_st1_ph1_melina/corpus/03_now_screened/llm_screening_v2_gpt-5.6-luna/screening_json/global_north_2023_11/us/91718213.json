@@ -1,0 +1,65 @@
+{
+  "article_id": "91718213",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_11/us/91718213.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_11/us/91718213.json"
+  },
+  "manifest_row": {
+    "article_id": "91718213",
+    "group": "global_north_2023_11",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2023_11/us/91718213.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.93,
+    "gaza_role": "background",
+    "main_topic": "Mixed news content, including a brief report on the impact of the Gaza war on U.S. college campuses",
+    "conflict_relevance": "The article contains a meaningful sentence linking the Gaza war and rising threats to Jewish and Muslim students and faculty in the United States, but the main content concerns unrelated crime, business, technology, sports, and legal stories.",
+    "reason": "The Gaza-related material is substantive enough to establish relevance to discourse about the conflict's effects on Jewish and Muslim communities, but it is only a brief embedded snippet within a largely unrelated multi-article text.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "b52c6b0945e4225676e2ee815426d1103919e497316de5dc0b2e3324c9a4382a",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "56e1139104b1b7526081811d844aa628b57402edb9285cea3fb22f1f0e5f7d36",
+    "raw_response_text_sha256": "0885f540c51a19f77682383ccb6d63703e106b60356d036072e1401137f6b37f"
+  },
+  "api_metadata": {
+    "id": "resp_08804544e84a3cc7006aa9ffbc543c87d2bca525ddf87b6633",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789525948.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1804,
+      "input_tokens_details": {
+        "cache_write_tokens": 1801,
+        "cached_tokens": 0
+      },
+      "output_tokens": 292,
+      "output_tokens_details": {
+        "reasoning_tokens": 112
+      },
+      "total_tokens": 2096
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.93,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Mixed news content, including a brief report on the impact of the Gaza war on U.S. college campuses\",\n  \"conflict_relevance\": \"The article contains a meaningful sentence linking the Gaza war and rising threats to Jewish and Muslim students and faculty in the United States, but the main content concerns unrelated crime, business, technology, sports, and legal stories.\",\n  \"reason\": \"The Gaza-related material is substantive enough to establish relevance to discourse about the conflict's effects on Jewish and Muslim communities, but it is only a brief embedded snippet within a largely unrelated multi-article text.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:32:32Z",
+  "duration_seconds": 4.381,
+  "error": null
+}

@@ -1,0 +1,65 @@
+{
+  "article_id": "125158329",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_south_2025_05/in/125158329.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_south_2025_05/in/125158329.json"
+  },
+  "manifest_row": {
+    "article_id": "125158329",
+    "group": "global_south_2025_05",
+    "country_code": "in",
+    "filepath": "corpus/02_now_organised/global_south_2025_05/in/125158329.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.96,
+    "gaza_role": "passing",
+    "main_topic": "Mixed news roundup covering international affairs, Indian security, public health, environmental incidents, and entertainment",
+    "conflict_relevance": "Includes a meaningful but very brief report that Hamas agreed to a US-proposed Gaza ceasefire.",
+    "reason": "The article is primarily a collection of unrelated news snippets. Gaza appears in one substantive sentence about a ceasefire proposal, while the remaining content concerns Harvard, Ukraine, India-Canada relations, COVID-19, an oil spill, and entertainment.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "c6c4b348b3e3257a07ccf9b0427671219485633f6e64d0a384267f34e30cd854",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "103b95d3821224be6f540376561f5fd08cb20bdeb2f63a036d2508541a3bba94",
+    "raw_response_text_sha256": "843dddf8d59a50e73d5b62a252cfc81bda513f1e0e232f928bade687fa43318c"
+  },
+  "api_metadata": {
+    "id": "resp_012c461899f9a1ad006aaa48e7648087d18333e9e58bc9a4f0",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789544679.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1059,
+      "input_tokens_details": {
+        "cache_write_tokens": 1056,
+        "cached_tokens": 0
+      },
+      "output_tokens": 364,
+      "output_tokens_details": {
+        "reasoning_tokens": 203
+      },
+      "total_tokens": 1423
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.96,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Mixed news roundup covering international affairs, Indian security, public health, environmental incidents, and entertainment\",\n  \"conflict_relevance\": \"Includes a meaningful but very brief report that Hamas agreed to a US-proposed Gaza ceasefire.\",\n  \"reason\": \"The article is primarily a collection of unrelated news snippets. Gaza appears in one substantive sentence about a ceasefire proposal, while the remaining content concerns Harvard, Ukraine, India-Canada relations, COVID-19, an oil spill, and entertainment.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T07:44:43Z",
+  "duration_seconds": 4.051,
+  "error": null
+}

@@ -1,0 +1,65 @@
+{
+  "article_id": "200109924",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_01/us/200109924.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_01/us/200109924.json"
+  },
+  "manifest_row": {
+    "article_id": "200109924",
+    "group": "global_north_2024_01",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2024_01/us/200109924.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.96,
+    "gaza_role": "background",
+    "main_topic": "Maersk suspending Red Sea shipping operations due to Houthi attacks and rerouting vessels",
+    "conflict_relevance": "The article links the Houthi attacks and resulting disruption of global shipping to Israel's military assault on Hamas-controlled Gaza, but its main focus is maritime logistics and commercial shipping.",
+    "reason": "Gaza and the Israel-Hamas conflict provide meaningful context for the reported Red Sea attacks, yet the article does not substantially discuss Gaza, Palestinians, or the conflict itself.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "ba3c74a421c9ac74e5e8df739f55b53706d719591b90da3832c3ee9382be834d",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "3b00e7a373ad9294a49b8249b830b2a2d87f531e08c8b74725abf541a42c6d3c",
+    "raw_response_text_sha256": "b0c9a74c1e88c1ee1ba8ab4dc323e4a2881c664f6b1d70525253cc52715521eb"
+  },
+  "api_metadata": {
+    "id": "resp_0658ac7e9938682f006aaa053c8dc487d2b13ba5595d833955",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789527356.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 945,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 219,
+      "output_tokens_details": {
+        "reasoning_tokens": 55
+      },
+      "total_tokens": 1164
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.96,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Maersk suspending Red Sea shipping operations due to Houthi attacks and rerouting vessels\",\n  \"conflict_relevance\": \"The article links the Houthi attacks and resulting disruption of global shipping to Israel's military assault on Hamas-controlled Gaza, but its main focus is maritime logistics and commercial shipping.\",\n  \"reason\": \"Gaza and the Israel-Hamas conflict provide meaningful context for the reported Red Sea attacks, yet the article does not substantially discuss Gaza, Palestinians, or the conflict itself.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:55:59Z",
+  "duration_seconds": 3.221,
+  "error": null
+}

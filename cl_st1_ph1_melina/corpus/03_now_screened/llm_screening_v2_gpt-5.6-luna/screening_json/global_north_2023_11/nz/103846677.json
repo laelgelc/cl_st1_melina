@@ -1,0 +1,65 @@
+{
+  "article_id": "103846677",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_11/nz/103846677.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_11/nz/103846677.json"
+  },
+  "manifest_row": {
+    "article_id": "103846677",
+    "group": "global_north_2023_11",
+    "country_code": "nz",
+    "filepath": "corpus/02_now_organised/global_north_2023_11/nz/103846677.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "background",
+    "main_topic": "Flexible office market growth and workspace expansion in Southeast Asia",
+    "conflict_relevance": "The main article is unrelated to Gaza or the Israel-Palestine conflict, but appended snippets contain substantive references to Hamas hostages, the Gaza relocation order, humanitarian consequences, and damage to communications and electricity infrastructure.",
+    "reason": "The headline article concerns commercial real estate and flexible workspace demand in Southeast Asia. However, the appended news snippets include meaningful Gaza-related discourse, making the item potentially useful for peripheral analysis but not suitable as core conflict coverage.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "20b3fa3d3e2a483cdcc7b09437bd7ebb14f0dfbdc8ee511a0d333704fb9abd16",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "e5357287eff88be8c02af57eaabd7bc11088674ffc4d5aad59fb665844c77132",
+    "raw_response_text_sha256": "3d2946fe431670bd48bf9571c038d83668d7ee9f791cbc5aa6bef07bcde9f077"
+  },
+  "api_metadata": {
+    "id": "resp_0174b8791dc6923b006aa9fdd4c87487d2b1481ac14d4dbd2f",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789525460.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2290,
+      "input_tokens_details": {
+        "cache_write_tokens": 2287,
+        "cached_tokens": 0
+      },
+      "output_tokens": 252,
+      "output_tokens_details": {
+        "reasoning_tokens": 80
+      },
+      "total_tokens": 2542
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Flexible office market growth and workspace expansion in Southeast Asia\",\n  \"conflict_relevance\": \"The main article is unrelated to Gaza or the Israel-Palestine conflict, but appended snippets contain substantive references to Hamas hostages, the Gaza relocation order, humanitarian consequences, and damage to communications and electricity infrastructure.\",\n  \"reason\": \"The headline article concerns commercial real estate and flexible workspace demand in Southeast Asia. However, the appended news snippets include meaningful Gaza-related discourse, making the item potentially useful for peripheral analysis but not suitable as core conflict coverage.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:24:24Z",
+  "duration_seconds": 3.937,
+  "error": null
+}

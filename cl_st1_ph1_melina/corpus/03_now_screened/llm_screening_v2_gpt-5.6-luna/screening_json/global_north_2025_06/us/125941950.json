@@ -1,0 +1,65 @@
+{
+  "article_id": "125941950",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_06/us/125941950.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_06/us/125941950.json"
+  },
+  "manifest_row": {
+    "article_id": "125941950",
+    "group": "global_north_2025_06",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2025_06/us/125941950.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.96,
+    "gaza_role": "background",
+    "main_topic": "Uber rideshare drivers' unionization and pay legislation in Illinois",
+    "conflict_relevance": "The article is primarily about labor legislation but ends with a substantive embedded item about a Jewish Voice for Peace fast protesting starvation in Gaza and U.S. arms transfers to Israel.",
+    "reason": "The Gaza-related material is brief and unrelated to the main article, but it contains meaningful discourse about humanitarian conditions, protest, and U.S. support for Israel, making the item peripheral rather than excludable.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "4c88a517975ae6db663dd943790e6c47b5e8f330884e77a971d952addc73c9ee",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "341d1123f310b4ce078575e46768952de83e4f462a4bc5709f54cbc0fc86c0fd",
+    "raw_response_text_sha256": "0ad5d609a9dd2a2c90cb94d5b74a72f0a4c8a3e7e9ea766017a4dd67c7346cf2"
+  },
+  "api_metadata": {
+    "id": "resp_0d8fe68f3eb0f918006aaa31600b7087d18fc297ed1e91956a",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789538656.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1246,
+      "input_tokens_details": {
+        "cache_write_tokens": 1243,
+        "cached_tokens": 0
+      },
+      "output_tokens": 244,
+      "output_tokens_details": {
+        "reasoning_tokens": 80
+      },
+      "total_tokens": 1490
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.96,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Uber rideshare drivers' unionization and pay legislation in Illinois\",\n  \"conflict_relevance\": \"The article is primarily about labor legislation but ends with a substantive embedded item about a Jewish Voice for Peace fast protesting starvation in Gaza and U.S. arms transfers to Israel.\",\n  \"reason\": \"The Gaza-related material is brief and unrelated to the main article, but it contains meaningful discourse about humanitarian conditions, protest, and U.S. support for Israel, making the item peripheral rather than excludable.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T06:04:19Z",
+  "duration_seconds": 3.736,
+  "error": null
+}

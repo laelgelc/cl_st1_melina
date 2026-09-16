@@ -1,0 +1,65 @@
+{
+  "article_id": "103866718",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_11/gb/103866718.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_11/gb/103866718.json"
+  },
+  "manifest_row": {
+    "article_id": "103866718",
+    "group": "global_north_2023_11",
+    "country_code": "gb",
+    "filepath": "corpus/02_now_organised/global_north_2023_11/gb/103866718.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.96,
+    "gaza_role": "background",
+    "main_topic": "G7 calls for Houthi cessation of attacks on international shipping and release of the Galaxy Leader crew",
+    "conflict_relevance": "The article concerns Houthi attacks and maritime security, while linking those actions to the Israel-Hamas war and briefly providing casualty and hostage context from Gaza and Israel.",
+    "reason": "The main subject is Red Sea shipping and Houthi activity rather than Gaza or the Israel-Palestine conflict itself, but the article meaningfully situates the attacks within the broader regional consequences of the war.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "31f0aea20dc7a60d82d17c182da23652b99157f8af1df840b7208145c80d2368",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "2842adbd717a8b260cc7f7a74333ca66227a8098ff32cc2f70cfef217170d4a3",
+    "raw_response_text_sha256": "f8a8eeb8e0d156cb59d1b804125cc490055aec5cfeab617830b01747b646f29e"
+  },
+  "api_metadata": {
+    "id": "resp_0b7be1b66b47c3ea006aa9fd55413087d28dffd63fb8706dc5",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789525333.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1020,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 248,
+      "output_tokens_details": {
+        "reasoning_tokens": 76
+      },
+      "total_tokens": 1268
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.96,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"G7 calls for Houthi cessation of attacks on international shipping and release of the Galaxy Leader crew\",\n  \"conflict_relevance\": \"The article concerns Houthi attacks and maritime security, while linking those actions to the Israel-Hamas war and briefly providing casualty and hostage context from Gaza and Israel.\",\n  \"reason\": \"The main subject is Red Sea shipping and Houthi activity rather than Gaza or the Israel-Palestine conflict itself, but the article meaningfully situates the attacks within the broader regional consequences of the war.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:22:16Z",
+  "duration_seconds": 3.588,
+  "error": null
+}

@@ -1,0 +1,65 @@
+{
+  "article_id": "123269022",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_04/au/123269022.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_04/au/123269022.json"
+  },
+  "manifest_row": {
+    "article_id": "123269022",
+    "group": "global_north_2025_04",
+    "country_code": "au",
+    "filepath": "corpus/02_now_organised/global_north_2025_04/au/123269022.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.97,
+    "gaza_role": "passing",
+    "main_topic": "Letters to the editor on Australian politics, housing, energy policy, climate change, and social issues",
+    "conflict_relevance": "Gaza is mentioned only in passing within a letter criticizing Donald Trump's foreign-policy rhetoric; there is no substantive discussion of Gaza, Palestine, Israel, or the conflict.",
+    "reason": "This is a multi-topic letters roundup, and the sole Gaza reference is incidental and embedded in an unrelated discussion of Trump and the Ukraine war.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "35c2452e3f0b58721602e1e237c0e44733a6ae870d680024749dd78936c33c2b",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "f48b44da2da9c1b5c647c9b278d0e4eaf2dc178afb6af84c37531865fcec022f",
+    "raw_response_text_sha256": "228f9bf55a9a77bec068b73a32cddd1c3dfe1f953eeb6cb9337f194a89b54dfc"
+  },
+  "api_metadata": {
+    "id": "resp_0f221f4b9f833528006aaa285652b087d19aa97c52a8f5a227",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789536342.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 3782,
+      "input_tokens_details": {
+        "cache_write_tokens": 3779,
+        "cached_tokens": 0
+      },
+      "output_tokens": 265,
+      "output_tokens_details": {
+        "reasoning_tokens": 110
+      },
+      "total_tokens": 4047
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.97,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Letters to the editor on Australian politics, housing, energy policy, climate change, and social issues\",\n  \"conflict_relevance\": \"Gaza is mentioned only in passing within a letter criticizing Donald Trump's foreign-policy rhetoric; there is no substantive discussion of Gaza, Palestine, Israel, or the conflict.\",\n  \"reason\": \"This is a multi-topic letters roundup, and the sole Gaza reference is incidental and embedded in an unrelated discussion of Trump and the Ukraine war.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T05:25:45Z",
+  "duration_seconds": 3.701,
+  "error": null
+}

@@ -1,0 +1,65 @@
+{
+  "article_id": "117318141",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_south_2024_11/in/117318141.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_south_2024_11/in/117318141.json"
+  },
+  "manifest_row": {
+    "article_id": "117318141",
+    "group": "global_south_2024_11",
+    "country_code": "in",
+    "filepath": "corpus/02_now_organised/global_south_2024_11/in/117318141.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.97,
+    "gaza_role": "passing",
+    "main_topic": "Media reactions to Donald Trump's 2024 US presidential election victory",
+    "conflict_relevance": "Gaza and the Israel-Gaza war appear only in the headline of one summarized article, without substantive discussion in the provided text.",
+    "reason": "The article is a roundup of election-related headlines and commentary. Its only conflict reference is an incidental mention in an embedded ABC headline, while the accompanying summary focuses on Ukraine, NATO, and Russia.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "5f65381b87b7430e2f36cb9308e02c962c560966712cc5ecfbc3c1767f9c57ec",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "841a6c002f795fb6eaa9cee1508a5539e7339b76eb0eb9e1cd276fe2c3eb409f",
+    "raw_response_text_sha256": "073cf37fd22b0c358b684934375a28eb7fe5f65cd6baf081a70e1ea0bed55c4a"
+  },
+  "api_metadata": {
+    "id": "resp_073f3f1277dc4cc2006aaa4198c18087d184e7392c8f527159",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789542808.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1199,
+      "input_tokens_details": {
+        "cache_write_tokens": 1196,
+        "cached_tokens": 0
+      },
+      "output_tokens": 282,
+      "output_tokens_details": {
+        "reasoning_tokens": 130
+      },
+      "total_tokens": 1481
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.97,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Media reactions to Donald Trump's 2024 US presidential election victory\",\n  \"conflict_relevance\": \"Gaza and the Israel-Gaza war appear only in the headline of one summarized article, without substantive discussion in the provided text.\",\n  \"reason\": \"The article is a roundup of election-related headlines and commentary. Its only conflict reference is an incidental mention in an embedded ABC headline, while the accompanying summary focuses on Ukraine, NATO, and Russia.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T07:13:32Z",
+  "duration_seconds": 3.716,
+  "error": null
+}

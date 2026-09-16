@@ -1,0 +1,65 @@
+{
+  "article_id": "109359239",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_south_2024_06/in/109359239.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_south_2024_06/in/109359239.json"
+  },
+  "manifest_row": {
+    "article_id": "109359239",
+    "group": "global_south_2024_06",
+    "country_code": "in",
+    "filepath": "corpus/02_now_organised/global_south_2024_06/in/109359239.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "passing",
+    "main_topic": "General live news roundup dominated by T20 World Cup and Indian current affairs",
+    "conflict_relevance": "Contains brief but substantive embedded updates about humanitarian aid delivery in Gaza and US-Israeli efforts to avoid escalation with Lebanon amid the Gaza war.",
+    "reason": "The article is primarily an unrelated rolling news and sports roundup, but it includes two meaningful conflict-related news items. These are relevant to broader monitoring of Gaza war discourse but are not sufficient for inclusion in the main conflict corpus.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "706ccdab8de84a8009a3d742d42050876c47fdf7ccbb47ccaea47ec77ba537f6",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "a9e5721a72e987c3f18d5d20c0e02046d9dc63743d677fdccadf9f129e1f6a91",
+    "raw_response_text_sha256": "3e4bc0d0a200a6f6734c68bd764c9f03ac3a7e187b22e36a6527212c19177cee"
+  },
+  "api_metadata": {
+    "id": "resp_0d6a26fcdec35432006aaa3c36633487d193845f4e2af21fe5",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789541430.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 10973,
+      "input_tokens_details": {
+        "cache_write_tokens": 10970,
+        "cached_tokens": 0
+      },
+      "output_tokens": 339,
+      "output_tokens_details": {
+        "reasoning_tokens": 177
+      },
+      "total_tokens": 11312
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"General live news roundup dominated by T20 World Cup and Indian current affairs\",\n  \"conflict_relevance\": \"Contains brief but substantive embedded updates about humanitarian aid delivery in Gaza and US-Israeli efforts to avoid escalation with Lebanon amid the Gaza war.\",\n  \"reason\": \"The article is primarily an unrelated rolling news and sports roundup, but it includes two meaningful conflict-related news items. These are relevant to broader monitoring of Gaza war discourse but are not sufficient for inclusion in the main conflict corpus.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T06:50:34Z",
+  "duration_seconds": 4.362,
+  "error": null
+}

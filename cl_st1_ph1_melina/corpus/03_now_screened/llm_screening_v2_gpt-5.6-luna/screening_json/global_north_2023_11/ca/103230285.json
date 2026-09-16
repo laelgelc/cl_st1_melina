@@ -1,0 +1,65 @@
+{
+  "article_id": "103230285",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_11/ca/103230285.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_11/ca/103230285.json"
+  },
+  "manifest_row": {
+    "article_id": "103230285",
+    "group": "global_north_2023_11",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2023_11/ca/103230285.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.96,
+    "gaza_role": "background",
+    "main_topic": "Alleged Islamophobic hate crime in Winnipeg",
+    "conflict_relevance": "The article reports a local anti-Muslim incident and explicitly situates it within a recent increase in suspected hate crimes linked by police to the Israel-Gaza war.",
+    "reason": "The central subject is a Manitoba hate-crime investigation, not Gaza or the Israel-Palestine conflict itself. However, its discussion of Islamophobia and the reported connection between local hate crimes and the Israel-Gaza war provides meaningful peripheral discourse relevance.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "b3a57984cbe7cc1f9b6b3cdd713e188e36fc5fc8f60889639a5331449a48f4d3",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "03da4273481d5ba8b853c0f33b3ed6a688271c9faee46173a5cd808d049b3622",
+    "raw_response_text_sha256": "0bac5bf1ae6e0e0c79f1edb5f8deca4bec8dde23ab98cf103753c6db12f5f555"
+  },
+  "api_metadata": {
+    "id": "resp_092ce9e16d95262f006aa9fbb1d21487d285f40df39e21811a",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789524913.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1162,
+      "input_tokens_details": {
+        "cache_write_tokens": 1159,
+        "cached_tokens": 0
+      },
+      "output_tokens": 208,
+      "output_tokens_details": {
+        "reasoning_tokens": 41
+      },
+      "total_tokens": 1370
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.96,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Alleged Islamophobic hate crime in Winnipeg\",\n  \"conflict_relevance\": \"The article reports a local anti-Muslim incident and explicitly situates it within a recent increase in suspected hate crimes linked by police to the Israel-Gaza war.\",\n  \"reason\": \"The central subject is a Manitoba hate-crime investigation, not Gaza or the Israel-Palestine conflict itself. However, its discussion of Islamophobia and the reported connection between local hate crimes and the Israel-Gaza war provides meaningful peripheral discourse relevance.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:15:17Z",
+  "duration_seconds": 3.351,
+  "error": null
+}

@@ -1,0 +1,65 @@
+{
+  "article_id": "104125005",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_12/nz/104125005.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_12/nz/104125005.json"
+  },
+  "manifest_row": {
+    "article_id": "104125005",
+    "group": "global_north_2023_12",
+    "country_code": "nz",
+    "filepath": "corpus/02_now_organised/global_north_2023_12/nz/104125005.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.94,
+    "gaza_role": "passing",
+    "main_topic": "New Zealand family violence prevention and holiday-period safety",
+    "conflict_relevance": "An unrelated embedded snippet contains substantive political commentary about Gaza, including allegations of apartheid, embargo, civilian displacement, and destruction, but Gaza is not part of the main article.",
+    "reason": "The headline and main article concern family harm and support services in New Zealand. Gaza appears only in a separate, embedded news snippet; because that snippet contains meaningful conflict discourse, the item is peripheral rather than excluded.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "11351188d7b0c0f08f4949c1687a185d2c0f1b3f9a4beaa8a3b8a9be1eaff65d",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "7532a909a5fa37bc26c0cd46b22b4bbbb2a3adacf262f9a5d5d2c6573b82993c",
+    "raw_response_text_sha256": "0ecd063870b2a92db3ba07c06ec3c7d4d5ef1aa6f23b7356e2bd171511961aa6"
+  },
+  "api_metadata": {
+    "id": "resp_001b285e2798d806006aaa0180130087d2a313a41aeb11a41f",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789526400.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1609,
+      "input_tokens_details": {
+        "cache_write_tokens": 1606,
+        "cached_tokens": 0
+      },
+      "output_tokens": 346,
+      "output_tokens_details": {
+        "reasoning_tokens": 185
+      },
+      "total_tokens": 1955
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.94,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"New Zealand family violence prevention and holiday-period safety\",\n  \"conflict_relevance\": \"An unrelated embedded snippet contains substantive political commentary about Gaza, including allegations of apartheid, embargo, civilian displacement, and destruction, but Gaza is not part of the main article.\",\n  \"reason\": \"The headline and main article concern family harm and support services in New Zealand. Gaza appears only in a separate, embedded news snippet; because that snippet contains meaningful conflict discourse, the item is peripheral rather than excluded.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:40:04Z",
+  "duration_seconds": 4.31,
+  "error": null
+}

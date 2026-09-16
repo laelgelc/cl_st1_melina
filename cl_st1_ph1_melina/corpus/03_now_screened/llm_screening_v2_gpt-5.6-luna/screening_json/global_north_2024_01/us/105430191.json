@@ -1,0 +1,65 @@
+{
+  "article_id": "105430191",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_01/us/105430191.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_01/us/105430191.json"
+  },
+  "manifest_row": {
+    "article_id": "105430191",
+    "group": "global_north_2024_01",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2024_01/us/105430191.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "background",
+    "main_topic": "U.S. congressional efforts to regulate college athletics and classify student-athletes as employees",
+    "conflict_relevance": "The main article concerns college sports, but it includes a substantial appended news item about Biden campaign outreach, Arab-American political discontent, Israel's war against Hamas, and the Gaza war.",
+    "reason": "The headline and primary article are unrelated to Gaza or the Israel-Palestine conflict. However, the appended political segment contains meaningful discussion of Gaza, Israel's war against Hamas, ceasefire demands, Palestinian and Arab-American communities, and Biden's Middle East policy, making the item peripheral rather than excludable.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "6f46d02b3073edb5b33d468ca872a4c49c65779b5bc5fcc3f41062776140f85f",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "0871b615ee48fcdc5f7301aba1b73af5a3a14b60536b514c8cd1192effa3ba24",
+    "raw_response_text_sha256": "c4b82ac8240f23e5c3a840a95ebe2e26d93904938bbda37513f02c5f4522384e"
+  },
+  "api_metadata": {
+    "id": "resp_0dc0fc63fac38ab9006aaa05071a6087d2b953dd7658b5a391",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789527303.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 3556,
+      "input_tokens_details": {
+        "cache_write_tokens": 3553,
+        "cached_tokens": 0
+      },
+      "output_tokens": 372,
+      "output_tokens_details": {
+        "reasoning_tokens": 180
+      },
+      "total_tokens": 3928
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"U.S. congressional efforts to regulate college athletics and classify student-athletes as employees\",\n  \"conflict_relevance\": \"The main article concerns college sports, but it includes a substantial appended news item about Biden campaign outreach, Arab-American political discontent, Israel's war against Hamas, and the Gaza war.\",\n  \"reason\": \"The headline and primary article are unrelated to Gaza or the Israel-Palestine conflict. However, the appended political segment contains meaningful discussion of Gaza, Israel's war against Hamas, ceasefire demands, Palestinian and Arab-American communities, and Biden's Middle East policy, making the item peripheral rather than excludable.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:55:07Z",
+  "duration_seconds": 4.358,
+  "error": null
+}

@@ -1,0 +1,65 @@
+{
+  "article_id": "125914474",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_06/us/125914474.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_06/us/125914474.json"
+  },
+  "manifest_row": {
+    "article_id": "125914474",
+    "group": "global_north_2025_06",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2025_06/us/125914474.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.97,
+    "gaza_role": "passing",
+    "main_topic": "Israeli and Iranian UN statements concerning Israel's strikes on Iran and competing claims about self-defense and international law",
+    "conflict_relevance": "The article focuses on the Israel-Iran conflict rather than Gaza or Palestine, but it contains meaningful discourse about Israel, military action, terrorism, self-defense, and international law.",
+    "reason": "The central subject is the Israeli attack on Iran and the subsequent Security Council speeches. Gaza appears only in a photo caption, while the broader Israel-related framing provides limited peripheral relevance to conflict discourse.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "9037f87fdbedf84b1729ce0313300ece2f54db5425eec28001161bbb8f38d5ae",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "fec7dabed90ea4be41bf4bcefa2e1a0d190c85f35a201d1eef5549a013009c3f",
+    "raw_response_text_sha256": "7a419605b469f7b584f6b898ccb9701d684836138bb7676971099a7a26f05756"
+  },
+  "api_metadata": {
+    "id": "resp_0ed4547e919ea5f3006aaa3157b57087d1a01c184c280df8fb",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789538647.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1432,
+      "input_tokens_details": {
+        "cache_write_tokens": 1429,
+        "cached_tokens": 0
+      },
+      "output_tokens": 261,
+      "output_tokens_details": {
+        "reasoning_tokens": 91
+      },
+      "total_tokens": 1693
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.97,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Israeli and Iranian UN statements concerning Israel's strikes on Iran and competing claims about self-defense and international law\",\n  \"conflict_relevance\": \"The article focuses on the Israel-Iran conflict rather than Gaza or Palestine, but it contains meaningful discourse about Israel, military action, terrorism, self-defense, and international law.\",\n  \"reason\": \"The central subject is the Israeli attack on Iran and the subsequent Security Council speeches. Gaza appears only in a photo caption, while the broader Israel-related framing provides limited peripheral relevance to conflict discourse.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T06:04:11Z",
+  "duration_seconds": 3.761,
+  "error": null
+}

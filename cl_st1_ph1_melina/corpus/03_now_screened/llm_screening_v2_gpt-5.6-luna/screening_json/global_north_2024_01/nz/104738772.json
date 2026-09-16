@@ -1,0 +1,65 @@
+{
+  "article_id": "104738772",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_01/nz/104738772.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_01/nz/104738772.json"
+  },
+  "manifest_row": {
+    "article_id": "104738772",
+    "group": "global_north_2024_01",
+    "country_code": "nz",
+    "filepath": "corpus/02_now_organised/global_north_2024_01/nz/104738772.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "gaza_role": "boilerplate_or_unrelated",
+    "main_topic": "Police enforcement and drink-driving after the Rhythm and Vines festival in Gisborne, New Zealand",
+    "conflict_relevance": "The main article has no connection to Gaza or the Israel-Palestine conflict. Gaza appears only in an unrelated embedded snippet among additional Scoop content.",
+    "reason": "The headline and substantive article concern festival crowds, impaired driving, and seatbelt compliance. The brief Gaza-related text is an unrelated embedded item rather than part of the article's main discourse.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "374589ffcde926892a06e0b2dda5a314b231e2ff05e0ccd1ca28f43443f4accc",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "e191260f2db52496535aa0722e736fde0aa4fb6221101f17fc0965b22405e3de",
+    "raw_response_text_sha256": "25a98fdcbd604a8aa9392f743061d5a6c3006a253e418956203a0e8908a77986"
+  },
+  "api_metadata": {
+    "id": "resp_0cb57e02639520cf006aaa0451a59487d2a545acea7a5ca8b2",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789527121.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1303,
+      "input_tokens_details": {
+        "cache_write_tokens": 1300,
+        "cached_tokens": 0
+      },
+      "output_tokens": 319,
+      "output_tokens_details": {
+        "reasoning_tokens": 154
+      },
+      "total_tokens": 1622
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Police enforcement and drink-driving after the Rhythm and Vines festival in Gisborne, New Zealand\",\n  \"conflict_relevance\": \"The main article has no connection to Gaza or the Israel-Palestine conflict. Gaza appears only in an unrelated embedded snippet among additional Scoop content.\",\n  \"reason\": \"The headline and substantive article concern festival crowds, impaired driving, and seatbelt compliance. The brief Gaza-related text is an unrelated embedded item rather than part of the article's main discourse.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:52:05Z",
+  "duration_seconds": 3.822,
+  "error": null
+}

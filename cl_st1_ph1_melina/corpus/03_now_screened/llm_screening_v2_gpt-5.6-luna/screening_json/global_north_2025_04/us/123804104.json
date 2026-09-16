@@ -1,0 +1,65 @@
+{
+  "article_id": "123804104",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_04/us/123804104.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_04/us/123804104.json"
+  },
+  "manifest_row": {
+    "article_id": "123804104",
+    "group": "global_north_2025_04",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2025_04/us/123804104.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.96,
+    "gaza_role": "passing",
+    "main_topic": "Pope Francis's life, personality, and legacy",
+    "conflict_relevance": "The article briefly notes Pope Francis's weekly WhatsApp and video calls with a parish in Gaza, indicating his connection to Catholics in Gaza but providing no substantive discussion of the conflict.",
+    "reason": "The article is primarily an obituary and biographical profile of Pope Francis. Its single specific reference to Gaza is meaningful but incidental, making it peripheral rather than core conflict coverage.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "2dabb5d750ef40e9c47401f769567e7e7011dc2bda83d39426b18e87c82f8a43",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "6cbc311cb23151f2f67134ecaf4a717dcd15e598f250c80c96baf40a041a5294",
+    "raw_response_text_sha256": "b1c96af650182fa9a6840488392bb83ac709b2ec38bea7730a3e24edc718841b"
+  },
+  "api_metadata": {
+    "id": "resp_02e4a1b98ba0f0d4006aaa2a7d348887d18ea79bb3b1fa0722",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789536893.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1225,
+      "input_tokens_details": {
+        "cache_write_tokens": 1222,
+        "cached_tokens": 0
+      },
+      "output_tokens": 235,
+      "output_tokens_details": {
+        "reasoning_tokens": 80
+      },
+      "total_tokens": 1460
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.96,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Pope Francis's life, personality, and legacy\",\n  \"conflict_relevance\": \"The article briefly notes Pope Francis's weekly WhatsApp and video calls with a parish in Gaza, indicating his connection to Catholics in Gaza but providing no substantive discussion of the conflict.\",\n  \"reason\": \"The article is primarily an obituary and biographical profile of Pope Francis. Its single specific reference to Gaza is meaningful but incidental, making it peripheral rather than core conflict coverage.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T05:34:56Z",
+  "duration_seconds": 3.254,
+  "error": null
+}

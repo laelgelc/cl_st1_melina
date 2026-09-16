@@ -1,0 +1,65 @@
+{
+  "article_id": "106790838",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_03/gb/106790838.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_03/gb/106790838.json"
+  },
+  "manifest_row": {
+    "article_id": "106790838",
+    "group": "global_north_2024_03",
+    "country_code": "gb",
+    "filepath": "corpus/02_now_organised/global_north_2024_03/gb/106790838.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.97,
+    "gaza_role": "background",
+    "main_topic": "Mixed unrelated news snippets, including a brief report on displaced people in Gaza",
+    "conflict_relevance": "The opening snippet meaningfully describes displaced Palestinians in Rafah experiencing torrential rain and confusion between thunder and Israeli bombardment, but the remainder concerns unrelated legal, entertainment, political, and crime stories.",
+    "reason": "The Gaza content is relevant to humanitarian conditions and the effects of Israeli bombardment, but it is only a small embedded item within a clearly fragmented multi-article text and should not be treated as core conflict coverage.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "ed7d0a3cc6dd1f62ffdc06113ef37da7672f4363a3dfee329e60ab20b0023ccb",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "aabda56906a7ee0a5309333407913384bd14e7249a08370d00831311f9415a38",
+    "raw_response_text_sha256": "123d0d0a855494bde84b3fc46d822ad16e76a5590198f414456fb29bfcea822f"
+  },
+  "api_metadata": {
+    "id": "resp_0908924ec520055c006aaa08d64f7c87d297cd29a160106016",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789528278.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1060,
+      "input_tokens_details": {
+        "cache_write_tokens": 1057,
+        "cached_tokens": 0
+      },
+      "output_tokens": 367,
+      "output_tokens_details": {
+        "reasoning_tokens": 196
+      },
+      "total_tokens": 1427
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.97,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Mixed unrelated news snippets, including a brief report on displaced people in Gaza\",\n  \"conflict_relevance\": \"The opening snippet meaningfully describes displaced Palestinians in Rafah experiencing torrential rain and confusion between thunder and Israeli bombardment, but the remainder concerns unrelated legal, entertainment, political, and crime stories.\",\n  \"reason\": \"The Gaza content is relevant to humanitarian conditions and the effects of Israeli bombardment, but it is only a small embedded item within a clearly fragmented multi-article text and should not be treated as core conflict coverage.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:11:22Z",
+  "duration_seconds": 4.537,
+  "error": null
+}

@@ -1,0 +1,65 @@
+{
+  "article_id": "117918441",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_11/ie/117918441.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_11/ie/117918441.json"
+  },
+  "manifest_row": {
+    "article_id": "117918441",
+    "group": "global_north_2024_11",
+    "country_code": "ie",
+    "filepath": "corpus/02_now_organised/global_north_2024_11/ie/117918441.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "gaza_role": "passing",
+    "main_topic": "University student Christmas celebrations and community safety in Cork",
+    "conflict_relevance": "Gaza appears only as the name of one charity benefiting from event fundraising, with no discussion of the conflict or related issues.",
+    "reason": "The article is unrelated to Gaza or the Israel-Palestine conflict; the reference to the Concern Gaza Crisis Appeal is incidental and embedded in a list of fundraising beneficiaries.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "b6b0042751d1539985e8caef2bbd04992f4ab3e23820b32d7412127b98fe4d74",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "4f53d0c3aaae8e4f6ddce49e0095d18a67fa2045997cc829fd0c49e0e9ee2222",
+    "raw_response_text_sha256": "ee4d268a3ef956dece694adaf6524955536d625f4965eeb1104fc2dd6dfe5c21"
+  },
+  "api_metadata": {
+    "id": "resp_0475e4bac1edce10006aaa1b751ed087d2aa2bf8c19287cd04",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789533045.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1207,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 1204
+      },
+      "output_tokens": 228,
+      "output_tokens_details": {
+        "reasoning_tokens": 85
+      },
+      "total_tokens": 1435
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"University student Christmas celebrations and community safety in Cork\",\n  \"conflict_relevance\": \"Gaza appears only as the name of one charity benefiting from event fundraising, with no discussion of the conflict or related issues.\",\n  \"reason\": \"The article is unrelated to Gaza or the Israel-Palestine conflict; the reference to the Concern Gaza Crisis Appeal is incidental and embedded in a list of fundraising beneficiaries.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T04:30:47Z",
+  "duration_seconds": 2.503,
+  "error": null
+}

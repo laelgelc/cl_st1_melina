@@ -1,0 +1,65 @@
+{
+  "article_id": "122505505",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_03/us/122505505.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_03/us/122505505.json"
+  },
+  "manifest_row": {
+    "article_id": "122505505",
+    "group": "global_north_2025_03",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2025_03/us/122505505.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.88,
+    "gaza_role": "passing",
+    "main_topic": "Live news roundup focused mainly on U.S. politics, government actions, and the Ukraine war",
+    "conflict_relevance": "The headline and opening sentence report renewed Israeli military strikes in Gaza, but the article provides no substantive discussion of the strikes or the Israel-Palestine conflict.",
+    "reason": "Although Gaza is featured in the headline and lead, nearly all of the text consists of unrelated news updates. The Gaza reference is meaningful but too brief to make this a CORE conflict article.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "1e9e2f450d4316e3afe076f7a4188bb545b040e3ccedeea4a155b0c009a07c84",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "ae392342e6412f1f0f6fd2b6e5282823cf89efe2d34c6b3fd0ee23ed90c4f3be",
+    "raw_response_text_sha256": "3aebbb2bde06352cd91654b368f9e928a84fd1d420209271b6eedc7bf8d17db7"
+  },
+  "api_metadata": {
+    "id": "resp_00de320441e1ea59006aaa27b39a7087d1a437dfd460982b82",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789536179.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 6983,
+      "input_tokens_details": {
+        "cache_write_tokens": 6980,
+        "cached_tokens": 0
+      },
+      "output_tokens": 417,
+      "output_tokens_details": {
+        "reasoning_tokens": 254
+      },
+      "total_tokens": 7400
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.88,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Live news roundup focused mainly on U.S. politics, government actions, and the Ukraine war\",\n  \"conflict_relevance\": \"The headline and opening sentence report renewed Israeli military strikes in Gaza, but the article provides no substantive discussion of the strikes or the Israel-Palestine conflict.\",\n  \"reason\": \"Although Gaza is featured in the headline and lead, nearly all of the text consists of unrelated news updates. The Gaza reference is meaningful but too brief to make this a CORE conflict article.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T05:23:05Z",
+  "duration_seconds": 6.393,
+  "error": null
+}

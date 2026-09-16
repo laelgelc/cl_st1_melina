@@ -1,0 +1,65 @@
+{
+  "article_id": "107190479",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_04/ca/107190479.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_04/ca/107190479.json"
+  },
+  "manifest_row": {
+    "article_id": "107190479",
+    "group": "global_north_2024_04",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2024_04/ca/107190479.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.96,
+    "gaza_role": "background",
+    "main_topic": "Ontario Greenbelt land-swap controversy and integrity commissioner investigation",
+    "conflict_relevance": "A separate latest-stories snippet reports that the head of the Gaza-based aid group Anera is calling for an independent investigation into Israeli strikes that killed World Central Kitchen workers and other attacks on aid workers.",
+    "reason": "The main article is entirely about Ontario's Greenbelt scandal and contains no conflict-related discussion. However, it includes a substantive but unrelated embedded news snippet about Gaza, Israeli strikes, and aid-worker safety, making the item peripheral rather than excludable.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "39f43ec85951df3f563c43c8f1f14d6d8000ec66441a134f6175ec4c643c3985",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "a617bbf9494301f5b592bf46f21b00db930bed9e67f1ed6d197f384c0b3f8af5",
+    "raw_response_text_sha256": "805fa4aefb9e4b1ab08ac2ddf21141479664a1f977fd4dca9ac542e347e3b2c3"
+  },
+  "api_metadata": {
+    "id": "resp_0a84a3e0f227c575006aaa0af0bfcc87d2919b06e7366702cb",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789528816.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2513,
+      "input_tokens_details": {
+        "cache_write_tokens": 2510,
+        "cached_tokens": 0
+      },
+      "output_tokens": 319,
+      "output_tokens_details": {
+        "reasoning_tokens": 142
+      },
+      "total_tokens": 2832
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.96,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Ontario Greenbelt land-swap controversy and integrity commissioner investigation\",\n  \"conflict_relevance\": \"A separate latest-stories snippet reports that the head of the Gaza-based aid group Anera is calling for an independent investigation into Israeli strikes that killed World Central Kitchen workers and other attacks on aid workers.\",\n  \"reason\": \"The main article is entirely about Ontario's Greenbelt scandal and contains no conflict-related discussion. However, it includes a substantive but unrelated embedded news snippet about Gaza, Israeli strikes, and aid-worker safety, making the item peripheral rather than excludable.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:20:21Z",
+  "duration_seconds": 5.297,
+  "error": null
+}

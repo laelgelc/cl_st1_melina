@@ -1,0 +1,65 @@
+{
+  "article_id": "122398788",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_03/us/122398788.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_03/us/122398788.json"
+  },
+  "manifest_row": {
+    "article_id": "122398788",
+    "group": "global_north_2025_03",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2025_03/us/122398788.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.97,
+    "gaza_role": "background",
+    "main_topic": "US military strikes against Houthi rebels in Yemen",
+    "conflict_relevance": "The article links Houthi attacks on Red Sea shipping and the US military response to the group's stated support for Gaza's Palestinian militants fighting Israel.",
+    "reason": "The article is primarily about US military action against the Houthis and casualties in Yemen. Gaza and the Israel-related conflict provide meaningful background for explaining the Houthi attacks, but are not the central subject.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "3e65f0912839bffedf7c0616b3b15c97c36d5517b4917abc3bb6131492876336",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "3e2fb7665929a36dc6055c4d9348d82c5af61595f43237f2b197c5041a4efc6d",
+    "raw_response_text_sha256": "8e67a8ed506910d0476d9791c662f1cd06215d9919d8d41a1269ba875dae7c2d"
+  },
+  "api_metadata": {
+    "id": "resp_0865cfdd3031f8e0006aaa2794305487d19aa7dda8ee66ecb8",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789536148.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1128,
+      "input_tokens_details": {
+        "cache_write_tokens": 1125,
+        "cached_tokens": 0
+      },
+      "output_tokens": 239,
+      "output_tokens_details": {
+        "reasoning_tokens": 83
+      },
+      "total_tokens": 1367
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.97,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"US military strikes against Houthi rebels in Yemen\",\n  \"conflict_relevance\": \"The article links Houthi attacks on Red Sea shipping and the US military response to the group's stated support for Gaza's Palestinian militants fighting Israel.\",\n  \"reason\": \"The article is primarily about US military action against the Houthis and casualties in Yemen. Gaza and the Israel-related conflict provide meaningful background for explaining the Houthi attacks, but are not the central subject.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T05:22:31Z",
+  "duration_seconds": 3.569,
+  "error": null
+}

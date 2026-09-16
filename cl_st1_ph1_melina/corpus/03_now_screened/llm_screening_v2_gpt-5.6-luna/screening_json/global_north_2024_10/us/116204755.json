@@ -1,0 +1,65 @@
+{
+  "article_id": "116204755",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_10/us/116204755.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_10/us/116204755.json"
+  },
+  "manifest_row": {
+    "article_id": "116204755",
+    "group": "global_north_2024_10",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2024_10/us/116204755.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.91,
+    "gaza_role": "background",
+    "main_topic": "G7 defence ministers' meeting, with primary emphasis on Ukraine and secondary discussion of Lebanon, Israel, Hezbollah, Hamas, and Gaza",
+    "conflict_relevance": "The article contains meaningful coverage of Israel's war-related actions in Lebanon, the killing of Hamas leader Yahya Sinwar, prospects for a Gaza ceasefire, hostage release, and UNIFIL's mandate, but the main focus is G7 support for Ukraine and broader international security issues.",
+    "reason": "The Gaza and Israel/Palestine-related material is substantive but secondary to the article's central focus on Ukraine and the G7 defence ministers' meeting. It is therefore useful for studying broader diplomatic and security discourse around the conflict, but is not core Gaza coverage.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "b1f33a56212c4cc8a736d52fb5d6245999a00c8ad507e08e0c156bc4e136dce4",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "37814ae6be91af0dc2de87db3bbab079f7ec43656a5eae37c46ec8e01c12aea1",
+    "raw_response_text_sha256": "c8a285ca8905a88242fbdd9b8150d4972126453678ae6208d01794bee5fd061e"
+  },
+  "api_metadata": {
+    "id": "resp_0c056033140ff07e006aaa19a5d7c087d2aafd764d664a0dc6",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789532581.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2383,
+      "input_tokens_details": {
+        "cache_write_tokens": 2380,
+        "cached_tokens": 0
+      },
+      "output_tokens": 538,
+      "output_tokens_details": {
+        "reasoning_tokens": 326
+      },
+      "total_tokens": 2921
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.91,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"G7 defence ministers' meeting, with primary emphasis on Ukraine and secondary discussion of Lebanon, Israel, Hezbollah, Hamas, and Gaza\",\n  \"conflict_relevance\": \"The article contains meaningful coverage of Israel's war-related actions in Lebanon, the killing of Hamas leader Yahya Sinwar, prospects for a Gaza ceasefire, hostage release, and UNIFIL's mandate, but the main focus is G7 support for Ukraine and broader international security issues.\",\n  \"reason\": \"The Gaza and Israel/Palestine-related material is substantive but secondary to the article's central focus on Ukraine and the G7 defence ministers' meeting. It is therefore useful for studying broader diplomatic and security discourse around the conflict, but is not core Gaza coverage.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T04:23:10Z",
+  "duration_seconds": 8.931,
+  "error": null
+}

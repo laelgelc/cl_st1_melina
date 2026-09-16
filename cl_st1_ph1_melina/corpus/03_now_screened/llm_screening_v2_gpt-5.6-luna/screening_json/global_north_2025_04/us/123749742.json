@@ -1,0 +1,65 @@
+{
+  "article_id": "123749742",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_04/us/123749742.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_04/us/123749742.json"
+  },
+  "manifest_row": {
+    "article_id": "123749742",
+    "group": "global_north_2025_04",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2025_04/us/123749742.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "background",
+    "main_topic": "Investigation into the arson attack on Pennsylvania Governor Josh Shapiro's residence and the suspect's possible motives",
+    "conflict_relevance": "The article discusses the suspect's stated opposition to Shapiro's alleged plans concerning Palestinians, Shapiro's position on Israel's military action in Gaza, and possible religious or political bias, including antisemitism.",
+    "reason": "The article is primarily about a domestic arson investigation, mental competency, and security failures. However, it contains meaningful discussion connecting the alleged motive to Gaza, Palestinians, Israel, and antisemitism, making it relevant to broader conflict-related discourse but not core coverage.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "b1ddb4f9b1b28d6a24d8cc7f4dfe0d3baceceded6b3fd19e64378f9716ee49f4",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "a6f0ec17b2d5fed4e85738ab0820087027c2f18112d991b2f9430b551b689bb6",
+    "raw_response_text_sha256": "d4e171b4be5e72d637beed2ae82acd830712f2b43d5c31dcac1746f25e531631"
+  },
+  "api_metadata": {
+    "id": "resp_0be7080c378022f5006aaa2a710d7887d1a272b54a361c8979",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789536881.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1999,
+      "input_tokens_details": {
+        "cache_write_tokens": 1996,
+        "cached_tokens": 0
+      },
+      "output_tokens": 271,
+      "output_tokens_details": {
+        "reasoning_tokens": 80
+      },
+      "total_tokens": 2270
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Investigation into the arson attack on Pennsylvania Governor Josh Shapiro's residence and the suspect's possible motives\",\n  \"conflict_relevance\": \"The article discusses the suspect's stated opposition to Shapiro's alleged plans concerning Palestinians, Shapiro's position on Israel's military action in Gaza, and possible religious or political bias, including antisemitism.\",\n  \"reason\": \"The article is primarily about a domestic arson investigation, mental competency, and security failures. However, it contains meaningful discussion connecting the alleged motive to Gaza, Palestinians, Israel, and antisemitism, making it relevant to broader conflict-related discourse but not core coverage.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T05:34:43Z",
+  "duration_seconds": 3.071,
+  "error": null
+}

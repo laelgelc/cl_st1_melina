@@ -1,0 +1,65 @@
+{
+  "article_id": "112608885",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_08/ca/112608885.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_08/ca/112608885.json"
+  },
+  "manifest_row": {
+    "article_id": "112608885",
+    "group": "global_north_2024_08",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2024_08/ca/112608885.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.93,
+    "gaza_role": "passing",
+    "main_topic": "Helicopter crash and deaths in northwestern Quebec",
+    "conflict_relevance": "An unrelated embedded news snippet discusses a pro-Palestinian statement by Ottawa's Capital Pride organization, including references to antisemitism, Islamophobia, October 7, and the Gaza campaign.",
+    "reason": "The main article concerns a helicopter crash and has no connection to Gaza or the Israel-Palestine conflict. However, an embedded latest-stories item contains meaningful, though brief and unrelated, discourse about Palestine and Gaza.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "d45e95c035af516b4b679d4e9f45bac2bb690e1f924c948a22e050142067adae",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "910ee5f3b3bf78d405847f9d1319ed2808cb87abc8a1a76ccf2028f630c467ef",
+    "raw_response_text_sha256": "033580ffaf6a451e18f713862c2f2e6a497d2dc4fe1ba9b5d3c3262347a8efe3"
+  },
+  "api_metadata": {
+    "id": "resp_029e2ed254010b15006aaa13fd49f887d2b4eb839266148b9e",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789531133.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1820,
+      "input_tokens_details": {
+        "cache_write_tokens": 1817,
+        "cached_tokens": 0
+      },
+      "output_tokens": 310,
+      "output_tokens_details": {
+        "reasoning_tokens": 141
+      },
+      "total_tokens": 2130
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.93,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Helicopter crash and deaths in northwestern Quebec\",\n  \"conflict_relevance\": \"An unrelated embedded news snippet discusses a pro-Palestinian statement by Ottawa's Capital Pride organization, including references to antisemitism, Islamophobia, October 7, and the Gaza campaign.\",\n  \"reason\": \"The main article concerns a helicopter crash and has no connection to Gaza or the Israel-Palestine conflict. However, an embedded latest-stories item contains meaningful, though brief and unrelated, discourse about Palestine and Gaza.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:58:58Z",
+  "duration_seconds": 5.165,
+  "error": null
+}

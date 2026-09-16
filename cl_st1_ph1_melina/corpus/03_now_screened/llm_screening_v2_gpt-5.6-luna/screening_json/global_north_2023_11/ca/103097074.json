@@ -1,0 +1,65 @@
+{
+  "article_id": "103097074",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_11/ca/103097074.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_11/ca/103097074.json"
+  },
+  "manifest_row": {
+    "article_id": "103097074",
+    "group": "global_north_2023_11",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2023_11/ca/103097074.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.91,
+    "gaza_role": "background",
+    "main_topic": "A Canadian elementary school's decision to replace Halloween celebrations with a harvest-themed event",
+    "conflict_relevance": "The main article is unrelated to Gaza, but the text includes substantive embedded snippets about foreign nationals leaving Gaza and the abduction of a family by Hamas.",
+    "reason": "The article is primarily about a school Halloween and harvest celebration. Gaza-related material appears only in unrelated news snippets, though those snippets contain meaningful conflict-related content.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "fcb56eba73f22c299eae54bcc15a03b9d0605b04efb233975c7078f5f6f8eddd",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "45d384f2b1b26d7b6f7f5b573112d9addbfd7fc85ca056e985b08b302f0b03c3",
+    "raw_response_text_sha256": "196ed9c144cfb2b1967702639979d61ab780c5eb3f6285a08fe0972ae2834903"
+  },
+  "api_metadata": {
+    "id": "resp_0feaf008d311a8ec006aa9fb90fcb887d2a057a82ef047654a",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789524881.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1868,
+      "input_tokens_details": {
+        "cache_write_tokens": 1865,
+        "cached_tokens": 0
+      },
+      "output_tokens": 415,
+      "output_tokens_details": {
+        "reasoning_tokens": 264
+      },
+      "total_tokens": 2283
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.91,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"A Canadian elementary school's decision to replace Halloween celebrations with a harvest-themed event\",\n  \"conflict_relevance\": \"The main article is unrelated to Gaza, but the text includes substantive embedded snippets about foreign nationals leaving Gaza and the abduction of a family by Hamas.\",\n  \"reason\": \"The article is primarily about a school Halloween and harvest celebration. Gaza-related material appears only in unrelated news snippets, though those snippets contain meaningful conflict-related content.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:14:46Z",
+  "duration_seconds": 5.763,
+  "error": null
+}

@@ -1,0 +1,65 @@
+{
+  "article_id": "123251328",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_04/sg/123251328.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_04/sg/123251328.json"
+  },
+  "manifest_row": {
+    "article_id": "123251328",
+    "group": "global_north_2025_04",
+    "country_code": "sg",
+    "filepath": "corpus/02_now_organised/global_north_2025_04/sg/123251328.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.97,
+    "gaza_role": "background",
+    "main_topic": "Potential US-Israeli military action against Iran over its nuclear programme",
+    "conflict_relevance": "The article is primarily about escalating tensions between the United States, Israel, and Iran, but it references Hamas in Gaza, Israel's campaign against Gaza, and the regional 'axis' involving Hamas, Hezbollah, and the Houthis.",
+    "reason": "Gaza and Hamas provide contextual background to the article's discussion of Israel's regional security strategy and pressure on Iran, but the central subject is the Iran nuclear issue and possible US or Israeli strikes against Iran.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "b10da91ba58a54f46ea1d82b0fc831863a02ccf250aa4258bede5202d2deb917",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "89d25f940ec55174fe845c76f7204c46c46e8e4b25bff18f0303d647cab120fe",
+    "raw_response_text_sha256": "ad27782b9fff403ce1f81c0df3ad1d7fc3c85d8ddb96247abce9782eb17b0e83"
+  },
+  "api_metadata": {
+    "id": "resp_0139e312c0f83e93006aaa29b4ca0087d19ce8a24289628ef9",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789536692.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2363,
+      "input_tokens_details": {
+        "cache_write_tokens": 2360,
+        "cached_tokens": 0
+      },
+      "output_tokens": 262,
+      "output_tokens_details": {
+        "reasoning_tokens": 86
+      },
+      "total_tokens": 2625
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.97,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Potential US-Israeli military action against Iran over its nuclear programme\",\n  \"conflict_relevance\": \"The article is primarily about escalating tensions between the United States, Israel, and Iran, but it references Hamas in Gaza, Israel's campaign against Gaza, and the regional 'axis' involving Hamas, Hezbollah, and the Houthis.\",\n  \"reason\": \"Gaza and Hamas provide contextual background to the article's discussion of Israel's regional security strategy and pressure on Iran, but the central subject is the Iran nuclear issue and possible US or Israeli strikes against Iran.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T05:31:36Z",
+  "duration_seconds": 3.629,
+  "error": null
+}

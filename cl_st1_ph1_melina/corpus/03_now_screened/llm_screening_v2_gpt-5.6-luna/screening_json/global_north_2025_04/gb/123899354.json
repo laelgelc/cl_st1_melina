@@ -1,0 +1,65 @@
+{
+  "article_id": "123899354",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_04/gb/123899354.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_04/gb/123899354.json"
+  },
+  "manifest_row": {
+    "article_id": "123899354",
+    "group": "global_north_2025_04",
+    "country_code": "gb",
+    "filepath": "corpus/02_now_organised/global_north_2025_04/gb/123899354.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.91,
+    "gaza_role": "background",
+    "main_topic": "Political and legal conflict between Benjamin Netanyahu and the Shin Bet leadership",
+    "conflict_relevance": "The article links the Netanyahu-Shin Bet dispute to the October 7 Hamas attack, Israel's subsequent military retaliation against Gaza, the occupation, and settler violence, but these issues provide context rather than constituting the main subject.",
+    "reason": "The central focus is an Israeli domestic political and institutional dispute involving alleged pressure on the Shin Bet and Netanyahu's corruption trial. Its references to Hamas, Gaza, the occupation, and settler violence are meaningful but comparatively limited.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "431ef62ad8789b7bc8f429e67a917df36151d67337d23fed768c1891c6505ffd",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "ca06c63b314fd5b6e2091ffe1cc7dee16b10855f237f4864d47a17fa4cfcb8dd",
+    "raw_response_text_sha256": "2d09c9dc72ba391dfaa1bbcb2a2d47170da30abf0bbe41b2fe0c0092033e9056"
+  },
+  "api_metadata": {
+    "id": "resp_0fd79cd33796da6d006aaa292846f887d1a804165af1a08c90",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789536552.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 910,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 374,
+      "output_tokens_details": {
+        "reasoning_tokens": 196
+      },
+      "total_tokens": 1284
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.91,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Political and legal conflict between Benjamin Netanyahu and the Shin Bet leadership\",\n  \"conflict_relevance\": \"The article links the Netanyahu-Shin Bet dispute to the October 7 Hamas attack, Israel's subsequent military retaliation against Gaza, the occupation, and settler violence, but these issues provide context rather than constituting the main subject.\",\n  \"reason\": \"The central focus is an Israeli domestic political and institutional dispute involving alleged pressure on the Shin Bet and Netanyahu's corruption trial. Its references to Hamas, Gaza, the occupation, and settler violence are meaningful but comparatively limited.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T05:29:17Z",
+  "duration_seconds": 5.27,
+  "error": null
+}

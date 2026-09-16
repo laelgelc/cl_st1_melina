@@ -1,0 +1,65 @@
+{
+  "article_id": "200530897",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_06/us/200530897.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_06/us/200530897.json"
+  },
+  "manifest_row": {
+    "article_id": "200530897",
+    "group": "global_north_2024_06",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2024_06/us/200530897.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "substantial",
+    "main_topic": "Artificially generated online content and how to identify AI-generated misinformation",
+    "conflict_relevance": "A separate, substantial embedded news report concerns the temporary dismantling of the US humanitarian pier serving Gaza, aid deliveries, Israeli military operations, and humanitarian access.",
+    "reason": "The apparent main article is about AI-generated 'slop' and has no connection to the conflict. However, the text also contains a substantial unrelated CNN report focused on humanitarian aid operations in Gaza, making the item useful only as peripheral material rather than core coverage.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "0051f3a7948509db63508b858393f0e42046f7d2ecdda92ea1827df6a6e0a5e5",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "0c0a5d76d8612f16f4fc8209c3b7aa486e429ac6b12f3d70c90513be9cd8a1a7",
+    "raw_response_text_sha256": "c53b49f2f4f2cfcf426175953dbac491a07f94650d39cafb3ae0e7e119f93875"
+  },
+  "api_metadata": {
+    "id": "resp_044fb3d57faa02e9006aaa11b58b3487d2bdf64f54e7622861",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789530549.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1853,
+      "input_tokens_details": {
+        "cache_write_tokens": 1850,
+        "cached_tokens": 0
+      },
+      "output_tokens": 336,
+      "output_tokens_details": {
+        "reasoning_tokens": 164
+      },
+      "total_tokens": 2189
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"substantial\",\n  \"main_topic\": \"Artificially generated online content and how to identify AI-generated misinformation\",\n  \"conflict_relevance\": \"A separate, substantial embedded news report concerns the temporary dismantling of the US humanitarian pier serving Gaza, aid deliveries, Israeli military operations, and humanitarian access.\",\n  \"reason\": \"The apparent main article is about AI-generated 'slop' and has no connection to the conflict. However, the text also contains a substantial unrelated CNN report focused on humanitarian aid operations in Gaza, making the item useful only as peripheral material rather than core coverage.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:49:14Z",
+  "duration_seconds": 4.983,
+  "error": null
+}

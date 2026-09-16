@@ -1,0 +1,65 @@
+{
+  "article_id": "117795501",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_11/us/117795501.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_11/us/117795501.json"
+  },
+  "manifest_row": {
+    "article_id": "117795501",
+    "group": "global_north_2024_11",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2024_11/us/117795501.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.96,
+    "gaza_role": "passing",
+    "main_topic": "International student enrollment in U.S. colleges and universities",
+    "conflict_relevance": "Gaza appears only incidentally within a garbled list concerning possible refugee or travel restrictions; the article does not discuss Gaza, Palestine, or the Israel-Palestine conflict substantively.",
+    "reason": "The article is primarily about international students, university enrollment trends, and immigration policy. The isolated reference to Gaza is unrelated to the article's main discourse and provides no meaningful conflict-related content.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "4870f6b111026a43a4665b2700ed7a6a536e12c5800fa2fe4684ab250918146c",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "adf64fc511c5676c99e40b6e27f9a413d4ad2825ee41600615b57372895851fd",
+    "raw_response_text_sha256": "c3770c1b0ddc8766e45647119a0842dd272fe049fd3d619f363f5f19181cff61"
+  },
+  "api_metadata": {
+    "id": "resp_0845f7d2de0bfd1a006aaa1c63245487d2b01e40516e8d701b",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789533283.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2069,
+      "input_tokens_details": {
+        "cache_write_tokens": 2066,
+        "cached_tokens": 0
+      },
+      "output_tokens": 325,
+      "output_tokens_details": {
+        "reasoning_tokens": 165
+      },
+      "total_tokens": 2394
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.96,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"International student enrollment in U.S. colleges and universities\",\n  \"conflict_relevance\": \"Gaza appears only incidentally within a garbled list concerning possible refugee or travel restrictions; the article does not discuss Gaza, Palestine, or the Israel-Palestine conflict substantively.\",\n  \"reason\": \"The article is primarily about international students, university enrollment trends, and immigration policy. The isolated reference to Gaza is unrelated to the article's main discourse and provides no meaningful conflict-related content.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T04:34:46Z",
+  "duration_seconds": 3.449,
+  "error": null
+}

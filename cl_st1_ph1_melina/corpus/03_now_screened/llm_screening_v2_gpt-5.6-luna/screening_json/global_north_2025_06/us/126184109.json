@@ -1,0 +1,65 @@
+{
+  "article_id": "126184109",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_06/us/126184109.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_06/us/126184109.json"
+  },
+  "manifest_row": {
+    "article_id": "126184109",
+    "group": "global_north_2025_06",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2025_06/us/126184109.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "passing",
+    "main_topic": "U.S. military strikes on Iranian nuclear facilities and the risks of escalation",
+    "conflict_relevance": "The article is primarily about U.S.-Iran tensions and military action, but it references Israel's conduct in Gaza and allegations of Israeli war crimes while connecting the Gaza conflict to the escalation with Iran.",
+    "reason": "Gaza appears in a meaningful sentence linking Netanyahu's actions and alleged war crimes in Gaza to the decision to attack Iran, but the article's central subject is the U.S. bombing of Iran rather than Gaza or the Israel-Palestine conflict.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "9d090478269f5c96dfe05d9a524fe9803ddd580ff917775fd892a78f8282b844",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "6b2f8b353ce94976db923889c93398eed78ea7d3abed7f93154e3d82ac8ac077",
+    "raw_response_text_sha256": "b8004885c9f1d0060a5393e4959bd8ecfa7cd53d135f93fc1de606cd6841b526"
+  },
+  "api_metadata": {
+    "id": "resp_0b1f80da38e1fa59006aaa31aa1e8487d18f01dc64a393a04c",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789538730.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1462,
+      "input_tokens_details": {
+        "cache_write_tokens": 1459,
+        "cached_tokens": 0
+      },
+      "output_tokens": 230,
+      "output_tokens_details": {
+        "reasoning_tokens": 51
+      },
+      "total_tokens": 1692
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"U.S. military strikes on Iranian nuclear facilities and the risks of escalation\",\n  \"conflict_relevance\": \"The article is primarily about U.S.-Iran tensions and military action, but it references Israel's conduct in Gaza and allegations of Israeli war crimes while connecting the Gaza conflict to the escalation with Iran.\",\n  \"reason\": \"Gaza appears in a meaningful sentence linking Netanyahu's actions and alleged war crimes in Gaza to the decision to attack Iran, but the article's central subject is the U.S. bombing of Iran rather than Gaza or the Israel-Palestine conflict.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T06:05:33Z",
+  "duration_seconds": 3.736,
+  "error": null
+}

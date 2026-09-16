@@ -1,0 +1,65 @@
+{
+  "article_id": "103139041",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_south_2023_11/in/103139041.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_south_2023_11/in/103139041.json"
+  },
+  "manifest_row": {
+    "article_id": "103139041",
+    "group": "global_south_2023_11",
+    "country_code": "in",
+    "filepath": "corpus/02_now_organised/global_south_2023_11/in/103139041.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.93,
+    "gaza_role": "background",
+    "main_topic": "Mixed news roundup covering Indian politics, business, weather, sports, and international affairs",
+    "conflict_relevance": "Includes substantive items on West Bank settler violence after the Gaza war and Biden's call for a humanitarian pause in the Israel-Hamas war, but these are embedded among many unrelated news snippets.",
+    "reason": "The compilation is not centrally focused on Gaza or Israel-Palestine, yet its West Bank and Israel-Hamas war items provide meaningful conflict-related discourse. Because the article is primarily an unrelated multi-item roundup, it is peripheral rather than core.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "290fc9e0aedf587a4a87f7327ff92d084733feab4cede61de0af11790a8a7c01",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "87ff11a31caf0381faa272e5f62b07ab4653d2b5ae14046f3bcd08187e30364b",
+    "raw_response_text_sha256": "9a039ef8cdf411dbc0de1591f50b1bb841074a4ee50f23bf610e3da84bf0216f"
+  },
+  "api_metadata": {
+    "id": "resp_0fe97d39b6cdddde006aaa3485981c87d1a84bbeab90f89c22",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789539461.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1692,
+      "input_tokens_details": {
+        "cache_write_tokens": 1689,
+        "cached_tokens": 0
+      },
+      "output_tokens": 449,
+      "output_tokens_details": {
+        "reasoning_tokens": 270
+      },
+      "total_tokens": 2141
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.93,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Mixed news roundup covering Indian politics, business, weather, sports, and international affairs\",\n  \"conflict_relevance\": \"Includes substantive items on West Bank settler violence after the Gaza war and Biden's call for a humanitarian pause in the Israel-Hamas war, but these are embedded among many unrelated news snippets.\",\n  \"reason\": \"The compilation is not centrally focused on Gaza or Israel-Palestine, yet its West Bank and Israel-Hamas war items provide meaningful conflict-related discourse. Because the article is primarily an unrelated multi-item roundup, it is peripheral rather than core.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T06:17:46Z",
+  "duration_seconds": 5.577,
+  "error": null
+}

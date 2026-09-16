@@ -1,0 +1,65 @@
+{
+  "article_id": "118295001",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_11/sg/118295001.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_11/sg/118295001.json"
+  },
+  "manifest_row": {
+    "article_id": "118295001",
+    "group": "global_north_2024_11",
+    "country_code": "sg",
+    "filepath": "corpus/02_now_organised/global_north_2024_11/sg/118295001.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "gaza_role": "passing",
+    "main_topic": "Animal rescue",
+    "conflict_relevance": "The main article is unrelated to Gaza or the Israeli-Palestinian conflict; Gaza appears only in an unrelated latest-stories snippet.",
+    "reason": "The headline and substantive article concern rescuing a kitten from a drainpipe in Florida. Although a separate embedded news item briefly discusses famine and deaths in the central Gaza Strip, it is not connected to the main article and does not make the item suitable for conflict discourse analysis.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "3f0dafe3cb0d460da69526de63f279e93fc34318445f33744f399d435dbaf00e",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "0a9dce43942d6382cadb35988ef47285348c45692d32d99ac3392afd683fafe0",
+    "raw_response_text_sha256": "386f1726461e38016a8bd283e2b4b90def536c0145f36bc9e786cd98ed26544a"
+  },
+  "api_metadata": {
+    "id": "resp_0b3ea442428d3bb6006aaa1bc00b3c87d2b4563beff5d6077f",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789533120.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1641,
+      "input_tokens_details": {
+        "cache_write_tokens": 1638,
+        "cached_tokens": 0
+      },
+      "output_tokens": 329,
+      "output_tokens_details": {
+        "reasoning_tokens": 171
+      },
+      "total_tokens": 1970
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Animal rescue\",\n  \"conflict_relevance\": \"The main article is unrelated to Gaza or the Israeli-Palestinian conflict; Gaza appears only in an unrelated latest-stories snippet.\",\n  \"reason\": \"The headline and substantive article concern rescuing a kitten from a drainpipe in Florida. Although a separate embedded news item briefly discusses famine and deaths in the central Gaza Strip, it is not connected to the main article and does not make the item suitable for conflict discourse analysis.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T04:32:04Z",
+  "duration_seconds": 4.49,
+  "error": null
+}

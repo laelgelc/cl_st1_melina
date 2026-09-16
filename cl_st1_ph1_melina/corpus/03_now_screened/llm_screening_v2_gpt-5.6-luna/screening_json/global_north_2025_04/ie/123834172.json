@@ -1,0 +1,65 @@
+{
+  "article_id": "123834172",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_04/ie/123834172.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_04/ie/123834172.json"
+  },
+  "manifest_row": {
+    "article_id": "123834172",
+    "group": "global_north_2025_04",
+    "country_code": "ie",
+    "filepath": "corpus/02_now_organised/global_north_2025_04/ie/123834172.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.96,
+    "gaza_role": "passing",
+    "main_topic": "Azerbaijan's strategic and economic partnership with China",
+    "conflict_relevance": "The main article is unrelated to Gaza or the Israel-Palestine conflict; Gaza appears only in an incidental embedded snippet about Indonesia's diplomatic role.",
+    "reason": "The headline article focuses on Azerbaijan-China relations, trade, infrastructure, and foreign policy. The sole Gaza reference is part of a separate, fragmented embedded item and does not contribute meaningfully to the main article's discourse.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "b392129e384604abdda95ee00fd389e6d118434275642dfcb6a2861e3b621dc0",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "6a84041572fff108632199d46454dd8f0a4628021bb47e76c7f34499bc80b5de",
+    "raw_response_text_sha256": "2f5e3cdc1ddd4d55a685f37a666f022f8236484e3767ac86e6f1387945fc67f6"
+  },
+  "api_metadata": {
+    "id": "resp_062c8c5c9db979c6006aaa2984877887d1a577db4fc70bea30",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789536644.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1823,
+      "input_tokens_details": {
+        "cache_write_tokens": 1820,
+        "cached_tokens": 0
+      },
+      "output_tokens": 284,
+      "output_tokens_details": {
+        "reasoning_tokens": 125
+      },
+      "total_tokens": 2107
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.96,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Azerbaijan's strategic and economic partnership with China\",\n  \"conflict_relevance\": \"The main article is unrelated to Gaza or the Israel-Palestine conflict; Gaza appears only in an incidental embedded snippet about Indonesia's diplomatic role.\",\n  \"reason\": \"The headline article focuses on Azerbaijan-China relations, trade, infrastructure, and foreign policy. The sole Gaza reference is part of a separate, fragmented embedded item and does not contribute meaningfully to the main article's discourse.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T05:30:47Z",
+  "duration_seconds": 3.555,
+  "error": null
+}

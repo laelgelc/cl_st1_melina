@@ -1,0 +1,65 @@
+{
+  "article_id": "123110423",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_04/gb/123110423.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_04/gb/123110423.json"
+  },
+  "manifest_row": {
+    "article_id": "123110423",
+    "group": "global_north_2025_04",
+    "country_code": "gb",
+    "filepath": "corpus/02_now_organised/global_north_2025_04/gb/123110423.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.97,
+    "gaza_role": "background",
+    "main_topic": "The decline of the UK Labour government, internal party dissent, disability-benefit cuts, and the prospects for left-wing or independent electoral challenges",
+    "conflict_relevance": "The article discusses the electoral impact of pro-Gaza independent candidates and suggests that opposition to Labour's position on Gaza could cost the party parliamentary seats.",
+    "reason": "Gaza is a meaningful part of the article's analysis of Labour's political vulnerability, but the article is mainly about UK domestic politics, party strategy, welfare cuts, and protest restrictions rather than the Gaza conflict itself.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "3df4148c5f9c7992365cedd03ed887b2367a26d2d58aa90efd8db89e7780db5d",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "6dbdf333bd3988549a11fb9b145acd41addc8fee2d7d0e7bd1b968f1271d85fa",
+    "raw_response_text_sha256": "166c477dfae71422479fc2ceb248988f6d121b05673b345abfb9bb7b15b6dfb3"
+  },
+  "api_metadata": {
+    "id": "resp_018c8fc335a5a6af006aaa28acee7087d19fe73a6ef1ff8136",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789536428.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2431,
+      "input_tokens_details": {
+        "cache_write_tokens": 2428,
+        "cached_tokens": 0
+      },
+      "output_tokens": 292,
+      "output_tokens_details": {
+        "reasoning_tokens": 117
+      },
+      "total_tokens": 2723
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.97,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"The decline of the UK Labour government, internal party dissent, disability-benefit cuts, and the prospects for left-wing or independent electoral challenges\",\n  \"conflict_relevance\": \"The article discusses the electoral impact of pro-Gaza independent candidates and suggests that opposition to Labour's position on Gaza could cost the party parliamentary seats.\",\n  \"reason\": \"Gaza is a meaningful part of the article's analysis of Labour's political vulnerability, but the article is mainly about UK domestic politics, party strategy, welfare cuts, and protest restrictions rather than the Gaza conflict itself.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T05:27:13Z",
+  "duration_seconds": 4.842,
+  "error": null
+}

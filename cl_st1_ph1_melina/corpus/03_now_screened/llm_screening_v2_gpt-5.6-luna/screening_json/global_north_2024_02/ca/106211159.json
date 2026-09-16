@@ -1,0 +1,65 @@
+{
+  "article_id": "106211159",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_02/ca/106211159.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_02/ca/106211159.json"
+  },
+  "manifest_row": {
+    "article_id": "106211159",
+    "group": "global_north_2024_02",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2024_02/ca/106211159.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.93,
+    "gaza_role": "boilerplate_or_unrelated",
+    "main_topic": "Digital legacy planning and access to deceased people's online accounts",
+    "conflict_relevance": "The main article is unrelated to Gaza or the Israeli-Palestinian conflict; Gaza-related content appears only in appended unrelated news snippets.",
+    "reason": "The headline and substantive article concern passwords, digital assets, estate planning, and online accounts after death. Although the text includes brief Gaza-related roundup items about the Palestinian prime minister's resignation and international law, these are separate embedded snippets rather than part of the main article.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "078aeed89fd5b257d6803556e0b6431e26f2d7805c92b7b36b29ba66b174e06f",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "5d62d88582c36451f0bda3851ad64b983d9bed8641fdec7d05e6f59c576607c0",
+    "raw_response_text_sha256": "5824ca4090860dea42a43e9bfe0cb03fb438d9df326bf36c73c981ae3dd9f4cf"
+  },
+  "api_metadata": {
+    "id": "resp_031690d44e4a9390006aaa061ae2b087d294efaa8fc191511c",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789527578.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 3329,
+      "input_tokens_details": {
+        "cache_write_tokens": 3326,
+        "cached_tokens": 0
+      },
+      "output_tokens": 455,
+      "output_tokens_details": {
+        "reasoning_tokens": 285
+      },
+      "total_tokens": 3784
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.93,\n  \"gaza_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Digital legacy planning and access to deceased people's online accounts\",\n  \"conflict_relevance\": \"The main article is unrelated to Gaza or the Israeli-Palestinian conflict; Gaza-related content appears only in appended unrelated news snippets.\",\n  \"reason\": \"The headline and substantive article concern passwords, digital assets, estate planning, and online accounts after death. Although the text includes brief Gaza-related roundup items about the Palestinian prime minister's resignation and international law, these are separate embedded snippets rather than part of the main article.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:59:44Z",
+  "duration_seconds": 5.574,
+  "error": null
+}

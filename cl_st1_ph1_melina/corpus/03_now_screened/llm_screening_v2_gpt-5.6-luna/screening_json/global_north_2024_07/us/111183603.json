@@ -1,0 +1,65 @@
+{
+  "article_id": "111183603",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_07/us/111183603.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_07/us/111183603.json"
+  },
+  "manifest_row": {
+    "article_id": "111183603",
+    "group": "global_north_2024_07",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2024_07/us/111183603.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.93,
+    "gaza_role": "background",
+    "main_topic": "Candace Owens's antisemitic rhetoric and removal from a Trump-linked fundraiser",
+    "conflict_relevance": "The main article concerns antisemitism, far-right politics, and Jewish communal criticism, with contextual references to Owens's accusation that Israel is committing genocide in Gaza and her criticism of Israel. The supplied text also contains unrelated snippets about kosher meat, Gaza hostage negotiations, and Israeli Olympic athletes.",
+    "reason": "The dominant apparent article is about antisemitism and political controversy rather than Gaza or the Israel-Palestine conflict itself. Its Gaza-related material is meaningful for studying broader discourses around antisemitism and criticism of Israel, but it is not central conflict coverage.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "e143c24f44b957c6a4fcfd50d5fca209ca8daf103e21cd5d3f5592c501708277",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "71aef3243d5e7efe4423adc2573a51d73c436458feee3a223a6388c4e0165e8c",
+    "raw_response_text_sha256": "a06309e4ead8ac937b377c78fc619506ef702dc70fc2bde915bee943eff983ee"
+  },
+  "api_metadata": {
+    "id": "resp_03f806480f9a09f1006aaa1377bd7087d2a5a500e4726fc561",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789530999.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 3276,
+      "input_tokens_details": {
+        "cache_write_tokens": 3273,
+        "cached_tokens": 0
+      },
+      "output_tokens": 447,
+      "output_tokens_details": {
+        "reasoning_tokens": 246
+      },
+      "total_tokens": 3723
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.93,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Candace Owens's antisemitic rhetoric and removal from a Trump-linked fundraiser\",\n  \"conflict_relevance\": \"The main article concerns antisemitism, far-right politics, and Jewish communal criticism, with contextual references to Owens's accusation that Israel is committing genocide in Gaza and her criticism of Israel. The supplied text also contains unrelated snippets about kosher meat, Gaza hostage negotiations, and Israeli Olympic athletes.\",\n  \"reason\": \"The dominant apparent article is about antisemitism and political controversy rather than Gaza or the Israel-Palestine conflict itself. Its Gaza-related material is meaningful for studying broader discourses around antisemitism and criticism of Israel, but it is not central conflict coverage.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:56:45Z",
+  "duration_seconds": 5.601,
+  "error": null
+}

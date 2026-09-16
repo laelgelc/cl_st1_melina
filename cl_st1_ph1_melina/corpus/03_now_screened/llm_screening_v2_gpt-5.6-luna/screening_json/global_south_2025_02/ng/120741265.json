@@ -1,0 +1,65 @@
+{
+  "article_id": "120741265",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_south_2025_02/ng/120741265.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_south_2025_02/ng/120741265.json"
+  },
+  "manifest_row": {
+    "article_id": "120741265",
+    "group": "global_south_2025_02",
+    "country_code": "ng",
+    "filepath": "corpus/02_now_organised/global_south_2025_02/ng/120741265.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.96,
+    "gaza_role": "passing",
+    "main_topic": "Wizkid's European Morayo music tour",
+    "conflict_relevance": "The main article is unrelated entertainment coverage, but an embedded snippet briefly reports the release of Palestinian prisoners by Israel as part of a Gaza ceasefire deal.",
+    "reason": "The headline and substantive article concern Wizkid's music career and European tour. However, the text includes a meaningful but incidental Gaza-related news snippet about Palestinian prisoners released under a ceasefire agreement, making it peripheral rather than excludable.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "98d9bb7a57c2ea7a374c99b85ed5d5704ef1ba35aec56f2097990a1b92aae6aa",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "c859c1d74ae767eea4e97ea8428bcbd737a597d870e11ae84729338f07ef3568",
+    "raw_response_text_sha256": "7d56e98ef1361835f6345f4a815dd69ed2ad571fd0b5e002cfb4230ad893945b"
+  },
+  "api_metadata": {
+    "id": "resp_04b40f7be5482225006aaa45b474c887d1a50d9b0b17d76c8b",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789543860.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2330,
+      "input_tokens_details": {
+        "cache_write_tokens": 2327,
+        "cached_tokens": 0
+      },
+      "output_tokens": 256,
+      "output_tokens_details": {
+        "reasoning_tokens": 94
+      },
+      "total_tokens": 2586
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.96,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Wizkid's European Morayo music tour\",\n  \"conflict_relevance\": \"The main article is unrelated entertainment coverage, but an embedded snippet briefly reports the release of Palestinian prisoners by Israel as part of a Gaza ceasefire deal.\",\n  \"reason\": \"The headline and substantive article concern Wizkid's music career and European tour. However, the text includes a meaningful but incidental Gaza-related news snippet about Palestinian prisoners released under a ceasefire agreement, making it peripheral rather than excludable.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T07:31:04Z",
+  "duration_seconds": 3.904,
+  "error": null
+}

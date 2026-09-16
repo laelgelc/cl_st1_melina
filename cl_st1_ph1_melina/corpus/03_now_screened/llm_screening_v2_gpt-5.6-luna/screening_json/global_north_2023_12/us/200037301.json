@@ -1,0 +1,65 @@
+{
+  "article_id": "200037301",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_12/us/200037301.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_12/us/200037301.json"
+  },
+  "manifest_row": {
+    "article_id": "200037301",
+    "group": "global_north_2023_12",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2023_12/us/200037301.txt"
+  },
+  "screening": {
+    "category": "CORE",
+    "confidence": 0.99,
+    "gaza_role": "substantial",
+    "main_topic": "A self-immolation protest outside the Israeli consulate in Atlanta connected to the Israel-Hamas war and Gaza",
+    "conflict_relevance": "The article directly concerns political protest over the Israel-Hamas war, identifies a Palestinian flag at the scene, and provides substantial context about Gaza, displacement, casualties, hostages, the ceasefire, and renewed Israeli military attacks.",
+    "reason": "The protest and nearly all of the article's contextual reporting are directly connected to Israel/Palestine and the Gaza war, making it central conflict coverage.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": true
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "d7710c9f7a2d8ae34a33c8efee60d0f4e3cc3dc20461fee96368b4e23b4a1fd3",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "5966fd27f7730015f025949a269c9d03a68abf0a05949e1ab47c3cdbed4a1061",
+    "raw_response_text_sha256": "fcf70a9abe84dbaf2e863e03a25244d1494dbf0bbe60e44557a8f0bfe32edf1d"
+  },
+  "api_metadata": {
+    "id": "resp_08a5039ba6c6a8ba006aaa02a0901487d28bca11a5c20448cf",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789526688.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1037,
+      "input_tokens_details": {
+        "cache_write_tokens": 1034,
+        "cached_tokens": 0
+      },
+      "output_tokens": 171,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 1208
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"CORE\",\n  \"confidence\": 0.99,\n  \"gaza_role\": \"substantial\",\n  \"main_topic\": \"A self-immolation protest outside the Israeli consulate in Atlanta connected to the Israel-Hamas war and Gaza\",\n  \"conflict_relevance\": \"The article directly concerns political protest over the Israel-Hamas war, identifies a Palestinian flag at the scene, and provides substantial context about Gaza, displacement, casualties, hostages, the ceasefire, and renewed Israeli military attacks.\",\n  \"reason\": \"The protest and nearly all of the article's contextual reporting are directly connected to Israel/Palestine and the Gaza war, making it central conflict coverage.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": true\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:44:50Z",
+  "duration_seconds": 2.416,
+  "error": null
+}

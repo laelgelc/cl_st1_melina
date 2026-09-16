@@ -1,0 +1,65 @@
+{
+  "article_id": "104235665",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_12/us/104235665.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_12/us/104235665.json"
+  },
+  "manifest_row": {
+    "article_id": "104235665",
+    "group": "global_north_2023_12",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2023_12/us/104235665.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.9,
+    "gaza_role": "background",
+    "main_topic": "Houthi attacks on commercial shipping in the Red Sea and the international military response",
+    "conflict_relevance": "The article links the Houthi attacks and threats against vessels associated with Israel to the Israel-Hamas war in Gaza, but its primary focus is maritime security, regional escalation, and shipping protection.",
+    "reason": "Gaza is a meaningful causal and geopolitical context for the reported attacks, yet the article is mainly about Houthi military activity in Yemen, damage to a commercial tanker, and the U.S.-led maritime response rather than the Gaza conflict itself.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "72531679674abee007fcf601703747d2139f524173c499541b53b95fce85f6bd",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "31eb61cfb1b8f0311b6152770adfd2c95785183935a831467d1bf099414d9e64",
+    "raw_response_text_sha256": "1db0ab60a929745f34b6ac2414da106708c52c040f8920d8d6b20a7bdbfd3fb3"
+  },
+  "api_metadata": {
+    "id": "resp_0f3f21651a5bb078006aaa020bec0487d29302e76e4a91131d",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789526539.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1072,
+      "input_tokens_details": {
+        "cache_write_tokens": 1069,
+        "cached_tokens": 0
+      },
+      "output_tokens": 300,
+      "output_tokens_details": {
+        "reasoning_tokens": 120
+      },
+      "total_tokens": 1372
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.9,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Houthi attacks on commercial shipping in the Red Sea and the international military response\",\n  \"conflict_relevance\": \"The article links the Houthi attacks and threats against vessels associated with Israel to the Israel-Hamas war in Gaza, but its primary focus is maritime security, regional escalation, and shipping protection.\",\n  \"reason\": \"Gaza is a meaningful causal and geopolitical context for the reported attacks, yet the article is mainly about Houthi military activity in Yemen, damage to a commercial tanker, and the U.S.-led maritime response rather than the Gaza conflict itself.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:42:24Z",
+  "duration_seconds": 4.354,
+  "error": null
+}

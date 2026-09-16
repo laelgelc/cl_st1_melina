@@ -1,0 +1,65 @@
+{
+  "article_id": "102769753",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_10/ca/102769753.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_10/ca/102769753.json"
+  },
+  "manifest_row": {
+    "article_id": "102769753",
+    "group": "global_north_2023_10",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2023_10/ca/102769753.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.99,
+    "gaza_role": "background",
+    "main_topic": "Windsor panhandling policy and responses to poverty and homelessness",
+    "conflict_relevance": "The article includes several substantial but unrelated news snippets about the Israel-Hamas war, evacuations from Gaza, humanitarian conditions, and protests and hate incidents in Canada.",
+    "reason": "The headline and main article concern panhandling bylaws and poverty in Windsor. However, the text also contains meaningful Gaza- and Israel-Hamas-related snippets, making it relevant to broader discourse analysis but not suitable as core conflict coverage.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "dbb6bedaffa159b1dbe9ac353ca9e26730a5ceea30ca7e8ac921f0fc8272b629",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "21b6fe9bfd8e3bc7c92f51a02309c7df7fd8fc74479e1ec96e2cac785f8f31a2",
+    "raw_response_text_sha256": "962ad918f0ca1183ac43bdbc6598bc8d7d65f2ade3bc13c3281be38e745c7f29"
+  },
+  "api_metadata": {
+    "id": "resp_0325d03ed38878a2006aa9f670862887d284c1e4a20f059770",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789523568.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1659,
+      "input_tokens_details": {
+        "cache_write_tokens": 1656,
+        "cached_tokens": 0
+      },
+      "output_tokens": 280,
+      "output_tokens_details": {
+        "reasoning_tokens": 114
+      },
+      "total_tokens": 1939
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.99,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Windsor panhandling policy and responses to poverty and homelessness\",\n  \"conflict_relevance\": \"The article includes several substantial but unrelated news snippets about the Israel-Hamas war, evacuations from Gaza, humanitarian conditions, and protests and hate incidents in Canada.\",\n  \"reason\": \"The headline and main article concern panhandling bylaws and poverty in Windsor. However, the text also contains meaningful Gaza- and Israel-Hamas-related snippets, making it relevant to broader discourse analysis but not suitable as core conflict coverage.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T01:52:51Z",
+  "duration_seconds": 3.175,
+  "error": null
+}

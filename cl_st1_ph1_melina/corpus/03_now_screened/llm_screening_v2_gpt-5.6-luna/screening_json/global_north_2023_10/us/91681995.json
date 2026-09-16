@@ -1,0 +1,65 @@
+{
+  "article_id": "91681995",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_10/us/91681995.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_10/us/91681995.json"
+  },
+  "manifest_row": {
+    "article_id": "91681995",
+    "group": "global_north_2023_10",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2023_10/us/91681995.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "background",
+    "main_topic": "US House Republican leadership crisis and congressional paralysis",
+    "conflict_relevance": "The article discusses the House's inability to approve emergency military aid for Israel and mentions Israeli bombardment of Gaza and efforts to facilitate humanitarian aid, but the conflict is not the main subject.",
+    "reason": "The primary focus is the search for a new US House speaker. Israel, Hamas, Gaza, and humanitarian aid appear as part of the congressional funding and geopolitical context, providing meaningful but limited relevance to conflict discourse.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "888a2c4c05d858802a4566e72fde8a2b3997238ac42f267623ac4686c4dc8498",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "53ba88ad0bdab04ee60d872adcf3b5847a9cf51f3e0d403cb86d0c52a84b336b",
+    "raw_response_text_sha256": "e618d39ac9f7581a3d247c7352324d1286c29f2e717f3e7e7223c2270961152b"
+  },
+  "api_metadata": {
+    "id": "resp_08cbc529728188af006aa9fafb72f887d281a97d4781cadcee",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789524731.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1831,
+      "input_tokens_details": {
+        "cache_write_tokens": 1828,
+        "cached_tokens": 0
+      },
+      "output_tokens": 256,
+      "output_tokens_details": {
+        "reasoning_tokens": 93
+      },
+      "total_tokens": 2087
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"US House Republican leadership crisis and congressional paralysis\",\n  \"conflict_relevance\": \"The article discusses the House's inability to approve emergency military aid for Israel and mentions Israeli bombardment of Gaza and efforts to facilitate humanitarian aid, but the conflict is not the main subject.\",\n  \"reason\": \"The primary focus is the search for a new US House speaker. Israel, Hamas, Gaza, and humanitarian aid appear as part of the congressional funding and geopolitical context, providing meaningful but limited relevance to conflict discourse.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:12:15Z",
+  "duration_seconds": 4.152,
+  "error": null
+}

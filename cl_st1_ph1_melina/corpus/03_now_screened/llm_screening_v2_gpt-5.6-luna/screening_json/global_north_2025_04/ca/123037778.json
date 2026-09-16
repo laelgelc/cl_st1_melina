@@ -1,0 +1,65 @@
+{
+  "article_id": "123037778",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_04/ca/123037778.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_04/ca/123037778.json"
+  },
+  "manifest_row": {
+    "article_id": "123037778",
+    "group": "global_north_2025_04",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2025_04/ca/123037778.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "passing",
+    "main_topic": "Community response to a severe ice storm and prolonged power outages in Oro-Medonte Township",
+    "conflict_relevance": "The article briefly references Gaza, alongside Ukraine, as a point of comparison for the relative hardship of a local power outage.",
+    "reason": "The article is primarily about storm damage, power outages, and neighbourhood resilience. Gaza appears in a meaningful but passing comparison and does not substantively concern the conflict.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "54228f0ce10260a95aa692cf21ec0fbac465f0f387a03cc68009aa57b2cf2440",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "9949f621dea157f240f23201fd7b68974dedc1696d1a4dfd7559a964fb6ad430",
+    "raw_response_text_sha256": "019490cbfe52c62d79a5d9893425f3d3b90785a177f88d11c62a9e4e3fa19e63"
+  },
+  "api_metadata": {
+    "id": "resp_0998d4947ed07600006aaa2874a86487d1a485f327516a1d81",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789536372.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1878,
+      "input_tokens_details": {
+        "cache_write_tokens": 1875,
+        "cached_tokens": 0
+      },
+      "output_tokens": 189,
+      "output_tokens_details": {
+        "reasoning_tokens": 40
+      },
+      "total_tokens": 2067
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Community response to a severe ice storm and prolonged power outages in Oro-Medonte Township\",\n  \"conflict_relevance\": \"The article briefly references Gaza, alongside Ukraine, as a point of comparison for the relative hardship of a local power outage.\",\n  \"reason\": \"The article is primarily about storm damage, power outages, and neighbourhood resilience. Gaza appears in a meaningful but passing comparison and does not substantively concern the conflict.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T05:26:15Z",
+  "duration_seconds": 2.705,
+  "error": null
+}

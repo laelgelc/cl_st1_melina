@@ -1,0 +1,65 @@
+{
+  "article_id": "123108855",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_04/us/123108855.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_04/us/123108855.json"
+  },
+  "manifest_row": {
+    "article_id": "123108855",
+    "group": "global_north_2025_04",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2025_04/us/123108855.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.96,
+    "gaza_role": "background",
+    "main_topic": "Israeli protests demanding equal military service and the recruitment of haredi men",
+    "conflict_relevance": "The article situates the domestic military-service debate within Israel's ongoing war and mentions a soldier who died in Gaza, but Gaza is not the main subject.",
+    "reason": "The article meaningfully references the war, military service, reservists, and a soldier killed in Gaza, making it relevant to broader conflict-related discourse while remaining primarily about Israeli conscription politics.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "48bb98205f6a31baac09fd05f5ca49c4b519d0b89f983e998773d9af29b82488",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "515ab7b5629b695aa9d8c3e1ca7bc9ea75fabe423772e18fb408c021c069a589",
+    "raw_response_text_sha256": "19842e45baa6a97e2eb8897b65d96cdad3979f50c52d424fef22c9af65782b42"
+  },
+  "api_metadata": {
+    "id": "resp_0191c79f76a225c7006aaa29d7361887d19243a4946ecd46e2",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789536727.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1168,
+      "input_tokens_details": {
+        "cache_write_tokens": 1165,
+        "cached_tokens": 0
+      },
+      "output_tokens": 224,
+      "output_tokens_details": {
+        "reasoning_tokens": 64
+      },
+      "total_tokens": 1392
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.96,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Israeli protests demanding equal military service and the recruitment of haredi men\",\n  \"conflict_relevance\": \"The article situates the domestic military-service debate within Israel's ongoing war and mentions a soldier who died in Gaza, but Gaza is not the main subject.\",\n  \"reason\": \"The article meaningfully references the war, military service, reservists, and a soldier killed in Gaza, making it relevant to broader conflict-related discourse while remaining primarily about Israeli conscription politics.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T05:32:10Z",
+  "duration_seconds": 3.539,
+  "error": null
+}

@@ -1,0 +1,65 @@
+{
+  "article_id": "104774295",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_01/ca/104774295.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_01/ca/104774295.json"
+  },
+  "manifest_row": {
+    "article_id": "104774295",
+    "group": "global_north_2024_01",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2024_01/ca/104774295.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.91,
+    "gaza_role": "passing",
+    "main_topic": "Investment strategies and market outlook for 2024",
+    "conflict_relevance": "The main article is unrelated to Gaza or the Israel-Hamas war, but an embedded latest-stories snippet briefly references Israel's war with Hamas in Gaza while reporting bombings in Iran.",
+    "reason": "The conflict reference appears only in an unrelated embedded news item and does not shape the main article's subject or discourse. It is nevertheless a meaningful sentence-level reference rather than pure boilerplate.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "f6cad1a6c39ba469e565c017d458ea46e7e3e47f98b78af2d192dc0c4b1a91b8",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "67a4fe88bd5f303542e74e50f03b7cfbdf1ac0485186c2707a11d41529ee89a2",
+    "raw_response_text_sha256": "35af37cf198aeb1b26fe5b95c06645b857f61a549ced062dbcebfbef27a216ff"
+  },
+  "api_metadata": {
+    "id": "resp_02a1dbda41d5c056006aaa037abc9c87d288d7f8f5fad0d970",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789526906.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 3180,
+      "input_tokens_details": {
+        "cache_write_tokens": 3177,
+        "cached_tokens": 0
+      },
+      "output_tokens": 371,
+      "output_tokens_details": {
+        "reasoning_tokens": 212
+      },
+      "total_tokens": 3551
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.91,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Investment strategies and market outlook for 2024\",\n  \"conflict_relevance\": \"The main article is unrelated to Gaza or the Israel-Hamas war, but an embedded latest-stories snippet briefly references Israel's war with Hamas in Gaza while reporting bombings in Iran.\",\n  \"reason\": \"The conflict reference appears only in an unrelated embedded news item and does not shape the main article's subject or discourse. It is nevertheless a meaningful sentence-level reference rather than pure boilerplate.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:48:31Z",
+  "duration_seconds": 4.679,
+  "error": null
+}

@@ -1,0 +1,65 @@
+{
+  "article_id": "115770625",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_10/us/115770625.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_10/us/115770625.json"
+  },
+  "manifest_row": {
+    "article_id": "115770625",
+    "group": "global_north_2024_10",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2024_10/us/115770625.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "gaza_role": "boilerplate_or_unrelated",
+    "main_topic": "Tornado destruction and residents' experiences after Hurricane Milton in Florida",
+    "conflict_relevance": "No meaningful relevance to Gaza, Palestine, Israel/Palestine, or the related political and humanitarian discourse; 'Gaza' appears only as a resident's surname.",
+    "reason": "The article is entirely about tornado damage, deaths, displacement, and recovery in Florida. The occurrences of 'Gaza' refer to Nicole Gaza, a local resident, and are unrelated to the Gaza conflict.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "53e221ed33e57190afe9aa71d5c7301c93bda50144426271dd6a2d61998046f4",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "3e979e4ad78a760e743b782625c6048ba892c522ad9de8121b514cd3c2623f5b",
+    "raw_response_text_sha256": "9012ed64beccfb7059a3f7577d8943d8aac987e9b31dd9964888d797d85a1088"
+  },
+  "api_metadata": {
+    "id": "resp_0afda2cf66e7baa1006aaa193a888487d2a28d29b0d29fc00e",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789532474.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2458,
+      "input_tokens_details": {
+        "cache_write_tokens": 2455,
+        "cached_tokens": 0
+      },
+      "output_tokens": 239,
+      "output_tokens_details": {
+        "reasoning_tokens": 72
+      },
+      "total_tokens": 2697
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"gaza_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Tornado destruction and residents' experiences after Hurricane Milton in Florida\",\n  \"conflict_relevance\": \"No meaningful relevance to Gaza, Palestine, Israel/Palestine, or the related political and humanitarian discourse; 'Gaza' appears only as a resident's surname.\",\n  \"reason\": \"The article is entirely about tornado damage, deaths, displacement, and recovery in Florida. The occurrences of 'Gaza' refer to Nicole Gaza, a local resident, and are unrelated to the Gaza conflict.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T04:21:17Z",
+  "duration_seconds": 2.788,
+  "error": null
+}

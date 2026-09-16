@@ -1,0 +1,65 @@
+{
+  "article_id": "102793945",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_10/ca/102793945.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_10/ca/102793945.json"
+  },
+  "manifest_row": {
+    "article_id": "102793945",
+    "group": "global_north_2023_10",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2023_10/ca/102793945.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.97,
+    "gaza_role": "boilerplate_or_unrelated",
+    "main_topic": "2023 holiday-season retail spending and profit margins",
+    "conflict_relevance": "The main article discusses consumer spending, retail sales, and economic conditions; Gaza and Israel-Hamas references occur only in unrelated latest-story snippets.",
+    "reason": "The conflict-related material is incidental roundup or navigation content rather than part of the article's substantive topic, so it does not meaningfully contribute to conflict discourse analysis.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "25f938539d82959fe643bf73024aa5b904125bd2ed911c4dd5a22d7f162c94b5",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "fccb3ef711082e8fbb835b292820e90d8e67418e87a7ffd726355821d16aa8fa",
+    "raw_response_text_sha256": "a174a8b98092ad73add0d79c0975cfe005a07707a7106bc9b59891d225f458f3"
+  },
+  "api_metadata": {
+    "id": "resp_0ffa2bdf144ff690006aa9f6755cb087d2ac9b054479c394ae",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789523573.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2322,
+      "input_tokens_details": {
+        "cache_write_tokens": 2319,
+        "cached_tokens": 0
+      },
+      "output_tokens": 319,
+      "output_tokens_details": {
+        "reasoning_tokens": 170
+      },
+      "total_tokens": 2641
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.97,\n  \"gaza_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"2023 holiday-season retail spending and profit margins\",\n  \"conflict_relevance\": \"The main article discusses consumer spending, retail sales, and economic conditions; Gaza and Israel-Hamas references occur only in unrelated latest-story snippets.\",\n  \"reason\": \"The conflict-related material is incidental roundup or navigation content rather than part of the article's substantive topic, so it does not meaningfully contribute to conflict discourse analysis.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T01:52:58Z",
+  "duration_seconds": 4.874,
+  "error": null
+}

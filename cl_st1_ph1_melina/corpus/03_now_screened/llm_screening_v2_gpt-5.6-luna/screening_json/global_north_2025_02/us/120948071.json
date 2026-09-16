@@ -1,0 +1,65 @@
+{
+  "article_id": "120948071",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_02/us/120948071.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_02/us/120948071.json"
+  },
+  "manifest_row": {
+    "article_id": "120948071",
+    "group": "global_north_2025_02",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2025_02/us/120948071.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "gaza_role": "boilerplate_or_unrelated",
+    "main_topic": "Trump's creation of an anti-Christian bias task force and religious liberty initiatives",
+    "conflict_relevance": "The article's main subject is U.S. religious policy and politics. Gaza appears only in an unrelated embedded headline about Trump's proposed Gaza redevelopment plan, without substantive discussion.",
+    "reason": "The Gaza reference is a standalone inserted headline and date, not part of the article's main reporting or analysis.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "f612e75819906a33c655e99322a72c2e1dcd76331163436ff510d7c7af24c3df",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "9e2c648fb50b0632ede3dc2c161576d868182fe8858138195174ea235cfcbd78",
+    "raw_response_text_sha256": "01f7d0158838d955a7324f9c1683f521871fa18904040c76e7940daffa70effc"
+  },
+  "api_metadata": {
+    "id": "resp_0e52780840c032c2006aaa244d76ac87d1b08e1101347623fa",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789535309.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1714,
+      "input_tokens_details": {
+        "cache_write_tokens": 1711,
+        "cached_tokens": 0
+      },
+      "output_tokens": 261,
+      "output_tokens_details": {
+        "reasoning_tokens": 112
+      },
+      "total_tokens": 1975
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Trump's creation of an anti-Christian bias task force and religious liberty initiatives\",\n  \"conflict_relevance\": \"The article's main subject is U.S. religious policy and politics. Gaza appears only in an unrelated embedded headline about Trump's proposed Gaza redevelopment plan, without substantive discussion.\",\n  \"reason\": \"The Gaza reference is a standalone inserted headline and date, not part of the article's main reporting or analysis.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T05:08:47Z",
+  "duration_seconds": 19.959,
+  "error": null
+}

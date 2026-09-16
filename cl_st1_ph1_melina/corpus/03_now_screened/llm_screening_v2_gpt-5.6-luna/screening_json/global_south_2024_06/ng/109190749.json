@@ -1,0 +1,65 @@
+{
+  "article_id": "109190749",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_south_2024_06/ng/109190749.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_south_2024_06/ng/109190749.json"
+  },
+  "manifest_row": {
+    "article_id": "109190749",
+    "group": "global_south_2024_06",
+    "country_code": "ng",
+    "filepath": "corpus/02_now_organised/global_south_2024_06/ng/109190749.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.86,
+    "gaza_role": "passing",
+    "main_topic": "Nigerian printing and publishing industry investment",
+    "conflict_relevance": "An unrelated embedded photo caption provides substantive background on Israeli military operations at Al-Shifa Hospital and the destruction of a major medical facility in Gaza.",
+    "reason": "The main article concerns a Nigerian printing company's expansion and has no connection to Gaza or the Israel-Palestine conflict. However, it includes a meaningful Gaza-related news caption, making it peripheral rather than entirely excludable.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "ba95162af3d073fcf4f89c080df55865bb775b6f50ed42db88a6b47c8026fe6c",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "3f30f0a580c6486097875e7eec9318620ad31a9338fa73aef517d6f927d95dd8",
+    "raw_response_text_sha256": "4639bdd98783bf77052fd437050d1ec4e7e1f8d54e544e9821c3621f529afc15"
+  },
+  "api_metadata": {
+    "id": "resp_0b76cc74a8046eeb006aaa3c62ff7887d1a3ec60be2f4e6402",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789541475.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1485,
+      "input_tokens_details": {
+        "cache_write_tokens": 1482,
+        "cached_tokens": 0
+      },
+      "output_tokens": 340,
+      "output_tokens_details": {
+        "reasoning_tokens": 183
+      },
+      "total_tokens": 1825
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.86,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Nigerian printing and publishing industry investment\",\n  \"conflict_relevance\": \"An unrelated embedded photo caption provides substantive background on Israeli military operations at Al-Shifa Hospital and the destruction of a major medical facility in Gaza.\",\n  \"reason\": \"The main article concerns a Nigerian printing company's expansion and has no connection to Gaza or the Israel-Palestine conflict. However, it includes a meaningful Gaza-related news caption, making it peripheral rather than entirely excludable.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T06:51:21Z",
+  "duration_seconds": 6.546,
+  "error": null
+}

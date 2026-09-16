@@ -1,0 +1,65 @@
+{
+  "article_id": "122671912",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_03/us/122671912.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_03/us/122671912.json"
+  },
+  "manifest_row": {
+    "article_id": "122671912",
+    "group": "global_north_2025_03",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2025_03/us/122671912.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "passing",
+    "main_topic": "Weekly news quiz covering major current events",
+    "conflict_relevance": "Includes one quiz question about Israel's violation of the Gaza cease-fire and resulting airstrikes, but the article is not focused on the conflict.",
+    "reason": "The Gaza war appears as a substantive news item in one of eleven quiz questions, providing limited but meaningful conflict-related discourse. The article is primarily a general news roundup and is therefore peripheral rather than core.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "60e7faea6c34b59ff620e3174b35781acff33df2f893b7079e0fd8ed11d61ab0",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "e098cd986ab2c56d789471b2557530dde470be6aad1c3d43e9a134f4f5c9b359",
+    "raw_response_text_sha256": "04d38916768771561de54d82ff68b35693b844b8bab85286ad74731eb244e21c"
+  },
+  "api_metadata": {
+    "id": "resp_078092584ab81c4e006aaa27ee69bc87d1b754592b9e9a92df",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789536238.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1171,
+      "input_tokens_details": {
+        "cache_write_tokens": 1168,
+        "cached_tokens": 0
+      },
+      "output_tokens": 215,
+      "output_tokens_details": {
+        "reasoning_tokens": 63
+      },
+      "total_tokens": 1386
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Weekly news quiz covering major current events\",\n  \"conflict_relevance\": \"Includes one quiz question about Israel's violation of the Gaza cease-fire and resulting airstrikes, but the article is not focused on the conflict.\",\n  \"reason\": \"The Gaza war appears as a substantive news item in one of eleven quiz questions, providing limited but meaningful conflict-related discourse. The article is primarily a general news roundup and is therefore peripheral rather than core.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T05:24:02Z",
+  "duration_seconds": 4.245,
+  "error": null
+}

@@ -1,0 +1,65 @@
+{
+  "article_id": "106839750",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_03/ca/106839750.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_03/ca/106839750.json"
+  },
+  "manifest_row": {
+    "article_id": "106839750",
+    "group": "global_north_2024_03",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2024_03/ca/106839750.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.92,
+    "gaza_role": "background",
+    "main_topic": "Municipal solid waste management and public consultation in Dawson City, Yukon",
+    "conflict_relevance": "An embedded news snippet briefly discusses the resumption of Saudi-Israel normalization talks after the October 7 attack and Israel's subsequent assault on Gaza.",
+    "reason": "The main article concerns Dawson City's waste management plan and has no connection to Gaza or Palestine. However, the text includes a substantive but unrelated embedded snippet about Israel-Saudi diplomacy and the Gaza war, making it peripheral rather than entirely excludable.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "ce6d3d82578d720d265edffd1dea9865ddb3346cfd2c747ed0f1c7bc8a8beb22",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "16097d9209a65b4025d528d88ea883112967b6a52029512c507777e86f004771",
+    "raw_response_text_sha256": "fef065940cc3c93d79562a0f7ce2d9dd74c9ac1ed17d453d2cbbd5e2b3256de1"
+  },
+  "api_metadata": {
+    "id": "resp_04d84938f6bf957a006aaa0879097887d28ad2764af0ecd3fe",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789528185.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 4732,
+      "input_tokens_details": {
+        "cache_write_tokens": 4729,
+        "cached_tokens": 0
+      },
+      "output_tokens": 342,
+      "output_tokens_details": {
+        "reasoning_tokens": 174
+      },
+      "total_tokens": 5074
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.92,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Municipal solid waste management and public consultation in Dawson City, Yukon\",\n  \"conflict_relevance\": \"An embedded news snippet briefly discusses the resumption of Saudi-Israel normalization talks after the October 7 attack and Israel's subsequent assault on Gaza.\",\n  \"reason\": \"The main article concerns Dawson City's waste management plan and has no connection to Gaza or Palestine. However, the text includes a substantive but unrelated embedded snippet about Israel-Saudi diplomacy and the Gaza war, making it peripheral rather than entirely excludable.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:09:49Z",
+  "duration_seconds": 5.001,
+  "error": null
+}

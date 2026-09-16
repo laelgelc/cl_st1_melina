@@ -1,0 +1,65 @@
+{
+  "article_id": "123455711",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_south_2025_04/pk/123455711.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_south_2025_04/pk/123455711.json"
+  },
+  "manifest_row": {
+    "article_id": "123455711",
+    "group": "global_south_2025_04",
+    "country_code": "pk",
+    "filepath": "corpus/02_now_organised/global_south_2025_04/pk/123455711.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.97,
+    "gaza_role": "background",
+    "main_topic": "Iran-US negotiations over Iran's nuclear programme and potential military action",
+    "conflict_relevance": "The article's main focus is Iran's nuclear diplomacy, but it situates the talks within Iran's regional confrontation with Israel and mentions Hamas, Hezbollah, the Gaza war, and Israeli involvement in possible action against Iran.",
+    "reason": "The Gaza and Israel-Palestine material provides meaningful geopolitical context but is not the article's central subject.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "7beeb112b532be2659fde2d390f0cf8acfd02195a829a2da0560bc90eb886890",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "cb7b879c9daed69094e0c2089053aacf75ac1c81447c0bad85d84d4daa613c8f",
+    "raw_response_text_sha256": "ef2f3e010724abe9b568ccd5738f4dfda21493727ac7bb7709c7b793524a97d0"
+  },
+  "api_metadata": {
+    "id": "resp_063224941a29c39c006aaa48240eb887d196802e96a9bebe37",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789544484.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1577,
+      "input_tokens_details": {
+        "cache_write_tokens": 1574,
+        "cached_tokens": 0
+      },
+      "output_tokens": 218,
+      "output_tokens_details": {
+        "reasoning_tokens": 65
+      },
+      "total_tokens": 1795
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.97,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Iran-US negotiations over Iran's nuclear programme and potential military action\",\n  \"conflict_relevance\": \"The article's main focus is Iran's nuclear diplomacy, but it situates the talks within Iran's regional confrontation with Israel and mentions Hamas, Hezbollah, the Gaza war, and Israeli involvement in possible action against Iran.\",\n  \"reason\": \"The Gaza and Israel-Palestine material provides meaningful geopolitical context but is not the article's central subject.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T07:41:26Z",
+  "duration_seconds": 3.049,
+  "error": null
+}

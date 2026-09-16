@@ -1,0 +1,65 @@
+{
+  "article_id": "120797180",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_02/ca/120797180.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_02/ca/120797180.json"
+  },
+  "manifest_row": {
+    "article_id": "120797180",
+    "group": "global_north_2025_02",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2025_02/ca/120797180.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.96,
+    "gaza_role": "background",
+    "main_topic": "Mixed current-affairs news, primarily focused on U.S.-Canada tariffs and Donald Trump administration actions",
+    "conflict_relevance": "The text includes a substantive news item about Arab and Palestinian officials opposing proposed displacement of Palestinians from Gaza, but the overall article is a collection of unrelated political, economic, and international snippets.",
+    "reason": "The Gaza-related passage meaningfully addresses proposed displacement and regional diplomatic opposition, making the item relevant to broader conflict discourse, but Gaza is not the main topic of the text.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "43085a0af307e890f84f51bf99bad853a17a5e9caf930d48c830f198e54632f6",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "945a221675540fa1fd0bbe00043db036a58ee792fbe36f15f4b0efe65f796101",
+    "raw_response_text_sha256": "5cb844393ee409fa57a4c2089d1174bf98fdc9ac9a6fa68ded7901851cd3a5cb"
+  },
+  "api_metadata": {
+    "id": "resp_07673f3b151c458b006aaa22337eac87d28e06b0be00fadfbf",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789534771.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1778,
+      "input_tokens_details": {
+        "cache_write_tokens": 1775,
+        "cached_tokens": 0
+      },
+      "output_tokens": 331,
+      "output_tokens_details": {
+        "reasoning_tokens": 165
+      },
+      "total_tokens": 2109
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.96,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Mixed current-affairs news, primarily focused on U.S.-Canada tariffs and Donald Trump administration actions\",\n  \"conflict_relevance\": \"The text includes a substantive news item about Arab and Palestinian officials opposing proposed displacement of Palestinians from Gaza, but the overall article is a collection of unrelated political, economic, and international snippets.\",\n  \"reason\": \"The Gaza-related passage meaningfully addresses proposed displacement and regional diplomatic opposition, making the item relevant to broader conflict discourse, but Gaza is not the main topic of the text.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T04:59:36Z",
+  "duration_seconds": 4.958,
+  "error": null
+}

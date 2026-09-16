@@ -1,0 +1,65 @@
+{
+  "article_id": "116105840",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_10/us/116105840.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_10/us/116105840.json"
+  },
+  "manifest_row": {
+    "article_id": "116105840",
+    "group": "global_north_2024_10",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2024_10/us/116105840.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.96,
+    "gaza_role": "passing",
+    "main_topic": "Christian Science Monitor's mission, identity, and journalistic approach",
+    "conflict_relevance": "The article briefly invokes Gaza, Hamas, the regional conflict, antisemitism, and Lebanon as examples of the Monitor's humanity-centered coverage, but the conflict is not the article's subject.",
+    "reason": "The main article is an institutional/about-page statement rather than conflict coverage. However, it contains a meaningful passage about Gaza residents responding to the death of a Hamas leader, the devastating conflict, Lebanese civilians under fire, and antisemitism, making it relevant to broader discourse analysis but not to the main conflict corpus.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "9e52bd5a942729197b9c80b3960f7e2de1696a9872c5d510d013480ef15a3ead",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "bafca889a5fe289b7ef824d57a69d8459de2e5f583f1e6c4600b79440f44b162",
+    "raw_response_text_sha256": "0f364111a3ceeb112d7c2ddf57b54cafb6daad1e2d570b65e9ffc53c070cc15d"
+  },
+  "api_metadata": {
+    "id": "resp_0c3a0ca68d1c1de4006aaa198b1b6487d2a100387afbea836c",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789532555.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 933,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 373,
+      "output_tokens_details": {
+        "reasoning_tokens": 185
+      },
+      "total_tokens": 1306
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.96,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Christian Science Monitor's mission, identity, and journalistic approach\",\n  \"conflict_relevance\": \"The article briefly invokes Gaza, Hamas, the regional conflict, antisemitism, and Lebanon as examples of the Monitor's humanity-centered coverage, but the conflict is not the article's subject.\",\n  \"reason\": \"The main article is an institutional/about-page statement rather than conflict coverage. However, it contains a meaningful passage about Gaza residents responding to the death of a Hamas leader, the devastating conflict, Lebanese civilians under fire, and antisemitism, making it relevant to broader discourse analysis but not to the main conflict corpus.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T04:22:39Z",
+  "duration_seconds": 4.261,
+  "error": null
+}

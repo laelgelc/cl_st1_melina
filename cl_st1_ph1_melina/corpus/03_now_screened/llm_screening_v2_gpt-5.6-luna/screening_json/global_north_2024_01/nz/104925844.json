@@ -1,0 +1,65 @@
+{
+  "article_id": "104925844",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_01/nz/104925844.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_01/nz/104925844.json"
+  },
+  "manifest_row": {
+    "article_id": "104925844",
+    "group": "global_north_2024_01",
+    "country_code": "nz",
+    "filepath": "corpus/02_now_organised/global_north_2024_01/nz/104925844.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.96,
+    "gaza_role": "passing",
+    "main_topic": "Surf lifeguard rescues and beach safety in New Zealand",
+    "conflict_relevance": "A separate embedded item briefly discusses Netanyahu's stated intentions regarding Gaza and the relocation or absorption of Palestinians.",
+    "reason": "The main article concerns New Zealand beach activity and surf rescues. However, it includes a meaningful but unrelated embedded news snippet about Israel's possible endgame in Gaza, making it peripheral rather than excluding it outright.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "3e456963695ac3f219c42cf2601fb1db3d11a7bba7db7e22d0bd3b66a115e887",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "dadd7dbe99904e5792894b9c2ce59af8aed019ab746b70ec67aa39f98519fcb6",
+    "raw_response_text_sha256": "f981d90337483bf2622a6b902d96d431eafe2aee3e6820f5231c6ec14363df7f"
+  },
+  "api_metadata": {
+    "id": "resp_08c555b3ee8d898e006aaa045651bc87d281b3d5e9fd346b8e",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789527126.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1417,
+      "input_tokens_details": {
+        "cache_write_tokens": 1414,
+        "cached_tokens": 0
+      },
+      "output_tokens": 245,
+      "output_tokens_details": {
+        "reasoning_tokens": 95
+      },
+      "total_tokens": 1662
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.96,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Surf lifeguard rescues and beach safety in New Zealand\",\n  \"conflict_relevance\": \"A separate embedded item briefly discusses Netanyahu's stated intentions regarding Gaza and the relocation or absorption of Palestinians.\",\n  \"reason\": \"The main article concerns New Zealand beach activity and surf rescues. However, it includes a meaningful but unrelated embedded news snippet about Israel's possible endgame in Gaza, making it peripheral rather than excluding it outright.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:52:08Z",
+  "duration_seconds": 2.78,
+  "error": null
+}

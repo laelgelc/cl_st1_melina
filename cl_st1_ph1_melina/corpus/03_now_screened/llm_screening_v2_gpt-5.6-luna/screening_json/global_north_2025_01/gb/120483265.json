@@ -1,0 +1,65 @@
+{
+  "article_id": "120483265",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_01/gb/120483265.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_01/gb/120483265.json"
+  },
+  "manifest_row": {
+    "article_id": "120483265",
+    "group": "global_north_2025_01",
+    "country_code": "gb",
+    "filepath": "corpus/02_now_organised/global_north_2025_01/gb/120483265.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.95,
+    "gaza_role": "substantial",
+    "main_topic": "A roundup of Donald Trump's political statements and actions",
+    "conflict_relevance": "The article includes substantial discussion of Trump's claims about Israeli hostage releases and his proposal to move Gaza's population to Jordan or Egypt, but these are two sections within a broader roundup of unrelated Trump controversies.",
+    "reason": "The Gaza-related content is meaningful and directly concerns displacement, destruction, civilian deaths, hostages, Hamas, Israel, and regional diplomacy. However, the article as a whole is primarily about Trump's wider political conduct rather than the Gaza conflict.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "6e295fe986c55e9e5414b9ecb399727927ff1eb5f909d363e461532a9242c993",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "a6bf03d58ef077e044226ca8f6b68708870b30060dd21611fcf5dcd899fa26bd",
+    "raw_response_text_sha256": "ef57580a502c81be45e2a9da4dda61fc5648fe15f9a10f8d02fafdc911d5d58f"
+  },
+  "api_metadata": {
+    "id": "resp_088e65f2ad4d43cc006aaa1ff80bbc87d2b4fec901a40db52b",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789534200.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2183,
+      "input_tokens_details": {
+        "cache_write_tokens": 2180,
+        "cached_tokens": 0
+      },
+      "output_tokens": 408,
+      "output_tokens_details": {
+        "reasoning_tokens": 236
+      },
+      "total_tokens": 2591
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.95,\n  \"gaza_role\": \"substantial\",\n  \"main_topic\": \"A roundup of Donald Trump's political statements and actions\",\n  \"conflict_relevance\": \"The article includes substantial discussion of Trump's claims about Israeli hostage releases and his proposal to move Gaza's population to Jordan or Egypt, but these are two sections within a broader roundup of unrelated Trump controversies.\",\n  \"reason\": \"The Gaza-related content is meaningful and directly concerns displacement, destruction, civilian deaths, hostages, Hamas, Israel, and regional diplomacy. However, the article as a whole is primarily about Trump's wider political conduct rather than the Gaza conflict.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T04:50:05Z",
+  "duration_seconds": 5.24,
+  "error": null
+}

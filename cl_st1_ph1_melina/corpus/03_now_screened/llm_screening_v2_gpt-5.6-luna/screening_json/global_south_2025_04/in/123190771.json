@@ -1,0 +1,65 @@
+{
+  "article_id": "123190771",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_south_2025_04/in/123190771.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_south_2025_04/in/123190771.json"
+  },
+  "manifest_row": {
+    "article_id": "123190771",
+    "group": "global_south_2025_04",
+    "country_code": "in",
+    "filepath": "corpus/02_now_organised/global_south_2025_04/in/123190771.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.96,
+    "gaza_role": "passing",
+    "main_topic": "U.S. foreign policy and international affairs",
+    "conflict_relevance": "The text briefly references the International Criminal Court's arrest warrants for Israeli leaders over alleged crimes in Gaza, but the primary focus is broader U.S. foreign policy and unrelated international issues.",
+    "reason": "Gaza-related discourse is meaningful but limited to one embedded snippet within a collection of otherwise unrelated political and foreign-policy items.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "e319ec647938713a36c7ed984c6073ea2764e78bc0684abfe4b41204e8a90b22",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "6916ff4ad23844c4e3d5debc5c7ca075c4e6992aa67c802ec5dfa8e49014d617",
+    "raw_response_text_sha256": "86f517dfa30c3b7cb4b6831ec09807b843fa17230f0354f5988d68090219d409"
+  },
+  "api_metadata": {
+    "id": "resp_0e8ce71fa0be5547006aaa475c8f8487d1a1e1b3d742b7aaa4",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789544284.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 827,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 265,
+      "output_tokens_details": {
+        "reasoning_tokens": 121
+      },
+      "total_tokens": 1092
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.96,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"U.S. foreign policy and international affairs\",\n  \"conflict_relevance\": \"The text briefly references the International Criminal Court's arrest warrants for Israeli leaders over alleged crimes in Gaza, but the primary focus is broader U.S. foreign policy and unrelated international issues.\",\n  \"reason\": \"Gaza-related discourse is meaningful but limited to one embedded snippet within a collection of otherwise unrelated political and foreign-policy items.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T07:38:08Z",
+  "duration_seconds": 4.108,
+  "error": null
+}

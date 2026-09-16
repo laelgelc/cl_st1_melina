@@ -1,0 +1,65 @@
+{
+  "article_id": "102486927",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_10/us/102486927.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_10/us/102486927.json"
+  },
+  "manifest_row": {
+    "article_id": "102486927",
+    "group": "global_north_2023_10",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2023_10/us/102486927.txt"
+  },
+  "screening": {
+    "category": "CORE",
+    "confidence": 0.98,
+    "gaza_role": "substantial",
+    "main_topic": "Israeli seizure of cryptocurrency accounts allegedly linked to Hamas and conflict-related terror financing",
+    "conflict_relevance": "The article directly discusses Hamas, Israeli law-enforcement and intelligence actions, alleged financing of Hamas, the Israel-Hamas escalation, and civilian deaths in Gaza.",
+    "reason": "Although framed around cryptocurrency and financial enforcement, the article's main subject is the use of crypto accounts for alleged Hamas financing in the context of the Israel-Hamas conflict. Advertising and investment boilerplate are peripheral to the main article.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": true
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "b42d5e0eefa0a9fb6aba362ca25e267b80c3cc639ee674fc8b574fd74473b00a",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "de2082f21ab4932eabcaedf0e42a392ef4bb4a28a653bf6bbbcd9c0fa21fbef9",
+    "raw_response_text_sha256": "74a67dab098a5ba67aee9029b4bed6240fb798c01c981f33cc9e498fa491abc1"
+  },
+  "api_metadata": {
+    "id": "resp_0b10449e98e8aa30006aa9f86d5c8887d2ab6337bd40461d47",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789524077.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1182,
+      "input_tokens_details": {
+        "cache_write_tokens": 1179,
+        "cached_tokens": 0
+      },
+      "output_tokens": 238,
+      "output_tokens_details": {
+        "reasoning_tokens": 72
+      },
+      "total_tokens": 1420
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"CORE\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"substantial\",\n  \"main_topic\": \"Israeli seizure of cryptocurrency accounts allegedly linked to Hamas and conflict-related terror financing\",\n  \"conflict_relevance\": \"The article directly discusses Hamas, Israeli law-enforcement and intelligence actions, alleged financing of Hamas, the Israel-Hamas escalation, and civilian deaths in Gaza.\",\n  \"reason\": \"Although framed around cryptocurrency and financial enforcement, the article's main subject is the use of crypto accounts for alleged Hamas financing in the context of the Israel-Hamas conflict. Advertising and investment boilerplate are peripheral to the main article.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": true\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:01:20Z",
+  "duration_seconds": 3.066,
+  "error": null
+}

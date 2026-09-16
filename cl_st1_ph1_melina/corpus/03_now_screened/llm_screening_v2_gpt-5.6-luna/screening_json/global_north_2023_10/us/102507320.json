@@ -1,0 +1,65 @@
+{
+  "article_id": "102507320",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_10/us/102507320.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_10/us/102507320.json"
+  },
+  "manifest_row": {
+    "article_id": "102507320",
+    "group": "global_north_2023_10",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2023_10/us/102507320.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.93,
+    "gaza_role": "passing",
+    "main_topic": "Pumpkin curry soup recipe",
+    "conflict_relevance": "An unrelated brief news snippet mentions people likely captured by Hamas near the Gaza border, but the article is primarily a recipe and also includes unrelated sports content.",
+    "reason": "The Gaza-related material is only a short embedded human-interest/news passage within an otherwise unrelated recipe and sports text, providing insufficient substantive conflict discourse for analysis.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "78ff10abaed115ca949390f6709b261b9b7a17112c051516ccc45624f0e2fd73",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "e22e2b487dfe731fe2ffb053aeb3601ffbf9507cd23591ad33ff1510f1e288de",
+    "raw_response_text_sha256": "67f4abca403bad6115c7ec59647952956242a81176816c09c2055294df8ef008"
+  },
+  "api_metadata": {
+    "id": "resp_0d55a27dcf66d0a5006aa9f886535087d2a0be1b804a7de1a5",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789524102.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1004,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 326,
+      "output_tokens_details": {
+        "reasoning_tokens": 186
+      },
+      "total_tokens": 1330
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.93,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Pumpkin curry soup recipe\",\n  \"conflict_relevance\": \"An unrelated brief news snippet mentions people likely captured by Hamas near the Gaza border, but the article is primarily a recipe and also includes unrelated sports content.\",\n  \"reason\": \"The Gaza-related material is only a short embedded human-interest/news passage within an otherwise unrelated recipe and sports text, providing insufficient substantive conflict discourse for analysis.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:01:46Z",
+  "duration_seconds": 3.887,
+  "error": null
+}

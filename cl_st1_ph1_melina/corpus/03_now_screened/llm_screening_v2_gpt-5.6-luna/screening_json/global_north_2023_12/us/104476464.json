@@ -1,0 +1,65 @@
+{
+  "article_id": "104476464",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_12/us/104476464.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_12/us/104476464.json"
+  },
+  "manifest_row": {
+    "article_id": "104476464",
+    "group": "global_north_2023_12",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2023_12/us/104476464.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.97,
+    "gaza_role": "passing",
+    "main_topic": "Cultural commentary and personal reflection on the 1984 film adaptation of A Christmas Carol",
+    "conflict_relevance": "The article is primarily a Christmas film review and memoir-like cultural essay, but includes a brief news item about Hamas leader Ismail Haniyeh's Gaza cease-fire and hostage-swap talks.",
+    "reason": "The Gaza-related content is limited to one meaningful sentence in an embedded roundup of unrelated news and is not developed or connected to the article's main topic.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "ec437484aae5c8f108470fa55bfaf98eef960949d36ec0e36547fda6b5220e8c",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "094c0dbb10dcb51152ae9d805398c169d44324fc6c31dfe841f8c29b726a11fb",
+    "raw_response_text_sha256": "f0d7f470d3395fea48127e2fe2027192331e015e16208c15416d2fea539768b8"
+  },
+  "api_metadata": {
+    "id": "resp_0cdd39693ca07d0e006aaa02503f7487d2a7851923ccbdac98",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789526608.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2832,
+      "input_tokens_details": {
+        "cache_write_tokens": 2829,
+        "cached_tokens": 0
+      },
+      "output_tokens": 239,
+      "output_tokens_details": {
+        "reasoning_tokens": 77
+      },
+      "total_tokens": 3071
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.97,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Cultural commentary and personal reflection on the 1984 film adaptation of A Christmas Carol\",\n  \"conflict_relevance\": \"The article is primarily a Christmas film review and memoir-like cultural essay, but includes a brief news item about Hamas leader Ismail Haniyeh's Gaza cease-fire and hostage-swap talks.\",\n  \"reason\": \"The Gaza-related content is limited to one meaningful sentence in an embedded roundup of unrelated news and is not developed or connected to the article's main topic.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:43:31Z",
+  "duration_seconds": 3.682,
+  "error": null
+}

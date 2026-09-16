@@ -1,0 +1,65 @@
+{
+  "article_id": "200450818",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_05/us/200450818.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_05/us/200450818.json"
+  },
+  "manifest_row": {
+    "article_id": "200450818",
+    "group": "global_north_2024_05",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2024_05/us/200450818.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.94,
+    "gaza_role": "substantial",
+    "main_topic": "A television news roundup covering U.S. jobs, political corruption charges, an international murder investigation, Gaza-related protests and violence, space launches, flooding, and health care policy",
+    "conflict_relevance": "The roundup includes meaningful coverage of protests against the war in Gaza, arrests of demonstrators, international pro-Palestinian solidarity actions, an Israeli airstrike in Rafah, and an unrecovered Israeli hostage body.",
+    "reason": "Gaza-related reporting occupies a substantial segment of the roundup and contains relevant discourse on military action, civilian deaths, protests, solidarity, and hostages, but the article as a whole is a multi-topic news wrap rather than a piece centrally focused on the conflict.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "866600d4886412d727809f5f852b085157abe6f1b41882a91ed6c83a6e94c9ec",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "48a229539012cc07fc7d4339d53147b0d8043df0adec35f99328d877b3ac4f85",
+    "raw_response_text_sha256": "11527efcf914da7ccff3bb1fdfc3e52c99cf2063fa60d583fa566d6eb00a6bf2"
+  },
+  "api_metadata": {
+    "id": "resp_0a678d446a6f7983006aaa0f611adc87d28f6bab5c6dbd317b",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789529953.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1645,
+      "input_tokens_details": {
+        "cache_write_tokens": 1642,
+        "cached_tokens": 0
+      },
+      "output_tokens": 351,
+      "output_tokens_details": {
+        "reasoning_tokens": 145
+      },
+      "total_tokens": 1996
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.94,\n  \"gaza_role\": \"substantial\",\n  \"main_topic\": \"A television news roundup covering U.S. jobs, political corruption charges, an international murder investigation, Gaza-related protests and violence, space launches, flooding, and health care policy\",\n  \"conflict_relevance\": \"The roundup includes meaningful coverage of protests against the war in Gaza, arrests of demonstrators, international pro-Palestinian solidarity actions, an Israeli airstrike in Rafah, and an unrecovered Israeli hostage body.\",\n  \"reason\": \"Gaza-related reporting occupies a substantial segment of the roundup and contains relevant discourse on military action, civilian deaths, protests, solidarity, and hostages, but the article as a whole is a multi-topic news wrap rather than a piece centrally focused on the conflict.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:39:17Z",
+  "duration_seconds": 4.662,
+  "error": null
+}

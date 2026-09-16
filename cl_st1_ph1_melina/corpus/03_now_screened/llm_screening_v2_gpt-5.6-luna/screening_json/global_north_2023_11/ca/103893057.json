@@ -1,0 +1,65 @@
+{
+  "article_id": "103893057",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_11/ca/103893057.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_11/ca/103893057.json"
+  },
+  "manifest_row": {
+    "article_id": "103893057",
+    "group": "global_north_2023_11",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2023_11/ca/103893057.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "passing",
+    "main_topic": "Arson investigation involving a house fire with children inside",
+    "conflict_relevance": "The article includes a brief embedded news item about Israeli hostages released from captivity in the Gaza Strip, but the main report concerns an unrelated Manitoba arson investigation.",
+    "reason": "The Gaza-related content is a meaningful but isolated sentence within a collection of unrelated news snippets; it does not form part of the article's main subject.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "c631b3768d550e0b164c2cd426305f78a3779c522f977bfe82d4d0a085a98c12",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "60350528c08de94a13e1d7eeda65317bdcc5218583f1a5e363a70c974bb50d4a",
+    "raw_response_text_sha256": "f9f8dac459a8df51401c8da8284bf6ae547688ef78f66c62289170d78eb19c53"
+  },
+  "api_metadata": {
+    "id": "resp_060d32f5b14ba701006aa9fc1c774887d2b5c14580419f5b19",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789525020.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1186,
+      "input_tokens_details": {
+        "cache_write_tokens": 1183,
+        "cached_tokens": 0
+      },
+      "output_tokens": 209,
+      "output_tokens_details": {
+        "reasoning_tokens": 61
+      },
+      "total_tokens": 1395
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Arson investigation involving a house fire with children inside\",\n  \"conflict_relevance\": \"The article includes a brief embedded news item about Israeli hostages released from captivity in the Gaza Strip, but the main report concerns an unrelated Manitoba arson investigation.\",\n  \"reason\": \"The Gaza-related content is a meaningful but isolated sentence within a collection of unrelated news snippets; it does not form part of the article's main subject.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:17:03Z",
+  "duration_seconds": 3.616,
+  "error": null
+}

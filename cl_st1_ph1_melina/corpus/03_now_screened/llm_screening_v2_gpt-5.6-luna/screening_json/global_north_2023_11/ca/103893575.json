@@ -1,0 +1,65 @@
+{
+  "article_id": "103893575",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_11/ca/103893575.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_11/ca/103893575.json"
+  },
+  "manifest_row": {
+    "article_id": "103893575",
+    "group": "global_north_2023_11",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2023_11/ca/103893575.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "gaza_role": "passing",
+    "main_topic": "Toronto police use of force and a police shooting investigation",
+    "conflict_relevance": "An unrelated embedded news snippet briefly mentions the release of Israeli hostages from Gaza, but the main article concerns a Toronto police shooting.",
+    "reason": "The Gaza-related content is a brief incidental item within a collection of unrelated news snippets and does not provide meaningful discourse for analysis.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "9d000292afa620fea7f0464cdf37cf1ab1a572ddbf8b9385643c561d1fa0ab5b",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "1b7a96dfc820ccb4d47d7f56aa5116577012879e0fb2ce7c2a40fb76a1eddbb9",
+    "raw_response_text_sha256": "3db0bf9975fe7c4446fed6fc650a939f2ccda21a0e588b11546481fafedc3476"
+  },
+  "api_metadata": {
+    "id": "resp_06df4aa98b1aa83a006aa9fc1e2fb487d297aa86587009e730",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789525022.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1742,
+      "input_tokens_details": {
+        "cache_write_tokens": 1739,
+        "cached_tokens": 0
+      },
+      "output_tokens": 234,
+      "output_tokens_details": {
+        "reasoning_tokens": 98
+      },
+      "total_tokens": 1976
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Toronto police use of force and a police shooting investigation\",\n  \"conflict_relevance\": \"An unrelated embedded news snippet briefly mentions the release of Israeli hostages from Gaza, but the main article concerns a Toronto police shooting.\",\n  \"reason\": \"The Gaza-related content is a brief incidental item within a collection of unrelated news snippets and does not provide meaningful discourse for analysis.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:17:05Z",
+  "duration_seconds": 3.216,
+  "error": null
+}

@@ -1,0 +1,65 @@
+{
+  "article_id": "123679746",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_04/gb/123679746.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_04/gb/123679746.json"
+  },
+  "manifest_row": {
+    "article_id": "123679746",
+    "group": "global_north_2025_04",
+    "country_code": "gb",
+    "filepath": "corpus/02_now_organised/global_north_2025_04/gb/123679746.txt"
+  },
+  "screening": {
+    "category": "CORE",
+    "confidence": 0.99,
+    "gaza_role": "central",
+    "main_topic": "Israeli strikes and blockade-driven humanitarian crisis in Gaza",
+    "conflict_relevance": "The article directly covers Israeli military action in Gaza, civilian deaths, the ceasefire's collapse, the blockade, food and water shortages, humanitarian aid, and competing Israeli and Palestinian-related claims.",
+    "reason": "Gaza and the Israel-Hamas war are the article's central subject, with extensive reporting on casualties, renewed bombardment, blockade conditions, and the humanitarian crisis. A brief related report about rocket fire from Lebanon does not alter the article's primary focus.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": true
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "b715c1962f95a119385bd9915706eec3659370c312f4efe96f62b7f27b01660b",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "3aee5be806b4bee3a5a7ae562a5e286e016101cf8fb726b5cd868a3b15ddff5f",
+    "raw_response_text_sha256": "1ae86db41cf59c3cdceb82e8444aefe455855f7e43375f47d23170acee24abff"
+  },
+  "api_metadata": {
+    "id": "resp_0aa76c0e616ffeb6006aaa29037c5887d18cee52365905af1f",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789536515.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1145,
+      "input_tokens_details": {
+        "cache_write_tokens": 1142,
+        "cached_tokens": 0
+      },
+      "output_tokens": 233,
+      "output_tokens_details": {
+        "reasoning_tokens": 60
+      },
+      "total_tokens": 1378
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"CORE\",\n  \"confidence\": 0.99,\n  \"gaza_role\": \"central\",\n  \"main_topic\": \"Israeli strikes and blockade-driven humanitarian crisis in Gaza\",\n  \"conflict_relevance\": \"The article directly covers Israeli military action in Gaza, civilian deaths, the ceasefire's collapse, the blockade, food and water shortages, humanitarian aid, and competing Israeli and Palestinian-related claims.\",\n  \"reason\": \"Gaza and the Israel-Hamas war are the article's central subject, with extensive reporting on casualties, renewed bombardment, blockade conditions, and the humanitarian crisis. A brief related report about rocket fire from Lebanon does not alter the article's primary focus.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": true\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T05:28:38Z",
+  "duration_seconds": 2.908,
+  "error": null
+}

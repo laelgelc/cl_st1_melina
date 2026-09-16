@@ -1,0 +1,65 @@
+{
+  "article_id": "104432158",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_12/ca/104432158.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_12/ca/104432158.json"
+  },
+  "manifest_row": {
+    "article_id": "104432158",
+    "group": "global_north_2023_12",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2023_12/ca/104432158.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "background",
+    "main_topic": "Review and critique of the film Maestro and its portrayal of Leonard Bernstein",
+    "conflict_relevance": "The article opens with several substantive paragraphs discussing the Gaza war, the death toll, Canada’s call for a ceasefire, and expectations of further reporting, but the main body is a film review unrelated to the conflict.",
+    "reason": "The Gaza discussion is meaningful contextual commentary rather than a passing or boilerplate mention, but it is not the central subject of the article.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "bb4c37ca99af86576a72d4c74789bf9d92fe2289b2e17ce2173f3ed65bd2fd02",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "732f1c33249f698bd34830f8a1f8c21849a435ac195443600266ae1dc70c050b",
+    "raw_response_text_sha256": "f1d693c01b1908445830216acaa90525966ef331a1b47b04f58213ca04f9896b"
+  },
+  "api_metadata": {
+    "id": "resp_0ef339c4909befa4006aaa008ac2c087d28585f0b4f478a645",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789526154.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 3114,
+      "input_tokens_details": {
+        "cache_write_tokens": 3111,
+        "cached_tokens": 0
+      },
+      "output_tokens": 239,
+      "output_tokens_details": {
+        "reasoning_tokens": 80
+      },
+      "total_tokens": 3353
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Review and critique of the film Maestro and its portrayal of Leonard Bernstein\",\n  \"conflict_relevance\": \"The article opens with several substantive paragraphs discussing the Gaza war, the death toll, Canada’s call for a ceasefire, and expectations of further reporting, but the main body is a film review unrelated to the conflict.\",\n  \"reason\": \"The Gaza discussion is meaningful contextual commentary rather than a passing or boilerplate mention, but it is not the central subject of the article.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:35:58Z",
+  "duration_seconds": 3.953,
+  "error": null
+}

@@ -1,0 +1,65 @@
+{
+  "article_id": "200105212",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_01/us/200105212.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_01/us/200105212.json"
+  },
+  "manifest_row": {
+    "article_id": "200105212",
+    "group": "global_north_2024_01",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2024_01/us/200105212.txt"
+  },
+  "screening": {
+    "category": "CORE",
+    "confidence": 0.98,
+    "gaza_role": "substantial",
+    "main_topic": "Israeli Supreme Court ruling on Netanyahu's judicial reforms amid the Israel-Hamas war",
+    "conflict_relevance": "The article directly discusses hostage negotiations, the war against Hamas in Gaza, Israeli military operations, troop withdrawal, and the interaction between wartime policy and Israel's domestic political crisis.",
+    "reason": "Although the Supreme Court decision is a major focus, the article substantially situates it within the ongoing Gaza war and includes direct reporting on hostage negotiations and IDF operations in Gaza.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": true
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "8d2d0a53702c9df38ae900439ebaf58329f145fec124667f5bc69c0de6660af8",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "984880bf14fd4460096feccbfc513d9f4761c8a51a08d1dcd79a53b637b5add9",
+    "raw_response_text_sha256": "03b41597777133656180d6b8411552dd360e00128f33fd71a72629809962ebe2"
+  },
+  "api_metadata": {
+    "id": "resp_08dd69b0182110e2006aaa05322ab487d2a592feb48df16d5c",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789527346.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 923,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 246,
+      "output_tokens_details": {
+        "reasoning_tokens": 85
+      },
+      "total_tokens": 1169
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"CORE\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"substantial\",\n  \"main_topic\": \"Israeli Supreme Court ruling on Netanyahu's judicial reforms amid the Israel-Hamas war\",\n  \"conflict_relevance\": \"The article directly discusses hostage negotiations, the war against Hamas in Gaza, Israeli military operations, troop withdrawal, and the interaction between wartime policy and Israel's domestic political crisis.\",\n  \"reason\": \"Although the Supreme Court decision is a major focus, the article substantially situates it within the ongoing Gaza war and includes direct reporting on hostage negotiations and IDF operations in Gaza.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": true\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:55:49Z",
+  "duration_seconds": 3.0,
+  "error": null
+}

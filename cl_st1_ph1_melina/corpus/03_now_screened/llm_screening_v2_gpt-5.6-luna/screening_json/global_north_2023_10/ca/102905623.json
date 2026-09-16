@@ -1,0 +1,65 @@
+{
+  "article_id": "102905623",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_10/ca/102905623.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_10/ca/102905623.json"
+  },
+  "manifest_row": {
+    "article_id": "102905623",
+    "group": "global_north_2023_10",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2023_10/ca/102905623.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.96,
+    "gaza_role": "background",
+    "main_topic": "A decades-old sexual assault and breaking-and-entering conviction in British Columbia",
+    "conflict_relevance": "The main article is unrelated to Gaza, but an embedded news snippet contains substantive references to Israeli airstrikes, humanitarian operations, hospitals, and the Gaza war.",
+    "reason": "The headline and article body concern a Canadian sexual assault case. However, the text includes a distinct embedded Gaza-related news item with meaningful humanitarian and conflict reporting, making it peripheral rather than excludable.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "bef7d58ddbdadb6cbbcc7c725a749f24cabbed9732e98baa61a846a0606cce70",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "0cc157e7782cbf69e6a1edef0841777f6076a69c2a1b7ecacef8172b0f062ea4",
+    "raw_response_text_sha256": "2ba7d7ba27e256aee4e65531afc1639ff2651d9b00bb24102a0c2972831813be"
+  },
+  "api_metadata": {
+    "id": "resp_015de8287c8e6dcc006aa9f697cd0c87d28ef68956ee094394",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789523607.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2025,
+      "input_tokens_details": {
+        "cache_write_tokens": 2022,
+        "cached_tokens": 0
+      },
+      "output_tokens": 338,
+      "output_tokens_details": {
+        "reasoning_tokens": 176
+      },
+      "total_tokens": 2363
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.96,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"A decades-old sexual assault and breaking-and-entering conviction in British Columbia\",\n  \"conflict_relevance\": \"The main article is unrelated to Gaza, but an embedded news snippet contains substantive references to Israeli airstrikes, humanitarian operations, hospitals, and the Gaza war.\",\n  \"reason\": \"The headline and article body concern a Canadian sexual assault case. However, the text includes a distinct embedded Gaza-related news item with meaningful humanitarian and conflict reporting, making it peripheral rather than excludable.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T01:53:31Z",
+  "duration_seconds": 3.351,
+  "error": null
+}

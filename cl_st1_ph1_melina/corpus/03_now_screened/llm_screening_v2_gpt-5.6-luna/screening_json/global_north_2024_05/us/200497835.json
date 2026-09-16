@@ -1,0 +1,65 @@
+{
+  "article_id": "200497835",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_05/us/200497835.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_05/us/200497835.json"
+  },
+  "manifest_row": {
+    "article_id": "200497835",
+    "group": "global_north_2024_05",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2024_05/us/200497835.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "background",
+    "main_topic": "Daily news podcast covering George Floyd and police reform, the Gaza war, and college athlete compensation",
+    "conflict_relevance": "The podcast includes a substantive news brief on the International Court of Justice order concerning Israel's Rafah offensive, the humanitarian situation in Gaza, and South Africa's genocide case against Israel, but Gaza is not the main focus of the episode.",
+    "reason": "The article is a multi-topic news roundup primarily focused on the four-year anniversary of George Floyd's murder and college sports compensation. Its Gaza coverage is meaningful and directly relevant to the conflict, but limited to a short standalone segment.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "67fdf35a92b4846fd185267c3a8ca67dd578cf95524f25560cb27e1342f1ca9c",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "df2ee31f3467f44903ec329e4cff5118acb6bad4e4630fc57e1ca77ac77a69f5",
+    "raw_response_text_sha256": "b792ce791ed736a68c8906a756ccbcc8688c7ac034f98d9e72d61a3524de4be7"
+  },
+  "api_metadata": {
+    "id": "resp_0373bad1ed56a993006aaa0ff1343c87d28eed8d21d16f6a26",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789530097.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 3697,
+      "input_tokens_details": {
+        "cache_write_tokens": 3694,
+        "cached_tokens": 0
+      },
+      "output_tokens": 284,
+      "output_tokens_details": {
+        "reasoning_tokens": 98
+      },
+      "total_tokens": 3981
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Daily news podcast covering George Floyd and police reform, the Gaza war, and college athlete compensation\",\n  \"conflict_relevance\": \"The podcast includes a substantive news brief on the International Court of Justice order concerning Israel's Rafah offensive, the humanitarian situation in Gaza, and South Africa's genocide case against Israel, but Gaza is not the main focus of the episode.\",\n  \"reason\": \"The article is a multi-topic news roundup primarily focused on the four-year anniversary of George Floyd's murder and college sports compensation. Its Gaza coverage is meaningful and directly relevant to the conflict, but limited to a short standalone segment.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:41:45Z",
+  "duration_seconds": 9.073,
+  "error": null
+}

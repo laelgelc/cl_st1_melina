@@ -1,0 +1,65 @@
+{
+  "article_id": "122643429",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_03/au/122643429.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_03/au/122643429.json"
+  },
+  "manifest_row": {
+    "article_id": "122643429",
+    "group": "global_north_2025_03",
+    "country_code": "au",
+    "filepath": "corpus/02_now_organised/global_north_2025_03/au/122643429.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "passing",
+    "main_topic": "Australian politics, US-Australia relations, tariffs, and domestic economic policy",
+    "conflict_relevance": "The article includes a brief international-news item describing Israeli air strikes across Gaza, Hamas rocket fire, and expanded Israeli ground raids, but the conflict is not otherwise developed.",
+    "reason": "The main article is a broad Australian political and media roundup focused on tariffs, technology companies, pharmaceuticals, supermarkets, elections, and defence. Gaza appears in one meaningful but brief embedded news snippet, making the article peripheral rather than core.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "7cf3fe7d9e0cb2d9e4b0c2a0efa7e39e4774b7da2c0f0dfacda56c9a475b4e3d",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "c7312a8a191f46a3cdec3758f01ca4ce58d0647a02ee18f3084e6a26d3b3dea9",
+    "raw_response_text_sha256": "c8cab52fcdeff9f7dda64357f493e88e8ef18e77801cf43cb4294d562d135511"
+  },
+  "api_metadata": {
+    "id": "resp_0039ed6a86ede014006aaa2583208087d18e53e60b5e299d85",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789535619.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 3455,
+      "input_tokens_details": {
+        "cache_write_tokens": 3452,
+        "cached_tokens": 0
+      },
+      "output_tokens": 273,
+      "output_tokens_details": {
+        "reasoning_tokens": 103
+      },
+      "total_tokens": 3728
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Australian politics, US-Australia relations, tariffs, and domestic economic policy\",\n  \"conflict_relevance\": \"The article includes a brief international-news item describing Israeli air strikes across Gaza, Hamas rocket fire, and expanded Israeli ground raids, but the conflict is not otherwise developed.\",\n  \"reason\": \"The main article is a broad Australian political and media roundup focused on tariffs, technology companies, pharmaceuticals, supermarkets, elections, and defence. Gaza appears in one meaningful but brief embedded news snippet, making the article peripheral rather than core.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T05:13:43Z",
+  "duration_seconds": 4.166,
+  "error": null
+}

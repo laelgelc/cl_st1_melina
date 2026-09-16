@@ -1,0 +1,65 @@
+{
+  "article_id": "110209034",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_07/sg/110209034.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_07/sg/110209034.json"
+  },
+  "manifest_row": {
+    "article_id": "110209034",
+    "group": "global_north_2024_07",
+    "country_code": "sg",
+    "filepath": "corpus/02_now_organised/global_north_2024_07/sg/110209034.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.95,
+    "gaza_role": "background",
+    "main_topic": "A Singapore community artificial-intelligence interest group and local constituency events",
+    "conflict_relevance": "The main article is unrelated to Gaza, but an embedded news item substantially discusses Iran's support for Hezbollah and Hamas, Palestine, Israel's war in Gaza, and the regional Axis of Resistance.",
+    "reason": "The article is a concatenation of unrelated reports. Its apparent main article concerns community AI programmes in Singapore, while the preceding embedded report contains meaningful conflict-related discourse about Iran, Israel, Hamas, Hezbollah, and Gaza. This supports peripheral rather than core classification.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "ed37e806469697dbd7f74aed6674d699e5f27bdfd9a96b97a4eaafe3b4af2049",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "5d6929df1650d4796b500813fb00e21a68c9fd8012350810c074befdf6fb9a63",
+    "raw_response_text_sha256": "158fb3df9afcd333dc75b1cc1b5eca399fec47173d8e0c504be40669fb56ce01"
+  },
+  "api_metadata": {
+    "id": "resp_02da322b59a483fb006aaa1293a42487d2ae75c7ccc7d515aa",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789530771.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1753,
+      "input_tokens_details": {
+        "cache_write_tokens": 1750,
+        "cached_tokens": 0
+      },
+      "output_tokens": 370,
+      "output_tokens_details": {
+        "reasoning_tokens": 193
+      },
+      "total_tokens": 2123
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.95,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"A Singapore community artificial-intelligence interest group and local constituency events\",\n  \"conflict_relevance\": \"The main article is unrelated to Gaza, but an embedded news item substantially discusses Iran's support for Hezbollah and Hamas, Palestine, Israel's war in Gaza, and the regional Axis of Resistance.\",\n  \"reason\": \"The article is a concatenation of unrelated reports. Its apparent main article concerns community AI programmes in Singapore, while the preceding embedded report contains meaningful conflict-related discourse about Iran, Israel, Hamas, Hezbollah, and Gaza. This supports peripheral rather than core classification.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:52:56Z",
+  "duration_seconds": 4.65,
+  "error": null
+}

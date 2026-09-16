@@ -1,0 +1,65 @@
+{
+  "article_id": "118348209",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_12/ca/118348209.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_12/ca/118348209.json"
+  },
+  "manifest_row": {
+    "article_id": "118348209",
+    "group": "global_north_2024_12",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2024_12/ca/118348209.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "gaza_role": "passing",
+    "main_topic": "Alberta family access to insulin and the federal pharmacare program",
+    "conflict_relevance": "The main article is unrelated to Gaza or the Israel-Hamas war; Gaza appears only in an unrelated embedded news snippet about Israeli hostages.",
+    "reason": "The article centrally concerns diabetes medication costs and Canadian pharmacare policy. The brief Gaza reference is part of a separate news item and does not contribute meaningfully to the main article's discourse.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "fe1a38e7e213936c061c51dd5936b93a53eaf279f0b687e8bde6d08cbc63a144",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "87dc22a3ac206105d6bd868dd708412f5445f6783ec168b2adcf0e0830c37760",
+    "raw_response_text_sha256": "ce515c2525770290b2186eaa2ad84d1a75c06b17ddbd688d4f7e4d4b40722fd0"
+  },
+  "api_metadata": {
+    "id": "resp_098c13467f444751006aaa1cfcc72c87d28ff24a03b0256ebe",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789533436.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2200,
+      "input_tokens_details": {
+        "cache_write_tokens": 2197,
+        "cached_tokens": 0
+      },
+      "output_tokens": 301,
+      "output_tokens_details": {
+        "reasoning_tokens": 149
+      },
+      "total_tokens": 2501
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Alberta family access to insulin and the federal pharmacare program\",\n  \"conflict_relevance\": \"The main article is unrelated to Gaza or the Israel-Hamas war; Gaza appears only in an unrelated embedded news snippet about Israeli hostages.\",\n  \"reason\": \"The article centrally concerns diabetes medication costs and Canadian pharmacare policy. The brief Gaza reference is part of a separate news item and does not contribute meaningfully to the main article's discourse.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T04:37:19Z",
+  "duration_seconds": 3.26,
+  "error": null
+}

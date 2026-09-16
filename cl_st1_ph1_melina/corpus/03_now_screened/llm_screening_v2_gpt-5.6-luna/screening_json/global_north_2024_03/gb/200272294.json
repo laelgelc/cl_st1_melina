@@ -1,0 +1,65 @@
+{
+  "article_id": "200272294",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_03/gb/200272294.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_03/gb/200272294.json"
+  },
+  "manifest_row": {
+    "article_id": "200272294",
+    "group": "global_north_2024_03",
+    "country_code": "gb",
+    "filepath": "corpus/02_now_organised/global_north_2024_03/gb/200272294.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.93,
+    "gaza_role": "central",
+    "main_topic": "Multi-item news roundup covering the Israel-Gaza war, related regional violence, humanitarian conditions, ceasefire diplomacy, and Israeli-Palestinian conflict",
+    "conflict_relevance": "The content is extensively about Gaza and the broader Israel-Palestine conflict, but it consists of numerous separate news briefs rather than a single coherent article.",
+    "reason": "Although the roundup contains substantial conflict-related material, its fragmented multi-article format makes it unsuitable as a single discourse-analysis article under the exclusion criteria for roundups and snippets.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "22a49d2b8c59bf220fb2abdf313ef4ab31fd8a9304e2374f4e39422bdcd1f1dd",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "1d1240490677a3749876224466d76578bfb5a0a3a819e36e3426695ee9ba3a70",
+    "raw_response_text_sha256": "6eadbee8e80b0033a4ef5476ade148ccdf343365e05b7ab466fc0475d42a23b8"
+  },
+  "api_metadata": {
+    "id": "resp_020008fe066dd977006aaa08f77f7087d2a54df8218402fe97",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789528311.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 3818,
+      "input_tokens_details": {
+        "cache_write_tokens": 3815,
+        "cached_tokens": 0
+      },
+      "output_tokens": 531,
+      "output_tokens_details": {
+        "reasoning_tokens": 362
+      },
+      "total_tokens": 4349
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.93,\n  \"gaza_role\": \"central\",\n  \"main_topic\": \"Multi-item news roundup covering the Israel-Gaza war, related regional violence, humanitarian conditions, ceasefire diplomacy, and Israeli-Palestinian conflict\",\n  \"conflict_relevance\": \"The content is extensively about Gaza and the broader Israel-Palestine conflict, but it consists of numerous separate news briefs rather than a single coherent article.\",\n  \"reason\": \"Although the roundup contains substantial conflict-related material, its fragmented multi-article format makes it unsuitable as a single discourse-analysis article under the exclusion criteria for roundups and snippets.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:11:58Z",
+  "duration_seconds": 6.966,
+  "error": null
+}

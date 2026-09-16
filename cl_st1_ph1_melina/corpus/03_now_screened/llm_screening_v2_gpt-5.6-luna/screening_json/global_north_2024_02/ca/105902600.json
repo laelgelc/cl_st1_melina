@@ -1,0 +1,65 @@
+{
+  "article_id": "105902600",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_02/ca/105902600.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_02/ca/105902600.json"
+  },
+  "manifest_row": {
+    "article_id": "105902600",
+    "group": "global_north_2024_02",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2024_02/ca/105902600.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "gaza_role": "boilerplate_or_unrelated",
+    "main_topic": "Canadian international student permit caps and rental housing demand",
+    "conflict_relevance": "The main article is unrelated to Gaza or the Israel-Palestine conflict; a separate latest-stories snippet briefly mentions Iran's war on Hamas.",
+    "reason": "The headline and substantive article concern Canadian immigration policy, international students, and housing markets. The Gaza-related material appears only in an unrelated embedded news item and does not contribute meaningfully to the main article's discourse.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "9988f120ed0b42e1ae466528d4623e2cb6e08d832d69f86d2543a889ba866cb7",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "174f987494f971321d5de518c6ba865c782c49d8fd9c9e77ea129986664d8500",
+    "raw_response_text_sha256": "eafb317eb80ec6132d6be61bbeb1f81f894e41badca1051d7404ae8438a547ac"
+  },
+  "api_metadata": {
+    "id": "resp_055e0fff66046ff4006aaa0606731087d293d66042c7392e8d",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789527558.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2988,
+      "input_tokens_details": {
+        "cache_write_tokens": 2985,
+        "cached_tokens": 0
+      },
+      "output_tokens": 286,
+      "output_tokens_details": {
+        "reasoning_tokens": 125
+      },
+      "total_tokens": 3274
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"gaza_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Canadian international student permit caps and rental housing demand\",\n  \"conflict_relevance\": \"The main article is unrelated to Gaza or the Israel-Palestine conflict; a separate latest-stories snippet briefly mentions Iran's war on Hamas.\",\n  \"reason\": \"The headline and substantive article concern Canadian immigration policy, international students, and housing markets. The Gaza-related material appears only in an unrelated embedded news item and does not contribute meaningfully to the main article's discourse.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:59:26Z",
+  "duration_seconds": 9.241,
+  "error": null
+}

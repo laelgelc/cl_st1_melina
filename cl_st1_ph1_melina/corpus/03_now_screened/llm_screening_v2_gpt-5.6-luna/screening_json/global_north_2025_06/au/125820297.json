@@ -1,0 +1,65 @@
+{
+  "article_id": "125820297",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_06/au/125820297.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_06/au/125820297.json"
+  },
+  "manifest_row": {
+    "article_id": "125820297",
+    "group": "global_north_2025_06",
+    "country_code": "au",
+    "filepath": "corpus/02_now_organised/global_north_2025_06/au/125820297.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.96,
+    "gaza_role": "substantial",
+    "main_topic": "A roundup of current events, including Los Angeles immigration protests, the Madleen Gaza aid flotilla, a lottery win, and an Air India crash",
+    "conflict_relevance": "The article includes a substantive segment about Greta Thunberg, pro-Palestinian activists, the Madleen yacht, Israel's interception of the vessel, and the naval blockade of Gaza.",
+    "reason": "The Gaza-related material is meaningful and directly relevant to conflict discourse, but it appears as one item in a multi-topic news roundup dominated by unrelated stories.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "77ab6781f3dbfeb0beaf2f95eece42fac0789b6ddc969c772164393c636e9f14",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "93d5bd1ef4bc8a3f1384572e00d4afa88fff051cbd94cebc9cf0ed01f720c173",
+    "raw_response_text_sha256": "f0570c8b8f647333ac2f304ea964b638f9e1a50ff0a7725f0dc0e7a3af1e1f76"
+  },
+  "api_metadata": {
+    "id": "resp_0e2266a7252d11f5006aaa2e5cc63887d1b990120354955547",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789537884.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1288,
+      "input_tokens_details": {
+        "cache_write_tokens": 1285,
+        "cached_tokens": 0
+      },
+      "output_tokens": 286,
+      "output_tokens_details": {
+        "reasoning_tokens": 112
+      },
+      "total_tokens": 1574
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.96,\n  \"gaza_role\": \"substantial\",\n  \"main_topic\": \"A roundup of current events, including Los Angeles immigration protests, the Madleen Gaza aid flotilla, a lottery win, and an Air India crash\",\n  \"conflict_relevance\": \"The article includes a substantive segment about Greta Thunberg, pro-Palestinian activists, the Madleen yacht, Israel's interception of the vessel, and the naval blockade of Gaza.\",\n  \"reason\": \"The Gaza-related material is meaningful and directly relevant to conflict discourse, but it appears as one item in a multi-topic news roundup dominated by unrelated stories.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T05:51:29Z",
+  "duration_seconds": 4.791,
+  "error": null
+}

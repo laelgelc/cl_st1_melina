@@ -1,0 +1,65 @@
+{
+  "article_id": "120408578",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_01/gb/120408578.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_01/gb/120408578.json"
+  },
+  "manifest_row": {
+    "article_id": "120408578",
+    "group": "global_north_2025_01",
+    "country_code": "gb",
+    "filepath": "corpus/02_now_organised/global_north_2025_01/gb/120408578.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "background",
+    "main_topic": "Proposed UK Labour government reforms to disability and welfare benefits",
+    "conflict_relevance": "The article contains a substantial but unrelated embedded news item about the Gaza ceasefire, Israeli hostages, and Palestinian prisoner exchanges.",
+    "reason": "The main article is about UK welfare policy, disability benefits, and DWP powers. Gaza-related content appears in a separate embedded news segment describing Hamas's planned release of Israeli hostages and the exchange for Palestinian prisoners, making it relevant to broader conflict discourse but not to the article's central topic.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "797692e6bb8680a9d39845a9e9a429879c0e20dcb6e31978bcc2f12bf36fa367",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "b633cd8608b373e4621bb5553deb30bbe9ec86b996d845737336048a64b59a08",
+    "raw_response_text_sha256": "d4e2bd80812591637a831002ffd68d95d0481b25b583ad19874780387aa52114"
+  },
+  "api_metadata": {
+    "id": "resp_0a6ffd6b059b4801006aaa1fe7ed0087d28bc53b375b56dbac",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789534183.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2863,
+      "input_tokens_details": {
+        "cache_write_tokens": 2860,
+        "cached_tokens": 0
+      },
+      "output_tokens": 344,
+      "output_tokens_details": {
+        "reasoning_tokens": 173
+      },
+      "total_tokens": 3207
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Proposed UK Labour government reforms to disability and welfare benefits\",\n  \"conflict_relevance\": \"The article contains a substantial but unrelated embedded news item about the Gaza ceasefire, Israeli hostages, and Palestinian prisoner exchanges.\",\n  \"reason\": \"The main article is about UK welfare policy, disability benefits, and DWP powers. Gaza-related content appears in a separate embedded news segment describing Hamas's planned release of Israeli hostages and the exchange for Palestinian prisoners, making it relevant to broader conflict discourse but not to the article's central topic.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T04:49:48Z",
+  "duration_seconds": 4.262,
+  "error": null
+}

@@ -1,0 +1,65 @@
+{
+  "article_id": "117912679",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_11/gb/117912679.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_11/gb/117912679.json"
+  },
+  "manifest_row": {
+    "article_id": "117912679",
+    "group": "global_north_2024_11",
+    "country_code": "gb",
+    "filepath": "corpus/02_now_organised/global_north_2024_11/gb/117912679.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "background",
+    "main_topic": "Obituary and biographical profile of former UK Deputy Prime Minister John Prescott",
+    "conflict_relevance": "The article's main subject is John Prescott and his political career, but it includes substantive embedded news snippets about the International Criminal Court arrest warrants relating to Israel, Hamas, and the Gaza war.",
+    "reason": "The Prescott obituary is unrelated to Gaza and should not be treated as core conflict coverage. However, the appended ICC and Gaza passages contain meaningful discourse on alleged war crimes, international law, and the Israel-Hamas war, making the item peripheral rather than excludable.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "baac03ff4fa49100921cbbcd8c718f9159b764dc61d6974b1c445cc751147574",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "c3485cb370afba83feaade655995e348b5e2315ef8f90c0021c5d7587cd4de40",
+    "raw_response_text_sha256": "30cab0b2a9601630128f276114abd84d18ea6b7c83eba3413eb36db1efbfa399"
+  },
+  "api_metadata": {
+    "id": "resp_0a867e77ace1969f006aaa1af317e487d2bdd8d3e814b42af0",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789532915.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 5853,
+      "input_tokens_details": {
+        "cache_write_tokens": 5850,
+        "cached_tokens": 0
+      },
+      "output_tokens": 328,
+      "output_tokens_details": {
+        "reasoning_tokens": 147
+      },
+      "total_tokens": 6181
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Obituary and biographical profile of former UK Deputy Prime Minister John Prescott\",\n  \"conflict_relevance\": \"The article's main subject is John Prescott and his political career, but it includes substantive embedded news snippets about the International Criminal Court arrest warrants relating to Israel, Hamas, and the Gaza war.\",\n  \"reason\": \"The Prescott obituary is unrelated to Gaza and should not be treated as core conflict coverage. However, the appended ICC and Gaza passages contain meaningful discourse on alleged war crimes, international law, and the Israel-Hamas war, making the item peripheral rather than excludable.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T04:28:39Z",
+  "duration_seconds": 4.278,
+  "error": null
+}

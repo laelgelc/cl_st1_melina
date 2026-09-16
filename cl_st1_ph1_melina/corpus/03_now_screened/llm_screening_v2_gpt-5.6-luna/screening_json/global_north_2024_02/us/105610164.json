@@ -1,0 +1,65 @@
+{
+  "article_id": "105610164",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_02/us/105610164.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_02/us/105610164.json"
+  },
+  "manifest_row": {
+    "article_id": "105610164",
+    "group": "global_north_2024_02",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2024_02/us/105610164.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.97,
+    "gaza_role": "passing",
+    "main_topic": "Singapore-Indonesia counterfeit banknote investigation",
+    "conflict_relevance": "The text includes a substantive but isolated passage about the risk of war between Israel and Hezbollah as a consequence of Israel's war against Hamas in Gaza.",
+    "reason": "The main article concerns counterfeit currency and law-enforcement cooperation. The Gaza-related material appears as an unrelated embedded news snippet rather than forming part of the main article, but it contains meaningful conflict discourse.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "617d95922500c495c0cbfbe12d7fede95d52c84ffc912d3fdc212a409b81a021",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "8560177e6953bc5bc3ffcb3cff9f692f2cf1f5788dea2f134fa1fc9fada715d6",
+    "raw_response_text_sha256": "666a8566ed51af34ce1081b056088dc2ec4243f0905c989db5d7a68247e0acb7"
+  },
+  "api_metadata": {
+    "id": "resp_0a5068cb15d8d535006aaa06e1f56087d29cf2b13e8b44473c",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789527777.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1490,
+      "input_tokens_details": {
+        "cache_write_tokens": 1487,
+        "cached_tokens": 0
+      },
+      "output_tokens": 255,
+      "output_tokens_details": {
+        "reasoning_tokens": 104
+      },
+      "total_tokens": 1745
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.97,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Singapore-Indonesia counterfeit banknote investigation\",\n  \"conflict_relevance\": \"The text includes a substantive but isolated passage about the risk of war between Israel and Hezbollah as a consequence of Israel's war against Hamas in Gaza.\",\n  \"reason\": \"The main article concerns counterfeit currency and law-enforcement cooperation. The Gaza-related material appears as an unrelated embedded news snippet rather than forming part of the main article, but it contains meaningful conflict discourse.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:03:01Z",
+  "duration_seconds": 3.989,
+  "error": null
+}

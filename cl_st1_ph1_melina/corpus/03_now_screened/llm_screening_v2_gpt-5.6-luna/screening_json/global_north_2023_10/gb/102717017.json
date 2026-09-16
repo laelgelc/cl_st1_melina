@@ -1,0 +1,65 @@
+{
+  "article_id": "102717017",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_10/gb/102717017.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_10/gb/102717017.json"
+  },
+  "manifest_row": {
+    "article_id": "102717017",
+    "group": "global_north_2023_10",
+    "country_code": "gb",
+    "filepath": "corpus/02_now_organised/global_north_2023_10/gb/102717017.txt"
+  },
+  "screening": {
+    "category": "CORE",
+    "confidence": 0.99,
+    "gaza_role": "substantial",
+    "main_topic": "Israeli air strike on Gaza's al-Ahli Arab Baptist Hospital and its civilian aftermath",
+    "conflict_relevance": "The article provides extensive firsthand and reported accounts of the hospital blast, civilian deaths and injuries, displacement, Israeli and Palestinian claims about responsibility, and humanitarian conditions in Gaza.",
+    "reason": "Although the text begins with an unrelated report about a child death in Milwaukee, the larger second article is centrally focused on the Gaza war, the hospital strike, civilian casualties, bombardment, evacuation, and competing Israeli and Hamas accounts.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": true
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "0c7a25ec436af755215d5010c24a30004124776d6e06f940436a1b1ef07af53f",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "a55e3b7dd3ed2f8daa9647f54b62a518d90f5aefc9e0110c719c6c4e0c45a8cc",
+    "raw_response_text_sha256": "b0533c022e7335beaf50b0e88e96c9808599aa2dc0e433e57a68aa43e95ecdb6"
+  },
+  "api_metadata": {
+    "id": "resp_06cf182c6cf238a8006aa9f7464b5c87d2a3432fe768bc6ee3",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789523782.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2071,
+      "input_tokens_details": {
+        "cache_write_tokens": 2068,
+        "cached_tokens": 0
+      },
+      "output_tokens": 270,
+      "output_tokens_details": {
+        "reasoning_tokens": 99
+      },
+      "total_tokens": 2341
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"CORE\",\n  \"confidence\": 0.99,\n  \"gaza_role\": \"substantial\",\n  \"main_topic\": \"Israeli air strike on Gaza's al-Ahli Arab Baptist Hospital and its civilian aftermath\",\n  \"conflict_relevance\": \"The article provides extensive firsthand and reported accounts of the hospital blast, civilian deaths and injuries, displacement, Israeli and Palestinian claims about responsibility, and humanitarian conditions in Gaza.\",\n  \"reason\": \"Although the text begins with an unrelated report about a child death in Milwaukee, the larger second article is centrally focused on the Gaza war, the hospital strike, civilian casualties, bombardment, evacuation, and competing Israeli and Hamas accounts.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": true\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T01:56:25Z",
+  "duration_seconds": 2.949,
+  "error": null
+}

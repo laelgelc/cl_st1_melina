@@ -1,0 +1,65 @@
+{
+  "article_id": "124255805",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_05/us/124255805.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_05/us/124255805.json"
+  },
+  "manifest_row": {
+    "article_id": "124255805",
+    "group": "global_north_2025_05",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2025_05/us/124255805.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "background",
+    "main_topic": "U.S. budget cuts to cancer research and their effects on oncology",
+    "conflict_relevance": "The article briefly discusses cancer research grants being canceled because of student-led Gaza protests, linking the conflict to political decisions affecting academic funding.",
+    "reason": "The article is primarily about federal cuts to cancer research, but it contains a meaningful sentence connecting Gaza protests with the cancellation of university cancer-center grants. This makes it relevant to broader discourse about Gaza-related protests and academic or political consequences, but not to core conflict coverage.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "d91c9e1153511b9b12d1dd78ef884e1b300550d491591670741f885e53c8f91e",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "d73c80a1fd21db813ab6e495d565a394d29aec26c5e60bb9eb8191ebb084adb8",
+    "raw_response_text_sha256": "53c322c91f42817620bab175ea0520cef3ed821ddaf7cceead2b903b29faf23a"
+  },
+  "api_metadata": {
+    "id": "resp_0d009cb871c5f6f2006aaa2cf9009087d1ad5b67261c2eaf02",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789537529.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1862,
+      "input_tokens_details": {
+        "cache_write_tokens": 1859,
+        "cached_tokens": 0
+      },
+      "output_tokens": 216,
+      "output_tokens_details": {
+        "reasoning_tokens": 48
+      },
+      "total_tokens": 2078
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"U.S. budget cuts to cancer research and their effects on oncology\",\n  \"conflict_relevance\": \"The article briefly discusses cancer research grants being canceled because of student-led Gaza protests, linking the conflict to political decisions affecting academic funding.\",\n  \"reason\": \"The article is primarily about federal cuts to cancer research, but it contains a meaningful sentence connecting Gaza protests with the cancellation of university cancer-center grants. This makes it relevant to broader discourse about Gaza-related protests and academic or political consequences, but not to core conflict coverage.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T05:45:31Z",
+  "duration_seconds": 3.099,
+  "error": null
+}

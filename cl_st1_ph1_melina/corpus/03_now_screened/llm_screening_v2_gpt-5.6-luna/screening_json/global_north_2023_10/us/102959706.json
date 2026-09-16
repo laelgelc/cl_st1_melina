@@ -1,0 +1,65 @@
+{
+  "article_id": "102959706",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_10/us/102959706.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_10/us/102959706.json"
+  },
+  "manifest_row": {
+    "article_id": "102959706",
+    "group": "global_north_2023_10",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2023_10/us/102959706.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.93,
+    "gaza_role": "background",
+    "main_topic": "California Governor Gavin Newsom's diplomatic visit to China and related California political coverage",
+    "conflict_relevance": "The main article only briefly mentions Newsom raising concerns about the Israel-Hamas war, while an embedded political-news item substantially discusses Hamas's attack, Israel's bombardment of Gaza, and differing California Senate candidates' positions on ceasefire, Israeli security, Palestinian and Israeli casualties, and terrorism.",
+    "reason": "The primary article concerns Newsom's China trip rather than Gaza or Israel/Palestine. However, the newsletter includes a meaningful embedded political article directly addressing the conflict and its framing in U.S. electoral politics, making the item peripheral rather than excludable.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "36e3503841f1fbe5bc8395a9cac0edfb332334b1756e83e91ca40047a6df058c",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "82730f40409e0d20048747c611434371a789d9b7f61435521128dd317b440b45",
+    "raw_response_text_sha256": "62bd1d803b117e9782c26de0d7526be6c9ea6443f505043442d2c85bf61b0a17"
+  },
+  "api_metadata": {
+    "id": "resp_05c5bbf852cd675c006aa9f9a2c62487d289b91704075c775e",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789524386.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2555,
+      "input_tokens_details": {
+        "cache_write_tokens": 2552,
+        "cached_tokens": 0
+      },
+      "output_tokens": 426,
+      "output_tokens_details": {
+        "reasoning_tokens": 224
+      },
+      "total_tokens": 2981
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.93,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"California Governor Gavin Newsom's diplomatic visit to China and related California political coverage\",\n  \"conflict_relevance\": \"The main article only briefly mentions Newsom raising concerns about the Israel-Hamas war, while an embedded political-news item substantially discusses Hamas's attack, Israel's bombardment of Gaza, and differing California Senate candidates' positions on ceasefire, Israeli security, Palestinian and Israeli casualties, and terrorism.\",\n  \"reason\": \"The primary article concerns Newsom's China trip rather than Gaza or Israel/Palestine. However, the newsletter includes a meaningful embedded political article directly addressing the conflict and its framing in U.S. electoral politics, making the item peripheral rather than excludable.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:06:33Z",
+  "duration_seconds": 7.345,
+  "error": null
+}

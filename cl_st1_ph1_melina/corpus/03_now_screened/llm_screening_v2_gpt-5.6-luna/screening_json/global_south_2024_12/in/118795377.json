@@ -1,0 +1,65 @@
+{
+  "article_id": "118795377",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_south_2024_12/in/118795377.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_south_2024_12/in/118795377.json"
+  },
+  "manifest_row": {
+    "article_id": "118795377",
+    "group": "global_south_2024_12",
+    "country_code": "in",
+    "filepath": "corpus/02_now_organised/global_south_2024_12/in/118795377.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.93,
+    "gaza_role": "boilerplate_or_unrelated",
+    "main_topic": "Author/news roundup page containing multiple article snippets",
+    "conflict_relevance": "The page aggregates several substantive Gaza- and Israel-related news items, but these appear as embedded snippets within a broader roundup or listing rather than as a standalone article.",
+    "reason": "This is a multi-item roundup with numerous unrelated snippets, including climate and Fukushima coverage. Although many embedded items concern Gaza and Israel, the page itself is not a coherent article suitable for inclusion as a corpus document.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "0608ac2d8b02f0326e8d50eba5d7bca8d1e0e755249f3786815a78351b6e58dc",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "5b791f81ab926f95140e423c0793fba388cca30e08ea6a06a56a3ce50ff7ef9e",
+    "raw_response_text_sha256": "0a19584fbbd848c0dfd8850c9e683fdbf6c1be98543fc0f73c1b06a73641681d"
+  },
+  "api_metadata": {
+    "id": "resp_0a1d194a265a6eec006aaa4308c79487d1ab144400ec9fad24",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789543176.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1258,
+      "input_tokens_details": {
+        "cache_write_tokens": 1255,
+        "cached_tokens": 0
+      },
+      "output_tokens": 533,
+      "output_tokens_details": {
+        "reasoning_tokens": 371
+      },
+      "total_tokens": 1791
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.93,\n  \"gaza_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Author/news roundup page containing multiple article snippets\",\n  \"conflict_relevance\": \"The page aggregates several substantive Gaza- and Israel-related news items, but these appear as embedded snippets within a broader roundup or listing rather than as a standalone article.\",\n  \"reason\": \"This is a multi-item roundup with numerous unrelated snippets, including climate and Fukushima coverage. Although many embedded items concern Gaza and Israel, the page itself is not a coherent article suitable for inclusion as a corpus document.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T07:19:43Z",
+  "duration_seconds": 6.445,
+  "error": null
+}

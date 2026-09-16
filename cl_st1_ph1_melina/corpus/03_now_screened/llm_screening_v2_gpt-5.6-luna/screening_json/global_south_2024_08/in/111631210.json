@@ -1,0 +1,65 @@
+{
+  "article_id": "111631210",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_south_2024_08/in/111631210.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_south_2024_08/in/111631210.json"
+  },
+  "manifest_row": {
+    "article_id": "111631210",
+    "group": "global_south_2024_08",
+    "country_code": "in",
+    "filepath": "corpus/02_now_organised/global_south_2024_08/in/111631210.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.93,
+    "gaza_role": "passing",
+    "main_topic": "Weekly news roundup covering Indian domestic affairs, weather disasters, sports, and international headlines",
+    "conflict_relevance": "The article briefly reports the assassinations of Ismail Haniyeh and Mohammed Deif in the context of the Israel-Hamas war, but provides no substantive analysis or extended discussion.",
+    "reason": "This is a general weekly news roundup whose main focus is unrelated Indian domestic news and the Olympics. The Gaza-related content is limited to a short international-news item and is therefore incidental rather than meaningful for the main conflict corpus.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "1b139b6865895a0d949975ea19e19c47b516f0228c1d2f055c43147864bb372f",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "9eaffcd022751e2c99a3e8ef2825eddc9d00a881417130af4ee7588054d5c28d",
+    "raw_response_text_sha256": "7ae2cbe1e17725e850e652d87835adaac197da463f9876ba273f28404ab7f4ed"
+  },
+  "api_metadata": {
+    "id": "resp_0f338f6482d612cd006aaa3de0c75c87d1bb4c37b8128f8a2b",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789541856.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1220,
+      "input_tokens_details": {
+        "cache_write_tokens": 1217,
+        "cached_tokens": 0
+      },
+      "output_tokens": 408,
+      "output_tokens_details": {
+        "reasoning_tokens": 236
+      },
+      "total_tokens": 1628
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.93,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Weekly news roundup covering Indian domestic affairs, weather disasters, sports, and international headlines\",\n  \"conflict_relevance\": \"The article briefly reports the assassinations of Ismail Haniyeh and Mohammed Deif in the context of the Israel-Hamas war, but provides no substantive analysis or extended discussion.\",\n  \"reason\": \"This is a general weekly news roundup whose main focus is unrelated Indian domestic news and the Olympics. The Gaza-related content is limited to a short international-news item and is therefore incidental rather than meaningful for the main conflict corpus.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T06:57:43Z",
+  "duration_seconds": 6.599,
+  "error": null
+}

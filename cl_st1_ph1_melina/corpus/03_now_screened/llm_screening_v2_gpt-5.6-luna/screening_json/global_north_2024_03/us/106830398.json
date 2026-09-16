@@ -1,0 +1,65 @@
+{
+  "article_id": "106830398",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_03/us/106830398.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_03/us/106830398.json"
+  },
+  "manifest_row": {
+    "article_id": "106830398",
+    "group": "global_north_2024_03",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2024_03/us/106830398.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "gaza_role": "boilerplate_or_unrelated",
+    "main_topic": "Mixed news and video roundup",
+    "conflict_relevance": "The text is a collection of unrelated headlines and video snippets; Gaza appears only in isolated embedded headlines.",
+    "reason": "There is no substantive article focused on Gaza or the Israel-Palestine conflict. The Biden-Netanyahu and Rafah items are merely part of a broader navigational/news roundup.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "7a30b4a664940766c01eb2c80cf9ea8e2348541c1b3d9df8f9e73c4e466b4af4",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "326604486fa56cfe618f0779c9f84be56600fa13c3bfc58b878ee00c251f5d63",
+    "raw_response_text_sha256": "0d2a89734cc6f00306eca9d8d20a9ad98bbe65b0b5183190adc043a5923a5762"
+  },
+  "api_metadata": {
+    "id": "resp_029d5cc2c360b610006aaa09c0dc1087d2bb4f449e769e1a1a",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789528512.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1184,
+      "input_tokens_details": {
+        "cache_write_tokens": 1181,
+        "cached_tokens": 0
+      },
+      "output_tokens": 211,
+      "output_tokens_details": {
+        "reasoning_tokens": 70
+      },
+      "total_tokens": 1395
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Mixed news and video roundup\",\n  \"conflict_relevance\": \"The text is a collection of unrelated headlines and video snippets; Gaza appears only in isolated embedded headlines.\",\n  \"reason\": \"There is no substantive article focused on Gaza or the Israel-Palestine conflict. The Biden-Netanyahu and Rafah items are merely part of a broader navigational/news roundup.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:15:16Z",
+  "duration_seconds": 3.514,
+  "error": null
+}

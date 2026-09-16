@@ -1,0 +1,65 @@
+{
+  "article_id": "200307297",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_03/us/200307297.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_03/us/200307297.json"
+  },
+  "manifest_row": {
+    "article_id": "200307297",
+    "group": "global_north_2024_03",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2024_03/us/200307297.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "passing",
+    "main_topic": "Russian missile strike and rising death toll in Odesa, Ukraine",
+    "conflict_relevance": "The article is primarily about the war in Ukraine but includes a substantive, unrelated sentence about Chuck Schumer's criticism of Israel's handling of the Gaza war.",
+    "reason": "The headline and main article concern the Odesa attack. The Gaza reference is meaningful but peripheral to the article's central topic and appears alongside an unrelated Afghanistan passage.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "3cfad6e70935d6770c44aed8e372aa08054330a54699ebab7d73324eff8b1922",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "e0c8e368bc535f866d226d8802be42e7222210be1442292ea3cb7566b23cb4be",
+    "raw_response_text_sha256": "9921d96ae0d68011fc79702d7bd5aa884c3719382e973189f572ccc23800424e"
+  },
+  "api_metadata": {
+    "id": "resp_0ad7ef234a95a5b4006aaa0a777ad487d28353e43480f63238",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789528695.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1001,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 269,
+      "output_tokens_details": {
+        "reasoning_tokens": 118
+      },
+      "total_tokens": 1270
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Russian missile strike and rising death toll in Odesa, Ukraine\",\n  \"conflict_relevance\": \"The article is primarily about the war in Ukraine but includes a substantive, unrelated sentence about Chuck Schumer's criticism of Israel's handling of the Gaza war.\",\n  \"reason\": \"The headline and main article concern the Odesa attack. The Gaza reference is meaningful but peripheral to the article's central topic and appears alongside an unrelated Afghanistan passage.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:18:19Z",
+  "duration_seconds": 4.006,
+  "error": null
+}

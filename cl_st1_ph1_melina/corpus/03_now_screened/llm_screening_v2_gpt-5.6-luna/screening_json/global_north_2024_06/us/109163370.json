@@ -1,0 +1,65 @@
+{
+  "article_id": "109163370",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_06/us/109163370.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_06/us/109163370.json"
+  },
+  "manifest_row": {
+    "article_id": "109163370",
+    "group": "global_north_2024_06",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2024_06/us/109163370.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.96,
+    "gaza_role": "passing",
+    "main_topic": "Arbitrary detention of Venezuelan opposition activists ahead of elections",
+    "conflict_relevance": "The main article is about political repression and elections in Venezuela, but a separate embedded news snippet concerns Osama Hamdan, Hamas, stalled ceasefire talks, Israel, and Palestinian deaths.",
+    "reason": "The headline article is unrelated to Gaza or Israel/Palestine. However, the roundup includes a meaningful but brief Gaza-related snippet about Hamas's position on ceasefire negotiations and the Palestinian death toll, making the item peripheral rather than excludable.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "fbb682db3fb9a948b8dcef1988146c9ba9c0f09ed92f1333ae7c85c90cc4b5ac",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "811c7dc874f9367e4ea241e370d6a8f00918c30bd4ea84b7e4909f007f8a0a88",
+    "raw_response_text_sha256": "a99156ec098e03556a757761a00400a96975045fc580f7482abb625b362905da"
+  },
+  "api_metadata": {
+    "id": "resp_02d50998bab9611a006aaa1139cde087d28bdc1b395e4e6900",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789530425.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1583,
+      "input_tokens_details": {
+        "cache_write_tokens": 1580,
+        "cached_tokens": 0
+      },
+      "output_tokens": 267,
+      "output_tokens_details": {
+        "reasoning_tokens": 93
+      },
+      "total_tokens": 1850
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.96,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Arbitrary detention of Venezuelan opposition activists ahead of elections\",\n  \"conflict_relevance\": \"The main article is about political repression and elections in Venezuela, but a separate embedded news snippet concerns Osama Hamdan, Hamas, stalled ceasefire talks, Israel, and Palestinian deaths.\",\n  \"reason\": \"The headline article is unrelated to Gaza or Israel/Palestine. However, the roundup includes a meaningful but brief Gaza-related snippet about Hamas's position on ceasefire negotiations and the Palestinian death toll, making the item peripheral rather than excludable.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:47:09Z",
+  "duration_seconds": 3.646,
+  "error": null
+}

@@ -1,0 +1,65 @@
+{
+  "article_id": "125606473",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_06/us/125606473.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_06/us/125606473.json"
+  },
+  "manifest_row": {
+    "article_id": "125606473",
+    "group": "global_north_2025_06",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2025_06/us/125606473.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.97,
+    "gaza_role": "background",
+    "main_topic": "Weekly current-events quiz covering unrelated international, domestic, cultural, and scientific topics",
+    "conflict_relevance": "The quiz includes questions about an Israeli hostage-awareness march and the chaotic Gaza aid operation, including reported deaths and Israeli military firing near food distribution sites.",
+    "reason": "The article is primarily a general-news quiz rather than conflict coverage, but it contains meaningful references to Gaza humanitarian aid and violence as well as Israel-related public events.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "c5981592e2f43bd1d9b4ccf11f51d0245684a6ba43a1353cbf6c9087f282ac80",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "eb8cb67386f8674dea95e73b437b87689a7ffd06c54d4234acb7fdfb0f6b2414",
+    "raw_response_text_sha256": "30ed89ab343a149fe667f1e919f2f58f6afae64f24049c59ca0458707822ed55"
+  },
+  "api_metadata": {
+    "id": "resp_0c189bf370e9c825006aaa30f0e03487d1b64e359f5dd304d0",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789538544.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1142,
+      "input_tokens_details": {
+        "cache_write_tokens": 1139,
+        "cached_tokens": 0
+      },
+      "output_tokens": 307,
+      "output_tokens_details": {
+        "reasoning_tokens": 155
+      },
+      "total_tokens": 1449
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.97,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Weekly current-events quiz covering unrelated international, domestic, cultural, and scientific topics\",\n  \"conflict_relevance\": \"The quiz includes questions about an Israeli hostage-awareness march and the chaotic Gaza aid operation, including reported deaths and Israeli military firing near food distribution sites.\",\n  \"reason\": \"The article is primarily a general-news quiz rather than conflict coverage, but it contains meaningful references to Gaza humanitarian aid and violence as well as Israel-related public events.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T06:02:29Z",
+  "duration_seconds": 4.684,
+  "error": null
+}

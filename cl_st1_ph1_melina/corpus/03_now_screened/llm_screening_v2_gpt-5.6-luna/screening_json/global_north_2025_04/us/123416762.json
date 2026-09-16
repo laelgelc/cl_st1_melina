@@ -1,0 +1,65 @@
+{
+  "article_id": "123416762",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_04/us/123416762.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_04/us/123416762.json"
+  },
+  "manifest_row": {
+    "article_id": "123416762",
+    "group": "global_north_2025_04",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2025_04/us/123416762.txt"
+  },
+  "screening": {
+    "category": "CORE",
+    "confidence": 0.99,
+    "gaza_role": "substantial",
+    "main_topic": "Greenpeace protest against U.S. arms sales to Israel",
+    "conflict_relevance": "The article directly concerns Gaza, Israel, U.S. weapons transfers, civilian death and devastation, and protest activism related to the conflict.",
+    "reason": "Gaza and the Israel-related arms trade are central to the reported environmental protest, arrests, and competing statements from Greenpeace and the U.S. Embassy.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": true
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "9fd5ed47f1ec135d5c632d92ce27d952c892bb4b185cc7a98d86698d1ee0a3b2",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "3a8373cf0c7defd1b8d80d5b6e2c50fafcb960dc98c315ef7962226384dc208b",
+    "raw_response_text_sha256": "e9dd4a5625f626a770ca0ff15b833d9771bf753bf65eca10327ade7032e9fe60"
+  },
+  "api_metadata": {
+    "id": "resp_0db7fef0c8382f53006aaa2a1f8c8887d1ac5342c01c04901d",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789536799.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 860,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 184,
+      "output_tokens_details": {
+        "reasoning_tokens": 41
+      },
+      "total_tokens": 1044
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"CORE\",\n  \"confidence\": 0.99,\n  \"gaza_role\": \"substantial\",\n  \"main_topic\": \"Greenpeace protest against U.S. arms sales to Israel\",\n  \"conflict_relevance\": \"The article directly concerns Gaza, Israel, U.S. weapons transfers, civilian death and devastation, and protest activism related to the conflict.\",\n  \"reason\": \"Gaza and the Israel-related arms trade are central to the reported environmental protest, arrests, and competing statements from Greenpeace and the U.S. Embassy.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": true\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T05:33:22Z",
+  "duration_seconds": 2.705,
+  "error": null
+}

@@ -1,0 +1,65 @@
+{
+  "article_id": "105624205",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_02/gb/105624205.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_02/gb/105624205.json"
+  },
+  "manifest_row": {
+    "article_id": "105624205",
+    "group": "global_north_2024_02",
+    "country_code": "gb",
+    "filepath": "corpus/02_now_organised/global_north_2024_02/gb/105624205.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.95,
+    "gaza_role": "passing",
+    "main_topic": "Use of artificial intelligence to spread Holocaust denial, antisemitic imagery, and distortions of Holocaust history",
+    "conflict_relevance": "The main article concerns antisemitism and Holocaust remembrance, which are relevant to broader discursive formations surrounding Israel/Palestine, while a separate embedded snippet discusses pressure to boycott Israel in Eurovision because of the Gaza war.",
+    "reason": "The primary article is not about Gaza or the Israel-Palestine conflict, but it meaningfully addresses antisemitism, a related discourse category. The Gaza coverage appears only as an unrelated embedded news snippet.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "3bd738ac76c3d74981f8035c0b470710587bb286c9182320dc672b3b1e8e7d47",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "7aa77fbb489c540baf003dce280424487747a076569b57f78f36475505831874",
+    "raw_response_text_sha256": "2110393342c4b18f97a5eaf2485d3dcd0c18677114c0c68c1cbb8027788ec52d"
+  },
+  "api_metadata": {
+    "id": "resp_0d6f7dac3a4c2fd3006aaa062f65d487d2a231659abb50bf43",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789527599.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1953,
+      "input_tokens_details": {
+        "cache_write_tokens": 1950,
+        "cached_tokens": 0
+      },
+      "output_tokens": 363,
+      "output_tokens_details": {
+        "reasoning_tokens": 181
+      },
+      "total_tokens": 2316
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.95,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Use of artificial intelligence to spread Holocaust denial, antisemitic imagery, and distortions of Holocaust history\",\n  \"conflict_relevance\": \"The main article concerns antisemitism and Holocaust remembrance, which are relevant to broader discursive formations surrounding Israel/Palestine, while a separate embedded snippet discusses pressure to boycott Israel in Eurovision because of the Gaza war.\",\n  \"reason\": \"The primary article is not about Gaza or the Israel-Palestine conflict, but it meaningfully addresses antisemitism, a related discourse category. The Gaza coverage appears only as an unrelated embedded news snippet.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:00:03Z",
+  "duration_seconds": 4.496,
+  "error": null
+}

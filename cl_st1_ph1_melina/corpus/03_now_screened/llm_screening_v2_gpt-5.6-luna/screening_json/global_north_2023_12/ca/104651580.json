@@ -1,0 +1,65 @@
+{
+  "article_id": "104651580",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_12/ca/104651580.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_12/ca/104651580.json"
+  },
+  "manifest_row": {
+    "article_id": "104651580",
+    "group": "global_north_2023_12",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2023_12/ca/104651580.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.96,
+    "gaza_role": "background",
+    "main_topic": "British Columbia legislation restricting public consumption of illegal drugs and the court-ordered suspension of that law",
+    "conflict_relevance": "The main article is unrelated to Gaza or Israel-Palestine, but an embedded 'Latest Stories' item substantively reports U.S. approval of additional weapons for Israel during the war in Gaza.",
+    "reason": "The primary article concerns drug policy, harm reduction, and a Canadian court ruling. However, the included Israel-Gaza weapons-sale snippet contains meaningful conflict-related discourse, making the item peripheral rather than excludable.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "4907c5ff80e481e37226e75056c71c6c59e794438d07ccb1f206001838bb8d08",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "0b331fb234db92e582224176b7ef533ad4cc39cb83db1a3db94a5f5ed4744db8",
+    "raw_response_text_sha256": "ba06971c34e8a5c07f151a412e7b39f6be67a35c51ec130cb6713786c197f157"
+  },
+  "api_metadata": {
+    "id": "resp_068d7fbe43d99540006aaa00a5a51487d29f0c27fc078e3f71",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789526181.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2302,
+      "input_tokens_details": {
+        "cache_write_tokens": 2299,
+        "cached_tokens": 0
+      },
+      "output_tokens": 299,
+      "output_tokens_details": {
+        "reasoning_tokens": 123
+      },
+      "total_tokens": 2601
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.96,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"British Columbia legislation restricting public consumption of illegal drugs and the court-ordered suspension of that law\",\n  \"conflict_relevance\": \"The main article is unrelated to Gaza or Israel-Palestine, but an embedded 'Latest Stories' item substantively reports U.S. approval of additional weapons for Israel during the war in Gaza.\",\n  \"reason\": \"The primary article concerns drug policy, harm reduction, and a Canadian court ruling. However, the included Israel-Gaza weapons-sale snippet contains meaningful conflict-related discourse, making the item peripheral rather than excludable.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:36:26Z",
+  "duration_seconds": 4.612,
+  "error": null
+}

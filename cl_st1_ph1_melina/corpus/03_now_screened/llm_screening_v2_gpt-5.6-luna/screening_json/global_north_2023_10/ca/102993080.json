@@ -1,0 +1,65 @@
+{
+  "article_id": "102993080",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_10/ca/102993080.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_10/ca/102993080.json"
+  },
+  "manifest_row": {
+    "article_id": "102993080",
+    "group": "global_north_2023_10",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2023_10/ca/102993080.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "passing",
+    "main_topic": "British Columbia civil forfeiture of Hells Angels properties and legal challenges to the forfeiture regime",
+    "conflict_relevance": "The main article is unrelated to Gaza, but an embedded CTVNews.ca Top Stories section contains substantive brief items about Israel's ground operation in Gaza, bombardment and communications blackout, and a pro-Palestinian demonstration.",
+    "reason": "The article's primary subject is civil forfeiture and organized crime in British Columbia. However, the embedded news roundup includes several meaningful Gaza- and Palestine-related snippets, making it peripheral rather than an exclusion.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "1952b5922fdbdac7deabe592cb0b74d6ba2eeb768866ada7d6547f87b53410cb",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "f629393778a4555d137067632111884b73e56a3acfe5f343158bc2e9d2b879ed",
+    "raw_response_text_sha256": "6ee051130dbe015eb1aecd0e1393bb28128f4ce6c69d4e5ac368dd2011cf05ca"
+  },
+  "api_metadata": {
+    "id": "resp_02b2fc70ac0738be006aa9f6b3499087d29d528f7c95b44dc8",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789523635.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2636,
+      "input_tokens_details": {
+        "cache_write_tokens": 2633,
+        "cached_tokens": 0
+      },
+      "output_tokens": 304,
+      "output_tokens_details": {
+        "reasoning_tokens": 125
+      },
+      "total_tokens": 2940
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"British Columbia civil forfeiture of Hells Angels properties and legal challenges to the forfeiture regime\",\n  \"conflict_relevance\": \"The main article is unrelated to Gaza, but an embedded CTVNews.ca Top Stories section contains substantive brief items about Israel's ground operation in Gaza, bombardment and communications blackout, and a pro-Palestinian demonstration.\",\n  \"reason\": \"The article's primary subject is civil forfeiture and organized crime in British Columbia. However, the embedded news roundup includes several meaningful Gaza- and Palestine-related snippets, making it peripheral rather than an exclusion.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T01:53:59Z",
+  "duration_seconds": 3.918,
+  "error": null
+}

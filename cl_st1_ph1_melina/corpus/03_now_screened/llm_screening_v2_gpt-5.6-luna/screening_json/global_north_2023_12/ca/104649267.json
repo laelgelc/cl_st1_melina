@@ -1,0 +1,65 @@
+{
+  "article_id": "104649267",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_12/ca/104649267.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_12/ca/104649267.json"
+  },
+  "manifest_row": {
+    "article_id": "104649267",
+    "group": "global_north_2023_12",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2023_12/ca/104649267.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "passing",
+    "main_topic": "Potential transit strike and labour disputes in Metro Vancouver",
+    "conflict_relevance": "The article's main subject is a Metro Vancouver transit labour dispute, but it includes a substantive standalone item about South Africa's genocide case against Israel concerning Palestinians in Gaza.",
+    "reason": "The Gaza-related content is limited to one embedded news snippet within a broader collection of unrelated local news items, so the article is not suitable for the core conflict corpus but has marginal relevance for broader media discourse analysis.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "93ff996c5a1f90fbe3c0d15065a9dc96c76b775f6cb9bd274e9e392319e3df84",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "c20358c8abf6674c46edb8c559e5f6464d86f6eeeb2707efc3d10c34639c432e",
+    "raw_response_text_sha256": "ca738ec04f9adb4f815d0b72fe83af4e5e99e28bdf4d4597536e633075c40aa7"
+  },
+  "api_metadata": {
+    "id": "resp_0082d979f84695d0006aaa00a2b3b887d2bcd9ded3f0a74da0",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789526178.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1673,
+      "input_tokens_details": {
+        "cache_write_tokens": 1670,
+        "cached_tokens": 0
+      },
+      "output_tokens": 253,
+      "output_tokens_details": {
+        "reasoning_tokens": 93
+      },
+      "total_tokens": 1926
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Potential transit strike and labour disputes in Metro Vancouver\",\n  \"conflict_relevance\": \"The article's main subject is a Metro Vancouver transit labour dispute, but it includes a substantive standalone item about South Africa's genocide case against Israel concerning Palestinians in Gaza.\",\n  \"reason\": \"The Gaza-related content is limited to one embedded news snippet within a broader collection of unrelated local news items, so the article is not suitable for the core conflict corpus but has marginal relevance for broader media discourse analysis.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:36:22Z",
+  "duration_seconds": 3.755,
+  "error": null
+}

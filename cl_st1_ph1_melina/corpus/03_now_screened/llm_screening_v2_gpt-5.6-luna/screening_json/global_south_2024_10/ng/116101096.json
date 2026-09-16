@@ -1,0 +1,65 @@
+{
+  "article_id": "116101096",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_south_2024_10/ng/116101096.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_south_2024_10/ng/116101096.json"
+  },
+  "manifest_row": {
+    "article_id": "116101096",
+    "group": "global_south_2024_10",
+    "country_code": "ng",
+    "filepath": "corpus/02_now_organised/global_south_2024_10/ng/116101096.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "gaza_role": "passing",
+    "main_topic": "A roundup of unrelated current-affairs news items",
+    "conflict_relevance": "Gaza is mentioned only in passing as part of the Egyptian intelligence chief's foreign-policy responsibilities.",
+    "reason": "The article is a multi-item news roundup focused on unrelated topics. Its sole Gaza reference is a brief contextual mention in an embedded item about an Egyptian personnel change, without substantive discussion of the conflict.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "8d278b4c3f706c5b9f0d8aa47c5d45f6211224691ef1ae8df66cc9b7d041a71c",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "8f734e1b8657799ff50df3fbd986ce5d867e2a5010356e1c90d44906aaeab28b",
+    "raw_response_text_sha256": "a98bae827ba9bee723d5f2f44fba2f1c956219bcdaca846bb28d90a9b2a627e0"
+  },
+  "api_metadata": {
+    "id": "resp_01b32984019f5fcf006aaa40ea098487d1ad6aaa44c62ff104",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789542634.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1346,
+      "input_tokens_details": {
+        "cache_write_tokens": 1343,
+        "cached_tokens": 0
+      },
+      "output_tokens": 258,
+      "output_tokens_details": {
+        "reasoning_tokens": 116
+      },
+      "total_tokens": 1604
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"A roundup of unrelated current-affairs news items\",\n  \"conflict_relevance\": \"Gaza is mentioned only in passing as part of the Egyptian intelligence chief's foreign-policy responsibilities.\",\n  \"reason\": \"The article is a multi-item news roundup focused on unrelated topics. Its sole Gaza reference is a brief contextual mention in an embedded item about an Egyptian personnel change, without substantive discussion of the conflict.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T07:10:37Z",
+  "duration_seconds": 3.645,
+  "error": null
+}

@@ -1,0 +1,65 @@
+{
+  "article_id": "117910008",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_11/ca/117910008.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_11/ca/117910008.json"
+  },
+  "manifest_row": {
+    "article_id": "117910008",
+    "group": "global_north_2024_11",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2024_11/ca/117910008.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.97,
+    "gaza_role": "background",
+    "main_topic": "Canadian delivery of air defence systems to Ukraine and escalation in the Russia-Ukraine war",
+    "conflict_relevance": "The main article is unrelated to Gaza, but an embedded latest-stories snippet reports student protests calling for institutional divestment from companies tied to Israel and opposition to the war in Gaza.",
+    "reason": "The headline article concerns Ukraine and Russian military escalation. However, the text contains a meaningful, though brief, embedded report about protests related to Israel and Gaza, making it peripheral rather than excludable.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "0487ce29f422fbbd8db5962e55b0aff31e439cd566508c8478ca0670325db808",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "852894907b796046a9b5eb22b55cdb9415a8477bbd6ec9d6e5286945eab2a26b",
+    "raw_response_text_sha256": "217096af280f5f4b0c967381c6be1b46ba5d07b8d852670d07dc197d96a22a6f"
+  },
+  "api_metadata": {
+    "id": "resp_0b0684c678d0b007006aaa1a522e2887d2b480d36cd805502f",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789532754.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2043,
+      "input_tokens_details": {
+        "cache_write_tokens": 2040,
+        "cached_tokens": 0
+      },
+      "output_tokens": 279,
+      "output_tokens_details": {
+        "reasoning_tokens": 110
+      },
+      "total_tokens": 2322
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.97,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Canadian delivery of air defence systems to Ukraine and escalation in the Russia-Ukraine war\",\n  \"conflict_relevance\": \"The main article is unrelated to Gaza, but an embedded latest-stories snippet reports student protests calling for institutional divestment from companies tied to Israel and opposition to the war in Gaza.\",\n  \"reason\": \"The headline article concerns Ukraine and Russian military escalation. However, the text contains a meaningful, though brief, embedded report about protests related to Israel and Gaza, making it peripheral rather than excludable.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T04:25:57Z",
+  "duration_seconds": 3.736,
+  "error": null
+}

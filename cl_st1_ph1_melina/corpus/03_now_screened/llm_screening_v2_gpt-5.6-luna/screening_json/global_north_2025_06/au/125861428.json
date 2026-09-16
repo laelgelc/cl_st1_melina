@@ -1,0 +1,65 @@
+{
+  "article_id": "125861428",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_06/au/125861428.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_06/au/125861428.json"
+  },
+  "manifest_row": {
+    "article_id": "125861428",
+    "group": "global_north_2025_06",
+    "country_code": "au",
+    "filepath": "corpus/02_now_organised/global_north_2025_06/au/125861428.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "background",
+    "main_topic": "Israeli and Iranian military strikes and regional escalation",
+    "conflict_relevance": "The article is primarily a live report on the Israel-Iran conflict, with Gaza appearing only as context for Houthi attacks carried out in solidarity with Palestinians during Israel's war against Hamas.",
+    "reason": "Gaza and the Israel-Hamas war are mentioned meaningfully but are not the central subject of the article.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "49ffcedd3f1097b49d2c1dffa8adcc4e6c0962c7fe9197a589da15eb9f1dfd07",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "ca0af4ea67632541970a5eeb8ebae46f194cc233fa02473a17815c9587c71b33",
+    "raw_response_text_sha256": "2d9cd8fe39a2ff98f1290f6c1601bfffe66787f7d7ca4275ae3b4f62db606e02"
+  },
+  "api_metadata": {
+    "id": "resp_05c4aa7b65a5c02d006aaa2e5ed26487d1a46b044882e1b12c",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789537886.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1589,
+      "input_tokens_details": {
+        "cache_write_tokens": 1586,
+        "cached_tokens": 0
+      },
+      "output_tokens": 200,
+      "output_tokens_details": {
+        "reasoning_tokens": 55
+      },
+      "total_tokens": 1789
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Israeli and Iranian military strikes and regional escalation\",\n  \"conflict_relevance\": \"The article is primarily a live report on the Israel-Iran conflict, with Gaza appearing only as context for Houthi attacks carried out in solidarity with Palestinians during Israel's war against Hamas.\",\n  \"reason\": \"Gaza and the Israel-Hamas war are mentioned meaningfully but are not the central subject of the article.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T05:51:29Z",
+  "duration_seconds": 2.865,
+  "error": null
+}

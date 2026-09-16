@@ -1,0 +1,65 @@
+{
+  "article_id": "102922332",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_10/us/102922332.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_10/us/102922332.json"
+  },
+  "manifest_row": {
+    "article_id": "102922332",
+    "group": "global_north_2023_10",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2023_10/us/102922332.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.99,
+    "gaza_role": "background",
+    "main_topic": "Hurricane Otis and its impacts on Acapulco, Mexico",
+    "conflict_relevance": "The main article is unrelated to Gaza, but the text contains a substantial embedded news report on the Israel-Hamas war, including the humanitarian crisis, blockade, military strikes, hostages, diplomacy, and regional escalation.",
+    "reason": "The headline and primary article concern Hurricane Otis in Mexico. However, a lengthy Gaza-related news item appears among the appended 'Latest stories,' making the overall text useful for peripheral discourse analysis but not suitable as core conflict coverage.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "30fa3ccf9e5f463644b294c4e7a64201e8a763f47a339a0d86bbeea807e591f0",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "86c6421bb530af035bd77ad8150a930f91fbbba4cf9f0867bc607c145f4e637d",
+    "raw_response_text_sha256": "fc8fb4b3e282ffad27cdc87dae3a9dc6ad5d1449d3cf87cee219f4f3e9ff28d0"
+  },
+  "api_metadata": {
+    "id": "resp_0b1acac3604809f4006aa9f988bb2487d290fdda58f7b571d4",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789524360.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 4094,
+      "input_tokens_details": {
+        "cache_write_tokens": 4091,
+        "cached_tokens": 0
+      },
+      "output_tokens": 365,
+      "output_tokens_details": {
+        "reasoning_tokens": 187
+      },
+      "total_tokens": 4459
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.99,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Hurricane Otis and its impacts on Acapulco, Mexico\",\n  \"conflict_relevance\": \"The main article is unrelated to Gaza, but the text contains a substantial embedded news report on the Israel-Hamas war, including the humanitarian crisis, blockade, military strikes, hostages, diplomacy, and regional escalation.\",\n  \"reason\": \"The headline and primary article concern Hurricane Otis in Mexico. However, a lengthy Gaza-related news item appears among the appended 'Latest stories,' making the overall text useful for peripheral discourse analysis but not suitable as core conflict coverage.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:06:05Z",
+  "duration_seconds": 4.422,
+  "error": null
+}

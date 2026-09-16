@@ -1,0 +1,65 @@
+{
+  "article_id": "111747851",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_08/gb/111747851.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_08/gb/111747851.json"
+  },
+  "manifest_row": {
+    "article_id": "111747851",
+    "group": "global_north_2024_08",
+    "country_code": "gb",
+    "filepath": "corpus/02_now_organised/global_north_2024_08/gb/111747851.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "background",
+    "main_topic": "Arsenal football transfer decisions and Mikel Arteta's management",
+    "conflict_relevance": "The text includes a substantial but apparently unrelated embedded news item about escalating Israel-Hezbollah tensions, evacuations from Lebanon, Israeli strikes in Gaza, and Palestinian casualties.",
+    "reason": "The main article is about Arsenal's transfer strategy and football management. However, the appended regional-conflict report contains meaningful discourse about Israel, Gaza, military action, and Palestinian deaths, making the item peripheral rather than excludable.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "5419ed4a9dd2c1fbc4e0c1e9ffd271264854e264abdf45888080fd015b0232c9",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "16105e656b1bd681075a57e1d2e7060fdabf2ebfa17d46a83a9c9783d3bf6c49",
+    "raw_response_text_sha256": "51ddbd1a19745cd1a734795a373c61b2c1a9bf06244dee0adc09d996c4f6b1f6"
+  },
+  "api_metadata": {
+    "id": "resp_096ab84801365288006aaa14106c7c87d29873a0423b54473a",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789531152.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1760,
+      "input_tokens_details": {
+        "cache_write_tokens": 1757,
+        "cached_tokens": 0
+      },
+      "output_tokens": 286,
+      "output_tokens_details": {
+        "reasoning_tokens": 120
+      },
+      "total_tokens": 2046
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Arsenal football transfer decisions and Mikel Arteta's management\",\n  \"conflict_relevance\": \"The text includes a substantial but apparently unrelated embedded news item about escalating Israel-Hezbollah tensions, evacuations from Lebanon, Israeli strikes in Gaza, and Palestinian casualties.\",\n  \"reason\": \"The main article is about Arsenal's transfer strategy and football management. However, the appended regional-conflict report contains meaningful discourse about Israel, Gaza, military action, and Palestinian deaths, making the item peripheral rather than excludable.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:59:16Z",
+  "duration_seconds": 4.568,
+  "error": null
+}

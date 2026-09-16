@@ -1,0 +1,65 @@
+{
+  "article_id": "111729986",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_08/gb/111729986.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_08/gb/111729986.json"
+  },
+  "manifest_row": {
+    "article_id": "111729986",
+    "group": "global_north_2024_08",
+    "country_code": "gb",
+    "filepath": "corpus/02_now_organised/global_north_2024_08/gb/111729986.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.95,
+    "gaza_role": "background",
+    "main_topic": "US and allied military deployments amid escalating tensions involving Israel and Iran",
+    "conflict_relevance": "The article focuses primarily on regional military escalation and support for Israel in response to Iran, but it meaningfully references completing a Gaza ceasefire and hostage-release deal.",
+    "reason": "Gaza is relevant to the article's discussion of de-escalation and hostage negotiations, but the main subject is broader US-Israel-Iran military tensions rather than the Gaza conflict itself.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "3f35c83b2f5f14d1ce6edf69b409e11207e0646406f1ba31c8fc2b11ac4496a9",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "53dc579bb3738021cad75787e038a6fac41eb1e0300b9dad80ee207cb223fdeb",
+    "raw_response_text_sha256": "357c6521e5d69988956537b34931fe683d60340581871041b42b149bcac5948f"
+  },
+  "api_metadata": {
+    "id": "resp_08d81423620c4c85006aaa140f478887d2991d3a1b8bc175eb",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789531151.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 906,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 232,
+      "output_tokens_details": {
+        "reasoning_tokens": 74
+      },
+      "total_tokens": 1138
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.95,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"US and allied military deployments amid escalating tensions involving Israel and Iran\",\n  \"conflict_relevance\": \"The article focuses primarily on regional military escalation and support for Israel in response to Iran, but it meaningfully references completing a Gaza ceasefire and hostage-release deal.\",\n  \"reason\": \"Gaza is relevant to the article's discussion of de-escalation and hostage negotiations, but the main subject is broader US-Israel-Iran military tensions rather than the Gaza conflict itself.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:59:14Z",
+  "duration_seconds": 3.468,
+  "error": null
+}

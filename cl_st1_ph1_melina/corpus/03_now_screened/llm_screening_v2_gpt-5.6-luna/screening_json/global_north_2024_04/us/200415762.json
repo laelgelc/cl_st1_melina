@@ -1,0 +1,65 @@
+{
+  "article_id": "200415762",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_04/us/200415762.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_04/us/200415762.json"
+  },
+  "manifest_row": {
+    "article_id": "200415762",
+    "group": "global_north_2024_04",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2024_04/us/200415762.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.96,
+    "gaza_role": "background",
+    "main_topic": "A roundup of opinion commentary on US politics, Trump, congressional aid, the Iran-Israel conflict, antisemitism, and other current issues",
+    "conflict_relevance": "The article includes meaningful discussion of US aid to Israel, Iran's attack on Israel, Hamas's control of Gaza, hostages held in Gaza, and antisemitism, but the overall focus is a broad political opinion roundup rather than the Gaza or Israel-Palestine conflict.",
+    "reason": "The conflict-related material is substantive in several sections, especially the discussion of Iran, Hamas, Gaza, hostages, Israel, and antisemitism. However, these are components of a multi-topic roundup whose main subject is broader US political commentary.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "d90977e8e00ca4649fae804d544aa3b15975533b6f6a8be5b8d71542cc88091b",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "7e639cbc9171907c671979ba8935cd6a4970e6f4f43056065351fb518f4c3697",
+    "raw_response_text_sha256": "68c6d2af158bae0149ca39ac607d3912c54557989a597e02bacafb67a215ee98"
+  },
+  "api_metadata": {
+    "id": "resp_051a1c452ec9a9a8006aaa0d12a45887d2abcc85a8d2531a54",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789529362.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 3158,
+      "input_tokens_details": {
+        "cache_write_tokens": 3155,
+        "cached_tokens": 0
+      },
+      "output_tokens": 344,
+      "output_tokens_details": {
+        "reasoning_tokens": 135
+      },
+      "total_tokens": 3502
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.96,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"A roundup of opinion commentary on US politics, Trump, congressional aid, the Iran-Israel conflict, antisemitism, and other current issues\",\n  \"conflict_relevance\": \"The article includes meaningful discussion of US aid to Israel, Iran's attack on Israel, Hamas's control of Gaza, hostages held in Gaza, and antisemitism, but the overall focus is a broad political opinion roundup rather than the Gaza or Israel-Palestine conflict.\",\n  \"reason\": \"The conflict-related material is substantive in several sections, especially the discussion of Iran, Hamas, Gaza, hostages, Israel, and antisemitism. However, these are components of a multi-topic roundup whose main subject is broader US political commentary.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:29:27Z",
+  "duration_seconds": 5.239,
+  "error": null
+}

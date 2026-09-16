@@ -1,0 +1,65 @@
+{
+  "article_id": "109571114",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_06/sg/109571114.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_06/sg/109571114.json"
+  },
+  "manifest_row": {
+    "article_id": "109571114",
+    "group": "global_north_2024_06",
+    "country_code": "sg",
+    "filepath": "corpus/02_now_organised/global_north_2024_06/sg/109571114.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.93,
+    "gaza_role": "passing",
+    "main_topic": "Global financial markets, currency movements, inflation, and upcoming elections",
+    "conflict_relevance": "An embedded news item discusses the Gaza war as a source of regional instability and its implications for attracting investment to the Middle East.",
+    "reason": "The main article is a markets roundup unrelated to Gaza, but it contains a substantive embedded report quoting a Jordanian minister on the destabilizing economic effects of the war in Gaza.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "4d6f0e0fa5209e0f90e4e71437bf5c9f627ef31061f26f38b0a9fc4b5ba8c818",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "9d19d1ec93986fdf2c8084afe9dd225aeae73a222bec04f69fc74c075c7134e8",
+    "raw_response_text_sha256": "f30d020cc362504984965ab1a8cc741a448c42ce9835783b0908dc3c28f243ba"
+  },
+  "api_metadata": {
+    "id": "resp_0398b38d690614f8006aaa10dabb2c87d2975e7a1e34f7f84c",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789530330.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2932,
+      "input_tokens_details": {
+        "cache_write_tokens": 2929,
+        "cached_tokens": 0
+      },
+      "output_tokens": 289,
+      "output_tokens_details": {
+        "reasoning_tokens": 141
+      },
+      "total_tokens": 3221
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.93,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Global financial markets, currency movements, inflation, and upcoming elections\",\n  \"conflict_relevance\": \"An embedded news item discusses the Gaza war as a source of regional instability and its implications for attracting investment to the Middle East.\",\n  \"reason\": \"The main article is a markets roundup unrelated to Gaza, but it contains a substantive embedded report quoting a Jordanian minister on the destabilizing economic effects of the war in Gaza.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:45:34Z",
+  "duration_seconds": 4.178,
+  "error": null
+}

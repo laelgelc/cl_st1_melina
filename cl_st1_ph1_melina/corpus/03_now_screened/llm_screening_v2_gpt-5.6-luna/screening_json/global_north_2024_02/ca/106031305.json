@@ -1,0 +1,65 @@
+{
+  "article_id": "106031305",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_02/ca/106031305.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_02/ca/106031305.json"
+  },
+  "manifest_row": {
+    "article_id": "106031305",
+    "group": "global_north_2024_02",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2024_02/ca/106031305.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "gaza_role": "boilerplate_or_unrelated",
+    "main_topic": "Eva Perón’s legacy, religious veneration, Peronism, and Argentine politics",
+    "conflict_relevance": "The main article is about Eva Perón and Argentine political memory, not Gaza, Palestine, Israel, or the Israeli-Palestinian conflict. Gaza and related antisemitism content appears only in unrelated roundup snippets.",
+    "reason": "The conflict-related references are embedded in a collection of unrelated news items rather than developed as part of the headline article, so they do not provide meaningful discourse-analysis material for the main article.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "7a2b95c2b241df3169a963b733e5c54bb6b060b1fe2cf65af3dbe43a4e7a9887",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "f3d3f358c9bd6053bb43898724c55f021cd8264c6b048895040e98064adbfc3e",
+    "raw_response_text_sha256": "fa7a644151b841a3de047ee9cf0e159a0b4c74fa59e6e3b29f402a071702dd97"
+  },
+  "api_metadata": {
+    "id": "resp_0971947646ffb8cc006aaa061484d887d295d340997fec8575",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789527572.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 3600,
+      "input_tokens_details": {
+        "cache_write_tokens": 3597,
+        "cached_tokens": 0
+      },
+      "output_tokens": 335,
+      "output_tokens_details": {
+        "reasoning_tokens": 181
+      },
+      "total_tokens": 3935
+    }
+  },
+  "raw_response_text": "{\"category\":\"EXCLUDE\",\"confidence\":0.98,\"gaza_role\":\"boilerplate_or_unrelated\",\"main_topic\":\"Eva Perón’s legacy, religious veneration, Peronism, and Argentine politics\",\"conflict_relevance\":\"The main article is about Eva Perón and Argentine political memory, not Gaza, Palestine, Israel, or the Israeli-Palestinian conflict. Gaza and related antisemitism content appears only in unrelated roundup snippets.\",\"reason\":\"The conflict-related references are embedded in a collection of unrelated news items rather than developed as part of the headline article, so they do not provide meaningful discourse-analysis material for the main article.\",\"multi_article_or_snippet_issue\":true,\"recommended_for_main_corpus\":false}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:59:35Z",
+  "duration_seconds": 3.481,
+  "error": null
+}

@@ -1,0 +1,65 @@
+{
+  "article_id": "102914119",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_south_2023_10/in/102914119.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_south_2023_10/in/102914119.json"
+  },
+  "manifest_row": {
+    "article_id": "102914119",
+    "group": "global_south_2023_10",
+    "country_code": "in",
+    "filepath": "corpus/02_now_organised/global_south_2023_10/in/102914119.txt"
+  },
+  "screening": {
+    "category": "CORE",
+    "confidence": 0.99,
+    "gaza_role": "central",
+    "main_topic": "An IDF-released recording of a Hamas fighter boasting about killing Israeli Jews in the context of the October 7 attack and ensuing Israel-Hamas war",
+    "conflict_relevance": "The main article directly addresses Hamas, the October 7 attack, Israeli military claims, Gaza bombings, civilian casualties, hostages, and presentation of evidence to the UN Security Council.",
+    "reason": "The article is centrally focused on a conflict-related recording and situates it within the Israel-Hamas war and its consequences in Gaza. Although unrelated business and consumer-market snippets are appended, they are separate from the main conflict article.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": true
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "8b16d5d646e2e028dd64d0e39f484522b66c9a4d8f93ba730b6fc6ee83dce8a4",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "fe4990c9cfc67d782753876ace01f850fd6ad180950017fff8adcedaf1132b7d",
+    "raw_response_text_sha256": "fe1d960ef9962e5b509b6c09d43192698206744c116f59c05fdcb37070218192"
+  },
+  "api_metadata": {
+    "id": "resp_0c54e1d5fc769665006aaa330d2e3487d1afb6b5bdfc31c24a",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789539085.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1302,
+      "input_tokens_details": {
+        "cache_write_tokens": 1299,
+        "cached_tokens": 0
+      },
+      "output_tokens": 267,
+      "output_tokens_details": {
+        "reasoning_tokens": 81
+      },
+      "total_tokens": 1569
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"CORE\",\n  \"confidence\": 0.99,\n  \"gaza_role\": \"central\",\n  \"main_topic\": \"An IDF-released recording of a Hamas fighter boasting about killing Israeli Jews in the context of the October 7 attack and ensuing Israel-Hamas war\",\n  \"conflict_relevance\": \"The main article directly addresses Hamas, the October 7 attack, Israeli military claims, Gaza bombings, civilian casualties, hostages, and presentation of evidence to the UN Security Council.\",\n  \"reason\": \"The article is centrally focused on a conflict-related recording and situates it within the Israel-Hamas war and its consequences in Gaza. Although unrelated business and consumer-market snippets are appended, they are separate from the main conflict article.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": true\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T06:11:29Z",
+  "duration_seconds": 4.086,
+  "error": null
+}

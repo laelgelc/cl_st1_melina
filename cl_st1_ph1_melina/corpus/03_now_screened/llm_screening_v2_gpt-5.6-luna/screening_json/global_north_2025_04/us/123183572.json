@@ -1,0 +1,65 @@
+{
+  "article_id": "123183572",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_04/us/123183572.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_04/us/123183572.json"
+  },
+  "manifest_row": {
+    "article_id": "123183572",
+    "group": "global_north_2025_04",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2025_04/us/123183572.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.97,
+    "gaza_role": "substantial",
+    "main_topic": "Auburn basketball coach Bruce Pearl's support for Israeli hostages and discussion of Jewish identity among Final Four coaches",
+    "conflict_relevance": "The article includes meaningful discussion of Israeli hostages held in Gaza, suffering in the Middle East, the October 7 attacks, hostage releases, and antisemitism, but its primary focus is college basketball and the Jewish backgrounds of several coaches.",
+    "reason": "The Gaza hostage issue is prominent in the headline and a substantial portion of the article, yet the article is primarily a sports and identity feature rather than direct conflict coverage.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "5695c92be762ce4d56f8c60e7ba2c53bb988c8c3255b45cd3688430e2449937a",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "13cc0bcda046abc1275b576f3ddcbe8f7c9de93949089876da02c4111ea9771f",
+    "raw_response_text_sha256": "e27314c750f4234cf611181b4a2066a92996c666e7d6453b696e65f9b888de8a"
+  },
+  "api_metadata": {
+    "id": "resp_0514daa92f6ce6b9006aaa29e4d1f887d19e64a498764992c6",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789536740.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1640,
+      "input_tokens_details": {
+        "cache_write_tokens": 1637,
+        "cached_tokens": 0
+      },
+      "output_tokens": 281,
+      "output_tokens_details": {
+        "reasoning_tokens": 101
+      },
+      "total_tokens": 1921
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.97,\n  \"gaza_role\": \"substantial\",\n  \"main_topic\": \"Auburn basketball coach Bruce Pearl's support for Israeli hostages and discussion of Jewish identity among Final Four coaches\",\n  \"conflict_relevance\": \"The article includes meaningful discussion of Israeli hostages held in Gaza, suffering in the Middle East, the October 7 attacks, hostage releases, and antisemitism, but its primary focus is college basketball and the Jewish backgrounds of several coaches.\",\n  \"reason\": \"The Gaza hostage issue is prominent in the headline and a substantial portion of the article, yet the article is primarily a sports and identity feature rather than direct conflict coverage.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T05:32:24Z",
+  "duration_seconds": 4.159,
+  "error": null
+}

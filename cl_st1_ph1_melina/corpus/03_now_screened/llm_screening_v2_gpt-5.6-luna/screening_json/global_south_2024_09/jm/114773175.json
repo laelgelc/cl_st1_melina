@@ -1,0 +1,65 @@
+{
+  "article_id": "114773175",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_south_2024_09/jm/114773175.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_south_2024_09/jm/114773175.json"
+  },
+  "manifest_row": {
+    "article_id": "114773175",
+    "group": "global_south_2024_09",
+    "country_code": "jm",
+    "filepath": "corpus/02_now_organised/global_south_2024_09/jm/114773175.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "gaza_role": "boilerplate_or_unrelated",
+    "main_topic": "Gang violence and turf war in Kingston, Jamaica",
+    "conflict_relevance": "The term \"Gaza\" refers to a Jamaican gang and has no connection to Gaza, Palestine, or the Israel-Palestine conflict.",
+    "reason": "The article is entirely about a local Jamaican gang conflict; its repeated use of \"Gaza gang\" is an unrelated gang name rather than discourse about the Gaza conflict.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "54f3775c7f8a6b041cf6a150f74bf419dc76d2bd7a8ab59018a7d7799390b385",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "add3b2497d70f5a3077cc8a62daa91a1883123ade7fd93bf81ab780f01d97c28",
+    "raw_response_text_sha256": "bfeaf1e5236a374acf02088553b9816a1212c64c61b8bd147039c94f2b7d6c64"
+  },
+  "api_metadata": {
+    "id": "resp_0655b1fe6be8b298006aaa3f6670e887d1b39fae68b7401646",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789542246.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1102,
+      "input_tokens_details": {
+        "cache_write_tokens": 1099,
+        "cached_tokens": 0
+      },
+      "output_tokens": 242,
+      "output_tokens_details": {
+        "reasoning_tokens": 91
+      },
+      "total_tokens": 1344
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"gaza_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Gang violence and turf war in Kingston, Jamaica\",\n  \"conflict_relevance\": \"The term \\\"Gaza\\\" refers to a Jamaican gang and has no connection to Gaza, Palestine, or the Israel-Palestine conflict.\",\n  \"reason\": \"The article is entirely about a local Jamaican gang conflict; its repeated use of \\\"Gaza gang\\\" is an unrelated gang name rather than discourse about the Gaza conflict.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T07:04:09Z",
+  "duration_seconds": 3.348,
+  "error": null
+}

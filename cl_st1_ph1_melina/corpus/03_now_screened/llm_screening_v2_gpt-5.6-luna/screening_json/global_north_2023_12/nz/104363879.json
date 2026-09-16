@@ -1,0 +1,65 @@
+{
+  "article_id": "104363879",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_12/nz/104363879.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_12/nz/104363879.json"
+  },
+  "manifest_row": {
+    "article_id": "104363879",
+    "group": "global_north_2023_12",
+    "country_code": "nz",
+    "filepath": "corpus/02_now_organised/global_north_2023_12/nz/104363879.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.94,
+    "gaza_role": "background",
+    "main_topic": "Henry Kissinger's geopolitical legacy, U.S. foreign policy, and the West Papua conflict",
+    "conflict_relevance": "The article opens and closes with discussion of Gaza, Israel's occupation, U.S. support for Israel, ceasefire diplomacy, and Western responses to pro-Palestine protests, but its main focus is Kissinger's broader foreign-policy record and West Papua.",
+    "reason": "Gaza and Israel/Palestine provide an important framing device and the article makes substantive claims about occupation, military violence, diplomacy, and Western hypocrisy. However, the bulk of the article concerns Southeast Asia, Chile, East Timor, and West Papua rather than the Gaza conflict itself.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "34a42d3b334af2f276a363a604d76b64fb43a2df6cc58128b68b4cf284fae2b3",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "024741e5deda85005e11218800671d6349e09eceeddaaf81d9ea4e1b46b8e5c8",
+    "raw_response_text_sha256": "291841e0165fa6ca15e6dc8ebecca75c2c44c7a77527cb0426338ce87e7321a0"
+  },
+  "api_metadata": {
+    "id": "resp_05a24d9e236eee67006aaa018c36cc87d2958177c20359c94f",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789526412.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2826,
+      "input_tokens_details": {
+        "cache_write_tokens": 2823,
+        "cached_tokens": 0
+      },
+      "output_tokens": 372,
+      "output_tokens_details": {
+        "reasoning_tokens": 168
+      },
+      "total_tokens": 3198
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.94,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Henry Kissinger's geopolitical legacy, U.S. foreign policy, and the West Papua conflict\",\n  \"conflict_relevance\": \"The article opens and closes with discussion of Gaza, Israel's occupation, U.S. support for Israel, ceasefire diplomacy, and Western responses to pro-Palestine protests, but its main focus is Kissinger's broader foreign-policy record and West Papua.\",\n  \"reason\": \"Gaza and Israel/Palestine provide an important framing device and the article makes substantive claims about occupation, military violence, diplomacy, and Western hypocrisy. However, the bulk of the article concerns Southeast Asia, Chile, East Timor, and West Papua rather than the Gaza conflict itself.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:40:17Z",
+  "duration_seconds": 5.679,
+  "error": null
+}

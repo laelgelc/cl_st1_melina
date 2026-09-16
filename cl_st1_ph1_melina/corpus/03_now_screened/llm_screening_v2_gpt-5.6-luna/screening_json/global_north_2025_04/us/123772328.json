@@ -1,0 +1,65 @@
+{
+  "article_id": "123772328",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_04/us/123772328.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_04/us/123772328.json"
+  },
+  "manifest_row": {
+    "article_id": "123772328",
+    "group": "global_north_2025_04",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2025_04/us/123772328.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.97,
+    "gaza_role": "passing",
+    "main_topic": "Easter, hope, and renewal amid global suffering",
+    "conflict_relevance": "Gaza is mentioned only briefly as part of a general list of international crises and a wish for peace.",
+    "reason": "The editorial is primarily about the religious and symbolic meaning of Easter. Its sole Gaza reference is a passing phrase in a broad statement about war and global turmoil, without substantive discussion of the conflict.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "0c185f6131102d6349fcda742b2a0f7e6fd67772769f665c9428a6caf35905b2",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "db022c5a02c77f2807b71c714e9b59088649901478e1f79e93ec53f833cd70fc",
+    "raw_response_text_sha256": "3263dac19bed89d9987030edf996c7d0c8f2b54265f60958ae3210329fa21dae"
+  },
+  "api_metadata": {
+    "id": "resp_0a7d8cd5ac0a64bb006aaa2a74992c87d1aee9d008c15463b4",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789536884.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1179,
+      "input_tokens_details": {
+        "cache_write_tokens": 1176,
+        "cached_tokens": 0
+      },
+      "output_tokens": 203,
+      "output_tokens_details": {
+        "reasoning_tokens": 59
+      },
+      "total_tokens": 1382
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.97,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Easter, hope, and renewal amid global suffering\",\n  \"conflict_relevance\": \"Gaza is mentioned only briefly as part of a general list of international crises and a wish for peace.\",\n  \"reason\": \"The editorial is primarily about the religious and symbolic meaning of Easter. Its sole Gaza reference is a passing phrase in a broad statement about war and global turmoil, without substantive discussion of the conflict.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T05:34:47Z",
+  "duration_seconds": 3.21,
+  "error": null
+}

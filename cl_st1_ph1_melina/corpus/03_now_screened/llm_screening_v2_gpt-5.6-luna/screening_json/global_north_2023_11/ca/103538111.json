@@ -1,0 +1,65 @@
+{
+  "article_id": "103538111",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_11/ca/103538111.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_11/ca/103538111.json"
+  },
+  "manifest_row": {
+    "article_id": "103538111",
+    "group": "global_north_2023_11",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2023_11/ca/103538111.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.92,
+    "gaza_role": "background",
+    "main_topic": "Rising Uber Eats prices, delivery fees, and consumer dissatisfaction",
+    "conflict_relevance": "The main article is unrelated to Gaza or the Israel-Palestine conflict, but the text contains embedded news snippets about a Calgary antisemitism-related charge and a woman evacuated from Gaza during the Israel-Hamas war.",
+    "reason": "The headline and primary article concern food-delivery pricing. However, the embedded snippets include meaningful, conflict-related reporting, making the item marginally useful for broader discourse analysis but unsuitable for the main corpus.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "55bd023a5b25686c5de974c435848c9c82c357fde904478432237b4481b7efcb",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "63a903bc61269d05fda286aa53a794175ab4bdb6f8a10f228dd0eb42ec0bea95",
+    "raw_response_text_sha256": "6293a6fc01d1575e64b3c86036ae74b003991792a5d47aad52ab347b8f68c06b"
+  },
+  "api_metadata": {
+    "id": "resp_06759df735b2f339006aa9fbe7a23487d29704df5740c1d3d0",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789524967.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2097,
+      "input_tokens_details": {
+        "cache_write_tokens": 2094,
+        "cached_tokens": 0
+      },
+      "output_tokens": 379,
+      "output_tokens_details": {
+        "reasoning_tokens": 207
+      },
+      "total_tokens": 2476
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.92,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Rising Uber Eats prices, delivery fees, and consumer dissatisfaction\",\n  \"conflict_relevance\": \"The main article is unrelated to Gaza or the Israel-Palestine conflict, but the text contains embedded news snippets about a Calgary antisemitism-related charge and a woman evacuated from Gaza during the Israel-Hamas war.\",\n  \"reason\": \"The headline and primary article concern food-delivery pricing. However, the embedded snippets include meaningful, conflict-related reporting, making the item marginally useful for broader discourse analysis but unsuitable for the main corpus.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:16:13Z",
+  "duration_seconds": 5.696,
+  "error": null
+}

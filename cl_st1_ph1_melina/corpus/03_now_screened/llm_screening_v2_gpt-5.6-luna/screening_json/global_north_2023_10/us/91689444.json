@@ -1,0 +1,65 @@
+{
+  "article_id": "91689444",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_10/us/91689444.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_10/us/91689444.json"
+  },
+  "manifest_row": {
+    "article_id": "91689444",
+    "group": "global_north_2023_10",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2023_10/us/91689444.txt"
+  },
+  "screening": {
+    "category": "CORE",
+    "confidence": 0.99,
+    "gaza_role": "central",
+    "main_topic": "A Denver-based Israeli advocating for the release of family members held hostage and assistance for people displaced after the Hamas attack on Nir Oz",
+    "conflict_relevance": "The article directly concerns the Israel-Hamas war, the October 7 attack, Israeli hostages, displacement, and the Gaza-border context.",
+    "reason": "The headline and opening report are centrally focused on hostages, displacement, Hamas's attack, and affected Israeli families. Although unrelated passages about basketball, the Sam Bankman-Fried trial, and a rocket company are appended, they do not alter the main article's direct conflict relevance.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": true
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "052333233919cf06e4bd0fbdbe73761ef825adbddda7a6b9cd1eba971bc24cac",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "835a147a338b448186fadb51631f3fb238ce28384c465cc3ba650991e950f033",
+    "raw_response_text_sha256": "cf1b010798bab0fdd25fb64bd17455b6dc8e23527d26b518e92ea1b56c366ae8"
+  },
+  "api_metadata": {
+    "id": "resp_00cc9e86d1a206d3006aa9fb0e708487d2b9120d5bdf27526e",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789524750.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1014,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 263,
+      "output_tokens_details": {
+        "reasoning_tokens": 80
+      },
+      "total_tokens": 1277
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"CORE\",\n  \"confidence\": 0.99,\n  \"gaza_role\": \"central\",\n  \"main_topic\": \"A Denver-based Israeli advocating for the release of family members held hostage and assistance for people displaced after the Hamas attack on Nir Oz\",\n  \"conflict_relevance\": \"The article directly concerns the Israel-Hamas war, the October 7 attack, Israeli hostages, displacement, and the Gaza-border context.\",\n  \"reason\": \"The headline and opening report are centrally focused on hostages, displacement, Hamas's attack, and affected Israeli families. Although unrelated passages about basketball, the Sam Bankman-Fried trial, and a rocket company are appended, they do not alter the main article's direct conflict relevance.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": true\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:12:34Z",
+  "duration_seconds": 4.48,
+  "error": null
+}

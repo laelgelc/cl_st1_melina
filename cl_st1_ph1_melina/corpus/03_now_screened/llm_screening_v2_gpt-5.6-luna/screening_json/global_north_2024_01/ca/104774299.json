@@ -1,0 +1,65 @@
+{
+  "article_id": "104774299",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_01/ca/104774299.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_01/ca/104774299.json"
+  },
+  "manifest_row": {
+    "article_id": "104774299",
+    "group": "global_north_2024_01",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2024_01/ca/104774299.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.96,
+    "gaza_role": "passing",
+    "main_topic": "Bond exchange-traded funds and financial markets",
+    "conflict_relevance": "The main article is unrelated to Gaza, but embedded news items meaningfully mention the Israel-Hamas war, Houthi attacks framed as support for Hamas, and the risk of regional escalation involving Iran and Israel.",
+    "reason": "The headline and primary article concern bond ETFs and investment markets. However, the aggregated page includes substantive conflict-related snippets about Gaza and regional developments, making it relevant to broader discourse analysis but not suitable as core conflict coverage.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "b70bf8de06ebf583637ff442accd0b52e6cde6670bd7833da77a1366d3c80025",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "967ff202040df0022a2c881c0a8cac3654b41b1bc64fdafed769aa693535a1e9",
+    "raw_response_text_sha256": "e0036ae2ecf10340c707166164165a6243ff05a615fdd4d593482b10351337f6"
+  },
+  "api_metadata": {
+    "id": "resp_02a864590177096a006aaa037aeff487d2acc706ab28ee9218",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789526906.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2929,
+      "input_tokens_details": {
+        "cache_write_tokens": 2926,
+        "cached_tokens": 0
+      },
+      "output_tokens": 342,
+      "output_tokens_details": {
+        "reasoning_tokens": 173
+      },
+      "total_tokens": 3271
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.96,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Bond exchange-traded funds and financial markets\",\n  \"conflict_relevance\": \"The main article is unrelated to Gaza, but embedded news items meaningfully mention the Israel-Hamas war, Houthi attacks framed as support for Hamas, and the risk of regional escalation involving Iran and Israel.\",\n  \"reason\": \"The headline and primary article concern bond ETFs and investment markets. However, the aggregated page includes substantive conflict-related snippets about Gaza and regional developments, making it relevant to broader discourse analysis but not suitable as core conflict coverage.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:48:31Z",
+  "duration_seconds": 4.576,
+  "error": null
+}

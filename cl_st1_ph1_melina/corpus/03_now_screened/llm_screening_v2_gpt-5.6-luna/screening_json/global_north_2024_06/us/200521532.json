@@ -1,0 +1,65 @@
+{
+  "article_id": "200521532",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_06/us/200521532.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_06/us/200521532.json"
+  },
+  "manifest_row": {
+    "article_id": "200521532",
+    "group": "global_north_2024_06",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2024_06/us/200521532.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "gaza_role": "background",
+    "main_topic": "Donald Trump's endorsement of Sam Brown in the Nevada Republican Senate primary",
+    "conflict_relevance": "The main article is unrelated to Gaza or the Israel-Palestine conflict. The page includes several separate latest-story snippets about an Israeli hostage rescue operation, Gaza casualties, and a UN cease-fire resolution, but these are not part of the main article.",
+    "reason": "The headline and primary text concern a U.S. Republican Senate primary. Gaza-related material appears only in unrelated embedded roundup items, so it should not be included as a conflict article.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "88626467c5913466443f1be49f3a5cbbd7c33f9c6f61fd9bf90dacb7d610679c",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "143119208ff91cd2f825963033a490fce04be6207754e6105c171cead803e064",
+    "raw_response_text_sha256": "ebff5116271c26cbd209af224deb6ad45a0fc38a2b8e620a02f725915338b3a0"
+  },
+  "api_metadata": {
+    "id": "resp_0d80314c64d8e4da006aaa11a7ec4087d29658a02f80f1605a",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789530535.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 3141,
+      "input_tokens_details": {
+        "cache_write_tokens": 3138,
+        "cached_tokens": 0
+      },
+      "output_tokens": 343,
+      "output_tokens_details": {
+        "reasoning_tokens": 169
+      },
+      "total_tokens": 3484
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Donald Trump's endorsement of Sam Brown in the Nevada Republican Senate primary\",\n  \"conflict_relevance\": \"The main article is unrelated to Gaza or the Israel-Palestine conflict. The page includes several separate latest-story snippets about an Israeli hostage rescue operation, Gaza casualties, and a UN cease-fire resolution, but these are not part of the main article.\",\n  \"reason\": \"The headline and primary text concern a U.S. Republican Senate primary. Gaza-related material appears only in unrelated embedded roundup items, so it should not be included as a conflict article.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:48:59Z",
+  "duration_seconds": 3.642,
+  "error": null
+}

@@ -1,0 +1,65 @@
+{
+  "article_id": "113166761",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_08/us/113166761.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_08/us/113166761.json"
+  },
+  "manifest_row": {
+    "article_id": "113166761",
+    "group": "global_north_2024_08",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2024_08/us/113166761.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.96,
+    "gaza_role": "passing",
+    "main_topic": "U.S. presidential election debate and campaign analysis",
+    "conflict_relevance": "Gaza appears only in a headline about an uncommitted Michigan voter; the article body focuses on the Harris-Trump debate and related campaign issues.",
+    "reason": "The conflict reference is incidental and not developed in the article text. The page also includes multiple unrelated headlines and video snippets.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "b8809306f57efb50ae5b84e40a52ef467434750841d9dc321df00dae5d714814",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "2b9e7b9198585f0431e24cb405b84e0612ca61bfe7b1ccc5db3fb23390fc67be",
+    "raw_response_text_sha256": "5ec469202b447e2c3adb8ff4b6d96fbf61accab7485c6a3d094f3c276c68b089"
+  },
+  "api_metadata": {
+    "id": "resp_0d1b23016328a2fb006aaa15c0a18487d2b809fa16f62a9866",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789531585.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 872,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 263,
+      "output_tokens_details": {
+        "reasoning_tokens": 125
+      },
+      "total_tokens": 1135
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.96,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"U.S. presidential election debate and campaign analysis\",\n  \"conflict_relevance\": \"Gaza appears only in a headline about an uncommitted Michigan voter; the article body focuses on the Harris-Trump debate and related campaign issues.\",\n  \"reason\": \"The conflict reference is incidental and not developed in the article text. The page also includes multiple unrelated headlines and video snippets.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T04:06:28Z",
+  "duration_seconds": 4.116,
+  "error": null
+}

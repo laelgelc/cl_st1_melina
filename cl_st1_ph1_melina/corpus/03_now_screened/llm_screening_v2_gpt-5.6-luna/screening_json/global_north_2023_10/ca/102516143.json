@@ -1,0 +1,65 @@
+{
+  "article_id": "102516143",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_10/ca/102516143.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_10/ca/102516143.json"
+  },
+  "manifest_row": {
+    "article_id": "102516143",
+    "group": "global_north_2023_10",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2023_10/ca/102516143.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.94,
+    "gaza_role": "background",
+    "main_topic": "Birkenstock's IPO, valuation, and transition into a fashion brand",
+    "conflict_relevance": "The main article is unrelated to Gaza or the Israel-Hamas war, but the text includes an embedded news passage discussing Hamas's assault, Israeli casualties and hostages, and the role of U.S. policy in the conflict.",
+    "reason": "The headline and primary article concern Birkenstock's stock-market debut and brand strategy. However, a substantive embedded article addresses the Gaza-border assault and broader Middle East policy, making the item marginally useful for broader discourse analysis but unsuitable for the main conflict corpus.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "ef618c32ef1945449dd30afd04833110b1cfdd3a4516d9303b6f0dafd6d102fb",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "990ce48aefb3f169e197f2f6e800e648c5d62e137f037e4fe7c0a753db262120",
+    "raw_response_text_sha256": "865a837fdb88754a97ba392c65554a78ba8009c4bff53d4836f9d9996e02b4e9"
+  },
+  "api_metadata": {
+    "id": "resp_0ec9521a2262d89c006aa9f61a86e887d2a308b5b5ba21e028",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789523482.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1166,
+      "input_tokens_details": {
+        "cache_write_tokens": 1163,
+        "cached_tokens": 0
+      },
+      "output_tokens": 405,
+      "output_tokens_details": {
+        "reasoning_tokens": 218
+      },
+      "total_tokens": 1571
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.94,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Birkenstock's IPO, valuation, and transition into a fashion brand\",\n  \"conflict_relevance\": \"The main article is unrelated to Gaza or the Israel-Hamas war, but the text includes an embedded news passage discussing Hamas's assault, Israeli casualties and hostages, and the role of U.S. policy in the conflict.\",\n  \"reason\": \"The headline and primary article concern Birkenstock's stock-market debut and brand strategy. However, a substantive embedded article addresses the Gaza-border assault and broader Middle East policy, making the item marginally useful for broader discourse analysis but unsuitable for the main conflict corpus.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T01:51:27Z",
+  "duration_seconds": 4.98,
+  "error": null
+}

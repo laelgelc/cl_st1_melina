@@ -1,0 +1,65 @@
+{
+  "article_id": "123678295",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_04/us/123678295.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_04/us/123678295.json"
+  },
+  "manifest_row": {
+    "article_id": "123678295",
+    "group": "global_north_2025_04",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2025_04/us/123678295.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.91,
+    "gaza_role": "background",
+    "main_topic": "Lebanese efforts to bring Hezbollah's weapons under state control and negotiations concerning Israel-Lebanon borders",
+    "conflict_relevance": "The article substantively discusses Hezbollah's conflict with Israel, Israeli strikes and occupation of Lebanese territory, cross-border attacks, and regional diplomacy, while Gaza appears mainly in a photograph caption and broader regional context.",
+    "reason": "The main focus is Lebanon's internal disarmament process and Israel-Lebanon relations rather than Gaza, Palestine, or the Israel-Hamas war. It is nevertheless meaningfully relevant to broader regional conflict and Israel-related discourse.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "e93f897c6a3673e1738c9ec60b250ef808a8dc92c61d1d352a1228703e8b869e",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "260f42ea23c3446a25e1b2c8729a9224e33c96577aa81df3897af34e68f14571",
+    "raw_response_text_sha256": "816e4c8e079931c3d9058881867150ad212de56e17b6cf0fe0487f6e2fbe2e0b"
+  },
+  "api_metadata": {
+    "id": "resp_080a02abe8b1a68c006aaa2a60dc6087d18c108f45020ed96a",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789536864.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1814,
+      "input_tokens_details": {
+        "cache_write_tokens": 1811,
+        "cached_tokens": 0
+      },
+      "output_tokens": 334,
+      "output_tokens_details": {
+        "reasoning_tokens": 154
+      },
+      "total_tokens": 2148
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.91,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Lebanese efforts to bring Hezbollah's weapons under state control and negotiations concerning Israel-Lebanon borders\",\n  \"conflict_relevance\": \"The article substantively discusses Hezbollah's conflict with Israel, Israeli strikes and occupation of Lebanese territory, cross-border attacks, and regional diplomacy, while Gaza appears mainly in a photograph caption and broader regional context.\",\n  \"reason\": \"The main focus is Lebanon's internal disarmament process and Israel-Lebanon relations rather than Gaza, Palestine, or the Israel-Hamas war. It is nevertheless meaningfully relevant to broader regional conflict and Israel-related discourse.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T05:34:29Z",
+  "duration_seconds": 4.974,
+  "error": null
+}

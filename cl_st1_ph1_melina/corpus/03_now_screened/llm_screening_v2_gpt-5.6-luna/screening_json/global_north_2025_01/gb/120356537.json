@@ -1,0 +1,65 @@
+{
+  "article_id": "120356537",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_01/gb/120356537.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_01/gb/120356537.json"
+  },
+  "manifest_row": {
+    "article_id": "120356537",
+    "group": "global_north_2025_01",
+    "country_code": "gb",
+    "filepath": "corpus/02_now_organised/global_north_2025_01/gb/120356537.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.97,
+    "gaza_role": "background",
+    "main_topic": "Criticism of diversity, equity, and inclusion policies under the Trump administration",
+    "conflict_relevance": "The article substantially discusses antisemitism, Zionism, pro-Palestinian campus protests, and claims about Israel's treatment of Palestinians, but these issues support its broader argument about DEI rather than constitute the main topic.",
+    "reason": "Although the article briefly mentions Hamas and Gaza, its central focus is opposition to DEI. The extended discussion of Zionism, Israel, Palestinians, antisemitism, and campus protests makes it meaningfully relevant to broader conflict-related discourse, so it should be retained as peripheral rather than excluded.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "653587e14ec8492b4d3f054f82d310a35489fbd693f1188d6747d58742cb289e",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "3bc624edfe6e71be836b986e69127413e2076c15fc574bae7c2950b61e6850ff",
+    "raw_response_text_sha256": "5283c42eb7431a39f0d1596cb4b72b9980af0fd1d89ab55ad4391abf22cd5c2b"
+  },
+  "api_metadata": {
+    "id": "resp_09e853a315386cb4006aaa1fe4141887d2af6bd50b454c57cc",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789534180.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1332,
+      "input_tokens_details": {
+        "cache_write_tokens": 1329,
+        "cached_tokens": 0
+      },
+      "output_tokens": 292,
+      "output_tokens_details": {
+        "reasoning_tokens": 99
+      },
+      "total_tokens": 1624
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.97,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Criticism of diversity, equity, and inclusion policies under the Trump administration\",\n  \"conflict_relevance\": \"The article substantially discusses antisemitism, Zionism, pro-Palestinian campus protests, and claims about Israel's treatment of Palestinians, but these issues support its broader argument about DEI rather than constitute the main topic.\",\n  \"reason\": \"Although the article briefly mentions Hamas and Gaza, its central focus is opposition to DEI. The extended discussion of Zionism, Israel, Palestinians, antisemitism, and campus protests makes it meaningfully relevant to broader conflict-related discourse, so it should be retained as peripheral rather than excluded.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T04:49:43Z",
+  "duration_seconds": 3.85,
+  "error": null
+}

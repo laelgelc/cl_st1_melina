@@ -1,0 +1,65 @@
+{
+  "article_id": "103774776",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_11/au/103774776.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_11/au/103774776.json"
+  },
+  "manifest_row": {
+    "article_id": "103774776",
+    "group": "global_north_2023_11",
+    "country_code": "au",
+    "filepath": "corpus/02_now_organised/global_north_2023_11/au/103774776.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.96,
+    "gaza_role": "substantial",
+    "main_topic": "Newspaper letters to the editor covering Australian politics, climate change, gender issues, and Israel-Palestine-related debate",
+    "conflict_relevance": "The roundup contains several substantive letters discussing antisemitism, Israel, alleged genocide and apartheid, Hamas, Gaza evacuations, Palestinian and Israeli visitor visas, and comparisons involving the treatment of Palestinians.",
+    "reason": "The text is a multi-item letters-page roundup rather than a dedicated article about Gaza or the Israel-Palestine conflict. However, multiple letters provide meaningful discourse relevant to the conflict, so it is useful as peripheral material but not as core conflict coverage.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "31830eb35f80f7bf59d0250cc06f228c3fb2e1347c06993f7dd10970e82ff6b1",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "2eeff7af34de86fb85420baf5952ee35c26d1fe8e158768deabc8c6781818cec",
+    "raw_response_text_sha256": "809d279ffe587ecfdc12bee02eb75514f1b9df9c474ff4e74d1179605875997b"
+  },
+  "api_metadata": {
+    "id": "resp_05a9d7d836740846006aa9fb88b5d487d28a6c8a230117fc49",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789524872.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 3285,
+      "input_tokens_details": {
+        "cache_write_tokens": 3282,
+        "cached_tokens": 0
+      },
+      "output_tokens": 385,
+      "output_tokens_details": {
+        "reasoning_tokens": 195
+      },
+      "total_tokens": 3670
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.96,\n  \"gaza_role\": \"substantial\",\n  \"main_topic\": \"Newspaper letters to the editor covering Australian politics, climate change, gender issues, and Israel-Palestine-related debate\",\n  \"conflict_relevance\": \"The roundup contains several substantive letters discussing antisemitism, Israel, alleged genocide and apartheid, Hamas, Gaza evacuations, Palestinian and Israeli visitor visas, and comparisons involving the treatment of Palestinians.\",\n  \"reason\": \"The text is a multi-item letters-page roundup rather than a dedicated article about Gaza or the Israel-Palestine conflict. However, multiple letters provide meaningful discourse relevant to the conflict, so it is useful as peripheral material but not as core conflict coverage.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:14:37Z",
+  "duration_seconds": 5.065,
+  "error": null
+}

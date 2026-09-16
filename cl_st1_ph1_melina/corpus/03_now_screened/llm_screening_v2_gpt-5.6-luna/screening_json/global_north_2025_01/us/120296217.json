@@ -1,0 +1,65 @@
+{
+  "article_id": "120296217",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_01/us/120296217.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_01/us/120296217.json"
+  },
+  "manifest_row": {
+    "article_id": "120296217",
+    "group": "global_north_2025_01",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2025_01/us/120296217.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "background",
+    "main_topic": "Donald Trump's presidential inauguration",
+    "conflict_relevance": "The gallery includes references to Israeli hostages held in Gaza since the October 7 Hamas attack, including relatives attending an inauguration rally and a hostage-solidarity scarf.",
+    "reason": "The article is primarily a photo gallery documenting Trump's inauguration. Gaza-related content appears in a small number of captions and is meaningful but not central to the article.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "604a5e9c5bcb054c93064d9b14abb6544299dc8307eec6cee042b3cbc433fdaf",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "04e0d8ec5755352d8a6112b777e94367234b94fbe9b8e3ff65ee079c780f6a9a",
+    "raw_response_text_sha256": "6003aa0ee4021f20e849455b399efffbc7adf1bb1fbff3ec78af8941a1089660"
+  },
+  "api_metadata": {
+    "id": "resp_03a91a05d8f2a84d006aaa217f3f2887d29d04f72670f20fba",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789534591.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 3117,
+      "input_tokens_details": {
+        "cache_write_tokens": 3114,
+        "cached_tokens": 0
+      },
+      "output_tokens": 260,
+      "output_tokens_details": {
+        "reasoning_tokens": 117
+      },
+      "total_tokens": 3377
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Donald Trump's presidential inauguration\",\n  \"conflict_relevance\": \"The gallery includes references to Israeli hostages held in Gaza since the October 7 Hamas attack, including relatives attending an inauguration rally and a hostage-solidarity scarf.\",\n  \"reason\": \"The article is primarily a photo gallery documenting Trump's inauguration. Gaza-related content appears in a small number of captions and is meaningful but not central to the article.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T04:56:42Z",
+  "duration_seconds": 11.116,
+  "error": null
+}

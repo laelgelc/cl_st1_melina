@@ -1,0 +1,65 @@
+{
+  "article_id": "104351548",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_12/ca/104351548.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_12/ca/104351548.json"
+  },
+  "manifest_row": {
+    "article_id": "104351548",
+    "group": "global_north_2023_12",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2023_12/ca/104351548.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.96,
+    "gaza_role": "background",
+    "main_topic": "Municipal school bus camera pilot project and road safety",
+    "conflict_relevance": "The main article is unrelated to Gaza or Palestine, but an embedded CTVNews.ca Top Stories section contains brief substantive items about the Israel-Palestinian conflict and the conduct of the war in Gaza.",
+    "reason": "The headline and primary article concern school bus safety in Ontario. However, the attached roundup includes meaningful, though brief and unrelated, references to a two-state solution, the Israel-Hamas war, Gaza, and Israeli hostages. This supports peripheral rather than core classification.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "e313ae039769f5a0d266d347fd23374f8b7e67e3075ab5ca885fe49852195424",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "be703f2451700f67b04d4f17e43a92424b57d4368982afcabef01557b4d956f6",
+    "raw_response_text_sha256": "de1fdfc35f44186caf0e9371ff95a909299516919630e2b01c9e6e56cf91efaf"
+  },
+  "api_metadata": {
+    "id": "resp_0de469500af416f8006aaa0082aee487d29faa57b6b5952b12",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789526146.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1745,
+      "input_tokens_details": {
+        "cache_write_tokens": 1742,
+        "cached_tokens": 0
+      },
+      "output_tokens": 307,
+      "output_tokens_details": {
+        "reasoning_tokens": 127
+      },
+      "total_tokens": 2052
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.96,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Municipal school bus camera pilot project and road safety\",\n  \"conflict_relevance\": \"The main article is unrelated to Gaza or Palestine, but an embedded CTVNews.ca Top Stories section contains brief substantive items about the Israel-Palestinian conflict and the conduct of the war in Gaza.\",\n  \"reason\": \"The headline and primary article concern school bus safety in Ontario. However, the attached roundup includes meaningful, though brief and unrelated, references to a two-state solution, the Israel-Hamas war, Gaza, and Israeli hostages. This supports peripheral rather than core classification.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:35:52Z",
+  "duration_seconds": 5.71,
+  "error": null
+}

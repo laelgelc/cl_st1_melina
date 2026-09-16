@@ -1,0 +1,65 @@
+{
+  "article_id": "126007112",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_06/gb/126007112.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_06/gb/126007112.json"
+  },
+  "manifest_row": {
+    "article_id": "126007112",
+    "group": "global_north_2025_06",
+    "country_code": "gb",
+    "filepath": "corpus/02_now_organised/global_north_2025_06/gb/126007112.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.93,
+    "gaza_role": "background",
+    "main_topic": "Live coverage of the 2025 Israel-Iran conflict, including military strikes, diplomatic responses, and possible U.S. intervention",
+    "conflict_relevance": "The article is mainly about the Israel-Iran war, but it includes a substantive report on ongoing Israeli strikes, blockade-related humanitarian conditions, aid-seeker deaths, and civilian casualties in Gaza, as well as references to the Gaza war in regional and military contexts.",
+    "reason": "This is a multi-item liveblog whose central subject is the Israel-Iran conflict rather than Gaza or Israel/Palestine. However, the detailed Gaza report and related references provide meaningful material for studying connected conflict discourse, so it is peripheral rather than excluded.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "d1ff1f5b48a8e4aaa86180f954f58b8a5e01119716a27c98c7615e5fc7500fd9",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "bdd2df5b6c6648cc8239681876e6589212fc48f6ba6d7ae1098c1d4e52961b19",
+    "raw_response_text_sha256": "40466060f5d6de15cfa705bddd5d8fc069772251949dacd6ca38c698361340de"
+  },
+  "api_metadata": {
+    "id": "resp_05d57cb5c397ee4a006aaa2f75405487d1820d72ae9bd9788f",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789538165.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 10781,
+      "input_tokens_details": {
+        "cache_write_tokens": 10778,
+        "cached_tokens": 0
+      },
+      "output_tokens": 484,
+      "output_tokens_details": {
+        "reasoning_tokens": 279
+      },
+      "total_tokens": 11265
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.93,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Live coverage of the 2025 Israel-Iran conflict, including military strikes, diplomatic responses, and possible U.S. intervention\",\n  \"conflict_relevance\": \"The article is mainly about the Israel-Iran war, but it includes a substantive report on ongoing Israeli strikes, blockade-related humanitarian conditions, aid-seeker deaths, and civilian casualties in Gaza, as well as references to the Gaza war in regional and military contexts.\",\n  \"reason\": \"This is a multi-item liveblog whose central subject is the Israel-Iran conflict rather than Gaza or Israel/Palestine. However, the detailed Gaza report and related references provide meaningful material for studying connected conflict discourse, so it is peripheral rather than excluded.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T05:56:11Z",
+  "duration_seconds": 6.891,
+  "error": null
+}

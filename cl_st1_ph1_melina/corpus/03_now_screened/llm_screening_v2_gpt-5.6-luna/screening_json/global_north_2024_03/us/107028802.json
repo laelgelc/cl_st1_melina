@@ -1,0 +1,65 @@
+{
+  "article_id": "107028802",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_03/us/107028802.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_03/us/107028802.json"
+  },
+  "manifest_row": {
+    "article_id": "107028802",
+    "group": "global_north_2024_03",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2024_03/us/107028802.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "passing",
+    "main_topic": "US export controls on Chinese semiconductor factories",
+    "conflict_relevance": "A separate embedded snippet briefly discusses the October 7 attacks and the subsequent Gaza war, framing them in relation to Palestinian factional politics.",
+    "reason": "The main article concerns semiconductor export restrictions and contains numerous unrelated news snippets. The Gaza-related material is meaningful but peripheral and appears only in a separate, truncated embedded item rather than the main article.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "25f1181b4a8bd5b66c0f4fa5461038b8af22351e3f7c4a96f1119301bc4c5483",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "2659c07e3650ca7f11048ef1755937b627a50d37fb7c63df3e139836f3afdce6",
+    "raw_response_text_sha256": "67df84d6eb7ad27b6683bd92f866884c3ab9c3e0d8f1c50874d4a75fa5aa0e99"
+  },
+  "api_metadata": {
+    "id": "resp_00b3898e1d4f3a12006aaa09e501a487d2949e28939f31f1d4",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789528549.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 3358,
+      "input_tokens_details": {
+        "cache_write_tokens": 3355,
+        "cached_tokens": 0
+      },
+      "output_tokens": 289,
+      "output_tokens_details": {
+        "reasoning_tokens": 141
+      },
+      "total_tokens": 3647
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"US export controls on Chinese semiconductor factories\",\n  \"conflict_relevance\": \"A separate embedded snippet briefly discusses the October 7 attacks and the subsequent Gaza war, framing them in relation to Palestinian factional politics.\",\n  \"reason\": \"The main article concerns semiconductor export restrictions and contains numerous unrelated news snippets. The Gaza-related material is meaningful but peripheral and appears only in a separate, truncated embedded item rather than the main article.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:15:52Z",
+  "duration_seconds": 3.889,
+  "error": null
+}

@@ -1,0 +1,65 @@
+{
+  "article_id": "200234930",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_02/us/200234930.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_02/us/200234930.json"
+  },
+  "manifest_row": {
+    "article_id": "200234930",
+    "group": "global_north_2024_02",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2024_02/us/200234930.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "background",
+    "main_topic": "Daily news roundup covering US politics, crime, international affairs, health, business, and culture",
+    "conflict_relevance": "Includes a substantive news item about the US veto of a UN Gaza ceasefire resolution, Biden administration policy, the war, and the anticipated Israeli offensive in Rafah.",
+    "reason": "The article is primarily a multi-topic daily news briefing rather than coverage centered on Gaza or the Israel-Hamas war. However, its Middle East section contains meaningful conflict-related discourse, making it peripheral rather than excludable.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "de0f331bdb14d00bc9a384e548632f98648de1d99663f48f0041e832f863cddc",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "87daae27969e4f98aa6f0889a1da6286de4d4a9e784118a20bcf038636676890",
+    "raw_response_text_sha256": "2f4269ded3ae6155b255fdbfc430c8aae9ddf83dce019b3cedf8eac6e2f4ae88"
+  },
+  "api_metadata": {
+    "id": "resp_06cde3ad424cebdb006aaa07fb3de087d2b117face00c937d0",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789528059.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2033,
+      "input_tokens_details": {
+        "cache_write_tokens": 2030,
+        "cached_tokens": 0
+      },
+      "output_tokens": 264,
+      "output_tokens_details": {
+        "reasoning_tokens": 93
+      },
+      "total_tokens": 2297
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Daily news roundup covering US politics, crime, international affairs, health, business, and culture\",\n  \"conflict_relevance\": \"Includes a substantive news item about the US veto of a UN Gaza ceasefire resolution, Biden administration policy, the war, and the anticipated Israeli offensive in Rafah.\",\n  \"reason\": \"The article is primarily a multi-topic daily news briefing rather than coverage centered on Gaza or the Israel-Hamas war. However, its Middle East section contains meaningful conflict-related discourse, making it peripheral rather than excludable.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:07:42Z",
+  "duration_seconds": 3.641,
+  "error": null
+}

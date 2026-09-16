@@ -1,0 +1,65 @@
+{
+  "article_id": "126473512",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_06/us/126473512.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_06/us/126473512.json"
+  },
+  "manifest_row": {
+    "article_id": "126473512",
+    "group": "global_north_2025_06",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2025_06/us/126473512.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.97,
+    "gaza_role": "boilerplate_or_unrelated",
+    "main_topic": "Promotion and episode listings for the NY POSTcast",
+    "conflict_relevance": "The page contains brief references to Gaza, Israel, Iran, and ceasefires only within promotional episode headlines, without substantive discussion.",
+    "reason": "This is a podcast landing and promotional page composed largely of host information and roundup-style episode snippets. The conflict-related references are incidental and lack meaningful article-level discourse.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "40a6ca6b47e840c112221bcd1e8d0c00602eef07fe1629f46ac1ee76642d412d",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "177e2e054ad9b70e8641c039c9518eaa81009a03406eba5fec106fcf15085230",
+    "raw_response_text_sha256": "26a490dabc1129dc5d5e933d3237c8c2d5978a3cdd5dae91c49431058a3f07cd"
+  },
+  "api_metadata": {
+    "id": "resp_0f2924a5c238ca30006aaa31e569e487d183f96c4a5c3b4331",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789538789.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1335,
+      "input_tokens_details": {
+        "cache_write_tokens": 1332,
+        "cached_tokens": 0
+      },
+      "output_tokens": 333,
+      "output_tokens_details": {
+        "reasoning_tokens": 187
+      },
+      "total_tokens": 1668
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.97,\n  \"gaza_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Promotion and episode listings for the NY POSTcast\",\n  \"conflict_relevance\": \"The page contains brief references to Gaza, Israel, Iran, and ceasefires only within promotional episode headlines, without substantive discussion.\",\n  \"reason\": \"This is a podcast landing and promotional page composed largely of host information and roundup-style episode snippets. The conflict-related references are incidental and lack meaningful article-level discourse.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T06:06:34Z",
+  "duration_seconds": 5.641,
+  "error": null
+}

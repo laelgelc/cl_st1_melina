@@ -1,0 +1,65 @@
+{
+  "article_id": "102862580",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_10/us/102862580.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_10/us/102862580.json"
+  },
+  "manifest_row": {
+    "article_id": "102862580",
+    "group": "global_north_2023_10",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2023_10/us/102862580.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "background",
+    "main_topic": "Financial challenges facing rural hospitals and the effects of a new federal payment model",
+    "conflict_relevance": "The newsletter includes a substantive embedded health-news item about Gaza's humanitarian aid, fuel blockade, power crisis, and threatened hospital operations during the Israel-Hamas war.",
+    "reason": "The main article concerns U.S. rural hospital finances and policy, but the Gaza section contains meaningful conflict-related reporting on aid deliveries, Israel's fuel restrictions, Hamas diversion concerns, and the impact on Gaza's health-care system. It is therefore useful for peripheral humanitarian and health discourse analysis, but not as core conflict coverage.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "1b63df034c6ca45181d51ce001b0607ea711e1b9cec7a7b9fc81315c224dae84",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "bc0d4483583ff4568ca25763581700a68e46a125ad7414292e4bbf1b516276a5",
+    "raw_response_text_sha256": "d5020767255b5edc67728f3deeba138d850ab74e08d2a7ab67aa933053807b02"
+  },
+  "api_metadata": {
+    "id": "resp_0884e52c40da2fe9006aa9f969900887d28bca2628415a7f52",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789524329.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2807,
+      "input_tokens_details": {
+        "cache_write_tokens": 2804,
+        "cached_tokens": 0
+      },
+      "output_tokens": 280,
+      "output_tokens_details": {
+        "reasoning_tokens": 94
+      },
+      "total_tokens": 3087
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Financial challenges facing rural hospitals and the effects of a new federal payment model\",\n  \"conflict_relevance\": \"The newsletter includes a substantive embedded health-news item about Gaza's humanitarian aid, fuel blockade, power crisis, and threatened hospital operations during the Israel-Hamas war.\",\n  \"reason\": \"The main article concerns U.S. rural hospital finances and policy, but the Gaza section contains meaningful conflict-related reporting on aid deliveries, Israel's fuel restrictions, Hamas diversion concerns, and the impact on Gaza's health-care system. It is therefore useful for peripheral humanitarian and health discourse analysis, but not as core conflict coverage.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:05:33Z",
+  "duration_seconds": 3.703,
+  "error": null
+}

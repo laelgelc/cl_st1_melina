@@ -1,0 +1,65 @@
+{
+  "article_id": "121426448",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_02/gb/121426448.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_02/gb/121426448.json"
+  },
+  "manifest_row": {
+    "article_id": "121426448",
+    "group": "global_north_2025_02",
+    "country_code": "gb",
+    "filepath": "corpus/02_now_organised/global_north_2025_02/gb/121426448.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "gaza_role": "passing",
+    "main_topic": "Foreign Office travel warnings for European destinations and conflict-affected regions",
+    "conflict_relevance": "Gaza is mentioned only once as an example of a red-listed destination in a broader travel-advice article, with no discussion of the conflict or related discourse.",
+    "reason": "The article focuses on holiday destinations and UK travel warnings concerning Belarus, Transnistria, Ukraine, Russia, and other European borderlands. The Gaza reference is incidental and does not provide meaningful material for Gaza or Israel/Palestine discourse analysis.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "a49317c74a0e60af4d8937c9d9f385c3ef5f58cd488507965871d89221ca5297",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "08ece51c5e726926551b4cb3b4a6b945eb43db31d1ece84aa86be64ab3c169ff",
+    "raw_response_text_sha256": "e0822d7cf88d4944035764b3a871e26b3e383234a80645c704229fa504528e58"
+  },
+  "api_metadata": {
+    "id": "resp_0778ef0c5529c225006aaa230e87b487d2b819668b0dfb952d",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789534990.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2342,
+      "input_tokens_details": {
+        "cache_write_tokens": 2339,
+        "cached_tokens": 0
+      },
+      "output_tokens": 238,
+      "output_tokens_details": {
+        "reasoning_tokens": 69
+      },
+      "total_tokens": 2580
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Foreign Office travel warnings for European destinations and conflict-affected regions\",\n  \"conflict_relevance\": \"Gaza is mentioned only once as an example of a red-listed destination in a broader travel-advice article, with no discussion of the conflict or related discourse.\",\n  \"reason\": \"The article focuses on holiday destinations and UK travel warnings concerning Belarus, Transnistria, Ukraine, Russia, and other European borderlands. The Gaza reference is incidental and does not provide meaningful material for Gaza or Israel/Palestine discourse analysis.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T05:03:13Z",
+  "duration_seconds": 3.269,
+  "error": null
+}

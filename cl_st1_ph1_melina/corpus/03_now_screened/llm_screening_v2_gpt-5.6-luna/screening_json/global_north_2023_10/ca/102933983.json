@@ -1,0 +1,65 @@
+{
+  "article_id": "102933983",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_10/ca/102933983.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_10/ca/102933983.json"
+  },
+  "manifest_row": {
+    "article_id": "102933983",
+    "group": "global_north_2023_10",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2023_10/ca/102933983.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.91,
+    "gaza_role": "passing",
+    "main_topic": "An American couple's relocation from California to Spain and their quality of life there",
+    "conflict_relevance": "The main travel article is unrelated to Gaza, but an appended news roundup includes substantive brief items about humanitarian pauses in Gaza, Israel and Hamas, and an Israeli airstrike that killed the family of an Al Jazeera correspondent.",
+    "reason": "The Gaza-related content appears only in an unrelated CTVNews.ca top-stories roundup rather than the main article. It is more substantive than a mere keyword or boilerplate mention, making the item potentially useful for peripheral analysis but not for the core conflict corpus.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "9387c2358f8faa5eb8e3e263518c4b7654a671c3d3bb1668eb5947b505b7c174",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "514a53c25c586b94902c40d685abdd00bbed917a391b964c7a745cb9557a990a",
+    "raw_response_text_sha256": "82aa80e61202d7763c189f325676748017a4da55e26021e4544acfa63bb16de1"
+  },
+  "api_metadata": {
+    "id": "resp_00e194ec78fb0325006aa9f69f7c0c87d2a6c6be2bd4cf0e2c",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789523615.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 4424,
+      "input_tokens_details": {
+        "cache_write_tokens": 4421,
+        "cached_tokens": 0
+      },
+      "output_tokens": 438,
+      "output_tokens_details": {
+        "reasoning_tokens": 251
+      },
+      "total_tokens": 4862
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.91,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"An American couple's relocation from California to Spain and their quality of life there\",\n  \"conflict_relevance\": \"The main travel article is unrelated to Gaza, but an appended news roundup includes substantive brief items about humanitarian pauses in Gaza, Israel and Hamas, and an Israeli airstrike that killed the family of an Al Jazeera correspondent.\",\n  \"reason\": \"The Gaza-related content appears only in an unrelated CTVNews.ca top-stories roundup rather than the main article. It is more substantive than a mere keyword or boilerplate mention, making the item potentially useful for peripheral analysis but not for the core conflict corpus.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T01:53:41Z",
+  "duration_seconds": 5.911,
+  "error": null
+}

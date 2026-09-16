@@ -1,0 +1,65 @@
+{
+  "article_id": "116713368",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_10/sg/116713368.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_10/sg/116713368.json"
+  },
+  "manifest_row": {
+    "article_id": "116713368",
+    "group": "global_north_2024_10",
+    "country_code": "sg",
+    "filepath": "corpus/02_now_organised/global_north_2024_10/sg/116713368.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.97,
+    "gaza_role": "background",
+    "main_topic": "Indonesian condemnation of Israeli airstrikes on Iran and concerns about wider Middle East escalation",
+    "conflict_relevance": "The article focuses on the Israel-Iran confrontation, but it meaningfully connects the escalation to the Gaza war, Israeli occupation of Palestinian territory, alleged genocide in Gaza, and calls for a ceasefire.",
+    "reason": "Gaza and Palestine appear in substantive diplomatic statements and are framed as a root cause and central context for regional conflict, but the article's primary subject is the Israeli strikes on Iran rather than the Gaza conflict itself.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "60746d505690ed6cd1ff4d96152ed59057159a3b1535fcb04ee771286db963bf",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "36419add91bdbbc3f9defa82cfe95de1819333ca35d53da564487629d3fdddb0",
+    "raw_response_text_sha256": "7529f7330a80ed033f47eb5ae6bc47001bb7e58c698a8e58a0756a5fe7e51f58"
+  },
+  "api_metadata": {
+    "id": "resp_0ac3b2be8eaf50ed006aaa18b2e44887d28633b340d3252ebc",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789532338.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1493,
+      "input_tokens_details": {
+        "cache_write_tokens": 1490,
+        "cached_tokens": 0
+      },
+      "output_tokens": 276,
+      "output_tokens_details": {
+        "reasoning_tokens": 100
+      },
+      "total_tokens": 1769
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.97,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Indonesian condemnation of Israeli airstrikes on Iran and concerns about wider Middle East escalation\",\n  \"conflict_relevance\": \"The article focuses on the Israel-Iran confrontation, but it meaningfully connects the escalation to the Gaza war, Israeli occupation of Palestinian territory, alleged genocide in Gaza, and calls for a ceasefire.\",\n  \"reason\": \"Gaza and Palestine appear in substantive diplomatic statements and are framed as a root cause and central context for regional conflict, but the article's primary subject is the Israeli strikes on Iran rather than the Gaza conflict itself.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T04:19:02Z",
+  "duration_seconds": 3.356,
+  "error": null
+}

@@ -1,0 +1,65 @@
+{
+  "article_id": "107342429",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_04/ca/107342429.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_04/ca/107342429.json"
+  },
+  "manifest_row": {
+    "article_id": "107342429",
+    "group": "global_north_2024_04",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2024_04/ca/107342429.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.96,
+    "gaza_role": "passing",
+    "main_topic": "Weather forecast and rainfall patterns in the Maritimes",
+    "conflict_relevance": "A brief Gaza-related item appears in a list of CTVNews.ca top stories, mentioning Israeli airstrikes, Hamas, civilian deaths, and cease-fire negotiations.",
+    "reason": "The main article is entirely about weather in Atlantic Canada. However, the embedded top-stories list contains a substantive sentence about Israeli military action in Gaza and cease-fire negotiations, making the page marginally useful for broader media-discourse analysis but not for the main conflict corpus.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "ecd7a82e6c98ee9d10a521ee3eb00b74d7ff185530de3cc144299fa340a23f5a",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "e3d6d22996b04613e8aa5f79d102118b7109a3667e6bfc1d537b59d32914e4a5",
+    "raw_response_text_sha256": "e78650dfb169df8f02310128fda77a9e66377311e32a7e43188e9a21ebcce033"
+  },
+  "api_metadata": {
+    "id": "resp_07ef2fd7bc5eeab8006aaa0b05e2e887d2a026f4142207fbac",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789528837.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1760,
+      "input_tokens_details": {
+        "cache_write_tokens": 1757,
+        "cached_tokens": 0
+      },
+      "output_tokens": 247,
+      "output_tokens_details": {
+        "reasoning_tokens": 74
+      },
+      "total_tokens": 2007
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.96,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Weather forecast and rainfall patterns in the Maritimes\",\n  \"conflict_relevance\": \"A brief Gaza-related item appears in a list of CTVNews.ca top stories, mentioning Israeli airstrikes, Hamas, civilian deaths, and cease-fire negotiations.\",\n  \"reason\": \"The main article is entirely about weather in Atlantic Canada. However, the embedded top-stories list contains a substantive sentence about Israeli military action in Gaza and cease-fire negotiations, making the page marginally useful for broader media-discourse analysis but not for the main conflict corpus.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:20:41Z",
+  "duration_seconds": 4.475,
+  "error": null
+}

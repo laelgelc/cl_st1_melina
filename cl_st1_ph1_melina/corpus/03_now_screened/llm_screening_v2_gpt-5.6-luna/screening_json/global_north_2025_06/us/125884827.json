@@ -1,0 +1,65 @@
+{
+  "article_id": "125884827",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_06/us/125884827.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_06/us/125884827.json"
+  },
+  "manifest_row": {
+    "article_id": "125884827",
+    "group": "global_north_2025_06",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2025_06/us/125884827.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.94,
+    "gaza_role": "passing",
+    "main_topic": "Local protests concerning immigration enforcement and state responses",
+    "conflict_relevance": "Gaza is mentioned only in a brief description of protest signs, without discussion or contextualization of the conflict.",
+    "reason": "The article is primarily about protests against I.C.E. and the deployment of the Texas National Guard. The isolated reference to signs mentioning Gaza is incidental and does not provide meaningful conflict-related discourse.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "f7724e5e0984e2ef6d0baa85ca80a46e84f07de3e631cd4ac4ce11e7d202cff6",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "c6eb43f7b7a0e04bfc3385cacf1b92bdafc34e1234bed4a44ae0ebcbb969a039",
+    "raw_response_text_sha256": "9acf203c82831d07b615b7f749b5a2969c56483bad28acc721198172ea8c8190"
+  },
+  "api_metadata": {
+    "id": "resp_044587481482cb42006aaa314e42a087d182fe401d99308664",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789538638.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1081,
+      "input_tokens_details": {
+        "cache_write_tokens": 1078,
+        "cached_tokens": 0
+      },
+      "output_tokens": 221,
+      "output_tokens_details": {
+        "reasoning_tokens": 78
+      },
+      "total_tokens": 1302
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.94,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Local protests concerning immigration enforcement and state responses\",\n  \"conflict_relevance\": \"Gaza is mentioned only in a brief description of protest signs, without discussion or contextualization of the conflict.\",\n  \"reason\": \"The article is primarily about protests against I.C.E. and the deployment of the Texas National Guard. The isolated reference to signs mentioning Gaza is incidental and does not provide meaningful conflict-related discourse.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T06:04:01Z",
+  "duration_seconds": 3.089,
+  "error": null
+}

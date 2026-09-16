@@ -1,0 +1,65 @@
+{
+  "article_id": "103101467",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_11/ca/103101467.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_11/ca/103101467.json"
+  },
+  "manifest_row": {
+    "article_id": "103101467",
+    "group": "global_north_2023_11",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2023_11/ca/103101467.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.96,
+    "gaza_role": "background",
+    "main_topic": "Scientific research on hairworms and their manipulation of insect behavior",
+    "conflict_relevance": "The main article is unrelated to the Gaza conflict, but the text includes several substantive embedded news snippets about Gaza, Canadian humanitarian aid, foreign nationals leaving Gaza, and Hamas hostages.",
+    "reason": "The headline article concerns parasitology, while Gaza-related material appears only among unrelated news items. These snippets provide meaningful conflict discourse but do not make the article core coverage.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "58ce2004484d87230dda528be98115bc6d8a3a5efe78d8682726881e9bb7afc9",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "cfda02895825a849b062aff0d4f54f3d63b100a1a5ab00a0dd0fb5b1a9925907",
+    "raw_response_text_sha256": "5fd38da752c2360512563be0cd5d7b881a37193d97bd419364141068c9978a5c"
+  },
+  "api_metadata": {
+    "id": "resp_08b961cd6214dcd9006aa9fb942dd887d2a207ebe0517c56b5",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789524884.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2029,
+      "input_tokens_details": {
+        "cache_write_tokens": 2026,
+        "cached_tokens": 0
+      },
+      "output_tokens": 367,
+      "output_tokens_details": {
+        "reasoning_tokens": 210
+      },
+      "total_tokens": 2396
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.96,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Scientific research on hairworms and their manipulation of insect behavior\",\n  \"conflict_relevance\": \"The main article is unrelated to the Gaza conflict, but the text includes several substantive embedded news snippets about Gaza, Canadian humanitarian aid, foreign nationals leaving Gaza, and Hamas hostages.\",\n  \"reason\": \"The headline article concerns parasitology, while Gaza-related material appears only among unrelated news items. These snippets provide meaningful conflict discourse but do not make the article core coverage.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:14:47Z",
+  "duration_seconds": 3.731,
+  "error": null
+}

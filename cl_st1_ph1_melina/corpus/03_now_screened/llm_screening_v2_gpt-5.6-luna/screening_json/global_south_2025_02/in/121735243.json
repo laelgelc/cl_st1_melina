@@ -1,0 +1,65 @@
+{
+  "article_id": "121735243",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_south_2025_02/in/121735243.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_south_2025_02/in/121735243.json"
+  },
+  "manifest_row": {
+    "article_id": "121735243",
+    "group": "global_south_2025_02",
+    "country_code": "in",
+    "filepath": "corpus/02_now_organised/global_south_2025_02/in/121735243.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.93,
+    "gaza_role": "passing",
+    "main_topic": "Pope Francis's health condition",
+    "conflict_relevance": "Gaza is mentioned only in connection with the Pope's brief call to the Holy Family parish in Gaza.",
+    "reason": "The article is principally a medical update about Pope Francis. Its sole Gaza-related content is a brief, incidental reference to a pastoral phone call, without substantive discussion of the conflict or related discourse.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "5deeeffc04be61180de7bcac3d0f31657bdc2226927165b3042ca2e97489e800",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "2da9d2da264a8f080658fa81e6a9669299af1585cf13b343167cd7afc014f27a",
+    "raw_response_text_sha256": "b0fdf50ace5488906be6d0a1f1241e42ac1e524d3484e6e84625f426d55b48db"
+  },
+  "api_metadata": {
+    "id": "resp_00ee08edd2be61a3006aaa458ed62087d19c4b5d5f9424a585",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789543822.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 820,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 269,
+      "output_tokens_details": {
+        "reasoning_tokens": 129
+      },
+      "total_tokens": 1089
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.93,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Pope Francis's health condition\",\n  \"conflict_relevance\": \"Gaza is mentioned only in connection with the Pope's brief call to the Holy Family parish in Gaza.\",\n  \"reason\": \"The article is principally a medical update about Pope Francis. Its sole Gaza-related content is a brief, incidental reference to a pastoral phone call, without substantive discussion of the conflict or related discourse.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T07:30:26Z",
+  "duration_seconds": 3.318,
+  "error": null
+}

@@ -1,0 +1,65 @@
+{
+  "article_id": "115397419",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_10/us/115397419.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_10/us/115397419.json"
+  },
+  "manifest_row": {
+    "article_id": "115397419",
+    "group": "global_north_2024_10",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2024_10/us/115397419.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.93,
+    "gaza_role": "background",
+    "main_topic": "Israel's ground invasion and bombardment of southern Lebanon, Hezbollah, and the displacement of Lebanese civilians",
+    "conflict_relevance": "The article provides substantial coverage of the Israel-Hezbollah war and Israeli military actions, with Gaza and Hamas serving as the background trigger and regional context rather than the central subject.",
+    "reason": "The main focus is the Lebanon conflict, civilian evacuations, Israeli strikes, Hezbollah, occupation, and displacement. Gaza-based Hamas is mentioned meaningfully as the group whose October 7 attack preceded Hezbollah's escalation, making the article relevant to broader regional conflict discourse but not core Gaza coverage.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "9b31b9d01fb856d31916debaa23c71d016066386d9170f00972c9f4a925494b8",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "a807f38827a3e0ea5d1be34e79d122bf8b6b0c68621fa590ff29aba2ce00fffe",
+    "raw_response_text_sha256": "cb96005b747b0afdfd771d5f4854defe99c75742f942a1e4838958f14406e933"
+  },
+  "api_metadata": {
+    "id": "resp_00c61941eaa3abc2006aaa18d993f887d29541cfcc68a861ce",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789532377.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2559,
+      "input_tokens_details": {
+        "cache_write_tokens": 2556,
+        "cached_tokens": 0
+      },
+      "output_tokens": 355,
+      "output_tokens_details": {
+        "reasoning_tokens": 169
+      },
+      "total_tokens": 2914
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.93,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Israel's ground invasion and bombardment of southern Lebanon, Hezbollah, and the displacement of Lebanese civilians\",\n  \"conflict_relevance\": \"The article provides substantial coverage of the Israel-Hezbollah war and Israeli military actions, with Gaza and Hamas serving as the background trigger and regional context rather than the central subject.\",\n  \"reason\": \"The main focus is the Lebanon conflict, civilian evacuations, Israeli strikes, Hezbollah, occupation, and displacement. Gaza-based Hamas is mentioned meaningfully as the group whose October 7 attack preceded Hezbollah's escalation, making the article relevant to broader regional conflict discourse but not core Gaza coverage.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T04:19:42Z",
+  "duration_seconds": 5.505,
+  "error": null
+}

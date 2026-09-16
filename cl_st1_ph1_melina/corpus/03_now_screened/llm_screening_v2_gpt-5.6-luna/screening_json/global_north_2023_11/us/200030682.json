@@ -1,0 +1,65 @@
+{
+  "article_id": "200030682",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_11/us/200030682.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_11/us/200030682.json"
+  },
+  "manifest_row": {
+    "article_id": "200030682",
+    "group": "global_north_2023_11",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2023_11/us/200030682.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.94,
+    "gaza_role": "background",
+    "main_topic": "Mixed entertainment, sports, and news content",
+    "conflict_relevance": "Contains an embedded news report about Hamas releasing Israeli-Russian hostages, an Israel-Hamas truce, and Americans held in Gaza.",
+    "reason": "The article is primarily a mixture of unrelated television and sports content, but it includes a substantive embedded paragraph concerning hostages held in Gaza and the Israel-Hamas truce. This makes it relevant to broader conflict discourse but not suitable as core coverage.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "0bf77876f8d329714ff66d363069dcffc0b60625a6a05745112f7a1e51eb2342",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "6fd842fce862a6be583c7387e201046ba5a7380cce4785850080f4c29b3a19e6",
+    "raw_response_text_sha256": "52075f914548ec80994eb6990455e0f33e73762da455181713c99741d8f09c52"
+  },
+  "api_metadata": {
+    "id": "resp_0dae5ccdaa5c4b5f006aa9ff98d1d887d2a70a9f3a28329699",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789525912.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 979,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 351,
+      "output_tokens_details": {
+        "reasoning_tokens": 191
+      },
+      "total_tokens": 1330
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.94,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Mixed entertainment, sports, and news content\",\n  \"conflict_relevance\": \"Contains an embedded news report about Hamas releasing Israeli-Russian hostages, an Israel-Hamas truce, and Americans held in Gaza.\",\n  \"reason\": \"The article is primarily a mixture of unrelated television and sports content, but it includes a substantive embedded paragraph concerning hostages held in Gaza and the Israel-Hamas truce. This makes it relevant to broader conflict discourse but not suitable as core coverage.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:31:57Z",
+  "duration_seconds": 4.97,
+  "error": null
+}

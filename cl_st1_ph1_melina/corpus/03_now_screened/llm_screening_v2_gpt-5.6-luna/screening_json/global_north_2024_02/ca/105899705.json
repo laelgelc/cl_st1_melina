@@ -1,0 +1,65 @@
+{
+  "article_id": "105899705",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_02/ca/105899705.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_02/ca/105899705.json"
+  },
+  "manifest_row": {
+    "article_id": "105899705",
+    "group": "global_north_2024_02",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2024_02/ca/105899705.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "gaza_role": "passing",
+    "main_topic": "The trial and alleged negligence surrounding the Rust film-set shooting",
+    "conflict_relevance": "Gaza appears only in an unrelated embedded news snippet about Starlink service for a UAE field hospital in southern Gaza.",
+    "reason": "The main article concerns the Rust shooting and firearm-safety trial. The sole Gaza-related sentence is an incidental item in a collection of unrelated snippets and does not provide substantive conflict discourse.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "f8c5cb2c646e60eb312c82838ebfe09b34888bc1faea868cd6440bf8de849ff3",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "77c5b4664f1ef537b6852721ef25e557f3710aa39b87e041cbb5bd22068863d2",
+    "raw_response_text_sha256": "f1fba0da11ef15549745536bd0817197fabdc3163eed1f6fb58cd0e0d04b3099"
+  },
+  "api_metadata": {
+    "id": "resp_0586974fd9433ac1006aaa0605147087d29d8985a8604f28f4",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789527557.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2806,
+      "input_tokens_details": {
+        "cache_write_tokens": 2803,
+        "cached_tokens": 0
+      },
+      "output_tokens": 267,
+      "output_tokens_details": {
+        "reasoning_tokens": 122
+      },
+      "total_tokens": 3073
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"The trial and alleged negligence surrounding the Rust film-set shooting\",\n  \"conflict_relevance\": \"Gaza appears only in an unrelated embedded news snippet about Starlink service for a UAE field hospital in southern Gaza.\",\n  \"reason\": \"The main article concerns the Rust shooting and firearm-safety trial. The sole Gaza-related sentence is an incidental item in a collection of unrelated snippets and does not provide substantive conflict discourse.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:59:19Z",
+  "duration_seconds": 2.934,
+  "error": null
+}

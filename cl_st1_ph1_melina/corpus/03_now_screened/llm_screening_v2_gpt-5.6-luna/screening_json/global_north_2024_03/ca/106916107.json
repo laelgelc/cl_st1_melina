@@ -1,0 +1,65 @@
+{
+  "article_id": "106916107",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_03/ca/106916107.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_03/ca/106916107.json"
+  },
+  "manifest_row": {
+    "article_id": "106916107",
+    "group": "global_north_2024_03",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2024_03/ca/106916107.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "gaza_role": "boilerplate_or_unrelated",
+    "main_topic": "A pop-culture and cosplay convention in Prince Edward Island",
+    "conflict_relevance": "The main article is unrelated to Gaza, Palestine, or the Israel-Palestine conflict; Gaza appears only in a separate news snippet.",
+    "reason": "The headline and substantive article concern the Atlantic Entertainment Expo. The Gaza-related text is an unrelated embedded snippet about truce negotiations and displaced Palestinians.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "e96126bcc8a59f8c05aa225cf1cb75ec4a4a529a65cc6ef04e15e091d60eabaa",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "693e357e5b46a646d128efb02fd1dd4baa33e87e5e4d7eccb832b1e26b314b6a",
+    "raw_response_text_sha256": "a97565aac983f93bec9325400d15c12a6aea72809594c9b763dffb4b267166f5"
+  },
+  "api_metadata": {
+    "id": "resp_062a1f4363166cb6006aaa087c7c2887d2b0baba25b0f6cfce",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789528188.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2233,
+      "input_tokens_details": {
+        "cache_write_tokens": 2230,
+        "cached_tokens": 0
+      },
+      "output_tokens": 190,
+      "output_tokens_details": {
+        "reasoning_tokens": 43
+      },
+      "total_tokens": 2423
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"gaza_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"A pop-culture and cosplay convention in Prince Edward Island\",\n  \"conflict_relevance\": \"The main article is unrelated to Gaza, Palestine, or the Israel-Palestine conflict; Gaza appears only in a separate news snippet.\",\n  \"reason\": \"The headline and substantive article concern the Atlantic Entertainment Expo. The Gaza-related text is an unrelated embedded snippet about truce negotiations and displaced Palestinians.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:09:51Z",
+  "duration_seconds": 2.902,
+  "error": null
+}

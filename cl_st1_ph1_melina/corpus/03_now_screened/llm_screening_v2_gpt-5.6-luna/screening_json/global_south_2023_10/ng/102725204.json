@@ -1,0 +1,65 @@
+{
+  "article_id": "102725204",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_south_2023_10/ng/102725204.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_south_2023_10/ng/102725204.json"
+  },
+  "manifest_row": {
+    "article_id": "102725204",
+    "group": "global_south_2023_10",
+    "country_code": "ng",
+    "filepath": "corpus/02_now_organised/global_south_2023_10/ng/102725204.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.93,
+    "gaza_role": "background",
+    "main_topic": "Myanmar's United Wa State Party expelling officials wanted by China over online scams",
+    "conflict_relevance": "The main article is unrelated to Gaza or the Israel-Palestine conflict, but the text includes a substantive embedded snippet about a Gaza hospital strike, regional condemnation, and protests.",
+    "reason": "The headline and principal coverage concern Myanmar, China, and online fraud. Gaza appears only in an unrelated embedded news item, which provides some meaningful conflict discourse but does not make the article core coverage.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "a5909e6506b65a4d26089d2bcec01421a4c6720cb7e76e71cd54a1fdd95c3cd9",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "fdc1dd4b99ded5b69b6b76f24cc76dab6bc0d328d41bd21dd36c52e3961e57ce",
+    "raw_response_text_sha256": "a2a4a2149159d15e2281247c294dd387037924200fba8a20b796008ea8d3fdd0"
+  },
+  "api_metadata": {
+    "id": "resp_04936d578c2156e3006aaa33a00f6887d1ad98bce3f3298119",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789539232.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1865,
+      "input_tokens_details": {
+        "cache_write_tokens": 1862,
+        "cached_tokens": 0
+      },
+      "output_tokens": 336,
+      "output_tokens_details": {
+        "reasoning_tokens": 170
+      },
+      "total_tokens": 2201
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.93,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Myanmar's United Wa State Party expelling officials wanted by China over online scams\",\n  \"conflict_relevance\": \"The main article is unrelated to Gaza or the Israel-Palestine conflict, but the text includes a substantive embedded snippet about a Gaza hospital strike, regional condemnation, and protests.\",\n  \"reason\": \"The headline and principal coverage concern Myanmar, China, and online fraud. Gaza appears only in an unrelated embedded news item, which provides some meaningful conflict discourse but does not make the article core coverage.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T06:13:56Z",
+  "duration_seconds": 4.933,
+  "error": null
+}

@@ -1,0 +1,65 @@
+{
+  "article_id": "124066767",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_south_2025_04/in/124066767.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_south_2025_04/in/124066767.json"
+  },
+  "manifest_row": {
+    "article_id": "124066767",
+    "group": "global_south_2025_04",
+    "country_code": "in",
+    "filepath": "corpus/02_now_organised/global_south_2025_04/in/124066767.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "background",
+    "main_topic": "A Delhi businessman targeted in an extortion plot involving a fake severed thumb, smartwatch, and ransom demand",
+    "conflict_relevance": "The ransom letter explicitly invokes Israel's actions in Gaza, hunger, and a demand to provide aid to Palestinians, providing a meaningful but secondary representation of Gaza-related humanitarian discourse.",
+    "reason": "The article is primarily a crime report about an extortion case in Delhi. Gaza appears in the ransom note as the stated justification for the demand, but the conflict is not the article's main subject.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "35de2d5506a7fb9c3234d03204cd47481f4ec3e0a56e852075c592b63f3da947",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "90be986e8d616d20ec5a1a977e285763a3bbb8d0b7ada3381b4ff7829073f638",
+    "raw_response_text_sha256": "2e41fb5951e900f9062b904fd8073ca937c57d43b1acd1a61e6f81af97801ce0"
+  },
+  "api_metadata": {
+    "id": "resp_09fc56d1c510f5a7006aaa47c7139087d1b2a006948fd35a80",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789544391.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1377,
+      "input_tokens_details": {
+        "cache_write_tokens": 1374,
+        "cached_tokens": 0
+      },
+      "output_tokens": 226,
+      "output_tokens_details": {
+        "reasoning_tokens": 55
+      },
+      "total_tokens": 1603
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"A Delhi businessman targeted in an extortion plot involving a fake severed thumb, smartwatch, and ransom demand\",\n  \"conflict_relevance\": \"The ransom letter explicitly invokes Israel's actions in Gaza, hunger, and a demand to provide aid to Palestinians, providing a meaningful but secondary representation of Gaza-related humanitarian discourse.\",\n  \"reason\": \"The article is primarily a crime report about an extortion case in Delhi. Gaza appears in the ransom note as the stated justification for the demand, but the conflict is not the article's main subject.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T07:39:54Z",
+  "duration_seconds": 3.523,
+  "error": null
+}

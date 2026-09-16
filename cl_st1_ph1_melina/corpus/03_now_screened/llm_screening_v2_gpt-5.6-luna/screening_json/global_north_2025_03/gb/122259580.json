@@ -1,0 +1,65 @@
+{
+  "article_id": "122259580",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_03/gb/122259580.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_03/gb/122259580.json"
+  },
+  "manifest_row": {
+    "article_id": "122259580",
+    "group": "global_north_2025_03",
+    "country_code": "gb",
+    "filepath": "corpus/02_now_organised/global_north_2025_03/gb/122259580.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.96,
+    "gaza_role": "substantial",
+    "main_topic": "US political live feed focused on government funding and shutdown negotiations, with extensive coverage of Mahmoud Khalil's detention and pro-Palestinian activism",
+    "conflict_relevance": "Contains substantial discourse about Israel's war on Gaza, Palestinian human rights activism, alleged repression of pro-Palestinian protests, Hamas allegations, deportation, free speech, and US policy toward Palestine-related activism.",
+    "reason": "The headline and primary framing concern a US government shutdown and unrelated domestic political developments. However, the live feed includes a lengthy and meaningful segment centered on Mahmoud Khalil, Columbia protests over Israel's war on Gaza, Palestinian activism, and legal and political debates over repression and free speech. It is therefore useful as broader discourse material but not as core conflict coverage.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "53ff5f18bd21a2294b227964ec9b49fa4d0e0ce8b71643095db9c08034cfe9b0",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "488370066f6fec152f3e996c0aa283c08babc81df21425fd231bfe937f53c569",
+    "raw_response_text_sha256": "50b9387c866c4510886be16839f29b22fa5cb41686ed0eda9969d8b2823fc362"
+  },
+  "api_metadata": {
+    "id": "resp_03fdcf7b8e7978ca006aaa2606b2e087d1802c5ee0f207d76f",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789535750.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 4746,
+      "input_tokens_details": {
+        "cache_write_tokens": 4743,
+        "cached_tokens": 0
+      },
+      "output_tokens": 468,
+      "output_tokens_details": {
+        "reasoning_tokens": 248
+      },
+      "total_tokens": 5214
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.96,\n  \"gaza_role\": \"substantial\",\n  \"main_topic\": \"US political live feed focused on government funding and shutdown negotiations, with extensive coverage of Mahmoud Khalil's detention and pro-Palestinian activism\",\n  \"conflict_relevance\": \"Contains substantial discourse about Israel's war on Gaza, Palestinian human rights activism, alleged repression of pro-Palestinian protests, Hamas allegations, deportation, free speech, and US policy toward Palestine-related activism.\",\n  \"reason\": \"The headline and primary framing concern a US government shutdown and unrelated domestic political developments. However, the live feed includes a lengthy and meaningful segment centered on Mahmoud Khalil, Columbia protests over Israel's war on Gaza, Palestinian activism, and legal and political debates over repression and free speech. It is therefore useful as broader discourse material but not as core conflict coverage.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T05:15:55Z",
+  "duration_seconds": 5.339,
+  "error": null
+}

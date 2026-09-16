@@ -1,0 +1,65 @@
+{
+  "article_id": "102503320",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_10/us/102503320.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_10/us/102503320.json"
+  },
+  "manifest_row": {
+    "article_id": "102503320",
+    "group": "global_north_2023_10",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2023_10/us/102503320.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.96,
+    "gaza_role": "background",
+    "main_topic": "Live updates on the Ukraine war, Balticconnector pipeline damage, European energy security, and related international developments",
+    "conflict_relevance": "The liveblog includes several meaningful updates on the Israel-Hamas war, including the impact on Israeli gas production, threats to hostages, Russia's diplomatic position toward Israel and Palestinians, and concerns that the conflict could divert attention from Ukraine. However, these are secondary to the article's main focus on Ukraine, NATO, and European energy infrastructure.",
+    "reason": "The article contains substantive conflict-related passages but is not centrally about Gaza, Palestine, or the Israel-Hamas war. It is therefore useful for studying peripheral geopolitical and media discourse around the conflict, but not as core coverage.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "d8b614a20cec185c70347452fca8cddd09a756efb81b49c3ee3d1092a179c15e",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "38d5b2260e1481c1bac16a96d04c37a20a994f709ee5f10bffeac042cfee5df7",
+    "raw_response_text_sha256": "3ad72ec84f223ecee28ca9edbe9a943f78a6f91c497fdcc3d73aba46392b9e21"
+  },
+  "api_metadata": {
+    "id": "resp_081f9933c19613f0006aa9f86ee4d487d28a6940544a1e32f3",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789524078.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 3789,
+      "input_tokens_details": {
+        "cache_write_tokens": 3786,
+        "cached_tokens": 0
+      },
+      "output_tokens": 319,
+      "output_tokens_details": {
+        "reasoning_tokens": 111
+      },
+      "total_tokens": 4108
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.96,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Live updates on the Ukraine war, Balticconnector pipeline damage, European energy security, and related international developments\",\n  \"conflict_relevance\": \"The liveblog includes several meaningful updates on the Israel-Hamas war, including the impact on Israeli gas production, threats to hostages, Russia's diplomatic position toward Israel and Palestinians, and concerns that the conflict could divert attention from Ukraine. However, these are secondary to the article's main focus on Ukraine, NATO, and European energy infrastructure.\",\n  \"reason\": \"The article contains substantive conflict-related passages but is not centrally about Gaza, Palestine, or the Israel-Hamas war. It is therefore useful for studying peripheral geopolitical and media discourse around the conflict, but not as core coverage.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:01:23Z",
+  "duration_seconds": 4.484,
+  "error": null
+}

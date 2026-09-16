@@ -1,0 +1,65 @@
+{
+  "article_id": "106464049",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_03/us/106464049.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_03/us/106464049.json"
+  },
+  "manifest_row": {
+    "article_id": "106464049",
+    "group": "global_north_2024_03",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2024_03/us/106464049.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.97,
+    "gaza_role": "passing",
+    "main_topic": "Haiti's political and humanitarian crisis, gang violence, and proposed international security mission",
+    "conflict_relevance": "The main article is about Haiti, but the text includes a substantive sentence reporting Palestinian deaths and injuries in Gaza and a separate brief item about Hezbollah-Israel exchanges.",
+    "reason": "Gaza and Israel-related content appears only in embedded or appended news material and is not connected to the article's central Haiti coverage. It is more than boilerplate because it includes conflict casualty reporting, but it is not suitable as core Gaza coverage.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "32c04c16e52fa4eb8d41b63df671650c8a0f2102b3b0f63adafe9f4feab11e2a",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "1fa6034cd5653df3d98f42f6cacfbbf6cd3e3fb05a319608dbfd2db308cdb20f",
+    "raw_response_text_sha256": "71e9614f5ad08d48ecea4dedde6f46885a892580cfb6e98f978ae9131ae9cb30"
+  },
+  "api_metadata": {
+    "id": "resp_0889d3bebfae84f5006aaa097360f887d28f227212d5f447bd",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789528435.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 3244,
+      "input_tokens_details": {
+        "cache_write_tokens": 3241,
+        "cached_tokens": 0
+      },
+      "output_tokens": 268,
+      "output_tokens_details": {
+        "reasoning_tokens": 95
+      },
+      "total_tokens": 3512
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.97,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Haiti's political and humanitarian crisis, gang violence, and proposed international security mission\",\n  \"conflict_relevance\": \"The main article is about Haiti, but the text includes a substantive sentence reporting Palestinian deaths and injuries in Gaza and a separate brief item about Hezbollah-Israel exchanges.\",\n  \"reason\": \"Gaza and Israel-related content appears only in embedded or appended news material and is not connected to the article's central Haiti coverage. It is more than boilerplate because it includes conflict casualty reporting, but it is not suitable as core Gaza coverage.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:13:59Z",
+  "duration_seconds": 4.059,
+  "error": null
+}

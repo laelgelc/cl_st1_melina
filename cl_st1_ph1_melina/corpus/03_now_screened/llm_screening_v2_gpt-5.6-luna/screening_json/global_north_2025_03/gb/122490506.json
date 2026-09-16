@@ -1,0 +1,65 @@
+{
+  "article_id": "122490506",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_03/gb/122490506.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_03/gb/122490506.json"
+  },
+  "manifest_row": {
+    "article_id": "122490506",
+    "group": "global_north_2025_03",
+    "country_code": "gb",
+    "filepath": "corpus/02_now_organised/global_north_2025_03/gb/122490506.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "passing",
+    "main_topic": "Trump-Putin negotiations over a ceasefire in the Russia-Ukraine war",
+    "conflict_relevance": "The article is primarily about Ukraine, but it invokes Gaza as an example of ceasefires failing to produce lasting peace and briefly discusses Israel-Iran tensions.",
+    "reason": "Gaza is used meaningfully as a comparative reference in the discussion of ceasefires, but the article is not centrally concerned with Gaza, Palestine, or the Israel-Palestine conflict.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "f07b2dea1ec4759f7313ba9318ae9b421b448a37d86c6c55b5708f7de84c5cce",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "77b5b90faa0dce3f1d6eaa6ac66ccad811a1a031d315add18727d70774fb693c",
+    "raw_response_text_sha256": "39c7439ab31f7835aa613beab986526778a3ad60d34cb11e8f3267a81e063caf"
+  },
+  "api_metadata": {
+    "id": "resp_00c34da2f5ae10c7006aaa262e86b887d1acc1e520c66cd269",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789535790.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 3793,
+      "input_tokens_details": {
+        "cache_write_tokens": 3790,
+        "cached_tokens": 0
+      },
+      "output_tokens": 254,
+      "output_tokens_details": {
+        "reasoning_tokens": 96
+      },
+      "total_tokens": 4047
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Trump-Putin negotiations over a ceasefire in the Russia-Ukraine war\",\n  \"conflict_relevance\": \"The article is primarily about Ukraine, but it invokes Gaza as an example of ceasefires failing to produce lasting peace and briefly discusses Israel-Iran tensions.\",\n  \"reason\": \"Gaza is used meaningfully as a comparative reference in the discussion of ceasefires, but the article is not centrally concerned with Gaza, Palestine, or the Israel-Palestine conflict.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T05:16:33Z",
+  "duration_seconds": 3.545,
+  "error": null
+}

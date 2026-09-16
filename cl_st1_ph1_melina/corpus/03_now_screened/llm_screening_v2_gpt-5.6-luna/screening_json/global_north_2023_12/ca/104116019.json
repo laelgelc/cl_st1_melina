@@ -1,0 +1,65 @@
+{
+  "article_id": "104116019",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_12/ca/104116019.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_12/ca/104116019.json"
+  },
+  "manifest_row": {
+    "article_id": "104116019",
+    "group": "global_north_2023_12",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2023_12/ca/104116019.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "passing",
+    "main_topic": "Appointment of a new executive director at Alberta Theatre Projects",
+    "conflict_relevance": "An embedded news item reports a Palestinian-Canadian's lawsuit seeking to evacuate his grandchildren from Gaza and alleging discriminatory treatment by Canadian officials.",
+    "reason": "The main article concerns theatre administration and is unrelated to the Gaza conflict, but it includes a meaningful, though brief, Gaza-related news snippet. The article also contains multiple unrelated snippets.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "13c540dc74447b8c89e37a16688703a5f6055ca0c071c36415d37ba8346230a7",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "0590550901cfc689f225d6941f05a18c2453fe79201c1eadb654b2a95ada5ef2",
+    "raw_response_text_sha256": "802cf6ef763075a505fe1cbb5383c01237bdc4b2b0d03734a30ab5f564a025ee"
+  },
+  "api_metadata": {
+    "id": "resp_092377e579268b91006aaa006cde8c87d28d19f5ac7819940c",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789526124.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1431,
+      "input_tokens_details": {
+        "cache_write_tokens": 1428,
+        "cached_tokens": 0
+      },
+      "output_tokens": 251,
+      "output_tokens_details": {
+        "reasoning_tokens": 102
+      },
+      "total_tokens": 1682
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Appointment of a new executive director at Alberta Theatre Projects\",\n  \"conflict_relevance\": \"An embedded news item reports a Palestinian-Canadian's lawsuit seeking to evacuate his grandchildren from Gaza and alleging discriminatory treatment by Canadian officials.\",\n  \"reason\": \"The main article concerns theatre administration and is unrelated to the Gaza conflict, but it includes a meaningful, though brief, Gaza-related news snippet. The article also contains multiple unrelated snippets.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:35:28Z",
+  "duration_seconds": 3.526,
+  "error": null
+}

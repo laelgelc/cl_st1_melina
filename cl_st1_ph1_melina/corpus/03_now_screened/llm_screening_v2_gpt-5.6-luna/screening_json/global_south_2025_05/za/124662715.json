@@ -1,0 +1,65 @@
+{
+  "article_id": "124662715",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_south_2025_05/za/124662715.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_south_2025_05/za/124662715.json"
+  },
+  "manifest_row": {
+    "article_id": "124662715",
+    "group": "global_south_2025_05",
+    "country_code": "za",
+    "filepath": "corpus/02_now_organised/global_south_2025_05/za/124662715.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "gaza_role": "passing",
+    "main_topic": "BizNews episode roundup covering South African politics, business, and international updates",
+    "conflict_relevance": "Gaza is mentioned only in a brief international-news item about Hamas releasing the last American hostage, without substantive discussion.",
+    "reason": "The article is a promotional roundup of unrelated podcast segments and contains only a passing reference to Gaza in a list of international updates.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "ec32e6832f16d8ae828dbb852d0f67719a30628e410376376607291ac1a21abf",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "ae4e1b0477f0d8a04a8ef2cac169d88641af10888587b353d24833cc09e0a316",
+    "raw_response_text_sha256": "f3508f1893db97e594a4916f6b0e41a212813203bec7ae9fce328f6197b308da"
+  },
+  "api_metadata": {
+    "id": "resp_08cdb02398f7640a006aaa4988a2c487d1b5b3749ab1f245ec",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789544840.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 823,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 232,
+      "output_tokens_details": {
+        "reasoning_tokens": 95
+      },
+      "total_tokens": 1055
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"BizNews episode roundup covering South African politics, business, and international updates\",\n  \"conflict_relevance\": \"Gaza is mentioned only in a brief international-news item about Hamas releasing the last American hostage, without substantive discussion.\",\n  \"reason\": \"The article is a promotional roundup of unrelated podcast segments and contains only a passing reference to Gaza in a list of international updates.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T07:47:24Z",
+  "duration_seconds": 3.549,
+  "error": null
+}

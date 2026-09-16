@@ -1,0 +1,65 @@
+{
+  "article_id": "106031267",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_02/ca/106031267.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_02/ca/106031267.json"
+  },
+  "manifest_row": {
+    "article_id": "106031267",
+    "group": "global_north_2024_02",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2024_02/ca/106031267.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "gaza_role": "passing",
+    "main_topic": "Camping regulations and a fine for overstaying on Crown land in Ontario",
+    "conflict_relevance": "The article is primarily about Ontario camping regulations and includes only an unrelated, fragmentary mention of a Gaza ceasefire resolution within a collection of additional news items.",
+    "reason": "The headline and main article concern a Crown land camping violation. The Gaza reference is a brief embedded snippet with no substantive discussion of the conflict.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "b7f598613746eadc7fb15263aa9b53d0dc66283b7b53c28ce730f0058c3d11db",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "a66a995e011e7fd0d5995e723a34096f5aecc543159c59dc7be049059b9bf6cd",
+    "raw_response_text_sha256": "b31ef6f0b086e2ddf0e33d3c34d8b9751a63aee362a69b045401efb7fb97b4d8"
+  },
+  "api_metadata": {
+    "id": "resp_0569ed19ba94e366006aaa0611fd9087d2beb3517e20b41286",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789527570.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1320,
+      "input_tokens_details": {
+        "cache_write_tokens": 1317,
+        "cached_tokens": 0
+      },
+      "output_tokens": 225,
+      "output_tokens_details": {
+        "reasoning_tokens": 78
+      },
+      "total_tokens": 1545
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Camping regulations and a fine for overstaying on Crown land in Ontario\",\n  \"conflict_relevance\": \"The article is primarily about Ontario camping regulations and includes only an unrelated, fragmentary mention of a Gaza ceasefire resolution within a collection of additional news items.\",\n  \"reason\": \"The headline and main article concern a Crown land camping violation. The Gaza reference is a brief embedded snippet with no substantive discussion of the conflict.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:59:32Z",
+  "duration_seconds": 2.7,
+  "error": null
+}

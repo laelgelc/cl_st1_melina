@@ -1,0 +1,65 @@
+{
+  "article_id": "112629795",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_08/us/112629795.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_08/us/112629795.json"
+  },
+  "manifest_row": {
+    "article_id": "112629795",
+    "group": "global_north_2024_08",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2024_08/us/112629795.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "background",
+    "main_topic": "Security fencing and political disputes at the Democratic National Convention",
+    "conflict_relevance": "The article reports protests at the convention opposing U.S. support for Israel's war against Hamas in Gaza and includes protesters' characterization of the conflict as a genocide, but the main focus is U.S. domestic politics, border security, and convention policing.",
+    "reason": "Gaza-related protest activity and discourse are meaningfully described, yet they serve as a secondary context within an article primarily about DNC security and the U.S. border-wall debate.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "278d2ae28762d58c00a224dd2ff042d34b77c358dfc7a7f3c69aa588c6076c45",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "0239a0e229b7c32f0f7bd190f77aa7db58a1c8d75049de68ebf9dba945fe1095",
+    "raw_response_text_sha256": "ded275990d0dee2def87d85ce9f948558b01a2ed5a0054eaf6f678988cc280de"
+  },
+  "api_metadata": {
+    "id": "resp_0bb7b2103c68f0ba006aaa1557185487d29ab8a45c04804d6c",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789531479.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1421,
+      "input_tokens_details": {
+        "cache_write_tokens": 1418,
+        "cached_tokens": 0
+      },
+      "output_tokens": 271,
+      "output_tokens_details": {
+        "reasoning_tokens": 99
+      },
+      "total_tokens": 1692
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Security fencing and political disputes at the Democratic National Convention\",\n  \"conflict_relevance\": \"The article reports protests at the convention opposing U.S. support for Israel's war against Hamas in Gaza and includes protesters' characterization of the conflict as a genocide, but the main focus is U.S. domestic politics, border security, and convention policing.\",\n  \"reason\": \"Gaza-related protest activity and discourse are meaningfully described, yet they serve as a secondary context within an article primarily about DNC security and the U.S. border-wall debate.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T04:04:43Z",
+  "duration_seconds": 4.867,
+  "error": null
+}

@@ -1,0 +1,65 @@
+{
+  "article_id": "102473362",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_south_2023_10/ng/102473362.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_south_2023_10/ng/102473362.json"
+  },
+  "manifest_row": {
+    "article_id": "102473362",
+    "group": "global_south_2023_10",
+    "country_code": "ng",
+    "filepath": "corpus/02_now_organised/global_south_2023_10/ng/102473362.txt"
+  },
+  "screening": {
+    "category": "CORE",
+    "confidence": 0.96,
+    "gaza_role": "central",
+    "main_topic": "Israel's military response to the Hamas attack and the ordered siege of Gaza",
+    "conflict_relevance": "The lead item directly concerns the Israel-Hamas war, Gaza, Israeli military action, and the siege imposed on the territory.",
+    "reason": "Although the text includes several unrelated Nigerian news snippets, its first and most conflict-relevant item is a direct report on Israel's defense minister ordering a complete siege of Gaza and the military response to the Hamas attack.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": true
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "992a9a8a3c03278ea1d799875c2922a0f695ef98ac15060ef8b7fb70ea4f25d3",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "b2b7eb6cd99dcdd278a65e1ebeb2eff1afbbf54aaeb439c08cd4a78b8d6b606d",
+    "raw_response_text_sha256": "15b34cf569636b9e36de5fbe668ee611b09acac8b7993d0c6a62b5b69c45f9dd"
+  },
+  "api_metadata": {
+    "id": "resp_0c3fdadd00f6f9d3006aaa337b3ddc87d182cfcd7c7be4919d",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789539195.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 921,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 299,
+      "output_tokens_details": {
+        "reasoning_tokens": 144
+      },
+      "total_tokens": 1220
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"CORE\",\n  \"confidence\": 0.96,\n  \"gaza_role\": \"central\",\n  \"main_topic\": \"Israel's military response to the Hamas attack and the ordered siege of Gaza\",\n  \"conflict_relevance\": \"The lead item directly concerns the Israel-Hamas war, Gaza, Israeli military action, and the siege imposed on the territory.\",\n  \"reason\": \"Although the text includes several unrelated Nigerian news snippets, its first and most conflict-relevant item is a direct report on Israel's defense minister ordering a complete siege of Gaza and the military response to the Hamas attack.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": true\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T06:13:20Z",
+  "duration_seconds": 5.179,
+  "error": null
+}

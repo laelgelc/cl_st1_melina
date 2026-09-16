@@ -1,0 +1,65 @@
+{
+  "article_id": "111160974",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_south_2024_07/in/111160974.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_south_2024_07/in/111160974.json"
+  },
+  "manifest_row": {
+    "article_id": "111160974",
+    "group": "global_south_2024_07",
+    "country_code": "in",
+    "filepath": "corpus/02_now_organised/global_south_2024_07/in/111160974.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.96,
+    "gaza_role": "passing",
+    "main_topic": "Mixed international news roundup, primarily covering India-related political, economic, and military developments",
+    "conflict_relevance": "Includes a brief item on Benjamin Netanyahu's address to the US Congress and disputed claims concerning Israel's war in Gaza.",
+    "reason": "The text is a compilation of largely unrelated snippets, most of which concern India, investment, and military exercises. The Gaza-related content is meaningful but limited to a short embedded item pointing readers to another report, so it is relevant to broader discourse analysis but not core conflict coverage.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "e9f05829a40b5a7d451c94143a25a08deeb5fd222e766f843707cddb745734e9",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "8ea3214ef89cf24dc849862d629dc4af94b740b4b74a62cb22916a40485b1bfc",
+    "raw_response_text_sha256": "4b523d9185435e5dbc520008858ecef4b9c6de67742b5d424bbc798888f2770e"
+  },
+  "api_metadata": {
+    "id": "resp_0b75bcf740667817006aaa3d1748a087d1acc5adb8d10de1c9",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789541655.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1475,
+      "input_tokens_details": {
+        "cache_write_tokens": 1472,
+        "cached_tokens": 0
+      },
+      "output_tokens": 379,
+      "output_tokens_details": {
+        "reasoning_tokens": 209
+      },
+      "total_tokens": 1854
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.96,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Mixed international news roundup, primarily covering India-related political, economic, and military developments\",\n  \"conflict_relevance\": \"Includes a brief item on Benjamin Netanyahu's address to the US Congress and disputed claims concerning Israel's war in Gaza.\",\n  \"reason\": \"The text is a compilation of largely unrelated snippets, most of which concern India, investment, and military exercises. The Gaza-related content is meaningful but limited to a short embedded item pointing readers to another report, so it is relevant to broader discourse analysis but not core conflict coverage.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T06:54:20Z",
+  "duration_seconds": 5.258,
+  "error": null
+}

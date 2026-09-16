@@ -1,0 +1,65 @@
+{
+  "article_id": "114312713",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_09/us/114312713.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_09/us/114312713.json"
+  },
+  "manifest_row": {
+    "article_id": "114312713",
+    "group": "global_north_2024_09",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2024_09/us/114312713.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.91,
+    "gaza_role": "substantial",
+    "main_topic": "Israel-Hezbollah tensions and the risk of a wider war along the Israel-Lebanon border",
+    "conflict_relevance": "The article focuses primarily on Israel's northern front and possible military escalation with Hezbollah, but repeatedly links this conflict to the Israel-Hamas war in Gaza, Gaza cease-fire negotiations, hostages, Palestinian casualties, and wider regional tensions.",
+    "reason": "Gaza is a substantial contextual and causal component of the article, but the main subject is the Israel-Lebanon confrontation rather than Gaza or Israel-Palestine directly.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "f7ee64b71728db84d23b01a7b8b51576594802bf5a42c3e75e46362cd18c4d0e",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "ed300db67a7ba7ad421626ea4c26b63f71112b79c7fe9579657248714cdd978a",
+    "raw_response_text_sha256": "caaf52eaefafa58e85feef75261e4cd0f43c1f0a0e2e05368c8c1d11fdee62f6"
+  },
+  "api_metadata": {
+    "id": "resp_0004b379962c927d006aaa1732037887d293b0e7e8099afdf8",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789531954.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1791,
+      "input_tokens_details": {
+        "cache_write_tokens": 1788,
+        "cached_tokens": 0
+      },
+      "output_tokens": 326,
+      "output_tokens_details": {
+        "reasoning_tokens": 150
+      },
+      "total_tokens": 2117
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.91,\n  \"gaza_role\": \"substantial\",\n  \"main_topic\": \"Israel-Hezbollah tensions and the risk of a wider war along the Israel-Lebanon border\",\n  \"conflict_relevance\": \"The article focuses primarily on Israel's northern front and possible military escalation with Hezbollah, but repeatedly links this conflict to the Israel-Hamas war in Gaza, Gaza cease-fire negotiations, hostages, Palestinian casualties, and wider regional tensions.\",\n  \"reason\": \"Gaza is a substantial contextual and causal component of the article, but the main subject is the Israel-Lebanon confrontation rather than Gaza or Israel-Palestine directly.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T04:12:39Z",
+  "duration_seconds": 5.795,
+  "error": null
+}

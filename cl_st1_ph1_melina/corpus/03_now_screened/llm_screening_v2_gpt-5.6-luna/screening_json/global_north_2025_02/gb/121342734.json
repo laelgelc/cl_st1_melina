@@ -1,0 +1,65 @@
+{
+  "article_id": "121342734",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_02/gb/121342734.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_02/gb/121342734.json"
+  },
+  "manifest_row": {
+    "article_id": "121342734",
+    "group": "global_north_2025_02",
+    "country_code": "gb",
+    "filepath": "corpus/02_now_organised/global_north_2025_02/gb/121342734.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "background",
+    "main_topic": "US-Russia negotiations and territorial concessions in the Ukraine war",
+    "conflict_relevance": "The main article is about Ukraine, but it includes a substantive unrelated item about Netanyahu's support for Trump's proposal to remove Palestinians from Gaza, as well as a brief mention of Palestine Action protests at the BBC.",
+    "reason": "The Gaza and Palestine-related material is meaningful but peripheral to the article's main focus and appears as unrelated embedded news content.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "813e7b10621cf78a1fa722057230a43bc15ae54b71853b0738f63419dd09999a",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "2329e26c147e1a646174942db27b8661a9e3716e403a3f331648cd308ab82358",
+    "raw_response_text_sha256": "8c83ffe94aa4328ba723ba4ee9c40260bef0930ea854dad8d4eb116fef7097e4"
+  },
+  "api_metadata": {
+    "id": "resp_0d00491793246ac8006aaa22fbc39c87d296875610a81745da",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789534971.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2613,
+      "input_tokens_details": {
+        "cache_write_tokens": 2610,
+        "cached_tokens": 0
+      },
+      "output_tokens": 286,
+      "output_tokens_details": {
+        "reasoning_tokens": 134
+      },
+      "total_tokens": 2899
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"US-Russia negotiations and territorial concessions in the Ukraine war\",\n  \"conflict_relevance\": \"The main article is about Ukraine, but it includes a substantive unrelated item about Netanyahu's support for Trump's proposal to remove Palestinians from Gaza, as well as a brief mention of Palestine Action protests at the BBC.\",\n  \"reason\": \"The Gaza and Palestine-related material is meaningful but peripheral to the article's main focus and appears as unrelated embedded news content.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T05:02:55Z",
+  "duration_seconds": 3.495,
+  "error": null
+}

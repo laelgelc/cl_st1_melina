@@ -1,0 +1,65 @@
+{
+  "article_id": "103020677",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_10/gb/103020677.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_10/gb/103020677.json"
+  },
+  "manifest_row": {
+    "article_id": "103020677",
+    "group": "global_north_2023_10",
+    "country_code": "gb",
+    "filepath": "corpus/02_now_organised/global_north_2023_10/gb/103020677.txt"
+  },
+  "screening": {
+    "category": "CORE",
+    "confidence": 0.99,
+    "gaza_role": "central",
+    "main_topic": "Opinion commentary on Israeli and Palestinian children, Hamas's October 7 attack, Israel's ground offensive in Gaza, and the broader Israel-Palestine conflict",
+    "conflict_relevance": "The main article directly addresses the Israel-Hamas war, civilian children, kidnappings and hostages, Israeli military action in Gaza, Palestinian suffering, historical context, and prospects for peace.",
+    "reason": "Gaza and the Israel-Palestine conflict are the central subject of the lead article. A separate sports article about Bobby Charlton is appended, creating a multi-article issue, but it does not alter the classification of the main article.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": true
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "fe63d34843ff3b5d5724fbd92d3f95e0e9ec85174f666ac25bcc2fef967cdbc1",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "4f7508b86061936eef1c1fe97b4bcca9ce8ff261ef5330b3fe322f3858895033",
+    "raw_response_text_sha256": "97c4530d450b547cd5f35ec3430c3bfa765addfd89e048e8bf5cb0c1aba5a300"
+  },
+  "api_metadata": {
+    "id": "resp_0669ae29ce189bf3006aa9f7d2db2887d2914f7ef49ba6c43b",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789523923.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1412,
+      "input_tokens_details": {
+        "cache_write_tokens": 1409,
+        "cached_tokens": 0
+      },
+      "output_tokens": 246,
+      "output_tokens_details": {
+        "reasoning_tokens": 55
+      },
+      "total_tokens": 1658
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"CORE\",\n  \"confidence\": 0.99,\n  \"gaza_role\": \"central\",\n  \"main_topic\": \"Opinion commentary on Israeli and Palestinian children, Hamas's October 7 attack, Israel's ground offensive in Gaza, and the broader Israel-Palestine conflict\",\n  \"conflict_relevance\": \"The main article directly addresses the Israel-Hamas war, civilian children, kidnappings and hostages, Israeli military action in Gaza, Palestinian suffering, historical context, and prospects for peace.\",\n  \"reason\": \"Gaza and the Israel-Palestine conflict are the central subject of the lead article. A separate sports article about Bobby Charlton is appended, creating a multi-article issue, but it does not alter the classification of the main article.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": true\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T01:58:47Z",
+  "duration_seconds": 5.153,
+  "error": null
+}

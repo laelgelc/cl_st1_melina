@@ -1,0 +1,65 @@
+{
+  "article_id": "118126403",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_11/sg/118126403.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_11/sg/118126403.json"
+  },
+  "manifest_row": {
+    "article_id": "118126403",
+    "group": "global_north_2024_11",
+    "country_code": "sg",
+    "filepath": "corpus/02_now_organised/global_north_2024_11/sg/118126403.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.95,
+    "gaza_role": "background",
+    "main_topic": "A roundup of news photographs depicting international events and scenes",
+    "conflict_relevance": "Includes a substantive photograph caption about displaced Palestinians carrying water near Deir el-Balah amid the Israel-Hamas war, as well as captions about Israeli strikes on Lebanon, but the item is primarily an unrelated multi-event photo roundup.",
+    "reason": "The Gaza-related caption provides meaningful conflict discourse, but it is one of several unrelated image captions and is not the central focus of the item.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "86fe4f1a79d5b165da3696d3f13f4db09ad41e9a846ffcf22a6c5e9516991d38",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "d384d40a3b51d4f975d3284d6b6a93f31876cdf79c3b3daeefb48dccc044f696",
+    "raw_response_text_sha256": "c9e10f062fed33a2557de90904c5e62aa44118dc52e89cd2be9eb4bd2657068e"
+  },
+  "api_metadata": {
+    "id": "resp_07f4aaa161f1ebdd006aaa1bbd6a6c87d2b89ac74b35353be9",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789533117.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 954,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 265,
+      "output_tokens_details": {
+        "reasoning_tokens": 106
+      },
+      "total_tokens": 1219
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.95,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"A roundup of news photographs depicting international events and scenes\",\n  \"conflict_relevance\": \"Includes a substantive photograph caption about displaced Palestinians carrying water near Deir el-Balah amid the Israel-Hamas war, as well as captions about Israeli strikes on Lebanon, but the item is primarily an unrelated multi-event photo roundup.\",\n  \"reason\": \"The Gaza-related caption provides meaningful conflict discourse, but it is one of several unrelated image captions and is not the central focus of the item.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T04:32:00Z",
+  "duration_seconds": 3.594,
+  "error": null
+}

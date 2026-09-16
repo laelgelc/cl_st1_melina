@@ -1,0 +1,65 @@
+{
+  "article_id": "110817768",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_south_2024_07/za/110817768.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_south_2024_07/za/110817768.json"
+  },
+  "manifest_row": {
+    "article_id": "110817768",
+    "group": "global_south_2024_07",
+    "country_code": "za",
+    "filepath": "corpus/02_now_organised/global_south_2024_07/za/110817768.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "passing",
+    "main_topic": "A global news-photograph roundup covering events, people, and scenes from 18 July 2024",
+    "conflict_relevance": "The roundup includes one substantive photograph and caption about an Israeli air strike in central Gaza, Palestinian deaths, mourning, and casualty figures, but Gaza is not the article's main subject.",
+    "reason": "This is a multi-item photo gallery dominated by unrelated international news, culture, sport, and social events. Its Gaza entry provides meaningful conflict-related discourse, so it is not excluded, but the conflict is peripheral to the article as a whole.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "a0c9f1587221252cbabf9b57e740afa9d1545de78a4f13b1b69868b57daaa399",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "c5d7b61ba14937122e5606984e28c4c0ae6f68b3e08b5cea961a0118493a2034",
+    "raw_response_text_sha256": "45d76e6915abcb81f88c6a5134a57eb42a0dec4e67d334d172fc80d4deeeda78"
+  },
+  "api_metadata": {
+    "id": "resp_0533cd98af797e07006aaa3dcef80c87d19445abf2f53161a1",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789541839.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2500,
+      "input_tokens_details": {
+        "cache_write_tokens": 2497,
+        "cached_tokens": 0
+      },
+      "output_tokens": 278,
+      "output_tokens_details": {
+        "reasoning_tokens": 97
+      },
+      "total_tokens": 2778
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"A global news-photograph roundup covering events, people, and scenes from 18 July 2024\",\n  \"conflict_relevance\": \"The roundup includes one substantive photograph and caption about an Israeli air strike in central Gaza, Palestinian deaths, mourning, and casualty figures, but Gaza is not the article's main subject.\",\n  \"reason\": \"This is a multi-item photo gallery dominated by unrelated international news, culture, sport, and social events. Its Gaza entry provides meaningful conflict-related discourse, so it is not excluded, but the conflict is peripheral to the article as a whole.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T06:57:21Z",
+  "duration_seconds": 2.661,
+  "error": null
+}

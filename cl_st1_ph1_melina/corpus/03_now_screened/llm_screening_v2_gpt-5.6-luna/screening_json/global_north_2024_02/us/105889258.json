@@ -1,0 +1,65 @@
+{
+  "article_id": "105889258",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_02/us/105889258.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_02/us/105889258.json"
+  },
+  "manifest_row": {
+    "article_id": "105889258",
+    "group": "global_north_2024_02",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2024_02/us/105889258.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.97,
+    "gaza_role": "background",
+    "main_topic": "Senegalese political crisis, postponed elections, and restrictions on protests",
+    "conflict_relevance": "The main article is about Senegal, but an embedded latest-stories item substantively discusses a Dutch court ruling concerning F-35 fighter parts supplied to Israel and potential violations of international humanitarian law in Gaza.",
+    "reason": "The Gaza-related content is confined to an unrelated embedded news item rather than the main article, but it contains meaningful conflict-related discourse about Israel, Gaza, military equipment, and international humanitarian law.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "d8237395e6e6eef0f3a216e61714aa6bef53c9c7992927e699a29aa3345dedae",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "e5ac844ed83358a36c8cfe4141c55b308cc5c2927ecbb1495e0629cbfc4998d5",
+    "raw_response_text_sha256": "580f05adcd6f2831b4169d75bdb5df4f93ed3905352b62b170269df60933cbe7"
+  },
+  "api_metadata": {
+    "id": "resp_049f048ed44bcf3d006aaa0727973487d286909f39a5d9ad5a",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789527847.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1835,
+      "input_tokens_details": {
+        "cache_write_tokens": 1832,
+        "cached_tokens": 0
+      },
+      "output_tokens": 274,
+      "output_tokens_details": {
+        "reasoning_tokens": 107
+      },
+      "total_tokens": 2109
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.97,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Senegalese political crisis, postponed elections, and restrictions on protests\",\n  \"conflict_relevance\": \"The main article is about Senegal, but an embedded latest-stories item substantively discusses a Dutch court ruling concerning F-35 fighter parts supplied to Israel and potential violations of international humanitarian law in Gaza.\",\n  \"reason\": \"The Gaza-related content is confined to an unrelated embedded news item rather than the main article, but it contains meaningful conflict-related discourse about Israel, Gaza, military equipment, and international humanitarian law.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:04:11Z",
+  "duration_seconds": 3.89,
+  "error": null
+}

@@ -1,0 +1,65 @@
+{
+  "article_id": "104026725",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_12/ca/104026725.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_12/ca/104026725.json"
+  },
+  "manifest_row": {
+    "article_id": "104026725",
+    "group": "global_north_2023_12",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2023_12/ca/104026725.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.96,
+    "gaza_role": "background",
+    "main_topic": "Call for stories about living on cruise ships combined with a collection of unrelated news snippets",
+    "conflict_relevance": "The text includes substantive but embedded reports about Israeli military operations in Gaza, Palestinian casualties, and terrorism concerns linked to the Israel-Hamas war.",
+    "reason": "The apparent main item concerns cruise-ship living, while Gaza-related material appears as separate news snippets rather than as the central subject. These snippets are meaningful enough for peripheral discourse analysis but not for the core conflict corpus.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "6475085e5658088de953af7e959cba520b00a9ad701ff2adcf1df000ed2b73b2",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "e763288dc2de0a10b7ed6f582cd7d120bc756310fd7dbba78fe70e7d91e9d946",
+    "raw_response_text_sha256": "cc9c0c7c9f7ee6c7e131c4b2b8ead20d59563645efa080efa5235fded02143ec"
+  },
+  "api_metadata": {
+    "id": "resp_08767e88654f210d006aaa0058724087d29bfcd318e0ffa392",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789526104.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1712,
+      "input_tokens_details": {
+        "cache_write_tokens": 1709,
+        "cached_tokens": 0
+      },
+      "output_tokens": 335,
+      "output_tokens_details": {
+        "reasoning_tokens": 172
+      },
+      "total_tokens": 2047
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.96,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Call for stories about living on cruise ships combined with a collection of unrelated news snippets\",\n  \"conflict_relevance\": \"The text includes substantive but embedded reports about Israeli military operations in Gaza, Palestinian casualties, and terrorism concerns linked to the Israel-Hamas war.\",\n  \"reason\": \"The apparent main item concerns cruise-ship living, while Gaza-related material appears as separate news snippets rather than as the central subject. These snippets are meaningful enough for peripheral discourse analysis but not for the core conflict corpus.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:35:09Z",
+  "duration_seconds": 4.999,
+  "error": null
+}

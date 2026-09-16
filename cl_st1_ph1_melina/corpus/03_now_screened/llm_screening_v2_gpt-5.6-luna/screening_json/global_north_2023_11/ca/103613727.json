@@ -1,0 +1,65 @@
+{
+  "article_id": "103613727",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_11/ca/103613727.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_11/ca/103613727.json"
+  },
+  "manifest_row": {
+    "article_id": "103613727",
+    "group": "global_north_2023_11",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2023_11/ca/103613727.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "background",
+    "main_topic": "A potentially fatal respiratory illness affecting dogs in several U.S. states",
+    "conflict_relevance": "The text includes a separate news snippet about Israel releasing video of an alleged Hamas tunnel beneath Shifa Hospital in Gaza, but this is not related to the main article.",
+    "reason": "The primary article concerns canine illness and veterinary health. Gaza appears in a substantive but unrelated embedded news item, making the text peripheral rather than core to the conflict corpus.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "b30bc425cf73ab4140808db48516ab5451361d140fc28741fae01db0e0d51050",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "0ad3db95798e7f2d621a2c50e06f88011099a72964e47762c54a03b4f9919695",
+    "raw_response_text_sha256": "5c273e0fff6b914dbd9e80062282be3fd2fa6a4ee7791584d5206874424ebe3e"
+  },
+  "api_metadata": {
+    "id": "resp_01824fc952ef1c1c006aa9fbfa787487d2a9768d089c86604f",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789524986.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1538,
+      "input_tokens_details": {
+        "cache_write_tokens": 1535,
+        "cached_tokens": 0
+      },
+      "output_tokens": 266,
+      "output_tokens_details": {
+        "reasoning_tokens": 111
+      },
+      "total_tokens": 1804
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"A potentially fatal respiratory illness affecting dogs in several U.S. states\",\n  \"conflict_relevance\": \"The text includes a separate news snippet about Israel releasing video of an alleged Hamas tunnel beneath Shifa Hospital in Gaza, but this is not related to the main article.\",\n  \"reason\": \"The primary article concerns canine illness and veterinary health. Gaza appears in a substantive but unrelated embedded news item, making the text peripheral rather than core to the conflict corpus.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:16:29Z",
+  "duration_seconds": 3.333,
+  "error": null
+}

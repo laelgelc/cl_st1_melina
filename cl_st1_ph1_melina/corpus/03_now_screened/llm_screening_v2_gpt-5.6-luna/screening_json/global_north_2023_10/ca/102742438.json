@@ -1,0 +1,65 @@
+{
+  "article_id": "102742438",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_10/ca/102742438.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_10/ca/102742438.json"
+  },
+  "manifest_row": {
+    "article_id": "102742438",
+    "group": "global_north_2023_10",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2023_10/ca/102742438.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "gaza_role": "boilerplate_or_unrelated",
+    "main_topic": "BC Ferries staffing shortages, executive salaries, and cancelled sailings",
+    "conflict_relevance": "The article's main subject is British Columbia ferry service. Gaza appears only in unrelated CTVNews.ca Top Stories snippets appended to the article, including brief items about the Gaza hospital blast and hostages.",
+    "reason": "The Gaza-related material is incidental roundup content and is not integrated into the main article's subject or discourse.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "e7bd4e10cb735528f8374f75cbfb08fc61ffeac9a3178505764423006ba8ac41",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "799bdd49fd0e3bba0ea746de86cfbc71b9a9034c0d04cb2365c81d48ef678977",
+    "raw_response_text_sha256": "46e3c47c7cc8f42210fb763a324f980e81a29fe58402cbf9e4aa4ad7a02563a0"
+  },
+  "api_metadata": {
+    "id": "resp_0eef0c004be7cbb9006aa9f664de1c87d2a97e648249bab0ac",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789523556.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1662,
+      "input_tokens_details": {
+        "cache_write_tokens": 1659,
+        "cached_tokens": 0
+      },
+      "output_tokens": 369,
+      "output_tokens_details": {
+        "reasoning_tokens": 215
+      },
+      "total_tokens": 2031
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"gaza_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"BC Ferries staffing shortages, executive salaries, and cancelled sailings\",\n  \"conflict_relevance\": \"The article's main subject is British Columbia ferry service. Gaza appears only in unrelated CTVNews.ca Top Stories snippets appended to the article, including brief items about the Gaza hospital blast and hostages.\",\n  \"reason\": \"The Gaza-related material is incidental roundup content and is not integrated into the main article's subject or discourse.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T01:52:41Z",
+  "duration_seconds": 5.007,
+  "error": null
+}

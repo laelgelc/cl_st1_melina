@@ -1,0 +1,65 @@
+{
+  "article_id": "200005949",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_11/us/200005949.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_11/us/200005949.json"
+  },
+  "manifest_row": {
+    "article_id": "200005949",
+    "group": "global_north_2023_11",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2023_11/us/200005949.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.97,
+    "gaza_role": "substantial",
+    "main_topic": "Rosalynn Carter's death and humanitarian legacy",
+    "conflict_relevance": "The text includes substantial embedded coverage of Israel-Hamas hostage negotiations, conditions at Al-Shifa hospital, Gaza evacuations, international law, and U.S. public opinion about the war, but these are not the main topic of the headline article.",
+    "reason": "The primary article concerns Rosalynn Carter, while the conflict-related material appears as a separate news snippet within a multi-article compilation. It is meaningful for broader discourse analysis but should not be treated as core conflict coverage.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "573d4a3dc826cfd0a936b67adfed196795bc23398a57134e95b0779c9e3bfb53",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "43e7a72e7b0d30eb57534a6f53e248432c4e9dc2255af229a100be1f382ac7e3",
+    "raw_response_text_sha256": "feb7f586b47dccb011b3cb1e5e7f036d0404f8307b008a128eb9a0f5e7621849"
+  },
+  "api_metadata": {
+    "id": "resp_003900a93efbe987006aa9ff2fd85c87d298d29123220655eb",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789525807.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1627,
+      "input_tokens_details": {
+        "cache_write_tokens": 1624,
+        "cached_tokens": 0
+      },
+      "output_tokens": 373,
+      "output_tokens_details": {
+        "reasoning_tokens": 195
+      },
+      "total_tokens": 2000
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.97,\n  \"gaza_role\": \"substantial\",\n  \"main_topic\": \"Rosalynn Carter's death and humanitarian legacy\",\n  \"conflict_relevance\": \"The text includes substantial embedded coverage of Israel-Hamas hostage negotiations, conditions at Al-Shifa hospital, Gaza evacuations, international law, and U.S. public opinion about the war, but these are not the main topic of the headline article.\",\n  \"reason\": \"The primary article concerns Rosalynn Carter, while the conflict-related material appears as a separate news snippet within a multi-article compilation. It is meaningful for broader discourse analysis but should not be treated as core conflict coverage.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:30:12Z",
+  "duration_seconds": 4.902,
+  "error": null
+}

@@ -1,0 +1,65 @@
+{
+  "article_id": "200045702",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_12/us/200045702.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_12/us/200045702.json"
+  },
+  "manifest_row": {
+    "article_id": "200045702",
+    "group": "global_north_2023_12",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2023_12/us/200045702.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.96,
+    "gaza_role": "passing",
+    "main_topic": "Greece-Turkey diplomatic rapprochement and bilateral relations",
+    "conflict_relevance": "The article briefly mentions the Gaza conflict alongside Ukraine as part of a broader regional context, but does not discuss Gaza, Israel-Palestine, or related issues substantively.",
+    "reason": "The main article focuses on Greece and Turkey repairing relations, with only a passing reference to Gaza. The remainder includes unrelated syndicated or embedded snippets.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "6a08a123149212532c8bce0da46bb791be783f80d63565eecec131a7a99919f1",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "087010b2bb69014a46bc567e5b960fb9ecbc27c61ba57b37951e00ef844aa6cb",
+    "raw_response_text_sha256": "b488b4047c4ff37fafd32ddf13d21cf6d6114055983ffe9867e569486d7a04f1"
+  },
+  "api_metadata": {
+    "id": "resp_0052a4af4ef2e818006aaa02c0514487d283e033a96fe39857",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789526720.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2118,
+      "input_tokens_details": {
+        "cache_write_tokens": 2115,
+        "cached_tokens": 0
+      },
+      "output_tokens": 304,
+      "output_tokens_details": {
+        "reasoning_tokens": 155
+      },
+      "total_tokens": 2422
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.96,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Greece-Turkey diplomatic rapprochement and bilateral relations\",\n  \"conflict_relevance\": \"The article briefly mentions the Gaza conflict alongside Ukraine as part of a broader regional context, but does not discuss Gaza, Israel-Palestine, or related issues substantively.\",\n  \"reason\": \"The main article focuses on Greece and Turkey repairing relations, with only a passing reference to Gaza. The remainder includes unrelated syndicated or embedded snippets.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:45:24Z",
+  "duration_seconds": 4.267,
+  "error": null
+}

@@ -1,0 +1,65 @@
+{
+  "article_id": "107913059",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_05/us/107913059.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_05/us/107913059.json"
+  },
+  "manifest_row": {
+    "article_id": "107913059",
+    "group": "global_north_2024_05",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2024_05/us/107913059.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.94,
+    "gaza_role": "passing",
+    "main_topic": "3M employee overpayment deductions and a Minnesota wage settlement",
+    "conflict_relevance": "The article includes a separate brief news item stating that Turkey suspended trade with Israel over its military action in Gaza and humanitarian-aid restrictions.",
+    "reason": "The main article concerns unlawful payroll deductions by 3M, while the Gaza-related content appears as a substantive but isolated item among unrelated snippets.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "d84743c9ab42c29e10c2c82b300d7c1072bb4f42b6af39ed17847845c9f1be86",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "89b9b424134f469e08162bd0be8362c8a5702a6e8876833197dc7451927a0caa",
+    "raw_response_text_sha256": "90dad828cda48c64308a5644d911b3fa59d79e318ace98cd6152ddc0b600581b"
+  },
+  "api_metadata": {
+    "id": "resp_0244322f9327e095006aaa0e82a02887d28b5e204869887d67",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789529730.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1234,
+      "input_tokens_details": {
+        "cache_write_tokens": 1231,
+        "cached_tokens": 0
+      },
+      "output_tokens": 302,
+      "output_tokens_details": {
+        "reasoning_tokens": 160
+      },
+      "total_tokens": 1536
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.94,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"3M employee overpayment deductions and a Minnesota wage settlement\",\n  \"conflict_relevance\": \"The article includes a separate brief news item stating that Turkey suspended trade with Israel over its military action in Gaza and humanitarian-aid restrictions.\",\n  \"reason\": \"The main article concerns unlawful payroll deductions by 3M, while the Gaza-related content appears as a substantive but isolated item among unrelated snippets.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:35:34Z",
+  "duration_seconds": 4.129,
+  "error": null
+}

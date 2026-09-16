@@ -1,0 +1,65 @@
+{
+  "article_id": "103020153",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_10/ca/103020153.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_10/ca/103020153.json"
+  },
+  "manifest_row": {
+    "article_id": "103020153",
+    "group": "global_north_2023_10",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2023_10/ca/103020153.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "background",
+    "main_topic": "Police investigation into a hit-and-run collision in Nova Scotia",
+    "conflict_relevance": "The main article is unrelated to Gaza, but an embedded CTVNews.ca top-stories roundup contains substantive snippets about humanitarian aid entering Gaza and a Canadian hostage held by Hamas.",
+    "reason": "The Gaza-related material is meaningful but appears only in an unrelated collection of headline snippets rather than in the main article.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "4794f1e673ac425312be36c96051f8aae0d8ad437854afefff0fe6a18c3b6bca",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "6cd62f8b8edd64db87520db079888b1b35c8d469326a35364de72d337d091747",
+    "raw_response_text_sha256": "3f3d82bff63a2cc31ba9564503d59d084db65ce56e2ebee5138d3c06e548c945"
+  },
+  "api_metadata": {
+    "id": "resp_05247d1b99e15636006aa9f6bd621087d280fa0fdc7439269d",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789523645.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1655,
+      "input_tokens_details": {
+        "cache_write_tokens": 1652,
+        "cached_tokens": 0
+      },
+      "output_tokens": 266,
+      "output_tokens_details": {
+        "reasoning_tokens": 121
+      },
+      "total_tokens": 1921
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Police investigation into a hit-and-run collision in Nova Scotia\",\n  \"conflict_relevance\": \"The main article is unrelated to Gaza, but an embedded CTVNews.ca top-stories roundup contains substantive snippets about humanitarian aid entering Gaza and a Canadian hostage held by Hamas.\",\n  \"reason\": \"The Gaza-related material is meaningful but appears only in an unrelated collection of headline snippets rather than in the main article.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T01:54:08Z",
+  "duration_seconds": 3.209,
+  "error": null
+}

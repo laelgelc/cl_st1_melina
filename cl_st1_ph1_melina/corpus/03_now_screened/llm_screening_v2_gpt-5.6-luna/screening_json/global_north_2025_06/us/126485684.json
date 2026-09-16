@@ -1,0 +1,65 @@
+{
+  "article_id": "126485684",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_06/us/126485684.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_06/us/126485684.json"
+  },
+  "manifest_row": {
+    "article_id": "126485684",
+    "group": "global_north_2025_06",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2025_06/us/126485684.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.97,
+    "gaza_role": "passing",
+    "main_topic": "U.S. Senate debate over President Trump's tax and spending bill",
+    "conflict_relevance": "The main article is about U.S. domestic legislation and contains no substantive discussion of Gaza. A separate embedded news snippet mentions planned Trump-Netanyahu talks concerning a Gaza ceasefire and hostage agreement.",
+    "reason": "The Gaza-related material appears as a meaningful but unrelated item in an embedded collection of news snippets, so the article is peripheral rather than core.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "e079051fb36fc4a14beed050a34166da9ce61b078a1441bdfece175a6c9e0ec0",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "df2b1384f1aeee2585f02f15ff04b31e1c3415268eeca857b1d291b103afb62d",
+    "raw_response_text_sha256": "a834ca355f782673cf558989ba54d49f49799f445824e4e21c29b9dbd33950de"
+  },
+  "api_metadata": {
+    "id": "resp_02e2686bcac93919006aaa31ecebb487d1a524dda0e7d24145",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789538796.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2094,
+      "input_tokens_details": {
+        "cache_write_tokens": 2091,
+        "cached_tokens": 0
+      },
+      "output_tokens": 215,
+      "output_tokens_details": {
+        "reasoning_tokens": 61
+      },
+      "total_tokens": 2309
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.97,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"U.S. Senate debate over President Trump's tax and spending bill\",\n  \"conflict_relevance\": \"The main article is about U.S. domestic legislation and contains no substantive discussion of Gaza. A separate embedded news snippet mentions planned Trump-Netanyahu talks concerning a Gaza ceasefire and hostage agreement.\",\n  \"reason\": \"The Gaza-related material appears as a meaningful but unrelated item in an embedded collection of news snippets, so the article is peripheral rather than core.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T06:06:41Z",
+  "duration_seconds": 4.319,
+  "error": null
+}

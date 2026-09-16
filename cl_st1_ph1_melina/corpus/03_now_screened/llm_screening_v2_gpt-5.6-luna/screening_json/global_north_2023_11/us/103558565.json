@@ -1,0 +1,65 @@
+{
+  "article_id": "103558565",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_11/us/103558565.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_11/us/103558565.json"
+  },
+  "manifest_row": {
+    "article_id": "103558565",
+    "group": "global_north_2023_11",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2023_11/us/103558565.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "gaza_role": "passing",
+    "main_topic": "A murder conviction, plea deal, and the victim's family's pursuit of justice",
+    "conflict_relevance": "The article is about a Chicago murder case; Gaza appears only in an unrelated concluding snippet mentioning protesters detained at a transportation center.",
+    "reason": "The Gaza reference is incidental and does not contribute meaningful discourse about the conflict or related issues.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "4915161ddcb240fd5a2dd2aa28f467dddecdf1da5efeb3636db07595479d72a0",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "d0c232d8fa10f7faca5528f2b65f96c77320fcd21d000bdc31ebf354a2916cd5",
+    "raw_response_text_sha256": "f26bec1e7b4fe60ae802c2d25286198d33ec4548d892003d929c051d0380502b"
+  },
+  "api_metadata": {
+    "id": "resp_0360b3eb27ed500a006aa9fea4522c87d2917bd7a10be98019",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789525668.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1727,
+      "input_tokens_details": {
+        "cache_write_tokens": 1724,
+        "cached_tokens": 0
+      },
+      "output_tokens": 196,
+      "output_tokens_details": {
+        "reasoning_tokens": 63
+      },
+      "total_tokens": 1923
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"A murder conviction, plea deal, and the victim's family's pursuit of justice\",\n  \"conflict_relevance\": \"The article is about a Chicago murder case; Gaza appears only in an unrelated concluding snippet mentioning protesters detained at a transportation center.\",\n  \"reason\": \"The Gaza reference is incidental and does not contribute meaningful discourse about the conflict or related issues.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:27:51Z",
+  "duration_seconds": 3.123,
+  "error": null
+}

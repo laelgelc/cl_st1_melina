@@ -1,0 +1,65 @@
+{
+  "article_id": "102841327",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_10/us/102841327.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_10/us/102841327.json"
+  },
+  "manifest_row": {
+    "article_id": "102841327",
+    "group": "global_north_2023_10",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2023_10/us/102841327.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.96,
+    "gaza_role": "passing",
+    "main_topic": "Iranian journalists prosecuted for reporting on Mahsa Amini's death and the 2022 protests",
+    "conflict_relevance": "The article is primarily about press freedom and repression in Iran, but includes a meaningful sentence about Israeli airstrikes in Gaza and Syria amid the Israel-Hamas war.",
+    "reason": "Gaza is not the article's central subject and appears in an embedded or tangential conflict-related sentence, making the article useful only for broader or peripheral discourse analysis.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "dff0d1114ac1882ea8b7e249fd8122d0446776056e9555c4a365c6a93597af82",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "884316d6e3fea5d94095c3a36a1d1ffedc90dcfbe196fbfc3e18fe4f9e384afd",
+    "raw_response_text_sha256": "6e6d7e5200a8d6303057193b10f0dea3c70c7bd1e314c09f046027d2965a3430"
+  },
+  "api_metadata": {
+    "id": "resp_0ba001fa875f1042006aa9f9676bd887d29e1c4935ef0b9671",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789524327.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1328,
+      "input_tokens_details": {
+        "cache_write_tokens": 1325,
+        "cached_tokens": 0
+      },
+      "output_tokens": 272,
+      "output_tokens_details": {
+        "reasoning_tokens": 111
+      },
+      "total_tokens": 1600
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.96,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Iranian journalists prosecuted for reporting on Mahsa Amini's death and the 2022 protests\",\n  \"conflict_relevance\": \"The article is primarily about press freedom and repression in Iran, but includes a meaningful sentence about Israeli airstrikes in Gaza and Syria amid the Israel-Hamas war.\",\n  \"reason\": \"Gaza is not the article's central subject and appears in an embedded or tangential conflict-related sentence, making the article useful only for broader or peripheral discourse analysis.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:05:30Z",
+  "duration_seconds": 3.408,
+  "error": null
+}

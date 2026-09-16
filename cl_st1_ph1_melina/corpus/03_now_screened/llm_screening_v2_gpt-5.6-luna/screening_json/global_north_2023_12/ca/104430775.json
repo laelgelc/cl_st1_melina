@@ -1,0 +1,65 @@
+{
+  "article_id": "104430775",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_12/ca/104430775.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_12/ca/104430775.json"
+  },
+  "manifest_row": {
+    "article_id": "104430775",
+    "group": "global_north_2023_12",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2023_12/ca/104430775.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "passing",
+    "main_topic": "Trademark litigation and lineup disputes involving the rock band the Guess Who",
+    "conflict_relevance": "The article contains an embedded news snippet about a delayed UN Security Council vote concerning humanitarian aid monitoring for Gaza.",
+    "reason": "The main article is unrelated to the Israel-Palestine conflict, but it includes one meaningful sentence about UN diplomacy and aid to Gaza in a collection of additional news items.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "d28f88ff10f66d8dfe904171b1f3d3480b59422c041e1a17f58e1ba8f2e3e001",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "03f108ab7ec5ae29a60e074dbc7328947d9d981367337a22509330e185636a37",
+    "raw_response_text_sha256": "1aa88bc2655a4006e7a207b699ad58ecf240c91e3bbc2e39a4ac61f55cf6b8ad"
+  },
+  "api_metadata": {
+    "id": "resp_0bff5de24cc832ea006aaa0088c0a087d29290d8c7f4845712",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789526152.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2641,
+      "input_tokens_details": {
+        "cache_write_tokens": 2638,
+        "cached_tokens": 0
+      },
+      "output_tokens": 253,
+      "output_tokens_details": {
+        "reasoning_tokens": 109
+      },
+      "total_tokens": 2894
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Trademark litigation and lineup disputes involving the rock band the Guess Who\",\n  \"conflict_relevance\": \"The article contains an embedded news snippet about a delayed UN Security Council vote concerning humanitarian aid monitoring for Gaza.\",\n  \"reason\": \"The main article is unrelated to the Israel-Palestine conflict, but it includes one meaningful sentence about UN diplomacy and aid to Gaza in a collection of additional news items.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:35:56Z",
+  "duration_seconds": 4.107,
+  "error": null
+}

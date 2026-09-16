@@ -1,0 +1,65 @@
+{
+  "article_id": "121466037",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_02/ca/121466037.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_02/ca/121466037.json"
+  },
+  "manifest_row": {
+    "article_id": "121466037",
+    "group": "global_north_2025_02",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2025_02/ca/121466037.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.86,
+    "gaza_role": "background",
+    "main_topic": "Backlash to Donald Trump's self-styled 'king' social media post and broader concerns about presidential power",
+    "conflict_relevance": "The article includes a substantial but unrelated news paragraph about the Gaza ceasefire, the return of four Israeli hostages' remains, Hamas, and Netanyahu's response.",
+    "reason": "The main article concerns Trump and U.S. political reactions, while the Gaza-related material appears as an embedded, separate news item. That item contains meaningful conflict discourse but is not integrated into the article's main topic.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "2a6981d9f0f71049c46e12897424889a1882dd8334833b99adb4ddb08319f512",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "d46ed3ee072c6e2178b181d8b1cecaa72cf7ee0111636062d0b326e42814ff77",
+    "raw_response_text_sha256": "f290edbb4406498d67d2f300ad06aab4c4af2c7be4b1042e30ee806344ee1c40"
+  },
+  "api_metadata": {
+    "id": "resp_0e787d936935babd006aaa225a57bc87d286b653052f2f8f14",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789534810.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1690,
+      "input_tokens_details": {
+        "cache_write_tokens": 1687,
+        "cached_tokens": 0
+      },
+      "output_tokens": 399,
+      "output_tokens_details": {
+        "reasoning_tokens": 228
+      },
+      "total_tokens": 2089
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.86,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Backlash to Donald Trump's self-styled 'king' social media post and broader concerns about presidential power\",\n  \"conflict_relevance\": \"The article includes a substantial but unrelated news paragraph about the Gaza ceasefire, the return of four Israeli hostages' remains, Hamas, and Netanyahu's response.\",\n  \"reason\": \"The main article concerns Trump and U.S. political reactions, while the Gaza-related material appears as an embedded, separate news item. That item contains meaningful conflict discourse but is not integrated into the article's main topic.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T05:00:16Z",
+  "duration_seconds": 5.992,
+  "error": null
+}

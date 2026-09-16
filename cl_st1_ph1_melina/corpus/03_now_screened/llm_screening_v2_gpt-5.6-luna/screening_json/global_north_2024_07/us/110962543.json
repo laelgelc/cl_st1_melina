@@ -1,0 +1,65 @@
+{
+  "article_id": "110962543",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_07/us/110962543.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_07/us/110962543.json"
+  },
+  "manifest_row": {
+    "article_id": "110962543",
+    "group": "global_north_2024_07",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2024_07/us/110962543.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "background",
+    "main_topic": "True-crime documentaries and streaming recommendations",
+    "conflict_relevance": "The article includes a meaningful but unrelated reference to Palestinian, Israeli, and American efforts to revitalize the West Bank and Gaza amid the war.",
+    "reason": "The main article is a list of true-crime documentary recommendations, but it contains a substantive two-sentence passage concerning planning in the West Bank and Gaza and the urgency created by the war. This is relevant to broader conflict discourse but not central to the article.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "3482c6365e50757f619a03804ccda97fb761d71aee6de7d3df7a4f4fb3f287d4",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "4c502e046cacdf3f339a149563254f70e32123e411759673f1364d0e63539417",
+    "raw_response_text_sha256": "7ba219bda0d13fecf20f62b476bf18447cb5d89864917a4c00f699bdcb2dfbd0"
+  },
+  "api_metadata": {
+    "id": "resp_0598b0739c6fd4af006aaa134605ec87d2945259dde2c12d3a",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789530950.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 5512,
+      "input_tokens_details": {
+        "cache_write_tokens": 5509,
+        "cached_tokens": 0
+      },
+      "output_tokens": 310,
+      "output_tokens_details": {
+        "reasoning_tokens": 147
+      },
+      "total_tokens": 5822
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"True-crime documentaries and streaming recommendations\",\n  \"conflict_relevance\": \"The article includes a meaningful but unrelated reference to Palestinian, Israeli, and American efforts to revitalize the West Bank and Gaza amid the war.\",\n  \"reason\": \"The main article is a list of true-crime documentary recommendations, but it contains a substantive two-sentence passage concerning planning in the West Bank and Gaza and the urgency created by the war. This is relevant to broader conflict discourse but not central to the article.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:55:54Z",
+  "duration_seconds": 4.364,
+  "error": null
+}

@@ -1,0 +1,65 @@
+{
+  "article_id": "103237182",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_11/gb/103237182.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_11/gb/103237182.json"
+  },
+  "manifest_row": {
+    "article_id": "103237182",
+    "group": "global_north_2023_11",
+    "country_code": "gb",
+    "filepath": "corpus/02_now_organised/global_north_2023_11/gb/103237182.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "background",
+    "main_topic": "Global financial markets, interest rates, currencies, and commodities",
+    "conflict_relevance": "The article briefly reports Israel's rejection of calls for a Gaza ceasefire and the expected intensification of military operations, in the context of Middle East developments affecting markets.",
+    "reason": "The article is primarily a financial-market report, but it contains a meaningful sentence about the Gaza war, ceasefire calls, Israel, and Hamas. This makes it relevant as peripheral discourse rather than core conflict coverage.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "92a13cbdc8786be3a41801c7d1a1d5a3dfd6288b2b508369c7dedae76e9a2f91",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "285c1fc22dff6f9b603e2263dff31ffef98fcd782924c1974f5432c1d10a1a55",
+    "raw_response_text_sha256": "c125a7ea38c326dfa3e54261836a2bb9d8672f6c19d579a1337e6161dd6219eb"
+  },
+  "api_metadata": {
+    "id": "resp_0d56b51e480742b1006aa9fc57048c87d2a3a876880824719f",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789525079.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1631,
+      "input_tokens_details": {
+        "cache_write_tokens": 1628,
+        "cached_tokens": 0
+      },
+      "output_tokens": 199,
+      "output_tokens_details": {
+        "reasoning_tokens": 37
+      },
+      "total_tokens": 1830
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Global financial markets, interest rates, currencies, and commodities\",\n  \"conflict_relevance\": \"The article briefly reports Israel's rejection of calls for a Gaza ceasefire and the expected intensification of military operations, in the context of Middle East developments affecting markets.\",\n  \"reason\": \"The article is primarily a financial-market report, but it contains a meaningful sentence about the Gaza war, ceasefire calls, Israel, and Hamas. This makes it relevant as peripheral discourse rather than core conflict coverage.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:18:01Z",
+  "duration_seconds": 3.108,
+  "error": null
+}

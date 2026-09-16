@@ -1,0 +1,65 @@
+{
+  "article_id": "115287752",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_10/us/115287752.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_10/us/115287752.json"
+  },
+  "manifest_row": {
+    "article_id": "115287752",
+    "group": "global_north_2024_10",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2024_10/us/115287752.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.94,
+    "gaza_role": "passing",
+    "main_topic": "Evacuation planning for foreign nationals from Lebanon amid the Israel-Hezbollah conflict",
+    "conflict_relevance": "The article focuses on Lebanon and the Israel-Hezbollah escalation, with Gaza appearing only in an incidental photo caption about hostages held by Hamas.",
+    "reason": "Gaza and the Israel-Palestine conflict are not substantive subjects of the article; the sole Gaza reference is a passing caption mention.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "cc58fa21121e879193a4d3e24df65489a686073bc27472c410b4caded1fdfe24",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "dfe1592e98d93ff1f18bf93eb8946c7de80c8da07d02bacbd95fcd70df334bb4",
+    "raw_response_text_sha256": "159ef02a0b3c20d92922742040e01d2e49df7b61b7df8e30586d4aaf3e3cc0da"
+  },
+  "api_metadata": {
+    "id": "resp_07fe1afdd252c8e7006aaa18c827fc87d29e97171582dd90a4",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789532360.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1575,
+      "input_tokens_details": {
+        "cache_write_tokens": 1572,
+        "cached_tokens": 0
+      },
+      "output_tokens": 447,
+      "output_tokens_details": {
+        "reasoning_tokens": 301
+      },
+      "total_tokens": 2022
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.94,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Evacuation planning for foreign nationals from Lebanon amid the Israel-Hezbollah conflict\",\n  \"conflict_relevance\": \"The article focuses on Lebanon and the Israel-Hezbollah escalation, with Gaza appearing only in an incidental photo caption about hostages held by Hamas.\",\n  \"reason\": \"Gaza and the Israel-Palestine conflict are not substantive subjects of the article; the sole Gaza reference is a passing caption mention.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T04:19:24Z",
+  "duration_seconds": 4.119,
+  "error": null
+}

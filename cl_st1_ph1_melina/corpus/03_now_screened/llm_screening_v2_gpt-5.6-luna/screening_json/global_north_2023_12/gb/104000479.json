@@ -1,0 +1,65 @@
+{
+  "article_id": "104000479",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_12/gb/104000479.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_12/gb/104000479.json"
+  },
+  "manifest_row": {
+    "article_id": "104000479",
+    "group": "global_north_2023_12",
+    "country_code": "gb",
+    "filepath": "corpus/02_now_organised/global_north_2023_12/gb/104000479.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "substantial",
+    "main_topic": "Boris Johnson's appearance before the UK COVID-19 Inquiry",
+    "conflict_relevance": "The text includes a substantial embedded news report on Israel's military campaign in Gaza, civilian casualties, displacement, hostages, ceasefire negotiations, humanitarian conditions, and international responses.",
+    "reason": "The apparent main article concerns Boris Johnson and the COVID-19 Inquiry, but the text also contains a lengthy, substantive Gaza war report. Because the Gaza material is embedded alongside unrelated articles rather than being the primary topic, the item is peripheral rather than core.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "f7053c297ff65206c39725e38458243cfeceadfb63f62bf9d90c86ca462985d9",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "908378fcee97ab880e727bc409ee6f4172cf19e0828f5abb27a57649b6e041f8",
+    "raw_response_text_sha256": "8005b9804f662201b65c4951b08b9acefe3adca391a6ac83b56ec2215632506c"
+  },
+  "api_metadata": {
+    "id": "resp_0f644ec9c18006e1006aaa00dc539087d2853a64302efaf85c",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789526236.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 3026,
+      "input_tokens_details": {
+        "cache_write_tokens": 3023,
+        "cached_tokens": 0
+      },
+      "output_tokens": 377,
+      "output_tokens_details": {
+        "reasoning_tokens": 202
+      },
+      "total_tokens": 3403
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"substantial\",\n  \"main_topic\": \"Boris Johnson's appearance before the UK COVID-19 Inquiry\",\n  \"conflict_relevance\": \"The text includes a substantial embedded news report on Israel's military campaign in Gaza, civilian casualties, displacement, hostages, ceasefire negotiations, humanitarian conditions, and international responses.\",\n  \"reason\": \"The apparent main article concerns Boris Johnson and the COVID-19 Inquiry, but the text also contains a lengthy, substantive Gaza war report. Because the Gaza material is embedded alongside unrelated articles rather than being the primary topic, the item is peripheral rather than core.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:37:20Z",
+  "duration_seconds": 4.714,
+  "error": null
+}

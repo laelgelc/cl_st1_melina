@@ -1,0 +1,65 @@
+{
+  "article_id": "121044332",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_south_2025_02/lk/121044332.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_south_2025_02/lk/121044332.json"
+  },
+  "manifest_row": {
+    "article_id": "121044332",
+    "group": "global_south_2025_02",
+    "country_code": "lk",
+    "filepath": "corpus/02_now_organised/global_south_2025_02/lk/121044332.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.94,
+    "gaza_role": "background",
+    "main_topic": "A review of a book about Velupillai Prabhakaran and the LTTE, accompanied by unrelated news snippets",
+    "conflict_relevance": "The main article concerns the Sri Lankan civil war and militant violence, while an embedded news item substantively discusses Donald Trump's proposal to take over Gaza and relocate Palestinians.",
+    "reason": "The headline and apparent primary article focus on Prabhakaran rather than Gaza or Israel/Palestine. However, the text includes a meaningful embedded report on Trump's Gaza proposal and its implications, making it relevant to broader conflict discourse but unsuitable as core Gaza coverage.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "3dc019dfc7d6f518a79f148ece078f335f2a9e29def2db5c8249e17631cf6247",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "f661e716e5fc8d6fd1acf5fe4d7e1b116a90267ef7545b535789a50c72cdeae9",
+    "raw_response_text_sha256": "20fbb0b16c6220ebe2c2e4b8029d8ae199fa30fa30344f8d05e72fc346dfaa70"
+  },
+  "api_metadata": {
+    "id": "resp_04ba66753023b9a5006aaa459e721087d181c0d4e06a928139",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789543838.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1130,
+      "input_tokens_details": {
+        "cache_write_tokens": 1127,
+        "cached_tokens": 0
+      },
+      "output_tokens": 383,
+      "output_tokens_details": {
+        "reasoning_tokens": 200
+      },
+      "total_tokens": 1513
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.94,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"A review of a book about Velupillai Prabhakaran and the LTTE, accompanied by unrelated news snippets\",\n  \"conflict_relevance\": \"The main article concerns the Sri Lankan civil war and militant violence, while an embedded news item substantively discusses Donald Trump's proposal to take over Gaza and relocate Palestinians.\",\n  \"reason\": \"The headline and apparent primary article focus on Prabhakaran rather than Gaza or Israel/Palestine. However, the text includes a meaningful embedded report on Trump's Gaza proposal and its implications, making it relevant to broader conflict discourse but unsuitable as core Gaza coverage.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T07:30:42Z",
+  "duration_seconds": 4.628,
+  "error": null
+}

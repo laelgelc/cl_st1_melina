@@ -1,0 +1,65 @@
+{
+  "article_id": "111167826",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_07/us/111167826.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_07/us/111167826.json"
+  },
+  "manifest_row": {
+    "article_id": "111167826",
+    "group": "global_north_2024_07",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2024_07/us/111167826.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "passing",
+    "main_topic": "Compilation of unrelated local news reports, with a brief political news item about Netanyahu's meetings with Biden and Harris",
+    "conflict_relevance": "Includes a meaningful but very brief mention of discussions about the Gaza war and a possible cease-fire deal",
+    "reason": "The text is primarily composed of unrelated reports about a dog attack and MyPillow's eviction case. The Gaza-related content appears only as a short embedded news item about Netanyahu's White House meetings, making it relevant to broader discourse analysis but not core conflict coverage.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "5405d18b9c69f5932c516f9734f71395cb019c7d607ae971c637eb01e83d1c56",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "2e34fb75cead16cb14db98a4eaa7870a7b793cc17972820b604e69ab147073b9",
+    "raw_response_text_sha256": "c65839de6e9911d37f057fc416a5de94c2da7cedbbd98eed048a5ea0f3d7b1f4"
+  },
+  "api_metadata": {
+    "id": "resp_0f82bfc62329675e006aaa136ce3ec87d2ad16172b4a8eb411",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789530988.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1834,
+      "input_tokens_details": {
+        "cache_write_tokens": 1831,
+        "cached_tokens": 0
+      },
+      "output_tokens": 368,
+      "output_tokens_details": {
+        "reasoning_tokens": 199
+      },
+      "total_tokens": 2202
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Compilation of unrelated local news reports, with a brief political news item about Netanyahu's meetings with Biden and Harris\",\n  \"conflict_relevance\": \"Includes a meaningful but very brief mention of discussions about the Gaza war and a possible cease-fire deal\",\n  \"reason\": \"The text is primarily composed of unrelated reports about a dog attack and MyPillow's eviction case. The Gaza-related content appears only as a short embedded news item about Netanyahu's White House meetings, making it relevant to broader discourse analysis but not core conflict coverage.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:56:33Z",
+  "duration_seconds": 4.856,
+  "error": null
+}

@@ -1,0 +1,65 @@
+{
+  "article_id": "105729136",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_02/ie/105729136.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_02/ie/105729136.json"
+  },
+  "manifest_row": {
+    "article_id": "105729136",
+    "group": "global_north_2024_02",
+    "country_code": "ie",
+    "filepath": "corpus/02_now_organised/global_north_2024_02/ie/105729136.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.96,
+    "gaza_role": "substantial",
+    "main_topic": "Daily news roundup covering multiple international and domestic stories",
+    "conflict_relevance": "The roundup includes a substantial lead item on Hamas's proposed multi-stage Gaza ceasefire, hostage and prisoner exchanges, Israeli withdrawal, and Gaza reconstruction.",
+    "reason": "Although the article is primarily a multi-topic news summary rather than dedicated Gaza coverage, its first and most substantial item directly concerns the Israel-Hamas war and ceasefire diplomacy. It is therefore useful as peripheral discourse material but not ideal for the main corpus.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "f00315de4d9c6fd1141e77e1e973cadd52f79517337b984634aa845cb054bd2a",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "728ca3b21bb4cbb5f55d075bafe8cdf11ee949432b0157c169787b3f52e75d4d",
+    "raw_response_text_sha256": "d0c99a94537675ce388514fd6968499b479eb599d1e03a876226f2ed198d228a"
+  },
+  "api_metadata": {
+    "id": "resp_00bed37418db8dd1006aaa06a0f98487d2b2dc271cd980c218",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789527712.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1877,
+      "input_tokens_details": {
+        "cache_write_tokens": 1874,
+        "cached_tokens": 0
+      },
+      "output_tokens": 400,
+      "output_tokens_details": {
+        "reasoning_tokens": 235
+      },
+      "total_tokens": 2277
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.96,\n  \"gaza_role\": \"substantial\",\n  \"main_topic\": \"Daily news roundup covering multiple international and domestic stories\",\n  \"conflict_relevance\": \"The roundup includes a substantial lead item on Hamas's proposed multi-stage Gaza ceasefire, hostage and prisoner exchanges, Israeli withdrawal, and Gaza reconstruction.\",\n  \"reason\": \"Although the article is primarily a multi-topic news summary rather than dedicated Gaza coverage, its first and most substantial item directly concerns the Israel-Hamas war and ceasefire diplomacy. It is therefore useful as peripheral discourse material but not ideal for the main corpus.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:01:57Z",
+  "duration_seconds": 5.074,
+  "error": null
+}

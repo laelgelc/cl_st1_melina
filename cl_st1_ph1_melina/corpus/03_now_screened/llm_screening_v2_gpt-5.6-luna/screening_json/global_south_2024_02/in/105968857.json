@@ -1,0 +1,65 @@
+{
+  "article_id": "105968857",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_south_2024_02/in/105968857.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_south_2024_02/in/105968857.json"
+  },
+  "manifest_row": {
+    "article_id": "105968857",
+    "group": "global_south_2024_02",
+    "country_code": "in",
+    "filepath": "corpus/02_now_organised/global_south_2024_02/in/105968857.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "background",
+    "main_topic": "International health news roundup",
+    "conflict_relevance": "Includes a substantive report on children being measured for malnutrition in Gaza amid Israel's military campaign and a hunger crisis.",
+    "reason": "The article is primarily a compilation of unrelated pharmaceutical, medical, and public-health news items. Its Gaza segment meaningfully addresses humanitarian conditions and malnutrition but is not the main focus of the roundup.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "62731c4ff0565b46cfe26d45dfca463cedb77a0a5c98de1bb06ca2124dc2273c",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "4aa73a0010c69bdbd974531b7e9dcd21006b4439878a997e8a3c0751449e6528",
+    "raw_response_text_sha256": "c343bc654797a1e0e018a838110010e0d5b16f8a7b151d1c9d92f1803913cc77"
+  },
+  "api_metadata": {
+    "id": "resp_0163c8daddbf6975006aaa38d15e3087d186936f81f7b8329d",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789540561.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1661,
+      "input_tokens_details": {
+        "cache_write_tokens": 1658,
+        "cached_tokens": 0
+      },
+      "output_tokens": 232,
+      "output_tokens_details": {
+        "reasoning_tokens": 90
+      },
+      "total_tokens": 1893
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"International health news roundup\",\n  \"conflict_relevance\": \"Includes a substantive report on children being measured for malnutrition in Gaza amid Israel's military campaign and a hunger crisis.\",\n  \"reason\": \"The article is primarily a compilation of unrelated pharmaceutical, medical, and public-health news items. Its Gaza segment meaningfully addresses humanitarian conditions and malnutrition but is not the main focus of the roundup.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T06:36:05Z",
+  "duration_seconds": 4.57,
+  "error": null
+}

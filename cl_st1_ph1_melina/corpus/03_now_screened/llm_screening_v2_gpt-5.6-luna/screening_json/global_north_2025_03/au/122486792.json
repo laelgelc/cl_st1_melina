@@ -1,0 +1,65 @@
+{
+  "article_id": "122486792",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_03/au/122486792.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_03/au/122486792.json"
+  },
+  "manifest_row": {
+    "article_id": "122486792",
+    "group": "global_north_2025_03",
+    "country_code": "au",
+    "filepath": "corpus/02_now_organised/global_north_2025_03/au/122486792.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.93,
+    "gaza_role": "substantial",
+    "main_topic": "Morning news bulletin covering the Ukraine conflict, Gaza hostilities, Australian legal and political news, Indigenous land rights, and sport",
+    "conflict_relevance": "Includes a substantial news segment on the collapse of the Gaza ceasefire, Israeli evacuation orders and air strikes, reported Palestinian casualties, hostage-related Israeli claims, Hamas's response, and testimony from a Gaza resident.",
+    "reason": "The bulletin's headline and primary lead concern the Ukraine conflict, but it contains a detailed and meaningful Gaza report. Because Gaza is one segment within a broader multi-item bulletin rather than the main subject, it is best classified as PERIPHERAL.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "6b6942c3ed7302205de917cc518e8b32854619454a30fca925fb0f6a5b071c9a",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "3c2563c4f950f48a7844f05ec0ed65f6f14c519e8730f43defd619d7ca8f278c",
+    "raw_response_text_sha256": "80097866f27a4920cbc20c731fa451e8a549f3fec2178932aae6c39d4765fff3"
+  },
+  "api_metadata": {
+    "id": "resp_086022389a4dd86b006aaa257a8a7087d190a052d58171d28b",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789535610.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1749,
+      "input_tokens_details": {
+        "cache_write_tokens": 1746,
+        "cached_tokens": 0
+      },
+      "output_tokens": 363,
+      "output_tokens_details": {
+        "reasoning_tokens": 173
+      },
+      "total_tokens": 2112
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.93,\n  \"gaza_role\": \"substantial\",\n  \"main_topic\": \"Morning news bulletin covering the Ukraine conflict, Gaza hostilities, Australian legal and political news, Indigenous land rights, and sport\",\n  \"conflict_relevance\": \"Includes a substantial news segment on the collapse of the Gaza ceasefire, Israeli evacuation orders and air strikes, reported Palestinian casualties, hostage-related Israeli claims, Hamas's response, and testimony from a Gaza resident.\",\n  \"reason\": \"The bulletin's headline and primary lead concern the Ukraine conflict, but it contains a detailed and meaningful Gaza report. Because Gaza is one segment within a broader multi-item bulletin rather than the main subject, it is best classified as PERIPHERAL.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T05:13:34Z",
+  "duration_seconds": 4.432,
+  "error": null
+}

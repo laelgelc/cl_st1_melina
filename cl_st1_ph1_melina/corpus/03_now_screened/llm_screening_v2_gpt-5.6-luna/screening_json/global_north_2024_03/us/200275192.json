@@ -1,0 +1,65 @@
+{
+  "article_id": "200275192",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_03/us/200275192.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_03/us/200275192.json"
+  },
+  "manifest_row": {
+    "article_id": "200275192",
+    "group": "global_north_2024_03",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2024_03/us/200275192.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "gaza_role": "passing",
+    "main_topic": "The 2024 US presidential election and Republican voter attitudes toward Donald Trump",
+    "conflict_relevance": "Gaza is mentioned only briefly as one of several examples of international turmoil affecting voter perceptions of the Biden administration.",
+    "reason": "The article is focused on the US presidential election, Trump, Biden, and Republican voter coalitions. Its sole reference to Gaza is a passing mention in a list of foreign-policy issues, with no substantive discussion of the conflict.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "81b7f6bdc632388f6f6c6a956b899b06a3cb57116e313418ebe8612ae9dfa456",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "547982a1e85a3a9a804e7c49ce013c52da14f0ec00fed1da1f352cf58cd78f59",
+    "raw_response_text_sha256": "963a01a4d47b24cb83c28219a248bf358f9d1e05266f7ba85630624189600a82"
+  },
+  "api_metadata": {
+    "id": "resp_07afe5ba7b9dea59006aaa0a25cb1487d29a03d6ceb6d2659f",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789528613.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2061,
+      "input_tokens_details": {
+        "cache_write_tokens": 2058,
+        "cached_tokens": 0
+      },
+      "output_tokens": 213,
+      "output_tokens_details": {
+        "reasoning_tokens": 57
+      },
+      "total_tokens": 2274
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"The 2024 US presidential election and Republican voter attitudes toward Donald Trump\",\n  \"conflict_relevance\": \"Gaza is mentioned only briefly as one of several examples of international turmoil affecting voter perceptions of the Biden administration.\",\n  \"reason\": \"The article is focused on the US presidential election, Trump, Biden, and Republican voter coalitions. Its sole reference to Gaza is a passing mention in a list of foreign-policy issues, with no substantive discussion of the conflict.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:16:56Z",
+  "duration_seconds": 2.774,
+  "error": null
+}

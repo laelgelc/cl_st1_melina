@@ -1,0 +1,65 @@
+{
+  "article_id": "102755534",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_south_2023_10/ng/102755534.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_south_2023_10/ng/102755534.json"
+  },
+  "manifest_row": {
+    "article_id": "102755534",
+    "group": "global_south_2023_10",
+    "country_code": "ng",
+    "filepath": "corpus/02_now_organised/global_south_2023_10/ng/102755534.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.93,
+    "gaza_role": "background",
+    "main_topic": "Mixed related-posts roundup, mainly Nigerian politics with an embedded Gaza war item",
+    "conflict_relevance": "Contains a substantive embedded summary of the Gaza blockade, Rafah crossing, humanitarian aid, Israeli airstrikes, and the Hamas-Israel war, but the overall page is not focused on the conflict.",
+    "reason": "The Gaza passage meaningfully addresses humanitarian access and military action, but it appears among unrelated Nigerian political and local news snippets in a 'Related Posts' aggregation.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "0545c3fb2ab2cb2d418c17a2938a20ad31520049ee20753656d356d1c32a7001",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "0fc887f7d3f0720cc3494274e016939155ab7623a5960545a7aa1d851083e195",
+    "raw_response_text_sha256": "6b89bf489011905456a2cda0e6baed9c60a56afca05db7c0ed1f3abb4e2e7a91"
+  },
+  "api_metadata": {
+    "id": "resp_0046fbd1d4ba7e31006aaa33a641c087d1b8934e69682b42e7",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789539238.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 984,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 454,
+      "output_tokens_details": {
+        "reasoning_tokens": 292
+      },
+      "total_tokens": 1438
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.93,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Mixed related-posts roundup, mainly Nigerian politics with an embedded Gaza war item\",\n  \"conflict_relevance\": \"Contains a substantive embedded summary of the Gaza blockade, Rafah crossing, humanitarian aid, Israeli airstrikes, and the Hamas-Israel war, but the overall page is not focused on the conflict.\",\n  \"reason\": \"The Gaza passage meaningfully addresses humanitarian access and military action, but it appears among unrelated Nigerian political and local news snippets in a 'Related Posts' aggregation.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T06:14:03Z",
+  "duration_seconds": 5.757,
+  "error": null
+}

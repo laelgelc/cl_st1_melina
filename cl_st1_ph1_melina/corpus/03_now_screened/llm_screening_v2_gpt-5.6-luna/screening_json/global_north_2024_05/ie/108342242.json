@@ -1,0 +1,65 @@
+{
+  "article_id": "108342242",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_05/ie/108342242.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_05/ie/108342242.json"
+  },
+  "manifest_row": {
+    "article_id": "108342242",
+    "group": "global_north_2024_05",
+    "country_code": "ie",
+    "filepath": "corpus/02_now_organised/global_north_2024_05/ie/108342242.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "background",
+    "main_topic": "European Parliament election manifestos and political-group platforms",
+    "conflict_relevance": "The article briefly discusses the Party of the European Left's platform, including support for sanctions against Israel over the war in Gaza, but the main focus is European elections, disinformation, and voting rights.",
+    "reason": "Gaza-related discourse is meaningful but limited to a small section of a broader article about European political groups and election issues. The text also contains multiple apparently concatenated articles on disinformation and disability voting rights.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "97c1272625c91537a936575ae9fd6d1befcbc80786bf0c588834cd7d9eb4c60d",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "c7e78bf6161b9c75a799a5ce84932457a0f7df5342821d2afcaf91277d612383",
+    "raw_response_text_sha256": "78b340926f71df2e5cc99f241fd74d4275ef00b4a2562acff2adb1aabd69b853"
+  },
+  "api_metadata": {
+    "id": "resp_018ef2be25876d81006aaa0e4b15f087d29270700d9e0f9b7b",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789529675.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 5490,
+      "input_tokens_details": {
+        "cache_write_tokens": 5487,
+        "cached_tokens": 0
+      },
+      "output_tokens": 287,
+      "output_tokens_details": {
+        "reasoning_tokens": 121
+      },
+      "total_tokens": 5777
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"European Parliament election manifestos and political-group platforms\",\n  \"conflict_relevance\": \"The article briefly discusses the Party of the European Left's platform, including support for sanctions against Israel over the war in Gaza, but the main focus is European elections, disinformation, and voting rights.\",\n  \"reason\": \"Gaza-related discourse is meaningful but limited to a small section of a broader article about European political groups and election issues. The text also contains multiple apparently concatenated articles on disinformation and disability voting rights.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:34:38Z",
+  "duration_seconds": 3.801,
+  "error": null
+}

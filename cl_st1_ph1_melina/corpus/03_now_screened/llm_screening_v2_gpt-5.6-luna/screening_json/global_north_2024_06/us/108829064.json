@@ -1,0 +1,65 @@
+{
+  "article_id": "108829064",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_06/us/108829064.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_06/us/108829064.json"
+  },
+  "manifest_row": {
+    "article_id": "108829064",
+    "group": "global_north_2024_06",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2024_06/us/108829064.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.97,
+    "gaza_role": "background",
+    "main_topic": "Gun attack on the U.S. Embassy in Lebanon and the resulting security response",
+    "conflict_relevance": "The article is primarily about an embassy shooting in Lebanon, but it situates the incident within the Gaza war, regional protests against U.S. support for Israel, and ongoing Hezbollah-Israel border tensions.",
+    "reason": "Gaza and the Israel-related regional conflict provide meaningful contextual framing, but the article is not centrally about Gaza, Palestinians, Israel/Palestine, or the war itself.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "ec4fba838f407db0312fc77a557487c27e73cdf38452ed19c57f4f57e86da394",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "eaad4ce8d0b8ad06013aa8edfcad2beb4b8645717dd5a5fcd0704378338865ec",
+    "raw_response_text_sha256": "4cbb2915e56fdca4bb0141d962fcbf083bc39580a7a544d5b4a49ffa2f9fa993"
+  },
+  "api_metadata": {
+    "id": "resp_08b89ca88e72f5c5006aaa10f9135c87d2b243a0d1dc5aff41",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789530361.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1562,
+      "input_tokens_details": {
+        "cache_write_tokens": 1559,
+        "cached_tokens": 0
+      },
+      "output_tokens": 219,
+      "output_tokens_details": {
+        "reasoning_tokens": 53
+      },
+      "total_tokens": 1781
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.97,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Gun attack on the U.S. Embassy in Lebanon and the resulting security response\",\n  \"conflict_relevance\": \"The article is primarily about an embassy shooting in Lebanon, but it situates the incident within the Gaza war, regional protests against U.S. support for Israel, and ongoing Hezbollah-Israel border tensions.\",\n  \"reason\": \"Gaza and the Israel-related regional conflict provide meaningful contextual framing, but the article is not centrally about Gaza, Palestinians, Israel/Palestine, or the war itself.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:46:04Z",
+  "duration_seconds": 3.653,
+  "error": null
+}

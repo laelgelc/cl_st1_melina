@@ -1,0 +1,65 @@
+{
+  "article_id": "103614944",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_11/gb/103614944.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_11/gb/103614944.json"
+  },
+  "manifest_row": {
+    "article_id": "103614944",
+    "group": "global_north_2023_11",
+    "country_code": "gb",
+    "filepath": "corpus/02_now_organised/global_north_2023_11/gb/103614944.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "passing",
+    "main_topic": "Bank of England interest-rate policy and inflation",
+    "conflict_relevance": "The article briefly links the Gaza conflict to inflation risks that could affect UK monetary policy, but the conflict is not otherwise discussed.",
+    "reason": "The main article concerns UK interest rates and inflation. Its single substantive reference to the Gaza conflict provides limited discourse on the conflict's possible economic effects, making it peripheral rather than core. The text also contains several unrelated appended snippets.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "8a4297fc0f2eb946e3a9ade9e11d8dab785faa30063772b53ee617f8e09460b2",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "cc7a1231cd270f4359943f91c5d89f6c5d72f33f2991a4a23665e768fb6b1b3e",
+    "raw_response_text_sha256": "8b1629cecbbb08b07ae62921f5eda27f1563ea6e91e3d93a6ea7c2ed9a8d5f4d"
+  },
+  "api_metadata": {
+    "id": "resp_052713806e790d10006aa9fcff6ce887d2b604ce802bf40c5b",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789525247.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1255,
+      "input_tokens_details": {
+        "cache_write_tokens": 1252,
+        "cached_tokens": 0
+      },
+      "output_tokens": 256,
+      "output_tokens_details": {
+        "reasoning_tokens": 102
+      },
+      "total_tokens": 1511
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Bank of England interest-rate policy and inflation\",\n  \"conflict_relevance\": \"The article briefly links the Gaza conflict to inflation risks that could affect UK monetary policy, but the conflict is not otherwise discussed.\",\n  \"reason\": \"The main article concerns UK interest rates and inflation. Its single substantive reference to the Gaza conflict provides limited discourse on the conflict's possible economic effects, making it peripheral rather than core. The text also contains several unrelated appended snippets.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:20:50Z",
+  "duration_seconds": 2.955,
+  "error": null
+}

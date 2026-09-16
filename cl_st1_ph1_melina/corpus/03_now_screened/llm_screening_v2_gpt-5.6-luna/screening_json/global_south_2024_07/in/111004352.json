@@ -1,0 +1,65 @@
+{
+  "article_id": "111004352",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_south_2024_07/in/111004352.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_south_2024_07/in/111004352.json"
+  },
+  "manifest_row": {
+    "article_id": "111004352",
+    "group": "global_south_2024_07",
+    "country_code": "in",
+    "filepath": "corpus/02_now_organised/global_south_2024_07/in/111004352.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "background",
+    "main_topic": "Security failures surrounding the attempted assassination of Donald Trump",
+    "conflict_relevance": "The article briefly discusses the use of quadcopter drones by the Israeli military in Gaza, including allegations concerning attacks on healthcare workers and fleeing civilians, within a broader discussion of drone technology.",
+    "reason": "The article is primarily about the Trump rally shooting and Secret Service failures, but it contains a meaningful sentence connecting drone warfare to Israeli military operations in Gaza. This makes it relevant to broader conflict-related discourse, though not suitable as core Gaza or Israel-Palestine coverage.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "6a8c447eadec40b49bf74128ff3e9af3bd0fb35eab69ad6494d7508f2b5bf8e4",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "323573b84f5470bbeaf04ddfdab37f060104747b2a95dc0468c56c96bae0f717",
+    "raw_response_text_sha256": "5b0da85d85cb90b62b5fcc7486813d85de248e6b09fde2586022b9294b4c6927"
+  },
+  "api_metadata": {
+    "id": "resp_01d916a5ceb8e9a7006aaa3d0bd3cc87d192d52f61bf6b4490",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789541643.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2784,
+      "input_tokens_details": {
+        "cache_write_tokens": 2781,
+        "cached_tokens": 0
+      },
+      "output_tokens": 299,
+      "output_tokens_details": {
+        "reasoning_tokens": 123
+      },
+      "total_tokens": 3083
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Security failures surrounding the attempted assassination of Donald Trump\",\n  \"conflict_relevance\": \"The article briefly discusses the use of quadcopter drones by the Israeli military in Gaza, including allegations concerning attacks on healthcare workers and fleeing civilians, within a broader discussion of drone technology.\",\n  \"reason\": \"The article is primarily about the Trump rally shooting and Secret Service failures, but it contains a meaningful sentence connecting drone warfare to Israeli military operations in Gaza. This makes it relevant to broader conflict-related discourse, though not suitable as core Gaza or Israel-Palestine coverage.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T06:54:09Z",
+  "duration_seconds": 5.616,
+  "error": null
+}

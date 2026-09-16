@@ -1,0 +1,65 @@
+{
+  "article_id": "102858968",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_10/us/102858968.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_10/us/102858968.json"
+  },
+  "manifest_row": {
+    "article_id": "102858968",
+    "group": "global_north_2023_10",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2023_10/us/102858968.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "background",
+    "main_topic": "Singapore debut and ticket sales for the Broadway musical Hamilton",
+    "conflict_relevance": "The main article is about a theatrical production, but it contains a substantive unrelated news paragraph about Israel's attacks in Gaza, the West Bank, Syria, Hamas's October 7 attack, and a potential Israeli ground offensive.",
+    "reason": "The Gaza-related material is meaningful but appears as an embedded, unrelated news snippet rather than being connected to the article's main topic.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "4ad71dc41c62c194a8111f477f894efbbc3c25850a6ea7d467563f905aa9eb54",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "655f7123a02bf7dd78be183c71fcaf4ef6ec4d5ede3c44991808658ce6fa4e6c",
+    "raw_response_text_sha256": "8d170f6914b798337f0838f3c74bf719172f6a0b2c281315aef7a643a947ba0d"
+  },
+  "api_metadata": {
+    "id": "resp_083388b5b548b1e6006aa9f968615887d29dccc095a8e7a04f",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789524328.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1538,
+      "input_tokens_details": {
+        "cache_write_tokens": 1535,
+        "cached_tokens": 0
+      },
+      "output_tokens": 253,
+      "output_tokens_details": {
+        "reasoning_tokens": 97
+      },
+      "total_tokens": 1791
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Singapore debut and ticket sales for the Broadway musical Hamilton\",\n  \"conflict_relevance\": \"The main article is about a theatrical production, but it contains a substantive unrelated news paragraph about Israel's attacks in Gaza, the West Bank, Syria, Hamas's October 7 attack, and a potential Israeli ground offensive.\",\n  \"reason\": \"The Gaza-related material is meaningful but appears as an embedded, unrelated news snippet rather than being connected to the article's main topic.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:05:31Z",
+  "duration_seconds": 3.472,
+  "error": null
+}

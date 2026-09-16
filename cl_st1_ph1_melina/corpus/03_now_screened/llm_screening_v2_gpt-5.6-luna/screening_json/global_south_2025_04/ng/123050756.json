@@ -1,0 +1,65 @@
+{
+  "article_id": "123050756",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_south_2025_04/ng/123050756.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_south_2025_04/ng/123050756.json"
+  },
+  "manifest_row": {
+    "article_id": "123050756",
+    "group": "global_south_2025_04",
+    "country_code": "ng",
+    "filepath": "corpus/02_now_organised/global_south_2025_04/ng/123050756.txt"
+  },
+  "screening": {
+    "category": "CORE",
+    "confidence": 0.99,
+    "gaza_role": "central",
+    "main_topic": "Live coverage of the Israel-Palestine conflict, including West Bank settlements, Gaza bombardments and humanitarian conditions, and related Israeli strikes in Lebanon",
+    "conflict_relevance": "The text is overwhelmingly focused on Israel, Palestinians, Gaza, the occupied West Bank, military actions, settlements, ceasefires, humanitarian conditions, and regional spillover involving Hezbollah.",
+    "reason": "Although presented as a collection of news updates, nearly every substantive item directly concerns the Israel-Palestine conflict or its immediate regional consequences. The coverage includes Israeli settlement policy in the West Bank, child casualties and aid restrictions in Gaza, Rafah evacuation orders, and strikes linked to Hamas and Hezbollah.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": true
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "71104a9553456b0361453ac3bf61d2b7c6d8f3bf4cda124eee565e426b0273dd",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "47c0030c18837937c74dfe5aab6e14ec00333cf2d2fdaba90eea480fdbb8f41e",
+    "raw_response_text_sha256": "be94507129495fcb6ab9a6e270e2364f8378ee42c8e27fcacf518797119870d5"
+  },
+  "api_metadata": {
+    "id": "resp_0d783997ae6b7c2f006aaa47f365f087d1b55a8f85064be178",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789544435.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2549,
+      "input_tokens_details": {
+        "cache_write_tokens": 2546,
+        "cached_tokens": 0
+      },
+      "output_tokens": 300,
+      "output_tokens_details": {
+        "reasoning_tokens": 102
+      },
+      "total_tokens": 2849
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"CORE\",\n  \"confidence\": 0.99,\n  \"gaza_role\": \"central\",\n  \"main_topic\": \"Live coverage of the Israel-Palestine conflict, including West Bank settlements, Gaza bombardments and humanitarian conditions, and related Israeli strikes in Lebanon\",\n  \"conflict_relevance\": \"The text is overwhelmingly focused on Israel, Palestinians, Gaza, the occupied West Bank, military actions, settlements, ceasefires, humanitarian conditions, and regional spillover involving Hezbollah.\",\n  \"reason\": \"Although presented as a collection of news updates, nearly every substantive item directly concerns the Israel-Palestine conflict or its immediate regional consequences. The coverage includes Israeli settlement policy in the West Bank, child casualties and aid restrictions in Gaza, Rafah evacuation orders, and strikes linked to Hamas and Hezbollah.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": true\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T07:40:39Z",
+  "duration_seconds": 3.792,
+  "error": null
+}

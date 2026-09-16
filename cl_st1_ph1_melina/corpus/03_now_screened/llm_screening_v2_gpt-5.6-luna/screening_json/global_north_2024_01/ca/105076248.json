@@ -1,0 +1,65 @@
+{
+  "article_id": "105076248",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_01/ca/105076248.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_01/ca/105076248.json"
+  },
+  "manifest_row": {
+    "article_id": "105076248",
+    "group": "global_north_2024_01",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2024_01/ca/105076248.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.96,
+    "gaza_role": "passing",
+    "main_topic": "Saskatchewan teachers' strike and collective bargaining dispute",
+    "conflict_relevance": "The article is primarily about a Canadian education-sector labor dispute, but it includes an unrelated roundup item describing international demonstrations marking 100 days of Israel's war with Hamas and calls for hostage release or a Gaza ceasefire.",
+    "reason": "The Gaza-related content is limited to a single substantive sentence in an embedded roundup of unrelated news, so it is not suitable for the core conflict corpus but has minimal peripheral relevance.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "d6ea6f777adb6451fd5815422f289d45d5def09f75af3171a9bbe6ed83c07b65",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "1d02c5bb1b4e2b8d65fdf0f9936d6a8212e3f83d049b449e7542d407713db9d0",
+    "raw_response_text_sha256": "226679471ed0c707269fdbb982ab06253de4ba759d5054039005b95bbc9eaf5d"
+  },
+  "api_metadata": {
+    "id": "resp_0f7ba22159809edd006aaa039cea6887d281527527e6a9e2b7",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789526940.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2306,
+      "input_tokens_details": {
+        "cache_write_tokens": 2303,
+        "cached_tokens": 0
+      },
+      "output_tokens": 319,
+      "output_tokens_details": {
+        "reasoning_tokens": 155
+      },
+      "total_tokens": 2625
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.96,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Saskatchewan teachers' strike and collective bargaining dispute\",\n  \"conflict_relevance\": \"The article is primarily about a Canadian education-sector labor dispute, but it includes an unrelated roundup item describing international demonstrations marking 100 days of Israel's war with Hamas and calls for hostage release or a Gaza ceasefire.\",\n  \"reason\": \"The Gaza-related content is limited to a single substantive sentence in an embedded roundup of unrelated news, so it is not suitable for the core conflict corpus but has minimal peripheral relevance.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:49:04Z",
+  "duration_seconds": 3.61,
+  "error": null
+}

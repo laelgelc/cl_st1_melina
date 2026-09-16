@@ -1,0 +1,65 @@
+{
+  "article_id": "104104700",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_south_2023_12/pk/104104700.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_south_2023_12/pk/104104700.json"
+  },
+  "manifest_row": {
+    "article_id": "104104700",
+    "group": "global_south_2023_12",
+    "country_code": "pk",
+    "filepath": "corpus/02_now_organised/global_south_2023_12/pk/104104700.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "gaza_role": "passing",
+    "main_topic": "US Senate blockage of aid legislation for Ukraine",
+    "conflict_relevance": "Gaza is mentioned only as one component of a broader aid package focused on Ukraine.",
+    "reason": "The article is centrally about US political disagreements over Ukraine aid and border policy. Its sole reference to Israel and Gaza is a brief, incidental mention of funds included in the package, without substantive discussion of the Gaza conflict.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "037e077fd15267a71d33b64ea035e719e64615b074c35eb340b1115c5a940caf",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "8d7749c5d28f138e3dbc4112bddeb151feb41828a79a821ee11456d43f98749c",
+    "raw_response_text_sha256": "35e747397527d544dd35b4ae0e8b2a699521ac0fdae122e0648a65ab50dd4753"
+  },
+  "api_metadata": {
+    "id": "resp_0e427932584463a9006aaa375faaa887d1894aeed79b0e3d32",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789540191.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 757,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 227,
+      "output_tokens_details": {
+        "reasoning_tokens": 84
+      },
+      "total_tokens": 984
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"US Senate blockage of aid legislation for Ukraine\",\n  \"conflict_relevance\": \"Gaza is mentioned only as one component of a broader aid package focused on Ukraine.\",\n  \"reason\": \"The article is centrally about US political disagreements over Ukraine aid and border policy. Its sole reference to Israel and Gaza is a brief, incidental mention of funds included in the package, without substantive discussion of the Gaza conflict.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T06:29:55Z",
+  "duration_seconds": 3.762,
+  "error": null
+}

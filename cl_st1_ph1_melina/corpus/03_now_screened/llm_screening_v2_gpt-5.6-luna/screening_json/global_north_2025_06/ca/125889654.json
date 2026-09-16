@@ -1,0 +1,65 @@
+{
+  "article_id": "125889654",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_06/ca/125889654.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_06/ca/125889654.json"
+  },
+  "manifest_row": {
+    "article_id": "125889654",
+    "group": "global_north_2025_06",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2025_06/ca/125889654.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.97,
+    "gaza_role": "background",
+    "main_topic": "Israeli civilian experiences and preparedness during Iranian missile attacks",
+    "conflict_relevance": "The article focuses on the Iran-Israel conflict and civilian life in Tel Aviv, while referencing the ongoing Israel-Hamas war in Gaza as broader regional context.",
+    "reason": "Gaza is mentioned meaningfully as part of the wider sequence of conflicts involving Israel, but the article's central subject is Iranian attacks on Israel rather than Gaza or the Israeli-Palestinian conflict.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "c75fe8d383f63ddc989bf448947f613f402fdfd7576462a4e0ceb8b5a78e3c1b",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "f27c6f76626faf2655fe4888b4550df2fb6df25042fb5dbd63818ec960e8fa8e",
+    "raw_response_text_sha256": "e2516f0855925799ffb8bf89b9bf1469022f4a2ee2ecbd7be40ac133ec990646"
+  },
+  "api_metadata": {
+    "id": "resp_0b613d8b42191294006aaa2ea8076487d193f3571c65b7240d",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789537960.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2040,
+      "input_tokens_details": {
+        "cache_write_tokens": 2037,
+        "cached_tokens": 0
+      },
+      "output_tokens": 243,
+      "output_tokens_details": {
+        "reasoning_tokens": 86
+      },
+      "total_tokens": 2283
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.97,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Israeli civilian experiences and preparedness during Iranian missile attacks\",\n  \"conflict_relevance\": \"The article focuses on the Iran-Israel conflict and civilian life in Tel Aviv, while referencing the ongoing Israel-Hamas war in Gaza as broader regional context.\",\n  \"reason\": \"Gaza is mentioned meaningfully as part of the wider sequence of conflicts involving Israel, but the article's central subject is Iranian attacks on Israel rather than Gaza or the Israeli-Palestinian conflict.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T05:52:43Z",
+  "duration_seconds": 3.545,
+  "error": null
+}

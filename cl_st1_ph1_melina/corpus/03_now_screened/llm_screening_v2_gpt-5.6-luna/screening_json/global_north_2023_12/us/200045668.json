@@ -1,0 +1,65 @@
+{
+  "article_id": "200045668",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_12/us/200045668.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_12/us/200045668.json"
+  },
+  "manifest_row": {
+    "article_id": "200045668",
+    "group": "global_north_2023_12",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2023_12/us/200045668.txt"
+  },
+  "screening": {
+    "category": "CORE",
+    "confidence": 0.86,
+    "gaza_role": "substantial",
+    "main_topic": "Political commentary roundup covering anti-Zionism and antisemitism debates, the Gaza war, and Arab states’ refusal to admit Palestinian refugees",
+    "conflict_relevance": "The article contains substantial discussion of anti-Zionism as antisemitism, Israeli military operations in Gaza, Hamas, Palestinian public opinion, and regional responses to Palestinian displacement.",
+    "reason": "Although the text is a multi-item roundup containing unrelated US political and domestic-policy snippets, two substantial sections directly address Israel/Palestine discourse and the Gaza war, making it relevant to the main conflict corpus.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": true
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "f847f09b6dcadfa46d317be8649c206d70883f0551083b8065861ed18cf1364f",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "442464c46a8dec5361c33fee4b1bd85bea9c115f56476c42be1461381706fb64",
+    "raw_response_text_sha256": "dedbd9649a18d364022aaa547bde0296bbbace632908c1885cbfb6c816eeb1dc"
+  },
+  "api_metadata": {
+    "id": "resp_03fd477df2ccdf6f006aaa02bfd70c87d2a0b492ef6128036e",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789526719.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1519,
+      "input_tokens_details": {
+        "cache_write_tokens": 1516,
+        "cached_tokens": 0
+      },
+      "output_tokens": 497,
+      "output_tokens_details": {
+        "reasoning_tokens": 319
+      },
+      "total_tokens": 2016
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"CORE\",\n  \"confidence\": 0.86,\n  \"gaza_role\": \"substantial\",\n  \"main_topic\": \"Political commentary roundup covering anti-Zionism and antisemitism debates, the Gaza war, and Arab states’ refusal to admit Palestinian refugees\",\n  \"conflict_relevance\": \"The article contains substantial discussion of anti-Zionism as antisemitism, Israeli military operations in Gaza, Hamas, Palestinian public opinion, and regional responses to Palestinian displacement.\",\n  \"reason\": \"Although the text is a multi-item roundup containing unrelated US political and domestic-policy snippets, two substantial sections directly address Israel/Palestine discourse and the Gaza war, making it relevant to the main conflict corpus.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": true\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:45:25Z",
+  "duration_seconds": 5.926,
+  "error": null
+}

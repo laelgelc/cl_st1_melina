@@ -1,0 +1,65 @@
+{
+  "article_id": "111862811",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_08/ca/111862811.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_08/ca/111862811.json"
+  },
+  "manifest_row": {
+    "article_id": "111862811",
+    "group": "global_north_2024_08",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2024_08/ca/111862811.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "gaza_role": "passing",
+    "main_topic": "The 2024 U.S. presidential election and the contrasting political platforms of Kamala Harris and Donald Trump",
+    "conflict_relevance": "The main article does not address Gaza, Palestine, Israel, or the conflict. Gaza appears only in a separate embedded news snippet about Hamas leadership.",
+    "reason": "The headline article is focused on U.S. electoral politics. The sole Gaza-related content is an incidental item in a broader collection of unrelated news snippets, making it unsuitable for meaningful conflict discourse analysis.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "59a194e5aefab82959072d1534260184f2516141657f09e9b6ee1ce50bde11f8",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "699abfa490f657b317f5d142c5897186e81605ea44f550e3fa2fe8b952c0b5f0",
+    "raw_response_text_sha256": "c630e3ea3b5f494b3124936acddccd0a84c0efe05c072efe6ef4b54387cfa8e2"
+  },
+  "api_metadata": {
+    "id": "resp_03556596ac61bdb1006aaa13e4a2c887d2bc0b35e927db5046",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789531108.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 3480,
+      "input_tokens_details": {
+        "cache_write_tokens": 3477,
+        "cached_tokens": 0
+      },
+      "output_tokens": 248,
+      "output_tokens_details": {
+        "reasoning_tokens": 84
+      },
+      "total_tokens": 3728
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"The 2024 U.S. presidential election and the contrasting political platforms of Kamala Harris and Donald Trump\",\n  \"conflict_relevance\": \"The main article does not address Gaza, Palestine, Israel, or the conflict. Gaza appears only in a separate embedded news snippet about Hamas leadership.\",\n  \"reason\": \"The headline article is focused on U.S. electoral politics. The sole Gaza-related content is an incidental item in a broader collection of unrelated news snippets, making it unsuitable for meaningful conflict discourse analysis.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:58:31Z",
+  "duration_seconds": 2.783,
+  "error": null
+}

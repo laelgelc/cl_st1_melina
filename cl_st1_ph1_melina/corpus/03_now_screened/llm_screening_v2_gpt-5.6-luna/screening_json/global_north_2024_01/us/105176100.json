@@ -1,0 +1,65 @@
+{
+  "article_id": "105176100",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_01/us/105176100.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_01/us/105176100.json"
+  },
+  "manifest_row": {
+    "article_id": "105176100",
+    "group": "global_north_2024_01",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2024_01/us/105176100.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "background",
+    "main_topic": "World Economic Forum live updates covering international politics, economics, business, and geopolitical issues",
+    "conflict_relevance": "The roundup includes a substantive segment reporting Iran's foreign minister's comments on stopping the war in Gaza and criticism of U.S. support for Israel, but Gaza is not the main subject of the article.",
+    "reason": "This is a multi-topic Davos live blog dominated by economic, political, technological, and Ukraine-related updates. Its final section contains meaningful discourse about the Gaza war, Israel, Netanyahu, and U.S. regional policy, making it useful as peripheral material rather than core conflict coverage.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "eb0faba6fea3d0159b9a5a599857d14507f2d1af8a35d5bdd4fcfa0ddf100b3b",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "fc984e9e494a7c6c21157b8df08ad684a7634ddd21ab23616c9979e9df7f9ae3",
+    "raw_response_text_sha256": "79aa24b8814af3eb617ab3bdd05448cd070c7a77decc33792c6295612c2176a3"
+  },
+  "api_metadata": {
+    "id": "resp_0d30a404fb05b16a006aaa04d6d6d487d2ae90af8af165edc7",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789527254.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 4117,
+      "input_tokens_details": {
+        "cache_write_tokens": 4114,
+        "cached_tokens": 0
+      },
+      "output_tokens": 326,
+      "output_tokens_details": {
+        "reasoning_tokens": 138
+      },
+      "total_tokens": 4443
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"World Economic Forum live updates covering international politics, economics, business, and geopolitical issues\",\n  \"conflict_relevance\": \"The roundup includes a substantive segment reporting Iran's foreign minister's comments on stopping the war in Gaza and criticism of U.S. support for Israel, but Gaza is not the main subject of the article.\",\n  \"reason\": \"This is a multi-topic Davos live blog dominated by economic, political, technological, and Ukraine-related updates. Its final section contains meaningful discourse about the Gaza war, Israel, Netanyahu, and U.S. regional policy, making it useful as peripheral material rather than core conflict coverage.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:54:19Z",
+  "duration_seconds": 4.893,
+  "error": null
+}

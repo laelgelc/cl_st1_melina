@@ -1,0 +1,65 @@
+{
+  "article_id": "104257695",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_south_2023_12/in/104257695.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_south_2023_12/in/104257695.json"
+  },
+  "manifest_row": {
+    "article_id": "104257695",
+    "group": "global_south_2023_12",
+    "country_code": "in",
+    "filepath": "corpus/02_now_organised/global_south_2023_12/in/104257695.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "background",
+    "main_topic": "Indian Parliament security and domestic fiscal policy",
+    "conflict_relevance": "Contains a substantive but secondary discussion of Israel's bombing of Gaza, Biden's position, the Israel-Palestine solution, ceasefire, and India's support for a two-state solution.",
+    "reason": "The article is primarily an editorial covering a security breach in India's Parliament and pension policy, but it includes a meaningful paragraph on Gaza and Israel-Palestine diplomacy. It is therefore relevant to broader discourse analysis but not core conflict coverage.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "d374e9150d5d0af29f3cf80580b767c999d64c1856aec7c86ca3472ff22a48da",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "c1751fab1e82a5d4deb6848495fea3e29b07ba74c2afb6b0ce0f9b2da2a8f85d",
+    "raw_response_text_sha256": "c3b73829367349434f293ee63eb962e10ca6ce4455e792f18abe979e9f10af56"
+  },
+  "api_metadata": {
+    "id": "resp_0a0d9adc97bf5d2f006aaa36a6420c87d19fa99f4c39045e01",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789540006.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 813,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 224,
+      "output_tokens_details": {
+        "reasoning_tokens": 57
+      },
+      "total_tokens": 1037
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Indian Parliament security and domestic fiscal policy\",\n  \"conflict_relevance\": \"Contains a substantive but secondary discussion of Israel's bombing of Gaza, Biden's position, the Israel-Palestine solution, ceasefire, and India's support for a two-state solution.\",\n  \"reason\": \"The article is primarily an editorial covering a security breach in India's Parliament and pension policy, but it includes a meaningful paragraph on Gaza and Israel-Palestine diplomacy. It is therefore relevant to broader discourse analysis but not core conflict coverage.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T06:26:49Z",
+  "duration_seconds": 3.294,
+  "error": null
+}

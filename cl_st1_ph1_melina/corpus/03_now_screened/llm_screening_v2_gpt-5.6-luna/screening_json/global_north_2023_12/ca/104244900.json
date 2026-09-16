@@ -1,0 +1,65 @@
+{
+  "article_id": "104244900",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_12/ca/104244900.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_12/ca/104244900.json"
+  },
+  "manifest_row": {
+    "article_id": "104244900",
+    "group": "global_north_2023_12",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2023_12/ca/104244900.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "gaza_role": "boilerplate_or_unrelated",
+    "main_topic": "Temu's popularity, consumer concerns, and impact on Canadian retail",
+    "conflict_relevance": "The main article is about the Temu shopping app. References to the Israel-Hamas war and Gaza appear only in unrelated CTVNews.ca top-story snippets.",
+    "reason": "The conflict-related content is incidental roundup material and is not meaningfully connected to the article's subject.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "d75305814e5f3775494893dc14be62c97ea4dba778b955b2461d34749da97f28",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "99c8b2527daf70b8a034587991bb8556e8d4ea3b2f11a97613136649a66c8cf6",
+    "raw_response_text_sha256": "4c1257af13659d1c4ed033e9877c8d44e3be1fef618cb3718ca2f777315832fd"
+  },
+  "api_metadata": {
+    "id": "resp_0d724c6c34dea909006aaa0074825487d2b4ee353badc9de3b",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789526132.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2638,
+      "input_tokens_details": {
+        "cache_write_tokens": 2635,
+        "cached_tokens": 0
+      },
+      "output_tokens": 182,
+      "output_tokens_details": {
+        "reasoning_tokens": 37
+      },
+      "total_tokens": 2820
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"gaza_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Temu's popularity, consumer concerns, and impact on Canadian retail\",\n  \"conflict_relevance\": \"The main article is about the Temu shopping app. References to the Israel-Hamas war and Gaza appear only in unrelated CTVNews.ca top-story snippets.\",\n  \"reason\": \"The conflict-related content is incidental roundup material and is not meaningfully connected to the article's subject.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:35:35Z",
+  "duration_seconds": 2.632,
+  "error": null
+}

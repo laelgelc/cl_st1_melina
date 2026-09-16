@@ -1,0 +1,65 @@
+{
+  "article_id": "107131253",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_04/us/107131253.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_04/us/107131253.json"
+  },
+  "manifest_row": {
+    "article_id": "107131253",
+    "group": "global_north_2024_04",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2024_04/us/107131253.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.91,
+    "gaza_role": "background",
+    "main_topic": "Israeli airstrike on an Iranian diplomatic facility in Damascus and the resulting regional escalation",
+    "conflict_relevance": "The article concerns Israel's confrontation with Iran and Hezbollah and places the strike in the context of the Gaza war and Hamas's October 7 attack, but Gaza and Palestinians are not the main subject.",
+    "reason": "The central focus is the killing of an IRGC commander at Iran's consulate in Syria. The article contains meaningful discourse linking the event to the Gaza war, Hezbollah's attacks on Israel, and regional resistance, making it relevant to broader conflict discourse but peripheral to a Gaza-focused corpus.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "d6041fb375b1eeb6835c068294f1dec6083ee4e47b6c39732d687a5e7004d0d3",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "b1c962fe2ead40009d982854134ac544b56239cbe981014740916a4182bb353f",
+    "raw_response_text_sha256": "ca4381a00a18e507d8fc2995d54d964cca909915a5ac65dcfbe7bc6dd529f73e"
+  },
+  "api_metadata": {
+    "id": "resp_00d84d5d8f8fc082006aaa0bb9f31087d280bacca8d1fc892a",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789529017.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1411,
+      "input_tokens_details": {
+        "cache_write_tokens": 1408,
+        "cached_tokens": 0
+      },
+      "output_tokens": 355,
+      "output_tokens_details": {
+        "reasoning_tokens": 167
+      },
+      "total_tokens": 1766
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.91,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Israeli airstrike on an Iranian diplomatic facility in Damascus and the resulting regional escalation\",\n  \"conflict_relevance\": \"The article concerns Israel's confrontation with Iran and Hezbollah and places the strike in the context of the Gaza war and Hamas's October 7 attack, but Gaza and Palestinians are not the main subject.\",\n  \"reason\": \"The central focus is the killing of an IRGC commander at Iran's consulate in Syria. The article contains meaningful discourse linking the event to the Gaza war, Hezbollah's attacks on Israel, and regional resistance, making it relevant to broader conflict discourse but peripheral to a Gaza-focused corpus.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:23:42Z",
+  "duration_seconds": 4.607,
+  "error": null
+}

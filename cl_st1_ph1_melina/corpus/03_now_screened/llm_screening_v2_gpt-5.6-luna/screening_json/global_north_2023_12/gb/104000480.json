@@ -1,0 +1,65 @@
+{
+  "article_id": "104000480",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_12/gb/104000480.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_12/gb/104000480.json"
+  },
+  "manifest_row": {
+    "article_id": "104000480",
+    "group": "global_north_2023_12",
+    "country_code": "gb",
+    "filepath": "corpus/02_now_organised/global_north_2023_12/gb/104000480.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.94,
+    "gaza_role": "passing",
+    "main_topic": "Cybersecurity breaches and governance failures at the Sellafield nuclear site",
+    "conflict_relevance": "The main article is unrelated to Gaza or the Israel-Palestine conflict, but it contains embedded snippets mentioning a British-Israeli IDF soldier killed in Gaza and a Hamas rocket attack near an Israeli missile base.",
+    "reason": "The conflict-related material is brief, disconnected from the main Sellafield investigation, and appears to be unrelated embedded content. It provides some meaningful mentions of Gaza, Hamas, and the IDF but does not constitute substantive conflict discourse.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "0a4bfc2a7048545cc8051ee43e6169144985b85c7351812d34f3ca540bf2f20d",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "0e7b5744cdfedcca887b8e4ca98e472786c05eb50275c03a1317f1ad89b7df32",
+    "raw_response_text_sha256": "2f4bec5ef0eb33c602bb20fc82912e055fb8e2f40d67862aa314bc1e8d8d37cc"
+  },
+  "api_metadata": {
+    "id": "resp_07154f843e02695d006aaa00dc4ff087d28aae04a10980ec5c",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789526236.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2550,
+      "input_tokens_details": {
+        "cache_write_tokens": 2547,
+        "cached_tokens": 0
+      },
+      "output_tokens": 315,
+      "output_tokens_details": {
+        "reasoning_tokens": 136
+      },
+      "total_tokens": 2865
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.94,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Cybersecurity breaches and governance failures at the Sellafield nuclear site\",\n  \"conflict_relevance\": \"The main article is unrelated to Gaza or the Israel-Palestine conflict, but it contains embedded snippets mentioning a British-Israeli IDF soldier killed in Gaza and a Hamas rocket attack near an Israeli missile base.\",\n  \"reason\": \"The conflict-related material is brief, disconnected from the main Sellafield investigation, and appears to be unrelated embedded content. It provides some meaningful mentions of Gaza, Hamas, and the IDF but does not constitute substantive conflict discourse.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:37:20Z",
+  "duration_seconds": 4.202,
+  "error": null
+}

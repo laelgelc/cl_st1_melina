@@ -1,0 +1,65 @@
+{
+  "article_id": "102586894",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_south_2023_10/in/102586894.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_south_2023_10/in/102586894.json"
+  },
+  "manifest_row": {
+    "article_id": "102586894",
+    "group": "global_south_2023_10",
+    "country_code": "in",
+    "filepath": "corpus/02_now_organised/global_south_2023_10/in/102586894.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.92,
+    "gaza_role": "background",
+    "main_topic": "Financial market reaction to the Middle East conflict",
+    "conflict_relevance": "The article describes Israeli military action in Gaza, regional and international protests supporting Palestinians, and the effect of the conflict on investor sentiment and stock markets.",
+    "reason": "Although it contains substantive descriptions of the Gaza conflict and related protests, the apparent main focus is U.S. stock-market performance and investor risk sentiment rather than Gaza or Israel-Palestine itself.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "d1beedb6832e42811522232b1d17dfb022b2ee9c39c3e91ce0c37e4f11b9f2ca",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "fe5bde0ec65c332a886b45fe9f31481425d453baac493f0b4c2b594b7a4e66c9",
+    "raw_response_text_sha256": "9e049bc8ddab12cfbaf8a867c1292d3a9dadefc559a63f008c8885920115f55b"
+  },
+  "api_metadata": {
+    "id": "resp_0a98107ec9a43f80006aaa3271212887d18702a2fca8a7925d",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789538929.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 795,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 430,
+      "output_tokens_details": {
+        "reasoning_tokens": 278
+      },
+      "total_tokens": 1225
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.92,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Financial market reaction to the Middle East conflict\",\n  \"conflict_relevance\": \"The article describes Israeli military action in Gaza, regional and international protests supporting Palestinians, and the effect of the conflict on investor sentiment and stock markets.\",\n  \"reason\": \"Although it contains substantive descriptions of the Gaza conflict and related protests, the apparent main focus is U.S. stock-market performance and investor risk sentiment rather than Gaza or Israel-Palestine itself.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T06:08:55Z",
+  "duration_seconds": 6.432,
+  "error": null
+}

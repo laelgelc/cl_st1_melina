@@ -1,0 +1,65 @@
+{
+  "article_id": "111828052",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_south_2024_08/za/111828052.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_south_2024_08/za/111828052.json"
+  },
+  "manifest_row": {
+    "article_id": "111828052",
+    "group": "global_south_2024_08",
+    "country_code": "za",
+    "filepath": "corpus/02_now_organised/global_south_2024_08/za/111828052.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.97,
+    "gaza_role": "boilerplate_or_unrelated",
+    "main_topic": "South African politics, the ANC, and the Government of National Unity",
+    "conflict_relevance": "The article is an opinion column about South African political leadership, historical violence, and political accountability. Its sole reference to Gaza appears to concern Gaza Province in a historical/geographical context, not Gaza, Palestine, or the Israel-Hamas conflict.",
+    "reason": "The article does not meaningfully discuss the Gaza conflict or related discourse. The Gaza reference is incidental and unrelated to the research topic.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "b43cc42e9d60f427b9f2b97993f9896b035c245d758814c35c4a75e0bccdc4c0",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "97871ffa19c16317d61b7ecc9601dce7f0324afbd851d35b527cc6b93b62e3d3",
+    "raw_response_text_sha256": "378ae8e2c2fa727dc77e217884e30ce79e6e4005c33cf15ec5d5c7ccf7226894"
+  },
+  "api_metadata": {
+    "id": "resp_03645d364b8b8542006aaa3ed2e08c87d19c2a30aea42c105a",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789542098.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 5941,
+      "input_tokens_details": {
+        "cache_write_tokens": 5938,
+        "cached_tokens": 0
+      },
+      "output_tokens": 314,
+      "output_tokens_details": {
+        "reasoning_tokens": 147
+      },
+      "total_tokens": 6255
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.97,\n  \"gaza_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"South African politics, the ANC, and the Government of National Unity\",\n  \"conflict_relevance\": \"The article is an opinion column about South African political leadership, historical violence, and political accountability. Its sole reference to Gaza appears to concern Gaza Province in a historical/geographical context, not Gaza, Palestine, or the Israel-Hamas conflict.\",\n  \"reason\": \"The article does not meaningfully discuss the Gaza conflict or related discourse. The Gaza reference is incidental and unrelated to the research topic.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T07:01:42Z",
+  "duration_seconds": 4.007,
+  "error": null
+}

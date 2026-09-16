@@ -1,0 +1,65 @@
+{
+  "article_id": "102507289",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_10/us/102507289.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_10/us/102507289.json"
+  },
+  "manifest_row": {
+    "article_id": "102507289",
+    "group": "global_north_2023_10",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2023_10/us/102507289.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "gaza_role": "passing",
+    "main_topic": "Anti-abortion activism and a building-climbing protest stunt",
+    "conflict_relevance": "The article is primarily about an anti-abortion fundraising stunt; Gaza appears only in an unrelated, isolated sentence about people possibly captured by Hamas.",
+    "reason": "The main article contains no meaningful discussion of Gaza, Palestine, Israel/Palestine, or the conflict. The brief Hamas-related sentence is an unrelated embedded snippet and is insufficient for discourse analysis.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "ad3cbe452d239216b3f609e8e861df7103d2885de58d87b74eb50faf121fb785",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "eacea4548f7bd38d7a2c6a1298e169e8e465ea3fd3a1f16df5c466034a50cb80",
+    "raw_response_text_sha256": "571c419605fb9341e514d6d196c6910444e2ec6dddfbadefe3af371e5068c892"
+  },
+  "api_metadata": {
+    "id": "resp_039f8a8176b0b802006aa9f882592087d2acc6db31eb7fa5f6",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789524098.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1404,
+      "input_tokens_details": {
+        "cache_write_tokens": 1401,
+        "cached_tokens": 0
+      },
+      "output_tokens": 335,
+      "output_tokens_details": {
+        "reasoning_tokens": 182
+      },
+      "total_tokens": 1739
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Anti-abortion activism and a building-climbing protest stunt\",\n  \"conflict_relevance\": \"The article is primarily about an anti-abortion fundraising stunt; Gaza appears only in an unrelated, isolated sentence about people possibly captured by Hamas.\",\n  \"reason\": \"The main article contains no meaningful discussion of Gaza, Palestine, Israel/Palestine, or the conflict. The brief Hamas-related sentence is an unrelated embedded snippet and is insufficient for discourse analysis.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:01:43Z",
+  "duration_seconds": 5.426,
+  "error": null
+}

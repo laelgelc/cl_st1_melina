@@ -1,0 +1,65 @@
+{
+  "article_id": "106827472",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_03/nz/106827472.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_03/nz/106827472.json"
+  },
+  "manifest_row": {
+    "article_id": "106827472",
+    "group": "global_north_2024_03",
+    "country_code": "nz",
+    "filepath": "corpus/02_now_organised/global_north_2024_03/nz/106827472.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.93,
+    "gaza_role": "passing",
+    "main_topic": "Investigation into reopening the Marsden Point Oil Refinery and securing New Zealand's fuel supply",
+    "conflict_relevance": "The main article is unrelated to the Israel-Palestine conflict, but an embedded news snippet mentions New Zealand humanitarian funding for Gaza and the civilian impact of the Israel-Hamas conflict.",
+    "reason": "The refinery and fuel-security article is not conflict coverage, but it contains a meaningful albeit brief Gaza-related embedded item concerning humanitarian need and civilian suffering.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "aa59d286d713b175edf8bade176ebe1395670d56e8d053b11247d421144ce52b",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "39265c9033280e61040fc1f0d1bdea023fd49e6ba490a2d58b4f126f5ae51041",
+    "raw_response_text_sha256": "97d17915bf1e870b037c9791e2c62d3a5668d3697db4119da81798215b43acad"
+  },
+  "api_metadata": {
+    "id": "resp_0a566ed967dc7d3d006aaa093b817087d28708b4f8d96442c4",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789528379.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1288,
+      "input_tokens_details": {
+        "cache_write_tokens": 1285,
+        "cached_tokens": 0
+      },
+      "output_tokens": 320,
+      "output_tokens_details": {
+        "reasoning_tokens": 160
+      },
+      "total_tokens": 1608
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.93,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Investigation into reopening the Marsden Point Oil Refinery and securing New Zealand's fuel supply\",\n  \"conflict_relevance\": \"The main article is unrelated to the Israel-Palestine conflict, but an embedded news snippet mentions New Zealand humanitarian funding for Gaza and the civilian impact of the Israel-Hamas conflict.\",\n  \"reason\": \"The refinery and fuel-security article is not conflict coverage, but it contains a meaningful albeit brief Gaza-related embedded item concerning humanitarian need and civilian suffering.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:13:04Z",
+  "duration_seconds": 4.708,
+  "error": null
+}

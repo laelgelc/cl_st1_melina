@@ -1,0 +1,65 @@
+{
+  "article_id": "91708073",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_10/us/91708073.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_10/us/91708073.json"
+  },
+  "manifest_row": {
+    "article_id": "91708073",
+    "group": "global_north_2023_10",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2023_10/us/91708073.txt"
+  },
+  "screening": {
+    "category": "CORE",
+    "confidence": 0.99,
+    "gaza_role": "central",
+    "main_topic": "Israeli ground invasion of Gaza, communications blackout, humanitarian crisis, and civilian harm",
+    "conflict_relevance": "The main article focuses extensively on the Israel-Hamas war, Israel's ground invasion, evacuation orders, strikes on Gaza, hospital risks, Palestinian casualties, siege conditions, communications disruption, humanitarian response, and international humanitarian law.",
+    "reason": "Although the text includes multiple unrelated roundup items, the headline and primary article content centrally concern the Gaza war and its humanitarian and military consequences.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": true
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "9ffff3a068f3250b9755550287fe95436c89d02b7b1783e277495173042af263",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "f88970be99ade4f0afa957658c4d62c774a5c381604f4b106e000a909e6e2cbb",
+    "raw_response_text_sha256": "0f3ccf544248253c4305de2c1e952b42a65263d269ec2cad9bf3158564490774"
+  },
+  "api_metadata": {
+    "id": "resp_00cf6292a83704b6006aa9fb4a17d887d2809eb3b3bc0ae813",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789524810.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2061,
+      "input_tokens_details": {
+        "cache_write_tokens": 2058,
+        "cached_tokens": 0
+      },
+      "output_tokens": 238,
+      "output_tokens_details": {
+        "reasoning_tokens": 77
+      },
+      "total_tokens": 2299
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"CORE\",\n  \"confidence\": 0.99,\n  \"gaza_role\": \"central\",\n  \"main_topic\": \"Israeli ground invasion of Gaza, communications blackout, humanitarian crisis, and civilian harm\",\n  \"conflict_relevance\": \"The main article focuses extensively on the Israel-Hamas war, Israel's ground invasion, evacuation orders, strikes on Gaza, hospital risks, Palestinian casualties, siege conditions, communications disruption, humanitarian response, and international humanitarian law.\",\n  \"reason\": \"Although the text includes multiple unrelated roundup items, the headline and primary article content centrally concern the Gaza war and its humanitarian and military consequences.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": true\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:13:33Z",
+  "duration_seconds": 3.669,
+  "error": null
+}

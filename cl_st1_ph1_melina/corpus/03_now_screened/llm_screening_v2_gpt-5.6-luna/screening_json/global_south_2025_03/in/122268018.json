@@ -1,0 +1,65 @@
+{
+  "article_id": "122268018",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_south_2025_03/in/122268018.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_south_2025_03/in/122268018.json"
+  },
+  "manifest_row": {
+    "article_id": "122268018",
+    "group": "global_south_2025_03",
+    "country_code": "in",
+    "filepath": "corpus/02_now_organised/global_south_2025_03/in/122268018.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "gaza_role": "passing",
+    "main_topic": "Global pandemic preparedness and public health",
+    "conflict_relevance": "Gaza is mentioned only in passing as one location where polio cases occurred; the article does not discuss the conflict or related political, humanitarian, or military issues.",
+    "reason": "The article focuses on infectious diseases, vaccination, pandemic responses, and public health governance. Its brief reference to polio in Gaza is incidental and does not provide meaningful conflict-related discourse.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "f0c2b09ffee23669e2b4a90b599a682082b96b57924aaee6de2b4fcfa8e85c04",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "94d029984fd486b9b84ca5ccb24e34684f1938315ac90f06e9d4b70b50533070",
+    "raw_response_text_sha256": "74304315f44a551e89df4bb57d48b64389c8a7a4ceed331e51cf413157d921d6"
+  },
+  "api_metadata": {
+    "id": "resp_05eddb5ea49731ba006aaa465f2bec87d190a4f7c481b8c9dc",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789544031.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1836,
+      "input_tokens_details": {
+        "cache_write_tokens": 1833,
+        "cached_tokens": 0
+      },
+      "output_tokens": 192,
+      "output_tokens_details": {
+        "reasoning_tokens": 42
+      },
+      "total_tokens": 2028
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Global pandemic preparedness and public health\",\n  \"conflict_relevance\": \"Gaza is mentioned only in passing as one location where polio cases occurred; the article does not discuss the conflict or related political, humanitarian, or military issues.\",\n  \"reason\": \"The article focuses on infectious diseases, vaccination, pandemic responses, and public health governance. Its brief reference to polio in Gaza is incidental and does not provide meaningful conflict-related discourse.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T07:33:53Z",
+  "duration_seconds": 2.914,
+  "error": null
+}

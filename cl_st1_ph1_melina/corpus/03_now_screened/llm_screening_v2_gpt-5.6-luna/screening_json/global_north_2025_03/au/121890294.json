@@ -1,0 +1,65 @@
+{
+  "article_id": "121890294",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_03/au/121890294.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_03/au/121890294.json"
+  },
+  "manifest_row": {
+    "article_id": "121890294",
+    "group": "global_north_2025_03",
+    "country_code": "au",
+    "filepath": "corpus/02_now_organised/global_north_2025_03/au/121890294.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "gaza_role": "passing",
+    "main_topic": "Oscar win and controversy surrounding the film Emilia Pérez",
+    "conflict_relevance": "Gaza appears only as one hypothetical example in a quotation about the universality of women facing systemic oppression; the article does not discuss Gaza or the Israel-Palestine conflict.",
+    "reason": "The article is entirely focused on an actress's Oscar win and backlash surrounding the film, with only a passing, unrelated mention of Gaza.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "996d72afad6bba2d9e3b2d90c14708d9732513380e23e5f83509db6a6df0af5c",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "d47237f5f71d2ddacdd042205050f41b80123b81e548e9489f231af8b6a93d81",
+    "raw_response_text_sha256": "b0bbf78f4de27babcccfcc9a61bfd89f874a2361047a3788824d11ad7b98e832"
+  },
+  "api_metadata": {
+    "id": "resp_085396e4e231d049006aaa2567ee4887d1ad594a4bf46b81bd",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789535591.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1486,
+      "input_tokens_details": {
+        "cache_write_tokens": 1483,
+        "cached_tokens": 0
+      },
+      "output_tokens": 205,
+      "output_tokens_details": {
+        "reasoning_tokens": 58
+      },
+      "total_tokens": 1691
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Oscar win and controversy surrounding the film Emilia Pérez\",\n  \"conflict_relevance\": \"Gaza appears only as one hypothetical example in a quotation about the universality of women facing systemic oppression; the article does not discuss Gaza or the Israel-Palestine conflict.\",\n  \"reason\": \"The article is entirely focused on an actress's Oscar win and backlash surrounding the film, with only a passing, unrelated mention of Gaza.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T05:13:15Z",
+  "duration_seconds": 3.29,
+  "error": null
+}

@@ -1,0 +1,65 @@
+{
+  "article_id": "115550450",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_10/gb/115550450.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_10/gb/115550450.json"
+  },
+  "manifest_row": {
+    "article_id": "115550450",
+    "group": "global_north_2024_10",
+    "country_code": "gb",
+    "filepath": "corpus/02_now_organised/global_north_2024_10/gb/115550450.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.97,
+    "gaza_role": "background",
+    "main_topic": "Police search for a missing woman in North Yorkshire",
+    "conflict_relevance": "The main article is unrelated to Gaza, but it contains substantial embedded material about Hamas, the Israel-Gaza war, the Nakba, and competing framings of the conflict.",
+    "reason": "The article is primarily a missing-person report, while the Gaza-related passages appear to be unrelated inserted news or commentary snippets. Because those passages contain meaningful conflict discourse, the item is peripheral rather than excluded.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "c9371eb2db6472a611c767c1c7a69c97c6bfdfd2bc248fef26f9756d28943109",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "da9b6fd039c2d763869d4064a03e45dda4829cacf3d5212723b00aacec2f4b67",
+    "raw_response_text_sha256": "c7cec991837eb218043f07aef1d33d8e5be1654ae85a2d7e8777b06c2da87091"
+  },
+  "api_metadata": {
+    "id": "resp_02519b127e19cca8006aaa1833e11c87d2984bc062ac4fa71a",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789532211.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1697,
+      "input_tokens_details": {
+        "cache_write_tokens": 1694,
+        "cached_tokens": 0
+      },
+      "output_tokens": 345,
+      "output_tokens_details": {
+        "reasoning_tokens": 185
+      },
+      "total_tokens": 2042
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.97,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Police search for a missing woman in North Yorkshire\",\n  \"conflict_relevance\": \"The main article is unrelated to Gaza, but it contains substantial embedded material about Hamas, the Israel-Gaza war, the Nakba, and competing framings of the conflict.\",\n  \"reason\": \"The article is primarily a missing-person report, while the Gaza-related passages appear to be unrelated inserted news or commentary snippets. Because those passages contain meaningful conflict discourse, the item is peripheral rather than excluded.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T04:16:56Z",
+  "duration_seconds": 4.371,
+  "error": null
+}

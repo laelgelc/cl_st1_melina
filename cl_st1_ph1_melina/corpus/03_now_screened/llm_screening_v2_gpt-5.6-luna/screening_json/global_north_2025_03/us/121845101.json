@@ -1,0 +1,65 @@
+{
+  "article_id": "121845101",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_03/us/121845101.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_03/us/121845101.json"
+  },
+  "manifest_row": {
+    "article_id": "121845101",
+    "group": "global_north_2025_03",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2025_03/us/121845101.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "gaza_role": "passing",
+    "main_topic": "U.S. government spending cuts and Elon Musk's role in the federal government",
+    "conflict_relevance": "Gaza is mentioned only in passing as part of a list of Donald Trump's purported foreign-policy actions.",
+    "reason": "The article is primarily about U.S. domestic politics and government restructuring. Its brief reference to taking over the Gaza Strip does not provide meaningful conflict-related discourse.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "d418022b1e41dd38cc85379d9c113d56b8bdd4f2823971ec47451c3ff097f5f3",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "117b292d08ea138b049c7d46807e985d6e05896fdeb830831e613aa5a2744deb",
+    "raw_response_text_sha256": "9343898d0509e52b230cc4959c72315cf72e53155d0b57387b930746519ac30e"
+  },
+  "api_metadata": {
+    "id": "resp_09844d429f72190d006aaa27053ed087d18ae7a35714cdc681",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789536005.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1005,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 189,
+      "output_tokens_details": {
+        "reasoning_tokens": 48
+      },
+      "total_tokens": 1194
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"U.S. government spending cuts and Elon Musk's role in the federal government\",\n  \"conflict_relevance\": \"Gaza is mentioned only in passing as part of a list of Donald Trump's purported foreign-policy actions.\",\n  \"reason\": \"The article is primarily about U.S. domestic politics and government restructuring. Its brief reference to taking over the Gaza Strip does not provide meaningful conflict-related discourse.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T05:20:07Z",
+  "duration_seconds": 2.695,
+  "error": null
+}

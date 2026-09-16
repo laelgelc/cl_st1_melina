@@ -1,0 +1,65 @@
+{
+  "article_id": "122032925",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_south_2025_03/in/122032925.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_south_2025_03/in/122032925.json"
+  },
+  "manifest_row": {
+    "article_id": "122032925",
+    "group": "global_south_2025_03",
+    "country_code": "in",
+    "filepath": "corpus/02_now_organised/global_south_2025_03/in/122032925.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "background",
+    "main_topic": "Artificial intelligence and its applications across society and industry",
+    "conflict_relevance": "The article's main focus is artificial intelligence, but an embedded update discusses using AI to revoke visas from students perceived as Hamas supporters and links this policy to pro-Palestinian protests and Israel's military assault on Gaza.",
+    "reason": "The Gaza-related content is meaningful but appears as a secondary news update within an otherwise unrelated AI-focused live article, so it is relevant to broader discourse on Gaza, protest, antisemitism, and state policy but is not core conflict coverage.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "d448c4f06fbcddc7e0aad12ffc21ddcb9a648b8927060c96ab322a7b8063986b",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "74d91ab8e51763a588fa954bf1b7488b7f37be42edc91deef57078ad165a233c",
+    "raw_response_text_sha256": "5b8c3be4336b663c1d1852b140fd92c90387db53f97fdf591036d5e0d9cb4dd5"
+  },
+  "api_metadata": {
+    "id": "resp_0d557d12a45aa1e2006aaa464d312087d1bb7dd83796980f0b",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789544013.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1664,
+      "input_tokens_details": {
+        "cache_write_tokens": 1661,
+        "cached_tokens": 0
+      },
+      "output_tokens": 239,
+      "output_tokens_details": {
+        "reasoning_tokens": 62
+      },
+      "total_tokens": 1903
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Artificial intelligence and its applications across society and industry\",\n  \"conflict_relevance\": \"The article's main focus is artificial intelligence, but an embedded update discusses using AI to revoke visas from students perceived as Hamas supporters and links this policy to pro-Palestinian protests and Israel's military assault on Gaza.\",\n  \"reason\": \"The Gaza-related content is meaningful but appears as a secondary news update within an otherwise unrelated AI-focused live article, so it is relevant to broader discourse on Gaza, protest, antisemitism, and state policy but is not core conflict coverage.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T07:33:36Z",
+  "duration_seconds": 3.267,
+  "error": null
+}

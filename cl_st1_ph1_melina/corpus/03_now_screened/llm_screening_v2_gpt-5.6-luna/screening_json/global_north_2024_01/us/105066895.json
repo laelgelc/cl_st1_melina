@@ -1,0 +1,65 @@
+{
+  "article_id": "105066895",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_01/us/105066895.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_01/us/105066895.json"
+  },
+  "manifest_row": {
+    "article_id": "105066895",
+    "group": "global_north_2024_01",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2024_01/us/105066895.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.86,
+    "gaza_role": "passing",
+    "main_topic": "Amy Klobuchar's 2024 Senate reelection campaign and Minnesota politics",
+    "conflict_relevance": "The article is primarily about Klobuchar's political prospects and contains only a brief, apparently separate mention of demonstrations against the war in Gaza.",
+    "reason": "The Gaza-related content is limited to one sentence at the end, likely an unrelated embedded snippet, but it does meaningfully reference public protest against the Gaza war.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "957aef18f09d825990b34c3110540d4424eeb97215add8e6142c6ee2cdd0e55b",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "879d61c9dfb1b2a9de43bcfdd0ff6b69aa11358c1b578e7aa00052ae2eb9c68c",
+    "raw_response_text_sha256": "29cd58d562435757eb6d3ea9d084982db7d14568fbc94b855362350f3b0a09cf"
+  },
+  "api_metadata": {
+    "id": "resp_0ae7cc93c370dbd6006aaa04bf5c7087d29ac56a48d32daadf",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789527231.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2024,
+      "input_tokens_details": {
+        "cache_write_tokens": 2021,
+        "cached_tokens": 0
+      },
+      "output_tokens": 344,
+      "output_tokens_details": {
+        "reasoning_tokens": 193
+      },
+      "total_tokens": 2368
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.86,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Amy Klobuchar's 2024 Senate reelection campaign and Minnesota politics\",\n  \"conflict_relevance\": \"The article is primarily about Klobuchar's political prospects and contains only a brief, apparently separate mention of demonstrations against the war in Gaza.\",\n  \"reason\": \"The Gaza-related content is limited to one sentence at the end, likely an unrelated embedded snippet, but it does meaningfully reference public protest against the Gaza war.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:53:55Z",
+  "duration_seconds": 4.573,
+  "error": null
+}

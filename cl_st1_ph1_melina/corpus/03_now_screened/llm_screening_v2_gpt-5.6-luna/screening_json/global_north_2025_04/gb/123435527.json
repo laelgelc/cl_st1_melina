@@ -1,0 +1,65 @@
+{
+  "article_id": "123435527",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_04/gb/123435527.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_04/gb/123435527.json"
+  },
+  "manifest_row": {
+    "article_id": "123435527",
+    "group": "global_north_2025_04",
+    "country_code": "gb",
+    "filepath": "corpus/02_now_organised/global_north_2025_04/gb/123435527.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.96,
+    "gaza_role": "background",
+    "main_topic": "Donald Trump's international diplomacy and proposed negotiations with Iran over its nuclear programme",
+    "conflict_relevance": "The article discusses the Gaza ceasefire and renewed hostilities, Hamas's military infrastructure, Israel's conflict with Iran-backed groups, and regional diplomacy, but Gaza is used mainly as context for a broader analysis of Trump's foreign-policy initiatives.",
+    "reason": "Gaza and Hamas receive meaningful discussion, including reference to the collapsed ceasefire and Israel-Hamas hostilities, but the article's central subject is Trump's handling of Iran, Ukraine, and the Houthis rather than the Gaza conflict itself.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "32c2066b78a4511da3467fe56487afe59dda94b4cf6837471c6a658dcfbd9545",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "5687c373b4fa90138dcf509b7df08aa1080d54a7b850dc23729bdb6e8737aae1",
+    "raw_response_text_sha256": "028b47ce5ba89d915f61064bb56f3bd6d18b357fffe87db4f1ef7c42cf7e76cd"
+  },
+  "api_metadata": {
+    "id": "resp_093ebf8eb448c199006aaa28df234c87d19b09a49ce84fa57c",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789536479.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1619,
+      "input_tokens_details": {
+        "cache_write_tokens": 1616,
+        "cached_tokens": 0
+      },
+      "output_tokens": 276,
+      "output_tokens_details": {
+        "reasoning_tokens": 94
+      },
+      "total_tokens": 1895
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.96,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Donald Trump's international diplomacy and proposed negotiations with Iran over its nuclear programme\",\n  \"conflict_relevance\": \"The article discusses the Gaza ceasefire and renewed hostilities, Hamas's military infrastructure, Israel's conflict with Iran-backed groups, and regional diplomacy, but Gaza is used mainly as context for a broader analysis of Trump's foreign-policy initiatives.\",\n  \"reason\": \"Gaza and Hamas receive meaningful discussion, including reference to the collapsed ceasefire and Israel-Hamas hostilities, but the article's central subject is Trump's handling of Iran, Ukraine, and the Houthis rather than the Gaza conflict itself.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T05:28:03Z",
+  "duration_seconds": 4.186,
+  "error": null
+}

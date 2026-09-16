@@ -1,0 +1,65 @@
+{
+  "article_id": "105559837",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_01/us/105559837.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_01/us/105559837.json"
+  },
+  "manifest_row": {
+    "article_id": "105559837",
+    "group": "global_north_2024_01",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2024_01/us/105559837.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.97,
+    "gaza_role": "passing",
+    "main_topic": "Justice Department investigation into Cori Bush's campaign spending on personal security",
+    "conflict_relevance": "Gaza appears only in a photo caption noting Bush's participation in a ceasefire demonstration; the article's substantive focus is campaign finance and alleged misuse of funds.",
+    "reason": "The Gaza reference is incidental and does not contribute meaningful discourse about the conflict.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "863f64446e90579b357e9289800b95a8083a9a27f2121c1a5789f01eb7dcb856",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "a27194e8c1148ffc610d60a909b506fff788a32df33d91585f9490b8795b36d5",
+    "raw_response_text_sha256": "e4954752eba5b7d9b23168954019bdaebe168508411417c3ac3b3e45b39fb993"
+  },
+  "api_metadata": {
+    "id": "resp_0c8ff7d145f83fb7006aaa052c1f7087d297534fdd44d97b98",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789527340.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2031,
+      "input_tokens_details": {
+        "cache_write_tokens": 2028,
+        "cached_tokens": 0
+      },
+      "output_tokens": 229,
+      "output_tokens_details": {
+        "reasoning_tokens": 94
+      },
+      "total_tokens": 2260
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.97,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Justice Department investigation into Cori Bush's campaign spending on personal security\",\n  \"conflict_relevance\": \"Gaza appears only in a photo caption noting Bush's participation in a ceasefire demonstration; the article's substantive focus is campaign finance and alleged misuse of funds.\",\n  \"reason\": \"The Gaza reference is incidental and does not contribute meaningful discourse about the conflict.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:55:43Z",
+  "duration_seconds": 3.569,
+  "error": null
+}

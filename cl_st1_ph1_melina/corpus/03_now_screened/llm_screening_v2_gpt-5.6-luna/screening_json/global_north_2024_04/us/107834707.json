@@ -1,0 +1,65 @@
+{
+  "article_id": "107834707",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_04/us/107834707.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_04/us/107834707.json"
+  },
+  "manifest_row": {
+    "article_id": "107834707",
+    "group": "global_north_2024_04",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2024_04/us/107834707.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "gaza_role": "boilerplate_or_unrelated",
+    "main_topic": "The safe recovery of a missing teenager and the arrest of an adult acquaintance",
+    "conflict_relevance": "The main article is unrelated to Gaza or the Israel-Palestine conflict; Gaza-related references occur only in unrelated embedded video headlines and navigation content.",
+    "reason": "The article concerns a missing-person case. References to cease-fire talks in Gaza, protests against the war in Gaza, and hostages are incidental snippets rather than substantive content in the main article.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "078edfe7bd8775e8235a360bd1db3f9f3cf7580b241230e806729eac99a8b7b3",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "e5a8aae57c90f380402fccc390a0bcd57cc17643e6ac6832412a47392a7d580c",
+    "raw_response_text_sha256": "9155fbc159a80565a2d8512464baf59e203654be984faad0aff3a4918adfe738"
+  },
+  "api_metadata": {
+    "id": "resp_09525e7ef41f351d006aaa0c648f1c87d299f6c132c6fffd65",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789529188.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1462,
+      "input_tokens_details": {
+        "cache_write_tokens": 1459,
+        "cached_tokens": 0
+      },
+      "output_tokens": 225,
+      "output_tokens_details": {
+        "reasoning_tokens": 63
+      },
+      "total_tokens": 1687
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"gaza_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"The safe recovery of a missing teenager and the arrest of an adult acquaintance\",\n  \"conflict_relevance\": \"The main article is unrelated to Gaza or the Israel-Palestine conflict; Gaza-related references occur only in unrelated embedded video headlines and navigation content.\",\n  \"reason\": \"The article concerns a missing-person case. References to cease-fire talks in Gaza, protests against the war in Gaza, and hostages are incidental snippets rather than substantive content in the main article.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:26:32Z",
+  "duration_seconds": 4.538,
+  "error": null
+}

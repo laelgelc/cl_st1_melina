@@ -1,0 +1,65 @@
+{
+  "article_id": "122778208",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_03/nz/122778208.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_03/nz/122778208.json"
+  },
+  "manifest_row": {
+    "article_id": "122778208",
+    "group": "global_north_2025_03",
+    "country_code": "nz",
+    "filepath": "corpus/02_now_organised/global_north_2025_03/nz/122778208.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "background",
+    "main_topic": "Humanitarian crisis and child malnutrition in Yemen",
+    "conflict_relevance": "The article is primarily about Yemen's war and humanitarian conditions, but it connects recent US strikes and Houthi attacks to the breakdown of the Gaza ceasefire.",
+    "reason": "Gaza appears in a meaningful contextual explanation of escalating regional military activity, but the article does not substantially discuss Gaza, Palestinians, Israel, or the Israel-Hamas war.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "5a12b1e954e7fd8d1d889496537147e1cbbaeb5904073908a4518177e0168895",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "333bb81aeb86034734eda1e8c5ac4807619c8fa7bbbaec738aea343fef09c954",
+    "raw_response_text_sha256": "4190079e93b7088f27a71fd2275980d3e0ef367ce8ebe5ab9dda55c2147e41b0"
+  },
+  "api_metadata": {
+    "id": "resp_00f303188eb87868006aaa26e8fd5c87d184b1c6f7233a3eac",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789535977.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1297,
+      "input_tokens_details": {
+        "cache_write_tokens": 1294,
+        "cached_tokens": 0
+      },
+      "output_tokens": 195,
+      "output_tokens_details": {
+        "reasoning_tokens": 44
+      },
+      "total_tokens": 1492
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Humanitarian crisis and child malnutrition in Yemen\",\n  \"conflict_relevance\": \"The article is primarily about Yemen's war and humanitarian conditions, but it connects recent US strikes and Houthi attacks to the breakdown of the Gaza ceasefire.\",\n  \"reason\": \"Gaza appears in a meaningful contextual explanation of escalating regional military activity, but the article does not substantially discuss Gaza, Palestinians, Israel, or the Israel-Hamas war.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T05:19:39Z",
+  "duration_seconds": 2.794,
+  "error": null
+}

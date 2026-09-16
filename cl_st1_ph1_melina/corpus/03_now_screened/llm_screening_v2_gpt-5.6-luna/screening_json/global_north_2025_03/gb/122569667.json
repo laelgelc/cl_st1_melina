@@ -1,0 +1,65 @@
+{
+  "article_id": "122569667",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_03/gb/122569667.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_03/gb/122569667.json"
+  },
+  "manifest_row": {
+    "article_id": "122569667",
+    "group": "global_north_2025_03",
+    "country_code": "gb",
+    "filepath": "corpus/02_now_organised/global_north_2025_03/gb/122569667.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "passing",
+    "main_topic": "Ukraine peace negotiations involving Trump and Putin",
+    "conflict_relevance": "The article is primarily about the Russia-Ukraine war and diplomatic negotiations, but it briefly references Gaza, the suspension of hostage releases, and renewed Israeli military action as a comparison.",
+    "reason": "Gaza appears in a meaningful but brief contextual sentence and is not the focus of the article.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "7a53a5aa580302c64c1f094701e0383f98b9f5e7fdeaf31646d8d8bf3ff89278",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "5f504ff71a10fca3dc05641bedbfdfdec1169fefa554ef6fbafa5493082c76c9",
+    "raw_response_text_sha256": "a235f7aba53311e364ef1d075bc9cb39a43035956bc800c69392fb9d03164bd8"
+  },
+  "api_metadata": {
+    "id": "resp_0c39e5f9962d0037006aaa2645e48887d1ba570290f6402217",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789535813.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1043,
+      "input_tokens_details": {
+        "cache_write_tokens": 1040,
+        "cached_tokens": 0
+      },
+      "output_tokens": 185,
+      "output_tokens_details": {
+        "reasoning_tokens": 48
+      },
+      "total_tokens": 1228
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Ukraine peace negotiations involving Trump and Putin\",\n  \"conflict_relevance\": \"The article is primarily about the Russia-Ukraine war and diplomatic negotiations, but it briefly references Gaza, the suspension of hostage releases, and renewed Israeli military action as a comparison.\",\n  \"reason\": \"Gaza appears in a meaningful but brief contextual sentence and is not the focus of the article.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T05:16:56Z",
+  "duration_seconds": 2.604,
+  "error": null
+}

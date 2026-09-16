@@ -1,0 +1,65 @@
+{
+  "article_id": "123569629",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_04/gb/123569629.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_04/gb/123569629.json"
+  },
+  "manifest_row": {
+    "article_id": "123569629",
+    "group": "global_north_2025_04",
+    "country_code": "gb",
+    "filepath": "corpus/02_now_organised/global_north_2025_04/gb/123569629.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.93,
+    "gaza_role": "background",
+    "main_topic": "Arrests and court proceedings following vandalism at Donald Trump's Turnberry golf resort",
+    "conflict_relevance": "The article reports pro-Palestine graffiti, including the slogan \"Gaza is not 4 sale,\" as the apparent political context for the vandalism. It offers limited discourse about Palestine-related protest but is primarily a crime and court report.",
+    "reason": "The Palestine and Gaza references are meaningful but secondary to the article's focus on arrests, property damage, and legal proceedings.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "56ca2c31677383bef72beaec9003fd45e16f419a7565e3eed25420078b19543b",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "0d3300d25eba1acb7e9c07f3527d6fb27fc24abc11de0d01e87c275434dfa46d",
+    "raw_response_text_sha256": "10441631652b48083f252e0a2329bde0b7e510665945ce03e0d3ad9f3903470f"
+  },
+  "api_metadata": {
+    "id": "resp_0de9f2bb0bad6d73006aaa28f13fb087d18a1247c55f578729",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789536497.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1039,
+      "input_tokens_details": {
+        "cache_write_tokens": 1036,
+        "cached_tokens": 0
+      },
+      "output_tokens": 268,
+      "output_tokens_details": {
+        "reasoning_tokens": 104
+      },
+      "total_tokens": 1307
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.93,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Arrests and court proceedings following vandalism at Donald Trump's Turnberry golf resort\",\n  \"conflict_relevance\": \"The article reports pro-Palestine graffiti, including the slogan \\\"Gaza is not 4 sale,\\\" as the apparent political context for the vandalism. It offers limited discourse about Palestine-related protest but is primarily a crime and court report.\",\n  \"reason\": \"The Palestine and Gaza references are meaningful but secondary to the article's focus on arrests, property damage, and legal proceedings.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T05:28:21Z",
+  "duration_seconds": 3.948,
+  "error": null
+}

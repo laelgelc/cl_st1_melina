@@ -1,0 +1,65 @@
+{
+  "article_id": "105007114",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_01/nz/105007114.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_01/nz/105007114.json"
+  },
+  "manifest_row": {
+    "article_id": "105007114",
+    "group": "global_north_2024_01",
+    "country_code": "nz",
+    "filepath": "corpus/02_now_organised/global_north_2024_01/nz/105007114.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.95,
+    "gaza_role": "background",
+    "main_topic": "Public health warning about toxic algal blooms in Lake Rotorua",
+    "conflict_relevance": "The main article is unrelated to the Israel-Palestine conflict, but it contains a substantive embedded snippet discussing Israel's alleged endgame in Gaza and Netanyahu's comments about voluntary immigration.",
+    "reason": "The Gaza-related material is an unrelated inserted news item rather than part of the main article, but it contains meaningful conflict discourse and is therefore relevant peripherally.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "240fb7be4db13e9eef9bbb56179480b9c4a71f4708f339e4f2b4206d65924733",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "1f147dc00a42a23b23b60f239de73059879df58e4c6e62330c6fe2fa8fad058b",
+    "raw_response_text_sha256": "34f53b5249ef4c1f1373025793757c98f0610e0f1a058ab0459bf45a7dd514a3"
+  },
+  "api_metadata": {
+    "id": "resp_05e95dc3fa16b7e3006aaa045f9acc87d29f1f6da22a924b85",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789527135.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1365,
+      "input_tokens_details": {
+        "cache_write_tokens": 1362,
+        "cached_tokens": 0
+      },
+      "output_tokens": 299,
+      "output_tokens_details": {
+        "reasoning_tokens": 142
+      },
+      "total_tokens": 1664
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.95,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Public health warning about toxic algal blooms in Lake Rotorua\",\n  \"conflict_relevance\": \"The main article is unrelated to the Israel-Palestine conflict, but it contains a substantive embedded snippet discussing Israel's alleged endgame in Gaza and Netanyahu's comments about voluntary immigration.\",\n  \"reason\": \"The Gaza-related material is an unrelated inserted news item rather than part of the main article, but it contains meaningful conflict discourse and is therefore relevant peripherally.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:52:19Z",
+  "duration_seconds": 4.277,
+  "error": null
+}

@@ -1,0 +1,65 @@
+{
+  "article_id": "118109588",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_11/ca/118109588.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_11/ca/118109588.json"
+  },
+  "manifest_row": {
+    "article_id": "118109588",
+    "group": "global_north_2024_11",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2024_11/ca/118109588.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.97,
+    "gaza_role": "boilerplate_or_unrelated",
+    "main_topic": "Social media influencers and misinformation",
+    "conflict_relevance": "The main article is unrelated to Gaza or the Israel-Palestine conflict; Gaza appears only in a repeated sidebar news item about a Lebanon ceasefire linked to the Gaza war.",
+    "reason": "The Gaza-related content is a brief, repeated roundup snippet rather than part of the main article, so it does not provide meaningful material for conflict discourse analysis.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "f767afceb8c81795e769803f6beb00bd8f44a0ed0117b2aeb97122213001b489",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "ffadd6f6e3423c5dc2faf4967e0e1a118531c4b87d310704a0216fd4f5cde7f1",
+    "raw_response_text_sha256": "accdbaf636ff17982fd5694163e378c7c2f475d5d5a615281521b8c9d368fc28"
+  },
+  "api_metadata": {
+    "id": "resp_0058ece92e5ee4af006aaa1a6062f887d286aa64297f1c2428",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789532768.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 3393,
+      "input_tokens_details": {
+        "cache_write_tokens": 3390,
+        "cached_tokens": 0
+      },
+      "output_tokens": 287,
+      "output_tokens_details": {
+        "reasoning_tokens": 135
+      },
+      "total_tokens": 3680
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.97,\n  \"gaza_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Social media influencers and misinformation\",\n  \"conflict_relevance\": \"The main article is unrelated to Gaza or the Israel-Palestine conflict; Gaza appears only in a repeated sidebar news item about a Lebanon ceasefire linked to the Gaza war.\",\n  \"reason\": \"The Gaza-related content is a brief, repeated roundup snippet rather than part of the main article, so it does not provide meaningful material for conflict discourse analysis.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T04:26:11Z",
+  "duration_seconds": 3.307,
+  "error": null
+}

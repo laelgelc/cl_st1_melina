@@ -1,0 +1,65 @@
+{
+  "article_id": "123598458",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_04/gb/123598458.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_04/gb/123598458.json"
+  },
+  "manifest_row": {
+    "article_id": "123598458",
+    "group": "global_north_2025_04",
+    "country_code": "gb",
+    "filepath": "corpus/02_now_organised/global_north_2025_04/gb/123598458.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.96,
+    "gaza_role": "background",
+    "main_topic": "Harvard University’s dispute with the Trump administration over federal funding, campus antisemitism policies, DEI, and institutional independence",
+    "conflict_relevance": "The article references protests against the war in Gaza and debates over antisemitism on university campuses, but its primary focus is the US government’s pressure on Harvard and broader disputes over higher-education governance.",
+    "reason": "Gaza-related protests and antisemitism discourse are meaningful contextual elements, but the article is not primarily about the Gaza war or Israel-Palestine conflict.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "4455e4a7f47fc315efca17f2a4c19c0bcda37966a241ab49c135bc25ffbac055",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "493cb92c711714ed39d5a5ece3444978b88639c2d87c71e0c872bdf3c5ad1a70",
+    "raw_response_text_sha256": "6fde4820d8a05639ea5c8eab856ed75f06f1e6c8dac3532e9e68b97600c62bf6"
+  },
+  "api_metadata": {
+    "id": "resp_0f9882af1f70f0be006aaa28f5fd0887d1972a431ddd949e77",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789536502.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1395,
+      "input_tokens_details": {
+        "cache_write_tokens": 1392,
+        "cached_tokens": 0
+      },
+      "output_tokens": 237,
+      "output_tokens_details": {
+        "reasoning_tokens": 64
+      },
+      "total_tokens": 1632
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.96,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Harvard University’s dispute with the Trump administration over federal funding, campus antisemitism policies, DEI, and institutional independence\",\n  \"conflict_relevance\": \"The article references protests against the war in Gaza and debates over antisemitism on university campuses, but its primary focus is the US government’s pressure on Harvard and broader disputes over higher-education governance.\",\n  \"reason\": \"Gaza-related protests and antisemitism discourse are meaningful contextual elements, but the article is not primarily about the Gaza war or Israel-Palestine conflict.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T05:28:25Z",
+  "duration_seconds": 3.72,
+  "error": null
+}

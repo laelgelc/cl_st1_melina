@@ -1,0 +1,65 @@
+{
+  "article_id": "200154886",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_01/us/200154886.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_01/us/200154886.json"
+  },
+  "manifest_row": {
+    "article_id": "200154886",
+    "group": "global_north_2024_01",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2024_01/us/200154886.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "substantial",
+    "main_topic": "Daily news briefing covering U.S. politics, business, sports, and the Israel-Gaza conflict",
+    "conflict_relevance": "The briefing includes a substantive news item about Netanyahu's opposition to Palestinian statehood, Israel's aims in Gaza, Hamas, and postwar security arrangements, but the overall article is a general roundup rather than conflict-focused coverage.",
+    "reason": "The Gaza-related section contains meaningful discourse on Palestinian statehood, the war, Hamas, Gaza's governance, and Israel's security role. However, it is one item among several unrelated briefing topics, so the article is peripheral rather than core.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "0a359b56dfaebebb16f617df4c3a9b4bc6a9597972ae998843be028e302ed10e",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "9788526f529f9efeb025ce357c7febcf69d54282d42b43dedb9e57f2d8ad4e53",
+    "raw_response_text_sha256": "2fe6eea16644f67c1859f134bf67e3136b9df41e5255598156663e85b11c4fe6"
+  },
+  "api_metadata": {
+    "id": "resp_0f5f609d144bcc46006aaa05a3c0c487d2979bc5c172a5ee5a",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789527459.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1368,
+      "input_tokens_details": {
+        "cache_write_tokens": 1365,
+        "cached_tokens": 0
+      },
+      "output_tokens": 319,
+      "output_tokens_details": {
+        "reasoning_tokens": 131
+      },
+      "total_tokens": 1687
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"substantial\",\n  \"main_topic\": \"Daily news briefing covering U.S. politics, business, sports, and the Israel-Gaza conflict\",\n  \"conflict_relevance\": \"The briefing includes a substantive news item about Netanyahu's opposition to Palestinian statehood, Israel's aims in Gaza, Hamas, and postwar security arrangements, but the overall article is a general roundup rather than conflict-focused coverage.\",\n  \"reason\": \"The Gaza-related section contains meaningful discourse on Palestinian statehood, the war, Hamas, Gaza's governance, and Israel's security role. However, it is one item among several unrelated briefing topics, so the article is peripheral rather than core.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:57:44Z",
+  "duration_seconds": 4.427,
+  "error": null
+}

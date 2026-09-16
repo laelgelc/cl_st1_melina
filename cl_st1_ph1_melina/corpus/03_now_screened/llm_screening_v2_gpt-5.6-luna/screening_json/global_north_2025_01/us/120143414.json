@@ -1,0 +1,65 @@
+{
+  "article_id": "120143414",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_01/us/120143414.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_01/us/120143414.json"
+  },
+  "manifest_row": {
+    "article_id": "120143414",
+    "group": "global_north_2025_01",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2025_01/us/120143414.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "passing",
+    "main_topic": "Firearms intercepted at U.S. airport security checkpoints",
+    "conflict_relevance": "The article is primarily about airport firearm enforcement but ends with an unrelated sentence about a Gaza ceasefire, hostage release, and the Israel-Hamas war.",
+    "reason": "The Gaza content is meaningful but peripheral and appears to be an appended or embedded news snippet unrelated to the main article.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "0814e40b4e772f5b68f30c604fce2549bbb83b809366e565f3b530140ae20ae4",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "1514f8d272b52a6da1ce9f0297e2f7465436263e6ff8c598979dcec338189f84",
+    "raw_response_text_sha256": "6f9a130f910ee2b48aded4785f592db653ebeba1d134a274ce11e2288fe0d701"
+  },
+  "api_metadata": {
+    "id": "resp_01152f8593d4967f006aaa2145622087d2aef6d952c637907e",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789534533.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1344,
+      "input_tokens_details": {
+        "cache_write_tokens": 1341,
+        "cached_tokens": 0
+      },
+      "output_tokens": 252,
+      "output_tokens_details": {
+        "reasoning_tokens": 113
+      },
+      "total_tokens": 1596
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Firearms intercepted at U.S. airport security checkpoints\",\n  \"conflict_relevance\": \"The article is primarily about airport firearm enforcement but ends with an unrelated sentence about a Gaza ceasefire, hostage release, and the Israel-Hamas war.\",\n  \"reason\": \"The Gaza content is meaningful but peripheral and appears to be an appended or embedded news snippet unrelated to the main article.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T04:55:36Z",
+  "duration_seconds": 3.22,
+  "error": null
+}

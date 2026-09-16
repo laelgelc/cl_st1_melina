@@ -1,0 +1,65 @@
+{
+  "article_id": "103484227",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_11/ca/103484227.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_11/ca/103484227.json"
+  },
+  "manifest_row": {
+    "article_id": "103484227",
+    "group": "global_north_2023_11",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2023_11/ca/103484227.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "gaza_role": "boilerplate_or_unrelated",
+    "main_topic": "Saskatoon's material recovery centre and landfill waste diversion",
+    "conflict_relevance": "The main article is unrelated to Gaza or the Israel-Palestine conflict; Gaza-related content appears only in an appended, unrelated CTV News top-stories roundup.",
+    "reason": "The headline and substantive article concern municipal recycling and landfill operations. Although the embedded roundup contains several meaningful Gaza and Israel-Hamas war items, these are separate snippets and not part of the main article.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "c4649ce34e7a99ad136ff8d0e68391163402dbc31f9de4fb9cd33c28b64e50c4",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "23dea897b9550f9cc1e4c2a401b960f7dcffc4398557926b64fa16e701d014d0",
+    "raw_response_text_sha256": "0d6cfc0c5b4bf3e41a0230e99c76caadbb42d242676f48481daf8ae95e77486f"
+  },
+  "api_metadata": {
+    "id": "resp_0af7bb9fc5930f70006aa9fbe0d41487d287444b6b1aa7a62a",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789524960.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1920,
+      "input_tokens_details": {
+        "cache_write_tokens": 1917,
+        "cached_tokens": 0
+      },
+      "output_tokens": 318,
+      "output_tokens_details": {
+        "reasoning_tokens": 154
+      },
+      "total_tokens": 2238
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Saskatoon's material recovery centre and landfill waste diversion\",\n  \"conflict_relevance\": \"The main article is unrelated to Gaza or the Israel-Palestine conflict; Gaza-related content appears only in an appended, unrelated CTV News top-stories roundup.\",\n  \"reason\": \"The headline and substantive article concern municipal recycling and landfill operations. Although the embedded roundup contains several meaningful Gaza and Israel-Hamas war items, these are separate snippets and not part of the main article.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:16:05Z",
+  "duration_seconds": 4.568,
+  "error": null
+}

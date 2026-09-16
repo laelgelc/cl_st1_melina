@@ -1,0 +1,65 @@
+{
+  "article_id": "108370859",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_05/us/108370859.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_05/us/108370859.json"
+  },
+  "manifest_row": {
+    "article_id": "108370859",
+    "group": "global_north_2024_05",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2024_05/us/108370859.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.94,
+    "gaza_role": "passing",
+    "main_topic": "Daily news roundup covering Iranian politics, U.S. legal and political developments, celebrity allegations, and other current events",
+    "conflict_relevance": "The roundup briefly mentions the Israel-Hamas war and a Morehouse College valedictorian's call for an immediate and permanent cease-fire in Gaza.",
+    "reason": "The article is a multi-topic newsletter rather than conflict coverage, but it contains a meaningful sentence about Gaza-related campus and political discourse.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "5282046679e03524c359310d2a1af2d784ec1a5d82cd43c1ffba1c869011003d",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "fcade3c783580730aba6621f973f115e1b4c1631afa171cd8f24cd6a10af32e8",
+    "raw_response_text_sha256": "011dc435ae08b7eae976c6fa57fb603af4025ce8eba7f9fb6ccd58169dc91519"
+  },
+  "api_metadata": {
+    "id": "resp_0b053c69389fa189006aaa0f00cd9087d2a556872f6677b625",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789529856.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2320,
+      "input_tokens_details": {
+        "cache_write_tokens": 2317,
+        "cached_tokens": 0
+      },
+      "output_tokens": 303,
+      "output_tokens_details": {
+        "reasoning_tokens": 150
+      },
+      "total_tokens": 2623
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.94,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Daily news roundup covering Iranian politics, U.S. legal and political developments, celebrity allegations, and other current events\",\n  \"conflict_relevance\": \"The roundup briefly mentions the Israel-Hamas war and a Morehouse College valedictorian's call for an immediate and permanent cease-fire in Gaza.\",\n  \"reason\": \"The article is a multi-topic newsletter rather than conflict coverage, but it contains a meaningful sentence about Gaza-related campus and political discourse.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:37:40Z",
+  "duration_seconds": 4.105,
+  "error": null
+}

@@ -1,0 +1,65 @@
+{
+  "article_id": "125953049",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_06/us/125953049.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_06/us/125953049.json"
+  },
+  "manifest_row": {
+    "article_id": "125953049",
+    "group": "global_north_2025_06",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2025_06/us/125953049.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "background",
+    "main_topic": "Minnesota political shootings, manhunt, and prosecution of the suspect",
+    "conflict_relevance": "The article is primarily about a domestic political shooting but includes biographical information stating that the suspect had security experience in the West Bank, Southern Lebanon, and Gaza Strip.",
+    "reason": "Gaza and related areas appear in a meaningful biographical detail about the suspect's professional background, but the article does not otherwise discuss the Israel-Palestine conflict or related discourse.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "48c88977cbbfea3507aeedadb312daca66620af94f0f24232c3f2c4743142a0f",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "cee0553b2e43a05ec5a3790df8715d55b873b9dfb63d7ebfc9acdb2b6699cde9",
+    "raw_response_text_sha256": "f4a22e33678a15626a37abeb3020a08416d8996a9a8df6ff5569536ce077b5e1"
+  },
+  "api_metadata": {
+    "id": "resp_0d13eb4cdfd1c525006aaa31696dbc87d1853fa1bd0bfcd1f6",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789538665.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2887,
+      "input_tokens_details": {
+        "cache_write_tokens": 2884,
+        "cached_tokens": 0
+      },
+      "output_tokens": 238,
+      "output_tokens_details": {
+        "reasoning_tokens": 79
+      },
+      "total_tokens": 3125
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Minnesota political shootings, manhunt, and prosecution of the suspect\",\n  \"conflict_relevance\": \"The article is primarily about a domestic political shooting but includes biographical information stating that the suspect had security experience in the West Bank, Southern Lebanon, and Gaza Strip.\",\n  \"reason\": \"Gaza and related areas appear in a meaningful biographical detail about the suspect's professional background, but the article does not otherwise discuss the Israel-Palestine conflict or related discourse.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T06:04:29Z",
+  "duration_seconds": 4.272,
+  "error": null
+}

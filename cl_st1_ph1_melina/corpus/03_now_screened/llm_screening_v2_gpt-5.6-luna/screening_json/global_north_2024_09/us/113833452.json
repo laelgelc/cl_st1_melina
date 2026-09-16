@@ -1,0 +1,65 @@
+{
+  "article_id": "113833452",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_09/us/113833452.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_09/us/113833452.json"
+  },
+  "manifest_row": {
+    "article_id": "113833452",
+    "group": "global_north_2024_09",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2024_09/us/113833452.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.96,
+    "gaza_role": "passing",
+    "main_topic": "Photosynthesis research and genetically engineered plants",
+    "conflict_relevance": "A separate embedded article briefly discusses Jewish students, a soldier wounded on the Gaza front, and ongoing conflicts in Gaza and Ukraine.",
+    "reason": "The main article concerns plant biology and climate-related research, not Gaza or the Israel-Palestine conflict. However, the text includes a meaningful but unrelated secondary news item mentioning the Gaza front and Israel's victory, making it relevant only to broader conflict discourse.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "3a4ee056806ecd75fc7596a0d6a99e3ae20bf70531ea5a87b128373a48f115ac",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "542318e90c55286262e250658a30792c8df3f350e52ae9162a024acb61355da0",
+    "raw_response_text_sha256": "72cafaa3054db6905076e794ca4dc225a22e53d9ef160b0f2f8bb94dd5d8a7d3"
+  },
+  "api_metadata": {
+    "id": "resp_03e9cc88bec66547006aaa16ea055487d2b386caaa615ca46c",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789531882.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1638,
+      "input_tokens_details": {
+        "cache_write_tokens": 1635,
+        "cached_tokens": 0
+      },
+      "output_tokens": 352,
+      "output_tokens_details": {
+        "reasoning_tokens": 192
+      },
+      "total_tokens": 1990
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.96,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Photosynthesis research and genetically engineered plants\",\n  \"conflict_relevance\": \"A separate embedded article briefly discusses Jewish students, a soldier wounded on the Gaza front, and ongoing conflicts in Gaza and Ukraine.\",\n  \"reason\": \"The main article concerns plant biology and climate-related research, not Gaza or the Israel-Palestine conflict. However, the text includes a meaningful but unrelated secondary news item mentioning the Gaza front and Israel's victory, making it relevant only to broader conflict discourse.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T04:11:27Z",
+  "duration_seconds": 5.226,
+  "error": null
+}

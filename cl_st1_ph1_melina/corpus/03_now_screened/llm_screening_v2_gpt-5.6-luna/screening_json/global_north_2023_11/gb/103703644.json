@@ -1,0 +1,65 @@
+{
+  "article_id": "103703644",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_11/gb/103703644.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_11/gb/103703644.json"
+  },
+  "manifest_row": {
+    "article_id": "103703644",
+    "group": "global_north_2023_11",
+    "country_code": "gb",
+    "filepath": "corpus/02_now_organised/global_north_2023_11/gb/103703644.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.99,
+    "gaza_role": "background",
+    "main_topic": "Scottish oil and gas industry, energy transition, and political disputes over North Sea drilling and jobs",
+    "conflict_relevance": "The main article is unrelated to Gaza, but an embedded latest-stories item contains substantial discussion of boycotts over Israel's military offensive in Gaza, support for Palestinians, Zionism, and consumer activism.",
+    "reason": "The headline and primary article focus on Scottish energy policy and employment. Gaza-related material appears as a separate, substantial embedded news snippet rather than as part of the main article, making the item peripheral rather than core.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "c9b5177862a077dcb96375dd807aec0922c634f11c0b09e345f6d5faa3dbb55f",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "47ab3fe200446c9b60dcebb45ec620404187442d85b6f119908435eeddf2ffdb",
+    "raw_response_text_sha256": "b79603e0fc230e5deeca882a4267164ee443704519fb8d729c2f39ac31d8abe0"
+  },
+  "api_metadata": {
+    "id": "resp_0ad6c29d7ad622e5006aa9fd1b39e887d2905c35f66d7c3465",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789525275.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 3106,
+      "input_tokens_details": {
+        "cache_write_tokens": 3103,
+        "cached_tokens": 0
+      },
+      "output_tokens": 311,
+      "output_tokens_details": {
+        "reasoning_tokens": 133
+      },
+      "total_tokens": 3417
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.99,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Scottish oil and gas industry, energy transition, and political disputes over North Sea drilling and jobs\",\n  \"conflict_relevance\": \"The main article is unrelated to Gaza, but an embedded latest-stories item contains substantial discussion of boycotts over Israel's military offensive in Gaza, support for Palestinians, Zionism, and consumer activism.\",\n  \"reason\": \"The headline and primary article focus on Scottish energy policy and employment. Gaza-related material appears as a separate, substantial embedded news snippet rather than as part of the main article, making the item peripheral rather than core.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:21:19Z",
+  "duration_seconds": 4.596,
+  "error": null
+}

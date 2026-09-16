@@ -1,0 +1,65 @@
+{
+  "article_id": "200071880",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_12/us/200071880.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_12/us/200071880.json"
+  },
+  "manifest_row": {
+    "article_id": "200071880",
+    "group": "global_north_2023_12",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2023_12/us/200071880.txt"
+  },
+  "screening": {
+    "category": "CORE",
+    "confidence": 0.99,
+    "gaza_role": "central",
+    "main_topic": "The Israel-Hamas war in Gaza, including ceasefire and hostage negotiations, military operations, communications outages, aid access, and civilian casualties",
+    "conflict_relevance": "The article is extensively focused on the Gaza war and directly covers military action, Israeli and Hamas positions, hostage releases, ceasefire diplomacy, humanitarian access, hospital conditions, and civilian harm.",
+    "reason": "Gaza and the Israel-Hamas conflict are the central subject throughout the article, with substantial reporting on the offensive, negotiations, hostages, aid delays, airstrikes, casualties, and the humanitarian crisis.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": true
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "1b18ef3ca614e6e0fcd25932b5648f72c339b8da1decf6c1f7a151027248cb89",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "8d18cfe39248c2e3be1d6673a23a04220d47b45b903dec032105599860cb7f84",
+    "raw_response_text_sha256": "0c88f3cd93a0ec72631198f85a9b31eb54971c70060ddbf184ac9854948ea51e"
+  },
+  "api_metadata": {
+    "id": "resp_06aceefe579bf7a2006aaa030b489487d2a8f7e0f5a949d678",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789526795.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1668,
+      "input_tokens_details": {
+        "cache_write_tokens": 1665,
+        "cached_tokens": 0
+      },
+      "output_tokens": 267,
+      "output_tokens_details": {
+        "reasoning_tokens": 87
+      },
+      "total_tokens": 1935
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"CORE\",\n  \"confidence\": 0.99,\n  \"gaza_role\": \"central\",\n  \"main_topic\": \"The Israel-Hamas war in Gaza, including ceasefire and hostage negotiations, military operations, communications outages, aid access, and civilian casualties\",\n  \"conflict_relevance\": \"The article is extensively focused on the Gaza war and directly covers military action, Israeli and Hamas positions, hostage releases, ceasefire diplomacy, humanitarian access, hospital conditions, and civilian harm.\",\n  \"reason\": \"Gaza and the Israel-Hamas conflict are the central subject throughout the article, with substantial reporting on the offensive, negotiations, hostages, aid delays, airstrikes, casualties, and the humanitarian crisis.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": true\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:46:39Z",
+  "duration_seconds": 4.218,
+  "error": null
+}

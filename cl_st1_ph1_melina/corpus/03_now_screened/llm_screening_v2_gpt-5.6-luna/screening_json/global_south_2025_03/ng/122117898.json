@@ -1,0 +1,65 @@
+{
+  "article_id": "122117898",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_south_2025_03/ng/122117898.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_south_2025_03/ng/122117898.json"
+  },
+  "manifest_row": {
+    "article_id": "122117898",
+    "group": "global_south_2025_03",
+    "country_code": "ng",
+    "filepath": "corpus/02_now_organised/global_south_2025_03/ng/122117898.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.95,
+    "gaza_role": "background",
+    "main_topic": "Women's political participation and inclusive governance in Nigeria",
+    "conflict_relevance": "The main article is unrelated to Gaza, but the text includes a substantive appended news snippet about the Organisation of Islamic Cooperation rejecting a plan to take over Gaza and displace its residents.",
+    "reason": "The headline article concerns gender equality and women's representation in Nigerian politics. However, the collection also contains a meaningful but separate Gaza-related item, making the text peripheral rather than excludable.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "00cfa24c0b6ab9732bc72716d15b4a6450089f6b9bebb6a4317d549d80d4fe0b",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "5f4a4a18dcac969daf62c698754f39c8436f1be489f4b59085b2465b0e2f8afb",
+    "raw_response_text_sha256": "a7d8bcab4b35e8327eacf8e674fd6a9aeb03535164ebcc3fa206c5a1aabd2d2c"
+  },
+  "api_metadata": {
+    "id": "resp_0b18b573c863ae0f006aaa46df1cac87d18454228052637242",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789544159.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1984,
+      "input_tokens_details": {
+        "cache_write_tokens": 1981,
+        "cached_tokens": 0
+      },
+      "output_tokens": 303,
+      "output_tokens_details": {
+        "reasoning_tokens": 146
+      },
+      "total_tokens": 2287
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.95,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Women's political participation and inclusive governance in Nigeria\",\n  \"conflict_relevance\": \"The main article is unrelated to Gaza, but the text includes a substantive appended news snippet about the Organisation of Islamic Cooperation rejecting a plan to take over Gaza and displace its residents.\",\n  \"reason\": \"The headline article concerns gender equality and women's representation in Nigerian politics. However, the collection also contains a meaningful but separate Gaza-related item, making the text peripheral rather than excludable.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T07:36:02Z",
+  "duration_seconds": 3.815,
+  "error": null
+}

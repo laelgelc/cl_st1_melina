@@ -1,0 +1,65 @@
+{
+  "article_id": "106317810",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_03/ca/106317810.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_03/ca/106317810.json"
+  },
+  "manifest_row": {
+    "article_id": "106317810",
+    "group": "global_north_2024_03",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2024_03/ca/106317810.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.95,
+    "gaza_role": "passing",
+    "main_topic": "Mixed Canadian news roundup including business, housing, local incidents, and a Gaza aid convoy report",
+    "conflict_relevance": "Contains one meaningful sentence about alleged gunfire by Israeli troops surrounding an aid convoy in Gaza, but the article is otherwise unrelated to the conflict.",
+    "reason": "The Gaza content is substantive enough to avoid exclusion, but it appears as one embedded item within a collection of unrelated news snippets rather than as the article's main subject.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "11bbcfc7c593f27104c539e92d002691b7d2ba576541f28ae2095959abd4b471",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "3f64a7f8d17842453f458ffa9f23ad29bc30cb28c14e951afba7c699ffc34d90",
+    "raw_response_text_sha256": "61ee8bbd4caabc89164f719b8997ed454eee7833e0afef423432526fd28dd9d1"
+  },
+  "api_metadata": {
+    "id": "resp_021064f4bbb5ef78006aaa084391c487d2be5392274e0c181e",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789528131.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1059,
+      "input_tokens_details": {
+        "cache_write_tokens": 1056,
+        "cached_tokens": 0
+      },
+      "output_tokens": 272,
+      "output_tokens_details": {
+        "reasoning_tokens": 117
+      },
+      "total_tokens": 1331
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.95,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Mixed Canadian news roundup including business, housing, local incidents, and a Gaza aid convoy report\",\n  \"conflict_relevance\": \"Contains one meaningful sentence about alleged gunfire by Israeli troops surrounding an aid convoy in Gaza, but the article is otherwise unrelated to the conflict.\",\n  \"reason\": \"The Gaza content is substantive enough to avoid exclusion, but it appears as one embedded item within a collection of unrelated news snippets rather than as the article's main subject.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:08:54Z",
+  "duration_seconds": 3.456,
+  "error": null
+}

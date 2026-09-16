@@ -1,0 +1,65 @@
+{
+  "article_id": "113320539",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_09/us/113320539.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_09/us/113320539.json"
+  },
+  "manifest_row": {
+    "article_id": "113320539",
+    "group": "global_north_2024_09",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2024_09/us/113320539.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.96,
+    "gaza_role": "background",
+    "main_topic": "U.S. presidential election and political debate",
+    "conflict_relevance": "The episode includes discussion of the deaths of six hostages discovered by Israeli forces in Gaza, but the program is primarily focused on U.S. electoral politics.",
+    "reason": "Gaza and the hostage issue receive meaningful but limited coverage within a broader political news program, making the item useful for peripheral discourse analysis rather than the main conflict corpus.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "97d34137c89c3fff57664fa3895b82a4953d5dd9676250316547f6b898355edb",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "8bad0220d5683d1437558755fadee23e46ad0f013bfe27317b51871d4d66da58",
+    "raw_response_text_sha256": "a6a14ab652eb83393b0929554c0c97e7d78377e62c3bf0cc91c84f506b85b887"
+  },
+  "api_metadata": {
+    "id": "resp_01b7b56193cfb8d6006aaa1690829487d2a80132f448fac999",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789531792.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 801,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 279,
+      "output_tokens_details": {
+        "reasoning_tokens": 131
+      },
+      "total_tokens": 1080
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.96,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"U.S. presidential election and political debate\",\n  \"conflict_relevance\": \"The episode includes discussion of the deaths of six hostages discovered by Israeli forces in Gaza, but the program is primarily focused on U.S. electoral politics.\",\n  \"reason\": \"Gaza and the hostage issue receive meaningful but limited coverage within a broader political news program, making the item useful for peripheral discourse analysis rather than the main conflict corpus.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T04:09:57Z",
+  "duration_seconds": 5.165,
+  "error": null
+}

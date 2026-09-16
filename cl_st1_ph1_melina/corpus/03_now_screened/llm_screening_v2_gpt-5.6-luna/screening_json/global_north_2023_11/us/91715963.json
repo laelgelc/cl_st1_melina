@@ -1,0 +1,65 @@
+{
+  "article_id": "91715963",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_11/us/91715963.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_11/us/91715963.json"
+  },
+  "manifest_row": {
+    "article_id": "91715963",
+    "group": "global_north_2023_11",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2023_11/us/91715963.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.96,
+    "gaza_role": "background",
+    "main_topic": "Technology companies providing financial support to employees in Israel during the Israel-Hamas war",
+    "conflict_relevance": "The article is primarily about corporate payments and employee support, but it provides meaningful context about the October 7 attacks, Israeli military reservists, hostages, Israeli casualties, Hamas, and Palestinian deaths in Gaza.",
+    "reason": "The conflict motivates the corporate actions discussed and is described in several substantive sentences, but Gaza and the broader Israel-Hamas war remain contextual rather than the article's central subject.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "002edb83c98fd5592751ccd75ff7450d5e3394861b455fc511c4f20f575bf8b6",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "8861b5162e162de1ec5547a07a8480f993b351b5c1e71116a39fec17ceef40aa",
+    "raw_response_text_sha256": "411d55b36338cfb0d84d2331d67a72df3fd66b1a37a4da34f61eb4f55b41772a"
+  },
+  "api_metadata": {
+    "id": "resp_0f4a5dd326c86f28006aa9ffb02ca087d28ca01f4aa51e0a96",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789525936.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 997,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 250,
+      "output_tokens_details": {
+        "reasoning_tokens": 83
+      },
+      "total_tokens": 1247
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.96,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Technology companies providing financial support to employees in Israel during the Israel-Hamas war\",\n  \"conflict_relevance\": \"The article is primarily about corporate payments and employee support, but it provides meaningful context about the October 7 attacks, Israeli military reservists, hostages, Israeli casualties, Hamas, and Palestinian deaths in Gaza.\",\n  \"reason\": \"The conflict motivates the corporate actions discussed and is described in several substantive sentences, but Gaza and the broader Israel-Hamas war remain contextual rather than the article's central subject.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:32:24Z",
+  "duration_seconds": 9.512,
+  "error": null
+}

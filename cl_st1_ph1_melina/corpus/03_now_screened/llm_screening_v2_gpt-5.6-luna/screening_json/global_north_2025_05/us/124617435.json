@@ -1,0 +1,65 @@
+{
+  "article_id": "124617435",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_05/us/124617435.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_05/us/124617435.json"
+  },
+  "manifest_row": {
+    "article_id": "124617435",
+    "group": "global_north_2025_05",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2025_05/us/124617435.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "gaza_role": "passing",
+    "main_topic": "U.S. political and international news updates, including tariffs, congressional affairs, Ukraine, and a Middle East visit by President Trump",
+    "conflict_relevance": "Gaza is mentioned only briefly as one of several destinations or issues connected to Trump's stated diplomatic agenda; the article contains no substantive discussion of Gaza or the Israel-Hamas war.",
+    "reason": "This is a multi-item news live blog dominated by unrelated U.S. domestic politics, trade, and Ukraine coverage. Gaza appears only in a passing introductory reference.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "628efdc94f2afc848caf25b2cc546da27c394b32930bf821fb7783bdacff1419",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "04125a9e14e49d6e05ec18227334d4b2bb4b7255f5e52a68edf7ffca7bde4216",
+    "raw_response_text_sha256": "c49fbae5e40f9e1801593306b8429680e8781e5a6aed3ae6139adb1043751401"
+  },
+  "api_metadata": {
+    "id": "resp_0f5a07d909669874006aaa2d5dfe6887d186a8012a6bdc65fc",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789537630.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1572,
+      "input_tokens_details": {
+        "cache_write_tokens": 1569,
+        "cached_tokens": 0
+      },
+      "output_tokens": 239,
+      "output_tokens_details": {
+        "reasoning_tokens": 72
+      },
+      "total_tokens": 1811
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"U.S. political and international news updates, including tariffs, congressional affairs, Ukraine, and a Middle East visit by President Trump\",\n  \"conflict_relevance\": \"Gaza is mentioned only briefly as one of several destinations or issues connected to Trump's stated diplomatic agenda; the article contains no substantive discussion of Gaza or the Israel-Hamas war.\",\n  \"reason\": \"This is a multi-item news live blog dominated by unrelated U.S. domestic politics, trade, and Ukraine coverage. Gaza appears only in a passing introductory reference.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T05:47:13Z",
+  "duration_seconds": 3.449,
+  "error": null
+}

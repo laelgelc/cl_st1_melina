@@ -1,0 +1,65 @@
+{
+  "article_id": "200080750",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_12/us/200080750.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_12/us/200080750.json"
+  },
+  "manifest_row": {
+    "article_id": "200080750",
+    "group": "global_north_2023_12",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2023_12/us/200080750.txt"
+  },
+  "screening": {
+    "category": "CORE",
+    "confidence": 1.0,
+    "gaza_role": "central",
+    "main_topic": "Live coverage of the Israel-Hamas war, including Israeli military operations, humanitarian crisis, starvation, displacement, hostages, diplomacy, and conditions in Gaza",
+    "conflict_relevance": "The article is entirely focused on the Gaza war and its associated humanitarian, military, political, and diplomatic developments.",
+    "reason": "Gaza and the Israel-Hamas war are the central subject throughout the article, which reports on Israeli strikes, Palestinian casualties, starvation, aid restrictions, communications blackouts, hospital conditions, hostages, rocket attacks, West Bank violence, and cease-fire negotiations.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": true
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "f91330a1e55783140e71d3a32dba71104c695a1cb00714524ac3f32ab50c5544",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "a60b7f3bc85b82009d1546768965eb389fa3a56ad07f81817e9071e674fcb8d5",
+    "raw_response_text_sha256": "9329ee16e99bba98aef43e3537ee3e59e0bb0649317de869ac2a47f86e2c96f8"
+  },
+  "api_metadata": {
+    "id": "resp_01ff1264418a2b95006aaa032023b887d29069afd257ba0eb4",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789526816.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 4094,
+      "input_tokens_details": {
+        "cache_write_tokens": 4091,
+        "cached_tokens": 0
+      },
+      "output_tokens": 176,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 4270
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"CORE\",\n  \"confidence\": 1.0,\n  \"gaza_role\": \"central\",\n  \"main_topic\": \"Live coverage of the Israel-Hamas war, including Israeli military operations, humanitarian crisis, starvation, displacement, hostages, diplomacy, and conditions in Gaza\",\n  \"conflict_relevance\": \"The article is entirely focused on the Gaza war and its associated humanitarian, military, political, and diplomatic developments.\",\n  \"reason\": \"Gaza and the Israel-Hamas war are the central subject throughout the article, which reports on Israeli strikes, Palestinian casualties, starvation, aid restrictions, communications blackouts, hospital conditions, hostages, rocket attacks, West Bank violence, and cease-fire negotiations.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": true\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:46:58Z",
+  "duration_seconds": 2.617,
+  "error": null
+}

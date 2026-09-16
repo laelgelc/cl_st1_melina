@@ -1,0 +1,65 @@
+{
+  "article_id": "103142225",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_south_2023_11/ng/103142225.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_south_2023_11/ng/103142225.json"
+  },
+  "manifest_row": {
+    "article_id": "103142225",
+    "group": "global_south_2023_11",
+    "country_code": "ng",
+    "filepath": "corpus/02_now_organised/global_south_2023_11/ng/103142225.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "gaza_role": "boilerplate_or_unrelated",
+    "main_topic": "Prosecution of former Nigerian Central Bank Governor Godwin Emefiele and debate over plea bargaining",
+    "conflict_relevance": "No meaningful relevance to Gaza, Palestine, Israel/Palestine, or related conflict discourse",
+    "reason": "The article is centrally about corruption allegations and criminal proceedings involving a former Nigerian central bank governor. Gaza appears only in an unrelated item within a 'Latest' roundup, consisting of a brief news sentence about Antony Blinken and civilian harm.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "6df4c08a589b810f2d934a70964cf1b89f45150b04c6761b2f63cf601c5cf4df",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "46d5d0d25a5613447b35e87d2b79973801c7cb89febbd37e7723ab6ec6ba31e7",
+    "raw_response_text_sha256": "65dca279e5cf7cfaa9eb02a5db9bab29e1854b523e65e8ee5143e263a042a6d8"
+  },
+  "api_metadata": {
+    "id": "resp_03bc1129ad73cad6006aaa359593bc87d1b4bc4c47ffa39d40",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789539733.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2854,
+      "input_tokens_details": {
+        "cache_write_tokens": 2851,
+        "cached_tokens": 0
+      },
+      "output_tokens": 248,
+      "output_tokens_details": {
+        "reasoning_tokens": 84
+      },
+      "total_tokens": 3102
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"gaza_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Prosecution of former Nigerian Central Bank Governor Godwin Emefiele and debate over plea bargaining\",\n  \"conflict_relevance\": \"No meaningful relevance to Gaza, Palestine, Israel/Palestine, or related conflict discourse\",\n  \"reason\": \"The article is centrally about corruption allegations and criminal proceedings involving a former Nigerian central bank governor. Gaza appears only in an unrelated item within a 'Latest' roundup, consisting of a brief news sentence about Antony Blinken and civilian harm.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T06:22:17Z",
+  "duration_seconds": 4.381,
+  "error": null
+}

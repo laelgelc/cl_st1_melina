@@ -1,0 +1,65 @@
+{
+  "article_id": "102775096",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_10/gb/102775096.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_10/gb/102775096.json"
+  },
+  "manifest_row": {
+    "article_id": "102775096",
+    "group": "global_north_2023_10",
+    "country_code": "gb",
+    "filepath": "corpus/02_now_organised/global_north_2023_10/gb/102775096.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.97,
+    "gaza_role": "background",
+    "main_topic": "Travel and terrorism safety warnings in France",
+    "conflict_relevance": "The article discusses pro-Palestinian demonstrations and heightened security connected to events in Israel and Gaza, but the main focus is travel advice and terrorism risks in France.",
+    "reason": "The conflict-related material is meaningful but contextual rather than central to the article's primary subject. A separate domestic-violence article is also appended, creating a multi-article scraping issue.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "655d7ea3d9ad8b248b00b1d428fdeadb4ede62cb041553478212fba68557d992",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "b1beb74c80860a86d4032cd8f3242e28a810be0c60cd0bbb5c623843e319c4b6",
+    "raw_response_text_sha256": "eae786d688a654c5be6d47a7d888b9a9db53a0fa91ee18d9878bc45455b66a10"
+  },
+  "api_metadata": {
+    "id": "resp_0038377bec77b5cf006aa9f7622b4487d2a301191f3627a3ce",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789523810.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2043,
+      "input_tokens_details": {
+        "cache_write_tokens": 2040,
+        "cached_tokens": 0
+      },
+      "output_tokens": 322,
+      "output_tokens_details": {
+        "reasoning_tokens": 169
+      },
+      "total_tokens": 2365
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.97,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Travel and terrorism safety warnings in France\",\n  \"conflict_relevance\": \"The article discusses pro-Palestinian demonstrations and heightened security connected to events in Israel and Gaza, but the main focus is travel advice and terrorism risks in France.\",\n  \"reason\": \"The conflict-related material is meaningful but contextual rather than central to the article's primary subject. A separate domestic-violence article is also appended, creating a multi-article scraping issue.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T01:56:54Z",
+  "duration_seconds": 4.224,
+  "error": null
+}

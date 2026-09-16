@@ -1,0 +1,65 @@
+{
+  "article_id": "114369814",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_09/us/114369814.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_09/us/114369814.json"
+  },
+  "manifest_row": {
+    "article_id": "114369814",
+    "group": "global_north_2024_09",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2024_09/us/114369814.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "gaza_role": "passing",
+    "main_topic": "U.S. presidential campaign politics and political discourse",
+    "conflict_relevance": "A single top-stories item briefly mentions a Harris campaign advertisement addressing human suffering in Gaza; the newsletter is otherwise unrelated to the conflict.",
+    "reason": "Gaza appears only as a brief item in a roundup of unrelated political news and is not meaningfully developed or analyzed.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "97a77cf02fcf41a682c51e563225134e75e6849475a15c76248475dad1777b10",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "a7723c432e38b4c49d3959581061a0e72212fd53c775ebe52ad0f225645bdb46",
+    "raw_response_text_sha256": "818e256e7139f64289f9f59367c25fc91e88e6c8bc4c325c2b704af47f765531"
+  },
+  "api_metadata": {
+    "id": "resp_0f365fc38a19b9f3006aaa173b7f2887d2af0b30cba9d5adc1",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789531963.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1862,
+      "input_tokens_details": {
+        "cache_write_tokens": 1859,
+        "cached_tokens": 0
+      },
+      "output_tokens": 235,
+      "output_tokens_details": {
+        "reasoning_tokens": 100
+      },
+      "total_tokens": 2097
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"U.S. presidential campaign politics and political discourse\",\n  \"conflict_relevance\": \"A single top-stories item briefly mentions a Harris campaign advertisement addressing human suffering in Gaza; the newsletter is otherwise unrelated to the conflict.\",\n  \"reason\": \"Gaza appears only as a brief item in a roundup of unrelated political news and is not meaningfully developed or analyzed.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T04:12:47Z",
+  "duration_seconds": 3.652,
+  "error": null
+}

@@ -1,0 +1,65 @@
+{
+  "article_id": "121084766",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_02/gb/121084766.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_02/gb/121084766.json"
+  },
+  "manifest_row": {
+    "article_id": "121084766",
+    "group": "global_north_2025_02",
+    "country_code": "gb",
+    "filepath": "corpus/02_now_organised/global_north_2025_02/gb/121084766.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.96,
+    "gaza_role": "boilerplate_or_unrelated",
+    "main_topic": "The political and legal fallout from Andrew Gwynne's offensive WhatsApp messages",
+    "conflict_relevance": "The main article only mentions Mossad incidentally, while the Gaza-related material appears in an unrelated 'Read next' snippet.",
+    "reason": "The article is primarily about Andrew Gwynne's dismissal, offensive messages, and possible police investigation. The Gaza and hostage discussion is a separate embedded recommendation rather than part of the article's substantive subject.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "6d0d11ce1e37aad227001888c77239d869e3e5274b99745b6424a4e65613afd1",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "ba51068b4aa508b6c3df51d84e4e91eca43197227a450b25cec560e4a9c6b002",
+    "raw_response_text_sha256": "d4cc9786179b385ac4651b34e551260d48e111c35f80f45d2caea6ec12f22b1b"
+  },
+  "api_metadata": {
+    "id": "resp_00bd0201ceaa9e98006aaa22c51a9c87d2a5d059e8b9b1114a",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789534917.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 845,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 318,
+      "output_tokens_details": {
+        "reasoning_tokens": 160
+      },
+      "total_tokens": 1163
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.96,\n  \"gaza_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"The political and legal fallout from Andrew Gwynne's offensive WhatsApp messages\",\n  \"conflict_relevance\": \"The main article only mentions Mossad incidentally, while the Gaza-related material appears in an unrelated 'Read next' snippet.\",\n  \"reason\": \"The article is primarily about Andrew Gwynne's dismissal, offensive messages, and possible police investigation. The Gaza and hostage discussion is a separate embedded recommendation rather than part of the article's substantive subject.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T05:02:01Z",
+  "duration_seconds": 4.492,
+  "error": null
+}

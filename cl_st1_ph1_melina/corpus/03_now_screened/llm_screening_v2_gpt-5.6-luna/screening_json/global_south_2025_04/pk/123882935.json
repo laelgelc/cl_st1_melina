@@ -1,0 +1,65 @@
+{
+  "article_id": "123882935",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_south_2025_04/pk/123882935.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_south_2025_04/pk/123882935.json"
+  },
+  "manifest_row": {
+    "article_id": "123882935",
+    "group": "global_south_2025_04",
+    "country_code": "pk",
+    "filepath": "corpus/02_now_organised/global_south_2025_04/pk/123882935.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "background",
+    "main_topic": "Jordan's ban and repression of the Muslim Brotherhood",
+    "conflict_relevance": "The article discusses the Muslim Brotherhood's role in anti-Israel demonstrations and notes that protests against Israel's war in Gaza shaped recent Jordanian elections, but the main focus is domestic political repression and security allegations in Jordan.",
+    "reason": "Gaza and the Israel-related political context are meaningfully discussed in multiple sentences, yet they serve as background to the article's central subject: Jordan's measures against the Muslim Brotherhood and opposition activity.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "8877a800b92c56cfe9ad2f26a770080ecb9bdc1a57da372cb71b487ff369de4e",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "123d6746dd6cf4de72d965ae6113c73d7d916943fb0ddd4ceb5845ce0bf2cee1",
+    "raw_response_text_sha256": "d99d6e6de5613e3335071e91cf1adc2212d2a6009f8d51806b8ed26855b4b440"
+  },
+  "api_metadata": {
+    "id": "resp_0448943495489a17006aaa4841947c87d18cf9c345d6499693",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789544513.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1260,
+      "input_tokens_details": {
+        "cache_write_tokens": 1257,
+        "cached_tokens": 0
+      },
+      "output_tokens": 219,
+      "output_tokens_details": {
+        "reasoning_tokens": 52
+      },
+      "total_tokens": 1479
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Jordan's ban and repression of the Muslim Brotherhood\",\n  \"conflict_relevance\": \"The article discusses the Muslim Brotherhood's role in anti-Israel demonstrations and notes that protests against Israel's war in Gaza shaped recent Jordanian elections, but the main focus is domestic political repression and security allegations in Jordan.\",\n  \"reason\": \"Gaza and the Israel-related political context are meaningfully discussed in multiple sentences, yet they serve as background to the article's central subject: Jordan's measures against the Muslim Brotherhood and opposition activity.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T07:41:56Z",
+  "duration_seconds": 3.257,
+  "error": null
+}

@@ -1,0 +1,65 @@
+{
+  "article_id": "103616685",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_11/gb/103616685.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_11/gb/103616685.json"
+  },
+  "manifest_row": {
+    "article_id": "103616685",
+    "group": "global_north_2023_11",
+    "country_code": "gb",
+    "filepath": "corpus/02_now_organised/global_north_2023_11/gb/103616685.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.96,
+    "gaza_role": "substantial",
+    "main_topic": "Mixed news snippets, including Gaza hospital evacuations and casualties alongside unrelated OpenAI and General Motors reports",
+    "conflict_relevance": "The opening news item contains meaningful reporting on the evacuation of premature babies from Gaza and deaths at a Gaza hospital, but the text is primarily a multi-item news compilation rather than a focused conflict article.",
+    "reason": "The Gaza content is substantive and directly relevant, but it is embedded alongside unrelated articles and is not the clear central subject of the overall text.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "bbfe6a17f67df24bbccabea5a9a19a817e02b666c05b485f5e826f6b99e72b2e",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "f49ad253d03364521827bfccfdd77d2d49fb96d42ef1d9fc18dd90c0d0c8fddc",
+    "raw_response_text_sha256": "b9aa6ba6c52f5fc72aa6a91689c70735f2ae1fb08633e127533326de2afdb8f5"
+  },
+  "api_metadata": {
+    "id": "resp_080ead2074a1966d006aa9fd07d9c087d28b7dee4e187dae1d",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789525255.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 808,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 326,
+      "output_tokens_details": {
+        "reasoning_tokens": 163
+      },
+      "total_tokens": 1134
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.96,\n  \"gaza_role\": \"substantial\",\n  \"main_topic\": \"Mixed news snippets, including Gaza hospital evacuations and casualties alongside unrelated OpenAI and General Motors reports\",\n  \"conflict_relevance\": \"The opening news item contains meaningful reporting on the evacuation of premature babies from Gaza and deaths at a Gaza hospital, but the text is primarily a multi-item news compilation rather than a focused conflict article.\",\n  \"reason\": \"The Gaza content is substantive and directly relevant, but it is embedded alongside unrelated articles and is not the clear central subject of the overall text.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:21:00Z",
+  "duration_seconds": 4.326,
+  "error": null
+}

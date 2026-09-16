@@ -1,0 +1,65 @@
+{
+  "article_id": "103071060",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_10/ca/103071060.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_10/ca/103071060.json"
+  },
+  "manifest_row": {
+    "article_id": "103071060",
+    "group": "global_north_2023_10",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2023_10/ca/103071060.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.93,
+    "gaza_role": "passing",
+    "main_topic": "Cameco's uranium production, financial results, and nuclear-energy outlook",
+    "conflict_relevance": "The main article is unrelated to Gaza or Israel-Palestine, but an embedded news snippet discusses mandatory Holocaust education, antisemitic incidents, and the Israel-Hamas war following the October 7 attack from Gaza.",
+    "reason": "The article is primarily a uranium-company business report. Its conflict-related material appears only in an appended, unrelated snippet, but that snippet contains a meaningful reference to the Israel-Hamas war and antisemitism, making the item peripheral rather than excludable.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "833b8e5cf633cd104f4fc5f46f4b390ecd4245e1b6a3147239d60a470cb0c99e",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "9c9f814a3f0a3fa00b7d7a9e84ec9d2455f4a1d8ceeccbd60bd1725e163edc5f",
+    "raw_response_text_sha256": "9fe921fe171828dd693d6de387eaf50e314e4f1b5ea33da2b8e23145cf5d3856"
+  },
+  "api_metadata": {
+    "id": "resp_0e4b76b39df84da1006aa9f6c6f1dc87d2a9608649d2eb4525",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789523654.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1914,
+      "input_tokens_details": {
+        "cache_write_tokens": 1911,
+        "cached_tokens": 0
+      },
+      "output_tokens": 351,
+      "output_tokens_details": {
+        "reasoning_tokens": 166
+      },
+      "total_tokens": 2265
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.93,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Cameco's uranium production, financial results, and nuclear-energy outlook\",\n  \"conflict_relevance\": \"The main article is unrelated to Gaza or Israel-Palestine, but an embedded news snippet discusses mandatory Holocaust education, antisemitic incidents, and the Israel-Hamas war following the October 7 attack from Gaza.\",\n  \"reason\": \"The article is primarily a uranium-company business report. Its conflict-related material appears only in an appended, unrelated snippet, but that snippet contains a meaningful reference to the Israel-Hamas war and antisemitism, making the item peripheral rather than excludable.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T01:54:19Z",
+  "duration_seconds": 4.196,
+  "error": null
+}

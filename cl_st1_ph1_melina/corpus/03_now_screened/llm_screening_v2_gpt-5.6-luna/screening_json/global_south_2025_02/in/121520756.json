@@ -1,0 +1,65 @@
+{
+  "article_id": "121520756",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_south_2025_02/in/121520756.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_south_2025_02/in/121520756.json"
+  },
+  "manifest_row": {
+    "article_id": "121520756",
+    "group": "global_south_2025_02",
+    "country_code": "in",
+    "filepath": "corpus/02_now_organised/global_south_2025_02/in/121520756.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "gaza_role": "passing",
+    "main_topic": "ABP Network Ideas of India summit covering technology, science, culture, politics, and entertainment",
+    "conflict_relevance": "The article is a broad event roundup with only a passing, truncated reference to Gaza in a discussion of Donald Trump's presidency and global order.",
+    "reason": "Gaza is not a substantive focus of the article and appears only in an incidental closing mention within a multi-session event summary.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "65d23da16271c122c26a3dd847c921b101c8ddcc4a9f48162372a4ce9842e8fc",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "78653322bbc5c8fe00547bd880472ce6e07e679c36fba865e5b46e600225348b",
+    "raw_response_text_sha256": "189c6017b58918bc5a71e8a7bb615192bd6959d24228c8706e00088cb5ac0890"
+  },
+  "api_metadata": {
+    "id": "resp_0c912ba502301dc9006aaa4579cd8c87d1a418e862aee25cc7",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789543801.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1527,
+      "input_tokens_details": {
+        "cache_write_tokens": 1524,
+        "cached_tokens": 0
+      },
+      "output_tokens": 252,
+      "output_tokens_details": {
+        "reasoning_tokens": 107
+      },
+      "total_tokens": 1779
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"ABP Network Ideas of India summit covering technology, science, culture, politics, and entertainment\",\n  \"conflict_relevance\": \"The article is a broad event roundup with only a passing, truncated reference to Gaza in a discussion of Donald Trump's presidency and global order.\",\n  \"reason\": \"Gaza is not a substantive focus of the article and appears only in an incidental closing mention within a multi-session event summary.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T07:30:05Z",
+  "duration_seconds": 3.784,
+  "error": null
+}

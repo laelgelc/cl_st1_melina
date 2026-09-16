@@ -1,0 +1,65 @@
+{
+  "article_id": "125108702",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_05/gb/125108702.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_05/gb/125108702.json"
+  },
+  "manifest_row": {
+    "article_id": "125108702",
+    "group": "global_north_2025_05",
+    "country_code": "gb",
+    "filepath": "corpus/02_now_organised/global_north_2025_05/gb/125108702.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.96,
+    "gaza_role": "background",
+    "main_topic": "US political and foreign-policy news updates, including Iran talks, Ukraine, trade, domestic legislation, and Israel-related incidents",
+    "conflict_relevance": "The article includes a substantial embedded report on an alleged plot against the US embassy in Israel, the killing of Israeli embassy staffers, the suspect's references to 'Free Palestine' and Gaza, and Israel's war in Gaza. However, the overall article is a multi-topic news roundup and is not centrally about Gaza or the Israel-Palestine conflict.",
+    "reason": "Meaningful conflict-related discourse is present, but it is one component of a broader collection of largely unrelated political news items. It is therefore useful for peripheral analysis rather than as core conflict coverage.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "98c2b707033c85eeff58d34e02eed57ce5d12d7efe49dcf1bb3ea030c100c579",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "02cc97e72bba3284d5b6afcc07f4ad825dfb91e689dc1a6db027da7bd4881ff9",
+    "raw_response_text_sha256": "1c17c6d7c51ea72035473be0e7e660587c4c6b2eb84032b435ec6993e041a36b"
+  },
+  "api_metadata": {
+    "id": "resp_012bb10fb1604117006aaa2c14469887d1a24a0ea024946bcb",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789537300.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 4685,
+      "input_tokens_details": {
+        "cache_write_tokens": 4682,
+        "cached_tokens": 0
+      },
+      "output_tokens": 421,
+      "output_tokens_details": {
+        "reasoning_tokens": 213
+      },
+      "total_tokens": 5106
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.96,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"US political and foreign-policy news updates, including Iran talks, Ukraine, trade, domestic legislation, and Israel-related incidents\",\n  \"conflict_relevance\": \"The article includes a substantial embedded report on an alleged plot against the US embassy in Israel, the killing of Israeli embassy staffers, the suspect's references to 'Free Palestine' and Gaza, and Israel's war in Gaza. However, the overall article is a multi-topic news roundup and is not centrally about Gaza or the Israel-Palestine conflict.\",\n  \"reason\": \"Meaningful conflict-related discourse is present, but it is one component of a broader collection of largely unrelated political news items. It is therefore useful for peripheral analysis rather than as core conflict coverage.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T05:41:44Z",
+  "duration_seconds": 4.628,
+  "error": null
+}

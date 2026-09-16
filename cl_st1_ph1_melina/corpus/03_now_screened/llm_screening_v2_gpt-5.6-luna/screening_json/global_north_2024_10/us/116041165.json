@@ -1,0 +1,65 @@
+{
+  "article_id": "116041165",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_10/us/116041165.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_10/us/116041165.json"
+  },
+  "manifest_row": {
+    "article_id": "116041165",
+    "group": "global_north_2024_10",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2024_10/us/116041165.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "background",
+    "main_topic": "A collection of conservative political commentaries on the 2024 US election, religion, DEI, immigration, and Scottish political controversy",
+    "conflict_relevance": "The article includes a substantive commentary section about Gaza, the characterization of the war as genocide, anti-Zionism, and claims that Israel should disappear, but Gaza is not the article's central subject.",
+    "reason": "This is a multi-item opinion roundup primarily focused on unrelated US political and cultural issues. Its final foreign-policy item contains meaningful discourse about Gaza and Israel/Palestine, making it useful as peripheral material rather than core conflict coverage.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "dcb2a86a563c2d1172ff979dee6d9c883e6c3cdbfa4aa5ded9a1cce03f916193",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "432a169c2a4e9f368a6d904d4930fa9ecdbcc87a17eeeb0dcd143cf3091f0a74",
+    "raw_response_text_sha256": "fb930ef006b9bd6cab7af86e0a4894c6ed571f8c30070106a2df1aa36c3ce725"
+  },
+  "api_metadata": {
+    "id": "resp_06de07ecf6cbd4ae006aaa195e222487d2a140e4bb62b431b1",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789532510.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1608,
+      "input_tokens_details": {
+        "cache_write_tokens": 1605,
+        "cached_tokens": 0
+      },
+      "output_tokens": 297,
+      "output_tokens_details": {
+        "reasoning_tokens": 109
+      },
+      "total_tokens": 1905
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"A collection of conservative political commentaries on the 2024 US election, religion, DEI, immigration, and Scottish political controversy\",\n  \"conflict_relevance\": \"The article includes a substantive commentary section about Gaza, the characterization of the war as genocide, anti-Zionism, and claims that Israel should disappear, but Gaza is not the article's central subject.\",\n  \"reason\": \"This is a multi-item opinion roundup primarily focused on unrelated US political and cultural issues. Its final foreign-policy item contains meaningful discourse about Gaza and Israel/Palestine, making it useful as peripheral material rather than core conflict coverage.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T04:21:53Z",
+  "duration_seconds": 3.334,
+  "error": null
+}

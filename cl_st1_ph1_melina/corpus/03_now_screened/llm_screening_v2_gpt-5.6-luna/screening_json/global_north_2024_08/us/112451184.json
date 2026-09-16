@@ -1,0 +1,65 @@
+{
+  "article_id": "112451184",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_08/us/112451184.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_08/us/112451184.json"
+  },
+  "manifest_row": {
+    "article_id": "112451184",
+    "group": "global_north_2024_08",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2024_08/us/112451184.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.97,
+    "gaza_role": "passing",
+    "main_topic": "Israel's plan for achieving net-zero emissions in the energy market by 2050",
+    "conflict_relevance": "The article is about energy policy and decarbonization; Gaza appears only incidentally in a reference to solar projects in the Gaza Envelope, without meaningful discussion of the conflict or related discourse.",
+    "reason": "The sole Gaza-related reference is a passing geographic mention embedded in an otherwise unrelated energy article.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "7db2a7e2710c65887242e0d25ed3ba369e929dd4aa25639493cfb77a0399db47",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "172abc069e95afb884f8a316c82cf0203f39250871bff3ec04da347b78283bc7",
+    "raw_response_text_sha256": "844fb788ff7b0b24f9539af81bf11e20e2279d19e5fbeaf56a335ae8537bf65a"
+  },
+  "api_metadata": {
+    "id": "resp_05b28ed1b7caeb06006aaa1522a0a887d2be6e212cc1b9ce41",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789531426.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1162,
+      "input_tokens_details": {
+        "cache_write_tokens": 1159,
+        "cached_tokens": 0
+      },
+      "output_tokens": 214,
+      "output_tokens_details": {
+        "reasoning_tokens": 67
+      },
+      "total_tokens": 1376
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.97,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Israel's plan for achieving net-zero emissions in the energy market by 2050\",\n  \"conflict_relevance\": \"The article is about energy policy and decarbonization; Gaza appears only incidentally in a reference to solar projects in the Gaza Envelope, without meaningful discussion of the conflict or related discourse.\",\n  \"reason\": \"The sole Gaza-related reference is a passing geographic mention embedded in an otherwise unrelated energy article.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T04:03:49Z",
+  "duration_seconds": 2.591,
+  "error": null
+}

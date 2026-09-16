@@ -1,0 +1,65 @@
+{
+  "article_id": "121166867",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_02/ca/121166867.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_02/ca/121166867.json"
+  },
+  "manifest_row": {
+    "article_id": "121166867",
+    "group": "global_north_2025_02",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2025_02/ca/121166867.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "gaza_role": "passing",
+    "main_topic": "Yukon residential rent increase cap and tenant protections",
+    "conflict_relevance": "The main article concerns housing policy in Yukon; Gaza appears only in an unrelated embedded snippet about U.S. political commentary.",
+    "reason": "The headline article is about Yukon rent regulation, and the only Gaza-related material is a brief, disconnected excerpt from another news item. It does not provide meaningful conflict discourse.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "f00ca86b2b72e402f50211ce81d8f8de13949044691b141dbd778ef31a840ef1",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "a8dcc1e03ab16291bf15931e6994e522c637093c2313096a0b0714db3bfe1cf1",
+    "raw_response_text_sha256": "1b3e0e931f2b84495f6ed633b5007b712ccbf669afc4c5549caf5ca41035b8c4"
+  },
+  "api_metadata": {
+    "id": "resp_038696ab73a96d0b006aaa224ec3c887d2bcb0e2b4b44ef707",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789534798.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1909,
+      "input_tokens_details": {
+        "cache_write_tokens": 1906,
+        "cached_tokens": 0
+      },
+      "output_tokens": 218,
+      "output_tokens_details": {
+        "reasoning_tokens": 75
+      },
+      "total_tokens": 2127
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Yukon residential rent increase cap and tenant protections\",\n  \"conflict_relevance\": \"The main article concerns housing policy in Yukon; Gaza appears only in an unrelated embedded snippet about U.S. political commentary.\",\n  \"reason\": \"The headline article is about Yukon rent regulation, and the only Gaza-related material is a brief, disconnected excerpt from another news item. It does not provide meaningful conflict discourse.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T05:00:02Z",
+  "duration_seconds": 3.557,
+  "error": null
+}

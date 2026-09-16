@@ -1,0 +1,65 @@
+{
+  "article_id": "123748893",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_04/us/123748893.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_04/us/123748893.json"
+  },
+  "manifest_row": {
+    "article_id": "123748893",
+    "group": "global_north_2025_04",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2025_04/us/123748893.txt"
+  },
+  "screening": {
+    "category": "CORE",
+    "confidence": 0.96,
+    "gaza_role": "background",
+    "main_topic": "Cancellation of a Brooklyn fundraiser featuring Israeli far-right minister Itamar Ben-Gvir and opposition to his US visit",
+    "conflict_relevance": "The article directly concerns Israeli politics, the occupation and annexation of the West Bank, proposed Jewish resettlement of Gaza, Kahanism, Palestinian expulsion rhetoric, and Jewish-American protest over Ben-Gvir's positions.",
+    "reason": "Although the immediate event is a cancelled US fundraiser, the article substantially discusses a prominent Israeli minister's policies, rhetoric, and relationship to the Israel-Palestine conflict, including Gaza and Palestinian issues.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": true
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "1c8b3abaa6520acb0d80f4cd478cde438531d86f5e69d953d96918a95e080b06",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "ef319dd0a9ececeda8041ef02b9ed3fb1e3caf7e64a12f0aaa123c9ff1fd6918",
+    "raw_response_text_sha256": "61e4c46e43ee44a1c19174156f1bd81c320b3148a58843f9738759e2ddca764a"
+  },
+  "api_metadata": {
+    "id": "resp_06fd7ba6749b806d006aaa2a70e92087d18043d72200e6f57b",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789536880.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1449,
+      "input_tokens_details": {
+        "cache_write_tokens": 1446,
+        "cached_tokens": 0
+      },
+      "output_tokens": 317,
+      "output_tokens_details": {
+        "reasoning_tokens": 137
+      },
+      "total_tokens": 1766
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"CORE\",\n  \"confidence\": 0.96,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Cancellation of a Brooklyn fundraiser featuring Israeli far-right minister Itamar Ben-Gvir and opposition to his US visit\",\n  \"conflict_relevance\": \"The article directly concerns Israeli politics, the occupation and annexation of the West Bank, proposed Jewish resettlement of Gaza, Kahanism, Palestinian expulsion rhetoric, and Jewish-American protest over Ben-Gvir's positions.\",\n  \"reason\": \"Although the immediate event is a cancelled US fundraiser, the article substantially discusses a prominent Israeli minister's policies, rhetoric, and relationship to the Israel-Palestine conflict, including Gaza and Palestinian issues.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": true\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T05:34:44Z",
+  "duration_seconds": 3.561,
+  "error": null
+}

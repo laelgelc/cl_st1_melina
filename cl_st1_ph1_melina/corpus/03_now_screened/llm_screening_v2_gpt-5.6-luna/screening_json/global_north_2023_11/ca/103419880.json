@@ -1,0 +1,65 @@
+{
+  "article_id": "103419880",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_11/ca/103419880.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_11/ca/103419880.json"
+  },
+  "manifest_row": {
+    "article_id": "103419880",
+    "group": "global_north_2023_11",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2023_11/ca/103419880.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.97,
+    "gaza_role": "passing",
+    "main_topic": "Mixed local news, sports, business, and health snippets",
+    "conflict_relevance": "Two embedded paragraphs report on fighting around Gaza's Shifa hospital and hospital evacuation claims, but the text is an unrelated multi-item news compilation rather than a focused conflict article.",
+    "reason": "The Gaza material is substantive in isolation but appears only as embedded snippets among numerous unrelated local-news items, so the article does not provide a coherent or meaningful discourse context for the main corpus.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "3a8fe46ad50a0dc53609c4f74488243f555d7953ff9b988ded5ad93393bdcdc6",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "5d5d8da568c971c160e39c1aee737fda00bd761f2c7422226eb3c7ca3b588938",
+    "raw_response_text_sha256": "be0aee0915b4b40520ea1d5f08914038d03e334fc3ae1598df2213e3753ef0ba"
+  },
+  "api_metadata": {
+    "id": "resp_0cd077291e197b88006aa9fbcf281087d287c0c044298862bb",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789524943.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1135,
+      "input_tokens_details": {
+        "cache_write_tokens": 1132,
+        "cached_tokens": 0
+      },
+      "output_tokens": 388,
+      "output_tokens_details": {
+        "reasoning_tokens": 231
+      },
+      "total_tokens": 1523
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.97,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Mixed local news, sports, business, and health snippets\",\n  \"conflict_relevance\": \"Two embedded paragraphs report on fighting around Gaza's Shifa hospital and hospital evacuation claims, but the text is an unrelated multi-item news compilation rather than a focused conflict article.\",\n  \"reason\": \"The Gaza material is substantive in isolation but appears only as embedded snippets among numerous unrelated local-news items, so the article does not provide a coherent or meaningful discourse context for the main corpus.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:15:47Z",
+  "duration_seconds": 4.489,
+  "error": null
+}

@@ -1,0 +1,65 @@
+{
+  "article_id": "106118786",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_02/ie/106118786.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_02/ie/106118786.json"
+  },
+  "manifest_row": {
+    "article_id": "106118786",
+    "group": "global_north_2024_02",
+    "country_code": "ie",
+    "filepath": "corpus/02_now_organised/global_north_2024_02/ie/106118786.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.93,
+    "gaza_role": "substantial",
+    "main_topic": "Daily news roundup covering several unrelated current-affairs stories",
+    "conflict_relevance": "Includes a substantial item on Israeli air strikes in Rafah, the humanitarian crisis in Gaza, civilian deaths, Hamas's 7 October attack, and efforts to negotiate a truce.",
+    "reason": "The article contains meaningful Gaza-related discourse, but the headline identifies it as a multi-story news roundup and most of the content concerns unrelated Irish political, security, drugs, and social-media stories.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "9fd0f1e6b971a3ada708591e5e70e4529b3a379c00915ba63357fc4c577aafb7",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "03bcefc57034d71bb83bc4ad9cf5757c1ca2f9c4ba2e0d90062ee54a25587a0f",
+    "raw_response_text_sha256": "503ddca6f150fee90d00f4089af31ed8977ff0463fdceee6f6d5ed11c8aa7116"
+  },
+  "api_metadata": {
+    "id": "resp_0847a3da2a371146006aaa06a9e64487d2b2eb6768717866f1",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789527721.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1204,
+      "input_tokens_details": {
+        "cache_write_tokens": 1201,
+        "cached_tokens": 0
+      },
+      "output_tokens": 354,
+      "output_tokens_details": {
+        "reasoning_tokens": 193
+      },
+      "total_tokens": 1558
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.93,\n  \"gaza_role\": \"substantial\",\n  \"main_topic\": \"Daily news roundup covering several unrelated current-affairs stories\",\n  \"conflict_relevance\": \"Includes a substantial item on Israeli air strikes in Rafah, the humanitarian crisis in Gaza, civilian deaths, Hamas's 7 October attack, and efforts to negotiate a truce.\",\n  \"reason\": \"The article contains meaningful Gaza-related discourse, but the headline identifies it as a multi-story news roundup and most of the content concerns unrelated Irish political, security, drugs, and social-media stories.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:02:06Z",
+  "duration_seconds": 4.9,
+  "error": null
+}

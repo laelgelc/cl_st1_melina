@@ -1,0 +1,65 @@
+{
+  "article_id": "104698454",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_12/ca/104698454.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_12/ca/104698454.json"
+  },
+  "manifest_row": {
+    "article_id": "104698454",
+    "group": "global_north_2023_12",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2023_12/ca/104698454.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.91,
+    "gaza_role": "passing",
+    "main_topic": "New Year's Eve top stories and current events roundup",
+    "conflict_relevance": "The roundup includes a brief item about Israeli political divisions preceding the October 7 Hamas attack from Gaza, but the article is not focused on the conflict.",
+    "reason": "The conflict-related content is a meaningful but isolated snippet within a broad collection of unrelated news stories, making it unsuitable for the main conflict corpus but potentially relevant to broader media-discourse analysis.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "c1c1111c7439d27fbed46373b0ad0d3d464691800279cfc29dd27df471f28f35",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "d806b8cdc9c2202b4e5adb6610634bf6bcf66f9af1037ddd6cc522a9f5a6cafa",
+    "raw_response_text_sha256": "7a66e86eb3abf5e6e9ca219eb006f49b188f22693e38c1612d3055e1f72159b5"
+  },
+  "api_metadata": {
+    "id": "resp_07cca22db6e07cfd006aaa00b2d33c87d2a688b3ad2f9b8684",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789526194.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 945,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 323,
+      "output_tokens_details": {
+        "reasoning_tokens": 171
+      },
+      "total_tokens": 1268
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.91,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"New Year's Eve top stories and current events roundup\",\n  \"conflict_relevance\": \"The roundup includes a brief item about Israeli political divisions preceding the October 7 Hamas attack from Gaza, but the article is not focused on the conflict.\",\n  \"reason\": \"The conflict-related content is a meaningful but isolated snippet within a broad collection of unrelated news stories, making it unsuitable for the main conflict corpus but potentially relevant to broader media-discourse analysis.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:36:39Z",
+  "duration_seconds": 5.167,
+  "error": null
+}

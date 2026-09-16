@@ -1,0 +1,65 @@
+{
+  "article_id": "107834719",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_04/us/107834719.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_04/us/107834719.json"
+  },
+  "manifest_row": {
+    "article_id": "107834719",
+    "group": "global_north_2024_04",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2024_04/us/107834719.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "gaza_role": "passing",
+    "main_topic": "Aggregated video headlines and unrelated news snippets",
+    "conflict_relevance": "The text is a media-platform roundup containing several separate headlines about Gaza, protests, cease-fire talks, and hostages, but it has no substantive article-level discussion of these issues.",
+    "reason": "This is a collection of unrelated navigational and video snippets rather than a coherent article. Gaza-related items appear only as embedded headlines among many unrelated topics.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "db2490f2a4cd296fd125853e98195a0a74161e912354d9ee43973fb49b8b20ba",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "860461379e9a7f60306e5ba24a0307807627998d4f003d026adc764ea16014bd",
+    "raw_response_text_sha256": "1e730a0aaff361bcf7f117fe2af6fd37a1c43801c9bd53f78219905e38b63a5b"
+  },
+  "api_metadata": {
+    "id": "resp_0b8935ccf5e6f8f4006aaa0c65c35c87d28886035353afcb2e",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789529189.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1222,
+      "input_tokens_details": {
+        "cache_write_tokens": 1219,
+        "cached_tokens": 0
+      },
+      "output_tokens": 349,
+      "output_tokens_details": {
+        "reasoning_tokens": 200
+      },
+      "total_tokens": 1571
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Aggregated video headlines and unrelated news snippets\",\n  \"conflict_relevance\": \"The text is a media-platform roundup containing several separate headlines about Gaza, protests, cease-fire talks, and hostages, but it has no substantive article-level discussion of these issues.\",\n  \"reason\": \"This is a collection of unrelated navigational and video snippets rather than a coherent article. Gaza-related items appear only as embedded headlines among many unrelated topics.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:26:33Z",
+  "duration_seconds": 3.9,
+  "error": null
+}

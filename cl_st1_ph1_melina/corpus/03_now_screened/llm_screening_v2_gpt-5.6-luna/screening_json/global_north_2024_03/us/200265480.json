@@ -1,0 +1,65 @@
+{
+  "article_id": "200265480",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_03/us/200265480.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_03/us/200265480.json"
+  },
+  "manifest_row": {
+    "article_id": "200265480",
+    "group": "global_north_2024_03",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2024_03/us/200265480.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "passing",
+    "main_topic": "Maryland Democratic Senate primary candidates and campaign dynamics",
+    "conflict_relevance": "The article briefly reports that forum hecklers called for a Gaza cease-fire and defunding Israel, but the broader article is about the Senate election and contains no substantive discussion of the conflict.",
+    "reason": "Gaza appears in a meaningful but very brief description of an interruption at a political candidates' forum. This is relevant to public protest and electoral discourse around the conflict, but it is not central to the article.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "e4cda1236c108e4f206706dbda6fe4977b6642fae6c348f1cafc50c57e600408",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "ac4354d78f11217d39f61f07d88a3b8ed21191d5a4516064ee706417dbb8f274",
+    "raw_response_text_sha256": "2f1146b3188e5bdbc4c97b26cc2c6c9b3d5ee3d97c11d82afbceedaaf1a04eaf"
+  },
+  "api_metadata": {
+    "id": "resp_01b4d3c7b640e563006aaa0a104e9087d28eaf2d1cac63a32e",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789528592.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1960,
+      "input_tokens_details": {
+        "cache_write_tokens": 1957,
+        "cached_tokens": 0
+      },
+      "output_tokens": 162,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 2122
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Maryland Democratic Senate primary candidates and campaign dynamics\",\n  \"conflict_relevance\": \"The article briefly reports that forum hecklers called for a Gaza cease-fire and defunding Israel, but the broader article is about the Senate election and contains no substantive discussion of the conflict.\",\n  \"reason\": \"Gaza appears in a meaningful but very brief description of an interruption at a political candidates' forum. This is relevant to public protest and electoral discourse around the conflict, but it is not central to the article.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:16:34Z",
+  "duration_seconds": 2.459,
+  "error": null
+}

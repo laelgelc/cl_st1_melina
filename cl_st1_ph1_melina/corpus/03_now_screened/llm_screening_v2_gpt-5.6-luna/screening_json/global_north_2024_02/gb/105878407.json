@@ -1,0 +1,65 @@
+{
+  "article_id": "105878407",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_02/gb/105878407.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_02/gb/105878407.json"
+  },
+  "manifest_row": {
+    "article_id": "105878407",
+    "group": "global_north_2024_02",
+    "country_code": "gb",
+    "filepath": "corpus/02_now_organised/global_north_2024_02/gb/105878407.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.97,
+    "gaza_role": "passing",
+    "main_topic": "Global defence spending and escalating geopolitical tensions",
+    "conflict_relevance": "The article briefly mentions the war in Gaza as one factor contributing to rising global defence spending and instability, but it is not otherwise discussed.",
+    "reason": "The main article concerns worldwide military expenditure, Russia, China, Iran, Ukraine, NATO and broader security tensions. Gaza appears meaningfully but only in a single contextual sentence, making the article peripheral rather than core. The text also contains an unrelated embedded Death in Paradise entertainment article.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "b18cc9d36232a31612f5a219a0169c25d98354c2b64f3e991f9365a8bab56392",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "20a2655533f523e1c081c695d8c13f4b40dcd181b9016b3c208ff5062ebd32f4",
+    "raw_response_text_sha256": "451bae9b94cc162ebf4f797182e5979ea0af6bc8de3830c6c1730febff8802aa"
+  },
+  "api_metadata": {
+    "id": "resp_0cad73a7aa5d344d006aaa06504d6c87d2b392aa004b9e4534",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789527632.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1586,
+      "input_tokens_details": {
+        "cache_write_tokens": 1583,
+        "cached_tokens": 0
+      },
+      "output_tokens": 275,
+      "output_tokens_details": {
+        "reasoning_tokens": 110
+      },
+      "total_tokens": 1861
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.97,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Global defence spending and escalating geopolitical tensions\",\n  \"conflict_relevance\": \"The article briefly mentions the war in Gaza as one factor contributing to rising global defence spending and instability, but it is not otherwise discussed.\",\n  \"reason\": \"The main article concerns worldwide military expenditure, Russia, China, Iran, Ukraine, NATO and broader security tensions. Gaza appears meaningfully but only in a single contextual sentence, making the article peripheral rather than core. The text also contains an unrelated embedded Death in Paradise entertainment article.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:00:36Z",
+  "duration_seconds": 3.829,
+  "error": null
+}

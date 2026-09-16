@@ -1,0 +1,65 @@
+{
+  "article_id": "200300239",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_03/us/200300239.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_03/us/200300239.json"
+  },
+  "manifest_row": {
+    "article_id": "200300239",
+    "group": "global_north_2024_03",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2024_03/us/200300239.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "gaza_role": "boilerplate_or_unrelated",
+    "main_topic": "New Jersey legislation revising the state's open public records law",
+    "conflict_relevance": "An unrelated embedded sentence briefly mentions a U.S. senator criticizing Israeli Prime Minister Benjamin Netanyahu's handling of the Gaza war.",
+    "reason": "The article is principally about New Jersey open-records legislation. The Gaza-related content appears as an isolated, unrelated inserted news snippet and does not contribute meaningfully to the article's main discourse.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "00e1d17eec067433a172f1051348155a9e7ea38e6d94ee161ae66d2375068fbc",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "f2b5c47e9f315eaea718da5b66c358ff80c5a897c21504d53760945fbc877305",
+    "raw_response_text_sha256": "43bcad69e33f0d1eb1874efca53758e5a9350c5b377fc28b15e7b9d024b97fa1"
+  },
+  "api_metadata": {
+    "id": "resp_0bcd3e951a8afab2006aaa0a64cc7087d2aac9f0a77201d143",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789528676.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2104,
+      "input_tokens_details": {
+        "cache_write_tokens": 2101,
+        "cached_tokens": 0
+      },
+      "output_tokens": 272,
+      "output_tokens_details": {
+        "reasoning_tokens": 119
+      },
+      "total_tokens": 2376
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"gaza_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"New Jersey legislation revising the state's open public records law\",\n  \"conflict_relevance\": \"An unrelated embedded sentence briefly mentions a U.S. senator criticizing Israeli Prime Minister Benjamin Netanyahu's handling of the Gaza war.\",\n  \"reason\": \"The article is principally about New Jersey open-records legislation. The Gaza-related content appears as an isolated, unrelated inserted news snippet and does not contribute meaningfully to the article's main discourse.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:18:00Z",
+  "duration_seconds": 3.44,
+  "error": null
+}

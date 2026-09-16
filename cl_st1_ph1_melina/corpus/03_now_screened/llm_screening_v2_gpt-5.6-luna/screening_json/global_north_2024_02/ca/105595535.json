@@ -1,0 +1,65 @@
+{
+  "article_id": "105595535",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_02/ca/105595535.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_02/ca/105595535.json"
+  },
+  "manifest_row": {
+    "article_id": "105595535",
+    "group": "global_north_2024_02",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2024_02/ca/105595535.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.97,
+    "gaza_role": "passing",
+    "main_topic": "Felix Auger-Aliassime's advancement to the semifinals of the Open Sud de France tennis tournament",
+    "conflict_relevance": "A latest-stories snippet contains a brief report about Israel's planned military movement into Rafah and the situation of Palestinian civilians in Gaza, but this is unrelated to the main tennis article.",
+    "reason": "The article is primarily a sports report with no conflict-related content. However, it includes a meaningful but incidental Gaza news snippet concerning Israeli military objectives and displaced Palestinian civilians, making it peripheral rather than wholly excludable.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "87e66c3e487590f5a6b4d602462f5cb558706e2c9dd01da4ed318493acd3dc66",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "02699522181b947d785ae83f846a40133f770e1b5e86d0d289be8d3f3cf0b2f0",
+    "raw_response_text_sha256": "ada9ce72646f6220dc970319bef6a1e1971383b35877e36ef8347a24a4d48b10"
+  },
+  "api_metadata": {
+    "id": "resp_0614f856dceab66f006aaa05f3405487d28a97930ef5b24bf4",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789527539.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2193,
+      "input_tokens_details": {
+        "cache_write_tokens": 2190,
+        "cached_tokens": 0
+      },
+      "output_tokens": 287,
+      "output_tokens_details": {
+        "reasoning_tokens": 109
+      },
+      "total_tokens": 2480
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.97,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Felix Auger-Aliassime's advancement to the semifinals of the Open Sud de France tennis tournament\",\n  \"conflict_relevance\": \"A latest-stories snippet contains a brief report about Israel's planned military movement into Rafah and the situation of Palestinian civilians in Gaza, but this is unrelated to the main tennis article.\",\n  \"reason\": \"The article is primarily a sports report with no conflict-related content. However, it includes a meaningful but incidental Gaza news snippet concerning Israeli military objectives and displaced Palestinian civilians, making it peripheral rather than wholly excludable.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:59:02Z",
+  "duration_seconds": 3.451,
+  "error": null
+}

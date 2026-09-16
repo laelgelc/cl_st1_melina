@@ -1,0 +1,65 @@
+{
+  "article_id": "114755025",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_south_2024_09/pk/114755025.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_south_2024_09/pk/114755025.json"
+  },
+  "manifest_row": {
+    "article_id": "114755025",
+    "group": "global_south_2024_09",
+    "country_code": "pk",
+    "filepath": "corpus/02_now_organised/global_south_2024_09/pk/114755025.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.96,
+    "gaza_role": "background",
+    "main_topic": "Israel-Hezbollah cross-border escalation and Israeli military strikes in Lebanon",
+    "conflict_relevance": "The article focuses on the Israel-Hezbollah conflict in Lebanon, but situates it within the Gaza war and explicitly compares Hezbollah with Hamas.",
+    "reason": "Gaza and Hamas provide meaningful context for the article's account of the regional conflict, yet the main subject is the northern Israel-Lebanon front rather than Gaza or the Israel-Hamas war itself.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "d0050220c081bc7f95f067597c9e50ffb23ede1def950329af5ab8bb77d09cc4",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "dbddd495c9d6d8e018340b4a6d1ed970a406587320c5d79d23245818c0572339",
+    "raw_response_text_sha256": "aa40adcfd06ad3f22f18a8bfd2f78824a150b182251a2d099f247d6ec212afe6"
+  },
+  "api_metadata": {
+    "id": "resp_0dd4aa72dbc73aed006aaa3fbe4e0887d1848f8f056c0e1931",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789542334.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 965,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 224,
+      "output_tokens_details": {
+        "reasoning_tokens": 69
+      },
+      "total_tokens": 1189
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.96,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Israel-Hezbollah cross-border escalation and Israeli military strikes in Lebanon\",\n  \"conflict_relevance\": \"The article focuses on the Israel-Hezbollah conflict in Lebanon, but situates it within the Gaza war and explicitly compares Hezbollah with Hamas.\",\n  \"reason\": \"Gaza and Hamas provide meaningful context for the article's account of the regional conflict, yet the main subject is the northern Israel-Lebanon front rather than Gaza or the Israel-Hamas war itself.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T07:05:37Z",
+  "duration_seconds": 3.445,
+  "error": null
+}

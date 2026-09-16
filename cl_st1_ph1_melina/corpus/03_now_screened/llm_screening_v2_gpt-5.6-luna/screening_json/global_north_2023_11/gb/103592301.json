@@ -1,0 +1,65 @@
+{
+  "article_id": "103592301",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_11/gb/103592301.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_11/gb/103592301.json"
+  },
+  "manifest_row": {
+    "article_id": "103592301",
+    "group": "global_north_2023_11",
+    "country_code": "gb",
+    "filepath": "corpus/02_now_organised/global_north_2023_11/gb/103592301.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.91,
+    "gaza_role": "substantial",
+    "main_topic": "Bafta Scotland awards ceremony and pro-Palestine activism",
+    "conflict_relevance": "The article reports activists distributing ceasefire messages at the awards and attendees expressing solidarity with Palestinians, but the broader focus is the entertainment event.",
+    "reason": "Gaza and Palestine-related activism are a prominent part of the article, yet the main subject is the Bafta Scotland awards and its attendees rather than the conflict itself.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "8756e0536f6c88e53fb0f174c875aefb1a9da640b037c74b799240528313fa2a",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "4d135047224f6d52cb79ffe7290b53c4a7a8b9f7805fa07480ffa6c89631632e",
+    "raw_response_text_sha256": "39f74c58b95ac4295f17b36cbd97c48801ede1d07f700f360da5898104c3ae40"
+  },
+  "api_metadata": {
+    "id": "resp_06304dc9ea73d267006aa9fcfcce2c87d2bd8312f78f67f48d",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789525244.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1017,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 305,
+      "output_tokens_details": {
+        "reasoning_tokens": 156
+      },
+      "total_tokens": 1322
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.91,\n  \"gaza_role\": \"substantial\",\n  \"main_topic\": \"Bafta Scotland awards ceremony and pro-Palestine activism\",\n  \"conflict_relevance\": \"The article reports activists distributing ceasefire messages at the awards and attendees expressing solidarity with Palestinians, but the broader focus is the entertainment event.\",\n  \"reason\": \"Gaza and Palestine-related activism are a prominent part of the article, yet the main subject is the Bafta Scotland awards and its attendees rather than the conflict itself.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:20:48Z",
+  "duration_seconds": 4.14,
+  "error": null
+}

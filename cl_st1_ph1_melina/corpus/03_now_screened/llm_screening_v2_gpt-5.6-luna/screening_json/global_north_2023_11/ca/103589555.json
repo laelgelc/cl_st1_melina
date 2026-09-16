@@ -1,0 +1,65 @@
+{
+  "article_id": "103589555",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_11/ca/103589555.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_11/ca/103589555.json"
+  },
+  "manifest_row": {
+    "article_id": "103589555",
+    "group": "global_north_2023_11",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2023_11/ca/103589555.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "background",
+    "main_topic": "Sports news, including an NHL game and other unrelated sports and current-affairs snippets",
+    "conflict_relevance": "The text includes a substantive embedded passage about the October 7 attacks, Israeli hostages, Gaza casualties, and the disruption of a Palestinian student's education, but the overall item is not focused on the conflict.",
+    "reason": "The main content concerns hockey and other unrelated news. The Gaza passage provides meaningful conflict-related discourse, so the item is peripheral rather than excludable, but it is not suitable as core conflict coverage.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "78b141f5c41b45f352e0b3813d6d3c22cebe323f208c8f279d02a8fee1e0255a",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "d638292b71c6c23a732cdd34ed7e1a4dba3ca43b4ee4197a1a2390165d3cf26e",
+    "raw_response_text_sha256": "cf7f02bba39aed3a735d7415086d987febff4674daa6b77649b2639062988bc0"
+  },
+  "api_metadata": {
+    "id": "resp_0208e94c8d549450006aa9fbf4954087d2b91787fc76a30d46",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789524980.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1943,
+      "input_tokens_details": {
+        "cache_write_tokens": 1940,
+        "cached_tokens": 0
+      },
+      "output_tokens": 272,
+      "output_tokens_details": {
+        "reasoning_tokens": 99
+      },
+      "total_tokens": 2215
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Sports news, including an NHL game and other unrelated sports and current-affairs snippets\",\n  \"conflict_relevance\": \"The text includes a substantive embedded passage about the October 7 attacks, Israeli hostages, Gaza casualties, and the disruption of a Palestinian student's education, but the overall item is not focused on the conflict.\",\n  \"reason\": \"The main content concerns hockey and other unrelated news. The Gaza passage provides meaningful conflict-related discourse, so the item is peripheral rather than excludable, but it is not suitable as core conflict coverage.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:16:29Z",
+  "duration_seconds": 9.367,
+  "error": null
+}

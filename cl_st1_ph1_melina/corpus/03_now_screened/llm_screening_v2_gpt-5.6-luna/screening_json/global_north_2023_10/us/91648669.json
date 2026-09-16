@@ -1,0 +1,65 @@
+{
+  "article_id": "91648669",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_10/us/91648669.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_10/us/91648669.json"
+  },
+  "manifest_row": {
+    "article_id": "91648669",
+    "group": "global_north_2023_10",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2023_10/us/91648669.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.93,
+    "gaza_role": "background",
+    "main_topic": "Backlash against WebSummit founder Paddy Cosgrave over comments about fighting in Israel and Gaza",
+    "conflict_relevance": "The article includes meaningful discussion of public and technology-community reactions to comments concerning the Israel-Gaza conflict, but the primary subject is the business impact on a technology conference.",
+    "reason": "The WebSummit passage is relevant to public discourse surrounding Israel and Gaza, though it is not primarily reporting on the conflict itself. The surrounding text also contains unrelated celebrity and sports material, indicating a multi-snippet or contaminated article.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "5651ddd14e8f96f97f7babea031e95392a81f1f07918590a23d46f95d9f6909f",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "6afe2bf665f2d7813a02e54574b7de184c3aef84827c8c70840def397918a0eb",
+    "raw_response_text_sha256": "d6f3dfd9432fb8a0590ad7b211ab1c971b84bfa480c68d63667476147bd641c9"
+  },
+  "api_metadata": {
+    "id": "resp_0037783de6f7fdd4006aa9fa89c0fc87d29be8adf38a6cdf1b",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789524617.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1094,
+      "input_tokens_details": {
+        "cache_write_tokens": 1091,
+        "cached_tokens": 0
+      },
+      "output_tokens": 334,
+      "output_tokens_details": {
+        "reasoning_tokens": 161
+      },
+      "total_tokens": 1428
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.93,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Backlash against WebSummit founder Paddy Cosgrave over comments about fighting in Israel and Gaza\",\n  \"conflict_relevance\": \"The article includes meaningful discussion of public and technology-community reactions to comments concerning the Israel-Gaza conflict, but the primary subject is the business impact on a technology conference.\",\n  \"reason\": \"The WebSummit passage is relevant to public discourse surrounding Israel and Gaza, though it is not primarily reporting on the conflict itself. The surrounding text also contains unrelated celebrity and sports material, indicating a multi-snippet or contaminated article.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:10:21Z",
+  "duration_seconds": 4.347,
+  "error": null
+}

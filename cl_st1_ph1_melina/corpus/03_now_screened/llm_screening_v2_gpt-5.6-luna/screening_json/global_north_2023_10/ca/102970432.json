@@ -1,0 +1,65 @@
+{
+  "article_id": "102970432",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_10/ca/102970432.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_10/ca/102970432.json"
+  },
+  "manifest_row": {
+    "article_id": "102970432",
+    "group": "global_north_2023_10",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2023_10/ca/102970432.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.96,
+    "gaza_role": "passing",
+    "main_topic": "Saskatchewan teachers' labor dispute and potential strike action",
+    "conflict_relevance": "The main article concerns a Canadian education-sector labor dispute, but an embedded CTV top-stories roundup includes a brief report about communications outages and intensified Israeli bombardment in Gaza.",
+    "reason": "Gaza is mentioned only in an unrelated embedded news item rather than in the main article. The mention is meaningful but brief and does not make the article core conflict coverage.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "e3aaf95a9e8f767f08ddeff24c640cf6e6cc868bf71cfcbd773aa28d362a380a",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "47865a04d431a45ef6886c0ce155f969996825d4a01d921cca0c91f201567224",
+    "raw_response_text_sha256": "eaaa21c9e4194c401f7ca6887491d27447d94adcad157df23f141f128e3bbaad"
+  },
+  "api_metadata": {
+    "id": "resp_0a77659fa147a281006aa9f6ae565087d2b4b788d8ed28de63",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789523630.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1711,
+      "input_tokens_details": {
+        "cache_write_tokens": 1708,
+        "cached_tokens": 0
+      },
+      "output_tokens": 297,
+      "output_tokens_details": {
+        "reasoning_tokens": 141
+      },
+      "total_tokens": 2008
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.96,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Saskatchewan teachers' labor dispute and potential strike action\",\n  \"conflict_relevance\": \"The main article concerns a Canadian education-sector labor dispute, but an embedded CTV top-stories roundup includes a brief report about communications outages and intensified Israeli bombardment in Gaza.\",\n  \"reason\": \"Gaza is mentioned only in an unrelated embedded news item rather than in the main article. The mention is meaningful but brief and does not make the article core conflict coverage.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T01:53:54Z",
+  "duration_seconds": 4.418,
+  "error": null
+}

@@ -1,0 +1,65 @@
+{
+  "article_id": "126048077",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_06/au/126048077.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_06/au/126048077.json"
+  },
+  "manifest_row": {
+    "article_id": "126048077",
+    "group": "global_north_2025_06",
+    "country_code": "au",
+    "filepath": "corpus/02_now_organised/global_north_2025_06/au/126048077.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.99,
+    "gaza_role": "background",
+    "main_topic": "Health and environmental risks of residential wood-burning heaters",
+    "conflict_relevance": "The article includes substantive reader commentary about Israel, the Gaza war, alleged attacks on civilians and medical and media personnel, and perceived double standards concerning Israel's military actions and nuclear policy.",
+    "reason": "The main article is about wood smoke and public health, but the newsletter's reader-comment section contains meaningful discourse directly related to Israel and Gaza. This makes it useful for peripheral analysis but not core conflict coverage.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "0cdf19b2a7e03ef698e3ab74d54038827f9767614ba379ef32a4aafea9db057f",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "49aa9f99c7fe621d782756eabbb07ba65825f237843c939a8a01bbbfc6c1fe51",
+    "raw_response_text_sha256": "fb7ded953804cc1452ccacad9428b8b9ee63f1498bd87a9e16722583405879eb"
+  },
+  "api_metadata": {
+    "id": "resp_0935e548b0f6fa59006aaa2e6c98b487d1a5429f25fd2f0d22",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789537900.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1912,
+      "input_tokens_details": {
+        "cache_write_tokens": 1909,
+        "cached_tokens": 0
+      },
+      "output_tokens": 289,
+      "output_tokens_details": {
+        "reasoning_tokens": 127
+      },
+      "total_tokens": 2201
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.99,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Health and environmental risks of residential wood-burning heaters\",\n  \"conflict_relevance\": \"The article includes substantive reader commentary about Israel, the Gaza war, alleged attacks on civilians and medical and media personnel, and perceived double standards concerning Israel's military actions and nuclear policy.\",\n  \"reason\": \"The main article is about wood smoke and public health, but the newsletter's reader-comment section contains meaningful discourse directly related to Israel and Gaza. This makes it useful for peripheral analysis but not core conflict coverage.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T05:51:44Z",
+  "duration_seconds": 4.376,
+  "error": null
+}

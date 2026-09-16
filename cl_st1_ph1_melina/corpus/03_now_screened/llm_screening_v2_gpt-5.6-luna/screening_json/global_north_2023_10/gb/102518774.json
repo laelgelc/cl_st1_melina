@@ -1,0 +1,65 @@
+{
+  "article_id": "102518774",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_10/gb/102518774.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_10/gb/102518774.json"
+  },
+  "manifest_row": {
+    "article_id": "102518774",
+    "group": "global_north_2023_10",
+    "country_code": "gb",
+    "filepath": "corpus/02_now_organised/global_north_2023_10/gb/102518774.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "background",
+    "main_topic": "Climate change, extreme heat, humidity, and human habitability",
+    "conflict_relevance": "The main article is about climate change and heatwaves, but it contains an embedded or concatenated passage about Hamas's October 7 attack, Gaza, Israel, civilian casualties, and rockets.",
+    "reason": "The article's central subject is climate-related extreme heat, not Gaza or the Israel-Palestine conflict. However, the embedded conflict passage provides meaningful discourse-related content, so the item is peripheral rather than excluded.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "5aef3db9f1b16b1a2d97a54e6ce9b1ab0eea4e41ebaad8a6cd22226360483bd7",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "b748e731b1a3ae78ba39de1f60365c01dfd5daa6729f0bb974f6f6c63fea135e",
+    "raw_response_text_sha256": "4753146026caa90b3ef31973d7fd57aa7bd2956d9011b0c152aefe4aaa2c93f1"
+  },
+  "api_metadata": {
+    "id": "resp_0a43d3b1b2ce6acf006aa9f70243e487d288f143b8b3ed827f",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789523714.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2441,
+      "input_tokens_details": {
+        "cache_write_tokens": 2438,
+        "cached_tokens": 0
+      },
+      "output_tokens": 289,
+      "output_tokens_details": {
+        "reasoning_tokens": 120
+      },
+      "total_tokens": 2730
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Climate change, extreme heat, humidity, and human habitability\",\n  \"conflict_relevance\": \"The main article is about climate change and heatwaves, but it contains an embedded or concatenated passage about Hamas's October 7 attack, Gaza, Israel, civilian casualties, and rockets.\",\n  \"reason\": \"The article's central subject is climate-related extreme heat, not Gaza or the Israel-Palestine conflict. However, the embedded conflict passage provides meaningful discourse-related content, so the item is peripheral rather than excluded.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T01:55:17Z",
+  "duration_seconds": 3.619,
+  "error": null
+}

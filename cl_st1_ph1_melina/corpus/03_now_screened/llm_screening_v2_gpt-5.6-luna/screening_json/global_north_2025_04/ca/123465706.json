@@ -1,0 +1,65 @@
+{
+  "article_id": "123465706",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_04/ca/123465706.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_04/ca/123465706.json"
+  },
+  "manifest_row": {
+    "article_id": "123465706",
+    "group": "global_north_2025_04",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2025_04/ca/123465706.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.96,
+    "gaza_role": "passing",
+    "main_topic": "Frank and Oak store closures and Canadian retail-sector difficulties",
+    "conflict_relevance": "Gaza is mentioned only as a cause of supply-chain delays affecting the retailer's inventory.",
+    "reason": "The article is about a Canadian apparel retailer's financial problems and store closures. The reference to conflict in Gaza is incidental and does not develop discourse about Gaza, Palestine, Israel, or the conflict.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "c738facf125f811dd19d9c862cc2c24f1b957e736de549ae5ba554b5c6d55854",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "1dd28e544c762579b0fb2ec152f1dadc707521cee0f44d5bdd5aeffeeabfb43f",
+    "raw_response_text_sha256": "194a13eda31a61a7df76d3c23ade217724262c0d1491e738144b2907903fbf09"
+  },
+  "api_metadata": {
+    "id": "resp_0498f65b0a3f66d4006aaa2882bef487d1b2cb57f0e29c818a",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789536386.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1139,
+      "input_tokens_details": {
+        "cache_write_tokens": 1136,
+        "cached_tokens": 0
+      },
+      "output_tokens": 232,
+      "output_tokens_details": {
+        "reasoning_tokens": 90
+      },
+      "total_tokens": 1371
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.96,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Frank and Oak store closures and Canadian retail-sector difficulties\",\n  \"conflict_relevance\": \"Gaza is mentioned only as a cause of supply-chain delays affecting the retailer's inventory.\",\n  \"reason\": \"The article is about a Canadian apparel retailer's financial problems and store closures. The reference to conflict in Gaza is incidental and does not develop discourse about Gaza, Palestine, Israel, or the conflict.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T05:26:29Z",
+  "duration_seconds": 3.35,
+  "error": null
+}

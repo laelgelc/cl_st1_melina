@@ -1,0 +1,65 @@
+{
+  "article_id": "102680400",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_10/ca/102680400.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_10/ca/102680400.json"
+  },
+  "manifest_row": {
+    "article_id": "102680400",
+    "group": "global_north_2023_10",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2023_10/ca/102680400.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "passing",
+    "main_topic": "Leylah Fernandez winning a first-round tennis match at the Jiangxi Open",
+    "conflict_relevance": "The article is primarily a tennis report but includes a substantive embedded news snippet about the Gaza City hospital blast, Israeli and Hamas claims, and the Canadian government's response.",
+    "reason": "The Gaza material appears in an unrelated CTVNews.ca top-stories roundup rather than in the main article, so it is relevant only for peripheral analysis of conflict discourse.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "eb74fa7009b63905ef40ea777a0fb2a4b6c5532318aa3eab4f0a4a194e7f44b7",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "ce02dbde54fa40767afcab450bae5a3c7d943f357b8064f5db36c3f5eb95f859",
+    "raw_response_text_sha256": "535511c5fd9a010184d959c86950f58e36c2a350cc282a42405332ae2e5e52aa"
+  },
+  "api_metadata": {
+    "id": "resp_06cc1d98964d3165006aa9f64dff0887d290842d1a02a723b9",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789523534.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1366,
+      "input_tokens_details": {
+        "cache_write_tokens": 1363,
+        "cached_tokens": 0
+      },
+      "output_tokens": 307,
+      "output_tokens_details": {
+        "reasoning_tokens": 151
+      },
+      "total_tokens": 1673
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Leylah Fernandez winning a first-round tennis match at the Jiangxi Open\",\n  \"conflict_relevance\": \"The article is primarily a tennis report but includes a substantive embedded news snippet about the Gaza City hospital blast, Israeli and Hamas claims, and the Canadian government's response.\",\n  \"reason\": \"The Gaza material appears in an unrelated CTVNews.ca top-stories roundup rather than in the main article, so it is relevant only for peripheral analysis of conflict discourse.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T01:52:17Z",
+  "duration_seconds": 3.829,
+  "error": null
+}

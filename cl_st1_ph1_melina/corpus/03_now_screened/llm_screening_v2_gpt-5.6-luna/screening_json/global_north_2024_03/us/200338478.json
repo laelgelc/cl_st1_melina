@@ -1,0 +1,65 @@
+{
+  "article_id": "200338478",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_03/us/200338478.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_03/us/200338478.json"
+  },
+  "manifest_row": {
+    "article_id": "200338478",
+    "group": "global_north_2024_03",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2024_03/us/200338478.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.96,
+    "gaza_role": "background",
+    "main_topic": "Pope Francis's health and Easter schedule",
+    "conflict_relevance": "The article includes meaningful but secondary discussion of the Israeli-Palestinian conflict, including Gaza, peace appeals, Israeli and Palestinian bereaved families, and the Pope's support for a Catholic parish in Gaza.",
+    "reason": "The article is primarily a report on the Pope's health and upcoming religious appearances, while conflict-related material forms a substantive background component rather than the central focus.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "650539152747b84122017db943520896fb532cc66310ca4c9b66a4f630c355f7",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "12230ad217c8f5ac4e48dbcca9215502f59db8656bfcd97af8d5cf1cb3f357f6",
+    "raw_response_text_sha256": "8619b1f51100d537d56dc15f97419a9f093ee91e1690cfe5015c5dc1804ed0b8"
+  },
+  "api_metadata": {
+    "id": "resp_061750647e0aeae7006aaa0ab60d6487d2be8b1f4bf7f1e5ed",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789528758.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1333,
+      "input_tokens_details": {
+        "cache_write_tokens": 1330,
+        "cached_tokens": 0
+      },
+      "output_tokens": 270,
+      "output_tokens_details": {
+        "reasoning_tokens": 114
+      },
+      "total_tokens": 1603
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.96,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Pope Francis's health and Easter schedule\",\n  \"conflict_relevance\": \"The article includes meaningful but secondary discussion of the Israeli-Palestinian conflict, including Gaza, peace appeals, Israeli and Palestinian bereaved families, and the Pope's support for a Catholic parish in Gaza.\",\n  \"reason\": \"The article is primarily a report on the Pope's health and upcoming religious appearances, while conflict-related material forms a substantive background component rather than the central focus.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:19:29Z",
+  "duration_seconds": 11.911,
+  "error": null
+}

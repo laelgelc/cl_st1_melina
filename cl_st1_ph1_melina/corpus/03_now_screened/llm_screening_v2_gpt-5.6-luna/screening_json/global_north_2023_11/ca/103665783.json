@@ -1,0 +1,65 @@
+{
+  "article_id": "103665783",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_11/ca/103665783.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_11/ca/103665783.json"
+  },
+  "manifest_row": {
+    "article_id": "103665783",
+    "group": "global_north_2023_11",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2023_11/ca/103665783.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "passing",
+    "main_topic": "Dutch general election and the rise of Geert Wilders and his anti-Islam, anti-immigration party",
+    "conflict_relevance": "The main article is about Dutch domestic politics, but an embedded top-stories roundup contains a substantive sentence about the Gaza ceasefire, Hamas hostages, and efforts to prevent expansion of the Israel-Hamas war.",
+    "reason": "The Gaza-related material is meaningful but incidental to the main election article and appears in a separate news roundup rather than in the article's central discussion.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "f82555a8e0eed0f89e539ddb3e2016ad0bf8e45bb19ef09395af3555090fe993",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "45e6d296016d55c91084d352710bf27bd0a483621f89b8051468c279c6844a6f",
+    "raw_response_text_sha256": "5768efbe28c979f87ae91ecf3aa3055bc47f3c75f1ddb4a36595765d6300c359"
+  },
+  "api_metadata": {
+    "id": "resp_024b337d8c8c547b006aa9fc04efd087d2b70164aa9ddcc64f",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789524996.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2618,
+      "input_tokens_details": {
+        "cache_write_tokens": 2615,
+        "cached_tokens": 0
+      },
+      "output_tokens": 266,
+      "output_tokens_details": {
+        "reasoning_tokens": 97
+      },
+      "total_tokens": 2884
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Dutch general election and the rise of Geert Wilders and his anti-Islam, anti-immigration party\",\n  \"conflict_relevance\": \"The main article is about Dutch domestic politics, but an embedded top-stories roundup contains a substantive sentence about the Gaza ceasefire, Hamas hostages, and efforts to prevent expansion of the Israel-Hamas war.\",\n  \"reason\": \"The Gaza-related material is meaningful but incidental to the main election article and appears in a separate news roundup rather than in the article's central discussion.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:16:41Z",
+  "duration_seconds": 4.542,
+  "error": null
+}

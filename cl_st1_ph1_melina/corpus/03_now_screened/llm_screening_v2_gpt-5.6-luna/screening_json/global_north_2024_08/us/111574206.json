@@ -1,0 +1,65 @@
+{
+  "article_id": "111574206",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_08/us/111574206.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_08/us/111574206.json"
+  },
+  "manifest_row": {
+    "article_id": "111574206",
+    "group": "global_north_2024_08",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2024_08/us/111574206.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "background",
+    "main_topic": "Kamala Harris's nomination as the 2024 Democratic presidential candidate and Donald Trump's campaign controversies",
+    "conflict_relevance": "The main article concerns U.S. electoral politics, but an embedded news item contains substantive discussion by Antony Blinken of Palestinians in Gaza, hostages, a Gaza ceasefire, and regional conflict implications.",
+    "reason": "The headline and primary article are about the U.S. presidential election rather than Gaza or Israel/Palestine. However, the embedded Blinken transcript provides meaningful conflict-related discourse, making the item relevant as peripheral material rather than an exclusion.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "7715ac13715bdd340d5e2f64ac290d4d71bd05a875d39914d87d60ea84655496",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "f3f2be68e7e1f04e8c39bfa4cd7ce1c9f35bbd926f1c07993af682002dcbc42f",
+    "raw_response_text_sha256": "b5cd0b518e7c6f66ac900c4acb720bce8d96c792a82c711d52c803f871dfdb20"
+  },
+  "api_metadata": {
+    "id": "resp_00951cacb6f27b30006aaa1483405c87d2a79fe18fd0fd9ef5",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789531267.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 3420,
+      "input_tokens_details": {
+        "cache_write_tokens": 3417,
+        "cached_tokens": 0
+      },
+      "output_tokens": 275,
+      "output_tokens_details": {
+        "reasoning_tokens": 93
+      },
+      "total_tokens": 3695
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Kamala Harris's nomination as the 2024 Democratic presidential candidate and Donald Trump's campaign controversies\",\n  \"conflict_relevance\": \"The main article concerns U.S. electoral politics, but an embedded news item contains substantive discussion by Antony Blinken of Palestinians in Gaza, hostages, a Gaza ceasefire, and regional conflict implications.\",\n  \"reason\": \"The headline and primary article are about the U.S. presidential election rather than Gaza or Israel/Palestine. However, the embedded Blinken transcript provides meaningful conflict-related discourse, making the item relevant as peripheral material rather than an exclusion.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T04:01:11Z",
+  "duration_seconds": 4.276,
+  "error": null
+}

@@ -1,0 +1,65 @@
+{
+  "article_id": "118280517",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_11/au/118280517.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_11/au/118280517.json"
+  },
+  "manifest_row": {
+    "article_id": "118280517",
+    "group": "global_north_2024_11",
+    "country_code": "au",
+    "filepath": "corpus/02_now_organised/global_north_2024_11/au/118280517.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "substantial",
+    "main_topic": "Australian morning news bulletin covering domestic crime, Gaza violence, childcare policy, public transport, and football",
+    "conflict_relevance": "The bulletin includes a substantive news segment on Israeli strikes in Gaza, Palestinian casualties, the reported killing of World Central Kitchen employees, competing Israeli and Palestinian accounts, and related strikes in southern Lebanon.",
+    "reason": "Gaza is one of several major items in a multi-topic news bulletin rather than the overall subject of the article. The Gaza segment is meaningful for conflict discourse analysis but should not be treated as core standalone coverage.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "e6fd77da0f14fffd4d56db470893f35f854ef81ef3bc03697fe6a5e6d7dca97b",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "cc025f32c39157a75cf06b6e6f87dc509822eec35b667f677e8216e5cc91ed75",
+    "raw_response_text_sha256": "5f8925b9b8529776bb5c89ef6972fb479a8c49ab733d3b1347d847e37800f47a"
+  },
+  "api_metadata": {
+    "id": "resp_005bdc802d94e632006aaa1a24828c87d2a28de1560d126676",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789532708.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1728,
+      "input_tokens_details": {
+        "cache_write_tokens": 1725,
+        "cached_tokens": 0
+      },
+      "output_tokens": 284,
+      "output_tokens_details": {
+        "reasoning_tokens": 108
+      },
+      "total_tokens": 2012
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"substantial\",\n  \"main_topic\": \"Australian morning news bulletin covering domestic crime, Gaza violence, childcare policy, public transport, and football\",\n  \"conflict_relevance\": \"The bulletin includes a substantive news segment on Israeli strikes in Gaza, Palestinian casualties, the reported killing of World Central Kitchen employees, competing Israeli and Palestinian accounts, and related strikes in southern Lebanon.\",\n  \"reason\": \"Gaza is one of several major items in a multi-topic news bulletin rather than the overall subject of the article. The Gaza segment is meaningful for conflict discourse analysis but should not be treated as core standalone coverage.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T04:25:11Z",
+  "duration_seconds": 3.519,
+  "error": null
+}

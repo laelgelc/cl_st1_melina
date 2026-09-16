@@ -1,0 +1,65 @@
+{
+  "article_id": "105380934",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_01/ca/105380934.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_01/ca/105380934.json"
+  },
+  "manifest_row": {
+    "article_id": "105380934",
+    "group": "global_north_2024_01",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2024_01/ca/105380934.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "background",
+    "main_topic": "Canadian interest rates and the real estate market",
+    "conflict_relevance": "A separate latest-stories item contains substantive coverage of Israel's war against Hamas, Netanyahu's war strategy, post-war Gaza planning, hostages, and calls for a ceasefire, but this is unrelated to the main real-estate article.",
+    "reason": "The headline article is entirely about Canadian monetary policy, mortgage rates, and housing-market prospects. Its appended latest-stories section includes a meaningful Gaza-related news item, making the text potentially useful for peripheral discourse analysis but not as core conflict coverage.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "4a17f181bbd4e6c2ce4acf4ad601034ff5dc6e1c6099aa932a1637757dc64f6d",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "9f0536a369b629131eb7d535463b0f28901d62a5c1086c37e618c69a9dde87d8",
+    "raw_response_text_sha256": "3558d8e41a466b754fe0d4d61286a1286770b5567c2809a4a1e180adcbc4d96e"
+  },
+  "api_metadata": {
+    "id": "resp_06f93b9f5e425f87006aaa03b7214887d2835412db139fa8d1",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789526967.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2524,
+      "input_tokens_details": {
+        "cache_write_tokens": 2521,
+        "cached_tokens": 0
+      },
+      "output_tokens": 256,
+      "output_tokens_details": {
+        "reasoning_tokens": 76
+      },
+      "total_tokens": 2780
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Canadian interest rates and the real estate market\",\n  \"conflict_relevance\": \"A separate latest-stories item contains substantive coverage of Israel's war against Hamas, Netanyahu's war strategy, post-war Gaza planning, hostages, and calls for a ceasefire, but this is unrelated to the main real-estate article.\",\n  \"reason\": \"The headline article is entirely about Canadian monetary policy, mortgage rates, and housing-market prospects. Its appended latest-stories section includes a meaningful Gaza-related news item, making the text potentially useful for peripheral discourse analysis but not as core conflict coverage.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:49:30Z",
+  "duration_seconds": 3.478,
+  "error": null
+}

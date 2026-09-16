@@ -1,0 +1,65 @@
+{
+  "article_id": "105255168",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_south_2024_01/in/105255168.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_south_2024_01/in/105255168.json"
+  },
+  "manifest_row": {
+    "article_id": "105255168",
+    "group": "global_south_2024_01",
+    "country_code": "in",
+    "filepath": "corpus/02_now_organised/global_south_2024_01/in/105255168.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.97,
+    "gaza_role": "background",
+    "main_topic": "Collision between British Royal Navy mine-hunter vessels and maritime security in the Red Sea",
+    "conflict_relevance": "The article primarily concerns a Royal Navy collision and regional shipping security, but it connects Houthi attacks in the Red Sea to solidarity with Hamas and the Gaza conflict.",
+    "reason": "Gaza and Hamas appear in a meaningful contextual explanation of the Houthi attacks, but the Israel-Gaza conflict is not the article's central subject.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "8a698d58d3da17b069870e4adeb9ff0d7aabb519bac7795e32b72ddcd4e7b574",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "673187c3beb4b33cd740847db55f3168f02a1064391b595c158a388d505b9b0a",
+    "raw_response_text_sha256": "cb7224dc34d48926c410718b603fb892a274c016419679073a2382c532365605"
+  },
+  "api_metadata": {
+    "id": "resp_019f20f808f229f8006aaa37ef7ce887d197e6ce3704d43da4",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789540335.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 914,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 221,
+      "output_tokens_details": {
+        "reasoning_tokens": 65
+      },
+      "total_tokens": 1135
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.97,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Collision between British Royal Navy mine-hunter vessels and maritime security in the Red Sea\",\n  \"conflict_relevance\": \"The article primarily concerns a Royal Navy collision and regional shipping security, but it connects Houthi attacks in the Red Sea to solidarity with Hamas and the Gaza conflict.\",\n  \"reason\": \"Gaza and Hamas appear in a meaningful contextual explanation of the Houthi attacks, but the Israel-Gaza conflict is not the article's central subject.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T06:32:19Z",
+  "duration_seconds": 3.71,
+  "error": null
+}

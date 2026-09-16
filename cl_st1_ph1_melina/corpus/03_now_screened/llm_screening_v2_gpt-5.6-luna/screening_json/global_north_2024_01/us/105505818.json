@@ -1,0 +1,65 @@
+{
+  "article_id": "105505818",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_01/us/105505818.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_01/us/105505818.json"
+  },
+  "manifest_row": {
+    "article_id": "105505818",
+    "group": "global_north_2024_01",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2024_01/us/105505818.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "gaza_role": "boilerplate_or_unrelated",
+    "main_topic": "Chicago policies to prohibit natural-gas hookups in new construction and promote building electrification",
+    "conflict_relevance": "The article is about climate policy and natural-gas use. Gaza appears only in an unrelated passing reference to a city council meeting that may include debate over a cease-fire resolution.",
+    "reason": "The main article contains no substantive discussion of Gaza, Palestine, Israel, or the conflict; the Gaza reference is incidental and embedded in unrelated local-news material.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "4f539e5debb99ffaef1222a0d881a7d7c8a6d56ca0de9568701938c23b89952b",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "d91fa987702bf29c7e3c7fcc59faed3b2827d05a27fd8367ae5ff8ba75476bc0",
+    "raw_response_text_sha256": "32675786f54ea5453c0bf426e071be9f467e6ca4451f1dd3f4f962a7b8bb4c9e"
+  },
+  "api_metadata": {
+    "id": "resp_06b447c0dc49a0a8006aaa051de44c87d2ba38c1ac99c5f620",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789527325.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1519,
+      "input_tokens_details": {
+        "cache_write_tokens": 1516,
+        "cached_tokens": 0
+      },
+      "output_tokens": 246,
+      "output_tokens_details": {
+        "reasoning_tokens": 84
+      },
+      "total_tokens": 1765
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"gaza_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Chicago policies to prohibit natural-gas hookups in new construction and promote building electrification\",\n  \"conflict_relevance\": \"The article is about climate policy and natural-gas use. Gaza appears only in an unrelated passing reference to a city council meeting that may include debate over a cease-fire resolution.\",\n  \"reason\": \"The main article contains no substantive discussion of Gaza, Palestine, Israel, or the conflict; the Gaza reference is incidental and embedded in unrelated local-news material.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:55:28Z",
+  "duration_seconds": 3.175,
+  "error": null
+}

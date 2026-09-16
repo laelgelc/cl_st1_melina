@@ -1,0 +1,65 @@
+{
+  "article_id": "102807303",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_south_2023_10/ng/102807303.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_south_2023_10/ng/102807303.json"
+  },
+  "manifest_row": {
+    "article_id": "102807303",
+    "group": "global_south_2023_10",
+    "country_code": "ng",
+    "filepath": "corpus/02_now_organised/global_south_2023_10/ng/102807303.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "gaza_role": "boilerplate_or_unrelated",
+    "main_topic": "A Nigerian foundation covering Nollywood actor Mr Ibu's medical expenses",
+    "conflict_relevance": "The article's main subject is unrelated to Gaza or the Israel-Palestine conflict; Gaza appears only in an unrelated, fragmented embedded snippet.",
+    "reason": "The headline and substantive article concern medical financial assistance for a Nigerian actor. The brief Gaza-related text is an extraneous, incomplete news fragment rather than meaningful coverage.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "bcc227815ae67de493fbe07770db482fdfe3198531fd0e0e44ce2658c61620d0",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "4a4cf752fc5b3372640459c6e64537e57f1305ba342666724dce8e860c3918d0",
+    "raw_response_text_sha256": "916d69c0938f9abbcf2625e88841e81c072d11c1324bc0dfd5f913365483c8bd"
+  },
+  "api_metadata": {
+    "id": "resp_0220de1cf7d28a95006aaa33a979c887d18bd75b373a2ff69e",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789539241.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 952,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 274,
+      "output_tokens_details": {
+        "reasoning_tokens": 120
+      },
+      "total_tokens": 1226
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"gaza_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"A Nigerian foundation covering Nollywood actor Mr Ibu's medical expenses\",\n  \"conflict_relevance\": \"The article's main subject is unrelated to Gaza or the Israel-Palestine conflict; Gaza appears only in an unrelated, fragmented embedded snippet.\",\n  \"reason\": \"The headline and substantive article concern medical financial assistance for a Nigerian actor. The brief Gaza-related text is an extraneous, incomplete news fragment rather than meaningful coverage.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T06:14:05Z",
+  "duration_seconds": 3.937,
+  "error": null
+}

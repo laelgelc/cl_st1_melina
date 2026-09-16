@@ -1,0 +1,65 @@
+{
+  "article_id": "122227082",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_south_2025_03/ng/122227082.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_south_2025_03/ng/122227082.json"
+  },
+  "manifest_row": {
+    "article_id": "122227082",
+    "group": "global_south_2025_03",
+    "country_code": "ng",
+    "filepath": "corpus/02_now_organised/global_south_2025_03/ng/122227082.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "background",
+    "main_topic": "The arrest of former Philippine President Rodrigo Duterte by the International Criminal Court over alleged crimes against humanity in the war on drugs",
+    "conflict_relevance": "The article includes a substantial but secondary snippet about proposed ICC arrest warrants for Israeli Prime Minister Benjamin Netanyahu and Hamas leaders over alleged crimes related to the Gaza war and the October 7 attacks.",
+    "reason": "The main article concerns Duterte and the Philippines, while the Gaza-related material appears as an inserted or secondary news item. It contains meaningful conflict discourse but is not the article's central subject.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "e5961cab29be1447db5a6b58901807d9bf3e891d46accd4bb657b3dfea7176a4",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "e46486f74cfaef09c6304e80ce7657aca4cfe6d67744b0ad20bcf66c3766713f",
+    "raw_response_text_sha256": "cdf607561514ca8c98407a9e481e814b3327097b2863b0b7d72a8ebd9084c1c8"
+  },
+  "api_metadata": {
+    "id": "resp_057cebe1d3bc70b5006aaa46e1357487d19e8af6e03be3f7b7",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789544161.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 867,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 248,
+      "output_tokens_details": {
+        "reasoning_tokens": 75
+      },
+      "total_tokens": 1115
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"The arrest of former Philippine President Rodrigo Duterte by the International Criminal Court over alleged crimes against humanity in the war on drugs\",\n  \"conflict_relevance\": \"The article includes a substantial but secondary snippet about proposed ICC arrest warrants for Israeli Prime Minister Benjamin Netanyahu and Hamas leaders over alleged crimes related to the Gaza war and the October 7 attacks.\",\n  \"reason\": \"The main article concerns Duterte and the Philippines, while the Gaza-related material appears as an inserted or secondary news item. It contains meaningful conflict discourse but is not the article's central subject.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T07:36:04Z",
+  "duration_seconds": 3.838,
+  "error": null
+}

@@ -1,0 +1,65 @@
+{
+  "article_id": "121480826",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_south_2025_02/ph/121480826.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_south_2025_02/ph/121480826.json"
+  },
+  "manifest_row": {
+    "article_id": "121480826",
+    "group": "global_south_2025_02",
+    "country_code": "ph",
+    "filepath": "corpus/02_now_organised/global_south_2025_02/ph/121480826.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "passing",
+    "main_topic": "Argentine legal proceedings concerning the death of singer Liam Payne",
+    "conflict_relevance": "The article includes an unrelated news snippet reporting that the Hostages and Missing Families Forum identified Shiri Bibas and her two children among hostages expected to be released from Gaza.",
+    "reason": "The main article is about Liam Payne's death and contains no conflict-related focus. However, the embedded hostage-related sentence provides a meaningful, though very brief, reference to Gaza and the Israel-Hamas conflict.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "c256a50662112aae598d976f317a3c4157235451dda89af6da0ec9c4474e3b37",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "2b9e62d052826b6d48f7cf00f9a908798f7b39cf319b58f0a19530882409fbbd",
+    "raw_response_text_sha256": "d314a2d030e078734dc7c4ad821da8ec6a03b112fb4240aee7ed05eaf5db6391"
+  },
+  "api_metadata": {
+    "id": "resp_050dc37df00c00b2006aaa45de9a7487d1a326848dcfa33b61",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789543902.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1752,
+      "input_tokens_details": {
+        "cache_write_tokens": 1749,
+        "cached_tokens": 0
+      },
+      "output_tokens": 286,
+      "output_tokens_details": {
+        "reasoning_tokens": 123
+      },
+      "total_tokens": 2038
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Argentine legal proceedings concerning the death of singer Liam Payne\",\n  \"conflict_relevance\": \"The article includes an unrelated news snippet reporting that the Hostages and Missing Families Forum identified Shiri Bibas and her two children among hostages expected to be released from Gaza.\",\n  \"reason\": \"The main article is about Liam Payne's death and contains no conflict-related focus. However, the embedded hostage-related sentence provides a meaningful, though very brief, reference to Gaza and the Israel-Hamas conflict.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T07:31:46Z",
+  "duration_seconds": 3.822,
+  "error": null
+}

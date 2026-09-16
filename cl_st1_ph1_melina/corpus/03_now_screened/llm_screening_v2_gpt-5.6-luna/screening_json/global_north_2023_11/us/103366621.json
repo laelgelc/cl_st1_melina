@@ -1,0 +1,65 @@
+{
+  "article_id": "103366621",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_11/us/103366621.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_11/us/103366621.json"
+  },
+  "manifest_row": {
+    "article_id": "103366621",
+    "group": "global_north_2023_11",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2023_11/us/103366621.txt"
+  },
+  "screening": {
+    "category": "CORE",
+    "confidence": 0.99,
+    "gaza_role": "central",
+    "main_topic": "Israeli military operations around hospitals and the humanitarian crisis in northern Gaza",
+    "conflict_relevance": "The article directly covers Israeli strikes and encirclement of Gaza hospitals, alleged Hamas activity, civilian casualties, displacement, Gaza's future governance, and international responses during the Israel-Hamas war.",
+    "reason": "The main article is centrally focused on the Gaza war, military action against medical facilities, civilian suffering, and related political and humanitarian developments. Although the text includes duplicated passages and a brief Lebanon-related snippet, these do not alter the core focus.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": true
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "19c12ef65ddcc62bd7c3a7b085e662ade490fd548f781e0f8aa1c6051ce5c3de",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "6006bddf99311077b3bbf9a9eca710dcb873416705a52599399b06664a067077",
+    "raw_response_text_sha256": "c6bfed67b177d5fb369d23b466e25a2e9b9ed91d0336fb7b60014aa91e3b0ba8"
+  },
+  "api_metadata": {
+    "id": "resp_06928c058457752f006aa9fe57763487d2a1f28e4e68899e01",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789525591.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1442,
+      "input_tokens_details": {
+        "cache_write_tokens": 1439,
+        "cached_tokens": 0
+      },
+      "output_tokens": 235,
+      "output_tokens_details": {
+        "reasoning_tokens": 62
+      },
+      "total_tokens": 1677
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"CORE\",\n  \"confidence\": 0.99,\n  \"gaza_role\": \"central\",\n  \"main_topic\": \"Israeli military operations around hospitals and the humanitarian crisis in northern Gaza\",\n  \"conflict_relevance\": \"The article directly covers Israeli strikes and encirclement of Gaza hospitals, alleged Hamas activity, civilian casualties, displacement, Gaza's future governance, and international responses during the Israel-Hamas war.\",\n  \"reason\": \"The main article is centrally focused on the Gaza war, military action against medical facilities, civilian suffering, and related political and humanitarian developments. Although the text includes duplicated passages and a brief Lebanon-related snippet, these do not alter the core focus.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": true\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:26:35Z",
+  "duration_seconds": 4.197,
+  "error": null
+}

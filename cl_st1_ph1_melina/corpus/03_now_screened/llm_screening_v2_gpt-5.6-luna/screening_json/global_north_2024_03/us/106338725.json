@@ -1,0 +1,65 @@
+{
+  "article_id": "106338725",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_03/us/106338725.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_03/us/106338725.json"
+  },
+  "manifest_row": {
+    "article_id": "106338725",
+    "group": "global_north_2024_03",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2024_03/us/106338725.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "passing",
+    "main_topic": "Leap Day traditions, gender roles, and social transgression",
+    "conflict_relevance": "The article is primarily about Leap Day but includes a substantive news snippet describing Israeli troops opening fire on Palestinian civilians seeking aid in Gaza.",
+    "reason": "Gaza is not connected to the article's main discussion and appears as an embedded current-events item, but the passage contains meaningful conflict-related discourse rather than a purely incidental keyword mention.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "8b71114ef574a9ac5f20715930a5f59fb5925281475e172c221d6faa47159a0b",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "0d17b7b99cb5d7a72daa6d73901830e1dd8120b74ff1f70ccb626b63ea069a12",
+    "raw_response_text_sha256": "e1688e3ef47c1fa95b1fa3672bcbcaa3e46fbc36d061b5ebe52fcf0a4a6ac62e"
+  },
+  "api_metadata": {
+    "id": "resp_0ade2a589748d491006aaa0959e3c887d2a9a0d31a3446b6bd",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789528409.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1589,
+      "input_tokens_details": {
+        "cache_write_tokens": 1586,
+        "cached_tokens": 0
+      },
+      "output_tokens": 215,
+      "output_tokens_details": {
+        "reasoning_tokens": 66
+      },
+      "total_tokens": 1804
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Leap Day traditions, gender roles, and social transgression\",\n  \"conflict_relevance\": \"The article is primarily about Leap Day but includes a substantive news snippet describing Israeli troops opening fire on Palestinian civilians seeking aid in Gaza.\",\n  \"reason\": \"Gaza is not connected to the article's main discussion and appears as an embedded current-events item, but the passage contains meaningful conflict-related discourse rather than a purely incidental keyword mention.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:13:34Z",
+  "duration_seconds": 4.62,
+  "error": null
+}

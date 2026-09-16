@@ -1,0 +1,65 @@
+{
+  "article_id": "120106611",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_01/gb/120106611.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_01/gb/120106611.json"
+  },
+  "manifest_row": {
+    "article_id": "120106611",
+    "group": "global_north_2025_01",
+    "country_code": "gb",
+    "filepath": "corpus/02_now_organised/global_north_2025_01/gb/120106611.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.97,
+    "gaza_role": "substantial",
+    "main_topic": "The influence of President-elect Donald Trump on international affairs and diplomatic relations",
+    "conflict_relevance": "The article discusses Trump's claimed role in securing the Israel-Hamas hostage and ceasefire agreement, his pressure on Israel, and Israeli concerns about maintaining his support. However, most of the article focuses on Greenland, South Korea, and Ukraine.",
+    "reason": "Gaza and the Israel-Hamas agreement form a meaningful section of the article, but the article's overall focus is Trump's broader international pressure campaign rather than the Gaza conflict itself.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "6a7fc17869ee144c96718a9075d55e6d7dfa15fc9ae928a3f3ee26cab687893b",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "29a59efa61303e4997b739f8274ce866a0077dcdea0e85d78c6c718ee9cfa542",
+    "raw_response_text_sha256": "06d81a68d987dd156a687dbdb2b2d1c8a11d9be6fe0d5f8ab6f44d0515f255ba"
+  },
+  "api_metadata": {
+    "id": "resp_0c54e9c3b105b189006aaa1f9ee77c87d285ce2d01a7085cdd",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789534110.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1382,
+      "input_tokens_details": {
+        "cache_write_tokens": 1379,
+        "cached_tokens": 0
+      },
+      "output_tokens": 241,
+      "output_tokens_details": {
+        "reasoning_tokens": 69
+      },
+      "total_tokens": 1623
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.97,\n  \"gaza_role\": \"substantial\",\n  \"main_topic\": \"The influence of President-elect Donald Trump on international affairs and diplomatic relations\",\n  \"conflict_relevance\": \"The article discusses Trump's claimed role in securing the Israel-Hamas hostage and ceasefire agreement, his pressure on Israel, and Israeli concerns about maintaining his support. However, most of the article focuses on Greenland, South Korea, and Ukraine.\",\n  \"reason\": \"Gaza and the Israel-Hamas agreement form a meaningful section of the article, but the article's overall focus is Trump's broader international pressure campaign rather than the Gaza conflict itself.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T04:48:33Z",
+  "duration_seconds": 3.166,
+  "error": null
+}

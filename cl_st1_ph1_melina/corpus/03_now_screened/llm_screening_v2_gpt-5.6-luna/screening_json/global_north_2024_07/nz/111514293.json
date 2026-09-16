@@ -1,0 +1,65 @@
+{
+  "article_id": "111514293",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_07/nz/111514293.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_07/nz/111514293.json"
+  },
+  "manifest_row": {
+    "article_id": "111514293",
+    "group": "global_north_2024_07",
+    "country_code": "nz",
+    "filepath": "corpus/02_now_organised/global_north_2024_07/nz/111514293.txt"
+  },
+  "screening": {
+    "category": "CORE",
+    "confidence": 0.99,
+    "gaza_role": "substantial",
+    "main_topic": "Gaza humanitarian conditions, Israeli military operations, and medical evacuations",
+    "conflict_relevance": "Reports on returns to Khan Younis after Israeli ground operations, medical evacuations of injured and sick patients from Gaza, humanitarian needs, access through crossings, and calls for evacuation corridors and a ceasefire.",
+    "reason": "The article's first major news section is explicitly a Gaza update and contains substantial reporting on the humanitarian and military situation. Although the text is a multi-item world news roundup that also covers Venezuela, South Sudan, and Papua New Guinea, the Gaza material is directly relevant to the main corpus.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": true
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "c50a14d9147dcf6c8da1a239e3d9d7bcefc34fbcfcde7920eea065f8fd83922f",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "98c1529dd578b5d62870b3d32d4efb3942da8e0cd81c4c3a6591c403651e50cc",
+    "raw_response_text_sha256": "bd1280a01672f1659b49fd54ef3aff0b54ce9fc036085907ec5edda5d61ae023"
+  },
+  "api_metadata": {
+    "id": "resp_06c63fe769bd1759006aaa12900a2887d299891db63ac9dd32",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789530768.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2262,
+      "input_tokens_details": {
+        "cache_write_tokens": 2259,
+        "cached_tokens": 0
+      },
+      "output_tokens": 314,
+      "output_tokens_details": {
+        "reasoning_tokens": 128
+      },
+      "total_tokens": 2576
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"CORE\",\n  \"confidence\": 0.99,\n  \"gaza_role\": \"substantial\",\n  \"main_topic\": \"Gaza humanitarian conditions, Israeli military operations, and medical evacuations\",\n  \"conflict_relevance\": \"Reports on returns to Khan Younis after Israeli ground operations, medical evacuations of injured and sick patients from Gaza, humanitarian needs, access through crossings, and calls for evacuation corridors and a ceasefire.\",\n  \"reason\": \"The article's first major news section is explicitly a Gaza update and contains substantial reporting on the humanitarian and military situation. Although the text is a multi-item world news roundup that also covers Venezuela, South Sudan, and Papua New Guinea, the Gaza material is directly relevant to the main corpus.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": true\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:52:52Z",
+  "duration_seconds": 4.346,
+  "error": null
+}

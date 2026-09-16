@@ -1,0 +1,65 @@
+{
+  "article_id": "91671612",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_10/us/91671612.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_10/us/91671612.json"
+  },
+  "manifest_row": {
+    "article_id": "91671612",
+    "group": "global_north_2023_10",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2023_10/us/91671612.txt"
+  },
+  "screening": {
+    "category": "CORE",
+    "confidence": 0.99,
+    "gaza_role": "central",
+    "main_topic": "Pro-Palestinian protests in London and international demonstrations responding to Israel's military actions in Gaza",
+    "conflict_relevance": "The article directly covers Gaza, the Israel-Hamas war, the siege and bombardment of Gaza, humanitarian aid, Palestinian displacement, protest demands, antisemitism, anti-Muslim hate, and policing of conflict-related demonstrations.",
+    "reason": "The headline and substantial majority of the article focus on a large London march demanding an end to the Gaza siege and Israeli airstrikes, with discussion of Hamas's attack, Israel's military response, casualties, aid access, protest slogans, and related demonstrations internationally. A separate unrelated article about a New York migrant shelter is appended, but it does not alter the main article's core relevance.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": true
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "f6ad2b6ba804321541caaa69a24c7b2e9b586f26bce158ffb2bf6a8834030438",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "3f0023413df7940ae05e696fc0b1c335b7c83dc957a2e741befd2b423dba1430",
+    "raw_response_text_sha256": "d7c3726b898259a80175e53e27ae33fcb980a22cc1c552289c66e74834247cbb"
+  },
+  "api_metadata": {
+    "id": "resp_0b289777b3937dfe006aa9fadca1a487d2a40a5d41deda6bab",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789524700.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2122,
+      "input_tokens_details": {
+        "cache_write_tokens": 2119,
+        "cached_tokens": 0
+      },
+      "output_tokens": 255,
+      "output_tokens_details": {
+        "reasoning_tokens": 40
+      },
+      "total_tokens": 2377
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"CORE\",\n  \"confidence\": 0.99,\n  \"gaza_role\": \"central\",\n  \"main_topic\": \"Pro-Palestinian protests in London and international demonstrations responding to Israel's military actions in Gaza\",\n  \"conflict_relevance\": \"The article directly covers Gaza, the Israel-Hamas war, the siege and bombardment of Gaza, humanitarian aid, Palestinian displacement, protest demands, antisemitism, anti-Muslim hate, and policing of conflict-related demonstrations.\",\n  \"reason\": \"The headline and substantial majority of the article focus on a large London march demanding an end to the Gaza siege and Israeli airstrikes, with discussion of Hamas's attack, Israel's military response, casualties, aid access, protest slogans, and related demonstrations internationally. A separate unrelated article about a New York migrant shelter is appended, but it does not alter the main article's core relevance.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": true\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:11:44Z",
+  "duration_seconds": 3.506,
+  "error": null
+}

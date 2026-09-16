@@ -1,0 +1,65 @@
+{
+  "article_id": "103612428",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_11/ca/103612428.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_11/ca/103612428.json"
+  },
+  "manifest_row": {
+    "article_id": "103612428",
+    "group": "global_north_2023_11",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2023_11/ca/103612428.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.97,
+    "gaza_role": "background",
+    "main_topic": "Climate change and the widening gap between global emissions targets and actual emissions",
+    "conflict_relevance": "The main article is about climate change, but the page includes several substantive unrelated news snippets concerning fighting around a Gaza hospital, humanitarian aid to Gaza, and Canadian MPs' solidarity visit to Israel.",
+    "reason": "The headline and principal article have no connection to Gaza or the Israel-Palestine conflict. However, multiple embedded news items contain meaningful conflict-related discourse, making the page peripherally relevant rather than excludable.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "7e24904295dc1aeb2eacf377993e9b9213aa9cdb78811b6ed3e62f7190fecc62",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "e710b118ace9410f950ac773982d40da30021573ff57e41c42f703c4cf5cb43a",
+    "raw_response_text_sha256": "67fb95ad2e9b48fba386f3de0aaaae3ca85aedef3b5af6ef0ebb1ace478b200d"
+  },
+  "api_metadata": {
+    "id": "resp_09388bb3475933cb006aa9fbfa12c487d29d1c021c2a0d16f4",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789524986.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 3055,
+      "input_tokens_details": {
+        "cache_write_tokens": 3052,
+        "cached_tokens": 0
+      },
+      "output_tokens": 352,
+      "output_tokens_details": {
+        "reasoning_tokens": 181
+      },
+      "total_tokens": 3407
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.97,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Climate change and the widening gap between global emissions targets and actual emissions\",\n  \"conflict_relevance\": \"The main article is about climate change, but the page includes several substantive unrelated news snippets concerning fighting around a Gaza hospital, humanitarian aid to Gaza, and Canadian MPs' solidarity visit to Israel.\",\n  \"reason\": \"The headline and principal article have no connection to Gaza or the Israel-Palestine conflict. However, multiple embedded news items contain meaningful conflict-related discourse, making the page peripherally relevant rather than excludable.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:16:30Z",
+  "duration_seconds": 4.664,
+  "error": null
+}

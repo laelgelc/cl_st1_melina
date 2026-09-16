@@ -1,0 +1,65 @@
+{
+  "article_id": "120262459",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_south_2025_01/in/120262459.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_south_2025_01/in/120262459.json"
+  },
+  "manifest_row": {
+    "article_id": "120262459",
+    "group": "global_south_2025_01",
+    "country_code": "in",
+    "filepath": "corpus/02_now_organised/global_south_2025_01/in/120262459.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "gaza_role": "passing",
+    "main_topic": "Forum content warning and disclaimer",
+    "conflict_relevance": "Gaza is mentioned only as one item in an unrelated list of events and is not discussed substantively.",
+    "reason": "The article is primarily a generic legal-forum disclaimer and contains only a passing reference to a Gaza ceasefire in a broader, unrelated roundup of events.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "0291a78b24faef93540ae08694380c2b7d6e3c54fa8a347d48823347e32ad016",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "951c0ac75de56b8d57c5c6c61db1bafa384757dd943534b5504745504921f17d",
+    "raw_response_text_sha256": "1601d0e375ecda34110e85a0caaa8737fbf1cd57833a4f9b292ddd9ab605a9e3"
+  },
+  "api_metadata": {
+    "id": "resp_0653e3a99653c364006aaa4435583087d190ad09ac3bfcee21",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789543477.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 838,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 176,
+      "output_tokens_details": {
+        "reasoning_tokens": 68
+      },
+      "total_tokens": 1014
+    }
+  },
+  "raw_response_text": "{\"category\":\"EXCLUDE\",\"confidence\":0.98,\"gaza_role\":\"passing\",\"main_topic\":\"Forum content warning and disclaimer\",\"conflict_relevance\":\"Gaza is mentioned only as one item in an unrelated list of events and is not discussed substantively.\",\"reason\":\"The article is primarily a generic legal-forum disclaimer and contains only a passing reference to a Gaza ceasefire in a broader, unrelated roundup of events.\",\"multi_article_or_snippet_issue\":false,\"recommended_for_main_corpus\":false}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T07:24:41Z",
+  "duration_seconds": 4.165,
+  "error": null
+}

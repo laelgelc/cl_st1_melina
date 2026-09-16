@@ -1,0 +1,65 @@
+{
+  "article_id": "109108154",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_06/ca/109108154.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_06/ca/109108154.json"
+  },
+  "manifest_row": {
+    "article_id": "109108154",
+    "group": "global_north_2024_06",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2024_06/ca/109108154.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.97,
+    "gaza_role": "passing",
+    "main_topic": "Automotive manufacturers phasing out chrome plating بسبب environmental and occupational health risks",
+    "conflict_relevance": "The main article is unrelated to Gaza or Palestine, but the text includes embedded news snippets about a pro-Palestinian encampment at McGill University and humanitarian aid access to Gaza.",
+    "reason": "The headline and substantive article focus on chrome plating, chromium toxicity, automotive design, and regulatory changes. However, the surrounding text contains brief but meaningful conflict-related snippets, making it peripheral rather than an exclusion.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "64a6bd9ffe5e23e35d8b099c3a7fd08c9f8b2d938daf9baddd2dfe4584210a20",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "fdacc7de94f45b4171780d2e6723893277a89d0db1fb6f016ad908b9a90de50b",
+    "raw_response_text_sha256": "3e35bc14b7a42e79d0f62e4e4ea123cce63e590fa3655fe1e701288e09016dad"
+  },
+  "api_metadata": {
+    "id": "resp_0f01ee5ee9f130c8006aaa10364cf087d2a2750e421f9f99c6",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789530166.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 3636,
+      "input_tokens_details": {
+        "cache_write_tokens": 3633,
+        "cached_tokens": 0
+      },
+      "output_tokens": 290,
+      "output_tokens_details": {
+        "reasoning_tokens": 121
+      },
+      "total_tokens": 3926
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.97,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Automotive manufacturers phasing out chrome plating بسبب environmental and occupational health risks\",\n  \"conflict_relevance\": \"The main article is unrelated to Gaza or Palestine, but the text includes embedded news snippets about a pro-Palestinian encampment at McGill University and humanitarian aid access to Gaza.\",\n  \"reason\": \"The headline and substantive article focus on chrome plating, chromium toxicity, automotive design, and regulatory changes. However, the surrounding text contains brief but meaningful conflict-related snippets, making it peripheral rather than an exclusion.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:42:49Z",
+  "duration_seconds": 3.711,
+  "error": null
+}

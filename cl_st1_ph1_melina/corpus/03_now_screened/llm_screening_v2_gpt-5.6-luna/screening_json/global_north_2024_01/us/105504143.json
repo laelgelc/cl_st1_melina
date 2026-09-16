@@ -1,0 +1,65 @@
+{
+  "article_id": "105504143",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_01/us/105504143.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_01/us/105504143.json"
+  },
+  "manifest_row": {
+    "article_id": "105504143",
+    "group": "global_north_2024_01",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2024_01/us/105504143.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.95,
+    "gaza_role": "background",
+    "main_topic": "Houthi demonstrations and military claims in Yemen linked to regional tensions",
+    "conflict_relevance": "The article discusses the Houthis' declared support for Hamas and their claim that attacks will continue until the Gaza war ends, but its primary focus is on Houthi actions and the US-Yemen confrontation.",
+    "reason": "Gaza and the Israel-Hamas war provide important context and motivation for the events described, yet the article is mainly about Houthi rallies and operations rather than the Gaza conflict itself.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "bff8b84d3263d1ede1017ea1e85b12624381e7fe1d5f3e24d75af21c499daed5",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "eba8f6d5281794b3088c8a343e41e7a1e388e4ed5b63aa84d54ae0747c4eab43",
+    "raw_response_text_sha256": "b2f73d839ac03267c5cdc9586b0a7243d6dc685f73c2896d21ac811276bb27fd"
+  },
+  "api_metadata": {
+    "id": "resp_013b72add50d563c006aaa051a5d0c87d28c509bd5092f8d7d",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789527322.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 931,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 256,
+      "output_tokens_details": {
+        "reasoning_tokens": 89
+      },
+      "total_tokens": 1187
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.95,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Houthi demonstrations and military claims in Yemen linked to regional tensions\",\n  \"conflict_relevance\": \"The article discusses the Houthis' declared support for Hamas and their claim that attacks will continue until the Gaza war ends, but its primary focus is on Houthi actions and the US-Yemen confrontation.\",\n  \"reason\": \"Gaza and the Israel-Hamas war provide important context and motivation for the events described, yet the article is mainly about Houthi rallies and operations rather than the Gaza conflict itself.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:55:25Z",
+  "duration_seconds": 3.055,
+  "error": null
+}

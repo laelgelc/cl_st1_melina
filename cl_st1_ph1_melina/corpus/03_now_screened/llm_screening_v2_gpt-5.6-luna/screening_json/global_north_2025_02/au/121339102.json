@@ -1,0 +1,65 @@
+{
+  "article_id": "121339102",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_02/au/121339102.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_02/au/121339102.json"
+  },
+  "manifest_row": {
+    "article_id": "121339102",
+    "group": "global_north_2025_02",
+    "country_code": "au",
+    "filepath": "corpus/02_now_organised/global_north_2025_02/au/121339102.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.93,
+    "gaza_role": "passing",
+    "main_topic": "Letters to the editor, primarily concerning taxi fraud, disability discrimination, and Australian politics",
+    "conflict_relevance": "A single brief letter mentions Trump's proposed peace deals in Gaza, but the article is an unrelated compilation of letters and does not develop the conflict discourse.",
+    "reason": "The Gaza reference is incidental and limited to one sentence in an 'And Another Thing' section. The article's main content concerns taxis, domestic Australian politics, disability access, climate change, Ukraine, and other unrelated topics.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "5df2d6b1284818f7f5464632cb65b53f57786d700901e94115565e9fa278c464",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "1723c219dc251361cfcb703045c627940ed6892426ee465a0f60b623154db2f1",
+    "raw_response_text_sha256": "018bf4e8c128f3ac94fe7a0118133175e25e8d26428dce6e50f19e3ea6ff990c"
+  },
+  "api_metadata": {
+    "id": "resp_0d02deee126f6716006aaa221b376887d2a9afb7f72814c800",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789534747.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 3996,
+      "input_tokens_details": {
+        "cache_write_tokens": 3993,
+        "cached_tokens": 0
+      },
+      "output_tokens": 434,
+      "output_tokens_details": {
+        "reasoning_tokens": 270
+      },
+      "total_tokens": 4430
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.93,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Letters to the editor, primarily concerning taxi fraud, disability discrimination, and Australian politics\",\n  \"conflict_relevance\": \"A single brief letter mentions Trump's proposed peace deals in Gaza, but the article is an unrelated compilation of letters and does not develop the conflict discourse.\",\n  \"reason\": \"The Gaza reference is incidental and limited to one sentence in an 'And Another Thing' section. The article's main content concerns taxis, domestic Australian politics, disability access, climate change, Ukraine, and other unrelated topics.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T04:59:11Z",
+  "duration_seconds": 4.822,
+  "error": null
+}

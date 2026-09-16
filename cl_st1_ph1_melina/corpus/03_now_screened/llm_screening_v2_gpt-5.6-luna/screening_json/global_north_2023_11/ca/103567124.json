@@ -1,0 +1,65 @@
+{
+  "article_id": "103567124",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_11/ca/103567124.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_11/ca/103567124.json"
+  },
+  "manifest_row": {
+    "article_id": "103567124",
+    "group": "global_north_2023_11",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2023_11/ca/103567124.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.97,
+    "gaza_role": "passing",
+    "main_topic": "A Saskatchewan MLA being removed from the governing caucus following a prostitution-related charge",
+    "conflict_relevance": "The main article is unrelated to Gaza or the Israel-Palestine conflict; Gaza appears only in a brief item within an unrelated CTV News top-stories roundup.",
+    "reason": "The article's substantive focus is a Canadian provincial political and criminal-justice story. The sole conflict-related reference is a passing teaser about Canada's votes on UN resolutions concerning Israel, Gaza, and the West Bank, which is not developed in the article.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "3582d481c9875baaa5a9bcdd82d9eaefdf2f655aa38a5f91fd4f296d2cb467ee",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "894afc68ece20318ed4a95672f6a16e2c2e172c014514e036ca68647368337fe",
+    "raw_response_text_sha256": "2c86ee596f6d34b8b159c8796bb4315cc464fb877ec7f7d7a313bd566209ded8"
+  },
+  "api_metadata": {
+    "id": "resp_0211ed6d3471b54c006aa9fbefeda887d2b088fbb614d096bd",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789524975.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1172,
+      "input_tokens_details": {
+        "cache_write_tokens": 1169,
+        "cached_tokens": 0
+      },
+      "output_tokens": 397,
+      "output_tokens_details": {
+        "reasoning_tokens": 224
+      },
+      "total_tokens": 1569
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.97,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"A Saskatchewan MLA being removed from the governing caucus following a prostitution-related charge\",\n  \"conflict_relevance\": \"The main article is unrelated to Gaza or the Israel-Palestine conflict; Gaza appears only in a brief item within an unrelated CTV News top-stories roundup.\",\n  \"reason\": \"The article's substantive focus is a Canadian provincial political and criminal-justice story. The sole conflict-related reference is a passing teaser about Canada's votes on UN resolutions concerning Israel, Gaza, and the West Bank, which is not developed in the article.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:16:22Z",
+  "duration_seconds": 6.288,
+  "error": null
+}

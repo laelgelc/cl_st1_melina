@@ -1,0 +1,65 @@
+{
+  "article_id": "106321257",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_03/ca/106321257.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_03/ca/106321257.json"
+  },
+  "manifest_row": {
+    "article_id": "106321257",
+    "group": "global_north_2024_03",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2024_03/ca/106321257.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.94,
+    "gaza_role": "passing",
+    "main_topic": "Vancouver Whitecaps pre-season performance and MLS home opener",
+    "conflict_relevance": "An unrelated embedded news item briefly reports allegations that Israeli troops fired on a Gaza aid convoy, involving humanitarian conditions and Israeli military action.",
+    "reason": "The main article is about soccer and contains no conflict-related discussion. However, a separate embedded snippet includes a meaningful sentence about a Gaza hospital head's account of gunfire striking an aid convoy, making the item marginally useful for broader discourse analysis but not for the main corpus.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "74c1343028e42d513cacd7d82e8e5767a3b9028848fc8d8b975fc70f8fc49354",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "f80db9b790ac9f73dfe09a6c907dbe07e70ad939ee6b9d2bfc5af639635d5e27",
+    "raw_response_text_sha256": "ddf97d92c18e72748f7d21e2afdb7e0550aa4e8d89e89e3c3548d9880e500565"
+  },
+  "api_metadata": {
+    "id": "resp_09b60a22743f23e4006aaa0848ac8887d29e9b2d0e794dd550",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789528136.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1736,
+      "input_tokens_details": {
+        "cache_write_tokens": 1733,
+        "cached_tokens": 0
+      },
+      "output_tokens": 270,
+      "output_tokens_details": {
+        "reasoning_tokens": 102
+      },
+      "total_tokens": 2006
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.94,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Vancouver Whitecaps pre-season performance and MLS home opener\",\n  \"conflict_relevance\": \"An unrelated embedded news item briefly reports allegations that Israeli troops fired on a Gaza aid convoy, involving humanitarian conditions and Israeli military action.\",\n  \"reason\": \"The main article is about soccer and contains no conflict-related discussion. However, a separate embedded snippet includes a meaningful sentence about a Gaza hospital head's account of gunfire striking an aid convoy, making the item marginally useful for broader discourse analysis but not for the main corpus.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:09:00Z",
+  "duration_seconds": 3.811,
+  "error": null
+}

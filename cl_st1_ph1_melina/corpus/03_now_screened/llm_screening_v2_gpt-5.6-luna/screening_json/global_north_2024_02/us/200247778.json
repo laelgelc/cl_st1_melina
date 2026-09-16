@@ -1,0 +1,65 @@
+{
+  "article_id": "200247778",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_02/us/200247778.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_02/us/200247778.json"
+  },
+  "manifest_row": {
+    "article_id": "200247778",
+    "group": "global_north_2024_02",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2024_02/us/200247778.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.92,
+    "gaza_role": "background",
+    "main_topic": "U.S. abortion politics and Josh Hawley’s reelection campaign",
+    "conflict_relevance": "The main article is unrelated to Gaza or Israel-Palestine, but appended recommended and embedded stories include substantive references to Israel, Gaza, Rafah, Palestinian protest, and an incident outside the Israeli embassy.",
+    "reason": "The headline article focuses entirely on abortion law and electoral politics. However, the text also contains a substantial embedded article about a self-immolation protest outside the Israeli embassy, including references to a Palestinian flag, as well as a separate reference to Israeli military operations in Rafah. These conflict-related materials are peripheral to the main article and appear to be scraped or appended content.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "60eea73b4952fb22d576579c324aa3c00ae36f5bd68a3ffe1f2bab287043a9e6",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "a2eec53d146935f840c4b20c6746d20ebfa4cd3d963f6412bb323ef2314b7091",
+    "raw_response_text_sha256": "c01dd69b241573113f8d14cebc011021be182500ef21232a8f381298711bd837"
+  },
+  "api_metadata": {
+    "id": "resp_0b1beae48c61eaff006aaa080e9da887d2ada337c9b251a166",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789528078.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 3842,
+      "input_tokens_details": {
+        "cache_write_tokens": 3839,
+        "cached_tokens": 0
+      },
+      "output_tokens": 402,
+      "output_tokens_details": {
+        "reasoning_tokens": 197
+      },
+      "total_tokens": 4244
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.92,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"U.S. abortion politics and Josh Hawley’s reelection campaign\",\n  \"conflict_relevance\": \"The main article is unrelated to Gaza or Israel-Palestine, but appended recommended and embedded stories include substantive references to Israel, Gaza, Rafah, Palestinian protest, and an incident outside the Israeli embassy.\",\n  \"reason\": \"The headline article focuses entirely on abortion law and electoral politics. However, the text also contains a substantial embedded article about a self-immolation protest outside the Israeli embassy, including references to a Palestinian flag, as well as a separate reference to Israeli military operations in Rafah. These conflict-related materials are peripheral to the main article and appear to be scraped or appended content.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:08:03Z",
+  "duration_seconds": 4.951,
+  "error": null
+}

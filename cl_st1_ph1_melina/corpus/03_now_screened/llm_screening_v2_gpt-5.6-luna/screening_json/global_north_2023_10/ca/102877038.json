@@ -1,0 +1,65 @@
+{
+  "article_id": "102877038",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_10/ca/102877038.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_10/ca/102877038.json"
+  },
+  "manifest_row": {
+    "article_id": "102877038",
+    "group": "global_north_2023_10",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2023_10/ca/102877038.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.97,
+    "gaza_role": "background",
+    "main_topic": "Mixed news snippets, primarily U.S. politics and financial markets, with a brief discussion of naval movements related to Gaza",
+    "conflict_relevance": "The article includes a meaningful but isolated passage about warship movements in response to the situation in Gaza and shifting naval power in the Gulf.",
+    "reason": "Most of the text concerns interest rates, Donald Trump's legal cases, and unrelated U.S. political news. However, the Gaza-related naval analysis is substantive enough to make the item peripherally relevant rather than excludable.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "af961448926068a1280cc7d647ae188439b9c26ef80d7c4967b10c238ff3a6de",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "91565ca68933ea36071d45a6fae4d67fa12570683e953eed928ee1aa3a29840d",
+    "raw_response_text_sha256": "ed685469966ea5ec6fae60befddafb1230ca7e3a57c39d790b9f75bac3fa0d10"
+  },
+  "api_metadata": {
+    "id": "resp_07ab9e4b2df4066a006aa9f68d6d5887d285a4c7f56779b9d6",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789523597.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1080,
+      "input_tokens_details": {
+        "cache_write_tokens": 1077,
+        "cached_tokens": 0
+      },
+      "output_tokens": 301,
+      "output_tokens_details": {
+        "reasoning_tokens": 130
+      },
+      "total_tokens": 1381
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.97,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Mixed news snippets, primarily U.S. politics and financial markets, with a brief discussion of naval movements related to Gaza\",\n  \"conflict_relevance\": \"The article includes a meaningful but isolated passage about warship movements in response to the situation in Gaza and shifting naval power in the Gulf.\",\n  \"reason\": \"Most of the text concerns interest rates, Donald Trump's legal cases, and unrelated U.S. political news. However, the Gaza-related naval analysis is substantive enough to make the item peripherally relevant rather than excludable.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T01:53:21Z",
+  "duration_seconds": 4.457,
+  "error": null
+}

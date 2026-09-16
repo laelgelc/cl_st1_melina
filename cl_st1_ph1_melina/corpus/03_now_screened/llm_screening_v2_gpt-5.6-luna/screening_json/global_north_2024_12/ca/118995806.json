@@ -1,0 +1,65 @@
+{
+  "article_id": "118995806",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_12/ca/118995806.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_12/ca/118995806.json"
+  },
+  "manifest_row": {
+    "article_id": "118995806",
+    "group": "global_north_2024_12",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2024_12/ca/118995806.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.97,
+    "gaza_role": "background",
+    "main_topic": "A community rescue of a cat trapped beneath a Toronto streetcar",
+    "conflict_relevance": "The main article is unrelated to Gaza, but an embedded news snippet reports the deaths of Palestinian twin sisters in Gaza during the Israel-Hamas war.",
+    "reason": "The headline and primary narrative concern an animal rescue in Toronto. However, the text contains a meaningful, though truncated, embedded item about Palestinian students killed in Gaza, making the material peripheral rather than excludable.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "5906e854df50a25882144313a654da061e1bb2dd216f69e33624695794829745",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "db78948e380576de540f73c299e7b062a57fc14bfdd9334ecb3b71681ca40e54",
+    "raw_response_text_sha256": "55ec235cdbcd541726d075ed9c3302f7c66d1ca887129a3a4c5b71c519abf88c"
+  },
+  "api_metadata": {
+    "id": "resp_0532c5622da5cc69006aaa1d1ea8e887d2b34800f177f09067",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789533470.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1848,
+      "input_tokens_details": {
+        "cache_write_tokens": 1845,
+        "cached_tokens": 0
+      },
+      "output_tokens": 278,
+      "output_tokens_details": {
+        "reasoning_tokens": 119
+      },
+      "total_tokens": 2126
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.97,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"A community rescue of a cat trapped beneath a Toronto streetcar\",\n  \"conflict_relevance\": \"The main article is unrelated to Gaza, but an embedded news snippet reports the deaths of Palestinian twin sisters in Gaza during the Israel-Hamas war.\",\n  \"reason\": \"The headline and primary narrative concern an animal rescue in Toronto. However, the text contains a meaningful, though truncated, embedded item about Palestinian students killed in Gaza, making the material peripheral rather than excludable.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T04:37:53Z",
+  "duration_seconds": 3.161,
+  "error": null
+}

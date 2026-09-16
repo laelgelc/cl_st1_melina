@@ -1,0 +1,65 @@
+{
+  "article_id": "111200525",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_south_2024_07/ng/111200525.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_south_2024_07/ng/111200525.json"
+  },
+  "manifest_row": {
+    "article_id": "111200525",
+    "group": "global_south_2024_07",
+    "country_code": "ng",
+    "filepath": "corpus/02_now_organised/global_south_2024_07/ng/111200525.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "passing",
+    "main_topic": "WFP humanitarian food assistance and famine response in Sudan",
+    "conflict_relevance": "The article is primarily about humanitarian operations in war-affected Sudan, but it briefly references the use of self-registration for food assistance in Gaza.",
+    "reason": "Gaza appears in a substantive sentence describing WFP's humanitarian assistance methods, making the article peripherally relevant to Gaza-related humanitarian discourse, though the conflict is not the article's main subject.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "46faaa7063bb6af6d4893e29a4a31e42ab0b24008eb029e6b488aded8fb84780",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "1e13572b63b8b626958da8a767b0e196c02912ebe06c6f1d63c49357d396d641",
+    "raw_response_text_sha256": "6dcad0ed939ea5b1907572bfb0a0e9ab8e172f33cc1613eb6b127a7beefb909a"
+  },
+  "api_metadata": {
+    "id": "resp_0d542cc2d3097499006aaa3d67a02887d180f122ff9bcb7c78",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789541735.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1391,
+      "input_tokens_details": {
+        "cache_write_tokens": 1388,
+        "cached_tokens": 0
+      },
+      "output_tokens": 206,
+      "output_tokens_details": {
+        "reasoning_tokens": 53
+      },
+      "total_tokens": 1597
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"WFP humanitarian food assistance and famine response in Sudan\",\n  \"conflict_relevance\": \"The article is primarily about humanitarian operations in war-affected Sudan, but it briefly references the use of self-registration for food assistance in Gaza.\",\n  \"reason\": \"Gaza appears in a substantive sentence describing WFP's humanitarian assistance methods, making the article peripherally relevant to Gaza-related humanitarian discourse, though the conflict is not the article's main subject.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T06:55:38Z",
+  "duration_seconds": 3.226,
+  "error": null
+}

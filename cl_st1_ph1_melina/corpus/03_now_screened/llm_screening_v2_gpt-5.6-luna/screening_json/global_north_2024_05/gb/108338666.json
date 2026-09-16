@@ -1,0 +1,65 @@
+{
+  "article_id": "108338666",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_05/gb/108338666.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_05/gb/108338666.json"
+  },
+  "manifest_row": {
+    "article_id": "108338666",
+    "group": "global_north_2024_05",
+    "country_code": "gb",
+    "filepath": "corpus/02_now_organised/global_north_2024_05/gb/108338666.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.93,
+    "gaza_role": "passing",
+    "main_topic": "Corporate profiteering, immigration, universities, and the externalisation of business costs",
+    "conflict_relevance": "The main article is unrelated to Gaza, but an embedded snippet contains a substantive evaluative statement about Israel's campaign in Gaza and civilian casualties.",
+    "reason": "The article primarily discusses universities, migration, taxation, labour exploitation, and corporate responsibility. However, it includes a meaningful, though isolated, sentence framing the humanitarian case against Israel's Gaza campaign, making it peripheral rather than excludable.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "88a439a02922a55cc7a03cd47cf77106dfc639aeca3a1feb44d9ed2f4d06cb36",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "d4928eb4d116dd04e196c32bbd0c6acdbf3e5a669f3922193dcffedc82c766b6",
+    "raw_response_text_sha256": "e3d30b3f28b26dc995822455e51a845d54a87e1808926feb33790a5cd8fbea0d"
+  },
+  "api_metadata": {
+    "id": "resp_06e1497cbd07e733006aaa0e15873087d28e326bf16aa3b70d",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789529621.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2323,
+      "input_tokens_details": {
+        "cache_write_tokens": 2320,
+        "cached_tokens": 0
+      },
+      "output_tokens": 355,
+      "output_tokens_details": {
+        "reasoning_tokens": 189
+      },
+      "total_tokens": 2678
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.93,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Corporate profiteering, immigration, universities, and the externalisation of business costs\",\n  \"conflict_relevance\": \"The main article is unrelated to Gaza, but an embedded snippet contains a substantive evaluative statement about Israel's campaign in Gaza and civilian casualties.\",\n  \"reason\": \"The article primarily discusses universities, migration, taxation, labour exploitation, and corporate responsibility. However, it includes a meaningful, though isolated, sentence framing the humanitarian case against Israel's Gaza campaign, making it peripheral rather than excludable.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:33:56Z",
+  "duration_seconds": 15.452,
+  "error": null
+}

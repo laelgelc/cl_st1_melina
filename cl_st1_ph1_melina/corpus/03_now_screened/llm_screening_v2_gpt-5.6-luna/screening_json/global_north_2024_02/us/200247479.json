@@ -1,0 +1,65 @@
+{
+  "article_id": "200247479",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_02/us/200247479.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_02/us/200247479.json"
+  },
+  "manifest_row": {
+    "article_id": "200247479",
+    "group": "global_north_2024_02",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2024_02/us/200247479.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "gaza_role": "passing",
+    "main_topic": "A Washington, D.C. hotel murder investigation",
+    "conflict_relevance": "An isolated sentence mentions Israeli military action in Gaza, but the main article concerns a domestic homicide and unrelated news snippets.",
+    "reason": "The article is primarily about a murder case. The Gaza reference is brief, embedded among unrelated content, and does not provide meaningful conflict discourse.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "1184c4014809045e98aa189cf94634cdebf097293ee176859b62432efb41a63a",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "dc97971ad8f814625c67ebdd0f3e5a38f570fa0098045a4e6e373b577c5404db",
+    "raw_response_text_sha256": "75fff79f7a73390d8adcff07676758b6206f9ba492741192045475d8013af9f3"
+  },
+  "api_metadata": {
+    "id": "resp_0f4fe0d3dff5646c006aaa080c5fbc87d2b7a608222e0f47ab",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789528076.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2015,
+      "input_tokens_details": {
+        "cache_write_tokens": 2012,
+        "cached_tokens": 0
+      },
+      "output_tokens": 195,
+      "output_tokens_details": {
+        "reasoning_tokens": 60
+      },
+      "total_tokens": 2210
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"A Washington, D.C. hotel murder investigation\",\n  \"conflict_relevance\": \"An isolated sentence mentions Israeli military action in Gaza, but the main article concerns a domestic homicide and unrelated news snippets.\",\n  \"reason\": \"The article is primarily about a murder case. The Gaza reference is brief, embedded among unrelated content, and does not provide meaningful conflict discourse.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:07:59Z",
+  "duration_seconds": 2.81,
+  "error": null
+}

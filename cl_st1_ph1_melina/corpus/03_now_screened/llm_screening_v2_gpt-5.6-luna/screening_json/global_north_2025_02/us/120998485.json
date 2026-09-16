@@ -1,0 +1,65 @@
+{
+  "article_id": "120998485",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_02/us/120998485.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_02/us/120998485.json"
+  },
+  "manifest_row": {
+    "article_id": "120998485",
+    "group": "global_north_2025_02",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2025_02/us/120998485.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.96,
+    "gaza_role": "passing",
+    "main_topic": "A weekly general-news quiz covering diverse current events",
+    "conflict_relevance": "The roundup includes a brief item about President Trump's proposal for a US takeover of Gaza and the resulting international criticism, but Gaza is not the article's main subject.",
+    "reason": "The article is primarily a collection of unrelated quiz questions and news snippets. Its Gaza content is meaningful but limited to one embedded item, making it peripheral rather than core conflict coverage.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "f936563ca2b82c8746f82646cd33b7ab5ae7177ba8e517c2a95abcd139eef8d1",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "9da1628c4864b4f517d24008fa3cab0450e3924202cb7639d90bccefc720670f",
+    "raw_response_text_sha256": "b6759770b775247cccdc5e4b422fe937700d00e56c6b33c90844d22a4873e3a4"
+  },
+  "api_metadata": {
+    "id": "resp_09c7d7583a9897d7006aaa2468eee487d18169bfd026f475f4",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789535336.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1229,
+      "input_tokens_details": {
+        "cache_write_tokens": 1226,
+        "cached_tokens": 0
+      },
+      "output_tokens": 267,
+      "output_tokens_details": {
+        "reasoning_tokens": 115
+      },
+      "total_tokens": 1496
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.96,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"A weekly general-news quiz covering diverse current events\",\n  \"conflict_relevance\": \"The roundup includes a brief item about President Trump's proposal for a US takeover of Gaza and the resulting international criticism, but Gaza is not the article's main subject.\",\n  \"reason\": \"The article is primarily a collection of unrelated quiz questions and news snippets. Its Gaza content is meaningful but limited to one embedded item, making it peripheral rather than core conflict coverage.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T05:09:00Z",
+  "duration_seconds": 3.692,
+  "error": null
+}

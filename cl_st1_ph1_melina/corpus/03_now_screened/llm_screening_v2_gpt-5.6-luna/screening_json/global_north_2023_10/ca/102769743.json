@@ -1,0 +1,65 @@
+{
+  "article_id": "102769743",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_10/ca/102769743.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_10/ca/102769743.json"
+  },
+  "manifest_row": {
+    "article_id": "102769743",
+    "group": "global_north_2023_10",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2023_10/ca/102769743.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.97,
+    "gaza_role": "background",
+    "main_topic": "A homicide investigation and murder charges in Pikangikum First Nation, Ontario",
+    "conflict_relevance": "The main article is unrelated to Gaza, but the page includes several substantive snippets about the Israel-Hamas war, evacuation efforts, humanitarian conditions in Gaza, and protests and hate incidents linked to the conflict.",
+    "reason": "The headline and primary article concern a local Canadian homicide. However, multiple embedded news items contain meaningful discourse about Gaza and the Israel-Hamas war, making the item potentially useful for peripheral analysis but not suitable for the core conflict corpus.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "cbf159308dc381ea29fc7954b1627518fd323e975ecb83b9fa874e8a1c307421",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "d5c907c58e6a823562b268e7a39c473d547f51beeea4eb426dbb42798aa10051",
+    "raw_response_text_sha256": "502c4f7f15e497345a7048f953e00911da7aa7a7df3075e06742778304d1e451"
+  },
+  "api_metadata": {
+    "id": "resp_01fd6295c50a897a006aa9f66ecf6087d29d49d9721551cc36",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789523566.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1187,
+      "input_tokens_details": {
+        "cache_write_tokens": 1184,
+        "cached_tokens": 0
+      },
+      "output_tokens": 293,
+      "output_tokens_details": {
+        "reasoning_tokens": 117
+      },
+      "total_tokens": 1480
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.97,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"A homicide investigation and murder charges in Pikangikum First Nation, Ontario\",\n  \"conflict_relevance\": \"The main article is unrelated to Gaza, but the page includes several substantive snippets about the Israel-Hamas war, evacuation efforts, humanitarian conditions in Gaza, and protests and hate incidents linked to the conflict.\",\n  \"reason\": \"The headline and primary article concern a local Canadian homicide. However, multiple embedded news items contain meaningful discourse about Gaza and the Israel-Hamas war, making the item potentially useful for peripheral analysis but not suitable for the core conflict corpus.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T01:52:50Z",
+  "duration_seconds": 3.563,
+  "error": null
+}

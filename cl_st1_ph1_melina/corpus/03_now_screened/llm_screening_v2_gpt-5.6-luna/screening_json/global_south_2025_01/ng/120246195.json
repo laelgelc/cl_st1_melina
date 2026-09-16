@@ -1,0 +1,65 @@
+{
+  "article_id": "120246195",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_south_2025_01/ng/120246195.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_south_2025_01/ng/120246195.json"
+  },
+  "manifest_row": {
+    "article_id": "120246195",
+    "group": "global_south_2025_01",
+    "country_code": "ng",
+    "filepath": "corpus/02_now_organised/global_south_2025_01/ng/120246195.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "gaza_role": "boilerplate_or_unrelated",
+    "main_topic": "Nigerian budget allocation for the solid minerals ministry",
+    "conflict_relevance": "None; the only reference to Gaza is part of a Nigerian politician's name.",
+    "reason": "The article concerns Nigeria's budget and solid minerals policy and contains no meaningful discussion of Gaza, Palestine, Israel/Palestine, or the related conflict discourse.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "bd3789321b4ba031f122a1092bb1e1bcdf7ea9268364cef0610704b9c4d707c5",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "13ff568c7d13682ff892e67eeb82b801ac68cbf2c561304685e669baed1873fc",
+    "raw_response_text_sha256": "f8f872f45d9c0b46bbffbf64e6a869e2e4456936c7e711b66952b726c0d58272"
+  },
+  "api_metadata": {
+    "id": "resp_0f40c6a3dd930be2006aaa4498e15887d181ec25d9502881df",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789543576.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1554,
+      "input_tokens_details": {
+        "cache_write_tokens": 1551,
+        "cached_tokens": 0
+      },
+      "output_tokens": 188,
+      "output_tokens_details": {
+        "reasoning_tokens": 50
+      },
+      "total_tokens": 1742
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"gaza_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Nigerian budget allocation for the solid minerals ministry\",\n  \"conflict_relevance\": \"None; the only reference to Gaza is part of a Nigerian politician's name.\",\n  \"reason\": \"The article concerns Nigeria's budget and solid minerals policy and contains no meaningful discussion of Gaza, Palestine, Israel/Palestine, or the related conflict discourse.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T07:26:19Z",
+  "duration_seconds": 2.816,
+  "error": null
+}

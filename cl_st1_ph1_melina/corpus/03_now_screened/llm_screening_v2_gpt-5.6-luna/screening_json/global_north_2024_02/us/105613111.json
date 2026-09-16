@@ -1,0 +1,65 @@
+{
+  "article_id": "105613111",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_02/us/105613111.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_02/us/105613111.json"
+  },
+  "manifest_row": {
+    "article_id": "105613111",
+    "group": "global_north_2024_02",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2024_02/us/105613111.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.95,
+    "gaza_role": "background",
+    "main_topic": "U.S. retaliatory strikes against Iran-backed militants in Syria and Iraq and the risk of wider regional conflict",
+    "conflict_relevance": "The article connects the escalation to the October 7 Hamas attack, Israel's assault on Gaza, attacks on U.S. forces, and Houthi attacks conducted in response to Israel's Gaza campaign, but Gaza is primarily regional context rather than the main subject.",
+    "reason": "The article is mainly about U.S.-Iranian tensions and military strikes in the Middle East. It contains meaningful discussion of how the Gaza war triggered or shaped related attacks by Iran-backed groups and the Houthis, making it useful for studying broader conflict discourse but not core Gaza coverage.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "eb83f4e9195f1928d2e6397ea761a23c005b5e5c0b6c8fa6ccf49e7360b554bf",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "03bd4520712cb72201003845b84f2b57bed13f0ae600879190a703d654c65b49",
+    "raw_response_text_sha256": "5fcff9f9775aa675a2342b8819fd139eb5c9b90bfc5d24290131efb3e55e7cde"
+  },
+  "api_metadata": {
+    "id": "resp_0001116a140ebd21006aaa06e2fde087d284efed8715197d5b",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789527779.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1436,
+      "input_tokens_details": {
+        "cache_write_tokens": 1433,
+        "cached_tokens": 0
+      },
+      "output_tokens": 284,
+      "output_tokens_details": {
+        "reasoning_tokens": 79
+      },
+      "total_tokens": 1720
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.95,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"U.S. retaliatory strikes against Iran-backed militants in Syria and Iraq and the risk of wider regional conflict\",\n  \"conflict_relevance\": \"The article connects the escalation to the October 7 Hamas attack, Israel's assault on Gaza, attacks on U.S. forces, and Houthi attacks conducted in response to Israel's Gaza campaign, but Gaza is primarily regional context rather than the main subject.\",\n  \"reason\": \"The article is mainly about U.S.-Iranian tensions and military strikes in the Middle East. It contains meaningful discussion of how the Gaza war triggered or shaped related attacks by Iran-backed groups and the Houthis, making it useful for studying broader conflict discourse but not core Gaza coverage.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:03:04Z",
+  "duration_seconds": 5.373,
+  "error": null
+}

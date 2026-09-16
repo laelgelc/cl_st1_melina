@@ -1,0 +1,65 @@
+{
+  "article_id": "105076258",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_01/ca/105076258.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_01/ca/105076258.json"
+  },
+  "manifest_row": {
+    "article_id": "105076258",
+    "group": "global_north_2024_01",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2024_01/ca/105076258.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.93,
+    "gaza_role": "passing",
+    "main_topic": "Canadian Conservative leader Pierre Poilievre's carbon-tax campaign and related domestic political issues",
+    "conflict_relevance": "The main article is unrelated to Gaza, but an embedded news snippet briefly reports global demonstrations marking the 100th day of Israel's war with Hamas, including calls for hostage release and a Gaza ceasefire.",
+    "reason": "The article's primary focus is Canadian carbon-tax politics. The Gaza-related material appears only as a separate, unrelated news item, but it contains a meaningful summary of conflict-related protests and demands, making the item peripheral rather than excludable.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "1c54d85dd48aad9f8f44ebe038fd86bab355d354390945f9ade33fe33d909961",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "b373f174274fb67c1924f4cddd2d8d5ddcad1ddb63771f90bfc6b51cdc3d81c8",
+    "raw_response_text_sha256": "6ddea14cbf7d128ec91d68558e7fb67d175a7e79dc1fc5f0e330f24239ea61ae"
+  },
+  "api_metadata": {
+    "id": "resp_0ef466dcb1541b5c006aaa039cee0087d29a8f97d5c1066f71",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789526940.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1881,
+      "input_tokens_details": {
+        "cache_write_tokens": 1878,
+        "cached_tokens": 0
+      },
+      "output_tokens": 428,
+      "output_tokens_details": {
+        "reasoning_tokens": 246
+      },
+      "total_tokens": 2309
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.93,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Canadian Conservative leader Pierre Poilievre's carbon-tax campaign and related domestic political issues\",\n  \"conflict_relevance\": \"The main article is unrelated to Gaza, but an embedded news snippet briefly reports global demonstrations marking the 100th day of Israel's war with Hamas, including calls for hostage release and a Gaza ceasefire.\",\n  \"reason\": \"The article's primary focus is Canadian carbon-tax politics. The Gaza-related material appears only as a separate, unrelated news item, but it contains a meaningful summary of conflict-related protests and demands, making the item peripheral rather than excludable.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:49:05Z",
+  "duration_seconds": 4.908,
+  "error": null
+}

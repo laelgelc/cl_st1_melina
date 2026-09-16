@@ -1,0 +1,65 @@
+{
+  "article_id": "121284526",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_south_2025_02/my/121284526.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_south_2025_02/my/121284526.json"
+  },
+  "manifest_row": {
+    "article_id": "121284526",
+    "group": "global_south_2025_02",
+    "country_code": "my",
+    "filepath": "corpus/02_now_organised/global_south_2025_02/my/121284526.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "gaza_role": "passing",
+    "main_topic": "Religious reflection and miscellaneous news roundup",
+    "conflict_relevance": "A single passing sentence mentions Palestinians returning to northern Gaza after a ceasefire-related delay, without further discussion or analysis.",
+    "reason": "The article is primarily a religious newsletter containing reflections, jokes, spiritual commentary, and unrelated news items. Gaza appears only as one brief item in a miscellaneous roundup.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "cf47b5f24a88e2db339f701527b8ffac4c878bbc16a6a8cdccf31a41bc2818e0",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "ef1e561f9a8849417aa64f287cd09cdb443b4c5f847cc128c6583e1ba2e338d8",
+    "raw_response_text_sha256": "05c35771db67638992c9d27ca443b2ad771996a72ff1f49082e0c240dd5c1729"
+  },
+  "api_metadata": {
+    "id": "resp_051105969cdec0e3006aaa45ac443087d191bc86c5be949f79",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789543852.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1573,
+      "input_tokens_details": {
+        "cache_write_tokens": 1570,
+        "cached_tokens": 0
+      },
+      "output_tokens": 226,
+      "output_tokens_details": {
+        "reasoning_tokens": 89
+      },
+      "total_tokens": 1799
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Religious reflection and miscellaneous news roundup\",\n  \"conflict_relevance\": \"A single passing sentence mentions Palestinians returning to northern Gaza after a ceasefire-related delay, without further discussion or analysis.\",\n  \"reason\": \"The article is primarily a religious newsletter containing reflections, jokes, spiritual commentary, and unrelated news items. Gaza appears only as one brief item in a miscellaneous roundup.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T07:30:56Z",
+  "duration_seconds": 4.505,
+  "error": null
+}

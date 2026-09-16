@@ -1,0 +1,65 @@
+{
+  "article_id": "103523649",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_south_2023_11/in/103523649.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_south_2023_11/in/103523649.json"
+  },
+  "manifest_row": {
+    "article_id": "103523649",
+    "group": "global_south_2023_11",
+    "country_code": "in",
+    "filepath": "corpus/02_now_organised/global_south_2023_11/in/103523649.txt"
+  },
+  "screening": {
+    "category": "CORE",
+    "confidence": 0.96,
+    "gaza_role": "central",
+    "main_topic": "The safety of patients and medical staff at Gaza's largest hospital after Israeli forces entered and communications were cut off",
+    "conflict_relevance": "Direct coverage of Israeli military action in Gaza and its humanitarian and medical consequences",
+    "reason": "The opening sentence directly concerns Gaza, Israeli forces, a major hospital, Palestinian medics, and the risks facing patients and medical staff. The later China-related text and Reuters description are unrelated embedded or boilerplate material.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": true
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "19de1c7f85e9a02cc1215654a469585e4ea63a8d6089b9d866814ddd79cba3fc",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "7daa9a9aeff3f7f4726fd85af7bab557ec254dd5b5b4eee4c3d18b4ca7d052c9",
+    "raw_response_text_sha256": "f5ec8c529a5331846d24f116d5d91b9a38982cb39866941d06708e716268c4e6"
+  },
+  "api_metadata": {
+    "id": "resp_0cf5872e19c08973006aaa3515321887d1b18298bd7e15d1d1",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789539605.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 750,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 314,
+      "output_tokens_details": {
+        "reasoning_tokens": 161
+      },
+      "total_tokens": 1064
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"CORE\",\n  \"confidence\": 0.96,\n  \"gaza_role\": \"central\",\n  \"main_topic\": \"The safety of patients and medical staff at Gaza's largest hospital after Israeli forces entered and communications were cut off\",\n  \"conflict_relevance\": \"Direct coverage of Israeli military action in Gaza and its humanitarian and medical consequences\",\n  \"reason\": \"The opening sentence directly concerns Gaza, Israeli forces, a major hospital, Palestinian medics, and the risks facing patients and medical staff. The later China-related text and Reuters description are unrelated embedded or boilerplate material.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": true\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T06:20:10Z",
+  "duration_seconds": 5.182,
+  "error": null
+}

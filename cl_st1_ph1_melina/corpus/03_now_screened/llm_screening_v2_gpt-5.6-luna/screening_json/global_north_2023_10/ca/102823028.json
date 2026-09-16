@@ -1,0 +1,65 @@
+{
+  "article_id": "102823028",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_10/ca/102823028.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_10/ca/102823028.json"
+  },
+  "manifest_row": {
+    "article_id": "102823028",
+    "group": "global_north_2023_10",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2023_10/ca/102823028.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.96,
+    "gaza_role": "background",
+    "main_topic": "Pedestrian safety and traffic fatalities in Vancouver's Downtown Eastside",
+    "conflict_relevance": "The main article is unrelated to Gaza or the Israel-Palestine conflict, but an embedded CTV News top-stories section contains substantive brief items about the Israel-Hamas war, a Gaza hospital explosion, Hezbollah-Israel clashes, and Israeli military actions.",
+    "reason": "The conflict-related material is meaningful but appears only as unrelated roundup snippets rather than as part of the main article.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "18e0793a0922831f1ec26029261b86b0020c0669ad129812dff64578e8a596f0",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "41bfe75f42c06882fbf6712a78a04ba4420062ddb843499e3fc7b205941d09c1",
+    "raw_response_text_sha256": "a086c8b931648925ba34986e069c129ad07b74419acbcb91f933945e253cac58"
+  },
+  "api_metadata": {
+    "id": "resp_0ed53ca29cbaa2dc006aa9f680208487d285f91a77005d85b3",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789523584.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1616,
+      "input_tokens_details": {
+        "cache_write_tokens": 1613,
+        "cached_tokens": 0
+      },
+      "output_tokens": 313,
+      "output_tokens_details": {
+        "reasoning_tokens": 151
+      },
+      "total_tokens": 1929
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.96,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Pedestrian safety and traffic fatalities in Vancouver's Downtown Eastside\",\n  \"conflict_relevance\": \"The main article is unrelated to Gaza or the Israel-Palestine conflict, but an embedded CTV News top-stories section contains substantive brief items about the Israel-Hamas war, a Gaza hospital explosion, Hezbollah-Israel clashes, and Israeli military actions.\",\n  \"reason\": \"The conflict-related material is meaningful but appears only as unrelated roundup snippets rather than as part of the main article.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T01:53:07Z",
+  "duration_seconds": 3.418,
+  "error": null
+}

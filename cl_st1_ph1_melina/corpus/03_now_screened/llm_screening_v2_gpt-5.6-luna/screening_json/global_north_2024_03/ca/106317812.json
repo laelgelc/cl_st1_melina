@@ -1,0 +1,65 @@
+{
+  "article_id": "106317812",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_03/ca/106317812.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_03/ca/106317812.json"
+  },
+  "manifest_row": {
+    "article_id": "106317812",
+    "group": "global_north_2024_03",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2024_03/ca/106317812.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "passing",
+    "main_topic": "Record-setting luxury condominium sale in Whistler",
+    "conflict_relevance": "The article includes a substantive but unrelated embedded news item about a Gaza City hospital reporting that more than 80% of wounded people from an aid convoy incident had been struck by gunfire allegedly involving Israeli troops.",
+    "reason": "The main article concerns Whistler real estate, but it contains a meaningful sentence about violence in Gaza and alleged Israeli military shooting. This makes it peripheral rather than core, and the embedded unrelated item should not determine the main topic classification.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "d43f19c6e492a74fc089094144ce122c5b0beb6d10413be5b46289d9e4903524",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "b43fc738ddc3fa18ab1a0ffd2065a8ef45560e15791789d808ac588a35285a5c",
+    "raw_response_text_sha256": "0c71d8c53b19f3b9b8eba097389d21dbf785895334b3810bfcb87bc712dbdbb0"
+  },
+  "api_metadata": {
+    "id": "resp_0829a816feaaa0fb006aaa0843c68087d2ae7ac5c26428e7c7",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789528131.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1448,
+      "input_tokens_details": {
+        "cache_write_tokens": 1445,
+        "cached_tokens": 0
+      },
+      "output_tokens": 271,
+      "output_tokens_details": {
+        "reasoning_tokens": 100
+      },
+      "total_tokens": 1719
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Record-setting luxury condominium sale in Whistler\",\n  \"conflict_relevance\": \"The article includes a substantive but unrelated embedded news item about a Gaza City hospital reporting that more than 80% of wounded people from an aid convoy incident had been struck by gunfire allegedly involving Israeli troops.\",\n  \"reason\": \"The main article concerns Whistler real estate, but it contains a meaningful sentence about violence in Gaza and alleged Israeli military shooting. This makes it peripheral rather than core, and the embedded unrelated item should not determine the main topic classification.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:08:55Z",
+  "duration_seconds": 3.42,
+  "error": null
+}

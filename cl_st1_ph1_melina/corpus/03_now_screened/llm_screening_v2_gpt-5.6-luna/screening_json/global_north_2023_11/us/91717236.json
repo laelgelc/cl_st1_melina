@@ -1,0 +1,65 @@
+{
+  "article_id": "91717236",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_11/us/91717236.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_11/us/91717236.json"
+  },
+  "manifest_row": {
+    "article_id": "91717236",
+    "group": "global_north_2023_11",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2023_11/us/91717236.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.96,
+    "gaza_role": "passing",
+    "main_topic": "Housing insecurity, homelessness, mental health, and educational disruption among students in Los Angeles",
+    "conflict_relevance": "The main article is unrelated to Gaza or the Israel-Palestine conflict, but an appended snippet briefly discusses the Gaza war and its effects on Jewish and Muslim students and faculty in U.S. classrooms and college campuses.",
+    "reason": "The Gaza-related material is a substantive but clearly separate embedded news item rather than part of the main article. It has limited usefulness for broader discourse analysis but should not be treated as core conflict coverage.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "6e8d6af489348e3ce9d10beef08030c0c7c31d62026e5ff0cc11950cc2af67cd",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "19271ae13aa6150d97c1a0de9850a5a7ca8bc8b52a4802b8e258f6fb2453c35e",
+    "raw_response_text_sha256": "b5c03d287646763b1e7da24320bd4431844fae04322ed847b54847f2a556bcc3"
+  },
+  "api_metadata": {
+    "id": "resp_086aeb6940381c1b006aa9ffb3d8e487d2b26112b07e729b59",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789525939.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 4148,
+      "input_tokens_details": {
+        "cache_write_tokens": 4145,
+        "cached_tokens": 0
+      },
+      "output_tokens": 290,
+      "output_tokens_details": {
+        "reasoning_tokens": 115
+      },
+      "total_tokens": 4438
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.96,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Housing insecurity, homelessness, mental health, and educational disruption among students in Los Angeles\",\n  \"conflict_relevance\": \"The main article is unrelated to Gaza or the Israel-Palestine conflict, but an appended snippet briefly discusses the Gaza war and its effects on Jewish and Muslim students and faculty in U.S. classrooms and college campuses.\",\n  \"reason\": \"The Gaza-related material is a substantive but clearly separate embedded news item rather than part of the main article. It has limited usefulness for broader discourse analysis but should not be treated as core conflict coverage.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:32:25Z",
+  "duration_seconds": 5.907,
+  "error": null
+}

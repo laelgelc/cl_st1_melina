@@ -1,0 +1,65 @@
+{
+  "article_id": "200205014",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_02/us/200205014.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_02/us/200205014.json"
+  },
+  "manifest_row": {
+    "article_id": "200205014",
+    "group": "global_north_2024_02",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2024_02/us/200205014.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "background",
+    "main_topic": "Financial markets and global business news roundup",
+    "conflict_relevance": "Includes market coverage of Gaza cease-fire negotiations, Israel-Hamas tensions, Israeli-Saudi normalization, and proposed U.S. aid to Israel and Ukraine.",
+    "reason": "The article is primarily a financial and business markets roundup, but it contains several meaningful conflict-related news items rather than merely incidental or boilerplate references.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "f7abfe86d2fe853cb01336cc683a62381a5eab44d20ece30a587e4deae2d29b9",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "c864910461649018e3a803e6c392fcb603dfc0a6125be4c94df76fc094af4d7a",
+    "raw_response_text_sha256": "c899c42549114caed51a160d92041e39c7eef67fed0651c1bcffb28f802c7024"
+  },
+  "api_metadata": {
+    "id": "resp_034028cb72c806fd006aaa07b4d23887d291c8a507cc93f95d",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789527988.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2647,
+      "input_tokens_details": {
+        "cache_write_tokens": 2644,
+        "cached_tokens": 0
+      },
+      "output_tokens": 254,
+      "output_tokens_details": {
+        "reasoning_tokens": 111
+      },
+      "total_tokens": 2901
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Financial markets and global business news roundup\",\n  \"conflict_relevance\": \"Includes market coverage of Gaza cease-fire negotiations, Israel-Hamas tensions, Israeli-Saudi normalization, and proposed U.S. aid to Israel and Ukraine.\",\n  \"reason\": \"The article is primarily a financial and business markets roundup, but it contains several meaningful conflict-related news items rather than merely incidental or boilerplate references.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:06:32Z",
+  "duration_seconds": 3.301,
+  "error": null
+}

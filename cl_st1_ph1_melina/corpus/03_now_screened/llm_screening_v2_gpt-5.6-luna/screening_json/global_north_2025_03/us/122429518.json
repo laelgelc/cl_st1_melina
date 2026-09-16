@@ -1,0 +1,65 @@
+{
+  "article_id": "122429518",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_03/us/122429518.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_03/us/122429518.json"
+  },
+  "manifest_row": {
+    "article_id": "122429518",
+    "group": "global_north_2025_03",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2025_03/us/122429518.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.97,
+    "gaza_role": "background",
+    "main_topic": "U.S. military action against the Houthis in Yemen, Iran's regional support networks, and diplomacy over the Russia-Ukraine war",
+    "conflict_relevance": "The article briefly connects Houthi attacks on shipping to the war in Gaza and mentions Hamas alongside other Iran-supported groups, but Gaza is not the main subject.",
+    "reason": "The article is primarily about U.S. policy toward Yemen, Iran, and Ukraine. Its references to Gaza and Hamas provide meaningful regional-conflict context but are too limited for CORE classification.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "7eb868706206346da9c1db5614159fc04510cbfaa77e6e65d57601494db520a6",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "e61ee355d7caa480e1abc08edf01a78a50b5ced0a1014053352e96a3520ffda7",
+    "raw_response_text_sha256": "220d5651f921dd38c27211b500c7d260014edd845dffd65b77f7b111cb6f2b2d"
+  },
+  "api_metadata": {
+    "id": "resp_013b267dd5162675006aaa279c46dc87d1a1db4650d780dea5",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789536156.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1231,
+      "input_tokens_details": {
+        "cache_write_tokens": 1228,
+        "cached_tokens": 0
+      },
+      "output_tokens": 251,
+      "output_tokens_details": {
+        "reasoning_tokens": 80
+      },
+      "total_tokens": 1482
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.97,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"U.S. military action against the Houthis in Yemen, Iran's regional support networks, and diplomacy over the Russia-Ukraine war\",\n  \"conflict_relevance\": \"The article briefly connects Houthi attacks on shipping to the war in Gaza and mentions Hamas alongside other Iran-supported groups, but Gaza is not the main subject.\",\n  \"reason\": \"The article is primarily about U.S. policy toward Yemen, Iran, and Ukraine. Its references to Gaza and Hamas provide meaningful regional-conflict context but are too limited for CORE classification.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T05:22:39Z",
+  "duration_seconds": 3.607,
+  "error": null
+}

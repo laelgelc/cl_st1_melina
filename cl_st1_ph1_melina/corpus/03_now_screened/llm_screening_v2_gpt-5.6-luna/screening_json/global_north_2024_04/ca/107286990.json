@@ -1,0 +1,65 @@
+{
+  "article_id": "107286990",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_04/ca/107286990.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_04/ca/107286990.json"
+  },
+  "manifest_row": {
+    "article_id": "107286990",
+    "group": "global_north_2024_04",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2024_04/ca/107286990.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.99,
+    "gaza_role": "passing",
+    "main_topic": "Travel and tourism in La Huasteca Potosina, Mexico",
+    "conflict_relevance": "A separate embedded news snippet briefly reports destruction in Khan Younis, Gaza, following Israeli military operations.",
+    "reason": "The main article is a travel feature about destinations in Mexico and is unrelated to the Gaza conflict. However, it contains one meaningful but isolated sentence about Palestinians returning to a destroyed Khan Younis, making it peripheral rather than excludable.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "d9c0760da62299630083ece4f67e92b551591d1dadb17165eb246238b473ffe0",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "f978481ee5cf7b64d51cef7cb63d415c826f9a45a0dd124d5ffaf15dd612890e",
+    "raw_response_text_sha256": "8421c537eeac98d342f3e9b854f1f9f517f337a09d4c32b78d9562e2ebaa57a6"
+  },
+  "api_metadata": {
+    "id": "resp_01498d8447fa9254006aaa0afe660887d2aaeeacee4e9d70cb",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789528830.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 4428,
+      "input_tokens_details": {
+        "cache_write_tokens": 4425,
+        "cached_tokens": 0
+      },
+      "output_tokens": 233,
+      "output_tokens_details": {
+        "reasoning_tokens": 75
+      },
+      "total_tokens": 4661
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.99,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Travel and tourism in La Huasteca Potosina, Mexico\",\n  \"conflict_relevance\": \"A separate embedded news snippet briefly reports destruction in Khan Younis, Gaza, following Israeli military operations.\",\n  \"reason\": \"The main article is a travel feature about destinations in Mexico and is unrelated to the Gaza conflict. However, it contains one meaningful but isolated sentence about Palestinians returning to a destroyed Khan Younis, making it peripheral rather than excludable.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:20:34Z",
+  "duration_seconds": 3.834,
+  "error": null
+}

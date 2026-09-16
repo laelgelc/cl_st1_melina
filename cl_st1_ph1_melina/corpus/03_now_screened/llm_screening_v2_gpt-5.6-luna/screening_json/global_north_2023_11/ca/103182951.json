@@ -1,0 +1,65 @@
+{
+  "article_id": "103182951",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_11/ca/103182951.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_11/ca/103182951.json"
+  },
+  "manifest_row": {
+    "article_id": "103182951",
+    "group": "global_north_2023_11",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2023_11/ca/103182951.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "background",
+    "main_topic": "Bumper mushroom season and poisonous fungi in British Columbia",
+    "conflict_relevance": "The main article is unrelated to Gaza, but it contains an embedded news item describing the Israel-Hamas war, Israeli strikes, civilian casualties, the humanitarian situation, and disagreement over a ceasefire.",
+    "reason": "The headline and primary article concern mushroom growth and foraging in British Columbia. However, the text includes a meaningful Gaza-related news snippet, making it peripheral rather than excludable.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "d2f52775579d1c9a6e0dd475a1b8d3634769ad3d4c3d1522e5bf686a88e60e95",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "33bab44291160d720dcdaaabf5dbb8510f729868070c0451c1132f51fe7015f0",
+    "raw_response_text_sha256": "27b9f1c04b6a807056c637bf81a201efc1d472e6fc0fb48ce8e1500c4696a21b"
+  },
+  "api_metadata": {
+    "id": "resp_00a025a932423629006aa9fba7958487d2857de06dcce00e32",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789524903.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2250,
+      "input_tokens_details": {
+        "cache_write_tokens": 2247,
+        "cached_tokens": 0
+      },
+      "output_tokens": 235,
+      "output_tokens_details": {
+        "reasoning_tokens": 74
+      },
+      "total_tokens": 2485
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Bumper mushroom season and poisonous fungi in British Columbia\",\n  \"conflict_relevance\": \"The main article is unrelated to Gaza, but it contains an embedded news item describing the Israel-Hamas war, Israeli strikes, civilian casualties, the humanitarian situation, and disagreement over a ceasefire.\",\n  \"reason\": \"The headline and primary article concern mushroom growth and foraging in British Columbia. However, the text includes a meaningful Gaza-related news snippet, making it peripheral rather than excludable.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:15:07Z",
+  "duration_seconds": 3.713,
+  "error": null
+}

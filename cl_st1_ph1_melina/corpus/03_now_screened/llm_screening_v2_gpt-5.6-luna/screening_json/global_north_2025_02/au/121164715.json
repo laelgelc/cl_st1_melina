@@ -1,0 +1,65 @@
+{
+  "article_id": "121164715",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_02/au/121164715.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_02/au/121164715.json"
+  },
+  "manifest_row": {
+    "article_id": "121164715",
+    "group": "global_north_2025_02",
+    "country_code": "au",
+    "filepath": "corpus/02_now_organised/global_north_2025_02/au/121164715.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.94,
+    "gaza_role": "background",
+    "main_topic": "Australian biosecurity enforcement against the spread of invasive fire ants",
+    "conflict_relevance": "An unrelated embedded news snippet discusses Jordan's response to Trump's proposed Gaza takeover plan and the potential transfer of ill children from Gaza to Jordan.",
+    "reason": "The main article is entirely about invasive fire ants and Australian biosecurity regulations. However, it includes a substantive but unrelated Gaza-related news item, making it marginally useful for broader discourse analysis but not suitable for the core conflict corpus.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "2b6c15c2b66662404802aca5d75922bc50c8f0c1a3874b8c5188cd815b6e11be",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "afd57edd8687e62ef4dfc3bb8a44f2567bbbd120d21510275c0fc0e0cfa4e569",
+    "raw_response_text_sha256": "494842381907e07625ad4d9fc63eeb49daeb461ba216156de9bf2ac81f07831d"
+  },
+  "api_metadata": {
+    "id": "resp_0fa1b53199d8410f006aaa220f831087d2b2034a9ea932345e",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789534735.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1193,
+      "input_tokens_details": {
+        "cache_write_tokens": 1190,
+        "cached_tokens": 0
+      },
+      "output_tokens": 356,
+      "output_tokens_details": {
+        "reasoning_tokens": 196
+      },
+      "total_tokens": 1549
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.94,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Australian biosecurity enforcement against the spread of invasive fire ants\",\n  \"conflict_relevance\": \"An unrelated embedded news snippet discusses Jordan's response to Trump's proposed Gaza takeover plan and the potential transfer of ill children from Gaza to Jordan.\",\n  \"reason\": \"The main article is entirely about invasive fire ants and Australian biosecurity regulations. However, it includes a substantive but unrelated Gaza-related news item, making it marginally useful for broader discourse analysis but not suitable for the core conflict corpus.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T04:58:59Z",
+  "duration_seconds": 4.354,
+  "error": null
+}

@@ -1,0 +1,65 @@
+{
+  "article_id": "121221260",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_south_2025_02/in/121221260.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_south_2025_02/in/121221260.json"
+  },
+  "manifest_row": {
+    "article_id": "121221260",
+    "group": "global_south_2025_02",
+    "country_code": "in",
+    "filepath": "corpus/02_now_organised/global_south_2025_02/in/121221260.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "substantial",
+    "main_topic": "A daily news roundup covering Sri Lankan energy projects, student protests, tax legislation, and the Israel-Hamas ceasefire and hostage exchanges",
+    "conflict_relevance": "The roundup includes a substantive item on Hamas, the Gaza ceasefire, Israeli hostages, Palestinian prisoners, threatened military action, deaths, and destruction in Gaza, but the overall article is not focused on the conflict.",
+    "reason": "The Gaza-related segment contains meaningful conflict discourse, including ceasefire implementation, hostage releases, Israeli threats, casualties, and humanitarian destruction. However, it is one item in a multi-topic news roundup and therefore is peripheral rather than core.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "423e3056e00a2d39d03010efcc8e1cb08321810957206f22ff6c84b1043eaf0e",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "041a7c71c1603b0f4672b6128355ee1d1402f50b803142b935090ecfa6aa5fcd",
+    "raw_response_text_sha256": "5fb3436e8f6409e146d29c2ffc87f4e7c19d6c3aa287caaa34a380ab6010783a"
+  },
+  "api_metadata": {
+    "id": "resp_0f979d497375744a006aaa4556fba887d1bc7afb0cac4470e5",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789543767.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1467,
+      "input_tokens_details": {
+        "cache_write_tokens": 1464,
+        "cached_tokens": 0
+      },
+      "output_tokens": 345,
+      "output_tokens_details": {
+        "reasoning_tokens": 153
+      },
+      "total_tokens": 1812
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"substantial\",\n  \"main_topic\": \"A daily news roundup covering Sri Lankan energy projects, student protests, tax legislation, and the Israel-Hamas ceasefire and hostage exchanges\",\n  \"conflict_relevance\": \"The roundup includes a substantive item on Hamas, the Gaza ceasefire, Israeli hostages, Palestinian prisoners, threatened military action, deaths, and destruction in Gaza, but the overall article is not focused on the conflict.\",\n  \"reason\": \"The Gaza-related segment contains meaningful conflict discourse, including ceasefire implementation, hostage releases, Israeli threats, casualties, and humanitarian destruction. However, it is one item in a multi-topic news roundup and therefore is peripheral rather than core.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T07:29:32Z",
+  "duration_seconds": 5.453,
+  "error": null
+}

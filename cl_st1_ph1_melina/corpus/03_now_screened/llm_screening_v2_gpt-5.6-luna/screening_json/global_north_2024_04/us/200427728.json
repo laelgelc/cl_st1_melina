@@ -1,0 +1,65 @@
+{
+  "article_id": "200427728",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_04/us/200427728.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_04/us/200427728.json"
+  },
+  "manifest_row": {
+    "article_id": "200427728",
+    "group": "global_north_2024_04",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2024_04/us/200427728.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "gaza_role": "boilerplate_or_unrelated",
+    "main_topic": "Ames affordable housing development and geothermal heating costs",
+    "conflict_relevance": "The main article is unrelated to Gaza, Palestine, or the Israel-Palestine conflict; conflict-related references occur only in recommended or embedded snippets.",
+    "reason": "The article centrally discusses a municipal affordable-housing and geothermal-energy project in Ames. The Gaza-related material appears only in a recommended story about university protests, while Israel is mentioned incidentally in a separate snippet about a U.S. aid bill.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "0a07048a97bdc44da02dd3310cc463d432caa8e5a3d00a106661871a56eda7e7",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "501ea11f995887914191a06ca4cc95e51d005ebc46522852944ad1d39887c478",
+    "raw_response_text_sha256": "f503599e02d9fa9c5228cc9b4f3ca2a4669cb20a1877c6e0fad02310a283165c"
+  },
+  "api_metadata": {
+    "id": "resp_07416bc0f15457b5006aaa0d302e1487d28298fa8390bf3c64",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789529392.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1874,
+      "input_tokens_details": {
+        "cache_write_tokens": 1871,
+        "cached_tokens": 0
+      },
+      "output_tokens": 271,
+      "output_tokens_details": {
+        "reasoning_tokens": 104
+      },
+      "total_tokens": 2145
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"gaza_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Ames affordable housing development and geothermal heating costs\",\n  \"conflict_relevance\": \"The main article is unrelated to Gaza, Palestine, or the Israel-Palestine conflict; conflict-related references occur only in recommended or embedded snippets.\",\n  \"reason\": \"The article centrally discusses a municipal affordable-housing and geothermal-energy project in Ames. The Gaza-related material appears only in a recommended story about university protests, while Israel is mentioned incidentally in a separate snippet about a U.S. aid bill.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:29:55Z",
+  "duration_seconds": 3.924,
+  "error": null
+}

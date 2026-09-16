@@ -1,0 +1,65 @@
+{
+  "article_id": "103685097",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_11/nz/103685097.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_11/nz/103685097.json"
+  },
+  "manifest_row": {
+    "article_id": "103685097",
+    "group": "global_north_2023_11",
+    "country_code": "nz",
+    "filepath": "corpus/02_now_organised/global_north_2023_11/nz/103685097.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.94,
+    "gaza_role": "passing",
+    "main_topic": "Criticism of an RNZ chief executive's bonus and salary increase",
+    "conflict_relevance": "The main article is unrelated to Gaza or the Israel-Palestine conflict; Gaza appears only in a separate embedded snippet about a Labour Party ceasefire statement.",
+    "reason": "The headline-associated article concerns public-sector executive pay and RNZ performance. Although an embedded roundup item contains a brief, meaningful reference to the Gaza conflict, it is not part of the main article's discourse.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "2e409c62245681d4083b302794f7db2dd48e46c646fc2097a4292db71eb59721",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "4fc927149b3387f30c12fb5f8c9129b0ed8810c49da6d7fbd69c4c5487ae9b08",
+    "raw_response_text_sha256": "ef611913c4917371dff7a4942f688bf322df312b7086a2db15fadfb7ed4c2178"
+  },
+  "api_metadata": {
+    "id": "resp_0c6b41477cbfcf49006aa9fdc6db9087d29714624b59d85e69",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789525446.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1378,
+      "input_tokens_details": {
+        "cache_write_tokens": 1375,
+        "cached_tokens": 0
+      },
+      "output_tokens": 351,
+      "output_tokens_details": {
+        "reasoning_tokens": 190
+      },
+      "total_tokens": 1729
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.94,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Criticism of an RNZ chief executive's bonus and salary increase\",\n  \"conflict_relevance\": \"The main article is unrelated to Gaza or the Israel-Palestine conflict; Gaza appears only in a separate embedded snippet about a Labour Party ceasefire statement.\",\n  \"reason\": \"The headline-associated article concerns public-sector executive pay and RNZ performance. Although an embedded roundup item contains a brief, meaningful reference to the Gaza conflict, it is not part of the main article's discourse.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:24:12Z",
+  "duration_seconds": 6.046,
+  "error": null
+}

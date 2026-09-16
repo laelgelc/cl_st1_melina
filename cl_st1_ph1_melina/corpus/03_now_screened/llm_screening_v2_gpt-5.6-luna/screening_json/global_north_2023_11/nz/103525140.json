@@ -1,0 +1,65 @@
+{
+  "article_id": "103525140",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_11/nz/103525140.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_11/nz/103525140.json"
+  },
+  "manifest_row": {
+    "article_id": "103525140",
+    "group": "global_north_2023_11",
+    "country_code": "nz",
+    "filepath": "corpus/02_now_organised/global_north_2023_11/nz/103525140.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "background",
+    "main_topic": "Humanitarian aid and winter heating support for civilians in Ukraine",
+    "conflict_relevance": "The main article concerns the war in Ukraine, but it includes several substantive embedded snippets about Israeli hostages, Gaza's humanitarian crisis, forced relocation, and the disruption of electricity and communications.",
+    "reason": "The headline and primary content are unrelated to Gaza or the Israel-Palestine conflict. However, the appended Gaza-related passages provide meaningful conflict discourse, making the item peripheral rather than excludable.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "42f1e0f53842825f6ecebf39bee19b203185ad8f24ba76df957fa4bdf0371ac6",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "e914f82a3439568be8645d2da502582ab64b159113609c78d31a2df66c10c3cb",
+    "raw_response_text_sha256": "2be29fa3e744e587f8b535e0bec0609fb5c907550ddbe61ada489e2129d77219"
+  },
+  "api_metadata": {
+    "id": "resp_0e54dcd9e2276484006aa9fdbcab7887d2a4782473c1dead9d",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789525436.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1560,
+      "input_tokens_details": {
+        "cache_write_tokens": 1557,
+        "cached_tokens": 0
+      },
+      "output_tokens": 255,
+      "output_tokens_details": {
+        "reasoning_tokens": 91
+      },
+      "total_tokens": 1815
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Humanitarian aid and winter heating support for civilians in Ukraine\",\n  \"conflict_relevance\": \"The main article concerns the war in Ukraine, but it includes several substantive embedded snippets about Israeli hostages, Gaza's humanitarian crisis, forced relocation, and the disruption of electricity and communications.\",\n  \"reason\": \"The headline and primary content are unrelated to Gaza or the Israel-Palestine conflict. However, the appended Gaza-related passages provide meaningful conflict discourse, making the item peripheral rather than excludable.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:24:00Z",
+  "duration_seconds": 3.8,
+  "error": null
+}

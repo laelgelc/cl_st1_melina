@@ -1,0 +1,65 @@
+{
+  "article_id": "105466001",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_01/ca/105466001.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_01/ca/105466001.json"
+  },
+  "manifest_row": {
+    "article_id": "105466001",
+    "group": "global_north_2024_01",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2024_01/ca/105466001.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.96,
+    "gaza_role": "passing",
+    "main_topic": "An Ottawa donut business appearing on Dragons' Den",
+    "conflict_relevance": "A brief embedded news item mentions Global Affairs Canada investigating the disappearance of a Palestinian-Canadian citizen journalist in Gaza.",
+    "reason": "The main article concerns a donut business and contains multiple unrelated news snippets. However, the Gaza-related snippet provides a meaningful, though very brief, reference to the Gaza crisis and a missing Palestinian-Canadian journalist.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "b91147447fb38c687ea4a1a2f98bd0de64f0a50cbc7d93163a04f51514630249",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "cea8a3b56359c061d80cfe695ef84608a485de2acaeab668433a0a8ace6e4cdf",
+    "raw_response_text_sha256": "7f8d0b31fe99bb88e743d03e81ce17a27468e71ed6260ea6d6445b4a0185de0c"
+  },
+  "api_metadata": {
+    "id": "resp_0c6951af16d27ed9006aaa03c1238887d287706686ac5afc7c",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789526977.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1420,
+      "input_tokens_details": {
+        "cache_write_tokens": 1417,
+        "cached_tokens": 0
+      },
+      "output_tokens": 265,
+      "output_tokens_details": {
+        "reasoning_tokens": 117
+      },
+      "total_tokens": 1685
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.96,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"An Ottawa donut business appearing on Dragons' Den\",\n  \"conflict_relevance\": \"A brief embedded news item mentions Global Affairs Canada investigating the disappearance of a Palestinian-Canadian citizen journalist in Gaza.\",\n  \"reason\": \"The main article concerns a donut business and contains multiple unrelated news snippets. However, the Gaza-related snippet provides a meaningful, though very brief, reference to the Gaza crisis and a missing Palestinian-Canadian journalist.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:49:40Z",
+  "duration_seconds": 3.819,
+  "error": null
+}

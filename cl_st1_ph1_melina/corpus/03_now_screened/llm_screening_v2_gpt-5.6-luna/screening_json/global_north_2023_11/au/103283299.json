@@ -1,0 +1,65 @@
+{
+  "article_id": "103283299",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_11/au/103283299.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_11/au/103283299.json"
+  },
+  "manifest_row": {
+    "article_id": "103283299",
+    "group": "global_north_2023_11",
+    "country_code": "au",
+    "filepath": "corpus/02_now_organised/global_north_2023_11/au/103283299.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.94,
+    "gaza_role": "passing",
+    "main_topic": "Australian news roundup including the Optus outage and an Australian evacuee from Gaza",
+    "conflict_relevance": "Contains a substantive but brief mention of an Australian who escaped Gaza through the Rafah crossing and feared being unable to reunite with family.",
+    "reason": "The text is primarily a collection of unrelated news snippets, led by coverage of the Optus outage. The Gaza-related passage is meaningful but too brief and peripheral to make the article core conflict coverage.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "e9e52f5060d2f94dde6ae6d51dff61ce583976a4e6c4543098108c6b3b8e2b56",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "0dfd6da424c4b1dc116ee5944040b5eaaf6c292d65199c7e340b94d0248c0f7d",
+    "raw_response_text_sha256": "e55a07be1c359e018f85edcee148c14846343e0cea1ee517b2158066ed48096b"
+  },
+  "api_metadata": {
+    "id": "resp_0f71c6249c510144006aa9fb673a9487d286737b1361de82ca",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789524839.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 776,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 244,
+      "output_tokens_details": {
+        "reasoning_tokens": 109
+      },
+      "total_tokens": 1020
+    }
+  },
+  "raw_response_text": "{\"category\":\"PERIPHERAL\",\"confidence\":0.94,\"gaza_role\":\"passing\",\"main_topic\":\"Australian news roundup including the Optus outage and an Australian evacuee from Gaza\",\"conflict_relevance\":\"Contains a substantive but brief mention of an Australian who escaped Gaza through the Rafah crossing and feared being unable to reunite with family.\",\"reason\":\"The text is primarily a collection of unrelated news snippets, led by coverage of the Optus outage. The Gaza-related passage is meaningful but too brief and peripheral to make the article core conflict coverage.\",\"multi_article_or_snippet_issue\":true,\"recommended_for_main_corpus\":false}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:14:02Z",
+  "duration_seconds": 3.659,
+  "error": null
+}

@@ -1,0 +1,65 @@
+{
+  "article_id": "112942454",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_08/gb/112942454.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_08/gb/112942454.json"
+  },
+  "manifest_row": {
+    "article_id": "112942454",
+    "group": "global_north_2024_08",
+    "country_code": "gb",
+    "filepath": "corpus/02_now_organised/global_north_2024_08/gb/112942454.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "gaza_role": "passing",
+    "main_topic": "Liverpool funeral notices and memorial tributes",
+    "conflict_relevance": "A single funeral notice mentions donations to the Children of Gaza, but the article provides no substantive discussion of Gaza or the conflict.",
+    "reason": "This is a roundup of local death notices and tributes. The Gaza reference is an incidental charitable-donation mention within one notice and does not meaningfully contribute to conflict discourse analysis.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "a58991ab9f5c451ed33fc3e70d60f73eff7f50005ae64cb1d37b357e1b4930b4",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "5776573d77ba78ca0a0a09e4d46b8a5779bc4dd814ca0b2f2b76a0326de6f856",
+    "raw_response_text_sha256": "4d1374a21b3796e2ebfc977579762e06715372cc9d9756940984ede70c678022"
+  },
+  "api_metadata": {
+    "id": "resp_0f516a0ef05bdbbf006aaa1442cdd887d28f326f950cf1fff6",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789531202.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 11617,
+      "input_tokens_details": {
+        "cache_write_tokens": 11614,
+        "cached_tokens": 0
+      },
+      "output_tokens": 297,
+      "output_tokens_details": {
+        "reasoning_tokens": 154
+      },
+      "total_tokens": 11914
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Liverpool funeral notices and memorial tributes\",\n  \"conflict_relevance\": \"A single funeral notice mentions donations to the Children of Gaza, but the article provides no substantive discussion of Gaza or the conflict.\",\n  \"reason\": \"This is a roundup of local death notices and tributes. The Gaza reference is an incidental charitable-donation mention within one notice and does not meaningfully contribute to conflict discourse analysis.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T04:00:07Z",
+  "duration_seconds": 5.324,
+  "error": null
+}

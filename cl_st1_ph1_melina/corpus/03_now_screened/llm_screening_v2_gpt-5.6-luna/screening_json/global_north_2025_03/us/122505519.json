@@ -1,0 +1,65 @@
+{
+  "article_id": "122505519",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_03/us/122505519.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_03/us/122505519.json"
+  },
+  "manifest_row": {
+    "article_id": "122505519",
+    "group": "global_north_2025_03",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2025_03/us/122505519.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "background",
+    "main_topic": "U.S. electoral politics, voter demographics, and judicial conflict under the Trump administration",
+    "conflict_relevance": "The newsletter includes a substantive but brief item reporting the collapse of the Gaza ceasefire and deadly Israeli strikes on Gaza.",
+    "reason": "The article is primarily a U.S. politics newsletter focused on electoral demographics, Trump, and judicial independence. Gaza appears in a distinct top-stories item with meaningful conflict-related information, but it is not the focus of the main article.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "2c9661184e39d41c02f92d96296764ae921684dcade7824e85160c69a3f54b1b",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "1a466da313548a6f828506f7c225914172debd8f6912f307e73abd94c9fcb0b1",
+    "raw_response_text_sha256": "7fcb8c7b89c300f847f3f6689decd1fdd2fba3b27977ffb4afffb105d0e4a65f"
+  },
+  "api_metadata": {
+    "id": "resp_0f8afa23fe898203006aaa27b4133c87d1b5c915e292758bab",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789536180.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2037,
+      "input_tokens_details": {
+        "cache_write_tokens": 2034,
+        "cached_tokens": 0
+      },
+      "output_tokens": 253,
+      "output_tokens_details": {
+        "reasoning_tokens": 91
+      },
+      "total_tokens": 2290
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"U.S. electoral politics, voter demographics, and judicial conflict under the Trump administration\",\n  \"conflict_relevance\": \"The newsletter includes a substantive but brief item reporting the collapse of the Gaza ceasefire and deadly Israeli strikes on Gaza.\",\n  \"reason\": \"The article is primarily a U.S. politics newsletter focused on electoral demographics, Trump, and judicial independence. Gaza appears in a distinct top-stories item with meaningful conflict-related information, but it is not the focus of the main article.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T05:23:03Z",
+  "duration_seconds": 3.81,
+  "error": null
+}

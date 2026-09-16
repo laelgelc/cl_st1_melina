@@ -1,0 +1,65 @@
+{
+  "article_id": "109551393",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_06/ca/109551393.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_06/ca/109551393.json"
+  },
+  "manifest_row": {
+    "article_id": "109551393",
+    "group": "global_north_2024_06",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2024_06/ca/109551393.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "gaza_role": "passing",
+    "main_topic": "Local letters about environmental concerns, accessibility at bus stops, municipal patrols, and council accountability",
+    "conflict_relevance": "Gaza appears only once in a broad list of global conflicts and is not discussed or contextualized.",
+    "reason": "The article is a collection of unrelated local letters. The sole reference to Gaza is an incidental mention in a generalized list of world problems, providing no meaningful conflict-related discourse.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "6717e9bf0baaee5103976baadea5823cfeaf8ceeb9d578b926380caa687cceb3",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "13835f886c87686f6f018d680597fba22cd3e7a6525f67a63c038ae195633576",
+    "raw_response_text_sha256": "50f6a47b8a349209891e74ae64e2d301d53be338e2344f5717b9df50ce0339a1"
+  },
+  "api_metadata": {
+    "id": "resp_0f7f4bb4fc5e81d9006aaa1047836c87d2a398d6d0933e261e",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789530183.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2218,
+      "input_tokens_details": {
+        "cache_write_tokens": 2215,
+        "cached_tokens": 0
+      },
+      "output_tokens": 235,
+      "output_tokens_details": {
+        "reasoning_tokens": 88
+      },
+      "total_tokens": 2453
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Local letters about environmental concerns, accessibility at bus stops, municipal patrols, and council accountability\",\n  \"conflict_relevance\": \"Gaza appears only once in a broad list of global conflicts and is not discussed or contextualized.\",\n  \"reason\": \"The article is a collection of unrelated local letters. The sole reference to Gaza is an incidental mention in a generalized list of world problems, providing no meaningful conflict-related discourse.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:43:06Z",
+  "duration_seconds": 3.644,
+  "error": null
+}

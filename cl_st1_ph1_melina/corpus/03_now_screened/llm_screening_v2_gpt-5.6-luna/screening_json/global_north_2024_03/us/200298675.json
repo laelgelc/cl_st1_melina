@@ -1,0 +1,65 @@
+{
+  "article_id": "200298675",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_03/us/200298675.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_03/us/200298675.json"
+  },
+  "manifest_row": {
+    "article_id": "200298675",
+    "group": "global_north_2024_03",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2024_03/us/200298675.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.96,
+    "gaza_role": "passing",
+    "main_topic": "Donald Trump's prospective second-term cabinet, Project 2025, and the politicization of the U.S. executive branch",
+    "conflict_relevance": "The article is not about Gaza or Israel/Palestine. It contains a single unrelated embedded snippet mentioning Chuck Schumer's criticism of Benjamin Netanyahu's handling of the Gaza war.",
+    "reason": "The main article focuses on U.S. domestic politics, Trump's cabinet plans, and Project 2025. The Gaza-related material appears only as an incidental item among unrelated snippets at the end and does not contribute substantively to the article's discourse.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "5bfc10f97948c81fa30eb7ca0fe61fa1c50bd647d25a1c0c0f1526eadbed773d",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "b926dee7c79f0614e3b23c37e96fb807b76cbead0e021591acb82c86ce524776",
+    "raw_response_text_sha256": "02169203452415b8e4909a57de2d67549a566fae1a2cff72a153b89f8a4f6a5d"
+  },
+  "api_metadata": {
+    "id": "resp_0769dc0e25d50f9f006aaa0a601e9887d28d13d8795b05bb77",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789528672.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 7538,
+      "input_tokens_details": {
+        "cache_write_tokens": 7535,
+        "cached_tokens": 0
+      },
+      "output_tokens": 370,
+      "output_tokens_details": {
+        "reasoning_tokens": 187
+      },
+      "total_tokens": 7908
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.96,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Donald Trump's prospective second-term cabinet, Project 2025, and the politicization of the U.S. executive branch\",\n  \"conflict_relevance\": \"The article is not about Gaza or Israel/Palestine. It contains a single unrelated embedded snippet mentioning Chuck Schumer's criticism of Benjamin Netanyahu's handling of the Gaza war.\",\n  \"reason\": \"The main article focuses on U.S. domestic politics, Trump's cabinet plans, and Project 2025. The Gaza-related material appears only as an incidental item among unrelated snippets at the end and does not contribute substantively to the article's discourse.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:17:57Z",
+  "duration_seconds": 5.479,
+  "error": null
+}

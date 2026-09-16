@@ -1,0 +1,65 @@
+{
+  "article_id": "200046453",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_12/us/200046453.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_12/us/200046453.json"
+  },
+  "manifest_row": {
+    "article_id": "200046453",
+    "group": "global_north_2023_12",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2023_12/us/200046453.txt"
+  },
+  "screening": {
+    "category": "CORE",
+    "confidence": 0.98,
+    "gaza_role": "central",
+    "main_topic": "Associated Press photo retrospective of major Middle Eastern conflicts, disasters, and political events in 2023",
+    "conflict_relevance": "The gallery prominently documents the October 7 Hamas attack, the Israel-Hamas war, Israeli military action in Gaza, Palestinian casualties and displacement, hostages, Gaza conditions, West Bank violence, and regional solidarity protests.",
+    "reason": "Although framed as a broader Middle East year-in-review, a substantial portion of the article consists of detailed text and photo captions about Gaza and the Israel-Palestine conflict. This provides meaningful material for analyzing media representations of military violence, civilian suffering, hostages, Palestinian displacement, and regional political responses.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": true
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "b52b6ef20a60f50490cb1d8b7778e67ffbf3567e1a91280413b1138cf52e25bb",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "dbc2b10d68bae22fbf9a1ccf1c8c1ac56c2a73f6fc3991d42c546ddd36b62302",
+    "raw_response_text_sha256": "ea95a3fb9935d16aba42b7cf82768d0814e3be58476194f6527414ca069deff0"
+  },
+  "api_metadata": {
+    "id": "resp_0e51c1434f60d33a006aaa02c326fc87d2a58ed41a784e0e09",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789526723.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2957,
+      "input_tokens_details": {
+        "cache_write_tokens": 2954,
+        "cached_tokens": 0
+      },
+      "output_tokens": 369,
+      "output_tokens_details": {
+        "reasoning_tokens": 172
+      },
+      "total_tokens": 3326
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"CORE\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"central\",\n  \"main_topic\": \"Associated Press photo retrospective of major Middle Eastern conflicts, disasters, and political events in 2023\",\n  \"conflict_relevance\": \"The gallery prominently documents the October 7 Hamas attack, the Israel-Hamas war, Israeli military action in Gaza, Palestinian casualties and displacement, hostages, Gaza conditions, West Bank violence, and regional solidarity protests.\",\n  \"reason\": \"Although framed as a broader Middle East year-in-review, a substantial portion of the article consists of detailed text and photo captions about Gaza and the Israel-Palestine conflict. This provides meaningful material for analyzing media representations of military violence, civilian suffering, hostages, Palestinian displacement, and regional political responses.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": true\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:45:27Z",
+  "duration_seconds": 4.743,
+  "error": null
+}

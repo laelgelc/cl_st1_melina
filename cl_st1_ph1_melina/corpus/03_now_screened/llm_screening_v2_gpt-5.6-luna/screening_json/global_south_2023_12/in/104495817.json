@@ -1,0 +1,65 @@
+{
+  "article_id": "104495817",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_south_2023_12/in/104495817.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_south_2023_12/in/104495817.json"
+  },
+  "manifest_row": {
+    "article_id": "104495817",
+    "group": "global_south_2023_12",
+    "country_code": "in",
+    "filepath": "corpus/02_now_organised/global_south_2023_12/in/104495817.txt"
+  },
+  "screening": {
+    "category": "CORE",
+    "confidence": 0.99,
+    "gaza_role": "central",
+    "main_topic": "Iranian and Omani foreign ministers' discussion of the Gaza conflict and humanitarian situation",
+    "conflict_relevance": "The article directly reports diplomatic discussion of Gaza, Israeli military attacks, Palestinian casualties, humanitarian aid, US responsibility, and the wider Israel-Hamas war.",
+    "reason": "Gaza and the conflict constitute the main subject of the article, despite an unrelated appended passage about an Iranian activist and her family.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": true
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "1a1484c923a8950c6904ef4688f9d254b33dde305fcbfd1b3addd9103aacb97d",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "542c9304ec2406e63549e6aca0bfa5c6378040e02cc45f1e5814ec5dafe60eb6",
+    "raw_response_text_sha256": "ac50bb1d9798eb275906c82e22d7e7ab71562a5947be7468be2d3e2cb955ba9c"
+  },
+  "api_metadata": {
+    "id": "resp_0e88fb0d71a5da8f006aaa36cd98fc87d187e554e4f4b3b85d",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789540045.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1031,
+      "input_tokens_details": {
+        "cache_write_tokens": 1028,
+        "cached_tokens": 0
+      },
+      "output_tokens": 195,
+      "output_tokens_details": {
+        "reasoning_tokens": 49
+      },
+      "total_tokens": 1226
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"CORE\",\n  \"confidence\": 0.99,\n  \"gaza_role\": \"central\",\n  \"main_topic\": \"Iranian and Omani foreign ministers' discussion of the Gaza conflict and humanitarian situation\",\n  \"conflict_relevance\": \"The article directly reports diplomatic discussion of Gaza, Israeli military attacks, Palestinian casualties, humanitarian aid, US responsibility, and the wider Israel-Hamas war.\",\n  \"reason\": \"Gaza and the conflict constitute the main subject of the article, despite an unrelated appended passage about an Iranian activist and her family.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": true\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T06:27:28Z",
+  "duration_seconds": 3.02,
+  "error": null
+}

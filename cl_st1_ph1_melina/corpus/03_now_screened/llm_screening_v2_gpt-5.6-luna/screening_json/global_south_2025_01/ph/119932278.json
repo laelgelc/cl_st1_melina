@@ -1,0 +1,65 @@
+{
+  "article_id": "119932278",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_south_2025_01/ph/119932278.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_south_2025_01/ph/119932278.json"
+  },
+  "manifest_row": {
+    "article_id": "119932278",
+    "group": "global_south_2025_01",
+    "country_code": "ph",
+    "filepath": "corpus/02_now_organised/global_south_2025_01/ph/119932278.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "gaza_role": "boilerplate_or_unrelated",
+    "main_topic": "Croatian presidential election and Zoran Milanovic's re-election",
+    "conflict_relevance": "The main article concerns Croatian domestic politics and contains no meaningful discussion of Gaza or the Israel-Palestine conflict. Gaza appears only in an unrelated latest-stories snippet.",
+    "reason": "The headline article is about Croatia's presidential election. The Gaza material is an embedded, unrelated news item rather than part of the article's subject or discourse.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "a2cc00dcb2a3d2861e59e33c11935fee6abf20c34ffacac7b2687848237f5272",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "b57260a7d7574656aefb317b8963df811e51d0a40144f4d98e98ba5d75d61392",
+    "raw_response_text_sha256": "cf2a646018e8ab5ac7d7a5f2be243a21bb4915af21821292babe38b51a1570aa"
+  },
+  "api_metadata": {
+    "id": "resp_0f92d6ad659e2199006aaa44a8940c87d19fa18fc77f614389",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789543592.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2850,
+      "input_tokens_details": {
+        "cache_write_tokens": 2847,
+        "cached_tokens": 0
+      },
+      "output_tokens": 249,
+      "output_tokens_details": {
+        "reasoning_tokens": 92
+      },
+      "total_tokens": 3099
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"gaza_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Croatian presidential election and Zoran Milanovic's re-election\",\n  \"conflict_relevance\": \"The main article concerns Croatian domestic politics and contains no meaningful discussion of Gaza or the Israel-Palestine conflict. Gaza appears only in an unrelated latest-stories snippet.\",\n  \"reason\": \"The headline article is about Croatia's presidential election. The Gaza material is an embedded, unrelated news item rather than part of the article's subject or discourse.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T07:26:35Z",
+  "duration_seconds": 3.483,
+  "error": null
+}

@@ -1,0 +1,65 @@
+{
+  "article_id": "123297461",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_04/us/123297461.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_04/us/123297461.json"
+  },
+  "manifest_row": {
+    "article_id": "123297461",
+    "group": "global_north_2025_04",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2025_04/us/123297461.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.97,
+    "gaza_role": "background",
+    "main_topic": "U.S. tariffs, global markets, and President Trump's trade negotiations",
+    "conflict_relevance": "The article includes meaningful background on Netanyahu's meeting with Trump, the Gaza war, hostage negotiations, displaced Palestinians, Iran, Israel-Turkey relations, and the International Criminal Court, but these issues are secondary to the tariff and market coverage.",
+    "reason": "Although the article contains substantive references to the Gaza war and related diplomacy, its central focus is the global economic impact of U.S. tariff policy and financial-market volatility.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "f9c1ff4ee18c86b7fa4121593adcfcb25d4d0bd2c6219ff1d077a92af7f1168e",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "13106e4e8ff34c43dece1827109068849316ca253c63690fda8cbe5319bc3a7f",
+    "raw_response_text_sha256": "9c86e759da47ff17d0cb4d202a1d8b4ea7eb5da5e2daa9e2338e7b3b50b1d565"
+  },
+  "api_metadata": {
+    "id": "resp_079ee0994d66ab31006aaa2a045ee487d1bacb98179dedb2e4",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789536772.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 3068,
+      "input_tokens_details": {
+        "cache_write_tokens": 3065,
+        "cached_tokens": 0
+      },
+      "output_tokens": 317,
+      "output_tokens_details": {
+        "reasoning_tokens": 147
+      },
+      "total_tokens": 3385
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.97,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"U.S. tariffs, global markets, and President Trump's trade negotiations\",\n  \"conflict_relevance\": \"The article includes meaningful background on Netanyahu's meeting with Trump, the Gaza war, hostage negotiations, displaced Palestinians, Iran, Israel-Turkey relations, and the International Criminal Court, but these issues are secondary to the tariff and market coverage.\",\n  \"reason\": \"Although the article contains substantive references to the Gaza war and related diplomacy, its central focus is the global economic impact of U.S. tariff policy and financial-market volatility.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T05:32:57Z",
+  "duration_seconds": 5.104,
+  "error": null
+}

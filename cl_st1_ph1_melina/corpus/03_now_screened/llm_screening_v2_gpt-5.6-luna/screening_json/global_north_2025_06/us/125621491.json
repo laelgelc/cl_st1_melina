@@ -1,0 +1,65 @@
+{
+  "article_id": "125621491",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_06/us/125621491.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_06/us/125621491.json"
+  },
+  "manifest_row": {
+    "article_id": "125621491",
+    "group": "global_north_2025_06",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2025_06/us/125621491.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.96,
+    "gaza_role": "background",
+    "main_topic": "Letters to the editor, including commentary comparing attention to Gaza with the Sudan conflict",
+    "conflict_relevance": "One letter meaningfully discusses Gaza, Israel, antisemitism, Muslim-led protests, media attention, and comparative humanitarian suffering, but the article is a mixed letters roundup and also includes an unrelated March Madness letter.",
+    "reason": "The Gaza-related letter provides relevant discourse about public protest, media visibility, Israel, antisemitism, and perceptions of unequal attention to conflicts. However, Gaza is not the sole or central subject of the overall article.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "fda2be0935ad5a01b05c679583bd12d302e9921aa58e5f179fc653684e1e92d8",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "35c777416d2ea934af60da5ac784dc0af1c9ae0fe3205fe8edb141c9502e40be",
+    "raw_response_text_sha256": "f11eca483f2d07093070abed760c247634102665d6e22b123c74c8b9162df950"
+  },
+  "api_metadata": {
+    "id": "resp_0e2f1264b4aa691a006aaa30faf11487d19c092c5c88e3eda7",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789538554.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1029,
+      "input_tokens_details": {
+        "cache_write_tokens": 1026,
+        "cached_tokens": 0
+      },
+      "output_tokens": 282,
+      "output_tokens_details": {
+        "reasoning_tokens": 106
+      },
+      "total_tokens": 1311
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.96,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Letters to the editor, including commentary comparing attention to Gaza with the Sudan conflict\",\n  \"conflict_relevance\": \"One letter meaningfully discusses Gaza, Israel, antisemitism, Muslim-led protests, media attention, and comparative humanitarian suffering, but the article is a mixed letters roundup and also includes an unrelated March Madness letter.\",\n  \"reason\": \"The Gaza-related letter provides relevant discourse about public protest, media visibility, Israel, antisemitism, and perceptions of unequal attention to conflicts. However, Gaza is not the sole or central subject of the overall article.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T06:02:39Z",
+  "duration_seconds": 4.924,
+  "error": null
+}

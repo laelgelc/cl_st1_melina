@@ -1,0 +1,65 @@
+{
+  "article_id": "125156571",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_05/gb/125156571.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_05/gb/125156571.json"
+  },
+  "manifest_row": {
+    "article_id": "125156571",
+    "group": "global_north_2025_05",
+    "country_code": "gb",
+    "filepath": "corpus/02_now_organised/global_north_2025_05/gb/125156571.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.91,
+    "gaza_role": "background",
+    "main_topic": "Alleged terrorism plot against the US embassy in Tel Aviv and attacks targeting Israeli diplomatic personnel",
+    "conflict_relevance": "The article is primarily about criminal charges and embassy security, but it connects related attacks to pro-Palestinian slogans and claims of acting for Gaza.",
+    "reason": "Israel and Gaza-related political violence provide meaningful context, but the article is not centrally about the Gaza conflict or Israel-Palestine discourse.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "fbb7ce972e2110ff80825dc1198a7423392859218bf3901ae86b422ccaa1064c",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "7ec8e0cf2cff41787c0aeeb3a4ee517782e21547b47edfefe44f575209d9cae9",
+    "raw_response_text_sha256": "127a083c21ab22dd6463c39e3ed16056887908485be04b03b1ddecbcc206c093"
+  },
+  "api_metadata": {
+    "id": "resp_0e2704ad4aa6e268006aaa2c2084f487d1b655bcc50fd4bf71",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789537312.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1236,
+      "input_tokens_details": {
+        "cache_write_tokens": 1233,
+        "cached_tokens": 0
+      },
+      "output_tokens": 324,
+      "output_tokens_details": {
+        "reasoning_tokens": 172
+      },
+      "total_tokens": 1560
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.91,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Alleged terrorism plot against the US embassy in Tel Aviv and attacks targeting Israeli diplomatic personnel\",\n  \"conflict_relevance\": \"The article is primarily about criminal charges and embassy security, but it connects related attacks to pro-Palestinian slogans and claims of acting for Gaza.\",\n  \"reason\": \"Israel and Gaza-related political violence provide meaningful context, but the article is not centrally about the Gaza conflict or Israel-Palestine discourse.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T05:41:56Z",
+  "duration_seconds": 4.493,
+  "error": null
+}

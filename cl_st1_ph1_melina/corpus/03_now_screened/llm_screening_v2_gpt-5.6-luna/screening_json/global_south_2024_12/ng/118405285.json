@@ -1,0 +1,65 @@
+{
+  "article_id": "118405285",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_south_2024_12/ng/118405285.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_south_2024_12/ng/118405285.json"
+  },
+  "manifest_row": {
+    "article_id": "118405285",
+    "group": "global_south_2024_12",
+    "country_code": "ng",
+    "filepath": "corpus/02_now_organised/global_south_2024_12/ng/118405285.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.96,
+    "gaza_role": "passing",
+    "main_topic": "Nigeria's proposed VAT and broader tax reforms",
+    "conflict_relevance": "The main article concerns Nigerian tax policy, but it includes an unrelated news snippet reporting U.S. opposition to Israeli permanent military base-building in Gaza.",
+    "reason": "The Gaza content is meaningful but embedded as a separate, unrelated news item within a mixed collection of articles; it is not part of the main tax-reform story.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "88110ee255427e24f79a92e9b15797516b79d8263de8ff892a167f9a547de582",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "f16f18d6b77b411609aca11a8d9e11d939ca3e0dbae08311e9e3f79e9eb8d890",
+    "raw_response_text_sha256": "cc4c69d8e1083c2e0ed42040928dff0f227ec3633b7cea2a315744d62df34dc9"
+  },
+  "api_metadata": {
+    "id": "resp_0e04bd0f29178f1f006aaa4369e1a087d1b37a1b83b12ede62",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789543273.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1857,
+      "input_tokens_details": {
+        "cache_write_tokens": 1854,
+        "cached_tokens": 0
+      },
+      "output_tokens": 277,
+      "output_tokens_details": {
+        "reasoning_tokens": 131
+      },
+      "total_tokens": 2134
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.96,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Nigeria's proposed VAT and broader tax reforms\",\n  \"conflict_relevance\": \"The main article concerns Nigerian tax policy, but it includes an unrelated news snippet reporting U.S. opposition to Israeli permanent military base-building in Gaza.\",\n  \"reason\": \"The Gaza content is meaningful but embedded as a separate, unrelated news item within a mixed collection of articles; it is not part of the main tax-reform story.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T07:21:17Z",
+  "duration_seconds": 4.145,
+  "error": null
+}

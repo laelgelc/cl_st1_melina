@@ -1,0 +1,65 @@
+{
+  "article_id": "105064229",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_01/us/105064229.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_01/us/105064229.json"
+  },
+  "manifest_row": {
+    "article_id": "105064229",
+    "group": "global_north_2024_01",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2024_01/us/105064229.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.97,
+    "gaza_role": "background",
+    "main_topic": "Colombia landslide disaster and assorted international news items",
+    "conflict_relevance": "The article includes a substantive embedded news item discussing the Hamas attack on Israel, Israel's response, the bombardment of Gaza, and the Islamic State's attempts to mobilize anger over Gaza.",
+    "reason": "The primary article concerns a deadly landslide in Colombia, while the Gaza-related material appears as one separate item within a compilation of unrelated news snippets. It is meaningful for broader discourse analysis but is not the central subject.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "0dedf032254e7c3e17840476cb97e2028ecfc84eafcf1fe9e234b27506db68e9",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "334e78ff8469cb6bb0e8b19130fff4edf2d335769452d0b36214a4b6865ab7cb",
+    "raw_response_text_sha256": "2123a6039ab077f6dfe00c5ad6554929664fe4c50cfff77b1785fddcb64f3bc4"
+  },
+  "api_metadata": {
+    "id": "resp_0e89aa1f9a62da0f006aaa04bda92c87d292bafb2d3882561b",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789527229.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2079,
+      "input_tokens_details": {
+        "cache_write_tokens": 2076,
+        "cached_tokens": 0
+      },
+      "output_tokens": 371,
+      "output_tokens_details": {
+        "reasoning_tokens": 204
+      },
+      "total_tokens": 2450
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.97,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Colombia landslide disaster and assorted international news items\",\n  \"conflict_relevance\": \"The article includes a substantive embedded news item discussing the Hamas attack on Israel, Israel's response, the bombardment of Gaza, and the Islamic State's attempts to mobilize anger over Gaza.\",\n  \"reason\": \"The primary article concerns a deadly landslide in Colombia, while the Gaza-related material appears as one separate item within a compilation of unrelated news snippets. It is meaningful for broader discourse analysis but is not the central subject.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:53:54Z",
+  "duration_seconds": 5.33,
+  "error": null
+}

@@ -1,0 +1,65 @@
+{
+  "article_id": "102644498",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_10/nz/102644498.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_10/nz/102644498.json"
+  },
+  "manifest_row": {
+    "article_id": "102644498",
+    "group": "global_north_2023_10",
+    "country_code": "nz",
+    "filepath": "corpus/02_now_organised/global_north_2023_10/nz/102644498.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "substantial",
+    "main_topic": "The defeat of Australia's Indigenous Voice to Parliament referendum",
+    "conflict_relevance": "The main article is unrelated to Gaza or the Israel-Palestine conflict, but it includes a substantial appended news item concerning Israel's evacuation order in northern Gaza, humanitarian conditions, displacement, communications infrastructure, and alleged violations of international humanitarian law.",
+    "reason": "The headline article centrally discusses Australian Indigenous politics, constitutional reform, and the Voice referendum. However, the appended Gaza material is extensive and meaningfully addresses the conflict, making the item useful for peripheral discourse analysis but not as core coverage of the article's main topic.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "3916f0eb43a1d8ab3f015c1e7f9de50f55461c41a74a6900cdf0930b815cea27",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "5b5e219031216b10d8f91049462240b50a33869b3207ad8f1ea2ec413c99dbfb",
+    "raw_response_text_sha256": "574de9a6d231441cfcf0f60d43298150bd324f91275411dfbb32a7785140d73d"
+  },
+  "api_metadata": {
+    "id": "resp_0269d2d20ecaeb8d006aa9f81e3d0487d2bbbd83049649486d",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789523998.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2881,
+      "input_tokens_details": {
+        "cache_write_tokens": 2878,
+        "cached_tokens": 0
+      },
+      "output_tokens": 394,
+      "output_tokens_details": {
+        "reasoning_tokens": 207
+      },
+      "total_tokens": 3275
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"substantial\",\n  \"main_topic\": \"The defeat of Australia's Indigenous Voice to Parliament referendum\",\n  \"conflict_relevance\": \"The main article is unrelated to Gaza or the Israel-Palestine conflict, but it includes a substantial appended news item concerning Israel's evacuation order in northern Gaza, humanitarian conditions, displacement, communications infrastructure, and alleged violations of international humanitarian law.\",\n  \"reason\": \"The headline article centrally discusses Australian Indigenous politics, constitutional reform, and the Voice referendum. However, the appended Gaza material is extensive and meaningfully addresses the conflict, making the item useful for peripheral discourse analysis but not as core coverage of the article's main topic.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:00:03Z",
+  "duration_seconds": 5.463,
+  "error": null
+}

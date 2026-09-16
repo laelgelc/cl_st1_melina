@@ -1,0 +1,65 @@
+{
+  "article_id": "123462702",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_04/us/123462702.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_04/us/123462702.json"
+  },
+  "manifest_row": {
+    "article_id": "123462702",
+    "group": "global_north_2025_04",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2025_04/us/123462702.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.97,
+    "gaza_role": "background",
+    "main_topic": "The Trump administration's immigration enforcement agenda, including deportations, immigrant registration, and related legal challenges",
+    "conflict_relevance": "The article discusses Mahmoud Khalil's detention and deportation proceedings in connection with his participation in pro-Palestinian demonstrations against the war in Gaza.",
+    "reason": "The article is primarily about U.S. immigration policy and enforcement. Its discussion of Gaza and pro-Palestinian activism is meaningful but limited to the Khalil case and does not make the conflict the article's central subject.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "d310a5241024220358537131b61f31602afa666027203d522ea95e204b477d0f",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "4ea7765abefc66cc09212efe70bf8d95c7ca891275dcb96a44da3d6b805a84c6",
+    "raw_response_text_sha256": "a3e56e909336946f4fc3ca23dbeefb8c7dcc0a342571b9b043ab6273b6af7bec"
+  },
+  "api_metadata": {
+    "id": "resp_0f684114ccbb6d38006aaa2a2a8a4087d19e8e46975ac065bb",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789536810.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1774,
+      "input_tokens_details": {
+        "cache_write_tokens": 1771,
+        "cached_tokens": 0
+      },
+      "output_tokens": 246,
+      "output_tokens_details": {
+        "reasoning_tokens": 75
+      },
+      "total_tokens": 2020
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.97,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"The Trump administration's immigration enforcement agenda, including deportations, immigrant registration, and related legal challenges\",\n  \"conflict_relevance\": \"The article discusses Mahmoud Khalil's detention and deportation proceedings in connection with his participation in pro-Palestinian demonstrations against the war in Gaza.\",\n  \"reason\": \"The article is primarily about U.S. immigration policy and enforcement. Its discussion of Gaza and pro-Palestinian activism is meaningful but limited to the Khalil case and does not make the conflict the article's central subject.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T05:33:33Z",
+  "duration_seconds": 3.134,
+  "error": null
+}

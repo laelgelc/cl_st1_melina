@@ -1,0 +1,65 @@
+{
+  "article_id": "91651229",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_10/us/91651229.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_10/us/91651229.json"
+  },
+  "manifest_row": {
+    "article_id": "91651229",
+    "group": "global_north_2023_10",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2023_10/us/91651229.txt"
+  },
+  "screening": {
+    "category": "CORE",
+    "confidence": 0.78,
+    "gaza_role": "central",
+    "main_topic": "Photographic reporting on the situation in Gaza following Israeli strikes in response to the Hamas attack",
+    "conflict_relevance": "The article directly concerns Gaza, Israeli military strikes, Hamas, and the immediate aftermath of the October 2023 attack.",
+    "reason": "The opening item is explicitly a Gaza photo report about the conflict. Although unrelated General Motors content appears afterward, the Gaza item itself is centrally focused on the conflict.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": true
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "b855719919c08c5481eeb8403d40ea86eaf7019daadf18adba34bb39c3a7d9c2",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "451ab3e28a14ea0a784669265e6ad56b2cdd169e8ffebb3be80cea166eb38d89",
+    "raw_response_text_sha256": "47c0f1629e6ae563aa60e4d100125b175dff28599f26511d04d293d4b6c2ff62"
+  },
+  "api_metadata": {
+    "id": "resp_0cfbb769d7a9cca2006aa9fa9a534487d2a026c5296206879f",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789524634.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 731,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 401,
+      "output_tokens_details": {
+        "reasoning_tokens": 254
+      },
+      "total_tokens": 1132
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"CORE\",\n  \"confidence\": 0.78,\n  \"gaza_role\": \"central\",\n  \"main_topic\": \"Photographic reporting on the situation in Gaza following Israeli strikes in response to the Hamas attack\",\n  \"conflict_relevance\": \"The article directly concerns Gaza, Israeli military strikes, Hamas, and the immediate aftermath of the October 2023 attack.\",\n  \"reason\": \"The opening item is explicitly a Gaza photo report about the conflict. Although unrelated General Motors content appears afterward, the Gaza item itself is centrally focused on the conflict.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": true\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:10:38Z",
+  "duration_seconds": 4.597,
+  "error": null
+}

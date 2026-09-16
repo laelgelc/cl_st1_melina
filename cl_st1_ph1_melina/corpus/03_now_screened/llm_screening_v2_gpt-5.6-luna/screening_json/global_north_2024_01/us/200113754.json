@@ -1,0 +1,65 @@
+{
+  "article_id": "200113754",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_01/us/200113754.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_01/us/200113754.json"
+  },
+  "manifest_row": {
+    "article_id": "200113754",
+    "group": "global_north_2024_01",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2024_01/us/200113754.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "background",
+    "main_topic": "Oil prices and energy-company share performance amid Middle East tensions",
+    "conflict_relevance": "The article briefly identifies the Israel-Gaza war and Red Sea shipping disruptions as factors contributing to higher oil prices, but its main focus is financial-market and energy-sector analysis.",
+    "reason": "The conflict is relevant only as geopolitical and supply-chain background to the movement of Shell and BP shares, rather than as the article's central subject.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "df366de9056caf8323cb3ace4099a77fa7481766a5dbc002d4dca64f325f7ee0",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "00b6340c65704e7375d2bc017824da906b3582675eccf23e70718a308c57b3af",
+    "raw_response_text_sha256": "3da4b08bd5eb34426676571f1d18b589ebed7e5e241ae26a289f1a3f4b3c74f9"
+  },
+  "api_metadata": {
+    "id": "resp_06f65a8798e5b78a006aaa05451a7487d29c891f73e429023f",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789527365.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1315,
+      "input_tokens_details": {
+        "cache_write_tokens": 1312,
+        "cached_tokens": 0
+      },
+      "output_tokens": 210,
+      "output_tokens_details": {
+        "reasoning_tokens": 60
+      },
+      "total_tokens": 1525
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Oil prices and energy-company share performance amid Middle East tensions\",\n  \"conflict_relevance\": \"The article briefly identifies the Israel-Gaza war and Red Sea shipping disruptions as factors contributing to higher oil prices, but its main focus is financial-market and energy-sector analysis.\",\n  \"reason\": \"The conflict is relevant only as geopolitical and supply-chain background to the movement of Shell and BP shares, rather than as the article's central subject.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:56:08Z",
+  "duration_seconds": 3.65,
+  "error": null
+}

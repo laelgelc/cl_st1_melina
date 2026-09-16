@@ -1,0 +1,65 @@
+{
+  "article_id": "102770171",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_10/ca/102770171.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_10/ca/102770171.json"
+  },
+  "manifest_row": {
+    "article_id": "102770171",
+    "group": "global_north_2023_10",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2023_10/ca/102770171.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "background",
+    "main_topic": "British Columbia provincial election polling and party prospects",
+    "conflict_relevance": "The article includes several substantive but unrelated snippets about the Israel-Hamas war, efforts to evacuate Canadians from Gaza, Gaza's humanitarian conditions, and protests and hate incidents in Montreal.",
+    "reason": "The main article concerns British Columbia electoral politics, while conflict-related material appears as separate news snippets rather than as part of the central story. These snippets provide meaningful but peripheral discourse relevance.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "ff6dc21e0fe5df83c09bb603fe27991489575ef7c5f739d61921e8eaa6458817",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "ac0925b73817003a6cfae3c23a417a6574cf407f85eca9da6ce6a75927d636d2",
+    "raw_response_text_sha256": "c82c1e94ea28ca19ad4625554338eb6af956d8623562abc78f8311f87c49b82a"
+  },
+  "api_metadata": {
+    "id": "resp_06c7d1908bf638f8006aa9f673d13087d284d62df54ed3a26f",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789523571.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1491,
+      "input_tokens_details": {
+        "cache_write_tokens": 1488,
+        "cached_tokens": 0
+      },
+      "output_tokens": 308,
+      "output_tokens_details": {
+        "reasoning_tokens": 152
+      },
+      "total_tokens": 1799
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"British Columbia provincial election polling and party prospects\",\n  \"conflict_relevance\": \"The article includes several substantive but unrelated snippets about the Israel-Hamas war, efforts to evacuate Canadians from Gaza, Gaza's humanitarian conditions, and protests and hate incidents in Montreal.\",\n  \"reason\": \"The main article concerns British Columbia electoral politics, while conflict-related material appears as separate news snippets rather than as part of the central story. These snippets provide meaningful but peripheral discourse relevance.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T01:52:55Z",
+  "duration_seconds": 3.547,
+  "error": null
+}

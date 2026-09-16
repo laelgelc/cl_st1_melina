@@ -1,0 +1,65 @@
+{
+  "article_id": "113322253",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_09/us/113322253.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_09/us/113322253.json"
+  },
+  "manifest_row": {
+    "article_id": "113322253",
+    "group": "global_north_2024_09",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2024_09/us/113322253.txt"
+  },
+  "screening": {
+    "category": "CORE",
+    "confidence": 0.98,
+    "gaza_role": "central",
+    "main_topic": "Israeli hostage crisis, anti-government protests, and general news updates on September 1, 2024",
+    "conflict_relevance": "The article opens with and prominently updates on protests in Israel demanding a ceasefire and the release of hostages held in Gaza, following the recovery of six hostages' bodies. It directly concerns the Israel-Hamas war, Gaza, military hostages, and Israeli domestic political pressure.",
+    "reason": "Despite containing numerous unrelated Indian news snippets, the headline-associated lead and initial updates are centrally focused on Gaza-related hostage developments and Israeli protests.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": true
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "9729d046a3a763407679168e221fd3544d710d8c21d8c66dee39ce91f4621a78",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "d4ee6e8450e0b9be2e770de354b176bd8c05a24f33d269f930227153aec917ad",
+    "raw_response_text_sha256": "4d68fefa02d9213792d51918975c06bbba89f65dd7d7af3ec73850938f006335"
+  },
+  "api_metadata": {
+    "id": "resp_0fab48205df545ab006aaa16943f0887d28403394802eaf869",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789531796.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1382,
+      "input_tokens_details": {
+        "cache_write_tokens": 1379,
+        "cached_tokens": 0
+      },
+      "output_tokens": 264,
+      "output_tokens_details": {
+        "reasoning_tokens": 86
+      },
+      "total_tokens": 1646
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"CORE\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"central\",\n  \"main_topic\": \"Israeli hostage crisis, anti-government protests, and general news updates on September 1, 2024\",\n  \"conflict_relevance\": \"The article opens with and prominently updates on protests in Israel demanding a ceasefire and the release of hostages held in Gaza, following the recovery of six hostages' bodies. It directly concerns the Israel-Hamas war, Gaza, military hostages, and Israeli domestic political pressure.\",\n  \"reason\": \"Despite containing numerous unrelated Indian news snippets, the headline-associated lead and initial updates are centrally focused on Gaza-related hostage developments and Israeli protests.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": true\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T04:10:05Z",
+  "duration_seconds": 10.111,
+  "error": null
+}

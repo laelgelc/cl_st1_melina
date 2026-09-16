@@ -1,0 +1,65 @@
+{
+  "article_id": "120201401",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_01/ca/120201401.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_01/ca/120201401.json"
+  },
+  "manifest_row": {
+    "article_id": "120201401",
+    "group": "global_north_2025_01",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2025_01/ca/120201401.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "background",
+    "main_topic": "Canadian Liberal Party leadership campaign",
+    "conflict_relevance": "The article reports that pro-Palestinian protesters interrupted Chrystia Freeland's leadership rally and explains that they were protesting the Canadian government's approach to the war in Gaza.",
+    "reason": "The article is primarily about Liberal leadership candidates, carbon pricing, U.S. tariffs, and domestic Canadian politics. Gaza-related protest activity and criticism of government policy form a meaningful but secondary element.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "7665a2b055eae27439cf6f512d898f9b7ab68d8278d8812eebb1cb54da09cf86",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "c3ed047c5566ec28bc89f0bd17741ab7d9f0fa3e29938f4efe922379764cc1c7",
+    "raw_response_text_sha256": "5f1741806d734891bc5229896152029574708fe21323f60379968e873cd52f3c"
+  },
+  "api_metadata": {
+    "id": "resp_0439a95fd340b506006aaa1f350af487d298aac33c072ebb02",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789534005.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1915,
+      "input_tokens_details": {
+        "cache_write_tokens": 1912,
+        "cached_tokens": 0
+      },
+      "output_tokens": 210,
+      "output_tokens_details": {
+        "reasoning_tokens": 56
+      },
+      "total_tokens": 2125
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Canadian Liberal Party leadership campaign\",\n  \"conflict_relevance\": \"The article reports that pro-Palestinian protesters interrupted Chrystia Freeland's leadership rally and explains that they were protesting the Canadian government's approach to the war in Gaza.\",\n  \"reason\": \"The article is primarily about Liberal leadership candidates, carbon pricing, U.S. tariffs, and domestic Canadian politics. Gaza-related protest activity and criticism of government policy form a meaningful but secondary element.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T04:46:47Z",
+  "duration_seconds": 2.771,
+  "error": null
+}

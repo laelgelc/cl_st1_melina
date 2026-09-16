@@ -1,0 +1,65 @@
+{
+  "article_id": "116097405",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_10/ca/116097405.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_10/ca/116097405.json"
+  },
+  "manifest_row": {
+    "article_id": "116097405",
+    "group": "global_north_2024_10",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2024_10/ca/116097405.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.96,
+    "gaza_role": "passing",
+    "main_topic": "Brantford police investigation into two sexual assaults",
+    "conflict_relevance": "The main article is unrelated to Gaza, but an embedded CTVNews.ca top-story snippet reports the killing of Hamas leader Yahya Sinwar by Israeli forces in Gaza.",
+    "reason": "The headline and substantive article content concern a local sexual assault investigation. However, the page includes a meaningful, though very brief, Gaza war news item in an embedded roundup, making it peripheral rather than entirely irrelevant.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "83e68dc9b3aa8948ef31b353d05cfb6cdcbccac3f73043a6430aa3fa46fb7e0c",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "485984e26c3a9b53559d648e963c22b153877f157082424295f31abbf42a7203",
+    "raw_response_text_sha256": "9fce86b396134de54730e85e50d99489a8a09acc7aa1111e720706e042dbf13a"
+  },
+  "api_metadata": {
+    "id": "resp_09c91eb30f2ad8f5006aaa180b984c87d2b1b64c04812a3dbc",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789532171.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1196,
+      "input_tokens_details": {
+        "cache_write_tokens": 1193,
+        "cached_tokens": 0
+      },
+      "output_tokens": 273,
+      "output_tokens_details": {
+        "reasoning_tokens": 112
+      },
+      "total_tokens": 1469
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.96,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Brantford police investigation into two sexual assaults\",\n  \"conflict_relevance\": \"The main article is unrelated to Gaza, but an embedded CTVNews.ca top-story snippet reports the killing of Hamas leader Yahya Sinwar by Israeli forces in Gaza.\",\n  \"reason\": \"The headline and substantive article content concern a local sexual assault investigation. However, the page includes a meaningful, though very brief, Gaza war news item in an embedded roundup, making it peripheral rather than entirely irrelevant.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T04:16:15Z",
+  "duration_seconds": 3.68,
+  "error": null
+}

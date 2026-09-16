@@ -1,0 +1,65 @@
+{
+  "article_id": "200153837",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_01/us/200153837.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_01/us/200153837.json"
+  },
+  "manifest_row": {
+    "article_id": "200153837",
+    "group": "global_north_2024_01",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2024_01/us/200153837.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "background",
+    "main_topic": "Missile and rocket attacks on U.S. forces at Al-Assad Airbase in Iraq",
+    "conflict_relevance": "The article focuses on Iranian-backed militia attacks against U.S. personnel in Iraq, with the Israel-Hamas war in Gaza mentioned as a motivating context for regional attacks.",
+    "reason": "Gaza and the Israel-Hamas war appear in a meaningful explanatory sentence linking the Iraq attacks to broader regional solidarity, but the article is primarily about military escalation involving U.S. forces in Iraq.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "f19172742349d8dc5e48e9dcbdc8c5b34060b99315ec72900dae7a756fe2e51c",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "f7f2ed901bd265776692386cb8ee8028adb5e2bd27cdfe8e50fc85d5c7311c85",
+    "raw_response_text_sha256": "3bec2d23d68c42f19b258d7f34a43b810419baf19b086a58f1db6c33bf8005f8"
+  },
+  "api_metadata": {
+    "id": "resp_0d99639c56259f25006aaa05a0674087d2a35903f5b0d736d2",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789527456.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1173,
+      "input_tokens_details": {
+        "cache_write_tokens": 1170,
+        "cached_tokens": 0
+      },
+      "output_tokens": 216,
+      "output_tokens_details": {
+        "reasoning_tokens": 50
+      },
+      "total_tokens": 1389
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Missile and rocket attacks on U.S. forces at Al-Assad Airbase in Iraq\",\n  \"conflict_relevance\": \"The article focuses on Iranian-backed militia attacks against U.S. personnel in Iraq, with the Israel-Hamas war in Gaza mentioned as a motivating context for regional attacks.\",\n  \"reason\": \"Gaza and the Israel-Hamas war appear in a meaningful explanatory sentence linking the Iraq attacks to broader regional solidarity, but the article is primarily about military escalation involving U.S. forces in Iraq.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:57:39Z",
+  "duration_seconds": 2.753,
+  "error": null
+}

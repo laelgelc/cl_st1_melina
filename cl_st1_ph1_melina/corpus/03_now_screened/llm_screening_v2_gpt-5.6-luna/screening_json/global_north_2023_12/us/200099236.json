@@ -1,0 +1,65 @@
+{
+  "article_id": "200099236",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_12/us/200099236.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_12/us/200099236.json"
+  },
+  "manifest_row": {
+    "article_id": "200099236",
+    "group": "global_north_2023_12",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2023_12/us/200099236.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "background",
+    "main_topic": "Rolling Stone's roundup of its most-read long-form stories of 2023",
+    "conflict_relevance": "The roundup includes a substantial embedded feature about the Hamas attack on the Supernova music festival, the ensuing Israel-Hamas war, and people forced to flee Gaza, but the overall article is primarily a compilation of unrelated cultural, political, and investigative stories.",
+    "reason": "The conflict-related section provides meaningful discourse about the October 7 attack, Hamas, Israel, the ensuing war, and displacement from Gaza. However, it is one item within a broad year-end roundup rather than the central subject of the article.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "f1b0fb0d68a5441a88843279e7fd14008d340dd49d430144829c413cbf0cdd3a",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "ca01b523b746eb362b7e2992f5e0de6a03f3e4365efff4f13380f72cd7f660af",
+    "raw_response_text_sha256": "653432ccc358a6b3c08a8114da8e551c710736529f45f5c05c3a015f6d92969a"
+  },
+  "api_metadata": {
+    "id": "resp_067d8d487418d009006aaa03514afc87d2804989f6151b8b6c",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789526865.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 6764,
+      "input_tokens_details": {
+        "cache_write_tokens": 6761,
+        "cached_tokens": 0
+      },
+      "output_tokens": 436,
+      "output_tokens_details": {
+        "reasoning_tokens": 247
+      },
+      "total_tokens": 7200
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Rolling Stone's roundup of its most-read long-form stories of 2023\",\n  \"conflict_relevance\": \"The roundup includes a substantial embedded feature about the Hamas attack on the Supernova music festival, the ensuing Israel-Hamas war, and people forced to flee Gaza, but the overall article is primarily a compilation of unrelated cultural, political, and investigative stories.\",\n  \"reason\": \"The conflict-related section provides meaningful discourse about the October 7 attack, Hamas, Israel, the ensuing war, and displacement from Gaza. However, it is one item within a broad year-end roundup rather than the central subject of the article.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:48:08Z",
+  "duration_seconds": 24.758,
+  "error": null
+}

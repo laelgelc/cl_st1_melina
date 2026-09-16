@@ -1,0 +1,65 @@
+{
+  "article_id": "104112574",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_12/ca/104112574.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_12/ca/104112574.json"
+  },
+  "manifest_row": {
+    "article_id": "104112574",
+    "group": "global_north_2023_12",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2023_12/ca/104112574.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "background",
+    "main_topic": "Film reviews and a mixed news roundup",
+    "conflict_relevance": "The article is primarily an entertainment review, but it includes substantive embedded news items about Gaza evacuation efforts, Israeli military operations in northern Gaza, and an Israeli raid in the occupied West Bank.",
+    "reason": "The Gaza- and Palestine-related material is meaningful but appears as part of an unrelated collection of news snippets rather than as the focus of the article.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "9a75bca98be3753bd85720f3aa23e5676dec26e775126a8f999e08f8e587939d",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "3798c0a1a3be2dc0d13c5c2caa3eb92d911d411656439d650fa29853e9f3d4f7",
+    "raw_response_text_sha256": "862860b78d8f678df08703867a8e366479061cb549f729f6eeed7415fa5cd1af"
+  },
+  "api_metadata": {
+    "id": "resp_08012433a3eb5f91006aaa0065c0a887d2aef1cb6ba9aaf00e",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789526117.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 4657,
+      "input_tokens_details": {
+        "cache_write_tokens": 4654,
+        "cached_tokens": 0
+      },
+      "output_tokens": 306,
+      "output_tokens_details": {
+        "reasoning_tokens": 157
+      },
+      "total_tokens": 4963
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Film reviews and a mixed news roundup\",\n  \"conflict_relevance\": \"The article is primarily an entertainment review, but it includes substantive embedded news items about Gaza evacuation efforts, Israeli military operations in northern Gaza, and an Israeli raid in the occupied West Bank.\",\n  \"reason\": \"The Gaza- and Palestine-related material is meaningful but appears as part of an unrelated collection of news snippets rather than as the focus of the article.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:35:21Z",
+  "duration_seconds": 4.033,
+  "error": null
+}

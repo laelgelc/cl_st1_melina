@@ -1,0 +1,65 @@
+{
+  "article_id": "120573208",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_01/us/120573208.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_01/us/120573208.json"
+  },
+  "manifest_row": {
+    "article_id": "120573208",
+    "group": "global_north_2025_01",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2025_01/us/120573208.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "passing",
+    "main_topic": "Trump administration freeze on federal grants and loans",
+    "conflict_relevance": "The article briefly mentions alleged funding for condoms in Gaza in the context of government spending cuts, but Gaza is not otherwise discussed.",
+    "reason": "The article is primarily about a U.S. federal funding freeze and statements by White House Press Secretary Karoline Leavitt. Its single Gaza-related reference provides limited but meaningful discourse about U.S. aid spending connected to Gaza, making it peripheral rather than core.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "c5c8255e0cb7b91a4a1b225b329a3f744bd86c32d24a6abdb3acb28e638aba52",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "534ced38146766d304058c0b77a9bd037b5c9ede0128d5116400972a56cdb419",
+    "raw_response_text_sha256": "0213e416ed1d68ea23fd49fb18fc851a20f169811b2de9f9c44ca13963abe2d4"
+  },
+  "api_metadata": {
+    "id": "resp_07e5058850e66efd006aaa21bea48087d2ae440a5f8f3f7374",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789534654.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1169,
+      "input_tokens_details": {
+        "cache_write_tokens": 1166,
+        "cached_tokens": 0
+      },
+      "output_tokens": 207,
+      "output_tokens_details": {
+        "reasoning_tokens": 46
+      },
+      "total_tokens": 1376
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Trump administration freeze on federal grants and loans\",\n  \"conflict_relevance\": \"The article briefly mentions alleged funding for condoms in Gaza in the context of government spending cuts, but Gaza is not otherwise discussed.\",\n  \"reason\": \"The article is primarily about a U.S. federal funding freeze and statements by White House Press Secretary Karoline Leavitt. Its single Gaza-related reference provides limited but meaningful discourse about U.S. aid spending connected to Gaza, making it peripheral rather than core.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T04:57:37Z",
+  "duration_seconds": 2.942,
+  "error": null
+}

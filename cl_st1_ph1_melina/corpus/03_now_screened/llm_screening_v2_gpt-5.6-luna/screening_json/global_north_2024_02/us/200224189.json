@@ -1,0 +1,65 @@
+{
+  "article_id": "200224189",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_02/us/200224189.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_02/us/200224189.json"
+  },
+  "manifest_row": {
+    "article_id": "200224189",
+    "group": "global_north_2024_02",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2024_02/us/200224189.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "gaza_role": "passing",
+    "main_topic": "Ageism and perceptions of older presidential candidates",
+    "conflict_relevance": "Gaza is mentioned only in a photo caption noting that Biden addressed the status of the war; it is not discussed in the article's main argument.",
+    "reason": "The article focuses on ageism, stereotype threat, and evaluations of Biden and Trump. The Gaza reference is incidental and does not provide meaningful conflict-related discourse.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "de6307f84b211a9790cbd37891cff8d841d9c4b541789ae8dd31157ed00483a6",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "3572f2adcde45280656cad425eff485270422e456486169411d51043c71abcd6",
+    "raw_response_text_sha256": "ba4f8805fd47f84d8cb375b836650bd44ecf94322e6ecc0689dd10bd05da6eef"
+  },
+  "api_metadata": {
+    "id": "resp_06217c0ab632abb0006aaa07e3877487d2a8679ede3ed48312",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789528036.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1110,
+      "input_tokens_details": {
+        "cache_write_tokens": 1107,
+        "cached_tokens": 0
+      },
+      "output_tokens": 194,
+      "output_tokens_details": {
+        "reasoning_tokens": 50
+      },
+      "total_tokens": 1304
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Ageism and perceptions of older presidential candidates\",\n  \"conflict_relevance\": \"Gaza is mentioned only in a photo caption noting that Biden addressed the status of the war; it is not discussed in the article's main argument.\",\n  \"reason\": \"The article focuses on ageism, stereotype threat, and evaluations of Biden and Trump. The Gaza reference is incidental and does not provide meaningful conflict-related discourse.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:07:18Z",
+  "duration_seconds": 2.875,
+  "error": null
+}

@@ -1,0 +1,65 @@
+{
+  "article_id": "103498884",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_south_2023_11/pk/103498884.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_south_2023_11/pk/103498884.json"
+  },
+  "manifest_row": {
+    "article_id": "103498884",
+    "group": "global_south_2023_11",
+    "country_code": "pk",
+    "filepath": "corpus/02_now_organised/global_south_2023_11/pk/103498884.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.94,
+    "gaza_role": "substantial",
+    "main_topic": "Petrol and diesel price reductions in Pakistan, with an embedded report on the Israel-Hamas war and humanitarian conditions in Gaza",
+    "conflict_relevance": "The text contains a substantial but apparently separate report on Israeli military operations, Hamas's October 7 attack, civilian deaths, displacement, and the humanitarian situation in Gaza; however, the headline-associated article focuses on Pakistani fuel prices.",
+    "reason": "The Gaza-related material is meaningful and detailed but appears to be an unrelated embedded news item preceding the main article about fuel-price reductions in Pakistan. It is therefore useful for broader discourse analysis but should not be treated as core conflict coverage.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "7dae45afe5b0e0424d743624afa5443a9f23f7832d1a814e5caca8e0940423a8",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "381fd55fe67c1a494d823786e79457bac9589d878f45be21fe9e6bff80334561",
+    "raw_response_text_sha256": "5db49b319584d05f76984fc2cfb2ffbc406e8731ca5e05af1bf21618caaaacb5"
+  },
+  "api_metadata": {
+    "id": "resp_08636e8e603aea28006aaa3626f63887d1aad7ae044ab45ef2",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789539878.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 978,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 418,
+      "output_tokens_details": {
+        "reasoning_tokens": 226
+      },
+      "total_tokens": 1396
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.94,\n  \"gaza_role\": \"substantial\",\n  \"main_topic\": \"Petrol and diesel price reductions in Pakistan, with an embedded report on the Israel-Hamas war and humanitarian conditions in Gaza\",\n  \"conflict_relevance\": \"The text contains a substantial but apparently separate report on Israeli military operations, Hamas's October 7 attack, civilian deaths, displacement, and the humanitarian situation in Gaza; however, the headline-associated article focuses on Pakistani fuel prices.\",\n  \"reason\": \"The Gaza-related material is meaningful and detailed but appears to be an unrelated embedded news item preceding the main article about fuel-price reductions in Pakistan. It is therefore useful for broader discourse analysis but should not be treated as core conflict coverage.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T06:24:43Z",
+  "duration_seconds": 4.695,
+  "error": null
+}

@@ -1,0 +1,65 @@
+{
+  "article_id": "102846928",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_10/ca/102846928.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_10/ca/102846928.json"
+  },
+  "manifest_row": {
+    "article_id": "102846928",
+    "group": "global_north_2023_10",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2023_10/ca/102846928.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.96,
+    "gaza_role": "passing",
+    "main_topic": "Automotive newsletter and unrelated rescue report",
+    "conflict_relevance": "The text briefly mentions Canadian political pressure over the al-Ahli Arab Hospital blast in Gaza and competing Israeli, US, and Hamas accountability claims, but the remainder concerns an off-road rally and a maritime rescue.",
+    "reason": "The Gaza reference is meaningful but limited to a single sentence within a compilation of largely unrelated content, so it is relevant for peripheral discourse analysis but not core conflict coverage.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "335f23814a0f9928998183279a4bea6ff7ae75bdfbc259eb6257e3564e84a345",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "6667fd6d5687959f673c8e93ef097194830db993c042a51a1978ddfb36220f58",
+    "raw_response_text_sha256": "48c4a2ecbf6e7604763ed6ce44a6e1426b937ebefe727ea6f4c4af4a9f01af0f"
+  },
+  "api_metadata": {
+    "id": "resp_0a053302ba771dc1006aa9f684f18887d29f7043a374d07b7f",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789523588.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 833,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 253,
+      "output_tokens_details": {
+        "reasoning_tokens": 96
+      },
+      "total_tokens": 1086
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.96,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Automotive newsletter and unrelated rescue report\",\n  \"conflict_relevance\": \"The text briefly mentions Canadian political pressure over the al-Ahli Arab Hospital blast in Gaza and competing Israeli, US, and Hamas accountability claims, but the remainder concerns an off-road rally and a maritime rescue.\",\n  \"reason\": \"The Gaza reference is meaningful but limited to a single sentence within a compilation of largely unrelated content, so it is relevant for peripheral discourse analysis but not core conflict coverage.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T01:53:12Z",
+  "duration_seconds": 3.909,
+  "error": null
+}

@@ -1,0 +1,65 @@
+{
+  "article_id": "126297456",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_south_2025_06/za/126297456.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_south_2025_06/za/126297456.json"
+  },
+  "manifest_row": {
+    "article_id": "126297456",
+    "group": "global_south_2025_06",
+    "country_code": "za",
+    "filepath": "corpus/02_now_organised/global_south_2025_06/za/126297456.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "background",
+    "main_topic": "International news photography roundup",
+    "conflict_relevance": "Includes a caption about Iranian missile strikes in southern Israel during the Israel-Iran conflict and a caption about a pro-Palestinian protest renaming a beach 'Gaza Beach' during the NATO summit.",
+    "reason": "The article is mainly a general photo roundup covering events in multiple countries. Its Israel-related conflict and Gaza protest captions provide meaningful but limited discourse relevance, so it is peripheral rather than core.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "55d56deddcf238d8e6b3143319cb16bd81440c62f622b8bb2a940328df54d31b",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "530e6a87260f76abad9598919e4bd404c28c2b03e5ce6b2a6b71cc314d960d99",
+    "raw_response_text_sha256": "5c04d5a64a030a7d8d9c294d7fe8e5093d354170c9d6f9bed063de661c4551e7"
+  },
+  "api_metadata": {
+    "id": "resp_080216b35f405f27006aaa4b218da087d1b95e6a3aaa547db0",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789545249.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1706,
+      "input_tokens_details": {
+        "cache_write_tokens": 1703,
+        "cached_tokens": 0
+      },
+      "output_tokens": 236,
+      "output_tokens_details": {
+        "reasoning_tokens": 78
+      },
+      "total_tokens": 1942
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"International news photography roundup\",\n  \"conflict_relevance\": \"Includes a caption about Iranian missile strikes in southern Israel during the Israel-Iran conflict and a caption about a pro-Palestinian protest renaming a beach 'Gaza Beach' during the NATO summit.\",\n  \"reason\": \"The article is mainly a general photo roundup covering events in multiple countries. Its Israel-related conflict and Gaza protest captions provide meaningful but limited discourse relevance, so it is peripheral rather than core.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T07:54:13Z",
+  "duration_seconds": 3.923,
+  "error": null
+}

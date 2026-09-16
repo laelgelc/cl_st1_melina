@@ -1,0 +1,65 @@
+{
+  "article_id": "126248357",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_06/us/126248357.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_06/us/126248357.json"
+  },
+  "manifest_row": {
+    "article_id": "126248357",
+    "group": "global_north_2025_06",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2025_06/us/126248357.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "gaza_role": "boilerplate_or_unrelated",
+    "main_topic": "Kerala electoral politics and Shashi Tharoor's relationship with the Congress and BJP",
+    "conflict_relevance": "The main article is unrelated to Gaza or the Israel-Palestine conflict; Gaza appears only in an appended sentence from a different discussion of global wars.",
+    "reason": "The article primarily analyzes the Nilambur by-election, Congress politics, Shashi Tharoor, and BJP strategy in Kerala. The sole Gaza reference is incidental and part of an apparent unrelated appended snippet, so it does not provide meaningful conflict discourse.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "1227c3759f2db1a5719e0e5d743e04fa69587cd607c542283d646ddc52d0870c",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "d3f7329544365b269a46fe20ca44dace92440e1a7049e8af30b79edb64ff9915",
+    "raw_response_text_sha256": "0128e1e62f45bcd5178aa9ab01d376e335e121d8d2171393966d6bf756ac241d"
+  },
+  "api_metadata": {
+    "id": "resp_0b8d8173a151f7a1006aaa31ad55ac87d18431f2c3dbfd69b3",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789538733.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2157,
+      "input_tokens_details": {
+        "cache_write_tokens": 2154,
+        "cached_tokens": 0
+      },
+      "output_tokens": 291,
+      "output_tokens_details": {
+        "reasoning_tokens": 113
+      },
+      "total_tokens": 2448
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Kerala electoral politics and Shashi Tharoor's relationship with the Congress and BJP\",\n  \"conflict_relevance\": \"The main article is unrelated to Gaza or the Israel-Palestine conflict; Gaza appears only in an appended sentence from a different discussion of global wars.\",\n  \"reason\": \"The article primarily analyzes the Nilambur by-election, Congress politics, Shashi Tharoor, and BJP strategy in Kerala. The sole Gaza reference is incidental and part of an apparent unrelated appended snippet, so it does not provide meaningful conflict discourse.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T06:05:37Z",
+  "duration_seconds": 4.524,
+  "error": null
+}

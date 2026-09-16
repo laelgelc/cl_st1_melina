@@ -1,0 +1,65 @@
+{
+  "article_id": "121881777",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_03/us/121881777.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_03/us/121881777.json"
+  },
+  "manifest_row": {
+    "article_id": "121881777",
+    "group": "global_north_2025_03",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2025_03/us/121881777.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "gaza_role": "passing",
+    "main_topic": "Saturday Night Live satire of the Trump-Zelensky meeting and U.S. political figures",
+    "conflict_relevance": "Gaza appears only in the satirical phrase 'Gaza Hotel and Casino'; the article is otherwise about Ukraine, Trump, Vance, Musk, and U.S. domestic politics.",
+    "reason": "The Gaza reference is a brief comedic aside and does not provide meaningful discourse about Gaza, Palestine, Israel/Palestine, or the related conflict.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "6d266134e78b0ac8af307c7e570a8c89f9fea7a49099b4aeb494fb59153f26de",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "4612095ea8a527ecc7e25cec094da4f4df3c722ae12305eacd3f4fcd1203473a",
+    "raw_response_text_sha256": "278247ca856422478b1d5c6b16df7eebb0b39832cff73e2f26644d596d903523"
+  },
+  "api_metadata": {
+    "id": "resp_01a220a3a823b040006aaa270de7e887d1a25d985b879f0e61",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789536013.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1391,
+      "input_tokens_details": {
+        "cache_write_tokens": 1388,
+        "cached_tokens": 0
+      },
+      "output_tokens": 229,
+      "output_tokens_details": {
+        "reasoning_tokens": 70
+      },
+      "total_tokens": 1620
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Saturday Night Live satire of the Trump-Zelensky meeting and U.S. political figures\",\n  \"conflict_relevance\": \"Gaza appears only in the satirical phrase 'Gaza Hotel and Casino'; the article is otherwise about Ukraine, Trump, Vance, Musk, and U.S. domestic politics.\",\n  \"reason\": \"The Gaza reference is a brief comedic aside and does not provide meaningful discourse about Gaza, Palestine, Israel/Palestine, or the related conflict.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T05:20:16Z",
+  "duration_seconds": 3.139,
+  "error": null
+}

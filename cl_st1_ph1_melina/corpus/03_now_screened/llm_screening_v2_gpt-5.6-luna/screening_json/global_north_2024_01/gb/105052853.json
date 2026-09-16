@@ -1,0 +1,65 @@
+{
+  "article_id": "105052853",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_01/gb/105052853.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_01/gb/105052853.json"
+  },
+  "manifest_row": {
+    "article_id": "105052853",
+    "group": "global_north_2024_01",
+    "country_code": "gb",
+    "filepath": "corpus/02_now_organised/global_north_2024_01/gb/105052853.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.96,
+    "gaza_role": "background",
+    "main_topic": "Manchester City's Premier League match and Kevin De Bruyne's comeback against Newcastle United",
+    "conflict_relevance": "The main article is unrelated sports coverage, but an embedded 'Latest stories' item contains meaningful discussion of pro-Palestine protests, a Gaza resident, and family members in Gaza.",
+    "reason": "The article's primary content is a football match report and live blog. However, the embedded news snippet about Gaza and pro-Palestine protests provides limited but meaningful conflict-related discourse, making the item peripheral rather than excludable.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "5c4b855ccc44fb6e2b63c233d1558fe570c98e19d772074fffaa6acd48e58ec2",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "f2f59b4cf401b72e8f714fb834fe4703dbdd86dfd49c824fb24d3b398e2f3495",
+    "raw_response_text_sha256": "a19367a8e2614f40770e82b5e674f5548b6e0217721907e5c5aab773b05390b6"
+  },
+  "api_metadata": {
+    "id": "resp_023bc14945af5546006aaa03ed75c887d2a37aa2048338c092",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789527021.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 8466,
+      "input_tokens_details": {
+        "cache_write_tokens": 8463,
+        "cached_tokens": 0
+      },
+      "output_tokens": 341,
+      "output_tokens_details": {
+        "reasoning_tokens": 166
+      },
+      "total_tokens": 8807
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.96,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Manchester City's Premier League match and Kevin De Bruyne's comeback against Newcastle United\",\n  \"conflict_relevance\": \"The main article is unrelated sports coverage, but an embedded 'Latest stories' item contains meaningful discussion of pro-Palestine protests, a Gaza resident, and family members in Gaza.\",\n  \"reason\": \"The article's primary content is a football match report and live blog. However, the embedded news snippet about Gaza and pro-Palestine protests provides limited but meaningful conflict-related discourse, making the item peripheral rather than excludable.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:50:24Z",
+  "duration_seconds": 3.396,
+  "error": null
+}

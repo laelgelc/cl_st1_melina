@@ -1,0 +1,65 @@
+{
+  "article_id": "125133827",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_south_2025_05/in/125133827.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_south_2025_05/in/125133827.json"
+  },
+  "manifest_row": {
+    "article_id": "125133827",
+    "group": "global_south_2025_05",
+    "country_code": "in",
+    "filepath": "corpus/02_now_organised/global_south_2025_05/in/125133827.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.98,
+    "gaza_role": "passing",
+    "main_topic": "Indian domestic politics and governance",
+    "conflict_relevance": "Gaza is mentioned only in a reader comment embedded among unrelated political opinion snippets, rather than in the main article.",
+    "reason": "The primary article concerns alleged corruption involving a Gujarat minister's sons. The only Gaza-related content appears in a comment comparing Western responses to civilian deaths in Ukraine and Gaza, making it incidental and unsuitable as substantive conflict coverage.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "eaec539de9d862dae727e575160bab6875ad9806dc8f5d81213aff48634c1b96",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "5bc013ebb1767d6556a039f0a2d352e273c193f5bf7c6063b140f7889ebc43db",
+    "raw_response_text_sha256": "85707355da808d7a3614b219345b714a45b3f5032961fa463b5a6a36523dd74a"
+  },
+  "api_metadata": {
+    "id": "resp_0a67ac55e14a0d2a006aaa48e4c65887d1ae4a686c0ba9d6a6",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789544676.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1135,
+      "input_tokens_details": {
+        "cache_write_tokens": 1132,
+        "cached_tokens": 0
+      },
+      "output_tokens": 253,
+      "output_tokens_details": {
+        "reasoning_tokens": 107
+      },
+      "total_tokens": 1388
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Indian domestic politics and governance\",\n  \"conflict_relevance\": \"Gaza is mentioned only in a reader comment embedded among unrelated political opinion snippets, rather than in the main article.\",\n  \"reason\": \"The primary article concerns alleged corruption involving a Gujarat minister's sons. The only Gaza-related content appears in a comment comparing Western responses to civilian deaths in Ukraine and Gaza, making it incidental and unsuitable as substantive conflict coverage.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T07:44:39Z",
+  "duration_seconds": 3.348,
+  "error": null
+}

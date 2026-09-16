@@ -1,0 +1,65 @@
+{
+  "article_id": "106830825",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_03/us/106830825.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_03/us/106830825.json"
+  },
+  "manifest_row": {
+    "article_id": "106830825",
+    "group": "global_north_2024_03",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2024_03/us/106830825.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "background",
+    "main_topic": "Ukraine's domestic weapons production and military supply constraints",
+    "conflict_relevance": "The article is primarily about the Russia-Ukraine war, but it meaningfully references the Gaza war as a contributing factor in global shortages of gunpowder and rocket propellants.",
+    "reason": "Gaza appears in a substantive sentence linking the war there to worldwide supply-chain bottlenecks affecting weapons production, but the article does not otherwise analyze Gaza, Palestine, or the Israel-Palestine conflict.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "a18166a95dfb599a5e1cfa443cae25d29b678d9e4509199a8eb4d2e2897bba60",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "b78d1c6a513de751c8b7b8e12f5253ab7af87c96a5b84db73d7bb0e2b2ebe8fe",
+    "raw_response_text_sha256": "59e1e6837b0d66153b20a7dd8f1f662852d352c312955f61da04eeda93a2dc35"
+  },
+  "api_metadata": {
+    "id": "resp_0907145918ae30a0006aaa09c122b887d2bf79602714a30773",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789528513.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2754,
+      "input_tokens_details": {
+        "cache_write_tokens": 2751,
+        "cached_tokens": 0
+      },
+      "output_tokens": 214,
+      "output_tokens_details": {
+        "reasoning_tokens": 51
+      },
+      "total_tokens": 2968
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Ukraine's domestic weapons production and military supply constraints\",\n  \"conflict_relevance\": \"The article is primarily about the Russia-Ukraine war, but it meaningfully references the Gaza war as a contributing factor in global shortages of gunpowder and rocket propellants.\",\n  \"reason\": \"Gaza appears in a substantive sentence linking the war there to worldwide supply-chain bottlenecks affecting weapons production, but the article does not otherwise analyze Gaza, Palestine, or the Israel-Palestine conflict.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:15:16Z",
+  "duration_seconds": 3.008,
+  "error": null
+}

@@ -1,0 +1,65 @@
+{
+  "article_id": "102437609",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_10/gb/102437609.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_10/gb/102437609.json"
+  },
+  "manifest_row": {
+    "article_id": "102437609",
+    "group": "global_north_2023_10",
+    "country_code": "gb",
+    "filepath": "corpus/02_now_organised/global_north_2023_10/gb/102437609.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.97,
+    "gaza_role": "background",
+    "main_topic": "Russia-Ukraine war, including battlefield developments and political events",
+    "conflict_relevance": "The article includes a substantive section on the Gaza-Israel violence, its possible exploitation by the Kremlin, Zelensky's response, and Ukrainian casualties, but these issues are secondary to the article's focus on Ukraine.",
+    "reason": "The main article is a Russia-Ukraine live blog. Gaza and Israel-Hamas developments receive meaningful discussion but function primarily as context for their implications for Ukraine and Russian messaging, making the item useful for peripheral rather than core conflict discourse analysis.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "ae9dc8723f4fc3a6a25764a52a6dd625cdcbe2548efdb262cf5c64c77407dcd8",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "2c8a722963c7c11ecff61edd379de9279f240aa19a31e1bf2dd20d51c5decee5",
+    "raw_response_text_sha256": "c00a719240a3722ee304d0bd3c9e36d7c547404f51df0dd154ba0d4428a33d8c"
+  },
+  "api_metadata": {
+    "id": "resp_00dd3bf68ee140ff006aa9f6d085e887d2b4f895f34e336cee",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789523664.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1375,
+      "input_tokens_details": {
+        "cache_write_tokens": 1372,
+        "cached_tokens": 0
+      },
+      "output_tokens": 314,
+      "output_tokens_details": {
+        "reasoning_tokens": 138
+      },
+      "total_tokens": 1689
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.97,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Russia-Ukraine war, including battlefield developments and political events\",\n  \"conflict_relevance\": \"The article includes a substantive section on the Gaza-Israel violence, its possible exploitation by the Kremlin, Zelensky's response, and Ukrainian casualties, but these issues are secondary to the article's focus on Ukraine.\",\n  \"reason\": \"The main article is a Russia-Ukraine live blog. Gaza and Israel-Hamas developments receive meaningful discussion but function primarily as context for their implications for Ukraine and Russian messaging, making the item useful for peripheral rather than core conflict discourse analysis.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T01:54:29Z",
+  "duration_seconds": 4.713,
+  "error": null
+}

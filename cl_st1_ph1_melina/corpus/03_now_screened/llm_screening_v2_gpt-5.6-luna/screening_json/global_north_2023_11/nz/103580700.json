@@ -1,0 +1,65 @@
+{
+  "article_id": "103580700",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_11/nz/103580700.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_11/nz/103580700.json"
+  },
+  "manifest_row": {
+    "article_id": "103580700",
+    "group": "global_north_2023_11",
+    "country_code": "nz",
+    "filepath": "corpus/02_now_organised/global_north_2023_11/nz/103580700.txt"
+  },
+  "screening": {
+    "category": "CORE",
+    "confidence": 0.99,
+    "gaza_role": "central",
+    "main_topic": "Daily situation report on Israeli military operations, casualties, closures, arrests, settlement violence, and humanitarian access in Gaza and the occupied West Bank",
+    "conflict_relevance": "Directly documents the Israel-Gaza war and broader Israeli-Palestinian conflict, including bombardment, fatalities, injuries, displacement-related restrictions, raids, arrests, demolitions, settler attacks, checkpoints, and crossings",
+    "reason": "The article is overwhelmingly devoted to detailed reporting on military actions and their effects across Gaza and the West Bank, with extensive casualty figures and descriptions of occupation-related measures. An appended personal biography and website boilerplate are unrelated, but do not alter the main article's core conflict focus.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": true
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "fa746750ca3bfe6b1fa4d8716caa2e237093aa0df303e068c408df4a408193a9",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "66851f96b945933de301418b8a11bebce0e7998d35ebc490dcec1d161d854d90",
+    "raw_response_text_sha256": "5c663cbe8b7d4d63430b7d97cc53fc5937bf7b43acd567fd7c72080d97bdb15d"
+  },
+  "api_metadata": {
+    "id": "resp_057e972d79bb0a97006aa9fdbf8b1c87d2a095f2ae9a164cfc",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789525439.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 5836,
+      "input_tokens_details": {
+        "cache_write_tokens": 5833,
+        "cached_tokens": 0
+      },
+      "output_tokens": 287,
+      "output_tokens_details": {
+        "reasoning_tokens": 86
+      },
+      "total_tokens": 6123
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"CORE\",\n  \"confidence\": 0.99,\n  \"gaza_role\": \"central\",\n  \"main_topic\": \"Daily situation report on Israeli military operations, casualties, closures, arrests, settlement violence, and humanitarian access in Gaza and the occupied West Bank\",\n  \"conflict_relevance\": \"Directly documents the Israel-Gaza war and broader Israeli-Palestinian conflict, including bombardment, fatalities, injuries, displacement-related restrictions, raids, arrests, demolitions, settler attacks, checkpoints, and crossings\",\n  \"reason\": \"The article is overwhelmingly devoted to detailed reporting on military actions and their effects across Gaza and the West Bank, with extensive casualty figures and descriptions of occupation-related measures. An appended personal biography and website boilerplate are unrelated, but do not alter the main article's core conflict focus.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": true\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:24:03Z",
+  "duration_seconds": 4.19,
+  "error": null
+}

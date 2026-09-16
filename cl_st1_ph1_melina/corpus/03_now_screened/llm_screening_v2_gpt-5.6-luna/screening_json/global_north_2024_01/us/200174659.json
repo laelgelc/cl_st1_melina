@@ -1,0 +1,65 @@
+{
+  "article_id": "200174659",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_01/us/200174659.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_01/us/200174659.json"
+  },
+  "manifest_row": {
+    "article_id": "200174659",
+    "group": "global_north_2024_01",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2024_01/us/200174659.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.97,
+    "gaza_role": "passing",
+    "main_topic": "French President Emmanuel Macron's state visit to Sweden and European security cooperation",
+    "conflict_relevance": "Gaza is mentioned only to explain why Macron's visit was postponed; the article does not discuss the war or related discourse.",
+    "reason": "The article is primarily about France-Sweden relations, NATO, Ukraine, and domestic French politics. Its sole Gaza reference is a brief incidental sentence.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "eb87387e66e1f76a80bd092241062194962f107a6c118a4edd78ce768beff93f",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "110c0783c98b90f533ae4301c32d8cc53fce2fb32db9be52504fb98e691158b9",
+    "raw_response_text_sha256": "80e297ff7395a6912603457e8d1ae903ab5f607907c7e59f87f0dc42c49be8e6"
+  },
+  "api_metadata": {
+    "id": "resp_070cc8785a6a9221006aaa05cf07f487d28120603ff2fb3d3b",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789527503.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1390,
+      "input_tokens_details": {
+        "cache_write_tokens": 1387,
+        "cached_tokens": 0
+      },
+      "output_tokens": 230,
+      "output_tokens_details": {
+        "reasoning_tokens": 87
+      },
+      "total_tokens": 1620
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.97,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"French President Emmanuel Macron's state visit to Sweden and European security cooperation\",\n  \"conflict_relevance\": \"Gaza is mentioned only to explain why Macron's visit was postponed; the article does not discuss the war or related discourse.\",\n  \"reason\": \"The article is primarily about France-Sweden relations, NATO, Ukraine, and domestic French politics. Its sole Gaza reference is a brief incidental sentence.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:58:25Z",
+  "duration_seconds": 2.902,
+  "error": null
+}

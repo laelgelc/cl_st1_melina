@@ -1,0 +1,65 @@
+{
+  "article_id": "123415905",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2025_04/us/123415905.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2025_04/us/123415905.json"
+  },
+  "manifest_row": {
+    "article_id": "123415905",
+    "group": "global_north_2025_04",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2025_04/us/123415905.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "background",
+    "main_topic": "Trump administration freezes and cuts to university research funding",
+    "conflict_relevance": "The article explains that funding actions against Columbia, Northwestern, and Cornell were ostensibly connected to their handling of protests about the Gaza conflict and allegations of antisemitism.",
+    "reason": "The central subject is attacks on US university research funding and academic institutions, while Gaza appears as a meaningful but secondary justification for some of the funding freezes.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "2caf3146dd9661ea5567d7355a17aa7f616f3f118992bab101bfa52edd18c5b7",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "417cda1b8a95c8faa6ce342ddb29c1dd4fa584eefc3a6ce40deedc4017efc38a",
+    "raw_response_text_sha256": "917f6a8fa83da340c12a25203dbd1ae516afb83adba25575de41a5f889d1482d"
+  },
+  "api_metadata": {
+    "id": "resp_0aeb0502f306c898006aaa2a1f84f487d1b3caa103f3f3b814",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789536799.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1597,
+      "input_tokens_details": {
+        "cache_write_tokens": 1594,
+        "cached_tokens": 0
+      },
+      "output_tokens": 293,
+      "output_tokens_details": {
+        "reasoning_tokens": 145
+      },
+      "total_tokens": 1890
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"Trump administration freezes and cuts to university research funding\",\n  \"conflict_relevance\": \"The article explains that funding actions against Columbia, Northwestern, and Cornell were ostensibly connected to their handling of protests about the Gaza conflict and allegations of antisemitism.\",\n  \"reason\": \"The central subject is attacks on US university research funding and academic institutions, while Gaza appears as a meaningful but secondary justification for some of the funding freezes.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T05:33:24Z",
+  "duration_seconds": 6.421,
+  "error": null
+}

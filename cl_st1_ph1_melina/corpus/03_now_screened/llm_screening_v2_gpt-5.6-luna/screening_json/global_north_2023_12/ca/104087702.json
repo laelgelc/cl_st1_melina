@@ -1,0 +1,65 @@
+{
+  "article_id": "104087702",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_12/ca/104087702.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_12/ca/104087702.json"
+  },
+  "manifest_row": {
+    "article_id": "104087702",
+    "group": "global_north_2023_12",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2023_12/ca/104087702.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.99,
+    "gaza_role": "passing",
+    "main_topic": "Municipal property assessment and the cost of building bridge access to developable land",
+    "conflict_relevance": "The main article is unrelated to Gaza, Palestine, Israel, or the broader conflict. A CTVNews.ca sidebar contains a brief unrelated mention of a person reportedly killed in an Israeli airstrike near Gaza City.",
+    "reason": "The only Gaza-related content is an incidental item in a list of unrelated top stories, not part of the main article or its discourse.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "1bc27fd24e4ddbcb30176a67d3b047c38960ff1f29e5c6f412a3525105670279",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "4c05a1d5362ce78a8f7a796b31d89a1173b649d6510754b85ec21191be727e31",
+    "raw_response_text_sha256": "0fe1fe384ac753ed08e21bf8c55faca24cc32ed86dc622c4817c41f97333e850"
+  },
+  "api_metadata": {
+    "id": "resp_02aff1a80b264ea2006aaa0062f2f487d29f4f715377c392b7",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789526114.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1966,
+      "input_tokens_details": {
+        "cache_write_tokens": 1963,
+        "cached_tokens": 0
+      },
+      "output_tokens": 252,
+      "output_tokens_details": {
+        "reasoning_tokens": 93
+      },
+      "total_tokens": 2218
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.99,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Municipal property assessment and the cost of building bridge access to developable land\",\n  \"conflict_relevance\": \"The main article is unrelated to Gaza, Palestine, Israel, or the broader conflict. A CTVNews.ca sidebar contains a brief unrelated mention of a person reportedly killed in an Israeli airstrike near Gaza City.\",\n  \"reason\": \"The only Gaza-related content is an incidental item in a list of unrelated top stories, not part of the main article or its discourse.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:35:19Z",
+  "duration_seconds": 4.844,
+  "error": null
+}

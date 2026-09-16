@@ -1,0 +1,65 @@
+{
+  "article_id": "106961227",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_03/au/106961227.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_03/au/106961227.json"
+  },
+  "manifest_row": {
+    "article_id": "106961227",
+    "group": "global_north_2024_03",
+    "country_code": "au",
+    "filepath": "corpus/02_now_organised/global_north_2024_03/au/106961227.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.93,
+    "gaza_role": "background",
+    "main_topic": "A mixed news roundup covering Australian markets, immigration, corruption, regional decarbonisation, and a story about Gaza-origin refugees arriving in Australia",
+    "conflict_relevance": "The text includes a meaningful but brief account of a family travelling from Gaza to Australia after temporary visa cancellations, including their displacement and first Ramadan away from home.",
+    "reason": "The Gaza-related item is relevant to displacement, migration, and the humanitarian consequences affecting people from Gaza, but it is embedded among several unrelated news snippets and is not the main focus of the overall content.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "4b6f2b077cf78ff5327da7f3cdcf2a91001309f5dad751a06ebe3899d6873ae5",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "6d0e0180c2dbc4357d5088ee2b943391d700ac947c8c6e71ac245da544b04f1a",
+    "raw_response_text_sha256": "e08bce549bc9aec3287a50190c62575e90a168a05cff76addf1f09b746037195"
+  },
+  "api_metadata": {
+    "id": "resp_0e3b62e7be5ae6fe006aaa083fb08087d291379358fbf9769c",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789528127.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 858,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 346,
+      "output_tokens_details": {
+        "reasoning_tokens": 171
+      },
+      "total_tokens": 1204
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.93,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"A mixed news roundup covering Australian markets, immigration, corruption, regional decarbonisation, and a story about Gaza-origin refugees arriving in Australia\",\n  \"conflict_relevance\": \"The text includes a meaningful but brief account of a family travelling from Gaza to Australia after temporary visa cancellations, including their displacement and first Ramadan away from home.\",\n  \"reason\": \"The Gaza-related item is relevant to displacement, migration, and the humanitarian consequences affecting people from Gaza, but it is embedded among several unrelated news snippets and is not the main focus of the overall content.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:08:51Z",
+  "duration_seconds": 4.28,
+  "error": null
+}

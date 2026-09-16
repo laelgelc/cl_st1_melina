@@ -1,0 +1,65 @@
+{
+  "article_id": "116112211",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_10/ca/116112211.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_10/ca/116112211.json"
+  },
+  "manifest_row": {
+    "article_id": "116112211",
+    "group": "global_north_2024_10",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2024_10/ca/116112211.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.78,
+    "gaza_role": "passing",
+    "main_topic": "Investigation into two suspicious deaths in Montreal",
+    "conflict_relevance": "The main article is unrelated to Gaza, but the text includes an embedded news snippet reporting that Israeli forces killed Hamas leader Yahya Sinwar in Gaza.",
+    "reason": "The Gaza-related material is a brief, unrelated embedded news item rather than part of the main article, but it contains a meaningful sentence directly concerning the Israel-Hamas war.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "a74afff8b9bd7d1e48a4cd2a038300a91171e62fcb3d5dbb4e954c2765550765",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "035bb2b5973eb87cb54e1a16f65b9ada1c35e3797be5f4031cd8cf44dc1004de",
+    "raw_response_text_sha256": "58f0380a5b9d9772ec247bcd5ce6ca1398721a8d11465b40531de1aa089cb03f"
+  },
+  "api_metadata": {
+    "id": "resp_0379c2c5b5b7b5f5006aaa180c906887d28e6b3a4af5797ced",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789532172.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1965,
+      "input_tokens_details": {
+        "cache_write_tokens": 1962,
+        "cached_tokens": 0
+      },
+      "output_tokens": 332,
+      "output_tokens_details": {
+        "reasoning_tokens": 184
+      },
+      "total_tokens": 2297
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.78,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"Investigation into two suspicious deaths in Montreal\",\n  \"conflict_relevance\": \"The main article is unrelated to Gaza, but the text includes an embedded news snippet reporting that Israeli forces killed Hamas leader Yahya Sinwar in Gaza.\",\n  \"reason\": \"The Gaza-related material is a brief, unrelated embedded news item rather than part of the main article, but it contains a meaningful sentence directly concerning the Israel-Hamas war.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T04:16:16Z",
+  "duration_seconds": 4.509,
+  "error": null
+}

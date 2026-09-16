@@ -1,0 +1,65 @@
+{
+  "article_id": "108893769",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_06/nz/108893769.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_06/nz/108893769.json"
+  },
+  "manifest_row": {
+    "article_id": "108893769",
+    "group": "global_north_2024_06",
+    "country_code": "nz",
+    "filepath": "corpus/02_now_organised/global_north_2024_06/nz/108893769.txt"
+  },
+  "screening": {
+    "category": "CORE",
+    "confidence": 0.98,
+    "gaza_role": "substantial",
+    "main_topic": "The Israel-Hamas war, Gaza, Israeli leadership, antisemitism, and prospects for a two-state solution",
+    "conflict_relevance": "The latter article is a substantial opinion piece directly addressing the Gaza war, Hamas, Israeli military conduct, Palestinian civilian casualties, hostages, antisemitism, Netanyahu's leadership, and Israeli-Palestinian diplomacy.",
+    "reason": "The text contains two unrelated articles. The first concerns Russia's forcible transfer of Ukrainian children, while the second is centrally focused on Gaza and the broader Israel-Palestine conflict. Because the Gaza article contains extensive, meaningful conflict discourse, the combined item is classified as CORE.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": true
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "133182a9750cd103c36b0186e5391cba271caad7d4a3dd7fc89e5aa79dd77a4a",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "170b629877d96dfc1cf91466ac9433ac8a69d0746a5b9086b82fdb310466114e",
+    "raw_response_text_sha256": "ed4dec9ebab553bab7a65a8b674173cfd957918786b758f8862cd4736acfcb0c"
+  },
+  "api_metadata": {
+    "id": "resp_0203d4ca20c1bb88006aaa10c66f9487d28f87ff53b2f4b821",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789530310.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 6087,
+      "input_tokens_details": {
+        "cache_write_tokens": 6084,
+        "cached_tokens": 0
+      },
+      "output_tokens": 375,
+      "output_tokens_details": {
+        "reasoning_tokens": 179
+      },
+      "total_tokens": 6462
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"CORE\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"substantial\",\n  \"main_topic\": \"The Israel-Hamas war, Gaza, Israeli leadership, antisemitism, and prospects for a two-state solution\",\n  \"conflict_relevance\": \"The latter article is a substantial opinion piece directly addressing the Gaza war, Hamas, Israeli military conduct, Palestinian civilian casualties, hostages, antisemitism, Netanyahu's leadership, and Israeli-Palestinian diplomacy.\",\n  \"reason\": \"The text contains two unrelated articles. The first concerns Russia's forcible transfer of Ukrainian children, while the second is centrally focused on Gaza and the broader Israel-Palestine conflict. Because the Gaza article contains extensive, meaningful conflict discourse, the combined item is classified as CORE.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": true\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:45:15Z",
+  "duration_seconds": 4.731,
+  "error": null
+}

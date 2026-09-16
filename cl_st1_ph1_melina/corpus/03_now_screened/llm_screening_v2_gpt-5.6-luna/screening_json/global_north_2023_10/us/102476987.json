@@ -1,0 +1,65 @@
+{
+  "article_id": "102476987",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2023_10/us/102476987.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2023_10/us/102476987.json"
+  },
+  "manifest_row": {
+    "article_id": "102476987",
+    "group": "global_north_2023_10",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2023_10/us/102476987.txt"
+  },
+  "screening": {
+    "category": "EXCLUDE",
+    "confidence": 0.93,
+    "gaza_role": "boilerplate_or_unrelated",
+    "main_topic": "Obituary of celebrity chef Michael Chiarello",
+    "conflict_relevance": "The main article concerns the death and career of a chef; Israel-Hamas and Gaza-related headlines appear only as unrelated embedded video links.",
+    "reason": "The conflict material is limited to a set of unrelated headlines in a multi-item page and is not developed in the article's main text.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "d8f17ed6644878d1a9e832159538e67887789346664fdf755fae54812e4e1403",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "6a874f9d55864c8c023e1840a59df038ccd97f99f5e0c17c9dd0fc6b5f8dc69e",
+    "raw_response_text_sha256": "21bb856effcc827ac38145abdbcfd23d4f6d30e0dc5ca89f110e9e740bebbfa2"
+  },
+  "api_metadata": {
+    "id": "resp_0831f4a8cb471b90006aa9f85aca5487d2872e24085d856caa",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789524058.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 870,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 375,
+      "output_tokens_details": {
+        "reasoning_tokens": 232
+      },
+      "total_tokens": 1245
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"EXCLUDE\",\n  \"confidence\": 0.93,\n  \"gaza_role\": \"boilerplate_or_unrelated\",\n  \"main_topic\": \"Obituary of celebrity chef Michael Chiarello\",\n  \"conflict_relevance\": \"The main article concerns the death and career of a chef; Israel-Hamas and Gaza-related headlines appear only as unrelated embedded video links.\",\n  \"reason\": \"The conflict material is limited to a set of unrelated headlines in a multi-item page and is not developed in the article's main text.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T02:01:04Z",
+  "duration_seconds": 6.013,
+  "error": null
+}

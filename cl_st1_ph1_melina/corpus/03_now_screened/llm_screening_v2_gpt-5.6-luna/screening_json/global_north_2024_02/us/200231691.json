@@ -1,0 +1,65 @@
+{
+  "article_id": "200231691",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_02/us/200231691.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_02/us/200231691.json"
+  },
+  "manifest_row": {
+    "article_id": "200231691",
+    "group": "global_north_2024_02",
+    "country_code": "us",
+    "filepath": "corpus/02_now_organised/global_north_2024_02/us/200231691.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.98,
+    "gaza_role": "background",
+    "main_topic": "U.S. congressional debate over military aid to Ukraine following Alexei Navalny's death",
+    "conflict_relevance": "The article briefly identifies aid for Israel's war against Hamas and humanitarian assistance for Gaza as components of a broader foreign aid package, but does not substantively discuss the Gaza conflict.",
+    "reason": "The main article concerns Ukraine, Russia, Navalny, and U.S. congressional support for Ukraine. Gaza and Israel-Palestine appear meaningfully but only as background details in the description of the supplemental aid bill.",
+    "multi_article_or_snippet_issue": false,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "2294050f927696a936ba7a9f8529ba52f22df5f8589202b88d0b5314fbbf0480",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "8625f9f3723d44c82bcec700c8acd1d39266eb786fd39413af2576623fee595a",
+    "raw_response_text_sha256": "986805282d4ac6a57ec0d1bc0761562db586df4d3a83c84fe8e59ab351f21d29"
+  },
+  "api_metadata": {
+    "id": "resp_0624f0cdd13bd8b2006aaa07f35c9087d29416d265330f6ae8",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789528051.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1360,
+      "input_tokens_details": {
+        "cache_write_tokens": 1357,
+        "cached_tokens": 0
+      },
+      "output_tokens": 251,
+      "output_tokens_details": {
+        "reasoning_tokens": 79
+      },
+      "total_tokens": 1611
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.98,\n  \"gaza_role\": \"background\",\n  \"main_topic\": \"U.S. congressional debate over military aid to Ukraine following Alexei Navalny's death\",\n  \"conflict_relevance\": \"The article briefly identifies aid for Israel's war against Hamas and humanitarian assistance for Gaza as components of a broader foreign aid package, but does not substantively discuss the Gaza conflict.\",\n  \"reason\": \"The main article concerns Ukraine, Russia, Navalny, and U.S. congressional support for Ukraine. Gaza and Israel-Palestine appear meaningfully but only as background details in the description of the supplemental aid bill.\",\n  \"multi_article_or_snippet_issue\": false,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T03:07:36Z",
+  "duration_seconds": 5.073,
+  "error": null
+}

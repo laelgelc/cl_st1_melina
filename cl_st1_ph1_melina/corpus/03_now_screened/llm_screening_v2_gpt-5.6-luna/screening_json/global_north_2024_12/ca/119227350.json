@@ -1,0 +1,65 @@
+{
+  "article_id": "119227350",
+  "status": "success",
+  "input": {
+    "manifest_file": "corpus/palestine_now.ndjson",
+    "article_file": "corpus/02_now_organised/global_north_2024_12/ca/119227350.txt",
+    "prompt_file": "llm_screening_prompts/llm_screening_v2.md"
+  },
+  "output": {
+    "per_article_json": "corpus/03_now_screened/llm_screening_v2_gpt-5.6-luna/screening_json/global_north_2024_12/ca/119227350.json"
+  },
+  "manifest_row": {
+    "article_id": "119227350",
+    "group": "global_north_2024_12",
+    "country_code": "ca",
+    "filepath": "corpus/02_now_organised/global_north_2024_12/ca/119227350.txt"
+  },
+  "screening": {
+    "category": "PERIPHERAL",
+    "confidence": 0.91,
+    "gaza_role": "passing",
+    "main_topic": "A dispute over tree removal and proposed development in Winnipeg's Lemay Forest",
+    "conflict_relevance": "The main article is unrelated to Gaza or the Israel-Palestine conflict, but an embedded latest-stories item briefly reports on the killing of Israeli hostages in Gaza and protests over a hostage deal.",
+    "reason": "The conflict-related material appears only as an unrelated news snippet in a roundup section rather than as part of the article's main subject. It is meaningful but incidental, so the item is peripheral rather than core.",
+    "multi_article_or_snippet_issue": true,
+    "recommended_for_main_corpus": false
+  },
+  "model": {
+    "configured_model": "gpt-5.6-luna",
+    "response_model": "gpt-5.6-luna"
+  },
+  "hashes": {
+    "manifest_file_sha256": "708c3af9c4ce12912d3849c0139eebca82fe2b01773e602f6280777a0fafbf28",
+    "article_text_sha256": "0377af795cf3fb73862509384ba959d96fad072788022037e1ea22f4728eb343",
+    "prompt_template_sha256": "67ba31f8bc3e2e3a5cc0b7cdff885e18373be19410de9ec8d4a69cf87af681e5",
+    "rendered_prompt_sha256": "22760e5fbdc4ee2709181f8efac5f0b06b89de762a6da78fe6a5e62eb4ce2576",
+    "raw_response_text_sha256": "a3dc9f202f275bad3237978d799a5042b9b5adc0e57e0308097dc4a6cb7d115e"
+  },
+  "api_metadata": {
+    "id": "resp_08a7d545ba861430006aaa1d2711a087d2ab38ede6c5fd9fbb",
+    "model": "gpt-5.6-luna",
+    "created_at": 1789533479.0,
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2443,
+      "input_tokens_details": {
+        "cache_write_tokens": 2440,
+        "cached_tokens": 0
+      },
+      "output_tokens": 368,
+      "output_tokens_details": {
+        "reasoning_tokens": 196
+      },
+      "total_tokens": 2811
+    }
+  },
+  "raw_response_text": "{\n  \"category\": \"PERIPHERAL\",\n  \"confidence\": 0.91,\n  \"gaza_role\": \"passing\",\n  \"main_topic\": \"A dispute over tree removal and proposed development in Winnipeg's Lemay Forest\",\n  \"conflict_relevance\": \"The main article is unrelated to Gaza or the Israel-Palestine conflict, but an embedded latest-stories item briefly reports on the killing of Israeli hostages in Gaza and protests over a hostage deal.\",\n  \"reason\": \"The conflict-related material appears only as an unrelated news snippet in a roundup section rather than as part of the article's main subject. It is meaningful but incidental, so the item is peripheral rather than core.\",\n  \"multi_article_or_snippet_issue\": true,\n  \"recommended_for_main_corpus\": false\n}",
+  "temperature": 0.0,
+  "temperature_sent_to_api": false,
+  "max_output_tokens": 1000,
+  "max_output_tokens_sent_to_api": true,
+  "created_at": "2026-09-16T04:38:02Z",
+  "duration_seconds": 3.289,
+  "error": null
+}
