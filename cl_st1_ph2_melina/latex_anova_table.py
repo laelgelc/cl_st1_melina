@@ -1,22 +1,31 @@
 #!/usr/bin/env python3
 """
-Generate a LaTeX ANOVA table for decade effects.
+Generate a LaTeX ANOVA table for group effects.
 
 Each table row lists F, p, R², and percent R² for one factor dimension.
 
 Default expected inputs:
     sas/output_<project>/<project>_scores_only.tsv
-    sas/output_<project>/anova_decade_f<n>.tsv
-    sas/output_<project>/params_decade_f<n>.tsv
+    sas/output_<project>/anova_group_f<n>.tsv
+    sas/output_<project>/params_group_f<n>.tsv
 
 Default output:
-    latex_tables/anova_decade.tex
+    latex_tables/anova_group.tex
 
 The project name is inferred from the current working directory unless supplied
 explicitly with --project.
 
 The script handles SAS-style p-values such as:
     <.0001
+
+Typical usage from the project root:
+    python latex_anova_table.py
+
+Optional explicit usage:
+    python latex_anova_table.py \
+        --project cl_st1_ph2_melina \
+        --input-dir sas/output_cl_st1_ph2_melina \
+        --output-dir latex_tables
 """
 
 from __future__ import annotations
@@ -31,19 +40,20 @@ import pandas as pd
 
 DEFAULT_PROJECT = Path.cwd().name
 DEFAULT_OUTPUT_DIR = Path("latex_tables")
+DEFAULT_EFFECT = "group"
 
 
 def parse_args() -> argparse.Namespace:
     """Parse command-line arguments."""
     parser = argparse.ArgumentParser(
-        description="Generate LaTeX ANOVA table for decade effects."
+        description="Generate LaTeX ANOVA table for group effects."
     )
 
     parser.add_argument(
         "--project",
         default=DEFAULT_PROJECT,
         help=(
-            "Project name, e.g. cl_st1_ph2_andrea or cl_st1_ph3_andrea. "
+            "Project name, e.g. cl_st1_ph2_melina or cl_st1_ph3_melina. "
             "Default: current directory name."
         ),
     )
@@ -59,6 +69,14 @@ def parse_args() -> argparse.Namespace:
         "--output-dir",
         default=str(DEFAULT_OUTPUT_DIR),
         help="Directory where LaTeX table files will be written.",
+    )
+    parser.add_argument(
+        "--effect",
+        default=DEFAULT_EFFECT,
+        help=(
+            "Model effect/source name to report. "
+            "Default: group."
+        ),
     )
 
     return parser.parse_args()
@@ -135,6 +153,26 @@ def format_p_value(value: float, display_override: str | None = None) -> str:
     return f"{value:.3f}"
 
 
+def latex_escape(text: str) -> str:
+    """Escape characters that have special meaning in LaTeX."""
+    replacements = {
+        "\\": r"\textbackslash{}",
+        "_": r"\_",
+        "%": r"\%",
+        "&": r"\&",
+        "#": r"\#",
+        "{": r"\{",
+        "}": r"\}",
+        "^": r"\textasciicircum{}",
+        "~": r"\textasciitilde{}",
+    }
+
+    for original, escaped in replacements.items():
+        text = text.replace(original, escaped)
+
+    return text
+
+
 def detect_dims(scores_only_path: Path) -> list[int]:
     """Detect available factor dimensions from columns fac1, fac2, etc."""
     if not scores_only_path.exists():
@@ -175,7 +213,7 @@ def read_anova_row(anova_file: Path, source_name: str) -> pd.Series:
     selected = df[
         (df["HypothesisType"] == 1)
         & (df["Source"].astype(str).str.lower() == source_name_lc)
-        ]
+    ]
 
     if selected.empty:
         selected = df[df["HypothesisType"] == 1]
@@ -186,19 +224,20 @@ def read_anova_row(anova_file: Path, source_name: str) -> pd.Series:
     return selected.iloc[0]
 
 
-def make_decade_table(
+def make_effect_table(
         input_dir: Path,
         output_dir: Path,
         dims: list[int],
+        effect: str,
 ) -> Path:
-    """Create the LaTeX ANOVA table for decade effects."""
+    """Create the LaTeX ANOVA table for the requested effect."""
     rows = []
 
     for dim in dims:
-        anova_file = input_dir / f"anova_decade_f{dim}.tsv"
-        params_file = input_dir / f"params_decade_f{dim}.tsv"
+        anova_file = input_dir / f"anova_{effect}_f{dim}.tsv"
+        params_file = input_dir / f"params_{effect}_f{dim}.tsv"
 
-        anova_row = read_anova_row(anova_file, source_name="decade")
+        anova_row = read_anova_row(anova_file, source_name=effect)
 
         f_value = float(anova_row["FValue"])
         p_value, p_display_override = parse_sas_p_value(anova_row["ProbF"])
@@ -217,13 +256,16 @@ def make_decade_table(
         )
 
     output_dir.mkdir(exist_ok=True, parents=True)
-    output_path = output_dir / "anova_decade.tex"
+    output_path = output_dir / f"anova_{effect}.tex"
+
+    effect_title = effect.replace("_", " ").title()
+    escaped_effect = latex_escape(effect)
 
     with output_path.open("w", encoding="utf-8") as f:
         f.write("\\begin{table}[H]\n")
         f.write("  \\centering\n")
-        f.write("  \\caption{ANOVA Results by Decade}\n")
-        f.write("  \\label{tab:anova_decade}\n")
+        f.write(f"  \\caption{{ANOVA Results by {effect_title}}}\n")
+        f.write(f"  \\label{{tab:anova_{escaped_effect}}}\n")
         f.write("  \\begin{tabular}{l r r r r}\n")
         f.write("    Dim. & F & p & R$^2$ & \\% \\\\\n")
         f.write("    \\hline\n")
@@ -245,19 +287,25 @@ def main() -> None:
     args = parse_args()
 
     project = args.project
+    effect = args.effect.strip()
     input_dir = resolve_input_dir(project, args.input_dir)
     output_dir = Path(args.output_dir)
+
+    if not effect:
+        raise ValueError("--effect must not be empty")
 
     scores_only_path = input_dir / f"{project}_scores_only.tsv"
     dims = detect_dims(scores_only_path)
 
-    output_path = make_decade_table(
+    output_path = make_effect_table(
         input_dir=input_dir,
         output_dir=output_dir,
         dims=dims,
+        effect=effect,
     )
 
     print(f"Project: {project}")
+    print(f"Effect: {effect}")
     print(f"Input directory: {input_dir}")
     print(f"Detected dimensions: {', '.join(map(str, dims))}")
     print(f"LaTeX ANOVA table written to: {output_path}")
