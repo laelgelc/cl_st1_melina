@@ -542,7 +542,7 @@ def main() -> None:
             example_id = 1
 
             # Top group: more examples.
-            top_group_df = sorted_df[scores_df[group_column] == top_group]
+            top_group_df = sorted_df[sorted_df[group_column] == top_group]
 
             for _, row in top_group_df.iterrows():
                 if row[factor_column] == 0:
@@ -583,7 +583,7 @@ def main() -> None:
 
             # Other groups: fewer examples each.
             for group in other_groups:
-                group_df = sorted_df[scores_df[group_column] == group]
+                group_df = sorted_df[sorted_df[group_column] == group]
                 count = 0
 
                 for _, row in group_df.iterrows():
