@@ -25,3 +25,13 @@ python keylemmas.py \
 
 Output: `corpus/06_keylemmas/<group>.tsv`
 
+## 3. Select a stratified keyword set
+
+```shell
+python select_kws_stratified.py \
+    --per-group 25 \
+    --max-total 1200
+```
+
+Output: `corpus/07_kw_selected/keywords.txt
+
