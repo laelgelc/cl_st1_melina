@@ -1,0 +1,107 @@
+ 
+ 1          OPTIONS NONOTES NOSTIMER NOSOURCE NOSYNTAXCHECK;
+ 68         
+ 69         /* turn missing values to zeros */
+ 70         
+ 71         proc stdize data = scores out=scores reponly missing=0;
+ 72         var &names ;
+ 73         run;
+ 
+ NOTE: There were 26528 observations read from the data set WORK.SCORES.
+ NOTE: The data set WORK.SCORES has 26528 observations and 1052 variables.
+ NOTE: PROCEDURE STDIZE used (Total process time):
+       real time           0.61 seconds
+       user cpu time       0.48 seconds
+       system cpu time     0.12 seconds
+       memory              5674.00k
+       OS Memory           33532.00k
+       Timestamp           17/09/2026 06:32:36 PM
+       Step Count                        381  Switch Count  5
+       Page Faults                       0
+       Page Reclaims                     681
+       Page Swaps                        0
+       Voluntary Context Switches        19
+       Involuntary Context Switches      2
+       Block Input Operations            0
+       Block Output Operations           453128
+       
+ 
+ 74         
+ 75         proc sort data = scores ;
+ 76         by filename ;
+ 77         run;
+ 
+ NOTE: There were 26528 observations read from the data set WORK.SCORES.
+ NOTE: The data set WORK.SCORES has 26528 observations and 1052 variables.
+ NOTE: PROCEDURE SORT used (Total process time):
+       real time           0.33 seconds
+       user cpu time       0.08 seconds
+       system cpu time     0.26 seconds
+       memory              232137.21k
+       OS Memory           259892.00k
+       Timestamp           17/09/2026 06:32:37 PM
+       Step Count                        382  Switch Count  5
+       Page Faults                       0
+       Page Reclaims                     56716
+       Page Swaps                        0
+       Voluntary Context Switches        20
+       Involuntary Context Switches      3
+       Block Input Operations            0
+       Block Output Operations           453128
+       
+ 
+ 78         
+ 79         data scores_grouped;
+ 80             set scores;
+ 81             length group $40;
+ WARNING: Length of character variable group has already been set. 
+          Use the LENGTH statement as the very first statement in the DATA STEP to declare the length of a character variable.
+ 82             group = group;
+ 83         run;
+ 
+ NOTE: There were 26528 observations read from the data set WORK.SCORES.
+ NOTE: The data set WORK.SCORES_GROUPED has 26528 observations and 1052 variables.
+ NOTE: DATA statement used (Total process time):
+       real time           0.15 seconds
+       user cpu time       0.03 seconds
+       system cpu time     0.12 seconds
+       memory              4748.21k
+       OS Memory           32944.00k
+       Timestamp           17/09/2026 06:32:37 PM
+       Step Count                        383  Switch Count  5
+       Page Faults                       0
+       Page Reclaims                     499
+       Page Swaps                        0
+       Voluntary Context Switches        20
+       Involuntary Context Switches      0
+       Block Input Operations            0
+       Block Output Operations           453128
+       
+ 
+ 84         
+ 85         data scores_only (KEEP= filename group group &factorvars );
+ 86         set scores_grouped ;
+ 87         run;
+ 
+ NOTE: There were 26528 observations read from the data set WORK.SCORES_GROUPED.
+ NOTE: The data set WORK.SCORES_ONLY has 26528 observations and 11 variables.
+ NOTE: DATA statement used (Total process time):
+       real time           0.05 seconds
+       user cpu time       0.02 seconds
+       system cpu time     0.05 seconds
+       memory              4256.53k
+       OS Memory           32944.00k
+       Timestamp           17/09/2026 06:32:37 PM
+       Step Count                        384  Switch Count  5
+       Page Faults                       0
+       Page Reclaims                     493
+       Page Swaps                        0
+       Voluntary Context Switches        21
+       Involuntary Context Switches      0
+       Block Input Operations            0
+       Block Output Operations           5640
+       
+ 
+ 88         
+ 89         OPTIONS NONOTES NOSTIMER NOSOURCE NOSYNTAXCHECK;
+ 99         

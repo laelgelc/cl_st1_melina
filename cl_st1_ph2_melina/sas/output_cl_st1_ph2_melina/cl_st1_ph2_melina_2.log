@@ -1,0 +1,55 @@
+ 
+ 1          OPTIONS NONOTES NOSTIMER NOSOURCE NOSYNTAXCHECK;
+ NOTE: ODS statements in the SAS Studio environment may disable some output features.
+ 69         
+ 70         ODS EXCLUDE NONE;
+ 71         
+ 72         proc factor fuzz=0.3 data= polychor (type=corr) OUTSTAT= fout NOPRINT
+ 73         method=principal
+ 74         plots=scree
+ 75         mineigen=1
+ 76         reorder
+ 77         heywood
+ 78         nfactors=100
+ 79         nobs=&nobs;
+ 80         var &names ;
+ 81         run;
+ 
+ NOTE: The PLOTS= option is ignored with NOPRINT.
+ WARNING: Conditional variance of v000050 is zero.
+ WARNING: Conditional variance of v000186 is zero.
+ WARNING: Conditional variance of v000436 is zero.
+ WARNING: Conditional variance of v000467 is zero.
+ WARNING: Conditional variance of v000502 is zero.
+ WARNING: Conditional variance of v000528 is zero.
+ WARNING: Conditional variance of v000634 is zero.
+ WARNING: Conditional variance of v000644 is zero.
+ WARNING: Conditional variance of v000693 is zero.
+ WARNING: Conditional variance of v000724 is zero.
+ WARNING: Conditional variance of v000857 is zero.
+ WARNING: Conditional variance of v000860 is zero.
+ WARNING: Conditional variance of v000871 is zero.
+ WARNING: Conditional variance of v000979 is zero.
+ WARNING: Conditional variance of v000999 is zero.
+ NOTE: 100 factors will be retained by the NFACTOR criterion.
+ NOTE: The data set WORK.FOUT has 1147 observations and 1043 variables.
+ NOTE: PROCEDURE FACTOR used (Total process time):
+       real time           0.45 seconds
+       user cpu time       0.44 seconds
+       system cpu time     0.01 seconds
+       memory              15884.53k
+       OS Memory           39420.00k
+       Timestamp           17/09/2026 06:25:51 PM
+       Step Count                        130  Switch Count  3
+       Page Faults                       0
+       Page Reclaims                     1468
+       Page Swaps                        0
+       Voluntary Context Switches        22
+       Involuntary Context Switches      11
+       Block Input Operations            0
+       Block Output Operations           27664
+       
+ 
+ 82         
+ 83         OPTIONS NONOTES NOSTIMER NOSOURCE NOSYNTAXCHECK;
+ 93         
