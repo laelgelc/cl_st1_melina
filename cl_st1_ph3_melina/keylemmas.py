@@ -43,7 +43,7 @@ VALID_TAG_PREFIXES = (
 #    "WRB",  # Wh-adverbs
 #    "WDT",  # Wh-determiners
 #    "CD",   # Coordinating conjunctions
-#    "IN",    # Prepositions
+#    "IN",   # Prepositions
 )
 
 # Lemmas to exclude after lowercasing.
