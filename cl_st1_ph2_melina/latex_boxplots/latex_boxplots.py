@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Generate TikZ boxplots in LaTeX for factor dimensions by decade.
+Generate TikZ boxplots in LaTeX for factor dimensions by group.
 
 This script is expected to be located in:
 
@@ -9,17 +9,17 @@ This script is expected to be located in:
 Default input, resolved relative to the project directory:
 
     ../sas/output_<project>/<project>_scores_only.tsv
-    ../sas/output_<project>/params_decade_f<n>.tsv
+    ../sas/output_<project>/params_group_f<n>.tsv
 
 where <project> is inferred from the parent directory name, for example:
 
-    cl_st1_ph2_andrea
-    cl_st1_ph3_andrea
+    cl_st1_ph2_melina
+    cl_st1_ph3_melina
 
 Default output:
 
-    latex_boxplots/slides/boxplot_f<dim>_by_decade.tex
-    latex_boxplots/slides/mosaic_by_decade.tex
+    latex_boxplots/slides/boxplot_f<dim>_by_group.tex
+    latex_boxplots/slides/mosaic_by_group.tex
 
 Typical usage from inside latex_boxplots/:
 
@@ -32,8 +32,8 @@ Typical usage from the project root:
 Optional explicit usage:
 
     python latex_boxplots.py \
-        --project cl_st1_ph3_andrea \
-        --sas-output-dir ../sas/output_cl_st1_ph3_andrea \
+        --project cl_st1_ph3_melina \
+        --sas-output-dir ../sas/output_cl_st1_ph3_melina \
         --output-dir slides
 """
 
@@ -57,14 +57,14 @@ DEFAULT_OUTPUT_DIR = SCRIPT_DIR / "slides"
 def parse_args() -> argparse.Namespace:
     """Parse command-line arguments."""
     parser = argparse.ArgumentParser(
-        description="Generate LaTeX/TikZ factor-score boxplots by decade."
+        description="Generate LaTeX/TikZ factor-score boxplots by group."
     )
 
     parser.add_argument(
         "--project",
         default=DEFAULT_PROJECT,
         help=(
-            "Project name, e.g. cl_st1_ph2_andrea or cl_st1_ph3_andrea. "
+            "Project name, e.g. cl_st1_ph2_melina or cl_st1_ph3_melina. "
             "Default: inferred from the parent directory name."
         ),
     )
@@ -82,6 +82,14 @@ def parse_args() -> argparse.Namespace:
         help=(
             "Directory where LaTeX boxplot files will be written. "
             "Default: latex_boxplots/slides."
+        ),
+    )
+    parser.add_argument(
+        "--group-column",
+        default="group",
+        help=(
+            "Column in the scores-only TSV used for grouping. "
+            "Default: group."
         ),
     )
 
@@ -148,6 +156,12 @@ def latex_escape(text: str) -> str:
     return text
 
 
+def natural_sort_key(text: str) -> list[int | str]:
+    """Return a natural-sort key that treats digit runs as integers."""
+    parts = re.split(r"(\d+)", str(text))
+    return [int(part) if part.isdigit() else part.lower() for part in parts]
+
+
 def compute_boxplot_stats(series: pd.Series) -> tuple[float, float, float, float, float]:
     """Compute lower whisker, Q1, median, Q3, and upper whisker."""
     q1, median, q3 = series.quantile([0.25, 0.5, 0.75])
@@ -177,15 +191,9 @@ def detect_dims(df: pd.DataFrame, input_file: Path) -> list[int]:
     return dims
 
 
-def sort_decade_values(values: list[str]) -> list[str]:
-    """Sort decade labels numerically where possible."""
-    def key(value: str) -> tuple[int, str]:
-        value = str(value)
-        if value.isdigit():
-            return int(value), value
-        return 999999, value
-
-    return sorted(values, key=key)
+def sort_group_values(values: list[str]) -> list[str]:
+    """Sort group labels naturally."""
+    return sorted(values, key=natural_sort_key)
 
 
 def generate_boxplot(
@@ -203,7 +211,7 @@ def generate_boxplot(
         raise ValueError(f"Column not found in dataframe: {column}")
 
     means = df.groupby(group_var)[column].mean()
-    groups = sort_decade_values([str(group) for group in means.index.tolist()])
+    groups = sort_group_values([str(group) for group in means.index.tolist()])
     labels = [latex_escape(str(group)) for group in groups]
     total = len(groups)
 
@@ -242,7 +250,7 @@ def generate_boxplot(
         outliers = values[
             (values < q1 - 1.5 * iqr)
             | (values > q3 + 1.5 * iqr)
-            ]
+        ]
 
         if not outliers.empty:
             coords = " ".join(f"({index},{value})" for value in sorted(outliers))
@@ -333,10 +341,11 @@ def generate_mosaic(
 
 
 def main() -> None:
-    """Generate all decade boxplots and the decade mosaic."""
+    """Generate all group boxplots and the group mosaic."""
     args = parse_args()
 
     project = args.project
+    group_column = args.group_column
     sas_output_dir, output_dir = resolve_paths(args)
     output_dir.mkdir(exist_ok=True, parents=True)
 
@@ -347,29 +356,29 @@ def main() -> None:
 
     df = pd.read_csv(input_file, sep="\t")
 
-    if "decade" not in df.columns:
-        raise ValueError(f"Column 'decade' not found in {input_file}")
+    if group_column not in df.columns:
+        raise ValueError(f"Column '{group_column}' not found in {input_file}")
 
-    df["decade"] = df["decade"].astype(str).str.strip()
+    df[group_column] = df[group_column].astype(str).str.strip()
 
     dims = detect_dims(df, input_file)
 
-    for dim in tqdm(dims, desc="By decade"):
-        rsquare = read_rsquare(sas_output_dir / f"params_decade_f{dim}.tsv")
-        caption = f"Mean Dim. {dim} Scores by Decade (R² = {rsquare:.2f}\\%)"
+    for dim in tqdm(dims, desc="By group"):
+        rsquare = read_rsquare(sas_output_dir / f"params_group_f{dim}.tsv")
+        caption = f"Mean Dim. {dim} Scores by Group (R² = {rsquare:.2f}\\%)"
 
         generate_boxplot(
             df=df,
             dim=dim,
-            group_var="decade",
-            suffix="by_decade",
+            group_var=group_column,
+            suffix="by_group",
             caption=caption,
             output_dir=output_dir,
         )
 
     generate_mosaic(
-        suffix="by_decade",
-        caption="Mean Dim. Scores by Decade",
+        suffix="by_group",
+        caption="Mean Dim. Scores by Group",
         dims=dims,
         output_dir=output_dir,
     )
