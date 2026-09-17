@@ -174,3 +174,10 @@ Outputs:
 
 ## 7. Run SAS
 
+## 8. Build factor loading lists
+
+```shell
+python factor_lists.py
+```
+
+Output: factors/
