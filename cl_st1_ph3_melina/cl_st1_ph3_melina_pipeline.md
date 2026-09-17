@@ -136,3 +136,18 @@ Final unique keywords written to: corpus/07_kw_selected/keywords.txt
 Final unique keyword count: 1012
 ```
 
+## 4. Build binary keyword columns
+
+```shell
+rm -rf columns columns_clean
+```
+
+```shell
+python columns.py
+```
+
+Outputs:
+- `columns/`
+- `columns_clean/`
+- `file_ids.txt`
+- `index_keywords.txt`
