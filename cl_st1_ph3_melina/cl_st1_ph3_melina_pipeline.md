@@ -172,3 +172,5 @@ Outputs:
 - sas/word_labels_full_format.sas
 - other SAS helper format files
 
+## 7. Run SAS
+
