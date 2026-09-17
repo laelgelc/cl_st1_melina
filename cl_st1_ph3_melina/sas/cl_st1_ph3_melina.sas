@@ -1,6 +1,6 @@
 /* ============================================================
    Lexical Multi-dimensional Analysis
-   Project: cl_st1_ph2_melina
+   Project: cl_st1_ph3_melina
 
    Expected input:
      counts.txt
@@ -9,7 +9,7 @@
      No header
      Space-separated
      Columns:
-       filename group v000001-v001041
+       filename group v000001-v001012
 
    Example:
      t000001 global_north_2023_09 0 1 0 0 ...
@@ -19,7 +19,7 @@
 /* BEGINNING PART 1 */
 /* === EDIT BELOW ====*/
 
-%let project = cl_st1_ph2_melina ;
+%let project = cl_st1_ph3_melina ;
 
 %let myfolder = &project ;
 
@@ -30,7 +30,7 @@
 options fmtsearch=(work library);
 
 /* enter the variable ID corresponding to the last keyword variable */
-%let lastkeywordvar = v001041 ;
+%let lastkeywordvar = v001012 ;
 
 /* enter number of factors to extract */
 %let extractfactors = 8 ;
@@ -853,7 +853,7 @@ data filelist;
   input root;
   retain filename dname ' ' level 0 dir 1;
 cards4;
-/home/u63529080/cl_st1_ph2_melina
+/home/u63529080/cl_st1_ph3_melina
 ;;;;
 run;
 
