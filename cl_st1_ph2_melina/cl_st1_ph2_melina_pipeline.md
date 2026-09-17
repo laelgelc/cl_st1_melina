@@ -228,5 +228,13 @@ Output: `examples/`
 python score_details.py
 ```
 
-Output: examples/score_details.txt
+Output: `examples/score_details.txt`
+
+## 14. Generate plaintext example extracts
+
+```shell
+python examples_txt.py
+```
+
+Output: `examples_txt/`
 
