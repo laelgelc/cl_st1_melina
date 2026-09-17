@@ -205,3 +205,11 @@ Output: `latex_boxplots/slides/`
 ```shell
 cd ..
 ```
+
+## 11. Generate LaTeX ANOVA table
+
+```shell
+python latex_anova_table.py
+```
+
+Output: `latex_tables/anova_decade.tex`
