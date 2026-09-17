@@ -1,0 +1,6448 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta name="Generator" content="SAS Software Version 9.4, see www.sas.com">
+<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+<title>SAS Output</title>
+<style type="text/css">
+<!--
+.accessiblecaption
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.activelink
+{
+  color: #800080;
+}
+.aftercaption
+{
+  background-color: #FAFBFE;
+  border-spacing: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+  padding-top: 4pt;
+}
+.batch
+{
+  background-color: #FAFBFE;
+  border: 1px solid #C1C1C1;
+  border-collapse: separate;
+  border-spacing: 1px;
+  color: #000000;
+  font-family: 'SAS Monospace', 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  padding: 7px;
+}
+.beforecaption
+{
+  background-color: #FAFBFE;
+  border-spacing: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.body
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+.bodydate
+{
+  background-color: #FAFBFE;
+  border-spacing: 0px;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  text-align: right;
+  vertical-align: top;
+  width: 100%;
+}
+.bycontentfolder
+{
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: none;
+  margin-left: 6pt;
+}
+.byline
+{
+  background-color: #FAFBFE;
+  border-spacing: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.bylinecontainer
+{
+  background-color: #FAFBFE;
+  border: 0px solid #000000;
+  border-spacing: 1px;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  width: 100%;
+}
+.caption
+{
+  background-color: #FAFBFE;
+  border-spacing: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.cell
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.container
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.contentfolder
+{
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: none;
+  margin-left: 6pt;
+}
+.contentitem
+{
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: none;
+  margin-left: 6pt;
+}
+.contentproclabel
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.contentprocname
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.contents
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: decimal;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+.contentsdate
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  width: 100%;
+}
+.contenttitle
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: bold;
+}
+.continued
+{
+  background-color: #FAFBFE;
+  border-spacing: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+  width: 100%;
+}
+.data
+{
+  background-color: #FFFFFF;
+  border-bottom-width: 1px;
+  border-color: #C1C1C1;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.dataemphasis
+{
+  background-color: #FFFFFF;
+  border-bottom-width: 1px;
+  border-color: #C1C1C1;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.dataemphasisfixed
+{
+  background-color: #FFFFFF;
+  border-bottom-width: 1px;
+  border-color: #C1C1C1;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+}
+.dataempty
+{
+  background-color: #FFFFFF;
+  border-bottom-width: 1px;
+  border-color: #C1C1C1;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.datafixed
+{
+  background-color: #FFFFFF;
+  border-bottom-width: 1px;
+  border-color: #C1C1C1;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.datastrong
+{
+  background-color: #FFFFFF;
+  border-bottom-width: 1px;
+  border-color: #C1C1C1;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.datastrongfixed
+{
+  background-color: #FFFFFF;
+  border-bottom-width: 1px;
+  border-color: #C1C1C1;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #000000;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.date
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  width: 100%;
+}
+.document
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+a:link {
+color:#0000FF
+}
+a:visited {
+color:#800080
+}
+a:active {
+color:#800080
+}
+.errorbanner
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.errorcontent
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.errorcontentfixed
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.extendedpage
+{
+  background-color: #FAFBFE;
+  border: 1pt solid #000000;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+  text-align: center;
+}
+.fatalbanner
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.fatalcontent
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.fatalcontentfixed
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.folderaction
+{
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: none;
+  margin-left: 6pt;
+}
+.footer
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.footeremphasis
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+}
+.footeremphasisfixed
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+}
+.footerempty
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.footerfixed
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.footerstrong
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.footerstrongfixed
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.frame
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.graph
+{
+  background-color: #FAFBFE;
+  border: 1px solid #C1C1C1;
+  border-collapse: separate;
+  border-spacing: 1px;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.header
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.headeremphasis
+{
+  background-color: #D8DBD3;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+}
+.headeremphasisfixed
+{
+  background-color: #D8DBD3;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #000000;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+}
+.headerempty
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.headerfixed
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.headersandfooters
+{
+  background-color: #EDF2F9;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.headerstrong
+{
+  background-color: #D8DBD3;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.headerstrongfixed
+{
+  background-color: #D8DBD3;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #000000;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.heading1
+{
+  font-family: Arial, Helvetica, sans-serif;
+}
+.heading2
+{
+  font-family: Arial, Helvetica, sans-serif;
+}
+.heading3
+{
+  font-family: Arial, Helvetica, sans-serif;
+}
+.heading4
+{
+  font-family: Arial, Helvetica, sans-serif;
+}
+.heading5
+{
+  font-family: Arial, Helvetica, sans-serif;
+}
+.heading6
+{
+  font-family: Arial, Helvetica, sans-serif;
+}
+.index
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.indexaction
+{
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: none;
+  margin-left: 6pt;
+}
+.indexitem
+{
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: none;
+  margin-left: 6pt;
+}
+.indexprocname
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.indextitle
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: bold;
+}
+.layoutcontainer
+{
+  border: 0px solid #000000;
+  border-spacing: 30px;
+}
+.layoutregion
+{
+  border: 0px solid #000000;
+  border-spacing: 30px;
+}
+.linecontent
+{
+  background-color: #FAFBFE;
+  border-bottom-width: 1px;
+  border-color: #C1C1C1;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.link
+{
+  color: #0000FF;
+}
+.list
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: disc;
+}
+.list10
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.list2
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: circle;
+}
+.list3
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.list4
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.list5
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.list6
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.list7
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.list8
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.list9
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.listitem
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: disc;
+}
+.listitem10
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.listitem2
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: circle;
+}
+.listitem3
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.listitem4
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.listitem5
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.listitem6
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.listitem7
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.listitem8
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.listitem9
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.note
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.notebanner
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.notecontent
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.notecontentfixed
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.output
+{
+  background-color: #FAFBFE;
+  border: 1px solid #C1C1C1;
+  border-collapse: separate;
+  border-spacing: 1px;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.pageno
+{
+  background-color: #FAFBFE;
+  border-spacing: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+  text-align: right;
+  vertical-align: top;
+}
+.pages
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: decimal;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+.pagesdate
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  width: 100%;
+}
+.pagesitem
+{
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: none;
+  margin-left: 6pt;
+}
+.pagesproclabel
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.pagesprocname
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.pagestitle
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: bold;
+}
+.paragraph
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.parskip
+{
+  border: 0px solid #000000;
+  border-spacing: 0px;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.prepage
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  text-align: left;
+}
+.proctitle
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.proctitlefixed
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.rowfooter
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.rowfooteremphasis
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+}
+.rowfooteremphasisfixed
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+}
+.rowfooterempty
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.rowfooterfixed
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.rowfooterstrong
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.rowfooterstrongfixed
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.rowheader
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.rowheaderemphasis
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+}
+.rowheaderemphasisfixed
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+}
+.rowheaderempty
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.rowheaderfixed
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.rowheaderstrong
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.rowheaderstrongfixed
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemfooter
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemfooter10
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemfooter2
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemfooter3
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemfooter4
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemfooter5
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemfooter6
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemfooter7
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemfooter8
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemfooter9
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemtitle
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemtitle10
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemtitle2
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemtitle3
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemtitle4
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemtitle5
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemtitle6
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemtitle7
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemtitle8
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemtitle9
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systitleandfootercontainer
+{
+  background-color: #FAFBFE;
+  border: 0px solid #000000;
+  border-spacing: 1px;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  width: 100%;
+}
+.table
+{
+  border-bottom-width: 0px;
+  border-collapse: collapse;
+  border-color: #C1C1C1;
+  border-left-width: 1px;
+  border-right-width: 0px;
+  border-spacing: 0px;
+  border-style: solid;
+  border-top-width: 1px;
+}
+.top_stacked_value
+{
+  padding-bottom: 1px;
+  border: 0;
+}
+.middle_stacked_value
+{
+  padding-top: 1px;
+  padding-bottom: 1px;
+  border: 0;
+}
+.bottom_stacked_value
+{
+  padding-top: 1px;
+  border: 0;
+}
+.titleandnotecontainer
+{
+  background-color: #FAFBFE;
+  border: 0px solid #000000;
+  border-spacing: 1px;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  width: 100%;
+}
+.titlesandfooters
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.usertext
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.visitedlink
+{
+  color: #800080;
+}
+.warnbanner
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.warncontent
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.warncontentfixed
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.l {text-align: left }
+.c {text-align: center }
+.r {text-align: right }
+.d {text-align: right }
+.j {text-align: justify }
+.t {vertical-align: top }
+.m {vertical-align: middle }
+.b {vertical-align: bottom }
+TD, TH {vertical-align: top }
+.stacked_cell{padding: 0 }
+-->
+</style>
+</head>
+<body class="body">
+
+<div class="branch">
+<a name="IDX"></a>
+<table class="systitleandfootercontainer" width="100%" cellspacing="1" cellpadding="1" rules="none" frame="void" border="0" summary="Page Layout">
+<tr>
+<td class="c systemtitle">GLM for dataset = cl_st1_ph3_melina group fac1</td>
+</tr>
+</table><br>
+<div class="c proctitle">The GLM Procedure</div>
+<p>
+<div>
+<div align="center">
+<table class="table" cellspacing="0" cellpadding="5" rules="all" frame="box" bordercolor="#C1C1C1" summary="Procedure GLM: Class Levels">
+<colgroup>
+<col>
+</colgroup>
+<colgroup>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="c b header" colspan="3" scope="colgroup">Class Level Information</th>
+</tr>
+<tr>
+<th class="l b header" scope="col">Class</th>
+<th class="r b header" scope="col">Levels</th>
+<th class="l b header" scope="col">Values</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="l rowheader" scope="row">group</th>
+<td class="r data">44</td>
+<td class="l data">global_north_2023_09 global_north_2023_10 global_north_2023_11 global_north_2023_12 global_north_2024_01 global_north_2024_02 global_north_2024_03 global_north_2024_04 global_north_2024_05 global_north_2024_06 global_north_2024_07 global_north_2024_08 global_north_2024_09 global_north_2024_10 global_north_2024_11 global_north_2024_12 global_north_2025_01 global_north_2025_02 global_north_2025_03 global_north_2025_04 global_north_2025_05 global_north_2025_06 global_south_2023_09 global_south_2023_10 global_south_2023_11 global_south_2023_12 global_south_2024_01 global_south_2024_02 global_south_2024_03 global_south_2024_04 global_south_2024_05 global_south_2024_06 global_south_2024_07 global_south_2024_08 global_south_2024_09 global_south_2024_10 global_south_2024_11 global_south_2024_12 global_south_2025_01 global_south_2025_02 global_south_2025_03 global_south_2025_04 global_south_2025_05 global_south_2025_06</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+<a name="IDX1"></a>
+<div>
+<div align="center">
+<table class="table" cellspacing="0" cellpadding="5" rules="all" frame="box" bordercolor="#C1C1C1" summary="Procedure GLM: Number of Observations">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<tbody>
+<tr>
+<th class="l rowheader" scope="row">Number of Observations Read</th>
+<td class="r data">35781</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">Number of Observations Used</th>
+<td class="r data">35781</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+<p style="page-break-after: always;"><br/></p><hr size="3"/>
+<a name="IDX2"></a>
+<table class="systitleandfootercontainer" width="100%" cellspacing="1" cellpadding="1" rules="none" frame="void" border="0" summary="Page Layout">
+<tr>
+<td class="c systemtitle">GLM for dataset = cl_st1_ph3_melina group fac1</td>
+</tr>
+</table><br>
+<div class="c proctitle">The GLM Procedure</div>
+<div class="c proctitle">&nbsp;</div>
+<div class="c proctitle">Dependent Variable: fac1   </div>
+<p>
+<div>
+<div align="center">
+<table class="table" cellspacing="0" cellpadding="5" rules="all" frame="box" bordercolor="#C1C1C1" summary="Procedure GLM: Overall ANOVA">
+<colgroup>
+<col>
+</colgroup>
+<colgroup>
+<col>
+<col>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="l b header" scope="col">Source</th>
+<th class="r b header" scope="col">DF</th>
+<th class="r b header" scope="col">Sum of Squares</th>
+<th class="r b header" scope="col">Mean Square</th>
+<th class="r b header" scope="col">F Value</th>
+<th class="r b header" scope="col">Pr&nbsp;&gt;&nbsp;F</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="l rowheader" scope="row">Model</th>
+<td class="r data">43</td>
+<td class="r data">96281.414</td>
+<td class="r data">2239.103</td>
+<td class="r data">38.80</td>
+<td class="r data">&lt;.0001</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">Error</th>
+<td class="r data">35737</td>
+<td class="r data">2062178.872</td>
+<td class="r data">57.704</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">Corrected Total</th>
+<td class="r data">35780</td>
+<td class="r data">2158460.286</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+<a name="IDX3"></a>
+<div>
+<div align="center">
+<table class="table" cellspacing="0" cellpadding="5" rules="all" frame="box" bordercolor="#C1C1C1" summary="Procedure GLM: Fit Statistics">
+<colgroup>
+<col>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="r b header" scope="col">R-Square</th>
+<th class="r b header" scope="col">Coeff Var</th>
+<th class="r b header" scope="col">Root MSE</th>
+<th class="r b header" scope="col">fac1&nbsp;Mean</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="r data">0.044607</td>
+<td class="r data">80.22540</td>
+<td class="r data">7.596335</td>
+<td class="r data">9.468740</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+<a name="IDX4"></a>
+<div>
+<div align="center">
+<table class="table" cellspacing="0" cellpadding="5" rules="all" frame="box" bordercolor="#C1C1C1" summary="Procedure GLM: Type I Model ANOVA">
+<colgroup>
+<col>
+</colgroup>
+<colgroup>
+<col>
+<col>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="l b header" scope="col">Source</th>
+<th class="r b header" scope="col">DF</th>
+<th class="r b header" scope="col">Type I SS</th>
+<th class="r b header" scope="col">Mean Square</th>
+<th class="r b header" scope="col">F Value</th>
+<th class="r b header" scope="col">Pr&nbsp;&gt;&nbsp;F</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="l rowheader" scope="row">group</th>
+<td class="r data">43</td>
+<td class="r data">96281.41387</td>
+<td class="r data">2239.10265</td>
+<td class="r data">38.80</td>
+<td class="r data">&lt;.0001</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+<a name="IDX5"></a>
+<div>
+<div align="center">
+<table class="table" cellspacing="0" cellpadding="5" rules="all" frame="box" bordercolor="#C1C1C1" summary="Procedure GLM: Type III Model ANOVA">
+<colgroup>
+<col>
+</colgroup>
+<colgroup>
+<col>
+<col>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="l b header" scope="col">Source</th>
+<th class="r b header" scope="col">DF</th>
+<th class="r b header" scope="col">Type III SS</th>
+<th class="r b header" scope="col">Mean Square</th>
+<th class="r b header" scope="col">F Value</th>
+<th class="r b header" scope="col">Pr&nbsp;&gt;&nbsp;F</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="l rowheader" scope="row">group</th>
+<td class="r data">43</td>
+<td class="r data">96281.41387</td>
+<td class="r data">2239.10265</td>
+<td class="r data">38.80</td>
+<td class="r data">&lt;.0001</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+<p style="page-break-after: always;"><br/></p><hr size="3"/>
+<a name="IDX6"></a>
+<table class="systitleandfootercontainer" width="100%" cellspacing="1" cellpadding="1" rules="none" frame="void" border="0" summary="Page Layout">
+<tr>
+<td class="c systemtitle">GLM for dataset = cl_st1_ph3_melina group fac1</td>
+</tr>
+</table><br>
+<div class="c proctitle">The GLM Procedure</div>
+<p>
+<div>
+<div align="center">
+<table class="table" cellspacing="0" cellpadding="5" rules="all" frame="box" bordercolor="#C1C1C1" summary="Procedure GLM: Means">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<colgroup>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="l b header" rowspan="2" scope="col">Level of<br/>group</th>
+<th class="r b header" rowspan="2" scope="col">N</th>
+<th class="c b header" colspan="2" scope="colgroup">fac1</th>
+</tr>
+<tr>
+<th class="r b header" scope="col">Mean</th>
+<th class="r b header" scope="col">Std Dev</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="l rowheader" scope="row">global_north_2023_09</th>
+<th class="r data">25</th>
+<td class="r data">8.3200000</td>
+<td class="r data">5.6178288</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_north_2023_10</th>
+<th class="r data">2864</th>
+<td class="r data">8.8104050</td>
+<td class="r data">6.7870161</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_north_2023_11</th>
+<th class="r data">1996</th>
+<td class="r data">9.4674349</td>
+<td class="r data">7.6750053</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_north_2023_12</th>
+<th class="r data">1113</th>
+<td class="r data">11.4752920</td>
+<td class="r data">9.4978022</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_north_2024_01</th>
+<th class="r data">875</th>
+<td class="r data">10.8914286</td>
+<td class="r data">9.2954730</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_north_2024_02</th>
+<th class="r data">900</th>
+<td class="r data">11.4711111</td>
+<td class="r data">9.8685605</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_north_2024_03</th>
+<th class="r data">880</th>
+<td class="r data">12.1522727</td>
+<td class="r data">10.0348423</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_north_2024_04</th>
+<th class="r data">1037</th>
+<td class="r data">10.0626808</td>
+<td class="r data">8.0186153</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_north_2024_05</th>
+<th class="r data">1213</th>
+<td class="r data">9.3413026</td>
+<td class="r data">8.6648593</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_north_2024_06</th>
+<th class="r data">709</th>
+<td class="r data">9.7799718</td>
+<td class="r data">8.6301662</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_north_2024_07</th>
+<th class="r data">749</th>
+<td class="r data">7.2857143</td>
+<td class="r data">6.8981181</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_north_2024_08</th>
+<th class="r data">768</th>
+<td class="r data">7.0742188</td>
+<td class="r data">6.2091712</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_north_2024_09</th>
+<th class="r data">689</th>
+<td class="r data">6.6328012</td>
+<td class="r data">5.4912852</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_north_2024_10</th>
+<th class="r data">921</th>
+<td class="r data">8.0477742</td>
+<td class="r data">6.8714831</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_north_2024_11</th>
+<th class="r data">1189</th>
+<td class="r data">8.6047098</td>
+<td class="r data">7.6564608</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_north_2024_12</th>
+<th class="r data">873</th>
+<td class="r data">9.9003436</td>
+<td class="r data">8.6399919</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_north_2025_01</th>
+<th class="r data">1651</th>
+<td class="r data">8.1708056</td>
+<td class="r data">6.3532303</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_north_2025_02</th>
+<th class="r data">1649</th>
+<td class="r data">6.2819891</td>
+<td class="r data">4.8947586</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_north_2025_03</th>
+<th class="r data">1249</th>
+<td class="r data">7.2001601</td>
+<td class="r data">6.2954730</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_north_2025_04</th>
+<th class="r data">1110</th>
+<td class="r data">8.4459459</td>
+<td class="r data">7.4006956</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_north_2025_05</th>
+<th class="r data">1663</th>
+<td class="r data">9.9542995</td>
+<td class="r data">7.9989668</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_north_2025_06</th>
+<th class="r data">1349</th>
+<td class="r data">9.1237954</td>
+<td class="r data">7.3056585</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_south_2023_09</th>
+<th class="r data">10</th>
+<td class="r data">5.8000000</td>
+<td class="r data">6.3034382</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_south_2023_10</th>
+<th class="r data">1361</th>
+<td class="r data">10.3071271</td>
+<td class="r data">6.9652299</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_south_2023_11</th>
+<th class="r data">845</th>
+<td class="r data">11.2686391</td>
+<td class="r data">7.7531540</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_south_2023_12</th>
+<th class="r data">486</th>
+<td class="r data">12.6213992</td>
+<td class="r data">8.9602027</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_south_2024_01</th>
+<th class="r data">385</th>
+<td class="r data">11.3220779</td>
+<td class="r data">8.8582680</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_south_2024_02</th>
+<th class="r data">253</th>
+<td class="r data">12.9644269</td>
+<td class="r data">8.7270515</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_south_2024_03</th>
+<th class="r data">292</th>
+<td class="r data">13.5000000</td>
+<td class="r data">9.1206122</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_south_2024_04</th>
+<th class="r data">333</th>
+<td class="r data">11.2012012</td>
+<td class="r data">7.6385830</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_south_2024_05</th>
+<th class="r data">439</th>
+<td class="r data">11.8747153</td>
+<td class="r data">8.6623772</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_south_2024_06</th>
+<th class="r data">300</th>
+<td class="r data">12.1600000</td>
+<td class="r data">8.1306884</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_south_2024_07</th>
+<th class="r data">405</th>
+<td class="r data">10.6864198</td>
+<td class="r data">7.7218308</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_south_2024_08</th>
+<th class="r data">493</th>
+<td class="r data">8.7849899</td>
+<td class="r data">6.5178318</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_south_2024_09</th>
+<th class="r data">393</th>
+<td class="r data">10.0585242</td>
+<td class="r data">6.7837693</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_south_2024_10</th>
+<th class="r data">687</th>
+<td class="r data">10.7714702</td>
+<td class="r data">7.7631785</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_south_2024_11</th>
+<th class="r data">461</th>
+<td class="r data">9.7787419</td>
+<td class="r data">7.5428388</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_south_2024_12</th>
+<th class="r data">322</th>
+<td class="r data">11.3571429</td>
+<td class="r data">8.4178139</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_south_2025_01</th>
+<th class="r data">601</th>
+<td class="r data">9.2479201</td>
+<td class="r data">6.3261442</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_south_2025_02</th>
+<th class="r data">498</th>
+<td class="r data">7.0321285</td>
+<td class="r data">4.7929958</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_south_2025_03</th>
+<th class="r data">398</th>
+<td class="r data">9.4472362</td>
+<td class="r data">7.0650793</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_south_2025_04</th>
+<th class="r data">405</th>
+<td class="r data">9.3308642</td>
+<td class="r data">7.3571653</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_south_2025_05</th>
+<th class="r data">461</th>
+<td class="r data">11.9761388</td>
+<td class="r data">8.2933627</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_south_2025_06</th>
+<th class="r data">481</th>
+<td class="r data">11.2411642</td>
+<td class="r data">7.5746321</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+</div>
+<div class="branch">
+<p style="page-break-after: always;"><br/></p><hr size="3"/>
+<a name="IDX7"></a>
+<table class="systitleandfootercontainer" width="100%" cellspacing="1" cellpadding="1" rules="none" frame="void" border="0" summary="Page Layout">
+<tr>
+<td class="c systemtitle">GLM for dataset = cl_st1_ph3_melina group fac2</td>
+</tr>
+</table><br>
+<div class="c proctitle">The GLM Procedure</div>
+<p>
+<div>
+<div align="center">
+<table class="table" cellspacing="0" cellpadding="5" rules="all" frame="box" bordercolor="#C1C1C1" summary="Procedure GLM: Class Levels">
+<colgroup>
+<col>
+</colgroup>
+<colgroup>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="c b header" colspan="3" scope="colgroup">Class Level Information</th>
+</tr>
+<tr>
+<th class="l b header" scope="col">Class</th>
+<th class="r b header" scope="col">Levels</th>
+<th class="l b header" scope="col">Values</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="l rowheader" scope="row">group</th>
+<td class="r data">44</td>
+<td class="l data">global_north_2023_09 global_north_2023_10 global_north_2023_11 global_north_2023_12 global_north_2024_01 global_north_2024_02 global_north_2024_03 global_north_2024_04 global_north_2024_05 global_north_2024_06 global_north_2024_07 global_north_2024_08 global_north_2024_09 global_north_2024_10 global_north_2024_11 global_north_2024_12 global_north_2025_01 global_north_2025_02 global_north_2025_03 global_north_2025_04 global_north_2025_05 global_north_2025_06 global_south_2023_09 global_south_2023_10 global_south_2023_11 global_south_2023_12 global_south_2024_01 global_south_2024_02 global_south_2024_03 global_south_2024_04 global_south_2024_05 global_south_2024_06 global_south_2024_07 global_south_2024_08 global_south_2024_09 global_south_2024_10 global_south_2024_11 global_south_2024_12 global_south_2025_01 global_south_2025_02 global_south_2025_03 global_south_2025_04 global_south_2025_05 global_south_2025_06</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+<a name="IDX8"></a>
+<div>
+<div align="center">
+<table class="table" cellspacing="0" cellpadding="5" rules="all" frame="box" bordercolor="#C1C1C1" summary="Procedure GLM: Number of Observations">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<tbody>
+<tr>
+<th class="l rowheader" scope="row">Number of Observations Read</th>
+<td class="r data">35781</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">Number of Observations Used</th>
+<td class="r data">35781</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+<p style="page-break-after: always;"><br/></p><hr size="3"/>
+<a name="IDX9"></a>
+<table class="systitleandfootercontainer" width="100%" cellspacing="1" cellpadding="1" rules="none" frame="void" border="0" summary="Page Layout">
+<tr>
+<td class="c systemtitle">GLM for dataset = cl_st1_ph3_melina group fac2</td>
+</tr>
+</table><br>
+<div class="c proctitle">The GLM Procedure</div>
+<div class="c proctitle">&nbsp;</div>
+<div class="c proctitle">Dependent Variable: fac2   </div>
+<p>
+<div>
+<div align="center">
+<table class="table" cellspacing="0" cellpadding="5" rules="all" frame="box" bordercolor="#C1C1C1" summary="Procedure GLM: Overall ANOVA">
+<colgroup>
+<col>
+</colgroup>
+<colgroup>
+<col>
+<col>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="l b header" scope="col">Source</th>
+<th class="r b header" scope="col">DF</th>
+<th class="r b header" scope="col">Sum of Squares</th>
+<th class="r b header" scope="col">Mean Square</th>
+<th class="r b header" scope="col">F Value</th>
+<th class="r b header" scope="col">Pr&nbsp;&gt;&nbsp;F</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="l rowheader" scope="row">Model</th>
+<td class="r data">43</td>
+<td class="r data">109579.1963</td>
+<td class="r data">2548.3534</td>
+<td class="r data">123.35</td>
+<td class="r data">&lt;.0001</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">Error</th>
+<td class="r data">35737</td>
+<td class="r data">738296.6386</td>
+<td class="r data">20.6592</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">Corrected Total</th>
+<td class="r data">35780</td>
+<td class="r data">847875.8349</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+<a name="IDX10"></a>
+<div>
+<div align="center">
+<table class="table" cellspacing="0" cellpadding="5" rules="all" frame="box" bordercolor="#C1C1C1" summary="Procedure GLM: Fit Statistics">
+<colgroup>
+<col>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="r b header" scope="col">R-Square</th>
+<th class="r b header" scope="col">Coeff Var</th>
+<th class="r b header" scope="col">Root MSE</th>
+<th class="r b header" scope="col">fac2&nbsp;Mean</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="r data">0.129240</td>
+<td class="r data">89.58822</td>
+<td class="r data">4.545236</td>
+<td class="r data">5.073475</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+<a name="IDX11"></a>
+<div>
+<div align="center">
+<table class="table" cellspacing="0" cellpadding="5" rules="all" frame="box" bordercolor="#C1C1C1" summary="Procedure GLM: Type I Model ANOVA">
+<colgroup>
+<col>
+</colgroup>
+<colgroup>
+<col>
+<col>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="l b header" scope="col">Source</th>
+<th class="r b header" scope="col">DF</th>
+<th class="r b header" scope="col">Type I SS</th>
+<th class="r b header" scope="col">Mean Square</th>
+<th class="r b header" scope="col">F Value</th>
+<th class="r b header" scope="col">Pr&nbsp;&gt;&nbsp;F</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="l rowheader" scope="row">group</th>
+<td class="r data">43</td>
+<td class="r data">109579.1963</td>
+<td class="r data">2548.3534</td>
+<td class="r data">123.35</td>
+<td class="r data">&lt;.0001</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+<a name="IDX12"></a>
+<div>
+<div align="center">
+<table class="table" cellspacing="0" cellpadding="5" rules="all" frame="box" bordercolor="#C1C1C1" summary="Procedure GLM: Type III Model ANOVA">
+<colgroup>
+<col>
+</colgroup>
+<colgroup>
+<col>
+<col>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="l b header" scope="col">Source</th>
+<th class="r b header" scope="col">DF</th>
+<th class="r b header" scope="col">Type III SS</th>
+<th class="r b header" scope="col">Mean Square</th>
+<th class="r b header" scope="col">F Value</th>
+<th class="r b header" scope="col">Pr&nbsp;&gt;&nbsp;F</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="l rowheader" scope="row">group</th>
+<td class="r data">43</td>
+<td class="r data">109579.1963</td>
+<td class="r data">2548.3534</td>
+<td class="r data">123.35</td>
+<td class="r data">&lt;.0001</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+<p style="page-break-after: always;"><br/></p><hr size="3"/>
+<a name="IDX13"></a>
+<table class="systitleandfootercontainer" width="100%" cellspacing="1" cellpadding="1" rules="none" frame="void" border="0" summary="Page Layout">
+<tr>
+<td class="c systemtitle">GLM for dataset = cl_st1_ph3_melina group fac2</td>
+</tr>
+</table><br>
+<div class="c proctitle">The GLM Procedure</div>
+<p>
+<div>
+<div align="center">
+<table class="table" cellspacing="0" cellpadding="5" rules="all" frame="box" bordercolor="#C1C1C1" summary="Procedure GLM: Means">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<colgroup>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="l b header" rowspan="2" scope="col">Level of<br/>group</th>
+<th class="r b header" rowspan="2" scope="col">N</th>
+<th class="c b header" colspan="2" scope="colgroup">fac2</th>
+</tr>
+<tr>
+<th class="r b header" scope="col">Mean</th>
+<th class="r b header" scope="col">Std Dev</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="l rowheader" scope="row">global_north_2023_09</th>
+<th class="r data">25</th>
+<td class="r data">6.4000000</td>
+<td class="r data">5.04975247</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_north_2023_10</th>
+<th class="r data">2864</th>
+<td class="r data">6.3697626</td>
+<td class="r data">4.02443729</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_north_2023_11</th>
+<th class="r data">1996</th>
+<td class="r data">4.1092184</td>
+<td class="r data">3.36219513</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_north_2023_12</th>
+<th class="r data">1113</th>
+<td class="r data">4.9559748</td>
+<td class="r data">4.32813728</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_north_2024_01</th>
+<th class="r data">875</th>
+<td class="r data">6.5542857</td>
+<td class="r data">6.31968443</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_north_2024_02</th>
+<th class="r data">900</th>
+<td class="r data">4.6666667</td>
+<td class="r data">4.64753215</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_north_2024_03</th>
+<th class="r data">880</th>
+<td class="r data">3.6772727</td>
+<td class="r data">3.19384103</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_north_2024_04</th>
+<th class="r data">1037</th>
+<td class="r data">5.8534233</td>
+<td class="r data">6.21305454</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_north_2024_05</th>
+<th class="r data">1213</th>
+<td class="r data">3.5861500</td>
+<td class="r data">3.12530491</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_north_2024_06</th>
+<th class="r data">709</th>
+<td class="r data">4.1001410</td>
+<td class="r data">4.00068673</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_north_2024_07</th>
+<th class="r data">749</th>
+<td class="r data">5.4939920</td>
+<td class="r data">5.73795215</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_north_2024_08</th>
+<th class="r data">768</th>
+<td class="r data">6.7643229</td>
+<td class="r data">6.92484732</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_north_2024_09</th>
+<th class="r data">689</th>
+<td class="r data">6.4194485</td>
+<td class="r data">6.93090687</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_north_2024_10</th>
+<th class="r data">921</th>
+<td class="r data">6.9229099</td>
+<td class="r data">6.27066381</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_north_2024_11</th>
+<th class="r data">1189</th>
+<td class="r data">4.6879731</td>
+<td class="r data">4.30949523</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_north_2024_12</th>
+<th class="r data">873</th>
+<td class="r data">4.4295533</td>
+<td class="r data">4.14362525</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_north_2025_01</th>
+<th class="r data">1651</th>
+<td class="r data">3.5814658</td>
+<td class="r data">3.05780599</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_north_2025_02</th>
+<th class="r data">1649</th>
+<td class="r data">2.9539115</td>
+<td class="r data">2.42615417</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_north_2025_03</th>
+<th class="r data">1249</th>
+<td class="r data">3.2786229</td>
+<td class="r data">3.18362185</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_north_2025_04</th>
+<th class="r data">1110</th>
+<td class="r data">3.2369369</td>
+<td class="r data">2.65861744</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_north_2025_05</th>
+<th class="r data">1663</th>
+<td class="r data">3.3908599</td>
+<td class="r data">2.95594824</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_north_2025_06</th>
+<th class="r data">1349</th>
+<td class="r data">3.7398073</td>
+<td class="r data">3.54973902</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_south_2023_09</th>
+<th class="r data">10</th>
+<td class="r data">2.9000000</td>
+<td class="r data">4.77144283</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_south_2023_10</th>
+<th class="r data">1361</th>
+<td class="r data">7.4695077</td>
+<td class="r data">4.65366590</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_south_2023_11</th>
+<th class="r data">845</th>
+<td class="r data">4.9597633</td>
+<td class="r data">3.85621797</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_south_2023_12</th>
+<th class="r data">486</th>
+<td class="r data">5.9938272</td>
+<td class="r data">4.94776456</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_south_2024_01</th>
+<th class="r data">385</th>
+<td class="r data">6.6129870</td>
+<td class="r data">6.21769465</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_south_2024_02</th>
+<th class="r data">253</th>
+<td class="r data">5.3636364</td>
+<td class="r data">4.40713052</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_south_2024_03</th>
+<th class="r data">292</th>
+<td class="r data">3.9794521</td>
+<td class="r data">3.04709693</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_south_2024_04</th>
+<th class="r data">333</th>
+<td class="r data">7.8438438</td>
+<td class="r data">7.04714756</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_south_2024_05</th>
+<th class="r data">439</th>
+<td class="r data">4.9589977</td>
+<td class="r data">3.72859552</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_south_2024_06</th>
+<th class="r data">300</th>
+<td class="r data">6.4333333</td>
+<td class="r data">5.21307421</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_south_2024_07</th>
+<th class="r data">405</th>
+<td class="r data">6.9481481</td>
+<td class="r data">6.38413704</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_south_2024_08</th>
+<th class="r data">493</th>
+<td class="r data">10.7038540</td>
+<td class="r data">8.29765893</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_south_2024_09</th>
+<th class="r data">393</th>
+<td class="r data">9.7430025</td>
+<td class="r data">8.41418919</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_south_2024_10</th>
+<th class="r data">687</th>
+<td class="r data">10.5094614</td>
+<td class="r data">7.78853988</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_south_2024_11</th>
+<th class="r data">461</th>
+<td class="r data">5.6941432</td>
+<td class="r data">4.47307748</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_south_2024_12</th>
+<th class="r data">322</th>
+<td class="r data">5.2857143</td>
+<td class="r data">4.59232540</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_south_2025_01</th>
+<th class="r data">601</th>
+<td class="r data">4.0449251</td>
+<td class="r data">3.60226480</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_south_2025_02</th>
+<th class="r data">498</th>
+<td class="r data">3.5903614</td>
+<td class="r data">2.46685625</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_south_2025_03</th>
+<th class="r data">398</th>
+<td class="r data">4.2160804</td>
+<td class="r data">3.60988605</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_south_2025_04</th>
+<th class="r data">405</th>
+<td class="r data">3.8691358</td>
+<td class="r data">2.92567340</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_south_2025_05</th>
+<th class="r data">461</th>
+<td class="r data">4.1409978</td>
+<td class="r data">3.21404362</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_south_2025_06</th>
+<th class="r data">481</th>
+<td class="r data">4.7525988</td>
+<td class="r data">4.46923727</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+</div>
+<div class="branch">
+<p style="page-break-after: always;"><br/></p><hr size="3"/>
+<a name="IDX14"></a>
+<table class="systitleandfootercontainer" width="100%" cellspacing="1" cellpadding="1" rules="none" frame="void" border="0" summary="Page Layout">
+<tr>
+<td class="c systemtitle">GLM for dataset = cl_st1_ph3_melina group fac3</td>
+</tr>
+</table><br>
+<div class="c proctitle">The GLM Procedure</div>
+<p>
+<div>
+<div align="center">
+<table class="table" cellspacing="0" cellpadding="5" rules="all" frame="box" bordercolor="#C1C1C1" summary="Procedure GLM: Class Levels">
+<colgroup>
+<col>
+</colgroup>
+<colgroup>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="c b header" colspan="3" scope="colgroup">Class Level Information</th>
+</tr>
+<tr>
+<th class="l b header" scope="col">Class</th>
+<th class="r b header" scope="col">Levels</th>
+<th class="l b header" scope="col">Values</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="l rowheader" scope="row">group</th>
+<td class="r data">44</td>
+<td class="l data">global_north_2023_09 global_north_2023_10 global_north_2023_11 global_north_2023_12 global_north_2024_01 global_north_2024_02 global_north_2024_03 global_north_2024_04 global_north_2024_05 global_north_2024_06 global_north_2024_07 global_north_2024_08 global_north_2024_09 global_north_2024_10 global_north_2024_11 global_north_2024_12 global_north_2025_01 global_north_2025_02 global_north_2025_03 global_north_2025_04 global_north_2025_05 global_north_2025_06 global_south_2023_09 global_south_2023_10 global_south_2023_11 global_south_2023_12 global_south_2024_01 global_south_2024_02 global_south_2024_03 global_south_2024_04 global_south_2024_05 global_south_2024_06 global_south_2024_07 global_south_2024_08 global_south_2024_09 global_south_2024_10 global_south_2024_11 global_south_2024_12 global_south_2025_01 global_south_2025_02 global_south_2025_03 global_south_2025_04 global_south_2025_05 global_south_2025_06</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+<a name="IDX15"></a>
+<div>
+<div align="center">
+<table class="table" cellspacing="0" cellpadding="5" rules="all" frame="box" bordercolor="#C1C1C1" summary="Procedure GLM: Number of Observations">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<tbody>
+<tr>
+<th class="l rowheader" scope="row">Number of Observations Read</th>
+<td class="r data">35781</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">Number of Observations Used</th>
+<td class="r data">35781</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+<p style="page-break-after: always;"><br/></p><hr size="3"/>
+<a name="IDX16"></a>
+<table class="systitleandfootercontainer" width="100%" cellspacing="1" cellpadding="1" rules="none" frame="void" border="0" summary="Page Layout">
+<tr>
+<td class="c systemtitle">GLM for dataset = cl_st1_ph3_melina group fac3</td>
+</tr>
+</table><br>
+<div class="c proctitle">The GLM Procedure</div>
+<div class="c proctitle">&nbsp;</div>
+<div class="c proctitle">Dependent Variable: fac3   </div>
+<p>
+<div>
+<div align="center">
+<table class="table" cellspacing="0" cellpadding="5" rules="all" frame="box" bordercolor="#C1C1C1" summary="Procedure GLM: Overall ANOVA">
+<colgroup>
+<col>
+</colgroup>
+<colgroup>
+<col>
+<col>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="l b header" scope="col">Source</th>
+<th class="r b header" scope="col">DF</th>
+<th class="r b header" scope="col">Sum of Squares</th>
+<th class="r b header" scope="col">Mean Square</th>
+<th class="r b header" scope="col">F Value</th>
+<th class="r b header" scope="col">Pr&nbsp;&gt;&nbsp;F</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="l rowheader" scope="row">Model</th>
+<td class="r data">43</td>
+<td class="r data">49974.4453</td>
+<td class="r data">1162.1964</td>
+<td class="r data">82.50</td>
+<td class="r data">&lt;.0001</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">Error</th>
+<td class="r data">35737</td>
+<td class="r data">503416.8711</td>
+<td class="r data">14.0867</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">Corrected Total</th>
+<td class="r data">35780</td>
+<td class="r data">553391.3164</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+<a name="IDX17"></a>
+<div>
+<div align="center">
+<table class="table" cellspacing="0" cellpadding="5" rules="all" frame="box" bordercolor="#C1C1C1" summary="Procedure GLM: Fit Statistics">
+<colgroup>
+<col>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="r b header" scope="col">R-Square</th>
+<th class="r b header" scope="col">Coeff Var</th>
+<th class="r b header" scope="col">Root MSE</th>
+<th class="r b header" scope="col">fac3&nbsp;Mean</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="r data">0.090306</td>
+<td class="r data">154.8274</td>
+<td class="r data">3.753227</td>
+<td class="r data">2.424136</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+<a name="IDX18"></a>
+<div>
+<div align="center">
+<table class="table" cellspacing="0" cellpadding="5" rules="all" frame="box" bordercolor="#C1C1C1" summary="Procedure GLM: Type I Model ANOVA">
+<colgroup>
+<col>
+</colgroup>
+<colgroup>
+<col>
+<col>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="l b header" scope="col">Source</th>
+<th class="r b header" scope="col">DF</th>
+<th class="r b header" scope="col">Type I SS</th>
+<th class="r b header" scope="col">Mean Square</th>
+<th class="r b header" scope="col">F Value</th>
+<th class="r b header" scope="col">Pr&nbsp;&gt;&nbsp;F</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="l rowheader" scope="row">group</th>
+<td class="r data">43</td>
+<td class="r data">49974.44532</td>
+<td class="r data">1162.19640</td>
+<td class="r data">82.50</td>
+<td class="r data">&lt;.0001</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+<a name="IDX19"></a>
+<div>
+<div align="center">
+<table class="table" cellspacing="0" cellpadding="5" rules="all" frame="box" bordercolor="#C1C1C1" summary="Procedure GLM: Type III Model ANOVA">
+<colgroup>
+<col>
+</colgroup>
+<colgroup>
+<col>
+<col>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="l b header" scope="col">Source</th>
+<th class="r b header" scope="col">DF</th>
+<th class="r b header" scope="col">Type III SS</th>
+<th class="r b header" scope="col">Mean Square</th>
+<th class="r b header" scope="col">F Value</th>
+<th class="r b header" scope="col">Pr&nbsp;&gt;&nbsp;F</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="l rowheader" scope="row">group</th>
+<td class="r data">43</td>
+<td class="r data">49974.44532</td>
+<td class="r data">1162.19640</td>
+<td class="r data">82.50</td>
+<td class="r data">&lt;.0001</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+<p style="page-break-after: always;"><br/></p><hr size="3"/>
+<a name="IDX20"></a>
+<table class="systitleandfootercontainer" width="100%" cellspacing="1" cellpadding="1" rules="none" frame="void" border="0" summary="Page Layout">
+<tr>
+<td class="c systemtitle">GLM for dataset = cl_st1_ph3_melina group fac3</td>
+</tr>
+</table><br>
+<div class="c proctitle">The GLM Procedure</div>
+<p>
+<div>
+<div align="center">
+<table class="table" cellspacing="0" cellpadding="5" rules="all" frame="box" bordercolor="#C1C1C1" summary="Procedure GLM: Means">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<colgroup>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="l b header" rowspan="2" scope="col">Level of<br/>group</th>
+<th class="r b header" rowspan="2" scope="col">N</th>
+<th class="c b header" colspan="2" scope="colgroup">fac3</th>
+</tr>
+<tr>
+<th class="r b header" scope="col">Mean</th>
+<th class="r b header" scope="col">Std Dev</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="l rowheader" scope="row">global_north_2023_09</th>
+<th class="r data">25</th>
+<td class="r data">3.48000000</td>
+<td class="r data">2.55147016</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_north_2023_10</th>
+<th class="r data">2864</th>
+<td class="r data">1.78351955</td>
+<td class="r data">2.34976698</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_north_2023_11</th>
+<th class="r data">1996</th>
+<td class="r data">2.29659319</td>
+<td class="r data">2.83819428</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_north_2023_12</th>
+<th class="r data">1113</th>
+<td class="r data">1.84186882</td>
+<td class="r data">2.54636306</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_north_2024_01</th>
+<th class="r data">875</th>
+<td class="r data">1.94514286</td>
+<td class="r data">2.40693289</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_north_2024_02</th>
+<th class="r data">900</th>
+<td class="r data">1.85111111</td>
+<td class="r data">2.30828871</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_north_2024_03</th>
+<th class="r data">880</th>
+<td class="r data">1.75568182</td>
+<td class="r data">2.16982921</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_north_2024_04</th>
+<th class="r data">1037</th>
+<td class="r data">3.51012536</td>
+<td class="r data">5.18510114</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_north_2024_05</th>
+<th class="r data">1213</th>
+<td class="r data">5.78812861</td>
+<td class="r data">6.36503373</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_north_2024_06</th>
+<th class="r data">709</th>
+<td class="r data">3.38081805</td>
+<td class="r data">4.60090557</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_north_2024_07</th>
+<th class="r data">749</th>
+<td class="r data">3.14552737</td>
+<td class="r data">3.77352470</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_north_2024_08</th>
+<th class="r data">768</th>
+<td class="r data">2.63541667</td>
+<td class="r data">3.70663394</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_north_2024_09</th>
+<th class="r data">689</th>
+<td class="r data">2.43976778</td>
+<td class="r data">3.11358388</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_north_2024_10</th>
+<th class="r data">921</th>
+<td class="r data">2.57003257</td>
+<td class="r data">3.52255665</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_north_2024_11</th>
+<th class="r data">1189</th>
+<td class="r data">2.42977292</td>
+<td class="r data">2.89452433</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_north_2024_12</th>
+<th class="r data">873</th>
+<td class="r data">1.96449026</td>
+<td class="r data">2.58122615</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_north_2025_01</th>
+<th class="r data">1651</th>
+<td class="r data">1.88249546</td>
+<td class="r data">2.46296251</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_north_2025_02</th>
+<th class="r data">1649</th>
+<td class="r data">1.76349303</td>
+<td class="r data">2.57529363</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_north_2025_03</th>
+<th class="r data">1249</th>
+<td class="r data">5.76941553</td>
+<td class="r data">8.31788271</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_north_2025_04</th>
+<th class="r data">1110</th>
+<td class="r data">4.28648649</td>
+<td class="r data">6.37163584</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_north_2025_05</th>
+<th class="r data">1663</th>
+<td class="r data">2.75947084</td>
+<td class="r data">4.83915714</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_north_2025_06</th>
+<th class="r data">1349</th>
+<td class="r data">3.09636768</td>
+<td class="r data">4.39208489</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_south_2023_09</th>
+<th class="r data">10</th>
+<td class="r data">2.90000000</td>
+<td class="r data">2.33095116</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_south_2023_10</th>
+<th class="r data">1361</th>
+<td class="r data">1.14327700</td>
+<td class="r data">1.63623065</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_south_2023_11</th>
+<th class="r data">845</th>
+<td class="r data">1.31360947</td>
+<td class="r data">1.76588709</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_south_2023_12</th>
+<th class="r data">486</th>
+<td class="r data">1.12757202</td>
+<td class="r data">1.48121609</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_south_2024_01</th>
+<th class="r data">385</th>
+<td class="r data">1.43116883</td>
+<td class="r data">1.47056712</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_south_2024_02</th>
+<th class="r data">253</th>
+<td class="r data">1.35968379</td>
+<td class="r data">1.81732052</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_south_2024_03</th>
+<th class="r data">292</th>
+<td class="r data">1.16438356</td>
+<td class="r data">1.62889458</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_south_2024_04</th>
+<th class="r data">333</th>
+<td class="r data">2.12612613</td>
+<td class="r data">3.87714290</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_south_2024_05</th>
+<th class="r data">439</th>
+<td class="r data">2.94533030</td>
+<td class="r data">4.94875288</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_south_2024_06</th>
+<th class="r data">300</th>
+<td class="r data">1.52333333</td>
+<td class="r data">2.13337601</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_south_2024_07</th>
+<th class="r data">405</th>
+<td class="r data">1.63209877</td>
+<td class="r data">2.06106211</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_south_2024_08</th>
+<th class="r data">493</th>
+<td class="r data">1.57606491</td>
+<td class="r data">2.74320949</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_south_2024_09</th>
+<th class="r data">393</th>
+<td class="r data">1.58269720</td>
+<td class="r data">2.06746070</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_south_2024_10</th>
+<th class="r data">687</th>
+<td class="r data">1.20232897</td>
+<td class="r data">1.65759858</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_south_2024_11</th>
+<th class="r data">461</th>
+<td class="r data">1.68329718</td>
+<td class="r data">1.99660657</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_south_2024_12</th>
+<th class="r data">322</th>
+<td class="r data">1.27950311</td>
+<td class="r data">1.54157819</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_south_2025_01</th>
+<th class="r data">601</th>
+<td class="r data">1.28452579</td>
+<td class="r data">1.89576110</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_south_2025_02</th>
+<th class="r data">498</th>
+<td class="r data">1.19076305</td>
+<td class="r data">1.73197966</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_south_2025_03</th>
+<th class="r data">398</th>
+<td class="r data">4.30150754</td>
+<td class="r data">7.74626246</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_south_2025_04</th>
+<th class="r data">405</th>
+<td class="r data">2.92345679</td>
+<td class="r data">4.48777966</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_south_2025_05</th>
+<th class="r data">461</th>
+<td class="r data">1.92190889</td>
+<td class="r data">3.80765497</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_south_2025_06</th>
+<th class="r data">481</th>
+<td class="r data">2.08523909</td>
+<td class="r data">3.29757019</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+</div>
+<div class="branch">
+<p style="page-break-after: always;"><br/></p><hr size="3"/>
+<a name="IDX21"></a>
+<table class="systitleandfootercontainer" width="100%" cellspacing="1" cellpadding="1" rules="none" frame="void" border="0" summary="Page Layout">
+<tr>
+<td class="c systemtitle">GLM for dataset = cl_st1_ph3_melina group fac4</td>
+</tr>
+</table><br>
+<div class="c proctitle">The GLM Procedure</div>
+<p>
+<div>
+<div align="center">
+<table class="table" cellspacing="0" cellpadding="5" rules="all" frame="box" bordercolor="#C1C1C1" summary="Procedure GLM: Class Levels">
+<colgroup>
+<col>
+</colgroup>
+<colgroup>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="c b header" colspan="3" scope="colgroup">Class Level Information</th>
+</tr>
+<tr>
+<th class="l b header" scope="col">Class</th>
+<th class="r b header" scope="col">Levels</th>
+<th class="l b header" scope="col">Values</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="l rowheader" scope="row">group</th>
+<td class="r data">44</td>
+<td class="l data">global_north_2023_09 global_north_2023_10 global_north_2023_11 global_north_2023_12 global_north_2024_01 global_north_2024_02 global_north_2024_03 global_north_2024_04 global_north_2024_05 global_north_2024_06 global_north_2024_07 global_north_2024_08 global_north_2024_09 global_north_2024_10 global_north_2024_11 global_north_2024_12 global_north_2025_01 global_north_2025_02 global_north_2025_03 global_north_2025_04 global_north_2025_05 global_north_2025_06 global_south_2023_09 global_south_2023_10 global_south_2023_11 global_south_2023_12 global_south_2024_01 global_south_2024_02 global_south_2024_03 global_south_2024_04 global_south_2024_05 global_south_2024_06 global_south_2024_07 global_south_2024_08 global_south_2024_09 global_south_2024_10 global_south_2024_11 global_south_2024_12 global_south_2025_01 global_south_2025_02 global_south_2025_03 global_south_2025_04 global_south_2025_05 global_south_2025_06</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+<a name="IDX22"></a>
+<div>
+<div align="center">
+<table class="table" cellspacing="0" cellpadding="5" rules="all" frame="box" bordercolor="#C1C1C1" summary="Procedure GLM: Number of Observations">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<tbody>
+<tr>
+<th class="l rowheader" scope="row">Number of Observations Read</th>
+<td class="r data">35781</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">Number of Observations Used</th>
+<td class="r data">35781</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+<p style="page-break-after: always;"><br/></p><hr size="3"/>
+<a name="IDX23"></a>
+<table class="systitleandfootercontainer" width="100%" cellspacing="1" cellpadding="1" rules="none" frame="void" border="0" summary="Page Layout">
+<tr>
+<td class="c systemtitle">GLM for dataset = cl_st1_ph3_melina group fac4</td>
+</tr>
+</table><br>
+<div class="c proctitle">The GLM Procedure</div>
+<div class="c proctitle">&nbsp;</div>
+<div class="c proctitle">Dependent Variable: fac4   </div>
+<p>
+<div>
+<div align="center">
+<table class="table" cellspacing="0" cellpadding="5" rules="all" frame="box" bordercolor="#C1C1C1" summary="Procedure GLM: Overall ANOVA">
+<colgroup>
+<col>
+</colgroup>
+<colgroup>
+<col>
+<col>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="l b header" scope="col">Source</th>
+<th class="r b header" scope="col">DF</th>
+<th class="r b header" scope="col">Sum of Squares</th>
+<th class="r b header" scope="col">Mean Square</th>
+<th class="r b header" scope="col">F Value</th>
+<th class="r b header" scope="col">Pr&nbsp;&gt;&nbsp;F</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="l rowheader" scope="row">Model</th>
+<td class="r data">43</td>
+<td class="r data">168597.0957</td>
+<td class="r data">3920.8627</td>
+<td class="r data">176.90</td>
+<td class="r data">&lt;.0001</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">Error</th>
+<td class="r data">35737</td>
+<td class="r data">792082.1625</td>
+<td class="r data">22.1642</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">Corrected Total</th>
+<td class="r data">35780</td>
+<td class="r data">960679.2582</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+<a name="IDX24"></a>
+<div>
+<div align="center">
+<table class="table" cellspacing="0" cellpadding="5" rules="all" frame="box" bordercolor="#C1C1C1" summary="Procedure GLM: Fit Statistics">
+<colgroup>
+<col>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="r b header" scope="col">R-Square</th>
+<th class="r b header" scope="col">Coeff Var</th>
+<th class="r b header" scope="col">Root MSE</th>
+<th class="r b header" scope="col">fac4&nbsp;Mean</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="r data">0.175498</td>
+<td class="r data">83.61938</td>
+<td class="r data">4.707887</td>
+<td class="r data">5.630139</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+<a name="IDX25"></a>
+<div>
+<div align="center">
+<table class="table" cellspacing="0" cellpadding="5" rules="all" frame="box" bordercolor="#C1C1C1" summary="Procedure GLM: Type I Model ANOVA">
+<colgroup>
+<col>
+</colgroup>
+<colgroup>
+<col>
+<col>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="l b header" scope="col">Source</th>
+<th class="r b header" scope="col">DF</th>
+<th class="r b header" scope="col">Type I SS</th>
+<th class="r b header" scope="col">Mean Square</th>
+<th class="r b header" scope="col">F Value</th>
+<th class="r b header" scope="col">Pr&nbsp;&gt;&nbsp;F</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="l rowheader" scope="row">group</th>
+<td class="r data">43</td>
+<td class="r data">168597.0957</td>
+<td class="r data">3920.8627</td>
+<td class="r data">176.90</td>
+<td class="r data">&lt;.0001</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+<a name="IDX26"></a>
+<div>
+<div align="center">
+<table class="table" cellspacing="0" cellpadding="5" rules="all" frame="box" bordercolor="#C1C1C1" summary="Procedure GLM: Type III Model ANOVA">
+<colgroup>
+<col>
+</colgroup>
+<colgroup>
+<col>
+<col>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="l b header" scope="col">Source</th>
+<th class="r b header" scope="col">DF</th>
+<th class="r b header" scope="col">Type III SS</th>
+<th class="r b header" scope="col">Mean Square</th>
+<th class="r b header" scope="col">F Value</th>
+<th class="r b header" scope="col">Pr&nbsp;&gt;&nbsp;F</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="l rowheader" scope="row">group</th>
+<td class="r data">43</td>
+<td class="r data">168597.0957</td>
+<td class="r data">3920.8627</td>
+<td class="r data">176.90</td>
+<td class="r data">&lt;.0001</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+<p style="page-break-after: always;"><br/></p><hr size="3"/>
+<a name="IDX27"></a>
+<table class="systitleandfootercontainer" width="100%" cellspacing="1" cellpadding="1" rules="none" frame="void" border="0" summary="Page Layout">
+<tr>
+<td class="c systemtitle">GLM for dataset = cl_st1_ph3_melina group fac4</td>
+</tr>
+</table><br>
+<div class="c proctitle">The GLM Procedure</div>
+<p>
+<div>
+<div align="center">
+<table class="table" cellspacing="0" cellpadding="5" rules="all" frame="box" bordercolor="#C1C1C1" summary="Procedure GLM: Means">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<colgroup>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="l b header" rowspan="2" scope="col">Level of<br/>group</th>
+<th class="r b header" rowspan="2" scope="col">N</th>
+<th class="c b header" colspan="2" scope="colgroup">fac4</th>
+</tr>
+<tr>
+<th class="r b header" scope="col">Mean</th>
+<th class="r b header" scope="col">Std Dev</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="l rowheader" scope="row">global_north_2023_09</th>
+<th class="r data">25</th>
+<td class="r data">3.8400000</td>
+<td class="r data">2.57681975</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_north_2023_10</th>
+<th class="r data">2864</th>
+<td class="r data">3.1176676</td>
+<td class="r data">2.31046050</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_north_2023_11</th>
+<th class="r data">1996</th>
+<td class="r data">4.9408818</td>
+<td class="r data">4.07061873</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_north_2023_12</th>
+<th class="r data">1113</th>
+<td class="r data">4.7412399</td>
+<td class="r data">3.82220381</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_north_2024_01</th>
+<th class="r data">875</th>
+<td class="r data">4.2845714</td>
+<td class="r data">3.48355760</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_north_2024_02</th>
+<th class="r data">900</th>
+<td class="r data">5.4166667</td>
+<td class="r data">4.81570821</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_north_2024_03</th>
+<th class="r data">880</th>
+<td class="r data">5.1909091</td>
+<td class="r data">4.08609386</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_north_2024_04</th>
+<th class="r data">1037</th>
+<td class="r data">4.2073288</td>
+<td class="r data">3.41476811</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_north_2024_05</th>
+<th class="r data">1213</th>
+<td class="r data">4.4122012</td>
+<td class="r data">3.72573552</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_north_2024_06</th>
+<th class="r data">709</th>
+<td class="r data">5.6220028</td>
+<td class="r data">5.36975953</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_north_2024_07</th>
+<th class="r data">749</th>
+<td class="r data">5.4312417</td>
+<td class="r data">4.50900895</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_north_2024_08</th>
+<th class="r data">768</th>
+<td class="r data">5.5351563</td>
+<td class="r data">4.95232167</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_north_2024_09</th>
+<th class="r data">689</th>
+<td class="r data">4.7314949</td>
+<td class="r data">3.80317465</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_north_2024_10</th>
+<th class="r data">921</th>
+<td class="r data">3.9022801</td>
+<td class="r data">3.14248676</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_north_2024_11</th>
+<th class="r data">1189</th>
+<td class="r data">4.9041211</td>
+<td class="r data">3.73727581</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_north_2024_12</th>
+<th class="r data">873</th>
+<td class="r data">4.7273769</td>
+<td class="r data">4.64855651</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_north_2025_01</th>
+<th class="r data">1651</th>
+<td class="r data">10.1078134</td>
+<td class="r data">6.75496716</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_north_2025_02</th>
+<th class="r data">1649</th>
+<td class="r data">9.9302608</td>
+<td class="r data">6.85870664</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_north_2025_03</th>
+<th class="r data">1249</th>
+<td class="r data">7.8879103</td>
+<td class="r data">7.04383638</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_north_2025_04</th>
+<th class="r data">1110</th>
+<td class="r data">5.3099099</td>
+<td class="r data">4.72884125</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_north_2025_05</th>
+<th class="r data">1663</th>
+<td class="r data">5.4034877</td>
+<td class="r data">4.50539587</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_north_2025_06</th>
+<th class="r data">1349</th>
+<td class="r data">3.9369904</td>
+<td class="r data">3.44128842</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_south_2023_09</th>
+<th class="r data">10</th>
+<td class="r data">3.5000000</td>
+<td class="r data">2.22361068</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_south_2023_10</th>
+<th class="r data">1361</th>
+<td class="r data">3.5422483</td>
+<td class="r data">2.38897910</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_south_2023_11</th>
+<th class="r data">845</th>
+<td class="r data">5.5230769</td>
+<td class="r data">4.47462567</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_south_2023_12</th>
+<th class="r data">486</th>
+<td class="r data">5.7037037</td>
+<td class="r data">4.22445832</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_south_2024_01</th>
+<th class="r data">385</th>
+<td class="r data">4.0623377</td>
+<td class="r data">3.26219822</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_south_2024_02</th>
+<th class="r data">253</th>
+<td class="r data">7.2252964</td>
+<td class="r data">5.89664893</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_south_2024_03</th>
+<th class="r data">292</th>
+<td class="r data">6.1506849</td>
+<td class="r data">4.98636280</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_south_2024_04</th>
+<th class="r data">333</th>
+<td class="r data">4.9789790</td>
+<td class="r data">4.78729898</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_south_2024_05</th>
+<th class="r data">439</th>
+<td class="r data">5.3621868</td>
+<td class="r data">5.08723272</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_south_2024_06</th>
+<th class="r data">300</th>
+<td class="r data">7.0533333</td>
+<td class="r data">6.87468982</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_south_2024_07</th>
+<th class="r data">405</th>
+<td class="r data">6.1259259</td>
+<td class="r data">5.17911308</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_south_2024_08</th>
+<th class="r data">493</th>
+<td class="r data">6.0324544</td>
+<td class="r data">5.14060053</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_south_2024_09</th>
+<th class="r data">393</th>
+<td class="r data">4.8905852</td>
+<td class="r data">4.42000761</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_south_2024_10</th>
+<th class="r data">687</th>
+<td class="r data">3.9854440</td>
+<td class="r data">3.22884558</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_south_2024_11</th>
+<th class="r data">461</th>
+<td class="r data">4.9956616</td>
+<td class="r data">3.64512519</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_south_2024_12</th>
+<th class="r data">322</th>
+<td class="r data">5.2360248</td>
+<td class="r data">5.04437076</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_south_2025_01</th>
+<th class="r data">601</th>
+<td class="r data">11.8219634</td>
+<td class="r data">7.23946937</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_south_2025_02</th>
+<th class="r data">498</th>
+<td class="r data">11.7248996</td>
+<td class="r data">7.15245188</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_south_2025_03</th>
+<th class="r data">398</th>
+<td class="r data">10.7236181</td>
+<td class="r data">8.40828397</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_south_2025_04</th>
+<th class="r data">405</th>
+<td class="r data">5.3086420</td>
+<td class="r data">4.73046262</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_south_2025_05</th>
+<th class="r data">461</th>
+<td class="r data">6.6030369</td>
+<td class="r data">5.30019601</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_south_2025_06</th>
+<th class="r data">481</th>
+<td class="r data">4.2349272</td>
+<td class="r data">4.03434557</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+</div>
+<div class="branch">
+<p style="page-break-after: always;"><br/></p><hr size="3"/>
+<a name="IDX28"></a>
+<table class="systitleandfootercontainer" width="100%" cellspacing="1" cellpadding="1" rules="none" frame="void" border="0" summary="Page Layout">
+<tr>
+<td class="c systemtitle">GLM for dataset = cl_st1_ph3_melina group fac5</td>
+</tr>
+</table><br>
+<div class="c proctitle">The GLM Procedure</div>
+<p>
+<div>
+<div align="center">
+<table class="table" cellspacing="0" cellpadding="5" rules="all" frame="box" bordercolor="#C1C1C1" summary="Procedure GLM: Class Levels">
+<colgroup>
+<col>
+</colgroup>
+<colgroup>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="c b header" colspan="3" scope="colgroup">Class Level Information</th>
+</tr>
+<tr>
+<th class="l b header" scope="col">Class</th>
+<th class="r b header" scope="col">Levels</th>
+<th class="l b header" scope="col">Values</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="l rowheader" scope="row">group</th>
+<td class="r data">44</td>
+<td class="l data">global_north_2023_09 global_north_2023_10 global_north_2023_11 global_north_2023_12 global_north_2024_01 global_north_2024_02 global_north_2024_03 global_north_2024_04 global_north_2024_05 global_north_2024_06 global_north_2024_07 global_north_2024_08 global_north_2024_09 global_north_2024_10 global_north_2024_11 global_north_2024_12 global_north_2025_01 global_north_2025_02 global_north_2025_03 global_north_2025_04 global_north_2025_05 global_north_2025_06 global_south_2023_09 global_south_2023_10 global_south_2023_11 global_south_2023_12 global_south_2024_01 global_south_2024_02 global_south_2024_03 global_south_2024_04 global_south_2024_05 global_south_2024_06 global_south_2024_07 global_south_2024_08 global_south_2024_09 global_south_2024_10 global_south_2024_11 global_south_2024_12 global_south_2025_01 global_south_2025_02 global_south_2025_03 global_south_2025_04 global_south_2025_05 global_south_2025_06</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+<a name="IDX29"></a>
+<div>
+<div align="center">
+<table class="table" cellspacing="0" cellpadding="5" rules="all" frame="box" bordercolor="#C1C1C1" summary="Procedure GLM: Number of Observations">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<tbody>
+<tr>
+<th class="l rowheader" scope="row">Number of Observations Read</th>
+<td class="r data">35781</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">Number of Observations Used</th>
+<td class="r data">35781</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+<p style="page-break-after: always;"><br/></p><hr size="3"/>
+<a name="IDX30"></a>
+<table class="systitleandfootercontainer" width="100%" cellspacing="1" cellpadding="1" rules="none" frame="void" border="0" summary="Page Layout">
+<tr>
+<td class="c systemtitle">GLM for dataset = cl_st1_ph3_melina group fac5</td>
+</tr>
+</table><br>
+<div class="c proctitle">The GLM Procedure</div>
+<div class="c proctitle">&nbsp;</div>
+<div class="c proctitle">Dependent Variable: fac5   </div>
+<p>
+<div>
+<div align="center">
+<table class="table" cellspacing="0" cellpadding="5" rules="all" frame="box" bordercolor="#C1C1C1" summary="Procedure GLM: Overall ANOVA">
+<colgroup>
+<col>
+</colgroup>
+<colgroup>
+<col>
+<col>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="l b header" scope="col">Source</th>
+<th class="r b header" scope="col">DF</th>
+<th class="r b header" scope="col">Sum of Squares</th>
+<th class="r b header" scope="col">Mean Square</th>
+<th class="r b header" scope="col">F Value</th>
+<th class="r b header" scope="col">Pr&nbsp;&gt;&nbsp;F</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="l rowheader" scope="row">Model</th>
+<td class="r data">43</td>
+<td class="r data">26452.7579</td>
+<td class="r data">615.1804</td>
+<td class="r data">57.59</td>
+<td class="r data">&lt;.0001</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">Error</th>
+<td class="r data">35737</td>
+<td class="r data">381772.8159</td>
+<td class="r data">10.6828</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">Corrected Total</th>
+<td class="r data">35780</td>
+<td class="r data">408225.5738</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+<a name="IDX31"></a>
+<div>
+<div align="center">
+<table class="table" cellspacing="0" cellpadding="5" rules="all" frame="box" bordercolor="#C1C1C1" summary="Procedure GLM: Fit Statistics">
+<colgroup>
+<col>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="r b header" scope="col">R-Square</th>
+<th class="r b header" scope="col">Coeff Var</th>
+<th class="r b header" scope="col">Root MSE</th>
+<th class="r b header" scope="col">fac5&nbsp;Mean</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="r data">0.064799</td>
+<td class="r data">99.99901</td>
+<td class="r data">3.268462</td>
+<td class="r data">3.268494</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+<a name="IDX32"></a>
+<div>
+<div align="center">
+<table class="table" cellspacing="0" cellpadding="5" rules="all" frame="box" bordercolor="#C1C1C1" summary="Procedure GLM: Type I Model ANOVA">
+<colgroup>
+<col>
+</colgroup>
+<colgroup>
+<col>
+<col>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="l b header" scope="col">Source</th>
+<th class="r b header" scope="col">DF</th>
+<th class="r b header" scope="col">Type I SS</th>
+<th class="r b header" scope="col">Mean Square</th>
+<th class="r b header" scope="col">F Value</th>
+<th class="r b header" scope="col">Pr&nbsp;&gt;&nbsp;F</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="l rowheader" scope="row">group</th>
+<td class="r data">43</td>
+<td class="r data">26452.75792</td>
+<td class="r data">615.18042</td>
+<td class="r data">57.59</td>
+<td class="r data">&lt;.0001</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+<a name="IDX33"></a>
+<div>
+<div align="center">
+<table class="table" cellspacing="0" cellpadding="5" rules="all" frame="box" bordercolor="#C1C1C1" summary="Procedure GLM: Type III Model ANOVA">
+<colgroup>
+<col>
+</colgroup>
+<colgroup>
+<col>
+<col>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="l b header" scope="col">Source</th>
+<th class="r b header" scope="col">DF</th>
+<th class="r b header" scope="col">Type III SS</th>
+<th class="r b header" scope="col">Mean Square</th>
+<th class="r b header" scope="col">F Value</th>
+<th class="r b header" scope="col">Pr&nbsp;&gt;&nbsp;F</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="l rowheader" scope="row">group</th>
+<td class="r data">43</td>
+<td class="r data">26452.75792</td>
+<td class="r data">615.18042</td>
+<td class="r data">57.59</td>
+<td class="r data">&lt;.0001</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+<p style="page-break-after: always;"><br/></p><hr size="3"/>
+<a name="IDX34"></a>
+<table class="systitleandfootercontainer" width="100%" cellspacing="1" cellpadding="1" rules="none" frame="void" border="0" summary="Page Layout">
+<tr>
+<td class="c systemtitle">GLM for dataset = cl_st1_ph3_melina group fac5</td>
+</tr>
+</table><br>
+<div class="c proctitle">The GLM Procedure</div>
+<p>
+<div>
+<div align="center">
+<table class="table" cellspacing="0" cellpadding="5" rules="all" frame="box" bordercolor="#C1C1C1" summary="Procedure GLM: Means">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<colgroup>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="l b header" rowspan="2" scope="col">Level of<br/>group</th>
+<th class="r b header" rowspan="2" scope="col">N</th>
+<th class="c b header" colspan="2" scope="colgroup">fac5</th>
+</tr>
+<tr>
+<th class="r b header" scope="col">Mean</th>
+<th class="r b header" scope="col">Std Dev</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="l rowheader" scope="row">global_north_2023_09</th>
+<th class="r data">25</th>
+<td class="r data">1.92000000</td>
+<td class="r data">2.78268456</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_north_2023_10</th>
+<th class="r data">2864</th>
+<td class="r data">2.06215084</td>
+<td class="r data">1.90930742</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_north_2023_11</th>
+<th class="r data">1996</th>
+<td class="r data">2.36122244</td>
+<td class="r data">2.36479597</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_north_2023_12</th>
+<th class="r data">1113</th>
+<td class="r data">2.51392633</td>
+<td class="r data">2.60430505</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_north_2024_01</th>
+<th class="r data">875</th>
+<td class="r data">3.68228571</td>
+<td class="r data">4.00567038</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_north_2024_02</th>
+<th class="r data">900</th>
+<td class="r data">3.07000000</td>
+<td class="r data">3.18621021</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_north_2024_03</th>
+<th class="r data">880</th>
+<td class="r data">2.72386364</td>
+<td class="r data">2.82639494</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_north_2024_04</th>
+<th class="r data">1037</th>
+<td class="r data">2.86981678</td>
+<td class="r data">2.74906535</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_north_2024_05</th>
+<th class="r data">1213</th>
+<td class="r data">3.46578730</td>
+<td class="r data">3.80157929</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_north_2024_06</th>
+<th class="r data">709</th>
+<td class="r data">2.82933709</td>
+<td class="r data">3.23739402</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_north_2024_07</th>
+<th class="r data">749</th>
+<td class="r data">2.86648865</td>
+<td class="r data">2.98361140</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_north_2024_08</th>
+<th class="r data">768</th>
+<td class="r data">2.67187500</td>
+<td class="r data">2.54229221</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_north_2024_09</th>
+<th class="r data">689</th>
+<td class="r data">2.74891147</td>
+<td class="r data">2.83293588</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_north_2024_10</th>
+<th class="r data">921</th>
+<td class="r data">2.43756786</td>
+<td class="r data">2.57425805</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_north_2024_11</th>
+<th class="r data">1189</th>
+<td class="r data">5.20857864</td>
+<td class="r data">4.86520946</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_north_2024_12</th>
+<th class="r data">873</th>
+<td class="r data">4.11569301</td>
+<td class="r data">4.09818082</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_north_2025_01</th>
+<th class="r data">1651</th>
+<td class="r data">2.98364627</td>
+<td class="r data">3.26807871</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_north_2025_02</th>
+<th class="r data">1649</th>
+<td class="r data">3.22377198</td>
+<td class="r data">3.28929089</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_north_2025_03</th>
+<th class="r data">1249</th>
+<td class="r data">3.57165733</td>
+<td class="r data">3.16073627</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_north_2025_04</th>
+<th class="r data">1110</th>
+<td class="r data">4.09729730</td>
+<td class="r data">3.56461569</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_north_2025_05</th>
+<th class="r data">1663</th>
+<td class="r data">4.22369212</td>
+<td class="r data">3.54044761</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_north_2025_06</th>
+<th class="r data">1349</th>
+<td class="r data">4.41215715</td>
+<td class="r data">3.48511466</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_south_2023_09</th>
+<th class="r data">10</th>
+<td class="r data">1.90000000</td>
+<td class="r data">1.37032032</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_south_2023_10</th>
+<th class="r data">1361</th>
+<td class="r data">2.52975753</td>
+<td class="r data">2.36907850</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_south_2023_11</th>
+<th class="r data">845</th>
+<td class="r data">2.95502959</td>
+<td class="r data">2.89227831</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_south_2023_12</th>
+<th class="r data">486</th>
+<td class="r data">3.20370370</td>
+<td class="r data">3.09066881</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_south_2024_01</th>
+<th class="r data">385</th>
+<td class="r data">5.84675325</td>
+<td class="r data">5.72502694</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_south_2024_02</th>
+<th class="r data">253</th>
+<td class="r data">3.41501976</td>
+<td class="r data">3.53296434</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_south_2024_03</th>
+<th class="r data">292</th>
+<td class="r data">3.06849315</td>
+<td class="r data">3.18535639</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_south_2024_04</th>
+<th class="r data">333</th>
+<td class="r data">2.78978979</td>
+<td class="r data">2.56557685</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_south_2024_05</th>
+<th class="r data">439</th>
+<td class="r data">3.86332574</td>
+<td class="r data">3.75682014</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_south_2024_06</th>
+<th class="r data">300</th>
+<td class="r data">3.14333333</td>
+<td class="r data">3.65339292</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_south_2024_07</th>
+<th class="r data">405</th>
+<td class="r data">3.43703704</td>
+<td class="r data">3.83755686</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_south_2024_08</th>
+<th class="r data">493</th>
+<td class="r data">2.82352941</td>
+<td class="r data">2.87675258</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_south_2024_09</th>
+<th class="r data">393</th>
+<td class="r data">2.99745547</td>
+<td class="r data">2.96536016</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_south_2024_10</th>
+<th class="r data">687</th>
+<td class="r data">2.75254731</td>
+<td class="r data">3.11020446</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_south_2024_11</th>
+<th class="r data">461</th>
+<td class="r data">5.66377440</td>
+<td class="r data">4.97316386</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_south_2024_12</th>
+<th class="r data">322</th>
+<td class="r data">4.54968944</td>
+<td class="r data">4.29942580</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_south_2025_01</th>
+<th class="r data">601</th>
+<td class="r data">2.86688852</td>
+<td class="r data">3.25047460</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_south_2025_02</th>
+<th class="r data">498</th>
+<td class="r data">3.59236948</td>
+<td class="r data">3.76103367</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_south_2025_03</th>
+<th class="r data">398</th>
+<td class="r data">3.42964824</td>
+<td class="r data">3.23376789</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_south_2025_04</th>
+<th class="r data">405</th>
+<td class="r data">4.15308642</td>
+<td class="r data">3.71460479</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_south_2025_05</th>
+<th class="r data">461</th>
+<td class="r data">3.98047722</td>
+<td class="r data">3.77601823</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_south_2025_06</th>
+<th class="r data">481</th>
+<td class="r data">4.46569647</td>
+<td class="r data">3.77538188</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+</div>
+<div class="branch">
+<p style="page-break-after: always;"><br/></p><hr size="3"/>
+<a name="IDX35"></a>
+<table class="systitleandfootercontainer" width="100%" cellspacing="1" cellpadding="1" rules="none" frame="void" border="0" summary="Page Layout">
+<tr>
+<td class="c systemtitle">GLM for dataset = cl_st1_ph3_melina group fac6</td>
+</tr>
+</table><br>
+<div class="c proctitle">The GLM Procedure</div>
+<p>
+<div>
+<div align="center">
+<table class="table" cellspacing="0" cellpadding="5" rules="all" frame="box" bordercolor="#C1C1C1" summary="Procedure GLM: Class Levels">
+<colgroup>
+<col>
+</colgroup>
+<colgroup>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="c b header" colspan="3" scope="colgroup">Class Level Information</th>
+</tr>
+<tr>
+<th class="l b header" scope="col">Class</th>
+<th class="r b header" scope="col">Levels</th>
+<th class="l b header" scope="col">Values</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="l rowheader" scope="row">group</th>
+<td class="r data">44</td>
+<td class="l data">global_north_2023_09 global_north_2023_10 global_north_2023_11 global_north_2023_12 global_north_2024_01 global_north_2024_02 global_north_2024_03 global_north_2024_04 global_north_2024_05 global_north_2024_06 global_north_2024_07 global_north_2024_08 global_north_2024_09 global_north_2024_10 global_north_2024_11 global_north_2024_12 global_north_2025_01 global_north_2025_02 global_north_2025_03 global_north_2025_04 global_north_2025_05 global_north_2025_06 global_south_2023_09 global_south_2023_10 global_south_2023_11 global_south_2023_12 global_south_2024_01 global_south_2024_02 global_south_2024_03 global_south_2024_04 global_south_2024_05 global_south_2024_06 global_south_2024_07 global_south_2024_08 global_south_2024_09 global_south_2024_10 global_south_2024_11 global_south_2024_12 global_south_2025_01 global_south_2025_02 global_south_2025_03 global_south_2025_04 global_south_2025_05 global_south_2025_06</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+<a name="IDX36"></a>
+<div>
+<div align="center">
+<table class="table" cellspacing="0" cellpadding="5" rules="all" frame="box" bordercolor="#C1C1C1" summary="Procedure GLM: Number of Observations">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<tbody>
+<tr>
+<th class="l rowheader" scope="row">Number of Observations Read</th>
+<td class="r data">35781</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">Number of Observations Used</th>
+<td class="r data">35781</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+<p style="page-break-after: always;"><br/></p><hr size="3"/>
+<a name="IDX37"></a>
+<table class="systitleandfootercontainer" width="100%" cellspacing="1" cellpadding="1" rules="none" frame="void" border="0" summary="Page Layout">
+<tr>
+<td class="c systemtitle">GLM for dataset = cl_st1_ph3_melina group fac6</td>
+</tr>
+</table><br>
+<div class="c proctitle">The GLM Procedure</div>
+<div class="c proctitle">&nbsp;</div>
+<div class="c proctitle">Dependent Variable: fac6   </div>
+<p>
+<div>
+<div align="center">
+<table class="table" cellspacing="0" cellpadding="5" rules="all" frame="box" bordercolor="#C1C1C1" summary="Procedure GLM: Overall ANOVA">
+<colgroup>
+<col>
+</colgroup>
+<colgroup>
+<col>
+<col>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="l b header" scope="col">Source</th>
+<th class="r b header" scope="col">DF</th>
+<th class="r b header" scope="col">Sum of Squares</th>
+<th class="r b header" scope="col">Mean Square</th>
+<th class="r b header" scope="col">F Value</th>
+<th class="r b header" scope="col">Pr&nbsp;&gt;&nbsp;F</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="l rowheader" scope="row">Model</th>
+<td class="r data">43</td>
+<td class="r data">8097.59816</td>
+<td class="r data">188.31624</td>
+<td class="r data">91.39</td>
+<td class="r data">&lt;.0001</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">Error</th>
+<td class="r data">35737</td>
+<td class="r data">73635.34447</td>
+<td class="r data">2.06048</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">Corrected Total</th>
+<td class="r data">35780</td>
+<td class="r data">81732.94262</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+<a name="IDX38"></a>
+<div>
+<div align="center">
+<table class="table" cellspacing="0" cellpadding="5" rules="all" frame="box" bordercolor="#C1C1C1" summary="Procedure GLM: Fit Statistics">
+<colgroup>
+<col>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="r b header" scope="col">R-Square</th>
+<th class="r b header" scope="col">Coeff Var</th>
+<th class="r b header" scope="col">Root MSE</th>
+<th class="r b header" scope="col">fac6&nbsp;Mean</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="r data">0.099074</td>
+<td class="r data">187.5666</td>
+<td class="r data">1.435437</td>
+<td class="r data">0.765294</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+<a name="IDX39"></a>
+<div>
+<div align="center">
+<table class="table" cellspacing="0" cellpadding="5" rules="all" frame="box" bordercolor="#C1C1C1" summary="Procedure GLM: Type I Model ANOVA">
+<colgroup>
+<col>
+</colgroup>
+<colgroup>
+<col>
+<col>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="l b header" scope="col">Source</th>
+<th class="r b header" scope="col">DF</th>
+<th class="r b header" scope="col">Type I SS</th>
+<th class="r b header" scope="col">Mean Square</th>
+<th class="r b header" scope="col">F Value</th>
+<th class="r b header" scope="col">Pr&nbsp;&gt;&nbsp;F</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="l rowheader" scope="row">group</th>
+<td class="r data">43</td>
+<td class="r data">8097.598158</td>
+<td class="r data">188.316236</td>
+<td class="r data">91.39</td>
+<td class="r data">&lt;.0001</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+<a name="IDX40"></a>
+<div>
+<div align="center">
+<table class="table" cellspacing="0" cellpadding="5" rules="all" frame="box" bordercolor="#C1C1C1" summary="Procedure GLM: Type III Model ANOVA">
+<colgroup>
+<col>
+</colgroup>
+<colgroup>
+<col>
+<col>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="l b header" scope="col">Source</th>
+<th class="r b header" scope="col">DF</th>
+<th class="r b header" scope="col">Type III SS</th>
+<th class="r b header" scope="col">Mean Square</th>
+<th class="r b header" scope="col">F Value</th>
+<th class="r b header" scope="col">Pr&nbsp;&gt;&nbsp;F</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="l rowheader" scope="row">group</th>
+<td class="r data">43</td>
+<td class="r data">8097.598158</td>
+<td class="r data">188.316236</td>
+<td class="r data">91.39</td>
+<td class="r data">&lt;.0001</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+<p style="page-break-after: always;"><br/></p><hr size="3"/>
+<a name="IDX41"></a>
+<table class="systitleandfootercontainer" width="100%" cellspacing="1" cellpadding="1" rules="none" frame="void" border="0" summary="Page Layout">
+<tr>
+<td class="c systemtitle">GLM for dataset = cl_st1_ph3_melina group fac6</td>
+</tr>
+</table><br>
+<div class="c proctitle">The GLM Procedure</div>
+<p>
+<div>
+<div align="center">
+<table class="table" cellspacing="0" cellpadding="5" rules="all" frame="box" bordercolor="#C1C1C1" summary="Procedure GLM: Means">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<colgroup>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="l b header" rowspan="2" scope="col">Level of<br/>group</th>
+<th class="r b header" rowspan="2" scope="col">N</th>
+<th class="c b header" colspan="2" scope="colgroup">fac6</th>
+</tr>
+<tr>
+<th class="r b header" scope="col">Mean</th>
+<th class="r b header" scope="col">Std Dev</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="l rowheader" scope="row">global_north_2023_09</th>
+<th class="r data">25</th>
+<td class="r data">1.16000000</td>
+<td class="r data">1.17898261</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_north_2023_10</th>
+<th class="r data">2864</th>
+<td class="r data">0.66480447</td>
+<td class="r data">0.94859351</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_north_2023_11</th>
+<th class="r data">1996</th>
+<td class="r data">0.54909820</td>
+<td class="r data">0.91497932</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_north_2023_12</th>
+<th class="r data">1113</th>
+<td class="r data">0.87061995</td>
+<td class="r data">1.58209669</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_north_2024_01</th>
+<th class="r data">875</th>
+<td class="r data">0.99200000</td>
+<td class="r data">1.66431932</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_north_2024_02</th>
+<th class="r data">900</th>
+<td class="r data">0.70333333</td>
+<td class="r data">1.23887261</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_north_2024_03</th>
+<th class="r data">880</th>
+<td class="r data">1.37613636</td>
+<td class="r data">2.01148547</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_north_2024_04</th>
+<th class="r data">1037</th>
+<td class="r data">0.93056895</td>
+<td class="r data">1.37229937</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_north_2024_05</th>
+<th class="r data">1213</th>
+<td class="r data">0.73784007</td>
+<td class="r data">1.15349703</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_north_2024_06</th>
+<th class="r data">709</th>
+<td class="r data">0.84344147</td>
+<td class="r data">1.23714977</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_north_2024_07</th>
+<th class="r data">749</th>
+<td class="r data">0.58744993</td>
+<td class="r data">1.14551090</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_north_2024_08</th>
+<th class="r data">768</th>
+<td class="r data">0.52734375</td>
+<td class="r data">1.07927361</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_north_2024_09</th>
+<th class="r data">689</th>
+<td class="r data">0.42670537</td>
+<td class="r data">0.94357421</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_north_2024_10</th>
+<th class="r data">921</th>
+<td class="r data">0.42453855</td>
+<td class="r data">0.90710087</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_north_2024_11</th>
+<th class="r data">1189</th>
+<td class="r data">0.42977292</td>
+<td class="r data">0.79316633</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_north_2024_12</th>
+<th class="r data">873</th>
+<td class="r data">0.54410080</td>
+<td class="r data">0.95335725</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_north_2025_01</th>
+<th class="r data">1651</th>
+<td class="r data">0.53179891</td>
+<td class="r data">0.89207982</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_north_2025_02</th>
+<th class="r data">1649</th>
+<td class="r data">0.43117041</td>
+<td class="r data">0.76499486</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_north_2025_03</th>
+<th class="r data">1249</th>
+<td class="r data">0.61569255</td>
+<td class="r data">0.98202288</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_north_2025_04</th>
+<th class="r data">1110</th>
+<td class="r data">0.66936937</td>
+<td class="r data">1.01194781</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_north_2025_05</th>
+<th class="r data">1663</th>
+<td class="r data">1.40168370</td>
+<td class="r data">1.80380586</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_north_2025_06</th>
+<th class="r data">1349</th>
+<td class="r data">2.41438102</td>
+<td class="r data">3.76412878</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_south_2023_09</th>
+<th class="r data">10</th>
+<td class="r data">0.40000000</td>
+<td class="r data">1.17378779</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_south_2023_10</th>
+<th class="r data">1361</th>
+<td class="r data">0.57384276</td>
+<td class="r data">0.87817860</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_south_2023_11</th>
+<th class="r data">845</th>
+<td class="r data">0.49704142</td>
+<td class="r data">1.01484398</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_south_2023_12</th>
+<th class="r data">486</th>
+<td class="r data">0.93209877</td>
+<td class="r data">1.86379463</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_south_2024_01</th>
+<th class="r data">385</th>
+<td class="r data">1.01558442</td>
+<td class="r data">1.73648539</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_south_2024_02</th>
+<th class="r data">253</th>
+<td class="r data">0.67984190</td>
+<td class="r data">1.03330874</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_south_2024_03</th>
+<th class="r data">292</th>
+<td class="r data">1.19863014</td>
+<td class="r data">2.04290697</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_south_2024_04</th>
+<th class="r data">333</th>
+<td class="r data">0.91891892</td>
+<td class="r data">1.53160559</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_south_2024_05</th>
+<th class="r data">439</th>
+<td class="r data">0.63097950</td>
+<td class="r data">0.94388041</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_south_2024_06</th>
+<th class="r data">300</th>
+<td class="r data">0.76000000</td>
+<td class="r data">1.28890298</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_south_2024_07</th>
+<th class="r data">405</th>
+<td class="r data">0.44197531</td>
+<td class="r data">1.16454047</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_south_2024_08</th>
+<th class="r data">493</th>
+<td class="r data">0.47667343</td>
+<td class="r data">1.23546981</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_south_2024_09</th>
+<th class="r data">393</th>
+<td class="r data">0.36386768</td>
+<td class="r data">1.03628915</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_south_2024_10</th>
+<th class="r data">687</th>
+<td class="r data">0.36972344</td>
+<td class="r data">1.11319298</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_south_2024_11</th>
+<th class="r data">461</th>
+<td class="r data">0.39262473</td>
+<td class="r data">0.89919641</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_south_2024_12</th>
+<th class="r data">322</th>
+<td class="r data">0.27329193</td>
+<td class="r data">0.92381154</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_south_2025_01</th>
+<th class="r data">601</th>
+<td class="r data">0.22795341</td>
+<td class="r data">0.91448563</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_south_2025_02</th>
+<th class="r data">498</th>
+<td class="r data">0.36546185</td>
+<td class="r data">0.80427172</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_south_2025_03</th>
+<th class="r data">398</th>
+<td class="r data">0.48492462</td>
+<td class="r data">0.86553015</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_south_2025_04</th>
+<th class="r data">405</th>
+<td class="r data">0.52839506</td>
+<td class="r data">0.84566960</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_south_2025_05</th>
+<th class="r data">461</th>
+<td class="r data">1.40563991</td>
+<td class="r data">1.82682032</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_south_2025_06</th>
+<th class="r data">481</th>
+<td class="r data">2.44074844</td>
+<td class="r data">3.70150908</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+</div>
+<div class="branch">
+<p style="page-break-after: always;"><br/></p><hr size="3"/>
+<a name="IDX42"></a>
+<table class="systitleandfootercontainer" width="100%" cellspacing="1" cellpadding="1" rules="none" frame="void" border="0" summary="Page Layout">
+<tr>
+<td class="c systemtitle">GLM for dataset = cl_st1_ph3_melina group fac7</td>
+</tr>
+</table><br>
+<div class="c proctitle">The GLM Procedure</div>
+<p>
+<div>
+<div align="center">
+<table class="table" cellspacing="0" cellpadding="5" rules="all" frame="box" bordercolor="#C1C1C1" summary="Procedure GLM: Class Levels">
+<colgroup>
+<col>
+</colgroup>
+<colgroup>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="c b header" colspan="3" scope="colgroup">Class Level Information</th>
+</tr>
+<tr>
+<th class="l b header" scope="col">Class</th>
+<th class="r b header" scope="col">Levels</th>
+<th class="l b header" scope="col">Values</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="l rowheader" scope="row">group</th>
+<td class="r data">44</td>
+<td class="l data">global_north_2023_09 global_north_2023_10 global_north_2023_11 global_north_2023_12 global_north_2024_01 global_north_2024_02 global_north_2024_03 global_north_2024_04 global_north_2024_05 global_north_2024_06 global_north_2024_07 global_north_2024_08 global_north_2024_09 global_north_2024_10 global_north_2024_11 global_north_2024_12 global_north_2025_01 global_north_2025_02 global_north_2025_03 global_north_2025_04 global_north_2025_05 global_north_2025_06 global_south_2023_09 global_south_2023_10 global_south_2023_11 global_south_2023_12 global_south_2024_01 global_south_2024_02 global_south_2024_03 global_south_2024_04 global_south_2024_05 global_south_2024_06 global_south_2024_07 global_south_2024_08 global_south_2024_09 global_south_2024_10 global_south_2024_11 global_south_2024_12 global_south_2025_01 global_south_2025_02 global_south_2025_03 global_south_2025_04 global_south_2025_05 global_south_2025_06</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+<a name="IDX43"></a>
+<div>
+<div align="center">
+<table class="table" cellspacing="0" cellpadding="5" rules="all" frame="box" bordercolor="#C1C1C1" summary="Procedure GLM: Number of Observations">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<tbody>
+<tr>
+<th class="l rowheader" scope="row">Number of Observations Read</th>
+<td class="r data">35781</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">Number of Observations Used</th>
+<td class="r data">35781</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+<p style="page-break-after: always;"><br/></p><hr size="3"/>
+<a name="IDX44"></a>
+<table class="systitleandfootercontainer" width="100%" cellspacing="1" cellpadding="1" rules="none" frame="void" border="0" summary="Page Layout">
+<tr>
+<td class="c systemtitle">GLM for dataset = cl_st1_ph3_melina group fac7</td>
+</tr>
+</table><br>
+<div class="c proctitle">The GLM Procedure</div>
+<div class="c proctitle">&nbsp;</div>
+<div class="c proctitle">Dependent Variable: fac7   </div>
+<p>
+<div>
+<div align="center">
+<table class="table" cellspacing="0" cellpadding="5" rules="all" frame="box" bordercolor="#C1C1C1" summary="Procedure GLM: Overall ANOVA">
+<colgroup>
+<col>
+</colgroup>
+<colgroup>
+<col>
+<col>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="l b header" scope="col">Source</th>
+<th class="r b header" scope="col">DF</th>
+<th class="r b header" scope="col">Sum of Squares</th>
+<th class="r b header" scope="col">Mean Square</th>
+<th class="r b header" scope="col">F Value</th>
+<th class="r b header" scope="col">Pr&nbsp;&gt;&nbsp;F</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="l rowheader" scope="row">Model</th>
+<td class="r data">43</td>
+<td class="r data">8008.2200</td>
+<td class="r data">186.2377</td>
+<td class="r data">52.42</td>
+<td class="r data">&lt;.0001</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">Error</th>
+<td class="r data">35737</td>
+<td class="r data">126956.4354</td>
+<td class="r data">3.5525</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">Corrected Total</th>
+<td class="r data">35780</td>
+<td class="r data">134964.6554</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+<a name="IDX45"></a>
+<div>
+<div align="center">
+<table class="table" cellspacing="0" cellpadding="5" rules="all" frame="box" bordercolor="#C1C1C1" summary="Procedure GLM: Fit Statistics">
+<colgroup>
+<col>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="r b header" scope="col">R-Square</th>
+<th class="r b header" scope="col">Coeff Var</th>
+<th class="r b header" scope="col">Root MSE</th>
+<th class="r b header" scope="col">fac7&nbsp;Mean</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="r data">0.059336</td>
+<td class="r data" nowrap>-152.6287</td>
+<td class="r data">1.884813</td>
+<td class="r data" nowrap>-1.234901</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+<a name="IDX46"></a>
+<div>
+<div align="center">
+<table class="table" cellspacing="0" cellpadding="5" rules="all" frame="box" bordercolor="#C1C1C1" summary="Procedure GLM: Type I Model ANOVA">
+<colgroup>
+<col>
+</colgroup>
+<colgroup>
+<col>
+<col>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="l b header" scope="col">Source</th>
+<th class="r b header" scope="col">DF</th>
+<th class="r b header" scope="col">Type I SS</th>
+<th class="r b header" scope="col">Mean Square</th>
+<th class="r b header" scope="col">F Value</th>
+<th class="r b header" scope="col">Pr&nbsp;&gt;&nbsp;F</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="l rowheader" scope="row">group</th>
+<td class="r data">43</td>
+<td class="r data">8008.219975</td>
+<td class="r data">186.237674</td>
+<td class="r data">52.42</td>
+<td class="r data">&lt;.0001</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+<a name="IDX47"></a>
+<div>
+<div align="center">
+<table class="table" cellspacing="0" cellpadding="5" rules="all" frame="box" bordercolor="#C1C1C1" summary="Procedure GLM: Type III Model ANOVA">
+<colgroup>
+<col>
+</colgroup>
+<colgroup>
+<col>
+<col>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="l b header" scope="col">Source</th>
+<th class="r b header" scope="col">DF</th>
+<th class="r b header" scope="col">Type III SS</th>
+<th class="r b header" scope="col">Mean Square</th>
+<th class="r b header" scope="col">F Value</th>
+<th class="r b header" scope="col">Pr&nbsp;&gt;&nbsp;F</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="l rowheader" scope="row">group</th>
+<td class="r data">43</td>
+<td class="r data">8008.219975</td>
+<td class="r data">186.237674</td>
+<td class="r data">52.42</td>
+<td class="r data">&lt;.0001</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+<p style="page-break-after: always;"><br/></p><hr size="3"/>
+<a name="IDX48"></a>
+<table class="systitleandfootercontainer" width="100%" cellspacing="1" cellpadding="1" rules="none" frame="void" border="0" summary="Page Layout">
+<tr>
+<td class="c systemtitle">GLM for dataset = cl_st1_ph3_melina group fac7</td>
+</tr>
+</table><br>
+<div class="c proctitle">The GLM Procedure</div>
+<p>
+<div>
+<div align="center">
+<table class="table" cellspacing="0" cellpadding="5" rules="all" frame="box" bordercolor="#C1C1C1" summary="Procedure GLM: Means">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<colgroup>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="l b header" rowspan="2" scope="col">Level of<br/>group</th>
+<th class="r b header" rowspan="2" scope="col">N</th>
+<th class="c b header" colspan="2" scope="colgroup">fac7</th>
+</tr>
+<tr>
+<th class="r b header" scope="col">Mean</th>
+<th class="r b header" scope="col">Std Dev</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="l rowheader" scope="row">global_north_2023_09</th>
+<th class="r data">25</th>
+<td class="r data" nowrap>-1.24000000</td>
+<td class="r data">2.57034369</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_north_2023_10</th>
+<th class="r data">2864</th>
+<td class="r data" nowrap>-1.99371508</td>
+<td class="r data">2.30929169</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_north_2023_11</th>
+<th class="r data">1996</th>
+<td class="r data" nowrap>-1.77855711</td>
+<td class="r data">2.20094788</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_north_2023_12</th>
+<th class="r data">1113</th>
+<td class="r data" nowrap>-1.29559748</td>
+<td class="r data">2.02851711</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_north_2024_01</th>
+<th class="r data">875</th>
+<td class="r data" nowrap>-0.96114286</td>
+<td class="r data">1.77404335</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_north_2024_02</th>
+<th class="r data">900</th>
+<td class="r data" nowrap>-0.84000000</td>
+<td class="r data">1.61849709</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_north_2024_03</th>
+<th class="r data">880</th>
+<td class="r data" nowrap>-0.87045455</td>
+<td class="r data">1.78771939</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_north_2024_04</th>
+<th class="r data">1037</th>
+<td class="r data" nowrap>-0.90742527</td>
+<td class="r data">1.73458818</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_north_2024_05</th>
+<th class="r data">1213</th>
+<td class="r data" nowrap>-1.04369332</td>
+<td class="r data">1.69319261</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_north_2024_06</th>
+<th class="r data">709</th>
+<td class="r data" nowrap>-1.29619182</td>
+<td class="r data">1.97434095</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_north_2024_07</th>
+<th class="r data">749</th>
+<td class="r data" nowrap>-1.34045394</td>
+<td class="r data">1.72825847</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_north_2024_08</th>
+<th class="r data">768</th>
+<td class="r data" nowrap>-1.44401042</td>
+<td class="r data">1.82106766</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_north_2024_09</th>
+<th class="r data">689</th>
+<td class="r data" nowrap>-2.27721335</td>
+<td class="r data">2.89748594</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_north_2024_10</th>
+<th class="r data">921</th>
+<td class="r data" nowrap>-1.84690554</td>
+<td class="r data">2.24417451</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_north_2024_11</th>
+<th class="r data">1189</th>
+<td class="r data" nowrap>-0.85618167</td>
+<td class="r data">1.45482104</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_north_2024_12</th>
+<th class="r data">873</th>
+<td class="r data" nowrap>-1.26689576</td>
+<td class="r data">1.97484562</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_north_2025_01</th>
+<th class="r data">1651</th>
+<td class="r data" nowrap>-1.70623864</td>
+<td class="r data">2.11065490</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_north_2025_02</th>
+<th class="r data">1649</th>
+<td class="r data" nowrap>-1.57731959</td>
+<td class="r data">2.30427944</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_north_2025_03</th>
+<th class="r data">1249</th>
+<td class="r data" nowrap>-1.32105685</td>
+<td class="r data">1.68378775</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_north_2025_04</th>
+<th class="r data">1110</th>
+<td class="r data" nowrap>-1.43063063</td>
+<td class="r data">1.69073179</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_north_2025_05</th>
+<th class="r data">1663</th>
+<td class="r data" nowrap>-1.36861094</td>
+<td class="r data">1.69501312</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_north_2025_06</th>
+<th class="r data">1349</th>
+<td class="r data" nowrap>-1.54484804</td>
+<td class="r data">1.88121605</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_south_2023_09</th>
+<th class="r data">10</th>
+<td class="r data">2.50000000</td>
+<td class="r data">3.24037035</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_south_2023_10</th>
+<th class="r data">1361</th>
+<td class="r data" nowrap>-0.77663483</td>
+<td class="r data">1.84153408</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_south_2023_11</th>
+<th class="r data">845</th>
+<td class="r data" nowrap>-0.75857988</td>
+<td class="r data">1.61917944</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_south_2023_12</th>
+<th class="r data">486</th>
+<td class="r data" nowrap>-0.37860082</td>
+<td class="r data">1.79250297</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_south_2024_01</th>
+<th class="r data">385</th>
+<td class="r data" nowrap>-0.54025974</td>
+<td class="r data">1.44484174</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_south_2024_02</th>
+<th class="r data">253</th>
+<td class="r data" nowrap>-0.55335968</td>
+<td class="r data">1.45913875</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_south_2024_03</th>
+<th class="r data">292</th>
+<td class="r data" nowrap>-0.36643836</td>
+<td class="r data">1.52391147</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_south_2024_04</th>
+<th class="r data">333</th>
+<td class="r data" nowrap>-0.66366366</td>
+<td class="r data">1.62652184</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_south_2024_05</th>
+<th class="r data">439</th>
+<td class="r data" nowrap>-0.55580866</td>
+<td class="r data">1.63884265</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_south_2024_06</th>
+<th class="r data">300</th>
+<td class="r data" nowrap>-0.65000000</td>
+<td class="r data">1.57769783</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_south_2024_07</th>
+<th class="r data">405</th>
+<td class="r data" nowrap>-0.73086420</td>
+<td class="r data">1.36583507</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_south_2024_08</th>
+<th class="r data">493</th>
+<td class="r data" nowrap>-0.58012170</td>
+<td class="r data">1.21314380</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_south_2024_09</th>
+<th class="r data">393</th>
+<td class="r data" nowrap>-1.10178117</td>
+<td class="r data">2.02907989</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_south_2024_10</th>
+<th class="r data">687</th>
+<td class="r data" nowrap>-0.85880640</td>
+<td class="r data">1.59321824</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_south_2024_11</th>
+<th class="r data">461</th>
+<td class="r data" nowrap>-0.30368764</td>
+<td class="r data">1.41227825</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_south_2024_12</th>
+<th class="r data">322</th>
+<td class="r data" nowrap>-0.81677019</td>
+<td class="r data">1.47268953</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_south_2025_01</th>
+<th class="r data">601</th>
+<td class="r data" nowrap>-1.01164725</td>
+<td class="r data">1.56147285</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_south_2025_02</th>
+<th class="r data">498</th>
+<td class="r data" nowrap>-0.85341365</td>
+<td class="r data">1.93885361</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_south_2025_03</th>
+<th class="r data">398</th>
+<td class="r data" nowrap>-0.66080402</td>
+<td class="r data">1.27878302</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_south_2025_04</th>
+<th class="r data">405</th>
+<td class="r data" nowrap>-0.81234568</td>
+<td class="r data">1.37673228</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_south_2025_05</th>
+<th class="r data">461</th>
+<td class="r data" nowrap>-0.92407809</td>
+<td class="r data">1.43431754</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_south_2025_06</th>
+<th class="r data">481</th>
+<td class="r data" nowrap>-0.85239085</td>
+<td class="r data">1.53874932</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+</div>
+<div class="branch">
+<p style="page-break-after: always;"><br/></p><hr size="3"/>
+<a name="IDX49"></a>
+<table class="systitleandfootercontainer" width="100%" cellspacing="1" cellpadding="1" rules="none" frame="void" border="0" summary="Page Layout">
+<tr>
+<td class="c systemtitle">GLM for dataset = cl_st1_ph3_melina group fac8</td>
+</tr>
+</table><br>
+<div class="c proctitle">The GLM Procedure</div>
+<p>
+<div>
+<div align="center">
+<table class="table" cellspacing="0" cellpadding="5" rules="all" frame="box" bordercolor="#C1C1C1" summary="Procedure GLM: Class Levels">
+<colgroup>
+<col>
+</colgroup>
+<colgroup>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="c b header" colspan="3" scope="colgroup">Class Level Information</th>
+</tr>
+<tr>
+<th class="l b header" scope="col">Class</th>
+<th class="r b header" scope="col">Levels</th>
+<th class="l b header" scope="col">Values</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="l rowheader" scope="row">group</th>
+<td class="r data">44</td>
+<td class="l data">global_north_2023_09 global_north_2023_10 global_north_2023_11 global_north_2023_12 global_north_2024_01 global_north_2024_02 global_north_2024_03 global_north_2024_04 global_north_2024_05 global_north_2024_06 global_north_2024_07 global_north_2024_08 global_north_2024_09 global_north_2024_10 global_north_2024_11 global_north_2024_12 global_north_2025_01 global_north_2025_02 global_north_2025_03 global_north_2025_04 global_north_2025_05 global_north_2025_06 global_south_2023_09 global_south_2023_10 global_south_2023_11 global_south_2023_12 global_south_2024_01 global_south_2024_02 global_south_2024_03 global_south_2024_04 global_south_2024_05 global_south_2024_06 global_south_2024_07 global_south_2024_08 global_south_2024_09 global_south_2024_10 global_south_2024_11 global_south_2024_12 global_south_2025_01 global_south_2025_02 global_south_2025_03 global_south_2025_04 global_south_2025_05 global_south_2025_06</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+<a name="IDX50"></a>
+<div>
+<div align="center">
+<table class="table" cellspacing="0" cellpadding="5" rules="all" frame="box" bordercolor="#C1C1C1" summary="Procedure GLM: Number of Observations">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<tbody>
+<tr>
+<th class="l rowheader" scope="row">Number of Observations Read</th>
+<td class="r data">35781</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">Number of Observations Used</th>
+<td class="r data">35781</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+<p style="page-break-after: always;"><br/></p><hr size="3"/>
+<a name="IDX51"></a>
+<table class="systitleandfootercontainer" width="100%" cellspacing="1" cellpadding="1" rules="none" frame="void" border="0" summary="Page Layout">
+<tr>
+<td class="c systemtitle">GLM for dataset = cl_st1_ph3_melina group fac8</td>
+</tr>
+</table><br>
+<div class="c proctitle">The GLM Procedure</div>
+<div class="c proctitle">&nbsp;</div>
+<div class="c proctitle">Dependent Variable: fac8   </div>
+<p>
+<div>
+<div align="center">
+<table class="table" cellspacing="0" cellpadding="5" rules="all" frame="box" bordercolor="#C1C1C1" summary="Procedure GLM: Overall ANOVA">
+<colgroup>
+<col>
+</colgroup>
+<colgroup>
+<col>
+<col>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="l b header" scope="col">Source</th>
+<th class="r b header" scope="col">DF</th>
+<th class="r b header" scope="col">Sum of Squares</th>
+<th class="r b header" scope="col">Mean Square</th>
+<th class="r b header" scope="col">F Value</th>
+<th class="r b header" scope="col">Pr&nbsp;&gt;&nbsp;F</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="l rowheader" scope="row">Model</th>
+<td class="r data">43</td>
+<td class="r data">8807.4205</td>
+<td class="r data">204.8237</td>
+<td class="r data">70.87</td>
+<td class="r data">&lt;.0001</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">Error</th>
+<td class="r data">35737</td>
+<td class="r data">103281.6564</td>
+<td class="r data">2.8900</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">Corrected Total</th>
+<td class="r data">35780</td>
+<td class="r data">112089.0769</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+<a name="IDX52"></a>
+<div>
+<div align="center">
+<table class="table" cellspacing="0" cellpadding="5" rules="all" frame="box" bordercolor="#C1C1C1" summary="Procedure GLM: Fit Statistics">
+<colgroup>
+<col>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="r b header" scope="col">R-Square</th>
+<th class="r b header" scope="col">Coeff Var</th>
+<th class="r b header" scope="col">Root MSE</th>
+<th class="r b header" scope="col">fac8&nbsp;Mean</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="r data">0.078575</td>
+<td class="r data">173.2948</td>
+<td class="r data">1.700014</td>
+<td class="r data">0.980996</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+<a name="IDX53"></a>
+<div>
+<div align="center">
+<table class="table" cellspacing="0" cellpadding="5" rules="all" frame="box" bordercolor="#C1C1C1" summary="Procedure GLM: Type I Model ANOVA">
+<colgroup>
+<col>
+</colgroup>
+<colgroup>
+<col>
+<col>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="l b header" scope="col">Source</th>
+<th class="r b header" scope="col">DF</th>
+<th class="r b header" scope="col">Type I SS</th>
+<th class="r b header" scope="col">Mean Square</th>
+<th class="r b header" scope="col">F Value</th>
+<th class="r b header" scope="col">Pr&nbsp;&gt;&nbsp;F</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="l rowheader" scope="row">group</th>
+<td class="r data">43</td>
+<td class="r data">8807.420519</td>
+<td class="r data">204.823733</td>
+<td class="r data">70.87</td>
+<td class="r data">&lt;.0001</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+<a name="IDX54"></a>
+<div>
+<div align="center">
+<table class="table" cellspacing="0" cellpadding="5" rules="all" frame="box" bordercolor="#C1C1C1" summary="Procedure GLM: Type III Model ANOVA">
+<colgroup>
+<col>
+</colgroup>
+<colgroup>
+<col>
+<col>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="l b header" scope="col">Source</th>
+<th class="r b header" scope="col">DF</th>
+<th class="r b header" scope="col">Type III SS</th>
+<th class="r b header" scope="col">Mean Square</th>
+<th class="r b header" scope="col">F Value</th>
+<th class="r b header" scope="col">Pr&nbsp;&gt;&nbsp;F</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="l rowheader" scope="row">group</th>
+<td class="r data">43</td>
+<td class="r data">8807.420519</td>
+<td class="r data">204.823733</td>
+<td class="r data">70.87</td>
+<td class="r data">&lt;.0001</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+<p style="page-break-after: always;"><br/></p><hr size="3"/>
+<a name="IDX55"></a>
+<table class="systitleandfootercontainer" width="100%" cellspacing="1" cellpadding="1" rules="none" frame="void" border="0" summary="Page Layout">
+<tr>
+<td class="c systemtitle">GLM for dataset = cl_st1_ph3_melina group fac8</td>
+</tr>
+</table><br>
+<div class="c proctitle">The GLM Procedure</div>
+<p>
+<div>
+<div align="center">
+<table class="table" cellspacing="0" cellpadding="5" rules="all" frame="box" bordercolor="#C1C1C1" summary="Procedure GLM: Means">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<colgroup>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="l b header" rowspan="2" scope="col">Level of<br/>group</th>
+<th class="r b header" rowspan="2" scope="col">N</th>
+<th class="c b header" colspan="2" scope="colgroup">fac8</th>
+</tr>
+<tr>
+<th class="r b header" scope="col">Mean</th>
+<th class="r b header" scope="col">Std Dev</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="l rowheader" scope="row">global_north_2023_09</th>
+<th class="r data">25</th>
+<td class="r data">0.68000000</td>
+<td class="r data">0.98826447</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_north_2023_10</th>
+<th class="r data">2864</th>
+<td class="r data">0.84706704</td>
+<td class="r data">1.30516791</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_north_2023_11</th>
+<th class="r data">1996</th>
+<td class="r data">1.30961924</td>
+<td class="r data">1.72997390</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_north_2023_12</th>
+<th class="r data">1113</th>
+<td class="r data">1.31266846</td>
+<td class="r data">1.70673427</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_north_2024_01</th>
+<th class="r data">875</th>
+<td class="r data">1.18971429</td>
+<td class="r data">1.55689484</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_north_2024_02</th>
+<th class="r data">900</th>
+<td class="r data">2.01666667</td>
+<td class="r data">2.80923909</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_north_2024_03</th>
+<th class="r data">880</th>
+<td class="r data">2.09545455</td>
+<td class="r data">2.59867425</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_north_2024_04</th>
+<th class="r data">1037</th>
+<td class="r data">1.62487946</td>
+<td class="r data">2.06764889</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_north_2024_05</th>
+<th class="r data">1213</th>
+<td class="r data">1.48804617</td>
+<td class="r data">1.90211726</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_north_2024_06</th>
+<th class="r data">709</th>
+<td class="r data">1.61354020</td>
+<td class="r data">2.24429912</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_north_2024_07</th>
+<th class="r data">749</th>
+<td class="r data">1.71161549</td>
+<td class="r data">2.57448114</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_north_2024_08</th>
+<th class="r data">768</th>
+<td class="r data">1.99869792</td>
+<td class="r data">3.18875933</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_north_2024_09</th>
+<th class="r data">689</th>
+<td class="r data">1.37155298</td>
+<td class="r data">2.49268769</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_north_2024_10</th>
+<th class="r data">921</th>
+<td class="r data">1.20738328</td>
+<td class="r data">2.25335252</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_north_2024_11</th>
+<th class="r data">1189</th>
+<td class="r data">1.22960471</td>
+<td class="r data">1.94847733</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_north_2024_12</th>
+<th class="r data">873</th>
+<td class="r data">0.59335624</td>
+<td class="r data">1.16260615</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_north_2025_01</th>
+<th class="r data">1651</th>
+<td class="r data">0.69957601</td>
+<td class="r data">1.19112621</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_north_2025_02</th>
+<th class="r data">1649</th>
+<td class="r data">0.61431170</td>
+<td class="r data">1.17175037</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_north_2025_03</th>
+<th class="r data">1249</th>
+<td class="r data">0.59807846</td>
+<td class="r data">1.11452940</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_north_2025_04</th>
+<th class="r data">1110</th>
+<td class="r data">0.51891892</td>
+<td class="r data">1.27792618</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_north_2025_05</th>
+<th class="r data">1663</th>
+<td class="r data">0.40108238</td>
+<td class="r data">1.09848327</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_north_2025_06</th>
+<th class="r data">1349</th>
+<td class="r data">0.24833210</td>
+<td class="r data">1.26344659</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_south_2023_09</th>
+<th class="r data">10</th>
+<td class="r data">1.30000000</td>
+<td class="r data">1.49443412</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_south_2023_10</th>
+<th class="r data">1361</th>
+<td class="r data">0.57237325</td>
+<td class="r data">0.95683349</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_south_2023_11</th>
+<th class="r data">845</th>
+<td class="r data">0.82958580</td>
+<td class="r data">1.27752183</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_south_2023_12</th>
+<th class="r data">486</th>
+<td class="r data">0.96913580</td>
+<td class="r data">1.36414849</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_south_2024_01</th>
+<th class="r data">385</th>
+<td class="r data">0.72727273</td>
+<td class="r data">1.18844659</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_south_2024_02</th>
+<th class="r data">253</th>
+<td class="r data">1.09881423</td>
+<td class="r data">1.57425927</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_south_2024_03</th>
+<th class="r data">292</th>
+<td class="r data">1.34246575</td>
+<td class="r data">1.97558415</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_south_2024_04</th>
+<th class="r data">333</th>
+<td class="r data">1.18018018</td>
+<td class="r data">1.58227112</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_south_2024_05</th>
+<th class="r data">439</th>
+<td class="r data">1.03416856</td>
+<td class="r data">1.53682905</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_south_2024_06</th>
+<th class="r data">300</th>
+<td class="r data">1.05000000</td>
+<td class="r data">1.53471534</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_south_2024_07</th>
+<th class="r data">405</th>
+<td class="r data">1.33827160</td>
+<td class="r data">2.35503295</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_south_2024_08</th>
+<th class="r data">493</th>
+<td class="r data">1.19066937</td>
+<td class="r data">2.27217039</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_south_2024_09</th>
+<th class="r data">393</th>
+<td class="r data">0.83969466</td>
+<td class="r data">1.60746089</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_south_2024_10</th>
+<th class="r data">687</th>
+<td class="r data">0.83114993</td>
+<td class="r data">1.78690303</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_south_2024_11</th>
+<th class="r data">461</th>
+<td class="r data">1.25813449</td>
+<td class="r data">2.16407526</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_south_2024_12</th>
+<th class="r data">322</th>
+<td class="r data">0.58385093</td>
+<td class="r data">1.31162550</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_south_2025_01</th>
+<th class="r data">601</th>
+<td class="r data">0.60565724</td>
+<td class="r data">1.11918182</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_south_2025_02</th>
+<th class="r data">498</th>
+<td class="r data">0.40160643</td>
+<td class="r data">0.83398478</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_south_2025_03</th>
+<th class="r data">398</th>
+<td class="r data">0.40954774</td>
+<td class="r data">0.91481470</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_south_2025_04</th>
+<th class="r data">405</th>
+<td class="r data">0.36049383</td>
+<td class="r data">1.02126875</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_south_2025_05</th>
+<th class="r data">461</th>
+<td class="r data">0.07592191</td>
+<td class="r data">0.85762910</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_south_2025_06</th>
+<th class="r data">481</th>
+<td class="r data">0.24948025</td>
+<td class="r data">1.31502723</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+</div>
+<div class="branch">
+<p style="page-break-after: always;"><br/></p><hr size="3"/>
+<a name="IDX56"></a>
+<table class="systitleandfootercontainer" width="100%" cellspacing="1" cellpadding="1" rules="none" frame="void" border="0" summary="Page Layout">
+<tr>
+<td class="c systemtitle">GLM for dataset = cl_st1_ph3_melina group fac9</td>
+</tr>
+</table><br>
+<div class="c proctitle">The GLM Procedure</div>
+<p>
+<div>
+<div align="center">
+<table class="table" cellspacing="0" cellpadding="5" rules="all" frame="box" bordercolor="#C1C1C1" summary="Procedure GLM: Class Levels">
+<colgroup>
+<col>
+</colgroup>
+<colgroup>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="c b header" colspan="3" scope="colgroup">Class Level Information</th>
+</tr>
+<tr>
+<th class="l b header" scope="col">Class</th>
+<th class="r b header" scope="col">Levels</th>
+<th class="l b header" scope="col">Values</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="l rowheader" scope="row">group</th>
+<td class="r data">44</td>
+<td class="l data">global_north_2023_09 global_north_2023_10 global_north_2023_11 global_north_2023_12 global_north_2024_01 global_north_2024_02 global_north_2024_03 global_north_2024_04 global_north_2024_05 global_north_2024_06 global_north_2024_07 global_north_2024_08 global_north_2024_09 global_north_2024_10 global_north_2024_11 global_north_2024_12 global_north_2025_01 global_north_2025_02 global_north_2025_03 global_north_2025_04 global_north_2025_05 global_north_2025_06 global_south_2023_09 global_south_2023_10 global_south_2023_11 global_south_2023_12 global_south_2024_01 global_south_2024_02 global_south_2024_03 global_south_2024_04 global_south_2024_05 global_south_2024_06 global_south_2024_07 global_south_2024_08 global_south_2024_09 global_south_2024_10 global_south_2024_11 global_south_2024_12 global_south_2025_01 global_south_2025_02 global_south_2025_03 global_south_2025_04 global_south_2025_05 global_south_2025_06</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+<a name="IDX57"></a>
+<div>
+<div align="center">
+<table class="table" cellspacing="0" cellpadding="5" rules="all" frame="box" bordercolor="#C1C1C1" summary="Procedure GLM: Number of Observations">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<tbody>
+<tr>
+<th class="l rowheader" scope="row">Number of Observations Read</th>
+<td class="r data">35781</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">Number of Observations Used</th>
+<td class="r data">35781</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+<p style="page-break-after: always;"><br/></p><hr size="3"/>
+<a name="IDX58"></a>
+<table class="systitleandfootercontainer" width="100%" cellspacing="1" cellpadding="1" rules="none" frame="void" border="0" summary="Page Layout">
+<tr>
+<td class="c systemtitle">GLM for dataset = cl_st1_ph3_melina group fac9</td>
+</tr>
+</table><br>
+<div class="c proctitle">The GLM Procedure</div>
+<div class="c proctitle">&nbsp;</div>
+<div class="c proctitle">Dependent Variable: fac9   </div>
+<p>
+<div>
+<div align="center">
+<table class="table" cellspacing="0" cellpadding="5" rules="all" frame="box" bordercolor="#C1C1C1" summary="Procedure GLM: Overall ANOVA">
+<colgroup>
+<col>
+</colgroup>
+<colgroup>
+<col>
+<col>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="l b header" scope="col">Source</th>
+<th class="r b header" scope="col">DF</th>
+<th class="r b header" scope="col">Sum of Squares</th>
+<th class="r b header" scope="col">Mean Square</th>
+<th class="r b header" scope="col">F Value</th>
+<th class="r b header" scope="col">Pr&nbsp;&gt;&nbsp;F</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="l rowheader" scope="row">Model</th>
+<td class="r data">43</td>
+<td class="r data">2423.53232</td>
+<td class="r data">56.36122</td>
+<td class="r data">61.18</td>
+<td class="r data">&lt;.0001</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">Error</th>
+<td class="r data">35737</td>
+<td class="r data">32923.61969</td>
+<td class="r data">0.92128</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">Corrected Total</th>
+<td class="r data">35780</td>
+<td class="r data">35347.15201</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+<a name="IDX59"></a>
+<div>
+<div align="center">
+<table class="table" cellspacing="0" cellpadding="5" rules="all" frame="box" bordercolor="#C1C1C1" summary="Procedure GLM: Fit Statistics">
+<colgroup>
+<col>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="r b header" scope="col">R-Square</th>
+<th class="r b header" scope="col">Coeff Var</th>
+<th class="r b header" scope="col">Root MSE</th>
+<th class="r b header" scope="col">fac9&nbsp;Mean</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="r data">0.068564</td>
+<td class="r data" nowrap>-373.7481</td>
+<td class="r data">0.959831</td>
+<td class="r data" nowrap>-0.256812</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+<a name="IDX60"></a>
+<div>
+<div align="center">
+<table class="table" cellspacing="0" cellpadding="5" rules="all" frame="box" bordercolor="#C1C1C1" summary="Procedure GLM: Type I Model ANOVA">
+<colgroup>
+<col>
+</colgroup>
+<colgroup>
+<col>
+<col>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="l b header" scope="col">Source</th>
+<th class="r b header" scope="col">DF</th>
+<th class="r b header" scope="col">Type I SS</th>
+<th class="r b header" scope="col">Mean Square</th>
+<th class="r b header" scope="col">F Value</th>
+<th class="r b header" scope="col">Pr&nbsp;&gt;&nbsp;F</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="l rowheader" scope="row">group</th>
+<td class="r data">43</td>
+<td class="r data">2423.532319</td>
+<td class="r data">56.361217</td>
+<td class="r data">61.18</td>
+<td class="r data">&lt;.0001</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+<a name="IDX61"></a>
+<div>
+<div align="center">
+<table class="table" cellspacing="0" cellpadding="5" rules="all" frame="box" bordercolor="#C1C1C1" summary="Procedure GLM: Type III Model ANOVA">
+<colgroup>
+<col>
+</colgroup>
+<colgroup>
+<col>
+<col>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="l b header" scope="col">Source</th>
+<th class="r b header" scope="col">DF</th>
+<th class="r b header" scope="col">Type III SS</th>
+<th class="r b header" scope="col">Mean Square</th>
+<th class="r b header" scope="col">F Value</th>
+<th class="r b header" scope="col">Pr&nbsp;&gt;&nbsp;F</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="l rowheader" scope="row">group</th>
+<td class="r data">43</td>
+<td class="r data">2423.532319</td>
+<td class="r data">56.361217</td>
+<td class="r data">61.18</td>
+<td class="r data">&lt;.0001</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+<p style="page-break-after: always;"><br/></p><hr size="3"/>
+<a name="IDX62"></a>
+<table class="systitleandfootercontainer" width="100%" cellspacing="1" cellpadding="1" rules="none" frame="void" border="0" summary="Page Layout">
+<tr>
+<td class="c systemtitle">GLM for dataset = cl_st1_ph3_melina group fac9</td>
+</tr>
+</table><br>
+<div class="c proctitle">The GLM Procedure</div>
+<p>
+<div>
+<div align="center">
+<table class="table" cellspacing="0" cellpadding="5" rules="all" frame="box" bordercolor="#C1C1C1" summary="Procedure GLM: Means">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<colgroup>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="l b header" rowspan="2" scope="col">Level of<br/>group</th>
+<th class="r b header" rowspan="2" scope="col">N</th>
+<th class="c b header" colspan="2" scope="colgroup">fac9</th>
+</tr>
+<tr>
+<th class="r b header" scope="col">Mean</th>
+<th class="r b header" scope="col">Std Dev</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="l rowheader" scope="row">global_north_2023_09</th>
+<th class="r data">25</th>
+<td class="r data" nowrap>-0.68000000</td>
+<td class="r data">0.90000000</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_north_2023_10</th>
+<th class="r data">2864</th>
+<td class="r data" nowrap>-0.19308659</td>
+<td class="r data">0.48814915</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_north_2023_11</th>
+<th class="r data">1996</th>
+<td class="r data" nowrap>-0.10320641</td>
+<td class="r data">0.57462616</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_north_2023_12</th>
+<th class="r data">1113</th>
+<td class="r data" nowrap>-0.10601977</td>
+<td class="r data">0.59030664</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_north_2024_01</th>
+<th class="r data">875</th>
+<td class="r data" nowrap>-0.16114286</td>
+<td class="r data">0.46413579</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_north_2024_02</th>
+<th class="r data">900</th>
+<td class="r data" nowrap>-0.14222222</td>
+<td class="r data">0.43714560</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_north_2024_03</th>
+<th class="r data">880</th>
+<td class="r data" nowrap>-0.17840909</td>
+<td class="r data">0.47339907</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_north_2024_04</th>
+<th class="r data">1037</th>
+<td class="r data" nowrap>-0.14946962</td>
+<td class="r data">0.43919043</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_north_2024_05</th>
+<th class="r data">1213</th>
+<td class="r data" nowrap>-0.18219291</td>
+<td class="r data">0.48299069</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_north_2024_06</th>
+<th class="r data">709</th>
+<td class="r data" nowrap>-0.18194640</td>
+<td class="r data">0.53616249</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_north_2024_07</th>
+<th class="r data">749</th>
+<td class="r data" nowrap>-0.19759680</td>
+<td class="r data">0.50763644</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_north_2024_08</th>
+<th class="r data">768</th>
+<td class="r data" nowrap>-0.13281250</td>
+<td class="r data">0.39628839</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_north_2024_09</th>
+<th class="r data">689</th>
+<td class="r data" nowrap>-0.14949202</td>
+<td class="r data">0.44395540</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_north_2024_10</th>
+<th class="r data">921</th>
+<td class="r data" nowrap>-0.14223670</td>
+<td class="r data">0.44031485</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_north_2024_11</th>
+<th class="r data">1189</th>
+<td class="r data" nowrap>-0.60807401</td>
+<td class="r data">1.43763815</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_north_2024_12</th>
+<th class="r data">873</th>
+<td class="r data" nowrap>-0.36655212</td>
+<td class="r data">1.39408289</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_north_2025_01</th>
+<th class="r data">1651</th>
+<td class="r data" nowrap>-0.51968504</td>
+<td class="r data">1.25193432</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_north_2025_02</th>
+<th class="r data">1649</th>
+<td class="r data" nowrap>-0.83808369</td>
+<td class="r data">1.43503500</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_north_2025_03</th>
+<th class="r data">1249</th>
+<td class="r data" nowrap>-0.54603683</td>
+<td class="r data">1.28152643</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_north_2025_04</th>
+<th class="r data">1110</th>
+<td class="r data" nowrap>-0.69369369</td>
+<td class="r data">1.50917120</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_north_2025_05</th>
+<th class="r data">1663</th>
+<td class="r data" nowrap>-0.52675887</td>
+<td class="r data">1.26713508</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_north_2025_06</th>
+<th class="r data">1349</th>
+<td class="r data" nowrap>-0.53817643</td>
+<td class="r data">1.29117178</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_south_2023_09</th>
+<th class="r data">10</th>
+<td class="r data" nowrap>-0.70000000</td>
+<td class="r data">0.82327260</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_south_2023_10</th>
+<th class="r data">1361</th>
+<td class="r data">0.12270389</td>
+<td class="r data">1.16584621</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_south_2023_11</th>
+<th class="r data">845</th>
+<td class="r data">0.21656805</td>
+<td class="r data">1.01491720</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_south_2023_12</th>
+<th class="r data">486</th>
+<td class="r data">0.28806584</td>
+<td class="r data">1.14303880</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_south_2024_01</th>
+<th class="r data">385</th>
+<td class="r data">0.00259740</td>
+<td class="r data">0.90857805</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_south_2024_02</th>
+<th class="r data">253</th>
+<td class="r data" nowrap>-0.03557312</td>
+<td class="r data">0.75771126</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_south_2024_03</th>
+<th class="r data">292</th>
+<td class="r data">0.11986301</td>
+<td class="r data">1.07582749</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_south_2024_04</th>
+<th class="r data">333</th>
+<td class="r data" nowrap>-0.00300300</td>
+<td class="r data">0.82687719</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_south_2024_05</th>
+<th class="r data">439</th>
+<td class="r data" nowrap>-0.07289294</td>
+<td class="r data">0.43180471</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_south_2024_06</th>
+<th class="r data">300</th>
+<td class="r data">0.00333333</td>
+<td class="r data">0.62016468</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_south_2024_07</th>
+<th class="r data">405</th>
+<td class="r data" nowrap>-0.05679012</td>
+<td class="r data">0.71006524</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_south_2024_08</th>
+<th class="r data">493</th>
+<td class="r data" nowrap>-0.06288032</td>
+<td class="r data">0.68528481</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_south_2024_09</th>
+<th class="r data">393</th>
+<td class="r data" nowrap>-0.15012723</td>
+<td class="r data">0.56275220</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_south_2024_10</th>
+<th class="r data">687</th>
+<td class="r data" nowrap>-0.01164483</td>
+<td class="r data">0.91465780</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_south_2024_11</th>
+<th class="r data">461</th>
+<td class="r data" nowrap>-0.09110629</td>
+<td class="r data">0.70737349</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_south_2024_12</th>
+<th class="r data">322</th>
+<td class="r data" nowrap>-0.30124224</td>
+<td class="r data">1.52014459</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_south_2025_01</th>
+<th class="r data">601</th>
+<td class="r data" nowrap>-0.46422629</td>
+<td class="r data">1.20656597</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_south_2025_02</th>
+<th class="r data">498</th>
+<td class="r data" nowrap>-0.58433735</td>
+<td class="r data">1.27895662</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_south_2025_03</th>
+<th class="r data">398</th>
+<td class="r data" nowrap>-0.07537688</td>
+<td class="r data">0.95982090</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_south_2025_04</th>
+<th class="r data">405</th>
+<td class="r data" nowrap>-0.11111111</td>
+<td class="r data">0.74793445</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_south_2025_05</th>
+<th class="r data">461</th>
+<td class="r data" nowrap>-0.14099783</td>
+<td class="r data">0.97337952</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">global_south_2025_06</th>
+<th class="r data">481</th>
+<td class="r data" nowrap>-0.10602911</td>
+<td class="r data">0.77135232</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+</div>
+</body>
+</html>

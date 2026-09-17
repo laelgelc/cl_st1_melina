@@ -1,0 +1,5931 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta name="Generator" content="SAS Software Version 9.4, see www.sas.com">
+<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+<title>SAS Output</title>
+<style type="text/css">
+<!--
+.accessiblecaption
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.activelink
+{
+  color: #800080;
+}
+.aftercaption
+{
+  background-color: #FAFBFE;
+  border-spacing: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+  padding-top: 4pt;
+}
+.batch
+{
+  background-color: #FAFBFE;
+  border: 1px solid #C1C1C1;
+  border-collapse: separate;
+  border-spacing: 1px;
+  color: #000000;
+  font-family: 'SAS Monospace', 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  padding: 7px;
+}
+.beforecaption
+{
+  background-color: #FAFBFE;
+  border-spacing: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.body
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+.bodydate
+{
+  background-color: #FAFBFE;
+  border-spacing: 0px;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  text-align: right;
+  vertical-align: top;
+  width: 100%;
+}
+.bycontentfolder
+{
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: none;
+  margin-left: 6pt;
+}
+.byline
+{
+  background-color: #FAFBFE;
+  border-spacing: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.bylinecontainer
+{
+  background-color: #FAFBFE;
+  border: 0px solid #000000;
+  border-spacing: 1px;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  width: 100%;
+}
+.caption
+{
+  background-color: #FAFBFE;
+  border-spacing: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.cell
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.container
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.contentfolder
+{
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: none;
+  margin-left: 6pt;
+}
+.contentitem
+{
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: none;
+  margin-left: 6pt;
+}
+.contentproclabel
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.contentprocname
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.contents
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: decimal;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+.contentsdate
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  width: 100%;
+}
+.contenttitle
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: bold;
+}
+.continued
+{
+  background-color: #FAFBFE;
+  border-spacing: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+  width: 100%;
+}
+.data
+{
+  background-color: #FFFFFF;
+  border-bottom-width: 1px;
+  border-color: #C1C1C1;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.dataemphasis
+{
+  background-color: #FFFFFF;
+  border-bottom-width: 1px;
+  border-color: #C1C1C1;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.dataemphasisfixed
+{
+  background-color: #FFFFFF;
+  border-bottom-width: 1px;
+  border-color: #C1C1C1;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+}
+.dataempty
+{
+  background-color: #FFFFFF;
+  border-bottom-width: 1px;
+  border-color: #C1C1C1;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.datafixed
+{
+  background-color: #FFFFFF;
+  border-bottom-width: 1px;
+  border-color: #C1C1C1;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.datastrong
+{
+  background-color: #FFFFFF;
+  border-bottom-width: 1px;
+  border-color: #C1C1C1;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.datastrongfixed
+{
+  background-color: #FFFFFF;
+  border-bottom-width: 1px;
+  border-color: #C1C1C1;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #000000;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.date
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  width: 100%;
+}
+.document
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+a:link {
+color:#0000FF
+}
+a:visited {
+color:#800080
+}
+a:active {
+color:#800080
+}
+.errorbanner
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.errorcontent
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.errorcontentfixed
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.extendedpage
+{
+  background-color: #FAFBFE;
+  border: 1pt solid #000000;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+  text-align: center;
+}
+.fatalbanner
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.fatalcontent
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.fatalcontentfixed
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.folderaction
+{
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: none;
+  margin-left: 6pt;
+}
+.footer
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.footeremphasis
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+}
+.footeremphasisfixed
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+}
+.footerempty
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.footerfixed
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.footerstrong
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.footerstrongfixed
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.frame
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.graph
+{
+  background-color: #FAFBFE;
+  border: 1px solid #C1C1C1;
+  border-collapse: separate;
+  border-spacing: 1px;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.header
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.headeremphasis
+{
+  background-color: #D8DBD3;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+}
+.headeremphasisfixed
+{
+  background-color: #D8DBD3;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #000000;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+}
+.headerempty
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.headerfixed
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.headersandfooters
+{
+  background-color: #EDF2F9;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.headerstrong
+{
+  background-color: #D8DBD3;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.headerstrongfixed
+{
+  background-color: #D8DBD3;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #000000;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.heading1
+{
+  font-family: Arial, Helvetica, sans-serif;
+}
+.heading2
+{
+  font-family: Arial, Helvetica, sans-serif;
+}
+.heading3
+{
+  font-family: Arial, Helvetica, sans-serif;
+}
+.heading4
+{
+  font-family: Arial, Helvetica, sans-serif;
+}
+.heading5
+{
+  font-family: Arial, Helvetica, sans-serif;
+}
+.heading6
+{
+  font-family: Arial, Helvetica, sans-serif;
+}
+.index
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.indexaction
+{
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: none;
+  margin-left: 6pt;
+}
+.indexitem
+{
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: none;
+  margin-left: 6pt;
+}
+.indexprocname
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.indextitle
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: bold;
+}
+.layoutcontainer
+{
+  border: 0px solid #000000;
+  border-spacing: 30px;
+}
+.layoutregion
+{
+  border: 0px solid #000000;
+  border-spacing: 30px;
+}
+.linecontent
+{
+  background-color: #FAFBFE;
+  border-bottom-width: 1px;
+  border-color: #C1C1C1;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.link
+{
+  color: #0000FF;
+}
+.list
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: disc;
+}
+.list10
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.list2
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: circle;
+}
+.list3
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.list4
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.list5
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.list6
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.list7
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.list8
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.list9
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.listitem
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: disc;
+}
+.listitem10
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.listitem2
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: circle;
+}
+.listitem3
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.listitem4
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.listitem5
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.listitem6
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.listitem7
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.listitem8
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.listitem9
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.note
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.notebanner
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.notecontent
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.notecontentfixed
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.output
+{
+  background-color: #FAFBFE;
+  border: 1px solid #C1C1C1;
+  border-collapse: separate;
+  border-spacing: 1px;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.pageno
+{
+  background-color: #FAFBFE;
+  border-spacing: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+  text-align: right;
+  vertical-align: top;
+}
+.pages
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: decimal;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+.pagesdate
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  width: 100%;
+}
+.pagesitem
+{
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: none;
+  margin-left: 6pt;
+}
+.pagesproclabel
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.pagesprocname
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.pagestitle
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: bold;
+}
+.paragraph
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.parskip
+{
+  border: 0px solid #000000;
+  border-spacing: 0px;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.prepage
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  text-align: left;
+}
+.proctitle
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.proctitlefixed
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.rowfooter
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.rowfooteremphasis
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+}
+.rowfooteremphasisfixed
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+}
+.rowfooterempty
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.rowfooterfixed
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.rowfooterstrong
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.rowfooterstrongfixed
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.rowheader
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.rowheaderemphasis
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+}
+.rowheaderemphasisfixed
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+}
+.rowheaderempty
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.rowheaderfixed
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.rowheaderstrong
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.rowheaderstrongfixed
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemfooter
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemfooter10
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemfooter2
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemfooter3
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemfooter4
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemfooter5
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemfooter6
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemfooter7
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemfooter8
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemfooter9
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemtitle
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemtitle10
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemtitle2
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemtitle3
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemtitle4
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemtitle5
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemtitle6
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemtitle7
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemtitle8
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemtitle9
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systitleandfootercontainer
+{
+  background-color: #FAFBFE;
+  border: 0px solid #000000;
+  border-spacing: 1px;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  width: 100%;
+}
+.table
+{
+  border-bottom-width: 0px;
+  border-collapse: collapse;
+  border-color: #C1C1C1;
+  border-left-width: 1px;
+  border-right-width: 0px;
+  border-spacing: 0px;
+  border-style: solid;
+  border-top-width: 1px;
+}
+.top_stacked_value
+{
+  padding-bottom: 1px;
+  border: 0;
+}
+.middle_stacked_value
+{
+  padding-top: 1px;
+  padding-bottom: 1px;
+  border: 0;
+}
+.bottom_stacked_value
+{
+  padding-top: 1px;
+  border: 0;
+}
+.titleandnotecontainer
+{
+  background-color: #FAFBFE;
+  border: 0px solid #000000;
+  border-spacing: 1px;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  width: 100%;
+}
+.titlesandfooters
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.usertext
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.visitedlink
+{
+  color: #800080;
+}
+.warnbanner
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.warncontent
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.warncontentfixed
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.l {text-align: left }
+.c {text-align: center }
+.r {text-align: right }
+.d {text-align: right }
+.j {text-align: justify }
+.t {vertical-align: top }
+.m {vertical-align: middle }
+.b {vertical-align: bottom }
+TD, TH {vertical-align: top }
+.stacked_cell{padding: 0 }
+-->
+</style>
+</head>
+<body class="body">
+
+<div class="branch">
+<a name="IDX"></a>
+<table class="systitleandfootercontainer" width="100%" cellspacing="1" cellpadding="1" rules="none" frame="void" border="0" summary="Page Layout">
+<tr>
+<td class="c systemtitle">LOADINGS TABLE</td>
+</tr>
+<tr>
+<td class="c systemtitle2">Factor 1 pos</td>
+</tr>
+</table><br>
+<div>
+<div align="center">
+<table class="table" cellspacing="0" cellpadding="5" rules="all" frame="box" bordercolor="#C1C1C1" summary="Procedure Print: Data Set WORK.TEMP">
+<colgroup>
+<col>
+</colgroup>
+<colgroup>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="r header" scope="col">Obs</th>
+<th class="l header" scope="col">_NAME_</th>
+<th class="r header" scope="col">Factor1</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="r rowheader" scope="row">1</th>
+<td class="l data">vaccinate</td>
+<td class="r data">0.71043</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">2</th>
+<td class="l data">desalination</td>
+<td class="r data">0.68185</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">3</th>
+<td class="l data">dehydration</td>
+<td class="r data">0.67275</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">4</th>
+<td class="l data">flour</td>
+<td class="r data">0.60896</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">5</th>
+<td class="l data">cram</td>
+<td class="r data">0.60636</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">6</th>
+<td class="l data">malnutrition</td>
+<td class="r data">0.60286</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">7</th>
+<td class="l data">vaccination</td>
+<td class="r data">0.60163</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">8</th>
+<td class="l data">healthcare</td>
+<td class="r data">0.59923</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">9</th>
+<td class="l data">syndicate</td>
+<td class="r data">0.59844</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">10</th>
+<td class="l data">publisher</td>
+<td class="r data">0.59604</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">11</th>
+<td class="l data">incubator</td>
+<td class="r data">0.59589</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">12</th>
+<td class="l data">polio</td>
+<td class="r data">0.59066</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">13</th>
+<td class="l data">built-up</td>
+<td class="r data">0.58035</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">14</th>
+<td class="l data">provider</td>
+<td class="r data">0.57876</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">15</th>
+<td class="l data">disease</td>
+<td class="r data">0.57471</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">16</th>
+<td class="l data">hospital</td>
+<td class="r data">0.57319</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">17</th>
+<td class="l data">ambulance</td>
+<td class="r data">0.56127</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">18</th>
+<td class="l data">warehouse</td>
+<td class="r data">0.56116</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">19</th>
+<td class="l data">patient</td>
+<td class="r data">0.55321</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">20</th>
+<td class="l data">health</td>
+<td class="r data">0.55075</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">21</th>
+<td class="l data">indonesian</td>
+<td class="r data">0.54733</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">22</th>
+<td class="l data">food</td>
+<td class="r data">0.54321</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">23</th>
+<td class="l data">shortage</td>
+<td class="r data">0.53853</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">24</th>
+<td class="l data">medic</td>
+<td class="r data">0.53509</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">25</th>
+<td class="l data">shelter</td>
+<td class="r data">0.53453</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">26</th>
+<td class="l data">convoy</td>
+<td class="r data">0.52566</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">27</th>
+<td class="l data">unload</td>
+<td class="r data">0.52473</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">28</th>
+<td class="l data">disclaimer</td>
+<td class="r data">0.51992</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">29</th>
+<td class="l data">truck</td>
+<td class="r data">0.50921</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">30</th>
+<td class="l data">stampede</td>
+<td class="r data">0.50729</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">31</th>
+<td class="l data">southernmost</td>
+<td class="r data">0.50268</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">32</th>
+<td class="l data">temperature</td>
+<td class="r data">0.49606</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">33</th>
+<td class="l data">besiege</td>
+<td class="r data">0.49402</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">34</th>
+<td class="l data">kitchen</td>
+<td class="r data">0.49316</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">35</th>
+<td class="l data">surgery</td>
+<td class="r data">0.48903</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">36</th>
+<td class="l data">militarise</td>
+<td class="r data">0.48829</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">37</th>
+<td class="l data">medical</td>
+<td class="r data">0.48507</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">38</th>
+<td class="l data">shell</td>
+<td class="r data">0.48119</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">39</th>
+<td class="l data">crossing</td>
+<td class="r data">0.46894</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">40</th>
+<td class="l data">northern</td>
+<td class="r data">0.46544</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">41</th>
+<td class="l data">displace</td>
+<td class="r data">0.46078</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">42</th>
+<td class="l data">hunger</td>
+<td class="r data">0.46043</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">43</th>
+<td class="l data">inadequate</td>
+<td class="r data">0.45358</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">44</th>
+<td class="l data">delivery</td>
+<td class="r data">0.45225</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">45</th>
+<td class="l data">bombardment</td>
+<td class="r data">0.45094</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">46</th>
+<td class="l data">humanitarian</td>
+<td class="r data">0.45054</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">47</th>
+<td class="l data">blanket</td>
+<td class="r data">0.44854</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">48</th>
+<td class="l data">accuracy</td>
+<td class="r data">0.44702</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">49</th>
+<td class="l data">tent</td>
+<td class="r data">0.44641</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">50</th>
+<td class="l data">famine</td>
+<td class="r data">0.44625</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">51</th>
+<td class="l data">refuge</td>
+<td class="r data">0.44582</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">52</th>
+<td class="l data">worker</td>
+<td class="r data">0.43987</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">53</th>
+<td class="l data">week-long</td>
+<td class="r data">0.43848</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">54</th>
+<td class="l data">vaccine</td>
+<td class="r data">0.43650</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">55</th>
+<td class="l data">facility</td>
+<td class="r data">0.43573</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">56</th>
+<td class="l data">distribution</td>
+<td class="r data">0.43451</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">57</th>
+<td class="l data">hungry</td>
+<td class="r data">0.43189</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">58</th>
+<td class="l data">southern</td>
+<td class="r data">0.42555</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">59</th>
+<td class="l data">mortar</td>
+<td class="r data">0.41899</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">60</th>
+<td class="l data">winter</td>
+<td class="r data">0.41631</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">61</th>
+<td class="l data">aid</td>
+<td class="r data">0.41582</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">62</th>
+<td class="l data">tank</td>
+<td class="r data">0.41193</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">63</th>
+<td class="l data">regroup</td>
+<td class="r data">0.41172</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">64</th>
+<td class="l data">area</td>
+<td class="r data">0.40892</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">65</th>
+<td class="l data">medicine</td>
+<td class="r data">0.40881</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">66</th>
+<td class="l data">distribute</td>
+<td class="r data">0.40626</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">67</th>
+<td class="l data">rescuer</td>
+<td class="r data">0.40612</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">68</th>
+<td class="l data">repair</td>
+<td class="r data">0.40421</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">69</th>
+<td class="l data">refugee</td>
+<td class="r data">0.40415</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">70</th>
+<td class="l data">central</td>
+<td class="r data">0.40369</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">71</th>
+<td class="l data">supply</td>
+<td class="r data">0.40368</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">72</th>
+<td class="l data">available</td>
+<td class="r data">0.40284</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">73</th>
+<td class="l data">child</td>
+<td class="r data">0.40167</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">74</th>
+<td class="l data">charity</td>
+<td class="r data">0.40157</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">75</th>
+<td class="l data">emergency</td>
+<td class="r data">0.40091</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">76</th>
+<td class="l data">edit</td>
+<td class="r data">0.39767</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">77</th>
+<td class="l data">water</td>
+<td class="r data">0.39569</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">78</th>
+<td class="l data">premature</td>
+<td class="r data">0.39502</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">79</th>
+<td class="l data">tally</td>
+<td class="r data">0.39430</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">80</th>
+<td class="l data">worsen</td>
+<td class="r data">0.39056</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">81</th>
+<td class="l data">fuel</td>
+<td class="r data">0.39029</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">82</th>
+<td class="l data">external</td>
+<td class="r data">0.38788</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">83</th>
+<td class="l data">electricity</td>
+<td class="r data">0.38701</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">84</th>
+<td class="l data">reopen</td>
+<td class="r data">0.38564</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">85</th>
+<td class="l data">martyr</td>
+<td class="r data">0.38549</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">86</th>
+<td class="l data">besieged</td>
+<td class="r data">0.38321</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">87</th>
+<td class="l data">affiliate</td>
+<td class="r data">0.38167</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">88</th>
+<td class="l data">weather</td>
+<td class="r data">0.38037</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">89</th>
+<td class="l data">flee</td>
+<td class="r data">0.37927</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">90</th>
+<td class="l data">two-week</td>
+<td class="r data">0.37847</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">91</th>
+<td class="l data">civilian</td>
+<td class="r data">0.37755</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">92</th>
+<td class="l data">two-third</td>
+<td class="r data">0.37715</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">93</th>
+<td class="l data">wasteland</td>
+<td class="r data">0.37693</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">94</th>
+<td class="l data">camp</td>
+<td class="r data">0.37537</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">95</th>
+<td class="l data">operation</td>
+<td class="r data">0.37320</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">96</th>
+<td class="l data">paramedic</td>
+<td class="r data">0.37297</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">97</th>
+<td class="l data">siege</td>
+<td class="r data">0.37039</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">98</th>
+<td class="l data">respite</td>
+<td class="r data">0.36333</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">99</th>
+<td class="l data">distinguish</td>
+<td class="r data">0.36312</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">100</th>
+<td class="l data">ministry</td>
+<td class="r data">0.36028</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">101</th>
+<td class="l data">city</td>
+<td class="r data">0.35980</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">102</th>
+<td class="l data">ramadan</td>
+<td class="r data">0.35816</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">103</th>
+<td class="l data">offensive</td>
+<td class="r data">0.35289</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">104</th>
+<td class="l data">text</td>
+<td class="r data">0.35235</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">105</th>
+<td class="l data">quarter</td>
+<td class="r data">0.34983</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">106</th>
+<td class="l data">cancer</td>
+<td class="r data">0.34567</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">107</th>
+<td class="l data">cold</td>
+<td class="r data">0.33877</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">108</th>
+<td class="l data">populated</td>
+<td class="r data">0.33756</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">109</th>
+<td class="l data">relentless</td>
+<td class="r data">0.33289</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">110</th>
+<td class="l data">neighbourhood</td>
+<td class="r data">0.33103</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">111</th>
+<td class="l data">coastal</td>
+<td class="r data">0.33054</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">112</th>
+<td class="l data">ground</td>
+<td class="r data">0.32941</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">113</th>
+<td class="l data">infrastructure</td>
+<td class="r data">0.32795</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">114</th>
+<td class="l data">basis</td>
+<td class="r data">0.32742</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">115</th>
+<td class="l data">entity</td>
+<td class="r data">0.32741</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">116</th>
+<td class="l data">population</td>
+<td class="r data">0.32699</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">117</th>
+<td class="l data">imminent</td>
+<td class="r data">0.32614</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">118</th>
+<td class="l data">third</td>
+<td class="r data">0.32518</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">119</th>
+<td class="l data">dawn</td>
+<td class="r data">0.32381</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">120</th>
+<td class="l data">territory</td>
+<td class="r data">0.32202</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">121</th>
+<td class="l data">army</td>
+<td class="r data">0.32076</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">122</th>
+<td class="l data">storm</td>
+<td class="r data">0.32075</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">123</th>
+<td class="l data">injure</td>
+<td class="r data">0.31882</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">124</th>
+<td class="l data">fighting</td>
+<td class="r data">0.31782</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">125</th>
+<td class="l data">severe</td>
+<td class="r data">0.31608</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">126</th>
+<td class="l data">troop</td>
+<td class="r data">0.31512</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">127</th>
+<td class="l data">guarantee</td>
+<td class="r data">0.31415</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">128</th>
+<td class="l data">gazan</td>
+<td class="r data">0.31006</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">129</th>
+<td class="l data">minute-by-minute</td>
+<td class="r data">0.30877</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">130</th>
+<td class="l data">bombard</td>
+<td class="r data">0.30750</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">131</th>
+<td class="l data">intensified</td>
+<td class="r data">0.30608</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">132</th>
+<td class="l data">deepen</td>
+<td class="r data">0.30145</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">133</th>
+<td class="l data">impoverished</td>
+<td class="r data">0.30084</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+</div>
+<div class="branch">
+<p style="page-break-after: always;"><br/></p><hr size="3"/>
+<a name="IDX1"></a>
+<table class="systitleandfootercontainer" width="100%" cellspacing="1" cellpadding="1" rules="none" frame="void" border="0" summary="Page Layout">
+<tr>
+<td class="c systemtitle">Factor 1 neg</td>
+</tr>
+</table><br>
+<div>
+<div align="center">
+<table class="table" cellspacing="0" cellpadding="5" rules="all" frame="box" bordercolor="#C1C1C1" summary="Procedure Print: Data Set WORK.TEMP">
+<colgroup>
+<col>
+</colgroup>
+<colgroup>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="r header" scope="col">Obs</th>
+<th class="l header" scope="col">_NAME_</th>
+<th class="r header" scope="col">Factor1</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="r rowheader" scope="row">1</th>
+<td class="l data">requalify</td>
+<td class="r data" nowrap>-0.88766</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">2</th>
+<td class="l data">newsfeed</td>
+<td class="r data" nowrap>-0.86990</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">3</th>
+<td class="l data">nication</td>
+<td class="r data" nowrap>-0.86377</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">4</th>
+<td class="l data">promotional</td>
+<td class="r data" nowrap>-0.51088</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">5</th>
+<td class="l data">opt-out</td>
+<td class="r data" nowrap>-0.36327</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+</div>
+<div class="branch">
+<p style="page-break-after: always;"><br/></p><hr size="3"/>
+<a name="IDX2"></a>
+<table class="systitleandfootercontainer" width="100%" cellspacing="1" cellpadding="1" rules="none" frame="void" border="0" summary="Page Layout">
+<tr>
+<td class="c systemtitle">LOADINGS TABLE</td>
+</tr>
+<tr>
+<td class="c systemtitle2">Factor 2 pos</td>
+</tr>
+</table><br>
+<div>
+<div align="center">
+<table class="table" cellspacing="0" cellpadding="5" rules="all" frame="box" bordercolor="#C1C1C1" summary="Procedure Print: Data Set WORK.TEMP">
+<colgroup>
+<col>
+</colgroup>
+<colgroup>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="r header" scope="col">Obs</th>
+<th class="l header" scope="col">_NAME_</th>
+<th class="r header" scope="col">Factor2</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="r rowheader" scope="row">1</th>
+<td class="l data">pager</td>
+<td class="r data">0.87096</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">2</th>
+<td class="l data">walkie-talkie</td>
+<td class="r data">0.86084</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">3</th>
+<td class="l data">ballistic</td>
+<td class="r data">0.79517</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">4</th>
+<td class="l data">iran-backed</td>
+<td class="r data">0.76058</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">5</th>
+<td class="l data">iranian-backed</td>
+<td class="r data">0.75871</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">6</th>
+<td class="l data">warship</td>
+<td class="r data">0.75644</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">7</th>
+<td class="l data">bodyguard</td>
+<td class="r data">0.74020</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">8</th>
+<td class="l data">revolutionary</td>
+<td class="r data">0.73891</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">9</th>
+<td class="l data">conflagration</td>
+<td class="r data">0.73835</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">10</th>
+<td class="l data">avenge</td>
+<td class="r data">0.72384</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">11</th>
+<td class="l data">anti-ship</td>
+<td class="r data">0.71104</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">12</th>
+<td class="l data">assassination</td>
+<td class="r data">0.71067</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">13</th>
+<td class="l data">near-daily</td>
+<td class="r data">0.70869</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">14</th>
+<td class="l data">militia</td>
+<td class="r data">0.70805</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">15</th>
+<td class="l data">projectile</td>
+<td class="r data">0.69886</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">16</th>
+<td class="l data">detonation</td>
+<td class="r data">0.68250</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">17</th>
+<td class="l data">iranian</td>
+<td class="r data">0.67834</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">18</th>
+<td class="l data">detonate</td>
+<td class="r data">0.67611</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">19</th>
+<td class="l data">airspace</td>
+<td class="r data">0.67368</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">20</th>
+<td class="l data">missile</td>
+<td class="r data">0.67166</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">21</th>
+<td class="l data">foe</td>
+<td class="r data">0.65831</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">22</th>
+<td class="l data">salvo</td>
+<td class="r data">0.65698</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">23</th>
+<td class="l data">lebanese</td>
+<td class="r data">0.65419</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">24</th>
+<td class="l data">all-out</td>
+<td class="r data">0.64908</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">25</th>
+<td class="l data">swearing-in</td>
+<td class="r data">0.64334</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">26</th>
+<td class="l data">assassinate</td>
+<td class="r data">0.64170</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">27</th>
+<td class="l data">submarine</td>
+<td class="r data">0.63870</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">28</th>
+<td class="l data">axis</td>
+<td class="r data">0.63508</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">29</th>
+<td class="l data">retaliate</td>
+<td class="r data">0.63326</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">30</th>
+<td class="l data">yemeni</td>
+<td class="r data">0.63002</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">31</th>
+<td class="l data">proxy</td>
+<td class="r data">0.62780</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">32</th>
+<td class="l data">suburb</td>
+<td class="r data">0.62582</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">33</th>
+<td class="l data">simultaneous</td>
+<td class="r data">0.61194</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">34</th>
+<td class="l data">taiwanese</td>
+<td class="r data">0.60808</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">35</th>
+<td class="l data">carrier</td>
+<td class="r data">0.60541</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">36</th>
+<td class="l data">stronghold</td>
+<td class="r data">0.59856</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">37</th>
+<td class="l data">intercept</td>
+<td class="r data">0.59311</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">38</th>
+<td class="l data">barrage</td>
+<td class="r data">0.58871</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">39</th>
+<td class="l data">airline</td>
+<td class="r data">0.58728</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">40</th>
+<td class="l data">shipping</td>
+<td class="r data">0.58624</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">41</th>
+<td class="l data">spy</td>
+<td class="r data">0.57666</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">42</th>
+<td class="l data">rebel</td>
+<td class="r data">0.56274</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">43</th>
+<td class="l data">revenge</td>
+<td class="r data">0.55940</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">44</th>
+<td class="l data">battery</td>
+<td class="r data">0.54191</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">45</th>
+<td class="l data">rocket</td>
+<td class="r data">0.53966</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">46</th>
+<td class="l data">drone</td>
+<td class="r data">0.53890</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">47</th>
+<td class="l data">de-escalate</td>
+<td class="r data">0.53652</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">48</th>
+<td class="l data">infiltration</td>
+<td class="r data">0.53467</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">49</th>
+<td class="l data">commander</td>
+<td class="r data">0.52922</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">50</th>
+<td class="l data">escalation</td>
+<td class="r data">0.52893</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">51</th>
+<td class="l data">frontier</td>
+<td class="r data">0.52163</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">52</th>
+<td class="l data">provocation</td>
+<td class="r data">0.52159</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">53</th>
+<td class="l data">explode</td>
+<td class="r data">0.51828</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">54</th>
+<td class="l data">anti-tank</td>
+<td class="r data">0.51678</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">55</th>
+<td class="l data">brace</td>
+<td class="r data">0.51423</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">56</th>
+<td class="l data">full-scale</td>
+<td class="r data">0.51204</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">57</th>
+<td class="l data">mastermind</td>
+<td class="r data">0.49780</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">58</th>
+<td class="l data">retaliation</td>
+<td class="r data">0.49619</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">59</th>
+<td class="l data">jet</td>
+<td class="r data">0.49416</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">60</th>
+<td class="l data">explosion</td>
+<td class="r data">0.47653</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">61</th>
+<td class="l data">volatile</td>
+<td class="r data">0.47617</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">62</th>
+<td class="l data">guard</td>
+<td class="r data">0.46960</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">63</th>
+<td class="l data">restraint</td>
+<td class="r data">0.46732</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">64</th>
+<td class="l data">cross-border</td>
+<td class="r data">0.46491</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">65</th>
+<td class="l data">syrian</td>
+<td class="r data">0.45580</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">66</th>
+<td class="l data">strike</td>
+<td class="r data">0.45568</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">67</th>
+<td class="l data">regional</td>
+<td class="r data">0.44009</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">68</th>
+<td class="l data">escalate</td>
+<td class="r data">0.43335</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">69</th>
+<td class="l data">lane</td>
+<td class="r data">0.42887</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">70</th>
+<td class="l data">nuclear</td>
+<td class="r data">0.42698</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">71</th>
+<td class="l data">fighter</td>
+<td class="r data">0.42640</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">72</th>
+<td class="l data">target</td>
+<td class="r data">0.42275</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">73</th>
+<td class="l data">blast</td>
+<td class="r data">0.41916</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">74</th>
+<td class="l data">oil</td>
+<td class="r data">0.41731</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">75</th>
+<td class="l data">vow</td>
+<td class="r data">0.41546</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">76</th>
+<td class="l data">explosive</td>
+<td class="r data">0.41123</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">77</th>
+<td class="l data">targeted</td>
+<td class="r data">0.39968</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">78</th>
+<td class="l data">capability</td>
+<td class="r data">0.39877</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">79</th>
+<td class="l data">consulate</td>
+<td class="r data">0.39814</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">80</th>
+<td class="l data">tension</td>
+<td class="r data">0.39663</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">81</th>
+<td class="l data">capital</td>
+<td class="r data">0.39513</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">82</th>
+<td class="l data">device</td>
+<td class="r data">0.39231</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">83</th>
+<td class="l data">launch</td>
+<td class="r data">0.38502</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">84</th>
+<td class="l data">attack</td>
+<td class="r data">0.38115</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">85</th>
+<td class="l data">artillery</td>
+<td class="r data">0.37559</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">86</th>
+<td class="l data">wide</td>
+<td class="r data">0.35728</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">87</th>
+<td class="l data">gallant</td>
+<td class="r data">0.35679</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">88</th>
+<td class="l data">infiltrate</td>
+<td class="r data">0.35457</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">89</th>
+<td class="l data">region</td>
+<td class="r data">0.34811</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">90</th>
+<td class="l data">command</td>
+<td class="r data">0.34192</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">91</th>
+<td class="l data">aggression</td>
+<td class="r data">0.34150</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">92</th>
+<td class="l data">ally</td>
+<td class="r data">0.33887</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">93</th>
+<td class="l data">incursion</td>
+<td class="r data">0.32390</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">94</th>
+<td class="l data">blow</td>
+<td class="r data">0.31948</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">95</th>
+<td class="l data">incoming</td>
+<td class="r data">0.31530</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">96</th>
+<td class="l data">air</td>
+<td class="r data">0.31523</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">97</th>
+<td class="l data">clash</td>
+<td class="r data">0.31507</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">98</th>
+<td class="l data">militant</td>
+<td class="r data">0.31279</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">99</th>
+<td class="l data">israeli-occupied</td>
+<td class="r data">0.31051</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">100</th>
+<td class="l data">retaliatory</td>
+<td class="r data">0.30849</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">101</th>
+<td class="l data">operative</td>
+<td class="r data">0.30552</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">102</th>
+<td class="l data">border</td>
+<td class="r data">0.30202</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+</div>
+<div class="branch">
+<p style="page-break-after: always;"><br/></p><hr size="3"/>
+<a name="IDX3"></a>
+<table class="systitleandfootercontainer" width="100%" cellspacing="1" cellpadding="1" rules="none" frame="void" border="0" summary="Page Layout">
+<tr>
+<td class="c systemtitle">Factor 2 neg</td>
+</tr>
+</table><br>
+<div>
+<div align="center">
+<table class="table" cellspacing="0" cellpadding="5" rules="all" frame="box" bordercolor="#C1C1C1" summary="Procedure Print: Data Set WORK.TEMP">
+<colgroup>
+<col>
+</colgroup>
+<colgroup>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="r header" scope="col">Obs</th>
+<th class="l header" scope="col">_NAME_</th>
+<th class="r header" scope="col">Factor2</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="r rowheader" scope="row">1</th>
+<td class="l data">lim</td>
+<td class="r data" nowrap>-0.55870</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">2</th>
+<td class="l data">misidentification</td>
+<td class="r data" nowrap>-0.46216</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">3</th>
+<td class="l data">oscar</td>
+<td class="r data" nowrap>-0.38475</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+</div>
+<div class="branch">
+<p style="page-break-after: always;"><br/></p><hr size="3"/>
+<a name="IDX4"></a>
+<table class="systitleandfootercontainer" width="100%" cellspacing="1" cellpadding="1" rules="none" frame="void" border="0" summary="Page Layout">
+<tr>
+<td class="c systemtitle">LOADINGS TABLE</td>
+</tr>
+<tr>
+<td class="c systemtitle2">Factor 3 pos</td>
+</tr>
+</table><br>
+<div>
+<div align="center">
+<table class="table" cellspacing="0" cellpadding="5" rules="all" frame="box" bordercolor="#C1C1C1" summary="Procedure Print: Data Set WORK.TEMP">
+<colgroup>
+<col>
+</colgroup>
+<colgroup>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="r header" scope="col">Obs</th>
+<th class="l header" scope="col">_NAME_</th>
+<th class="r header" scope="col">Factor3</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="r rowheader" scope="row">1</th>
+<td class="l data">customs</td>
+<td class="r data">1.26711</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">2</th>
+<td class="l data">doctoral</td>
+<td class="r data">1.25750</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">3</th>
+<td class="l data">ice</td>
+<td class="r data">0.95974</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">4</th>
+<td class="l data">trespassing</td>
+<td class="r data">0.94690</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">5</th>
+<td class="l data">revoke</td>
+<td class="r data">0.94044</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">6</th>
+<td class="l data">postdoctoral</td>
+<td class="r data">0.89249</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">7</th>
+<td class="l data">graduate</td>
+<td class="r data">0.85797</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">8</th>
+<td class="l data">campus</td>
+<td class="r data">0.81895</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">9</th>
+<td class="l data">student</td>
+<td class="r data">0.79876</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">10</th>
+<td class="l data">constitutional</td>
+<td class="r data">0.78736</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">11</th>
+<td class="l data">graduation</td>
+<td class="r data">0.78636</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">12</th>
+<td class="l data">crackdown</td>
+<td class="r data">0.77437</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">13</th>
+<td class="l data">deport</td>
+<td class="r data">0.76967</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">14</th>
+<td class="l data">divest</td>
+<td class="r data">0.76943</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">15</th>
+<td class="l data">visa</td>
+<td class="r data">0.76533</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">16</th>
+<td class="l data">encampment</td>
+<td class="r data">0.74976</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">17</th>
+<td class="l data">faculty</td>
+<td class="r data">0.74250</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">18</th>
+<td class="l data">deportation</td>
+<td class="r data">0.74079</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">19</th>
+<td class="l data">immigration</td>
+<td class="r data">0.73615</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">20</th>
+<td class="l data">agitator</td>
+<td class="r data">0.71859</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">21</th>
+<td class="l data">detention</td>
+<td class="r data">0.71015</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">22</th>
+<td class="l data">phd</td>
+<td class="r data">0.70789</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">23</th>
+<td class="l data">administrator</td>
+<td class="r data">0.70174</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">24</th>
+<td class="l data">attorney</td>
+<td class="r data">0.68752</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">25</th>
+<td class="l data">card</td>
+<td class="r data">0.68524</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">26</th>
+<td class="l data">agent</td>
+<td class="r data">0.67516</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">27</th>
+<td class="l data">federal</td>
+<td class="r data">0.66685</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">28</th>
+<td class="l data">university</td>
+<td class="r data">0.66089</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">29</th>
+<td class="l data">barricade</td>
+<td class="r data">0.63973</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">30</th>
+<td class="l data">arrest</td>
+<td class="r data">0.63111</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">31</th>
+<td class="l data">college</td>
+<td class="r data">0.62838</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">32</th>
+<td class="l data">lawn</td>
+<td class="r data">0.62325</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">33</th>
+<td class="l data">roil</td>
+<td class="r data">0.60462</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">34</th>
+<td class="l data">spring</td>
+<td class="r data">0.59190</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">35</th>
+<td class="l data">lawyer</td>
+<td class="r data">0.58594</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">36</th>
+<td class="l data">academic</td>
+<td class="r data">0.57923</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">37</th>
+<td class="l data">proceeding</td>
+<td class="r data">0.54547</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">38</th>
+<td class="l data">detain</td>
+<td class="r data">0.53670</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">39</th>
+<td class="l data">terminate</td>
+<td class="r data">0.53627</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">40</th>
+<td class="l data">protester</td>
+<td class="r data">0.53475</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">41</th>
+<td class="l data">judge</td>
+<td class="r data">0.53383</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">42</th>
+<td class="l data">demonstrator</td>
+<td class="r data">0.53213</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">43</th>
+<td class="l data">hearing</td>
+<td class="r data">0.52981</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">44</th>
+<td class="l data">protest</td>
+<td class="r data">0.51524</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">45</th>
+<td class="l data">riot</td>
+<td class="r data">0.51148</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">46</th>
+<td class="l data">antisemitic</td>
+<td class="r data">0.51137</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">47</th>
+<td class="l data">commencement</td>
+<td class="r data">0.50434</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">48</th>
+<td class="l data">divestment</td>
+<td class="r data">0.47917</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">49</th>
+<td class="l data">demonstration</td>
+<td class="r data">0.47741</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">50</th>
+<td class="l data">district</td>
+<td class="r data">0.47360</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">51</th>
+<td class="l data">green</td>
+<td class="r data">0.46464</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">52</th>
+<td class="l data">speech</td>
+<td class="r data">0.44616</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">53</th>
+<td class="l data">class</td>
+<td class="r data">0.43183</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">54</th>
+<td class="l data">chant</td>
+<td class="r data">0.39973</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">55</th>
+<td class="l data">police</td>
+<td class="r data">0.39695</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">56</th>
+<td class="l data">activist</td>
+<td class="r data">0.39625</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">57</th>
+<td class="l data">unrest</td>
+<td class="r data">0.39229</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">58</th>
+<td class="l data">homeland</td>
+<td class="r data">0.38604</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">59</th>
+<td class="l data">activity</td>
+<td class="r data">0.37954</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">60</th>
+<td class="l data">officer</td>
+<td class="r data">0.37539</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">61</th>
+<td class="l data">disruption</td>
+<td class="r data">0.37503</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">62</th>
+<td class="l data">grant</td>
+<td class="r data">0.35330</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">63</th>
+<td class="l data">cocktail</td>
+<td class="r data">0.34843</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">64</th>
+<td class="l data">school</td>
+<td class="r data">0.34609</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">65</th>
+<td class="l data">focal</td>
+<td class="r data">0.33333</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">66</th>
+<td class="l data">organize</td>
+<td class="r data">0.33263</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">67</th>
+<td class="l data">incendiary</td>
+<td class="r data">0.32095</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+</div>
+<div class="branch">
+<p style="page-break-after: always;"><br/></p><hr size="3"/>
+<a name="IDX5"></a>
+<table class="systitleandfootercontainer" width="100%" cellspacing="1" cellpadding="1" rules="none" frame="void" border="0" summary="Page Layout">
+<tr>
+<td class="c systemtitle">Factor 3 neg</td>
+</tr>
+</table><br>
+<div>
+<div align="center">
+<table class="table" cellspacing="0" cellpadding="5" rules="all" frame="box" bordercolor="#C1C1C1" summary="Procedure Print: Data Set WORK.TEMP">
+<colgroup>
+<col>
+</colgroup>
+<colgroup>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="r header" scope="col">Obs</th>
+<th class="l header" scope="col">_NAME_</th>
+<th class="r header" scope="col">Factor3</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="r rowheader" scope="row">1</th>
+<td class="l data">sev</td>
+<td class="r data" nowrap>-0.62638</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">2</th>
+<td class="l data">underdeveloped</td>
+<td class="r data" nowrap>-0.60180</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">3</th>
+<td class="l data">peacekeeper</td>
+<td class="r data" nowrap>-0.37539</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+</div>
+<div class="branch">
+<p style="page-break-after: always;"><br/></p><hr size="3"/>
+<a name="IDX6"></a>
+<table class="systitleandfootercontainer" width="100%" cellspacing="1" cellpadding="1" rules="none" frame="void" border="0" summary="Page Layout">
+<tr>
+<td class="c systemtitle">LOADINGS TABLE</td>
+</tr>
+<tr>
+<td class="c systemtitle2">Factor 4 pos</td>
+</tr>
+</table><br>
+<div>
+<div align="center">
+<table class="table" cellspacing="0" cellpadding="5" rules="all" frame="box" bordercolor="#C1C1C1" summary="Procedure Print: Data Set WORK.TEMP">
+<colgroup>
+<col>
+</colgroup>
+<colgroup>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="r header" scope="col">Obs</th>
+<th class="l header" scope="col">_NAME_</th>
+<th class="r header" scope="col">Factor4</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="r rowheader" scope="row">1</th>
+<td class="l data">hostage-prisoner</td>
+<td class="r data">0.90919</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">2</th>
+<td class="l data">redevelop</td>
+<td class="r data">0.85590</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">3</th>
+<td class="l data">six-week</td>
+<td class="r data">0.81154</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">4</th>
+<td class="l data">handover</td>
+<td class="r data">0.80776</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">5</th>
+<td class="l data">three-phase</td>
+<td class="r data">0.78918</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">6</th>
+<td class="l data">finalise</td>
+<td class="r data">0.75163</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">7</th>
+<td class="l data">reconstruction</td>
+<td class="r data">0.72224</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">8</th>
+<td class="l data">feb</td>
+<td class="r data">0.72095</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">9</th>
+<td class="l data">redevelopment</td>
+<td class="r data">0.71430</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">10</th>
+<td class="l data">gradual</td>
+<td class="r data">0.70415</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">11</th>
+<td class="l data">swap</td>
+<td class="r data">0.69752</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">12</th>
+<td class="l data">mediator</td>
+<td class="r data">0.68020</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">13</th>
+<td class="l data">prisoner</td>
+<td class="r data">0.67084</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">14</th>
+<td class="l data">thai</td>
+<td class="r data">0.65514</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">15</th>
+<td class="l data">phase</td>
+<td class="r data">0.65011</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">16</th>
+<td class="l data">proposal</td>
+<td class="r data">0.64071</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">17</th>
+<td class="l data">last-minute</td>
+<td class="r data">0.63440</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">18</th>
+<td class="l data">truce</td>
+<td class="r data">0.62751</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">19</th>
+<td class="l data">resettle</td>
+<td class="r data">0.62568</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">20</th>
+<td class="l data">withdrawal</td>
+<td class="r data">0.62171</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">21</th>
+<td class="l data">negotiation</td>
+<td class="r data">0.61604</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">22</th>
+<td class="l data">impasse</td>
+<td class="r data">0.61001</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">23</th>
+<td class="l data">agreement</td>
+<td class="r data">0.60390</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">24</th>
+<td class="l data">inauguration</td>
+<td class="r data">0.60177</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">25</th>
+<td class="l data">deal</td>
+<td class="r data">0.59375</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">26</th>
+<td class="l data">expire</td>
+<td class="r data">0.59114</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">27</th>
+<td class="l data">president-elect</td>
+<td class="r data">0.58919</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">28</th>
+<td class="l data">negotiator</td>
+<td class="r data">0.58733</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">29</th>
+<td class="l data">fragile</td>
+<td class="r data">0.58343</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">30</th>
+<td class="l data">emaciate</td>
+<td class="r data">0.58147</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">31</th>
+<td class="l data">roadmap</td>
+<td class="r data">0.56293</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">32</th>
+<td class="l data">envision</td>
+<td class="r data">0.55047</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">33</th>
+<td class="l data">permanently</td>
+<td class="r data">0.54397</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">34</th>
+<td class="l data">relocation</td>
+<td class="r data">0.53634</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">35</th>
+<td class="l data">resumption</td>
+<td class="r data">0.53164</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">36</th>
+<td class="l data">implementation</td>
+<td class="r data">0.51366</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">37</th>
+<td class="l data">extension</td>
+<td class="r data">0.51079</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">38</th>
+<td class="l data">positively</td>
+<td class="r data">0.50709</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">39</th>
+<td class="l data">propose</td>
+<td class="r data">0.50122</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">40</th>
+<td class="l data">disarm</td>
+<td class="r data">0.50051</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">41</th>
+<td class="l data">ceasefire</td>
+<td class="r data">0.49714</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">42</th>
+<td class="l data">exchange</td>
+<td class="r data">0.49039</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">43</th>
+<td class="l data">detainee</td>
+<td class="r data">0.48852</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">44</th>
+<td class="l data">rebuild</td>
+<td class="r data">0.47523</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">45</th>
+<td class="l data">resume</td>
+<td class="r data">0.47052</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">46</th>
+<td class="l data">envoy</td>
+<td class="r data">0.47001</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">47</th>
+<td class="l data">release</td>
+<td class="r data">0.46883</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">48</th>
+<td class="l data">reunite</td>
+<td class="r data">0.46849</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">49</th>
+<td class="l data">buffer</td>
+<td class="r data">0.46056</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">50</th>
+<td class="l data">jail</td>
+<td class="r data">0.45479</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">51</th>
+<td class="l data">passover</td>
+<td class="r data">0.44984</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">52</th>
+<td class="l data">egyptian</td>
+<td class="r data">0.44679</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">53</th>
+<td class="l data">deadline</td>
+<td class="r data">0.44499</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">54</th>
+<td class="l data">captive</td>
+<td class="r data">0.44184</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">55</th>
+<td class="l data">relocate</td>
+<td class="r data">0.43971</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">56</th>
+<td class="l data">finalize</td>
+<td class="r data">0.43155</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">57</th>
+<td class="l data">female</td>
+<td class="r data">0.43113</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">58</th>
+<td class="l data">permanent</td>
+<td class="r data">0.43091</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">59</th>
+<td class="l data">batch</td>
+<td class="r data">0.42847</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">60</th>
+<td class="l data">hell</td>
+<td class="r data">0.42236</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">61</th>
+<td class="l data">far-right</td>
+<td class="r data">0.42206</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">62</th>
+<td class="l data">return</td>
+<td class="r data">0.42094</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">63</th>
+<td class="l data">blackmail</td>
+<td class="r data">0.41982</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">64</th>
+<td class="l data">outline</td>
+<td class="r data">0.40894</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">65</th>
+<td class="l data">noon</td>
+<td class="r data">0.40854</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">66</th>
+<td class="l data">temporary</td>
+<td class="r data">0.40500</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">67</th>
+<td class="l data">oval</td>
+<td class="r data">0.40351</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">68</th>
+<td class="l data">tariff</td>
+<td class="r data">0.40078</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">69</th>
+<td class="l data">talk</td>
+<td class="r data">0.39131</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">70</th>
+<td class="l data">outgoing</td>
+<td class="r data">0.39003</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">71</th>
+<td class="l data">optimism</td>
+<td class="r data">0.38526</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">72</th>
+<td class="l data">versa</td>
+<td class="r data">0.38111</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">73</th>
+<td class="l data">implement</td>
+<td class="r data">0.38104</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">74</th>
+<td class="l data">prime</td>
+<td class="r data">0.37610</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">75</th>
+<td class="l data">annex</td>
+<td class="r data">0.36753</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">76</th>
+<td class="l data">exile</td>
+<td class="r data">0.35974</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">77</th>
+<td class="l data">president</td>
+<td class="r data">0.35207</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">78</th>
+<td class="l data">coffin</td>
+<td class="r data">0.34944</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">79</th>
+<td class="l data">sentence</td>
+<td class="r data">0.34887</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">80</th>
+<td class="l data">mideast</td>
+<td class="r data">0.34366</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">81</th>
+<td class="l data">gap</td>
+<td class="r data">0.34238</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">82</th>
+<td class="l data">stability</td>
+<td class="r data">0.33106</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">83</th>
+<td class="l data">prison</td>
+<td class="r data">0.32977</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">84</th>
+<td class="l data">reject</td>
+<td class="r data">0.32949</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">85</th>
+<td class="l data">delegation</td>
+<td class="r data">0.32686</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">86</th>
+<td class="l data">vision</td>
+<td class="r data">0.31807</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">87</th>
+<td class="l data">renewed</td>
+<td class="r data">0.31785</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">88</th>
+<td class="l data">suggestion</td>
+<td class="r data">0.31547</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">89</th>
+<td class="l data">plan</td>
+<td class="r data">0.31486</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">90</th>
+<td class="l data">term</td>
+<td class="r data">0.31228</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">91</th>
+<td class="l data">extend</td>
+<td class="r data">0.31098</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">92</th>
+<td class="l data">withdraw</td>
+<td class="r data">0.31034</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">93</th>
+<td class="l data">accept</td>
+<td class="r data">0.30681</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">94</th>
+<td class="l data">summit</td>
+<td class="r data">0.30646</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">95</th>
+<td class="l data">free</td>
+<td class="r data">0.30623</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">96</th>
+<td class="l data">cessation</td>
+<td class="r data">0.30266</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">97</th>
+<td class="l data">effect</td>
+<td class="r data">0.30213</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">98</th>
+<td class="l data">draft</td>
+<td class="r data">0.30098</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+</div>
+<div class="branch">
+<p style="page-break-after: always;"><br/></p><hr size="3"/>
+<a name="IDX7"></a>
+<table class="systitleandfootercontainer" width="100%" cellspacing="1" cellpadding="1" rules="none" frame="void" border="0" summary="Page Layout">
+<tr>
+<td class="c systemtitle">Factor 4 neg</td>
+</tr>
+</table><br>
+<div>
+<div align="center">
+<table class="table" cellspacing="0" cellpadding="5" rules="all" frame="box" bordercolor="#C1C1C1" summary="Procedure Print: Data Set WORK.TEMP">
+<colgroup>
+<col>
+</colgroup>
+<colgroup>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="r header" scope="col">Obs</th>
+<th class="l header" scope="col">_NAME_</th>
+<th class="r header" scope="col">Factor4</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="r rowheader" scope="row">1</th>
+<td class="l data">hand-held</td>
+<td class="r data" nowrap>-0.63733</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">2</th>
+<td class="l data">wireless</td>
+<td class="r data" nowrap>-0.59652</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">3</th>
+<td class="l data">unintentional</td>
+<td class="r data" nowrap>-0.48351</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">4</th>
+<td class="l data">kneecap</td>
+<td class="r data" nowrap>-0.44720</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">5</th>
+<td class="l data">polish</td>
+<td class="r data" nowrap>-0.44679</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">6</th>
+<td class="l data">one-year</td>
+<td class="r data" nowrap>-0.36858</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+</div>
+<div class="branch">
+<p style="page-break-after: always;"><br/></p><hr size="3"/>
+<a name="IDX8"></a>
+<table class="systitleandfootercontainer" width="100%" cellspacing="1" cellpadding="1" rules="none" frame="void" border="0" summary="Page Layout">
+<tr>
+<td class="c systemtitle">LOADINGS TABLE</td>
+</tr>
+<tr>
+<td class="c systemtitle2">Factor 5 pos</td>
+</tr>
+</table><br>
+<div>
+<div align="center">
+<table class="table" cellspacing="0" cellpadding="5" rules="all" frame="box" bordercolor="#C1C1C1" summary="Procedure Print: Data Set WORK.TEMP">
+<colgroup>
+<col>
+</colgroup>
+<colgroup>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="r header" scope="col">Obs</th>
+<th class="l header" scope="col">_NAME_</th>
+<th class="r header" scope="col">Factor5</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="r rowheader" scope="row">1</th>
+<td class="l data">provisional</td>
+<td class="r data">0.76168</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">2</th>
+<td class="l data">prevention</td>
+<td class="r data">0.75513</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">3</th>
+<td class="l data">bodily</td>
+<td class="r data">0.68771</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">4</th>
+<td class="l data">irreparable</td>
+<td class="r data">0.68557</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">5</th>
+<td class="l data">omission</td>
+<td class="r data">0.65045</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">6</th>
+<td class="l data">ethnical</td>
+<td class="r data">0.63553</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">7</th>
+<td class="l data">plausible</td>
+<td class="r data">0.63093</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">8</th>
+<td class="l data">racial</td>
+<td class="r data">0.59022</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">9</th>
+<td class="l data">persecution</td>
+<td class="r data">0.55568</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">10</th>
+<td class="l data">jurisdiction</td>
+<td class="r data">0.53235</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">11</th>
+<td class="l data">genocidal</td>
+<td class="r data">0.53232</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">12</th>
+<td class="l data">non-binding</td>
+<td class="r data">0.51484</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">13</th>
+<td class="l data">invoke</td>
+<td class="r data">0.49685</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">14</th>
+<td class="l data">wholly</td>
+<td class="r data">0.49426</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">15</th>
+<td class="l data">egregious</td>
+<td class="r data">0.49165</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">16</th>
+<td class="l data">scoop</td>
+<td class="r data">0.49093</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">17</th>
+<td class="l data">ethnic</td>
+<td class="r data">0.48973</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">18</th>
+<td class="l data">convention</td>
+<td class="r data">0.48957</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">19</th>
+<td class="l data">genocide</td>
+<td class="r data">0.48136</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">20</th>
+<td class="l data">impartiality</td>
+<td class="r data">0.48110</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">21</th>
+<td class="l data">african</td>
+<td class="r data">0.47779</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">22</th>
+<td class="l data">cleansing</td>
+<td class="r data">0.46913</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">23</th>
+<td class="l data">verdict</td>
+<td class="r data">0.46376</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">24</th>
+<td class="l data">favour</td>
+<td class="r data">0.45767</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">25</th>
+<td class="l data">indiscriminate</td>
+<td class="r data">0.45185</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">26</th>
+<td class="l data">fee</td>
+<td class="r data">0.45167</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">27</th>
+<td class="l data">unconditional</td>
+<td class="r data">0.45055</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">28</th>
+<td class="l data">lend</td>
+<td class="r data">0.44282</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">29</th>
+<td class="l data">method</td>
+<td class="r data">0.44253</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">30</th>
+<td class="l data">license</td>
+<td class="r data">0.44104</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">31</th>
+<td class="l data">humanity</td>
+<td class="r data">0.43992</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">32</th>
+<td class="l data">perpetrate</td>
+<td class="r data">0.43813</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">33</th>
+<td class="l data">deplore</td>
+<td class="r data">0.43733</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">34</th>
+<td class="l data">pakistani</td>
+<td class="r data">0.43378</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">35</th>
+<td class="l data">membership</td>
+<td class="r data">0.43318</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">36</th>
+<td class="l data">argument</td>
+<td class="r data">0.43211</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">37</th>
+<td class="l data">crime</td>
+<td class="r data">0.43152</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">38</th>
+<td class="l data">amnesty</td>
+<td class="r data">0.42979</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">39</th>
+<td class="l data">warrant</td>
+<td class="r data">0.42845</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">40</th>
+<td class="l data">court</td>
+<td class="r data">0.42581</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">41</th>
+<td class="l data">pro</td>
+<td class="r data">0.42118</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">42</th>
+<td class="l data">intent</td>
+<td class="r data">0.41904</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">43</th>
+<td class="l data">enforce</td>
+<td class="r data">0.41890</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">44</th>
+<td class="l data">incitement</td>
+<td class="r data">0.41457</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">45</th>
+<td class="l data">legal</td>
+<td class="r data">0.41125</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">46</th>
+<td class="l data">scroll</td>
+<td class="r data">0.41103</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">47</th>
+<td class="l data">equally</td>
+<td class="r data">0.41025</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">48</th>
+<td class="l data">export</td>
+<td class="r data">0.40791</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">49</th>
+<td class="l data">mechanism</td>
+<td class="r data">0.40704</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">50</th>
+<td class="l data">embargo</td>
+<td class="r data">0.40483</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">51</th>
+<td class="l data">ruling</td>
+<td class="r data">0.40151</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">52</th>
+<td class="l data">sanction</td>
+<td class="r data">0.39911</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">53</th>
+<td class="l data">dutch</td>
+<td class="r data">0.39836</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">54</th>
+<td class="l data">recognise</td>
+<td class="r data">0.39416</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">55</th>
+<td class="l data">neutrality</td>
+<td class="r data">0.39095</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">56</th>
+<td class="l data">fair</td>
+<td class="r data">0.38606</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">57</th>
+<td class="l data">exacerbate</td>
+<td class="r data">0.37965</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">58</th>
+<td class="l data">principle</td>
+<td class="r data">0.37815</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">59</th>
+<td class="l data">international</td>
+<td class="r data">0.37407</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">60</th>
+<td class="l data">durable</td>
+<td class="r data">0.36941</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">61</th>
+<td class="l data">unequivocally</td>
+<td class="r data">0.36779</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">62</th>
+<td class="l data">criminal</td>
+<td class="r data">0.36514</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">63</th>
+<td class="l data">displacement</td>
+<td class="r data">0.36481</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">64</th>
+<td class="l data">emphasise</td>
+<td class="r data">0.36408</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">65</th>
+<td class="l data">prosecutor</td>
+<td class="r data">0.35431</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">66</th>
+<td class="l data">respected</td>
+<td class="r data">0.35367</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">67</th>
+<td class="l data">starvation</td>
+<td class="r data">0.35316</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">68</th>
+<td class="l data">cooperation</td>
+<td class="r data">0.35291</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">69</th>
+<td class="l data">intolerable</td>
+<td class="r data">0.35226</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">70</th>
+<td class="l data">measure</td>
+<td class="r data">0.35067</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">71</th>
+<td class="l data">intentionally</td>
+<td class="r data">0.34950</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">72</th>
+<td class="l data">independent</td>
+<td class="r data">0.34829</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">73</th>
+<td class="l data">insight</td>
+<td class="r data">0.34810</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">74</th>
+<td class="l data">submit</td>
+<td class="r data">0.34454</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">75</th>
+<td class="l data">continuous</td>
+<td class="r data">0.34257</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">76</th>
+<td class="l data">associate</td>
+<td class="r data">0.33726</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">77</th>
+<td class="l data">reasonable</td>
+<td class="r data">0.33439</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">78</th>
+<td class="l data">warfare</td>
+<td class="r data">0.33318</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">79</th>
+<td class="l data">safeguard</td>
+<td class="r data">0.33297</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">80</th>
+<td class="l data">essential</td>
+<td class="r data">0.32961</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">81</th>
+<td class="l data">extraordinary</td>
+<td class="r data">0.32651</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">82</th>
+<td class="l data">entrench</td>
+<td class="r data">0.31450</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">83</th>
+<td class="l data">case</td>
+<td class="r data">0.31388</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">84</th>
+<td class="l data">recognition</td>
+<td class="r data">0.31054</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">85</th>
+<td class="l data">analysis</td>
+<td class="r data">0.30966</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">86</th>
+<td class="l data">pattern</td>
+<td class="r data">0.30862</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">87</th>
+<td class="l data">act</td>
+<td class="r data">0.30471</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">88</th>
+<td class="l data">commit</td>
+<td class="r data">0.30153</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+</div>
+<div class="branch">
+<p style="page-break-after: always;"><br/></p><hr size="3"/>
+<a name="IDX9"></a>
+<table class="systitleandfootercontainer" width="100%" cellspacing="1" cellpadding="1" rules="none" frame="void" border="0" summary="Page Layout">
+<tr>
+<td class="c systemtitle">Factor 5 neg</td>
+</tr>
+</table><br>
+<div>
+<div align="center">
+<table class="table" cellspacing="0" cellpadding="5" rules="all" frame="box" bordercolor="#C1C1C1" summary="Procedure Print: Data Set WORK.TEMP">
+<colgroup>
+<col>
+</colgroup>
+<colgroup>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="r header" scope="col">Obs</th>
+<th class="l header" scope="col">_NAME_</th>
+<th class="r header" scope="col">Factor5</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="r rowheader" scope="row">1</th>
+<td class="l data">barge</td>
+<td class="r data" nowrap>-0.80987</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">2</th>
+<td class="l data">laborer</td>
+<td class="r data" nowrap>-0.79404</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">3</th>
+<td class="l data">pre-dawn</td>
+<td class="r data" nowrap>-0.56472</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">4</th>
+<td class="l data">nine-month</td>
+<td class="r data" nowrap>-0.47591</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">5</th>
+<td class="l data">anti-government</td>
+<td class="r data" nowrap>-0.40556</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">6</th>
+<td class="l data">stepped-up</td>
+<td class="r data" nowrap>-0.40309</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">7</th>
+<td class="l data">weeklong</td>
+<td class="r data" nowrap>-0.32025</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">8</th>
+<td class="l data">syndicated</td>
+<td class="r data" nowrap>-0.32011</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+</div>
+<div class="branch">
+<p style="page-break-after: always;"><br/></p><hr size="3"/>
+<a name="IDX10"></a>
+<table class="systitleandfootercontainer" width="100%" cellspacing="1" cellpadding="1" rules="none" frame="void" border="0" summary="Page Layout">
+<tr>
+<td class="c systemtitle">LOADINGS TABLE</td>
+</tr>
+<tr>
+<td class="c systemtitle2">Factor 6 pos</td>
+</tr>
+</table><br>
+<div>
+<div align="center">
+<table class="table" cellspacing="0" cellpadding="5" rules="all" frame="box" bordercolor="#C1C1C1" summary="Procedure Print: Data Set WORK.TEMP">
+<colgroup>
+<col>
+</colgroup>
+<colgroup>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="r header" scope="col">Obs</th>
+<th class="l header" scope="col">_NAME_</th>
+<th class="r header" scope="col">Factor6</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="r rowheader" scope="row">1</th>
+<td class="l data">voyage</td>
+<td class="r data">1.24881</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">2</th>
+<td class="l data">flotilla</td>
+<td class="r data">1.21727</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">3</th>
+<td class="l data">yacht</td>
+<td class="r data">1.17933</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">4</th>
+<td class="l data">sail</td>
+<td class="r data">1.08996</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">5</th>
+<td class="l data">swedish</td>
+<td class="r data">1.00835</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">6</th>
+<td class="l data">boat</td>
+<td class="r data">0.93816</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">7</th>
+<td class="l data">vessel</td>
+<td class="r data">0.92567</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">8</th>
+<td class="l data">selfie</td>
+<td class="r data">0.88208</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">9</th>
+<td class="l data">cargo</td>
+<td class="r data">0.80870</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">10</th>
+<td class="l data">naval</td>
+<td class="r data">0.78287</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">11</th>
+<td class="l data">rice</td>
+<td class="r data">0.77362</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">12</th>
+<td class="l data">maritime</td>
+<td class="r data">0.71280</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">13</th>
+<td class="l data">crew</td>
+<td class="r data">0.63159</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">14</th>
+<td class="l data">ship</td>
+<td class="r data">0.60814</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">15</th>
+<td class="l data">ocean</td>
+<td class="r data">0.57775</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">16</th>
+<td class="l data">passenger</td>
+<td class="r data">0.57702</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">17</th>
+<td class="l data">airdrop</td>
+<td class="r data">0.56422</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">18</th>
+<td class="l data">us-backed</td>
+<td class="r data">0.56221</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">19</th>
+<td class="l data">formula</td>
+<td class="r data">0.54844</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">20</th>
+<td class="l data">consular</td>
+<td class="r data">0.51962</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">21</th>
+<td class="l data">celebrity</td>
+<td class="r data">0.50774</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">22</th>
+<td class="l data">parachute</td>
+<td class="r data">0.50564</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">23</th>
+<td class="l data">merchant</td>
+<td class="r data">0.49903</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">24</th>
+<td class="l data">coast</td>
+<td class="r data">0.47917</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">25</th>
+<td class="l data">tanker</td>
+<td class="r data">0.45063</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">26</th>
+<td class="l data">contractor</td>
+<td class="r data">0.44765</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">27</th>
+<td class="l data">meal</td>
+<td class="r data">0.43029</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">28</th>
+<td class="l data">blockade</td>
+<td class="r data">0.42406</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">29</th>
+<td class="l data">summon</td>
+<td class="r data">0.41619</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">30</th>
+<td class="l data">board</td>
+<td class="r data">0.40596</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">31</th>
+<td class="l data">conscience</td>
+<td class="r data">0.38913</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">32</th>
+<td class="l data">seeker</td>
+<td class="r data">0.38135</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">33</th>
+<td class="l data">sea</td>
+<td class="r data">0.36239</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">34</th>
+<td class="l data">subscriber</td>
+<td class="r data">0.35044</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">35</th>
+<td class="l data">climate</td>
+<td class="r data">0.34599</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">36</th>
+<td class="l data">shipment</td>
+<td class="r data">0.33338</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">37</th>
+<td class="l data">coalition</td>
+<td class="r data">0.33069</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">38</th>
+<td class="l data">foundation</td>
+<td class="r data">0.32091</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">39</th>
+<td class="l data">lift</td>
+<td class="r data">0.32054</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">40</th>
+<td class="l data">starve</td>
+<td class="r data">0.32046</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">41</th>
+<td class="l data">dissatisfy</td>
+<td class="r data">0.30897</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">42</th>
+<td class="l data">exclusive</td>
+<td class="r data">0.30750</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+</div>
+<div class="branch">
+<p style="page-break-after: always;"><br/></p><hr size="3"/>
+<a name="IDX11"></a>
+<table class="systitleandfootercontainer" width="100%" cellspacing="1" cellpadding="1" rules="none" frame="void" border="0" summary="Page Layout">
+<tr>
+<td class="c systemtitle">Factor 6 neg</td>
+</tr>
+</table><br>
+<div>
+<div align="center">
+<table class="table" cellspacing="0" cellpadding="5" rules="all" frame="box" bordercolor="#C1C1C1" summary="Procedure Print: Data Set WORK.TEMP">
+<colgroup>
+<col>
+</colgroup>
+<colgroup>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="r header" scope="col">Obs</th>
+<th class="l header" scope="col">_NAME_</th>
+<th class="r header" scope="col">Factor6</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="r rowheader" scope="row">1</th>
+<td class="l data">well-rounded</td>
+<td class="r data" nowrap>-0.50735</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">2</th>
+<td class="l data">virus</td>
+<td class="r data" nowrap>-0.44029</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">3</th>
+<td class="l data">year-long</td>
+<td class="r data" nowrap>-0.42317</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">4</th>
+<td class="l data">caretaker</td>
+<td class="r data" nowrap>-0.32780</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">5</th>
+<td class="l data">residence</td>
+<td class="r data" nowrap>-0.32734</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">6</th>
+<td class="l data">kindly</td>
+<td class="r data" nowrap>-0.31882</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">7</th>
+<td class="l data">malay</td>
+<td class="r data" nowrap>-0.31443</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+</div>
+<div class="branch">
+<p style="page-break-after: always;"><br/></p><hr size="3"/>
+<a name="IDX12"></a>
+<table class="systitleandfootercontainer" width="100%" cellspacing="1" cellpadding="1" rules="none" frame="void" border="0" summary="Page Layout">
+<tr>
+<td class="c systemtitle">LOADINGS TABLE</td>
+</tr>
+<tr>
+<td class="c systemtitle2">Factor 7 pos</td>
+</tr>
+</table><br>
+<div>
+<div align="center">
+<table class="table" cellspacing="0" cellpadding="5" rules="all" frame="box" bordercolor="#C1C1C1" summary="Procedure Print: Data Set WORK.TEMP">
+<colgroup>
+<col>
+</colgroup>
+<colgroup>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="r header" scope="col">Obs</th>
+<th class="l header" scope="col">_NAME_</th>
+<th class="r header" scope="col">Factor7</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="r rowheader" scope="row">1</th>
+<td class="l data">riyal</td>
+<td class="r data">0.89809</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">2</th>
+<td class="l data">dirham</td>
+<td class="r data">0.89095</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">3</th>
+<td class="l data">tola</td>
+<td class="r data">0.71129</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">4</th>
+<td class="l data">reciprocity</td>
+<td class="r data">0.65989</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">5</th>
+<td class="l data">memorandum</td>
+<td class="r data">0.65710</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">6</th>
+<td class="l data">eight-month</td>
+<td class="r data">0.63911</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">7</th>
+<td class="l data">govt</td>
+<td class="r data">0.58230</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">8</th>
+<td class="l data">waiver</td>
+<td class="r data">0.56041</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">9</th>
+<td class="l data">fluctuate</td>
+<td class="r data">0.53441</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">10</th>
+<td class="l data">then-foreign</td>
+<td class="r data">0.53437</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">11</th>
+<td class="l data">abstention</td>
+<td class="r data">0.45500</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">12</th>
+<td class="l data">cusp</td>
+<td class="r data">0.44884</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">13</th>
+<td class="l data">ing</td>
+<td class="r data">0.44805</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">14</th>
+<td class="l data">veto</td>
+<td class="r data">0.41151</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">15</th>
+<td class="l data">application</td>
+<td class="r data">0.39762</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">16</th>
+<td class="l data">resolution</td>
+<td class="r data">0.35842</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">17</th>
+<td class="l data">saudi</td>
+<td class="r data">0.34722</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">18</th>
+<td class="l data">conduit</td>
+<td class="r data">0.33869</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+</div>
+<div class="branch">
+<p style="page-break-after: always;"><br/></p><hr size="3"/>
+<a name="IDX13"></a>
+<table class="systitleandfootercontainer" width="100%" cellspacing="1" cellpadding="1" rules="none" frame="void" border="0" summary="Page Layout">
+<tr>
+<td class="c systemtitle">Factor 7 neg</td>
+</tr>
+</table><br>
+<div>
+<div align="center">
+<table class="table" cellspacing="0" cellpadding="5" rules="all" frame="box" bordercolor="#C1C1C1" summary="Procedure Print: Data Set WORK.TEMP">
+<colgroup>
+<col>
+</colgroup>
+<colgroup>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="r header" scope="col">Obs</th>
+<th class="l header" scope="col">_NAME_</th>
+<th class="r header" scope="col">Factor7</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="r rowheader" scope="row">1</th>
+<td class="l data">balloon</td>
+<td class="r data" nowrap>-0.61435</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">2</th>
+<td class="l data">gat</td>
+<td class="r data" nowrap>-0.60100</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">3</th>
+<td class="l data">birthday</td>
+<td class="r data" nowrap>-0.57818</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">4</th>
+<td class="l data">vigil</td>
+<td class="r data" nowrap>-0.54221</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">5</th>
+<td class="l data">festival</td>
+<td class="r data" nowrap>-0.52962</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">6</th>
+<td class="l data">grenade</td>
+<td class="r data" nowrap>-0.52917</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">7</th>
+<td class="l data">music</td>
+<td class="r data" nowrap>-0.52093</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">8</th>
+<td class="l data">concert</td>
+<td class="r data" nowrap>-0.51712</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">9</th>
+<td class="l data">song</td>
+<td class="r data" nowrap>-0.50059</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">10</th>
+<td class="l data">grief</td>
+<td class="r data" nowrap>-0.49105</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">11</th>
+<td class="l data">documentary</td>
+<td class="r data" nowrap>-0.49093</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">12</th>
+<td class="l data">soccer</td>
+<td class="r data" nowrap>-0.48065</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">13</th>
+<td class="l data">forensic</td>
+<td class="r data" nowrap>-0.47979</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">14</th>
+<td class="l data">kibbutz</td>
+<td class="r data" nowrap>-0.47603</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">15</th>
+<td class="l data">shoe</td>
+<td class="r data" nowrap>-0.47286</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">16</th>
+<td class="l data">organizer</td>
+<td class="r data" nowrap>-0.47245</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">17</th>
+<td class="l data">unaccounted</td>
+<td class="r data" nowrap>-0.46302</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">18</th>
+<td class="l data">apologize</td>
+<td class="r data" nowrap>-0.45523</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">19</th>
+<td class="l data">memorial</td>
+<td class="r data" nowrap>-0.44082</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">20</th>
+<td class="l data">joy</td>
+<td class="r data" nowrap>-0.44050</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">21</th>
+<td class="l data">hate</td>
+<td class="r data" nowrap>-0.44019</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">22</th>
+<td class="l data">parent</td>
+<td class="r data" nowrap>-0.43655</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">23</th>
+<td class="l data">entertainment</td>
+<td class="r data" nowrap>-0.43541</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">24</th>
+<td class="l data">heartbroken</td>
+<td class="r data" nowrap>-0.42840</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">25</th>
+<td class="l data">hurl</td>
+<td class="r data" nowrap>-0.42705</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">26</th>
+<td class="l data">button</td>
+<td class="r data" nowrap>-0.41363</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">27</th>
+<td class="l data">shooting</td>
+<td class="r data" nowrap>-0.40198</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">28</th>
+<td class="l data">tire</td>
+<td class="r data" nowrap>-0.39980</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">29</th>
+<td class="l data">beach</td>
+<td class="r data" nowrap>-0.39897</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">30</th>
+<td class="l data">captivity</td>
+<td class="r data" nowrap>-0.39710</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">31</th>
+<td class="l data">shatter</td>
+<td class="r data" nowrap>-0.39564</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">32</th>
+<td class="l data">kidnap</td>
+<td class="r data" nowrap>-0.39375</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">33</th>
+<td class="l data">paint</td>
+<td class="r data" nowrap>-0.39317</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">34</th>
+<td class="l data">gear</td>
+<td class="r data" nowrap>-0.38664</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">35</th>
+<td class="l data">football</td>
+<td class="r data" nowrap>-0.38499</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">36</th>
+<td class="l data">missing</td>
+<td class="r data" nowrap>-0.38136</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">37</th>
+<td class="l data">condolence</td>
+<td class="r data" nowrap>-0.36717</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">38</th>
+<td class="l data">daughter</td>
+<td class="r data" nowrap>-0.36681</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">39</th>
+<td class="l data">flash</td>
+<td class="r data" nowrap>-0.36651</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">40</th>
+<td class="l data">girl</td>
+<td class="r data" nowrap>-0.36484</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">41</th>
+<td class="l data">spray</td>
+<td class="r data" nowrap>-0.36384</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">42</th>
+<td class="l data">funeral</td>
+<td class="r data" nowrap>-0.36110</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">43</th>
+<td class="l data">commemoration</td>
+<td class="r data" nowrap>-0.35805</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">44</th>
+<td class="l data">commemorate</td>
+<td class="r data" nowrap>-0.35605</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">45</th>
+<td class="l data">alive</td>
+<td class="r data" nowrap>-0.35386</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">46</th>
+<td class="l data">holiday</td>
+<td class="r data" nowrap>-0.35276</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">47</th>
+<td class="l data">murder</td>
+<td class="r data" nowrap>-0.35030</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">48</th>
+<td class="l data">fiction</td>
+<td class="r data" nowrap>-0.34423</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">49</th>
+<td class="l data">church</td>
+<td class="r data" nowrap>-0.34302</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">50</th>
+<td class="l data">anybody</td>
+<td class="r data" nowrap>-0.34244</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">51</th>
+<td class="l data">noble</td>
+<td class="r data" nowrap>-0.33324</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">52</th>
+<td class="l data">shame</td>
+<td class="r data" nowrap>-0.32587</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">53</th>
+<td class="l data">crowd</td>
+<td class="r data" nowrap>-0.32017</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">54</th>
+<td class="l data">friend</td>
+<td class="r data" nowrap>-0.31430</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">55</th>
+<td class="l data">discovery</td>
+<td class="r data" nowrap>-0.31309</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">56</th>
+<td class="l data">throw</td>
+<td class="r data" nowrap>-0.31307</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">57</th>
+<td class="l data">shot</td>
+<td class="r data" nowrap>-0.31223</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">58</th>
+<td class="l data">horrific</td>
+<td class="r data" nowrap>-0.31212</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">59</th>
+<td class="l data">tunnel</td>
+<td class="r data" nowrap>-0.30932</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">60</th>
+<td class="l data">slaughter</td>
+<td class="r data" nowrap>-0.30911</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">61</th>
+<td class="l data">teenager</td>
+<td class="r data" nowrap>-0.30816</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">62</th>
+<td class="l data">athlete</td>
+<td class="r data" nowrap>-0.30572</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+</div>
+<div class="branch">
+<p style="page-break-after: always;"><br/></p><hr size="3"/>
+<a name="IDX14"></a>
+<table class="systitleandfootercontainer" width="100%" cellspacing="1" cellpadding="1" rules="none" frame="void" border="0" summary="Page Layout">
+<tr>
+<td class="c systemtitle">LOADINGS TABLE</td>
+</tr>
+<tr>
+<td class="c systemtitle2">Factor 8 pos</td>
+</tr>
+</table><br>
+<div>
+<div align="center">
+<table class="table" cellspacing="0" cellpadding="5" rules="all" frame="box" bordercolor="#C1C1C1" summary="Procedure Print: Data Set WORK.TEMP">
+<colgroup>
+<col>
+</colgroup>
+<colgroup>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="r header" scope="col">Obs</th>
+<th class="l header" scope="col">_NAME_</th>
+<th class="r header" scope="col">Factor8</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="r rowheader" scope="row">1</th>
+<td class="l data">uncommitted</td>
+<td class="r data">1.01202</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">2</th>
+<td class="l data">ballot</td>
+<td class="r data">0.80047</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">3</th>
+<td class="l data">dnc</td>
+<td class="r data">0.79191</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">4</th>
+<td class="l data">arab-american</td>
+<td class="r data">0.74302</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">5</th>
+<td class="l data">democrat</td>
+<td class="r data">0.74240</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">6</th>
+<td class="l data">nomination</td>
+<td class="r data">0.74223</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">7</th>
+<td class="l data">nominee</td>
+<td class="r data">0.73950</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">8</th>
+<td class="l data">voter</td>
+<td class="r data">0.71749</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">9</th>
+<td class="l data">centrist</td>
+<td class="r data">0.68915</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">10</th>
+<td class="l data">delegate</td>
+<td class="r data">0.66134</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">11</th>
+<td class="l data">congressional</td>
+<td class="r data">0.57110</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">12</th>
+<td class="l data">democratic</td>
+<td class="r data">0.55841</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">13</th>
+<td class="l data">congresswoman</td>
+<td class="r data">0.55699</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">14</th>
+<td class="l data">reconsider</td>
+<td class="r data">0.53649</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">15</th>
+<td class="l data">pier</td>
+<td class="r data">0.53612</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">16</th>
+<td class="l data">ironclad</td>
+<td class="r data">0.53468</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">17</th>
+<td class="l data">abstain</td>
+<td class="r data">0.52190</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">18</th>
+<td class="l data">islamophobia</td>
+<td class="r data">0.51365</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">19</th>
+<td class="l data">candidate</td>
+<td class="r data">0.49119</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">20</th>
+<td class="l data">vote</td>
+<td class="r data">0.48715</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">21</th>
+<td class="l data">highest-ranking</td>
+<td class="r data">0.48410</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">22</th>
+<td class="l data">presidential</td>
+<td class="r data">0.46672</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">23</th>
+<td class="l data">republican</td>
+<td class="r data">0.45690</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">24</th>
+<td class="l data">vice</td>
+<td class="r data">0.45171</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">25</th>
+<td class="l data">election</td>
+<td class="r data">0.44497</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">26</th>
+<td class="l data">poll</td>
+<td class="r data">0.43965</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">27</th>
+<td class="l data">cease-fire</td>
+<td class="r data">0.43344</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">28</th>
+<td class="l data">chef</td>
+<td class="r data">0.43285</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">29</th>
+<td class="l data">ticket</td>
+<td class="r data">0.42573</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">30</th>
+<td class="l data">favor</td>
+<td class="r data">0.42180</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">31</th>
+<td class="l data">delusional</td>
+<td class="r data">0.41166</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">32</th>
+<td class="l data">virtual</td>
+<td class="r data">0.40193</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">33</th>
+<td class="l data">invitation</td>
+<td class="r data">0.39482</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">34</th>
+<td class="l data">skeptical</td>
+<td class="r data">0.39127</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">35</th>
+<td class="l data">steer</td>
+<td class="r data">0.37318</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">36</th>
+<td class="l data">censure</td>
+<td class="r data">0.35893</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">37</th>
+<td class="l data">reprimand</td>
+<td class="r data">0.34982</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">38</th>
+<td class="l data">party</td>
+<td class="r data">0.33606</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">39</th>
+<td class="l data">milestone</td>
+<td class="r data">0.32339</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">40</th>
+<td class="l data">six-month</td>
+<td class="r data">0.31932</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">41</th>
+<td class="l data">primary</td>
+<td class="r data">0.31389</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">42</th>
+<td class="l data">chart</td>
+<td class="r data">0.30681</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">43</th>
+<td class="l data">endorse</td>
+<td class="r data">0.30667</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+</div>
+<div class="branch">
+<p style="page-break-after: always;"><br/></p><hr size="3"/>
+<a name="IDX15"></a>
+<table class="systitleandfootercontainer" width="100%" cellspacing="1" cellpadding="1" rules="none" frame="void" border="0" summary="Page Layout">
+<tr>
+<td class="c systemtitle">Factor 8 neg</td>
+</tr>
+</table><br>
+<div>
+<div align="center">
+<table class="table" cellspacing="0" cellpadding="5" rules="all" frame="box" bordercolor="#C1C1C1" summary="Procedure Print: Data Set WORK.TEMP">
+<colgroup>
+<col>
+</colgroup>
+<colgroup>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="r header" scope="col">Obs</th>
+<th class="l header" scope="col">_NAME_</th>
+<th class="r header" scope="col">Factor8</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="r rowheader" scope="row">1</th>
+<td class="l data">israeli-backed</td>
+<td class="r data" nowrap>-0.73150</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">2</th>
+<td class="l data">siphon</td>
+<td class="r data" nowrap>-0.66040</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">3</th>
+<td class="l data">ghf</td>
+<td class="r data" nowrap>-0.64349</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">4</th>
+<td class="l data">bani</td>
+<td class="r data" nowrap>-0.51415</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">5</th>
+<td class="l data">advertisment</td>
+<td class="r data" nowrap>-0.49864</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">6</th>
+<td class="l data">secularism</td>
+<td class="r data" nowrap>-0.47678</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">7</th>
+<td class="l data">eyewitness</td>
+<td class="r data" nowrap>-0.44004</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">8</th>
+<td class="l data">companion</td>
+<td class="r data" nowrap>-0.43983</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">9</th>
+<td class="l data">headlight</td>
+<td class="r data" nowrap>-0.43840</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">10</th>
+<td class="l data">suspiciously</td>
+<td class="r data" nowrap>-0.40903</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">11</th>
+<td class="l data">two-month</td>
+<td class="r data" nowrap>-0.40120</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">12</th>
+<td class="l data">chariot</td>
+<td class="r data" nowrap>-0.35983</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">13</th>
+<td class="l data">command-and-control</td>
+<td class="r data" nowrap>-0.31025</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+</div>
+<div class="branch">
+<p style="page-break-after: always;"><br/></p><hr size="3"/>
+<a name="IDX16"></a>
+<table class="systitleandfootercontainer" width="100%" cellspacing="1" cellpadding="1" rules="none" frame="void" border="0" summary="Page Layout">
+<tr>
+<td class="c systemtitle">LOADINGS TABLE</td>
+</tr>
+<tr>
+<td class="c systemtitle2">Factor 9 pos</td>
+</tr>
+</table><br>
+<div>
+<div align="center">
+<table class="table" cellspacing="0" cellpadding="5" rules="all" frame="box" bordercolor="#C1C1C1" summary="Procedure Print: Data Set WORK.TEMP">
+<colgroup>
+<col>
+</colgroup>
+<colgroup>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="r header" scope="col">Obs</th>
+<th class="l header" scope="col">_NAME_</th>
+<th class="r header" scope="col">Factor9</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="r rowheader" scope="row">1</th>
+<td class="l data">people-oriented</td>
+<td class="r data">1.41575</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">2</th>
+<td class="l data">well-recognized</td>
+<td class="r data">1.40081</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">3</th>
+<td class="l data">intro</td>
+<td class="r data">1.39850</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">4</th>
+<td class="l data">footer</td>
+<td class="r data">1.39063</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">5</th>
+<td class="l data">qualitative</td>
+<td class="r data">1.19350</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">6</th>
+<td class="l data">sphere</td>
+<td class="r data">0.76802</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">7</th>
+<td class="l data">seven-day</td>
+<td class="r data">0.57608</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">8</th>
+<td class="l data">caregiver</td>
+<td class="r data">0.54889</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">9</th>
+<td class="l data">tion</td>
+<td class="r data">0.54545</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">10</th>
+<td class="l data">dec</td>
+<td class="r data">0.52087</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">11</th>
+<td class="l data">unhindered</td>
+<td class="r data">0.45852</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">12</th>
+<td class="l data">storied</td>
+<td class="r data">0.42347</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">13</th>
+<td class="l data">four-day</td>
+<td class="r data">0.32162</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">14</th>
+<td class="l data">eighth</td>
+<td class="r data">0.31807</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">15</th>
+<td class="l data">cowardly</td>
+<td class="r data">0.31601</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+</div>
+<div class="branch">
+<p style="page-break-after: always;"><br/></p><hr size="3"/>
+<a name="IDX17"></a>
+<table class="systitleandfootercontainer" width="100%" cellspacing="1" cellpadding="1" rules="none" frame="void" border="0" summary="Page Layout">
+<tr>
+<td class="c systemtitle">Factor 9 neg</td>
+</tr>
+</table><br>
+<div>
+<div align="center">
+<table class="table" cellspacing="0" cellpadding="5" rules="all" frame="box" bordercolor="#C1C1C1" summary="Procedure Print: Data Set WORK.TEMP">
+<colgroup>
+<col>
+</colgroup>
+<colgroup>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="r header" scope="col">Obs</th>
+<th class="l header" scope="col">_NAME_</th>
+<th class="r header" scope="col">Factor9</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="r rowheader" scope="row">1</th>
+<td class="l data">rebuilding</td>
+<td class="r data" nowrap>-0.64977</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">2</th>
+<td class="l data">estate</td>
+<td class="r data" nowrap>-0.61398</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">3</th>
+<td class="l data">unexploded</td>
+<td class="r data" nowrap>-0.60573</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">4</th>
+<td class="l data">ownership</td>
+<td class="r data" nowrap>-0.59678</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">5</th>
+<td class="l data">demolition</td>
+<td class="r data" nowrap>-0.51169</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">6</th>
+<td class="l data">gram</td>
+<td class="r data" nowrap>-0.50629</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">7</th>
+<td class="l data">unrivalled</td>
+<td class="r data" nowrap>-0.48866</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">8</th>
+<td class="l data">mee</td>
+<td class="r data" nowrap>-0.48674</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">9</th>
+<td class="l data">takeover</td>
+<td class="r data" nowrap>-0.48648</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">10</th>
+<td class="l data">republish</td>
+<td class="r data" nowrap>-0.47977</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">11</th>
+<td class="l data">unpack</td>
+<td class="r data" nowrap>-0.45398</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">12</th>
+<td class="l data">quietly</td>
+<td class="r data" nowrap>-0.42497</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">13</th>
+<td class="l data">farmland</td>
+<td class="r data" nowrap>-0.40701</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">14</th>
+<td class="l data">currency</td>
+<td class="r data" nowrap>-0.40289</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">15</th>
+<td class="l data">ultranationalist</td>
+<td class="r data" nowrap>-0.40216</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">16</th>
+<td class="l data">necessarily</td>
+<td class="r data" nowrap>-0.39289</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">17</th>
+<td class="l data">fundraising</td>
+<td class="r data" nowrap>-0.38243</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">18</th>
+<td class="l data">unseen</td>
+<td class="r data" nowrap>-0.37382</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">19</th>
+<td class="l data">normalise</td>
+<td class="r data" nowrap>-0.37285</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">20</th>
+<td class="l data">electronic</td>
+<td class="r data" nowrap>-0.35807</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">21</th>
+<td class="l data">newsletter</td>
+<td class="r data" nowrap>-0.35165</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">22</th>
+<td class="l data">useful</td>
+<td class="r data" nowrap>-0.34775</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">23</th>
+<td class="l data">contradict</td>
+<td class="r data" nowrap>-0.34254</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">24</th>
+<td class="l data">beautiful</td>
+<td class="r data" nowrap>-0.34192</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">25</th>
+<td class="l data">chip</td>
+<td class="r data" nowrap>-0.32518</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">26</th>
+<td class="l data">reader</td>
+<td class="r data" nowrap>-0.32163</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+</div>
+</body>
+</html>

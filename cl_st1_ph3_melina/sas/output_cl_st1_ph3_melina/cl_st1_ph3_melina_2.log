@@ -1,0 +1,57 @@
+ 
+ 1          OPTIONS NONOTES NOSTIMER NOSOURCE NOSYNTAXCHECK;
+ NOTE: ODS statements in the SAS Studio environment may disable some output features.
+ 69         
+ 70         ODS EXCLUDE NONE;
+ 71         
+ 72         proc factor fuzz=0.3 data= polychor (type=corr) OUTSTAT= fout NOPRINT
+ 73         method=principal
+ 74         plots=scree
+ 75         mineigen=1
+ 76         reorder
+ 77         heywood
+ 78         nfactors=100
+ 79         nobs=&nobs;
+ 80         var &names ;
+ 81         run;
+ 
+ NOTE: The PLOTS= option is ignored with NOPRINT.
+ WARNING: Conditional variance of v000046 is zero.
+ WARNING: Conditional variance of v000178 is zero.
+ WARNING: Conditional variance of v000423 is zero.
+ WARNING: Conditional variance of v000450 is zero.
+ WARNING: Conditional variance of v000481 is zero.
+ WARNING: Conditional variance of v000505 is zero.
+ WARNING: Conditional variance of v000539 is zero.
+ WARNING: Conditional variance of v000606 is zero.
+ WARNING: Conditional variance of v000613 is zero.
+ WARNING: Conditional variance of v000617 is zero.
+ WARNING: Conditional variance of v000665 is zero.
+ WARNING: Conditional variance of v000828 is zero.
+ WARNING: Conditional variance of v000831 is zero.
+ WARNING: Conditional variance of v000844 is zero.
+ WARNING: Conditional variance of v000950 is zero.
+ WARNING: Conditional variance of v000967 is zero.
+ WARNING: Conditional variance of v000994 is zero.
+ NOTE: 100 factors will be retained by the NFACTOR criterion.
+ NOTE: The data set WORK.FOUT has 1118 observations and 1014 variables.
+ NOTE: PROCEDURE FACTOR used (Total process time):
+       real time           0.38 seconds
+       user cpu time       0.37 seconds
+       system cpu time     0.01 seconds
+       memory              15185.37k
+       OS Memory           38676.00k
+       Timestamp           17/09/2026 06:52:54 PM
+       Step Count                        125  Switch Count  3
+       Page Faults                       0
+       Page Reclaims                     2834
+       Page Swaps                        0
+       Voluntary Context Switches        22
+       Involuntary Context Switches      2
+       Block Input Operations            0
+       Block Output Operations           25872
+       
+ 
+ 82         
+ 83         OPTIONS NONOTES NOSTIMER NOSOURCE NOSYNTAXCHECK;
+ 93         
