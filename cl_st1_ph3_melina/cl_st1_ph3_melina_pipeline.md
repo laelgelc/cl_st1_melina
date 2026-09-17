@@ -151,3 +151,12 @@ Outputs:
 - `columns_clean/`
 - `file_ids.txt`
 - `index_keywords.txt`
+
+## 5. Merge columns into the SAS counts matrix
+
+```shell
+python merge_columns.py
+```
+
+Output: `sas/counts.txt`
+
