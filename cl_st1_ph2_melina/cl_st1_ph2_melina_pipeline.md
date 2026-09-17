@@ -160,3 +160,15 @@ python merge_columns.py
 
 Output: `sas/counts.txt`
 
+## 6. Generate SAS format files
+
+```shell
+python sas_formats.py
+```
+
+Outputs:
+
+- sas/word_labels_format.sas
+- sas/word_labels_full_format.sas
+- other SAS helper format files
+
