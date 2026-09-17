@@ -189,3 +189,19 @@ python corpus_size.py
 ```
 
 Output: `corpus_size/corpus_size.tsv`
+
+## 10. Generate LaTeX/TikZ boxplots
+
+```shell
+cd latex_boxplots
+```
+
+```shell
+python latex_boxplots.py
+```
+
+Output: `latex_boxplots/slides/`
+
+```shell
+cd ..
+```
