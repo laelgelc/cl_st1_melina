@@ -222,3 +222,11 @@ python examples.py
 
 Output: `examples/`
 
+## 13. Generate score-details report
+
+```shell
+python score_details.py
+```
+
+Output: examples/score_details.txt
+
