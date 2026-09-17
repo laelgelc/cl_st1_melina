@@ -14,7 +14,7 @@ python tag.py
 
 Output: `corpus/05_tagged/<group>/`
 
-## Extract key lemmas by group
+## 2. Extract key lemmas by group
 
 ```shell
 python keylemmas.py \

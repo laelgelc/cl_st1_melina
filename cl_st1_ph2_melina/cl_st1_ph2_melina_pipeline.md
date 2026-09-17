@@ -14,7 +14,7 @@ python tag.py
 
 Output: `corpus/05_tagged/<group>/`
 
-## Extract key lemmas by group
+## 2. Extract key lemmas by group
 
 ```shell
 python keylemmas.py \
@@ -24,4 +24,14 @@ python keylemmas.py \
 ```
 
 Output: `corpus/06_keylemmas/<group>.tsv`
+
+## 3. Select a stratified keyword set
+
+```shell
+python select_kws_stratified.py \
+    --per-group 250 \
+    --max-total 1200
+```
+
+Output: `corpus/07_kw_selected/keywords.txt
 
