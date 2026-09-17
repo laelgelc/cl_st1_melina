@@ -181,3 +181,11 @@ python factor_lists.py
 ```
 
 Output: factors/
+
+## 9. Calculate corpus size summaries
+
+```shell
+python corpus_size.py
+```
+
+Output: `corpus_size/corpus_size.tsv`
