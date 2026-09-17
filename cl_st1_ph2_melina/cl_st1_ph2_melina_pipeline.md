@@ -83,56 +83,56 @@ global_south_2025_05   → 40 keywords max
 global_south_2025_06   → 40 keywords max
 ============================
 
-global_north_2023_09   → selected 40/40 from 604 available POSKW lemmas
-global_north_2023_10   → selected 40/40 from 506 available POSKW lemmas
-global_north_2023_11   → selected 40/40 from 396 available POSKW lemmas
-global_north_2023_12   → selected 40/40 from 386 available POSKW lemmas
-global_north_2024_01   → selected 40/40 from 378 available POSKW lemmas
-global_north_2024_02   → selected 40/40 from 388 available POSKW lemmas
-global_north_2024_03   → selected 40/40 from 428 available POSKW lemmas
-global_north_2024_04   → selected 40/40 from 453 available POSKW lemmas
-global_north_2024_05   → selected 40/40 from 472 available POSKW lemmas
-global_north_2024_06   → selected 40/40 from 351 available POSKW lemmas
-global_north_2024_07   → selected 40/40 from 334 available POSKW lemmas
-global_north_2024_08   → selected 40/40 from 360 available POSKW lemmas
-global_north_2024_09   → selected 40/40 from 341 available POSKW lemmas
-global_north_2024_10   → selected 40/40 from 401 available POSKW lemmas
-global_north_2024_11   → selected 40/40 from 418 available POSKW lemmas
-global_north_2024_12   → selected 40/40 from 364 available POSKW lemmas
-global_north_2025_01   → selected 40/40 from 441 available POSKW lemmas
-global_north_2025_02   → selected 40/40 from 475 available POSKW lemmas
-global_north_2025_03   → selected 40/40 from 455 available POSKW lemmas
-global_north_2025_04   → selected 40/40 from 413 available POSKW lemmas
-global_north_2025_05   → selected 40/40 from 478 available POSKW lemmas
-global_north_2025_06   → selected 40/40 from 528 available POSKW lemmas
-global_south_2023_09   → selected 40/40 from 328 available POSKW lemmas
-global_south_2023_10   → selected 40/40 from 444 available POSKW lemmas
-global_south_2023_11   → selected 40/40 from 361 available POSKW lemmas
-global_south_2023_12   → selected 40/40 from 438 available POSKW lemmas
-global_south_2024_01   → selected 40/40 from 400 available POSKW lemmas
-global_south_2024_02   → selected 40/40 from 288 available POSKW lemmas
-global_south_2024_03   → selected 40/40 from 309 available POSKW lemmas
-global_south_2024_04   → selected 40/40 from 322 available POSKW lemmas
-global_south_2024_05   → selected 40/40 from 298 available POSKW lemmas
-global_south_2024_06   → selected 40/40 from 268 available POSKW lemmas
-global_south_2024_07   → selected 40/40 from 353 available POSKW lemmas
-global_south_2024_08   → selected 40/40 from 402 available POSKW lemmas
-global_south_2024_09   → selected 40/40 from 398 available POSKW lemmas
-global_south_2024_10   → selected 40/40 from 466 available POSKW lemmas
-global_south_2024_11   → selected 40/40 from 425 available POSKW lemmas
-global_south_2024_12   → selected 40/40 from 343 available POSKW lemmas
-global_south_2025_01   → selected 40/40 from 412 available POSKW lemmas
-global_south_2025_02   → selected 40/40 from 464 available POSKW lemmas
-global_south_2025_03   → selected 40/40 from 403 available POSKW lemmas
-global_south_2025_04   → selected 40/40 from 313 available POSKW lemmas
-global_south_2025_05   → selected 40/40 from 415 available POSKW lemmas
-global_south_2025_06   → selected 40/40 from 461 available POSKW lemmas
+global_north_2023_09   → selected 40/40 from 455 available POSKW lemmas
+global_north_2023_10   → selected 40/40 from 475 available POSKW lemmas
+global_north_2023_11   → selected 40/40 from 347 available POSKW lemmas
+global_north_2023_12   → selected 40/40 from 342 available POSKW lemmas
+global_north_2024_01   → selected 40/40 from 315 available POSKW lemmas
+global_north_2024_02   → selected 40/40 from 326 available POSKW lemmas
+global_north_2024_03   → selected 40/40 from 380 available POSKW lemmas
+global_north_2024_04   → selected 40/40 from 375 available POSKW lemmas
+global_north_2024_05   → selected 40/40 from 413 available POSKW lemmas
+global_north_2024_06   → selected 40/40 from 307 available POSKW lemmas
+global_north_2024_07   → selected 40/40 from 296 available POSKW lemmas
+global_north_2024_08   → selected 40/40 from 279 available POSKW lemmas
+global_north_2024_09   → selected 40/40 from 289 available POSKW lemmas
+global_north_2024_10   → selected 40/40 from 363 available POSKW lemmas
+global_north_2024_11   → selected 40/40 from 359 available POSKW lemmas
+global_north_2024_12   → selected 40/40 from 308 available POSKW lemmas
+global_north_2025_01   → selected 40/40 from 383 available POSKW lemmas
+global_north_2025_02   → selected 40/40 from 433 available POSKW lemmas
+global_north_2025_03   → selected 40/40 from 425 available POSKW lemmas
+global_north_2025_04   → selected 40/40 from 363 available POSKW lemmas
+global_north_2025_05   → selected 40/40 from 436 available POSKW lemmas
+global_north_2025_06   → selected 40/40 from 477 available POSKW lemmas
+global_south_2023_09   → selected 40/40 from 248 available POSKW lemmas
+global_south_2023_10   → selected 40/40 from 379 available POSKW lemmas
+global_south_2023_11   → selected 40/40 from 301 available POSKW lemmas
+global_south_2023_12   → selected 40/40 from 362 available POSKW lemmas
+global_south_2024_01   → selected 40/40 from 321 available POSKW lemmas
+global_south_2024_02   → selected 40/40 from 237 available POSKW lemmas
+global_south_2024_03   → selected 40/40 from 262 available POSKW lemmas
+global_south_2024_04   → selected 40/40 from 249 available POSKW lemmas
+global_south_2024_05   → selected 40/40 from 250 available POSKW lemmas
+global_south_2024_06   → selected 40/40 from 221 available POSKW lemmas
+global_south_2024_07   → selected 40/40 from 265 available POSKW lemmas
+global_south_2024_08   → selected 40/40 from 334 available POSKW lemmas
+global_south_2024_09   → selected 40/40 from 327 available POSKW lemmas
+global_south_2024_10   → selected 40/40 from 412 available POSKW lemmas
+global_south_2024_11   → selected 40/40 from 346 available POSKW lemmas
+global_south_2024_12   → selected 40/40 from 293 available POSKW lemmas
+global_south_2025_01   → selected 40/40 from 350 available POSKW lemmas
+global_south_2025_02   → selected 40/40 from 387 available POSKW lemmas
+global_south_2025_03   → selected 40/40 from 333 available POSKW lemmas
+global_south_2025_04   → selected 40/40 from 274 available POSKW lemmas
+global_south_2025_05   → selected 40/40 from 368 available POSKW lemmas
+global_south_2025_06   → selected 40/40 from 438 available POSKW lemmas
 
 Total consolidated keywords before de-duplication: 1760
-Unique keywords after de-duplication: 1079
-Duplicates removed: 681
+Unique keywords after de-duplication: 1041
+Duplicates removed: 719
 
 Final unique keywords written to: corpus/07_kw_selected/keywords.txt
-Final unique keyword count: 1079
+Final unique keyword count: 1041
 ```
 
