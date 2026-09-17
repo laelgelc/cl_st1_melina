@@ -213,3 +213,12 @@ python latex_anova_table.py
 ```
 
 Output: `latex_tables/anova_decade.tex`
+
+## 12. Generate LaTeX example extracts
+
+```shell
+python examples.py
+```
+
+Output: `examples/`
+
