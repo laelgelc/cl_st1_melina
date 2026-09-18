@@ -18,7 +18,7 @@ Expected inputs:
     sas/output_<project>/means_group_f<n>.tsv
     file_ids.txt
     examples/score_details.txt
-    corpus/05_tagged/<group>/<country_code>/<article_id>.txt
+    corpus/05_tagged/<group>/<article_id>.txt
 
 Phase-specific full-text roots:
     Phase 2:
@@ -34,7 +34,7 @@ Expected file_ids.txt format:
         file_id path
 
 Example:
-    t000001 global_north_2023_09/ca/101993957.txt
+    t000001 global_north_2023_09/91468307.txt
 
 Outputs:
     examples_txt/f<n>_<pole>/f<n>_<pole>_001.txt
@@ -185,7 +185,7 @@ def load_id_map(path: Path) -> dict[str, str]:
     Load file-id to relative path map.
 
     Expected format:
-        t000001 global_north_2023_09/ca/101993957.txt
+        t000001 global_north_2023_09/101993957.txt
     """
     if not path.exists():
         raise FileNotFoundError(f"Required file missing: {path}")
@@ -326,6 +326,34 @@ def locate_fulltext(
 
     if path.exists():
         return path
+
+    relative_path_obj = Path(relative_path)
+
+    if len(relative_path_obj.parts) == 2:
+        group, filename = relative_path_obj.parts
+        country_code_matches = sorted((fulltext_root / group).glob(f"*/{filename}"))
+
+        if len(country_code_matches) == 1:
+            return country_code_matches[0]
+
+        if len(country_code_matches) > 1:
+            raise RuntimeError(
+                f"Multiple full-text files found for {relative_path} under "
+                f"{fulltext_root / group}: "
+                + ", ".join(str(match) for match in country_code_matches)
+            )
+
+    recursive_matches = sorted(fulltext_root.glob(f"**/{relative_path_obj.name}"))
+
+    if len(recursive_matches) == 1:
+        return recursive_matches[0]
+
+    if len(recursive_matches) > 1:
+        raise RuntimeError(
+            f"Multiple full-text files found for article filename "
+            f"{relative_path_obj.name} under {fulltext_root}: "
+            + ", ".join(str(match) for match in recursive_matches)
+        )
 
     return None
 
