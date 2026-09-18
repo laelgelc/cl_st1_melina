@@ -5,7 +5,7 @@ Generate interpretation prompt files for factor poles.
 For each pole, this script assembles a complete prompt containing:
     1. System prompt
     2. User prompt
-    3. Mean decade scores
+    3. Mean group scores
     4. Factor loadings
     5. Example excerpts, with their loading words appended
 
@@ -16,6 +16,9 @@ Expected inputs:
     factors/f<n>_<pole>.txt
     examples_txt/f<n>_<pole>/*.txt
     examples/score_details.txt
+    sas/output_<project>/means_group_f<n>.tsv
+
+Compatibility fallback:
     sas/output_<project>/means_decade_f<n>.tsv
 
 Output:
@@ -56,7 +59,7 @@ def parse_args() -> argparse.Namespace:
         "--project",
         default=DEFAULT_PROJECT,
         help=(
-            "Project name, e.g. cl_st1_ph2_andrea or cl_st1_ph3_andrea. "
+            "Project name, e.g. cl_st1_ph2_melina or cl_st1_ph3_melina. "
             "Default: current directory name."
         ),
     )
@@ -112,27 +115,50 @@ def resolve_sas_output_dir(project: str, sas_output_dir_arg: str | None) -> Path
     return Path(sas_output_dir_arg)
 
 
+def resolve_means_file(sas_output_dir: Path, factor_number: str) -> Path:
+    """Resolve group-means file, with compatibility fallback for older names."""
+    candidates = [
+        sas_output_dir / f"means_group_f{factor_number}.tsv",
+        sas_output_dir / f"means_decade_f{factor_number}.tsv",
+    ]
+
+    for candidate in candidates:
+        if candidate.exists():
+            return candidate
+
+    raise FileNotFoundError(
+        "Required means file missing. Expected one of:\n"
+        + "\n".join(f"  - {candidate}" for candidate in candidates)
+    )
+
+
 # ============================================================
 # PROMPT TEXT
 # ============================================================
 
 def phase_description(project: str) -> str:
     """Return a phase-specific description for the current project."""
-    if "ph2" in project:
+    project_lower = project.lower()
+
+    if "ph2" in project_lower:
         return (
-            "This phase analyses the commercial verbal subcorpus: transcript texts "
-            "representing the spoken/audio-verbal content of the selected television commercials."
+            "This phase analyses the IQR-capped robustness corpus of NOW news articles "
+            "on Palestine/Gaza-related discourse. The corpus is grouped by Global North/South "
+            "classification and publication month, with a cap applied to reduce the dominance "
+            "of highly represented groups."
         )
 
-    if "ph3" in project:
+    if "ph3" in project_lower:
         return (
-            "This phase analyses the commercial visual subcorpus: textual descriptions "
-            "of the visual content of the selected television commercials."
+            "This phase analyses the IQR-filtered corpus of NOW news articles "
+            "on Palestine/Gaza-related discourse. The corpus is grouped by Global North/South "
+            "classification and publication month, retaining articles within the interquartile "
+            "range of article length."
         )
 
     return (
-        "This phase analyses one of the commercial subcorpora: either transcript texts "
-        "of spoken/audio-verbal content or textual descriptions of visual content."
+        "This phase analyses a corpus of NOW news articles on Palestine/Gaza-related discourse, "
+        "grouped by Global North/South classification and publication month."
     )
 
 
@@ -141,26 +167,27 @@ def build_system_prompt(project: str) -> str:
     return f"""You are a corpus linguist specialising in Lexical Multi-Dimensional Analysis (LMDA).
 Your task is to interpret a single factor pole as a discourse dimension.
 
-The corpus consists of selected television-commercial texts organised by decade.
-The dataset is a balanced sample of commercials from the 1950s through the 2020s,
-with the same number of selected commercials in each decade.
+The corpus consists of selected NOW news articles on Palestine/Gaza-related discourse.
+The texts are organised by group, where each group combines:
+• Global North or Global South classification;
+• publication year;
+• publication month.
+
+Example group labels have the form:
+• global_north_2023_09
+• global_south_2023_09
 
 {phase_description(project)}
 
-The analysis is applied to decade-based strata:
-• 1950s
-• 1960s
-• 1970s
-• 1980s
-• 1990s
-• 2000s
-• 2010s
-• 2020s
+The analysis is applied to group-based strata rather than decade-based strata.
+The corpus should not be assumed to be fully balanced unless the supplied mean scores
+or project documentation explicitly show that it is. Treat group differences as
+potentially meaningful evidence of temporal, geopolitical, or sampling-related patterns.
 
 Your interpretation must identify the discourses encoded at this pole, taking into account:
-• lexical loadings, which represent the full analysed subcorpus;
+• lexical loadings, which represent the full analysed corpus;
 • example excerpts, which illustrate high-scoring texts at this pole;
-• the decades that score most strongly at this pole.
+• the groups that score most strongly at this pole.
 """
 
 
@@ -168,17 +195,18 @@ USER_PROMPT = """Interpret Factor {factor} ({polarity}) as a discourse dimension
 Propose possible labels for this pole only and justify them.
 
 Base your interpretation on:
-• Mean decade scores. For positive poles, consider the highest-scoring decades in the table. For negative poles, consider the lowest-scoring decades; these may be the lowest positive scores or the most negative scores if there are any.
+• Mean group scores. For positive poles, consider the highest-scoring groups in the table. For negative poles, consider the lowest-scoring groups; these may be the lowest positive scores or the most negative scores if there are any.
 • Factor loadings.
 • Example excerpts from high-scoring texts.
 • The loading words that appear in these examples.
-• Which decades appear to drive this pole.
-• Diachronic tendencies suggested by the decade scores.
+• Which groups appear to drive this pole.
+• Any Global North/South, month-by-month, or diachronic tendencies suggested by the group scores.
 
 Do not offer a "versus" interpretation of the opposite pole.
 Focus on this single pole only.
 
-Give equal weight to the loadings and the examples. Remember that loadings represent the full analysed subcorpus, whereas the excerpts are only a limited set of high-scoring samples.
+Give equal weight to the loadings and the examples. Remember that loadings represent the full analysed corpus, whereas the excerpts are only a limited set of high-scoring samples.
+Do not assume that the corpus is fully balanced across groups. If group scores appear uneven, discuss them cautiously as potentially reflecting discourse, historical salience, or sampling structure.
 """
 
 
@@ -206,6 +234,7 @@ def load_score_details(details_path: Path) -> dict[str, dict[str, dict[str, list
             if match_id:
                 current_id = match_id.group(1)
                 score_details[current_id] = {}
+                current_factor = None
                 continue
 
             match_factor = re.match(r"(f\d+)\s+score:", line)
@@ -324,19 +353,24 @@ def main() -> None:
 
         loadings_text = factor_file.read_text(encoding="utf-8").strip()
 
-        means_file = sas_output_dir / f"means_decade_f{factor_number}.tsv"
-
-        if not means_file.exists():
-            print(f"Warning: missing means file {means_file}")
+        try:
+            means_file = resolve_means_file(sas_output_dir, factor_number)
+        except FileNotFoundError as error:
+            print(f"Warning: {error}")
             means_text = "(No means file found)"
         else:
             means_text = means_file.read_text(encoding="utf-8").strip()
 
         example_folder = examples_dir / factor_name
-        example_files = sorted(
-            example_folder.glob("*.txt"),
-            key=natural_sort_key,
-        )[:args.excerpt_count]
+
+        if not example_folder.exists():
+            print(f"Warning: missing example folder {example_folder}")
+            example_files = []
+        else:
+            example_files = sorted(
+                example_folder.glob("*.txt"),
+                key=natural_sort_key,
+            )[:args.excerpt_count]
 
         excerpts_block = []
 
@@ -378,18 +412,18 @@ def main() -> None:
             polarity=polarity,
         )
 
-        mean_section = f"\n=== MEAN DECADE SCORES ===\n{means_text}\n"
+        mean_section = f"\n=== MEAN GROUP SCORES ===\n{means_text}\n"
         loadings_section = f"\n=== FACTOR LOADINGS ({factor_name}) ===\n{loadings_text}\n"
 
         final_prompt = (
-                system_prompt
-                + "\n\n"
-                + user_prompt
-                + "\n"
-                + mean_section
-                + loadings_section
-                + "\n=== EXAMPLE EXCERPTS ===\n"
-                + "\n".join(excerpts_block)
+            system_prompt
+            + "\n\n"
+            + user_prompt
+            + "\n"
+            + mean_section
+            + loadings_section
+            + "\n=== EXAMPLE EXCERPTS ===\n"
+            + "\n".join(excerpts_block)
         )
 
         output_path = output_dir / f"{factor_name}.txt"
