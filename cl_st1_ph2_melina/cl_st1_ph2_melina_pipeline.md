@@ -238,3 +238,10 @@ python examples_txt.py
 
 Output: `examples_txt/`
 
+## 15. Build interpretation prompts
+
+```shell
+python interpretation_prompts.py
+```
+
+Output: `interpretation/input/`
