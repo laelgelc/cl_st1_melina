@@ -252,7 +252,7 @@ Output: `interpretation/input/`
 python generate_interpretation_gpt.py \
     --input interpretation/input \
     --output interpretation/output \
-    --model gpt-5.5 \
+    --model gpt-5.6-sol \
     --workers 4
 ```
 Output: `interpretation/output/`
