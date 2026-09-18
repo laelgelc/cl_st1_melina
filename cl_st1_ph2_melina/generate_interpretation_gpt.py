@@ -51,7 +51,7 @@ from dotenv import load_dotenv
 DEFAULT_PROJECT = Path.cwd().name
 DEFAULT_INPUT_DIR = Path("interpretation/input")
 DEFAULT_OUTPUT_DIR = Path("interpretation/output")
-DEFAULT_MODEL = "gpt-5.5"
+DEFAULT_MODEL = "gpt-5.6-sol"
 DEFAULT_WORKERS = 4
 DEFAULT_MAX_OUTPUT_TOKENS = 9000
 DEFAULT_RETRIES = 5
