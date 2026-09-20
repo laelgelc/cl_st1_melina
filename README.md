@@ -777,3 +777,10 @@ See `LICENSE`.
 
 ## Phase 2 - Lexical Multi-dimensional Analysis (IQR-Capped)
 
+The Lexical Multi-dimensional Analysis (LMDA) was processed according to the corresponding procedures.
+
+Please refer to: [cl_st1_ph2_melina_pipeline_description.md](https://github.com/laelgelc/cl_st1_melina/blob/main/cl_st1_ph2_melina/cl_st1_ph2_melina_pipeline_description.md)
+
+## Phase 3 - Lexical Multi-dimensional Analysis (IQR-Filtered)
+
+The Lexical Multi-dimensional Analysis (LMDA) was processed according to the corresponding procedures.
