@@ -1,21 +1,15 @@
 # .tmuxinator.yml
 
-# Usage
-# 1. Open a terminal and navigate to where the .tmuxinator.yml file is located
-# 2. Run the command: tmuxinator start .
-# 3. This will start a new tmux session with the specified windows and panes
-
 name: gelc
 root: ../
 
-# This runs EXACTLY ONCE in the background before windows/panes are opened
 on_project_start:
   - git switch main
   - git pull
 
 windows:
   - workspace:
-      layout: even-vertical # Splits panes horizontally (one on top, one on bottom)
+      layout: even-vertical
       panes:
         - pane_1:
             - tmux set -g mouse on
