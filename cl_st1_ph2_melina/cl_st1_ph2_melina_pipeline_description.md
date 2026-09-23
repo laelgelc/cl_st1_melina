@@ -1,4 +1,4 @@
-# cl-st1_ph2_melina - Pipeline Programmes
+# cl_st1_ph2_melina - Pipeline Programmes
 
 This document summarises the programmes used in the Phase 2 project pipeline. The pipeline prepares the verbal corpus, selects keywords, builds SAS input files, processes post-SAS factor outputs, generates reporting materials, and prepares factor-pole interpretations.
 
